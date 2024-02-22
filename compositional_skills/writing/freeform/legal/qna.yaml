@@ -1,0 +1,119 @@
+contracts:
+  question: "I require help drafting a business contract for a service I will provide. Can you outline the terms, payment schedule, and liability clauses?"
+  answer: |
+    # Business Contract
+    
+    This Business Contract ("Contract") is entered into on [Date], by and between [Your Full Name or Company Name] ("Service Provider") and [Client's Full Name or Company Name] ("Client").
+    
+    ## 1. Terms
+    
+    The Service Provider agrees to provide the following services to the Client:
+    
+    1.1 **Description of Services:**
+      - [Detailed description of the services to be provided]
+    
+    1.2 **Timeline:**
+      - The services will commence on [Start Date] and are expected to be completed by [End Date], unless otherwise agreed upon by both parties.
+    
+    ## 2. Payment Schedule
+    
+    2.1 **Compensation:**
+      - The Client agrees to compensate the Service Provider in accordance with the payment schedule outlined in Exhibit A attached hereto.
+    
+    2.2 **Payment Schedule:**
+      - [Specify the payment schedule, e.g., hourly, weekly, monthly, or milestone-based payments]
+    
+    2.3 **Late Payments:**
+      - Late payments may incur a [Specify Percentage]% late fee after [Number of Days] days from the due date.
+    
+    ## 3. Liability Clauses
+    
+    3.1 **Limitation of Liability:**
+      - The Service Provider's liability for any claims arising out of or related to this Contract shall be limited to the amount of fees paid by the Client under this Contract.
+    
+    3.2 **Indemnification:**
+      - The Client agrees to indemnify and hold harmless the Service Provider, its affiliates, officers, agents, and employees from any and all claims, liabilities, damages, or expenses, including reasonable attorneys' fees, arising out of or related to the Client's breach of this Contract.
+    
+    3.3 **Force Majeure:**
+      - Neither party shall be liable for any failure or delay in performing its obligations under this Contract to the extent that such failure or delay is caused by events beyond its reasonable control, including but not limited to acts of God, war, terrorism, civil unrest, or government orders.
+    
+    ## 4. Governing Law
+    
+    This Contract shall be governed by and construed in accordance with the laws of [Your State/Country].
+    
+    IN WITNESS WHEREOF, the parties hereto have executed this Business Contract as of the date first above written.
+    
+    Service Provider: ___________________________ [Your Full Name or Company Name]
+    
+    Client: ___________________________ [Client's Full Name or Company Name]
+    
+    Date: ___________________________
+
+agreement:
+  question: "I need to create a licensing agreement for my intellectual property. Can you help me draft the terms and conditions, including royalties and exclusivity?"
+  answer: |
+    # Licensing Agreement
+    
+    This Licensing Agreement ("Agreement") is entered into on [Date], by and between [Your Full Name or Company Name] ("Licensor") and [Licensee's Full Name or Company Name] ("Licensee").
+    
+    ## 1. Licensed Property
+    
+    The Licensor grants the Licensee a non-exclusive, non-transferable, and limited license to use the intellectual property described in Exhibit A attached hereto ("Licensed Property") in accordance with the terms and conditions set forth in this Agreement.
+    
+    ## 2. Territory
+    
+    The license granted herein is limited to the following territory: [Specify Territory].
+    
+    ## 3. Term
+    
+    This Agreement shall commence on [Start Date] and shall continue in force for a term of [Number of Years] years, unless otherwise terminated in accordance with the provisions herein.
+    
+    ## 4. Royalties
+    
+    4.1 **Royalty Rate:**
+      - The Licensee shall pay the Licensor a royalty equal to [Specify Percentage]% of the Net Sales of the Licensed Property.
+    
+    4.2 **Net Sales:**
+      - "Net Sales" shall mean the gross sales price of the Licensed Property, less any applicable taxes, shipping charges, and returns.
+    
+    4.3 **Payment Terms:**
+      - Royalties shall be payable quarterly within [Number of Days] days after the end of each calendar quarter.
+    
+    ## 5. Exclusivity
+    
+    5.1 **Exclusive License:**
+      - This license is non-exclusive, and the Licensor reserves the right to grant licenses to other parties for the same or similar use of the Licensed Property.
+    
+    5.2 **Exclusive Territory:**
+      - This license does not grant the Licensee any exclusive rights to the Licensed Property in any territory.
+    
+    ## 6. Termination
+    
+    6.1 **Termination for Cause:**
+      - Either party may terminate this Agreement immediately in the event of a material breach by the other party.
+    
+    6.2 **Termination for Convenience:**
+      - The Licensor may terminate this Agreement at any time upon [Number of Days] days' written notice to the Licensee.
+    
+    6.3 **Effects of Termination:**
+      - Upon termination, the Licensee shall cease all use of the Licensed Property and return or destroy all copies of the Licensed Property in its possession.
+    
+    ## 7. Confidentiality
+    
+    7.1 **Confidential Information:**
+      - Both parties agree to keep confidential any proprietary or sensitive information obtained during the term of this Agreement.
+    
+    7.2 **Exceptions:**
+      - Confidentiality obligations shall not apply to information that is publicly available or rightfully obtained from a third party.
+    
+    ## 8. Governing Law
+    
+    This Agreement shall be governed by and construed in accordance with the laws of [Your State/Country].
+    
+    IN WITNESS WHEREOF, the parties hereto have executed this Licensing Agreement as of the date first above written.
+    
+    Licensor: ___________________________ [Your Full Name or Company Name]
+    
+    Licensee: ___________________________ [Licensee's Full Name or Company Name]
+    
+    Date: ___________________________
