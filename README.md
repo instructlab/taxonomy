@@ -125,7 +125,6 @@ You can contribute your to the taxonomy in the following:
 
 ### Why should I contribute?
 
-This taxnomy repository will be used as the seed to synthesize the training data for Labrador.
-We will re-train the model using the main branch following Labrador's progressive trianing in a bi-weekly basis.
-This is similar to the rolling-release model that Arch Linux uses.
-This enables fast iteration of the model and the entire community would benefit from it.
+This taxonomy repository will be used as the seed to synthesize the training data for Labrador-trained models.
+We intend to re-train the model(s) using the main branch following Labrador's progressive training on a nightly basis.
+This enables fast iteration of the model(s), for the benefit of the open source community, in particular to enable model developers who do not have access to the necessary compute infrastructure.
