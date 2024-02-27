@@ -18,7 +18,7 @@ Top-level categories are:
 
     Core skills are foundational skills like math, reasoning, and coding. 
     
-    🗒️ **Note:**Unlike **knowledge** and **compositional skills**, core skills are not contributable to the tree. So when you see reference to contributing "skills" to the taxonomy from this point forward, it is **compositional skills** that are being referenced. 
+    🗒️ **Note:** Unlike **knowledge** and **compositional skills**, core skills are not contributable to the tree. So when you see reference to contributing "skills" to the taxonomy from this point forward, it is **compositional skills** that are being referenced. 
 
 ## Knowledge vs. Skills
 
