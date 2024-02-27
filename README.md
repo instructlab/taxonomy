@@ -112,7 +112,7 @@ Below is an illustrative directory structure to show this layout.
 
 
 ## Ways to Contribute
-You can contribute your to the taxonomy in the following: 
+You can contribute to the taxonomy in the following: 
 - Adding new examples to existing leaf nodes: 
     - Go to the corresponding leaf node / end of the branch and modify the yaml 
     - Add new examples to the qna.yaml files as a new entry to the list
