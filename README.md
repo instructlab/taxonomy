@@ -1,10 +1,173 @@
-# LAB Taxonomy
-The LAB approach is driven by taxonomies, which are largely created manually with care.
+# Labrador 🐶 (LAB) Taxonomy
 
-Top-level categories are
-1. Knowledge
-2. Core Skills
-3. Compositional Skills
+Labrador 🐶 is a novel synthetic data-based alignment tuning method for Large 
+Language Models (LLMs.) The "**lab**" in **Lab**rador 🐶 stands for **L**arge-scale **A**lignment for Chat **B**ots.
+
+The LAB method is driven by taxonomies, which are largely created manually and with care.
+
+This repository contains a taxonomy tree that will allow you to create models tuned with your data (enhanced via synthetic data generation) using Labrador 🐶 method.
+
+Top-level categories are:
+1. **Knowledge**: 
+
+    Knowledge is like data and facts. It's backed by documents. When you create knowledge for a model, you're giving it additional data to answer questions with, more accurately.
+2. **Compositional Skills**: 
+
+    Skills are performative. When you're creating a skill for the model, you're teaching it how to do something: "write me a song," "talk like a pirate," "summarize an email."
+3. **Core Skills**: 
+
+    Core skills are foundational skills like math, reasoning, and coding. 
+    
+    🗒️ **Note:**Unlike **knowledge** and **compositional skills**, core skills are not contributable to the tree. So when you see reference to contributing "skills" to the taxonomy from this point forward, it is **compositional skills** that are being referenced. 
+
+## Knowledge vs. Skills
+
+You can contribute both **knowledge** and **skills** to the Taxonomy. What is the difference? 
+
+### Skills 
+
+Again, think of skills as "performative." You're teaching the model how to **do** something when you contribute a skill. 
+
+Skills require a much smaller volume of content to contribute. A skill contribution to the taxonomy tree can be just a few lines of YAML (its `qna.yaml` file - "qna" is short for "questions and answers") in its entirety:
+
+#### Skill yaml example
+
+```
+---
+- answer: |
+    Why do birds eat wood?
+
+    Because they're peckish!
+  question: Tell me a pun about birds.
+- answer: |
+    What do dentists call their x-rays?
+
+    Tooth pics!
+  question: Tell me a pun about x-rays.
+- answer: |
+    Why did the car have a belly ache?
+
+    Because it had too much gas!
+  question: Tell me a pun about gas.
+- answer: |
+    What did the ocean say to the ocean?
+
+    Nothing. It just waved!
+  question: Tell me a pun about waves.
+```
+
+Seriously, that's it. 
+
+Here is where this yaml sits in the taxonomy tree - note the yaml file itself plus any added directories it sits inside is the entirety of the skill in terms of a taxonomy contribution:
+
+#### Skill directory tree example
+```
+[...]
+
+└── writing
+    └── freeform
+    |   └── jokes
+    |   |    └── puns <=== here it is :)
+    |   |         └── qna.yaml  
+    │   ├── debate
+    │   │   └── qna.yaml
+    │   ├── legal
+    │   │   ├── agreement
+    │   │   │   └── qna.yaml
+
+[...]
+```
+
+### Knowledge
+
+Meanwhile, knowledge is more based on answering questions that involves facts, data, or references. 
+
+Knowledge in the taxonomy tree also consists of a few more elements than skills. Each knowledge node in the tree has a `qna.yaml` similar to the format of the `qna.yaml` for skills, but it has an extra entry per item, `context:`:
+
+#### Knowledge yaml example
+```
+---
+- context: ts-world-tour-2024-schedule.md
+  question: |
+    Is Taytay coming to Boston in 2024?
+  answer: |
+    Not that is known yet. Taylor Swift last performed in the Boston area at the Gilette Stadium in Foxboro, MA for 3 nights from Friday May 19, 2023 to Sunday May 21, 2023. In 2024, she is making international tour stops for her Eras tour outside of the United States. 
+- context: ts-discography-2024.md
+  question: |
+    Which album was released more recently, Reputation or Midnights?
+  answer: |
+    The Taylor Swift Album Reputation was released on November 10, 2017. Midnights was released October 21, 2022. Midnights was released more recently, but there are rumors that there will be a re-release of Reputation called Reputation (Taylor's version) in the later half of 2024 which would make that the most recently-released album of the set at that time.
+- context: ts-discography-2024.md
+  question: |
+    Which album has the song "You Need to Calm Down?"
+  answer: |
+    The song "You Need to Calm Down" appears on Taylor Swift's 2019 album Lover as track 14.
+```
+
+You can see this knowledge references two markdown files: `ts-world-tour-2024-schedule.md` as well as `ts-discography-2024.md` - these files in their entirety need to also be submitted along with the knowledge's `qna.yaml` file, which means that knowledge consists of a much higher volume of content than a skill. 
+
+This of course, means **it will naturally take longer to receive acceptance for a knowledge contribution pull request than for a skill pull request** - smaller pull requests are simpler and require less time and effort to review.
+
+What might these markdown files look like? They can be freeform. Here's what a snippet of `ts-discography-2024.md` might look like:
+
+```
+# Albums
+
+## Studio Albums
+
+### Taylor Swift
+- Released: October 24, 2006
+- Label: Big Machine
+- Track Listing:
+    1. "Tim McGraw"	
+    2. "Picture to Burn"	
+    3. "Teardrops on My Guitar"	
+    4. "A Place in This World"	
+    5. "Cold as You"	
+    6. "The Outside"
+    7. "Tied Together with a Smile"	
+    8. "Stay Beautiful"	
+    9. "Should've Said No"	
+    10. "Mary's Song (Oh My My My)"	
+    11.	"Our Song"
+
+### Fearless
+- Released: November 11, 2008
+- Label: Big Machine
+- Track Listing:
+    1. "Fearless"	
+    2. "Fifteen"
+    3. "Love Story"
+    4. "Hey Stephen"
+[..]
+```
+
+In contrast to the layout of skills in the taxonomy, here's what the knowledge referenced above might look like in the tree:
+
+#### Knowledge directory tree example
+```
+[...]
+
+└── culture
+    └── music
+    |   └── pop
+    |   |    ├── taylor swift <=== here it is :)
+    |   |    |    ├── ts-discography-2024.md
+    |   |    |    ├── ts-world-tour-2024-schedule.md
+    |   |    |    └── qna.yaml  
+    │   |    ├── the rolling stones
+    |   |    |    ├── rs-discography-2024.md
+    |   |    |    ├── rs-guitar-tabs.md
+    |   |    |    ├── rs-lyrics-catalog-2024.md
+    |   |    |    ├── rs-tour-history.md
+    |   |    |    └── qna.yaml  
+
+[...]
+```
+
+## Formatting
+
+TBD
 
 ## Layout
 
