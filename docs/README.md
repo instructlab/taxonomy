@@ -6,4 +6,4 @@ The review process starts with contributor drafting the PR.
     - If not valid, go back to the contributor and ask them to take actions.
 2. If a PR passes step 1, the SDG will be triggered to generate synthetic data samples.
     - If not valid, go back to the contributor and ask them to take actions.
-3. If step 2 is passes, it will be used in the next model update.
+3. If step 2 passes, it will be used in the next model update.
