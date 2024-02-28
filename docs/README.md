@@ -1,0 +1,7 @@
+# Docs
+
+## Review Process
+The review process starts with contributor drafting the PR.
+1. At the PR stage, reviewers would manually check its contents (e.g. making sure the examples are added to the correct path, inspecting the contents of examples; full list TBD).
+    - If not valid, go back to the contributor and ask them to take actions.
+2. If a PR passes step 1, the SDG will be triggered to generate synthetic data samples.

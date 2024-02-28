@@ -1,0 +1,25 @@
+@startditaa
+                  begin
+                    |
+              /-----+-----\
+    +-------->|contributor| 
+    |         \-----+-----/
+    |               |
+    |               |
+    v               |
+/--------\          v
+|reviewer|<--->pull request---------+
+\--------/          |               |
+    ^               v               v
+    |             +---+ recipe /---------\
+    |             |SDG|<-------+mainainer|
+    |             +-+-+        \---------/
+    |               |
+    |               v
+    +----------data samples
+                    |
+                    v
+                +-------+
+                |trainer|
+                +-------+
+@endditaa
