@@ -1,3 +1,5 @@
+created_by: shivsr
+seed_examples:
 - answer: '# Technical Guide: Implementing a Containerization Strategy with Docker
     and Kubernetes
 
@@ -172,3 +174,4 @@
     and high availability.'
   question: Create a technical guide on implementing a containerization strategy using
     Docker and Kubernetes.
+task_description: ''
