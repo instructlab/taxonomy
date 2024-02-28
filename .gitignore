@@ -128,4 +128,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-scratch.ipynb
+scratch.ipynbB
+
+.DS_Store
