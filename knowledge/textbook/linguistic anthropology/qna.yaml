@@ -1,0 +1,36 @@
+created_by: Abhi-B
+seed_examples:
+- answer: The use of field notes in studying Indigenous cultures and languages is
+    controversial due to the oral nature of these cultures and the potential biases
+    inherent in written records. Some tribal scholars argue that writing down Indigenous
+    stories and knowledge may not accurately represent the original context and meaning,
+    as these stories were traditionally passed down orally. Additionally, some Indigenous
+    people view the act of writing down their stories as disrespectful or inappropriate.
+    On the other hand, some argue that many of these field notes were collected from
+    tribal cultural experts who willingly participated in the collection process and
+    wanted to save their culture and language. This perspective emphasizes the importance
+    of respecting the contributions of these elders and acknowledges that these documents
+    can provide valuable insights into Indigenous cultures and languages.
+  question: Explain the controversy surrounding the use of field notes in studying
+    Indigenous cultures and languages, particularly in relation to the oral nature
+    of these cultures.
+- answer: Generalized reciprocity is a concept used in anthropology to describe the
+    way people share things in gatherer-hunter societies. It refers to the sharing
+    of goods without regard for their value or interest in compensation. When hunters
+    return to camp bearing large game, they divide it equally among members of the
+    band. When gatherers bring back loads of nuts or fruit, they hand them out freely
+    to anyone who is hungry. This form of exchange is characterized by the expectation
+    and requirement that everyone shares with everyone else, promoting egalitarianism
+    within the group.
+  question: What is the concept of generalized reciprocity in the context of gatherer-hunter
+    societies?
+- answer: Shamanistic practices continue to play a major role in modern Inuit whaling
+    communities in the Canadian territory of Nunavut. These practices include beliefs
+    and social practices pertaining to the hunt, such as the sharing of maktak or
+    muktuk (whale skin and blubber) with elders, the communal sharing of whale meat,
+    and the relationship between hunter and hunted. While many Inuit communities practice
+    modern-day Christianity, shamanistic values continue to be an important part of
+    their understanding of both the whale hunt and what it means to be Inuit today.
+  question: What is the role of shamanism in modern Inuit whaling communities in the
+    Canadian territory of Nunavut?
+task_description: ''

@@ -1,0 +1,28 @@
+created_by: Abhi-B
+seed_examples:
+- answer: In programming, 'Chained Mutators' are used to chain multiple method calls
+    together, where each method call modifies the object it is called on. This is
+    often used in operations where multiple attributes of an object need to be modified
+    in a single statement.
+  question: What is the purpose of 'Chained Mutators' in beginning programming?
+- answer: The output of the method 'checkFor' in this case would be 'true' because
+    all elements in the 'checklist' array have been accomplished.
+  question: What is the output of the method 'checkFor' if the 'checklist' array contains
+    the elements ['Shirts', 'Socks', 'Pants', 'Skirts'] and the 'accomplished' array
+    contains the elements ['Socks', 'Shirts', 'Pants', 'Skirts']?
+- answer: 'Bit Flags are binary values, often used in programming to indicate the
+    current or desired state of a system. They can be useful in managing a large number
+    of binary states, such as items in a game inventory. Bit flags take advantage
+    of the fact that everything in a digital computer is stored as 0s and 1s. A non-negative
+    integer can be used to hold multiple binary flags by utilizing the &, |, and ^
+    operators for bitwise ''and'', ''inclusive or'', and ''exclusive or'' operations.
+
+
+    The process of implementing bit flags involves creating masks for binary states
+    of interest, declaring a variable to hold the bit flags, setting or clearing specific
+    bits using bitwise operators, and checking the value of particular bits as needed.
+    This approach can help reduce the number of variables and simplify the management
+    of binary states in a program.'
+  question: What is the concept of 'Bit Flags' in programming and how can they be
+    used to manage and perform operations on binary states?
+task_description: ''

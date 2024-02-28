@@ -1,0 +1,29 @@
+created_by: Abhi-B
+seed_examples:
+- answer: 'The cranial nerves that are purely motor in function are the oculomotor
+    (CN III), trochlear (CN IV), abducens (CN VI), and hypoglossal (CN XII) nerves.
+    These nerves emerge from the brainstem in the following locations:
+
+
+    * Oculomotor Nerves (CN III): They emerge from the interpeduncular fossa.
+
+    * Trochlear Nerves (CN IV): They emerge from the dorsal aspect of the midbrain.
+
+    * Abducens Nerves (CN VI): They emerge near the midline at the border of the pons
+    and the medulla oblongata.
+
+    * Hypoglossal Nerves (CN XII): They emerge from the ventral aspect of the caudal
+    medulla as a series of rootlets.'
+  question: Which cranial nerves are purely motor in function and where do they emerge
+    from the brainstem?
+- answer: The extraocular muscles of the eye are six muscles that control eye movement.
+    They include the lateral rectus, which moves the eye laterally (outward); the
+    medial rectus, which moves the eye medially (inward); the inferior rectus, which
+    moves the eye inferiorly (downward); the superior rectus, which moves the eye
+    superiorly (upward); and the inferior oblique and superior oblique, which allow
+    for torsional movement and help with convergence and divergence.
+  question: What are the extraocular muscles of the eye and what are their actions?
+- answer: The primary auditory cortex is located in the superior temporal gyrus. Its
+    function is to process general sensory information related to hearing.
+  question: What is the primary auditory cortex located in, and what is its function?
+task_description: ''
