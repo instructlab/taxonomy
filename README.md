@@ -283,11 +283,11 @@ You can contribute to the taxonomy in the following:
     - You can add new folders under the corresponding category
     - Create a new qna.yaml file with examples for the new skill
 
-
+For additional information on how to make a contribution, please, consult the [contributing documentation](CONTRIBUTING.md).
 
 
 ### Why should I contribute?
 
 This taxonomy repository will be used as the seed to synthesize the training data for Labrador-trained models.
-We intend to re-train the model(s) using the main branch following Labrador's progressive training on a nightly basis.
+We intend to re-train the model(s) using the main branch following Labrador's progressive training on a regular basis.
 This enables fast iteration of the model(s), for the benefit of the open source community, in particular to enable model developers who do not have access to the necessary compute infrastructure.
