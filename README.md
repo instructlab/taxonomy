@@ -11,7 +11,7 @@ Top-level categories:
 
 1. **Knowledge**:
 
-    Knowledge is like data and facts. It's backed by documents. When creating knowledge for a model, you're giving it additional data to answer questions with, more accurately. 
+    Knowledge is like data and facts. It's backed by documents. When creating knowledge for a model, you're giving it additional data so it can answer questions more accurately. 
 2. **Compositional Skills**: 
 
     Skills are performative. When creating a skill for the model, you're teaching it how to do something: "write me a song," "talk like a pirate," "summarize an email."
