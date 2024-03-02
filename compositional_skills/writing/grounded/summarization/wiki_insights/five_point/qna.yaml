@@ -1,5 +1,3 @@
-created_by: shivsr
-seed_examples:
 - answer: '1. Chester High School is a public high school located in Chester, Pennsylvania,
     serving the City of Chester, Chester Township, and Upland. It is part of the Chester-Upland
     School District and had 1,302 pupils in 2009-2010, with a significant number qualifying
@@ -23,7 +21,7 @@ seed_examples:
     5. Myung Duk Foreign Language High School is a foreign language high school located
     in the Gang-seo District of Seoul, Korea. It offers a specialized education in
     foreign languages to its students.'
-  context: "Chester High School is a public high school in Chester, Illinois, United\
+  document: "Chester High School is a public high school in Chester, Illinois, United\
     \ States.\nGwacheon Foreign Language High school (Hangeul: \uACFC\uCC9C\uC678\uAD6D\
     \uC5B4\uACE0\uB4F1\uD559\uAD50, \uACFC\uCC9C\uC678\uACE0) is an Independent High\
     \ School located in Gyeong-gi province, Gwacheon-si, South Korea.\n\nThe school\
@@ -73,4 +71,3 @@ seed_examples:
     \u5FB7\u5916\u570B\u8A9E\u9AD8\u7B49\u5B78\u6821) is a foreign language high school\
     \ located in the Gang-seo District of Seoul, Korea."
   question: Give a five point summary for the given text.
-task_description: ''

@@ -1,8 +1,6 @@
-created_by: shivsr
-seed_examples:
 - answer: 'Directors Across Borders: A Comparative Study of International Film and
     Museum Directors, from Luciano Salce to Brian Patrick Kennedy'
-  context: "Dana Blankstein- Cohen( born March 3, 1981) is the director of the Israeli\
+  document: "Dana Blankstein- Cohen( born March 3, 1981) is the director of the Israeli\
     \ Academy of Film and Television.\\n\\nShe is a film director, and an Israeli\
     \ culture entrepreneur.\\nLuciano Salce (25 September 1922, in Rome \u2013 17\
     \ December 1989, in Rome) was an Italian film director, actor and lyricist.\\\
@@ -32,4 +30,3 @@ seed_examples:
     \ Art from 2005 to 2010, and the National Gallery of Australia( Canberra) from\
     \ 1997- 2004.\n"
   question: Generate a title for the given text.
-task_description: ''

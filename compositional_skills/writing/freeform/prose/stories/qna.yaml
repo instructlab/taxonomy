@@ -1,5 +1,3 @@
-created_by: shivsr
-seed_examples:
 - answer: "In the quiet corners of Emily's creative mind lay a realm of her own making,\
     \ a world she had filled with vibrant colors, enchanting characters, and extraordinary\
     \ landscapes. This was her sanctuary, a place where she could escape the mundane\
@@ -33,4 +31,3 @@ seed_examples:
     \ courage to create a world where anything was possible."
   question: Create a tale about a character who discovers a realm of their own imagination,
     where they must face their inner critic and learn to accept themselves.
-task_description: ''

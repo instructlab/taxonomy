@@ -1,5 +1,3 @@
-created_by: shivsr
-seed_examples:
 - answer: '# Technical Report: Microservices Architecture in Software Development
 
 
@@ -131,4 +129,3 @@ seed_examples:
     and enhancing service coordination mechanisms.'
   question: Compose a technical report on the benefits and challenges of implementing
     microservices architecture in software development.
-task_description: ''

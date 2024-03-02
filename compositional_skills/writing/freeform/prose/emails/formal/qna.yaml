@@ -1,5 +1,3 @@
-created_by: shivsr
-seed_examples:
 - answer: 'Subject: Inquiry Regarding the Status of My Internship Application
 
 
@@ -40,4 +38,3 @@ seed_examples:
     [Your Contact Information]'
   question: Could you help me write a formal email to inquire about the progress of
     my internship application?
-task_description: ''

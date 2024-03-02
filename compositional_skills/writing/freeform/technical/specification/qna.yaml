@@ -1,5 +1,3 @@
-created_by: shivsr
-seed_examples:
 - answer: '# Technical Specification: Advanced Data Compression Module
 
 
@@ -125,4 +123,3 @@ seed_examples:
     - Advanced error detection and correction mechanisms.'
   question: Develop a technical specification for a new hardware or software component,
     including requirements, design, and testing.
-task_description: ''
