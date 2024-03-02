@@ -30,17 +30,31 @@ To contribute to this repo, you'll use the Fork and Pull model common in many op
 Guide](https://github.com/kubernetes/community/blob/master/contributors/guide/github-workflow.md)
 from Kubernetes.
 
+For contributions to Labrador 🐶, you will want to become familiar with the workflow described in the [How to use Labrador 🐶 CLI `lab`](https://github.com/open-labrador/cli?tab=readme-ov-file#how-to-use-lab) documentation. In particular, you need to understand how to test your changes going through the steps to generate new data, training and downloading the new model, and testing it to check that it gives you the desired results.
+
 When your contribution is ready, you can create a pull request. Pull requests are often referred to as "PR". In general, we follow the standard [GitHub pull request](https://help.github.com/en/articles/about-pull-requests) process. Follow the template to provide details about your pull request to the maintainers.
 
-Before sending pull requests, make sure your changes pass applicable formatting, linting and unit tests.
+Before submitting pull requests, make sure your changes pass applicable formatting tests.
+
+## What can I contribute?
+
+You can contribute either Knowledge or Skills to the taxonomy. Make sure to review the [general documentation](README.md) for a detail explanation of these concepts and the differences between the two.
+
+You can then either:
+- add new examples to existing leaf nodes by expanding the corresponding qna.yaml files
+- or add new branches by creating new folders under existing ones and creating new qna.yaml files
+
+**Note** that you can only contribute original material. **DO NOT** contribute copyrighted content or content coming from another system. 
+
+### Submitting your contribution
+
+When submitting your PR, give it a title which is as explicit as possible, and include in the description of the PR on GitHub both what the system gave you before your contribution and what it gives you with your contribution.
 
 #### PR Review
 
 Once you've [created a pull request](#how-can-i-contribute), maintainers will review your proposed addition and may make suggestions to fix before merging. It will be easier for your pull request to receive reviews if you consider the criteria the reviewers follow while working. Remember to:
 
-- Run tests locally and ensure they pass
-- Follow the project coding conventions
-- Write detailed commit messages
+- Ensure your contribution is in the proper format (`lab generate` shouldn't report any warnings or errors)
 - Break large changes into a logical series of smaller patches, which are easy to understand individually and combine to solve a broader issue
 
 ### Reporting Bugs
