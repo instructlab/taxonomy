@@ -1,5 +1,3 @@
-created_by: shivsr
-seed_examples:
 - answer: '**Title: "The Final Heist"**
 
 
@@ -119,4 +117,3 @@ seed_examples:
 
     '
   question: Write a screenplay about a heist gone wrong.
-task_description: ''

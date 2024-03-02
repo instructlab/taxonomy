@@ -1,5 +1,3 @@
-created_by: shivsr
-seed_examples:
 - answer: "# Licensing Agreement\n\nThis Licensing Agreement (\"Agreement\") is entered\
     \ into on [Date], by and between [Your Full Name or Company Name] (\"Licensor\"\
     ) and [Licensee's Full Name or Company Name] (\"Licensee\").\n\n## 1. Licensed\
@@ -39,4 +37,3 @@ seed_examples:
     \ Full Name or Company Name]\n\nDate: ___________________________\n"
   question: I need to create a licensing agreement for my intellectual property. Can
     you help me draft the terms and conditions, including royalties and exclusivity?
-task_description: ''

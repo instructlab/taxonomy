@@ -1,10 +1,8 @@
-created_by: shivsr
-seed_examples:
 - answer: The text provides information about several members of the Arbuthnott family,
     including General Sir Hugh Arbuthnot, KCB, and other Viscounts of Arbuthnott,
     as well as Alexander Arbuthnot, Snr, and Christopher Edward Berkeley Portman,
     10th Viscount Portman, highlighting their roles, achievements, and familial relationships.
-  context: "General Sir Hugh Arbuthnot, KCB( 1780 \u2013 11 June 1868) was a British\
+  document: "General Sir Hugh Arbuthnot, KCB( 1780 \u2013 11 June 1868) was a British\
     \ Army officer and Member of Parliament for Kincardineshire 1826 \u2013 1865.\\\
     n\\nHe was born the son of John Arbuthnot, 7th Viscount of Arbuthnott and the\
     \ younger brother of John Arbuthnott, 8th Viscount of Arbuthnott.\\n\\nHe entered\
@@ -72,4 +70,3 @@ seed_examples:
     nLady Arbuthnott died at her residence, Arbuthnott house, Fordoun, Kincardineshire,\
     \ on 4 March 1902.\n"
   question: Generate one line summary for the given text.
-task_description: ''

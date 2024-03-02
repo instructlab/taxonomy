@@ -1,5 +1,3 @@
-created_by: shivsr
-seed_examples:
 - answer: 'In autumn''s grand and regal tapestry,
 
     Where vibrant hues in splendor are unfurled.
@@ -31,4 +29,3 @@ seed_examples:
 
     A vibrant farewell, in nature''s tranquil trance.'
   question: Compose a sonnet that portrays the vibrant colors of a fall foliage.
-task_description: ''

@@ -1,5 +1,3 @@
-created_by: shivsr
-seed_examples:
 - answer: '1. Etan Boritzer is an American writer of children\''s literature, best
     known for his book "What is God?" published in 1989.\n2. His "What is?" series,
     which includes books like "What is Love?", "What is Death?", "What is Beautiful?",
@@ -25,7 +23,7 @@ seed_examples:
     theatre.
 
     '
-  context: "Etan Boritzer( born 1950) is an American writer of children \u2019s literature\
+  document: "Etan Boritzer( born 1950) is an American writer of children \u2019s literature\
     \ who is best known for his book\" What is God?\" first published in 1989.\\n\\\
     nHis best selling\" What is?\" illustrated children\\'s book series on character\
     \ education and difficult subjects for children is a popular teaching guide for\
@@ -70,4 +68,3 @@ seed_examples:
     \ for England.\\nPamela Jain is an Indian playback singer.\\n\\nDate of Birth:16th\
     \ March.\\nPeter Levin is an American director of film, television and theatre.\n"
   question: Generate the key points from the given text.
-task_description: ''

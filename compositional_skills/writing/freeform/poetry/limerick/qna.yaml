@@ -1,5 +1,3 @@
-created_by: shivsr
-seed_examples:
 - answer: 'A flower so bright in the glade,
 
     By insects is never unlaid.
@@ -11,4 +9,3 @@ seed_examples:
     In a dance of life, unafraid.'
   question: Write a limerick that playfully describes a flower's bloom and its effect
     on nearby insects.
-task_description: ''

@@ -1,5 +1,3 @@
-created_by: shivsr
-seed_examples:
 - answer: "Qarah Tappeh( also Romanized as Qareh Tappeh; also known as Qar\u0101 Tappeh,\
     \ Qara Tepe, and R\u016Bst\u0101 -ye Qarah Tappeh) is a village in Rahal Rural\
     \ District, in the Central District of Khoy County, West Azerbaijan Province,\
@@ -32,17 +30,17 @@ seed_examples:
     \ as Qarah Tappeh) is a village in Sardabeh Rural District, in the Central District\
     \ of Ardabil County, Ardabil Province, Iran.\\n\\nAt the 2006 census, its population\
     \ was 877, in 174 families.\n"
-  context: "Qrah Tappeh( also Romanized as Qareh Tappeh; also known as Qar\u0101 Tappeh,\
-    \ Qara Tepe, and R\u016Bst\u0101 -ye Qarah Tappeh) is a village in Rahal Rural\
-    \ District, in the Central District of Khoy County, West Azerbaijan Prvince, Irn.\\\
-    n\\nAt the 2006 census, its population was 422, in 93 familes.\\nQarah Tappeh(\
-    \ also known as Qarah Tappeh- ye Sheykhl\u016B) is a village in Vilkij -e Markazi\
-    \ Rural District, Vilkij District, Namin County, Ardabil Prvince, Iran.\\n\\nAt\
-    \ the 2006 census, its population was 667, in 138 families.\\nHeser -e Qarah Tappeh(\
-    \ also Romanized as \u1E28e\u015F\u0101r -e Qarah Tappeh and \u1E28e\u015F\u0101\
-    r -e Qareh Tappeh) is a village in Rahal Rural District, in the Central District\
-    \ of Khoy County, West Azerbaijan Prvince, Iran.\\n\\nAt the 2006 census, its\
-    \ population was 124, in 27 families.\\nQarah Tappeh( also Romanized as Qareh\
+  document: "Qrah Tappeh( also Romanized as Qareh Tappeh; also known as Qar\u0101\
+    \ Tappeh, Qara Tepe, and R\u016Bst\u0101 -ye Qarah Tappeh) is a village in Rahal\
+    \ Rural District, in the Central District of Khoy County, West Azerbaijan Prvince,\
+    \ Irn.\\n\\nAt the 2006 census, its population was 422, in 93 familes.\\nQarah\
+    \ Tappeh( also known as Qarah Tappeh- ye Sheykhl\u016B) is a village in Vilkij\
+    \ -e Markazi Rural District, Vilkij District, Namin County, Ardabil Prvince, Iran.\\\
+    n\\nAt the 2006 census, its population was 667, in 138 families.\\nHeser -e Qarah\
+    \ Tappeh( also Romanized as \u1E28e\u015F\u0101r -e Qarah Tappeh and \u1E28e\u015F\
+    \u0101r -e Qareh Tappeh) is a village in Rahal Rural District, in the Central\
+    \ District of Khoy County, West Azerbaijan Prvince, Iran.\\n\\nAt the 2006 census,\
+    \ its population was 124, in 27 families.\\nQarah Tappeh( also Romanized as Qareh\
     \ Tappeh) is a village in Ab Barik Rural District, in the Central District of\
     \ Sonqor County, Kermanshah Prvince, Iran.\\n\\nAt the 2006 census, its population\
     \ was 420, in 128 families.\\nQarah Tappeh is a village in Razakan Rural District,\
@@ -65,4 +63,3 @@ seed_examples:
     \ of Ardabil County, Ardabil Prvince, Iran.\\n\\nAt the 2006 census, its population\
     \ was 877, in 174 families.\n"
   question: Fix any spelling errors in the given text.
-task_description: ''

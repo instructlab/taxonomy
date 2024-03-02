@@ -1,5 +1,3 @@
-created_by: shivsr
-seed_examples:
 - answer: '# Technical Proposal: Mobile App Development
 
 
@@ -133,4 +131,3 @@ seed_examples:
     and deliver a valuable tool for the target audience.'
   question: Write a technical proposal for the development of a mobile app, addressing
     user experience, functionality, and performance.
-task_description: ''

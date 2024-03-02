@@ -1,5 +1,3 @@
-created_by: shivsr
-seed_examples:
 - answer: '"I. Brooks Benedict\n   A. American actor of the silent and sound film
     era\n   B. Played supporting and utility roles in over 300 films, mostly uncredited\n\nII.
     Detective Chief Inspector Walter Dew\n   A. British Metropolitan Police officer\n   B.
@@ -22,7 +20,7 @@ seed_examples:
     as a catcher for the Atlanta Braves"
 
     '
-  context: "\"Brooks Benedict( born Harold J. Mann, February 6, 1896 \u2013 January\
+  document: "\"Brooks Benedict( born Harold J. Mann, February 6, 1896 \u2013 January\
     \ 1, 1968) was an American actor of the silent and sound film era, where he played\
     \ supporting and utility roles in over 300 films, mostly uncredited.\\nDetective\
     \ Chief Inspector Walter Dew( 17 April 1863 \u2013 16 December 1947) was a British\
@@ -51,4 +49,3 @@ seed_examples:
     \ played 12 seasons in Major League Baseball as a catcher for the Atlanta Braves\"\
     \n"
   question: Generate a high-level outline for the given text.
-task_description: ''

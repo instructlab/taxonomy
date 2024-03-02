@@ -1,5 +1,3 @@
-created_by: shivsr
-seed_examples:
 - answer: '1. Universal healthcare ensures equitable access to medical services: A
     just society is one that strives to provide equal opportunities and resources
     to all its members, regardless of their background or economic status. By implementing
@@ -32,4 +30,3 @@ seed_examples:
     '
   question: Produce three convincing arguments that support the claim that universal
     healthcare is a necessary component of a just society.
-task_description: ''

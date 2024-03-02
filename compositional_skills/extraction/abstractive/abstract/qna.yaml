@@ -1,5 +1,3 @@
-created_by: shivsr
-seed_examples:
 - answer: 'Kanye Omari West is a renowned American rapper, singer, songwriter, record
     producer, entrepreneur, and fashion designer, known for his broad range of musical
     styles and incorporation of various genres. He first gained recognition as a producer
@@ -18,7 +16,7 @@ seed_examples:
     for the guitar. Theodred II was a medieval Bishop of Elmham.
 
     '
-  context: "Kanye Omari West (born June 8, 1977) is an American rapper, singer, songwriter,\
+  document: "Kanye Omari West (born June 8, 1977) is an American rapper, singer, songwriter,\
     \ record producer, entrepreneur, and fashion designer.\\n\\nHis music has spanned\
     \ a broad range of styles, incorporating an eclectic range of influences including\
     \ hip hop, soul, baroque pop, electro, indie rock, synth-pop, industrial, and\
@@ -103,4 +101,3 @@ seed_examples:
     \ April 1, 1580) was a Spanish composer of the Renaissance, and also played the\
     \ vihuela, a guitar- shaped string instrument.\n"
   question: Could you generate an abstract for the given text?
-task_description: ''

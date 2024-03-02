@@ -1,12 +1,10 @@
-created_by: shivsr
-seed_examples:
 - answer: The executive summary of the financial literacy training meeting highlights
     the importance of financial literacy for employees, its potential impact on job
     satisfaction and productivity, the exploration of both external and internal training
     options, the possibility of one-on-one coaching sessions, the need for confidentiality,
     the frequency of trainings, and the plan to promote extensively, track attendance,
     and reconvene for progress evaluation.
-  context: '*Ms. Thompson:* Good morning, everyone. Today, we''re here to discuss
+  document: '*Ms. Thompson:* Good morning, everyone. Today, we''re here to discuss
     the importance of financial literacy training for our employees.
 
 
@@ -64,4 +62,3 @@ seed_examples:
     *Ms. Thompson:* Great suggestions, everyone. Let''s move forward with this plan
     and reconvene in a month to evaluate our progress.'
   question: Generate an executive summary of the given meeting transcript.
-task_description: ''

@@ -1,5 +1,3 @@
-created_by: shivsr
-seed_examples:
 - answer: '1. Enhance the onboarding process to engage and commit new hires.
 
     2. Focus on continuous learning and development opportunities.
@@ -17,7 +15,7 @@ seed_examples:
     and refine strategies.
 
     8. Make employee retention a top priority for the company''s growth and success.'
-  context: '*Ms. Thompson:* Good morning, everyone. Today, we''re here to discuss
+  document: '*Ms. Thompson:* Good morning, everyone. Today, we''re here to discuss
     employee retention strategies. I believe this is crucial for our company''s growth
     and success.
 
@@ -79,4 +77,3 @@ seed_examples:
 
     *Ms. Thompson:* Excellent. Let''s make employee retention a top priority.'
   question: Get all the action items from the given meeting transcript.
-task_description: ''

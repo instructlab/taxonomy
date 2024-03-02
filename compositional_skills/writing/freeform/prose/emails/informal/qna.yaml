@@ -1,5 +1,3 @@
-created_by: shivsr
-seed_examples:
 - answer: "Subject: Help Me Plan a Surprise Party \U0001F38A\U0001F92B\n\nHey [Friend's\
     \ Name],\n\nI hope you're having a fantastic day! I've got this brilliant idea\
     \ and I could really use your expertise. I'm planning a surprise party for [Surprisee's\
@@ -16,4 +14,3 @@ seed_examples:
     \ the word! \U0001F910"
   question: Write an informal email to a friend asking for advice on planning a surprise
     party.
-task_description: ''

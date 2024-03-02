@@ -1,5 +1,3 @@
-created_by: shivsr
-seed_examples:
 - answer: "# Business Contract\n\nThis Business Contract (\"Contract\") is entered\
     \ into on [Date], by and between [Your Full Name or Company Name] (\"Service Provider\"\
     ) and [Client's Full Name or Company Name] (\"Client\").\n\n## 1. Terms\n\nThe\
@@ -32,4 +30,3 @@ seed_examples:
     Date: ___________________________\n"
   question: I require help drafting a business contract for a service I will provide.
     Can you outline the terms, payment schedule, and liability clauses?
-task_description: ''

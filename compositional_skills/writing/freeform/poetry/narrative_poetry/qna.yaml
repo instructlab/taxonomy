@@ -1,5 +1,3 @@
-created_by: shivsr
-seed_examples:
 - answer: 'In the heart of the valley, where time''s river flows,
 
     Stands a solitary tree, in repose.
@@ -64,4 +62,3 @@ seed_examples:
     In the heart of the valley, under the soft moonlight.'
   question: Write a narrative poem about a solitary tree that has witnessed centuries
     of change in the surrounding landscape.
-task_description: ''
