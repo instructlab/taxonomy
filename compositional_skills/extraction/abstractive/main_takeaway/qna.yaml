@@ -1,3 +1,5 @@
+created_by: shivsr
+seed_examples:
 - answer: 'The main takeaways from the above text are:\n\n1. Up Front is a 1951 comedy
     film directed by Alexander Hall, starring Tom Ewell and David Wayne, based on
     Bill Mauldin\''s World War II characters "Willie and Joe." However, Mauldin disowned
@@ -19,7 +21,7 @@
     in 2003.\n8. Alexander Hall was an American film director and theatre actor.
 
     '
-  document: "Up Front is a 1951 comedy film directed by Alexander Hall and starring\
+  context: "Up Front is a 1951 comedy film directed by Alexander Hall and starring\
     \ Tom Ewell and David Wayne very loosely based on Bill Mauldin\\'s World War II\
     \ characters \"Willie and Joe\".\\n\\nMauldin repudiated it and refused his advising\
     \ fee; he claimed never to have seen it.\\nTheodred II was a medieval Bishop of\
@@ -56,3 +58,4 @@
     \ (January 11, 1894 \u2013 July 30, 1968) was an American film director and theatre\
     \ actor.\n"
   question: Generate the main takeaways from the given text.
+task_description: ''

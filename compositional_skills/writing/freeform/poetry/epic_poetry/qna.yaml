@@ -1,3 +1,5 @@
+created_by: shivsr
+seed_examples:
 - answer: 'In the heart of a forest, vast and green,
 
     Lived a mythical creature, unseen.
@@ -71,3 +73,4 @@
   question: Write an epic poem about a mythical creature that inhabits a vast forest,
     and the heroic quest of a young explorer seeking to make contact with this elusive
     being.
+task_description: ''
