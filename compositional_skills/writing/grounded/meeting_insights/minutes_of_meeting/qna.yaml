@@ -1,3 +1,5 @@
+created_by: shivsr
+seed_examples:
 - answer: '**Minutes of Meeting**
 
 
@@ -100,7 +102,7 @@
     **Prepared by:** [Insert Name]
 
     **Approved by:** [Insert Name]'
-  document: '*Ms. Patel:* Good morning, everyone. Today, we''re here to discuss ways
+  context: '*Ms. Patel:* Good morning, everyone. Today, we''re here to discuss ways
     to enhance employee engagement. I''d love to hear your ideas.
 
 
@@ -157,3 +159,4 @@
     suggestions and create an action plan. We''ll reconvene next week to discuss the
     next steps.'
   question: Could you generate the minutes of the meeting from the given transcript?
+task_description: ''

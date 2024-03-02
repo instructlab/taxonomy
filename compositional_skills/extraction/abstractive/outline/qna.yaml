@@ -1,3 +1,5 @@
+created_by: shivsr
+seed_examples:
 - answer: "I. Hanro Smitsman\\n\\n* Born in 1967 in Breda, Netherlands\\n* Writer\
     \ and director of film and television\\n* Known for \"Trilogie,\" consisting of\
     \ three films with interlocking stories and characters, each filmed in a different\
@@ -28,32 +30,32 @@
     \ of film and television (April 11, 1916 \u2013 February 16, 2001)\\n\\nVI. Ian\
     \ Barry\\n\\n* Australian director of film and TV\\n\\nVII. Peter Levin\\n\\n*\
     \ American director of film, television, and theatre\n"
-  document: "Hanro Smitsman, born in 1967 in Breda( Netherlands), is a writer and\
-    \ director of film and television.\\nRachel Feldman( born August 22, 1954) is\
-    \ an American director of film and television and screenwriter of television films.\\\
-    nLucas Belvaux( born 14 November 1961) is a Belgian actor and film director.\\\
-    n\\nHis directing credits include the\" Trilogie\", consisting of three films\
-    \ with interlocking stories and characters, each of which was filmed in a different\
-    \ genre.\\n\\nThe three films are\" Cavale\", a thriller;\" Un couple \xE9patant\"\
-    , a comedy; and\" Apr\xE8s la vie\", a melodrama.\\n\\nThe\" Trilogie\" received\
-    \ the Andr\xE9 Cavens Award.\\n\\nHis film\" La Raison du plus faible\" was entered\
-    \ into the 2006 Cannes Film Festival.\\n\\nHis film\" One Night( 38 t\xE9moins)\"\
-    \ was nominated for seven Magritte Awards, winning Best Screenplay.\\n\\nHe also\
-    \ appeared as an actor in the film\" Merry Christmas\"( 2005).\\n\\nHe is the\
-    \ brother of R\xE9my Belvaux and Bruno Belvaux.\\nJoseph Kaufman\\n\\n( 1882 \u2013\
-    \ February 1, 1918) was an American silent film actor and director prominent during\
-    \ the World War I years.\\n\\nHe was born in Washington, D.C. and died in New\
-    \ York City very early on during the influenza pandemic of 1918.\\n\\nHis wife\
-    \ was silent film star Ethel Clayton.\\n\\nKaufman started out as an actor appearing\
-    \ on Broadway in 1903 with Maude Adams in\" The Pretty Sister of Jose\".\\n\\\
-    nHe eventually changed to acting in and then directing silent films, his output\
-    \ being numerous short films.\\n\\nAs American films began to expand to feature\
-    \ length Kaufman followed suit and proved particularly adept and popular at directing\
-    \ beautiful Broadway actresses including his wife Ethel Clayton.\\n\\nHe directed\
-    \ Pauline Frederick, Marguerite Clark, and Billie Burke.\\n\\nHis last film,\"\
-    \ The Song of Songs\"( 1918), starred Elsie Ferguson.\\n\\nAs actor he is reported\
-    \ to have had three teeth knocked out in a screen fight with actor Earl Metcalfe.\\\
-    n\\nFollowing his death in February 1918, both of his parents died\u2014his mother\
+  context: "Hanro Smitsman, born in 1967 in Breda( Netherlands), is a writer and director\
+    \ of film and television.\\nRachel Feldman( born August 22, 1954) is an American\
+    \ director of film and television and screenwriter of television films.\\nLucas\
+    \ Belvaux( born 14 November 1961) is a Belgian actor and film director.\\n\\nHis\
+    \ directing credits include the\" Trilogie\", consisting of three films with interlocking\
+    \ stories and characters, each of which was filmed in a different genre.\\n\\\
+    nThe three films are\" Cavale\", a thriller;\" Un couple \xE9patant\", a comedy;\
+    \ and\" Apr\xE8s la vie\", a melodrama.\\n\\nThe\" Trilogie\" received the Andr\xE9\
+    \ Cavens Award.\\n\\nHis film\" La Raison du plus faible\" was entered into the\
+    \ 2006 Cannes Film Festival.\\n\\nHis film\" One Night( 38 t\xE9moins)\" was nominated\
+    \ for seven Magritte Awards, winning Best Screenplay.\\n\\nHe also appeared as\
+    \ an actor in the film\" Merry Christmas\"( 2005).\\n\\nHe is the brother of R\xE9\
+    my Belvaux and Bruno Belvaux.\\nJoseph Kaufman\\n\\n( 1882 \u2013 February 1,\
+    \ 1918) was an American silent film actor and director prominent during the World\
+    \ War I years.\\n\\nHe was born in Washington, D.C. and died in New York City\
+    \ very early on during the influenza pandemic of 1918.\\n\\nHis wife was silent\
+    \ film star Ethel Clayton.\\n\\nKaufman started out as an actor appearing on Broadway\
+    \ in 1903 with Maude Adams in\" The Pretty Sister of Jose\".\\n\\nHe eventually\
+    \ changed to acting in and then directing silent films, his output being numerous\
+    \ short films.\\n\\nAs American films began to expand to feature length Kaufman\
+    \ followed suit and proved particularly adept and popular at directing beautiful\
+    \ Broadway actresses including his wife Ethel Clayton.\\n\\nHe directed Pauline\
+    \ Frederick, Marguerite Clark, and Billie Burke.\\n\\nHis last film,\" The Song\
+    \ of Songs\"( 1918), starred Elsie Ferguson.\\n\\nAs actor he is reported to have\
+    \ had three teeth knocked out in a screen fight with actor Earl Metcalfe.\\n\\\
+    nFollowing his death in February 1918, both of his parents died\u2014his mother\
     \ on April 9, 1918 and his father on April 18, 1918.\\nThe Amazons is a 1917 American\
     \ silent comedy film directed by Joseph Kaufman and starred Marguerite Clark,\
     \ Elsie Lawson, and Helen Greene.\\n\\nThe film was based on the 1883 play of\
@@ -77,3 +79,4 @@
     \ television.\\nIan Barry is an Australian director of film and TV.\\nPeter Levin\
     \ is an American director of film, television and theatre.\n"
   question: For the given text, could you generate an outline?
+task_description: ''

@@ -1,3 +1,5 @@
+created_by: shivsr
+seed_examples:
 - answer: "**Discover the Magic of [Your Brand] Hand-Painted Wall Art - One-of-a-Kind,\
     \ Durable, and Versatile Masterpieces for Your Space!**\n\nTransform your living\
     \ spaces with our exquisite collection of [Your Brand] hand-painted wall art.\
@@ -29,3 +31,4 @@
     \ style.\n"
   question: I'm selling hand-painted wall art. Can you help me write descriptions
     that showcase their unique designs, durability, and versatility?
+task_description: ''

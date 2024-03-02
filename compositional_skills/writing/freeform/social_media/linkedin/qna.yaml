@@ -1,3 +1,5 @@
+created_by: shivsr
+seed_examples:
 - answer: 'I am delighted to recommend [Name] for any professional opportunity that
     comes their way. As a [their job title], they consistently demonstrated a high
     level of expertise, dedication, and innovation. Their ability to [mention a specific
@@ -7,3 +9,4 @@
     their talents in action! #Recommendation #ProfessionalGrowth #CareerDevelopment'
   question: Help me draft a LinkedIn recommendation for a colleague or connection
     that highlights their strengths and achievements.
+task_description: ''
