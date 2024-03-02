@@ -1,3 +1,5 @@
+created_by: shivsr
+seed_examples:
 - answer: "Subject: Recap and Next Steps - Customer Journey Mapping and Analysis\n\
     \nDear [Company Name] Team,\n\nI hope this email finds you well. Yesterday, we\
     \ gathered to discuss our customer journey mapping and analysis, aiming to understand\
@@ -23,7 +25,7 @@
     \ I look forward to our continued collaboration as we work towards enhancing our\
     \ services and delivering exceptional customer experiences.\n\nBest regards,\n\
     \n[Your Full Name]\n[Your Position]\n[Company Name]"
-  document: '*Ms. Thompson:* Good morning, everyone. Today, we''re here to discuss
+  context: '*Ms. Thompson:* Good morning, everyone. Today, we''re here to discuss
     our customer journey mapping and analysis. I believe this is crucial to understanding
     our customers'' experiences and improving our services.
 
@@ -66,3 +68,4 @@
     *Mr. Patel:* Sounds good. We''ll reconvene in a week to share our findings and
     discuss next steps.'
   question: Generate a company wide email based on the given meeting transcript
+task_description: ''
