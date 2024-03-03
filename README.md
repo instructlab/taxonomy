@@ -167,9 +167,9 @@ In contrast to the layout of skills in the taxonomy, here's what the knowledge r
 [...]
 ```
 
-## Formatting
+## Format
 
-TBD
+Taxonomy skill files can be any valid [YAML](https://yaml.org/) file ending in `.yaml` containing a collection of key/value entries in which the two recognized keys are: `question` and `answer`. For an entry to be valid, it **MUST** have both the question and answer specified. Other keys are currently ignored.
 
 ## Layout
 
