@@ -32,6 +32,8 @@ The top-level categories are:
     "skills" to the taxonomy from this point forward, it is **compositional
     skills** that are being referenced.
 
+<a name="k-vs-s"></a>
+
 ## Knowledge vs. Skills
 
 You can contribute both **knowledge** and **skills** to the Taxonomy. What is
@@ -343,21 +345,88 @@ Below is an illustrative directory structure to show this layout:
                 └── one_line
                     └── qna.yaml
 ```
+## Contribute knowledge and skills to the taxonomy!
+
+The ability to contribute to a large language model (LLM) has been difficult in no small part because it is difficult to get access to the necessary compute infrastructure.
+
+This taxonomy repository will be used as the seed to synthesize the training data for Labrador-trained models. We intend to re-train the model(s) using the main branch following Labrador's progressive training on a nightly basis. This enables fast iteration of the model(s), for the benefit of the open source community. 
+
+By contributing your skills and knowledge to this repository, you will see your changes built into an LLM within days of your contribution rather than months or years! If you are working with a model and notice its knowledge or ability lacking, you could correct it by contributing knowledge or skills and check if it's improved once your changes are built in a nightly build.
 
 ## Ways to Contribute
 
-You can contribute to the taxonomy in the following:
-- Adding new examples to existing leaf nodes:
-  - Go to the corresponding leaf node / end of the branch and modify the yaml
-  - Add new examples to the qna.yaml files as a new entry to the list
-- Adding new branches/skills corresponding to an existing domain:
-  - You can add new folders under the corresponding category
-  - Create a new qna.yaml file with examples for the new skill
+You can contribute to the taxonomy in the following two ways: 
+
+1. Adding new examples to **existing leaf nodes**: 
+    - Go to the corresponding leaf node / end of the branch and modify the yaml 
+    - Add new examples to the qna.yaml files as a new entry to the list
+- Adding new branches/skills corresponding to the existing domain:
+1. Adding **new branches/skills** corresponding to the existing domain:
+    - You can add new folders under the corresponding category
+    - Create a new qna.yaml file with examples for the new skill
+  
+### Detailed Contribution Instructions
+
+#### Pre-requisites:
+- You need a GitHub account
+- You need access to this repo
+
+#### Make a copy of the taxonomy repo
+
+1. Go to [github.com/open-labrador/taxonomy](github.com/open-labrador/taxonomy)
+2. Press the Fork button in the upper right:
+   ![fork-button](https://github.com/mairin/taxonomy/assets/799683/bc228b5b-b2a5-4d52-9a55-058c9495d4f2)
+3. On the "Create a new fork" form:
+   - **Repository name:** `taxonomy` is fine
+   - **Description:** Please describe the skill your skill provides. Give an example question it could answer with your contributed knowledge, or an example prompt your skill will improve.
+   - **Copy the main branch only:** It's OK to leave this checked on.
+
+When you are ready, press the **Create Fork** button.
+
+![Screenshot from 2024-02-28 12-41-59](https://github.com/mairin/taxonomy/assets/799683/2dbd43c3-f976-49cf-a99a-ab7ed0318425)
+
+4. You will get a copy of the taxonomy repo in your github account. This is your own copy, so don't worry about making mistakes or anything like that. *(If you do end up making a mistake and want to start over: you can delete the fork and create a new fork.)*
+
+#### Contributing a skill
+
+In the screenshot, you can see we are under the compositional skills directory. This is the directory under which you want to contribute skills. (The other top-level directory you can contribute to is the knowledge directory, which is a little different than skills. You can read more about the difference between skills and knowledge [in that section of this README](#k-vs-s) above.) 
+
+![Screenshot from 2024-02-28 12-44-05](https://github.com/mairin/taxonomy/assets/799683/ff8d33ba-d1fd-412c-99de-cd9de66886c2)
+
+Based on the directories that exist in the tree, make a best guess at where in the tree structure you feel the skill you have to contribute best fits. If you get to a point where you've gone deep enough into the tree and you can't find any directories that match, please feel free to create a new directory or a directory and subdirectories to best represent your skill.
+
+For example, I'd like to contribute a skill for creating puns. Puns are a specific type of joke. I started out in the writing directory of the tree, and saw two main directories there:
+
+![Screenshot from 2024-02-28 12-57-00](https://github.com/mairin/taxonomy/assets/799683/9370023e-9782-4497-977e-fca54b8fd9fe)
+
+When I looked at the directories under freeform, I saw subdirectories such as brainstorming, debate, legal, poetry, prose, etc.:
+
+![Screenshot from 2024-02-28 12-57-35](https://github.com/mairin/taxonomy/assets/799683/18447e4a-2bbb-40cf-b90b-e95824ee1656)
+
+When I looked under grounded, I saw subdirectories such as editing, meeting_insights, summarization/wiki_insights:
+
+![Screenshot from 2024-02-28 12-59-10](https://github.com/mairin/taxonomy/assets/799683/22be3188-bbc1-4c76-97d4-256de974593d)
+
+Puns seemed to fit best under the freeform directory, but I didn't think they fit under any of the pre-existing directories under freeform, so I created a jokes directory, then I created a puns directory under jokes. (I started with jokes as a directory, because I also have a knock-knock joke skill I'd like to create. 🙂)
+
+It can be a little tricky mechanically to create directories in GitHub's web UI:
+
+* Navigate to the folder in which you want to create the directory inside of.
+* Click the "Add File" dropdown button in the upper right corner of the screen.
+* Start typing the name of the first directory you want to create. In the animation below we use "jokes/" as the first directory. 
+* When you type the "/" character, the directory name will "lock in" and you'll be able to type the next of the next subdirectory under it, as desired. Below we typed "knock-knock/" as the next directory name.
+* Finally, you'll type the file name. The file name should always be qna.yaml. (qna stands for "Question aNd Answer.")  
+
+Here's an animated graphic to show how it works:
+
+![screencast-directory-naming](https://github.com/mairin/taxonomy/assets/799683/706c3ddd-13fc-43c4-9cb6-e246ba0e009a)
+
+**TO BE CONTINUED**
+
+### Why should I contribute?
 
 ### Why should I contribute?
 
 This taxonomy repository will be used as the seed to synthesize the training
-data for LAB-trained models. We intend to re-train the model(s) using the main
-branch on a nightly basis. This enables fast iteration of the model(s), for the
-benefit of the open source community, in particular to enable model developers
-who do not have access to the necessary compute infrastructure.
+data for InstructLab-trained models. We intend to re-train the model(s) using the main
+branch as often as possible (at least weekly). This enables fast iteration of the model(s), for the benefit of the open source community, in particular to enable model developers who do not have access to the necessary compute infrastructure.
