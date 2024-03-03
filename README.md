@@ -1,53 +1,54 @@
 # InstructLab 🐶 (LAB) Taxonomy
 
-InstructLab 🐶 uses a novel synthetic data-based alignment tuning method for 
-Large Language Models (LLMs.) The "**lab**" in Instruct**Lab** 🐶 stands for 
+InstructLab 🐶 uses a novel synthetic data-based alignment tuning method for
+Large Language Models (LLMs.) The "**lab**" in Instruct**Lab** 🐶 stands for
 **L**arge-scale **A**lignment for Chat **B**ots.
 
-The LAB method is driven by taxonomies, which are largely created manually and 
+The LAB method is driven by taxonomies, which are largely created manually and
 with care.
 
-This repository contains a taxonomy tree that will allow you to create models 
-tuned with your data (enhanced via synthetic data generation) using LAB 🐶 
+This repository contains a taxonomy tree that will allow you to create models
+tuned with your data (enhanced via synthetic data generation) using LAB 🐶
 method.
 
 The top-level categories are:
+
 1. **Knowledge**:
 
-    Knowledge consists of data and facts and is backed by documents. When you 
-    create knowledge for a model, you're giving it additional data to more 
+    Knowledge consists of data and facts and is backed by documents. When you
+    create knowledge for a model, you're giving it additional data to more
     accurately answer questions.
-2. **Compositional Skills**: 
+2. **Compositional Skills**:
 
-    Skills are performative. When you create a skill for the model, you're 
-    teaching it how to do something: "write me a song," "talk like a pirate," 
+    Skills are performative. When you create a skill for the model, you're
+    teaching it how to do something: "write me a song," "talk like a pirate,"
     "summarize an email."
-3. **Core Skills**: 
+3. **Core Skills**:
 
-    Core skills are foundational skills like math, reasoning, and coding. 
-    
-    🗒️ **Note:** Unlike **knowledge** and **compositional skills**, core skills 
+    Core skills are foundational skills like math, reasoning, and coding.
+
+    🗒️ **Note:** Unlike **knowledge** and **compositional skills**, core skills
     are not contributable to the tree. So when you see reference to contributing
-    "skills" to the taxonomy from this point forward, it is **compositional 
-    skills** that are being referenced. 
+    "skills" to the taxonomy from this point forward, it is **compositional
+    skills** that are being referenced.
 
 ## Knowledge vs. Skills
 
-You can contribute both **knowledge** and **skills** to the Taxonomy. What is 
-the difference? 
+You can contribute both **knowledge** and **skills** to the Taxonomy. What is
+the difference?
 
-### Skills 
+### Skills
 
-Again, think of skills as "performative." You're teaching the model how to 
-**do** something when you contribute a skill. 
+Again, think of skills as "performative." You're teaching the model how to
+**do** something when you contribute a skill.
 
-Skills require a much smaller volume of content to contribute. A skill 
-contribution to the taxonomy tree can be just a few lines of YAML (its 
+Skills require a much smaller volume of content to contribute. A skill
+contribution to the taxonomy tree can be just a few lines of YAML (its
 `qna.yaml` file - "qna" is short for "questions and answers") in its entirety:
 
 #### Freeform compositional skill: YAML example
 
-```
+``` yaml
 ---
 created_by: mairin # Use your GitHub username; only one creator supported
 seed_examples:
@@ -73,14 +74,16 @@ seed_examples:
     question: Tell me a pun about waves.
 task_description: The pun task enables the telling of funny pun-based jokes.
 ```
-Seriously, that's it. 
 
-Here is where this yaml sits in the taxonomy tree - note that the yaml file 
-itself, plus any added directories it sits inside, is the entirety of the skill 
+Seriously, that's it.
+
+Here is where this yaml sits in the taxonomy tree - note that the yaml file
+itself, plus any added directories it sits inside, is the entirety of the skill
 in terms of a taxonomy contribution:
 
 #### Freeform compositional skill: Directory tree example
-```
+
+``` ascii
 [...]
 
 └── writing
@@ -99,25 +102,26 @@ in terms of a taxonomy contribution:
 
 ### Knowledge
 
-Meanwhile, knowledge is based more on answering questions that involve facts, 
-data, or references. 
+Meanwhile, knowledge is based more on answering questions that involve facts,
+data, or references.
 
 Knowledge in the taxonomy tree also consists of a few more elements than skills.
-Each knowledge node in the tree has a `qna.yaml` similar to the format of the 
-`qna.yaml` for skills, but it has an extra folder for knowledge documents called 
-`knowledge_documents`. These knowledge document formats are are currently 
+Each knowledge node in the tree has a `qna.yaml` similar to the format of the
+`qna.yaml` for skills, but it has an extra folder for knowledge documents called
+`knowledge_documents`. These knowledge document formats are are currently
 supported are markdown (.md) and text (.txt).
 
-Each `qna.yaml` file is required to contain a minimum of three question-answer 
-pairs. The `qna.yaml` format should include the following fields: 
+Each `qna.yaml` file is required to contain a minimum of three question-answer
+pairs. The `qna.yaml` format should include the following fields:
 
-- `seed_examples` (three or more examples sourced from the provided knowledge 
+- `seed_examples` (three or more examples sourced from the provided knowledge
   documents)
 - `created_by` (your name)
 - `task_description` (an optional description of the knowledge).
 
 #### Knowledge: yaml example
-```
+
+``` yaml
 ---
 created_by: mairin   # Use your GitHub username; only one creator supported
 seed_examples:
@@ -151,20 +155,20 @@ task_description: |
   Knowledge about Taylor Swift's music.
 ```
 
-You can see this knowledge references two markdown files: 
-`ts-world-tour-2024-schedule.md` as well as `ts-discography-2024.md` - these 
-files in their entirety need to be submitted along with the knowledge's 
-`qna.yaml` file in a `knowledge_documents` folder, which means that knowledge 
-consists of a much higher volume of content than a skill. 
+You can see this knowledge references two markdown files:
+`ts-world-tour-2024-schedule.md` as well as `ts-discography-2024.md` - these
+files in their entirety need to be submitted along with the knowledge's
+`qna.yaml` file in a `knowledge_documents` folder, which means that knowledge
+consists of a much higher volume of content than a skill.
 
-This of course, means **it will naturally take longer to receive acceptance for 
-a knowledge contribution pull request than for a skill pull request** - smaller 
+This of course, means **it will naturally take longer to receive acceptance for
+a knowledge contribution pull request than for a skill pull request** - smaller
 pull requests are simpler and require less time and effort to review.
 
-What might these markdown files look like? They can be freeform. Here's what a 
+What might these markdown files look like? They can be freeform. Here's what a
 snippet of `ts-discography-2024.md` might look like:
 
-```
+``` markdown
 # Albums
 
 ## Studio Albums
@@ -173,34 +177,35 @@ snippet of `ts-discography-2024.md` might look like:
 - Released: October 24, 2006
 - Label: Big Machine
 - Track Listing:
-    1. "Tim McGraw"	
-    2. "Picture to Burn"	
-    3. "Teardrops on My Guitar"	
-    4. "A Place in This World"	
-    5. "Cold as You"	
-    6. "The Outside"
-    7. "Tied Together with a Smile"	
-    8. "Stay Beautiful"	
-    9. "Should've Said No"	
-    10. "Mary's Song (Oh My My My)"	
-    11.	"Our Song"
+  1. "Tim McGraw"
+  2. "Picture to Burn"
+  3. "Teardrops on My Guitar"
+  4. "A Place in This World"
+  5. "Cold as You"
+  6. "The Outside"
+  7. "Tied Together with a Smile"
+  8. "Stay Beautiful"
+  9. "Should've Said No"
+  10. "Mary's Song (Oh My My My)"
+  11. "Our Song"
 
 ### Fearless
 - Released: November 11, 2008
 - Label: Big Machine
 - Track Listing:
-    1. "Fearless"	
-    2. "Fifteen"
-    3. "Love Story"
-    4. "Hey Stephen"
+  1. "Fearless"
+  2. "Fifteen"
+  3. "Love Story"
+  4. "Hey Stephen"
 [..]
 ```
 
-In contrast to the layout of skills in the taxonomy, here's what the knowledge 
+In contrast to the layout of skills in the taxonomy, here's what the knowledge
 referenced above might look like in the tree:
 
 #### Knowledge: directory tree example
-```
+
+``` ascii
 [...]
 
 └── knowledge
@@ -226,9 +231,9 @@ referenced above might look like in the tree:
 
 ## Formatting
 
-Taxonomy skill files can be any valid [YAML](https://yaml.org/) file ending in 
+Taxonomy skill files can be any valid [YAML](https://yaml.org/) file ending in
 `.yaml` containing a collection of key/value entries in which the two recognized
-keys are: `question` and `answer`. For an entry to be valid, it **MUST** have 
+keys are: `question` and `answer`. For an entry to be valid, it **MUST** have
 both the question and answer specified. Other keys are currently ignored.
 
 ## Layout
@@ -238,7 +243,8 @@ each branch, there is a YAML file (qna.yaml) that contains the examples for that
 domain.
 
 Below is an illustrative directory structure to show this layout:
-```
+
+``` ascii
 .
 └── writing
     ├── freeform
@@ -338,24 +344,20 @@ Below is an illustrative directory structure to show this layout:
                     └── qna.yaml
 ```
 
-
 ## Ways to Contribute
-You can contribute to the taxonomy in the following: 
-- Adding new examples to existing leaf nodes: 
-    - Go to the corresponding leaf node / end of the branch and modify the yaml 
-    - Add new examples to the qna.yaml files as a new entry to the list
+
+You can contribute to the taxonomy in the following:
+- Adding new examples to existing leaf nodes:
+  - Go to the corresponding leaf node / end of the branch and modify the yaml
+  - Add new examples to the qna.yaml files as a new entry to the list
 - Adding new branches/skills corresponding to an existing domain:
-    - You can add new folders under the corresponding category
-    - Create a new qna.yaml file with examples for the new skill
-
-
-
+  - You can add new folders under the corresponding category
+  - Create a new qna.yaml file with examples for the new skill
 
 ### Why should I contribute?
 
-This taxonomy repository will be used as the seed to synthesize the training 
-data for LAB-trained models. We intend to re-train the model(s) using the main 
-branch on a nightly basis.
-This enables fast iteration of the model(s), for the benefit of the open source 
-community, in particular to enable model developers who do not have access to 
-the necessary compute infrastructure.
+This taxonomy repository will be used as the seed to synthesize the training
+data for LAB-trained models. We intend to re-train the model(s) using the main
+branch on a nightly basis. This enables fast iteration of the model(s), for the
+benefit of the open source community, in particular to enable model developers
+who do not have access to the necessary compute infrastructure.
