@@ -17,10 +17,20 @@ The top-level categories are:
 
     Core skills are foundational skills like math, reasoning, and coding.
 
-    🗒️ **Note:** Unlike **knowledge** and **compositional skills**, core skills
-    are not contributable to the tree. So when you see reference to contributing
-    "skills" to the taxonomy from this point forward, it is **compositional
-    skills** that are being referenced.
+1. **Knowledge**:
+
+    Knowledge consists of data and facts and is backed by documents. When you
+    create knowledge for a model, you're giving it additional data to more
+    accurately answer questions.
+2. **Compositional Skills**:
+
+    Skills are performative. When you create a skill for the model, you're
+    teaching it how to do something: "write me a song," "talk like a pirate,"
+    "summarize an email."
+3. **Core Skills**:
+
+    Core skills are foundational skills like math, reasoning, and coding.
+
 2. **Knowledge**:
 
     Knowledge consists of data and facts and is backed by documents. When you
