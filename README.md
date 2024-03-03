@@ -354,6 +354,9 @@ You can contribute to the taxonomy in the following:
   - You can add new folders under the corresponding category
   - Create a new qna.yaml file with examples for the new skill
 
+For additional information on how to make a contribution, please, consult the 
+[contributing documentation](CONTRIBUTING.md).
+
 ### Why should I contribute?
 
 This taxonomy repository will be used as the seed to synthesize the training
