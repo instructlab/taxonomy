@@ -1,67 +1,85 @@
-# Labrador 🐶 (LAB) Taxonomy
+# InstructLab 🐶 (LAB) Taxonomy
 
-Labrador 🐶 is a novel synthetic data-based alignment tuning method for Large 
-Language Models (LLMs.) The "**lab**" in **Lab**rador 🐶 stands for **L**arge-scale **A**lignment for Chat **B**ots.
+InstructLab 🐶 uses a novel synthetic data-based alignment tuning method for 
+Large Language Models (LLMs.) The "**lab**" in Instruct**Lab** 🐶 stands for 
+**L**arge-scale **A**lignment for Chat **B**ots.
 
-The LAB method is driven by taxonomies, which are largely created manually and with care.
+The LAB method is driven by taxonomies, which are largely created manually and 
+with care.
 
-This repository contains a taxonomy tree that will allow you to create models tuned with your data (enhanced via synthetic data generation) using the Labrador 🐶 method!
+This repository contains a taxonomy tree that will allow you to create models 
+tuned with your data (enhanced via synthetic data generation) using LAB 🐶 
+method.
 
-Top-level categories:
-
+The top-level categories are:
 1. **Knowledge**:
 
-    Knowledge is like data and facts. It's backed by documents. When creating knowledge for a model, you're giving it additional data so it can answer questions more accurately. 
+    Knowledge consists of data and facts and is backed by documents. When you 
+    create knowledge for a model, you're giving it additional data to more 
+    accurately answer questions.
 2. **Compositional Skills**: 
 
-    Skills are performative. When creating a skill for the model, you're teaching it how to do something: "write me a song," "talk like a pirate," "summarize an email."
+    Skills are performative. When you create a skill for the model, you're 
+    teaching it how to do something: "write me a song," "talk like a pirate," 
+    "summarize an email."
 3. **Core Skills**: 
 
     Core skills are foundational skills like math, reasoning, and coding. 
     
-    🗒️ **Note:** Unlike **knowledge** and **compositional skills**, core skills are not contributable to the tree. So when you see reference to contributing "skills" to the taxonomy from this point forward, it is **compositional skills** that are being referenced. 
+    🗒️ **Note:** Unlike **knowledge** and **compositional skills**, core skills 
+    are not contributable to the tree. So when you see reference to contributing
+    "skills" to the taxonomy from this point forward, it is **compositional 
+    skills** that are being referenced. 
 
 ## Knowledge vs. Skills
 
-You can contribute both **knowledge** and **skills** to the Taxonomy. What is the difference? 
+You can contribute both **knowledge** and **skills** to the Taxonomy. What is 
+the difference? 
 
 ### Skills 
 
-Again, think of skills as "performative." You're teaching the model how to **do** something when you contribute a skill. 
+Again, think of skills as "performative." You're teaching the model how to 
+**do** something when you contribute a skill. 
 
-Skills require a much smaller volume of content to contribute. A skill contribution to the taxonomy tree can be just a few lines of YAML (named `qna.yaml` file - "qna" is short for "questions and answers").
+Skills require a much smaller volume of content to contribute. A skill 
+contribution to the taxonomy tree can be just a few lines of YAML (its 
+`qna.yaml` file - "qna" is short for "questions and answers") in its entirety:
 
-#### _Skill YAML example:_
+#### Freeform compositional skill: YAML example
 
 ```
 ---
-- answer: |
-    Why do birds eat wood?
+created_by: mairin # Use your GitHub username; only one creator supported
+seed_examples:
+  - answer: |
+      Why do birds eat wood?
+      
+      Because they're peckish!
+    question: Tell me a pun about birds.
+  - answer: |
+      What do dentists call their x-rays?
 
-    Because they're peckish!
-  question: Tell me a pun about birds.
-- answer: |
-    What do dentists call their x-rays?
+      Tooth pics!
+    question: Tell me a pun about x-rays.
+  - answer: |
+      Why did the car have a belly ache?
 
-    Tooth pics!
-  question: Tell me a pun about x-rays.
-- answer: |
-    Why did the car have a belly ache?
+      Because it had too much gas!
+    question: Tell me a pun about gas.
+  - answer: |
+      What did the ocean say to the ocean?
 
-    Because it had too much gas!
-  question: Tell me a pun about gas.
-- answer: |
-    What did the ocean say to the ocean?
-
-    Nothing. It just waved!
-  question: Tell me a pun about waves.
+      Nothing. It just waved!
+    question: Tell me a pun about waves.
+task_description: The pun task enables the telling of funny pun-based jokes.
 ```
-
 Seriously, that's it. 
 
-Here is where this yaml sits in the taxonomy tree - note that the yaml file itself, plus any added directories it sits inside, is the entirety of the skill in terms of a taxonomy contribution.
+Here is where this yaml sits in the taxonomy tree - note that the yaml file 
+itself, plus any added directories it sits inside, is the entirety of the skill 
+in terms of a taxonomy contribution:
 
-#### _Skill directory tree example:_
+#### Freeform compositional skill: Directory tree example
 ```
 [...]
 
@@ -69,7 +87,7 @@ Here is where this yaml sits in the taxonomy tree - note that the yaml file itse
     └── freeform
     |   └── jokes
     |   |    └── puns <=== here it is :)
-    |   |         └── qna.yaml  
+    |   |         └── qna.yaml
     │   ├── debate
     │   │   └── qna.yaml
     │   ├── legal
@@ -81,37 +99,71 @@ Here is where this yaml sits in the taxonomy tree - note that the yaml file itse
 
 ### Knowledge
 
-Meanwhile, knowledge is based more on answering questions that involves facts, data, or references. 
+Meanwhile, knowledge is based more on answering questions that involve facts, 
+data, or references. 
 
-Knowledge in the taxonomy tree also consists of a few more elements than skills. Each knowledge node in the tree has a `qna.yaml` similar to the format of the `qna.yaml` for skills, but it has an extra entry per item, `context:`:
+Knowledge in the taxonomy tree also consists of a few more elements than skills.
+Each knowledge node in the tree has a `qna.yaml` similar to the format of the 
+`qna.yaml` for skills, but it has an extra folder for knowledge documents called 
+`knowledge_documents`. These knowledge document formats are are currently 
+supported are markdown (.md) and text (.txt).
 
-#### _Knowledge YAML example:_
+Each `qna.yaml` file is required to contain a minimum of three question-answer 
+pairs. The `qna.yaml` format should include the following fields: 
+
+- `seed_examples` (three or more examples sourced from the provided knowledge 
+  documents)
+- `created_by` (your name)
+- `task_description` (an optional description of the knowledge).
+
+#### Knowledge: yaml example
 ```
 ---
-- context: ts-world-tour-2024-schedule.md
-  question: |
-    Is Taytay coming to Boston in 2024?
-  answer: |
-    Not that is known yet. Taylor Swift last performed in the Boston area at the Gilette Stadium in Foxboro, MA for 3 nights from Friday May 19, 2023 to Sunday May 21, 2023. In 2024, she is making international tour stops for her Eras tour outside of the United States. 
-- context: ts-discography-2024.md
-  question: |
-    Which album was released more recently, Reputation or Midnights?
-  answer: |
-    The Taylor Swift Album Reputation was released on November 10, 2017. Midnights was released October 21, 2022. Midnights was released more recently, but there are rumors that there will be a re-release of Reputation called Reputation (Taylor's version) in the later half of 2024 which would make that the most recently-released album of the set at that time.
-- context: ts-discography-2024.md
-  question: |
-    Which album has the song "You Need to Calm Down?"
-  answer: |
-    The song "You Need to Calm Down" appears on Taylor Swift's 2019 album Lover as track 14.
+created_by: mairin   # Use your GitHub username; only one creator supported
+seed_examples:
+  - answer: |
+      Not that is known yet. Taylor Swift last performed in the Boston area at 
+      the Gilette Stadium in Foxboro, MA for 3 nights from Friday May 19, 2023 
+      to Sunday May 21, 2023. In 2024, she is making international tour stops 
+      for her Eras tour outside of the United States.
+    context: ts-world-tour-2024-schedule.md
+    question: |
+      Is Taytay coming to Boston in 2024?
+  - answer: |
+      The Taylor Swift Album Reputation was released on November 10, 2017. 
+      Midnights was released October 21, 2022. Midnights was released more 
+      recently, but there are rumors that there will be a re-release of 
+      Reputation called Reputation (Taylor's version) in the later half of 2024 
+      which would make that the most recently-released album of the set at that 
+      time.
+    # You can reference multiple documents with comma separation on one line.
+    context: knowledge_documents/ts-discography-2024.md, 
+      knowledge_documents/ts-news-2024.md
+    question: |
+      Which album was released more recently, Reputation or Midnights?
+  - answer: |
+      The song "You Need to Calm Down" appears on Taylor Swift's 2019 album 
+      Lover as track 14.
+    context: knowledge_documents/ts-discography-2024.md
+    - question: |
+        Which album has the song "You Need to Calm Down?"
+task_description: |
+  Knowledge about Taylor Swift's music.
 ```
 
-You can see this knowledge references two markdown files: `ts-world-tour-2024-schedule.md` as well as `ts-discography-2024.md`. These files in their entirety also need to be submitted along with the knowledge's `qna.yaml` file, which means that knowledge files consists of a much higher volume of content than a skill. 
+You can see this knowledge references two markdown files: 
+`ts-world-tour-2024-schedule.md` as well as `ts-discography-2024.md` - these 
+files in their entirety need to be submitted along with the knowledge's 
+`qna.yaml` file in a `knowledge_documents` folder, which means that knowledge 
+consists of a much higher volume of content than a skill. 
 
-This of course, means **it will naturally take longer to receive acceptance for a knowledge contribution pull request than for a skill pull request** - smaller pull requests are simpler and require less time and effort to review.
+This of course, means **it will naturally take longer to receive acceptance for 
+a knowledge contribution pull request than for a skill pull request** - smaller 
+pull requests are simpler and require less time and effort to review.
 
-What might these markdown files look like? They can be freeform. Here's what a snippet of `ts-discography-2024.md` might look like:
+What might these markdown files look like? They can be freeform. Here's what a 
+snippet of `ts-discography-2024.md` might look like:
 
-#### _Knowledge freeform example:_
 ```
 # Albums
 
@@ -144,38 +196,48 @@ What might these markdown files look like? They can be freeform. Here's what a s
 [..]
 ```
 
-In contrast to the layout of skills in the taxonomy, here's what the knowledge referenced above might look like in the tree:
+In contrast to the layout of skills in the taxonomy, here's what the knowledge 
+referenced above might look like in the tree:
 
-#### _Knowledge directory tree example:_
+#### Knowledge: directory tree example
 ```
 [...]
 
-└── culture
-    └── music
-    |   └── pop
-    |   |    ├── taylor swift <=== here it is :)
-    |   |    |    ├── ts-discography-2024.md
-    |   |    |    ├── ts-world-tour-2024-schedule.md
-    |   |    |    └── qna.yaml  
-    │   |    ├── the rolling stones
-    |   |    |    ├── rs-discography-2024.md
-    |   |    |    ├── rs-guitar-tabs.md
-    |   |    |    ├── rs-lyrics-catalog-2024.md
-    |   |    |    ├── rs-tour-history.md
-    |   |    |    └── qna.yaml  
+└── knowledge
+    └── textbooks
+        ├── culture
+        │ └── music
+        │     └── pop
+        │         ├── taylor swift <=== here it is :)
+        │         │ ├── knowledge_documents
+        │         │ │ ├── ts-discography-2024.md
+        │         │ │ └── ts-world-tour-2024-schedule.md
+        │         │ └── qna.yaml
+        │         └── the rolling stones
+        │             ├── knowledge_documents
+        │             │ ├── rs-discography-2024.md
+        │             │ ├── rs-guitar-tabs.md
+        │             │ ├── rs-lyrics-catalog-2024.md
+        │             │ └── rs-tour-history.md
+        │             └── qna.yaml
 
 [...]
 ```
 
-## Format
+## Formatting
 
-Taxonomy skill files can be any valid [YAML](https://yaml.org/) file ending in `.yaml` containing a collection of key/value entries in which the two recognized keys are: `question` and `answer`. For an entry to be valid, it **MUST** have both the question and answer specified. Other keys are currently ignored.
+Taxonomy skill files can be any valid [YAML](https://yaml.org/) file ending in 
+`.yaml` containing a collection of key/value entries in which the two recognized
+keys are: `question` and `answer`. For an entry to be valid, it **MUST** have 
+both the question and answer specified. Other keys are currently ignored.
 
 ## Layout
 
-The taxonomy tree is organized in a cascading directory structure. At the end of each branch, there is a YAML file (qna.yaml) that contains the examples for that domain.
+The taxonomy tree is organized in a cascading directory structure. At the end of
+each branch, there is a YAML file (qna.yaml) that contains the examples for that
+domain.
 
-#### _Illustrative directory structure to show this layout:_
+Below is an illustrative directory structure to show this layout:
 ```
 .
 └── writing
@@ -286,11 +348,14 @@ You can contribute to the taxonomy in the following:
     - You can add new folders under the corresponding category
     - Create a new qna.yaml file with examples for the new skill
 
-For additional information on how to make a contribution, please, consult the [contributing documentation](CONTRIBUTING.md).
+
 
 
 ### Why should I contribute?
 
-This taxonomy repository will be used as the seed to synthesize the training data for Labrador-trained models.
-We intend to re-train the model(s) using the main branch following Labrador's progressive training on a regular basis.
-This enables fast iteration of the model(s), for the benefit of the open source community, in particular to enable model developers who do not have access to the necessary compute infrastructure.
+This taxonomy repository will be used as the seed to synthesize the training 
+data for LAB-trained models. We intend to re-train the model(s) using the main 
+branch on a nightly basis.
+This enables fast iteration of the model(s), for the benefit of the open source 
+community, in particular to enable model developers who do not have access to 
+the necessary compute infrastructure.
