@@ -1,0 +1,7 @@
+created_by: emmahone
+seed_examples:
+- answer: "Red Hat® OpenShift® is a unified platform to build, modernize, and deploy applications at scale. OpenShift helps you to develop, deploy, and manage container-based applications as well as Virtual Machines via OpenShift Virtualization. The platform provides you with a self-service features to create, modify, and deploy applications on demand, enabling faster development and release life cycles."
+  question: What is OpenShift?
+- answer: "Containers are technologies that allow the packaging and isolation of applications with their entire runtime environment—all of the files necessary to run. This makes it easy to move the contained application between environments (dev, test, production, etc.) while retaining full functionality. [source](https://www.redhat.com/en/topics/containers)"
+  question: What are containers?
+task_description: ''
