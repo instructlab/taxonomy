@@ -225,7 +225,6 @@ seed_examples:
       the Gilette Stadium in Foxboro, MA for 3 nights from Friday May 19, 2023 
       to Sunday May 21, 2023. In 2024, she is making international tour stops 
       for her Eras tour outside of the United States.
-    context: ts-world-tour-2024-schedule.md
     question: |
       Is Taytay coming to Boston in 2024?
   - answer: |
@@ -235,23 +234,18 @@ seed_examples:
       Reputation called Reputation (Taylor's version) in the later half of 2024 
       which would make that the most recently-released album of the set at that 
       time.
-    # You can reference multiple documents with comma separation on one line.
-    context: |
-      knowledge_documents/ts-discography-2024.md, 
-      knowledge_documents/ts-news-2024.md
     question: |
       Which album was released more recently, Reputation or Midnights?
   - answer: |
       The song "You Need to Calm Down" appears on Taylor Swift's 2019 album 
       Lover as track 14.
-    context: knowledge_documents/ts-discography-2024.md
     - question: |
         Which album has the song "You Need to Calm Down?"
 task_description: |
   Knowledge about Taylor Swift's music.
 ```
 
-You can see this knowledge references two markdown files:
+This knowledge references two markdown files: 
 `ts-world-tour-2024-schedule.md` as well as `ts-discography-2024.md` - these
 files in their entirety need to be submitted along with the knowledge's
 `qna.yaml` file in a `knowledge_documents` folder, which means that knowledge
