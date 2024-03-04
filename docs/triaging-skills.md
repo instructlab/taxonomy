@@ -1,5 +1,28 @@
 # Triaging Skills pull request contribution process:
+Skills triagers should review open pull requests to the taxonomy repo looking to apply one of the following labels to the PR:
 
+* approved
+* rejected
+* needs-further-review
+
+### Approved:
+
+- meets requirements
+
+### Rejected:
+
+- Submitted knowledge not a skill. For example, troubleshooting on an uncommon IBM Storage Fusion error message. 
+- Obviously GPT answer, blocklist. 
+- Couldn’t verify that the model actually lacks the skills — i.e. model can already answer the submitted questions well enough. 
+- Provide examples of model response is too short and neglected reasoning details. For example: A logical question requires multi-step reasoning to reach to the final answer. The submitted model response only gives the final answer. 
+- Uninformative examples. For example, not all examples match the skill requested; Or the user didn’t put three independent question/answer pairs for the skill, but mistakenly submitted three chat turns for the three questions/answer pairs. Or overly repetitive examples which do not help to clear define of the requested skill. 
+- Missing examples: didn’t provide desired model response for the skill. 
+
+### Needs futher review:
+
+- Triager is generally not sure
+- Safety tasks and skills should always be escalated to Akash’s team
+- Super interesting, warrants further study
 1. Quick review, throw out people who didn’t follow instructions (PR Wrangling)
 1. Deeper review, taking notes and making minor edits as needed. Potential places that a PR can be triaged into: (PR Ting)
 	* Generation seeds (success!!)
