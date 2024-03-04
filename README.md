@@ -469,7 +469,7 @@ You can contribute to the taxonomy in the following two ways:
 
 1. Go to [github.com/open-labrador/taxonomy](github.com/open-labrador/taxonomy)
 2. Press the Fork button in the upper right:
-   ![fork-button](https://github.com/mairin/taxonomy/assets/799683/bc228b5b-b2a5-4d52-9a55-058c9495d4f2)
+   ![fork-button](https://github.com/instruct-lab/taxonomy/assets/799683/8487bff2-425e-483c-b27c-ef03da1c57a8)
 3. On the "Create a new fork" form:
    - **Repository name:** `taxonomy` is fine
    - **Description:** Please describe the skill your skill provides. Give an example question it could answer with your contributed knowledge, or an example prompt your skill will improve.
@@ -477,7 +477,7 @@ You can contribute to the taxonomy in the following two ways:
 
 When you are ready, press the **Create Fork** button.
 
-![Screenshot from 2024-02-28 12-41-59](https://github.com/mairin/taxonomy/assets/799683/2dbd43c3-f976-49cf-a99a-ab7ed0318425)
+![Screenshot from 2024-02-28 12-41-59](https://github.com/instruct-lab/taxonomy/assets/799683/656608ef-3040-4858-96f0-9b695bea0e8f)
 
 4. You will get a copy of the taxonomy repo in your github account. This is your own copy, so don't worry about making mistakes or anything like that. *(If you do end up making a mistake and want to start over: you can delete the fork and create a new fork.)*
 
@@ -485,21 +485,21 @@ When you are ready, press the **Create Fork** button.
 
 In the screenshot, you can see we are under the compositional skills directory. This is the directory under which you want to contribute skills. (The other top-level directory you can contribute to is the knowledge directory, which is a little different than skills. You can read more about the difference between skills and knowledge [in that section of this README](#k-vs-s) above.) 
 
-![Screenshot from 2024-02-28 12-44-05](https://github.com/mairin/taxonomy/assets/799683/ff8d33ba-d1fd-412c-99de-cd9de66886c2)
+![Screenshot from 2024-02-28 12-44-05](https://github.com/instruct-lab/taxonomy/assets/799683/2038e035-5400-4848-91fb-f575db35b565)
 
 Based on the directories that exist in the tree, make a best guess at where in the tree structure you feel the skill you have to contribute best fits. If you get to a point where you've gone deep enough into the tree and you can't find any directories that match, please feel free to create a new directory or a directory and subdirectories to best represent your skill.
 
 For example, I'd like to contribute a skill for creating puns. Puns are a specific type of joke. I started out in the writing directory of the tree, and saw two main directories there:
 
-![Screenshot from 2024-02-28 12-57-00](https://github.com/mairin/taxonomy/assets/799683/9370023e-9782-4497-977e-fca54b8fd9fe)
+![Screenshot from 2024-02-28 12-57-00](https://github.com/instruct-lab/taxonomy/assets/799683/2fab5b92-194a-491e-8a6f-f464a8e8f2f5)
 
 When I looked at the directories under freeform, I saw subdirectories such as brainstorming, debate, legal, poetry, prose, etc.:
 
-![Screenshot from 2024-02-28 12-57-35](https://github.com/mairin/taxonomy/assets/799683/18447e4a-2bbb-40cf-b90b-e95824ee1656)
+![Screenshot from 2024-02-28 12-57-35](https://github.com/instruct-lab/taxonomy/assets/799683/e52ea423-d86f-49a8-9229-b09418f1510b)
 
 When I looked under grounded, I saw subdirectories such as editing, meeting_insights, summarization/wiki_insights:
 
-![Screenshot from 2024-02-28 12-59-10](https://github.com/mairin/taxonomy/assets/799683/22be3188-bbc1-4c76-97d4-256de974593d)
+![Screenshot from 2024-02-28 12-59-10](https://github.com/instruct-lab/taxonomy/assets/799683/98370d70-d7e4-4595-a259-f6ffa4ef00fb)
 
 Puns seemed to fit best under the freeform directory, but I didn't think they fit under any of the pre-existing directories under freeform, so I created a jokes directory, then I created a puns directory under jokes. (I started with jokes as a directory, because I also have a knock-knock joke skill I'd like to create. 🙂)
 
@@ -513,7 +513,7 @@ It can be a little tricky mechanically to create directories in GitHub's web UI:
 
 Here's an animated graphic to show how it works:
 
-![screencast-directory-naming](https://github.com/mairin/taxonomy/assets/799683/706c3ddd-13fc-43c4-9cb6-e246ba0e009a)
+![screencast-directory-naming](https://github.com/instruct-lab/taxonomy/assets/799683/2cb2b031-52f6-46de-bfd9-c4eae82ec9d3)
 
 **TO BE CONTINUED**
 
