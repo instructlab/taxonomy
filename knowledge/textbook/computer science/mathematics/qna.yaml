@@ -1,0 +1,20 @@
+created_by: Abhi-B
+domain: mathematics
+seed_examples:
+- answer: In the context of a birth-death process, the fact that the probability of
+    a transition from one state to another is proportional to the current state means
+    that the rate of change of the population is directly proportional to the current
+    population size. This is a key characteristic of the birth-death process.
+  question: In the context of a birth-death process, what is the significance of the
+    fact that the probability of a transition from one state to another is proportional
+    to the current state?
+- answer: In a Markov Chain, a chain is said to be finite if it has a finite number
+    of states, and infinite if it has an infinite number of states. A finite Markov
+    Chain is often represented by a finite transition matrix, while an infinite Markov
+    Chain is represented by an infinite transition matrix.
+  question: What is the difference between a finite and an infinite Markov Chain?
+- answer: The row echelon form is an intermediate step in Gaussian elimination where
+    the matrix has zeros in the lower left triangle. This form makes it easier to
+    find solutions to the system of equations represented by the matrix.
+  question: What is the purpose of the row echelon form in Gaussian elimination?
+task_description: ''

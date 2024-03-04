@@ -1,0 +1,34 @@
+created_by: Abhi-B
+domain: assistive technology
+seed_examples:
+- answer: 'The Accessible Rich Internet Applications (ARIA) specification is a set
+    of attributes that can be added to HTML elements to improve the accessibility
+    of dynamic, interactive web content. ARIA provides a way to communicate the role,
+    state, and properties of these elements to assistive technologies, such as screen
+    readers, so that users with disabilities can better understand and interact with
+    them.
+
+
+    For example, ARIA can be used to define custom widgets, such as sliders or tabs,
+    that may not be natively supported by HTML. It can also be used to provide additional
+    context and information about elements, such as the current value of a progress
+    bar or the selected item in a list.
+
+
+    ARIA is an important tool for making complex, dynamic web content more accessible,
+    and is an essential part of WCAG 2.0 and other accessibility standards.'
+  question: What is the purpose of the "Accessible Rich Internet Applications" (ARIA)
+    specification in the context of web accessibility?
+- answer: Users may opt for free open-source screen readers like NVDA or Talkback
+    for web accessibility testing because they are often more affordable and accessible
+    to a wider audience, and they have been gaining users due to improvements in their
+    functionality.
+  question: What are some of the reasons why users may opt for free open-source screen
+    readers like NVDA or Talkback for web accessibility testing?
+- answer: The 'talk aloud protocol' is a method used in user testing to gather information
+    about a user's experience using a web content or application. It involves having
+    the user verbalize their thoughts, actions, and emotions as they complete tasks.
+    This method helps the observer understand the user's thought process and identify
+    any issues or difficulties they encounter during testing.
+  question: What is the purpose of the 'talk aloud protocol' in user testing?
+task_description: ''

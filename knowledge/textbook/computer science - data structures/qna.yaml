@@ -1,0 +1,27 @@
+created_by: Abhi-B
+domain: computer science - data structures
+seed_examples:
+- answer: The change of base formula used for computing logarithms in C is log(x)
+    / log(b), where x is the number, b is the base, and log is the natural logarithm
+    function.
+  question: What is the change of base formula used for computing logarithms in C?
+- answer: Stability in sorting algorithms refers to the property that the relative
+    order of equal elements is preserved during the sorting process. This is important
+    in some applications because it can affect the correctness and efficiency of subsequent
+    operations on the sorted data. The design of a comparator can affect the stability
+    of a sorting algorithm because the comparator determines how elements are compared
+    and ordered. If the comparator does not properly handle equal elements, the sorting
+    algorithm may not be stable. For example, if the comparator returns a random value
+    for equal elements, the sorting algorithm may produce different results on different
+    runs, which can be problematic for some applications.
+  question: Explain the concept of stability in sorting algorithms, and how it relates
+    to the design of a comparator.
+- answer: A deep copy of an array creates a new array and copies all the elements
+    from the original array to the new one. This is different from a shallow copy,
+    where only the references to the elements are copied, not the elements themselves.
+    A deep copy is useful when you want to modify the new array without affecting
+    the original one. To create a deep copy, you can iterate over the original array
+    and add each element to the new array one by one.
+  question: Describe the purpose and process of creating a deep copy of an array in
+    programming.
+task_description: ''

@@ -1,0 +1,48 @@
+created_by: Abhi-B
+domain: physics - relativity
+seed_examples:
+- answer: 'The simple cubic, body-centered cubic (BCC), and face-centered cubic (FCC)
+    are three different packing structures of solids.
+
+
+    In the simple cubic structure, each ion has six nearest neighbors and is located
+    at the corners of a cube.
+
+
+    The BCC structure has eight nearest neighbors and is formed by placing an ion
+    at the center of a cube in addition to the ions at the corners.
+
+
+    The FCC structure also has eight nearest neighbors and is formed by placing an
+    ion at the center of each face of a cube in addition to the ions at the corners.
+
+
+    These structures differ in terms of the number of nearest neighbors and the arrangement
+    of the ions in the solid. The choice of packing structure depends on the crystal
+    properties such as the size and shape of the ions and the repulsion constant.'
+  question: What is the difference between the simple cubic, body-centered cubic (BCC),
+    and face-centered cubic (FCC) packing structures of solids?
+- answer: "The time-independent Schr\xF6dinger equation is a simplified version of\
+    \ the time-dependent Schr\xF6dinger equation, obtained by separating the time\
+    \ and space variables in the wave function. The time-independent equation describes\
+    \ the stationary states of a quantum system, which are states with a constant\
+    \ energy. The time-dependent Schr\xF6dinger equation, on the other hand, describes\
+    \ the time evolution of a quantum system, taking into account the interactions\
+    \ between the system and its environment."
+  question: "What is the time-independent Schr\xF6dinger equation and how does it\
+    \ differ from the time-dependent Schr\xF6dinger equation?"
+- answer: "The momentum of a particle is inversely proportional to its de Broglie\
+    \ wavelength, according to the equation p = h/\u03BB, where p is the momentum\
+    \ of the particle, h is Planck's constant, and \u03BB is the de Broglie wavelength.\
+    \ This relationship is a consequence of the wave-particle duality of matter and\
+    \ is a fundamental assumption of quantum mechanics. The momentum of a particle\
+    \ can be calculated by dividing Planck's constant by its de Broglie wavelength.\
+    \ For example, if a particle has a de Broglie wavelength of 1 x 10^-10 m, its\
+    \ momentum would be (6.63 x 10^-34 J s) / (1 x 10^-10 m) = 6.63 x 10^-24 kg m/s.\
+    \ This relationship between the momentum and de Broglie wavelength of a particle\
+    \ is a key concept in quantum mechanics and has been confirmed by various experiments,\
+    \ such as electron diffraction and neutron diffraction."
+  question: What is the relationship between the momentum of a particle and its de
+    Broglie wavelength, and how is this relationship used to calculate the momentum
+    of a particle?
+task_description: ''

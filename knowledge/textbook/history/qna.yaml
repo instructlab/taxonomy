@@ -1,0 +1,46 @@
+created_by: Abhi-B
+domain: history
+seed_examples:
+- answer: Wealthy Safavid women raised their public stature by becoming patrons of
+    the arts and endowing public buildings. They often funded the construction or
+    maintenance of caravansaries, demonstrating the value of trade to both the state
+    and individual wealth. Safavid art and artistic production reflected Iran's location
+    at the center of global trade routes, incorporating elements and styles from countries
+    with which Iran conducted trade. The production of silk was one of the most important
+    industries in Iran, with Persian carpets of silk and wool being in high demand
+    in Europe and other parts of the Islamic world.
+  question: What were the roles of wealthy Safavid women in raising their public stature
+    and contributing to the arts and public buildings?
+- answer: 'b) To decide which European countries possessed different parts of Africa
+
+
+    Explanation:
+
+    The Berlin Conference of 1884-1885 was a meeting of European powers to divide
+    Africa into colonies and spheres of influence. This conference was a significant
+    event in the Scramble for Africa, as it established the rules for European colonization
+    of the continent.'
+  question: 'What was the purpose of the 1884-1885 Berlin Conference?
+
+
+    Options:
+
+    a) To punish France for its brutality toward West Africans
+
+    b) To decide which European countries possessed different parts of Africa
+
+    c) To conclude a peace treaty between Italy and Ethiopia
+
+    d) To carve out the industrialized nations'' spheres of influence in China'
+- answer: The art of the book, specifically illuminated manuscripts with miniature
+    paintings, was the most distinctive and prized artwork of the Safavid era. These
+    paintings were created using mineral-based dyes, which produced brilliant and
+    long-lasting colors. Wealthy patrons commissioned artists, like those in the studio
+    of Shah Tahmasp, to paint these miniatures either to illustrate books or to be
+    kept as a separate piece of art in an album of similar works. Safavid miniatures
+    are highly prized today, with some of the best examples selling for millions of
+    dollars at auction.
+  question: How did the art of the book, specifically illuminated manuscripts with
+    miniature paintings, develop and evolve in the Safavid era, and what was the significance
+    of these artworks?
+task_description: ''

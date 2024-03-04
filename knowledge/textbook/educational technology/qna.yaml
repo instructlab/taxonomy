@@ -1,0 +1,23 @@
+created_by: Abhi-B
+domain: educational technology
+seed_examples:
+- answer: The verb 'To Be' is used to describe various characteristics of the subject,
+    including age, price, size, shape, color, and nationality.
+  question: What are the characteristics of the subject that the verb 'To Be' is used
+    to describe?
+- answer: 'The Learning Objectives for the ''Multipage Organization'' section are:
+
+    1. Understanding the concept of multipage organization in educational technology.
+
+    2. Identifying the advantages and disadvantages of structuring content as pages.
+
+    3. Recognizing the importance of making structuring decisions up front when using
+    multipage organization.'
+  question: What are the Learning Objectives for the 'Multipage Organization' section
+    in this chapter?
+- answer: 'The short forms of the verb ''To Be'' for the subjects ''I'', ''You'',
+    ''He'', and ''She'' are: ''I'' is ''I''m'', ''You'' is ''You''re'', ''He'' is
+    ''He''s'', and ''She'' is ''She''s''.'
+  question: What are the short forms of the verb 'To Be' for the subjects 'I', 'You',
+    'He', and 'She'?
+task_description: ''
