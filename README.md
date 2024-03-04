@@ -474,3 +474,14 @@ Below is an illustrative directory structure to show this layout:
                 └── one_line
                     └── qna.yaml
 ```
+
+### How should I contribute?
+
+For additional information on how to make a contribution, please, consult the 
+[documentation on contributing](CONTRIBUTING.md).
+
+### Why should I contribute?
+
+This taxonomy repository will be used as the seed to synthesize the training
+data for InstructLab-trained models. We intend to re-train the model(s) using the main
+branch as often as possible (at least weekly). This enables fast iteration of the model(s), for the benefit of the open source community, in particular to enable model developers who do not have access to the necessary compute infrastructure.
