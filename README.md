@@ -194,10 +194,8 @@ task_description: |
 
 ### Knowledge
 
----
 ⚠️ **Note:** We are not currently accepting knowledge contributions, but we 
 will open this up in the future!
----
 
 Meanwhile, knowledge is based more on answering questions that involve facts,
 data, or references.
