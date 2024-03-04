@@ -319,7 +319,7 @@ referenced above might look like in the tree:
 [...]
 ```
 
-## YAML Formatting
+## YAML Format
 
 Taxonomy skill files can be any valid [YAML](https://yaml.org/) file ending in
 `.yaml` containing a collection of key/value entries in which the two recognized
@@ -329,10 +329,10 @@ both the question and answer specified. Other keys are currently ignored.
 If you have not written YAML before, don't be intimidated - it's just text. 
 There's a few things to know:
 
-- Spaces and identation matter in YAML. Two spaces to indent.
+- Spaces and indentation matter in YAML. Two spaces to indent.
 - Don't use tabs!
 - Be careful to not have trailing spaces at the end of a line.
-- The line for the "answer:" key should start with a "-", but the other keys
+- The line for the `answer` key should start with a "-", but the other keys
   should not have this "-".
 - Some special characters such as " and ' need to be "escaped." This is why some
   of the lines for keys in the example YAML we provided have the "|" character.
