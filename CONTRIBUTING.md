@@ -2,7 +2,7 @@
 
 👍🎉 First off, thank you for taking the time to contribute! 🎉👍
 
-The following is a set of guidelines for contributing. These are just guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request. Please read the [community contribution guide](https://github.com/open-labrador/community/blob/main/CONTRIBUTING.md) first for general practices for the Labrador community.
+The following is a set of guidelines for contributing. These are just guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request. Please read the [community contribution guide](https://github.com/instruct-lab/community/blob/main/CONTRIBUTING.md) first for general practices for the InstructLab community.
 
 ## What Should I Know Before I Get Started?
 
@@ -20,17 +20,17 @@ Help on open source projects is always welcome and there is always something tha
 
 ## How Can I Contribute?
 
-The whole point of Labrador 🐶 is to enable true collaborative development around common Large Language Models (LLMs.) using a technology that enables collaboration following standard open source development practices.
+The whole point of InstructLab 🥼 is to enable true collaborative development around common Large Language Models (LLMs.) using a technology that enables collaboration following standard open source development practices.
 
 So, the general gist of making a contribution to this project consists of writing an extension to the existing taxonomy, make a pull request, and your work will be reviewed and merged so that it can benefit the whole community.
 
-If you're planning on making a large addition or if you find a problem with the existing taxonomy, it's best to [write an issue](https://github.com/open-labrador/cli/issues/new?assignees=&labels=&template=feature_request.md&title=) first to discuss it with maintainers.
+If you're planning on making a large addition or if you find a problem with the existing taxonomy, it's best to [write an issue](https://github.com/instruct-lab/cli/issues/new?assignees=&labels=&template=feature_request.md&title=) first to discuss it with maintainers.
 
 To contribute to this repo, you'll use the Fork and Pull model common in many open source repositories. For details on this process, check out [The GitHub Workflow
 Guide](https://github.com/kubernetes/community/blob/master/contributors/guide/github-workflow.md)
 from Kubernetes.
 
-For contributions to Labrador 🐶, you will want to become familiar with the workflow described in the [How to use Labrador 🐶 CLI `lab`](https://github.com/open-labrador/cli?tab=readme-ov-file#how-to-use-lab) documentation. In particular, you need to understand how to test your changes going through the steps to generate new data, training and downloading the new model, and testing it to check that it gives you the desired results.
+For contributions to InstructLab 🥼, you will want to become familiar with the workflow described in the [How to use InstructLab 🥼 CLI `lab`](https://github.com/instruct-lab/cli?tab=readme-ov-file#how-to-use-lab) documentation. In particular, you need to understand how to test your changes going through the steps to generate new data, training and downloading the new model, and testing it to check that it gives you the desired results.
 
 When your contribution is ready, you can create a pull request. Pull requests are often referred to as "PR". In general, we follow the standard [GitHub pull request](https://help.github.com/en/articles/about-pull-requests) process. Follow the template to provide details about your pull request to the maintainers.
 
@@ -63,7 +63,7 @@ This section guides you through submitting a bug report. Following these guideli
 
 #### How Do I Submit A (Good) Bug Report?
 
-Bugs are tracked as [GitHub issues using the Bug Report template](https://github.com/open-labrador/taxonomy/issues/new?assignees=&labels=&template=bug_report.md&title=). Create an issue on that and provide the information suggested in the bug report issue template.
+Bugs are tracked as [GitHub issues using the Bug Report template](https://github.com/instruct-lab/taxonomy/issues/new?assignees=&labels=&template=bug_report.md&title=). Create an issue on that and provide the information suggested in the bug report issue template.
 
 ### Suggesting Enhancements
 
@@ -71,12 +71,12 @@ This section guides you through submitting an enhancement suggestion, including 
 
 #### How Do I Submit A (Good) Enhancement Suggestion?
 
-Enhancement suggestions are tracked as [GitHub issues using the Feature Request template](https://github.com/open-labrador/taxonomy/issues/new?assignees=&labels=&template=feature_request.md&title=). Create an issue and provide the information suggested in the feature requests or user story issue template.
+Enhancement suggestions are tracked as [GitHub issues using the Feature Request template](https://github.com/instruct-lab/taxonomy/issues/new?assignees=&labels=&template=feature_request.md&title=). Create an issue and provide the information suggested in the feature requests or user story issue template.
 
 #### How Do I Submit A (Good) Improvement Item?
 
-Improvements to existing functionality are tracked as [GitHub issues using the User Story template](https://github.com/open-labrador/Taxonomy/issues/new?assignees=&labels=&template=user_story.md&title=). Create an issue and provide the information suggested in the feature requests or user story issue template.
+Improvements to existing functionality are tracked as [GitHub issues using the User Story template](https://github.com/instruct-lab/Taxonomy/issues/new?assignees=&labels=&template=user_story.md&title=). Create an issue and provide the information suggested in the feature requests or user story issue template.
 
 ## Development
 
-Please consult the [CLI documentation](https://github.com/open-labrador/cli) to set up your environment.
+Please consult the [CLI documentation](https://github.com/instruct-lab/cli) to set up your environment.
