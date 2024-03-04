@@ -20,7 +20,7 @@ Help on open source projects is always welcome and there is always something tha
 
 ## How Can I Contribute?
 
-The whole point of InstructLab 🐶 is to enable true collaborative development around common Large Language Models (LLMs.) using a technology that enables collaboration following standard open source development practices.
+The whole point of InstructLab 🥼 is to enable true collaborative development around common Large Language Models (LLMs.) using a technology that enables collaboration following standard open source development practices.
 
 So, the general gist of making a contribution to this project consists of writing an extension to the existing taxonomy, make a pull request, and your work will be reviewed and merged so that it can benefit the whole community.
 
@@ -30,7 +30,7 @@ To contribute to this repo, you'll use the Fork and Pull model common in many op
 Guide](https://github.com/kubernetes/community/blob/master/contributors/guide/github-workflow.md)
 from Kubernetes.
 
-For contributions to InstructLab 🐶, you will want to become familiar with the workflow described in the [How to use InstructLab 🐶 CLI `lab`](https://github.com/instruct-lab/cli?tab=readme-ov-file#how-to-use-lab) documentation. In particular, you need to understand how to test your changes going through the steps to generate new data, training and downloading the new model, and testing it to check that it gives you the desired results.
+For contributions to InstructLab 🥼, you will want to become familiar with the workflow described in the [How to use InstructLab 🥼 CLI `lab`](https://github.com/instruct-lab/cli?tab=readme-ov-file#how-to-use-lab) documentation. In particular, you need to understand how to test your changes going through the steps to generate new data, training and downloading the new model, and testing it to check that it gives you the desired results.
 
 When your contribution is ready, you can create a pull request. Pull requests are often referred to as "PR". In general, we follow the standard [GitHub pull request](https://help.github.com/en/articles/about-pull-requests) process. Follow the template to provide details about your pull request to the maintainers.
 

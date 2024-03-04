@@ -1,7 +1,7 @@
-# InstructLab 🐶 (LAB) Taxonomy
+# InstructLab 🥼 (LAB) Taxonomy
 
-InstructLab 🐶 uses a novel synthetic data-based alignment tuning method for
-Large Language Models (LLMs.) The "**lab**" in Instruct**Lab** 🐶 stands for
+InstructLab 🥼 uses a novel synthetic data-based alignment tuning method for
+Large Language Models (LLMs.) The "**lab**" in Instruct**Lab** 🥼 stands for
 **L**arge-scale **A**lignment for Chat **B**ots.
 
 The LAB method is driven by taxonomies, which are largely created manually and
@@ -514,7 +514,7 @@ Here's an animated graphic to show how it works:
 ### Why should I contribute?
 
 For additional information on how to make a contribution, please, consult the 
-[contributing documentation](CONTRIBUTING.md).
+[documentation on contributing](CONTRIBUTING.md).
 
 ### Why should I contribute?
 
