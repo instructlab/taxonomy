@@ -13,17 +13,7 @@ method.
 
 The top-level categories are:
 
-1. **Knowledge**:
-
-    Knowledge consists of data and facts and is backed by documents. When you
-    create knowledge for a model, you're giving it additional data to more
-    accurately answer questions.
-2. **Compositional Skills**:
-
-    Skills are performative. When you create a skill for the model, you're
-    teaching it how to do something: "write me a song," "talk like a pirate,"
-    "summarize an email."
-3. **Core Skills**:
+1. **Core Skills**:
 
     Core skills are foundational skills like math, reasoning, and coding.
 
@@ -31,15 +21,46 @@ The top-level categories are:
     are not contributable to the tree. So when you see reference to contributing
     "skills" to the taxonomy from this point forward, it is **compositional
     skills** that are being referenced.
+2. **Knowledge**:
 
-<a name="k-vs-s"></a>
+    Knowledge consists of data and facts and is backed by documents. When you
+    create knowledge for a model, you're giving it additional data to more
+    accurately answer questions.
+3. **Compositional Skills**:
 
-## Knowledge vs. Skills
+    Skills are performative. When you create a skill for the model, you're
+    teaching it how to do something: "write me a song," "talk like a pirate,"
+    "summarize an email."
 
-You can contribute both **knowledge** and **skills** to the Taxonomy. What is
-the difference?
+There are two types of compositional skills:
 
-### Skills
+1. **Freeform Compositional Skills**:
+
+     Freeform compositional skills are performative and do **not** require
+     additional context. An example of a compositional skill is "talk like a
+     pirate." You could provide examples of "pirate-like" speech. By providing
+     those examples, you're essentially tickling the latent knowledge of the
+     LLM. In our "talk like a pirate" example, you're enabling the LLM to be
+     able to recall pirate-like speechs in its latent knowledge.
+      
+2. **Grounded Compositional Skills**:
+
+     Grounded skills are performative and **do** require additional context. An
+     example of a grounded skill would be to read the value of a cell in a table
+     layout, or to parse a JSON file. To create a grounded skill to read a 
+     markdown formatted table layout, the additional context could be an example
+     table layout. This additional context is including in the YAML for the
+     skill and not external to it. 
+
+     🗒️ **Note:** The content of the table layout will not be used in training
+     or aligning the model; only the table layout format itself will be used.
+
+## Compositional Skills vs. Knowledge
+
+You can contribute both **compositional skills** (and in the future, 
+**knowledge**) to the Taxonomy. What is the difference?
+
+### Compositional Skills
 
 Again, think of skills as "performative." You're teaching the model how to
 **do** something when you contribute a skill.
@@ -50,11 +71,12 @@ contribution to the taxonomy tree can be just a few lines of YAML (its
 
 #### Freeform compositional skill: YAML example
 
+This example assumes the GitHub username `mairin`:
+
 ``` yaml
----
 created_by: mairin # Use your GitHub username; only one creator supported
 seed_examples:
-  - answer: |
+  - answer: |  # The | is needed to escape characters like ` or '
       Why do birds eat wood?
       
       Because they're peckish!
@@ -74,7 +96,8 @@ seed_examples:
 
       Nothing. It just waved!
     question: Tell me a pun about waves.
-task_description: The pun task enables the telling of funny pun-based jokes.
+task_description: |
+  The pun task enables the telling of funny pun-based jokes.
 ```
 
 Seriously, that's it.
@@ -102,7 +125,79 @@ in terms of a taxonomy contribution:
 [...]
 ```
 
+#### Grounded compositionial skill: YAML example
+
+Remember that grounded compositional skills require additional context
+
+This example assumes the GitHub username `mairin`:
+
+```
+created_by: mairin # Use your GitHub username; only one creator supported
+seed_examples:
+  - answer: |
+      The breed with the most energy is the Labrador.
+    context: 
+      | **Breed**      | **Size**     | **Barking** | **Energy** |
+      |----------------|--------------|-------------|------------|
+      | Afghan Hound   | 25-27 in     | 3/5         | 4/5        |
+      | Labrador       | 22.5-24.5 in | 3/5         | 5/5        |
+      | Cocker Spaniel | 14.5-15.5 in | 3/5         | 4/5        |
+      | Poodle (Toy)   | <= 10 in     | 4/5         | 4/5        |
+    question: |
+      Which breed has the most energy?
+  - answer: |
+      Gráinne's letter is B and her color is red.
+    context:
+      | **Name** | **Date** | **Color** | **Letter** | **Number** |
+      |----------|----------|-----------|------------|------------|
+      | George   | Mar 5    | Green     | A          | 1          |
+      | Gráinne  | Dec 31   | Red       | B          | 2          |
+      | Abigail  | Jan 17   | Yellow    | C          | 3          |
+      | Bhavna   | Apr 29   | Purple    | D          | 4          |
+      | Rémy     | Sep 9    | Blue      | E          | 5          |
+    question: |
+      What is Gráinne's letter and what is her color?
+  - answer: |
+      The blueberry is blue, small, and has no peel.
+    context:
+      | Banana | Apple      | Blueberry | Strawberry |
+      |--------|------------|-----------|------------|
+      | Yellow | Red, Green | Blue      | Red        |
+      | Large  | Medium     | Small     | Small      |
+      | Peel   | Peel       | No peel   | No peel    |
+    question: |
+      Which fruit is blue, small, and has no peel?
+task_description: | 
+    This skill provides the ability to read a markdown-formatted table.
+```
+
+#### Grounded compositional skill: Directory tree example
+
+``` ascii
+[...]
+
+└── extraction
+    └── inference
+    |   └── qualitative
+    |   |    ├── sentiment
+    |   |    |    └── qna.yaml
+    |   |    └── tone_and_style
+    |   |         └── qna.yaml
+    │   ├── quantitative
+    │   │   ├── markdown_table <=== here it is :)
+    │   |   |    └── qna.yaml
+    │   │   ├── word_frequency
+    │   │   │   └── qna.yaml
+
+[...]
+```
+
 ### Knowledge
+
+---
+⚠️ **Note:** We are not currently accepting knowledge contributions, but we 
+will open this up in the future!
+---
 
 Meanwhile, knowledge is based more on answering questions that involve facts,
 data, or references.
@@ -143,7 +238,8 @@ seed_examples:
       which would make that the most recently-released album of the set at that 
       time.
     # You can reference multiple documents with comma separation on one line.
-    context: knowledge_documents/ts-discography-2024.md, 
+    context: |
+      knowledge_documents/ts-discography-2024.md, 
       knowledge_documents/ts-news-2024.md
     question: |
       Which album was released more recently, Reputation or Midnights?
