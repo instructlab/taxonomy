@@ -319,12 +319,53 @@ referenced above might look like in the tree:
 [...]
 ```
 
-## Formatting
+## YAML Format
 
 Taxonomy skill files can be any valid [YAML](https://yaml.org/) file ending in
-`.yaml` containing a collection of key/value entries in which the two recognized
-keys are: `question` and `answer`. For an entry to be valid, it **MUST** have
-both the question and answer specified. Other keys are currently ignored.
+`.yaml` containing a set of key/value entries, in which the following three
+keys are recognized: `created_by`, `seed_examples`, and `task_description`.
+
+* The value of the `created_by` key can be any string.
+* The value of the `seed_examples` key is a collection of one or more key/value entries in which the
+two recognized keys are: `question` and `answer`, each of which can have any string
+as value. For an entry to be valid, it **MUST** have both the question and answer specified. 
+* The value of the `task_description` key is currently ignored and left empty.
+
+Other keys at any level are currently ignored.
+
+So in essence the format looks something like this:
+
+```
+created_by: <string>
+seed_examples:
+   - answer: <string>
+     question: <string>
+   - answer: <string>
+     question: <string>
+   ...  
+task_description: 
+```
+
+
+If you have not written YAML before, don't be intimidated - it's just text. 
+There's a few things to know:
+
+- Spaces and indentation matter in YAML. Two spaces to indent.
+- Don't use tabs!
+- Be careful to not have trailing spaces at the end of a line.
+- The line for the `answer` key should start with a "-", but the other keys
+  should not have this "-".
+- Some special characters such as " and ' need to be "escaped." This is why some
+  of the lines for keys in the example YAML we provided have the "|" character.
+  This character escapes all of the special characters in the value for the key.
+
+It is recommended that you **lint**, or check that the YAML is correct using a
+tool. There is a very nice website you can use to do this:
+
+[yamllint.com](https://yamllint.com)
+
+You can copy/paste your YAML into the box and click the "Go" button to have it
+analyse your YAML and make recommendations.
 
 ## Layout
 
