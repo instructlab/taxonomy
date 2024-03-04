@@ -43,9 +43,6 @@ Skills triagers should review open pull requests to the taxonomy repo looking to
 		* Provide examples of model response is too short and neglected reasoning details. For example: A logical question requires multi-step reasoning to reach to the final answer. The submitted model response only gives the final answer. 
 		* Uninformative examples. For example, not all examples match the skill requested; Or the user didn’t put three independent question/answer pairs for the skill, but mistakenly submitted three chat turns for the three questions/answer pairs. Or overly repetitive examples which do not help to clear define of the requested skill. 
 		* Missing examples: didn’t provide desired model response for the skill. 
-		* Need clarification from Kate
-			* ~[\#72](https://airtable.com/appmwxXCurh6B4on2/tblv0dKl3LtNvq0Dy/viwA2knaFDbgOACaV/rec9nbO1uzWjHu17b?blocks=hide)~: This looks like the expectation for model to know up-to-date fact (current currency conversion rate). 
-			* ~[\#11](https://airtable.com/appmwxXCurh6B4on2/tblv0dKl3LtNvq0Dy/viwA2knaFDbgOACaV/rechobaH1J4drfoo4?blocks=hide)~: Not able to extract the right Json format is not a skill gap? 
 			* *If it can do the primary task, but it misses some minor instruction, then reject the PR but save the data for later analysis* ← Hui: does this mean that the model already has the skill? 
 			* *It can do the task by minor style or opinion details.* ← Hui: does this mean that the model already has the skill? 
 			* *Wrong skill type (e.g. pure Math, code);* ← Hui: do we still reject all submission for math and code? 
