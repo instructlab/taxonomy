@@ -135,12 +135,12 @@ This example assumes the GitHub username `mairin`:
 created_by: mairin # Use your GitHub username; only one creator supported
 seed_examples:
   - answer: |
-      The breed with the most energy is the Labrador.
+      The breed with the most energy is the InstructLab.
     context: 
       | **Breed**      | **Size**     | **Barking** | **Energy** |
       |----------------|--------------|-------------|------------|
       | Afghan Hound   | 25-27 in     | 3/5         | 4/5        |
-      | Labrador       | 22.5-24.5 in | 3/5         | 5/5        |
+      | InstructLab    | 22.5-24.5 in | 3/5         | 5/5        |
       | Cocker Spaniel | 14.5-15.5 in | 3/5         | 4/5        |
       | Poodle (Toy)   | <= 10 in     | 4/5         | 4/5        |
     question: |
@@ -437,7 +437,7 @@ Below is an illustrative directory structure to show this layout:
 
 The ability to contribute to a large language model (LLM) has been difficult in no small part because it is difficult to get access to the necessary compute infrastructure.
 
-This taxonomy repository will be used as the seed to synthesize the training data for Labrador-trained models. We intend to re-train the model(s) using the main branch following Labrador's progressive training on a nightly basis. This enables fast iteration of the model(s), for the benefit of the open source community. 
+This taxonomy repository will be used as the seed to synthesize the training data for InstructLab-trained models. We intend to re-train the model(s) using the main branch following InstructLab's progressive training on a nightly basis. This enables fast iteration of the model(s), for the benefit of the open source community. 
 
 By contributing your skills and knowledge to this repository, you will see your changes built into an LLM within days of your contribution rather than months or years! If you are working with a model and notice its knowledge or ability lacking, you could correct it by contributing knowledge or skills and check if it's improved once your changes are built in a nightly build.
 
@@ -461,7 +461,7 @@ You can contribute to the taxonomy in the following two ways:
 
 #### Make a copy of the taxonomy repo
 
-1. Go to [github.com/open-labrador/taxonomy](github.com/open-labrador/taxonomy)
+1. Go to [github.com/instruct-lab/taxonomy](github.com/instruct-lab/taxonomy)
 2. Press the Fork button in the upper right:
    ![fork-button](https://github.com/instruct-lab/taxonomy/assets/799683/8487bff2-425e-483c-b27c-ef03da1c57a8)
 3. On the "Create a new fork" form:
