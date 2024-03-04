@@ -166,6 +166,6 @@ Enhancement suggestions are tracked as [GitHub issues using the Feature Request 
 
 Improvements to existing functionality are tracked as [GitHub issues using the User Story template](https://github.com/instruct-lab/Taxonomy/issues/new?assignees=&labels=&template=user_story.md&title=). Create an issue and provide the information suggested in the feature requests or user story issue template.
 
-## Development.
+## Development
 
 Please consult the [CLI documentation](https://github.com/instruct-lab/cli) to set up your environment.
