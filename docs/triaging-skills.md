@@ -23,6 +23,8 @@ Skills triagers should review open pull requests to the taxonomy repo looking to
 - Triager is generally not sure
 - Safety tasks and skills should always be escalated to Akash’s team
 - Super interesting, warrants further study
+
+## Notes from Skills100 review
 1. Quick review, throw out people who didn’t follow instructions (PR Wrangling)
 1. Deeper review, taking notes and making minor edits as needed. Potential places that a PR can be triaged into: (PR Ting)
 	* Generation seeds (success!!)
