@@ -1,0 +1,55 @@
+created_by: pridolfi
+seed_examples:
+- answer: |
+    Antigua and Barbuda
+    Argentina
+    Aruba
+    Bahamas
+    Barbados
+    Belize
+    Bermuda
+    Bolivia
+    Brazil
+    Canada
+    Cayman Islands
+    Chile
+    Colombia
+    Costa Rica
+    Cuba
+    Curacao
+    Dominica
+    Dominican Republic
+    Ecuador
+    El Salvador
+    Grenada
+    Guatemala
+    Guyana
+    Haiti
+    Honduras
+    Jamaica
+    Mexico
+    Nicaragua
+    Panama
+    Paraguay
+    Peru
+    Puerto Rico
+    Saint Kitts and Nevis
+    Saint Lucia
+    Saint Vincent and the Grenadines
+    Suriname
+    Trinidad and Tobago
+    Turks and Caicos Islands
+    United States
+    Uruguay
+    Venezuela
+  context: |
+    American countries: Jamaica, Bahamas, Cuba, Cayman Islands,
+    El Salvador, Honduras, Puerto Rico, Turks and Caicos Islands, Belize,
+    Uruguay, Saint Kitts and Nevis, Nicaragua, Guatemala, Aruba, Venezuela,
+    Saint Vincent and the Grenadines, Panama, United States, Guyana, Colombia,
+    Dominica, Peru, Grenada, Mexico, Trinidad and Tobago, Ecuador, Chile,
+    Haiti, Suriname, Bolivia, Barbados, Bermuda, Dominican Republic,
+    Saint Lucia, Canada, Antigua and Barbuda, Paraguay, Curacao, Argentina, 
+    Costa Rica, Brazil
+  question: Sort the american countries alphabetically. List them one country per line.
+task_description: ''
