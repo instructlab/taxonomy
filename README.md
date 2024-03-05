@@ -551,8 +551,6 @@ Here's an animated graphic to show how it works:
 
 **TO BE CONTINUED**
 
-### Why should I contribute?
-
 For additional information on how to make a contribution, please, consult the 
 [documentation on contributing](CONTRIBUTING.md).
 
