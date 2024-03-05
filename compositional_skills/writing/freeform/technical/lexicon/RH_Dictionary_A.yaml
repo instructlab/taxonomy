@@ -1,0 +1,181 @@
+created_by: emmahone
+seed_examples:
+- answer: "Aerospace & Defense OR Term used by NAPS (N. America Public Sector) teams talking about this customer segment."
+  question: What is 'A&D'?
+- answer: "	Assets & Integration"
+  question: What is 'A&I'?
+- answer: "Automation Adoption Journey"
+  question: What is 'AAJ'?
+- answer: "Ansible Automation Platform"
+  question: What is 'AAP'?
+- answer: "The 64-bit ARMv8 CPU architecture. See http://fedoraproject.org/wiki/Architectures/ARM/AArch64"
+  question: What is 'AArch64'?
+- answer: "Account Based Developer Onboarding"
+  question: What is 'ABDO'?
+- answer: "Account Based Marketing"
+  question: What is 'ABM'?
+- answer: "Advanced Business Partner"
+  question: What is 'ABP'?
+- answer: "Automatic Bug Reporting Tool"
+  question: What is 'ABRT'?
+- answer: "Air Conditioning OR Acceptance Criteria (synonym: Definition of Done (DoD))"
+  question: What is 'AC'?
+- answer: "Active Customer Escalation"
+  question: What is 'ACE'?
+- answer: "Red Hat Enterprise Linux Application Compatibility Guide"
+  question: What is 'ACG'?
+- answer: "Account Growth"
+  question: What is 'ACGR'?
+- answer: "Agile and Continuous Improvement"
+  question: What is 'ACI'?
+- answer: "Short for "Acknowledge" - not an acronym. Used to convey "message received", or "go", or "yes"."
+  question: What is 'ACK'?
+- answer: "Approved Components List (Base OS Engineering) OR Access Control List (everywhere else)"
+  question: What is 'ACL'?
+- answer: "Advanced Cluster Management"
+  question: What is 'ACM'?
+- answer: "Automatic Certificate Management Environment"
+  question: What is 'ACME'?
+- answer: "Advanced Communications Services OR Advanced Cluster Security (FKA StackRox)"
+  question: What is 'ACS'?
+- answer: "Advanced Cluster Security Cloud Service"
+  question: What is 'ACSCS'?
+- answer: "APAC Discovery Center"
+  question: What is 'ADC'?
+- answer: "Automation Domain Expert"
+  question: What is 'ADE'?
+- answer: "Azure DevOps"
+  question: What is 'ADO'?
+- answer: "Architecture Design Review"
+  question: What is 'ADR'?
+- answer: "Application Deployment specialist SA"
+  question: What is 'ADSA'?
+- answer: "Account Executive"
+  question: What is 'AE'?
+- answer: "Ansible execution environments"
+  question: What is 'AEE'?
+- answer: "Automated External Defibrillator"
+  question: What is 'AED'?
+- answer: "Advanced Electronic Signature"
+  question: What is 'AES'?
+- answer: "As Far As I am Aware"
+  question: What is 'AFAIA'?
+- answer: "As Far As I Know"
+  question: What is 'AFAIK'?
+- answer: "Away From Keyboard"
+  question: What is 'AFK'?
+- answer: "Automatic File Replication"
+  question: What is 'AFR'?
+- answer: "Accelerated Growth Emerging markets"
+  question: What is 'AGE'?
+- answer: "Action Item OR Artificial Intelligence (different to A&I) OR Assisted Installer"
+  question: What is 'AI'?
+- answer: "Automatic Issue Resolution"
+  question: What is 'AIR'?
+- answer: "Advanced Interactive Executive OR AIX also is IBM's UNIX"
+  question: What is 'AIX'?
+- answer: "As I understand it"
+  question: What is 'AIUI'?
+- answer: "Also known as"
+  question: What is 'AKA'?
+- answer: "Azure Kubernetes Service"
+  question: What is 'AKS'?
+- answer: "Accelerated Leadership Development Program"
+  question: What is 'ALDP'?
+- answer: "APAC Leadership Expansion Program"
+  question: What is 'ALEP'?
+- answer: "Application Load Balancer"
+  question: What is 'ALB'?
+- answer: "Application Lifecycle Management"
+  question: What is 'ALM'?
+- answer: "Austria and Switzerland Region"
+  question: What is 'ALPS'?
+- answer: "Account Manager (formally known as Marketing Resource Manager or MRM)"
+  question: What is 'AM'?
+- answer: "Ask Me Anything"
+  question: What is 'AMA'?
+- answer: "Advanced Mission Critical"
+  question: What is 'AMC'?
+- answer: "Amazon Machine Image"
+  question: What is 'AMI'?
+- answer: "Anti-Money Laundering"
+  question: What is 'AML'?
+- answer: "Active Messaging Queue"
+  question: What is 'AMQ'?
+- answer: "Aspiring Manager Program (Red Hat University) OR Async Message Persister"
+  question: What is 'AMP'?
+- answer: "Amazon Managed Red Hat OpenShift "
+  question: What is 'AMRO'?
+- answer: "Australia and New Zealand"
+  question: What is 'ANZ'?
+- answer: "Application Delivery Services"
+  question: What is 'ADS'?
+- answer: "Ansible on Clouds"
+  question: What is 'AOC'?
+- answer: "Atomic OpenShift"
+  question: What is 'AOS'?
+- answer: "APAC Office of Technology"
+  question: What is 'AOT'?
+- answer: "Accounts Payable"
+  question: What is 'AP'?
+- answer: "Application Portfolio Assessment"
+  question: What is 'APA'?
+- answer: "Asia-Pacific (region)"
+  question: What is 'APAC'?
+- answer: "Accounts Payable - Asia Pacific"
+  question: What is 'AP-APAC'?
+- answer: "Application Programming Interface"
+  question: What is 'API'?
+- answer: "American Productivity & Quality Center"
+  question: What is 'APQC'?
+- answer: "Application Platform Support"
+  question: What is 'APS'?
+- answer: "Advanced Persistent Threat"
+  question: What is 'APT'?
+- answer: "Accounts Receivable OR Analyst Relations"
+  question: What is 'AR'?
+- answer: "Audit, Research Consulting OR PSSC program, replaces PACC"
+  question: What is 'ARC'?
+- answer: "Addition (cross-sell), Retention (churn), Expansion (upsell), and New (net new customer logo)"
+  question: What is 'AREN'?
+- answer: "Always Ready Kernel"
+  question: What is 'ARK'?
+- answer: "See 'AArch64'. 'arm64' is the name Debian uses for the same architecture."
+  question: What is 'arm64'?
+- answer: "Azure Red Hat OpenShift"
+  question: What is 'ARO'?
+- answer: "Annual Recurring Revenue - a key metric used by SaaS or subscription businesses that have term subscription agreements, meaning there is a defined contract length. OR Accounting Rate of Return - a formula that reflects the percentage rate of return expected on an investment or asset, compared to the initial investment's cost. ARR = Initial Investment/Average Annual Profit OR Always Ready RHEL"
+  question: What is 'ARR'?
+- answer: "ART - Automated Release Tooling - Openshift team working on automating release processes (OpenShift Automated Release Tooling (ART) Team)"
+  question: What is 'ART'?
+- answer: "Application server"
+  question: What is 'AS'?
+- answer: "Application Systems Control and Auditability"
+  question: What is 'ASCA'?
+- answer: "Association of Southeast Asian Nations"
+  question: What is 'ASEAN'?
+- answer: "Automatic Storage Management"
+  question: What is 'ASM'?
+- answer: "All Target Bonus"
+  question: What is 'ATB'?
+- answer: "Account Technical Leader"
+  question: What is 'ATL'?
+- answer: "At The Moment"
+  question: What is 'ATM'?
+- answer: "Authorization To Operate (sometimes mistakenly called Authority to Operate)"
+  question: What is 'ATO'?
+- answer: "Advanced Training Partner"
+  question: What is 'ATP'?
+- answer: "Approved Target Release (RHEL 8 z-stream process)"
+  question: What is 'ATR'?
+- answer: "Authorization to Test"
+  question: What is 'ATT'?
+- answer: "Access Vector Circle"
+  question: What is 'AVC'?
+- answer: "Analytics Working Group"
+  question: What is 'AWG'?
+- answer: "Amazon Web Services"
+  question: What is 'AWS'?
+- answer: "Ansible WorX"
+  question: What is 'AWX'?
+task_description: ''
