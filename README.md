@@ -239,8 +239,8 @@ seed_examples:
   - answer: |
       The song "You Need to Calm Down" appears on Taylor Swift's 2019 album 
       Lover as track 14.
-    - question: |
-        Which album has the song "You Need to Calm Down?"
+    question: |
+      Which album has the song "You Need to Calm Down?"
 task_description: |
   Knowledge about Taylor Swift's music.
 ```
