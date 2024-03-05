@@ -1,9 +1,10 @@
+---
 created_by: shivsr
 seed_examples:
-- answer: 'Crimson leaf adrift,
+  - answer: 'Crimson leaf adrift,
 
-    Dancing on a cool fall breeze,
+      Dancing on a cool fall breeze,
 
-    Nature''s art takes flight.'
-  question: Write a haiku that captures the beauty of a single autumn leaf.
+      Nature''s art takes flight.'
+    question: Write a haiku that captures the beauty of a single autumn leaf.
 task_description: ''

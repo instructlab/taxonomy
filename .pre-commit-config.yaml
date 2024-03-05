@@ -1,5 +1,4 @@
 ---
-exclude: "index.json|^themes/"
 fail_fast: true
 repos:
   - hooks:
@@ -47,7 +46,7 @@ repos:
       - id: forbid-new-submodules
       - args:
           - --branch
-          - gh-pages
+          - main
         id: no-commit-to-branch
       - id: requirements-txt-fixer
       - id: sort-simple-yaml

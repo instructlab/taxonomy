@@ -2,7 +2,6 @@ If your PR is related to a contribution to the taxonomy, please, fill
 out the following questionaire. If not, replace this whole text and the
 following questionaire with whatever information is applicable to your PR.
 
-
 **Describe the contribution to the taxonomy**
 
 <!-- A concise description of what the contribution brings, replace "..." in the bullet list -->
@@ -10,7 +9,6 @@ following questionaire with whatever information is applicable to your PR.
 - ...
 - ...
 - ...
-
 
 **Input given at the prompt**
 
@@ -20,7 +18,6 @@ following questionaire with whatever information is applicable to your PR.
    ...
 ```
 
-
 **Response that was received**
 
 <!-- What you received in response to your input, replace "..." -->
@@ -28,7 +25,6 @@ following questionaire with whatever information is applicable to your PR.
 ```
   ...
 ```
-
 
 **Response that is now received instead**
 

@@ -1,6 +1,7 @@
+---
 created_by: shivsr
 seed_examples:
-- answer: null
-  context: null
-  question: null
+  - answer:
+    context:
+    question:
 task_description: ''
