@@ -131,7 +131,7 @@ Remember that grounded compositional skills require additional context
 
 This example assumes the GitHub username `mairin`:
 
-```
+``` yaml
 created_by: mairin # Use your GitHub username; only one creator supported
 seed_examples:
   - answer: |
@@ -334,7 +334,7 @@ Other keys at any level are currently ignored.
 
 So in essence the format looks something like this:
 
-```
+``` yaml
 created_by: <string>
 seed_examples:
    - answer: <string>
