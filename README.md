@@ -478,9 +478,9 @@ Below is an illustrative directory structure to show this layout:
 
 The ability to contribute to a large language model (LLM) has been difficult in no small part because it is difficult to get access to the necessary compute infrastructure.
 
-This taxonomy repository will be used as the seed to synthesize the training data for InstructLab-trained models. We intend to re-train the model(s) using the main branch following InstructLab's progressive training on a nightly basis. This enables fast iteration of the model(s), for the benefit of the open source community. 
+This taxonomy repository will be used as the seed to synthesize the training data for InstructLab-trained models. We intend to re-train the model(s) using the main branch following InstructLab's progressive training on a regular basis. This enables fast iteration of the model(s), for the benefit of the open source community. 
 
-By contributing your skills and knowledge to this repository, you will see your changes built into an LLM within days of your contribution rather than months or years! If you are working with a model and notice its knowledge or ability lacking, you could correct it by contributing knowledge or skills and check if it's improved once your changes are built in a nightly build.
+By contributing your skills and knowledge to this repository, you will see your changes built into an LLM within days of your contribution rather than months or years! If you are working with a model and notice its knowledge or ability lacking, you could correct it by contributing knowledge or skills and check if it's improved once your changes are built.
 
 ## Ways to Contribute
 
