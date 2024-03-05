@@ -1,0 +1,25 @@
+created_by: stefanhaRH
+seed_examples:
+- answer: |
+    - 237 ml all-purpose flour
+    - 474 ml milk
+    - 15 ml tablespoon vegetable oil
+    - 2.5 ml salt
+  context: |
+    - 1 cup all-purpose flour
+    - 2 cups milk
+    - 1 tablespoon vegetable oil
+    - 1/2 teaspoon salt
+  question: |
+    Convert the units in this list of recipe ingredients to milliliters.
+- answer: |
+    - 2 oz butter
+    - 1 oz sugar
+    - 1 lb breadcrumbs
+  context: |
+    - 57g butter
+    - 28g sugar
+    - 453g breadcrumbs
+  question: |
+    Convert these recipe ingredients from from metric to imperial.
+task_description: ''
