@@ -1,0 +1,5 @@
+created_by: chris1984
+seed_examples:
+- answer: "Red Hat Satellite is a system management solution that enables you to deploy, configure, and maintain your systems across physical, virtual, and cloud environments. Satellite provides provisioning, remote management and monitoring of multiple Red Hat Enterprise Linux deployments with a single, centralized tool."
+  question: Can you describe what Red Hat Satellite is?
+task_description: ''
