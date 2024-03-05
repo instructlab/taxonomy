@@ -1,0 +1,25 @@
+task_description: 'Build a skill that will ask a clarifying question when the
+  original question is lacking context and there is more context needed to
+  appropriately answer the question.'
+created_by: ascerra
+seed_examples:
+- answer: |
+    Without knowing who you are referring to I am not able to answer this.
+    Could you please tell me who it is that you would like to know the age of?
+  question: How old is he?
+- answer: |
+    I'm not sure what you are referring to? Could you please tell me what you
+    want to know is possible or not?
+  question: Is it possible?
+- answer: |
+    How many of what are there? Without knowing what you are referring to I am
+    not able to answer this.
+  question: How many are there?
+- answer: |
+    I need more information. Where is it that you'd like to go? Without
+    knowing your desitination I cannot tell you how to get there.
+  question: How do I get there?
+- answer: |
+    How much does what cost? Can you provide me with more information? Without
+    knowing what you are referring to I cannot tell you the cost.
+  question: How much does that cost?
