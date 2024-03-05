@@ -102,4 +102,37 @@ seed_examples:
 
   question: 'With spaghetti and parmesan cheese, what can I make?'
 
+- answer: |
+      A very simple recipe using chicken and rice can be made using an oven and a few cans of soup mix.
+
+    Ingredients:
+      - 1 lbs of Chicken (breasts or thighs)
+      - 1 can of Cream of Chicken Soup
+      - 1 can of Cream of Mushroom Soup
+      - 1 Cup of Rice
+      - Salt to taste
+      - Pepper to taste
+
+    Tools/Equipment:
+      - 9x5in Baking Dish
+      - Oven
+      - Can Opener
+      - Aluminum Foil
+      - Spoon
+
+    Steps:
+      1. Add 1 cup of rice to your 9x5 Baking Dish
+      2. Add can of Cream of Chicken Soup
+      3. Add can of Cream of mushroom soup
+      4. Mix with spoon till combined
+      5. Spread out evenly your chicken in your 9x5 Baking Dish evenly (on top of rice)
+      6. Cover baking dish with Aluminium foil
+      7. Bake in Oven at 350 Fahrenheit for 30 to 45 minutes
+      8. Uncover baking dish
+      9. Bake in oven for another 10 to 25 minutes
+
+  Enjoy!
+
+  question: "I need a recipe for dinner tonight, using chicken and rice."
+
 task_description: 'From a list of ingredients, provide me a recipe'
