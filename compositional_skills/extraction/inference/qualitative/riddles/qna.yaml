@@ -1,0 +1,54 @@
+created_by: d34dh0r53
+seed_examples:
+  - answer: >
+      The solution to this riddle can be deduced step by step by closely
+      following the movements and actions described in the narrative. Here's
+      the logical breakdown:
+
+      Initially, the diamond is inside the thimble, which is inside the coffee
+      cup, placed on a chair in the living room.
+
+      The chair, along with the items on it (the coffee cup, thimble, and
+      diamond), is moved to the bedroom.
+
+      The coffee cup (with the thimble and diamond inside) is then placed on
+      the bed.
+
+      The coffee cup is then turned upside down. During this step, if the
+      thimble doesn't have a secure lid, the thimble and the diamond would fall
+      out of the cup due to the gravitational forces of the planet, landing on
+      the bed.
+
+      The coffee cup is returned to its upright position, but the narrative
+      does not mention picking the thimble and the diamond back up. Therefore,
+      we can assume that the thimble and diamond remain on the bed.
+
+      The coffee cup is then placed on the kitchen counter, but since the
+      thimble and diamond were not explicitly placed back inside it, they
+      should still be on the bed in the bedroom.
+
+      Therefore, the diamond should be on the bed in the bedroom and the coffee
+      cup is in the kitchen.
+    question: >
+      Solve this riddle: I'm in my house. On top of my chair in the living room
+      is a coffee cup. Inside the coffee cup is a thimble. Inside the thimble
+      is a single diamond. I move the chair to my bedroom. Then I put the
+      coffee cup on the bed. Then I turn the cup upside down. Then I return it
+      to right-side-up, and place the coffee cup on the kitchen counter. Where
+      is my diamond?
+  - answer: >
+      Certainly! Let's break down this problem step by step:
+
+      1. Sally is described in the problem, so we know that Sally is one of the
+      sisters.
+
+      2. The statement "Each of them (her brothers) has 2 sisters" must include
+      Sally, so there's no new information about additional sisters.
+
+      3. Therefore, since the brothers all have the same two sisters, it means
+      Sally only has one other sister.
+
+      So the answer is that Sally has 1 sister.
+    question: >
+      Sally (a girl) has 3 brothers. Each brother has 2 sisters. How many
+      sisters does Sally have?
