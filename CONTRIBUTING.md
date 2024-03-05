@@ -57,6 +57,26 @@ Once you've [created a pull request](#how-can-i-contribute), maintainers will re
 - Ensure your contribution is in the proper format (`lab generate` shouldn't report any warnings or errors)
 - Break large changes into a logical series of smaller patches, which are easy to understand individually and combine to solve a broader issue
 
+#### Legal
+
+We have tried to make it as easy as possible to make contributions.
+This applies to how we handle the legal aspects of contribution.
+We use the same approach - the [Developer's Certificate of Origin 1.1 (DCO)][DCO] - that [the Linux Kernel community uses][Linux-DCO] to manage code contributions.
+For this project, unless the file says otherwise, the relevant open source license is [the Apache License, Version 2.0](LICENSE).
+We simply ask that when submitting a patch for review, the developer must include a sign-off statement in the commit message.
+
+Here is an example `Signed-off-by` line, which indicates that the submitter accepts the DCO:
+
+```
+Signed-off-by: John Doe <john.doe@example.com>
+```
+
+You can include this automatically when you commit a change to your local git repository using the following command:
+
+```shell
+git commit -s
+```
+
 ### Reporting Bugs
 
 This section guides you through submitting a bug report. Following these guidelines helps maintainers and the community understand your report ✏️, reproduce the behavior 💻, and find related reports 🔎.
@@ -80,3 +100,6 @@ Improvements to existing functionality are tracked as [GitHub issues using the U
 ## Development
 
 Please consult the [CLI documentation](https://github.com/instruct-lab/cli) to set up your environment.
+
+[DCO]: https://developercertificate.org/
+[Linux-DCO]: https://docs.kernel.org/process/submitting-patches.html#sign-your-work-the-developer-s-certificate-of-origin
