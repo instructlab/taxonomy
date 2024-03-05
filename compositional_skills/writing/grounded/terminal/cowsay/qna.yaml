@@ -1,0 +1,116 @@
+created_by: cdoern
+seed_examples:
+- answer: |
+    ____ 
+   < hi >
+    ---- 
+           \   ^__^
+            \  (oo)\_______
+               (__)\       )\/\
+                  /||----w |
+                  /||     ||
+  question: cowsay hi
+- answer: |
+    _______________________
+   < hi my name is charlie >
+    -----------------------
+           \   ^__^
+            \  (oo)\_______
+               (__)\       )\/\
+                  /||----w |
+                  /||     ||
+  question: cowsay hi my name is charlie
+- answer: |
+    ________________________
+   / hi my name is charlie,  \
+   \ how is it going today? /
+    ------------------------
+           \   ^__^
+            \  (oo)\_______
+               (__)\       )\/\
+                  /||----w |
+                 / ||     ||
+  question: cowsay hi my name is charlie, how is it going today?
+- answer: |
+    _______________________________________
+   / mooo, but I can also speak english.   \
+  /| what is the meaning of life? am I a   |
+   \ cow or a computer program?            /
+    ---------------------------------------
+           \   ^__^
+            \  (oo)\_______
+               (__)\       )\/\
+                  /||----w |
+                  /||     ||
+  question: cowsay mooo, but I can also speak english. what is the meaning of life? am I a cow or a computer program?
+- answer: |
+    _________________________________________ 
+   / We the People of the United States, in  \
+  /| Order to form a more perfect Union,     |
+ / | establish Justice, insure domestic      |
+ / | Tranquility, provide for the common     |
+ / | defense, promote the general Welfare,   |
+ / | and secure the Blessings of Liberty to  |
+ / | ourselves and our Posterity, do ordain  |
+ / | and establish this Constitution for the |
+   \ United States of America.               /
+    ----------------------------------------- 
+           \   ^__^
+            \  (oo)\_______
+               (__)\       )\/\
+                  /||----w |
+                  /||     ||
+  question: cowsay "We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defense, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America."
+- answer: | 
+     _____________________ 
+    < testing testing 123 >
+     --------------------- 
+            \   ^__^
+             \  (oo)\_______
+                (__)\       )\/\
+                   /||----w |
+                   /||     ||
+  question: cowsay testing testing 123
+- answer: |
+    ________________________ 
+   < how is your day going? >
+    ------------------------ 
+           \   ^__^
+            \  (oo)\_______
+               (__)\       )\/\
+                  /||----w |
+                  /||     ||
+  question: cowsay how is your day going?
+- answer: |
+    ________ 
+   < cowsay >
+    -------- 
+           \   ^__^
+            \  (oo)\_______
+               (__)\       )\/\
+                  /||----w |
+                  /||     ||
+  question: cowsay cowsay
+- answer: |
+    _____________________ 
+   < foobar barfoo, hey! >
+    --------------------- 
+           \   ^__^
+            \  (oo)\_______
+               (__)\       )\/\
+                  /||----w |
+                  /||     ||
+  question: cowsay "foobar barfoo, hey!"
+- answer: |
+    _______________________________________ 
+   / hello, my name is cow, I say moo. I   \
+  /| enjoy saying text in the terminal and |
+   \ making fun ascii art                  /
+    --------------------------------------- 
+           \   ^__^
+            \  (oo)\_______
+               (__)\       )\/\
+                  /||----w |
+                  /||     ||
+  question: cowsay hello, my name is cow, I say moo. I enjoy saying text in the terminal and making fun ascii art
+task_description: 'when a user types cowsay followed by any text, a cow with a speech bubble saying the text should be printed'
