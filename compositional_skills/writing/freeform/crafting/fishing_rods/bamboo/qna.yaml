@@ -1,0 +1,13 @@
+created_by: fabiobrz
+seed_examples:
+  - answer: 'Tonkin cane (Pseudosasa amabilis), native to the Tonkin region of China, is today the most popular type of
+      bamboo plant used to make split cane fishing rods. In the past, Calcutta bamboo was also used extensively.
+
+      '
+    question: Tell me what kind of bamboo is used to build split-cane fishing rods.
+  - answer: 'Split cane fishing rods were traditionally built for fly fishing, but today they are popular for other
+      techniques, such as spinning.
+
+      '
+    question: Tell me what kind of split cane fishing rod is most popular.
+task_description: 'The bamboo task enables answering questions about crafting split cane fishing rods.'
