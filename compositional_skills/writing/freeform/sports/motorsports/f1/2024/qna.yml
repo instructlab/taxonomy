@@ -1,0 +1,58 @@
+created_by: afsilva
+seed_examples:
+  - answer: |  # The | is needed to escape characters like ` or '
+     ## 2024 F1 driver line-up
+     | Team      | Drivers         |
+     |-----------|-----------------|
+     | Alpine    | Pierre Gasly, Esteban Ocon |
+     | Aston Martin | Fernando Alonso, Lance Stroll |
+     | Ferrari   | Charles Leclerc, Carlos Sainz |
+     | Haas      | Nico Hulkenberg, Kevin Magnussen |
+     | McLaren   | Lando Norris, Oscar Piastri |
+     | Mercedes  | Lewis Hamilton, George Russell |
+     | Red Bull  | Sergio Perez, Max Verstappen |
+     | Sauber (Alfa Romeo) | Valtteri Bottas, Zhou Guanyu |
+     | VCARB (AlphaTauri) | Daniel Ricciardo, Yuki Tsunoda |
+     | Williams  | Alex Albon, Logan Sargeant |
+    question: what's the starting grid in F1 for 2024?
+  - answer: |
+      | Date                  | Event                | Location    |
+      |-----------------------|----------------------|-------------|
+      | 29 February–2 March   | Bahrain GP           | Sakhir      |
+      | 7–9 March             | Saudi Arabian GP     | Jeddah      |
+      | 22-24 March           | Australian GP        | Melbourne   |
+      | 5-7 April             | Japanese GP          | Suzuka      |
+      | 19-21 April           | Chinese GP           | Shanghai    |
+      | 3-5 May               | Miami GP             | Miami       |
+      | 17-19 May             | Emilia Romagna GP    | Imola       |
+      | 24-26 May             | Monaco GP            | Monaco      |
+      | 7-9 June              | Canadian GP          | Montreal    |
+      | 21-23 June            | Spanish GP           | Barcelona   |
+      | 28-30 June            | Austrian GP          | Spielberg   |
+      | 5-7 July              | British GP           | Silverstone |
+      | 19-21 July            | Hungarian GP         | Budapest    |
+      | 26-28 July            | Belgian GP           | Spa         |
+      | 23-25 August          | Dutch GP             | Zandvoort   |
+      | 30 August–1 September| Italian GP           | Monza       |
+      | 13-15 September       | Azerbaijan GP        | Baku        |
+      | 20-22 September       | Singapore GP         | Singapore   |
+      | 18-20 October         | United States GP     | Austin      |
+      | 25-27 October         | Mexican GP           | Mexico City |
+      | 1-3 November          | Brazilian GP         | São Paulo   |
+      | 21-23 November        | Las Vegas GP         | Las Vegas   |
+      | 29 November–1 December| Qatar GP            | Losail      |
+      | 6-8 December          | Abu Dhabi GP         | Yas Marina  |
+    question: what's the race calendar for f1 in 2024?
+  - answer: |
+      1. Review Time Periods: Teams now have a shorter window of four days to appeal decisions, with potential for a 24-hour extension in special cases. They must pay a deposit, specify significant elements, and adhere to new hearing protocols.
+      2. Increase in Potential Fines: Maximum fines for rule violations quadrupled to €1 million, applying to both teams and drivers, with other categories also seeing adjustments due to a decade-long stagnation.
+      3. F1 Sprint Format Tweak: The F1 Sprint format returns with slight modifications, moving Sprint Qualifying from Saturday to Friday, followed by the 100km Sprint on Saturday and Grand Prix qualifying later the same day.
+      4. Bigger Promotional Events: Teams can now run double the mileage (200km) during promotional events, enhancing pre-season shakedowns and footage capture.
+      5. Changes to Testing Old Cars: Clarifications to Testing of Previous Car (TPC) program mandate that all components must have prior official testing or race weekend usage, preventing crossover with current car development.
+      6. Increased CapEx Limits: Teams can now spend more on Capital Expenditure (CapEx) over a four-year period, aiming to bridge the gap between leading and trailing teams.
+      7. Even More Strict Roll Hoop Requirements: Following Zhou Guanyu's 2022 British Grand Prix crash, roll hoops must withstand stricter load tests, enhancing safety measures.
+      8. Plan for Wheel Displays Dropped: Originally intended for 2024, the inclusion of rotating displays within wheel covers was retracted from regulations, impacting aerodynamics and weight limits.
+      9. DRS Activation: DRS activation during races now anticipates to one lap, changing from the previous two laps after race starts or Safety Car restarts.
+    question: what are some of the new rules for f1 in 2024?
+task_description: |
+  Updated information on the Formula 1 season for 2024.
