@@ -1,0 +1,63 @@
+created_by: konan-abhi
+task_description: |
+  This task aims to provide information about 7 wonders in the world.
+seed_examples:
+  - question: What is the meaning of the wonders of world?
+    answer: |
+      Impressive monuments created in the ancient world that were regarded with awe.
+
+  - question: How many wonders of the world are there?
+    answer: |
+      The Seven Wonders of the World are a group of places around the globe that are considered to
+      be of great importance.
+
+  - question: What are the 7 wonders of the world?
+    answer: |
+      The Seven Wonders of the World are a group of places around the globe that are considered to be of
+      great importance. These are: The Colosseum in Italy, Petra in Jordan, Chichén Itzá in Mexico, Christ
+      the Redeemer in Brazil, Machu Picchu in Peru, Taj Mahal in India and The Great Wall of China.
+
+  - question: What are the original Seven Wonders of the World?
+    answer: |
+      The original seven wonders, also referred to as the Seven Wonders of the Ancient World, were:
+      1. The Great Pyramid of Giza, Egypt;
+      2. The Hanging Gardens of Babylon;
+      3. The Statue of Zeus at Olympia;
+      4. The Temple of Artemis at Ephesus;
+      5. The Mausoleum at Halicarnassus;
+      6. The Colossus of Rhodes;
+      7. The Lighthouse of Alexandria.
+
+  - question: How many of the original Seven Wonders still exist?
+    answer: |
+      The Great Pyramid of Giza is the only ancient wonder that still exists today. The other six have
+      either disappeared or are in ruin.
+
+  - question: Why are there only Seven Wonders?
+    answer: |
+      Even though there are a multitude of hugely impressive ancient sights, there have only ever been
+      seven ancient wonders of the world. The ancient Greeks believed the number seven represented
+      perfection, so it was a particularly significant number for them.
+
+  - question: What are the new Seven Wonders?
+    answer: |
+      In 2000, a campaign was started to decide on seven new world wonders. Over 100 million people
+      cast their votes in order to whittle over 200 places down to just seven. Then, in 2017, the
+      new modern list of the Seven Wonders of the World, featuring landmarks that are still in existence
+      today, was finalised.
+      1. The Great Wall of China
+      2. Taj Mahal, India
+      3. Petra, Jordan
+      4. The Colosseum, Italy
+      5. Christ the Redeemer, Brazil
+      6. Chichén Itzá, Mexico
+      7. Machu Picchu, Peru
+
+  - question: When next new wonders of world will be announced?
+    answer: |
+      There is no official information about it yet.
+
+  - question: Which is the No 1 wonder in world?
+    answer: |
+      Great Pyramid of Giza, in El Giza, Egypt, the earliest of the wonders to be completed, as well as
+      the only one that still exists in the present day.
