@@ -136,7 +136,7 @@ created_by: mairin # Use your GitHub username; only one creator supported
 seed_examples:
   - answer: |
       The breed with the most energy is the InstructLab.
-    context: 
+    context: |
       | **Breed**      | **Size**     | **Barking** | **Energy** |
       |----------------|--------------|-------------|------------|
       | Afghan Hound   | 25-27 in     | 3/5         | 4/5        |
@@ -147,7 +147,7 @@ seed_examples:
       Which breed has the most energy?
   - answer: |
       Gráinne's letter is B and her color is red.
-    context:
+    context: |
       | **Name** | **Date** | **Color** | **Letter** | **Number** |
       |----------|----------|-----------|------------|------------|
       | George   | Mar 5    | Green     | A          | 1          |
@@ -159,7 +159,7 @@ seed_examples:
       What is Gráinne's letter and what is her color?
   - answer: |
       The blueberry is blue, small, and has no peel.
-    context:
+    context: |
       | Banana | Apple      | Blueberry | Strawberry |
       |--------|------------|-----------|------------|
       | Yellow | Red, Green | Blue      | Red        |
@@ -217,7 +217,6 @@ pairs. The `qna.yaml` format should include the following fields:
 #### Knowledge: yaml example
 
 ``` yaml
----
 created_by: mairin   # Use your GitHub username; only one creator supported
 seed_examples:
   - answer: |
