@@ -1,0 +1,111 @@
+created_by: cubeek
+seed_examples:
+  - answer: |
+      The highest operational income recorded Coder Inc with 3000000, followed
+      by Muppet and Son with 2900000, the third was Fruiter with 2400000 and
+      the lowest income had Mrony with 2000000.
+    context: |
+      Company name,Revenue,Operational income
+      Fruiter 173,10000000,2400000
+      Mrony,40000000,2000000
+      Coder Inc.,5000000,3000000
+      Muppet and Son,173000000,2900000
+    question: |
+      Order the companies based on their operational income.
+  - answer: |
+      The oldest is Troy who is 9, then Clair and Tanya are the same age - 8,
+      Sophie and George are both 7 and youngest is 6 years old Owen.
+    context: |
+      Name,Grade,Age
+      Sophie,B+,7
+      Claire,A,8
+      Tanya,C,8
+      George,D,7
+      Owen,C-,6
+      Troy,E,9
+    question: |
+      Order children by their age.
+  - answer: |
+      The highest electricity bill amount 203 was in the month of August. The
+      second highest was 196 in the month of September and the third highest
+      was 183 in the month of July.
+    context: |
+      Month,Billed amount,Electricity consumption
+      January,88,800
+      February,94,854.5
+      March,65,591
+      April,102,850
+      May,110,916
+      June,160,1333
+      July,184,1533
+      August,203,1692
+      September,196,1633
+      October,138,1150
+      November,96,800
+      December,79,658
+    question: |
+      What three months had the highest electricity bill amount?
+  - answer: |
+      The order based on number of wins in ascending order is as follows
+      Dallas Stars,1
+      St. Louis Blues,1
+      Carolina Hurricanes,1
+      Anaheim Ducks,1
+      Washington Capitals,1
+      Calgary Flames,1
+      Los Angeles Kings,2
+      Philadelphia Flyers,2
+      Colorado Avalanche,3
+      New Jersey Devils,3
+      Tampa Bay Lightning,3
+      New York Islanders,4
+      New York Rangers,4
+      Edmonton Oilers,5
+      Pittsburgh Penguins,5
+      Boston Bruins,6
+      Chicago Blackhawks,6
+      Detroit Red Wings,11
+      Toronto Maple Leafs,13
+      Montreal Canadiens,24
+    context: |
+      NHL team name,Year founded,Stanley Cup wins
+      Anaheim Ducks,1993,1
+      Boston Bruins,1924,6
+      Calgary Flames,1972,1
+      Carolina Hurricanes,1971,1
+      Chicago Blackhawks,1962,6
+      Colorado Avalanche,1972,3
+      Dallas Stars,1967,1
+      Detroit Red Wings,1926,11
+      Edmonton Oilers,1972,5
+      Los Angeles Kings,1966,2
+      Montreal Canadiens,1909,24
+      New Jersey Devils,1982,3
+      New York Islanders,1972,4
+      New York Rangers,1926,4
+      Philadelphia Flyers,1967,2
+      Pittsburgh Penguins,1967,5
+      St. Louis Blues,1967,1
+      Tampa Bay Lightning,1991,3
+      Toronto Maple Leafs,1917,13
+      Washington Capitals,1974,1
+    question: |
+      Can you print the table in ascending order by the number of wins of the
+      cup but print only the team name and the number of the wins columns?
+  - answer: |
+      The biggest planet in diameter is Jupiter with 43441, follow by Saturn
+      with 36184. Third is Uranus 15759, fourth is Neptue 15299 and the fifth
+      biggest planet is Earth with 3959.
+    context: |
+      Planet name,Diameter (mi),Weight (10^21 tons),Rotation period (Hours)
+      Earth,3959,6.58,23.934
+      Jupiter,43441,2092.0,9.842
+      Mars,2106,0.707,24.623
+      Mercury,1516,0.364,1407.6
+      Neptune,15299,113.0,18-20
+      Saturn,36184,626.0,10.233
+      Uranus,15759,95.7,16-28
+      Venus,3760,5.37,5832
+    question: |
+      What are the 5 biggest planets in diameter?
+task_description: Teach reading csv format and order by a specific column
