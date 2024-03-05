@@ -1,3 +1,5 @@
+created_by: shivsr
+seed_examples:
 - answer: "\"The text provided gives information about various individuals who are\
     \ directors in different fields such as film, television, theatre, art museums,\
     \ and museums related to history and culture.\\n\\nJean-Pierre L\xE9vy is a French\
@@ -27,7 +29,7 @@
     \ Foundation. Alessandro Di Robilant is an Italian film director and screenwriter\
     \ who has directed ten films since 1985. He won the Blue Angel Award at the 44th\
     \ Berlin International Film Festival for his film \"Law of Courage.\"\"\n"
-  document: "\"Jean- Pierre L\xE9vy( born 1935) is a French lawyer, author and diplomat.\\\
+  context: "\"Jean- Pierre L\xE9vy( born 1935) is a French lawyer, author and diplomat.\\\
     n\\nHe was the director of the United Nations Division for Ocean Affairs and the\
     \ Law of the Sea in 1985.\\nIan Barry is an Australian director of film and TV.\\\
     nLaw of the Tropics is a 1941 American drama film directed by Ray Enright and\
@@ -63,3 +65,4 @@
     nEnright was born in Anderson, Indiana, and died in Hollywood, California, from\
     \ a heart attack.\"\n"
   question: Generate a detailed summary for the given text.
+task_description: ''
