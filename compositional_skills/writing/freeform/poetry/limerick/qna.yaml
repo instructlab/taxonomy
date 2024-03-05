@@ -11,4 +11,45 @@ seed_examples:
     In a dance of life, unafraid.'
   question: Write a limerick that playfully describes a flower's bloom and its effect
     on nearby insects.
-task_description: ''
+- answer: |
+    There was a man from dry land,
+    who had a hook for a hand.
+    A pirate he wanted to be,
+    but he was afraid of the sea,
+    so he never got passed the sand.
+  question: Write a limerick that playfully describes man who wants to be a pirate but couldn't.
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
+- answer: |
+    There once was a cloud in the sky
+    who only knew how to fly
+    when the cold came around
+    she fell to the ground
+    until the sun comes back she will lie
+  question: Write a limerick that cheerfully describes a cloud that falls as rain
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
+- answer: |
+    There once was a man name izzard,
+    On his first day as a wizard.
+    Of sunshine he was fond,
+    So he waved his magic wand,
+    And now he’s stuck in a blizzard.
+  question: Write a limerick that comically describes a wizzard struggling to learn his trade
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
+- answer: |
+    There was a man with a big beard
+    is friends said it looked a bit weird
+    he shaved it all off
+    so his friends wouldn't scoff
+    but he looked like a sheep who was sheared
+  question: write a limerick about a man with a funny beard
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
+
+task_description: 'A skill to write limericks'
