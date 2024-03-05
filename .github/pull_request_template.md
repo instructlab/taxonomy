@@ -1,4 +1,8 @@
-**Describe the contribution**
+If your PR is related to a contribution to the taxonomy, please, fill
+out the following questionaire. If not, replace this whole text and the
+following questionaire with whatever information is applicable to your PR.
+
+**Describe the contribution to the taxonomy**
 
 A clear and concise description of what the contribution brings.
 
@@ -18,6 +22,6 @@ What you received in response to your input.
 What you receive with your contribution.
 
 
-**Did you test your contribution with `lab generate` and ensure that it does not produce any warnings or errors?**
+**Please, confirm that you have tested your contribution with `lab generate` and ensured that it does not produce any warnings or errors:**
 
 Yes or No
