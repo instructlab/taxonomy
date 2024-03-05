@@ -203,8 +203,8 @@ data, or references.
 Knowledge in the taxonomy tree also consists of a few more elements than skills.
 Each knowledge node in the tree has a `qna.yaml` similar to the format of the
 `qna.yaml` for skills, but it has an extra folder for knowledge documents called
-`knowledge_documents`. These knowledge document formats are are currently
-supported are markdown (.md) and text (.txt).
+`knowledge_documents`. These knowledge document formats currently supported are
+markdown (.md) and text (.txt).
 
 Each `qna.yaml` file is required to contain a minimum of three question-answer
 pairs. The `qna.yaml` format should include the following fields:
@@ -489,8 +489,8 @@ You can contribute to the taxonomy in the following two ways:
 1. Adding new examples to **existing leaf nodes**: 
     - Go to the corresponding leaf node / end of the branch and modify the yaml 
     - Add new examples to the qna.yaml files as a new entry to the list
-- Adding new branches/skills corresponding to the existing domain:
-1. Adding **new branches/skills** corresponding to the existing domain:
+
+2. Adding **new branches/skills** corresponding to the existing domain:
     - You can add new folders under the corresponding category
     - Create a new qna.yaml file with examples for the new skill
   
