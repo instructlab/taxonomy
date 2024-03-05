@@ -1,0 +1,105 @@
+created_by: sferich888
+seed_examples:
+- answer: | 
+    Creating a wrap from turkey lunch meat, arugula and pepper jack cheese, is quite simple.
+
+    Ingredients:
+      - 1 Tortilla, 6-8 inch Round/Oval
+      - ~28g (~3 Slices or ~1oz) of Turkey Lunch Meat
+      - ~28g (~1oz) of Arugula
+      - ~28g (~1oz) of Pepper Jack Cheese
+      - ~14g (~.5oz) of Red Onion
+      - ~14g (~.5oz) of Carrot
+      - ~4.5g (~.15oz or 1 tbsp) of Olive Oil
+      - Salt to taste
+      - Pepper to taste
+
+    Tools/Equipment:
+      - Cutting Board
+      - Knife
+      - Mixing Bowl
+      - Plate
+      - Cheese Grader
+
+    Steps:
+      1. On your cutting board, use your knife to slice your red onion into strips, by making vertical cuts against the grain of the onion.
+          - Place your cut onion slices into your mixing bowl when finished. 
+      2. On your cutting board, use your knife to Julienne your carrot, making small 'match stick' like pieces.
+          - Place your cut carrot slices into your mixing bowl when finished. 
+      3. Add your Arugula to the mixing bowl with the onion slices and cut carrots. 
+      4. Add a drizzle (about 1 tbsp) of Olive Oil to the ingredients in the mixing bowl
+      5. Salt and Pepper the contents of the mixing bowl to taste.
+      6. On a plate place your tortilla
+      7. Grade your pepper jack cheese, on top of your tortilla
+      8. Place your Turkey Slices on top of the tortilla with cheese
+      9. Top your tortilla, with your vegetables in the mixing bowl. 
+      10. Bring up the bottom portion of the tortilla, and roll it over the contents on top of the tortilla, creating a wrap.
+     11. Complete the wrap when you create a cylinder.
+
+  Enjoy! 
+    
+  question: 'Create me a recipe for a wrap, using turkey lunch meat, arugula and pepper jack cheese'.
+
+- answer: |
+    Making a peanut butter and jelly sandwich is quite simple.
+
+    Ingredients:
+      - 2 pieces/slices of sandwich bread.
+      - 2 tbsp of peanut butter
+      - 2 tbsp of jelly (any kind)
+
+    Tools/Equipment:
+      - Knife
+      - Plate
+
+    Steps:
+      1. On a plate place one piece/slice of sandwich bread. 
+      2. Using your knife spread ~2 tbsp of peanut butter on the bread.
+      3. On a plate place the other piece/slice of sandwich bread.
+      4. Using your knife spread ~2 tbsp of jelly on the second piece/slice of sandwich bread.
+      5. Marry/Unite the two pieces of bread placing the jelly and peanut butter together.
+
+    Enjoy! 
+
+  question: 'How do I make a peanut butter and jelly sandwich?'
+
+- answer: |
+    You can make a dish called, cacio-e-pepe, so long as you have some black pepper. 
+
+    Ingredients:
+      - ~3 oz of Spaghetti Pasta
+      - ~1/2 cup of Graded Parmesan
+      - ~2 tbsp of Butter
+      - ~1 tsp of Black Pepper
+      - Salt
+      - ~3-4 quarts of Water
+
+    Tools/Equipment:
+      - Stove top (heating element). 
+      - 5 Quart Pot
+      - Skillet
+      - Wooden Spoon
+      - Cheese Grader
+      - Serving Bowl
+
+    Steps:
+      1. Add 3 to 4 quarts of water to your 5 quart pot
+      2. Season the water with salt (water should taste like sea water).
+      3. Bring water to a boil over high, medium high heat. 
+      4. Cook the Spaghetti Pasta, in the boiling water (typically 6-10 minutes, per package instructions).
+        - Stir with wooden spoon occasionally. 
+      5. Grade Parmesan Cheese (in Serving Bowl), if not already graded.
+      6. Drain Pasta, reserve ~3/4's of a cup of water.
+      7. In skillet, melt ~2 tbsp of butter (should be foamy) over medium heat.
+      8. Toast black pepper (for about 1 minute)
+      9. Add to skillet with pepper and butter, ~1/2 of reserved pasta water (and bring to simmer)
+      10. Add cooked pasta to skillet.
+      11. Pull skillet from heat. 
+      12. Add graded parmesan cheese from serving bowl to skillet with other ingredients, and stir to till well combined, and creamy.
+      13. Move cacio-e-pepe from skillet and place in serving bowl.
+
+    Enjoy! 
+
+  question: 'With spaghetti and parmesan cheese, what can I make?'
+
+task_description: 'From a list of ingredients, provide me a recipe'
