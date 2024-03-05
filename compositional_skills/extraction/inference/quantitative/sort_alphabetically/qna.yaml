@@ -51,5 +51,5 @@ seed_examples:
     Haiti, Suriname, Bolivia, Barbados, Bermuda, Dominican Republic,
     Saint Lucia, Canada, Antigua and Barbuda, Paraguay, Curacao, Argentina, 
     Costa Rica, Brazil
-  question: Sort the american countries alphabetically. List them one country per line.
+  question: Sort the American countries alphabetically. List them one country per line.
 task_description: ''
