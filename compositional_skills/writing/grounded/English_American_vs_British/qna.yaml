@@ -1,0 +1,44 @@
+created_by: dhshah13
+task_description: |
+  This task aims to highlight the differences between American English and British English across various aspects of the language including vocabulary, spelling, and grammar. The content is organized in a question and answer format, where each question asks for a comparison or an example of a difference, and the answer provides a concise explanation or example.
+
+seed_examples:
+  - question: What is the American English word for "flat" as in an apartment?
+    answer: |
+      The American English word for "flat" is "apartment."
+      
+  - question: How do Americans spell the British English word "colour"?
+    answer: |
+      Americans spell the British English word "colour" as "color."
+      
+  - question: What is the British English equivalent of the American English "truck"?
+    answer: |
+      The British English equivalent of the American English "truck" is "lorry."
+      
+  - question: How do British people say "elevator"?
+    answer: |
+      British people say "lift" for the American English word "elevator."
+      
+  - question: What is the American English term for "biscuit" as in the UK?
+    answer: |
+      The American English term for "biscuit" is "cookie."
+      
+  - question: How do Americans spell the British English word "theatre"?
+    answer: |
+      Americans spell the British English word "theatre" as "theater."
+      
+  - question: What is the British English term for the American English "fries"?
+    answer: |
+      The British English term for the American English "fries" is "chips."
+      
+  - question: How do British people refer to what Americans call "gasoline"?
+    answer: |
+      British people refer to "gasoline" as "petrol."
+      
+  - question: What is the American English equivalent of the British English "boot" of a car?
+    answer: |
+      The American English equivalent of the British English "boot" is "trunk."
+      
+  - question: How do Americans spell the British English word "favour"?
+    answer: |
+      Americans spell the British English word "favour" as "favor."

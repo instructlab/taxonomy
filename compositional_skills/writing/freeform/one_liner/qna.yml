@@ -1,0 +1,34 @@
+created_by: dhshah13
+seed_examples:
+  - answer: |
+      I told my wife she should embrace her mistakes. She gave me a hug.
+    question: Tell me a funny one-liner about relationships.
+  - answer: |
+      I'm reading a book on anti-gravity. It's impossible to put down.
+    question: Tell me a funny one-liner about books.
+  - answer: |
+      If we shouldn’t eat at night, why is there a light in the fridge?
+    question: Tell me a funny one-liner about food.
+  - answer: |
+      I'm on a whiskey diet. I've lost three days already.
+    question: Tell me a funny one-liner about dieting.
+  - answer: |
+      My wallet is like an onion, opening it makes me cry.
+    question: Tell me a funny one-liner about money.
+  - answer: |
+      I used to play piano by ear, but now I use my hands.
+    question: Tell me a funny one-liner about music.
+  - answer: |
+      I don’t suffer from insanity, I enjoy every minute of it.
+    question: Tell me a funny one-liner about insanity.
+  - answer: |
+      My bed is a magical place where I suddenly remember everything I was supposed to do.
+    question: Tell me a funny one-liner about procrastination.
+  - answer: |
+      I'm not lazy, I'm on energy-saving mode.
+    question: Tell me a funny one-liner about laziness.
+  - answer: |
+      I told my computer I needed a break, and it said, "Error 404: Motivation not found."
+    question: Tell me a funny one-liner about technology.
+task_description: |
+  The funny one-liners task aims to generate humorous and witty responses that are concise and elicit laughter or amusement. Each one-liner is presented in a question and answer format, where the question sets up a topic, and the answer delivers a clever or unexpected twist, resulting in humor.
