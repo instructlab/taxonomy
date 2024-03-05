@@ -3,11 +3,15 @@ seed_examples:
 - answer: |
     'The sequence of numbers represent characters in the standard ASCII encoding,
     Translated this sequence corresponds to
-    "hello how are you?"'    
-  question: 104 101 108 108 111 44 32 104 111 119 32 97 114 101 32 121 111 117 63 
+    "hello how are you?"'
+  question: 104 101 108 108 111 44 32 104 111 119 32 97 114 101 32 121 111 117 63
 - answer: |
     'The sequence of numbers represent characters in the standard ASCII encoding,
     Translated this sequence corresponds to
-    "Can you read this text?"'    
-  question: 67 97 110 32 121 111 117 32 114 101 97 100 32 116 104 105 115 32 116 101 120 116 63 
+    "Can you read this text?"'
+  question: 67 97 110 32 121 111 117 32 114 101 97 100 32 116 104 105 115 32 116 101 120 116 63
+- answer: '80 97 114 105 115'
+  question: 'What is the largest city of France, answer in ASCII values'
+- answer: '66 101 114 108 105 110'
+  question: 'What is the capital of Germany, answer in ASCII values'
 task_description: 'Understand text in ASCII'
