@@ -1,0 +1,25 @@
+created_by: konan-abhi
+seed_examples:
+  - answer: |
+      Because he missed too many commas.
+    question: Why did the python programmer go broke?
+  - answer: |
+      Because it could Python-tastically code.
+    question: Why did the snake get a job at the tech company?
+  - answer: |
+      A snake gamer.
+    question: What do you call a python who likes to play video games?
+  - answer: |
+      To eat the chicken and then swallow-compress it.
+    question: Why did the python cross the road?
+  - answer: |
+      In byte-sized chunks.
+    question: How does a python programmer travel?
+  - answer: |
+      For better byte handling!
+    question: Why did the Python programmer get a pet snake?
+task_description: |
+  The funny one-liners task aims to generate humorous and witty responses
+  about python programming language. Each one-liner is presented in a question
+  and answer format, where the question sets up a topic, and the answer
+  delivers a clever or unexpected twist, resulting in humor.
