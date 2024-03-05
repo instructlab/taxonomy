@@ -18,7 +18,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main 
+      - main
   pull_request:
     branches:
       - main
@@ -29,7 +29,7 @@ jobs:
     steps:
       - name: "Checkout"
         uses: actions/checkout@v4
-        
+
       - name: "Run YAML linter"
         run: |
-          yamllint -d "{extends: relaxed, rules: {line-length: {max: 120}}, yaml-files: ['qna.yaml']}" .
+          yamllint -d "{extends: relaxed, rules: {line-length: {max: 120}}, yaml-files: ['qna.yaml']}" ./compositional_skills/
