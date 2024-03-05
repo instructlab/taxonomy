@@ -32,4 +32,4 @@ jobs:
 
       - name: "Run YAML linter"
         run: |
-          yamllint -d "{extends: relaxed, rules: {line-length: {max: 120}}, yaml-files: ['qna.yaml']}" ./compositional_skills/
+          yamllint -d "{extends: relaxed, rules: {line-length: {max: 120}}, yaml-files: ['qna.yaml']}" .
