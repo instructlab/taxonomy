@@ -1,0 +1,19 @@
+created_by: oscerd
+seed_examples:
+- answer: "Calling All Coders! Let's Settle the Debate! What's Your Go-To Programming Language?\
+    \ Hey fellow devs, In the vast world of coding, preferences matter!\
+    \ I'm curious – what's your ride-or-die programming language? Whether you're a Python aficionado,\
+    \ a Java maestro, or a JavaScript guru, share your go-to language and tell me why it's your coding soulmate!\
+    \ Let's spark a lively discussion and celebrate the diverse tech community.\
+    \ Ready, set, code-share! #DevTalk #ProgrammingLanguageWars"
+  question: Want to have an engaging discussion on Reddit? Please help me share a post
+    asking the Reddit community about their favourite programming languages and why.
+- answer: "Exploring the World of Reactive Programming! Pros and Cons Discussion!\
+    \ Hey Devs,\
+    \ Whether you're a reactive aficionado or on the fence, let's dive into the world of reactive programming!\
+    \ Share your thoughts on the advantages that make you love it and the challenges that keep you up at night.\
+    \ What projects have you found it particularly useful for, and where do you think it falls short?\
+    \ Let's trade experiences and insights for a well-rounded discussion on the good and bad of reactive programming. #ReactiveProgramming #DevTalk"
+  question: Can you help starting a discussion on Reddit about good and bad of reactive programming?
+task_description: ''
+
