@@ -1,0 +1,42 @@
+created_by: Mohit-Gaur
+seed_examples:
+- answer: 'The text has 4 punctuation marks in total'
+  context: "She said, I'll be there at 2:00 PM."
+  question: 'Count the total number of punctuation marks in the following text:'
+- answer: 'The text has 3 punctuation marks in total'
+  context: "Hello, world! How are you?"
+  question: 'Count the total number of punctuation marks in the following text:'
+- answer: 'The text has 3 punctuation marks in total'
+  context: "I love coding in Python! It's so much fun."
+  question: 'Count the total number of punctuation marks in the following text:'
+- answer: 'The text has 1 punctuation mark in total'
+  context: "The sky is blue."
+  question: 'Count the total number of punctuation marks in the following text:'
+- answer: 'The text has 2 punctuation marks in total'
+  context: "What's your name?"
+  question: 'Count the total number of punctuation marks in the following text:'
+- answer: 'The text has 2 punctuation marks in total'
+  context: "I can't believe it!"
+  question: 'Count the total number of punctuation marks in the following text:'
+- answer: 'The text has 1 punctuation mark in total'
+  context: "It's raining cats and dogs"
+  question: 'Count the total number of punctuation marks in the following text:'
+- answer: 'The text has 6 punctuation marks in total'
+  context: "Wow! That's incredible, isn't it? I can't believe my eyes"
+  question: 'Count the total number of punctuation marks in the following text:'
+- answer: 'The text has 7 punctuation marks in total'
+  context: "Well, I suppose you could try.... But I wouldn't recommend it!"
+  question: 'Count the total number of punctuation marks in the following text:'
+- answer: 'The text has 4 punctuation marks in total'
+  context: "The meeting was scheduled for 3:00 PM, but it got postponed to 4:30 PM due to unforeseen circumstances."
+  question: 'Count the total number of punctuation marks in the following text:'
+- answer: 'The text has 9 punctuation marks in total'
+  context: "Well, I suppose you could try... But I wouldn't recommend it! It's risky, you know?"
+  question: 'Count the total number of punctuation marks in the following text:'
+- answer: 'The text has 0 punctuation marks in total'
+  context: "The cat is sleeping"
+  question: 'Count the total number of punctuation marks in the following text:'
+- answer: 'The text has 0 punctuation marks in total'
+  context: "In the middle of the forest there was a small clearing where a beautiful waterfall cascaded down into a clear pool of water"
+  question: 'Count the total number of punctuation marks in the following text:'
+task_description: 'Counts the total number of punctuation marks present in a given piece of text'
