@@ -1,0 +1,17 @@
+created_by: ktzee
+seed_examples:
+  - answer: "In Street Fighter 5, the input for the Hadouken is:
+    **Down**, **Down-Forward**, **Forward**, **Punch**.
+    You can use any punch button (light, medium, or heavy) for variations."
+    question: "How do I do a Hadouken in Street Fighter 5?"
+
+  - answer: "The Shoryuken input in Street Fighter 5 is:
+    **Forward**, **Down**, **Down-Forward**, **Punch**.
+    Light, medium, or heavy punch determines the strength of the attack."
+    question: "How do I perform a Shoryuken?"
+
+  - answer: "The Tatsumaki Senpuukyaku (Hurricane Kick) input in Street Fighter 5 is:
+    **Quarter-Circle Back**, **Kick**.
+    Use any kick button (light, medium, heavy) for different versions."
+    question: "How do I do the Hurricane Kick in Street Fighter 5?"
+task_description: "Provide guidance on inputs to execute for special moves in fighting games"
