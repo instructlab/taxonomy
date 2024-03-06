@@ -1,0 +1,15 @@
+created_by: bacciotti
+seed_examples:
+- answer: "Koku's goal is to provide an open source solution for cost management of cloud and hybrid cloud 
+    environments. This solution is offered via a web interface that exposes resource consumption and cost 
+    data in easily digestible and filterable views. The project also aims to provide insight into this data 
+    and ultimately provide suggested optimizations for reducing cost and eliminating unnecessary resource 
+    usage."
+  question: What is the Koku project goal?
+
+- answer: 'This project is developed using Python 3.9. Make sure you have at least this version installed. 
+    And also Docker or Rancher Desktop and Homebrew (macOs only). '
+  question: What are the Koku project pre-requisites?
+- answer: 'Yes, it does. And uses Django Rest Framework too.'
+  question: Does Koku project use Django?
+task_description: 'Explain the details about the Koku project.'
