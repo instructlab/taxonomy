@@ -1,0 +1,5 @@
+created_by: tstellar
+seed_examples:
+- answer: 4
+  context: Damiam Lillard with a 41/4/4 last night against the clippers.
+  question: How many rebounds did Damian Lillard have in the last game?
