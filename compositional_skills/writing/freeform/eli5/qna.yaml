@@ -1,0 +1,19 @@
+created_by: ktzee
+seed_examples:
+  - answer: "Imagine the sun is a giant campfire.
+      It gives off heat and light, just like a campfire, but way bigger and hotter!
+      The Earth is like a marshmallow you're holding near the campfire.
+      It gets warm from the heat of the sun, and that's what makes our planet have different seasons."
+    question: Explain how the sun makes the Earth warm like I'm 5.
+
+  - answer: " Think of your body as a big city with lots of tiny workers.
+      Your cells are like the workers, and they all have special jobs to do.
+      Some cells help you move, others help you think, and still others fight off bad things
+      like germs that try to make you sick."
+    question: Explain what cells are like I'm 5.
+
+  - answer: "Imagine rain is like a bunch of tiny water balloons falling from the sky.
+      Clouds are like giant bags holding all these water balloons.
+      When the bags get too full, the balloons pop, and it starts to rain!"
+    question: Explain why it rains like I'm 5.
+task_description: 'Add ability to explain complex concepts in simple terms'
