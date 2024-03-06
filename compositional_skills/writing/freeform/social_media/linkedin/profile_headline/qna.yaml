@@ -1,0 +1,12 @@
+created_by: pujathacker2210
+seed_examples:
+  - answer: 'Data Architect | AWS & Openshift Expert | Transforming Insights into Action'
+    question: I am a Data Architect wokring with AWS, Openshift. Help me write a profile headline for my LinkedIn profile.
+
+  - answer: 'Data Engineer | Snowflake & Redshift Specialist | Driving Scalable Solutions'
+    question: I am a Data Engineer specializing with Snowflake, Redshift. Help me write a profile headline for my LinkedIn profile.
+
+  - answer: 'Passionate Data Platform Engineer | AWS, Openshift, Redshift | Innovating for Impact'
+    question: I am a Data Engineer specializing with AWS, Openshift, Redshift. Help me write a profile headline for my LinkedIn profile.
+
+task_description: ''
