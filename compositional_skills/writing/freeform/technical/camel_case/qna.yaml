@@ -1,0 +1,15 @@
+created_by: fabriziosta
+seed_examples:
+  - answer: CongratulationInterventionismBlahPsychoanalyseIdiotsChromaticsEvangelisticallyInterchangeabilityIntercommunicatingMickle
+    question:
+      "Convert this text into its Camel case form: congratulation interventionism
+      blah psychoanalyse idiots chromatics evangelistically interchangeability intercommunicating mickle"
+  - answer: DiligenceIrregularitiesRemonstratingUnpatrioticSmugExecratorReissuedPsychotherapeuticallyChromatographically
+    question:
+      "Convert the following text into Camel case: diligence irregularities
+      remonstrating unpatriotic smug execrator reissued psychotherapeutically chromatographically"
+  - answer: InexhaustiblenessIntermediatenessLexicographicallyCopperasImperturbabilityElectrophysiologicalBalkingAerothermodynamics
+    question:
+      "Transform these words in Camel case: inexhaustibleness intermediateness
+      lexicographically copperas imperturbability electrophysiological balking aerothermodynamics"
+task_description: This skill provides the ability to convert text into its Camel case form.
