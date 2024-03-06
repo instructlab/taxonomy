@@ -1,0 +1,92 @@
+---
+created_by: stefwalter
+seed_examples:
+  - answer: |
+      Here is the author's email address: aoeu@asdf.com
+    context: |
+      commit e5fa44f2b31c1fb553b6021e7360d07d5d91ff5e
+      Author: Max Mustermann <aoeu@asdf.com>
+      Date:   Mon Feb 26 16:38:03 2024 +0200
+
+          package.json: Bump the sass dependency again
+
+          The last version was completely hosed.
+
+          Signed-off-by: William Schwarz <wschwarz@outlook.com>
+    question: |
+      What is the author's email address in the git commit?
+  - answer: |
+      Here is the email address of the person who signed off: jsmith@example.com
+    context: |
+      commit 7448d8798a4380162d4b56f9b452e2f6f9e24e7a
+      Author: Clara Devine <devinec@gmail.com>
+      Date:   Mon Feb 26 20:06:48 2024 +0100
+
+          test: Ignore empty devices
+
+          These don't test properly, due to a race condition with them loading.
+          The noise that the tests generate isn't worth it.
+
+          Signed-off-by: John Smith <jsmith@example.com>
+    question: |
+      What is the email address of the person who signed off on the commit?
+  - answer: |
+      Here is the name of the person who signed off: Willy Wonka
+    context: |
+      commit a3db5c13ff90a36963278c6a39e4ee3c22e2a436
+      Author: Charlie Bucket <charlieb@yahoo.com>
+      Date:   Thu Feb 22 18:34:04 2024 +0100
+
+          Abstract away the brogulator
+
+          This was forgotten in the earlier commit a16f1fc14b88c
+
+          Signed-off-by: Willy Wonka <wonka@gmx.net>
+    question: |
+      What is the name of the person who signed off on the commit?
+  - answer: |
+      Here is the name of the author of the git commit: Anna Breitbart
+    context: |
+      commit 9c6b057a2b9d96a4067a749ee3b3b0158d390cf1
+      Author: Anna Breitbart <annabreit@proton.com>
+      Date:   Mon Feb 26 13:28:50 2024 +0100
+
+          Remove duplicate information in README.md
+
+          Seems like unfinished work or a copy paste problem.
+
+          Signed-off-by: Satish Kumar <ks@kumarji.com>
+    question: |
+      What is the name of the author of this git commit?
+  - answer: |
+      The person who signed off on this commit is Mia Hilton, and the person who
+      signed off on the commit is Kiran D'Souza. They do not have the same name.
+    context: |
+      commit 5d9474c0309b7ca09a182d888f73b37a8fe1362c
+      Author: Mia Hilton <miahilton@aol.com>
+      Date:   Mon Feb 26 14:47:48 2024 +0200
+
+          test: Add Virtual disks correctly in TestStorageMdRaid
+
+          The names were truncated.
+
+          Signed-off-by: Kiran D'Souza <kirandsouza@gmail.com>
+    question: |
+      Is the person who signed off on this commit the same as the author?
+  - answer: |
+      Yes, the person who signed off on this commit is Olivia Rayner, with the
+      same name as the author.
+    context: |
+      commit ccf271b7830882da1791852baeca1737fcbe4b90
+      Author: Olivia Rayner <orayner@outlook.com>
+      Date:   Fri Feb 16 11:00:07 2024 +0100
+
+          lib: Wake up when modals are open or closed
+
+          Otherwise event loops were not being run correctly.
+
+          Signed-off-by: Olivia Rayner <orayner@outlook.com>
+    question: |
+      Did the author of this commit also sign off on it?
+task_description: |
+  Extract information from git commits
