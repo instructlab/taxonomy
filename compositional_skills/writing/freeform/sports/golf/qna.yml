@@ -1,0 +1,21 @@
+created_by: jparoly
+seed_examples:
+- answer: Par is the expected number of strokes a very good golfer is expected to take to get the ball in the hole from tee to green to in the hole.
+  question: What is a par in golf?
+- answer: The number of times the player hits the ball with their golf club(s).
+  question: What are strokes in golf?
+- answer: A stroke is one strike of the golf ball with a legal golf club.
+  question: What is a stroke in golf?
+- answer: fourteen
+  question: How many golf clubs are players allowed to use during a round of golf?
+- answer: One over par.
+  question: What is a bogey in golf?
+- answer: One under par.
+  question: What is a birdie in golf?
+- answer: Two under par.
+  question: What is an eagle in golf?
+- answer: Three under par.
+  question: What is an albatross in golf?
+- answer: On a par 3 hole, getting an eagle, two under par, and sometimes called an ace.
+  question: What is a hole in one?
+task_description: ''
