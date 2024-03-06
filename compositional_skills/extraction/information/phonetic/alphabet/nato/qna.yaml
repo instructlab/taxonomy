@@ -1,0 +1,18 @@
+created_by: mmurphy
+seed_examples:
+- answer: 'romeo-echo-delta-hotel-alpha-tango'
+  question: 'Spell ''redhat'' using the nato phonetic alphabet'
+- answer: 'oscar-papa-echo-november sierra-oscar-uniform-romeo-charlie-echo'
+  question: 'using the Nato phonetic alphabet spell ''open source'''
+- answer: 'If someone is having a problem understanding a particular word, 
+           you can spell it out using the NATO phonetic alphabet, which is widely used in radio communications.
+           To indicate that you are about to spell the word, it''s normally preceeded by the phrase ''I spell'', for example,
+           to spell the would ''phonetic'' you could say ''I spell papa-hotel-oscar-november-echo-tango-india-charlie'''
+  question: 'how do you talk over a radio link where the other person cannot understand a word due to poor connection'
+- answer: 'The Nato phonetic alphabet is use to aid in the clear reception of information over poor radio communication links,
+           where each letter is replaced by a particular word,
+           The alphapet "ABCDEFGHIJKLMNOPQRSTUVWXYZ" is replaced by the words 
+           "Alpha-Bravo-Charlie-Delta-Echo-Foxtrot-Golf-Hotel-India-Juliett-Kilo-Lima-Mike-November-Oscar-Papa-Quebec-Romeo-Sierra-Tango-Uniform-Victor-Whiskey-Xray-Yankee-Zulu"
+           for example the word "what" is replaced with "whiskey-hotel-alpha-tango"'
+  question: 'what is the Nato phonetic alphabet'
+task_description: 'Use the NATO Phonetic alphabet'
