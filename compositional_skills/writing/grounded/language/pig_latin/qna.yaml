@@ -1,0 +1,78 @@
+created_by: bsfost
+seed_examples:
+  - answer:
+      ellohay, owhay areyay ouyay?
+    context: |
+      Use the rules below to translate from English to Pig Latin:
+      1. If a word begins with a single consonant, move the first consonant to the end of the word and append "ay."
+        Example: Happy = appyh + ay = appyhay
+      2. If a word begins with a cluster of consonants, move the first cluster to the end of the word and append "ay."
+        Example: Child = ildch + ay = ildchay
+      3. If a word begins with a vowel, append "yay" to the end of the word.
+        Example: Are = Are + yay = areyay
+      4. If a word begins with a consonant and vowel, sometimes move the first sound to the end and append "ay."
+        Example: Quick = ickqu + ay = ickquay
+    question: |
+      Translate "Hello, how are you?" to pig latin.
+
+  - answer:
+      ethay ickquay ownbray oxfay umpsjay overyay ethay azylay ogday.
+    context: |
+      Use the rules below to translate from English to Pig Latin:
+      1. If a word begins with a single consonant, move the first consonant to the end of the word and append "ay."
+        Example: Happy = appyh + ay = appyhay
+      2. If a word begins with a cluster of consonants, move the first cluster to the end of the word and append "ay."
+        Example: Child = ildch + ay = ildchay
+      3. If a word begins with a vowel, append "yay" to the end of the word.
+        Example: Are = Are + yay = areyay
+      4. If a word begins with a consonant and vowel, sometimes move the first sound to the end and append "ay."
+        Example: Quick = ickqu + ay = ickquay
+    question: |
+      Translate "The quick brown fox jumps over the lazy dog" to pig latin.
+
+  - answer:
+      atwhay ayay eautifulbay ayday!
+    context: |
+      Use the rules below to translate from English to Pig Latin:
+      1. If a word begins with a single consonant, move the first consonant to the end of the word and append "ay."
+        Example: Happy = appyh + ay = appyhay
+      2. If a word begins with a cluster of consonants, move the first cluster to the end of the word and append "ay."
+        Example: Child = ildch + ay = ildchay
+      3. If a word begins with a vowel, append "yay" to the end of the word.
+        Example: Are = Are + yay = areyay
+      4. If a word begins with a consonant and vowel, sometimes move the first sound to the end and append "ay."
+        Example: Quick = ickqu + ay = ickquay
+    question: |
+      Translate "What a beautiful day!" to pig latin.
+
+  - answer:
+      ethay arcay ivesdray ownday ethay urvycay oadray
+    context: |
+      Use the rules below to translate from English to Pig Latin:
+      1. If a word begins with a single consonant, move the first consonant to the end of the word and append "ay."
+        Example: Happy = appyh + ay = appyhay
+      2. If a word begins with a cluster of consonants, move the first cluster to the end of the word and append "ay."
+        Example: Child = ildch + ay = ildchay
+      3. If a word begins with a vowel, append "yay" to the end of the word.
+        Example: Are = Are + yay = areyay
+      4. If a word begins with a consonant and vowel, sometimes move the first sound to the end and append "ay."
+        Example: Quick = ickqu + ay = ickquay
+    question: |
+      Translate "The car drives down the curvy road" to pig latin.
+
+  - answer:
+      ethay atcay aseschay ayay ousemay
+    context: |
+      Use the rules below to translate from English to Pig Latin:
+      1. If a word begins with a single consonant, move the first consonant to the end of the word and append "ay."
+        Example: Happy = appyh + ay = appyhay
+      2. If a word begins with a cluster of consonants, move the first cluster to the end of the word and append "ay."
+        Example: Child = ildch + ay = ildchay
+      3. If a word begins with a vowel, append "yay" to the end of the word.
+        Example: Are = Are + yay = areyay
+      4. If a word begins with a consonant and vowel, sometimes move the first sound to the end and append "ay."
+        Example: Quick = ickqu + ay = ickquay
+    question: |
+      Translate "The cat chases a mouse" to pig latin.
+task_description:
+  Translate from English to Pig Latin.
