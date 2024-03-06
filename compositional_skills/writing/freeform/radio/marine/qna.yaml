@@ -1,0 +1,47 @@
+created_by: guicassolato
+seed_examples:
+  - answer: |
+      Black Pearl, Black Pearl, Black Pearl. This is Orchid, Orchid, Orchid. Do you copy me? Over.
+    question: |
+      Write me a script to establish a radio contact with a boat called "Black Pearl", from another boat called
+      "Orchid".
+  - answer: |
+      SECURITE, SECURITE, SECURITE. This is Blue Bird, Blue Bird, Blue Bird. Call sign Echo Nine Foxtrot Foxtrot Golf
+      Zero. MMSI 555128812. Location 1 degree 33.9 minutes South, 54 degrees 33.3 minutes East. We have spotted a pod
+      of whales in the vicinity. Over.
+    question: |
+      Write me a script to send a security alert by radio, to all stations, from a boat called "Blue Bird", call sign
+      E9FFG0, Maritime Mobile Service Identity 555128812, whose current location is 1º 33.9' S, 54º 33.3' E, about a
+      pod of whales in the vicinity.
+  - answer: |
+      PAN PAN, PAN PAN, PAN PAN. All stations, all stations, all stations. This is Rosso, Rosso, Rosso. Call sign
+      Five Six Seven Eight Charlie Delta. Location: 4 degrees 49 minutes South, 14 degrees 48.2 minutes West.
+      Our mechanical systems are failing. We need assistance. Over.
+    question: |
+      Write me a script to send a urgent message by radio, to all stations in range, from a boat called "Rosso", call
+      sign 5678CD, located at latitude 4º 49.0' S, longitude 14º 48.2 W, with a failure in the mechanical systems for
+      which the capitan requests assistance.
+  - answer: |
+      MAYDAY, MAYDAY, MAYDAY. This is Queen Mary, Queen Mary, Queen Mary. Call sign Alpha Bravo One Two Three Four.
+      My position is 33 degrees 17.4 minutes North, 34 degrees 43.8 minutes West. We have a person under inminent risk
+      of death. Request for help immediately. I repeat. Request for immediate help. Over.
+    question: |
+      Write me a script to send a radio message requesting for help for severe distress, from a boat called "Queen
+      Mary", call sign AB1234, located at latitude 33º 17.4' N and longitude 34º 43.8 W, where a person is currently
+      under inminent risk of death.
+  - answer: |
+      MAYDAY. This is Base 64. We received your distress message. We are sending a rescue team to your location. Over.
+    question: |
+      Write me a script to reply to a distress radio message emitted by boat called "Passargada" and received by a
+      station called "Base 64", acknowledging the reception of the message and offering assistance.
+  - answer: |
+      MAYDAY RELAY, MAYDAY RELAY, MAYDAY RELAY. All stations, all stations, all stations. This is Esplendor, Esplendor,
+      Esplendor. MAYDAY. Received message from vessel Aurora, call sign Zulu, X-ray, Seven, Seven, One, Hotel. MMSI
+      555613316. Position 75 degrees 30.8 minutes North, 21 degrees 31.5 minutes West. Abandoning ship. This is
+      Esplendor at 1330 UTC. Over.
+    question: |
+      Write me a script to retransmit, at 1:30pm (UTC), a distress message received by a boat called "Espendlor",
+      from a boat called "Aurora", call sign ZX771H, Maritime Mobile Service Identity 555613316, located at latitude
+      75º 30.8' N and latitude 21º 31.5' W, that informed to be abandoning the ship.
+task_description: |
+  The marine radio task enables the creation of scripted messages for the radio communication between boats.
