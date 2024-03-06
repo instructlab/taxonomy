@@ -1,52 +1,54 @@
-created_by: mairin
+created_by: bh1000
 seed_examples:
-- answer: 'Why do birds eat wood?
+  - answer: |
+      What does a mother say to her geeky son when dinner is served?
 
+      Alt Tab !
+    question: Tell me a pun about geeky.
+  - answer: |
+      How do you call a dog that has no legs?
 
-    Because they''re peckish!
+      We don't call it, we go get it
+    question: Tell me a pun about a dog.
+  - answer: |
+      What is the coolest country in the world?
 
-    '
-  question: Tell me a pun about birds.
-- answer: 'Why do French people always eat snails?
+      It is Yemen. Yeah men.
+    question: tell me a pun about a contry in the world.
+  - answer: |
+      Why do giraffes have long necks?
 
+      Because they stink in the ass.
+    question: tell me pun about giraffes.
+  - answer: |
+      Why should you take off your glasses before a breathalyzer test?
 
-    They don''t like fast food.
+      That's 2 glasses less.
+    question: tell me a pun about breathalyzer.
+  - answer: |
+      Why does grandma know how to make good coffee?
 
-    '
-  question: Tell me a pun about fast food.
-- answer: 'Why did the car have a belly ache?
+      Because that's all she has to do.
+    question: tell me a pun about grandma.
+  - answer: |
+      What is the difference between intelligence and parachutes?
+      None, when we don't have, we crash.
+    question: tell me a pun about intelligence.
+  - answer: |
+      Two madmen are walking down the street:
 
+      The first asks the second: « Can I stand in the middle? »
+    question: tell me a pun about madmen.
+  - answer: |
+      What does a claustrophobic astronaut need?
 
-    Because it had too much gas!
+      A little space.
+    question: Tell a pun about astronaut.
+  - answer: |
+      Coming back from the dentist, a girl and her mother discuss:
 
-    '
-  question: Tell me a pun about gas.
-- answer: 'What did the ocean say to the ocean?
+      Well I don't know, it stayed in the dentist's office.
+    quesiton: Tell a pun about a dentist.
 
-
-    Nothing. It just waved!
-
-    '
-  question: Tell me a pun about waves.
-- answer: 'Do you want to hear a roof joke?
-
-
-    Nevermind. The first one''s on the house!
-
-    '
-  question: Tell me a pun about roofs.
-- answer: 'What do dentists call their x-rays?
-
-
-    Tooth pics!
-
-    '
-  question: Tell me a pun about x-rays.
-- answer: 'Why does Peter Pan always fly?
-
-
-    Because he never lands.
-
-    '
-  question: Tell me a pun about Neverland.
-task_description: ''
+task_description: |
+    The pun task enables the telling of funny pun-based jokes.
