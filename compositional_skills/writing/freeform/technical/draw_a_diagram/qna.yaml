@@ -1,0 +1,41 @@
+created_by: bachradsusi
+seed_examples:
+- answer: '
+  +-----------+
+  |  start    |
+  +-----------+
+       |
+       |<---------+
+       |          |
+   +---v--+       |
+   | date |       |
+   +------+       |
+       |          |
+  +----v-----+    |
+  | sleep 60 |----+
+  +----------+
+'
+  question: Draw a simple ascii diagram with an example of infinite loop
+- answer: '
+    +-----------+
+    |  start    |
+    +-----------+
+         |
+  +------v-------------+
+  | $number mod 2 == 0 |---false--+
+  +--------------------+          |
+         |                        |
+        true                      |
+         |                        |
+   +-----v-------------+          |
+   | "$number is even" |          |
+   +-------------------+          |
+                                  |
+         +------------------------+
+         |
+   +-----v------------+
+   | "$number is odd" |
+   +------------------+
+'
+  question: Draw an ascii diagram how to decide if a number is odd.
+task_description:
