@@ -1,0 +1,57 @@
+created_by: davidhildenbrand
+seed_examples:
+- answer: '
+      |=|
+     _|=|_
+    /  -  \
+   { 11:30 }=
+    \__-__/
+      |=|
+      |=|'
+  question: "It is currently 11:30. Draw a watch displaying the current time."
+- answer: '
+      |=|
+     _|=|_
+    /  -  \
+   { 08:25 }=
+    \__-__/
+      |=|
+      |=|'
+  question: "Draw a watch displaying 8:25 pm."
+- answer: '
+      |=|
+     _|=|_
+    /  -  \
+   { 01:59 }=
+    \__-__/
+      |=|
+      |=|'
+  question: "Draw a watch displaying the time 1:59."
+- answer: '
+      |=|
+     _|=|_
+    /  -  \
+   { 12:39 }=
+    \__-__/
+      |=|
+      |=|'
+  question: "Draw a watch in ASCII art displaying the time 12:39."
+- answer: '
+      |=|
+     _|=|_
+    /  -  \
+   { 12:00 }=
+    \__-__/
+      |=|
+      |=|'
+  question: "Can you draw a watch that shows the time at midnight?"
+- answer: '
+      |=|
+     _|=|_
+    /  -  \
+   { 06:05 }=
+    \__-__/
+      |=|
+      |=|'
+  question: "Draw a watch that shows 06:05 am."
+task_description: "Draw a simple wristwatch that displays the time"
