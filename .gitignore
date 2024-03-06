@@ -133,3 +133,7 @@ scratch.ipynb
 
 # Ignore config.yaml from the cli
 config.yaml
+
+# Ignore files created by lab generate
+*ggml*.json*
+
