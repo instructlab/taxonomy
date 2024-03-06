@@ -49,7 +49,7 @@ seed_examples:
     Saint Vincent and the Grenadines, Panama, United States, Guyana, Colombia,
     Dominica, Peru, Grenada, Mexico, Trinidad and Tobago, Ecuador, Chile,
     Haiti, Suriname, Bolivia, Barbados, Bermuda, Dominican Republic,
-    Saint Lucia, Canada, Antigua and Barbuda, Paraguay, Curacao, Argentina, 
+    Saint Lucia, Canada, Antigua and Barbuda, Paraguay, Curacao, Argentina,
     Costa Rica, Brazil
   question: Sort the American countries alphabetically. List them one country per line.
 - answer: |
@@ -98,12 +98,12 @@ seed_examples:
     Ukraine
     United Kingdom
   context: |
-    Russia, Germany, United Kingdom, France, Italy, Spain, Poland, Ukraine, 
+    Russia, Germany, United Kingdom, France, Italy, Spain, Poland, Ukraine,
     Romania, Netherlands, Belgium, Sweden, Czech Republic (Czechia), Greece,
-    Portugal, Hungary, Belarus, Austria, Switzerland, Serbia, Bulgaria, 
-    Denmark, Slovakia, Finland, Norway, Ireland, Croatia, Moldova, 
+    Portugal, Hungary, Belarus, Austria, Switzerland, Serbia, Bulgaria,
+    Denmark, Slovakia, Finland, Norway, Ireland, Croatia, Moldova,
     Bosnia and Herzegovina, Albania, Lithuania, Slovenia, North Macedonia,
-    Latvia, Estonia, Luxembourg, Montenegro, Malta, Iceland, Andorra, 
+    Latvia, Estonia, Luxembourg, Montenegro, Malta, Iceland, Andorra,
     Liechtenstein, Monaco, San Marino, Holy See
   question: 'Sort the European countries alphabetically. List them one country per line.'
 task_description: ''
