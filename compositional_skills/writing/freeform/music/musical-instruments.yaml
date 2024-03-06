@@ -1,1 +1,20 @@
-
+created_by: Vilda007
+seed_examples:
+  - answer: |
+      Bowed instruments are those played with a bow. A typical example is a violin, viola, cello or double bass. 
+    question: |
+      What are the bowed musical instruments?
+  - answer: |
+      Stringed instruments are those in which the sound is produced by strings. A typical example is a violin, harp, cembalo, piano or banjo. 
+    question: |
+      What are the stringed musical instruments?
+  - answer: |
+      Violins are traditionally made of wood, the top is made of spruce, the bottom and sides of maple and the fingerboard and pegs of ebony or rosewood.
+    question: |
+      What is the material used to make violins?
+  - answer: |
+      The violin has 4 strings. They are E, A, D, G.
+    question: |
+      How many strings does a violin have?      
+task_description: |
+  Knowledge about musicai instruments.
