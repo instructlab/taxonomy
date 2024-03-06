@@ -1,0 +1,72 @@
+---
+created_by: goosemania
+seed_examples:
+  - answer: This text has 19 words.
+    context: >
+      Be not afraid of greatness. Some are born great, some achieve
+      greatness, and others have greatness thrust upon them.
+    question: Count the number of words in the following text
+  - answer: This text has 6 words.
+    context: To be, or not to be?
+    question: Count the number of words in the following text
+  - answer: This text has 9 words.
+    context: Small cheer and great welcome makes a merry feast.
+    question: Count the number of words in the following text
+  - answer: This text has 19 words.
+    context: >
+      Talking isn't doing. It is a kind of good deed to say well; and yet
+      words are not deeds.
+    question: Count the number of words in the following text
+  - answer: This text has 10 words.
+    context: The fault...is not in our stars, but in ourselves.
+    question: Count the number of words in the following text
+  - answer: This text has 19 words.
+    context: >
+      O, beware, my lord, of jealousy; it is the green-ey'd monster, which
+      doth mock the meat it feeds on.
+    question: Count the number of words in the following text
+  - answer: This text has 88 words.
+    context: |
+      OTHELLO
+        My life upon her faith!
+                  ⌜The Duke, the Senators, Cassio, and Officers exit.⌝
+        Honest Iago,
+        My Desdemona must I leave to thee.
+        I prithee let thy wife attend on her,
+        And bring them after in the best advantage.—
+        Come, Desdemona, I have but an hour
+        Of love, of ⟨worldly matters,⟩ and direction
+        To spend with thee. We must obey the time.
+                  ⟨Othello and Desdemona⟩ exit.
+      RODERIGO  Iago—
+      IAGO  What sayst thou, noble heart?
+      RODERIGO What will I do, think’st thou?
+      IAGO  Why, go to bed and sleep.
+    question: Count the number of words in the following text
+  - answer: This text has 68 words.
+    context: |
+      Her father loved me, oft invited me,
+      Still questioned me the story of my life
+      From year to year—the battles, sieges, fortunes
+      That I have passed.
+      I ran it through, even from my boyish days
+      To th’ very moment that he bade me tell it,
+      Wherein I spoke of most disastrous chances:
+      Of moving accidents by flood and field,
+      Of hairbreadth ’scapes i’ th’ imminent deadly
+         breach...
+    question: Count the number of words in the following text
+  - answer: This text has 18 words.
+    context: >
+      Did my heart love till now? Forswear it, sight! For I ne'er saw true
+      beauty till this night.
+    question: Count the number of words in the following text
+  - answer: This text has 18 words.
+    context: >
+      “Haste me to know’t, that I, with wings as swift / As meditation … /
+      May sweep to my revenge” (Hamlet 1.5.35-37).
+    question: Count the number of words in the following text
+  - answer: This text has 2 words.
+    context: The end.
+    question: Count the number of words in the following text
+task_description: Ability to count words in a given text.
