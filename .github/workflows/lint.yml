@@ -18,10 +18,14 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main 
+      - main
+    paths:
+      - 'compositional_skills/**/qna.yaml'
   pull_request:
     branches:
       - main
+    paths:
+      - 'compositional_skills/**/qna.yaml'
 
 jobs:
   lint:
