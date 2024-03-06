@@ -1,0 +1,31 @@
+created_by: dprince
+seed_examples:
+# C MAJOR
+- answer: none
+  context: "The notes of the C major scale are: C, D, E, F, G, A, B"
+  question: identify the sharp notes in the C major scale
+# G MAJOR
+- answer: F#
+  context: "The notes of the G major scale are: G, A, B, C, D, E, F#"
+  question: identify the sharp notes in the G major scale
+# D MAJOR
+- answer: F#, C#
+  context: "The notes of the D major scale are: D, E, F#, G, A, B, C#"
+  question: identify the sharp notes in the D major scale
+# A MAJOR
+- answer: C#, F#, G#
+  context: "The notes of the A major scale are: A, B, C#, D, E, F#, G#"
+  question: identify the sharp notes in the A major scale
+# E MAJOR
+- answer: F#, G#, C#, D#
+  context: "The notes of the E major scale are: E, F#, G#, A, B, C#, D#"
+  question: identify the sharp notes in the E major scale
+# B MAJOR
+- answer: C#, D#, F#, G#, A#
+  context: "The notes of the B major scale are: B, C#, D#, E, F#, G#, A#"
+  question: identify the sharp notes in the B major scale
+# F# MAJOR
+- answer: F#, G#, A#, C#, D#, E#
+  context: "The notes of the F sharp major scale are: F#, G#, A#, B, C#, D#, E#"
+  question: identify the sharp notes in the F sharp major scale
+task_description: 'a skill to more accurately count sharps for major scales'
