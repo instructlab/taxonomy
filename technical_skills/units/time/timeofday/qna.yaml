@@ -1,0 +1,40 @@
+created_by: derekhiggins
+seed_examples:
+- answer: |
+    To find out how many hours there are between 10 pm and 11 pm the next day,
+    we first need to understand that there are 24 hours in a day. Let's break it down
+
+    o From 10 pm to midnight, there are 2 hours.
+    o From midnight to 12 midday, there are another 12hours
+    o From 12 midday 11pm, there are another 11 hours.
+
+    Adding these up, there are 25 hours from 10 pm to 11 pm the next day.
+  question: How many hours between 10pm and 11pm the following day
+- answer: |
+    To find out how many hours there are between 5 pm and 11 pm on the same day.
+
+    o From 5 pm to 11 pm, there is 6 hours (11 - 5)
+
+    There are 6 hours between 5 pm and 11 pm on the same day.
+
+  question: How many hours between 5pm and 11pm the same day
+- answer: |
+    To find out how many hours there are between 5 am and 11 pm on the same day,
+    we first need to understand that midday sits between 5AM and 11PM
+
+    o From 5 AM to midday, there are 7 hours.
+    o From midday to 11 pm, there are 11 hours.
+
+    Adding these up, there are 18 hours between 5 am and 11 pm on the same day.
+
+  question: How many hours between 5am and 11pm the same day
+- answer: |
+    To find out how many hours there are between 10 pm and 2 am, we first need to understand that there are
+    24 hours in a day. 10 pm is considered as part of the previous day, so let's break it down
+
+    o From 10 pm to midnight, there are 2 hours.
+    o From midnight to 2AM there are another 2 hours.
+
+    Adding these up, there are 4 hours from 10 pm to 2 am.
+  question: How many hours from 10PM to 2AM
+task_description: 'Calculations involving the time of day'
