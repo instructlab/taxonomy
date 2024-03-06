@@ -1,0 +1,71 @@
+created_by: fberat
+seed_examples:
+  - answer: |
+      doc: Fix typos in README
+    context: |
+      diff --git a/README b/README
+      index f5fc847ef..c9d0a9eb4 100644
+      --- a/README
+      +++ b/README
+      @@ -1,5 +1,5 @@
+       This is Fubar, a fubar generator.  It aims to be portable and to
+      -conform to the Madness Codnig Standards for Makefile variables and
+      +conform to the Madness Coding Standards for Makefile variables and
+       targets.
+
+       See the INSTALL file for detailed information about how to configure
+      @@ -15,7 +15,7 @@ more details about its purpose, features, and usage patterns.
+
+       This package also includes the "garbager" program, whose purpose is
+       to generate 'garbage.md' based on the contents of 'config.garb'.
+      -It is useful as an extansible, maintainable mechanism for augmenting
+      +It is useful as an extensible, maintainable mechanism for augmenting
+       garbage in your documents.
+    question: |
+      Write the commit message for the following change.
+  - answer: |
+      feat: Introduce silent mode for package population logging in MpbBackend
+
+      This commit introduces a new optional parameter called `silent` in the
+      `_populate_packages` method of the `MpbBackend` class. The `silent` parameter
+      allows for silencing the debug messages when populating packages, which can be
+      useful in certain scenarios where excessive logging might be undesirable.
+    context: |
+      diff --git a/mass_prebuild/backend/backend.py b/mass_prebuild/backend/backend.py
+      index 46fed41..038938c 100644
+      --- a/mass_prebuild/backend/backend.py
+      +++ b/mass_prebuild/backend/backend.py
+      @@ -354,8 +354,9 @@ class MpbBackend:
+               try:
+                   pkgs = self._database.packages_by_base_build_id(self.build_id)
+                   self._logger.info('Populating packages...')
+      +            silent=len(pkgs) > 100
+                   for pkg in pkgs:
+      -                self._populate_packages(pkg['pkg_id'], pkg)
+      +                self._populate_packages(pkg['pkg_id'], pkg, silent=silent)
+                   self._logger.info('Done.')
+               except KeyboardInterrupt:
+                   self.should_stop = True
+      @@ -448,7 +449,7 @@ class MpbBackend:
+               if pkg['deps_only']:
+                   pkg['pkg_type'] |= NO_BUILD
+
+      -    def _populate_packages(self, pkg_id=0, pkg_dict=None, pkg_type=MAIN_PKG):
+      +    def _populate_packages(self, pkg_id=0, pkg_dict=None, pkg_type=MAIN_PKG, silent=False):
+               """Populate the package list
+
+                   The list is either created from the given dictionary, or from the
+      @@ -462,7 +463,8 @@ class MpbBackend:
+               """
+               # pylint: disable = too-many-branches
+               if pkg_id:
+      -            self._logger.debug(f'Populating package for {pkg_dict["name"]}')
+      +            if not silent:
+      +                self._logger.debug(f'Populating package for {pkg_dict["name"]}')
+
+                   pkg_data = {
+                       'pkg_id': pkg_id,
+    question: |
+      Write the commit message for the following change, as specified by the conventional commit specifications.
+task_description: |
+  This skill provides the capability to write commit messages following the conventional commit specifications.
