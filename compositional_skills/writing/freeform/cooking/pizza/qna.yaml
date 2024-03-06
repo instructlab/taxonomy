@@ -1,0 +1,55 @@
+created_by: pabeni
+seed_examples:
+- answer: "To make a pizza large enough for a standard baking tray, you need:
+    Flour, 500 gr
+    Water ~260 ml
+    brewer's yeast 25 gr
+    tomato sauce, at least 500 gr
+    mozzarella cheese, at least 300 gr
+    extra virgin olive oil
+    oregano
+    salt
+    basil
+
+    Put the flour in a large bowl, add salt ~10 gr and oil ~15 ml.
+    Melt the yeast in a little lukewarm water, add it to the bowl, and
+    start mixing either with a kneading machine, a large wooden spoon, or
+    your hands, adding gradually the remaining water until the dough
+    becomes soft, compact and almost don't attach your hands anymore.
+    You can add a little more flour and/or a little more water as needed to
+    obtain the right consistency.
+
+    Cover the bowl with a cloth and let the dough rise for at least 2 hours.
+    The more the better up to half a day.
+
+    Cover the baking tray with baking paper and roll out the dough with a
+    rolling pin to cover the whole surface. The dough has to be thin, at
+    most 5mm in height.
+
+    Put the tomato sauce in another bowl add salt ~5gr, oil ~10ml and oregano
+    according to your taste. Mix them and cover the dough leaving a small gap at
+    the edge.
+
+    Bake in the oven at 220 degrees centigrade. After 6-7 minutes add the
+    mozzarella cheese, cut into very small pieces, to cover the tomato sauce.
+    Keep cooking until the cheese is melted and the dough becomes crispy.
+
+    Add some basil leaves on top."
+  question: Explain me how to prepare a pizza margherita
+
+- answer: "The easiest way is using rolling pin.
+    Prepare a large, flat, clean surface and sprinkle some flour
+    on top. Sprinkle some flour on the rolling pin, too.
+
+    Put the dough in the middle of the working surface, add sprinkle
+    some flour on it, too. Put the rolling pin in the middle of dough
+    and push it towards the top.
+
+    Rotate the dough, place the rolling pin in the center, and push it
+    again from the inside out;
+
+    When you have completed the turn, turn the dough over and repeat
+    the same operation."
+  question: how to stretch the pizza dough?
+
+task_description: ''
