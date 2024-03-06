@@ -9,7 +9,7 @@ seed_examples:
     question: Tell me a dad joke about Cinderella.
   - answer: |
       Thank you so much for explaining the word "many" to me. It means a lot.
-    question: Tell me a dad joke.
+    question: Tell me a dad joke about the word many.
   - answer: |
       What do all ninjas wear to work?
 
@@ -22,12 +22,12 @@ seed_examples:
     question: Tell me a dad joke about farmers.
   - answer: |
       To the person who stole my copy of Microsoft Office, I will find you. You have my Word.
-    question: Tell me a dad joke.
+    question: Tell me a dad joke about Microsoft.
   - answer: |
       I got hired as a security guard, and my boss told me that it was my job to watch the office. I'm on season eight, and I still can't figure out what this has to do with security.
     question: Tell me a dad joke about The Office.
   - answer: |
-      What do ducks made of avocados say to each others?
+      What do ducks made of avocados say to each other?
 
       Guac!
     question: Tell me a dad joke about ducks.
@@ -41,7 +41,7 @@ seed_examples:
       Who invented air conditioning?
 
       A cool guy.
-    question: Tell me a dad joke.
+    question: Tell me a dad joke about air conditioning.
   - answer: |
       What happens when you try to kick a volcano?
 
@@ -75,7 +75,7 @@ seed_examples:
       Harry Potter can't tell the difference between his cooking pot and his best friend. They're both cauldron.
     question: Tell me a dad joke about Harry Potter.
   - answer: |
-      What is a hyen's favorite type of candy?
+      What is a hyena's favorite type of candy?
 
       Snickers.
     question: Tell me a dad joke about hyenas.
@@ -89,7 +89,7 @@ seed_examples:
     question: Tell me a dad joke about fire.
   - answer: |
       My friends claim I'm the cheapest person they've ever met, but I'm not buying it.
-    question: Tell me a dad joke.
+    question: Tell me a dad joke about money.
   - answer: |
       Where do you find books about oil in the library?
 
@@ -107,7 +107,7 @@ seed_examples:
   - answer: |
       How do trees access the internet?
 
-      The log on.
+      They log on.
     question: Tell me a dad joke about the internet.
   - answer: |
       I hate negative numbers. I will stop at nothing to avoid them.
