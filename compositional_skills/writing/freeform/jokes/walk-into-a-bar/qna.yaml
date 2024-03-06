@@ -1,0 +1,44 @@
+task_description: >
+  The walk-into-a-bar task enables the telling of jokes that
+  start with the following setting: "A guy walks into a bar..."  or a similar
+  expression, mentioning someone or something walking into a bar or a pub.
+created_by: fabiobrz
+seed_examples:
+  - question: Tell me a walk-into-a-bar joke about aircrafts.
+    answer: >
+      A guy walks into a bar. He asks the bartender, "Do you have any
+      helicopter flavored potato chips?"
+
+      The bartender shakes his head and says, "No, we only have plain"
+    attribution:
+      - source: 'https://barsandbartending.com/walks-into-a-bar-jokes/'
+        license: CC-PDDC
+  - question: Tell me a walk-into-a-bar joke about Physics.
+    answer: |
+      Two hydrogen atoms walk into a bar. One says, "I’ve lost my electron."
+      The other says, "Are you sure?"
+      The first replies, "Yes, I’m positive"
+    attribution:
+      - source: 'https://barsandbartending.com/walks-into-a-bar-jokes/'
+        license: CC-PDDC
+  - question: Tell me a walk-into-a-bar joke about Romans.
+    answer: |
+      A Roman walks into a bar, sticks two fingers up to the barman and says,
+      "Five beers please."
+    attribution:
+      - source: 'http://www.funny2.com/bar.htm'
+        license: CC-PDDC
+  - question: Tell me a walk-into-a-bar joke about horses.
+    answer: |
+      A man walks into a bar owned by horses. The bartender says,
+      "Why the short face?"
+    attribution:
+      - source: 'http://www.funny2.com/bar.htm'
+        license: CC-PDDC
+  - question: Tell me a walk-into-a-bar joke about skeletons.
+    answer: |
+      A skeleton walks into a bar and says, "Gimme a beer, and a mop."
+    attribution:
+      - source: 'http://www.funny2.com/bar.htm'
+        license: CC-PDDC
+
