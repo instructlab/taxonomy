@@ -501,7 +501,7 @@ You can contribute to the taxonomy in the following two ways:
 
 #### Make a copy of the taxonomy repo
 
-1. Go to [github.com/instruct-lab/taxonomy](github.com/instruct-lab/taxonomy)
+1. Go to [github.com/instruct-lab/taxonomy](https://github.com/instruct-lab/taxonomy)
 2. Press the Fork button in the upper right:
    ![fork-button](https://github.com/instruct-lab/taxonomy/assets/799683/8487bff2-425e-483c-b27c-ef03da1c57a8)
 3. On the "Create a new fork" form:
