@@ -328,7 +328,7 @@ keys are recognized: `created_by`, `seed_examples`, and `task_description`.
 * The value of the `seed_examples` key is a collection of one or more key/value entries in which the
 two recognized keys are: `question` and `answer`, each of which can have any string
 as value. For an entry to be valid, it **MUST** have both the question and answer specified. 
-* The value of the `task_description` key is currently ignored and left empty.
+* The value of the `task_description` key can be any string.
 
 Other keys at any level are currently ignored.
 
@@ -342,7 +342,7 @@ seed_examples:
    - answer: <string>
      question: <string>
    ...  
-task_description: 
+task_description: <string>
 ```
 
 
@@ -551,7 +551,7 @@ Here's an animated graphic to show how it works:
 
 **TO BE CONTINUED**
 
-### Why should I contribute?
+### How should I contribute?
 
 For additional information on how to make a contribution, please, consult the 
 [documentation on contributing](CONTRIBUTING.md).
