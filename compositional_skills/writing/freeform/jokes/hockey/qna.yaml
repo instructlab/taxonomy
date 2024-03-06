@@ -1,0 +1,19 @@
+created_by: djfjeff
+seed_examples:
+  - answer: |
+      What do hockey players and magicians have in common?
+
+      Both do hat tricks!
+    question: Tell me a hockey joke about magicians.
+  - answer: |
+      Why do hockey players make terrible detectives?
+
+      Because they always follow the puck!
+    question: Tell me a hockey joke about detectives.
+  - answer: |
+      What do you call a monkey who wins the Stanley Cup?
+
+      A CHIMPion!
+    question: Tell me a hockey joke about monkey.
+task_description: |
+  Bring humoristic jokes about hockey.
