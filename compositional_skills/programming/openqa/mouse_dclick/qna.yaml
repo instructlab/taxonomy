@@ -1,0 +1,11 @@
+created_by: lruzicka
+seed_examples:
+  - answer: mouse_dclick('left');
+    question: Doubleclick the left mouse button.
+  - answer: mouse_dclick('right');
+    question: Doubleclick the right mouse button.
+  - answer: mouse_dclick('left', 0.8);
+    question: Doubleclick the left mouse button for 0.8 second.
+  - answer: mouse_dclick('right', 0.3);
+    question: Doubleclick the right mouse button for 0.3 second.
+task_description: 'Learn how to double click the mouse buttons in openQA.'

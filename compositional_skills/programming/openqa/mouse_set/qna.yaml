@@ -1,0 +1,5 @@
+created_by: lruzicka
+seed_examples:
+  - answer: mouse_set(100, 250);
+    question: Move the mouse to 100, 250.
+task_description: 'Learn to set the mouse cursor to given position in openQA.'

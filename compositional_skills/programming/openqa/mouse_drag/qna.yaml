@@ -1,0 +1,11 @@
+created_by: lruzicka
+seed_examples:
+  - answer: mouse_drag('tag1', 'tag2', 'left');
+    question: Left click and drag the mouse from tag1 to tag2.
+  - answer: mouse_drag('tag1', 'tag2', 'right');
+    question: Right click and drag the mouse from tag1 to tag2.
+  - answer: mouse_drag(150, 100, 280, 200, 'left');
+    question: Left click and drag the mouse from 150, 100 to 280, 200.
+  - answer: mouse_drag(40, 40, 620, 30, 'right');
+    question: Right click and drag the mouse from 40, 40 to 620, 30.
+task_description: 'Learn how to click and drag mouse in openQA.'

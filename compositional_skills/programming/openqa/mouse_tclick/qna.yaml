@@ -1,0 +1,11 @@
+created_by: lruzicka
+seed_examples:
+  - answer: mouse_tclick('left');
+    question: Tripleclick the left mouse button.
+  - answer: mouse_tclick('right');
+    question: Tripleclick the right mouse button.
+  - answer: mouse_tclick('left', 0.4);
+    question: Tripleclick the left mouse button for 0.4 second.
+  - answer: mouse_tclick('right', 0.2);
+    question: Tripleclick the right mouse button for 0.2 second.
+task_description: 'Learn how to triple click the mouse buttons in openQA.'

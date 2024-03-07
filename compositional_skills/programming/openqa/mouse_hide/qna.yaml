@@ -1,0 +1,7 @@
+created_by: lruzicka
+seed_examples:
+  - answer: mouse_hide(100);
+    question: Move the mouse outside the visible screen by 100 pixels.
+  - answer: mouse_hide();
+    question: Hide the mouse cursor.
+task_description: 'Learn how to hide the mouse cursor in openQA.'

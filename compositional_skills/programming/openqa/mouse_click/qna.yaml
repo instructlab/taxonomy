@@ -1,0 +1,11 @@
+created_by: lruzicka
+seed_examples:
+  - answer: mouse_click('left');
+    question: Click the left mouse button.
+  - answer: mouse_click('right');
+    question: Click the right mouse button.
+  - answer: mouse_click('left', O.5);
+    question: Click the left mouse button for 0.5 second.
+  - answer: mouse_click('right', 1);
+    question: Click the right mouse button for 1 second.
+task_description: 'Learn how to click the mouse buttons in openQA.'
