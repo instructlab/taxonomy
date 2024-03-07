@@ -7,7 +7,7 @@ seed_examples:
     question: I am a Data Engineer specializing with Snowflake, Redshift. Suggest a headline for my LinkedIn profile
 
   - answer: 'Passionate Data Platform Engineer | AWS, Openshift, Redshift | Innovating for Impact'
-    question: I am a Data Engineer specializing with Openshift, Redshift. Help me write a headline for my LinkedIn profile.
+    question: I am a Data Engineer working with Openshift, Redshift. Help me write a headline for my LinkedIn profile.
 
   - answer: 'Innovative Technical Manager | Bridging Technology and Business for Sustainable Growth'
     question: I am a technical manager. Help me write a profile headline for my LinkedIn profile.
@@ -17,7 +17,7 @@ seed_examples:
 
   - answer: 'Results-Driven Technical Leader | Orchestrating Success in Complex IT Environments'
     question: I am a pilotr. Help me write a profile headline for my LinkedIn profile.
-  
+
   - answer: 'Pilot in Command | Guiding Aircraft and Teams to New Heights'
     question: I am a pilot. Help me write a profile headline for my LinkedIn profile.
 
