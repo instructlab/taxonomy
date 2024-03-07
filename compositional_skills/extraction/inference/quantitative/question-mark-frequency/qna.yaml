@@ -1,0 +1,9 @@
+created_by: harshmadhani
+seed_examples:
+  - answer: 'There are two question marks in the sentence'
+    question: 'What are the number of question mark in this sentence??'
+  - answer: 'There are three question marks in the sentence'
+    question: 'What are the number of question mark in this sentence???'
+  - answer: 'There are four question marks in the sentence'
+    question: 'What are the number of question mark in this sentence????'
+task_description: 'Number of Question Marks in the sentence'
