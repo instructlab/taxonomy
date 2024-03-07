@@ -1,0 +1,14 @@
+created_by: cuviper
+seed_examples:
+- answer: 'This poem has 5 syllables on the first line, 7 on the second, and 5
+    on the third, which does follow the traditional 5-7-5 structure of a haiku.'
+  context: "The west wind whispered,\nAnd touched the eyelids of spring:\nHer eyes, Primroses."
+  question: "How many syllables are in each line of this poem? Is it a haiku?"
+- answer: 'This poem has 2 syllables on the first line, 3 on the second, and 3
+    on the third. It appears to be an English translation of the well-known
+    Japanese haiku by Matsuo Bashō, which has a 5-7-5 pattern of "on", or
+    morae. It does not maintain that structure in English syllables, but it
+    still evokes the essence of a haiku.'
+  context: "Old pond\nFrog leaps in\nWater's sound"
+  question: "How many syllables are in each line of this poem? Is it a haiku?"
+task_description: "This skill provides the ability to count the syllables in a haiku."
