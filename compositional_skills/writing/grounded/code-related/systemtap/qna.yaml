@@ -1,0 +1,46 @@
+created_by: fche
+seed_examples:
+  - question:
+      How do I probe all functions in a process in systemtap?
+    context: null
+    answer: >
+      For a given process or shared library,
+        ```probe process("a.out").function("*") { }```
+      This includes both inlined and non-inlined functions.
+
+  - question:
+      How do I list all accessible context variables too in a systemtap list operation?
+    context: |
+      ```stap -l 'kernel.function("do_v*")'
+      kernel.function("do_validate_mem@drivers/pcmcia/rsrc_nonstatic.c:344")
+      kernel.function("do_vfs_ioctl@fs/ioctl.c:772")
+      kernel.function("do_vma_munmap@mm/mmap.c:3024")
+      kernel.function("do_vmi_align_munmap@mm/mmap.c:2428")
+      kernel.function("do_vmi_munmap@mm/mmap.c:2600")
+      ```
+
+    answer: |
+      Use the upper-case ```-L``` option instead of ```-l``` to see the ```$variables```.
+      ```stap -L 'kernel.function("do_v*")'
+      kernel.function("do_validate_mem@drivers/pcmcia/rsrc_nonstatic.c:344") $s:struct pcmcia_socket* $base:long unsigned int $size:long unsigned int $validate:int (*) (struct pcmcia_socket*, struct resource*, unsigned int*) $info1:unsigned int $info2:unsigned int
+      kernel.function("do_vfs_ioctl@fs/ioctl.c:772") $filp:struct file* $fd:unsigned int $cmd:unsigned int $arg:long unsigned int
+      kernel.function("do_vma_munmap@mm/mmap.c:3024") $vmi:struct vma_iterator* $vma:struct vm_area_struct* $start:long unsigned int $end:long unsigned int $uf:struct list_head* $downgrade:bool $mm:struct mm_struct*
+      kernel.function("do_vmi_align_munmap@mm/mmap.c:2428") $vmi:struct vma_iterator* $vma:struct vm_area_struct* $mm:struct mm_struct* $start:long unsigned int $end:long unsigned int $uf:struct list_head* $downgrade:bool $mt_detach:struct maple_tree $mas_detach:struct ma_state
+      kernel.function("do_vmi_munmap@mm/mmap.c:2600") $vmi:struct vma_iterator* $mm:struct mm_struct* $start:long unsigned int $len:size_t $uf:struct list_head* $downgrade:bool
+      ```
+
+
+  - question:
+      What does a systemtap error message of the form ```[man foo]``` mean?
+    context: |
+      ```Pass 1: parse failed.  [man error::pass1]
+      Pass 2: analysis failed.  [man error::pass2]
+      ```
+    answer:
+      It means to run the ```man``` program with the given arguments to find
+      further explanation and advice.
+      ```man error::pass1```
+      ```man warning::debuginfo```
+
+        
+task_description: 'systemtap usage guidance'
