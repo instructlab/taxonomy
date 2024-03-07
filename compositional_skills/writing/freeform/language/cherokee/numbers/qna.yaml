@@ -1,0 +1,96 @@
+---
+created_by: aasmith
+seed_examples:
+  - answer: sagwu
+    question: Translate the number 1 to the Cherokee language
+  - answer: tali
+    question: Translate the number 2 to the Cherokee language
+  - answer: tsoi
+    question: Translate the number 3 to the Cherokee language
+  - answer: nvgi
+    question: Translate the number 4 to the Cherokee language
+  - answer: hisgi
+    question: Translate the number 5 to the Cherokee language
+  - answer: sudali
+    question: Translate the number 6 to the Cherokee language
+  - answer: galiquogi
+    question: Translate the number 7 to the Cherokee language
+  - answer: tsunela
+    question: Translate the number 8 to the Cherokee language
+  - answer: sonela
+    question: Translate the number 9 to the Cherokee language
+  - answer: sgohi
+    question: Translate the number 10 to the Cherokee language
+  - answer: sadu
+    question: Translate the number  11 to the Cherokee language
+  - answer: talidu
+    question: Translate the number  12 to the Cherokee language
+  - answer: tsogadu
+    question: Translate the number  13 to the Cherokee language
+  - answer: nigadu
+    question: Translate the number  14 to the Cherokee language
+  - answer: hisgadu
+    question: Translate the number  15 to the Cherokee language
+  - answer: daladu
+    question: Translate the number  16 to the Cherokee language
+  - answer: galiquadu
+    question: Translate the number  17 to the Cherokee language
+  - answer: neladu
+    question: Translate the number  18 to the Cherokee language
+  - answer: soneladu
+    question: Translate the number  19 to the Cherokee language
+  - answer: talisgohi
+    question: Translate the number  20 to the Cherokee language
+  - answer: talisgo sowo
+    question: Translate the number  21 to the Cherokee language
+  - answer: talisgo tali
+    question: Translate the number  22 to the Cherokee language
+  - answer: talisgo tsoi
+    question: Translate the number  23 to the Cherokee language
+  - answer: talisgo nvgi
+    question: Translate the number  24 to the Cherokee language
+  - answer: talisgo hisgi
+    question: Translate the number  25 to the Cherokee language
+  - answer: talisgo sudali
+    question: Translate the number  26 to the Cherokee language
+  - answer: talisgo galiquogi
+    question: Translate the number  27 to the Cherokee language
+  - answer: talisgo tsunela
+    question: Translate the number  28 to the Cherokee language
+  - answer: talisgo sonela
+    question: Translate the number  29 to the Cherokee language
+  - answer: tsoisgohi
+    question: Translate the number  30 to the Cherokee language
+  - answer: tsoisgohi sowo
+    question: Translate the number  31 to the Cherokee language
+  - answer: tsoisgohi tali
+    question: Translate the number  32 to the Cherokee language
+  - answer: tsoisgohi tsoi
+    question: Translate the number  33 to the Cherokee language
+  - answer: tsoisgohi nvgi
+    question: Translate the number  34 to the Cherokee language
+  - answer: tsoisgohi hisgi
+    question: Translate the number  35 to the Cherokee language
+  - answer: tsoisgohi sudali
+    question: Translate the number  36 to the Cherokee language
+  - answer: tsoisgohi galiquogi
+    question: Translate the number  37 to the Cherokee language
+  - answer: tsoisgohi tsunela
+    question: Translate the number  38 to the Cherokee language
+  - answer: tsoisgohi sonela
+    question: Translate the number  39 to the Cherokee language
+  - answer: nvgisgohi
+    question: Translate the number  40 to the Cherokee language
+  - answer: hisgisgohi
+    question: Translate the number  50 to the Cherokee language
+  - answer: sudalisgohi
+    question: Translate the number  60 to the Cherokee language
+  - answer: galiquasgohi
+    question: Translate the number  70 to the Cherokee language
+  - answer: tsunelasgohi
+    question: Translate the number  80 to the Cherokee language
+  - answer: sonelasgohi
+    question: Translate the number  90 to the Cherokee language
+  - answer: sgohitsiqua
+    question: Translate the number  100 to the Cherokee language
+task_description: Learn Cherokee numbers 1 to 100

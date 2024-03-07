@@ -1,0 +1,29 @@
+---
+created_by: aasmith
+seed_examples:
+  - answer: |
+      sagwu
+      tali
+      tsoi
+      nvgi
+      hisgi
+      sudali
+      galiquogi
+      tsunela
+      sonela
+      sgohi
+    question: Count from 1 to 10 in the Cherokee language
+  - answer: |
+      "nvgisgohi sowo"
+      "nvgisgohi sagwu"
+      "nvgisgohi tali"
+      "nvgisgohi tsoi"
+      "nvgisgohi nvgi"
+      "nvgisgohi hisgi"
+      "nvgisgohi sudali"
+      "nvgisgohi galiquogi"
+      "nvgisgohi tsunela"
+      "nvgisgohi sonela"
+      "nvgisgohi sgohi"
+    question: Count from 30 to 39 in the Cherokee language
+task_description: Count in cherokee
