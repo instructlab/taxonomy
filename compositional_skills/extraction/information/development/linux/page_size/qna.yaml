@@ -1,0 +1,81 @@
+# The intent of this skill is to teach the ability to determine the size
+# of a userspace page of memory. That size can be distinct from the size
+# of a kernel page of memory (which can be dynamic with transparent huge
+# pages). We use three questions and answers to arrive at the same answer,
+# but the intent is to teach a skill since the answer is going to be
+# different depending on what the results give on the system. The goal is
+# for a developer to give the model some context information and the model
+# can give the answer by performing the skill in any variety of contexts.
+# The three questions and answers are distinct in that one is entirely
+# using the proc filesystem, one uses a CLI tool, and the other is the
+# output of the dynamic loader's diagnostics information (which has all
+# of the auxiliary vector data from the Linux kernel).
+#
+# The skill is context dependent and applies to determining the normative
+# size of a userspace page of memory on Linux.
+---
+created_by: codonell
+seed_examples:
+  - answer: 'The size of a page is 4096 bytes of 0x1000 in hex.'
+    context: "$ cat /proc/self/smaps | grep KernelPageSize | head -1\n\
+      \ KernelPageSize:        4 kB\n"
+    question: |
+      Extract the size of a userspace page of memory from the kernel shared
+      mappings output.
+  - answer: 'The size of a page is 4096 bytes or 0x1000 in hex.'
+    context: "$ /usr/bin/getconf PAGE_SIZE\n\
+      \ 4096\n"
+    question: |
+      Extract the size of a userspace page of memory from the system getconf
+      output.
+  - answer: 'The size of a page is 4096 bytes or 0x1000 in hex.'
+    context: "$ ld.so --list-diagnostics | grep auxv\n\
+      \ auxv[0x0].a_type=0x21\n\
+      \ auxv[0x0].a_val=0x7ffe01b23000\n\
+      \ auxv[0x1].a_type=0x33\n\
+      \ auxv[0x1].a_val=0x6f0\n\
+      \ auxv[0x2].a_type=0x10\n\
+      \ auxv[0x2].a_val=0xbfebfbff\n\
+      \ auxv[0x3].a_type=0x6\n\
+      \ auxv[0x3].a_val=0x1000\n\
+      \ auxv[0x4].a_type=0x11\n\
+      \ auxv[0x4].a_val=0x64\n\
+      \ auxv[0x5].a_type=0x3\n\
+      \ auxv[0x5].a_val=0x7f135b4f5040\n\
+      \ auxv[0x6].a_type=0x4\n\
+      \ auxv[0x6].a_val=0x38\n\
+      \ auxv[0x7].a_type=0x5\n\
+      \ auxv[0x7].a_val=0xb\n\
+      \ auxv[0x8].a_type=0x7\n\
+      \ auxv[0x8].a_val=0x0\n\
+      \ auxv[0x9].a_type=0x8\n\
+      \ auxv[0x9].a_val=0x0\n\
+      \ auxv[0xa].a_type=0x9\n\
+      \ auxv[0xa].a_val=0x7f135b510bc0\n\
+      \ auxv[0xb].a_type=0xb\n\
+      \ auxv[0xb].a_val=0x3e8\n\
+      \ auxv[0xc].a_type=0xc\n\
+      \ auxv[0xc].a_val=0x3e8\n\
+      \ auxv[0xd].a_type=0xd\n\
+      \ auxv[0xd].a_val=0x3e8\n\
+      \ auxv[0xe].a_type=0xe\n\
+      \ auxv[0xe].a_val=0x3e8\n\
+      \ auxv[0xf].a_type=0x17\n\
+      \ auxv[0xf].a_val=0x0\n\
+      \ auxv[0x10].a_type=0x19\n\
+      \ auxv[0x10].a_val=0x7ffe01a1d249\n\
+      \ auxv[0x11].a_type=0x1a\n\
+      \ auxv[0x11].a_val=0x2\n\
+      \ auxv[0x12].a_type=0x1f\n\
+      \ auxv[0x12].a_val=\"/usr/bin/ld.so\"\n\
+      \ auxv[0x13].a_type=0xf\n\
+      \ auxv[0x13].a_val=\"x86_64\"\n\
+      \ auxv[0x14].a_type=0x1b\n\
+      \ auxv[0x14].a_val=0x1c\n\
+      \ auxv[0x15].a_type=0x1c\n\
+      \ auxv[0x15].a_val=0x20\n"
+    question: |
+      Extract the size of a userspace page of memory from the dynamic loader
+      diagnostics output.
+task_description: |
+  Extract the size of a userspace page of memory from the Linux kernel
