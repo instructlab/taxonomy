@@ -1,0 +1,9 @@
+created_by: josmyers
+seed_examples:
+  - answer: '"Mandating priority AI skills contribution ran into practical limitations."'
+    question: 'Rewrite the following without using the letter "e": "The urgent requirement to contribute AI skills encountered real issues in practice."'
+  - answer: '"AI is notorious for not doing various things soundly."'
+    question: 'Rewrite the following without using the letter "e": "AI is well-known for its weaknesses in certain areas."'
+  - answer: "\"It's common not to think about IP rights in AI training data.\""
+    question: 'Rewrite the following without using the letter "e": "Intellectual property rights in AI training material are often ignored."'
+task_description: 'Rewrite text avoiding the letter "e"'
