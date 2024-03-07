@@ -1,0 +1,82 @@
+created_by: hemslo
+seed_examples:
+- answer: |
+    {
+        "location": "Sydney",
+        "temperature": 25,
+        "condition": "sunny"
+    }
+  context: |
+    {
+      "type": "object",
+      "properties": {
+        "location": {
+          "type": "string"
+        },
+        "temperature": {
+          "type": "integer"
+        },
+        "condition": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "location"
+      ]
+    }
+  question: |
+    Extract a valid JSON blob from input that matches the following JSON Schema.
+    Input: Sydney is 25 degrees and sunny.
+- answer: |
+    {
+        "location": "Sydney",
+        "condition": "raining"
+    }
+  context: |
+    {
+      "type": "object",
+      "properties": {
+        "location": {
+          "type": "string"
+        },
+        "temperature": {
+          "type": "integer"
+        },
+        "condition": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "location"
+      ]
+    }
+  question: |
+    Extract a valid JSON blob from input that matches the following JSON Schema.
+    Input: Sydney is raining.
+- answer: |
+    {
+        "location": "Sydney",
+        "temperature": 25
+    }
+  context: |
+    {
+      "type": "object",
+      "properties": {
+        "location": {
+          "type": "string"
+        },
+        "temperature": {
+          "type": "integer"
+        },
+        "condition": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "location"
+      ]
+    }
+  question: |
+    Extract a valid JSON blob from input that matches the following JSON Schema.
+    Input: Sydney is 25 degrees.
+task_description: 'Extract information in structured JSON formats'
