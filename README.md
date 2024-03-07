@@ -328,7 +328,7 @@ keys are recognized: `created_by`, `seed_examples`, and `task_description`.
 * The value of the `seed_examples` key is a collection of one or more key/value entries in which the
 two recognized keys are: `question` and `answer`, each of which can have any string
 as value. For an entry to be valid, it **MUST** have both the question and answer specified. 
-* The value of the `task_description` key is currently ignored and left empty.
+* The value of the `task_description` key can be any string.
 
 Other keys at any level are currently ignored.
 
@@ -342,7 +342,7 @@ seed_examples:
    - answer: <string>
      question: <string>
    ...  
-task_description: 
+task_description: <string>
 ```
 
 
@@ -501,12 +501,12 @@ You can contribute to the taxonomy in the following two ways:
 
 #### Make a copy of the taxonomy repo
 
-1. Go to [github.com/instruct-lab/taxonomy](github.com/instruct-lab/taxonomy)
+1. Go to [github.com/instruct-lab/taxonomy](https://github.com/instruct-lab/taxonomy)
 2. Press the Fork button in the upper right:
    ![fork-button](https://github.com/instruct-lab/taxonomy/assets/799683/8487bff2-425e-483c-b27c-ef03da1c57a8)
 3. On the "Create a new fork" form:
    - **Repository name:** `taxonomy` is fine
-   - **Description:** Please describe the skill your skill provides. Give an example question it could answer with your contributed knowledge, or an example prompt your skill will improve.
+   - **Description:** This is the description of _your fork_, not of the skills you will create. You can write something that makes sense to you or leave it blank.
    - **Copy the main branch only:** It's OK to leave this checked on.
 
 When you are ready, press the **Create Fork** button.
@@ -551,7 +551,7 @@ Here's an animated graphic to show how it works:
 
 **TO BE CONTINUED**
 
-### Why should I contribute?
+### How should I contribute?
 
 For additional information on how to make a contribution, please, consult the 
 [documentation on contributing](CONTRIBUTING.md).
