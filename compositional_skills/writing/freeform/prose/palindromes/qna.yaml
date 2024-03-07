@@ -1,0 +1,11 @@
+created_by: sgallagher
+seed_examples:
+- answer: "This sentence can be reversed without changing its meaning: A man, a plan, a canal, Panama"
+  question: "Tell me a palindrome."
+- answer: "This sentence can be reversed without changing its meaning: Was it a rat I saw?"
+  question: "Tell me a palindrome."
+- answer: "This sentence can be reversed without changing its meaning: Red rum, sir, is murder"
+  question: "Tell me a palindrome."
+- answer: "This sentence can be reversed without changing its meaning: Taco cat"
+  question: "Tell me a palindrome."
+task_description: "A simple skill to return a palindromic phrase."
