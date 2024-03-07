@@ -1,0 +1,66 @@
+created_by: auldp
+seed_examples:
+  - answer: |
+      There are 6 different letters used in the given text: "this is a test". Here's how I counted them:\n\n
+      * T (3 times)
+      * H (1 time)
+      * I (2 times)
+      * S (3 times)
+      * A (1 time)
+      * E (1 time)\n\n
+      Therefore, there are 26 different letters in the English alphabet, but only 6 of them were used in the given text.
+    question: |
+      How many different letters are used in "this is a test"
+  - answer: |
+      There are 16 different letters used in the given text: "abcdefghijklmnop". Here's how I counted them:\n\n
+      * A (1 time)
+      * B (1 time)
+      * C (1 time)
+      * D (1 time)
+      * E (1 time)
+      * F (1 time)
+      * G (1 time)
+      * H (1 time)
+      * I (1 time)
+      * J (1 time)
+      * K (1 time)
+      * L (1 time)
+      * M (1 time)
+      * N (1 time)
+      * O (1 time)
+      * P (1 time)\n\n
+      Therefore, there are 26 different letters in the English alphabet, but only 16 of them were used in the given text.
+    question: |
+      How many different letters are used in the following text: "abcdefghijklmnop"?
+  - answer: |
+      There are 26 different letters used in the given text: "The quick brown fox jumps over the lazy dog". Here's how I counted them:\n\n
+      * T (2 times)
+      * H (2 times)
+      * E (3 times)
+      * Q (1 time)
+      * U (2 times)
+      * I (1 time)
+      * C (1 time)
+      * K (1 time)
+      * B (1 time)
+      * R (2 times)
+      * O (4 times)
+      * w (1 time)
+      * N (1 time)
+      * F (1 time)
+      * X (1 time)
+      * J (1 time)
+      * M (1 time)
+      * P (1 time)
+      * S (1 time)
+      * V (1 time)
+      * L (1 time)
+      * A (1 time)
+      * Z (1 time)
+      * Y (1 time)
+      * D (1 time)
+      * G (1 time)\n\n
+      Therefore, there are 26 different letters in the English alphabet, and all 26 of them were used in the given text.
+    question: |
+      How many different letters are in the following text: "The quick brown fox jumps over the lazy dog"?
+task_description: "report letter frequency in text"
