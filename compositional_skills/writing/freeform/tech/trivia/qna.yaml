@@ -1,0 +1,31 @@
+---
+- answer: |
+    What is the Linux kernel?
+
+    The Linux kernel is the core component of the Linux operating system, managing hardware resources and providing essential services for other software.
+  question: Explain the role of the Linux kernel in an operating system.
+- answer: |
+    What does the term "FOSS" stand for?
+
+    "FOSS" stands for Free and Open Source Software. It refers to software that is both free to use and open for anyone to inspect, modify, and distribute.
+  question: Define the acronym "FOSS" in the context of software.
+- answer: |
+    How does Git differ from other version control systems?
+
+    Git is a distributed version control system, allowing users to work on a project independently and later synchronize their changes. This differs from centralized systems, providing flexibility and scalability.
+  question: Highlight the key differences between Git and traditional centralized version control systems.
+- answer: |
+    Explain the concept of containerization in the context of Podman.
+
+    Containerization involves encapsulating an application and its dependencies into a container. Podman, a popular containerization platform, ensures consistency across different environments and simplifies deployment.
+  question: Provide an overview of the concept of containerization with a focus on Podman.
+- answer: |
+    What is the purpose of the OSTree tool in the context of system updates?
+
+    OSTree is a versioned file system that facilitates atomic upgrades and rollback of system images. It ensures reliability and consistency during the update process.
+  question: Elaborate on the role of OSTree in managing system updates.
+- answer: |
+    How does automotive cybersecurity play a role in connected vehicles?
+
+    Automotive cybersecurity involves safeguarding connected vehicles from cyber threats. This includes protecting in-car networks, software, and communication channels to ensure the safety and privacy of users.
+  question: Discuss the significance of automotive cybersecurity in the era of connected vehicles.
