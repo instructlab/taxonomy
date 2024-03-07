@@ -1,0 +1,50 @@
+created_by: fultonj
+seed_examples:
+- answer: >
+    The preposition in the statement "I am going to bed" is "to".
+  question: >
+    What are the prepositions in the statement "I am going to bed"?
+- answer: >
+    The prepositions are "over" and "through".
+  question: >
+    What are the prepositions in the statement "over the river and
+    through the woods"?
+- answer: >
+    The prepositions are "in", "of", and "through".
+  question: >
+    What are the prepositions in the statement "in my thoughts I have
+    seen rings of smoke through the trees"?
+- answer: >
+    The prepositions are "under", "along", "beneath" and "within".
+  question: >
+    What are the prepositions in the statement "under the bridge along
+    the river beneath the water within your mind"?
+- answer: >
+    The prepositions are "across", "from", "on", "towards" and "near".
+  question: >
+    What are the prepositions in the statement "across the road from
+    the house on the street towards the south near the dark"?
+- answer: >
+    The prepositions are "before", "down", "to", "between", "with" and
+    "above".
+  question: >
+    What are the prepositions in the statement "before 7 go down to
+    4th street between 5 and 6 with love above all"?
+- answer: >
+    The prepositions are "against" and "until".
+  question: >
+    What are the prepositions in the statement "go against the grain
+    until the end"?
+- answer: >
+    The only preposition is "among".
+  question: >
+    What are the prepositions in the statement "among the living"?
+- answer: >
+    The prepositions are "above" and "below".
+  question: >
+    What are the prepositions in the statement "as above so below"?
+- answer: >
+    There are no prepositions in the statement "yes or no".
+  question: >
+    What are the prepositions in the statement "yes or no"?
+task_description: ''
