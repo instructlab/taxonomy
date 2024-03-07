@@ -1,0 +1,30 @@
+created_by: slagle
+seed_examples:
+- answer: >
+    Your predicted 5k race time is 16:37.
+  question: Predict my 5k running race time based on my mile race time of 5 minutes.
+- answer: >
+    Your predicted 5k race time is 19:57.
+  question: Predict my 5k running race time based on my mile race time of 6 minutes.
+- answer: >
+    Your predicted 5k race time is 23:16.
+  question: Predict my 5k running race time based on my mile race time of 7 minutes.
+- answer: >
+    Your predicted 10k race time is 31:16.
+  question: Predict my 10k running race time based on my 5k race time of 15 minutes.
+- answer: >
+    Your predicted 10k race time is 37:31.
+  question: Predict my 10k running race time based on my 5k race time of 18 minutes.
+- answer: >
+    Your predicted 10k race time is 41:41.
+  question: Predict my 10k running race time based on my 5k race time of 20 minutes.
+- answer: >
+    Your predicted marathon race time is 03:07:47.
+  question: Predict my marathon race time based on my half-marathon time of 1 hour and 30 minutes.
+- answer: >
+    Your predicted marathon race time is 04:10:22.
+  question: Predict my marathon race time based on my half-marathon time of 2 hours.
+- answer: >
+    Your predicted marathon race time is 06:15:34.
+  question: Predict my marathon race time based on my half-marathon time of 3 hours.
+task_description: 'Predict a running race finishing time based on the known finishing time for a shorter distance.'
