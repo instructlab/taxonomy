@@ -42,22 +42,22 @@ There are two types of compositional skills:
      those examples, you're essentially tickling the latent knowledge of the
      LLM. In our "talk like a pirate" example, you're enabling the LLM to be
      able to recall pirate-like speeches in its latent knowledge.
-      
+
 2. **Grounded Compositional Skills**:
 
      Grounded skills are performative and **do** require additional context. An
      example of a grounded skill would be to read the value of a cell in a table
-     layout, or to parse a JSON file. To create a grounded skill to read a 
+     layout, or to parse a JSON file. To create a grounded skill to read a
      markdown formatted table layout, the additional context could be an example
      table layout. This additional context is including in the YAML for the
-     skill and not external to it. 
+     skill and not external to it.
 
      🗒️ **Note:** The content of the table layout will not be used in training
      or aligning the model; only the table layout format itself will be used.
 
 ## Compositional Skills vs. Knowledge
 
-You can contribute both **compositional skills** (and in the future, 
+You can contribute both **compositional skills** (and in the future,
 **knowledge**) to the Taxonomy. What is the difference?
 
 ### Compositional Skills
@@ -88,7 +88,7 @@ seed_examples:
   - question: Tell me a pun about birds.
     answer: |  # The | is needed to escape characters like ` or '
       Why do birds eat wood?
-      
+
       Because they're peckish!
   - question: Tell me a pun about x-rays.
     answer: |
@@ -139,7 +139,7 @@ Remember that grounded compositional skills require additional context
 This example assumes the GitHub username `mairin`:
 
 ``` yaml
-task_description: | 
+task_description: |
     This skill provides the ability to read a markdown-formatted table.
 created_by: mairin # Use your GitHub username; only one creator supported
 seed_examples:
@@ -173,9 +173,10 @@ seed_examples:
       | Large  | Medium     | Small     | Small      |
       | Peel   | Peel       | No peel   | No peel    |
     question: |
-      Which fruit is blue, small, and has no peel?
     answer: |
       The blueberry is blue, small, and has no peel.
+task_description: |
+    This skill provides the ability to read a markdown-formatted table.
 ```
 
 #### Grounded compositional skill: Directory tree example
@@ -201,7 +202,7 @@ seed_examples:
 
 ### Knowledge
 
-⚠️ **Note:** We are not currently accepting knowledge contributions, but we 
+⚠️ **Note:** We are not currently accepting knowledge contributions, but we
 will open this up in the future!
 
 Meanwhile, knowledge is based more on answering questions that involve facts,
@@ -231,27 +232,46 @@ seed_examples:
   - question: |
       Is Taytay coming to Boston in 2024?
     answer: |
-      Not that is known yet. Taylor Swift last performed in the Boston area at 
-      the Gilette Stadium in Foxboro, MA for 3 nights from Friday May 19, 2023 
-      to Sunday May 21, 2023. In 2024, she is making international tour stops 
+      Not that is known yet. Taylor Swift last performed in the Boston area at
+      the Gilette Stadium in Foxboro, MA for 3 nights from Friday May 19, 2023
+      to Sunday May 21, 2023. In 2024, she is making international tour stops
       for her Eras tour outside of the United States.
   - question: |
       Which album was released more recently, Reputation or Midnights?
     answer: |
-      The Taylor Swift Album Reputation was released on November 10, 2017. 
-      Midnights was released October 21, 2022. Midnights was released more 
-      recently, but there are rumors that there will be a re-release of 
-      Reputation called Reputation (Taylor's version) in the later half of 2024 
-      which would make that the most recently-released album of the set at that 
+      The Taylor Swift Album Reputation was released on November 10, 2017.
+      Midnights was released October 21, 2022. Midnights was released more
+      recently, but there are rumors that there will be a re-release of
+      Reputation called Reputation (Taylor's version) in the later half of 2024
+      which would make that the most recently-released album of the set at that
       time.
   - question: |
       Which album has the song "You Need to Calm Down?"
     answer: |
-      The song "You Need to Calm Down" appears on Taylor Swift's 2019 album 
+      The song "You Need to Calm Down" appears on Taylor Swift's 2019 album
+=======
+  - answer: |
+      Not that is known yet. Taylor Swift last performed in the Boston area at
+      the Gilette Stadium in Foxboro, MA for 3 nights from Friday May 19, 2023
+      to Sunday May 21, 2023. In 2024, she is making international tour stops
+      for her Eras tour outside of the United States.
+    question: |
+      Is Taytay coming to Boston in 2024?
+  - answer: |
+      The Taylor Swift Album Reputation was released on November 10, 2017.
+      Midnights was released October 21, 2022. Midnights was released more
+      recently, but there are rumors that there will be a re-release of
+      Reputation called Reputation (Taylor's version) in the later half of 2024
+      which would make that the most recently-released album of the set at that
+      time.
+    question: |
+      Which album was released more recently, Reputation or Midnights?
+  - answer: |
+      The song "You Need to Calm Down" appears on Taylor Swift's 2019 album
       Lover as track 14.
 ```
 
-This knowledge references two markdown files: 
+This knowledge references two markdown files:
 `ts-world-tour-2024-schedule.md` as well as `ts-discography-2024.md` - these
 files in their entirety need to be submitted along with the knowledge's
 `qna.yaml` file in a `knowledge_documents` folder, which means that knowledge
@@ -335,13 +355,13 @@ keys are recognized: `task_description`, `created_by`, and `seed_examples`.
 * The value of the `created_by` key can be any string.
 * The value of the `seed_examples` key is a collection of one or more key/value entries in which the
 three recognized keys are: `context`, `question`, and `answer`, each of which can have any string
-as value. For an entry to be valid, it **MUST** have the question and answer specified. 
+as value. For an entry to be valid, it **MUST** have the question and answer specified.
 
 Other keys at any level are currently ignored.
 
-To make these files easier and faster for humans to read, it is recommended to 
-specify the `task_description` first, followed by `created_by`, and finally 
-`seed_examples`. In `seed_examples`, it is recommended to specify the `context` 
+To make these files easier and faster for humans to read, it is recommended to
+specify the `task_description` first, followed by `created_by`, and finally
+`seed_examples`. In `seed_examples`, it is recommended to specify the `context`
 first (if applicable), followed by the `question`, and finally the `answer`.
 
 So in essence the format looks something like this:
@@ -358,11 +378,11 @@ seed_examples:
     question: <string>
     answer: |
       <multi-line string>
-  ...  
+  ...
 ```
 
 
-If you have not written YAML before, don't be intimidated - it's just text. 
+If you have not written YAML before, don't be intimidated - it's just text.
 There's a few things to know:
 
 - Spaces and indentation matter in YAML. Two spaces to indent.
@@ -500,22 +520,22 @@ Below is an illustrative directory structure to show this layout:
 
 The ability to contribute to a large language model (LLM) has been difficult in no small part because it is difficult to get access to the necessary compute infrastructure.
 
-This taxonomy repository will be used as the seed to synthesize the training data for InstructLab-trained models. We intend to re-train the model(s) using the main branch following InstructLab's progressive training on a regular basis. This enables fast iteration of the model(s), for the benefit of the open source community. 
+This taxonomy repository will be used as the seed to synthesize the training data for InstructLab-trained models. We intend to re-train the model(s) using the main branch following InstructLab's progressive training on a regular basis. This enables fast iteration of the model(s), for the benefit of the open source community.
 
 By contributing your skills and knowledge to this repository, you will see your changes built into an LLM within days of your contribution rather than months or years! If you are working with a model and notice its knowledge or ability lacking, you could correct it by contributing knowledge or skills and check if it's improved once your changes are built.
 
 ## Ways to Contribute
 
-You can contribute to the taxonomy in the following two ways: 
+You can contribute to the taxonomy in the following two ways:
 
-1. Adding new examples to **existing leaf nodes**: 
-    - Go to the corresponding leaf node / end of the branch and modify the yaml 
+1. Adding new examples to **existing leaf nodes**:
+    - Go to the corresponding leaf node / end of the branch and modify the yaml
     - Add new examples to the qna.yaml files as a new entry to the list
 
 2. Adding **new branches/skills** corresponding to the existing domain:
     - You can add new folders under the corresponding category
     - Create a new qna.yaml file with examples for the new skill
-  
+
 ### Detailed Contribution Instructions
 
 #### Pre-requisites:
@@ -540,7 +560,7 @@ When you are ready, press the **Create Fork** button.
 
 #### Contributing a skill
 
-In the screenshot, you can see we are under the compositional skills directory. This is the directory under which you want to contribute skills. (The other top-level directory you can contribute to is the knowledge directory, which is a little different than skills. You can read more about the difference between skills and knowledge [in that section of this README](#k-vs-s) above.) 
+In the screenshot, you can see we are under the compositional skills directory. This is the directory under which you want to contribute skills. (The other top-level directory you can contribute to is the knowledge directory, which is a little different than skills. You can read more about the difference between skills and knowledge [in that section of this README](#k-vs-s) above.)
 
 ![Screenshot from 2024-02-28 12-44-05](https://github.com/instruct-lab/taxonomy/assets/799683/2038e035-5400-4848-91fb-f575db35b565)
 
@@ -564,9 +584,9 @@ It can be a little tricky mechanically to create directories in GitHub's web UI:
 
 * Navigate to the folder in which you want to create the directory inside of.
 * Click the "Add File" dropdown button in the upper right corner of the screen.
-* Start typing the name of the first directory you want to create. In the animation below we use "jokes/" as the first directory. 
+* Start typing the name of the first directory you want to create. In the animation below we use "jokes/" as the first directory.
 * When you type the "/" character, the directory name will "lock in" and you'll be able to type the next of the next subdirectory under it, as desired. Below we typed "knock-knock/" as the next directory name.
-* Finally, you'll type the file name. The file name should always be qna.yaml. (qna stands for "Question aNd Answer.")  
+* Finally, you'll type the file name. The file name should always be qna.yaml. (qna stands for "Question aNd Answer.")
 
 Here's an animated graphic to show how it works:
 
@@ -576,7 +596,7 @@ Here's an animated graphic to show how it works:
 
 ### How should I contribute?
 
-For additional information on how to make a contribution, please, consult the 
+For additional information on how to make a contribution, please, consult the
 [documentation on contributing](CONTRIBUTING.md).
 
 ### Why should I contribute?

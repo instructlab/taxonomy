@@ -44,7 +44,7 @@ You can then either:
 - add new examples to existing leaf nodes by expanding the corresponding qna.yaml files
 - or add new branches by creating new folders under existing ones and creating new qna.yaml files
 
-**Note** that you can only contribute original material. **DO NOT** contribute copyrighted content or content coming from another system. 
+**Note** that you can only contribute original material. **DO NOT** contribute copyrighted content or content coming from another system.
 
 ### Submitting your contribution
 
