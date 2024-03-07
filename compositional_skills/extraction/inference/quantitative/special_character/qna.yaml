@@ -1,0 +1,41 @@
+---
+created_by: itsmitul9
+seed_examples:
+  - answer: The text has 1 special character in total
+    context: I've completed the coding task in just three hours!
+    question: "Count the total number of special character in the following text:"
+  - answer: The text has 2 special character in total
+    context: The price of the new hat is $99 or $100
+    question: "Count the total number of special character in the following text:"
+  - answer: The text has 3 special character in total
+    context: You can reach me at fundoo@gmail, undo@hotmail or doto@yahoo
+    question: "Count the total number of special character in the following text:"
+  - answer: The text has 1 punctuation mark in total
+    context: Thanks God it's #Friyay
+    question: "Count the total number of special character in the following text:"
+  - answer: The text has 2 special character in total
+    context: What % of earth occupies water out of what % of total occupancy
+    question: "Count the total number of special character in the following text:"
+  - answer: The text has 5 special character in total
+    context: Did you like this emoji (^!^)
+    question: "Count the total number of special character in the following text:"
+  - answer: The text has 6 punctuation mark in total
+    context: I am stuck (inside) on [brackets] {the} beach
+    question: "Count the total number of special character in the following text:"
+  - answer: The text has 4 special character in total
+    context: Could you note down my contact number +11-102-1092-7836
+    question: "Count the total number of special character in the following text:"
+  - answer: The text has 3 special character in total
+    context: if you read all files, they are add_yaml minus_yaml with some ~notes
+    question: "Count the total number of special character in the following text:"
+  - answer: The text has 11 special character in total
+    context: Mathematical formulas are sometime hard to remember, like (a+b)^2 = a^2
+      + b^2 + 2 * a * b
+    question: "Count the total number of special character in the following text:"
+  - answer: The text has 3 special character in total
+    context: To add new line use \n, for tab \t and for carriage return \r
+    question: "Count the total number of special character in the following text:"
+  - answer: The text has 0 special character in total
+    context: The sun sets behind the mountains, casting a warm glow across the meadow.
+    question: "Count the total number of special character in the following text:"
+task_description: Counts the total number of special character present in a given piece of text
