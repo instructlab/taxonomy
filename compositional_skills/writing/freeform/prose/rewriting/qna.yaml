@@ -7,7 +7,7 @@ seed_examples:
       complexity of delivering cloud-native applications.
     question: >
       Rewrite to avoid superlative words: We offer the easiest, most
-      cost-effective way to deliver cloud-native applications. 
+      cost-effective way to deliver cloud-native applications.
   - answer: >
       Here is a rewrite suggestion that rephrases the sentences in active
       voice: IT managers face many pressures managing their IT environments.
@@ -17,7 +17,7 @@ seed_examples:
       Rewrite for active voice: There are many pressures to face in
       information technology environments. Most of all, it is necessary to
       deliver operational efficiencies that depend on factors such as security,
-      performance, availability and stability. 
+      performance, availability and stability.
   - answer: >
       Here is a rewrite suggestion that avoids overpromising: Linux is a
       flexible and security-focused operating system capable of supporting
@@ -25,7 +25,7 @@ seed_examples:
     question: >
       Rewrite to avoid overpromising: Linux is a foolproof and secure
       operating system that never fails to solve the world's hardest computing
-      problems! 
+      problems!
   - answer: >
       Here is a rewrite suggestion that avoids business jargon: Reduce
       complexity so you can respond quickly to customer needs.
