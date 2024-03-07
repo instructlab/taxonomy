@@ -1,60 +1,58 @@
 created_by: "jlmayorga"
 task_description: |
-  Questions and answers to explore the art and craft of storytelling, aimed at helping writers and creators 
+  Questions and answers to explore the art and craft of storytelling, aimed at helping writers and creators
   effectively engage and communicate with their audience.
 
 seed_examples:
   - question: "What is the core element of storytelling?"
     answer: |
-      The core element of storytelling is a compelling narrative that connects with the audience on an emotional level, 
+      The core element of storytelling is a compelling narrative that connects with the audience on an emotional level,
       often involving a clear conflict or challenge that is resolved over time.
 
   - question: "How important are characters in a story?"
     answer: |
       Characters are crucial in storytelling as they drive the plot forward and serve as the emotional connection point 
-      for the audience. 
+      for the audience.
       Well-developed characters make stories memorable and relatable.
 
   - question: "What role does setting play in a story?"
     answer: |
-      The setting provides the backdrop against which the story unfolds, establishing the time and place. 
+      The setting provides the backdrop against which the story unfolds, establishing the time and place.
       It can significantly influence the story's mood, character behavior, and plot developments.
 
   - question: "Can you explain the significance of a plot in storytelling?"
     answer: |
-      The plot is the sequence of events that make up the story, including the conflict, climax, and resolution. 
+      The plot is the sequence of events that make up the story, including the conflict, climax, and resolution.
       It's significant because it structures the narrative, guiding the audience through the story's journey.
 
   - question: "What is the difference between showing and telling in storytelling?"
     answer: |
-      Showing involves using descriptive language to allow the audience to experience the story through actions, 
+      Showing involves using descriptive language to allow the audience to experience the story through actions,
       senses, and feelings, whereas telling summarily informs them about the events. Showing is generally more engaging.
 
   - question: "How do you build tension in a story?"
     answer: |
-      Tension is built by establishing stakes, creating conflicts, and placing obstacles in the characters' paths, 
+      Tension is built by establishing stakes, creating conflicts, and placing obstacles in the characters' paths,
       gradually increasing the audience's investment in the outcome.
 
   - question: "What makes a story's beginning effective?"
     answer: |
       An effective beginning grabs the audience's attention, introduces the main characters, sets the tone, and hints at
-      the conflict, 
-      motivating the audience to keep engaging with the story.
+      the conflict, motivating the audience to keep engaging with the story.
 
   - question: "How can dialogue enhance storytelling?"
     answer: |
-      Dialogue can reveal character traits, advance the plot, and add realism to the story. 
+      Dialogue can reveal character traits, advance the plot, and add realism to the story.
       It's a powerful tool for showing character relationships and emotions without explicitly stating them.
 
   - question: "Why is the climax crucial in a story?"
     answer: |
-      The climax is crucial because it's the moment of greatest tension, where the main conflict heads towards 
-      resolution. 
+      The climax is crucial because it's the moment of greatest tension, where the main conflict heads towards
+      resolution.
       It's the turning point that determines the story's outcome, keeping the audience engaged.
 
   - question: "How do you craft a satisfying story ending?"
     answer: |
-      A satisfying ending resolves the main conflict, answers the story's key questions, and leaves the audience 
-      feeling fulfilled. 
+      A satisfying ending resolves the main conflict, answers the story's key questions, and leaves the audience
+      feeling fulfilled.
       It may also provide a reflection or hint at future possibilities for the characters.
-
