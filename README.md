@@ -11,6 +11,14 @@ This repository contains a taxonomy tree that will allow you to create models
 tuned with your data (enhanced via synthetic data generation) using LAB 🐶
 method.
 
+🗒️️**Note**: For each new model, you may need to create the directory structure for
+it unless a related one exists. As shown in the below examples, it might mean
+creating one or multiple directories to organize where the qna.yaml file resides
+with the related questions and answers. Keep in mind **lab generate** will pick up
+all yaml files in a directory so if appropriate you can add to an existing directory.
+The intent is to make things organized and easy to find without making the directory
+structure hard to navigate. 
+
 The top-level categories are:
 
 1. **Core Skills**:
