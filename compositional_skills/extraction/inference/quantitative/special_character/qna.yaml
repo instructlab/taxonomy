@@ -35,7 +35,7 @@ seed_examples:
   - answer: The text has 3 special character in total
     context: To add new line use \n, for tab \t and for carriage return \r
     question: "Count the total number of special character in the following text:"
-  - answer : The text has 5 special character in total
+  - answer: The text has 5 special character in total
     context: This is 'single quote' "double quote" and ` backtick
     question: "Count the total number of special character in the following text:"
   - answer: The text has 0 special character in total
