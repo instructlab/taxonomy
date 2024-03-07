@@ -1,0 +1,73 @@
+created_by: wrabcak
+seed_examples:
+- answer: 'Here is a list of numbers from the provided text:
+
+    * 123
+    * 34334
+    '
+  context: "Hello 123, how are you? I'm 3434"
+  question: Extract the numbers mentioned in the given text.
+
+- answer: 'Here is a list of numbers from the provided text:
+
+    * 6
+    * 10
+    '
+  context: "After a long day of hiking, Sarah finally reached the summit
+    of the mountain. She had been trekking for 6 hours, covering a distance
+    of 10 miles. The view from the top was breathtaking, with the sun
+    setting in the distance. Sarah took out her camera and snapped a few photos
+    to capture the moment."
+  question: Extract the numbers mentioned in the given text.
+
+- answer: 'Here is a list of numbers from the provided text:
+
+    * 10
+    * 24
+    '
+  context: "John, an IT specialist, was tasked with upgrading the company's
+    server infrastructure. He began by assessing the current setup,
+    which consisted of 10 physical servers running various applications
+    and services. The servers were connected to a network switch with 24 ports."
+  question: Extract the numbers mentioned in the given text.
+
+- answer: 'Here is a list of numbers from the provided text:
+
+    * 5
+    * 10
+    * 2
+    * 2
+    * 3
+    * 15
+    '
+  context: "Yesterday, I bought 5 apples from the market for $10. Later,
+    I walked 2 miles to my friend's house. We watched a movie that lasted for
+    2 hours. Afterwards, we ordered 3 pizzas for dinner,
+    each costing $15. Overall, it was a great day filled with numbers!"
+  question: Extract the numbers mentioned in the given text.
+
+- answer: 'Here is a list of numbers from the provided text:
+
+    * 7:30
+    * 3
+    * 2
+    * 3
+    * 1
+    * 4
+    * 5
+    * 2
+    * 200
+    * 30
+    * 2
+    * 11
+    '
+  context: "I woke up at 7:30 AM this morning and went for a 3-mile run.
+    Afterward, I had breakfast consisting of 2 eggs, 3 slices of toast,
+    and a cup of coffee. Then, I spent 4 hours working on a project for my job.
+    At noon, I met with 5 colleagues for a lunch meeting. Each of us ordered a
+    salad and a drink. The meeting lasted for 2 hours. In the evening,
+    I called my friend who lives 200 miles away and chatted with them for
+    30 minutes. Later, I watched a movie that lasted for 2 and a half hours
+    before going to bed at 11 PM."
+  question: Extract the numbers mentioned in the given text.
+task_description: ''
