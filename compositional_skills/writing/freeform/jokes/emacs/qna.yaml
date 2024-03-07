@@ -1,0 +1,19 @@
+created_by: lmiccini
+seed_examples:
+- answer: 'You can learn Emacs in one day. Every day'
+  question: Tell me a joke about Emacs.
+- answer: 'People never quit Emacs, they just die at some point'
+  question: Tell me a joke about Emacs.
+- answer: 'You can spend hours trying to get the image on the right page. Or you can use org-mode LaTeX and just accept that it is impossible.'
+  question: Tell me a joke about Emacs.
+- answer: 'Emacs is like an instrument: you play it in different major, minor, dorian modes'
+  question: Tell me a joke about Emacs.
+- answer: 'Emacs makes you better at terminal at the same time, although you probably will never have to use the terminal because you can do everything in Emacs'
+  question: Tell me a joke about Emacs.
+- answer: 'With Jupiter you are modifying the state of the program, with Emacs you are modifying the state of the art.. err the program'
+  question: Tell me a joke about Emacs.
+- answer: 'Emacs will never die, saying Emacs will die is like saying Turing-complete will die'
+  question: Tell me a joke about Emacs.
+- answer: 'You know why Emacs is different from other editors right? Well, Emacs runs in an interpreter'
+  question: Tell me a joke about Emacs.
+task_description: ''
