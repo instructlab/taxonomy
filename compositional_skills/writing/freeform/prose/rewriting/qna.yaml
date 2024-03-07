@@ -1,0 +1,34 @@
+created_by: daryllang
+seed_examples:
+  - answer: |
+      Here is a rewrite suggestion that avoids superlative words: We streamline the hybrid cloud experience, reducing the operational cost and complexity of delivering cloud-native applications.
+    question: |
+      Rewrite to avoid superlative words: We offer the easiest, most cost-effective way to deliver cloud-native applications. 
+  - answer: |
+      Here is a rewrite suggestion that rephrases the sentences in active voice: IT managers face many pressures managing their IT environments. Most of all, they need to deliver operational efficiencies that depend on factors such as security, performance, availability, and stability.
+    question: |
+      Rewrite for active voice: There are many pressures to face in information technology environments. Most of all, it is necessary to deliver operational efficiencies that depend on factors such as security, performance, availability and stability. 
+  - answer: |
+      Here is a rewrite suggestion that avoids overpromising: Linux is a flexible and security-focused operating system capable of supporting demanding and intensive workloads.
+    question: |
+      Rewrite to avoid overpromising: Linux is a foolproof and secure operating system that never fails to solve the world's hardest computing problems! 
+  - answer: |
+      Here is a rewrite suggestion that avoids business jargon: Reduce complexity so you can respond quickly to customer needs.
+    question: |
+      Rewrite to avoid business jargon: Drive digital transformation through frictionless turnkey deployment.
+  - answer: |
+      Here is a rewrite suggestion that avoids unsupported claims: Our platform meets strict security and compliance standards.
+    question: |
+      Rewrite to be avoid unsupported claims: Our platform is secure, so you'll never get hacked and your data is safe.
+  - answer: |
+      Here is a rewrite suggestion that avoids gender-specific pronouns: Engineers must be trained on the equipment that they service.
+    question: |
+      Rewrite to avoid gender-specific pronouns: An engineer must be trained on the equipment that he services.
+  - answer: |
+      Here is a rewrite suggestion that avoids saying something is easy: To mount a device, identify the device for mounting, ensure that the mount point exists, and mount the device on the mount point.
+    question: |
+      Rewrite to avoid saying something is easy: Mounting a device is relatively simple. Identify the device for mounting, ensure that the mount point exists, and mount the device on the mount point.
+  - answer: |
+      Here is a rewrite suggestion that avoids redundant words: We administer and monitor registered systems to troubleshoot and remediate issues.
+    question: |
+      Rewrite to avoid redundant words: We provide different services for the administration and monitoring of the registered systems that can be used for troubleshooting and even remediation of the issues identified.
