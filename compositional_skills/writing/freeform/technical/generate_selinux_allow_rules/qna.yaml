@@ -1,0 +1,33 @@
+created_by: wrabcak
+seed_examples:
+- answer: 'To generate an SELinux allow rule for the given denial, you can
+  manually construct the rule based on the denial information:
+  allow httpd_t samba_share_t:file getattr;'
+  question: 'Generate SELinux allow rule from the following SELinux denial:
+  type=AVC msg=audit(1226882736.442:86): avc:  denied  { getattr } for
+  pid=2427 comm="httpd" path="/var/www/html/file1" dev=dm-0 ino=284133
+  scontext=unconfined_u:system_r:httpd_t:s0
+  tcontext=unconfined_u:object_r:samba_share_t:s0 tclass=file'
+
+- answer: 'To generate an SELinux allow rule for the given denial, you can
+  manually construct the rule based on the denial information:
+  allow testapp_t http_port_t:tcp_socket name_connect;  '
+  question: 'Generate SELinux allow rule from the following SELinux denial:
+  type=AVC msg=audit(1552588580.769:25978): avc:  denied  { name_connect }
+  for  pid=1023 comm="testapp"
+  dest=80 scontext=system_u:system_r:testapp_t:s0
+  tcontext=system_u:object_r:http_port_t:s0 tclass=tcp_socket permissive=1'
+
+- answer: 'To generate an SELinux allow rule for the given denial, you can
+  manually construct the rule based on the denial information:
+  allow testapp_t proc_t:file { open read };'
+  question: 'Generate SELinux allow rule from the following SELinux denial
+  type=AVC msg=audit(1552588580.764:25971): avc:  denied  { open } for
+  pid=1022 comm="testapp" path="/proc/meminfo" dev="proc" ino=4026532040
+  scontext=system_u:system_r:testapp_t:s0 tcontext=system_u:object_r:proc_t:s0
+  tclass=file permissive=1
+  type=AVC msg=audit(1552588580.764:25971): avc:  denied  { read } for
+  pid=1022 comm="testapp" name="meminfo" dev="proc" ino=4026532040
+  scontext=system_u:system_r:testapp_t:s0 tcontext=system_u:object_r:proc_t:s0
+  tclass=file permissive=1'
+task_description: ''
