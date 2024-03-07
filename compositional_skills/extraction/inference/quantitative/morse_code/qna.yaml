@@ -1,0 +1,17 @@
+created_by: Honny1
+seed_examples:
+  - answer: ".- / --.- ..- .. -.-. -.- / -... .-. --- .-- -. / ..-. --- -..- / .---
+      ..- -- .--. ... / --- ...- . .-. / - .... . / .-.. .- --.. -.-- / -.. ---
+      --. .-.-.-"
+    question: "Convert this text into Morse Code: A quick brown fox jumps over the
+      lazy dog."
+  - answer: ... --- ...
+    question: "Convert this text into Morse Code: SOS"
+  - answer: "- .... . / --.- ..- .. -.-. -.- / -... .-. --- .-- -. / ..-. --- -..- /
+      .--- ..- -- .--. ... / --- ...- . .-. / - .... . / .-.. .- --.. -.--
+      .-.-.-"
+    question: "Convert this text into Morse Code: The quick brown fox jumps over the
+      lazy."
+  - answer: "----- .---- ..--- ...-- ....- ..... -.... --... ---.. ----."
+    question: "Convert this text into Morse Code: 0123456789"
+task_description: This skill provides the ability to convert text into Morse Code.
