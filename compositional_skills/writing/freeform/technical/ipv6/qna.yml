@@ -1,0 +1,18 @@
+created_by: dcaratti
+seed_examples:
+- answer: >
+    Leading zeros MUST be suppressed. "2001:0db8::0001" is not acceptable and must be represented
+    as "2001:db8::1"
+  question: >
+    How do I represent an address where some 16-bit groups have leading zeros?
+- answer: >
+    The use of the symbol "::" MUST be used to its maximum capability. For example,
+    2001:db8:0:0:0:0:2:1 must be shortened to 2001:db8::2:1.
+  question: >
+    How many groups can be shortened using the symbol "::"?
+- answer: >
+    The symbol "::" is used to suppress more than one 16-bit groups made of zeros. The symbol "::"
+    MUST NOT be used to shorten just one 16-bit group.
+  question: >
+    What is the purpose of symbol "::"?
+task_description: 'represent IPv6 addresses using compressed format according to RFC 5952'
