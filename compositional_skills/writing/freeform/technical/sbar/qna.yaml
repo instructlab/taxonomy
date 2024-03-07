@@ -1,0 +1,56 @@
+created_by: miabbott
+seed_examples:
+- answer: |
+    Situation: A customer has reported a critical software bug that requires
+    an immediate fix to remediate a production outage.
+
+    Background: The most recent release of our software included a number of
+    bug fixes and performance enhancements. The development team performed
+    numerous regression tests and performance tests before deciding that
+    the software release was safe to ship to customers. However, the
+    software release introduced a severe issue for certain customers
+    operating in an uncommon configuration.
+
+    Assessment: The new issue is severe enough that a workaround is not
+    possible for customers and they are in an outage. We should fix this
+    problem as soon as possible.
+
+    Recommendation: We should shift resources from new feature development
+    to fixing this bug.
+  question: Write me an SBAR about fixing a software bug
+- answer: |
+    Situation: A patient arrived at our facility without an appointment
+    and is complaining of chest pains.
+
+    Background: The patient has not been seen by our facility before but
+    noted that he was recently admitted at another hospital for a heart
+    attack. His pulse is 125, his blood pressure is 110/62, and his
+    breathing is shallow and rapid.
+
+    Assessment: Given his symptoms and history, it appears he is having
+    another cardiac event.
+
+    Recommendation: We should see the patient immediately, order an EKG,
+    and start an O2 feed to help with breathing.
+  question: Write me an SBAR about handling an incoming patient
+- answer: |
+    Situation: The electrical crew has found a problem in the framing
+    of the home they are building and are concerned about the structural
+    safety of the home.
+
+    Background: The framing of the home was done by another contractor
+    who completed the job weeks ago. It was a contracting outfit that
+    had not been used before. They finished their work under budget and
+    ahead of schedule. The electrician on site has found a number of
+    problems in the framing and has raised the issue with the foreman.
+
+    Assessment: The foreman has inspected the framing work with greater
+    scrutiny and has found a number of problems with the lumber and
+    hardware used during the framing process.
+
+    Recommendation: The foreman recommends that all construction is
+    halted and work is begun on repairing the faulty framing.
+  question: Write me an SBAR about a construction problem
+task_description: |
+  The SBAR task enables the creation of a Situation, Background, Assessment,
+  and Recommendation (SBAR) proposal
