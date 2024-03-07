@@ -1,0 +1,49 @@
+created_by: bn222
+seed_examples:
+- answer:
+    '
+     *
+    * *
+     *
+    '
+  question: Draw a small ascii art circle
+- answer:
+    '
+      ***
+    *     *
+    *     *
+      ***
+    '
+  question: Draw a medium ascii art circle
+- answer:
+    '
+                    ******
+              ******      ******
+           ***                  ***
+         **                        **
+        *                            *
+      **                              **
+     *                                  *
+     *                                  *
+     *                                  *
+     *                                  *
+     *                                  *
+      **                              **
+        *                            *
+          ***                    ***
+              ******      ******
+                    ******
+    '
+  question: Draw a large circle using ascii art
+- answer:
+    '
+        *****
+      *       *
+     *         *
+     *         *
+     *         *
+      *       *
+        *****
+    '
+  question: Draw a normal sized circle with ascii art
+task_description: 'circle ascii art'
