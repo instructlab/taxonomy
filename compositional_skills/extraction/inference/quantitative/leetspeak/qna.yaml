@@ -1,0 +1,15 @@
+created_by: fernflower
+seed_examples:
+- answer: "3n61n33r"
+  question: "Say in leet: engineer"
+- answer: "w3 4p0l061z3 f0r 7h3 1nc0nv3n13nc3"
+  question: "Say in leet: We apologize for the inconvenience"
+- answer: "0h fr3ddl3d 6run7bu66ly, 7hy m1c7ur1710n5 4r3 70 m3, 45 plurdl3d 64bbl3bl07ch175"
+  question: "Say in leet: Oh freddled gruntbuggly, Thy micturitions are to me, As plurdled gabbleblotchits"
+- answer: "7h3 f1v3 b0x1n6 w1z4rd5 jump qu1ckly"
+  question: "Say in leet: the five boxing wizards jump quickly"
+- answer: "7w0 h0u53h0ld5, b07h 4l1k3 1n d16n17y, 1n f41r v3r0n4, wh3r3 w3 l4y 0ur 5c3n3,
+          fr0m 4nc13n7 6rud63 br34k 70 n3w mu71ny, wh3r3 c1v1l bl00d m4k35 c1v1l h4nd5 uncl34n."
+  question: "Say in leet: Two households, both alike in dignity, in fair Verona, where we lay our scene,
+            from ancient grudge break to new mutiny, where civil blood makes civil hands unclean."
+task_description: "This skill provides the improved ability to translate text into leet speak"
