@@ -44,4 +44,46 @@ seed_examples:
     \ by Burt P. Lynwood.\\\\nShadows of Death is a 1945 American western film directed\
     \ by Sam Newfield.\n"
   question: Extract the names of the people mentioned in the given text.
+- answer: '''1. Ashesh Badani - Senior Vice President and Chief Product Officer\n2.
+    Paul Cormier - Chairman\n3. Leigh Day - Senior Vice President and Chief Marketing
+    Officer\n4. Jennifer Dudeck - Senior Vice President and Chief People Officer\n5.
+    Michael Ferris - Senior Vice President and Chief Strategy Officer\n6. Matt Hicks -
+    President and Chief Executive Officer''
+
+    '
+  context: '''Ashesh Badani is the Senior Vice President and Chief Product Officer at Red
+    Hat. In this role, he is responsible for the company’s overall product portfolio and
+    business unit groups, including product strategy, business planning, product management,
+    marketing, and operations across on-premise, public cloud, and edge. His product
+    responsibilities include Red Hat® Enterprise Linux®, Red Hat OpenShift®, Red Hat Ansible
+    Automation, developer tools, and middleware, as well as emerging cloud services and
+    experiences.\n\nPaul Cormier is Chairman of Red Hat. He has been with the company since
+    2001 and previously served as President and Chief Executive Officer. During his tenure,
+    he has driven much of the company’s open hybrid cloud strategy, playing an instrumental
+    role in expanding Red Hat’s portfolio to a full, modern IT stack based on open source
+    innovation.\n\nLeigh Day is Senior Vice President and Chief Marketing Officer at Red
+    Hat. Throughout her more than 20 years at Red Hat, she has held a variety of positions.
+    Her earliest role was creating an online advertising revenue stream to help supplement
+    business for Red Hat® Linux® (Red Hat’s original boxed product). She advanced into
+    product management and product marketing for Red Hat Linux and then moved into a pivotal
+    leadership role—building an in-house Marketing Communications and Brand function
+    responsible for simplifying, unifying and amplifying Red Hat’s unique messaging-voice to
+    deliver noteworthy experiences for Red Hat customers and partners.\n\nJennifer Dudeck is
+    Senior Vice President and Chief People Officer at Red Hat. In this role, she leads the
+    team responsible for global human resources. She has more than 25 years of human
+    resources experience, including leading enterprise learning and leadership development
+    efforts.\n\nMichael Ferris is Senior Vice President and Chief Strategy Officer at Red
+    Hat. In this role, he is focused on building the company’s global business strategy
+    across all offerings and services, mergers and acquisitions, and market-making
+    partnerships.\n\nMatt Hicks was named President and Chief Executive Officer of Red Hat
+    in July 2022. In his previous role, he was Executive Vice President of Products and
+    Technologies where he was responsible for all product engineering, including products
+    such as Red Hat® OpenShift®, Red Hat Enterprise Linux®, the JBoss® middleware portfolio,
+    OpenStack® and Ansible®. He has been with Red Hat for 16 years, watching it grow from a
+    single-product company to the multi-billion-dollar enterprise it is today. He was also
+    one of the founding members of the OpenShift team and has been at the forefront of cloud
+    computing ever since.''
+
+    '
+  question: Extract the titles of the people mentioned in the given text.
 task_description: ''
