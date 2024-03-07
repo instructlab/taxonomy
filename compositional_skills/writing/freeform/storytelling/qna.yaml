@@ -11,7 +11,8 @@ seed_examples:
 
   - question: "How important are characters in a story?"
     answer: |
-      Characters are crucial in storytelling as they drive the plot forward and serve as the emotional connection point for the audience. 
+      Characters are crucial in storytelling as they drive the plot forward and serve as the emotional connection point 
+      for the audience. 
       Well-developed characters make stories memorable and relatable.
 
   - question: "What role does setting play in a story?"
@@ -36,7 +37,8 @@ seed_examples:
 
   - question: "What makes a story's beginning effective?"
     answer: |
-      An effective beginning grabs the audience's attention, introduces the main characters, sets the tone, and hints at the conflict, 
+      An effective beginning grabs the audience's attention, introduces the main characters, sets the tone, and hints at
+      the conflict, 
       motivating the audience to keep engaging with the story.
 
   - question: "How can dialogue enhance storytelling?"
@@ -46,11 +48,13 @@ seed_examples:
 
   - question: "Why is the climax crucial in a story?"
     answer: |
-      The climax is crucial because it's the moment of greatest tension, where the main conflict heads towards resolution. 
+      The climax is crucial because it's the moment of greatest tension, where the main conflict heads towards 
+      resolution. 
       It's the turning point that determines the story's outcome, keeping the audience engaged.
 
   - question: "How do you craft a satisfying story ending?"
     answer: |
-      A satisfying ending resolves the main conflict, answers the story's key questions, and leaves the audience feeling fulfilled. 
+      A satisfying ending resolves the main conflict, answers the story's key questions, and leaves the audience 
+      feeling fulfilled. 
       It may also provide a reflection or hint at future possibilities for the characters.
 
