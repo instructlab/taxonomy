@@ -42,5 +42,5 @@ seed_examples:
       ```man error::pass1```
       ```man warning::debuginfo```
 
-        
+
 task_description: 'systemtap usage guidance'
