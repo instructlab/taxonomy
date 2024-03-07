@@ -1,6 +1,6 @@
 If your PR is related to a contribution to the taxonomy, please, fill
-out the following questionaire. If not, replace this whole text and the
-following questionaire with whatever information is applicable to your PR.
+out the following questionnaire. If not, replace this whole text and the
+following questionnaire with whatever information is applicable to your PR.
 
 
 **Describe the contribution to the taxonomy**
