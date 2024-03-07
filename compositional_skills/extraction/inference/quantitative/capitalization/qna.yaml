@@ -1,0 +1,43 @@
+created_by: jmazzitelli
+seed_examples:
+- answer: "The text has 3 capitalized words: Meaningless, Garble, Words"
+  context: "this is a Meaningless Garble of Words, full of sound and fury, signifying nothing"
+  question: "Identify all the capitalized words in the following text:"
+- answer: "The text has 5 capitalized words: Adam, Eve, Lived, Garden, Eden"
+  context: "Adam and Eve Lived in the Garden of Eden."
+  question: "Identify all the capitalized words in the following text:"
+- answer: "The text has 6 capitalized words: One, Two, Three, Seven, Eight, Nine"
+  context: "One ! Two ! Three ! four ! five ! six ! Seven ! Eight ! Nine ! ten"
+  question: "Identify all the capitalized words in the following text:"
+- answer: "The text has 4 capitalized words: Joe, Denver, Mary, and Home"
+  context: "Joe walked all the way to Denver to see Mary, but she was not Home."
+  question: "Identify all the capitalized words in the following text:"
+- answer: "The text has 5 capitalized words: Sentence, Some, Uppercase, Capitalized, Words"
+  context: "this Sentence has Some words that start with an Uppercase letter which are called Capitalized Words."
+  question: "Identify all the capitalized words in the following text:"
+- answer: "The text has 0 capitalized words"
+  context: "the quick brown fox jumped over the lazy dog"
+  question: "Identify all the capitalized words in the following text:"
+- answer: "The text has 1 capitalized word: Short"
+  context: "this is a Short sentence."
+  question: "Identify all the capitalized words in the following text:"
+- answer: "The text has 6 capitalized words: The, Best, Times, Was, Worst, Of"
+  context: "it was The Best of Times; it Was the Worst Of times."
+  question: "Identify all the capitalized words in the following text:"
+- answer: "The text has 1 capitalized word: I"
+  context: >-
+    I lingered round them, under that benign sky; watched the moths fluttering among the heath,
+    and hare-bells; listened to the soft wind breathing through the grass; and wondered how any
+    one could ever imagine unquiet slumbers for the sleepers in that quiet earth."
+  question: "Identify all the capitalized words in the following text:"
+- answer: "The text has 10 capitalized words: With, Magog, The, Pied, Piper, Dragons, Shimmering, He, You, Better"
+  context: >-
+    With the guards of Magog, swarming around
+    The Pied Piper takes his children underground.
+    Dragons coming out of the sea,
+    Shimmering silver head of wisdom looking at me.
+    He brings down the fire from the skies.
+    You can tell he's doing well by the look in human eyes,
+    Better not compromise, it won't be easy.
+  question: "Identify all the capitalized words in the following text:"
+task_description: "Identify and count the capitalized words in a given piece of text."
