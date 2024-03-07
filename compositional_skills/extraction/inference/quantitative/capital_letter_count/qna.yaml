@@ -1,0 +1,10 @@
+---
+created_by: dmranck
+seed_examples:
+  - answer: The text "Hello World" contains two capital letters. The capital letters are 'H' and 'W'.
+    question: How many capital letters are in the text "Hello World"?
+  - answer: The text "There should be SEVEN Capital letters returned" contains seven capital letters. The capital letters are 'T', 'S', 'E', 'V', 'E', 'N', and 'C'.
+    question: How many capital letters are in the text "There should be SEVEN Capital letters returned"?
+  - answer: The text "there are zero capital letters" contains zero capital letters.
+    question: How many capital letters are in the text "there are zero capital letters"?
+task_description: Ability to count capital letters in a given text.
