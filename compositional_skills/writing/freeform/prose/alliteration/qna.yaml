@@ -1,0 +1,31 @@
+created_by: daliborjanca
+seed_examples:
+  - answer: |
+      Alligators appreciate apples. An adventurous anteater ambles, amusingly
+      acquiring ample apricots. Anxiously, ants assemble, anticipating
+      appetizing apple assortments. Amidst abundant arboreal allure, audacious
+      avians admire an auburn aurora.
+    question: |
+      Could you compose a brief paragraph with alliteration, emphasizing the
+      letter A?
+  - answer: |
+      Gentle golden glow graced the graceful garden, as green grasshoppers
+      gracefully gambolled. Giggling geraniums gave off a glorious gust,
+      guiding a group of gawking gnats. Grandiose grapevines gracefully grew,
+      greeting the glowing gaze of a grateful gnome.
+    question: |
+      Would you mind crafting a concise paragraph that employs alliteration,
+      with a focus on the letter G?
+  - answer: |
+      Toward the tranquil twilight, towering tulips trembled in the tender
+      thyme. Tiny twinkling trinkets took their turning, tailoring a tableau of
+      twinkling tracers. The tranquil terrain tiptoed through the tundra,
+      tending the timeless tapestry. Tantalizing tulips and thyme tickled
+      tenderly, turning the tranquil tableau into a truly tantalizing treat.
+    question: |
+      Can you create a short paragraph featuring alliteration, specifically
+      accentuating the letter T?
+task_description: |
+  Alliteration is an exercise to create a sentence in which all the words start
+  with the same letter. The task involves creating a paragraph with
+  alliteration with emphasis on a particular letter.
