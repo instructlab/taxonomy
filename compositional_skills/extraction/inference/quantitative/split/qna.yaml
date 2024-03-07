@@ -1,0 +1,30 @@
+created_by: croway
+seed_examples:
+  - answer: |
+      ['Hello', 'who', 'are', 'you']
+    question: >
+      Using , as a separator and \" as an escape split the following text:
+      Hello,who,are,you
+  - answer: |
+      ['Hello', 'what', 'are', 'you', 'doing,right', 'now']
+    question: >
+      Using , as a separator and \" as an escape split the following text:
+      Hello,what,are,you,"doing,right",now
+  - answer: |
+      ['Hello', 'what', 'are', 'you', 'doing,right', 'now']
+    question: >
+      Using | as a separator and {escape} as an escape split the following
+      text: Hello|what|are|you|{escape}doing,right{escape},now
+  - answer: |
+      ['test', 'test', 'test', 'test,test', 'test']
+    question: >
+      Using . as a separator and \" as an escape split the following text:
+      test.test.test.test,test.test
+  - answer: |
+      ['1', '2', '3', '4,5', '6', '7', '8.9,10', '11', '12']
+    question: >
+      Using . as a separator and \" as an escape split the following text:
+      1.2.3.4,5.6.7."8.9,10".11.12
+task_description: >
+  Split an input text using custom separator character and
+  custom escape character.
