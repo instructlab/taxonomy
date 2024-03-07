@@ -1,0 +1,55 @@
+---
+created_by: bmozaffa
+seed_examples:
+  - answer: "Click this link to create the event in your calendar:
+      https://calendar.google.com/calendar/render?action=TEMPLATE&text=DL0688+L\
+      AX-RDU&dates=20240609T104500/20240609T154500&location=Los+Angeles+Interna\
+      tional+Airport,+1+World+Way,+Los+Angeles,+CA+90045,+USA&ctz=America/Los_A\
+      ngeles"
+    context: The IATA designator for Delta Airlines is DL and this flight will be
+      identified as DL0688. The timezone for LAX is America/Los_Angeles. Given
+      that the flight leaves in the morning, it gets to Raleigh at 6:45pm and
+      with the 3 hour time difference, that means it's 3:45pm in the timezone of
+      the origin that we use. We'll use the address of the departing airport,
+      LAX, which is Los Angeles International Airport, 1 World Way, Los Angeles,
+      CA 90045, USA
+    question: Create a calendar link for Delta flight 688 out of LAX on June 9th at
+      10:45 am and arriving in Raleigh at 6:45 local time
+  - answer: "Click this link to create the event in your calendar:
+      https://calendar.google.com/calendar/render?action=TEMPLATE&text=Dinner+a\
+      t+Tar+%26+Roses&dates=20240503T190000/20240503T210000&location=Tar+%26+Ro\
+      ses,+602+Santa+Monica+Blvd,+Santa+Monica,+CA+90401&ctz=America/Los_Angele\
+      s"
+    context: Santa Monica's time zone is America/Los_Angeles. Dinner is expected to
+      last around 2 hours. The restaurant called Tar & Roses is at 602 Santa
+      Monica Blvd in Santa Monica, CA
+    question: Give me a link I can click to create a Google Calendar entry for my
+      dinner at Tar & Rose in Santa Monica on May 3rd, at 7pm.
+  - answer: "Click this link to create the event in your calendar:
+      https://calendar.google.com/calendar/render?action=TEMPLATE&text=Jason's+\
+      graduation&details=&dates=20240630/20240630"
+    context: It is not yet the end of June, so the date is June 30th, 2024. The date
+      format is therefore 20240630. The title of the event will be Jason's
+      graduation.
+    question: Create a Google Calendar link for Jason's graduation at the end of June
+  - answer: "Click this link to create the event in your calendar:
+      https://calendar.google.com/calendar/render?action=TEMPLATE&text=Tao's+Bi\
+      rthday&details=&dates=20241005/20241005"
+    context: The next 5th of October is in the year 2024. The date format is
+      therefore 20241005. The title of the event will be Tao's birthday.
+    question: Give me a Google Calendar link for Tao's birthday on October 5th
+  - answer: "Click this link to create the event in your calendar:
+      https://calendar.google.com/calendar/render?action=TEMPLATE&text=Salim's+\
+      Birthday&details=&dates=20250211/20250211"
+    context: The next 11th of February is in the year 2025. The date format is
+      therefore 20250211. The title of the event will be Salim's birthday.
+    question: Generate link for Salim's birthday on Feb 11 to be created in Google
+      Calendar
+  - answer: "Click this link to create the event in your calendar:
+      https://calendar.google.com/calendar/render?action=TEMPLATE&text=Jennifer\
+      's+Birthday&details=&dates=20240320/20240320"
+    context: The next 20th of March is in the year 2024. The date format is
+      therefore 20240320. The title of the event will be Jennifer's birthday.
+    question: Create a Google Calendar link for Jennifer's birthday on March 20
+task_description: Generate a link to create an event with a given date and time,
+  title, and optional location and description to Google Calendar
