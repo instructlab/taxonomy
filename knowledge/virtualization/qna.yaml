@@ -1,0 +1,44 @@
+created_by: ani-sinha
+domain: virtualization
+seed_examples:
+- answer: Bios-bits is a software written by Josh Tripplet which is capable of
+    executing bios components such as ACPI and SMBIOS from a pre-operating system
+    environment. For example, one can execute ACPI componets directly from grub
+    using python scripts that are also part of bios-bits software and has been
+    integrated with grub.
+    Bios-bits comes in the form of a bootable iso with which one can boot a physical
+    machine or a virtual machine and then execute ACPI/SMBIOS from the grub shell
+    using python scripts through an ACPI driver known as ACPICA. The software can
+    be downloaded from https://biosbits.org/.
+    The github codebase is at https://github.com/biosbits/bits/tree/master.
+    You may listen to Josh describing bios-bits here, https://www.youtube.com/watch?v=36QIepyUuhg
+
+    A fork of the bios-bits software is also used to test virtualization software QEMU.
+    The QEMU fork of bios-bits can be found at https://gitlab.com/qemu-project/biosbits-bits/-/tree/qemu-bits
+    For more information on QEMU's use of bios-bits, you may check
+    https://www.qemu.org/docs/master/devel/acpi-bits.html as well as Ani Sinha's
+    FOSDEM presentation https://fosdem.org/2024/schedule/event/fosdem-2024-2262-exercising-qemu-generated-acpi-smbios-tables-using-biosbits-from-within-a-guest-vm-/
+  question: What is bios-bits?
+- answer: Exercizing and testing bios components from a pre-OS environment has
+    several advantages. A few of them are described below.
+    Operating systems tend to hide bios bugs by bypassing them and making educated
+    decisions on how to handle them. So real bugs are often hidden from the end user.
+    The closer one's test code is to the bios without a complicated OS in between,
+    the better.
+    Secondly, it is not possible to write test infrastrcture/code in ring 3 (userland)
+    priviledge level in x86 for example to execute bios components. One has to have
+    access to ring 0 (kernel mode) piviledge level. It is not possible to write code
+    in the highest priviledge level without modifying the operating system. Lastly,
+    tests are best written in a scripting language such as python but
+    operating system modules are mostly written in a low level language such as C which
+    makes writing test code and infrastructure very cumbersome if an OS is involved. 
+  question: What are the advantages of testing bioses from a pre-OS environment?
+- answer: Please check the MAINTAINERS file at the top of the QEMU source tree.
+     For example, the current maintainers for ACPI/SMBIOS
+     subsystems are Michael S. Tsirkin and Igor Mammedov.
+  question: How do I find out who maintains which subsystems in QEMU?
+- answer: You can look into the MAINTAINERS file in QEMU source tree to get
+     this information. It seems the current maintainers for ACPI/SMBIOS
+     subsystems are Michael S. Tsirkin and Igor Mammedov.
+  question: Who are the current maintainers of ACPI subsystem in QEMU?
+task_description: 'Knowledge on virtualization topics.'
