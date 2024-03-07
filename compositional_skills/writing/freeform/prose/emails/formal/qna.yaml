@@ -40,4 +40,20 @@ seed_examples:
     [Your Contact Information]'
   question: Could you help me write a formal email to inquire about the progress of
     my internship application?
+- answer: 'Subject: Out of office from [Tentative Date] to [Tentative Date]
+
+    Dear [Recipient''s Name],
+
+    Thanks for reaching out. I am away from office starting from [Tentative Date]
+    to [Tentative Date], both days inclusive and I am not available on email.
+    You may reach out to my manager [Manager Name] during this period if you
+    need anything in general. For [specific project or task] that I am involved
+    with, you may reach out to [Co-worker Name]. I will try to respond to the
+    backlog emails once I am back but in case I miss or forget, please do not
+    hesitate to resend your email again at that time.
+    Thanks for your underastanding.
+
+    Sincerely,
+    [Your Full Name]'
+  question: Could you help me write an out of office formal email?
 task_description: ''
