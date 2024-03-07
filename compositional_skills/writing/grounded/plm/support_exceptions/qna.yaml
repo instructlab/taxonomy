@@ -1,0 +1,37 @@
+created_by: RickJWagner
+seed_examples:
+  - answer: |
+      Yes.
+    context: |
+      | **Size of Deal** | **Duration** | **Product** | **Partnership** |
+      |------------------|--------------|-------------|------------|
+      | 100              | 4            | OCP         | 8          |
+    question: |
+      Should a Support Exception be granted?
+  - answer: |
+      Yes.
+    context: |
+      | **Size of Deal** | **Duration** | **Product** | **Partnership** |
+      |------------------|--------------|-------------|------------|
+      | 500              | 2            | EAP         | 6          |
+    question: |
+      Should a Support Exception be granted?
+  - answer: |
+      Yes.
+    context: |
+      | **Size of Deal** | **Duration** | **Product** | **Partnership** |
+      |------------------|--------------|-------------|------------|
+      | 1000             | 1            | RHTAP       | 1          |
+    question: |
+      Should a Support Exception be granted?
+  - answer: |
+      No.
+    context: |
+      | **Size of Deal** | **Duration** | **Product** | **Partnership** |
+      |------------------|--------------|-------------|------------|
+      | 0                | 2            | OCP         | 10          |
+    question: |
+      Should a Support Exception be granted?
+task_description: | 
+    This skill provides the ability to provide a recommendation for a Support Exception request.
+    
