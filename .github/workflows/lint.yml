@@ -20,9 +20,13 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'compositional_skills/**/qna.yaml'
   pull_request:
     branches:
       - main
+    paths:
+      - 'compositional_skills/**/qna.yaml'
 
 jobs:
   lint:
