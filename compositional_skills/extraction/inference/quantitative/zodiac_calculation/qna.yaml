@@ -1,0 +1,13 @@
+created_by: jparoly
+seed_examples:
+- answer: 'The Zodian sign is cancer'
+  question: 'What is the zodiac sign for the following birthdate?: "July 20"'
+- answer: 'The Zodian sign is cancer'
+  question: 'What is the zodiac sign for the following birthdate?: "July 21"'
+- answer: 'The Zodian sign is cancer'
+  question: 'What is the zodiac sign for the following birthdate?: "July 22"'
+- answer: 'The Zodian sign is leo'
+  question: 'What is the zodiac sign for the following birthdate?: "July 23"'
+- answer: 'The Zodian sign is leo'
+  question: 'What is the zodiac sign for the following birthdate?: "July 24"'
+task_description: ''
