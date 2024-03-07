@@ -1,0 +1,101 @@
+# The goal of this skill is to explain lambda term.
+---
+task_description: |
+
+  Perform functional equational reasoning to evaluate and explain lambda terms.
+
+created_by: TristanCacqueray
+
+seed_examples:
+  - question: |
+
+      Using step by step equational reasoning, what is the evaluation of
+      the provided lambda term?
+
+    context: |
+
+      (x => y => x) (42) (23)
+
+    answer: |
+
+      The provided term is equal to 42:
+
+         (x => y => x) (42) (23)
+      -> (y => 42) (23)
+      -> 42
+
+  - question: |
+
+      Using step by step equational reasoning, what is the evaluation of
+      the provided lambda term?
+
+    context: |
+
+      (x => y => y) (42) (23)
+
+    answer: |
+
+      The provided term is equal to 23:
+
+         (x => y => y) (42) (23)
+      -> (y => y) (23)
+      -> 23
+
+  - question: |
+
+      Using step by step equational reasoning, what is the evaluation of
+      the provided lambda term?
+
+    context: |
+
+      (p => a => b => p(b)(a)) (c => d => c)
+
+    answer: |
+
+      By the definition of the lambda calculus, here are the steps to evaluate
+      the provided term:
+
+         (p => a => b => p(b)(a)) (c => d => c)
+      -> (a => b => (c => d => c)(b)(a))
+      -> (a => b => (d => b)(a))
+      -> (a => b => b)
+
+  - question: |
+
+      Using step by step equational reasoning, what is the evaluation of
+      the provided lambda term?
+
+    context: |
+
+      (x => f => s => f (x(f)(s))) (f => x => x)
+
+    answer: |
+
+      By the definition of the lambda calculus, here are the steps to evaluate
+      the given term:
+
+         (x => f => s => f (x(f)(s))) (f => x => x)
+      -> (     f => s => f ((f => x => x)(f)(s)))
+      -> (     f => s => f ((x => x) s))
+      -> (     f => s => f (s))
+      -> f => s => f (s)
+
+      This is the church numeral encoding for one.
+
+
+  - question: |
+
+      Using step by step equational reasoning, what is the evaluation of
+      the provided lambda term?
+
+    context: |
+
+      (x => x) (x => y => x)
+
+    answer: |
+
+      The given term applies the identity function, so it simply returns its
+      argument:
+
+         (x => x) (x => y => x)
+      -> (x => y => x)
