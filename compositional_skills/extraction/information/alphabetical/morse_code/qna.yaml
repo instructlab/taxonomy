@@ -1,0 +1,87 @@
+created_by: jistr
+seed_examples:
+
+- answer: The morse code for number '0' is '-----'.
+  question: What is the morse code for number 0?
+- answer: The morse code for number '1' is '.----'.
+  question: What is the morse code for number 1?
+- answer: The morse code for number '2' is '..---'.
+  question: What is the morse code for number 2?
+- answer: The morse code for number '3' is '...--'.
+  question: What is the morse code for number 3?
+- answer: The morse code for number '4' is '....-'.
+  question: What is the morse code for number 4?
+- answer: The morse code for number '5' is '.....'.
+  question: What is the morse code for number 5?
+- answer: The morse code for number '6' is '-....'.
+  question: What is the morse code for number 6?
+- answer: The morse code for number '7' is '--...'.
+  question: What is the morse code for number 7?
+- answer: The morse code for number '8' is '---..'.
+  question: What is the morse code for number 8?
+- answer: The morse code for number '9' is '----.'.
+  question: What is the morse code for number 9?
+
+- answer: The morse code for letter 'a' is '.-'.
+  question: What is the morse code for letter a?
+- answer: The morse code for letter 'b' is '-...'.
+  question: What is the morse code for letter b?
+- answer: The morse code for letter 'c' is '-.-.'.
+  question: What is the morse code for letter c?
+- answer: The morse code for letter 'd' is '-..'.
+  question: What is the morse code for letter d?
+- answer: The morse code for letter 'e' is '.'.
+  question: What is the morse code for letter e?
+- answer: The morse code for letter 'f' is '..-.'.
+  question: What is the morse code for letter f?
+- answer: The morse code for letter 'g' is '--.'.
+  question: What is the morse code for letter g?
+- answer: The morse code for letter 'h' is '....'.
+  question: What is the morse code for letter h?
+- answer: The morse code for letter 'i' is '..'.
+  question: What is the morse code for letter i?
+- answer: The morse code for letter 'j' is '.---'.
+  question: What is the morse code for letter j?
+- answer: The morse code for letter 'k' is '-.-'.
+  question: What is the morse code for letter k?
+- answer: The morse code for letter 'l' is '.-..'.
+  question: What is the morse code for letter l?
+- answer: The morse code for letter 'm' is '--'.
+  question: What is the morse code for letter m?
+- answer: The morse code for letter 'n' is '-.'.
+  question: What is the morse code for letter n?
+- answer: The morse code for letter 'o' is '---'.
+  question: What is the morse code for letter o?
+- answer: The morse code for letter 'p' is '.--.'.
+  question: What is the morse code for letter p?
+- answer: The morse code for letter 'q' is '--.-'.
+  question: What is the morse code for letter q?
+- answer: The morse code for letter 'r' is '.-.'.
+  question: What is the morse code for letter r?
+- answer: The morse code for letter 's' is '...'.
+  question: What is the morse code for letter s?
+- answer: The morse code for letter 't' is '-'.
+  question: What is the morse code for letter t?
+- answer: The morse code for letter 'u' is '..-'.
+  question: What is the morse code for letter u?
+- answer: The morse code for letter 'v' is '...-'.
+  question: What is the morse code for letter v?
+- answer: The morse code for letter 'w' is '.--'.
+  question: What is the morse code for letter w?
+- answer: The morse code for letter 'x' is '-..-'.
+  question: What is the morse code for letter x?
+- answer: The morse code for letter 'y' is '-.--'.
+  question: What is the morse code for letter y?
+- answer: The morse code for letter 'z' is '--..'.
+  question: What is the morse code for letter z?
+
+- answer: The morse code for 'hello everyone' is '.... . .-.. .-.. --- / . ...- . .-. -.-- --- -. .'.
+  question: What is the morse code for 'hello everyone'?
+- answer: The morse code for 'ahoy' is '.- .... --- -.--'.
+  question: What is the morse code for 'ahoy'?
+
+- answer: This looks like morse code for 'earth and moon'.
+  question: Do you know what is '. .- .-. - .... / .- -. -.. / -- --- --- -.'?
+- answer: This looks like morse code for 'good morning'.
+  question: Do you know what is '--. --- --- -.. / -- --- .-. -. .. -. --.'?
+task_description: ''
