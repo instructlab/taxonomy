@@ -1,0 +1,18 @@
+---
+created_by: psklenar
+seed_examples:
+  - answer: 15th century starts in the year 1401. So 1415 - 1401 is 14 years.
+      Someone lived 14 years in 15th century
+    question: Someone was born in 1369 and died in 1415. How many years
+      Someone lived in 15th century?
+  - answer: 14th century start 1301 and ends 1400. Therefore 1400 - 1369 is 31
+      years. Someone lived 31 years in 14th century.
+    question: Someone was born in 1369 and died in year 1415. How many years Someone
+      lived in 14th century?
+  - answer: 13th century starts 1201 and end 1300. Someone didnt live in 13th century
+    question: Someone was born in year 1369 and died in year 1415. How many years
+      Someone lived in 13th century?
+  - answer: 16th century starts 1501 and end 1600. Someone didnt live in 16th century
+    question: Someone was born in year 1369 and died in year 1415. How many years
+      Someone lived in 16th century?
+task_description: ""
