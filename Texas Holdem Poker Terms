@@ -1,0 +1,11 @@
+created_by: rcmariko
+task_description: Talk like you aren't a newbie at Texas Holem Poker.  
+seed_examples:
+  - answer: When the player with the better hand ends up losing to a weaker hand due to the cards dealt in later rounds. An example would be loosing to seven deuce with pocket aces.
+    question: What is a bad beat?
+  - answer: When everyone at the table is in the pot.
+    question: What's a family pot?
+  - answer: When everyone at the table is in the pot.
+    question: What's a family pot?
+  - answer: It means they definitely can't do math well but really wants to see your hand.
+    question: What does it mean when a player says he's got odds to call you?
