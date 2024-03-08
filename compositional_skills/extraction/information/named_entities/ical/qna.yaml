@@ -1,0 +1,141 @@
+created_by: bonzini
+seed_examples:
+- question: Please describe the events in this ICS file.
+  answer: |
+    The provided ICS (iCalendar) data describes train journeys between Praha hl.n. and Brno hl.n., including departure and arrival times, train numbers, and seat information.
+  <<: &trains
+    context: |
+      BEGIN:VCALENDAR
+      VERSION:2.0
+      PRODID:-//CD//NONSGML www.cd.cz//cs-CZ
+      METHOD:PUBLISH
+      BEGIN:VEVENT
+      DTSTART:20240312T184400Z
+      DTEND:20240312T211900Z
+      UID:fd90c9d884c244d7bf487dcee123808eThere@www.cd.cz
+      DTSTAMP:20240308T095146Z
+      SUMMARY:Train journey from Praha hl.n. to Brno hl.n.
+      DESCRIPTION:rj 575\nPraha hl.n. 19:44\nBrno hl.n. 22:19\ncarriage 26, seat 25\n
+      CLASS:PRIVATE
+      END:VEVENT
+      BEGIN:VEVENT
+      DTSTART:20240314T053900Z
+      DTEND:20240314T081300Z
+      UID:6207e551ff6e4715b45220d0a9926046Back@www.cd.cz
+      DTSTAMP:20240308T095146Z
+      SUMMARY:Train journey from Brno hl.n. to Praha hl.n.
+      DESCRIPTION:rj 574\nBrno hl.n. 06:39\nPraha hl.n. 09:13\ncarriage 27, seat 51\n
+      CLASS:PRIVATE
+      END:VEVENT
+      END:VCALENDAR
+
+- question: Please provide the departure and arrival times for events in this ICS file.
+  answer: |
+    The provided ICS (iCalendar) data contains two train journeys with the following depart and arrival times:
+
+    1. **Event 1:** Train journey from Praha hl.n. to Brno hl.n.
+        - **Start Date and Time:** March 12, 2024, at 18:44 UTC
+        - **End Date and Time:** March 12, 2024, at 21:19 UTC
+
+    2. **Event 2:** Train journey from Brno hl.n. to Praha hl.n.
+       - **Start Date and Time:** March 14, 2024, at 05:39 UTC
+       - **End Date and Time:** March 14, 2024, at 08:13 UTC
+
+    This information is available in the DTSTART (**Start Date and Time**) and DTEND (**End Date and Time**) fields.
+  <<: *trains
+
+- question: Do the events in this ICS format file occur multiple times?
+  answer: |
+    No, the events in the provided ICS (iCalendar) data occur only once.
+  <<: *trains
+
+- question: Where do the events in this ICS format file happen?
+  answer: |
+    The provided ICS (iCalendar) data does not include a LOCATION field.  However, based on the description, these events describe train journeys between Praha and Brno, two cities in Czech Republic.
+  <<: *trains
+
+- question: What is the time zone of the event in this ICS format file?
+  answer: |
+    The provided ICS (iCalendar) data records the start and end times in the UTC (Coordinated Universal Time) time zone.  This is indicated by a `Z` in the DTSTART (**Start Date and Time**) and DTEND (**End Date and Time**) fields.
+  <<: *trains
+
+- question: What is the train number and seat information for the journey to Brno?
+  answer: Based on the summary and description of the event, the journey from Praha hl.n. to Brno hl.n. is on train number RJ 575. The seat is in carriage 26, seat 25.
+  <<: *trains
+
+- question: What is the train number and seat information for the journey to Praha?
+  answer: Based on the summary and description of the event, the journey from Brno hl.n. to Praha hl.n. is on train number RJ 575. The seat is in carriage 27, seat 51.
+  <<: *trains
+
+- question: Please describe the events in this ICS file.
+  answer: The provided ICS (iCalendar) data represents Christmas Day, which is observed in Italy. It's an all-day event that recurs every year on December 25th.
+  <<: &christmas
+    context: |
+      BEGIN:VEVENT
+      CLASS:PUBLIC
+      UID:YYYY1225
+      CREATED:20230724T080000Z
+      DESCRIPTION:Christmas
+      DTSTART;VALUE=DATE:20241225
+      DTEND;VALUE=DATE:20241226
+      LOCATION:Italy
+      RRULE:FREQ=YEARLY
+      LAST-MODIFIED:20240308T080000Z
+      SUMMARY:Christmas Day
+      X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+      X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
+      END:VEVENT
+
+- question: When was the event in this ICS file created?
+  answer: The event in the ICS (iCalendar) data was created on July 24, 2023.  This is indicated by the CREATED (**Creation Date and Time**) field.
+  <<: *christmas
+
+- question: What is the time zone of the event in this ICS format file?
+  answer: |
+    The provided ICS (iCalendar) data is in the America/New York time zone.  This information is available in the TZID parameter of the DTSTART (**Start Date and Time**) and DTEND (**End Date and Time**) fields.
+  context: |
+    BEGIN:VEVENT
+    DTSTART;TZID=America/New_York:20240312T134400
+    DTEND;TZID=America/New_York:20240312T161900
+    UID:fd90c9d884c244d7bf487dcee123808eThere@www.cd.cz
+    DTSTAMP:20240308T095146Z
+    SUMMARY:Train journey from Praha hl.n. to Brno hl.n.
+    DESCRIPTION:rj 575\nPraha hl.n. 19:44\nBrno hl.n. 22:19\ncarriage 26, seat 25\n
+    LAST-MODIFIED:20240229
+    CLASS:PRIVATE
+    END:VEVENT
+
+- question: Who is organizing the event in this ICS format file?
+  answer: |
+    The event in the provided ICS (iCalendar) data is organized by John Smith.  This information is available in the CN parameter of the ORGANIZER  field.
+  <<: &meeting
+    context: |
+      BEGIN:VEVENT
+      UID:6aea9c53-3678-4b30-8286-ee7583319c21.21
+      DTSTAMP:20210430T115549Z
+      DTSTART;TZID=Europe/Rome:20210518T150000
+      DTEND;TZID=Europe/Rome:20210518T152500
+      SUMMARY:A very important meeting
+      DESCRIPTION:This is an extremely important meeting that everybody should attend
+      LAST-MODIFIED:20210430T115549Z
+      ORGANIZER;CN=John Smith:MAILTO:jsmith@example.com
+      RRULE:WEEKLY
+      CLASS:PUBLIC
+      SEQUENCE:16
+      BEGIN:VALARM
+      ACTION:Display
+      TRIGGER:-PT10M
+      END:VALARM
+      END:VEVENT
+
+- question: Do the events in this ICS format file occur multiple times?
+  answer: |
+    The event in the provided ICS (iCalendar) data recurs every week.
+  <<: *meeting
+
+- question: What is the time zone of the event in this ICS format file?
+  answer: |
+    The provided ICS (iCalendar) data is in the Europe/Rome time zone.  This information is available in the TZID parameter of the DTSTART (**Start Date and Time**) and DTEND (**End Date and Time**) fields.
+  <<: *meeting
+
+task_description: 'extracting information from iCalendar data'
