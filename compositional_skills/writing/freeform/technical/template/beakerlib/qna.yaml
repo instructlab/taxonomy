@@ -1,0 +1,38 @@
+---
+created_by: lukaszachy
+seed_examples:
+  - answer: |
+      #!/bin/bash
+      # vim: dict+=/usr/share/beakerlib/dictionary.vim cpt=.,w,b,u,t,i,k
+      . /usr/share/beakerlib/beakerlib.sh || exit 1
+
+      set -o pipefail
+
+      rlJournalStart
+        rlPhaseStartSetup
+          rlRun "tmp_dir=\$(mktemp -d)"
+          rlRun "pushd $tmp"
+        rlPhaseEnd
+
+        rlPhaseStartTest
+          rlRun -s "echo Hello World"
+          rlAssertGrep "Hello World" "$rlRun_LOG" "-F"
+        rlPhaseEnd
+
+        rlPhaseStartCleanup
+            rlRun "popd"
+            rlRun "rm -r $tmp" 0 "Remove tmp directory"
+        rlPhaseEnd
+      rlJournalEnd
+    question: Write skeleton for a test using Beakerlib framework
+  - answer: |
+      rlRun "rlWaitForSocket 80 -t 200"
+    question: |
+      Write Beakerlib command asserting that something listens on port 80
+      and wait up to 200 seconds if it wasn't listening from the very beginning.
+  - answer: |
+      rlRun "rlWatchdog \"rlRun \\\"sleep 20; echo command\\\" 0 \" 30"
+    question: |
+      Write Beakerlib command asserting exit code of the command as well
+      as that command finished in 30 seconds.
+task_description:
