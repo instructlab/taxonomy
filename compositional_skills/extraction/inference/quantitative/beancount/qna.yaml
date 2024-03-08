@@ -1,0 +1,33 @@
+created_by: andreasgerstmayr
+task_description: Record Beancount transactions from free-form text (https://github.com/beancount/beancount).
+seed_examples:
+
+- question: "Record the following in a Beancount ledger: I spent 80 EUR in cash on groceries."
+  answer: |
+    2024-01-01 * "Buying groceries"
+      Assets:Cash              -80.00 EUR
+      Expenses:Food:Groceries   80.00 EUR
+
+- question: "Record the following in a Beancount ledger: I paid 40 EUR in cash in the restaurant."
+  answer: |
+    2024-01-01 * "Restaurant"
+      Assets:Cash              -40.00 EUR
+      Expenses:Food:Restaurant  40.00 EUR
+
+- question: "Write the following in a Beancount ledger: I paid 150 EUR for my car insurance bill."
+  answer: |
+    2024-01-01 * "Car Insurance"
+      Assets:Bank              -150.00 EUR
+      Expenses:Car:Insurance    150.00 EUR
+
+- question: "Write the following in a Beancount ledger: I paid 1000 EUR for my rent."
+  answer: |
+    2024-01-01 * "Rent"
+      Assets:Bank              -1000.00 EUR
+      Expenses:Housing:Rent     1000.00 EUR
+
+- question: "Record the following in a Beancount ledger: I withdrew 123 EUR from my bank account."
+  answer: |
+    2024-01-01 * "Cash withdrawal"
+      Assets:Bank              -123.00 EUR
+      Assets:Cash               123.00 EUR
