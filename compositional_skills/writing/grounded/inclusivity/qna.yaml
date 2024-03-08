@@ -1,0 +1,24 @@
+created_by: nate-johnston
+seed_examples:
+- answer: |
+    These instructions describe how to modify sendmail's configuration
+    file to enable the dnsbl (DNS Denylist) feature to block incoming e-mail
+    from IP addresses that are listed on one or more denylists. These
+    particular denylists are checked by sendmail during the SMTP conversation,
+    avoiding the generation of the bounce messages that are generated (for
+    example) when SpamAssassin--called from procmail--consults DNS Denylists.
+    (The configuration of SpamAssassin to consult DNS Denylists is outside the
+    scope of this document.)
+  context: |
+    These instructions describe how to modify sendmail's configuration
+    file to enable the dnsbl (DNS Blacklist) feature to block incoming e-mail
+    from IP addresses that are listed on one or more blacklists. These
+    particular blacklists are checked by sendmail during the SMTP conversation,
+    avoiding the generation of the bounce messages that are generated (for
+    example) when SpamAssassin--called from procmail--consults DNS Blacklists.
+    (The configuration of SpamAssassin to consult DNS Blacklists is outside the
+    scope of this document.)
+  question: Use more inclusive language in the text.
+task_description: ''
+# attribution: text extracted on Mar 8 2024 from
+# https://weldon.whipple.org/sendmail/dnsbl.html
