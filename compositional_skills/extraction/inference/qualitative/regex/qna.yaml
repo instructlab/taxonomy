@@ -1,0 +1,33 @@
+created_by: fjuma
+seed_examples:
+- answer: 'The word "bubble" matches the regular expression "b[aeiou]bble"\
+    \ because "bubble" starts with a "b", contains the letter "u" from the\
+    \ list "(a, e, i, o, u)" at the second position, and ends with "bble"'
+  context: 'The word is "bubble". The regular expression is "b[aeiou]bble"'
+  question: Determine if the given word matches the given regular expression.
+- answer: 'The word "whither" matches the regular expression "wh[ei]ther"\
+    \ because "whither" starts with "wh", contains the letter "i" from the\
+    \ list "(e, i)" at the third position, and ends with "ther"'
+  context: 'The word is "whither". The regular expression is "wh[ei]ther"'
+  question: Determine if the given word matches the given regular expression.
+- answer: 'The word "claimed" matches the regular expression "cla[im]med"\
+     \ because "claimed" starts with "cla", contains the letter "i" from the\
+     \ list "(i, m)" at the fourth position, and ends with "med"'
+  context: 'The word is "claimed". The regular expression is "cla[im]med"'
+  question: Determine if the given word matches the given regular expression.
+- answer: 'The word "quest" matches the regular expression "[qg]uest"\
+     \ because "quest" contains the letter "q" from the\
+     \ list "(q, g)" at the first position and ends with "uest"'
+  context: 'The word is "quest". The regular expression is "[qg]uest"'
+  question: Determine if the given word matches the given regular expression.
+- answer: 'The word "meat" matches the regular expression "mea[lt]"\
+     \ because "meat" starts with "mea" and ends with the letter "t" from the\
+     \ list "(l, t)"'
+  context: 'The word is "meat". The regular expression is "mea[lt]"'
+  question: Determine if the given word matches the given regular expression.
+- answer: 'The word "hobble" matches the regular expression "[wgcbhn]obble"\
+     \ because "hobble" starts with the letter "h" from the\
+     \ list "(w, g, c, b, h, n)" and ends with "obble"'
+  context: 'The word is "hobble". The regular expression is "[wgcbhn]obble"'
+  question: Determine if the given word matches the given regular expression.
+task_description: 'Determining if a given word matches the given regular expression'
