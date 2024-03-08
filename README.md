@@ -125,7 +125,7 @@ in terms of a taxonomy contribution:
 [...]
 ```
 
-#### Grounded compositionial skill: YAML example
+#### Grounded compositional skill: YAML example
 
 Remember that grounded compositional skills require additional context
 
