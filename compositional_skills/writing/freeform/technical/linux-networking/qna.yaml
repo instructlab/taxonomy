@@ -1,0 +1,159 @@
+author: marceloleitner
+seed_examples:
+- answer: "To view the link status of your Ethernet interface using `ethtool`,
+    run the following command in your terminal or command prompt:
+    
+    ```bash
+    ethtool <interface>
+    ```
+    
+    Replace `<interface>` with the name of your Ethernet interface (e.g.,
+    `eth0`, `enp0s25`, etc.).  This command will display the current speed,
+    duplex, and link status (`up` or `down`) for the interface.
+
+    For example, to view the link status of interface `eth0`, run:
+    
+    ```bash
+    ethtool eth0
+    ```
+    
+    The output should look something like this:
+    
+    ```
+    Settings for eth0:
+            Supported ports: [ TP ]
+            Supported link modes:   10baseT/Half 10baseT/Full
+                                    100baseT/Half 100baseT/Full
+                                    1000baseT/Full
+            Supported pause frame use: Symmetric
+            Supports auto-negotiation: Yes
+            Supported FEC modes: Not reported
+            Advertised link modes:  10baseT/Half 10baseT/Full
+                                    100baseT/Half 100baseT/Full
+                                    1000baseT/Full
+            Advertised pause frame use: Symmetric
+            Advertised auto-negotiation: Yes
+            Advertised FEC modes: Not reported
+            Speed: 1000Mb/s
+            Duplex: Full
+            Port: Twisted Pair
+            PHYAD: 1
+            Transceiver: internal
+            Auto-negotiation: on
+            MDI-X: on (auto)
+    Cannot get wake-on-lan settings: Operation not permitted
+            Current message level: 0x00000007 (7)
+                                   drv probe link
+            Link detected: yes
+    ```
+    
+    In this example, the link status is `up`, indicating that the interface is
+    currently connected to a network. If the link status is `down`, it means
+    that the interface is not connected to a network or there is a problem with
+    the connection. In this case, you may want to check your network settings,
+    cable connection, or hardware for issues."
+  question: how can I check the network link status with ethtool?
+
+- answer: "To check the offloading capabilities of a network interface, you
+    can use the `ethtool` with the `-k`, `--show-features` or `--show-offload`
+    options, followed by the interface name, to available offloading capabilities
+    and their current status:
+
+    ```bash
+    ethtool -k <interface_name>
+    ```
+
+    Replace `<interface_name>` with the name of your network interface.
+
+    For example, to check the offloading capabilities of the interface named `eth0`, you would run
+    the following command:
+
+    ```bash
+    ethtool -k eth0
+    ```
+
+    This command will display the available offloading capabilities, such as
+    TCP segmentation offload (TSO), generic receive offload (GRO) and large
+    receive offload (LRO), along with their current status (on or off) and if
+    they are fixed or updatable.
+
+    Here's an example output:
+
+    ```
+    Features for eth0:
+    rx-checksumming: on
+    tx-checksumming: on
+            tx-checksum-ipv4: off [fixed]
+            tx-checksum-ip-generic: on
+            tx-checksum-ipv6: off [fixed]
+            tx-checksum-fcoe-crc: off [fixed]
+            tx-checksum-sctp: on
+    scatter-gather: on
+            tx-scatter-gather: on
+            tx-scatter-gather-fraglist: off [fixed]
+    tcp-segmentation-offload: on
+            tx-tcp-segmentation: on
+            tx-tcp-ecn-segmentation: off [fixed]
+            tx-tcp-mangleid-segmentation: off
+            tx-tcp6-segmentation: on
+    generic-segmentation-offload: on
+    generic-receive-offload: on
+    large-receive-offload: off [fixed]
+    rx-vlan-offload: on
+    tx-vlan-offload: on
+    ntuple-filters: off
+    receive-hashing: on
+    highdma: on [fixed]
+    rx-vlan-filter: on [fixed]
+    vlan-challenged: off [fixed]
+    tx-lockless: off [fixed]
+    netns-local: off [fixed]
+    tx-gso-robust: off [fixed]
+    tx-fcoe-segmentation: off [fixed]
+    tx-gre-segmentation: on
+    tx-gre-csum-segmentation: on
+    tx-ipxip4-segmentation: on
+    tx-ipxip6-segmentation: on
+    tx-udp_tnl-segmentation: on
+    tx-udp_tnl-csum-segmentation: on
+    tx-gso-partial: on
+    tx-sctp-segmentation: off [fixed]
+    tx-esp-segmentation: off [fixed]
+    tx-udp-segmentation: on
+    tls-hw-rx-offload: off [fixed]
+    fcoe-mtu: off [fixed]
+    tx-nocache-copy: off
+    loopback: off [fixed]
+    rx-fcs: off [fixed]
+    rx-all: off
+    tx-vlan-stag-hw-insert: off [fixed]
+    rx-vlan-stag-hw-parse: off [fixed]
+    rx-vlan-stag-filter: off [fixed]
+    l2-fwd-offload: off [fixed]
+    hw-tc-offload: on
+    esp-hw-offload: off [fixed]
+    esp-tx-csum-hw-offload: off [fixed]
+    rx-udp_tunnel-port-offload: off [fixed]
+    tls-hw-tx-offload: off [fixed]
+    rx-gro-hw: off [fixed]
+    tls-hw-record: off [fixed]
+    ```
+
+    In this example, the offloading capabilities for the `eth0` interface include
+    TSO, GRO, LRO, and many more. To disable or enable any of these offloading
+    capabilities, you would use the `-K` option followed by the appropriate
+    suboption, such as `tso on` or `lro on`, along with the interface name:
+
+    ```bash
+    ethtool -K <interface_name> <offloading_capability> on
+    ```
+
+    Replace `<interface_name>` with the name of your network interface and `<offloading_capability>`
+    with the name of the offloading capability you want to enable (e.g., tso, lro or gso).
+
+    Finally, if a feature is being displayed as off and fixed, it is likely
+    that the hardware doesn't support it.
+    "
+  question: how can I check offloading capabilities of a given network interface?
+
+task_description: 'Common tasks with ethtool command.'
