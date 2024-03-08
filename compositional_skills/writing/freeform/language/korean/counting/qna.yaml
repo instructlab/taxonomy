@@ -1,0 +1,52 @@
+---
+created_by: nkim
+task_description: Count in Korean
+seed_examples:
+- answer: |
+    하나
+    둘
+    셋
+    넷
+    다섯
+    여섯
+    일곱
+    여덟
+    아홉
+    열
+  question: Count from 1 to 10 in the Korean language
+- answer: |
+    hana
+    dul
+    set
+    net
+    daseot
+    yeoseot
+    ilgob
+    yeodeol
+    ahop
+    yeol
+  question: Count from 1 to 10 in the Korean language (romanized)
+- answer: |
+    일
+    이
+    삼
+    사 
+    오
+    육
+    칠
+    팔
+    구
+    십
+  question: Count from 1 to 10 using Sino-Korean numbers
+- answer: |
+    il
+    i
+    sam
+    sa
+    o
+    yuk
+    chil
+    pal
+    gu
+    sip
+  question: Count from 1 to 10 using Sino-Korean numbers (romanized)
