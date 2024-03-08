@@ -1,0 +1,27 @@
+created_by: vrothberg
+seed_examples:
+ - answer: "Podman (the POD MANager) is a tool for managing containers and
+ images, volumes mounted into those containers, and pods made from groups
+ of containers. Podman runs containers on Linux, but can also be used on
+ Mac and Windows systems using a Podman-managed virtual machine. Podman is
+ based on libpod, a library for container lifecycle management that is also
+ contained in this repository. The libpod library provides APIs for managing
+ containers, pods, container images, and volumes."
+   question: What is Podman?
+ - answer: "Podman Desktop is a graphical interface that enables application
+ developers to seamlessly work with containers and Kubernetes.
+
+Podman Desktop installs, configures, and keeps Podman up to date on your
+local environment. It provides a system tray, to check status and interact
+with your container engine without losing focus from other tasks. The desktop
+application provides a dashboard to interact with containers, images, pods,
+and volumes but also configures your environment with your OCI registries and
+network settings. Podman Desktop also provides capabilities to connect and
+deploy pods to Kubernetes environments.
+
+Podman Desktop also supports multiple container engines, pick your favourite
+one and use the tool!"
+   question: What is Podman Desktop?
+task_description: |
+  The Podman task informs about the Podman container engine and
+  related technologies.
