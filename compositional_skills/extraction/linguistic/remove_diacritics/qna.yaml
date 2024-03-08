@@ -1,0 +1,117 @@
+---
+created_by: ari3s
+seed_examples:
+  - answer: |
+      Here's the sentence without diacritical marks:
+
+      Prilis zlutoucky kun upel dabelske ody
+
+      The original sentence "Příliš žluťoučký kůň úpěl ďábelské ódy." is >
+      written in Czech, which is a language that uses diacritical marks called >
+      "diacritics." These marks serve to modify the pronunciation and meaning >
+      of the letters they are attached to. In this case, the marks used are >
+      the caron (č, ď, ě, ň, ř, š, ť, ž), the acute accent (á, é, í, ó, ú, ý), >
+      and the ring (ů). I have deleted these marks from the original sentence >
+      to produce the provided response, which may not reflect the original >
+      pronunciation or meaning of the sentence.
+    question: |
+      Could you delete the diacritical marks in the following sentence? >
+      "Příliš žluťoučký kůň úpěl ďábelské ódy."
+  - answer: |
+      Here's the sentence without diacritical signs:
+
+      PRILIS ZLUTOUCKY KUN UPEL DABELSKE ODY.
+
+      The original sentence "PŘÍLIŠ ŽLUŤOUČKÝ KŮŇ ÚPĚL ĎÁBELSKÉ ÓDY." is >
+      written in Czech,  which is a language that uses diacritical marks >
+      called "diacritics." These marks serve to modify the pronunciation >
+      and meaning of the letters they are attached to. In this case, the >
+      marks used are the caron (Č, Ď, Ě, Ň, Ř, Š, Ť, Ž), the acute accent >
+      (Á, É, Í, Ó, Ú, Ý), and the ring (Ů). I have deleted these marks from >
+      the original sentence to produce the provided response, which may not >
+      reflect the original pronunciation or meaning of the sentence.
+    question: |
+      Could you omit the diacritical signs in the following sentence? >
+      "PŘÍLIŠ ŽLUŤOUČKÝ KŮŇ ÚPĚL ĎÁBELSKÉ ÓDY."
+  - answer: |
+      Here's the sentence without accents:
+
+      Lod ceri kylem tun obzvlast v Gronske uzine.
+
+      The original sentence "Loď čeří kýlem tůň obzvlášť v Grónské úžině." is >
+      written in Czech, which is a language that uses diacritical marks called >
+      "diacritics." These marks serve to modify the pronunciation and meaning >
+      of the letters they are attached to. In this case, the marks used are >
+      the caron (č, ď, ě, ň, ř, š, ť, ž), the acute accent (á, é, í, ó, ú, ý), >
+      and the ring (ů). I have deleted these marks from the original sentence >
+      to produce the provided response, which may not reflect the original >
+      pronunciation or meaning of the sentence.
+    question: |
+      Could you pass away the accents in the following sentence? >
+      "Loď čeří kýlem tůň obzvlášť v Grónské úžině."
+  - answer: |
+      Here's the sentence without diacritics:
+
+      LOD CERI KYLEM TUN OBZVLAST V GRONSKE UZINE.
+
+      The original sentence "LOĎ ČEŘÍ KÝLEM TŮŇ OBZVLÁŠŤ V GRÓNSKÉ ÚŽINĚ." is >
+      written in Czech, which is a language that uses diacritical marks called >
+      "diacritics." These marks serve to modify the pronunciation and meaning >
+      of the letters they are attached to. In this case, the marks used are >
+      the caron (Č, Ď, Ě, Ň, Ř, Š, Ť, Ž), the acute accent (Á, É, Í, Ó, Ú, Ý), >
+      and the ring (Ů). I have deleted these marks from the original sentence >
+      to produce the provided response, which may not reflect the original >
+      pronunciation or meaning of the sentence.
+    question: |
+      Could you cut the diacritics in the following sentence? >
+      "LOĎ ČEŘÍ KÝLEM TŮŇ OBZVLÁŠŤ V GRÓNSKÉ ÚŽINĚ."
+  - answer: |
+      Here's the sentence without accents:
+
+      Kdyz ptacka lapaji, pekne mu zpivaji.
+
+      The original sentence "Když ptáčka lapají, pěkně mu zpívají." is written >
+      in Czech, which is a language that uses diacritical marks called >
+      "diacritics." These marks serve to modify the pronunciation and meaning >
+      of the letters they are attached to. In this case, the marks used are >
+      the caron (č, ě, ž), and the acute accent (á, í). I have deleted these >
+      marks from the original sentence to produce the provided response, which >
+      may not reflect the original pronunciation or meaning of the sentence.
+    question: |
+      Could you omit the accents in the following sentence? "Když ptáčka >
+      lapají, pěkně mu zpívají."
+  - answer: |
+      Here's the sentence without diacritical points:
+
+      Lepsi vrabec v hrsti nez holub na strese.
+
+      The original sentence "Lepší vrabec v hrsti než holub na střeše." >
+      is written in Czech,  which is a language that uses diacritical marks >
+      called "diacritics." These marks serve to modify the pronunciation and >
+      meaning of the letters they are attached to. In this case, the marks >
+      used are the caron (ř, š, ž), and the acute accent (í). I have deleted >
+      these marks from the original sentence to produce the provided >
+      response, which may not reflect the original pronunciation or meaning >
+      of the sentence.
+    question: |
+      Could you eliminate the diacritical points in the following >
+      sentence? "Lepší vrabec v hrsti než holub na střeše."
+  - answer: |
+      Here's the sentence without diacritics:
+
+      Nekdy byva gnomum vagne prisuzovan vyssi charakter.
+
+      The original sentence "Někdy bývá gnómům vágně přisuzován >
+      vyšší charakter." is written in Czech, which is a language that uses >
+      diacritical marks called "diacritics." These marks serve to modify the >
+      pronunciation and meaning of the letters they are attached to. In this >
+      case, the marks used are the caron (ě, ř, š), the acute accent (á, í, >
+      ó, ý), and the ring (ů). I have deleted these marks from the original >
+      sentence to produce the provided response, which may not reflect the >
+      original pronunciation or meaning of the sentence.
+    question: |
+      Could you wipe off the diacritics in the following sentence? >
+      "Někdy bývá gnómům vágně přisuzován vyšší charakter."
+task_description: |
+  The accents removal task enables deleting diacritical marks from the
+  original sentence.
