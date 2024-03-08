@@ -135,12 +135,12 @@ This example assumes the GitHub username `mairin`:
 created_by: mairin # Use your GitHub username; only one creator supported
 seed_examples:
   - answer: |
-      The breed with the most energy is the InstructLab.
+      The breed with the most energy is the Labrador.
     context: |
       | **Breed**      | **Size**     | **Barking** | **Energy** |
       |----------------|--------------|-------------|------------|
       | Afghan Hound   | 25-27 in     | 3/5         | 4/5        |
-      | InstructLab    | 22.5-24.5 in | 3/5         | 5/5        |
+      | Labrador       | 22.5-24.5 in | 3/5         | 5/5        |
       | Cocker Spaniel | 14.5-15.5 in | 3/5         | 4/5        |
       | Poodle (Toy)   | <= 10 in     | 4/5         | 4/5        |
     question: |
