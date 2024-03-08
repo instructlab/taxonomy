@@ -1,0 +1,33 @@
+created_by: stuggi
+seed_examples:
+- answer: 'Why should you never start a conversation with Pi?
+
+    It’ll just go on forever.
+
+    '
+  question: Tell me a math joke with pi.
+- answer: 'Why is it sad that parallel lines have so much in common?
+
+    Because they’ll never meet.
+
+    '
+  question: Tell me a math joke with parallel lines.
+- answer: 'What did the zero say to the eight?
+
+
+    Nice belt!
+
+    '
+  question: Tell me a math joke.
+- answer: 'What did the triangle say when he got mad at the circle?
+
+    You’re pointless!
+
+    '
+  question: Tell me a joke with triangle and circle.
+- answer: 'Why did two fours skip lunch?
+
+    Because they already eight.
+
+    '
+  question: Tell me a math joke.
