@@ -1,0 +1,42 @@
+---
+created_by: sandrobonazzola
+seed_examples:
+- answer: "Here is the list of all the current member states in the\
+    \ North Atlantic Treaty Organization (NATO)\
+    \ as of March 7th 2024\n\
+    \ - Albania\n\
+    \ - Belgium\n\
+    \ - Bulgaria\n\
+    \ - Canada\n\
+    \ - Croatia\n\
+    \ - Czech Republic\n\
+    \ - Denmark\n\
+    \ - Estonia\n\
+    \ - Finland\n\
+    \ - France\n\
+    \ - Germany\n\
+    \ - Greece\n\
+    \ - Hungary\n\
+    \ - Iceland\n\
+    \ - Italy\n\
+    \ - Latvia\n\
+    \ - Lithuania\n\
+    \ - Luxembourg\n\
+    \ - Montenegro\n\
+    \ - Netherlands\n\
+    \ - North Macedonia\n\
+    \ - Norway\n\
+    \ - Poland\n\
+    \ - Portugal\n\
+    \ - Romania\n\
+    \ - Slovakia\n\
+    \ - Slovenia\n\
+    \ - Spain\n\
+    \ - Sweden\n\
+    \ - Turkey\n\
+    \ - United Kingdom\n\
+    \ - United States\n"
+  question: List the states that are part of NATO.
+- answer: Yes, Sweden is part of NATO since March 7th 2024.
+  question: Is Sweden part of NATO?
+task_description: ''
