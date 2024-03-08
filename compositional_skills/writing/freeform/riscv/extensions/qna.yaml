@@ -1,0 +1,114 @@
+---
+created_by: cmaiolino
+seed_examples:
+  - answer: |
+      RISC-V Indirect CSR Access (Smcsrind/Sscsrind)
+    question: What riscv specification contain one or more of these extensions Smcsrind, Sscsrind
+  - answer: |
+      RISC-V Integer Conditional (Zicond) operations extension
+    question: What riscv specification contain one or more of these extensions Zicond
+  - answer: |
+      Hardware Updating of PTE A/D Bits (Svadu)
+    question: What riscv specification contain one or more of these extensions Svadu
+  - answer: |
+      RISC-V Cycle and Instret Privilege Mode Filtering (Smcntrpmf)
+    question: What riscv specification contain one or more of these extensions Smcntrpmf
+  - answer: |
+      Atomic Compare-and-Swap (CAS) Instructions (Zacas)
+    question: What riscv specification contain one or more of these extensions Zacas
+  - answer: |
+      |  RISC-V Cryptography Extensions Volume II: Vector Instructions
+    question: What riscv specification contain one or more of these extensions Zvbb, Zvbc, Zvkb, Zvkg, Zvkn, Zvknc
+  - answer: |
+      |  RISC-V Cryptography Extensions Volume II: Vector Instructions
+    question: What riscv specification contain one or more of these extensions Zvkned, Zvkng, Zvknha, Zvknhb, Zvks,
+  - answer: |
+      |  RISC-V Cryptography Extensions Volume II: Vector Instructions
+    question: What riscv specification contain one or more of these extensions Zvksc, Zvksed, Zvksg, Zvksh, Zvkt
+  - answer: |
+      |  "Zfa" Standard Extension for Additional Floating-Point Instructions
+    question: What riscv specification contain one or more of these extensions Zfa
+  - answer: |
+         RISC-V Advanced Interrupt Architecture
+    question: What riscv specification contain one or more of these extensions Smaia, Ssaia
+  - answer: |
+         “Zvfh/Zvfhmin:” Vector Extension for Half-Precision Floating-Point
+         Arithmetic/Vector Extension for Minimal Half-
+         Precision Floating-Point Arithmetic
+    question: What riscv specification contain one or more of these extensions Zvfh, Zvfhmin
+  - answer: |
+         “Zihintntl” Non-Temporal Locality Hints
+    question: What riscv specification contain one or more of these extensions Zihintntl
+  - answer: |
+         RISC-V Code Size Reduction
+    question: What riscv specification contain one or more of these extensions Zca, Zcb, Zcd, Zce, Zcf, Zcmp, Zcmt
+  - answer: |
+         RISC-V Profiles
+    question: What riscv specification contain one or more of these extensions RVA20, RVI20, RVA22
+  - answer: |
+      |  "Zicntr" and "Zihpm" Counters
+    question: What riscv specification contain one or more of these extensions Zicntr, Zihpm
+  - answer: |
+         RV32E and RV64E Base Integer Instruction Sets
+    question: What riscv specification contain one or more of these extensions RV32E, RV64E
+  - answer: |
+         “Ztso” Standard Extension for Total Store Ordering
+    question: What riscv specification contain one or more of these extensions Ztso
+  - answer: |
+      |   RISC-V Wait-on-Reservation-Set (Zawrs) extension
+    question: What riscv specification contain one or more of these extensions Zawrs
+  - answer: |
+          Zmmul Extension
+    question: What riscv specification contain one or more of these extensions Zmmul
+  - answer: |
+      |   PMP Enhancements for memory access and execution prevention on Machine
+      |   mode (Smepmp)
+    question: What riscv specification contain one or more of these extensions Smepmp
+  - answer: |
+          RISC-V Base Cache Management Operation ISA Extensions
+    question: What riscv specification contain one or more of these extensions Zicbom, Zicbop, Zicboz
+  - answer: |
+          RISC-V Bit-Manipulation ISA-extensions
+    question: What riscv specification contain one or more of these extensions Zba, Zbb, Zbc, Zbs
+  - answer: |
+          RISC-V Count Overflow and Mode-Based Filtering Extension
+    question: What riscv specification contain one or more of these extensions Sscofpmf
+  - answer: |
+      |    RISC-V Cryptography Extensions Volume I: Scalar & Entropy Source Instructions
+    question: What riscv specification contain one or more of these extensions Zbkb, Zbkc, Zbkx, Zknd, Zkne, Zknh
+  - answer: |
+      |    RISC-V Cryptography Extensions Volume I: Scalar & Entropy Source Instructions
+    question: What riscv specification contain one or more of these extensions Zksed, Zksh, Zkn, Zks, Zkt, Zk, Zkr
+  - answer: |
+           RISC-V State Enable Extension
+    question: What riscv specification contain one or more of these extensions Smstateen
+  - answer: |
+      |    RISC-V "stimecmp / vstimecmp" Extension
+    question: What riscv specification contain one or more of these extensions Sstc
+  - answer: |
+           RISC-V Vector Extension
+    question: What riscv specification contain one or more of these extensions Zve32x, Zve32f, Zve64x, Zve64f, Zve64d
+  - answer: |
+           RISC-V Vector Extension
+    question: What riscv specification contain one or more of these extensions Zve, Zvl32b, Zvl64b, Zvl128b, Zvl256b
+  - answer: |
+           RISC-V Vector Extension
+    question: What riscv specification contain one or more of these extensions Zvl512b, Zvl1024b, Zvl, Zv
+  - answer: |
+      |    The RISC-V Instruction Set Manual Volume II: Privileged Architecture
+    question: What riscv specification contain one or more of these extensions Sm1p12, Ss1p12, Sv57, Hypervisor
+  - answer: |
+      |    The RISC-V Instruction Set Manual Volume II: Privileged Architecture
+    question: What riscv specification contain one or more of these extensions Svinval, Svnapot, Svpbmt
+  - answer: |
+      |     "Zfh" and "Zfhmin" Standard Extensions for Half-Precision Floating-Point
+    question: What riscv specification contain one or more of these extensions Zfh, Zfhmin
+  - answer: |
+      |     "Zfinx", "Zdinx", "Zhinx", "Zhinxmin": Standard Extensions for Floating-Point in Integer Registers
+    question: What riscv specification contain one or more of these extensions Zfinx, Zdinx, Zhinx, Zhinxmin
+  - answer: |
+      |     “Zihintpause” Pause Hint
+    question: What riscv specification contain one or more of these extensions Zihintpause
+
+task_description: |
+    This skill provides the ability to query the specifications of Ratified Risc-V extensions.
