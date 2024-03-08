@@ -1,6 +1,7 @@
+---
 created_by: nickclifton
 seed_examples:
-- answer: "
+ - answer: "
 In C constructor functions are not built-in language features like
 they are in some other programming languages, such as Java or
 C++.  However some C compilers - including gcc and clang - support an
@@ -40,5 +41,6 @@ Destructors can also be created in the same way, just using the
     free (array); array = NULL;
   }
 "
- question: "How do I write constructor functions in C"
+ -
+  question: "How do I write constructor functions in C"
 task_description: "Writing constructors in C"
