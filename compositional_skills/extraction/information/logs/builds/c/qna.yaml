@@ -1,0 +1,86 @@
+created_by: siddhesh
+seed_examples:
+- answer: '''There are 3 errors in this C program compilation log. The first error is due to initialization of a
+    function pointer of type void (*)(void) with show_main_window, which is of an incompatible type void (*)(GtkWidget
+    *, void *).\n\nThe second error is similar, but on line 48 where a function pointer of type void (*)(void) is
+    initialized with quicksynergy_quit, which is of an incompatible type void (*)(GtkWidget *, void *)\n\nThe final
+    error is also a pointer type incompatibility error, where the type of main_window is not compatible with the
+    expected type of the first argument in the gtk_window_set_icon function.''
+
+    '
+  context: '''In file included from /usr/include/gtk-2.0/gtk/gtkobject.h:37,
+    /usr/include/glib-2.0/glib/gtypes.h:580:8: note: declared here
+      580 | struct _GTimeVal
+          |        ^~~~~~~~~
+    callbacks.c:47:76: error: initialization of ‘void (*)(void)’ from incompatible pointer type ‘void (*)(GtkWidget *,
+      void *)’ {aka ‘void (*)(struct _GtkWidget *, void *)’} [-Wincompatible-pointer-types]
+       47 |     { "ActionSettings", GTK_STOCK_PREFERENCES, N_("Settings"), NULL, NULL, show_main_window },
+          |                                                                            ^~~~~~~~~~~~~~~~
+    callbacks.c:47:76: note: (near initialization for ‘popup_menu_actions[0].callback’)
+    callbacks.c:48:76: error: initialization of ‘void (*)(void)’ from incompatible pointer type ‘void (*)(GtkWidget *,
+      void *)’ {aka ‘void (*)(struct _GtkWidget *, void *)’} [-Wincompatible-pointer-types]
+       48 |     { "ActionQuit",     GTK_STOCK_QUIT,        N_("Quit"),     NULL, NULL, quicksynergy_quit },
+          |                                                                            ^~~~~~~~~~~~~~~~~
+    callbacks.c:48:76: note: (near initialization for ‘popup_menu_actions[1].callback’)
+    callbacks.c: In function ‘about_button_clicked’:
+    callbacks.c:112:5: warning: ‘gdk_pixbuf_new_from_inline’ is deprecated [-Wdeprecated-declarations]
+      112 |     GdkPixbuf *logo = gdk_pixbuf_new_from_inline(-1, qslogo, FALSE, NULL);
+          |     ^~~~~~~~~
+    main.c:87:25: error: passing argument 1 of ‘gtk_window_set_icon’ from incompatible pointer type
+      [-Wincompatible-pointer-types]
+       87 |     gtk_window_set_icon(main_window,gdk_pixbuf_new_from_inline(-1, qslogo,
+          |                         ^~~~~~~~~~~
+          |                         |
+          |                         GtkWidget * {aka struct _GtkWidget *}''
+
+    '
+  question: Identify errors in this text, ignore warnings and notes.
+- answer: '''There are no errors in this C program compilation log.''
+
+    '
+  context: '''/usr/include/gtk-2.0/gtk/gtktypeutils.h:236:1: warning: ‘GTypeDebugFlags’ is deprecated
+    [-Wdeprecated-declarations]
+      236 | void            gtk_type_init   (GTypeDebugFlags    debug_flags);
+          | ^~~~
+    In file included from /usr/include/glib-2.0/gobject/gobject.h:26,
+                     from /usr/include/glib-2.0/gobject/gbinding.h:31,
+                     from /usr/include/glib-2.0/glib-object.h:24,
+                     from /usr/include/glib-2.0/gio/gioenums.h:30,
+                     from /usr/include/glib-2.0/gio/giotypes.h:30,
+                     from /usr/include/glib-2.0/gio/gio.h:28,
+                     from /usr/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                     from /usr/include/gtk-2.0/gdk/gdk.h:32,
+                     from /usr/include/gtk-2.0/gtk/gtk.h:32:
+    /usr/include/glib-2.0/gobject/gtype.h:725:1: note: declared here
+      725 | {
+          | ^''
+
+      '
+  question: Identify errors in this text, ignore warnings and notes.
+- answer: '''There is one error in the compilation of OPUXReader.cpp, which is
+    an invalid conversion between incompatible types. The call to unzLocateFile
+    on line 39 of OPUXReader.cpp passes the integer constant 2 as the third
+    argument when the expected argument type is uzFileNameComparer, which is a
+    function pointer type.''
+
+    '
+  context: '''/builddir/build/BUILD/keepassxc-2.7.7/src/format/OPUXReader.cpp: In function "QByteArray
+    {anonymous}::extractFile(unzFile, QString)":
+    /builddir/build/BUILD/keepassxc-2.7.7/src/format/OPUXReader.cpp:39:52: error: invalid conversion from "int" to
+    "unzFileNameComparer" {aka "int (*)(void*, const char*, const char*)"} [-fpermissive]
+       39 |         if (unzLocateFile(uf, filename.toLatin1(), 2) != UNZ_OK) {
+          |                                                    ^
+          |                                                    |
+          |                                                    int
+    In file included from /usr/include/minizip/unzip.h:11,
+                     from /builddir/build/BUILD/keepassxc-2.7.7/src/format/OPUXReader.cpp:33:
+    /usr/include/minizip/mz_compat.h:352:87: note:   initializing argument 3 of "int unzLocateFile(unzFile, const char*,
+    unzFileNameComparer)"
+      352 | ZEXPORT int     unzLocateFile(unzFile file, const char *filename, unzFileNameComparer
+    filename_compare_func);
+          |                                                                   ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+    [ 45%] Building CXX object src/CMakeFiles/keepassx_core.dir/format/OpVaultReaderSections.cpp.o''
+
+      '
+  question: Identify only the error messages in this text.
+task_description: ''
