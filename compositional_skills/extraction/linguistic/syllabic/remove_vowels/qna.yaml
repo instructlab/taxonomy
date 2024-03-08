@@ -1,0 +1,11 @@
+created_by: viroel
+seed_examples:
+  - answer: Here is the result of removing all vowels from the text "Sh rds bks nd h plys sccr."
+    question: Can you remove all vowels from the following text "She reads books and he plays soccer."
+  - answer: Here is the result of removing all vowels from the text "Th mn glws nd strs twnkl t nght."
+    question: Can you remove all vowels from the following text "The moon glows and stars twinkle at night."
+  - answer: Here is the result of removing all vowels from the text "Th bs bzz rnd the blssms."
+    question: Can you remove all vowels from the following text "The bees buzz around the blossoms."
+  - answer: Here is the result of removing all vowels from the text "Th bk shk s sh tk  lk nsd."
+    question: Can you remove all vowels from the following text "The book shook as she took a look inside."
+task_description: This skill provides the ability to remove vowels from a sentence.
