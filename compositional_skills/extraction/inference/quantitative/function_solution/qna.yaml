@@ -1,0 +1,29 @@
+created_by: markmc
+seed_examples:
+  - answer: |
+      x = 2 is one solution to f(x) = 0.
+    context: |
+      The value of f(2) is 0.
+    question: |
+      Find x such that f(x) = 0.
+  - answer: |
+      The solutions to f(x) = 0 are x = -4, x = 3, and x = 5.
+    context: |
+      Given the function f(x) = x^3 - 4x^2 - 17x + 60 we might find by graphing
+      the function that f(3) = 0, f(5) = 0, and f(-4) = 0.
+    question: |
+      What are the solutions to the function f(x) = 0?
+  - answer: |
+      x = 5 is a root of f(x).
+    context: |
+      We are given a function f(x) and the information that f(5) = 0.
+    question: |
+      Given one root of the function f(x).
+  - answer: |
+      x=1 and x=2 are the solutions of f(x) = 0.
+    context: |
+      The function f(x) = x^2 - 3x + 2 has factors (x-1) and (x-2).
+    question: |
+      What are the solutions of f(x) = 0?
+task_description: |
+  Extracting the solution of a function where it is given in the context.
