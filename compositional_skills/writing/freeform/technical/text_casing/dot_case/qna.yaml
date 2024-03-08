@@ -1,0 +1,15 @@
+created.by: juandspy
+task.description: This skill provides the ability to convert text into its Dot case form.
+seed.examples:
+  - answer: congratulation.interventionism.blah.psychoanalyse.idiots.chromatics.evangelistically.interchangeability.intercommunicating.mickle
+    question:
+      "Convert this text into its Dot case form: congratulation interventionism
+      blah psychoanalyse idiots chromatics evangelistically interchangeability intercommunicating mickle"
+  - answer: diligence.irregularities.remonstrating.unpatriotic.smug.execrator.reissued.psychotherapeutically.chromatographically
+    question:
+      "Convert the following text into Dot case: diligence irregularities
+      remonstrating unpatriotic smug execrator reissued psychotherapeutically chromatographically"
+  - answer: inexhaustibleness.intermediateness.lexicographically.copperas.imperturbability.electrophysiological.balking.aerothermodynamics
+    question:
+      "Transform these words in Dot case: inexhaustibleness intermediateness
+      lexicographically copperas imperturbability electrophysiological balking aerothermodynamics"
