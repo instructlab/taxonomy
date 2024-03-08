@@ -1,0 +1,37 @@
+created_by: mrunge
+seed_examples:
+ - answer: "
+    \\documentclass{article}
+    \\begin{document}
+    \\title{OpenStack: An Open-Source Cloud Computing Platform}
+    \\author{Your name here}
+    \\maketitle % This command generates the title page
+    OpenStack is an open-source cloud computing platform, built with the help of
+    hundreds of organizations, including Red Hat, Canonical, Cisco, and HP. It's
+    designed to provide Infrastructure as a Service (IaaS) and offers a wide
+    range of features, such as compute, storage, networking, and image services.
+    OpenStack is highly customizable and can be deployed in both public and
+    private clouds, making it a versatile choice for organizations of all sizes.
+    \\end{document}"
+   context: "
+    OpenStack is an open-source cloud computing platform, built with the help of
+    hundreds of organizations, including Red Hat, Canonical, Cisco, and HP. It's
+    designed to provide Infrastructure as a Service (IaaS) and offers a wide
+    range of features, such as compute, storage, networking, and image services.
+    OpenStack is highly customizable and can be deployed in both public and
+    private clouds, making it a versatile choice for organizations of all sizes.
+    "
+   question: write a short article about OpenStack by using a LaTeX article
+     template
+ - answer: "
+    \\documentclass{article}
+    \\usepackage{lipsum}
+    \\begin{document}
+    \\title{Lorem Ipsum}
+    \\author{Your name here}
+    \\maketitle % This command generates the title page
+    \\lipsum
+    \\end{document}}"
+   context: ''
+   question: write an short sample Lorem Ipsum LaTeX article
+task_description: 'Output text as LaTeX article'
