@@ -1,0 +1,23 @@
+created_by: velias
+seed_examples:
+- answer: Příliš žluťoučký kůň úpěl ďábelské ódy.
+  context: Prilis zlutoucky kun upel dabelske ody.
+  question: Return the text after converting ASCII characters to Czech characters.
+- answer: Přešel jsem přes tři žluté táhlé oblázky.
+  context: Presel jsem pres tri zlute tahle oblazky.
+  question: Rewrite this ASCII only sequence to contain correct Czech diacritics characters.
+- answer: Následující hrubý text není nejkrásnější, ale je to dobrý příklad pro přepsání.
+  context: Nasledujici hruby text neni nejkrasnejsi, ale je to dobry priklad pro prepsani.
+  question: Rewrite this text to contain correct Czech diacritics characters.
+- answer: Neber úplatky, neber úplatky, nebo se z toho zblázníš! Slepé střevo nebrat.
+  context: Neber uplatky, neber uplatky, nebo se z toho zblaznis! Slepe strevo nebrat.
+  question: Doplň správnou diakritiku do následujícího textu.
+- answer: Dlouhá cesta, ale stojí to za to, na konci se třpití zlato.
+  context: Dlouha cesta, ale stoji to za to, na konci se trpiti zlato.
+  question: Zaměn v následujícím textu znaky bez diakritiky za znaky s diakritikou.
+- answer: Následující hrubý text není nejkrásnější, ale je to dobrý příklad pro přepsání.
+  context: Nasledujici hruby text neni nejkrasnejsi, ale je to dobry priklad pro prepsani.
+  question: Přepiš následující text tak, aby obsahoval správnou diakritiku.
+task_description: |
+  Infers Czech diacritics characters back to the text using ASCII characters only. This form is used in electronic
+  communication when support for Czech language is limited or hard to enter, eg. in SMS, emails etc.
