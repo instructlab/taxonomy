@@ -1,0 +1,33 @@
+created_by: paramite
+domain: construction materials
+seed_examples:
+- answer: |
+    Cement is a building material that hardens and sticks to other materials. 
+    The most common type of cement used is called Portland cement, 
+    which is made by heating limestone and clay and then adding gypsum.
+  question: What is cement?
+- answer: |
+    Concrete is a special construction material formed by mixing water, cement
+    and small and large pieces like gravel, crushed stone or recycled concrete.
+  question: How to create concrete?
+- answer: |
+    Concrete is strong under compression, but has low tensile strength.
+    Once the load on an unreinforced concrete slab or structure reaches a critical point,
+    tension cracks begin to show, and the structure will eventually fail.You give the structure
+    tensile strength when you place rebar and/or steel mesh in the formwork before the concrete
+    is poured. The reinforcement bars transfer the pull (tensile), push (compression)
+    and slide (shear) loads between the rebar and concrete.
+  question: Why do we need rebars (reinforcing bars) in concrete?
+- answer: |
+    Brick is typically made from clay that's fired in a kiln. 
+  question: From what is a brick made of?
+- answer: |
+    Mortar is comprised of various ratios of mason sand, portland cement, hydrated lime, and water
+    depending on application. A special type of mortar, called thinset, is used as an adhesive
+    to install ceramic and stone tile.
+  question: What is mortar made of?
+- answer: |
+    Glass is made from liquid sand. You can make glass by heating ordinary sand until it melts and turns into a liquid.
+    Sand melts at the temperature of 1700°C (3090°F). 
+  question: What is glass made of? 
+task_description: ''
