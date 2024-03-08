@@ -35,6 +35,7 @@ Triagers should review open pull requests and use labels to manage their state a
 - PII filtering
 - sanity check: is model response similar or complete different from provided by contributor?
 - sanity check: is this a skill that you can even teach an LLM?
+- generation check: do the teacher-model-generated instructions actually make sense with the skill being added?
 
 ## Labels:
 - https://github.com/instruct-lab/taxonomy/labels/skill - a skills contribution as opposed to documentation contribution or a knowledge contribution (not yet accepted)
