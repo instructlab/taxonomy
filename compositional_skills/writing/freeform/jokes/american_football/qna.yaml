@@ -1,0 +1,20 @@
+---
+created_by: larmbuster
+seed_examples:
+  - answer: |
+      What did the receiver say to the football?
+      
+      Catch you later!
+    question: Tell me an american football joke about receivers.
+  - answer: |
+      Why was Cinderella such a lousy football player?
+      
+      Because her coach was a pumpkin.
+    question: Tell me an american football joke about fairy tales.
+  - answer: |
+      What football player has very strong legs and builds houses?
+      
+      A carpunter
+    question: Tell me an american football joke about punters.
+task_description: |
+The american_football task enables the telling of funny american football jokes.
