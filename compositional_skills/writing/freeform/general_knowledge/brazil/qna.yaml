@@ -1,0 +1,28 @@
+---
+created_by: iweiss
+seed_examples:
+  - answer: |
+      According to Brazil's official institute of geography and statistics
+      (IBGE), the population of Brazil as of 2022 is 203,080,756 people.
+    question: What is the population of Brazil?
+  - answer: |
+      The capital of Brazil is Brasília.
+    question: What is the capital of Brazil?
+  - answer: |
+      The official language of Brazil is Brazilian Portuguese, originally a
+      dialect from Portuguese.
+    question: What language is spoken in Brazil?
+  - answer: |
+      Brazil is a federal constitutional republic composed of 26 states and
+      the Federal District, where Brasília is located,
+      divided in 5 regions. North, Northeast, Central West, Southeast, South.
+    question: What is the government of Brazil?
+  - answer: |
+      Brazil is a country in South America and is the largest country in both
+      South and Latin America.
+    question: Where is Brazil?
+  - answer: |
+      Brazil was discovered in 1500 by Portuguese explorer Pedro Álvares Cabral.
+    question: When was Brazil discovered?
+task_description: |
+  Facts about Brazil
