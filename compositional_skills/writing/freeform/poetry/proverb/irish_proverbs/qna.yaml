@@ -1,1 +1,7 @@
-
+created_by: judyobrienie
+seed_examples:
+- answer: "The longest way around is the shortest way home
+\ Is one of many Irish sayings that’ll be familiar to fans of James Joyce. In particular, his book ‘Ulysses’.
+\ The phrase “The longest way round is the shortest way home” is an Irish proverb that suggests that, sometimes, taking a more indirect route to achieve a goal can actually be more efficient in the long run."
+  question: Give me an example of an Irish proverb
+task_description: '
