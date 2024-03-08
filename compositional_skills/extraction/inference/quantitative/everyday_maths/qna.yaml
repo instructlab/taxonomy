@@ -1,0 +1,14 @@
+created_by: clodaghwalsh17
+seed_examples:
+- answer: |
+    Three taxis are needed. Two taxis are full and the third taxi has two passengers plus the driver.
+  question: How many regular sized taxis are needed to bring ten people into town?
+- answer: |
+    Everyone gets 3/4 of a cupcake. There are several ways to do this. For example you could take two of the cupcakes and cut them in half. 
+    Take the third cupcake and divide it into four pieces. Everyone gets a half and a quarter piece each.
+  question: How can I split three cupcakes between myself and three friends so all of us can get a taste?
+- answer: |
+    You and your sister should both get five euro.
+  question: How do I divide ten euro between me and my sister?
+task_description: |
+  This skill explains how maths can be used in everyday life.
