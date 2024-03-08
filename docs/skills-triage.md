@@ -4,7 +4,8 @@ Skills triage is the practice of reviewing existing [skill pull requests (PRs)](
 
 Triagers should review open pull requests and use labels to manage their state and any actions needed. Triagers are also encouraged to provide informative and helpful comments either back to the contributor, to other Triagers or to the Approvers. And remember to be nice.
 
-NOTE: Do Not Merge skills pull requests. This action will be done after final approval by @taxonomy-approvers
+> [!IMPORTANT]
+> Triagers DO NOT MERGE skills pull requests. This action will be done after final approval by @taxonomy-approvers
 
 ## Basic review questions:
 - Does the PR have the pull request template information filled out?
