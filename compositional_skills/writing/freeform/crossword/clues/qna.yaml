@@ -1,0 +1,64 @@
+task_description: 'Generate crossword puzzle clues for a given word'
+created_by: fuzzball81 (Jason Joyce)
+seed_examples:
+- answer: 'Possible crossword puzzle clues for the word "REDHAT" include:
+
+   1. An Open-source software company with a color in its name (6 letters).
+   2. A company known for their Linux Operating system (6 letters).
+   3. A technology company with a color and piece of clothing in its name (6 letters)'
+  question: Write a crossword clue for the word REDHAT
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+- answer: 'Possible crossword puzzle clues for the word "IBM" include:
+
+   1. A technology company also known as "Big Blue" (3 letters).
+   2. The short form of International Business Machines (3 letters).'
+  question: Write a crossword clue for the word IBM
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+- answer: 'Possible crossword puzzle clues for the word "REDWINGS" include:
+
+   1. One of the original 6 NHL hockey teams based in Detroit (8 letter).
+   2. A NHL hockey team with a "winged wheel" logo (8 letters).
+   3. A shoe company that shares it name with a NHL hockey team (8 letters).'
+  question: Write a crossword clue for the word REDWINGS
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+- answer: 'Possible crossword puzzle clues for the word "ENVELOPE" include:
+
+   1. Something your mail comes in (8 letters).
+   2. An paper container that you put a stamp on (8 letters).
+   3. A wrapping for a card or letter (8 letters).
+   4. A bag or container that holds a gas, a balloon (8 letters).'
+  question: Write a crossword clue for the word ENVELOPE
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+- answer: 'Possible crossword puzzle clues for the word "GARFIELD" include:
+
+   1. Classic cartoon fat cat that loves lasagna (8 letters).
+   2. Last name of the 20th Presdient of the United States (8 letters).
+   3. A comic strip about a cat and his owner Jon Arbuckle (8 letters)'
+  question: Write a crossword clue for the word GARFIELD
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+- answer: 'Possible crossword puzzle clues for the word "WICK" include:
+
+   1. The part of a candle that burns (4 letters).
+   2. To soak up via capillary action (4 letters).'
+  question: Write a crossword clue for the word WICK
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+- answer: 'Possible crossword puzzle clues for the word "AGILE" include:
+
+   1. To be nimble or quick (5 letters).
+   2. A softwre development methodology known for speed (5 letters).'
+  question: Write a crossword clue for the word AGILE
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
