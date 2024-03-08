@@ -1,0 +1,217 @@
+created_by: hemslo
+seed_examples:
+- answer: |
+    [
+      {
+        "name": "get_current_datetime",
+        "arguments": "{\"iana_timezone\": \"Australia/Sydney\"}"
+      }
+    ]
+  context: |
+    response json schema:
+
+      {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "The name of the tool to use"
+              },
+              "arguments": {
+                "type": "string"
+                  "description": "The arguments to pass to the tool in JSON format"
+              }
+            },
+            "required": [
+              "name",
+              "arguments"
+            ]
+          }
+        ]
+      }
+
+    tools:
+
+      [
+        {
+          "name": "get_current_datetime",
+          "description": "Get the current date time in ISO 8601 format for the given IANA timezone",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "iana_timezone": {
+                "type": "string",
+                "description": "The IANA timezone to use for the current date time. For example, 'Europe/London'."
+              }
+            },
+            "required": [
+              "iana_timezone"
+            ]
+          }
+        },
+        {
+          "name": "get_current_weather",
+          "description": "Get the current weather in a given location",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "location": {
+                "type": "string",
+                "description": "The city or location to get the weather for"
+              }
+            },
+            "required": [
+              "location"
+            ]
+          }
+        }
+      ]
+  question: |
+    Select suitable tools for the input, respond with a valid JSON list,
+    if no tool is suitable, respond with an empty list.
+    What time is it now in Sydney?
+- answer: |
+    [
+      {
+        "name": "get_current_weather",
+        "arguments": "{\"location\": \"Sydney\"}"
+      }
+    ]
+  context: |
+    response json schema:
+
+      {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "The name of the tool to use"
+              },
+              "arguments": {
+                "type": "string"
+                  "description": "The arguments to pass to the tool in JSON format"
+              }
+            },
+            "required": [
+              "name",
+              "arguments"
+            ]
+          }
+        ]
+      }
+
+    tools:
+
+      [
+        {
+          "name": "get_current_datetime",
+          "description": "Get the current date time in ISO 8601 format for the given IANA timezone",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "iana_timezone": {
+                "type": "string",
+                "description": "The IANA timezone to use for the current date time. For example, 'Europe/London'."
+              }
+            },
+            "required": [
+              "iana_timezone"
+            ]
+          }
+        },
+        {
+          "name": "get_current_weather",
+          "description": "Get the current weather in a given location",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "location": {
+                "type": "string",
+                "description": "The city or location to get the weather for"
+              }
+            },
+            "required": [
+              "location"
+            ]
+          }
+        }
+      ]
+  question: |
+    Select suitable tools for the input, respond with a valid JSON list,
+    if no tool is suitable, respond with an empty list.
+    What is the weather in Sydney?
+- answer: |
+    []
+  context: |
+    response json schema:
+
+      {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "The name of the tool to use"
+              },
+              "arguments": {
+                "type": "string"
+                  "description": "The arguments to pass to the tool in JSON format"
+              }
+            },
+            "required": [
+              "name",
+              "arguments"
+            ]
+          }
+        ]
+      }
+
+    tools:
+
+      [
+        {
+          "name": "get_current_datetime",
+          "description": "Get the current date time in ISO 8601 format for the given IANA timezone",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "iana_timezone": {
+                "type": "string",
+                "description": "The IANA timezone to use for the current date time. For example, 'Europe/London'."
+              }
+            },
+            "required": [
+              "iana_timezone"
+            ]
+          }
+        },
+        {
+          "name": "get_current_weather",
+          "description": "Get the current weather in a given location",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "location": {
+                "type": "string",
+                "description": "The city or location to get the weather for"
+              }
+            },
+            "required": [
+              "location"
+            ]
+          }
+        }
+      ]
+  question: |
+    Select suitable tools for the input, respond with a valid JSON list,
+    if no tool is suitable, respond with an empty list.
+    Give me a random number.
+task_description: 'Select suitable tools as function calling'
