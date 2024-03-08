@@ -1,0 +1,21 @@
+created_by: velias
+seed_examples:
+- answer: Prilis zlutoucky kun upel dabelske ody.
+  context: Příliš žluťoučký kůň úpěl ďábelské ódy.
+  question: Return the text after converting Czech characters to English characters.
+- answer: Presel jsem pres tri zlute tahle oblazky.
+  context: Přešel jsem přes tři žluté táhlé oblázky.
+  question: Rewrite this sequence using English characters instead of Czech diacritics characters.
+- answer: Nasledujici hruby text neni nejkrasnejsi, ale je to dobry priklad pro prepsani.
+  context: Následující hrubý text není nejkrásnější, ale je to dobrý příklad pro přepsání.
+  question: Rewrite this text not to contain Czech diacritics characters, but ASCII chatracters only.
+- answer: Neber uplatky, neber uplatky, nebo se z toho zblaznis! Slepe strevo nebrat.
+  context: Neber úplatky, neber úplatky, nebo se z toho zblázníš! Slepé střevo nebrat.
+  question: Odstraň diakritiku z následujícího textu.
+- answer: Dlouha cesta, ale stoji to za to, na konci se trpiti zlato.
+  context: Dlouhá cesta, ale stojí to za to, na konci se třpití zlato.
+  question: Zaměn v následujícím textu znaky s diakritikou za znaky bez diakritiky.
+- answer: Nasledujici hruby text neni nejkrasnejsi, ale je to dobry priklad pro prepsani.
+  context: Následující hrubý text není nejkrásnější, ale je to dobrý příklad pro přepsání.
+  question: Přepiš následující text aby neobsahoval diakritiku.
+task_description: Converts Czech characters used in the Czech language text to English characters. This form is used in electronic communication when support for Czech language is limited or hard to enter, eg. in SMS, emails etc.
