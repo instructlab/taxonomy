@@ -1,0 +1,80 @@
+created_by: mpryc
+seed_examples:
+  - answer: |
+      Matrix multiplication requires that the number of columns in the first matrix matches the number of rows
+      in the second matrix. In this case, the first matrix is a row vector with dimensions 1x3, while the second
+      matrix is a column vector with dimensions 3x1. Since the number of columns in the first matrix matches
+      the number of rows in the second matrix, we can perform the multiplication.
+
+      To multiply matrices [1, 2, 3] and [[1, 2, 3]], you can follow these steps:
+
+      1. Multiply each element of the first row in the first matrix with each element of the first column
+         in the second matrix.
+      2. Add the results and store it as the first element of the first column.
+
+      In the given example:
+
+      1 * 1 = 1
+      2 * 2 = 4
+      3 * 3 = 9
+
+      And we get: [14]
+    question: Can you teach me how to multiply two matrices [1, 2, 3] and [[1, 2, 3]] ?
+
+  - answer: |
+      Matrix multiplication requires that the number of columns in the first matrix matches the number of rows
+      in the second matrix.
+
+      We will use the example of two compatible matrices:
+
+      A = 1 2 3
+          4 5 6
+
+          1 2
+      B = 3 4
+          5 6
+
+      We can give each element of each matrix the corresponding representation:
+
+      A = A11 A12 A13
+          A21 A22 A23
+
+          B11 B12
+      B = B21 B22
+          B31 B32
+
+      1. Determine the number of rows in the first matrix: This will be the number of rows in the resulting matrix.
+      2. Determine the number of columns in the second matrix: This will be the number of columns
+         in the resulting matrix.
+      3. Initialize the resulting matrix: Create an empty matrix with the dimensions determined in steps 1 and 2.
+      4. Multiply the matrices: For each element in the resulting matrix, multiply the corresponding elements
+         in the first and second matrices and add them together.
+
+      The number of rows in the first matrix is 2
+      The number of columns in the second matrix is 2
+
+      Our empty resulting matrix will be a 2 by 2 matrix:
+
+      C = C11 C12
+          C21 C22
+
+      Based on what we know already, we calculate each element of our new resulting matrix:
+
+      C11 = (A11 * B11) + (A12 * B21) + (A13 * B31)
+      C12 = (A11 * B12) + (A12 * B22) + (A13 * B32)
+      C21 = (A21 * B11) + (A22 * B21) + (A23 * B31)
+      C22 = (A21 * B12) + (A22 * B22) + (A23 * B32)
+
+      In the given example:
+
+      C11 = (1 * 1) + (2 * 3) + (3 * 5) = 1 + 6 + 15 = 22
+      C12 = (1 * 2) + (2 * 4) + (3 * 6) = 2 + 8 + 18 = 28
+      C21 = (4 * 1) + (5 * 3) + (6 * 5) = 4 + 15 + 30 = 49
+      C22 = (4 * 2) + (5 * 4) + (6 * 6) = 8 + 20 + 36 = 64
+
+      Our resulting matrix C:
+
+      C = 22 28
+          49 64
+    question: Can you teach me how to multiply two matrices ?
+task_description: Multiplying two matrices
