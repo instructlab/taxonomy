@@ -549,6 +549,14 @@ Here's an animated graphic to show how it works:
 
 ![screencast-directory-naming](https://github.com/instruct-lab/taxonomy/assets/799683/2cb2b031-52f6-46de-bfd9-c4eae82ec9d3)
 
+**Note:** If you use the GitHub web UI to commit your `qna.yaml` file, make sure to add your sign-off in the commit message otherwise the PR check for [DCO](https://github.com/instruct-lab/taxonomy/blob/main/CONTRIBUTING.md#legal) will fail
+
+Here is an example `Signed-off-by` line, which indicates that the submitter accepts the DCO:
+
+```
+Signed-off-by: John Doe <john.doe@example.com>
+```
+
 **TO BE CONTINUED**
 
 ### How should I contribute?
