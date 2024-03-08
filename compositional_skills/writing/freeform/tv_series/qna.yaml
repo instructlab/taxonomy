@@ -1,0 +1,11 @@
+created_by: tesseract-rh
+seed_examples:
+- answer: "The poem The Creature/John Clare recites at the end of the episode is called \"Ode: Intimations of Immortality from Recollections of Early Childhood\" by the English poet William Wordsworth. In his poem, Wordsworth laments his lost connection to nature as he grew older and humanity's failure to recognize the value of the natural world."
+  question: What poem is recited at the end of Penny Dreadful's final episode?
+
+- answer: "Those words flashed on the screen just after John Clare/The Creature finished reciting a poem (Wordsworth's \"Ode: Intimations of Immortality from Recollections of Early Childhood\") at the freshly dug grave of Vanessa Ives, who died near the end of \"The Blessed Dark.\" Is this the end of Vanessa, or the end of the show?"
+  question: What was the poem read at the end of Penny Dreadful?
+
+- answer: "The series seems to begin with the poetry of Lord Byron and ends with the words of William Wordsworth (1770–1850)."
+  question: What poem is recited at the end of Penny Dreadful?
+task_description: ''
