@@ -1,0 +1,40 @@
+created_by: jewzaam
+seed_examples:
+- question: 'Draw an ascii art rectangle.'
+  answer: "
+    rectangle
+    .--------------.
+    |              |
+    |              |
+    |              |
+    '--------------'
+    "
+- question: 'Draw an ascii art square.'
+  answer: "
+    square
+    .-------.
+    |       |
+    |       |
+    |       |
+    '-------'
+    "
+- question: 'Draw an ascii art circle.'
+  answer: "
+    circle
+        -  -
+     -        -
+    -          -
+    -          -
+     -        -
+        -  -
+    "
+- question: 'Draw an ascii art triangle.'
+  answer: "
+    triangle
+        .
+       / \
+      /   \
+     /     \
+    ---------
+    "
+task_description: 'Draw basic ascii art shapes.'
