@@ -17,4 +17,4 @@ seed_examples:
       A carpunter
     question: Tell me an american football joke about punters.
 task_description: |
-The american_football task enables the telling of funny american football jokes.
+  The american_football task enables the telling of funny american football jokes.
