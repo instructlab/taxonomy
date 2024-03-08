@@ -1,0 +1,198 @@
+created_by: zinkelburger
+seed_examples:
+  - answer: >
+      This position is from the Alekhine Defense, Larsen Variation. White has
+      a hanging knight on f7, and black has no way to avoid the sacrifice.
+
+      After 6. ... Kxf7, white has 7. Qh5+, forking black's king and d5 knight.
+      Once black defends the knight with 7. ... Ke6, white can continue the attack
+      with 8. c4. Although black's king is precariously placed in the center of the board,
+      black does have a development advantage as white has only developed the queen.
+
+      It can be surprisingly difficult for white to exploit their advantage,
+      and the position scores roughly even in the lichess master database.
+
+      Considering these factors, I evaluate the position to be +1.1, a reasonable advantage for white.
+
+      However, it's important to note that the database results do not
+      indicate that white has an easy time converting this position.
+    question: |
+      Evaluate this position. Current chess game: 1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. Nf3 dxe5 5. Nxe5
+      Nd7 6. Nxf7
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >
+      This position is from the Queen's Gambit Declined, Exchange Variation.
+      White has two main moves here:
+
+      6. e3 and 6. Qc2. Although these moves frequently transpose to each other, 6. e3 is slightly more
+      accurate because it prepares to develop the kingside with Bd3 and Nge2 / Nf3. 6. Qc2's main point
+      is to stop Bf5, but this move is not threatening. For example: 6. e3, Bf5 7. Qf3 attacks the f5 bishop,
+      and after 7. ... Bg6 white can transition to a favorable endgame with 8. Bxf6.
+
+      So the best move is 6. e3
+    question: |
+      What is the best move in this position? Current chess game: 1. d4 d5 2. c4 e6 3. Nc3 Nf6
+      4. cxd5 exd5 5. Bg5 c6
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >
+      Current moves: 1. e4 e6 2. d4
+
+      2. ... d5. This pressures your e4 pawn, and you must defend it. Common ways for white to continue
+      include:
+
+      - 3. exd5, the Exchange Variation, relieving the tension in the center.
+
+      - 3. e5, the Advance Variation. White gets a space advantage, but black gets counterplay against
+      the d4 pawn.
+
+      - 3. Nc3, the Paulsen Variation. Developing naturally in the center, this is possibly the most
+      challenging move.
+
+      Note that 3. Nc3 stops 3. ... c5 due to 4. exd5, exd5 5. dxc5, where white wins the d5 pawn.
+      White also has 5. Bb5+, which may be even better.
+
+      - 3. Nd2, the Tarrasch Variation. More modest than 3. Nc3, white retains the ability to play
+      pawn c3, supporting the d4 pawn against black's eventual c5.
+    question: >
+      In the chess game, the current moves are: 1. e4 e6 2. d4. Explain the
+      theory of the position.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      Current moves: 1. e4 e6 2. d4
+      Black to play
+      2. ... d5
+      What's your move?
+    question: >
+      In the chess game, the current moves are: 1. e4 e6 2. d4. Do not
+      explain your answers, play at a grandmaster level
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >
+      Current moves: 1. e4
+
+      Black to play
+
+      I respond with 1. ... e6, the French Defense. This prepares 2. ... d5, striking white's e4 pawn and
+      laying a claim to the center. While e6 does block my c8 bishop, it saves a few tempi compared
+      to the Caro-Kann, where black must play c6 and then c5.
+
+      What's your move?
+    question: |
+      Let's play chess. Explain your moves to me. I play 1. e4
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      I'm playing white, you're playing black
+      Current moves: 1. e4 c5 2. Nf3 g6 3. d4 cxd4 4. Qxd4 Nf6
+      I play 5. e5, attacking your f6 knight.
+      What's your move?
+    question: |
+      Current moves: 1. e4 c5 2. Nf3 g6 3. d4 cxd4 4. Qxd4. I play Nf6
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      I'm playing white, you're playing black
+      Current moves: 1. e4 c5 2. Nf3 g6 3. d4 cxd4
+      I play 4. Qxd4, attacking the h8 rook and controlling the center.
+      What's your move?
+    question: |
+      Current moves: 1. e4 c5 2. Nf3 g6 3. d4 I play cxd4
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      I'm playing white, you're playing black
+      Current moves: 1. e4 c5 2. Nf3 g6
+      I play 3. d4, opening up my dark-squared bishop and controlling the center.
+      What's your move?
+    question: |
+      I play g6. Current moves: 1. e4 c5 2. Nf3
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      I'm playing white, you're playing black
+      Current moves: 1. e4 c5
+      I play 2. Nf3, developing and controlling the center.
+      What's your move?
+    question: |
+      Current moves: 1. e4, I play c5
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      I am white, you are black
+      I play 1. e4, controlling the center and opening my light bishop.
+      What's your move?
+    question: |
+      Let's play chess, I'll be black
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      You're playing white, I'm playing black
+      Current moves: 1. c4
+      I play 1. ... e5, controlling the center and opening my dark-squared bishop.
+      What's your move?
+    question: |
+      Let's play chess. I play 1. c4
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      That move is not legal. You're playing white, and white can't play 1. d7 on the first move.
+      What's your move?
+    question: |
+      Let's play chess. I play 1. d7
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >
+      I'm black, black moves second in chess. You're playing white, what's
+      your move?
+    question: |
+      New chess game, you are black. What's your move?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      Sure. Which color would you like to be?
+    question: |
+      Let's play chess.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      You're playing white, I'm playing black. We can start playing whenever you're ready. Just let me know your move!
+    question: |
+      Let's play chess, I'll be white
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      Sure thing. I'll be white, you can be black. I play 1. d4, the queen's pawn opening. What's your move?
+    question: |
+      Let's play chess, you go first
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      You are white, I am black
+      Current moves: 1. e4
+      I play 1. ... e6, the French Defense. What's your move?
+    question: |
+      Let's play chess, I play 1. e4
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+task_description: |
+  Advice for structuring a response to playing chess
