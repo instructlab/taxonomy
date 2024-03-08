@@ -9,4 +9,7 @@ seed_examples:
   - answer: "54321"
     question: "12345"
     context: "Can you reverse this text:"
+  - answer: "madam"
+    question: "madam"
+    context: "Can you reverse this text:"
 task_description: Add a skill to reverse a string
