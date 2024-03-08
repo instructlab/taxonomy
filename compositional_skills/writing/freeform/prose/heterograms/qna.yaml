@@ -59,4 +59,4 @@ seed_examples:
   question: "Find some 14 letter English heterograms."
 - answer: "dermatoglyphics"
   question: "Find some 15 letter English heterograms."
-task_description: 'Find some English heterograms which appear in linux.words."
+task_description: 'Find some English heterograms which appear in linux.words.'
