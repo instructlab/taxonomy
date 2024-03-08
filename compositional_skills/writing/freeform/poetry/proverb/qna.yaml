@@ -1,1 +1,21 @@
+created_by: judyobrienie
+seed_examples:
+- answer: 'The longest way around is the shortest way home
+       Is one of many Irish sayings that’ll be familiar to fans of James Joyce. In particular, his book ‘Ulysses’.
+      The phrase “The longest way round is the shortest way home” is an Irish proverb that suggests that, sometimes, taking a more indirect route to achieve a goal can actually be more efficient in the long run.'
 
+  question: Give me an example of an Irish proverb about getting work done
+- answer: 'It is not a fish until it is on the bank
+
+     Conjures up an image of a fisherman with what they think is a great big salmon at the end of their line.
+     However, when they get it out of the water they realise that it is actually a kettle'
+
+    
+  question: Give me an example of an Irish proverb about finishing a task
+- answer: 'Ní neart go cur le chéile.
+     Translation: "There is no strength without unity." This proverb can be interpreted as emphasizing the importance of teamwork and collaboration in accomplishing tasks or goals.'
+  
+
+
+  question: Give me an example of an Irish proverb about getting work done
+  task_description: 
