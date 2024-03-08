@@ -1,0 +1,81 @@
+# The goal of this skill is to extract information from stacktraces
+---
+task_description: |
+
+  Extract information from stacktrace errors
+
+created_by: TristanCacqueray
+
+seed_examples:
+  - question: |
+
+      What is the filename and line number of the Python stacktrace?
+
+    context: |
+
+      Traceback (most recent call last):
+        File "cli/config.py", line 85, in read_config
+          return Config(**cfg)
+      TypeError: __init__() got an unexpected keyword argument 'list')))
+
+
+    # The model used to reply
+    # `The given stacktrace does not include the filename for ...`
+    answer: |
+
+      The given stacktrace is coming from the file named "cli/config.py"
+      line 85.
+
+  - question: |
+
+      What is the filename and line number of the provided stacktrace origin?
+
+    context: |
+
+      Traceback (most recent call last):
+        File "test.py", line 7, in <module>
+          main()
+        File "test.py", line 5, in main
+          fib(n)
+        File "test.py", line 2, in fib
+          return 42 / n
+                 ~~~^~~
+      ZeroDivisionError: division by zero
+
+    answer: |
+
+      The given stacktrace is coming from the file named "test.py" line 2.
+
+  - question: |
+
+      What is the filename and line number of the provided stacktrace origin?
+
+    context: |
+
+      Traceback (most recent call last):
+        File "site-packages/httpx/_transports/default.py", line 69, in map_httpcore_exceptions
+          yield
+        File "site-packages/httpx/_transports/default.py", line 113, in __iter__
+          for part in self._httpcore_stream:
+        File "site-packages/httpcore/_sync/connection_pool.py", line 367, in __iter__
+          raise exc from None
+        File "site-packages/httpcore/_sync/connection_pool.py", line 363, in __iter__
+          for part in self._stream:
+        File "site-packages/httpcore/_sync/http11.py", line 349, in __iter__
+          raise exc
+        File "site-packages/httpcore/_sync/http11.py", line 341, in __iter__
+          for chunk in self._connection._receive_response_body(**kwargs):
+        File "site-packages/httpcore/_sync/http11.py", line 210, in _receive_response_body
+          event = self._receive_event(timeout=timeout)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "site-packages/httpcore/_sync/http11.py", line 220, in _receive_event
+          with map_exceptions({h11.RemoteProtocolError: RemoteProtocolError}):
+        File "/usr/lib64/python3.12/contextlib.py", line 158, in __exit__
+          self.gen.throw(value)
+        File "site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+          raise to_exc(exc) from exc
+      httpcore.RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+
+    answer: |
+
+      The given stacktrace is coming from the file named "httpcore/_sync/http11.py" line 210.
