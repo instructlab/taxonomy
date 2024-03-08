@@ -57,6 +57,7 @@ Triagers should review open pull requests and use labels to manage their state a
 - https://github.com/instruct-lab/taxonomy/labels/triage-rejected - skill fails criteria
   - add informative comment while tagging @taxonomy-approvers
   - re-assign to @taxonomy-approvers
+- [triage-meta](https://github.com/instruct-lab/taxonomy/labels/triage-meta) - issues for discussion and clarification of edge cases and categories of examples
 
 ## Helpful guidance for different determinations
 
