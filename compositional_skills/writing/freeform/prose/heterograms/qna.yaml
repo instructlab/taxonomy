@@ -1,0 +1,57 @@
+created_by: jakubjelinek
+seed_examples:
+- answer: "uncombated uncompared uncompiled uncopiable uncopyable uncraftily
+           uncredibly undefiably underclift undercloak undercloth undercoats
+           underflows underhabit underlight undermatch underpitch underplays
+           undersight understamp understock underswamp underwaist underwatch
+           underwitch undescript undespotic undilatory undirectly undogmatic
+           undomestic undrivable unemphatic unevitably unfactored unfatherly
+           unfathomed unfavorite unfeasibly unfervidly unfestival unfishable
+           unflavored unflitched unfoliaged unfoliated unforcedly unforcible
+           unforcibly unfordable unforecast unfreakish unfrighted unfroglike
+           ungamboled ungladsome unglimpsed ungoatlike ungodliest unheartily"
+  question: "Find some 10 letter English heterograms."
+- answer: "Abdominales abolishment abridgments abruptiones acronymized
+           Actinophrys adenotyphus adjustoring adrenolytic adventurish
+           adventurism aftercoming afterwisdom Agapemonist Agromyzidae
+           Albategnius albitophyre alchemistry Aldermaston Aleksandrov
+           almonership Almoravides Alpetragius aluminotype amblygonite
+           amphibryous amphictyons amphigenous amyliferous amylopectin
+           amyosthenic anchoretism Anguimorpha anhemolytic anhydroxime
+           Anthropidae anticomplex Aphanomyces Aphroditeum apodyterium
+           archegonium Argiphontes Artzybashev asthmogenic atmospheric
+           augitophyre Austrophile azodiphenyl azosulphine bachelorism
+           backflowing backgrounds backpointer badmouthing bankruptism"
+  question: "Find some 11 letter English heterograms."
+- answer: "absorptively adjunctively adsorptively ambidextrous Amblyopsidae
+           Amphicondyla amphicyrtous amylodextrin backpointers backswording
+           backswordmen bankruptcies blackfigured blackshirted blastodermic
+           bleachground blepharoncus blockheadism bluestocking Bostrychidae
+           bounderishly brachylogies brachypodine Braunschweig breastplough
+           cabinetworks candleshrift candlewright celidography cephalodymus
+           chiastoneury chirogymnast chlorguanide Citharexylum clypeastroid
+           cogitabundly columnarized combustively compulsative configurable
+           configurated considerably consumptible Cordylanthus countervails
+           cryptomnesia culteranismo customizable daemonurgist dasyproctine
+           declinograph"
+  question: "Find some 12 letter English heterograms."
+- answer: "amphigenously brachydontism Bridgehampton chromeplating
+           consumptively copyrightable courtezanship Cryptocleidus
+           dentosurgical documentarily embryoplastic endolymphatic
+           forecastingly hemidactylous hydromagnetic hypsometrical
+           lycanthropies lycanthropize metalworkings misconjugated
+           multibranched musicotherapy mynpachtbrief objurgatively
+           philydraceous physicomental pneumogastric postneuralgic
+           preblockading salpingectomy semivoluntary submetaphoric
+           subordinately sulphocyanide sulphozincate TelAutography
+           troublemaking unatmospheric unblameworthy uncompahgrite
+           uncopyrighted undisprovable unexorcisably unmaledictory
+           unpredictably unproblematic unsympathized"
+  question: "Find some 13 letter English heterograms."
+- answer: "ambidextrously benzhydroxamic dermatoglyphic hydromagnetics
+           hydropneumatic pseudomythical Schizotrypanum subformatively
+           sulphogermanic undiscoverably"
+  question: "Find some 14 letter English heterograms."
+- answer: "dermatoglyphics"
+  question: "Find some 15 letter English heterograms."
+task_description: 'Find some English heterograms which appear in linux.words."
