@@ -1,0 +1,69 @@
+---
+created_by: danielmellado
+seed_examples:
+ - answer: "
+    Project description
+    ===================
+
+    Kubernetes integration with OpenStack networking
+
+    The OpenStack Kuryr project enables native Neutron-based networking in
+    Kubernetes. With Kuryr-Kubernetes it's now possible to choose to run both
+    OpenStack VMs and Kubernetes Pods on the same Neutron network if your workloads
+    require it or to use different segments and, for example, route between them.
+
+    Contribution guidelines
+    -----------------------
+
+    For the process of new feature addition, refer to the `Kuryr Policy`_.
+
+    .. _Kuryr Policy: https://wiki.openstack.org/wiki/Kuryr#Kuryr_Policies"
+   context: "
+    The OpenStack Kuryr project enables native Neutron-based networking in
+    Kubernetes. With Kuryr-Kubernetes it's now possible to choose to run both
+    OpenStack VMs and Kubernetes Pods on the same Neutron network if your workloads
+    require it or to use different segments and, for example, route between them.
+    "
+   question: write a short article about Kuryr using a reStructuredText article
+     template
+ - answer: "
+
+    Example Chapter Heading
+    =======================
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula
+    sapien, malesuada eu tempor eu, sagittis nec nibh. Fusce sit amet nunc
+    sit amet felis semper molestie. Proin orci dolor, interdum ut lacinia
+    id, semper quis nisi. Aenean vestibulum ullamcorper eros et vulputate.
+    Fusce diam turpis, facilisis nec consectetur vitae, dapibus vel
+    sapien.
+    "
+   context: "
+   Write a small samle Lorem Ipsum article using reStructuredText
+   "
+   question: write a short sample Lorem Ipsum reStructuredText article
+ - answer: "
+
+    Example Chapter Heading
+    =======================
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula
+    sapien, malesuada eu tempor eu, sagittis nec nibh. Fusce sit amet nunc
+    sit amet felis semper molestie. Proin orci dolor, interdum ut lacinia
+    id, semper quis nisi. Aenean vestibulum ullamcorper eros et vulputate.
+    Fusce diam turpis, facilisis nec consectetur vitae, dapibus vel
+    sapien.
+
+    Example Section Heading
+    -----------------------
+
+    Quisque ipsum lectus, cursus laoreet aliquet in, viverra sit amet
+    metus. Aliquam tristique, dui vel euismod facilisis, velit mi pretium
+    leo, elementum feugiat tortor nibh quis nibh. Pellentesque vel nisl
+    sit amet sem euismod mollis.
+    "
+   context: "
+   Write a small samle Lorem Ipsum article using reStructuredText with an additional heading
+   "
+   question: write a short sample Lorem Ipsum reStructuredText article with an extra heading
+task_description: 'Output text as reStructuredText'
