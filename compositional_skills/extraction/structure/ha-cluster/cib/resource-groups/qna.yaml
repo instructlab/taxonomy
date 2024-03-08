@@ -174,7 +174,7 @@ seed_examples:
                 <op name="monitor" interval="60s" id="xvm-monitor-interval-60s"/>
               </operations>
             </primitive>
-            <group id="Email">
+            <group id="mail-group">
               <primitive id="Public-IP" class="ocf" type="IPaddr" provider="heartbeat">
                 <instance_attributes id="params-public-ip">
                   <nvpair id="public-ip-addr" name="ip" value="192.0.2.2"/>
@@ -214,13 +214,841 @@ seed_examples:
       </cib>
     # yamllint enable rule:line-length
     answer: |
-      There are two resource group defined:
-      1. Resource group "Email" containing resources:
+      There are two resource groups defined:
+      1. Resource group "mail-group" containing resources:
         - Public-IP (ocf:heartbeat:IPaddr)
         - Mailserver (lsb:exim)
       2. Resource group "locking" cloned as "locking-clone" with resources:
         - dlm (ocf:pacemaker:controld)
         - lvmlockd (ocf:heartbeat:lvmlockd)
+
+  - question: |
+      List resource groups from the given CIB.
+    # yamllint disable rule:line-length
+    context: |
+      <cib epoch="558" num_updates="0" admin_epoch="0" validate-with="pacemaker-3.8" crm_feature_set="3.15.0" update-origin="rh7-3" update-client="crmd" cib-last-written="Thu Aug 23 16:49:17 2012" have-quorum="0" dc-uuid="2">
+        <configuration>
+          <crm_config/>
+          <nodes/>
+          <resources>
+            <bundle id="B1">
+              <docker image="pcs:test" replicas="4" replicas-per-host="2" run-command="/bin/true" network="extra_network_settings" options="extra_options"/>
+              <network ip-range-start="192.168.100.200" control-port="12345" host-interface="eth0" host-netmask="24">
+                <port-mapping port="1001" id="B1-port-map-1001"/>
+                <port-mapping port="2000" internal-port="2002" id="B1-port-map-2000"/>
+                <port-mapping range="3000-3300" id="B1-port-map-3000-3300"/>
+              </network>
+              <storage>
+                <storage-mapping source-dir="/tmp/docker1a" target-dir="/tmp/docker1b" id="B1-storage-map"/>
+                <storage-mapping source-dir-root="/tmp/docker3a" target-dir="/tmp/docker3b" id="B1-storage-map-2"/>
+              </storage>
+            </bundle>
+            <bundle id="B2">
+              <docker image="pcs:test"/>
+              <primitive id="R1" class="ocf" type="Dummy" provider="pacemaker">
+                <operations>
+                  <op name="monitor" timeout="20s" interval="10s" id="R1-monitor-interval-10s"/>
+                </operations>
+              </primitive>
+            </bundle>
+            <primitive id="R7" class="ocf" type="Dummy" provider="pacemaker">
+              <operations>
+                <op name="monitor" timeout="20s" interval="10s" id="R7-monitor-interval-10s"/>
+              </operations>
+            </primitive>
+            <primitive id="S2" class="stonith" type="fence_kdump">
+              <operations>
+                <op name="monitor" interval="60s" id="S2-monitor-interval-60s"/>
+              </operations>
+            </primitive>
+            <group id="G2">
+              <primitive id="R5" class="ocf" type="Dummy" provider="pacemaker">
+                <operations>
+                  <op name="monitor" timeout="20s" interval="10s" id="R5-monitor-interval-10s"/>
+                </operations>
+              </primitive>
+              <meta_attributes id="G2-meta_attributes">
+                <nvpair id="G2-meta_attributes-meta1" name="meta1" value="metaval1"/>
+                <nvpair id="G2-meta_attributes-meta2" name="meta2" value="metaval2"/>
+              </meta_attributes>
+            </group>
+            <clone id="G1-clone">
+              <group id="G1">
+                <primitive id="R2" class="ocf" type="Stateful" provider="pacemaker">
+                  <operations>
+                    <op name="monitor" timeout="20s" interval="10s" id="R2-monitor-interval-10s"/>
+                  </operations>
+                </primitive>
+                <primitive id="R3" class="ocf" type="Stateful" provider="pacemaker">
+                  <operations>
+                    <op name="monitor" timeout="20s" interval="10s" id="R3-monitor-interval-10s"/>
+                  </operations>
+                </primitive>
+                <primitive id="R4" class="ocf" type="Stateful" provider="pacemaker">
+                  <operations>
+                    <op name="monitor" timeout="20s" interval="10s" id="R4-monitor-interval-10s"/>
+                  </operations>
+                </primitive>
+              </group>
+              <meta_attributes id="G1-clone-meta_attributes">
+                <nvpair id="G1-clone-meta_attributes-promotable" name="promotable" value="true"/>
+              </meta_attributes>
+            </clone>
+            <group id="my-group">
+              <meta_attributes id="my-group-meta_attributes">
+                <nvpair id="my-group-meta_attributes-meta1" name="meta1" value="metaval1"/>
+                <nvpair id="my-group-meta_attributes-meta2" name="meta2" value="metaval2"/>
+              </meta_attributes>
+              <primitive id="my-resource" class="ocf" type="Dummy" provider="pacemaker">
+                <operations>
+                  <op name="monitor" timeout="20s" interval="10s" id="my-resource--monitor-interval-10s"/>
+                </operations>
+              </primitive>
+            </group>
+            <clone id="R6-clone">
+              <primitive id="R6" class="ocf" type="Dummy" provider="pacemaker">
+                <operations>
+                  <op name="monitor" timeout="20s" interval="10s" id="R6-monitor-interval-10s"/>
+                </operations>
+              </primitive>
+            </clone>
+          </resources>
+          <constraints>
+            <rsc_location id="location-R7-non-existing-node--10000" rsc="R7" node="non-existing-node" score="-10000"/>
+            <rsc_location id="location-R7-another-one--INFINITY" rsc="R7" node="another-one" score="-INFINITY"/>
+            <rsc_location id="location-R7-localhost-INFINITY" rsc="R7" node="localhost" score="INFINITY" resource-discovery="always"/>
+            <rsc_location id="location-G2-localhost-INFINITY" rsc="G2" node="localhost" score="INFINITY"/>
+            <rsc_location id="location-R-localhost-INFINITY" rsc-pattern="R*" node="localhost" score="INFINITY"/>
+            <rsc_location id="loc_constr_with_expired_rule" rsc="B2">
+              <rule id="loc_constr_with_expired_rule-rule" boolean-op="and" score="500">
+                <date_expression id="loc_constr_with_expired_rule-rule-expr" operation="lt" end="2000-01-01"/>
+              </rule>
+            </rsc_location>
+            <rsc_location id="loc_constr_with_not_expired_rule" rsc="R6-clone">
+              <rule id="loc_constr_with_not_expired_rule-rule" boolean-op="and" score="500" role="Unpromoted">
+                <expression id="loc_constr_with_not_expired_rule-rule-expr" operation="eq" attribute="#uname" value="node1"/>
+                <date_expression id="loc_constr_with_not_expired_rule-rule-expr-1" operation="gt" start="2000-01-01"/>
+              </rule>
+              <rule id="loc_constr_with_not_expired_rule-rule-1" boolean-op="and" role="Promoted" score-attribute="test-attr">
+                <date_expression id="loc_constr_with_not_expired_rule-rule-1-expr" operation="gt" start="2010-12-31"/>
+                <expression id="loc_constr_with_not_expired_rule-rule-1-expr-1" operation="eq" attribute="#uname" value="node1"/>
+              </rule>
+            </rsc_location>
+            <rsc_order first="R7" then="G2" score="-123" require-all="false" first-action="stop" then-action="stop" symmetrical="false" id="order-R7-G2-mandatory"/>
+            <rsc_order first="G2" then="B2" kind="Optional" first-action="start" then-action="start" id="order-G2-B2-Optional"/>
+            <rsc_order kind="Optional" id="order_set_B2R6-cloneSe">
+              <resource_set action="stop" require-all="false" id="order_set_B2R6-cloneSe_set">
+                <resource_ref id="B2"/>
+                <resource_ref id="R6-clone"/>
+              </resource_set>
+              <resource_set action="promote" sequential="false" id="order_set_B2R6-cloneSe_set-1">
+                <resource_ref id="G1-clone"/>
+              </resource_set>
+            </rsc_order>
+            <rsc_colocation rsc="G1-clone" with-rsc="R6-clone" score="-100" rsc-role="Promoted" with-rsc-role="Stopped" id="colocation-G1-clone-R6-clone--100"/>
+            <rsc_colocation score="-1" id="colocation_set_R7G2B2">
+              <resource_set role="Started" id="colocation_set_R7G2B2_set">
+                <resource_ref id="R7"/>
+                <resource_ref id="G2"/>
+              </resource_set>
+              <resource_set sequential="false" id="colocation_set_R7G2B2_set-1">
+                <resource_ref id="B2"/>
+                <resource_ref id="R6-clone"/>
+              </resource_set>
+            </rsc_colocation>
+            <rsc_ticket loss-policy="demote" rsc-role="Promoted" ticket="custom-ticket1" rsc="G1-clone" id="ticket-custom-ticket1-G1-clone-Promoted"/>
+            <rsc_ticket ticket="ticket2" id="ticket_set_R7B2G2">
+              <resource_set role="Stopped" id="ticket_set_R7B2G2_set">
+                <resource_ref id="R7"/>
+                <resource_ref id="B2"/>
+                <resource_ref id="G2"/>
+              </resource_set>
+            </rsc_ticket>
+          </constraints>
+        </configuration>
+      </cib>
+    # yamllint enable rule:line-length
+    answer: |
+      The given CIB contains three resource groups:
+      1. Resource group "G2" containing resources:
+        - R5 (ocf:pacemaker:Dummy)
+      2. Resource group "G1" cloned as "G1-clone" containing resources:
+        - R2 (ocf:pacemaker:Stateful)
+        - R3 (ocf:pacemaker:Stateful)
+        - R4 (ocf:pacemaker:Stateful)
+      3. Resource group "my-group" with resources:
+        - my-resource (ocf:pacemaker:Dummy)
+
+  - question: |
+      What are the resource groups in this CIB?
+    # yamllint disable rule:line-length
+    context: |
+      <cib crm_feature_set="3.19.0" validate-with="pacemaker-3.9" epoch="14" num_updates="8" admin_epoch="0" cib-last-written="Fri Mar  8 00:26:43 2024" update-origin="virt-154.cluster-qe.lab.eng.brq.redhat.com" update-client="root" update-user="root" have-quorum="true" dc-uuid="1" execution-date="1709854006">
+        <configuration>
+          <crm_config>
+            <cluster_property_set id="cib-bootstrap-options">
+              <nvpair id="cib-bootstrap-options-have-watchdog" name="have-watchdog" value="false"/>
+              <nvpair id="cib-bootstrap-options-dc-version" name="dc-version" value="2.1.7-4.el9-c3ca950"/>
+              <nvpair id="cib-bootstrap-options-cluster-infrastructure" name="cluster-infrastructure" value="corosync"/>
+              <nvpair id="cib-bootstrap-options-cluster-name" name="cluster-name" value="STSRHTS9794"/>
+              <nvpair id="cib-bootstrap-options-no-quorum-policy" name="no-quorum-policy" value="freeze"/>
+            </cluster_property_set>
+          </crm_config>
+          <nodes>
+            <node id="1" uname="virt-153.cluster-qe.lab.eng.brq.redhat.com"/>
+            <node id="2" uname="virt-154.cluster-qe.lab.eng.brq.redhat.com"/>
+          </nodes>
+          <resources>
+            <primitive id="fence-virt-153.cluster-qe.lab.eng.brq.redhat.com" class="stonith" type="fence_xvm">
+              <instance_attributes id="fence-virt-153.cluster-qe.lab.eng.brq.redhat.com-instance_attributes">
+                <nvpair id="fence-virt-153.cluster-qe.lab.eng.brq.redhat.com-instance_attributes-delay" name="delay" value="5"/>
+                <nvpair id="fence-virt-153.cluster-qe.lab.eng.brq.redhat.com-instance_attributes-pcmk_host_check" name="pcmk_host_check" value="static-list"/>
+                <nvpair id="fence-virt-153.cluster-qe.lab.eng.brq.redhat.com-instance_attributes-pcmk_host_list" name="pcmk_host_list" value="virt-153.cluster-qe.lab.eng.brq.redhat.com"/>
+              </instance_attributes>
+              <operations>
+                <op name="monitor" interval="60s" id="fence-virt-153.cluster-qe.lab.eng.brq.redhat.com-monitor-interval-60s"/>
+              </operations>
+            </primitive>
+            <primitive id="fence-virt-154.cluster-qe.lab.eng.brq.redhat.com" class="stonith" type="fence_xvm">
+              <instance_attributes id="fence-virt-154.cluster-qe.lab.eng.brq.redhat.com-instance_attributes">
+                <nvpair id="fence-virt-154.cluster-qe.lab.eng.brq.redhat.com-instance_attributes-pcmk_host_check" name="pcmk_host_check" value="static-list"/>
+                <nvpair id="fence-virt-154.cluster-qe.lab.eng.brq.redhat.com-instance_attributes-pcmk_host_list" name="pcmk_host_list" value="virt-154.cluster-qe.lab.eng.brq.redhat.com"/>
+              </instance_attributes>
+              <operations>
+                <op name="monitor" interval="60s" id="fence-virt-154.cluster-qe.lab.eng.brq.redhat.com-monitor-interval-60s"/>
+              </operations>
+            </primitive>
+            <clone id="locking-clone">
+              <group id="locking">
+                <primitive id="dlm" class="ocf" type="controld" provider="pacemaker">
+                  <operations>
+                    <op name="monitor" interval="30s" id="dlm-monitor-interval-30s"/>
+                    <op name="start" interval="0s" timeout="90s" id="dlm-start-interval-0s"/>
+                    <op name="stop" interval="0s" timeout="100s" id="dlm-stop-interval-0s"/>
+                  </operations>
+                </primitive>
+                <primitive id="lvmlockd" class="ocf" type="lvmlockd" provider="heartbeat">
+                  <operations>
+                    <op name="monitor" interval="30s" id="lvmlockd-monitor-interval-30s"/>
+                    <op name="start" interval="0s" timeout="90s" id="lvmlockd-start-interval-0s"/>
+                    <op name="stop" interval="0s" timeout="90s" id="lvmlockd-stop-interval-0s"/>
+                  </operations>
+                </primitive>
+              </group>
+            </clone>
+            <clone id="fs-group-clone">
+              <group id="fs-group">
+                <primitive id="lv" class="ocf" type="LVM-activate" provider="heartbeat">
+                  <instance_attributes id="lv-instance_attributes">
+                    <nvpair id="lv-instance_attributes-activation_mode" name="activation_mode" value="shared"/>
+                    <nvpair id="lv-instance_attributes-lvname" name="lvname" value="shared0"/>
+                    <nvpair id="lv-instance_attributes-partial_activation" name="partial_activation" value="False"/>
+                    <nvpair id="lv-instance_attributes-vg_access_mode" name="vg_access_mode" value="lvmlockd"/>
+                    <nvpair id="lv-instance_attributes-vgname" name="vgname" value="shared"/>
+                  </instance_attributes>
+                  <operations>
+                    <op name="monitor" interval="30s" timeout="90s" id="lv-monitor-interval-30s"/>
+                    <op name="start" interval="0s" timeout="90s" id="lv-start-interval-0s"/>
+                    <op name="stop" interval="0s" timeout="90s" id="lv-stop-interval-0s"/>
+                  </operations>
+                </primitive>
+                <primitive id="fs" class="ocf" type="Filesystem" provider="heartbeat">
+                  <instance_attributes id="fs-instance_attributes">
+                    <nvpair id="fs-instance_attributes-device" name="device" value="/dev/shared/shared0"/>
+                    <nvpair id="fs-instance_attributes-directory" name="directory" value="/mnt/shared"/>
+                    <nvpair id="fs-instance_attributes-fstype" name="fstype" value="gfs2"/>
+                    <nvpair id="fs-instance_attributes-options" name="options" value="rw"/>
+                  </instance_attributes>
+                  <operations>
+                    <op name="monitor" interval="30s" id="fs-monitor-interval-30s"/>
+                    <op name="start" interval="0s" timeout="60s" id="fs-start-interval-0s"/>
+                    <op name="stop" interval="0s" timeout="60s" id="fs-stop-interval-0s"/>
+                  </operations>
+                </primitive>
+              </group>
+              <meta_attributes id="fs-group-clone-meta_attributes">
+                <nvpair id="fs-group-clone-meta_attributes-interleave" name="interleave" value="true"/>
+              </meta_attributes>
+            </clone>
+          </resources>
+          <constraints>
+            <rsc_order first="locking-clone" then="fs-group-clone" first-action="start" then-action="start" symmetrical="true" id="order-locking-clone-fs-group-clone-mandatory"/>
+            <rsc_colocation rsc="fs-group-clone" with-rsc="locking-clone" score="INFINITY" id="colocation-fs-group-clone-locking-clone-INFINITY"/>
+          </constraints>
+          <rsc_defaults>
+            <meta_attributes id="build-resource-defaults">
+              <nvpair id="build-resource-stickiness" name="resource-stickiness" value="1"/>
+            </meta_attributes>
+          </rsc_defaults>
+          <alerts>
+            <alert id="forwarder" path="/usr/tests/sts-rhel9.4/pacemaker/alerts/alert_forwarder.py">
+              <recipient id="forwarder-recipient" value="http://do.not.start.xmlrpc"/>
+            </alert>
+          </alerts>
+        </configuration>
+      </cib>
+    # yamllint enable rule:line-length
+    answer: |
+      The given CIB defines two resource groups:
+      1. Resource group "locking" cloned as "locking-clone" with resources:
+        - dlm (ocf:pacemaker:controld)
+        - lvmlockd (ocf:heartbeat:lvmlockd)
+      2. Resource group "fs-group" cloned as "fs-group-clone" with resources:
+        - lv (ocf:heartbeat:LVM-activate)
+        - fs (ocf:heartbeat:Filesystem)
+
+  - question: |
+      What are the resource groups in this CIB?
+    # yamllint disable rule:line-length
+    context: |
+      <cib crm_feature_set="3.19.0" validate-with="pacemaker-3.9" epoch="14" num_updates="8" admin_epoch="0" cib-last-written="Thu Mar  7 16:09:47 2024" update-origin="virt-160.cluster-qe.lab.eng.brq.redhat.com" update-client="root" update-user="root" have-quorum="true" dc-uuid="1" execution-date="1709824188">
+        <configuration>
+          <crm_config>
+            <cluster_property_set id="cib-bootstrap-options">
+              <nvpair id="cib-bootstrap-options-have-watchdog" name="have-watchdog" value="false"/>
+              <nvpair id="cib-bootstrap-options-dc-version" name="dc-version" value="2.1.7-4.el9-c3ca950"/>
+              <nvpair id="cib-bootstrap-options-cluster-infrastructure" name="cluster-infrastructure" value="corosync"/>
+              <nvpair id="cib-bootstrap-options-cluster-name" name="cluster-name" value="STSRHTS23265"/>
+            </cluster_property_set>
+          </crm_config>
+          <nodes>
+            <node id="1" uname="virt-159.cluster-qe.lab.eng.brq.redhat.com"/>
+            <node id="2" uname="virt-160.cluster-qe.lab.eng.brq.redhat.com"/>
+          </nodes>
+          <resources>
+            <primitive id="fence-virt-159.cluster-qe.lab.eng.brq.redhat.com" class="stonith" type="fence_xvm">
+              <instance_attributes id="fence-virt-159.cluster-qe.lab.eng.brq.redhat.com-instance_attributes">
+                <nvpair id="fence-virt-159.cluster-qe.lab.eng.brq.redhat.com-instance_attributes-delay" name="delay" value="5"/>
+                <nvpair id="fence-virt-159.cluster-qe.lab.eng.brq.redhat.com-instance_attributes-pcmk_host_check" name="pcmk_host_check" value="static-list"/>
+                <nvpair id="fence-virt-159.cluster-qe.lab.eng.brq.redhat.com-instance_attributes-pcmk_host_list" name="pcmk_host_list" value="virt-159.cluster-qe.lab.eng.brq.redhat.com"/>
+              </instance_attributes>
+              <operations>
+                <op name="monitor" interval="60s" id="fence-virt-159.cluster-qe.lab.eng.brq.redhat.com-monitor-interval-60s"/>
+              </operations>
+            </primitive>
+            <primitive id="fence-virt-160.cluster-qe.lab.eng.brq.redhat.com" class="stonith" type="fence_xvm">
+              <instance_attributes id="fence-virt-160.cluster-qe.lab.eng.brq.redhat.com-instance_attributes">
+                <nvpair id="fence-virt-160.cluster-qe.lab.eng.brq.redhat.com-instance_attributes-pcmk_host_check" name="pcmk_host_check" value="static-list"/>
+                <nvpair id="fence-virt-160.cluster-qe.lab.eng.brq.redhat.com-instance_attributes-pcmk_host_list" name="pcmk_host_list" value="virt-160.cluster-qe.lab.eng.brq.redhat.com"/>
+              </instance_attributes>
+              <operations>
+                <op name="monitor" interval="60s" id="fence-virt-160.cluster-qe.lab.eng.brq.redhat.com-monitor-interval-60s"/>
+              </operations>
+            </primitive>
+            <group id="mysql-with-ip">
+              <meta_attributes id="mysql-with-ip-meta_attributes">
+                <nvpair id="mysql-with-ip-meta_attributes-target-role" name="target-role" value="Stopped"/>
+              </meta_attributes>
+              <primitive id="ip-for-mysql" class="ocf" type="IPaddr2" provider="heartbeat">
+                <instance_attributes id="ip-for-mysql-instance_attributes">
+                  <nvpair id="ip-for-mysql-instance_attributes-cidr_netmask" name="cidr_netmask" value="22"/>
+                  <nvpair id="ip-for-mysql-instance_attributes-ip" name="ip" value="10.37.165.122"/>
+                </instance_attributes>
+                <operations>
+                  <op name="monitor" interval="30s" id="ip-for-mysql-monitor-interval-30s"/>
+                  <op name="start" interval="0s" timeout="20s" id="ip-for-mysql-start-interval-0s"/>
+                  <op name="stop" interval="0s" timeout="20s" id="ip-for-mysql-stop-interval-0s"/>
+                </operations>
+              </primitive>
+              <primitive id="mysql" class="ocf" type="mysql" provider="heartbeat">
+                <operations>
+                  <op name="demote" interval="0s" timeout="120s" id="mysql-demote-interval-0s"/>
+                  <op name="monitor" interval="30s" id="mysql-monitor-interval-30s"/>
+                  <op name="notify" interval="0s" timeout="90s" id="mysql-notify-interval-0s"/>
+                  <op name="promote" interval="0s" timeout="120s" id="mysql-promote-interval-0s"/>
+                  <op name="start" interval="0s" timeout="120s" id="mysql-start-interval-0s"/>
+                  <op name="stop" interval="0s" timeout="120s" id="mysql-stop-interval-0s"/>
+                </operations>
+              </primitive>
+            </group>
+            <group id="named_group">
+              <meta_attributes id="named_group-meta_attributes">
+                <nvpair id="named_group-meta_attributes-target-role" name="target-role" value="Stopped"/>
+              </meta_attributes>
+              <primitive id="vip" class="ocf" type="IPaddr2" provider="heartbeat">
+                <instance_attributes id="vip-instance_attributes">
+                  <nvpair id="vip-instance_attributes-cidr_netmask" name="cidr_netmask" value="22"/>
+                  <nvpair id="vip-instance_attributes-ip" name="ip" value="10.37.165.110"/>
+                </instance_attributes>
+                <operations>
+                  <op name="monitor" interval="30s" id="vip-monitor-interval-30s"/>
+                  <op name="start" interval="0s" timeout="20s" id="vip-start-interval-0s"/>
+                  <op name="stop" interval="0s" timeout="20s" id="vip-stop-interval-0s"/>
+                </operations>
+              </primitive>
+              <primitive id="named" class="ocf" type="named" provider="heartbeat">
+                <instance_attributes id="named-instance_attributes">
+                  <nvpair id="named-instance_attributes-monitor_request" name="monitor_request" value="www.test.local"/>
+                  <nvpair id="named-instance_attributes-monitor_response" name="monitor_response" value="1.2.3.4"/>
+                </instance_attributes>
+                <operations>
+                  <op name="methods" interval="0s" timeout="5s" id="named-methods-interval-0s"/>
+                  <op name="monitor" interval="30s" id="named-monitor-interval-30s"/>
+                  <op name="reload" interval="0s" timeout="60s" id="named-reload-interval-0s"/>
+                  <op name="start" interval="0s" timeout="60s" id="named-start-interval-0s"/>
+                  <op name="stop" interval="0s" timeout="60s" id="named-stop-interval-0s"/>
+                </operations>
+              </primitive>
+            </group>
+            <group id="vdo_storage_group">
+              <meta_attributes id="vdo_storage_group-meta_attributes">
+                <nvpair id="vdo_storage_group-meta_attributes-target-role" name="target-role" value="Stopped"/>
+              </meta_attributes>
+              <primitive id="lvolume" class="ocf" type="LVM-activate" provider="heartbeat">
+                <instance_attributes id="lvolume-instance_attributes">
+                  <nvpair id="lvolume-instance_attributes-activation_mode" name="activation_mode" value="exclusive"/>
+                  <nvpair id="lvolume-instance_attributes-lvname" name="lvname" value="shared0"/>
+                  <nvpair id="lvolume-instance_attributes-partial_activation" name="partial_activation" value="False"/>
+                  <nvpair id="lvolume-instance_attributes-vg_access_mode" name="vg_access_mode" value="system_id"/>
+                  <nvpair id="lvolume-instance_attributes-vgname" name="vgname" value="shared"/>
+                </instance_attributes>
+                <operations>
+                  <op name="monitor" interval="30s" timeout="90s" id="lvolume-monitor-interval-30s"/>
+                  <op name="start" interval="0s" timeout="90s" id="lvolume-start-interval-0s"/>
+                  <op name="stop" interval="0s" timeout="90s" id="lvolume-stop-interval-0s"/>
+                </operations>
+              </primitive>
+              <primitive id="filesystem" class="ocf" type="Filesystem" provider="heartbeat">
+                <instance_attributes id="filesystem-instance_attributes">
+                  <nvpair id="filesystem-instance_attributes-device" name="device" value="/dev/shared/shared0"/>
+                  <nvpair id="filesystem-instance_attributes-directory" name="directory" value="/mnt/shared/vdovolume"/>
+                  <nvpair id="filesystem-instance_attributes-fstype" name="fstype" value="xfs"/>
+                  <nvpair id="filesystem-instance_attributes-options" name="options" value="rw"/>
+                </instance_attributes>
+                <operations>
+                  <op name="monitor" interval="30s" id="filesystem-monitor-interval-30s"/>
+                  <op name="start" interval="0s" timeout="60s" id="filesystem-start-interval-0s"/>
+                  <op name="stop" interval="0s" timeout="60s" id="filesystem-stop-interval-0s"/>
+                </operations>
+              </primitive>
+            </group>
+            <group id="apache-with-ip">
+              <meta_attributes id="apache-with-ip-meta_attributes"/>
+              <primitive id="floating-ip" class="ocf" type="IPaddr2" provider="heartbeat">
+                <instance_attributes id="floating-ip-instance_attributes">
+                  <nvpair id="floating-ip-instance_attributes-cidr_netmask" name="cidr_netmask" value="22"/>
+                  <nvpair id="floating-ip-instance_attributes-ip" name="ip" value="10.37.167.251"/>
+                </instance_attributes>
+                <operations>
+                  <op name="monitor" interval="30s" id="floating-ip-monitor-interval-30s"/>
+                  <op name="start" interval="0s" timeout="20s" id="floating-ip-start-interval-0s"/>
+                  <op name="stop" interval="0s" timeout="20s" id="floating-ip-stop-interval-0s"/>
+                </operations>
+              </primitive>
+              <primitive id="webserver" class="ocf" type="apache" provider="heartbeat">
+                <instance_attributes id="webserver-instance_attributes">
+                  <nvpair id="webserver-instance_attributes-configfile" name="configfile" value="/etc/httpd/conf/httpd.conf"/>
+                  <nvpair id="webserver-instance_attributes-httpd" name="httpd" value="/usr/sbin/httpd"/>
+                </instance_attributes>
+                <operations>
+                  <op name="monitor" interval="30s" id="webserver-monitor-interval-30s"/>
+                  <op name="start" interval="0s" timeout="40s" id="webserver-start-interval-0s"/>
+                  <op name="stop" interval="0s" timeout="60s" id="webserver-stop-interval-0s"/>
+                </operations>
+              </primitive>
+            </group>
+            <clone id="dummies-everywhere">
+              <group id="dummies">
+                <primitive id="le-dummy-1" class="ocf" type="Dummy" provider="pacemaker">
+                  <operations>
+                    <op name="migrate_from" interval="0s" timeout="20s" id="le-dummy-1-migrate_from-interval-0s"/>
+                    <op name="migrate_to" interval="0s" timeout="20s" id="le-dummy-1-migrate_to-interval-0s"/>
+                    <op name="monitor" interval="30s" id="le-dummy-1-monitor-interval-30s"/>
+                    <op name="reload" interval="0s" timeout="20s" id="le-dummy-1-reload-interval-0s"/>
+                    <op name="reload-agent" interval="0s" timeout="20s" id="le-dummy-1-reload-agent-interval-0s"/>
+                    <op name="start" interval="0s" timeout="20s" id="le-dummy-1-start-interval-0s"/>
+                    <op name="stop" interval="0s" timeout="20s" id="le-dummy-1-stop-interval-0s"/>
+                  </operations>
+                </primitive>
+                <primitive id="le-dummy-2" class="ocf" type="Dummy" provider="pacemaker">
+                  <operations>
+                    <op name="migrate_from" interval="0s" timeout="20s" id="le-dummy-2-migrate_from-interval-0s"/>
+                    <op name="migrate_to" interval="0s" timeout="20s" id="le-dummy-2-migrate_to-interval-0s"/>
+                    <op name="monitor" interval="30s" id="le-dummy-2-monitor-interval-30s"/>
+                    <op name="reload" interval="0s" timeout="20s" id="le-dummy-2-reload-interval-0s"/>
+                    <op name="reload-agent" interval="0s" timeout="20s" id="le-dummy-2-reload-agent-interval-0s"/>
+                    <op name="start" interval="0s" timeout="20s" id="le-dummy-2-start-interval-0s"/>
+                    <op name="stop" interval="0s" timeout="20s" id="le-dummy-2-stop-interval-0s"/>
+                  </operations>
+                </primitive>
+                <primitive id="le-dummy-3" class="ocf" type="Dummy" provider="pacemaker">
+                  <operations>
+                    <op name="migrate_from" interval="0s" timeout="20s" id="le-dummy-3-migrate_from-interval-0s"/>
+                    <op name="migrate_to" interval="0s" timeout="20s" id="le-dummy-3-migrate_to-interval-0s"/>
+                    <op name="monitor" interval="30s" id="le-dummy-3-monitor-interval-30s"/>
+                    <op name="reload" interval="0s" timeout="20s" id="le-dummy-3-reload-interval-0s"/>
+                    <op name="reload-agent" interval="0s" timeout="20s" id="le-dummy-3-reload-agent-interval-0s"/>
+                    <op name="start" interval="0s" timeout="20s" id="le-dummy-3-start-interval-0s"/>
+                    <op name="stop" interval="0s" timeout="20s" id="le-dummy-3-stop-interval-0s"/>
+                  </operations>
+                </primitive>
+              </group>
+              <meta_attributes id="dummies-everywhere-meta_attributes">
+                <nvpair id="dummies-everywhere-meta_attributes-interleave" name="interleave" value="true"/>
+                <nvpair id="dummies-everywhere-meta_attributes-target-role" name="target-role" value="Stopped"/>
+              </meta_attributes>
+            </clone>
+            <clone id="haproxy-clone">
+              <primitive id="haproxy" class="systemd" type="haproxy">
+                <operations>
+                  <op name="monitor" start-delay="10s" interval="60s" id="haproxy-monitor-interval-60s"/>
+                  <op name="start" interval="0s" timeout="100" id="haproxy-start-interval-0s"/>
+                  <op name="stop" interval="0s" timeout="100" id="haproxy-stop-interval-0s"/>
+                </operations>
+              </primitive>
+              <meta_attributes id="haproxy-clone-meta_attributes">
+                <nvpair id="haproxy-clone-meta_attributes-interleave" name="interleave" value="true"/>
+                <nvpair id="haproxy-clone-meta_attributes-target-role" name="target-role" value="Stopped"/>
+              </meta_attributes>
+            </clone>
+          </resources>
+          <constraints>
+            <rsc_location id="cli-ban-mysql-with-ip-on-virt-159.cluster-qe.lab.eng.brq.redhat.com" rsc="mysql-with-ip" role="Started" node="virt-159.cluster-qe.lab.eng.brq.redhat.com" score="-INFINITY"/>
+          </constraints>
+          <rsc_defaults>
+            <meta_attributes id="build-resource-defaults">
+              <nvpair id="build-resource-stickiness" name="resource-stickiness" value="1"/>
+            </meta_attributes>
+          </rsc_defaults>
+          <alerts>
+            <alert id="forwarder" path="/usr/tests/sts-rhel9.4/pacemaker/alerts/alert_forwarder.py">
+              <recipient id="forwarder-recipient" value="http://do.not.start.xmlrpc"/>
+            </alert>
+          </alerts>
+        </configuration>
+      </cib>
+    # yamllint enable rule:line-length
+    answer: |
+      This CIB contains five resource groups:
+      1. Resource group "mysql-with-ip" with resources:
+        - ip-for-mysql (ocf:heartbeat:IPaddr2)
+        - mysql (ocf:heartbeat:mysql)
+      2. Resource group "named_group" with resources:
+        - vip (ocf:heartbeat:IPaddr2)
+        - named (ocf:heartbeat:named)
+      3. Resource group "vdo_storage_group" with resources:
+        - lvolume (ocf:heartbeat:LVM-activate)
+        - filesystem (ocf:heartbeat:Filesystem)
+      4. Resource group "apache-with-ip" with resources:
+        - floating-ip (ocf:heartbeat:IPaddr2)
+        - webserver (ocf:heartbeat:apache)
+      5. Resource group "dummies" cloned as "dummies-everywhere" with resources:
+        - le-dummy-1 (ocf:pacemaker:Dummy)
+        - le-dummy-2 (ocf:pacemaker:Dummy)
+        - le-dummy-3 (ocf:pacemaker:Dummy)
+
+  - question: |
+      List resource groups and their resources from the provided CIB.
+    # yamllint disable rule:line-length
+    context: |
+      <cib crm_feature_set="3.19.0" validate-with="pacemaker-3.9" epoch="14" num_updates="8" admin_epoch="0" cib-last-written="Fri Feb 16 15:39:44 2024" update-origin="virt-291.cluster-qe.lab.eng.brq.redhat.com" update-client="root" update-user="root" have-quorum="true" dc-uuid="1" execution-date="1708094385">
+        <configuration>
+          <crm_config>
+            <cluster_property_set id="cib-bootstrap-options">
+              <nvpair id="cib-bootstrap-options-have-watchdog" name="have-watchdog" value="false"/>
+              <nvpair id="cib-bootstrap-options-dc-version" name="dc-version" value="2.1.7-4.el9-c3ca950"/>
+              <nvpair id="cib-bootstrap-options-cluster-infrastructure" name="cluster-infrastructure" value="corosync"/>
+              <nvpair id="cib-bootstrap-options-cluster-name" name="cluster-name" value="STSRHTS6986"/>
+            </cluster_property_set>
+          </crm_config>
+          <nodes>
+            <node id="1" uname="virt-291.cluster-qe.lab.eng.brq.redhat.com"/>
+            <node id="2" uname="virt-292.cluster-qe.lab.eng.brq.redhat.com"/>
+          </nodes>
+          <resources>
+            <primitive id="fence-virt-291.cluster-qe.lab.eng.brq.redhat.com" class="stonith" type="fence_xvm">
+              <instance_attributes id="fence-virt-291.cluster-qe.lab.eng.brq.redhat.com-instance_attributes">
+                <nvpair id="fence-virt-291.cluster-qe.lab.eng.brq.redhat.com-instance_attributes-delay" name="delay" value="5"/>
+                <nvpair id="fence-virt-291.cluster-qe.lab.eng.brq.redhat.com-instance_attributes-pcmk_host_check" name="pcmk_host_check" value="static-list"/>
+                <nvpair id="fence-virt-291.cluster-qe.lab.eng.brq.redhat.com-instance_attributes-pcmk_host_list" name="pcmk_host_list" value="virt-291.cluster-qe.lab.eng.brq.redhat.com"/>
+              </instance_attributes>
+              <operations>
+                <op name="monitor" interval="60s" id="fence-virt-291.cluster-qe.lab.eng.brq.redhat.com-monitor-interval-60s"/>
+              </operations>
+            </primitive>
+            <primitive id="fence-virt-292.cluster-qe.lab.eng.brq.redhat.com" class="stonith" type="fence_xvm">
+              <instance_attributes id="fence-virt-292.cluster-qe.lab.eng.brq.redhat.com-instance_attributes">
+                <nvpair id="fence-virt-292.cluster-qe.lab.eng.brq.redhat.com-instance_attributes-pcmk_host_check" name="pcmk_host_check" value="static-list"/>
+                <nvpair id="fence-virt-292.cluster-qe.lab.eng.brq.redhat.com-instance_attributes-pcmk_host_list" name="pcmk_host_list" value="virt-292.cluster-qe.lab.eng.brq.redhat.com"/>
+              </instance_attributes>
+              <operations>
+                <op name="monitor" interval="60s" id="fence-virt-292.cluster-qe.lab.eng.brq.redhat.com-monitor-interval-60s"/>
+              </operations>
+            </primitive>
+            <group id="fs1">
+              <meta_attributes id="fs1-meta_attributes">
+                <nvpair id="fs1-meta_attributes-target-role" name="target-role" value="Stopped"/>
+              </meta_attributes>
+              <primitive id="shared-fs1" class="ocf" type="Dummy" provider="pacemaker">
+                <operations>
+                  <op name="migrate_from" interval="0s" timeout="20s" id="shared-fs1-migrate_from-interval-0s"/>
+                  <op name="migrate_to" interval="0s" timeout="20s" id="shared-fs1-migrate_to-interval-0s"/>
+                  <op name="monitor" interval="30s" id="shared-fs1-monitor-interval-30s"/>
+                  <op name="reload" interval="0s" timeout="20s" id="shared-fs1-reload-interval-0s"/>
+                  <op name="reload-agent" interval="0s" timeout="20s" id="shared-fs1-reload-agent-interval-0s"/>
+                  <op name="start" interval="0s" timeout="20s" id="shared-fs1-start-interval-0s"/>
+                  <op name="stop" interval="0s" timeout="20s" id="shared-fs1-stop-interval-0s"/>
+                </operations>
+              </primitive>
+              <primitive id="shared-fs2" class="ocf" type="Dummy" provider="pacemaker">
+                <operations>
+                  <op name="migrate_from" interval="0s" timeout="20s" id="shared-fs2-migrate_from-interval-0s"/>
+                  <op name="migrate_to" interval="0s" timeout="20s" id="shared-fs2-migrate_to-interval-0s"/>
+                  <op name="monitor" interval="30s" id="shared-fs2-monitor-interval-30s"/>
+                  <op name="reload" interval="0s" timeout="20s" id="shared-fs2-reload-interval-0s"/>
+                  <op name="reload-agent" interval="0s" timeout="20s" id="shared-fs2-reload-agent-interval-0s"/>
+                  <op name="start" interval="0s" timeout="20s" id="shared-fs2-start-interval-0s"/>
+                  <op name="stop" interval="0s" timeout="20s" id="shared-fs2-stop-interval-0s"/>
+                </operations>
+              </primitive>
+            </group>
+            <group id="export1">
+              <meta_attributes id="export1-meta_attributes">
+                <nvpair id="export1-meta_attributes-target-role" name="target-role" value="Stopped"/>
+              </meta_attributes>
+              <primitive id="vip1" class="ocf" type="Dummy" provider="pacemaker">
+                <operations>
+                  <op name="migrate_from" interval="0s" timeout="20s" id="vip1-migrate_from-interval-0s"/>
+                  <op name="migrate_to" interval="0s" timeout="20s" id="vip1-migrate_to-interval-0s"/>
+                  <op name="monitor" interval="30s" id="vip1-monitor-interval-30s"/>
+                  <op name="reload" interval="0s" timeout="20s" id="vip1-reload-interval-0s"/>
+                  <op name="reload-agent" interval="0s" timeout="20s" id="vip1-reload-agent-interval-0s"/>
+                  <op name="start" interval="0s" timeout="20s" id="vip1-start-interval-0s"/>
+                  <op name="stop" interval="0s" timeout="20s" id="vip1-stop-interval-0s"/>
+                </operations>
+              </primitive>
+              <primitive id="export-fs1" class="ocf" type="Dummy" provider="pacemaker">
+                <operations>
+                  <op name="migrate_from" interval="0s" timeout="20s" id="export-fs1-migrate_from-interval-0s"/>
+                  <op name="migrate_to" interval="0s" timeout="20s" id="export-fs1-migrate_to-interval-0s"/>
+                  <op name="monitor" interval="30s" id="export-fs1-monitor-interval-30s"/>
+                  <op name="reload" interval="0s" timeout="20s" id="export-fs1-reload-interval-0s"/>
+                  <op name="reload-agent" interval="0s" timeout="20s" id="export-fs1-reload-agent-interval-0s"/>
+                  <op name="start" interval="0s" timeout="20s" id="export-fs1-start-interval-0s"/>
+                  <op name="stop" interval="0s" timeout="20s" id="export-fs1-stop-interval-0s"/>
+                </operations>
+              </primitive>
+              <primitive id="export-fs2" class="ocf" type="Dummy" provider="pacemaker">
+                <operations>
+                  <op name="migrate_from" interval="0s" timeout="20s" id="export-fs2-migrate_from-interval-0s"/>
+                  <op name="migrate_to" interval="0s" timeout="20s" id="export-fs2-migrate_to-interval-0s"/>
+                  <op name="monitor" interval="30s" id="export-fs2-monitor-interval-30s"/>
+                  <op name="reload" interval="0s" timeout="20s" id="export-fs2-reload-interval-0s"/>
+                  <op name="reload-agent" interval="0s" timeout="20s" id="export-fs2-reload-agent-interval-0s"/>
+                  <op name="start" interval="0s" timeout="20s" id="export-fs2-start-interval-0s"/>
+                  <op name="stop" interval="0s" timeout="20s" id="export-fs2-stop-interval-0s"/>
+                </operations>
+              </primitive>
+            </group>
+            <group id="fs2">
+              <meta_attributes id="fs2-meta_attributes">
+                <nvpair id="fs2-meta_attributes-target-role" name="target-role" value="Stopped"/>
+              </meta_attributes>
+              <primitive id="shared-fs3" class="ocf" type="Dummy" provider="pacemaker">
+                <operations>
+                  <op name="migrate_from" interval="0s" timeout="20s" id="shared-fs3-migrate_from-interval-0s"/>
+                  <op name="migrate_to" interval="0s" timeout="20s" id="shared-fs3-migrate_to-interval-0s"/>
+                  <op name="monitor" interval="30s" id="shared-fs3-monitor-interval-30s"/>
+                  <op name="reload" interval="0s" timeout="20s" id="shared-fs3-reload-interval-0s"/>
+                  <op name="reload-agent" interval="0s" timeout="20s" id="shared-fs3-reload-agent-interval-0s"/>
+                  <op name="start" interval="0s" timeout="20s" id="shared-fs3-start-interval-0s"/>
+                  <op name="stop" interval="0s" timeout="20s" id="shared-fs3-stop-interval-0s"/>
+                </operations>
+              </primitive>
+              <primitive id="shared-fs4" class="ocf" type="Dummy" provider="pacemaker">
+                <operations>
+                  <op name="migrate_from" interval="0s" timeout="20s" id="shared-fs4-migrate_from-interval-0s"/>
+                  <op name="migrate_to" interval="0s" timeout="20s" id="shared-fs4-migrate_to-interval-0s"/>
+                  <op name="monitor" interval="30s" id="shared-fs4-monitor-interval-30s"/>
+                  <op name="reload" interval="0s" timeout="20s" id="shared-fs4-reload-interval-0s"/>
+                  <op name="reload-agent" interval="0s" timeout="20s" id="shared-fs4-reload-agent-interval-0s"/>
+                  <op name="start" interval="0s" timeout="20s" id="shared-fs4-start-interval-0s"/>
+                  <op name="stop" interval="0s" timeout="20s" id="shared-fs4-stop-interval-0s"/>
+                </operations>
+              </primitive>
+            </group>
+            <group id="export2">
+              <meta_attributes id="export2-meta_attributes">
+                <nvpair id="export2-meta_attributes-target-role" name="target-role" value="Stopped"/>
+              </meta_attributes>
+              <primitive id="vip2" class="ocf" type="Dummy" provider="pacemaker">
+                <operations>
+                  <op name="migrate_from" interval="0s" timeout="20s" id="vip2-migrate_from-interval-0s"/>
+                  <op name="migrate_to" interval="0s" timeout="20s" id="vip2-migrate_to-interval-0s"/>
+                  <op name="monitor" interval="30s" id="vip2-monitor-interval-30s"/>
+                  <op name="reload" interval="0s" timeout="20s" id="vip2-reload-interval-0s"/>
+                  <op name="reload-agent" interval="0s" timeout="20s" id="vip2-reload-agent-interval-0s"/>
+                  <op name="start" interval="0s" timeout="20s" id="vip2-start-interval-0s"/>
+                  <op name="stop" interval="0s" timeout="20s" id="vip2-stop-interval-0s"/>
+                </operations>
+              </primitive>
+              <primitive id="export-fs3" class="ocf" type="Dummy" provider="pacemaker">
+                <operations>
+                  <op name="migrate_from" interval="0s" timeout="20s" id="export-fs3-migrate_from-interval-0s"/>
+                  <op name="migrate_to" interval="0s" timeout="20s" id="export-fs3-migrate_to-interval-0s"/>
+                  <op name="monitor" interval="30s" id="export-fs3-monitor-interval-30s"/>
+                  <op name="reload" interval="0s" timeout="20s" id="export-fs3-reload-interval-0s"/>
+                  <op name="reload-agent" interval="0s" timeout="20s" id="export-fs3-reload-agent-interval-0s"/>
+                  <op name="start" interval="0s" timeout="20s" id="export-fs3-start-interval-0s"/>
+                  <op name="stop" interval="0s" timeout="20s" id="export-fs3-stop-interval-0s"/>
+                </operations>
+              </primitive>
+              <primitive id="export-fs4" class="ocf" type="Dummy" provider="pacemaker">
+                <operations>
+                  <op name="migrate_from" interval="0s" timeout="20s" id="export-fs4-migrate_from-interval-0s"/>
+                  <op name="migrate_to" interval="0s" timeout="20s" id="export-fs4-migrate_to-interval-0s"/>
+                  <op name="monitor" interval="30s" id="export-fs4-monitor-interval-30s"/>
+                  <op name="reload" interval="0s" timeout="20s" id="export-fs4-reload-interval-0s"/>
+                  <op name="reload-agent" interval="0s" timeout="20s" id="export-fs4-reload-agent-interval-0s"/>
+                  <op name="start" interval="0s" timeout="20s" id="export-fs4-start-interval-0s"/>
+                  <op name="stop" interval="0s" timeout="20s" id="export-fs4-stop-interval-0s"/>
+                </operations>
+              </primitive>
+            </group>
+            <clone id="nfsserver-clone">
+              <group id="nfsserver">
+                <primitive id="nfs-daemon" class="ocf" type="Dummy" provider="pacemaker">
+                  <operations>
+                    <op name="migrate_from" interval="0s" timeout="20s" id="nfs-daemon-migrate_from-interval-0s"/>
+                    <op name="migrate_to" interval="0s" timeout="20s" id="nfs-daemon-migrate_to-interval-0s"/>
+                    <op name="monitor" interval="30s" id="nfs-daemon-monitor-interval-30s"/>
+                    <op name="reload" interval="0s" timeout="20s" id="nfs-daemon-reload-interval-0s"/>
+                    <op name="reload-agent" interval="0s" timeout="20s" id="nfs-daemon-reload-agent-interval-0s"/>
+                    <op name="start" interval="0s" timeout="20s" id="nfs-daemon-start-interval-0s"/>
+                    <op name="stop" interval="0s" timeout="20s" id="nfs-daemon-stop-interval-0s"/>
+                  </operations>
+                </primitive>
+                <primitive id="export-root" class="ocf" type="Dummy" provider="pacemaker">
+                  <operations>
+                    <op name="migrate_from" interval="0s" timeout="20s" id="export-root-migrate_from-interval-0s"/>
+                    <op name="migrate_to" interval="0s" timeout="20s" id="export-root-migrate_to-interval-0s"/>
+                    <op name="monitor" interval="30s" id="export-root-monitor-interval-30s"/>
+                    <op name="reload" interval="0s" timeout="20s" id="export-root-reload-interval-0s"/>
+                    <op name="reload-agent" interval="0s" timeout="20s" id="export-root-reload-agent-interval-0s"/>
+                    <op name="start" interval="0s" timeout="20s" id="export-root-start-interval-0s"/>
+                    <op name="stop" interval="0s" timeout="20s" id="export-root-stop-interval-0s"/>
+                  </operations>
+                </primitive>
+              </group>
+              <meta_attributes id="nfsserver-clone-meta_attributes">
+                <nvpair id="nfsserver-clone-meta_attributes-interleave" name="interleave" value="true"/>
+                <nvpair id="nfsserver-clone-meta_attributes-target-role" name="target-role" value="Stopped"/>
+              </meta_attributes>
+            </clone>
+            <primitive id="dummy-007" class="ocf" type="Dummy" provider="pacemaker">
+              <meta_attributes id="dummy-007-meta_attributes">
+                <nvpair id="dummy-007-meta_attributes-target-role" name="target-role" value="Stopped"/>
+              </meta_attributes>
+              <operations>
+                <op name="migrate_from" interval="0s" timeout="20s" id="dummy-007-migrate_from-interval-0s"/>
+                <op name="migrate_to" interval="0s" timeout="20s" id="dummy-007-migrate_to-interval-0s"/>
+                <op name="monitor" interval="30s" id="dummy-007-monitor-interval-30s"/>
+                <op name="reload" interval="0s" timeout="20s" id="dummy-007-reload-interval-0s"/>
+                <op name="reload-agent" interval="0s" timeout="20s" id="dummy-007-reload-agent-interval-0s"/>
+                <op name="start" interval="0s" timeout="20s" id="dummy-007-start-interval-0s"/>
+                <op name="stop" interval="0s" timeout="20s" id="dummy-007-stop-interval-0s"/>
+              </operations>
+            </primitive>
+          </resources>
+          <constraints>
+            <rsc_order id="order_set_nef1">
+              <resource_set id="order_set_nef1_set">
+                <resource_ref id="nfsserver-clone"/>
+                <resource_ref id="fs1"/>
+              </resource_set>
+            </rsc_order>
+            <rsc_order id="order_set_nef2">
+              <resource_set id="order_set_nef2_set">
+                <resource_ref id="nfsserver-clone"/>
+                <resource_ref id="fs2"/>
+              </resource_set>
+            </rsc_order>
+            <rsc_colocation id="colocation_set_nef1" score="INFINITY">
+              <resource_set id="colocation_set_nef1_set">
+                <resource_ref id="nfsserver-clone"/>
+                <resource_ref id="fs1"/>
+              </resource_set>
+            </rsc_colocation>
+            <rsc_colocation id="colocation_set_nef2" score="INFINITY">
+              <resource_set id="colocation_set_nef2_set">
+                <resource_ref id="nfsserver-clone"/>
+                <resource_ref id="fs2"/>
+              </resource_set>
+            </rsc_colocation>
+            <rsc_order id="order_set_e1f1">
+              <resource_set id="order_set_e1f1_set">
+                <resource_ref id="export1"/>
+                <resource_ref id="fs1"/>
+              </resource_set>
+            </rsc_order>
+            <rsc_order id="order_set_e2f2">
+              <resource_set id="order_set_e2f2_set">
+                <resource_ref id="export2"/>
+                <resource_ref id="fs2"/>
+              </resource_set>
+            </rsc_order>
+            <rsc_colocation id="colocation_set_f1e1" score="INFINITY">
+              <resource_set id="colocation_set_f1e1_set">
+                <resource_ref id="fs1"/>
+                <resource_ref id="export1"/>
+              </resource_set>
+            </rsc_colocation>
+            <rsc_colocation id="colocation_set_f2e2" score="INFINITY">
+              <resource_set id="colocation_set_f2e2_set">
+                <resource_ref id="fs2"/>
+                <resource_ref id="export2"/>
+              </resource_set>
+            </rsc_colocation>
+            <rsc_order id="order_set_e1ne">
+              <resource_set id="order_set_e1ne_set">
+                <resource_ref id="export1"/>
+                <resource_ref id="nfsserver-clone"/>
+              </resource_set>
+            </rsc_order>
+            <rsc_order id="order_set_e2ne">
+              <resource_set id="order_set_e2ne_set">
+                <resource_ref id="export2"/>
+                <resource_ref id="nfsserver-clone"/>
+              </resource_set>
+            </rsc_order>
+            <rsc_location id="cli-ban-fs1-on-virt-291.cluster-qe.lab.eng.brq.redhat.com" rsc="fs1" role="Started" node="virt-291.cluster-qe.lab.eng.brq.redhat.com" score="-INFINITY"/>
+            <rsc_location id="cli-ban-export1-on-virt-291.cluster-qe.lab.eng.brq.redhat.com" rsc="export1" role="Started" node="virt-291.cluster-qe.lab.eng.brq.redhat.com" score="-INFINITY"/>
+            <rsc_location id="cli-ban-fs2-on-virt-292.cluster-qe.lab.eng.brq.redhat.com" rsc="fs2" role="Started" node="virt-292.cluster-qe.lab.eng.brq.redhat.com" score="-INFINITY"/>
+            <rsc_location id="cli-ban-export2-on-virt-292.cluster-qe.lab.eng.brq.redhat.com" rsc="export2" role="Started" node="virt-292.cluster-qe.lab.eng.brq.redhat.com" score="-INFINITY"/>
+            <rsc_location id="cli-ban-dummy-007-on-virt-291.cluster-qe.lab.eng.brq.redhat.com" rsc="dummy-007" role="Started" node="virt-291.cluster-qe.lab.eng.brq.redhat.com" score="-INFINITY"/>
+          </constraints>
+          <rsc_defaults>
+            <meta_attributes id="build-resource-defaults">
+              <nvpair id="build-resource-stickiness" name="resource-stickiness" value="1"/>
+            </meta_attributes>
+          </rsc_defaults>
+          <alerts>
+            <alert id="forwarder" path="/usr/tests/sts-rhel9.4/pacemaker/alerts/alert_forwarder.py">
+              <recipient id="forwarder-recipient" value="http://do.not.start.xmlrpc"/>
+            </alert>
+          </alerts>
+        </configuration>
+      </cib>
+    # yamllint enable rule:line-length
+    answer: |
+      The given CIB contains five resource groups:
+      1. Resource group "fs1" containing resources:
+        - shared-fs1 (ocf:pacemaker:Dummy)
+        - shared-fs2 (ocf:pacemaker:Dummy)
+      2. Resource group "export1" containing resources:
+        - vip1 (ocf:pacemaker:Dummy)
+        - export-fs1 (ocf:pacemaker:Dummy)
+        - export-fs2 (ocf:pacemaker:Dummy)
+      3. Resource group "fs2" containing resources:
+        - shared-fs3 (ocf:pacemaker:Dummy)
+        - shared-fs4 (ocf:pacemaker:Dummy)
+      4. Resource group "export2" containing resources:
+        - vip2 (ocf:pacemaker:Dummy)
+        - export-fs3 (ocf:pacemaker:Dummy)
+        - export-fs4 (ocf:pacemaker:Dummy)
+      5. Resource group "nfsserver" cloned as "nfsserver-clone" with resources:
+        - nfs-daemon (ocf:pacemaker:Dummy)
+        - export-root (ocf:pacemaker:Dummy)
 
 task_description: |
   Extract resource groups from HA Cluster CIB file
