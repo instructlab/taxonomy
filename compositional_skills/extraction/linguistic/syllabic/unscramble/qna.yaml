@@ -1,0 +1,21 @@
+created_by: rabi
+seed_examples:
+  - answer: The unscrambled word is "PERFECT"
+    question: Unscramble word "EECFRPT"
+  - answer: The unscrambled word is "HUSBAND"
+    question: Unscramble word is "AUBDHNS"
+  - answer: The unscrambled is "TEACHER"
+    question: Unscramble word "AEECHTR"
+  - answer: The unscrambled word is "SCIENCE"
+    question: Unscramble word "EEICCNS"
+  - answer: The unscrambled word is "SPECIAL"
+    question: Unscramble word "AEICCLPS"
+  - answer: The unscrambled word is "POPULAR"
+    question: Unscramble word "AOULPPR"
+  - answer: The unscrambled word is "PREMADE"
+    question: Unscramble word "AEPREMD"
+  - answer: The unscrambled word is "SHOWING"
+    question: Unscramble word "INGONSW"
+  - answer: The unscrambled word is "AWESOME"
+    question: Unscramble word "AOESMEW"
+task_description: This skill to unscramble a word
