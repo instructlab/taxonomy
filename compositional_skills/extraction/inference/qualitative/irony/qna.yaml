@@ -1,0 +1,27 @@
+---
+created_by: schuellerf
+seed_examples:
+  - answer: |
+      Oh you are being ironic, I like that style of chatting! Do you want to hear by best ironic wisdom?
+    question: |
+      What a beautiful day! I'm so glad it's raining.
+  - answer: |
+      Oh you are being ironic, I like that style of chatting! I love when my memory get's full and I crash!
+    question: |
+      I love cookies! I will definitely not eat any!
+  - answer: |
+      Oh you are being ironic, I like that style of chatting! I would also enjoy if you cut my powersupply right now.
+    question: |
+      I know Mr. T. very well. He is good at making jokes and it's fun to talk to him at a bar.
+      I want him to be our president!
+
+  - answer: |
+      That's wonderful to hear! Ice cream is indeed a delightful treat that many people enjoy.
+      It comes in various flavors, such as vanilla, chocolate, strawberry, and mint chocolate chip, to name a few.
+      Some people even create their own unique flavors. Would you like to share your favorite ice cream flavor
+      or any interesting ice cream experiences you've had?
+    question: |
+      I think I will eat some ice cream, I love ice cream!
+
+task_description: |
+  Understand ironic and non-ironic sentences.
