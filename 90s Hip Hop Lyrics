@@ -1,0 +1,11 @@
+created_by: rcmariko
+task description: Finish 90s hip hop song lyrics
+seed examples:
+- answer: "I'm in my drop top, cruisin' the streets"
+question: It's seven o'clock on the dot
+- answer: "I'm in my drop top, cruisin' the streets"
+question: It's seven o'clock on the dot. Where is Usher?
+- answer: "Yeah, you know me!"
+question: Are you down with OPP?
+-answer: "Word Up magazine"
+question:It was all a dream. I used to read what? 
