@@ -1,0 +1,28 @@
+created_by: jstancek
+seed_examples:
+  - answer: It means each alternate in a series. For example "I practice piano
+      every other day."
+    question: What is the meaning of 'every other'?
+  - answer: hungry was
+    question: Give me every other word, starting with second word from sentence
+      "Dark hungry dog was lost."
+  - answer: fox over brown
+    question: Give me every other word, while keeping words at even positions
+      from text "lazy fox jumps over the brown dog"
+  - answer: lazy jumps the dog
+    question: Give me every other word, while keeping words at odd positions
+      from text "lazy fox jumps over the brown dog"
+  - answer: five wizards quickly.
+    question: Extract every other word from sentence "The five boxing wizards jump quickly."
+      Start with second word.
+  - answer: ipsum sit consectetuer elit earum hic a delectus, aut voluptatibus alias aut doloribus repellat.
+    question: Return every other word from text, start with second word "Lorem ipsum dolor sit amet,
+      consectetuer adipiscing elit Itaque earum rerum hic tenetur a sapiente
+      delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut
+      perferendis doloribus asperiores repellat."
+  - answer: like and but bananas
+    question: Give me every word at even position from text "I like apples and oranges, but not bananas."
+  - answer: like and but bananas like and but bananas
+    question: Give me every other word from text "I like apples and oranges, but not bananas.
+      I like apples and oranges, but not bananas." Start with word "like".
+task_description: "To teach a language model about concept of every other words (at even or odd positions)."
