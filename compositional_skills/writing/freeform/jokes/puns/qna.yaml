@@ -42,6 +42,27 @@ seed_examples:
 
     '
   question: Tell me a pun about x-rays.
+- answer: 'Why don''t cocker spaniels ever get sunburned?
+
+
+    Because they''re always in the shade of their owner''s expectations!
+
+    '
+  question: Tell me a pun about a cocker spaniel.
+- answer: 'Why don''t coffee cravings ever get lost?
+
+
+    Because they always find their way to the "cup"board!
+
+    '
+  question: Tell me a pun about coffee cravings
+- answer: 'Why can''t AI ever play hide and seek?
+
+
+    Because no matter how well it''s programmed, it always gives itself away!
+
+    '
+  question: Tell me a pun about AI.
 - answer: 'Why does Peter Pan always fly?
 
 
