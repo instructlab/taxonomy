@@ -1,0 +1,17 @@
+created_by: LorenzoBianconi
+seed_examples:
+  - answer: "No. According to RFC1918 the Internet Assigned Numbers Authority
+    (IANA) has reserved the following three blocks of the IP address space
+    for private internets:
+        10.0.0.0        -   10.255.255.255  (10/8 prefix)
+        172.16.0.0      -   172.31.255.255  (172.16/12 prefix)
+        192.168.0.0     -   192.168.255.255 (192.168/16 prefix)"
+    question: Is 192.168.0.1 a routable IPv4 address on a public IP network?
+  - answer: "
+    253 since 192.168.0.0 is the network identifier while 192.168.0.255 is
+    reseved for broadcast."
+    question: How many usable IPv4 addresses do we have in 192.168.0.x/24 network?
+  - answer: "Yes. In RFC5771 the Internet Assigned Numbers Authority (IANA) has
+    reserved the IP range 224.0.0.0–239.255.255.255 for multicast traffic."
+    question: Is multicast supported in IPv4?
+task_description: 'Provide IPv4 CIDR information'
