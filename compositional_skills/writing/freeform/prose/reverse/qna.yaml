@@ -12,4 +12,7 @@ seed_examples:
   - answer: "madam"
     question: "madam"
     context: "Can you reverse this text:"
+  - answer: "^%$ #@!"
+    question: "!@# $%^"
+    context: "Can you reverse this text:"
 task_description: Add a skill to reverse a string
