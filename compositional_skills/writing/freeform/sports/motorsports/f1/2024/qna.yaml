@@ -1,7 +1,6 @@
 created_by: afsilva
 seed_examples:
-  - answer: |  # The | is needed to escape characters like ` or '
-     ## 2024 F1 driver line-up
+  - context: |
      | Team      | Drivers         |
      |-----------|-----------------|
      | Alpine    | Pierre Gasly, Esteban Ocon |
@@ -14,9 +13,11 @@ seed_examples:
      | Sauber (Alfa Romeo) | Valtteri Bottas, Zhou Guanyu |
      | VCARB (AlphaTauri) | Daniel Ricciardo, Yuki Tsunoda |
      | Williams  | Alex Albon, Logan Sargeant |
-    question: Give me a table in markdown format of the teams and drivers
-      for f1 for the 2024 season?
-  - answer: |
+    question: |
+      What's another name for the AlphaTauri F1 team in 20204?
+    answer: |
+    VCARB
+  - context: |
       | Date                  | Event                | Location    |
       |-----------------------|----------------------|-------------|
       | 29 February–2 March   | Bahrain GP           | Sakhir      |
@@ -43,40 +44,9 @@ seed_examples:
       | 21-23 November        | Las Vegas GP         | Las Vegas   |
       | 29 November–1 December| Qatar GP            | Losail      |
       | 6-8 December          | Abu Dhabi GP         | Yas Marina  |
-    question: Give me a table in markdown format of the dates, races and
-     cities for the f1 2024 season?
-  - answer: |
-      1. Review Time Periods: Teams now have a shorter window of four days to
-        appeal decisions, with potential for a 24-hour extension in special
-        cases. They must pay a deposit, specify significant elements, and
-        adhere to new hearing protocols.
-      2. Increase in Potential Fines: Maximum fines for rule violations
-        quadrupled to €1 million, applying to both teams and drivers,
-        with other categories also seeing adjustments due to a decade-long
-        stagnation.
-      3. F1 Sprint Format Tweak: The F1 Sprint format returns with slight
-        modifications, moving Sprint Qualifying from Saturday to Friday,
-        followed by the 100km Sprint on Saturday and Grand Prix qualifying
-        later the same day.
-      4. Bigger Promotional Events: Teams can now run double the mileage
-        (200km) during promotional events, enhancing pre-season shakedowns
-        and footage capture.
-      5. Changes to Testing Old Cars: Clarifications to Testing of Previous
-        Car (TPC) program mandate that all components must have prior official
-        testing or race weekend usage, preventing crossover with current car
-        development.
-      6. Increased CapEx Limits: Teams can now spend more on Capital
-        Expenditure (CapEx) over a four-year period, aiming to bridge
-        the gap between leading and trailing teams.
-      7. Even More Strict Roll Hoop Requirements: Following Zhou Guanyu's
-        2022 British Grand Prix crash, roll hoops must withstand stricter
-        load tests, enhancing safety measures.
-      8. Plan for Wheel Displays Dropped: Originally intended for 2024,
-        the inclusion of rotating displays within wheel covers was retracted
-        from regulations, impacting aerodynamics and weight limits.
-      9. DRS Activation: DRS activation during races now anticipates to one
-        lap, changing from the previous two laps after race starts or
-        Safety Car restarts.
-    question: what are some of the new rules for f1 in 2024?
+    question: | 
+      What f1 races will take place in the month of June in 2024?
+    answer: |
+       Canadian GP, Spanish GP and Austrian GP
 task_description: |
   Updated information on the Formula 1 season for 2024.
