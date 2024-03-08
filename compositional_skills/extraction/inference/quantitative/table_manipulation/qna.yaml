@@ -1,0 +1,40 @@
+created_by: dolfim-ibm
+seed_examples:
+- answer: 'Column 1, Column 2, Column 3'
+  context: |
+    | Column 1  | Column 2  | Column 3  |
+    |-----------|-----------|-----------|
+    | 1         | 2         | 3         |
+    | 4         | 5         | 6         |
+  question: 'what are the headers of this table?'
+- answer: 'Rank, Company, Country, Industry'
+  context: |
+    | **Rank**  | **Company**    | **Country**    | **Industry**                     |
+    | 1         | Walmart        | United States  | Retail                           |
+    | 2         | Saudi Aramco   | Saudi Arabia   | Energy                           |
+    | 3         | State Grid     | China          | Energy                           |
+    | 4         | Amazon         | United State   | Internet services and retailing  |  
+  question: 'what are the headers of this table?'
+- answer: |
+    | 1     | Walmart       | United States  | Retail |
+    | 2     | Saudi Aramco  | Saudi Arabia   | Energy |
+  context: |
+    | **Rank**  | **Company**    | **Country**    | **Industry**                     |
+    | 1         | Walmart        | United States  | Retail                           |
+    | 2         | Saudi Aramco   | Saudi Arabia   | Energy                           |
+    | 3         | State Grid     | China          | Energy                           |
+    | 4         | Amazon         | United State   | Internet services and retailing  |  
+  question: 'what are the top 2 rows?'
+- answer: |
+    | 4         | 5         | 6         |
+    | 7         | 8         | 9         |
+  context: |
+    | Column 1  | Column 2  | Column 3  |
+    |-----------|-----------|-----------|
+    | 1         | 2         | 3         |
+    | 4         | 5         | 6         |
+    | 7         | 8         | 9         |
+    | 10        | 11        | 12        |
+  question: 'what are the second and third rows?'
+
+task_description: 'Manipulate tables applying filters based on the table structure.'
