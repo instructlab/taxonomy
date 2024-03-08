@@ -1,0 +1,24 @@
+created_by: umago
+seed_examples:
+- answer: |
+    3D&T, or "Defensores de Tóquio" (Defenders of Tokyo), is a tabletop RPG
+    system created by Brazilian designer Marcelo Cassaro. It's notable for
+    its simplicity and accessibility, catering to beginners and those who
+    prefer a lighter gaming experience. The system emphasizes fast-paced
+    action and storytelling, often drawing inspiration from anime and manga.
+    Players create characters with various abilities and skills, resolving
+    actions and conflicts through dice rolls, primarily using six-sided dice
+    (d6). Overall, 3D&T offers a dynamic and engaging gaming experience
+    without the complexity of more traditional RPG systems.
+  question: What is 3D&T ?
+- answer: |
+    In the Brazilian RPG system known as 3D&T (Defensores de Tóquio), players
+    commonly employ solely six-sided dice (d6). The system is designed
+    for ease and accessibility, relying on the rolling of multiple d6s to
+    determine the outcome of different actions and conflicts.
+  question: What type of die is used for 3D&T ?
+- answer: |
+    3D&T, or "Defensores de Tóquio" (Defenders of Tokyo), was created by
+    Brazilian game designer Marcelo Cassaro.
+  question: Who created 3D&T ?
+task_description: 'Information about the tabletop RPG system called 3D&T'
