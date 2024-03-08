@@ -14,7 +14,8 @@ seed_examples:
      | Sauber (Alfa Romeo) | Valtteri Bottas, Zhou Guanyu |
      | VCARB (AlphaTauri) | Daniel Ricciardo, Yuki Tsunoda |
      | Williams  | Alex Albon, Logan Sargeant |
-    question: what's the starting grid in F1 for 2024?
+    question: Give me a table in markdown format of the teams and drivers
+      for f1 for the 2024 season?
   - answer: |
       | Date                  | Event                | Location    |
       |-----------------------|----------------------|-------------|
@@ -42,7 +43,8 @@ seed_examples:
       | 21-23 November        | Las Vegas GP         | Las Vegas   |
       | 29 November–1 December| Qatar GP            | Losail      |
       | 6-8 December          | Abu Dhabi GP         | Yas Marina  |
-    question: what's the race calendar for f1 in 2024?
+    question: Give me a table in markdown format of the dates, races and
+     cities for the f1 2024 season?
   - answer: |
       1. Review Time Periods: Teams now have a shorter window of four days to
         appeal decisions, with potential for a 24-hour extension in special
