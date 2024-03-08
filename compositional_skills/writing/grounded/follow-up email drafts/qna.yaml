@@ -1,0 +1,31 @@
+created_by: unmeshdesale
+seed_examples:
+- answer: |
+    'Dear [Receipent], I hope this email finds you well. I wanted to express my gratitude for the opportunity to interview for the [Job Title] position on [Interview Date]. I am eager to learn about the status of my application and any next steps in the hiring process.'
+  context: |
+    'Subject: Post-interview follow-up
+    Receipent: Hirinig Manager'
+  question: Write a short post-interview follow-up email.
+- answer: |
+    'Hi [Receipent], It was a pleasure meeting you at [Event Name] last week. I enjoyed our conversation about [shared interest], and I would love to continue our discussion or explore potential collaboration. Are you available for a brief call or coffee meeting next week.'
+  context: |
+    'Subject: Networking follow-up
+    Receipent: Contact name
+    Event Name: xyz'
+  question: Write a short networking follow-up email.
+- answer: |
+    'Hi [Receipent], I hope you're doing well. I wanted to confirm my attendance at the [Event Name] on [Event Date]. I'm looking forward to the opportunity to [purpose of the event], and I appreciate the invitation. Please let me know if there are any additional details I should be aware of.'
+  context: |
+    'Subject: Event RSVP Confirmation
+    Receipent: Organizer name
+    Event Name: xyz
+    Event Date:'
+  question: Write a short event RSVP follow-up email.
+- answer: |
+    'Dear [Receipent], I hope you found our recent training session on [Topic] valuable. I'd love to hear your feedback on the content and any areas where we can improve. Additionally, if you have any further questions or would like additional resources, please feel free to reach out.'
+  context: |
+    'Subject: Training session follow-up
+    Receipent: Particpant name
+    Topic: xyz'
+  question: Write a short training session follow-up email.
+task_description: Write a short follow-up email drafts.
