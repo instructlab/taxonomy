@@ -1,0 +1,80 @@
+---
+task_description: |
+  Description of some typical ROT13 cases to help the model distinguish between
+  its correct and wrong answers.
+created_by: mzamazal
+seed_examples:
+  - context: Uryyb, jbeyq!
+    question: Decode this text from ROT13.
+    answer: |
+      The decoded text is "Hello, world!". In ROT13, each letter of the
+      English alphabet is replaced by a letter positioned 13 characters away in
+      the alphabet from the character, in either direction. ROT13 does not change
+      letter case from upper to lower or vise versa and leaves non-English letters
+      and other characters unchanged.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: The 3rd planet orbitting the Sun is the Earth.
+    question: What is ROT13 encoded form of this text?
+    answer: |
+      The given text encoded in ROT13 is:
+      Gur 3eq cynarg beovggvat gur Fha vf gur Rnegu.
+      The property of ROT13 is that the encoding and decoding processes are the
+      same, ROT13 encoding works the same way as ROT13 decoding.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: The best editor is Rznpf, obviously.
+    question: Rewrite the text with the ROT13 obfuscated part decoded.
+    answer: |
+      The text with the ROT13 part decoded is:
+      The best editor is Emacs, obviously.
+      ROT13 encoded text can be identified due to the fact that ROT13
+      encoded words usually do not map to English words while their decoded forms
+      do. In this case, "Rznpf" is not an English word, while its ROT13 decoded
+      form, "Emacs", obtained by shifting all the English letters 13 characters
+      away from their positions in the alphabet without changing their case, is a
+      name of an editor. Thus "Rzpnf" must be decoded and the rest of the text,
+      together with the decoded word, makes a meaningful English sentence, which
+      means there is nothing else to decode there.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: ROT13 encoding of the word intelligence is vagnyyvtnapr.
+    question: Fix ROT13 encoding in the given text.
+    answer: ROT13 encoding of the word intelligence is vagryyvtrapr.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: ROT13 encoding of "Good morning, Joe!" is "TBBQ ZBEAVAT, WBR!".
+    question: What is wrong with ROT13 encoding in this text?
+    answer: |
+      The correct ROT13 encoding of "Good morning, Joe!" is
+      "Tbbq zbeavat, Wbr!". ROT13 does not change the letter case.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |
+      This is a long text—it contains more than 10 words and it may span over
+      multiple lines. It also, as you've probably noticed, contains some
+      punctuation and digits; this is to make clear what is converted and
+      what not.
+    question: How does the given text look like ROT13 encoded?
+    answer: |
+      ROT13 encoding of the given text is:
+      Guvf vf n ybat grkg—vg pbagnvaf zber guna 10 jbeqf naq vg znl fcna bire
+      zhygvcyr yvarf. Vg nyfb, nf lbh'ir cebonoyl abgvprq, pbagnvaf fbzr
+      chapghngvba naq qvtvgf; guvf vf gb znxr pyrne jung vf pbairegrq naq
+      jung abg.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: Let's learn the text need not start with capital letters.
+    question: Obfuscate "need not start" in the given text using ROT13.
+    answer: |
+      The text with the requested part obfuscated looks as follows:
+      Let's learn the text arrq abg fgneg with capital letters.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
