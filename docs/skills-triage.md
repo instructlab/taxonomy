@@ -73,7 +73,8 @@ Triagers should review open pull requests and use labels to manage their state a
 
 ### Reasons for rejection:
 * Submitted knowledge not a skill. For example, troubleshooting on an uncommon IBM Storage Fusion error message. 
-* Obviously GPT answer, blocklist. 
+* Obvious LLM answer, blocklist.
+    * If you're not familiar with what ChatGPT / Bard / etc writing typically looks like, play with it a bit until you can recognize the tone and linguistic patterns.
 * Couldn’t verify that the model actually lacks the skills — i.e. model can already answer the submitted questions well enough. 
 * Provide examples of model response is too short and neglected reasoning details. For example: A logical question requires multi-step reasoning to reach to the final answer. The submitted model response only gives the final answer. 
 * Uninformative examples. For example, not all examples match the skill requested; Or the user didn’t put three independent question/answer pairs for the skill, but mistakenly submitted three chat turns for the three questions/answer pairs. Or overly repetitive examples which do not help to clear define of the requested skill. 
