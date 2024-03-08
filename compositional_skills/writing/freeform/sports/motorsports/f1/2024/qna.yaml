@@ -16,7 +16,7 @@ seed_examples:
     question: |
       What's another name for the AlphaTauri F1 team in 20204?
     answer: |
-    VCARB
+      VCARB.
   - context: |
       | Date                  | Event                | Location    |
       |-----------------------|----------------------|-------------|
@@ -44,9 +44,9 @@ seed_examples:
       | 21-23 November        | Las Vegas GP         | Las Vegas   |
       | 29 November–1 December| Qatar GP            | Losail      |
       | 6-8 December          | Abu Dhabi GP         | Yas Marina  |
-    question: | 
+    question: |
       What f1 races will take place in the month of June in 2024?
     answer: |
-       Canadian GP, Spanish GP and Austrian GP
+       Canadian GP, Spanish GP and Austrian GP.
 task_description: |
   Updated information on the Formula 1 season for 2024.
