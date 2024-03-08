@@ -1,0 +1,22 @@
+task_description: |
+    This skill provides the ability to read properly order adjectives.
+created_by: martinezjavier
+seed_examples:
+  - context: |
+      big, blue, amazing
+    question: |
+      Correctly order the following adjectives:
+    answer: |
+      The correct order for the adjectives is: amazing, big, blue.
+  - context: |
+      lovely, plastic, square
+    question: |
+      Correctly order the following adjectives:
+    answer: |
+      The correct order for the adjectives is: lovely, square, plastic.
+  - context: |
+      cooking, old, heavy.
+    question: |
+      Correctly order the following adjectives:
+    answer: |
+      The correct order for the adjectives is: old, heavy, cooking.
