@@ -1,0 +1,66 @@
+created_by: mabehiro
+seed_examples:
+- answer: 'The key to happiness lies in contentment and inner peace.'
+  question: What is the key to happiness?
+- answer: 'By letting go of attachments and desires, and embracing the present moment.'
+  question: How can one find inner peace?
+- answer: 'The purpose of life is to attain enlightenment and liberate oneself from suffering.'
+  question: What is the purpose of life?
+- answer: 'By understanding the nature of suffering and following the path of compassion and wisdom.'
+  question: How can we overcome suffering?
+- answer: 'True love is unconditional, compassionate, and free from selfish desires.'
+  question: What is the meaning of true love?
+- answer: 'By practicing empathy, kindness, and understanding towards all beings.'
+  question: How can we cultivate compassion?
+- answer: 'Reality is impermanent, interconnected, and ultimately empty of inherent existence.'
+  question: What is the nature of reality?
+- answer: 'By living with intention, mindfulness, and a sense of purpose aligned with the greater good.'
+  question: How can we live a meaningful life?
+- answer: 'Through the cultivation of wisdom, self-awareness, and a willingness to question our beliefs.'
+  question: How can we overcome ignorance?
+- answer: 'Suffering arises from attachment, craving, and the illusion of separateness.'
+  question: What is the cause of suffering?
+- answer: 'By following the Eightfold Path, which includes right understanding, intention, speech, action, livelihood, effort, mindfulness, and concentration.'
+  question: How can we achieve enlightenment?
+- answer: 'By facing challenges with equanimity, resilience, and a sense of inner strength.'
+  question: How should we deal with adversity?
+- answer: 'Meditation is a tool for cultivating mindfulness, concentration, and insight into the nature of reality.'
+  question: What is the role of meditation in spiritual practice?
+- answer: 'By cultivating courage, faith in oneself, and trust in the path of awakening.'
+  question: How can we overcome fear?
+- answer: 'Compassion is the foundation of the Buddhist path, leading to the alleviation of suffering for oneself and others.'
+  question: What is the significance of compassion in Buddhism?
+- answer: 'By practicing moderation, avoiding extremes, and cultivating a harmonious relationship with oneself and others.'
+  question: How can we find balance in life?
+- answer: 'Forgiveness liberates the heart from resentment and allows for healing and transformation.'
+  question: What is the role of forgiveness in spiritual growth?
+- answer: 'By recognizing the blessings in our lives and expressing appreciation for the interconnected web of existence.'
+  question: How can we cultivate gratitude?
+- answer: 'Mindfulness is the key to living in the present moment and cultivating awareness of our thoughts, feelings, and actions.'
+  question: What is the significance of mindfulness?
+- answer: 'By understanding the impermanent nature of all things and practicing acceptance of what is beyond our control.'
+  question: How can we develop patience?
+- answer: 'Non-attachment frees us from suffering by letting go of clinging to transient phenomena and recognizing the true nature of reality.'
+  question: What is the importance of non-attachment?
+- answer: 'By cultivating inner peace through meditation, self-reflection, and compassionate action in the world.'
+  question: How can we find peace in a chaotic world?
+- answer: 'Spiritual community provides support, guidance, and inspiration on the path to awakening.'
+  question: What is the role of community in spiritual practice?
+- answer: 'By recognizing our interconnectedness with all living beings and respecting the balance and cycles of the natural world.'
+  question: How can we live in harmony with nature?
+- answer: 'Ethical conduct is the foundation of spiritual practice, leading to the cultivation of virtue, integrity, and compassion.'
+  question: What is the significance of ethical conduct?
+- answer: 'By cultivating self-awareness, self-compassion, and confidence in our inherent potential for growth and transformation.'
+  question: How can we overcome self-doubt?
+- answer: 'Suffering serves as a catalyst for awakening by prompting us to seek liberation from the cycle of birth, death, and rebirth.'
+  question: What is the role of suffering in spiritual awakening?
+- answer: 'By practicing loving-kindness meditation and cultivating a heart of compassion and goodwill towards all beings.'
+  question: How can we develop loving-kindness towards ourselves and others?
+- answer: 'The ultimate goal is the realization of enlightenment and the cessation of suffering for oneself and all sentient beings.'
+  question: What is the ultimate goal of the spiritual journey?
+- answer: 'By finding refuge in the stillness of our own minds and recognizing that true peace comes from within, regardless of external circumstances.'
+  question: How can we find peace amidst turmoil?
+
+task_description: |
+   The buddha task enable to give aspects of Buddhist philosophy.
+
