@@ -73,7 +73,7 @@ jobs:
             yq '.seed_examples'                            $file | grep -q null  && error "$(yq '.seed_examples|line'    $file):1: missing 'seed_examples'"
             yq '.seed_examples   | length >= 3'            $file | grep -q false && warn  "$(yq '.seed_examples|line'    $file):1: less than 3 'seed_examples'"
             yq '.seed_examples[] | .question | length > 0' $file | grep -q false && error "$(yq '.seed_examples|line'    $file):1: missing/empty 'question's"
-            yq '.seed_examples[] | .answer   | length > 0' $file | grep -q false && error "$(yq '.seed_examples|line'    $file):1: missing/empty 'question's"
+            yq '.seed_examples[] | .answer   | length > 0' $file | grep -q false && error "$(yq '.seed_examples|line'    $file):1: missing/empty 'answer's"
             if $( yq '.seed_examples[] | has("context")'   $file | grep -q true ); then
               yq '.seed_examples[] | .context| length > 0' $file | grep -q false && error "$(yq '.seed_examples|line'    $file):1: missing/empty 'context's"
             fi
