@@ -1,0 +1,44 @@
+created_by: martinpitt
+seed_examples:
+  - answer: 'Based on your given constraints, the only possible solution for your Wordle puzzle is "early".'
+    question: What are the possible solutions to a 5-letter wordle puzzle where the green letters are e___y and the yellow letters are ___r_?
+
+  - answer: 'Based on your given constraints, the only possible solution for your Wordle puzzle is "early".'
+    question: What are the possible solutions to a 5-letter wordle puzzle where the first letter is an 'e', the last letter a 'y', and there is an 'r' which isn't the fourth letter?
+
+  - answer: 'Based on your given constraints, these common words can be a solution:
+
+      - madam
+      - mafia
+      - magma
+      - major
+      - manga
+      - mange
+      - mango
+      - mania
+      - manor
+      - marry
+      - mauve
+      - maven
+
+      There are also some rare words which can be a solution:
+
+      - barmy
+      - maize
+      - mangy
+      - manna
+      - maqui
+      - marge
+      - marvy
+      - maund
+      - mauzy
+      - maxed
+      - maxim'
+
+    question: "What are the possible solutions to a wordle puzzle where the 2nd letter is 'a',
+      there is an 'm' not in the third position, and the letters 'hcstlk' do not appear?"
+
+  - answer: 'Based on your given constraints, "bazar" or "radar" can be a solution.'
+    question: "I have a wordle puzzle with green letters _a_a_ and yellow letters __r__ and there are no 'lts' letters. What are the possible solutions?"
+
+task_description: 'analyze and help with solving a Wordle puzzle'
