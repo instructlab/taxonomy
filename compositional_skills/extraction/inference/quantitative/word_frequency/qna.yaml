@@ -15,4 +15,7 @@ seed_examples:
     each word on a separate line, sorted by the number of appearances.''
 
     '
-task_description: ''
+- answer: '[(6, word), (5, the), (4, is), (3, such), (3, frequency), (3, as), (2, used), (2, to), (2, speech), (2, of), (2, if), (2, daily), (2, considered), (2, commonly), (2, be), (2, a), (1, words), (1, that), (1, strait), (1, some), (1, not), (1, multiple), (1, low), (1, levels), (1, languages), (1, in), (1, impact), (1, high), (1, have), (1, chinese)]'
+  context: 'A word is considered to be high frequency if the word is commonly used in daily speech, such as the word "the". A word is considered to be low frequency if the word is not commonly used, such as the word "strait". Some languages such as Chinese have multiple levels of daily speech that impact frequency of words.'
+  question: 'Count the frequency of words in the following text and provide the result in the format [(word, frequency), (word,frequency), ...]'
+task_description: 'Counts the frequency of words in a given piece of text'
