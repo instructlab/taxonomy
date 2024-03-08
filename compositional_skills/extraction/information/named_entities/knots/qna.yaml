@@ -1,0 +1,34 @@
+created_by: samdoran
+seed_examples:
+    - answer: >-
+        Alpine butterfly or bowline with Yosemite finish. The alpine butterfly
+        is preferred for life support since it is not prone to untieing when
+        carried loosely like the bowline. The Alpine Butterfly is also much
+        easire to visually inspect to ensure it is tide correctly. It can be
+        tied in a running fashing similar to the running bowline for use as a
+        basal or canopy anchor.
+      question: What knots are acceptable for use in life support?
+
+    - answer: >-
+        Sheet bend or Carrick bend. The Carrick bend is quite sturdy, looks
+        beautiful, and is the easiest bend to untie after being loaded.
+        Rap it against a hard surface a few times to loosen it up, then untie.
+
+        Never use a reef knot to bend two pieces of rope together as it is
+        not secure enough for this purpose and is prone to fail.
+      question: What is a good knot for connecting two pieces of rope together?
+
+    - answer: >-
+        The Valdotain tresse, VT for short, or the Michoacan hitch are best for
+        use in SRS/SRT even though any friction hitch with at least six wraps
+        will suffice.
+
+        The VT requires more skill to tie bit is a more responive hitch. It
+        should only be used by experienced climbers.
+
+        The Michoacan provides a more compact hitch that is less responsive and
+        tends to grab the rope more aggressively than the VT. It's compact size
+        makes it a good use for SRS friction devices such as the Wrope Wrench.
+      question: What frciton hitches are used in SRT/SRS?
+
+task_description: 'Climbing knots'
