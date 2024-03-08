@@ -1,0 +1,100 @@
+---
+created_by: taagarwa-rh
+seed_examples:
+  - answer: >-
+      Let n, m be odd integers. Then there exists integers a and b such that n
+      = 2a + 1 and m = 2b + 1. Then consider
+
+
+      n + m
+
+      = (2a + 1) + (2b + 1)    Substitution
+
+      = 2a + 2b + 1 + 1        Associativity
+
+      = 2a + 2b + 2            Algebra
+
+      = 2(a + b + 1)           Factoring
+
+
+      By definition, 2(a + b + 1) is an even number therefore n + m is even.
+
+
+      Q.E.D.
+    question: "Prove the following statement: if two integers are odd, then their
+      sum is even."
+  - answer: >-
+      Let n be an odd integer. Then there exists an integer k such that n = 2k
+      + 1. Then consider
+
+      n^2
+
+      = (2k + 1)^2          Substitution
+
+      = 4k^2 + 4k + 1       Algebra
+
+      = 2(2k^2 + 2k) + 1    Factoring
+
+
+      Since k is an integer, 2k^2 + 2k is also an integer. So by definition, n^2 is odd.
+
+
+      Q.E.D.
+    question: "Prove the following statement: If n is an odd integer, then n^2 is
+      also odd."
+  - answer: >-
+      Let n be an odd integer. Then there exists an integer k such that n = 2k
+      + 1. Then consider
+
+
+      n^2
+
+      = (2k + 1)^2          Substitution
+
+      = 4k^2 + 4k + 1       Algebra
+
+
+      Now from the above result, to show that n^2 is congruent to 1 modulo 8, it suffices to show: 8 | (4k^2 + 4k)
+
+      4k^2 + 4k
+
+      = 4k(k + 1)           Factoring
+
+
+      Hence, 4 | (4k^2 + 4k)
+
+      Now since 8 = 4 * 2. all that remains to show is: 2 | k(k + 1)
+
+
+      Case 1: k is even.
+
+      Since k is even, then there exists an integer l such that k = 2l
+
+      k(k + 1)
+
+      2l(2l + 1)           Substitution
+
+      2(2l^2 + l)          Distribution
+
+      Since l is an integer, 2l^2 + l is also an integer. So by definition, k(k + 1) is even.
+
+
+      Case 2: k is odd.
+
+      Since k is odd, then there exists an integer l such that k = 2l + 1
+
+      k(k + 1)
+
+      (2l + 1)(2l + 2)     Substitution
+
+      2(2l + 1)(l + 1)     Factoring
+
+      Since l is an integer, (2l + 1)(l + 1) is also an integer. So by definition k(k + 1) is even.
+
+      Thus we have that 8 | (4k^2 + 4k).
+
+
+      Q.E.D.
+    question: "Prove the following statement: If n is an odd integer, then n^2 is
+      congruent to 1 modulo 8."
+task_description: This skill provides the ability to write mathematical inference proofs.
