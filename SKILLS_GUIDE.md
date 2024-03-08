@@ -80,7 +80,7 @@ Skills to select odd information in a document, draw conclusions, pull out infor
 
 ### Complex Rulesets and Games
 
->[!NOTE]
+> [!NOTE]
 > This is a good example of the need for a _grounded skill_. Grounded skills require the user to provide context containing information that the model is expected to take into account during processing. This is different from _knowledge_, where the model is expected to gain facts and background knowledge from the tuning process.
 > 
 > Context added when tuning a grounded skill would need to be again provided by the end user at inference time. The skill here is better adherence to the rule set.
