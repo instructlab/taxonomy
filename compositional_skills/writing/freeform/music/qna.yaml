@@ -1,0 +1,19 @@
+created_by: rdhasman
+seed_examples:
+- answer: |
+    The list of music notes is A, B, C, D, E, F, G.
+    Along with these notes, we also have A#, C#, D#,
+    F# and G# notes with the '#' pronounced as sharp.
+  question: What is the list of notes in music?
+- answer: |
+    A major scale is formed by playing the notes
+    in the order, whole-whole-half-whole-whole-whole-half
+    and a minor scale is formed by playing the notes
+    in the order, whole-half-whole-whole-half-whole-whole.
+  question: What are major and minor scales?
+- answer: |
+    The notes in C major scale are C, D, E, F, G, A
+    and B.
+  question: What are the notes in c major scale?
+task_description: |
+  The music task enables telling information about music theory.
