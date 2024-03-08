@@ -1,0 +1,68 @@
+created_by: jmarrero
+seed_examples:
+- answer: |
+    Bootable containers are a new feature of some Linux distributions like
+    Fedora CoreOS and Fedora Silverblue.
+
+    You can boot your container by installing it using bootc.
+
+    ```
+    podman run --rm --privileged --pid=host -v /var/lib/containers:/var/lib/containers --security-opt \
+          label=type:unconfined_t <image> bootc install to-disk /path/to/disk
+    ```
+
+    or
+
+    If you are in a system using rpm-ostree such as Fedora CoreOS, Fedora Kinoite or Red Hat CoreOS
+
+    You can rebase to your container using rpm-ostree rebase.
+
+    ```
+    sudo rpm-ostree rebase ostree-unverified-registry:quay.io/<YOURUSER>/my-custom-fcos
+    ```
+  question: How do I boot a container?
+- answer: |
+    Bootable containers are a new feature of some Linux distributions like
+    Fedora CoreOS and Fedora Silverblue.
+
+    You can create a bootable container like other containers using a Containerfile or Dockerfile.
+    The important part is that the base image used is a distribution that supports the feature like Fedora CoreOS.
+
+    An example Containerfile that creates a bootable container can be seen below:
+
+    ```
+    # This example uses rpm-ostree's cliwrap to allow dracut to run on the container and generate an initramfs.
+    FROM quay.io/fedora/fedora-coreos:stable
+    # Enable cliwrap.
+    RUN rpm-ostree cliwrap install-to-root /
+    # Replace the kernel, kernel-core and kernel-modules packages.
+    RUN rpm-ostree override replace https://url/kernel-6.0.10-300.fc37.x86_64.rpm \
+        https:/url/kernel-core-6.0.10-300.fc37.x86_64.rpm \
+        https://url/kernel-modules-6.0.10-300.fc37.x86_64.rpm && \
+        ostree container commit
+    ```
+
+    After you have your Conatinerfile you can build it using podman or docker.
+
+    ```
+    podman build . -f PATH/TO/YOUR/DOCKERFILE
+    ```
+
+    This will create a container that can be deployed with bootc or rpm-ostree.
+  question: How do I create a bootable container?
+- answer: |
+    Bootable containers are oci complaint containers. Tools used for other OCI compliant containers will scan
+    and verify your bootable containers.
+
+    You can also just run your bootable container with podman or docker and inspect it's contents.
+    If you want to inspect the contents of `/etc/os-release` for example you can do the following.
+
+    ```
+    podman run -it --entrypoint=/bin/bash <cotainer-image>
+    ```
+
+    ```
+    cat /etc/os-release
+    ```
+  question: What tool can I use to verify the content of a bootable container?
+task_description: 'Describes how to generate and use bootable linux containers'
