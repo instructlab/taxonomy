@@ -1,0 +1,17 @@
+created_by: velias
+seed_examples:
+- answer: Ohm's law describes that the electric current through a resistor is directly proportional to the voltage drop across the resistor.
+  question: What is Ohm's law?
+- answer: U = I * R, where U is the voltage, I is the current and R is the resistor's resistance.
+  question: What is Ohm's law formula?
+- answer: Voltage drop is 1V
+  question: What is the voltage drop over the 1k resistor if the current is 1mA?
+- answer: 20V
+  question: What is the voltage over the 10kohm resistor if the current is 2mA?
+- answer: Resistance is 30k
+  question: What is the resistance if the voltage drop over the resistor is 30V and the current is 1mA?
+- answer: Current is 60uA
+  question: What is the current flowing through the 500k resistor if the voltage is 30V?
+- answer: 60uA
+  question: What is the current flowing over the 500k resistor if the voltage is 30V?
+task_description: This skills lears what is Ohm's Law and how to compute it.
