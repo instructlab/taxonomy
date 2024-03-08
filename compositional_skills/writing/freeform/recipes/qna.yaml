@@ -1,0 +1,14 @@
+---
+created_by: wainersm
+seed_examples:
+  - answer: |
+      You will need the following ingredients:
+        - About ten mint leaves
+        - 500ml of water
+      Also you will need one water boil and one teapot.
+      Put the mint leaves in the teapot. Bring the water to the boil over high
+      heat until the water gets boiling. Fill up the teapot with the boiling
+      water and let it infuse for two or three minutes.
+    question: Tell me a recipe of fresh mint tea
+task_description: |
+  Teach how to prepare various recipes of tea
