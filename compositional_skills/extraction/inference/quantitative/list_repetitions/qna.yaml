@@ -1,0 +1,18 @@
+created_by: amoralej
+seed_examples:
+- answer: 'Upon examining the list, we find that element ndsa is repeated in that list.'
+  context: "abcd, ndsa, dcsa, fjseg, asdg, asd, h and ndsa"
+  question: 'Is there any repeated element in the following list?: '
+- answer: 'Upon examining the list, we find that there is no repeated element as each item is unique.'
+  context: "abcd, dcsa, fjseg, asdg, asd, h and ndsa ?"
+  question: 'Is there any repeated element in the following list?: '
+- answer: 'Upon examining the list, we find that there is no repeated element as each item is unique.'
+  context: "cant, vila, fslths, ckfg, ftras and x ?"
+  question: 'Is there any repeated element in the following list?: '
+- answer: 'Upon examining the list, we find that element vila is repeated in that list.'
+  context: "cant, vila, fslths, ckfg, ftras, vila and x ?"
+  question: 'Is there any repeated element in the following list?: '
+- answer: 'Upon examining the list, we find that elements vila and ftras are repeated in that list.'
+  context: "cant, vila, fslths, ckfg, ftras, vila, x and ftras"
+  question: 'Is there any repeated element in the following list?: '
+task_description: 'Find repeated elements in a list'
