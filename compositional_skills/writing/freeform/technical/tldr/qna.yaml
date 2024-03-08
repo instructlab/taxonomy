@@ -1,0 +1,101 @@
+created_by: jacobcallahan
+task_description: Create easily consumable short descriptions of how to use a command line tool.
+seed_examples:
+  - question: Give me a tldr about how to use curl
+    answer: |
+      Here are some of the most common uses of curl to get you started.
+
+      Download a URL's contents and store it in a destination file.
+      `curl http://test.example.com --output relative/path/to/file`
+
+      Download a URL's contents and store it as the same name of the URL's filename.
+      `curl --remote-name http://test.example.com/filename.ext`
+
+      Send form-encoded data. Can also use a file `--data @file_name` or STDIN `--data @'-'`.
+      `curl --data 'answer=42' http://test.example.com/form`
+
+      Send JSON-formatted data. Note the content-type header.
+      `curl --data '{"name":"bob"}' --header 'Content-Type: application/json' http://test.example.com/users/1234`
+
+      Authenticate with username and password.
+      `curl --user username:password http://test.example.com`
+
+      Authenticate with client certificate and key. Note that certificate validation is skipped with insecure.
+      `curl --cert client.pem --key key.pem --insecure https://test.example.com`
+  - question: Give me a tldr about how to use tmux
+    answer: |
+      While most of the interactions with tmux are within a session,
+      here are some of the most common uses of tmux to get you started.
+
+      Start a new session.
+      `tmux`
+
+      List existing sessions.
+      `tmux ls`
+
+      Attach to the most recently active session.
+      `tmux attach`
+
+      Kill a session by name.
+      `tmux kill-session -t name`
+  - question: Give me a tldr about how to use sed
+    answer: |
+      Here are some of the most common uses of sed.
+
+      Substitute all instances of `cat` with `dog` in the input stream and display the result.
+      `command | sed 's/cat/dog/g'`
+
+      Change all instances of the regex `cat` to `CAT` in the input stream and display the result.
+      `command | sed -E 's/(cat)/\U\1/g'`
+
+      Substitute all instances of `cat` with `dog` in a specific file, updating the original file directly.
+      `sed -i 's/cat/dog/g' relative/path/to/file`
+
+      Run a specific sed script file and display the output.
+      `command | sed -f relative/path/to/script.sed`
+
+      Display only the first line of the input stream.
+      `command | sed -n '1p'`
+  - question: Give me a tldr about how to use awk
+    answer: |
+      Here are some of the most common uses of awk
+
+      Display the third column in a tab-separated file.
+      `awk '{print $3}' relative/path/to/file`
+
+      Display the fourth column of the lines that include "banana" in a tab-separated file.
+      `awk '/banana/ {print $4}' relative/path/to/file`
+
+      Display the first column of each line in a file, using a semicolon as a field separator.
+      `awk -F ';' '{print $1}' relative/path/to/file`
+
+      Display all lines where the 5th column value equals the specified value.
+      `awk '($5 == value)'`
+
+      Display different values based on conditions.
+      `awk '{if ($1 == "banana") print "Exact match banana"; else if ($1 ~ "apple") print "Partial match apple"; \
+      else print "Orange"}' relative/path/to/file`
+  - question: Give me a tldr about how to use grep
+    answer: |
+      Here are some of the most common uses of grep
+
+      Look for a specific pattern within a file.
+      `grep "pattern_to_find" relative/path/to/file`
+
+      Search `stdin` for lines that match a pattern.
+      `cat relative/path/to/file | grep "pattern_to_find"`
+
+      Look for an exact pattern, disabling regular expressions.
+      `grep --fixed-strings "exact_pattern" relative/path/to/file`
+
+      Look for a specific pattern in all files recursively in a directory, showing line numbers of matches.
+      `grep --recursive --line-number "pattern_to_find" relative/path/to/directory`
+
+      Use extended regular expressions in case-insensitive mode.
+      `grep --extended-regexp --ignore-case "pattern_to_find" relative/path/to/file`
+
+      Display 3 lines of context around, before, or after each match.
+      `grep --context|before-context|after-context=3 "pattern_to_find" relative/path/to/file`
+
+      Display file name and line number for each match with color output.
+      `grep --with-filename --line-number --color=always "pattern_to_find" relative/path/to/file`
