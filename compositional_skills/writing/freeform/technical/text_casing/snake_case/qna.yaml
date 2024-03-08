@@ -1,0 +1,15 @@
+created_by: juandspy
+task_description: This skill provides the ability to convert text into its Snake case form.
+seed_examples:
+  - answer: congratulation_interventionism_blah_psychoanalyse_idiots_chromatics_evangelistically_interchangeability_intercommunicating_mickle
+    question:
+      "Convert this text into its Snake case form: congratulation interventionism
+      blah psychoanalyse idiots chromatics evangelistically interchangeability intercommunicating mickle"
+  - answer: diligence_irregularities_remonstrating_unpatriotic_smug_execrator_reissued_psychotherapeutically_chromatographically
+    question:
+      "Convert the following text into Snake case: diligence irregularities
+      remonstrating unpatriotic smug execrator reissued psychotherapeutically chromatographically"
+  - answer: inexhaustibleness_intermediateness_lexicographically_copperas_imperturbability_electrophysiological_balking_aerothermodynamics
+    question:
+      "Transform these words in Snake case: inexhaustibleness intermediateness
+      lexicographically copperas imperturbability electrophysiological balking aerothermodynamics"
