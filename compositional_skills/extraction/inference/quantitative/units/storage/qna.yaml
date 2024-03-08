@@ -1,0 +1,120 @@
+created_by: leseb
+seed_examples:
+- answer: |
+    1 Kilobyte is equal to (103 / 210) kibibytes.
+    There are 0.9765625 kibibytes in a Kilobyte.
+  question: 'How many Kibibytes in a Kilobyte?'
+  context: ''
+- answer: |
+    - 0.9765625 KiB
+    - 1.953125 KiB
+    - 2.9296875 KiB
+    - 3.90625 KiB
+    - 4.8828125 KiB
+    - 5.859375 KiB
+    - 6.8359375 KiB
+    - 7.8125 KiB
+    - 8.7890625 KiB
+    - 9.765625 KiB
+  context: |
+    - 1 KB
+    - 2 KB
+    - 3 KB
+    - 4 KB
+    - 5 KB
+    - 6 KB
+    - 7 KB
+    - 8 KB
+    - 9 KB
+    - 10 KB
+  question: 'convert the following KB units to KiB'
+- answer: |
+    1 Megabyte is equal to (106 / 220) mebibytes.
+    There are 0.95367431640625 mebibytes in a Megabyte.
+  question: 'How many Mebibytes in a Megabyte?'
+  context: ''
+- answer: |
+    - 0.95367431640625 MiB
+    - 1.9073486328125 MiB
+    - 2.8610229492188 MiB
+    - 3.814697265625 MiB
+    - 4.7683715820312 MiB
+    - 5.7220458984375 MiB
+    - 6.6757202148438 MiB
+    - 7.62939453125 MiB
+    - 8.5830688476562 MiB
+    - 9.5367431640625 MiB
+  context: |
+    - 1 MB
+    - 2 MB
+    - 3 MB
+    - 4 MB
+    - 5 MB
+    - 6 MB
+    - 7 MB
+    - 8 MB
+    - 9 MB
+    - 10 MB
+  question: 'convert the following MB units to MiB'
+- answer: |
+    1 Gigabyte is equal to (109 / 230) gibibytes.
+    There are 0.93132257461548 gibibytes in a Gigabyte.
+  question: 'How many Gibibytes in a Gigabyte?'
+  context: ''
+- answer: |
+    - 0.9313 GiB
+    - 1.8626 GiB
+    - 2.7939 GiB
+    - 3.7252 GiB
+    - 4.6566 GiB
+    - 5.5879 GiB
+    - 6.5192 GiB
+    - 7.4505 GiB
+    - 8.3819 GiB
+    - 9.3132 GiB
+  context: |
+    - 1 GB
+    - 2 GB
+    - 3 GB
+    - 4 GB
+    - 5 GB
+    - 6 GB
+    - 7 GB
+    - 8 GB
+    - 9 GB
+    - 10 GB
+  question: 'convert the following GB units to GiB'
+- answer: |
+    1 Terabyte is equal to (1012 / 240) tebibytes.
+    There are 0.90949470177293 tebibytes in a Terabyte.
+  question: 'How many Tebibytes in a Terabyte?'
+  context: ''
+- answer: |
+    - 0.90949470177293 TiB
+    - 1.8189894035459 TiB
+    - 2.7284841053188 TiB
+    - 3.6379788070917 TiB
+    - 4.5474735088646 TiB
+    - 5.4569682106376 TiB
+    - 6.3664629124105 TiB
+    - 7.2759576141834 TiB
+    - 8.1854523159564 TiB
+    - 9.0949470177293 TiB
+  context: |
+    - 1 TB
+    - 2 TB
+    - 3 TB
+    - 4 TB
+    - 5 TB
+    - 6 TB
+    - 7 TB
+    - 8 TB
+    - 9 TB
+    - 10 TB
+  question: 'convert the following TB units to TiB'
+task_description: |
+    A skill to differenciate between KB, MB, GB, TB (SI (The
+    International System of Units) and their respective binary units KiB,
+    MiB, GiB, TiB (IEC binary (International
+    Electrotechnical Commission).
+    This a pretty common for data storage unit conversion.
