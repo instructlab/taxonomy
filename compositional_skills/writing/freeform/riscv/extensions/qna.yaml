@@ -1,0 +1,87 @@
+---
+created_by: cmaiolino
+seed_examples:
+  - answer: |
+      | The current Risc-V ratified extensions are                                                                     |
+      | Specification Name:                                       Ratification Date     New extension or Profile       |
+      | ---------------------------------------------------------------------------------------------------------------|
+      | RISC-V Indirect CSR Access                                February 2024         Smcsrind,Sscsrind              |
+      | (Smcsrind/Sscsrind)                                                                                            |
+      |                                                                                                                |
+      | RISC-V Integer Conditional (Zicond) operations extension  November 2023         Zicond                         |
+      |                                                                                                                |
+      | Hardware Updating of PTE A/D Bits (Svadu)                 November 2023         Svadu                          |
+      |                                                                                                                |
+      | RISC-V Cycle and Instret Privilege Mode Filtering         November 2023         Smcntrpmf                      |
+      |                                                                                                                |
+      | Atomic Compare-and-Swap (CAS) Instructions (Zacas)        November 2023         Zacas                          |
+      |                                                                                                                |
+      | RISC-V Cryptography Extensions Volume II:                 September 2023        Zvbb, Zvbc, Zvkb, Zvkg, Zvkn,  |
+      | Vector Instructions                                                             Zvknc, Zvkned, Zvkng Zvknha,   |
+      |                                                                                 Zvknhb, Zvks, Zvksc, Zvksed,   |
+      |                                                                                 Zvksg, Zvksh, Zvkt             |
+      |                                                                                                                |
+      | "Zfa" Standard Extension for Additional                   September 2023        Zfa                            |
+      | Floating-Point Instructions                                                                                    |
+      |                                                                                                                |
+      | RISC-V Advanced Interrupt Architecture                    June 2023             Smaia, Ssaia                   |
+      |                                                                                                                |
+      | “Zvfh/Zvfhmin:” Vector Extension for Half-Precision       June 2023             Zvfh, Zvfhmin                  |
+      | Floating-Point Arithmetic/Vector Extension for Minimal                                                         |
+      | Half-Precision Floating-Point Arithmetic                                                                       |
+      |                                                                                                                |
+      | Zihintntl” Non-Temporal Locality Hints                    May 2023              Zihintntl                      |
+      |                                                                                                                |
+      | RISC-V Code Size Reduction                                April 2023            Zca, Zcb, Zcd, Zce, Zcf, Zcmp, |
+      |                                                                                 Zcmt                           |
+      |                                                                                                                |
+      | RISC-V Profiles                                           March 2023            RVA20, RVI20, RVA22            |
+      |                                                                                                                |
+      | Zicntr" and "Zihpm" Counters                              March 2023            Zicntr, Zihpm                  |
+      |                                                                                                                |
+      | RV32E and RV64E Base Integer Instruction Sets             January 2023          RV32E/RV64E                    |
+      |                                                                                                                |
+      | Ztso” Standard Extension for Total Store Ordering         January 2023          Ztso                           |
+      |                                                                                                                |
+      | RISC-V Wait-on-Reservation-Set (Zawrs) extension          November 2022         Zawrs                          |
+      |                                                                                                                |
+      | Zmmul Extension                                           June 2022             Zmmul                          |
+      |                                                                                                                |
+      | PMP Enhancements for memory access and execution          November 2021         Smepmp                         |
+      | prevention on Machine mode (Smepmp)                                                                            |
+      |                                                                                                                |
+      |                                                                                                                |
+      | RISC-V Base Cache Management Operation ISA Extensions     November 2021         Zicbom, Zicbop, Zicboz         |
+      |                                                                                                                |
+      | RISC-V Bit-Manipulation ISA-extensions                    November 2021         Zba, Zbb, Zbc, Zbs             |
+      |                                                                                                                |
+      | RISC-V Count Overflow and Mode-Based Filtering Extension  November 2021         Sscofpmf                       |
+      |                                                                                                                |
+      | RISC-V Cryptography Extensions Volume I:                  November 2021         Zbkb, Zbkc, Zbkx, Zknd, Zkne,  |
+      | Scalar & Entropy Source Instructions                                            Zknh, Zksed, Zksh, Zkn, Zks,   |
+      |                                                                                 Zkt, Zk, Zkr                   |
+      |                                                                                                                |
+      | RISC-V State Enable Extension                             November 2021       Smstateen                        |
+      |                                                                                                                |
+      | RISC-V "stimecmp / vstimecmp" Extension                   November 2021       Sstc                             |
+      |                                                                                                                |
+      | RISC-V Vector Extension                                   November 2021       Zve32x, Zve32f, Zve64x, Zve64f,  |
+      |                                                                               Zve64d, Zve, Zvl32b, Zvl64b,     |
+      |                                                                               Zvl128b, Zvl256b, Zvl512b,       |
+      |                                                                               Zvl1024b, Zvl, Zv                |
+      |                                                                                                                |
+      | The RISC-V Instruction Set Manual Volume II:              November 2021       Sm1p12, Ss1p12, Sv57, Hypervisor,|
+      | Privileged Architecture                                                       Svinval, Svnapot, Svpbmt         |
+      |                                                                                                                |
+      | "Zfh" and "Zfhmin" Standard Extensions for                November 2021       Zfh, Zfhmin                      |
+      | Half-Precision Floating-Point                                                                                  |
+      |                                                                                                                |
+      | "Zfinx", "Zdinx", "Zhinx", "Zhinxmin":                    November 2021       Zfinx, Zdinx, Zhinx, Zhinxmin    |
+      | Standard Extensions for Floating-Point in                                                                      |
+      | Integer Registers                                                                                              |
+      |                                                                                                                |
+      | "Zihintpause” Pause Hint                                  February 2021       Zihintpause                      |
+      |                                                                                                                |
+    question: What are the current available Risc-V extensions?
+task_description: |
+    This skill provides the ability to display a list of Ratified Risc-V extensions. 
