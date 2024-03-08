@@ -1,4 +1,4 @@
-# Triaging Skills:
+# Triaging Skills
 
 Skills triage is the practice of reviewing existing [skill pull requests (PRs)](https://github.com/instruct-lab/taxonomy/pulls?q=is%3Apr+is%3Aopen+label%3Askill) to make sure they're relevant, actionable, and have all the information needed to be fully evaluated by both the Taxonomy Triage team (Triagers, @taxonomy-triagers) and the Taxonomy Approvers (Approvers, @taxonomy-approvers).
 
