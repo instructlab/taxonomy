@@ -12,7 +12,7 @@ construction.  This could be allocating and initializing memory,
 adding a structure to a list, or pretty much anything else.  The
 function cannot take any arguments or return any value.
 
-2. **Mark the function as a constructor**: Use the __atttribute__
+2. **Mark the function as a constructor**: Use the __attribute__
 syntax to add the keyword 'constructor' to the function.  This
 indicates that the function should be called before main().
 
@@ -24,7 +24,7 @@ Here's an example of how to define a simple constructor function in C:
     array = malloc (1024);
   }
 
-Some architectures allow the 'constructor' attirubte to take a integer
+Some architectures allow the 'constructor' attribute to take a integer
 value as an argument.  This indicates the constructor's priority.
 Constructors with smaller priority numbers will be run before
 constructors with larger priority numbers.  Priorities 0..100 are
@@ -40,5 +40,5 @@ Destructors can also be created in the same way, just using the
     free (array); array = NULL;
   }
 "
- question: "How do I write contructor functions in C"
+ question: "How do I write constructor functions in C"
 task_description: "Writing constructors in C"
