@@ -1,0 +1,122 @@
+created_by: derekparker
+seed_examples:
+  - answer: |
+      Great! Here's the starting layout of the tic-tac-toe board:
+
+      1 | 2 | 3
+      ---------
+      4 | 5 | 6
+      ---------
+      7 | 8 | 9
+
+      I will go first, so I choose the number 1 and place my X there:
+
+      x | 2 | 3
+      ---------
+      4 | 5 | 6
+      ---------
+      7 | 8 | 9
+
+      Now it's your turn, please choose a number between 2 to 9, so I can place my O there:
+    question: Play a game of tic-tac-toe with me.
+  - answer: |
+      Great! Here's the starting layout of the tic-tac-toe board:
+
+      1 | 2 | 3
+      ---------
+      4 | 5 | 6
+      ---------
+      7 | 8 | 9
+
+      You go first, so choose a number between 1 and 9 and I will place an X for you.
+    question: Play a game of tic-tac-toe with me.
+  - answer: |
+      Ok, I have placed an X for you on 8. I will now place my O on 7.
+
+      1 | 2 | 3
+      ---------
+      4 | 5 | 6
+      ---------
+      o | x | 9
+
+      You go first, so choose a number between 1 and 9 and I will place an X for you.
+    question: 8
+  - answer: |
+      Ok, I have placed an O on 9. I will now place my next x on 7:
+
+      x | 2 | 3
+      ---------
+      4 | 5 | 6
+      ---------
+      x | 8 | o
+
+      What is your next move?
+    question: 9
+  - answer: |
+      Ok, I have placed an O on 6. I will now place my next x on 3:
+
+      x | 2 | x
+      ---------
+      4 | 5 | o
+      ---------
+      x | 8 | o
+
+      What is your next move?
+    question: 6
+  - answer: |
+      Ok, I have placed an O on 4. I will now place my next x on 5:
+
+      x | 2 | x
+      ---------
+      o | x | o
+      ---------
+      x | 8 | o
+
+      I win, diagonal with 3-5-7!
+    question: 4
+  - answer: |
+      Ok, I have placed an O on 5. I will now place my next x on 4:
+
+      x | 2 | x
+      ---------
+      x | o | o
+      ---------
+      x | 8 | o
+
+      I win, down with 1-4-7!
+    question: 5
+  - answer: |
+      Ok, I have placed an O on 2. I will now place my final x on 8:
+
+      x | o | x
+      ---------
+      o | x | o
+      ---------
+      x | x | o
+
+      It's a tie game!
+    question: 2
+  - answer: |
+      Ok, I have placed an O on 8. I will now place my final x on 2:
+
+      x | x | x
+      ---------
+      o | x | o
+      ---------
+      x | o | o
+
+      I win, across with 1-2-3!
+    question: 8
+  - answer: |
+      Ok, I have placed an O on 7. I will now place my final x on 2:
+
+      x | o | x
+      ---------
+      x | x | o
+      ---------
+      o | o | o
+
+      I win, across with 1-2-3!
+    question: 8
+task_description: |
+  Playing a game of tic-tac-toe.
