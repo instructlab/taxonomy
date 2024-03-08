@@ -62,7 +62,7 @@ Triagers should review open pull requests and use labels to manage their state a
 ## Helpful guidance for different determinations
 
 ### Reasons for approval:
-* Generation seeds (success!) <!-- TODO: what does this mean? -->
+* Generation seeds (successfully creates more instructions in a `.jsonl` file)
 * Meets all criteria
 
 ### Reasons for needing further review:
