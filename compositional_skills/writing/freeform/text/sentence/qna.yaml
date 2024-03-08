@@ -1,0 +1,25 @@
+created_by: eurijon
+seed_examples:
+  - answer: |
+      Hometown.
+    question: Can you create a 1-word long sentence?
+  - answer: |
+      The river.
+    question: Can you create a 2-words long sentence?
+  - answer: |
+      Dancing in the dark.
+    question: Can you create a 4-words long sentence?
+  - answer: |
+      The future is uncertain, but the present is a gift.
+    question: Can you create a 10-words long sentence?
+  - answer: |
+      The weather outside was cold, wet, and gloomy, but I still enjoyed myi
+      morning walk in the park.
+    question: Can you create a 18-words long sentence?
+  - answer: |
+      In the heart of the enchanted forest, where sunlight danced through the
+      leaves, mystical creatures gathered to celebrate the harmony of nature,
+      weaving tales that echoed through the ancient trees.
+    question: Can you create a 30-words long sentence?
+task_description: |
+  This skill enables the creation of a desired number-of-words long sentence.
