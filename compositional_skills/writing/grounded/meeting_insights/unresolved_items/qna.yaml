@@ -1,0 +1,88 @@
+created_by: jistr
+seed_examples:
+- context: |-
+    **Alice:** Alright, everyone, welcome to our quarterly marketing team meeting. I'd like to start with some quick introductions for our new team members, Emily and Daniel. Emily, Daniel, can you introduce yourselves?
+
+    **Emily:** Hello, I'm Emily, the new social media manager. I'm excited to join the team and contribute to our social media strategy.
+
+    **Daniel:** Hi, I'm Daniel, the new content strategist. I'm looking forward to working with everyone to create engaging content that resonates with our audience.
+
+    **Alice:** Great, thank you for introducing yourselves. Please reach out to John after the meeting to get access to data. Now, let's move on to our agenda. First, we'll review Q1 performance. Sarah, can you give us an overview of how we did in the first quarter?
+
+    **Sarah:** Sure, in Q1, we saw a 15% increase in website traffic, and a 12% growth in lead generation. We noticed some gaps in social media engagement that should be investigated. Our email campaigns performed well, with a 17% open rate and a 10% click-through rate. Overall, it was a strong start to the year.
+
+    **Alice:** Thank you Sarah for sharing those numbers with us. Next, let's discuss campaign performance analysis. John, can you walk us through the insights you gathered from our recent campaigns?
+
+    **John:** Absolutely. Our most recent campaign, the "Spring into Savings" promotion, had a 25% conversion rate, which is higher than our average of 15%. We also saw a significant increase in sales from our email campaigns, with a 30% open rate and a 20% click-through rate.
+
+    **Alice:** Excellent job, John. It's great to see that our campaigns are resonating with our audience. Now, let's discuss upcoming campaigns. We have two major campaigns planned for Q2: the "Summer Fun" promotion and the "Back-to-School" campaign. Can we hear from the team leads on these campaigns?
+
+    **Jane:** Yes, for the "Summer Fun" promotion, we're planning to create a series of engaging, summer-themed content, such as DIY projects, recipes, and travel tips. We could use some assistance in finding contractors. Our goal is to increase brand awareness and drive sales during the summer months.
+
+    **Alice:** That sounds like a fun campaign. Thanks for the update, Jane. Any thoughts on the "Back-to-School" campaign?
+
+    **Mike:** For the "Back-to-School" campaign, we're planning to focus on providing parents with useful tips and resources for preparing their children for the new school year. We are somewhat unsure of the best pricing strategy presently, but we'd like to offer exclusive discounts on our products to help families save money during this time, if possible.
+
+    **Alice:** Thank you, Jane and Mike, for sharing your plans with us. It's great to see the team working together to create engaging campaigns that meet our goals. Now, let's hear from the rest of the team for any updates or suggestions.
+
+    **Rachel:** I've been working on refining our email marketing strategy, and I think we could see even better results if we segment our email lists more effectively and tailor our content to each audience segment.
+
+    **Alice:** That's a great suggestion, Rachel. We'll discuss this further in our next email marketing strategy session. Any other updates or suggestions before we wrap up?
+
+    **Alice:** Alright, it seems like we have a solid plan in place for Q2. Let's move on to action items and next steps. I'd like to remind everyone to stay focused on our goals and work together to ensure our campaigns are successful. Thank you all for your time today. Have a great day, everyone!
+  question: >-
+    In the given meeting transcript, what are the unresolved items that will require further action from someone?
+  answer: |-
+    The unresolved items that will require further action from someone include:
+
+    1. Emily and Daniel need to reach out to John after the meeting to get access to data.
+    2. The team needs to investigate gaps in social media engagement.
+    3. The team needs to find contractors to assist with the "Summer Fun" promotion.
+    4. The team is unsure about the best pricing strategy for the "Back-to-School" campaign.
+    5. Rachel's refinement of the email marketing strategy needs to be discussed further in the next email marketing strategy session.
+
+
+- context: |-
+    [Team Lead] Hi everyone, thanks for joining today's meeting. We have a few items on the agenda, including project updates, design reviews, and the upcoming deadline for the new product launch.
+
+    [Engineer 1] Hey, I just wanted to give a quick update on the progress of the new software feature. We've hit a couple of snags with the user interface, but we think we have a solution that will work well for our users.
+
+    [Team Lead] Great, thanks for the update. [Engineer 1], could you walk us through your proposed solution?
+
+    [Engineer 1] Absolutely. We're thinking of using a modular design that allows for more customization and easier maintenance. We believe this will improve the user experience and make it easier for our developers to maintain the code in the long run.
+
+    [Team Lead] That sounds promising. [Engineer 2], could you provide feedback on this proposed solution?
+
+    [Engineer 2] I think it's a solid idea. The modular design will definitely make the user interface more intuitive and easier to use. However, we need to ensure that the modular components don't create any performance issues.
+
+    [Team Lead] Good point. [Engineer 1], can you provide more details on how the modular components will be implemented and tested?
+
+    [Engineer 1] Sure. We plan on using automated tests to ensure that the modular components work as expected. The performance aspect is something to follow up on, I think.
+
+    [Team Lead] That sounds like a good plan. Let's continue discussing this during our next design review session.
+
+    [Team Lead] Now, moving on to the product launch deadline, we have one week left. Could everyone please confirm that they have completed their tasks and are on track for the deadline?
+
+    [Engineer 3] Yes, I have finished my part of the project. I have tested the new feature thoroughly and am confident that it will meet our users' needs.
+
+    [Engineer 4] I have completed my tasks as well. I have reviewed the code of our component and found no major issues. We should start working on the documentation for it.
+
+    [Engineer 5] Our part is progressing but we're not sure if we're making the deadline.
+
+    [Team Lead] Ok. Thanks everyone for the status. Let's keep working hard and ensure that the product launch is successful.
+
+    [Team Lead] That concludes today's meeting. Thank you all for your contributions. Let's meet again next week for another update. Have a great day!
+  question: >-
+    In the given meeting transcript, what are the unresolved items that will require further action from someone?
+  answer: |-
+    The unresolved items that will require further action include:
+
+    1. The modular design solution for the user interface needs to be tested for performance issues. [Engineer 1] should provide more details on how the modular components will be implemented and tested during the next design review session.
+    2. [Engineer 4] indicated that documentation for their component needs to be created.
+    3. The team needs to ensure that all tasks are completed on time for the product launch deadline. [Engineer 5] indicated that their part is progressing but they're not sure if they're making the deadline.
+task_description: >-
+  Find unresolved items in a meeting transcript that will require
+  further action from someone. This includes not just explicitly
+  stated action items, but also concerns and problems that were
+  mentioned but went unaddressed or were not formulated as action
+  items.
