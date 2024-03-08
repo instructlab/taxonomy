@@ -10,5 +10,8 @@ seed_examples:
 - answer: |
     You and your sister should both get five euro.
   question: How do I divide ten euro between me and my sister?
+- answer: |
+    You should get $10 in change, $20 - ($5 *2) = $10.
+  question: How much change should I get if I buy two lollipops for $5 each and give the cashier $20?
 task_description: |
   This skill explains how maths can be used in everyday life.
