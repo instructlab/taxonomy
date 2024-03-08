@@ -1,0 +1,14 @@
+created_by: mreynolds389
+seed_examples:
+- answer: 'The 389 Directory Server access logs contain information
+    about client requests to the server.  The logging includes timestamps,
+    authentication information, client information, the LDAP operation 
+    request, and result of these requests.
+        
+    Since the 389 Directory Server log does not follow any logging standards 
+    the server ships with a tool called "/usr/bin/logconv.pl".  This tool
+    has a variety of options on what and how to display statistics about the 
+    access log. See the tool usage for more information about its options.
+  '
+  question: How to parse 389 Directory Server access logs
+task_description: ''
