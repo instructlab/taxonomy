@@ -29,7 +29,7 @@ The top-level categories are:
 3. **Compositional Skills**:
 
     Skills are performative. When you create a skill for the model, you're
-    teaching it how to do something: "write me a song," "talk like a pirate,"
+    teaching it _how_ to _do_ something: "write me a song," "talk like a pirate,"
     "summarize an email."
 
 There are two types of compositional skills:
@@ -62,8 +62,8 @@ You can contribute both **compositional skills** (and in the future,
 
 ### Compositional Skills
 
-Again, think of skills as "performative." You're teaching the model how to
-**do** something when you contribute a skill.
+Again, think of skills as "performative." You're teaching the model **how** to
+_do_ something when you contribute a skill.
 
 Skills require a much smaller volume of content to contribute. A skill
 contribution to the taxonomy tree can be just a few lines of YAML (its
