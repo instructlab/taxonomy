@@ -1,0 +1,16 @@
+---
+created_by: hemajv
+seed_examples:
+  - answer: |
+      The statement "I am not not not not not hungry" can be simplified as "I am
+      not hungry".
+
+      When you have multiple "not" negations, they effectively cancel out each
+      other. So "not not" becomes a positive affirmation. Hence, even number of
+      "nots" will cancel each other to become positive and odd number of "nots"
+      will become negative. Therefore, when you have 5 "nots" in the sentence it
+      leaves the sentence to ultimately become negative.
+    question: |
+      If I say "I am not not not not not hungry", do I ultimately want to eat or
+      not?
+task_description: ''
