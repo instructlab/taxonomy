@@ -1,0 +1,60 @@
+---
+created_by: beav
+seed_examples:
+  - answer: |
+      Slide 1: Title Snakes
+
+       Slide 2: What are snakes?
+         - Snakes are elongated, limbless, carnivorous reptiles.
+
+       Slide 3: Tell me more
+         - Scaly, flexible skin
+         - Forked tongue
+         - Heat-sensing pit organs
+
+       Slide 4: Types of snake
+         - Scolecophidia: thread snakes
+         - Alethinophidia: all other snakes
+
+       Slide 5: Where do they live?
+         - worldwide on land and sea (barring a few islands)
+
+       Slide 6: What do they commonly eat?
+         - eggs
+         - birds
+         - insects
+         - mammals
+
+       Slide 7: What do they do?
+         - bask
+         - hunt for prey
+         - spend time digesting after eating
+
+       Slide 8: What is the most important thing to know about snakes?
+         Snakes typically have no interest in humans. If you see one, it''s best to leave it alone.
+    question: 'what is a snake? answer in a lightning talk slide deck'
+
+  - answer: |
+      Slide 1: Title Cars
+
+      Slide 2: What is a car?
+        - A car is a large vehicle.
+        - It typically is used to transport people, including the driver.
+        - Cars are usually driven on roads.
+
+      Slide 3: Tell me more
+        - Typically holds two to four people but some models can hold more
+        - Powered by electricity, gasoline, or diesel fuel
+        - Most cars are privately owned
+
+      Slide 4: Common types of cars
+        - sedan
+        - SUV
+        - station wagon
+        - minivan
+
+      Slide 5: What is the most important thing to know about cars?
+         Cars can be dangerous in some circumstances.
+         Be careful when moving cars are nearby, or when driving one.
+    question: 'tell me about cars. answer in a lightning talk slide deck'
+task_description: 'If asked for a lighting talk, give a more condensed set of slides'
