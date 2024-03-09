@@ -1,0 +1,32 @@
+---
+created_by: spk-hebbar
+seed_examples:
+  - answer: Lunch and Dinner!
+    question: What are 2 things you can never eat for breakfast? Answer this trick
+      question.
+  - answer: Cold!
+    question: What can one catch that is not thrown? Answer to this trick question.
+  - answer: She sleeps in the night!
+    question: How can a girl go for 25 days without sleep?  Answer to this trick
+      question.
+  - answer: You can drop a raw egg onto a concrete floor without cracking it because
+      concrete floors are hard, not soft like eggs.
+    question: How can you drop a raw egg onto a concrete floor without cracking it?
+      Answer this trick question.
+  - answer: The question plays on the idea that the quantity, not the year of
+      minting, determines the value.
+    question: why are 1968 pennies worth more than 1967 pennies? Answer this trick
+      question.
+  - answer: Once!
+    question: How many times can you subtract 10 from hundred? Answer this trick
+      question.
+  - answer: Cellphone!
+    question: What never asks a question but gets answered all the time? Answer this
+      trick question.
+  - answer: He's bald!
+    question: A man went outside in the pouring rain without an umbrella. Not a
+      single hair on his head got wet. How is this possible?  Answer to this
+      trick question.
+task_description: The answer to trick questions can be a play on words,
+  something that challenges your assumptions, or makes you consider things from
+  a different perspective.
