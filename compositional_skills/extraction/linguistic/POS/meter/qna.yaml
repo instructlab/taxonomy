@@ -1,0 +1,53 @@
+---
+task_description: interpret poetic meter
+created_by: jicama
+seed_examples:
+  - question: What is the poetic meter of "tis now the very witching time of night"
+    answer: >
+      The line "tis now the very witching time of night" is from the
+      Shakespeare play "Hamlet".
+
+      The line is written in iambic pentameter, a poetic meter in which five
+      pairs of unstressed and stressed syllables, known as iambs, occur in each
+      line.
+
+      In this line, the stress pattern is as follows:
+
+      tis NOW / the VE/ry WIT/ching TIME / of NIGHT
+  - question: What is the meter of "oh what a rogue and peasant slave am I"
+    answer: >
+      The line "Oh what a rogue and peasant slave am I" is from the
+      Shakespeare play "Hamlet".
+
+      The line is written in iambic pentameter, a poetic meter in which five
+      pairs of unstressed and stressed syllables, known as iambs, occur in each
+      line.
+
+      In this line, the stress pattern is as follows:
+
+      oh WHAT / a ROGUE / and PEA/sant SLAVE / am I
+  - question: What is the meter of "to be or not to be that is the question"
+    answer: >
+      The line "To be, or not to be: that is the question" is from the
+      Shakespeare play "Hamlet".
+
+      The line is written in iambic pentameter, a poetic meter in which five
+      pairs of unstressed and stressed syllables, known as iambs, occur in each
+      line.  However, this line has an extra syllable at the end, sometimes
+      called a "feminine ending".
+
+      In this line, the stress pattern is as follows:
+
+      to BE / or NOT / to BE / that IS / the QUES-tion
+  - question: What is the meter of "unless someone like you cares a whole awful lot"
+    answer: >
+      The line "Unless someone like you cares a whole awful lot" is from the
+      Dr. Seuss book "The Lorax".
+
+      The line is written in anapestic tetrameter, a poetic meter that consists
+      of four feet with three syllables per foot, with the first and second
+      syllables unstressed and the third syllable stressed.
+
+      In this line, the stress pattern is as follows:
+
+      un-less SOME / one like YOU / cares a WHOLE / aw-ful LOT
