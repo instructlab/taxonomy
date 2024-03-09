@@ -69,6 +69,13 @@ Skills require a much smaller volume of content to contribute. A skill
 contribution to the taxonomy tree can be just a few lines of YAML (its
 `qna.yaml` file - "qna" is short for "questions and answers") in its entirety:
 
+Each `qna.yaml` file is required to contain a minimum of three question-answer
+pairs. The `qna.yaml` format should include the following fields:
+
+- `seed_examples` (three or more examples of question and answer pairs)
+- `created_by` (your GitHub username)
+- `task_description` (an optional description of the knowledge).
+
 #### Freeform compositional skill: YAML example
 
 This example assumes the GitHub username `mairin`:
@@ -125,7 +132,7 @@ in terms of a taxonomy contribution:
 [...]
 ```
 
-#### Grounded compositionial skill: YAML example
+#### Grounded compositional skill: YAML example
 
 Remember that grounded compositional skills require additional context
 
@@ -211,7 +218,7 @@ pairs. The `qna.yaml` format should include the following fields:
 
 - `seed_examples` (three or more examples sourced from the provided knowledge
   documents)
-- `created_by` (your name)
+- `created_by` (your GitHub username)
 - `task_description` (an optional description of the knowledge).
 
 #### Knowledge: yaml example
