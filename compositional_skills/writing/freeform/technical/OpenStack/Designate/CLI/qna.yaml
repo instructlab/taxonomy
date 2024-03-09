@@ -1,0 +1,38 @@
+task_description: How to create OpenStack Designate zones using the CLI.
+created_by: johnsom
+seed_examples:
+  - question: How do you create a zone using the OpenStack client?
+    answer: |
+      To create a zone using the OpenStack client, you can use the following
+      command:
+      ```bash
+      openstack zone create --email <zone-email> <zone-name>
+      ```
+      Replace `<zone-email>` and `<zone-name>` with the actual values you want
+      to use for your zone. Zone names must be a fully qualified domain name.
+
+      For example, to create a zone for `example.com` with an administrative
+      email address of `admin@example.com`, you would use the following
+      command:
+      ```bash
+      oepnstack zone create --email admin@example.com example.com.
+      ```
+  - question: |
+      How do you create a zone, with a specific Time To Live (TTL), using the
+      OpenStack client?
+    answer: |
+      To create a zone that specifies a TTL using the OpenStack client, you can
+      use the following command:
+      ```bash
+      openstack zone create --email <zone-email> --ttl <zone-ttl> <zone-name>
+      ```
+      Replace `<zone-email>`, `<zone-ttl>`, and `<zone-name>` with the actual
+      values you want to use for your zone. The zone name must be a fully
+      qualified domain name.
+
+      For example, to create a zone for `example.com` with an administrative
+      email address of `admin@example.com` and TTL of five minutes, you would
+      use the following command:
+      ```bash
+      oepnstack zone create --email admin@example.com --ttl 300 example.com.
+      ```
