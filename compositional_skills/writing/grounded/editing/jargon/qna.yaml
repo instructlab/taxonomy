@@ -1,1 +1,13 @@
-
+task_description: |
+  This skill provides the ability to identify jargon and substitute with alternate text when editing.
+created_by: joefern1
+seed_examples:
+- answer: "We need to think creatively to solve this problem"
+  context: "We need to think outside the box to solve this problem"
+  question: Substitute for any jargon in the given text.
+- answer: "We need a a mutual beneficial agreement for both parties in this negotiation."
+  context: "We need a win-win agreement for both parties in this negotiation."
+  question: Substitute for any jargon in the given text.
+- answer: "Let's defer this discussion until after the meeting"."
+  context: "Lets take this offline after the meeting."
+  question: Substitute for any jargon in the given text.
