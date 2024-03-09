@@ -49,4 +49,12 @@ seed_examples:
 
     '
   question: Tell me a pun about Neverland.
+- answer: 'Why can't you trust stairs?
+
+
+    Because they're always up to something.
+
+    '
+  question: Tell me a pun about stairs.
+
 task_description: ''
