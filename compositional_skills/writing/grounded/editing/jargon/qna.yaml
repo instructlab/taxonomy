@@ -8,6 +8,6 @@ seed_examples:
 - answer: "We need a a mutual beneficial agreement for both parties in this negotiation."
   context: "We need a win-win agreement for both parties in this negotiation."
   question: Substitute for any jargon in the given text.
-- answer: "Let's defer this discussion until after the meeting"."
+- answer: "Let's defer this discussion until after the meeting."
   context: "Lets take this offline after the meeting."
   question: Substitute for any jargon in the given text.
