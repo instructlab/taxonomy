@@ -41,7 +41,7 @@ There are two types of compositional skills:
      pirate." You could provide examples of "pirate-like" speech. By providing
      those examples, you're essentially tickling the latent knowledge of the
      LLM. In our "talk like a pirate" example, you're enabling the LLM to be
-     able to recall pirate-like speechs in its latent knowledge.
+     able to recall pirate-like speeches in its latent knowledge.
       
 2. **Grounded Compositional Skills**:
 
@@ -69,12 +69,12 @@ Skills require a much smaller volume of content to contribute. A skill
 contribution to the taxonomy tree can be just a few lines of YAML (its
 `qna.yaml` file - "qna" is short for "questions and answers") in its entirety:
 
-Each `qna.yaml` file is required to contain a minimum of three question-answer
-pairs. The `qna.yaml` format should include the following fields:
+Each `qna.yaml` file is required to contain a minimum of three question and
+answer pairs. The `qna.yaml` format should include the following fields:
 
 - `seed_examples` (three or more examples of question and answer pairs)
 - `created_by` (your GitHub username)
-- `task_description` (an optional description of the knowledge).
+- `task_description` (an optional description of the skill).
 
 #### Freeform compositional skill: YAML example
 
@@ -383,6 +383,11 @@ tool. There is a very nice website you can use to do this:
 
 You can copy/paste your YAML into the box and click the "Go" button to have it
 analyse your YAML and make recommendations.
+
+Online tools like [prettified](https://onlineyamltools.com/prettify-yaml) and
+[yaml-validator](https://jsonformatter.org/yaml-validator) can automatically
+reformat your YAML to adhere to our `yamllint` PR checks, like breaking lines
+longer than 120 characters.
 
 ## Layout
 
