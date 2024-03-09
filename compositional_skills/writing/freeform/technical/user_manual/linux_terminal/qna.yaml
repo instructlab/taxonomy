@@ -1,8 +1,19 @@
 created_by: afsilva
 seed_examples:
   - answer: 'Pressing Ctrl+T in most Linux terminals swaps the
-      positions of the two characters closes to the curser. The T stands
+      positions of the two characters closes to the cursor. The T stands
       for transpose. For example, if a user mistypes: "suod" and hits
       Ctrl+T the terminal will fix the command to "sudo".'
     question: What does Ctrl+T do in the linux terminal?
+  - answer: 'Pressing Ctrl+T in most Linux terminals swaps the
+      positions of the two characters closes to the cursor, and should
+      fix your typo.'
+    question: if i swap two characters while typing a command
+      in the linux terminal what's the easiest way to fix it?
+  - answer: 'Pressing Ctrl+T in most Linux terminals swaps the
+      positions of the two characters closes to the cursor. The T stands
+      for transpose. For example, if a user mistypes: "suod" and hits
+      Ctrl+T the terminal will fix the command to "sudo".'
+    question: tell me a trick about the linux terminal that not a lot
+      of people know?
 task_description: 'Fix for Ctrl+T explaination for the linux terminal'
