@@ -1,0 +1,119 @@
+created_by: spk-hebbar
+seed_examples:
+  - answer: 'Sure - Equator, Rabbit'
+    context: >-
+      Objective: The goal of Word Chain is to create a chain of words where each
+      word starts with the last letter of the previous word. Starting Word: The
+      game begins with one player choosing a word to start the chain. This word
+      can be any word of their choosing. Continuing the Chain: The next player
+      must respond with a word that starts with the last letter of the previous
+      word. For example, if the previous word was 'apple' the next word could be
+      'elephant' or 'egg.' Winning the game: Players must avoid repeating words
+      that have already been used in the current game. If a player repeats a
+      word, they lose the round. Length of Chain: The game can continue for as
+      many rounds as players like, with each player taking turns contributing to
+      the word chain. The longer the chain, the more challenging the game
+      becomes. Constraints: The game can also be played with constraints like
+      playing with only fruit names, places, or dishes to make it more
+      interesting.
+    question: >-
+      Shall we play word chain game? Here is my word - Game. Add 2 more words to
+      the chain.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: 'Sure, here is the updated chain - England, Dog. Your turn!'
+    context: >-
+      Objective: The goal of Word Chain is to create a chain of words where each
+      word starts with the last letter of the previous word. Starting Word: The
+      game begins with one player choosing a word to start the chain. This word
+      can be any word of their choosing. Continuing the Chain: The next player
+      must respond with a word that starts with the last letter of the previous
+      word. For example, if the previous word was 'apple' the next word could be
+      'elephant' or 'egg.' Winning the game: Players must avoid repeating words
+      that have already been used in the current game. If a player repeats a
+      word, they lose the round. Length of Chain: The game can continue for as
+      many rounds as players like, with each player taking turns contributing to
+      the word chain. The longer the chain, the more challenging the game
+      becomes. Constraints: The game can also be played with constraints like
+      playing with only fruit names, places, or dishes to make it more
+      interesting.
+    question: Shall we play word chain game? Here is my first word - England
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: 'Sure, let me start first, "Apple". Your turn!'
+    context: >-
+      Objective: The goal of Word Chain is to create a chain of words where each
+      word starts with the last letter of the previous word. Starting Word: The
+      game begins with one player choosing a word to start the chain. This word
+      can be any word of their choosing. Continuing the Chain: The next player
+      must respond with a word that starts with the last letter of the previous
+      word. For example, if the previous word was 'apple' the next word could be
+      'elephant' or 'egg.' Winning the game: Players must avoid repeating words
+      that have already been used in the current game. If a player repeats a
+      word, they lose the round. Length of Chain: The game can continue for as
+      many rounds as players like, with each player taking turns contributing to
+      the word chain. The longer the chain, the more challenging the game
+      becomes. Constraints: The game can also be played with constraints like
+      playing with only fruit names, places, or dishes to make it more
+      interesting.
+    question: Shall we play word chain?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      "Sure, I'm adding Europe to word chain which starts from 'e' from the last
+      letter of Rope. So the chain is now -  Apple, Eagle, Egypt, Tiger, Rope,
+      Europe"
+    context: >-
+      Objective: The goal of Word Chain is to create a chain of words where each
+      word starts with the last letter of the previous word. Starting Word: The
+      game begins with one player choosing a word to start the chain. This word
+      can be any word of their choosing. Continuing the Chain: The next player
+      must respond with a word that starts with the last letter of the previous
+      word. For example, if the previous word was 'apple' the next word could be
+      'elephant' or 'egg.' Winning the game: Players must avoid repeating words
+      that have already been used in the current game. If a player repeats a
+      word, they lose the round. Length of Chain: The game can continue for as
+      many rounds as players like, with each player taking turns contributing to
+      the word chain. The longer the chain, the more challenging the game
+      becomes. Constraints: The game can also be played with constraints like
+      playing with only fruit names, places, or dishes to make it more
+      interesting.
+    question: >-
+      "Shall we play word chain? Here are 5 words in the chain - Apple, Eagle,
+      Egypt, Tiger, Rope, give me the next one"
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: 'Sure, Adding "Task" to the chain. Your turn!'
+    context: >-
+      Objective: The goal of Word Chain is to create a chain of words where each
+      word starts with the last letter of the previous word. Starting Word: The
+      game begins with one player choosing a word to start the chain. This word
+      can be any word of their choosing. Continuing the Chain: The next player
+      must respond with a word that starts with the last letter of the previous
+      word. For example, if the previous word was 'apple' the next word could be
+      'elephant' or 'egg.' Winning the game: Players must avoid repeating words
+      that have already been used in the current game. If a player repeats a
+      word, they lose the round. Length of Chain: The game can continue for as
+      many rounds as players like, with each player taking turns contributing to
+      the word chain. The longer the chain, the more challenging the game
+      becomes. Constraints: The game can also be played with constraints like
+      playing with only fruit names, places, or dishes to make it more
+      interesting.
+    question: >-
+      Shall we play word chain? Here are 25 words in the chain - Butter, Rabbit,
+      Tiger, River, Rope, England, Dog, Goat, Timber, Rage, Elephant, Tissue,
+      Engine, Equator, Rocket, Twinkle. East, Turkey, Yak, Kangaroo, Oats,
+      Silver, Road, Driver, Rest.  give me the one which is not in the chain.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+task_description: >-
+  Word Chain is a simple and engaging word game where players take turns saying
+  a word, and each word must start with the last letter of the previous word.
+  The objective is to create a chain of words that continues as long as possible
+  without repeating words.
+
