@@ -1,0 +1,151 @@
+created_by: dankenigsberg
+seed_examples:
+- answer: |
+    To solve the system of linear equations using matrices, we first represent the system as a matrix equation:
+
+    [ x ] = [ 1,  1 ] [ 4 ]
+    [ y ]   [ 1, -1 ] [ 2 ]
+
+    This can be written in the form Az = b, where
+
+    A = [ 1,  1 ]
+        [ 1, -1 ]
+
+    b = [ 4 ]
+        [ 2 ]
+
+    z = [ x ]
+        [ y ]
+
+    Now, we can find the determinant of A:
+
+    det(A) = (1)(-1) - (1)(1) = -1 - 1 = -2
+
+    Since det(A) ≠ 0, the system has a unique solution. To find the inverse of A, we can use the formula:
+
+    A^(-1) = det(A)^(-1) * adj(A)
+
+    where adj(A) is the adjugate matrix of A. In this case,
+
+    A^(-1) = (-2)^(-1) * [ -1, -1 ] =
+                         [ -1,  1 ]
+
+           = -1/2 * [ -1, -1 ]
+                    [ -1,  1 ]
+
+           = [ 1/2,  1/2 ]
+             [ 1/2, -1/2 ]
+
+    Finally, we can find the solution z:
+
+    z = A^(-1) * b
+    z = [ x ] = [ 1/2,  1/2 ] [ 4 ] =
+        [ y ]   [ 1/2, -1/2 ] [ 2 ]
+
+      = [ (1/2)(4) +  (1/2)(2) ] =
+        [ (1/2)(4) + (-1/2)(2) ]
+
+      = [ 2 + 1 ] =
+        [ 2 - 1 ]
+
+      = [3]
+        [1]
+
+    So, the value of x is 3 and the value of y is 1.
+
+    We can verify the solution by substituting x=3 and y=1 in the equations. Indeed,
+    3+1=4 and 3-1=2.
+  context: x+y=4 and x-y=2
+  question: What are the values of x and y? Please solve using martices.
+- answer: |
+    To solve the system of linear equations using matrices, we first represent the system as a matrix equation:
+
+    [ x ] = [ 1,  1 ] [ 2 ]
+    [ y ]   [ 1, -1 ] [ 2 ]
+
+    This can be written in the form Az = b, where
+
+    A = [ 1,  1 ]
+        [ 1, -1 ]
+
+    b = [ 2 ]
+        [ 2 ]
+
+    z = [ x ]
+        [ y ]
+
+    Now, we can find the determinant of A:
+
+    det(A) = (1)(-1) - (1)(1) = -1 - 1 = -2
+
+    Since det(A) ≠ 0, the system has a unique solution. To find the inverse of A, we can use the formula:
+
+    A^(-1) = det(A)^(-1) * adj(A)
+
+    where adj(A) is the adjugate matrix of A.
+
+    For a general 2x2 matrix
+       adj ( [ a, b ] )  = [  d, -b ]
+             [ c, d ]      [ -c,  a ]
+
+    So in this case,
+       adj(A) = [ -1, -1 ]
+                [ -1,  1 ]
+    and
+
+    A^(-1) = (-2)^(-1) * [ -1, -1 ] =
+                         [ -1,  1 ]
+
+           = -1/2 * [ -1, -1 ]
+                    [ -1,  1 ]
+
+           = [ 1/2,  1/2 ]
+             [ 1/2, -1/2 ]
+
+    Finally, we can find the solution z:
+
+    z = A^(-1) * b
+    z = [ x ] = [ 1/2,  1/2 ] [ 4 ] =
+        [ y ]   [ 1/2, -1/2 ] [ 2 ]
+
+      = [ (1/2)(2) +  (1/2)(2) ] =
+        [ (1/2)(2) + (-1/2)(2) ]
+
+      = [ 1 + 1 ] =
+        [ 1 - 1 ]
+
+      = [2]
+        [0]
+
+    So, the value of x is 2 and the value of y is 0.
+
+    We can verify the solution by substituting x=2 and y=0 in the equations. Indeed,
+    2+0=2 and 2-0=2.
+  context: x+y=2 and x-y=2
+  question: Please solve using the inverse matrix.
+- answer: |
+    To solve the system of linear equations using matrices, we first represent the system as a matrix equation:
+
+    [ x ] = [ 1,  1 ] [ 2 ]
+    [ y ]   [ 2,  2 ] [ 4 ]
+
+    This can be written in the form Az = b, where
+
+    A = [ 1,  1 ]
+        [ 2,  2 ]
+
+    b = [ 2 ]
+        [ 4 ]
+
+    z = [ x ]
+        [ y ]
+
+    Now, we can find the determinant of A:
+
+    det(A) = (1)(2) - (1)(2) = 2 - 2 = 0
+
+    Since det(A) ≠ 0, the inverse of A is not defied, and the system does not have a unique solution.
+    We can only find y as a function of x: y=2-x .
+  context: x+y=2 and 2x+2y=4
+  question: Please solve using the inverse matrix.
+task_description: 'Solving a system of two linear equations using martices'
