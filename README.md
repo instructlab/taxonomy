@@ -41,7 +41,7 @@ There are two types of compositional skills:
      pirate." You could provide examples of "pirate-like" speech. By providing
      those examples, you're essentially tickling the latent knowledge of the
      LLM. In our "talk like a pirate" example, you're enabling the LLM to be
-     able to recall pirate-like speechs in its latent knowledge.
+     able to recall pirate-like speeches in its latent knowledge.
       
 2. **Grounded Compositional Skills**:
 
