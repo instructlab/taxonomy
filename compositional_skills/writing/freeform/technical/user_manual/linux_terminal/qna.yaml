@@ -1,9 +1,8 @@
 created_by: afsilva
 seed_examples:
-  - answer: 'In many Linux terminal emulators, pressing Ctrl+T swaps the
-      positions of the characters before and after the cursor. This action
-      is commonly known as "transpose characters" or "transpose words."
-      A useful keyboard shortcut for quickly correcting typing mistakes
-      or rearranging text.'
+  - answer: 'Pressing Ctrl+T in most Linux terminals swaps the
+      positions of the two characters closes to the curser. The T stands
+      for transpose. For example, if a user mistypes: "suod" and hits 
+      Ctrl+T the terminal will fix the command to "sudo".'
     question: What does Ctrl+T do in the linux terminal?
 task_description: 'Fix for Ctrl+T explaination for the linux terminal'
