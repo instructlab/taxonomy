@@ -23,9 +23,9 @@ seed_examples:
   - question: How many moons are in orbit in the Solar System?
     answer: |
       There are at least nineteen planetary-mass moons or satellite planets - moons large enough to take on ellipsoidal orbits.
-        1. One satellite of Earth: the Moon
-        2. Four satellites of Jupiter: Io, Europa, Ganymede, and Callisto
-        3. Seven satellites of Saturn: Mimas, Enceladus, Tethys, Dione, Rhea, Titan, and Iapetus
-        4. Five satellites of Uranus: Miranda, Ariel, Umbriel, Titania, and Oberon
-        5. One Satellite of Neptune: Triton
-        6. One satellite of Pluto: Charon
+      1. One satellite of Earth: the Moon
+      2. Four satellites of Jupiter: Io, Europa, Ganymede, and Callisto
+      3. Seven satellites of Saturn: Mimas, Enceladus, Tethys, Dione, Rhea, Titan, and Iapetus
+      4. Five satellites of Uranus: Miranda, Ariel, Umbriel, Titania, and Oberon
+      5. One Satellite of Neptune: Triton
+      6. One satellite of Pluto: Charon
