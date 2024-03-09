@@ -1,0 +1,26 @@
+created_by: nhr
+seed_examples:
+  - answer: 'Beat juggling is a DJing technique that has its origins in
+      turntable mixing. In beat juggling, the DJ manipulates audio samples on
+      physical turntables or jog wheels to create a new rhythmic pattern that is
+      a unique combination of the original recordings. Often, there is a
+      performance component to beat juggling. DJs may move around their
+      performance space as they beat juggle, physically turn around and do some
+      of the mixing behind their back, or move through a precise series of
+      quickly orchestrated movements to create the rhythmic pattern they are
+      performing. Beat juggling has its roots in the earliest forms of DJing,
+      when in order to create the effect of a musical loop with vinyl records,
+      DJs would use two identical records and play the "looping" section on one
+      turntable while cutting the volume and spinnging the vinyl on the other
+      turntable back to the begging of the section, and then cutting back to the
+      original turntable when it is time to start the loop again.'
+    question: 'What is beat juggling?'
+  - answer: 'A callback is a DJing technique where the DJ will replay part of a
+      track that they performed earlier in their set. The callback is usually
+      not a second straight playthrough, but instead may be a recognizable
+      verse, or a remix of the song in a different tempo and style. Another way
+      of using the callback is by opening with a well known song, mixing an
+      extended departure in the middle of a track, and then coming back to that
+      point in the first song and completing it before moving on to the next
+      track in the set.'
+    question: 'What is a callback?'
