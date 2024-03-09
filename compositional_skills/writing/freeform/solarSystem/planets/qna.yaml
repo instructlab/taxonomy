@@ -1,0 +1,31 @@
+created_by: Josh Disraeli 
+task_description: |
+  This task aims to provide information about the eight plants in our Solar System.
+seed_examples:
+  - question: How many planets are in the Solar System?
+    answer: |
+      The Solar System has at least eight planets.
+  - question: Is there any categorization of the planets in the Solar System?
+    answer: |
+      The planets are split into two categories. There are the terrestrial planets, which consist of Mercury, Venus, Earth and Mars. The other category is giant planets, which consists of Jupiter, Saturn, Uranus, and Netptune.
+  - question: Are planets the only objects in our Solar System?
+    answer: |
+      No, there a more objects in the Solar System besides planets. To name a few, there are moons that orbit planets, there is the Sun that all planets orbit around, and there are asteroids.
+  - question: Why are the two categories of planets call terrestrial and giant?
+    answer: |
+      A terrestrial planet, telluric planet, or rocky planet, is a planet that is composed primarily of silicate rocks or metals. Within the Solar System, the terrestrial panets accpted by the IAU are the inner plaets closest to the Sun: Mercury, Venus, Earth, and Mars. A giant planet is a diverse type of planet larger than Earth. They are usually primarily composed of low-boiling point materials (volatiles), rather than rock or other solid matter, but massive solid planets can also exist. There are four known planets in the Solar System: Jupiter, Saturn, Uranus, and Neptune.
+  - question: Are these the only planets that humanity has discovered?
+    answer: |
+      There are many other planets in the Universe that have been discovered through further advances in astronomy. These advances have led to the discovery of over five thousand planets outside the Solar System, termed exoplanets. These often show unusual features that the Solar System planets do not show, such as hot Jupiters, which are giant planets that orbit closer to their parent stars. One of these hot Jupiter planets is name 51 Pegasi b.
+  - question: What are some key differences between the planets in the Solar System?
+    answer: |
+      The planets are of varying size. The largest is Jupiter and the smallest is Mercury. The giant planets are not only significantly larger that the terrestrial planets, they are also different in composition. While the terrestrial planets are composed of rock and metal just like Earth, the giants are composed of either gas or ice. The has giants are Jupiter and Saturn, which are primarily composed of hydrogen and helium and are the most massive planets in the Solar System. The ice giants, Uranus and Neptune, are primarily composed of low-boiling-point materials such as water, methane, and ammonia, with thick atmospheres of hydrogen and helium.
+  - question: How many moons are in orbit in the Solar System?
+    answer: |
+      There are at least nineteen planetary-mass moons or satellite planets - moons large enough to take on ellipsoidal orbits.
+        1. One satellite of Earth: the Moon
+        2. Four satellites of Jupiter: Io, Europa, Ganymede, and Callisto
+        3. Seven satellites of Saturn: Mimas, Enceladus, Tethys, Dione, Rhea, Titan, and Iapetus
+        4. Five satellites of Uranus: Miranda, Ariel, Umbriel, Titania, and Oberon
+        5. One Satellite of Neptune: Triton
+        6. One satellite of Pluto: Charon
