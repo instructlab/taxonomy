@@ -1,0 +1,30 @@
+task_description: |
+  Describe how to operate a wood burning stove
+created_by: devop-mmcgrath
+seed_examples:
+  - question: How do you light a fire in a wood burning stove?
+    answer: >
+      Start by opening the damper.  If your stove has a catalytic converter make
+      sure it is not engaged.  Place four crumpled up pieces of paper and then
+      place kindling on top of it in a "log cabin" formation.  The first few
+      layers should be small at first, thumb size and smaller.  Place two wrist
+      sized logs on top of the kindling.  Once that is fully enflamed, you can
+      add two more larger pieces of wood on top.  Make sure they are fully on
+      fire before closing your stove's door.
+  - question: How do I prevent smoke from coming into my house while lighting?
+    answer: >
+      Make sure the flue is open and if you have a catalytic converter, make
+      sure it is off.  While lighting, crack a window.  Also, you can "prime"
+      the flue.  If you have a welding torch you can heat the top of your stove
+      for 20-30 seconds.  This gets the cold air stuck in the chimney moving
+      upwards.  Also, make sure you are using very dry hard wood and that it is
+      smaller pieces.  The larger pieces take a while and they smoke while
+      coming up to temperature.
+  - question: How do I keep my glass clean?
+    answer: >
+      If you have a temperature control on your stove, make sure not to close
+      off oxygen to the fire before the fireplace *and* the wood have come up to
+      temperature.  If you do so, the wood will start to burn uncleanly and will
+      deposit on the stove.  If fully loading the stove, this can take up to 45
+      minutes for the inner parts of the wood and stove to come up to temp even
+      if the outside of them is on fire.
