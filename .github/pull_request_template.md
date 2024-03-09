@@ -42,7 +42,7 @@ following questionnaire with whatever information is applicable to your PR.
 
 <!-- Insert an x between the empty brackets: [ ] >> [x] -->
 
-- [ ] tested contribution with `lab generate`
-- [ ] `lab generate` does not produce any warnings or errors
-- [ ] all [commits are signed off](https://github.com/instruct-lab/taxonomy/blob/main/CONTRIBUTING.md#legal) (DCO)
-- [ ] the `qna.yaml` file was [linted](https://yamllint.com)
+- [ ] Contribution was tested with `lab generate`
+- [ ] No errors or warnings were produced by `lab generate`
+- [ ] All [commits are signed off](https://github.com/instruct-lab/taxonomy/blob/main/CONTRIBUTING.md#legal) (DCO)
+- [ ] The `qna.yaml` file was [linted](https://yamllint.com) and [prettified](https://onlineyamltools.com/prettify-yaml) ([yaml-validator](https://jsonformatter.org/yaml-validator) can do both)
