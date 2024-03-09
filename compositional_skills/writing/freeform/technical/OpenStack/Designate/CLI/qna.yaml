@@ -36,3 +36,24 @@ seed_examples:
       ```bash
       oepnstack zone create --email admin@example.com --ttl 300 example.com.
       ```
+  - question: |
+      How do you create a zone, with a description, using the OpenStack
+      client?
+    answer: |
+      To create a zone that specifies a description using the OpenStack client,
+      you can use the following command:
+      ```bash
+      openstack zone create --email <zone-email> --description
+      <zone-description> <zone-name>
+      ```
+      Replace `<zone-email>`, `<zone-description>`, and `<zone-name>` with
+      the actual values you want to use for your zone. The zone name must be
+      a fully qualified domain name.
+
+      For example, to create a zone for `example.com` with an administrative
+      email address of `admin@example.com` and description of `example zone`,
+      you would use the following command:
+      ```bash
+      oepnstack zone create --email admin@example.com --description
+      'example zone' example.com.
+      ```
