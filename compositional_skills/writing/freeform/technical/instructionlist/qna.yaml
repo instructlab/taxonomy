@@ -1,0 +1,83 @@
+created_by: derekhiggins
+seed_examples:
+- question: |
+    You are asked to come up with a set of 5 diverse task instructions under compositional_skills->writing->freeform->words->wordopposites for the task "Describing the opposite of a word". These task instructions will be given to a GPT model and we will evaluate the GPT model for completing the instructions.
+
+    Here are the requirements:
+    1. The instructions should be in English.
+
+    List of 5 tasks:
+
+    ###
+    1. Instruction: What is the opposite of Hot
+    1. Input:
+    <noinput>
+    1. Output:
+    Cold
+    ###
+    2. Instruction: What is the opposite of Big
+    2. Input:
+    <noinput>
+    2. Output:
+    Small
+    ###
+    3. Instruction:
+  answer: |
+    What is the opposite of Heavy
+    3. Input:
+    <noinput>
+    3. Output: Light
+    Friendship is a deep bond with trust and loyalty
+    ###
+    4. Instruction: Dark
+    4. Input:
+    <noinput>
+    4. Output:
+    Ligth
+    ###
+    5. Instruction: What is the opposite of Fast
+    5. Input:
+    <noinput>
+    5. Output:
+    Slow
+- question: |
+    You are asked to come up with a set of 5 diverse task instructions under compositional_skills->writing->freeform->places->capital for the task "Get the capilal city of a country". These task instructions will be given to a GPT model and we will evaluate the GPT model for completing the instructions.
+
+    Here are the requirements:
+    1. The instructions should be in English.
+
+    List of 5 tasks:
+
+    ###
+    1. Instruction: What is the capital of Ireland
+    1. Input:
+    <noinput>
+    1. Output:
+    Dublin
+    ###
+    2. Instruction: What is the capital of Canada
+    2. Input:
+    <noinput>
+    2. Output:
+    Ottawa
+    ###
+    3. Instruction:
+  answer: |
+    What is the capital of Brazil
+    3. Input:
+    <noinput>
+    3. Output:
+    Brasília
+    ###
+    4. Instruction: What is the capital of australia
+    4. Input:
+    <noinput>
+    4. Output:
+    Canberra
+    ###
+    5. Instruction: What is the capital of Thailand
+    5. Input:
+    <noinput>
+    5. Output:
+    Bangkok
+task_description: 'Sample instructions to generate instructions for a LLM'
