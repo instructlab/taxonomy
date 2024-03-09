@@ -69,35 +69,42 @@ Skills require a much smaller volume of content to contribute. A skill
 contribution to the taxonomy tree can be just a few lines of YAML (its
 `qna.yaml` file - "qna" is short for "questions and answers") in its entirety:
 
+Each `qna.yaml` file is required to contain a minimum of three question-answer
+pairs. The `qna.yaml` format should include the following fields:
+
+- `seed_examples` (three or more examples of question and answer pairs)
+- `created_by` (your GitHub username)
+- `task_description` (an optional description of the knowledge).
+
 #### Freeform compositional skill: YAML example
 
 This example assumes the GitHub username `mairin`:
 
 ``` yaml
+task_description: |
+  The pun task enables the telling of funny pun-based jokes.
 created_by: mairin # Use your GitHub username; only one creator supported
 seed_examples:
-  - answer: |  # The | is needed to escape characters like ` or '
+  - question: Tell me a pun about birds.
+    answer: |  # The | is needed to escape characters like ` or '
       Why do birds eat wood?
       
       Because they're peckish!
-    question: Tell me a pun about birds.
-  - answer: |
+  - question: Tell me a pun about x-rays.
+    answer: |
       What do dentists call their x-rays?
 
       Tooth pics!
-    question: Tell me a pun about x-rays.
-  - answer: |
+  - question: Tell me a pun about gas.
+    answer: |
       Why did the car have a belly ache?
 
       Because it had too much gas!
-    question: Tell me a pun about gas.
-  - answer: |
+  - question: Tell me a pun about waves.
+    answer: |
       What did the ocean say to the ocean?
 
       Nothing. It just waved!
-    question: Tell me a pun about waves.
-task_description: |
-  The pun task enables the telling of funny pun-based jokes.
 ```
 
 Seriously, that's it.
@@ -125,29 +132,29 @@ in terms of a taxonomy contribution:
 [...]
 ```
 
-#### Grounded compositionial skill: YAML example
+#### Grounded compositional skill: YAML example
 
 Remember that grounded compositional skills require additional context
 
 This example assumes the GitHub username `mairin`:
 
 ``` yaml
+task_description: | 
+    This skill provides the ability to read a markdown-formatted table.
 created_by: mairin # Use your GitHub username; only one creator supported
 seed_examples:
-  - answer: |
-      The breed with the most energy is the InstructLab.
-    context: |
+  - context: |
       | **Breed**      | **Size**     | **Barking** | **Energy** |
       |----------------|--------------|-------------|------------|
       | Afghan Hound   | 25-27 in     | 3/5         | 4/5        |
-      | InstructLab    | 22.5-24.5 in | 3/5         | 5/5        |
+      | Labrador       | 22.5-24.5 in | 3/5         | 5/5        |
       | Cocker Spaniel | 14.5-15.5 in | 3/5         | 4/5        |
       | Poodle (Toy)   | <= 10 in     | 4/5         | 4/5        |
     question: |
       Which breed has the most energy?
-  - answer: |
-      Gráinne's letter is B and her color is red.
-    context: |
+    answer: |
+      The breed with the most energy is the Labrador.
+  - context: |
       | **Name** | **Date** | **Color** | **Letter** | **Number** |
       |----------|----------|-----------|------------|------------|
       | George   | Mar 5    | Green     | A          | 1          |
@@ -157,9 +164,9 @@ seed_examples:
       | Rémy     | Sep 9    | Blue      | E          | 5          |
     question: |
       What is Gráinne's letter and what is her color?
-  - answer: |
-      The blueberry is blue, small, and has no peel.
-    context: |
+    answer: |
+      Gráinne's letter is B and her color is red.
+  - context: |
       | Banana | Apple      | Blueberry | Strawberry |
       |--------|------------|-----------|------------|
       | Yellow | Red, Green | Blue      | Red        |
@@ -167,8 +174,8 @@ seed_examples:
       | Peel   | Peel       | No peel   | No peel    |
     question: |
       Which fruit is blue, small, and has no peel?
-task_description: | 
-    This skill provides the ability to read a markdown-formatted table.
+    answer: |
+      The blueberry is blue, small, and has no peel.
 ```
 
 #### Grounded compositional skill: Directory tree example
@@ -211,37 +218,37 @@ pairs. The `qna.yaml` format should include the following fields:
 
 - `seed_examples` (three or more examples sourced from the provided knowledge
   documents)
-- `created_by` (your name)
+- `created_by` (your GitHub username)
 - `task_description` (an optional description of the knowledge).
 
 #### Knowledge: yaml example
 
 ``` yaml
+task_description: |
+  Knowledge about Taylor Swift's music.
 created_by: mairin   # Use your GitHub username; only one creator supported
 seed_examples:
-  - answer: |
+  - question: |
+      Is Taytay coming to Boston in 2024?
+    answer: |
       Not that is known yet. Taylor Swift last performed in the Boston area at 
       the Gilette Stadium in Foxboro, MA for 3 nights from Friday May 19, 2023 
       to Sunday May 21, 2023. In 2024, she is making international tour stops 
       for her Eras tour outside of the United States.
-    question: |
-      Is Taytay coming to Boston in 2024?
-  - answer: |
+  - question: |
+      Which album was released more recently, Reputation or Midnights?
+    answer: |
       The Taylor Swift Album Reputation was released on November 10, 2017. 
       Midnights was released October 21, 2022. Midnights was released more 
       recently, but there are rumors that there will be a re-release of 
       Reputation called Reputation (Taylor's version) in the later half of 2024 
       which would make that the most recently-released album of the set at that 
       time.
-    question: |
-      Which album was released more recently, Reputation or Midnights?
-  - answer: |
+  - question: |
+      Which album has the song "You Need to Calm Down?"
+    answer: |
       The song "You Need to Calm Down" appears on Taylor Swift's 2019 album 
       Lover as track 14.
-    question: |
-      Which album has the song "You Need to Calm Down?"
-task_description: |
-  Knowledge about Taylor Swift's music.
 ```
 
 This knowledge references two markdown files: 
@@ -322,27 +329,36 @@ referenced above might look like in the tree:
 
 Taxonomy skill files can be any valid [YAML](https://yaml.org/) file ending in
 `.yaml` containing a set of key/value entries, in which the following three
-keys are recognized: `created_by`, `seed_examples`, and `task_description`.
+keys are recognized: `task_description`, `created_by`, and `seed_examples`.
 
+* The value of the `task_description` key can be any string.
 * The value of the `created_by` key can be any string.
 * The value of the `seed_examples` key is a collection of one or more key/value entries in which the
-two recognized keys are: `question` and `answer`, each of which can have any string
-as value. For an entry to be valid, it **MUST** have both the question and answer specified. 
-* The value of the `task_description` key can be any string.
+three recognized keys are: `context`, `question`, and `answer`, each of which can have any string
+as value. For an entry to be valid, it **MUST** have the question and answer specified. 
 
 Other keys at any level are currently ignored.
+
+To make these files easier and faster for humans to read, it is recommended to 
+specify the `task_description` first, followed by `created_by`, and finally 
+`seed_examples`. In `seed_examples`, it is recommended to specify the `context` 
+first (if applicable), followed by the `question`, and finally the `answer`.
 
 So in essence the format looks something like this:
 
 ``` yaml
+task_description: <string>
 created_by: <string>
 seed_examples:
-   - answer: <string>
-     question: <string>
-   - answer: <string>
-     question: <string>
-   ...  
-task_description: <string>
+  - question: <string>
+    answer: |
+      <multi-line string>
+  - context: |
+      <multi-line string>
+    question: <string>
+    answer: |
+      <multi-line string>
+  ...  
 ```
 
 
@@ -352,11 +368,13 @@ There's a few things to know:
 - Spaces and indentation matter in YAML. Two spaces to indent.
 - Don't use tabs!
 - Be careful to not have trailing spaces at the end of a line.
-- The line for the `answer` key should start with a "-", but the other keys
-  should not have this "-".
+- Each example in `seed_examples` should start with a "-". Place this "-" in
+  front of the first field (`question` or `context`). The remaining keys in the
+  example should not have this "-".
 - Some special characters such as " and ' need to be "escaped." This is why some
   of the lines for keys in the example YAML we provided have the "|" character.
   This character escapes all of the special characters in the value for the key.
+  You may also want to use the "|" character for multi-line strings.
 
 It is recommended that you **lint**, or check that the YAML is correct using a
 tool. There is a very nice website you can use to do this:
