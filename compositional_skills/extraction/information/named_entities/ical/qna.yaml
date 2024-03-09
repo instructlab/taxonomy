@@ -28,6 +28,7 @@ seed_examples:
       CLASS:PRIVATE
       END:VEVENT
       END:VCALENDAR
+  <<: *trains
 
 - question: Please provide the departure and arrival times for events in this ICS file.
   answer: |
@@ -85,6 +86,7 @@ seed_examples:
       X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
       X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
       END:VEVENT
+  <<: *christmas
 
 - question: When was the event in this ICS file created?
   answer: The event in the ICS (iCalendar) data was created on July 24, 2023.  This is indicated by the CREATED (**Creation Date and Time**) field.
@@ -127,6 +129,7 @@ seed_examples:
       TRIGGER:-PT10M
       END:VALARM
       END:VEVENT
+  <<: *meeting
 
 - question: Do the events in this ICS format file occur multiple times?
   answer: |
