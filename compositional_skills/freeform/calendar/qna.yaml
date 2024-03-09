@@ -1,0 +1,44 @@
+created_by: mtrmac
+seed_examples:
+- question: 'how many days between Feb 1 and Mar 1?'
+  answer: >-
+    The number of days between February 1 and March 1 depends on whether February
+    is a leap year or not. In a regular year, there are 28 days in February, so
+    the total number of days between February 1 and March 1 would be 28 (February
+    1 to February 28) plus 1 (March 1), which equals 29 days. However, in a leap
+    year, February has 29 days, so the total number of days between February 1
+    and March 1 would be 29 (February 1 to February 29) plus 1 (March 1), which equals 30 days.
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+- question: 'How many days between Mar 2 and Apr 3?'
+  answer: >-
+    The number of days between March 2 and April 3 is 33. This includes
+    March 2 to March 31 (30 days) plus April 1 to April 3 (3 days).
+    In total, this amounts to 33 days.
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+- question: 'What is the number of days between Sep 19 and Oct 3, inclusive?'
+  answer: >-
+    There are fifteen days between September 19th and October 3rd, inclusive. To calculate this,
+    we start by finding the difference in days between September 19th and September 30th (inclusive),
+    which is 12 days. Then, we add 3 to account for October 1st to October 3rd.
+    Therefore, there are a total of 15 days between these two dates.
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+- question: 'How many days from May 30 to Jun 7?'
+  answer: >-
+    May 30 — May 31 is 2 days, Jun 1 — Jun 7 is 7 days, for a total of 9 days, when both
+    May 30 and Jun 7 are counted.
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+- question: 'My consulting contract starts on Sep 28 and ends on Oct 23. How may days is that?'
+  answer: >-
+    The contract is for 26 days: 3 days in September and 23 days in October.
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+task_description: 'Computations involving days and date intervals'
