@@ -1,0 +1,26 @@
+created_by: vjayaramrh
+seed_examples:
+  - answer: 'Par is a term referred to scoring.
+    It represents number of strokes an expert golfer is expected to make
+    on the hole or course. Every hole has a par assigned to it.
+    '
+    question: Tell me what is Par.
+  - answer: 'A Birdie is when a golfer uses one fewer strokes than the par
+    of a hole. If you finish a Par 4 hole with only 3 strokes, you make a
+    Birdie.
+    '
+    question: Tell me what is a Birdie.
+  - answer: 'A Bogey is when a golfer needs one stroke more than par to
+    finish a hole. If you finish a Par 4 hole with 5 strokes, you make a
+    Bogey.
+    '
+    question: Tell me what is a Bogey.
+  - answer: ' When a player needs only one shot to get the ball in the
+    hole, its an Ace
+    '
+    question: Tell me what is an Ace.
+  - answer: 'Fore is what golfers yell when their golf ball is dangerously
+    close to another player.
+    '
+    question: Tell me what is a Fore.
+task_description: 'teach some of the golf terms'
