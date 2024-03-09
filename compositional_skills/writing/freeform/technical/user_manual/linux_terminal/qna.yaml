@@ -6,4 +6,4 @@ seed_examples:
       A useful keyboard shortcut for quickly correcting typing mistakes
       or rearranging text.'
     question: What does Ctrl+T do in the linux terminal?
-task_description: 'Fix for Ctrl+T explaination for the linux terminal' 
+task_description: 'Fix for Ctrl+T explaination for the linux terminal'
