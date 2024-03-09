@@ -1,0 +1,19 @@
+created_by: ohsukaknag
+seed_examples:
+  - answer: 'No, 2023 is not a leap year. It has 365 days.'
+    question: Is 2023 a leap year?
+  - answer: 'Yes, 2024 is a leap year. It has 366 days.'
+    question: Is 2024 a leap year?
+  - answer: '2027 has 365 days, because it is not a leap year.'
+    question: How many days does the year 2027 have?
+  - answer: '2028 has 366 days, because it is a leap year.'
+    question: How many days does the year 2028 have?
+  - answer: >-
+      2000, 2004, 2008, 2012, 2016, 2020 and 2024 are examples of leap years,
+      they have 366 days.
+    question: What are some examples of leap years?
+  - answer: >-
+      2001, 2005, 2005, 2011, 2017, 2022 and 2025 are examples of common years,
+      they have 365 days.
+    question: What are some examples of years that are not leap?
+task_description: Provide information about leap years
