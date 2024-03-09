@@ -384,6 +384,11 @@ tool. There is a very nice website you can use to do this:
 You can copy/paste your YAML into the box and click the "Go" button to have it
 analyse your YAML and make recommendations.
 
+Online tools like [prettified](https://onlineyamltools.com/prettify-yaml) and
+[yaml-validator](https://jsonformatter.org/yaml-validator) can automatically
+reformat your YAML to adhere to our `yamllint` PR checks, like breaking lines
+longer than 120 characters.
+
 ## Layout
 
 The taxonomy tree is organized in a cascading directory structure. At the end of
