@@ -417,6 +417,21 @@ Below is an illustrative directory structure to show this layout:
 
 For an extensive example of this layout see, [taxonomy_tree_layout](https://github.com/instructlab/taxonomy/tree/main/docs/taxonomy_tree_layout.md) in the documentation folder.
 
+## Dynamic `qna.yaml` generation
+
+For some skills, it may make sense to instead generate `qna.yaml` files
+programmatically. In this case, instead of manually defining a `qna.yaml` file,
+you can provide a `Containerfile` that, once built, could be executed to
+produce the intended `qna.yaml` file.
+
+The interface of a dynamic `qna.yaml` generator is as follows:
+
+- The taxonomy file is a `Containerfile` (or `Dockerfile`).
+- The container should define a `CMD` command that, once executed, will put the
+  intended `qna.yaml` file under `/out/qna.yaml` location.
+- The CLI will then run the generator, then use the resulting `qna.yaml` file
+- as a seed input, as usual.
+
 ## Contribute knowledge and skills to the taxonomy!
 
 The ability to contribute to a Large Language Model (LLM) has been difficult in no small part because it is difficult to get access to the necessary compute infrastructure.

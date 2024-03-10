@@ -1,0 +1,3 @@
+#!/bin/sh
+lang=$1
+aspell -d $lang dump master | aspell -l $lang expand | sed 's/ /\n/g'
