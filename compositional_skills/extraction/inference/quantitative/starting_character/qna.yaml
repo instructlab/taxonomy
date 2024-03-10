@@ -1,0 +1,38 @@
+created_by: grulja
+seed_examples:
+  - answer: 'car, coffee'
+    context: I'm going by car to buy some coffee.
+    question: >-
+      List all the words that start with the character 'c' in the following
+      text:
+  - answer: 'see, snake, scared'
+    context: I see a big snake. I hope you are not scared.
+    question: >-
+      List all the words that start with the character 's' in the following
+      text:
+  - answer: 'build, been, busy'
+    context: 'Can you help me build a house? No, I''ve been pretty busy lately.'
+    question: >-
+      List all the words that start with the character 'b' in the following
+      text:
+  - answer: 'last, Lisbon, lost'
+    context: 'The last time I was in Lisbon, I lost all my money.'
+    question: >-
+      List all the words that start with the character 'l' in the following
+      text:
+  - answer: 'Playstation, probably, popular'
+    context: 'Playstation is a gaming console, probably the most popular one.'
+    question: >-
+      List all the words that start with the character 'p' in the following
+      text:
+  - answer: 'happy, hippos, have'
+    context: Africa is full of happy hippos. Have you seen one already?
+    question: >-
+      List all the words that start with the character 'h' in the following
+      text:
+  - answer: 'World, War, were'
+    context: World War 2 has ended in 1945. Those were not the good times.
+    question: >-
+      List all the words that start with the character 'w' in the following
+      text:
+task_description: ''
