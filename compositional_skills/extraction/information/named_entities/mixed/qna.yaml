@@ -1,0 +1,80 @@
+created_by: msrb
+seed_examples:
+  - answer: |
+      The names of people extracted from the given text are:
+
+      1. Newton
+      2. Nicolas Fatio de Duillier
+      3. Leibniz
+
+      The years mentioned in the text are:
+
+      1. 1691
+      2. 1693
+      3. 1699
+      4. 1711
+      5. 1716
+
+      The books mentioned in the text are:
+
+      1. Principia
+
+      The organizations mentioned in the given text are:
+
+      1. Royal Society
+    context: >
+      Newton had been reluctant to publish his calculus because he feared
+      controversy and criticism. He was close to the Swiss mathematician Nicolas
+      Fatio de Duillier. In 1691, Duillier started to write a new version of
+      Newton's Principia, and corresponded with Leibniz. In 1693, the
+      relationship between Duillier and Newton deteriorated and the book was
+      never completed. Starting in 1699, other members of the Royal Society
+      accused Leibniz of plagiarism. The dispute then broke out in full force in
+      1711 when the Royal Society proclaimed in a study that it was Newton who
+      was the true discoverer and labelled Leibniz a fraud; it was later found
+      that Newton wrote the study's concluding remarks on Leibniz. Thus began
+      the bitter controversy which marred the lives of both Newton and Leibniz
+      until the latter's death in 1716.
+    question: Extract names, years, books and organizations from the given text.
+  - answer: >
+      The names of people extracted from the given text are:
+
+      1. Antoine Marie Jean-Baptiste Roger, comte de Saint-Exupéry (referred to as Antoine de Saint-Exupéry)
+
+      The books mentioned in the text are:
+
+      1. The Little Prince (Le Petit Prince)
+      2. Wind, Sand and Stars
+      3. Night Flight (Vol de nuit)
+    context: >
+      Antoine Marie Jean-Baptiste Roger, comte de Saint-Exupéry, known simply
+      as Antoine de Saint-Exupéry (29 June 1900 - 31 July 1944), was a French
+      writer, poet, journalist and pioneering aviator. He received several
+      prestigious literary awards for his novella The Little Prince (Le Petit
+      Prince) and for his lyrical aviation writings, including Wind, Sand and
+      Stars and Night Flight (Vol de nuit). They were translated into many
+      languages.
+    question: Extract names of people and books from the given text.
+  - answer: |
+      The names of people extracted from the given text are:
+
+      1. Friedrich Wilhelm Nietzsche
+      2. Elisabeth Förster-Nietzsche
+
+      The organizations mentioned in the given text are:
+
+      1. University of Basel (organization)
+    context: >
+      Friedrich Wilhelm Nietzsche (15 October 1844 - 25 August 1900) was a
+      German philosopher. He began his career as a classical philologist before
+      turning to philosophy. He became the youngest person to hold the Chair of
+      Classical Philology at the University of Basel in 1869 at the age of 24,
+      but resigned in 1879 due to health problems that plagued him most of his
+      life; he completed much of his core writing in the following decade. In
+      1889, at age 44, he suffered a collapse and afterward a complete loss of
+      his mental faculties, with paralysis and probably vascular dementia. He
+      lived his remaining years in the care of his mother until her death in
+      1897 and then with his sister Elisabeth Förster-Nietzsche. Nietzsche died
+      in 1900, after experiencing pneumonia and multiple strokes.
+    question: Extract names of people and organizations from the given text.
+task_description: Improve the extraction of named entities from given text
