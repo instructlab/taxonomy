@@ -1,0 +1,216 @@
+created_by: benoitf
+task_description: >
+  Checks if the commit message is following the Conventional Commits
+  specification.
+seed_examples:
+  - question: >
+      Is that this commit message is following Conventional Commits
+      specification?
+    answer: >
+      yes it is following the Conventional Commits specification.
+
+      It is a new feature allowing to provide config object to extend other
+      configs.
+
+      It is a breaking change due to the BREAKING CHANGE: footer.
+    context: >
+      feat: allow provided config object to extend other configs
+
+
+      BREAKING CHANGE: `extends` key in config file is now used for extending
+      other config files
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Is that this commit message is following Conventional Commits
+      specification?
+    answer: >
+      yes it is following the Conventional Commits specification.
+
+      It is a new feature that will allow to send an email to the customer when
+      a product is shipped.
+
+      It is a breaking change due to the ! after the type/scope.
+    context: |
+      feat!: send an email to the customer when a product is shipped
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Is that this commit message is following Conventional Commits
+      specification?
+    answer: >
+      yes it is following the Conventional Commits specification.
+
+      It is a new feature for the api scope that will allow to send an email to
+      the customer when a product is shipped
+
+      It is a breaking change due to the ! after the type/scope.
+    context: |
+      feat(api)!: send an email to the customer when a product is shipped
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Is that this commit message is following Conventional Commits
+      specification?
+    answer: >
+      yes it is following the Conventional Commits specification.
+
+      It is a revert commit introduced by "let us never again speak of the
+      noodle incident" and referencing the sha 676104e and a215868.
+    context: |
+      revert: let us never again speak of the noodle incident
+
+      Refs: 676104e, a215868
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Is that this commit message is following Conventional Commits
+      specification?
+    answer: |
+      yes it is following the Conventional Commits specification.
+      It is a bug fix commit that is preventing racing of requests.
+    context: |
+      fix: prevent racing of requests
+
+      Introduce a request id and a reference to latest request. Dismiss
+      incoming responses other than from latest request.
+
+      Remove timeouts which were used to mitigate the racing issue but are
+      obsolete now.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Is that this commit message is following Conventional Commits
+      specification?
+    answer: >
+      yes it is following the Conventional Commits specification.
+
+      It is a new feature allowing to provide config object to extend other
+      configs.
+    context: |
+      feat: allow provided config object to extend other configs
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Is that this commit message is following Conventional Commits
+      specification?
+    answer: >
+      no, because there is no colon followed by a space after the noun and an
+      optional scope surrounded by parenthesis.
+    context: |
+      fix my bug
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Is that this commit message is following Conventional Commits
+      specification?
+    answer: >
+      no, because the optional scope is not surrounded by parenthesis but by
+      square brackets.
+    context: |
+      fix[invalid]: my bug
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Is that this commit message is following Conventional Commits
+      specification?
+    answer: >
+      no, because the optional scope is not surrounded by parenthesis but by
+      square brackets.
+    context: |
+      fix[invalid]: my bug
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Is that this commit message is following Conventional Commits
+      specification?
+    answer: >
+      no, because the type needs to be a noun and an optional surrounded by
+      parenthesis followed by a colon and a space.
+
+      But here, the type 'fix my bug' is too long and include spaces.
+    context: |
+      fix my bug: strange error
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Is that this commit message is following Conventional Commits
+      specification?
+    answer: >
+      no, because there is no newline between the first line describing the type
+      and description and then the body
+
+      optional body
+
+      The body MUST begin one blank line after the description.
+    context: |
+      feat: introduce something new
+      Introduce a new feature that will allow to do something new
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Is that this commit message is following Conventional Commits
+      specification?
+    answer: >
+      no, because there is a missing noung suffixed by a space and a colon
+
+      To be compliant for a new feature, it should be "feat: introduce something
+      new"
+    context: |
+      introduce something new
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Is that this commit message is following Conventional Commits
+      specification?
+    answer: |
+      yes it is a chore commit cleaning up some files.
+    context: |
+      chore: cleanup files
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Is that this commit message is following Conventional Commits
+      specification?
+    answer: >
+      yes it is following the Conventional Commits specification.
+
+      There is a noun type followed by an optional scope surrounded by
+      parenthesis, a colon followed by a space and a description.
+
+      There is an optional body that begins one blank line after the
+      description.
+
+      There is an optional footer that begins one blank line after the body.
+    context: |
+      type(optional scope): description
+
+      optional_body
+
+      optional footer
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Is that this commit message is following Conventional Commits
+      specification?
+    answer: |
+      yes it is a chore commit cleaning up some files for the api scope.
+    context: |
+      chore(api): cleanup files
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
