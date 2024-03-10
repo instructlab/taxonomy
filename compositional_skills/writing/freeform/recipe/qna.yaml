@@ -19,7 +19,6 @@ seed_examples:
 
       * Unsweetened cocoa powder
 
-
       Procedure:
 
       1. Make espresso coffee, and let it cool a bit.
@@ -43,7 +42,7 @@ seed_examples:
       9. Refrigerate for one hour or two.
 
       10. Sprinkle unsweetened cocoa powder on top just before to serve.
-    question: Create a recipe for Tiramisu
+    question: Create a recipe for tiramisu
   - answer: >-
       Classic Recipe for Panna Cotta
 
@@ -59,13 +58,11 @@ seed_examples:
 
       * 2 cups (500 ml) milk
 
-
-      Ingredients for the Red Fruit Sauce
+      Ingredients for the Red Fruit Sauce:
 
       * 100 g berries (e.g. strawberries, raspberries, blueberries)
 
       * 100 g sugar
-
 
       Procedure:
 
@@ -85,5 +82,40 @@ seed_examples:
 
       7. When ready to serve, unmold the dessert onto a plate, and decorate with
       red fruit sauce.
-    question: Create a recipe for Panna Cotta
-task_description: ''
+    question: Create a recipe for panna cotta
+  - answer: >-
+      Classic Recipe for Pesto
+
+      Ingredients:
+
+      * 4 oz (100 g) fresh basil
+
+      * About 8 oz (200 g) extra virgin olive oil
+
+      * ⅓ cup freshly grated Pecorino Romano or Parmigiano-Reggiano cheese or a
+      1:1 mixture.
+
+      * ¼ cup pine nuts or nut of choice (optional)
+
+      * 4 cloves garlic
+
+      * Freshly ground salt and pepper (to taste)
+
+      Procedure: 
+
+      1. Preheat the oven to 425 °F (220 °C).
+
+      2. If using, toast the pine nuts in an ovenproof pan for 10–15 minutes,
+      checking every 5 minutes to prevent excessive browning or burning.
+
+      3. In a small frying pan (skillet), heat 2 tbsp of the olive oil on medium
+      heat.
+
+      4. Crush the garlic and sauté in the oil until soft, about 2–3 minutes.
+
+      5. Combine the basil, garlic, cheese, pine nuts and oil in a mortar and
+      pestle until it forms a smooth paste, or use a food processor or blender
+      and chop finely, slowly adding the oil to reach the paste-like
+      consistency.
+    question: Create a recipe for pesto
+task_description: Write properly-formatted food recipes
