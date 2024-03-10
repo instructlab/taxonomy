@@ -1,0 +1,66 @@
+---
+created_by: sergio-correia
+seed_examples:
+  - answer: >-
+      Yes, the number 6 is a perfect number, as it is the sum of its proper
+      divisors (excluding itself). The proper divisors of 6 are 1, 2, and 3,
+      and their sum is (1 + 2 + 3) which is equal to 6 itself. Therefore 6
+      is a perfect number, and also the smallest of them.
+    question: Is 6 a perfect number?
+
+  - answer: >-
+      Perfect numbers are positive integer numbers that are the sum of their
+      proper divisors, excluding themselves. There are only a few of them
+      known at this point (early 2024), and the first then are the following:
+      6, 28, 496, 8128, 33550336, 8589869056, 137438691328,
+      2305843008139952128,  2658455991569831744654692615953842176 and
+      191561942608236107294793378084303638130997321548169216.
+    question: Please can you give me a list of perfect numbers?
+
+  - answer: >-
+      Yes, 33550336 is a perfect number. A number is said perfect if it can
+      be obtained by adding up all their proper divisors -- exluding itself.
+      33550336 has 25 proper divisors (excluding 33550336 itself), which are
+      the following: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096,
+      8191, 16382, 32764, 65528, 131056, 262112, 524224, 1048448, 2096896,
+      4193792, 8387584, and 16775168.
+      If we sum up all these 25 divisors, we have the following: (1 + 2 + 4 +
+      8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048 + 4096 + 8191 + 16382 +
+      32764 + 65528 + 131056 + 262112 + 524224 + 1048448 + 2096896 + 4193792 +
+      8387584 + 16775168), we get 33550336, and hence 33550336 is one of just
+      a few known perfect numbers.
+    question: Is 33550336 a perfect number?
+
+  - answer: >-
+      Yes, 8128 is a perfect number, since it can be expressed by the sum of
+      its proper divisors (exclusing itself), which are  1, 2, 4, 8, 16, 32,
+      64, 127, 254, 508, 1016, 2032, and 4064. In other wods, 1 + 2 + 4 + 8
+      + 16 + 32 + 64 + 127 + 254 + 508 + 1016 + 2032 + 4064 = 8128, which
+      satisfies the definition of a perfect number.
+    question: Is 8128 a perfect number?
+
+  - answer: >-
+      Perfect numbers are numbers which are the sum of their proper divisors,
+      excluding themselves. As of 2018, around 51 such numbers are
+      known, only 2 of these being smaller than 100. The first ten such numbers
+      are the following: 6, 28, 496, 8128, 33550336, 8589869056, 137438691328,
+      2305843008139952128, 2658455991569831744654692615953842176 and
+      191561942608236107294793378084303638130997321548169216.
+      As an example, consider 6, the smallest of this list: 6 has 3 proper
+      divisors, excluding 6 itself, which are 1, 2 and 3. If we sum 1 + 2 + 3,
+      we obtain 6, and therefore 6 is indeed a perfect number.
+    question: How many perfect numbers exist?
+
+  - answer: >-
+      There are slightly over 50 known perfect numbers as of 2018, the largest
+      of them containing over 59 million digits. Perfect numbers are numbers
+      which can  be expressed as the sum of their proper divisors, excluding
+      themselves.
+
+      The first perfect numbers are listed next: 6, 28, 496, 8128, 33550336,
+      8589869056, 137438691328, 2305843008139952128,
+      2658455991569831744654692615953842176  and
+      191561942608236107294793378084303638130997321548169216.
+    question: How many perfect have been discovered so far?
+
+task_description: "Provide information on perfect numbers."
