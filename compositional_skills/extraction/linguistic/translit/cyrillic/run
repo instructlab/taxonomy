@@ -1,0 +1,107 @@
+#!/usr/bin/env python3
+
+import itertools
+import os
+import random
+
+import yaml
+from cyrtranslit import mapping
+
+
+_LANGUAGES = {
+    'ru': 'Russian',
+    'ua': 'Ukrainian',
+}
+_LAN_TO_ASPELL_LANG = {
+    'ua': 'uk',
+}
+_MAX_WORDS_PER_LANG = 10
+_DICT_CMD = '/app/dict'
+
+
+def lang_name(lang):
+    return _LANGUAGES[lang]
+
+
+def join_letters(word):
+    letters = list(word)
+    return ', '.join(letters[:-1]) + ', and ' + letters[-1]
+
+
+def mapping_snippet(word, latin_letters):
+    mapping = zip(word, latin_letters)
+
+    snippet = ''
+    for cyrillic, latin in mapping:
+        snippet += f'- {cyrillic} = {latin}\n'
+    return snippet
+
+
+# todo: consider adjusting qna pair wording a bit to increase variability?
+def get_answer(lang, word, latin_letters):
+    return f'''
+In {lang_name(lang)}, the Cyrillic characters {join_letters(word)} can be
+translated to their corresponding Latin (or Roman) equivalents using the
+following transliteration scheme:
+
+{mapping_snippet(word, latin_letters)}
+Applying this transliteration scheme to the given Cyrillic sequence "{word}"
+results in the following Latin sequence: "{"".join(latin_letters)}".
+'''
+
+
+def tolatin(lang, word):
+    mapping_ = mapping.TRANSLIT_DICT[lang]["tolatin"]
+    return [mapping_.get(c, c) for c in word]
+
+
+def get_transliteration_scheme(lang):
+    return ", ".join(
+        f"{cyr} = {lat}"
+        for cyr, lat in mapping.TRANSLIT_DICT[lang]["tolatin"].items()
+    )
+
+
+def get_seed_example(lang, word):
+    return {
+        "answer": get_answer(lang, word, tolatin(lang, word)),
+        "context": word,
+        "question": f"Transform {lang_name(lang)} word into Latin letters.",
+        "prompt": (
+            f"8. Transliteration scheme is: "
+            f"{get_transliteration_scheme(lang)}\n"
+        ),
+    }
+
+
+def get_aspell_lang(lang):
+    return _LAN_TO_ASPELL_LANG.get(lang, lang)
+
+
+def get_words(lang):
+    cmd = f'{_DICT_CMD} {get_aspell_lang(lang)}'
+    words = list(os.popen(cmd))
+    random.shuffle(words)
+    for word in words:
+        yield word.strip()
+
+
+def main():
+    qna = {
+        'created_by': 'booxter',
+        'seed_examples': [],
+        'task_description': (
+            'Transliterating words from Cyrillic to Latin script.'
+        )
+    }
+
+    for lang in _LANGUAGES:
+        for word in itertools.islice(get_words(lang), _MAX_WORDS_PER_LANG):
+            qna["seed_examples"].append(get_seed_example(lang, word))
+
+    with open('/out/qna.yaml', 'w') as f:
+        yaml.dump(qna, f, allow_unicode=True, default_style="|")
+
+
+if __name__ == '__main__':
+    main()
