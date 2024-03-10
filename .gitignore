@@ -129,3 +129,7 @@ dmypy.json
 .pyre/
 
 scratch.ipynb
+
+
+# Ignore config.yaml from the cli
+config.yaml

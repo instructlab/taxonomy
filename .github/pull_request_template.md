@@ -1,27 +1,48 @@
 If your PR is related to a contribution to the taxonomy, please, fill
-out the following questionaire. If not, replace this whole text and the
-following questionaire with whatever information is applicable to your PR.
+out the following questionnaire. If not, replace this whole text and the
+following questionnaire with whatever information is applicable to your PR.
+
 
 **Describe the contribution to the taxonomy**
 
-A clear and concise description of what the contribution brings.
+<!-- A concise description of what the contribution brings, replace "..." in the bullet list -->
+
+- ...
+- ...
+- ...
 
 
 **Input given at the prompt**
 
-What you entered.
+<!-- What you entered, replace "..." -->
+
+```
+   ...
+```
 
 
 **Response that was received**
 
-What you received in response to your input.
+<!-- What you received in response to your input, replace "..." -->
+
+```
+  ...
+```
 
 
 **Response that is now received instead**
 
-What you receive with your contribution.
+<!-- What you receive with your contribution, replace "..." -->
 
+```
+  ...
+```
 
-**Please, confirm that you have tested your contribution with `lab generate` and ensured that it does not produce any warnings or errors:**
+**Contribution checklist**
 
-Yes or No
+<!-- Insert an x between the empty brackets: [ ] >> [x] -->
+
+- [ ] Contribution was tested with `lab generate`
+- [ ] No errors or warnings were produced by `lab generate`
+- [ ] All [commits are signed off](https://github.com/instruct-lab/taxonomy/blob/main/CONTRIBUTING.md#legal) (DCO)
+- [ ] The `qna.yaml` file was [linted](https://yamllint.com) and [prettified](https://onlineyamltools.com/prettify-yaml) ([yaml-validator](https://jsonformatter.org/yaml-validator) can do both)
