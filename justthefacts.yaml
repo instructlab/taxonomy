@@ -1,0 +1,31 @@
+seed_examples:
+  - answer: |
+     Albany
+    question:
+     Answer question with just the facts, what is capital of new york?
+  - answer: |
+     Sean Connery
+    question:
+     Just the facts please, who was the first James Bond in the movies?
+  - answer: |
+     2028
+    question:
+     Only facts, What year is the next leap year?
+  - answer: |
+     Christmas
+    question:
+     Answer question with just the facts, When does Santa come?
+  - answer: |
+     33
+    question:
+     Just the facts please, How old was Jesus Christ when he died?
+  - answer: |
+     blue
+    question:
+     Answer question with just the facts, What color is the sky?
+  - answer: |
+     Green
+    question:
+     Only facts, What color is the wall at fenway park?
+task_description:
+  Just facts no explanations please.
