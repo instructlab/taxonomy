@@ -1,0 +1,160 @@
+created_by: enxebre
+seed_examples:
+  - question: Play a piano blues melody.
+    answer: |
+      {
+          "function": "play_blues_melody",
+          "parameters": ["piano"]
+      }
+    context: >
+      I'll give you an input with a list of functions defined in json format
+      with their description and parameters that you can use as you see fit to
+      satisfy the task I ask.
+
+      Example:
+
+      functions = [
+          {
+              "name": "download_file",
+              "description": "Download a file from a given address",
+              "parameters": [address],
+          },
+          {
+              "name": "play_blues_melody",
+              "description": "Play a blues melody using the given instrument",
+              "parameters": [instrument],
+          },
+          {
+              "name": "summarize_text",
+              "description": "Summarize a given text",
+              "parameters": [text],
+          }
+          ]
+      You should output a json with the appropriate function to satisfy the task
+      and the parameters to use.
+
+      Example:
+
+      If the task is to download a file from example.com, the output should be:
+          {
+              "function": "download_file",
+              "parameters": ["example.com"]
+          }
+  - question: Download a file from example.com.
+    answer: |
+      {
+          "function": "download_file",
+          "parameters": ["example.com"]
+      }
+    context: >
+      I'll give you an input with a list of functions defined in json format
+      with their description and parameters that you can use as you see fit to
+      satisfy the task I ask.
+
+      Example:
+
+      functions = [
+          {
+              "name": "download_file",
+              "description": "Download a file from a given address",
+              "parameters": [address],
+          },
+          {
+              "name": "play_blues_melody",
+              "description": "Play a blues melody using the given instrument",
+              "parameters": [instrument],
+          },
+          {
+              "name": "summarize_text",
+              "description": "Summarize a given text",
+              "parameters": [text],
+          }
+          ]
+      You should output a json with the appropriate function to satisfy the task
+      and the parameters to use.
+
+      Example:
+
+      If the task is to download a file from example.com, the output should be:
+          {
+              "function": "download_file",
+              "parameters": ["example.com"]
+          }
+  - question: Summarize "blah blah blah".
+    answer: |
+      {
+          "function": "summarize_text",
+          "parameters": ["blah blah blah"]
+      }
+    context: >
+      I'll give you an input with a list of functions defined in json format
+      with their description and parameters that you can use as you see fit to
+      satisfy the task I ask.
+
+      Example:
+
+      functions = [
+          {
+              "name": "download_file",
+              "description": "Download a file from a given address",
+              "parameters": [address],
+          },
+          {
+              "name": "play_blues_melody",
+              "description": "Play a blues melody using the given instrument",
+              "parameters": [instrument],
+          },
+          {
+              "name": "summarize_text",
+              "description": "Summarize a given text",
+              "parameters": [text],
+          }
+          ]
+      You should output a json with the appropriate function to satisfy the task
+      and the parameters to use.
+
+      Example:
+
+      If the task is to download a file from example.com, the output should be:
+          {
+              "function": "download_file",
+              "parameters": ["example.com"]
+          }
+  - question: Send an email to recipient@example.com.
+    answer: |
+      {}
+    context: >
+      I'll give you an input with a list of functions defined in json format
+      with their description and parameters that you can use as you see fit to
+      satisfy the task I ask.
+
+      Example:
+
+      functions = [
+          {
+              "name": "download_file",
+              "description": "Download a file from a given address",
+              "parameters": [address],
+          },
+          {
+              "name": "play_blues_melody",
+              "description": "Play a blues melody using the given instrument",
+              "parameters": [instrument],
+          },
+          {
+              "name": "summarize_text",
+              "description": "Summarize a given text",
+              "parameters": [text],
+          }
+          ]
+      You should output a json with the appropriate function to satisfy the task
+      and the parameters to use.
+
+      Example:
+
+      If the task is to download a file from example.com, the output should be:
+          {
+              "function": "download_file",
+              "parameters": ["example.com"]
+          }
+task_description: ''
