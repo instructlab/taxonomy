@@ -1,15 +1,27 @@
----
 created_by: psklenar
 seed_examples:
-  - answer: The 15th century starts in the year 1401. So 1415 - 1401 is 14 years.
+  - answer: >-
+      The 15th century starts in the year 1401. So 1415 - 1401 is 14 years.
       Someone lived 14 years in the 15th century.
-    question: Someone was born in 1369 and died in 1415. How many years did Someone live in the 15th century?
-  - answer: The 14th century started in 1301 and ends 1400. Therefore 1400 - 1369 is 31
-      years. Someone lived 31 years in the 14th century.
-    question: Someone was born in 1369 and died in the year 1415. How many years did Someone live in the 14th century?
-  - answer: The 13th century starts in 1201 and ends 1300. Someone didn't live in the 13th century.
-    question: Someone was born in 1369 and died in 1415. How many years
-      did someone live in the 13th century?
-  - answer: The 16th century starts in 1501 and ends in 1600. Someone didn't live in the 16th century.
-    question: Someone was born in 1369 and died in 1415. How many years did Someone live in the 16th century?
-task_description: ""
+    question: >-
+      Someone was born in 1369 and died in 1415. How many years did Someone live
+      in the 15th century?
+  - answer: >-
+      The 14th century started in 1301 and ends 1400. Therefore 1400 - 1369 is
+      31 years. Someone lived 31 years in the 14th century.
+    question: >-
+      Someone was born in 1369 and died in the year 1415. How many years did
+      Someone live in the 14th century?
+  - answer: >-
+      The 13th century starts in 1201 and ends 1300. Someone didn't live in the
+      13th century.
+    question: >-
+      Someone was born in 1369 and died in 1415. How many years did someone live
+      in the 13th century?
+  - answer: >-
+      The 16th century starts in 1501 and ends in 1600. Someone didn't live in
+      the 16th century.
+    question: >-
+      Someone was born in 1369 and died in 1415. How many years did Someone live
+      in the 16th century?
+task_description: ''
