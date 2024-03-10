@@ -1,0 +1,105 @@
+---
+task_description: Generate mermaidjs diagrams from text
+created_by: chambridge
+seed_examples:
+  - question: Could you generate a mermaidjs flow diagram for the given text?
+    answer: |
+      ```mermaid
+      flowchart TD
+      Customer_UI -->|"HTTP/APIs"| Red_Hat_IT["Red_Hat_IT"]
+      Customer_Data_Center --> Akamai
+      Customer_UI -->|"HTTP/APIs"| Akamai
+      Akamai --> API_Gateway
+      Red_Hat_Associate --> Red_Hat_IT
+      Red_Hat_IT --> Turnpike
+      subgraph Red_Hat_IT
+        Back_Office_Proxy
+        SSO
+      end
+      subgraph AWS
+        Core_Services["Core_Services"] --> AWS_Services["AWS_Services"]
+        Kafka --> Core_Services
+        Kafka --> Tenant_Applications["Tenant_Applications"]
+        Tenant_Applications --> Kafka
+        Core_Services --> Kafka
+        subgraph AWS_Services
+        RDS
+        S3
+        CloudWatch
+        Redis
+        end
+        subgraph subGraph2["OpenShift Dedicated Cluster"]
+        API_Gateway -->|"HTTP/APIs"| Core_Services
+        API_Gateway --> Tenant_Applications
+        Turnpike --> Core_Services
+        Turnpike --> Tenant_Applications
+        subgraph Tenant_Applications
+          Insights
+        end
+        subgraph Core_Services
+          Entitlements
+          Inventory
+          Integrations
+          Data_Ingress
+          RBAC_Policy_Server
+          Cloud_Connector
+        end
+        end
+      end
+      subgraph subGraph3["CDN + WAF (Akamai)"]
+        Customer_Data_Center
+        Customer_UI
+      end
+      ```
+    context: |
+      console.redhat.com is a set of cloud based management applications. A
+      set of microservices running in an OpenShift cluster. Microservices are
+      exposed externally via an API Gateway. Internal intra-service
+      communication over Kafka message broker as well as directly over HTTP
+      APIs. Microservices use AWS for data storage (RDS, S3, Redis, CloudWatch).
+      The customer UI or data center system interacts via Akamai with the API
+      Gateway running on the OpenShift cluster. The API gateway routes HTTP
+      requests to either core services such as entitlements, inventory,
+      integrations, data ingress, the RBAC policy server, or the cloud connector
+      or request are routed to tenant applications such as Insights. These core
+      services and tenant applications use kafka for message broker
+      communication. The core services and tenant applications also use AWS
+      services such as RDS, S3, Redis, and cloudwatch; these reside within AWS
+      but not on the OpenShift cluster. The OpenShift cluster is also running in
+      AWS. Red Hat associates interact with tenant applications or core services
+      for adminstrative functions using IT serivces like SSO and Backoffice
+      proxy which live outside of AWS. These IT servics allow the associates to
+      connect to Turnpike running in the OpenShift cluster that acts similar to
+      the API Gateway routing requests to core services and tenant applications.
+  - question: Could you generate a mermaidjs sequence diagram for the given text?
+    answer: |
+      ```mermaid
+      sequenceDiagram
+      client -> 3Scale Gateway: Upload insights-client payload
+      3Scale Gateway -> Ingress: Forward request
+      Ingress -> 3Scale Gateway: Send 202 HTTP response code if valid, 413 or 415 otherwise
+      3Scale Gateway -> client: Send response
+      Ingress ->> S3: Store payload permanently
+      Ingress ->> platform.upload.announce: Send message to topic with 3Scale data and service mime type in the header
+      ```
+    context: |
+      The client uploads and insights-client payload to the 3Scale gateway.
+      The 3Scale gateway routes the request to the Ingress service. The ingress
+      service checks the mime time to see if its valid if invalid a 413 or 415
+      HTTP response code is returned to the client, if valid a 202 HTTP response
+      code is returned to the client. The ingress service uploads the ppayload
+      to S3 permenant storage and sends a message to the
+      platform.upload.announce topic with 3Scale data and service mime type in
+      the header.
+  - question: Could you generate a mermaidjs flow diagram for the given text?
+    answer: |
+      ```mermaid
+      graph TD;
+          A-->B;
+          A-->C;
+          B-->D;
+          C-->D;
+      ```
+    context: |
+      Data from system A flows to system B and system C. Data flows to system D from system
+      B and system C.
