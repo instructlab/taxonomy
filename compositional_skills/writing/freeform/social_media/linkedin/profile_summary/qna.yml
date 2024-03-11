@@ -48,8 +48,9 @@ seed_examples:
       insights to teams striving to achieve excellence in their DevOps
       practices. Let's connect to explore how my background in software
       development and my aspirations in DevOps align with the goals of your
-      organization.
+      organisation.
     question: >
       Help me draft a LinkedIn Bio for me. I am an experienced devops
       professional aspiring to transition my career in AI and MLOPs.
-task_description: This skill helps the model write a LinkedIn profile summary as per provided input
+task_description: This skill helps the model write a LinkedIn profile summary as
+  per provided input
