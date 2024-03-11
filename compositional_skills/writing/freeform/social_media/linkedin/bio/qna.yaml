@@ -1,4 +1,3 @@
----
 created_by: avinashsingh77
 seed_examples:
   - answer: >
@@ -24,7 +23,8 @@ seed_examples:
        Seeking roles where I can apply my expertise in DevOps alongside my growing knowledge in AI
        and MLOps to drive innovation,solve complex challenges, and contribute to cutting-edge projects
        that are shaping the future of technology.
-      Let's connect and explore opportunities to collaborate on exciting ventures at the intersection
+      Let's connect and explore opportunities to collaborate on exciting
+      ventures at the intersection
        of DevOps and AI/MLOps!
     question: >
       Help me draft a LinkedIn Bio for me. I am an experienced devops
@@ -46,4 +46,23 @@ seed_examples:
       Help me draft a LinkedIn Bio for me.  I am an experienced software
       developer with expertise in java backend services. I am aspiring to
       transition my career in DevOps and Infrastructure service
+  - answer: >
+      Certainly! Here's a draft for your LinkedIn bio summary:
+
+      Experienced software developer specializing in Quality Assurance
+      automation with a passion for ensuring top-notch product quality. With a
+      robust background in software development and a keen eye for detail, I
+      excel in crafting efficient and reliable testing frameworks.
+
+      Now, I'm embarking on an exciting journey to transition my career into a
+      Scrum Master role. My goal is to leverage my technical expertise and
+      project management skills to drive agile processes and facilitate seamless
+      collaboration within cross-functional teams.
+
+      Let's connect and explore how I can contribute to your team's success as a
+      dynamic Scrum Master.
+    question: >
+      Help me draft a LinkedIn Bio summary for me. I am an experienced software
+      developer with expertise in Quality Assurance automation. I am aspiring to
+      transition my career in a scrum master role.
 task_description: This skill helps the model write a LinkedIn Bio as per provided input

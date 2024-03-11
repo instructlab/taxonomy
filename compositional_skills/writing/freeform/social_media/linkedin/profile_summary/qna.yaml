@@ -1,4 +1,3 @@
----
 created_by: avinashsingh77
 seed_examples:
   - answer: >
@@ -52,5 +51,37 @@ seed_examples:
     question: >
       Help me draft a LinkedIn Bio for me. I am an experienced devops
       professional aspiring to transition my career in AI and MLOPs.
-task_description: This skill helps the model write a LinkedIn profile summary as
-  per provided input
+  - answer: >
+      Certainly! Here's a draft for your LinkedIn profile summary:
+
+      Experienced Software Developer | Quality Assurance Automation Specialist |
+      Aspiring Scrum Master
+
+      With a solid foundation in software development and a keen eye for Quality
+      Assurance, I bring a unique blend of technical expertise and meticulous
+      attention to detail to every project I undertake. Throughout my career,
+      I've honed my skills in automating QA processes, ensuring the delivery of
+      high-quality software solutions.
+
+      Driven by a passion for continuous improvement and a deep understanding of
+      Agile methodologies, I am now embarking on a journey to transition into a
+      Scrum Master role.
+
+      I am committed to facilitating collaboration,fostering team empowerment,
+      and driving successful project outcomes through effective Agile practices.
+
+      My diverse background equips me with the adaptability and problem-solving
+      abilities necessary to excel in dynamic environments. As I pursue this new
+      career path, I am eager to leverage my technical acumen, leadership
+      skills, and dedication to drive positive change and deliver value to both
+      teams and stakeholders.
+
+      Let's connect to explore opportunities for collaboration and growth in the
+      realm of Agile software development.
+    question: >
+      Help me draft a LinkedIn Profile summary for me. I am an experienced
+      software developer with expertise in Quality Assurance automation. I am
+      aspiring to transition my career in a scrum master role.
+task_description: >-
+  This skill helps the model write a LinkedIn profile summary as per provided
+  input
