@@ -18,10 +18,19 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main 
+      - main
+    paths:
+      - compositional_skills/**/qna.yaml
+      - knowledge/**/qna.yaml
+
   pull_request:
     branches:
       - main
+    paths:
+      - compositional_skills/**/*.yaml
+      - compositional_skills/**/*.yml
+      - knowledge/**/*.yaml
+      - knowledge/**/*.yml
 
 jobs:
   lint:
@@ -29,7 +38,52 @@ jobs:
     steps:
       - name: "Checkout"
         uses: actions/checkout@v4
-        
-      - name: "Run YAML linter"
+        with:
+          fetch-depth: 0
+
+      - name: "Find changed skills files"
+        id: changed-files
+        uses: tj-actions/changed-files@v42
+        with:
+          files: |
+            compositional_skills/**/*.yaml
+            compositional_skills/**/*.yml
+            knowledge/**/*.yaml
+            knowledge/**/*.yml
+
+      - name: "Run YAML lint"
+        if: steps.changed-files.outputs.any_changed == 'true'
         run: |
-          yamllint -d "{extends: relaxed, rules: {line-length: {max: 120}}, yaml-files: ['qna.yaml']}" .
+          yamllint -d "{extends: relaxed, rules: {line-length: {max: 120}}}" ${{ steps.changed-files.outputs.all_changed_files }}
+
+      # use yq to verify YAML fields exist and generate a matchable log message with line number and error severity
+      # the added matcher .github/workflows/matchers/lint.json will parse those log messages to generate annotation
+      # the generated annotations are then applied in the GH PR Changed Files view under the changed line of code
+      - name: "Check skills file contents"
+        if: steps.changed-files.outputs.any_changed == 'true'
+        env:
+          CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+        run: |
+          echo "::add-matcher::.github/workflows/matchers/lint.json"
+          ERR=0
+          error() { echo "ERROR: $file:$@" 1>&2; ERR=1; }
+          warn()  { echo "WARN:  $file:$@" 1>&2; }
+          echo
+          for file in ${CHANGED_FILES}; do
+            case $file in knowledge*)
+              error "1:1: We do not accept knowledge PRs at this time"
+            esac
+            if [[ "$file" != *"/qna.yaml" ]]; then
+              error "1:1: Skills file has to be named 'qna.yaml', not '$(basename $file)'"
+            fi
+            yq '.created_by       | length > 0'            $file | grep -q false && warn  "$(yq '.created_by|line'       $file):1: missing/empty 'created_by'"
+            yq '.task_description | length > 0'            $file | grep -q false && warn  "$(yq '.task_description|line' $file):1: missing/empty 'task_description'"
+            yq '.seed_examples'                            $file | grep -q null  && error "$(yq '.seed_examples|line'    $file):1: missing 'seed_examples'"
+            yq '.seed_examples   | length >= 3'            $file | grep -q false && error "$(yq '.seed_examples|line'    $file):1: less than 3 'seed_examples'"
+            yq '.seed_examples[] | .question | length > 0' $file | grep -q false && error "$(yq '.seed_examples|line'    $file):1: missing/empty 'question's"
+            yq '.seed_examples[] | .answer   | length > 0' $file | grep -q false && error "$(yq '.seed_examples|line'    $file):1: missing/empty 'answer's"
+            if $( yq '.seed_examples[] | has("context")'   $file | grep -q true ); then
+              yq '.seed_examples[] | .context| length > 0' $file | grep -q false && error "$(yq '.seed_examples|line'    $file):1: missing/empty 'context's"
+            fi
+          done
+          exit $ERR
