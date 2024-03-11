@@ -1,0 +1,19 @@
+created_by: jridky
+seed_examples:
+  - answer: There are 112 characters in the text.
+    context: |-
+      '"Twinkle, twinkle, little star,
+      How I wonder what you are!
+      Up above the world so high,
+      Like a diamond in the sky."'
+    question: What is the number of characters including spaces in following text?
+  - answer: There are no characters in the text.
+    context: ''
+    question: What is the number of characters including spaces in following text?
+  - answer: There are 12 characters in the text.
+    context: Hello World!
+    question: What is the number of characters including spaces in following text?
+  - answer: There are 44 characters in the text.
+    context: The quick brown fox jumps over the lazy dog.
+    question: What is the number of characters including spaces in following text?
+task_description: Get number of characters in given text
