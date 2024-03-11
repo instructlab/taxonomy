@@ -13,4 +13,6 @@ seed_examples:
     question: Tell me what is Mankading
   - answer: 'It is named after the Indian Cricket Player Vinoo Mankad '
     question: Tell me who is Mankading named after
-task_description: ''
+  - answer: The non-striking batsman gets dismissed in a Mankading scenario
+    question: Tell me who gets out when Mankaded
+task_description: Update an unusual cricket situation
