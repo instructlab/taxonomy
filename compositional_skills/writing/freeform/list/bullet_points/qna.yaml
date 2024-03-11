@@ -1,0 +1,21 @@
+created_by: michaelclifford
+seed_examples:
+- answer: '* Pizza
+    * Puppies
+    * Sunny Days
+    * Old Books
+    * New Friends'
+  question: List your 5 favorite things in no particular order. Please use bullet points.
+- answer: '* Shoes
+    * Shirts
+    * Pants'
+  question: List your 3 items you'd find in your closet in no particular order. Please use bullet points.
+- answer: '* Hot dogs
+    * Ferris wheel
+    * Cotton candy
+    * Haunted house
+    * Games
+    * Petting Zoo
+    * Clowns'
+  question: What sorts of things can I expect to find at the Fair? Only use bullet points.
+task_description: 'Use bullet points'
