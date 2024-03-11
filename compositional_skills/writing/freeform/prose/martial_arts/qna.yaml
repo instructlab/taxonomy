@@ -1,0 +1,14 @@
+task_description: 'Describe the moves of Shotokan Karate Katas'
+created_by: gankakusho
+seed_examples:
+- answer: 'The first move of the Heian Shodan kata is gedan barai'
+  question: 'What is the first move of the Heian Shodan kata?'
+
+- question: 'What is the second move of the Heian Shodan kata?'
+  answer: 'The second move of the Heian Shodan kata is oï tsuki, putting the \
+    \ right foot forward.'
+
+- question: 'What is the third move of the Heian Shodan kata?'
+  answer: 'The third move of the Heian Shodan kata is gedan barai, blocking \
+   \ with the right hand.'
+
