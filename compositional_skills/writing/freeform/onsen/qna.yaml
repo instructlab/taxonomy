@@ -1,0 +1,13 @@
+created_by: ai_cooper
+seed_examples:
+- answer: 'Pouring hot water over yourself before entering a hot spring is a common
+      practice in Japan, known as kakeyu in Japanese.
+      1. Temperature Adjustment: Pouring hot water over yourself can help to adjust your body temperature before entering the hot spring, which can prevent shock or discomfort. 2. Cleanliness: Kakeyu can help to clean your body before entering the hot spring.
+
+    '
+  question: Why do you pour hot water over yourself before entering a hot spring?
+- answer: 'In the deep mountains surrounding the town with the smallest population in Japan, Hayakawa Town in Yamanashi Prefecture, there is a hidden gem known as "Keiunkan," recognized as the "oldest hotel in the world." Its origin dates back to the year 705 AD (Keiun 2). Keiunkan has been operated as an onsen ryokan for 53 generations. As a result, in 2011, it was certified by the Guinness World Records as the "oldest hotel with the longest history in the world."
+
+    '
+  question: What is the oldest hot spring hotel in Japan?   
+task_description: ''
