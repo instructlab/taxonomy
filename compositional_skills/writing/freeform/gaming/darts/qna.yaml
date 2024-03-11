@@ -1,0 +1,78 @@
+task_description: "Provide guidance on how to checkout in the 501 darts game"
+created_by: aharivel
+seed_examples:
+  - question: |
+      What is the goal of the game of 501 darts?
+    answer: |
+      In a game of 501 darts, the objective is to reduce your score from 501 to
+      exactly zero, while finishing on a double.
+  - question: |
+      How many points is it worth if I hit double 4 in the game of 501 darts?
+    answer: |
+      In the game of 501 darts, double 4 is worth 8 points.
+  - question: |
+      In the 501 dart game, If I have 141 left, what should I throw to finish ?
+    answer: |
+      In the game of 501 darts, when you have 141 left,
+      there are several combinations you can aim for to finish the game
+      in three darts or less. One common way to finish 141 is :
+      1. Start by aiming for a treble 20, which is worth 60 points.
+       This will leave you with 81 points remaining.
+      2. Then, you can aim for treble 19, which is worth 57 points.
+       This will leave you with 24 points remaining.
+      3. Finally, you can finish by hitting a double 12 to win the game.
+      To resume the combinations:
+       1. Treble 20 (60 points)
+       2. Treble 19 (57 points)
+       3. Double 12 (24 points)
+      Alternatively you can throw:
+       1. Treble 20 (60 points)
+       2. Treble 15 (45 points)
+       3. Double 18 (36 points)
+  - question: |
+      If I have 63 left in the 501 dart game, what should I throw to finish ?
+    answer: |
+      In the game of 501 darts, when you have 63 left,
+      there are several combinations you can aim for to finish the game
+      in three darts or less. One way to finish 63 is:
+      1. Start by aiming for a single 13.
+       This will leave you with 50 points remaining.
+      2. Then, you can aim for single 10.
+       This will leave you with 40 points remaining.
+      3. Finally, you can finish by hitting a double 20 to win the game.
+      To resume the combination:
+       1. Single 13 (13 points)
+       2. Single 10 (10 points)
+       3. Double 40 (40 points)
+      Alternatively you can throw only 2 darts to finish:
+       1. Single  13 (13 points)
+       2. Double Bulleye 50 (50 points)
+      or alternatively with 2 darts:
+       1. Treble 13 (39 points)
+       2. Double 12 (24 points)
+  - question: |
+      In the dart game, How to checkout if I have 170 left?
+    answer: |
+       In the game of 501 darts, when you have 170 left,
+       there is only one combinations you can aim for to finish the game:
+       1. Start by aiming for Treble 20.
+        This will leave you with 110 points remaining.
+       2. Then, you aim again the Treble 20.
+        This will leave you with 50 points remaining.
+       3. Finally, you finish by hitting a double 20 to win the game.
+       To resume the combination:
+        1. Double  20 (60 points)
+        2. Double  20 (60 points)
+        3. Double Bulleye 50 (50 points)
+  - question: |
+      What is the quickest way to finish with 72 in the game of darts?
+    answer: |
+      When you have 72 remaining, you want to ensure you leave yourself with
+      a double to finish. Here's one of the quickest ways to do it:
+
+      Aim for the triple 16, which is worth 48 points, leaving you with 24.
+      Now, aim for the double 12, which is worth 24 points, reducing your score
+      to zero.
+
+      So, the quickest way to finish with 72 remaining is T16, D12. This
+      combination allows you to finish the game with just two darts.
