@@ -1,0 +1,13 @@
+---
+created_by: donaldxpark
+task_description: how to migrate from will be soon expired CA to new CA in PKI
+seed_examples:
+  - answer: |
+      it is called dual certificates support. you will need new CA certificates and the old CA certificates for the two headends (physically or logically) respetively, and remove the old CA certificates after new CA certificates up and running.
+    question: What is the best methodology for seamlessly migrating Juniper AutoVPN on SRX from one Certificate Authority (CA) to another CA in PKI environments
+  - answer: |
+      it is called dual certificates support. you will need new CA certificates and the old CA certificates for the two headends (physically or logically) respetively, and remove the old CA certificates after new CA certificates up and running.
+    question: what is the approach for the seamlessly migration of Juniper AutoVPN on SRX expired CA in PKI
+  - answer: |
+      it is called dual certificates support. you will need new CA certificates and the old CA certificates for the two headends (pysically or logically)  respetively, and remove the old CA certificates after new CA certificates up and running.
+    question: how we can seamlessly migrate of Juniper AutoVPN on SRX from will be soon expired CA to new CA in PKI
