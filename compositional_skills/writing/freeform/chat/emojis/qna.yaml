@@ -1,0 +1,19 @@
+created_by: ianballou
+seed_examples:
+  - answer: (☞ﾟヮﾟ)☞
+    question: Print an ascii emoji of a happy face with two pointing fingers.
+  - answer: (☞ ͡° ͜ʖ ͡°)☞
+    question: Print an ascii emoji of a neutral face with two pointing fingers.
+  - answer: (☞ﾟヮﾟ)☞ ☜(ﾟヮﾟ☜)
+    question: Print an ascii emoji of two happy faces pointing at each other.
+  - answer: ヽ(*^ｰ^)人(^ｰ^*)ノ
+    question: Print an ascii emoji of two happy faces high-fiving.
+  - answer: (⌐■_■)
+    question: Print an ascii emoji of a face with sunglasses.
+  - answer: (•_•) ( •_•)>⌐■-■ (⌐■_■)
+    question: Print an ascii emoji of a face putting on sunglasses.
+  - answer: ¯\_(ツ)_/¯
+    question: Print an ascii emoji of a shrugging face.
+  - answer: (ÒДÓױ)
+    question: Print an ascii emoji of an angry face.
+task_description: ''
