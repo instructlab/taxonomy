@@ -61,10 +61,28 @@ Once you've [created a pull request](#how-can-i-contribute), maintainers will re
 
 #### Legal
 
+“For this project, unless the file says otherwise, or unless the attributed source provided in the file says otherwise, the relevant open source license is the Apache License, Version 2.0.  All contributions that leverage third party content should either come from the public domain or be licensed with an open data license that does not restrict commercial use or the creation of derivative works, including the following license types:
+CC0
+CDLA-Permissive
+CC-BY-4.0
+CC-BY-SA-4.0
+Apache 2.0
+MIT
+Any third party content contributed to this project undergoes modifications in order to formulate it in the templated format required for submission to this project.”
+
+
 We have tried to make it as easy as possible to make contributions.
 This applies to how we handle the legal aspects of contribution.
 We use the same approach - the [Developer's Certificate of Origin 1.1 (DCO)][DCO] - that [the Linux Kernel community uses][Linux-DCO] to manage code contributions.
-For this project, unless the file says otherwise, the relevant open source license is [the Apache License, Version 2.0](LICENSE).
+For this project, unless the file says otherwise, or unless the attributed source provided in the file says otherwise, the relevant open source license is [the Apache License, Version 2.0](LICENSE).  All contributions that leverage third party content should either come from the public domain or be licensed with an open data license that does not restrict commercial use or the creation of derivative works, including the following license types:
+- CC0
+- CDLA-Permissive
+- CC-BY-4.0
+- CC-BY-SA-4.0
+- Apache 2.0
+- MIT
+Any third party content contributed to this project undergoes modifications in order to formulate it in the templated format required for submission to this project.
+
 We simply ask that when submitting a patch for review, the developer must include a sign-off statement in the commit message.
 
 Here is an example `Signed-off-by` line, which indicates that the submitter accepts the DCO:
