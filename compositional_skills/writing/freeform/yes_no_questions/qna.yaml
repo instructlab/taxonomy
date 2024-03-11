@@ -1,0 +1,11 @@
+created_by: luis5tb
+seed_examples:
+- answer: 'Yes'
+  question: Do you know Albert Einstein? Only answer yes or no
+- answer: 'Yes'
+  question: Is 1 + 2 = 3? Only answer yes or no
+- answer: 'No'
+  question: Is 1 + 2 = 4? Only answer yes or no
+- answer: 'No'
+  question: Do you have access to real time information? Only answer yes or no
+task_description: 'Answer questions with yes or no'
