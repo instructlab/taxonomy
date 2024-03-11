@@ -1,6 +1,5 @@
 ---
 created_by: avinashsingh77
-task_description: This skill helps the model write a LinkedIn Bio as per provided input
 seed_examples:
   - answer: >
       Certainly! Here's a draft for your LinkedIn bio: DevOps Expert with a
@@ -46,4 +45,5 @@ seed_examples:
     question: >
       Help me draft a LinkedIn Bio for me.  I am an experienced software
       developer with expertise in java backend services. I am aspiring to
-      transition my career in DevOps and Infrastructure services
+      transition my career in DevOps and Infrastructure service
+task_description: This skill helps the model write a LinkedIn Bio as per provided input
