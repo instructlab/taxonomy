@@ -1,0 +1,112 @@
+task_description: |
+  Rolling the dice\s as you wish 
+created_by: shairevivo # Use your GitHub username; only one dice creator supported
+seed_examples:
+  - question: Roll 1 dice
+    answer: |  
+      Rolling one dice 🎲
+      You rolled 1
+  - question: Can you Roll 1 dice
+    answer: |  
+      Rolling one dice 🎲
+      You rolled 2
+  - question: Can you Roll 1 dice for me
+    answer: |  
+      Rolling one dice 🎲
+      You rolled 3
+  - question: Toss 1 dice
+    answer: |  
+      Rolling one dice 🎲
+      You rolled 4
+  - question: Can you Roll a dice
+    answer: |  
+      Rolling one dice 🎲
+      You rolled 5
+  - question: Can you Roll a dice
+    answer: |  
+      Rolling one dice 🎲
+      You rolled 6                          
+  - question: Can you Roll 2 dice for me
+    answer: |  
+      Rolling two dice 🎲🎲
+      You rolled 1 and 1 
+  - question: Cast 2 dice
+    answer: |  
+      Rolling two dice 🎲🎲
+      You rolled 1 and 2 
+  - question: Toss 2 dice
+    answer: |  
+      Rolling two dice 🎲🎲
+      You rolled 1 and 3 
+  - question: Roll 2 dice
+    answer: |  
+      Rolling two dice 🎲🎲
+      You rolled 1 and 4
+  - question: Roll 2 dice
+    answer: |  
+      Rolling two dice 🎲🎲
+      You rolled 1 and 5 
+  - question: Roll 2 dice
+    answer: |  
+      Rolling two dice 🎲🎲
+      You rolled 1 and 6 
+  - question: Can you Roll 2 dice
+    answer: |  
+      Rolling two dice 🎲🎲
+      You rolled 2 and 5 
+  - question: Can you Roll 2 dice
+    answer: |  
+      Rolling two dice 🎲🎲
+      You rolled 2 and 6 
+  - question: Can you Roll 2 dice
+    answer: |  
+      Rolling two dice 🎲🎲
+      You rolled 3 and 1 
+  - question: Can you Roll 2 dice
+    answer: |  
+      Rolling two dice 🎲🎲
+      You rolled 3 and 2 
+  - question: Can you Roll 2 dice
+    answer: |  
+      Rolling two dice 🎲🎲
+      You rolled 3 and 3 
+  - question: Can you Roll 2 dice
+    answer: |  
+      Rolling two dice 🎲🎲
+      You rolled 3 and 4
+  - question: Roll 2 dice
+    answer: |  
+      Rolling two dice 🎲🎲
+      You rolled 4 and 6 
+  - question: Roll 2 dice
+    answer: |  
+      Rolling two dice 🎲🎲
+      You rolled 5 and 1 
+  - question: Roll 2 dice
+    answer: |  
+      Rolling two dice 🎲🎲
+      You rolled 5 and 2 
+  - question: Roll 2 dice
+    answer: |  
+      Rolling two dice 🎲🎲
+      You rolled 5 and 3 
+  - question: Roll 2 dice
+    answer: |  
+      Rolling two dice 🎲🎲
+      You rolled 5 and 4
+  - question: Roll 2 dice
+    answer: |  
+      Rolling two dice 🎲🎲
+      You rolled 5 and 5 
+  - question: Can you Roll 2 dice for me
+    answer: |  
+      Rolling two dice 🎲🎲
+      You rolled 6 and 4
+  - question: Can you Roll 2 dice for me
+    answer: |  
+      Rolling two dice 🎲🎲
+      You rolled 6 and 5 
+  - question: Can you Roll 2 dice for me
+    answer: |  
+      Rolling two dice 🎲🎲
+      You rolled 6 and 6       
