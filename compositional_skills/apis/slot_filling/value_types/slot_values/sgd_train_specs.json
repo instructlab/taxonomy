@@ -1,0 +1,748 @@
+{
+    "GetAlarms": {
+        "description": "Get the alarms user has already set",
+        "slots": {
+            "required": {},
+            "optional": {},
+            "result": {
+                "alarm_time": "Time of the alarm",
+                "alarm_name": "Name of the alarm"
+            }
+        }
+    },
+    "AddAlarm": {
+        "description": "Set a new alarm",
+        "slots": {
+            "required": {
+                "new_alarm_time": "Time to set for the new alarm"
+            },
+            "optional": {
+                "new_alarm_name": "Name to use for the new alarm"
+            },
+            "result": {
+                "new_alarm_time": "Time to set for the new alarm",
+                "new_alarm_name": "Name to use for the new alarm"
+            }
+        }
+    },
+    "FindBus": {
+        "description": "Search for a bus itinerary between two places on a certain date",
+        "slots": {
+            "required": {
+                "from_city": "The city to depart from",
+                "to_city": "The destination city of the trip",
+                "departure_date": "The date of departure"
+            },
+            "optional": {
+                "num_passengers": "The number of tickets for the trip",
+                "category": "How many stops the route has"
+            },
+            "result": {
+                "from_city": "The city to depart from",
+                "to_city": "The destination city of the trip",
+                "from_station": "Name of station of departure",
+                "to_station": "Name of station of arrival",
+                "departure_date": "The date of departure",
+                "departure_time": "The time of departure",
+                "price": "Ticket price per passenger",
+                "num_passengers": "The number of tickets for the trip",
+                "category": "How many stops the route has"
+            }
+        }
+    },
+    "BuyBusTicket": {
+        "description": "Purchase the bus tickets",
+        "slots": {
+            "required": {
+                "from_city": "The city to depart from",
+                "to_city": "The destination city of the trip",
+                "departure_date": "The date of departure",
+                "departure_time": "The time of departure",
+                "num_passengers": "The number of tickets for the trip"
+            },
+            "optional": {
+                "additional_luggage": "Whether to carry excess baggage in the bus"
+            },
+            "result": {
+                "from_city": "The city to depart from",
+                "to_city": "The destination city of the trip",
+                "from_station": "Name of station of departure",
+                "to_station": "Name of station of arrival",
+                "departure_date": "The date of departure",
+                "departure_time": "The time of departure",
+                "price": "Ticket price per passenger",
+                "additional_luggage": "Whether to carry excess baggage in the bus",
+                "num_passengers": "The number of tickets for the trip",
+                "category": "How many stops the route has"
+            }
+        }
+    },
+    "FindEvents": {
+        "description": "Find cultural events - concerts and plays - happening in a city",
+        "slots": {
+            "required": {
+                "event_type": "Type of cultural event",
+                "city": "City where the event is taking place"
+            },
+            "optional": {
+                "date": "Date of event"
+            },
+            "result": {
+                "event_type": "Type of cultural event",
+                "event_name": "Name of artist or play",
+                "date": "Date of event",
+                "time": "Start time of event",
+                "price_per_ticket": "Price of each ticket",
+                "city": "City where the event is taking place",
+                "venue": "Exact venue of event",
+                "venue_address": "Street address of event venue"
+            }
+        }
+    },
+    "BuyEventTickets": {
+        "description": "Buy tickets for a cultural event and date in a given city",
+        "slots": {
+            "required": {
+                "event_name": "Name of artist or play",
+                "number_of_tickets": "Number of tickets to reserve for the event",
+                "date": "Date of event",
+                "city": "City where the event is taking place"
+            },
+            "optional": {},
+            "result": {
+                "event_name": "Name of artist or play",
+                "date": "Date of event",
+                "time": "Start time of event",
+                "number_of_tickets": "Number of tickets to reserve for the event",
+                "price_per_ticket": "Price of each ticket",
+                "city": "City where the event is taking place",
+                "venue": "Exact venue of event",
+                "venue_address": "Street address of event venue"
+            }
+        }
+    },
+    "SearchOnewayFlight": {
+        "description": "Search for one way flights to the destination",
+        "slots": {
+            "required": {
+                "origin_airport": "The name of the airport or city to depart from",
+                "destination_airport": "The name of the airport or city to arrive at",
+                "departure_date": "Start date of the trip"
+            },
+            "optional": {
+                "seating_class": "The cabin seat option",
+                "number_of_tickets": "the number of flight tickets for the trip",
+                "airlines": "The company that provides air transport services"
+            },
+            "result": {
+                "number_of_tickets": "the number of flight tickets for the trip",
+                "seating_class": "The cabin seat option",
+                "origin_airport": "The name of the airport or city to depart from",
+                "destination_airport": "The name of the airport or city to arrive at",
+                "departure_date": "Start date of the trip",
+                "is_nonstop": "Whether the flight is a direct one",
+                "outbound_departure_time": "Departure time of the flight flying to the destination",
+                "outbound_arrival_time": "Arrival time of the flight flying to the destination",
+                "price": "The total cost of the flight tickets",
+                "airlines": "The company that provides air transport services"
+            }
+        }
+    },
+    "SearchRoundtripFlights": {
+        "description": "Search for roundtrip flights for the trip",
+        "slots": {
+            "required": {
+                "origin_airport": "The name of the airport or city to depart from",
+                "destination_airport": "The name of the airport or city to arrive at",
+                "departure_date": "Start date of the trip",
+                "return_date": "End date of the trip"
+            },
+            "optional": {
+                "seating_class": "The cabin seat option",
+                "number_of_tickets": "the number of flight tickets for the trip",
+                "airlines": "The company that provides air transport services"
+            },
+            "result": {
+                "number_of_tickets": "the number of flight tickets for the trip",
+                "seating_class": "The cabin seat option",
+                "origin_airport": "The name of the airport or city to depart from",
+                "destination_airport": "The name of the airport or city to arrive at",
+                "departure_date": "Start date of the trip",
+                "return_date": "End date of the trip",
+                "is_nonstop": "Whether the flight is a direct one",
+                "outbound_departure_time": "Departure time of the flight flying to the destination",
+                "outbound_arrival_time": "Arrival time of the flight flying to the destination",
+                "inbound_arrival_time": "Arrival time of the flight coming back from the trip",
+                "inbound_departure_time": "Departure time of the flight coming back from the trip",
+                "price": "The total cost of the flight tickets",
+                "airlines": "The company that provides air transport services"
+            }
+        }
+    },
+    "FindHomeByArea": {
+        "description": "Search for a property to rent or buy in a given city",
+        "slots": {
+            "required": {
+                "area": "City where the property is located",
+                "intent": "Whether to buy or rent a property",
+                "number_of_beds": "Number of bedrooms in the property",
+                "number_of_baths": "Number of bathroom in the property"
+            },
+            "optional": {
+                "has_garage": "Whether the property has a garage",
+                "in_unit_laundry": "Whether the property has in-unit laundry facilities"
+            },
+            "result": {
+                "intent": "Whether to buy or rent a property",
+                "area": "City where the property is located",
+                "address": "Street address of property",
+                "property_name": "Name of property or apartment complex",
+                "phone_number": "Contact number of property or apartment complex",
+                "has_garage": "Whether the property has a garage",
+                "in_unit_laundry": "Whether the property has in-unit laundry facilities",
+                "price": "Sale price or per-month rent of property",
+                "number_of_beds": "Number of bedrooms in the property",
+                "number_of_baths": "Number of bathroom in the property"
+            }
+        }
+    },
+    "ScheduleVisit": {
+        "description": "Schedule a visit to a property on a given date",
+        "slots": {
+            "required": {
+                "property_name": "Name of property or apartment complex",
+                "visit_date": "Date for visit to the property"
+            },
+            "optional": {},
+            "result": {
+                "address": "Street address of property",
+                "property_name": "Name of property or apartment complex",
+                "phone_number": "Contact number of property or apartment complex",
+                "has_garage": "Whether the property has a garage",
+                "in_unit_laundry": "Whether the property has in-unit laundry facilities",
+                "price": "Sale price or per-month rent of property",
+                "visit_date": "Date for visit to the property",
+                "number_of_beds": "Number of bedrooms in the property",
+                "number_of_baths": "Number of bathroom in the property"
+            }
+        }
+    },
+    "BookHouse": {
+        "description": "Book the selected house for given dates and number of adults",
+        "slots": {
+            "required": {
+                "where_to": "Location of the house",
+                "number_of_adults": "Number of people for the reservation",
+                "check_in_date": "Start date for the reservation or to find the house",
+                "check_out_date": "End date for the reservation or to find the house"
+            },
+            "optional": {},
+            "result": {
+                "where_to": "Location of the house",
+                "number_of_adults": "Number of people for the reservation",
+                "check_in_date": "Start date for the reservation or to find the house",
+                "check_out_date": "End date for the reservation or to find the house",
+                "rating": "Review rating of the house",
+                "address": "Address of the house",
+                "phone_number": "Phone number of the house",
+                "total_price": "Price per night of the house",
+                "has_laundry_service": "Boolean flag indicating if the house has laundry service"
+            }
+        }
+    },
+    "SearchHouse": {
+        "description": "Find a house at a given location",
+        "slots": {
+            "required": {
+                "where_to": "Location of the house"
+            },
+            "optional": {
+                "has_laundry_service": "Boolean flag indicating if the house has laundry service",
+                "number_of_adults": "Number of people for the reservation",
+                "rating": "Review rating of the house"
+            },
+            "result": {
+                "where_to": "Location of the house",
+                "number_of_adults": "Number of people for the reservation",
+                "rating": "Review rating of the house",
+                "address": "Address of the house",
+                "phone_number": "Phone number of the house",
+                "total_price": "Price per night of the house",
+                "has_laundry_service": "Boolean flag indicating if the house has laundry service"
+            }
+        }
+    },
+    "ReserveHotel": {
+        "description": "Reserve rooms at a selected place for given dates",
+        "slots": {
+            "required": {
+                "place_name": "Name of the accommodation",
+                "check_in_date": "Check in date for reservation",
+                "stay_length": "Length of stay in days",
+                "location": "City or town where the accommodation is located"
+            },
+            "optional": {
+                "number_of_rooms": "Number of rooms to reserve"
+            },
+            "result": {
+                "location": "City or town where the accommodation is located",
+                "number_of_rooms": "Number of rooms to reserve",
+                "check_in_date": "Check in date for reservation",
+                "stay_length": "Length of stay in days",
+                "star_rating": "Star rating of the accommodation",
+                "place_name": "Name of the accommodation",
+                "street_address": "Street address of the accommodation",
+                "phone_number": "Contact phone number of the accommodation",
+                "price_per_night": "Price per night for the stay",
+                "smoking_allowed": "Whether or not smoking is allowed inside the place"
+            }
+        }
+    },
+    "SearchHotel": {
+        "description": "Look for accommodation in a city of choice",
+        "slots": {
+            "required": {
+                "location": "City or town where the accommodation is located"
+            },
+            "optional": {
+                "star_rating": "Star rating of the accommodation",
+                "smoking_allowed": "Whether or not smoking is allowed inside the place",
+                "number_of_rooms": "Number of rooms to reserve"
+            },
+            "result": {
+                "location": "City or town where the accommodation is located",
+                "number_of_rooms": "Number of rooms to reserve",
+                "star_rating": "Star rating of the accommodation",
+                "place_name": "Name of the accommodation",
+                "street_address": "Street address of the accommodation",
+                "phone_number": "Contact phone number of the accommodation",
+                "price_per_night": "Price per night for the stay",
+                "smoking_allowed": "Whether or not smoking is allowed inside the place"
+            }
+        }
+    },
+    "FindMovies": {
+        "description": "Find out interesting movies that you like",
+        "slots": {
+            "required": {},
+            "optional": {
+                "directed_by": "Director of the movie",
+                "genre": "Type of the movie",
+                "cast": "Actors in the movie"
+            },
+            "result": {
+                "movie_title": "Name of the movie",
+                "genre": "Type of the movie",
+                "percent_rating": "Average critic percentage rating",
+                "cast": "Actors in the movie",
+                "directed_by": "Director of the movie"
+            }
+        }
+    },
+    "PlayMovie": {
+        "description": "Watch the movie instantly online with your preferred subtitles",
+        "slots": {
+            "required": {
+                "title": "Title of the movie"
+            },
+            "optional": {
+                "subtitle_language": "Language of the subtitles"
+            },
+            "result": {
+                "title": "Title of the movie",
+                "genre": "Category of the content",
+                "subtitle_language": "Language of the subtitles",
+                "starring": "Celebs acting in the movie"
+            }
+        }
+    },
+    "ShareLocation": {
+        "description": "Send your location to a contact",
+        "slots": {
+            "required": {
+                "location": "Location to share with contact",
+                "contact_name": "Name of contact to send to"
+            },
+            "optional": {},
+            "result": {
+                "location": "Location to share with contact",
+                "contact_name": "Name of contact to send to"
+            }
+        }
+    },
+    "BuyMovieTickets": {
+        "description": "Buy movie tickets for a particular show",
+        "slots": {
+            "required": {
+                "movie_name": "Name of the movie",
+                "number_of_tickets": "Number of the movie tickets to be purchased",
+                "show_date": "Date of the show",
+                "location": "City where the theatre is located",
+                "show_time": "Time of the show",
+                "show_type": "Type of show"
+            },
+            "optional": {},
+            "result": {
+                "price": "Price per ticket",
+                "number_of_tickets": "Number of the movie tickets to be purchased",
+                "show_type": "Type of show",
+                "theater_name": "Name of the theatre",
+                "show_time": "Time of the show",
+                "show_date": "Date of the show",
+                "genre": "Genre of the movie",
+                "street_address": "Address of the theatre",
+                "location": "City where the theatre is located",
+                "movie_name": "Name of the movie"
+            }
+        }
+    },
+    "GetTimesForMovie": {
+        "description": "Get show times for a movie at a location on a given date",
+        "slots": {
+            "required": {
+                "movie_name": "Name of the movie",
+                "location": "City where the theatre is located",
+                "show_date": "Date of the show"
+            },
+            "optional": {
+                "theater_name": "Name of the theatre",
+                "show_type": "Type of show"
+            },
+            "result": {
+                "price": "Price per ticket",
+                "show_type": "Type of show",
+                "theater_name": "Name of the theatre",
+                "show_time": "Time of the show",
+                "show_date": "Date of the show",
+                "genre": "Genre of the movie",
+                "street_address": "Address of the theatre",
+                "location": "City where the theatre is located",
+                "movie_name": "Name of the movie"
+            }
+        }
+    },
+    "PlayMedia": {
+        "description": "Play the music",
+        "slots": {
+            "required": {
+                "track": "Name of the song"
+            },
+            "optional": {
+                "artist": "Performer's name",
+                "device": "Place or name of the media player to play the song selected",
+                "album": "Collection of the song"
+            },
+            "result": {
+                "track": "Name of the song",
+                "artist": "Performer's name",
+                "album": "Collection of the song",
+                "genre": "Type of the music",
+                "year": "Year when the song was first released",
+                "device": "Place or name of the media player to play the song selected"
+            }
+        }
+    },
+    "LookupMusic": {
+        "description": "Discover songs matching your taste",
+        "slots": {
+            "required": {},
+            "optional": {
+                "artist": "Performer's name",
+                "album": "Collection of the song",
+                "genre": "Type of the music",
+                "year": "Year when the song was first released"
+            },
+            "result": {
+                "track": "Name of the song",
+                "artist": "Performer's name",
+                "album": "Collection of the song",
+                "genre": "Type of the music",
+                "year": "Year when the song was first released"
+            }
+        }
+    },
+    "RequestPayment": {
+        "description": "Request payment from someone",
+        "slots": {
+            "required": {
+                "receiver": "Name of the contact or account to make the transaction with",
+                "amount": "The amount of money to send or request"
+            },
+            "optional": {
+                "private_visibility": "Whether the transaction is private or not"
+            },
+            "result": {
+                "amount": "The amount of money to send or request",
+                "receiver": "Name of the contact or account to make the transaction with",
+                "private_visibility": "Whether the transaction is private or not"
+            }
+        }
+    },
+    "MakePayment": {
+        "description": "Send money to your friends",
+        "slots": {
+            "required": {
+                "payment_method": "The source of money used for making the payment",
+                "amount": "The amount of money to send or request",
+                "receiver": "Name of the contact or account to make the transaction with"
+            },
+            "optional": {
+                "private_visibility": "Whether the transaction is private or not"
+            },
+            "result": {
+                "payment_method": "The source of money used for making the payment",
+                "amount": "The amount of money to send or request",
+                "receiver": "Name of the contact or account to make the transaction with",
+                "private_visibility": "Whether the transaction is private or not"
+            }
+        }
+    },
+    "GetCarsAvailable": {
+        "description": "Discover cars available for rent in a certain location and period",
+        "slots": {
+            "required": {
+                "city": "City where you want to rent the car",
+                "start_date": "The first date to start using the rental car",
+                "pickup_time": "Time for the pick-up",
+                "end_date": "The date to return the car"
+            },
+            "optional": {
+                "car_type": "Type of the car"
+            },
+            "result": {
+                "car_type": "Type of the car",
+                "car_name": "Car model",
+                "pickup_location": "Place to pick up the car",
+                "start_date": "The first date to start using the rental car",
+                "pickup_time": "Time for the pick-up",
+                "city": "City where you want to rent the car",
+                "end_date": "The date to return the car",
+                "price_per_day": "The cost for renting the car per day"
+            }
+        }
+    },
+    "ReserveCar": {
+        "description": "Make a rental car reservation",
+        "slots": {
+            "required": {
+                "pickup_location": "Place to pick up the car",
+                "start_date": "The first date to start using the rental car",
+                "pickup_time": "Time for the pick-up",
+                "end_date": "The date to return the car",
+                "car_type": "Type of the car",
+                "add_insurance": "Whether to purchase insurance"
+            },
+            "optional": {},
+            "result": {
+                "car_type": "Type of the car",
+                "car_name": "Car model",
+                "pickup_location": "Place to pick up the car",
+                "start_date": "The first date to start using the rental car",
+                "pickup_time": "Time for the pick-up",
+                "end_date": "The date to return the car",
+                "price_per_day": "The cost for renting the car per day",
+                "add_insurance": "Whether to purchase insurance"
+            }
+        }
+    },
+    "ReserveRestaurant": {
+        "description": "Make a table reservation at a restaurant",
+        "slots": {
+            "required": {
+                "restaurant_name": "Name of the restaurant",
+                "location": "City where the restaurant is located",
+                "time": "Tentative time of restaurant reservation"
+            },
+            "optional": {
+                "number_of_seats": "Number of seats to reserve at the restaurant",
+                "date": "Tentative date of restaurant reservation"
+            },
+            "result": {
+                "restaurant_name": "Name of the restaurant",
+                "date": "Tentative date of restaurant reservation",
+                "time": "Tentative time of restaurant reservation",
+                "has_seating_outdoors": "Whether the restaurant has outdoor seating available",
+                "has_vegetarian_options": "Whether the restaurant has adequate vegetarian options",
+                "phone_number": "Phone number to contact restaurant",
+                "rating": "Average user rating for restaurant on a scale of 5",
+                "address": "Address of restaurant",
+                "number_of_seats": "Number of seats to reserve at the restaurant",
+                "price_range": "Price range for the restaurant",
+                "location": "City where the restaurant is located",
+                "category": "The category of food offered by the restaurant"
+            }
+        }
+    },
+    "FindRestaurants": {
+        "description": "Find restaurants by location and by category",
+        "slots": {
+            "required": {
+                "category": "The category of food offered by the restaurant",
+                "location": "City where the restaurant is located"
+            },
+            "optional": {
+                "price_range": "Price range for the restaurant",
+                "has_vegetarian_options": "Whether the restaurant has adequate vegetarian options",
+                "has_seating_outdoors": "Whether the restaurant has outdoor seating available"
+            },
+            "result": {
+                "restaurant_name": "Name of the restaurant",
+                "has_seating_outdoors": "Whether the restaurant has outdoor seating available",
+                "has_vegetarian_options": "Whether the restaurant has adequate vegetarian options",
+                "phone_number": "Phone number to contact restaurant",
+                "rating": "Average user rating for restaurant on a scale of 5",
+                "address": "Address of restaurant",
+                "price_range": "Price range for the restaurant",
+                "location": "City where the restaurant is located",
+                "category": "The category of food offered by the restaurant"
+            }
+        }
+    },
+    "GetRide": {
+        "description": "Book a cab for any destination, number of seats and ride type",
+        "slots": {
+            "required": {
+                "destination": "Destination address or location for cab",
+                "number_of_seats": "Number of seats to reserve in the cab",
+                "ride_type": "Type of cab ride"
+            },
+            "optional": {},
+            "result": {
+                "destination": "Destination address or location for cab",
+                "ride_type": "Type of cab ride",
+                "ride_fare": "Total fare for cab ride",
+                "wait_time": "Expected waiting time for pick-up by cab",
+                "number_of_seats": "Number of seats to reserve in the cab"
+            }
+        }
+    },
+    "BookAppointment": {
+        "description": "Make a reservation with the therapist based on user's wish",
+        "slots": {
+            "required": {
+                "therapist_name": "Name of the therapist",
+                "appointment_time": "Time of the appointment",
+                "appointment_date": "Date of the appointment"
+            },
+            "optional": {},
+            "result": {
+                "therapist_name": "Name of the therapist",
+                "phone_number": "Contact number of the therapist",
+                "address": "Address of the therapist",
+                "appointment_date": "Date of the appointment",
+                "appointment_time": "Time of the appointment"
+            }
+        }
+    },
+    "FindProvider": {
+        "description": "Discover therapist according to user's conditions",
+        "slots": {
+            "required": {
+                "city": "Area where user wants to search for a therapist",
+                "type": "Type of the therapist"
+            },
+            "optional": {},
+            "result": {
+                "therapist_name": "Name of the therapist",
+                "phone_number": "Contact number of the therapist",
+                "address": "Address of the therapist",
+                "city": "Area where user wants to search for a therapist",
+                "type": "Type of the therapist"
+            }
+        }
+    },
+    "GetTrainTickets": {
+        "description": "Reserve tickets for train journey",
+        "slots": {
+            "required": {
+                "from": "Starting city for train journey",
+                "to": "Ending city for train journey",
+                "date_of_journey": "Date of train journey",
+                "journey_start_time": "Time of start of train journey",
+                "number_of_adults": "Number of adults to reserve train tickets for",
+                "trip_protection": "Whether to add trip protection to reservation, for a fee"
+            },
+            "optional": {
+                "class": "Fare class for train reservation"
+            },
+            "result": {
+                "from": "Starting city for train journey",
+                "to": "Ending city for train journey",
+                "from_station": "Name of station at starting city",
+                "to_station": "Name of station at ending city",
+                "date_of_journey": "Date of train journey",
+                "journey_start_time": "Time of start of train journey",
+                "total": "Total price of train reservation",
+                "number_of_adults": "Number of adults to reserve train tickets for",
+                "class": "Fare class for train reservation",
+                "trip_protection": "Whether to add trip protection to reservation, for a fee"
+            }
+        }
+    },
+    "FindTrains": {
+        "description": "Find trains to a given destination city",
+        "slots": {
+            "required": {
+                "from": "Starting city for train journey",
+                "to": "Ending city for train journey",
+                "date_of_journey": "Date of train journey"
+            },
+            "optional": {
+                "class": "Fare class for train reservation",
+                "number_of_adults": "Number of adults to reserve train tickets for"
+            },
+            "result": {
+                "from": "Starting city for train journey",
+                "to": "Ending city for train journey",
+                "from_station": "Name of station at starting city",
+                "to_station": "Name of station at ending city",
+                "date_of_journey": "Date of train journey",
+                "journey_start_time": "Time of start of train journey",
+                "total": "Total price of train reservation",
+                "number_of_adults": "Number of adults to reserve train tickets for",
+                "class": "Fare class for train reservation",
+                "trip_protection": "Whether to add trip protection to reservation, for a fee"
+            }
+        }
+    },
+    "FindAttractions": {
+        "description": "Browse attractions in a given city",
+        "slots": {
+            "required": {
+                "location": "City or town where the attraction is located"
+            },
+            "optional": {
+                "free_entry": "Boolean flag indicating whether entrance to attraction is free",
+                "category": "Category to which the attraction belongs",
+                "good_for_kids": "Boolean flag indicating whether attraction is good for to take kids to"
+            },
+            "result": {
+                "location": "City or town where the attraction is located",
+                "attraction_name": "Common name of the attraction",
+                "category": "Category to which the attraction belongs",
+                "phone_number": "Phone number to contact the attraction",
+                "free_entry": "Boolean flag indicating whether entrance to attraction is free",
+                "good_for_kids": "Boolean flag indicating whether attraction is good for to take kids to"
+            }
+        }
+    },
+    "GetWeather": {
+        "description": "Get the weather of a certain location on a date",
+        "slots": {
+            "required": {
+                "city": "Name of the city"
+            },
+            "optional": {
+                "date": "Date for the weather"
+            },
+            "result": {
+                "precipitation": "The possibility of rain or snow in percentage",
+                "humidity": "Percentage humidity",
+                "wind": "Wind speed in miles per hour",
+                "temperature": "Temperature in Fahrenheit",
+                "city": "Name of the city",
+                "date": "Date for the weather"
+            }
+        }
+    }
+}

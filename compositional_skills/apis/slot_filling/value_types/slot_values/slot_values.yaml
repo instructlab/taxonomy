@@ -1,0 +1,15 @@
+sgd_wa:
+	instruction: Find all the slots and their values from the conversation.\n<slot library>\nintent: Whether to buy or rent a property\nlocation: City or town where the attraction is located\ncity: Area where user wants to search for a therapist\nmovie_name: Name of the movie\narea: City where the property is located\nnumber_of_beds: Number of bedrooms in the property\nnumber_of_baths: Number of bathroom in the property\nnew_alarm_time: Time to set for the new alarm
+	question: <conversation>USER: Can you find me a place to live?\nSYSTEM: Sure. Can you give me the following information: where do you want to live? How many bedrooms do you need? How many bathrooms do you need?\nUSER: Find me a 2 bedroom, one bathroom property in Fairfield.\nSYSTEM: Are you looking to rent or to buy?\nUSER: I am looking to buy.
+	answer: area: Fairfield [SEP] number_of_baths: 1 [SEP] number_of_beds: 2 [SEP] intent: buy
+	active_apis: FindHomeByArea
+sgd_wa:
+	instruction: Find all the slots and their values from the conversation.\n<slot library>\norigin_airport: The name of the airport or city to depart from\ncategory: The category of food offered by the restaurant\nmovie_name: Name of the movie\nprice_range: Price range for the restaurant\nnew_alarm_time: Time to set for the new alarm
+	question: <conversation>USER: I'd like to find a nice reasonably priced restaurant.\nSYSTEM: What sort of food do you want to eat?\nUSER: How about Seafood?
+	answer: price_range: moderate [SEP] category: Seafood
+	active_apis: FindRestaurants
+sgd_wa:
+	instruction: Find all the slots and their values from the conversation.\n<slot library>\ndestination: Destination address or location for cab\nstart_date: The first date to start using the rental car\nend_date: The date to return the car\ncity: City where you want to rent the car\narea: City where the property is located\nnumber_of_seats: Number of seats to reserve in the cab\npickup_time: Time for the pick-up
+	question: <conversation>USER: My car is in the shop and I need to rent a car.\nSYSTEM: When would you like to start and end the car rental? What time would you like to pick it up?\nUSER: I need to pick it up this Saturday at 2 in the afternoon and return it on the 7th of this month.\nSYSTEM: Where would you like to rent the car from?\nUSER: I'm looking for something in SD.
+	answer: end_date: 7th of this month [SEP] pickup_time: 2 in the afternoon [SEP] start_date: this Saturday [SEP] city: SD
+	active_apis: GetCarsAvailable

@@ -1,0 +1,25 @@
+APIs:
+  API Detection:
+    Single API:
+    Multiple API:
+    API Yes/No:
+  Slot Filling:
+    Value Types:
+      Slot Values:
+      Long Slot Values:
+      Categorical Slots:
+    API Call Ready:
+      Required/Optional Slots:
+      Missing Slots Gathering:
+  Sequencing:
+    Explicit Sequencing:
+      Nested:
+      Non-Nested:
+    Implicit Sequencing:
+    Policy Grounded Sequencing:
+    Workflow Grounded Sequencing:  
+  Response Generation:
+    Natural Language:
+    Code:
+    Table:  
+
