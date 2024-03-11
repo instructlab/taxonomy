@@ -1,0 +1,21 @@
+created_by: calfonso
+seed_examples:
+- answer: 'Two fish get in a tank. One says to the other...
+  do you know how to drive this thing?
+
+    '
+  question: Tell me a dad joke about fish.
+- answer: 'Did you hear about the guy who invented Lifesavers?
+
+    '
+  question: Tell me a dad joke about lifesavers.
+- answer: 'I told my wife she should embrace her mistakes. She gave me a hug.
+
+    '
+  question: Tell me a dad joke about hugs.
+- answer: 'What did the big flower say to the little flower? Hi, bud!
+
+    '
+  question: Tell me a dad joke about flowers.
+
+task_description: ''
