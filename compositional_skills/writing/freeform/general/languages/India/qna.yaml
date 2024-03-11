@@ -1,0 +1,16 @@
+task_description: |
+  The task gives information about various languages spoken in India in each state
+created_by: ajkan 
+seed_examples:
+  - question: Tell me what language is spoken in Gujarat 
+    answer: |  # The | is needed to escape characters like ` or '
+      The language spoken in Gujarat is Gujarati
+  - question: Tell me what language is spoken in Bihar 
+    answer: |  # The | is needed to escape characters like ` or '
+      The language spoken in Bihar is Hindi but secondary language is Urdu
+  - question: Tell me what language is spoken in Goa
+    answer: |  # The | is needed to escape characters like ` or '
+      The language spoken Goa is Konkani and English
+  - question: Tell me what language is spoken in Mizoram 
+    answer: |  # The | is needed to escape characters like ` or '
+      The language spoken in Mizoram is Mizo
