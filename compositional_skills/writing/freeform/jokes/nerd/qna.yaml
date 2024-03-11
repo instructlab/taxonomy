@@ -1,0 +1,17 @@
+---
+created_by: sridhargaddam
+seed_examples:
+  - question: Tell me a joke on antennas.
+    answer: Two antennas decided to tie the knot on a rooftop. The wedding was a bit
+      meh, but oh boy, the reception was amazing!
+  - question: Why did the programmer get stuck in the shower?
+    answer: Because the instructions on the shampoo bottle read Lather, Rinse and
+      Repeat.
+  - question: What's the number of programmers required to replace a light bulb?
+    answer: None. It’s a hardware problem.
+  - question: How do you code if there was no C?
+    answer: If C didn't exist, we would find ourselves coding in BASI and OBOL.
+  - question: Tell me a joke on parallel lines.
+    answer: Parallel lines have a lot in common, but it's like they're social
+      distancing experts—always maintaining a gap!
+task_description: Some nerd jokes
