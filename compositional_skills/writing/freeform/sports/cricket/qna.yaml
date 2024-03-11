@@ -2,7 +2,7 @@ created_by: sushilkulkarni
 seed_examples:
   - answer: >-
       To put it in simple terms, Mankading refers to the act of dismissing a non
-      striker batter before a ball is bowled by running him/herout. According to
+      striker batter before a ball is bowled by running him/her out. According to
       Cricket law 38.3.1 At any time from the moment the ball comes into play
       until the instant when the bowler would normally have been expected to
       release the ball, the non-striker is liable to be Run out if he/she is out
@@ -11,7 +11,7 @@ seed_examples:
       the bowler throwing the ball at the stumps or by the bowler’s hand holding
       the ball, whether or not the ball is subsequently delivered.
     question: Tell me what is Mankading
-  - answer: 'It is named after the Indian Cricket Player Vinoo Mankad '
+  - answer: It is named after the Indian Cricket Player Vinoo Mankad
     question: Tell me who is Mankading named after
   - answer: The non-striking batsman gets dismissed in a Mankading scenario
     question: Tell me who gets out when Mankaded
