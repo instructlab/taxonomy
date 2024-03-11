@@ -1,0 +1,31 @@
+task_description: Generate a series of questions using de Bono's 6 Thinking Hats
+created_by: kattekrab
+seed_examples:
+  - context: |
+Context copied from https://www.mindtools.com/ajlpp1e/six-thinking-hats
+Blue Hat is "the Conductor's Hat" - When you or your team are in blue hat mode, you focus on controlling your thinking and managing the decision-making process. You have an agenda, ask for summaries, and reach conclusions.
+Green Hat is "the Creative Hat" - The green hat represents creative thinking. When you're "wearing" this hat, you explore a range of ideas and possible ways forward.
+Red Hat is "the Hat for the Heart" - This hat represents feelings and instincts. When you're engaged in this type of thinking, you can express your feelings without having to justify them logically.
+Yellow Hat is "the Optimist's Hat" - With yellow hat thinking, you look at issues in the most positive light possible. You accentuate the benefits and the added value that could come from your ideas.
+Black Hat is "the Judge's Hat" - This hat is about being cautious and assessing risks. You employ critical judgment and explain exactly why you have concerns.
+White Hat "the Factual Hat" - The white hat represents information gathering. Think about the knowledge and insights that you've collected already – but also the information you're missing, and where you can go to get it.
+- question: Using the Yellow Hat, can you describe the benefits of exercise?
+    answer: |
+      Exercise is beneficial for most people. Exercise generally helps people feel physically healthier, stronger and fitter. Exercise has also been shown to help people feel less stressed, anxious, or depressed.
+-  question: Using the Red Hat, how do people feel about exercise?
+    answer: | 
+      People have many different feelings about exercise. Some enjoy exercise, others do not, some find it hard to get motivated to exercise, others make it part of their daily routines, and for professional elite athletes, exercise is their job.
+- question: Using the Green Hat, can you suggest some alternatives ways to get more exercise?
+    answer: |
+      Combine a simple form of exercise such as walking or running with visiting a new place. Try out a new sport, or put more effort into every day tasks. 
+      Take the stairs, instead of the lift. Knead bread by hand, instead of using the bread making machine.  Look for little opportunities to get moving, or expend energy.  
+- question: Using the Black Hat, can you describe the risks and challenges of exercise?
+    answer: |
+      Exercise can be dangerous. Many people are injured every day whilst doing simple exercise. It can also be expensive, requiring specialised equipments, advice and guidance of coaches and trainers, or gym membership fees.
+- question: Using the White Hat, can you provide some factual, referenced information about exercise?
+    answer: |
+      Exercise is a regular, repeatable, structured form of physical activity. It can be aerobic, or anaerobic, aimed at stimulating heart and lungs, or developing muscle strength, or increasing speed and agility.
+- question: Using the Blue Hat, can you summarise our discussion about exercise?
+    answer: |
+      Exercise is a common human activity, with benefits, and challenges. Some people love it, some loathe it, but on the whole, most agree it's important for humans to get regular exercise, and make sure they're putting healthy activities into their daily lives.
+      
