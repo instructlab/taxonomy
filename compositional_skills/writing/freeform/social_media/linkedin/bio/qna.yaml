@@ -1,54 +1,58 @@
 created_by: avinashsingh77
+task_description: This skill helps the model write a LinkedIn Bio as per provided input
 seed_examples:
   - answer: >
-      Absolutely! Here's a draft for your LinkedIn profile summary: Passionate
-      DevOps professional with [X] years of hands-on experience in building
-      robust infrastructure and streamlining development processes. Throughout
-      my career, I've played a pivotal role in optimizing deployment pipelines,
-      enhancing system reliability, and fostering a culture of continuous
-      integration and delivery. Driven by a profound interest in the
-      intersection of artificial intelligence and operations, I'm now eager to
-      pivot my career towards AI and MLOps. Leveraging my solid foundation in
-      DevOps principles, I aim to spearhead the seamless integration of machine
-      learning models into production environments, ensuring scalability,
-      performance, and reliability. With a keen eye for automation and a knack
-      for problem-solving, I thrive in dynamic environments where technology
-      drives innovation. My expertise spans across cloud platforms,
-      containerization, orchestration tools, and CI/CD pipelines, providing a
-      strong foundation for navigating the complexities of AI infrastructure.
-      Seeking new opportunities to apply my skills and contribute to
-      cutting-edge projects in AI and MLOps, I am committed to continuous
-      learning and growth in this rapidly evolving field. Let's connect and
-      explore how we can collaborate to drive transformative advancements in
-      AI-driven technologies.
+      Certainly! Here's a draft for your LinkedIn bio:
+
+      DevOps Expert with a Passion for AI and MLOPs.
+
+      Experienced DevOps professional with a keen eye for streamlining
+      operations and optimizing efficiency in software development lifecycles.
+      Eager to leverage my expertise in DevOps methodologies, automation, and
+      infrastructure as code to propel my career into the exciting realms of
+      Artificial Intelligence and MLOps.
+
+      Skills & Specializations:
+       DevOps: Automation, CI/CD pipelines, Infrastructure as Code (IaC), Configuration Management
+       Cloud Platforms: AWS, Azure, GCP
+       Containerization: Docker, Kubernetes
+       Monitoring & Logging: ELK Stack, Prometheus, Grafana
+       Scripting & Programming: Python, Bash, Go
+       AI & ML Fundamentals: Neural Networks, Machine Learning Algorithms
+
+      Goals:
+       Passionate about bridging the gap between development and operations while integrating AI and machine learning technologies into robust,
+        scalable, and efficient systems. Committed to staying at the forefront of advancements in AI and MLOps, continuously learning, 
+        and adapting to new technologies and methodologies.
+
+      Open to Opportunities:
+       Seeking roles where I can apply my expertise in DevOps alongside my growing knowledge in AI and MLOps to drive innovation, 
+       solve complex challenges, and contribute to cutting-edge projects that are shaping the future of technology.
+
+      Let's connect and explore opportunities to collaborate on exciting
+      ventures at the intersection of DevOps and AI/MLOps!
     question: >
       Help me draft a LinkedIn Bio for me. I am an experienced devops
       professional aspiring to transition my career in AI and MLOPs.
   - answer: >
-      Certainly! Here's a draft for your LinkedIn profile summary: Passionate
-      Software Developer skilled in Java backend services with a proven track
-      record of delivering robust solutions that drive business growth. With [X
-      years] of experience in the industry, I've honed my skills in designing,
-      implementing, and maintaining scalable applications that meet the highest
-      standards of performance and reliability. Driven by a constant thirst for
-      learning and growth, I am now eager to pivot my career towards DevOps and
-      Infrastructure services. Recognizing the pivotal role of seamless
-      integration between development and operations in today's dynamic tech
-      landscape, I am committed to mastering the tools and practices that bridge
-      these domains. In my journey towards becoming a proficient DevOps
-      engineer, I bring a strong foundation in software development principles,
-      coupled with a keen understanding of system architecture and deployment
-      methodologies. My goal is to leverage this expertise to streamline
-      development workflows, optimize infrastructure management, and foster a
-      culture of collaboration and continuous improvement within organizations.
-      I thrive in fast-paced environments where innovation is encouraged and
-      challenges are viewed as opportunities for growth. With a proactive
-      mindset and a collaborative spirit, I am ready to contribute my skills and
-      insights to teams striving to achieve excellence in their DevOps
-      practices. Let's connect to explore how my background in software
-      development and my aspirations in DevOps align with the goals of your
-      organization.
+      Certainly! Here's a draft for your LinkedIn bio:
+
+      Experienced software developer with a strong background in Java backend
+      services. Passionate about crafting robust, scalable solutions to meet
+      business needs.
+
+      Aspiring to transition my career into the dynamic world of DevOps and
+      Infrastructure services. Excited to leverage my development experience to
+      streamline processes, enhance automation, and optimize infrastructure for
+      efficiency and reliability.
+
+      Proficient in Java, with a keen eye for performance optimization and code
+      quality. Committed to continuous learning and staying updated with the
+      latest tools and technologies in the DevOps ecosystem.
+
+      Let's connect to explore opportunities for collaboration and growth in the
+      intersection of software development and infrastructure management!
     question: >
-      Help me draft a LinkedIn Bio for me. I am an experienced devops
-      professional aspiring to transition my career in AI and MLOPs.
-task_description: This skill helps the model write a LinkedIn Bio as per provided input
+      Help me draft a LinkedIn Bio for me.  I am an experienced software
+      developer with expertise in java backend services. I am aspiring to
+      transition my career in DevOps and Infrastructure services
