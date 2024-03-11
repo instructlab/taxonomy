@@ -1,0 +1,46 @@
+---
+created_by: gthiemonge
+seed_examples:
+  - question: |
+      Generate a time-block template with checkboxes for today, I want to do
+      some exercises in the morning and have lunch at 1pm, I need to take the
+      kids back from school at 4pm.
+    answer: |
+      - [ ] 7:00 - 8:00 Morning exercises
+      - [ ] 8:00 - 9:00 Shower and Breakfast
+      - [ ] 9:00 - 13:00 Work
+      - [ ] 13:00 - 14:00 Lunch
+      - [ ] 14:00 - 16:00 Work
+      - [ ] 16:00 - 17:00 Kids
+  - question: |
+      Generate a Template in Markdown for my daily notes of January 17th 2024,
+      including the list of completed tasks and things to do.
+    answer: |
+      January 17th 2024
+
+      # Notes
+      - [My notes]
+
+      # Completed tasks
+      - [First completed task]
+
+      # Planning
+      -
+  - question: |
+      Generate a Template in Mardown with my TODO list, remind me to call Bob,
+      and add it to the time-block section at 2pm. I also have a Customer
+      meeting at 10am.
+    answer: |
+      [Date]
+
+      # Todo
+      - Call Bob
+
+      # Planning
+      - [ ] 8:00 - 8:30 Breakfast
+      - [ ] 8:30 - 10:00 Work
+      - [ ] 10:00 - 11:00 Customer meeting
+      - [ ] 11:00 - 13:00 Work
+      - [ ] 13:00 - 14:00 Lunch
+      - [ ] 14:00 - 14:30 Call Bob
+      - [ ] 14:30 - 18:00 Work
