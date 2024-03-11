@@ -1,0 +1,133 @@
+created_by: ralonsoh
+seed_examples:
+- answer: 'This is the Straw Man fallacy and this fallacy occurs when your
+      opponent over-simplifies or misrepresents your argument (i.e.,
+      setting up a "straw man") to make it easier to attack or refute.
+      Instead of fully addressing your actual argument, speakers relying
+      on this fallacy present a superficially similar — but ultimately not
+      equal — version of your real stance, helping them create the illusion
+      of easily defeating you.'
+  context: 'John: I think we should hire someone to redesign our website.
+      Lola: You''re saying we should throw our money away on external
+      resources instead of building up our in-house design team? That''s
+      going to hurt our company in the long run.'
+  question: 'Can you spot the fallacy and describe it?'
+- answer: 'This is the Straw Man fallacy and this fallacy occurs when your
+      opponent over-simplifies or misrepresents your argument (i.e.,
+      setting up a "straw man") to make it easier to attack or refute.
+      Instead of fully addressing your actual argument, speakers relying
+      on this fallacy present a superficially similar — but ultimately not
+      equal — version of your real stance, helping them create the illusion
+      of easily defeating you.'
+  context: 'Person 1: I think we should legalize marijuana.
+      Person 2: So you are fine with children taking ecstasy and LSD?'
+  question: 'Can you spot the fallacy and describe it?'
+- answer: 'This is a red herring and is an attempt to shift focus from the
+      debate at hand by introducing an irrelevant point.'
+  context: 'Losing a tooth can be scary, but have you heard about the Tooth
+      Fairy?'
+  question: 'Can you spot the fallacy and describe it?'
+- answer: 'This is an equivocation and is a statement crafted to mislead or
+      confuse readers or listeners by using multiple meanings or
+      interpretations of a word or simply through unclear phrasing.'
+  context: 'While I have a clear plan for the campus budget that accounts
+      for every dollar spent, my opponent simply wants to throw money at
+      special interest projects.'
+  question: 'Can you spot the fallacy and describe it?'
+- answer: 'This is a slippery slope fallacy where the arguer claims a
+     specific series of events will follow one starting point, typically
+     with no supporting evidence for this chain of events.'
+  context: 'If we make an exception for Bijal''s service dog, then other
+      people will want to bring their dogs. Then everybody will bring their
+      dog, and before you know it, our restaurant will be overrun with dogs,
+      their slobber, their hair, and all the noise they make, and nobody
+      will want to eat here anymore.'
+  question: 'Can you spot the fallacy and describe it?'
+- answer: 'This is a slippery slope fallacy where the arguer claims a
+     specific series of events will follow one starting point, typically
+     with no supporting evidence for this chain of events.'
+  context: 'If we allow our 14-year-old to have her first date tonight,
+     what''s next? A wedding, kids?'
+  question: 'Can you spot the fallacy and describe it?'
+- answer: 'This is a slippery slope fallacy where the arguer claims a
+     specific series of events will follow one starting point, typically
+     with no supporting evidence for this chain of events.'
+  context: 'If we teach Tommy how to drive the car, he''ll want to learn
+     how to fly helicopters next!'
+  question: 'Can you spot the fallacy and describe it?'
+- answer: 'This is a hasty generalization and is a statement made after
+      considering just one or a few examples rather than relying on more
+      extensive research to back up the claim.'
+  context: 'I felt nauseated both times I ate pizza from Georgio''s, so I
+      must be allergic to something in pizza.'
+  question: 'Can you spot the fallacy and describe it?'
+- answer: 'This is a hasty generalization and is a statement made after
+      considering just one or a few examples rather than relying on more
+      extensive research to back up the claim.'
+  context: 'My father smoked four packs of cigarettes a day from age 14 and
+      lived until the age of 95. So smoking really can''t be that bad for you.'
+  question: 'Can you spot the fallacy and describe it?'
+- answer: 'This is a false dilemma, also known as a false dichotomy, and
+      claims there are only two options in a given situation. Often, these
+      two options are extreme opposites of each other, failing to acknowledge
+      that other, more reasonable, options exist.'
+  context: 'If you don''t support my decision, you were never really my friend.'
+  question: 'Can you spot the fallacy and describe it?'
+- answer: 'This is a false dilemma, also known as a false dichotomy, and
+      claims there are only two options in a given situation. Often, these
+      two options are extreme opposites of each other, failing to acknowledge
+      that other, more reasonable, options exist.'
+  context: 'In Latin America, only two countries offer travel and tourism options:
+      Mexico and Guatemala. Katie is one of 16,400 students on her college campus.
+      The only boys worth dating are Dave and Steve.'
+  question: 'Can you spot the fallacy and describe it?'
+- answer: 'This is an appeal to ignorance and is a claim that something must be
+      true because it hasn''t been proven false. It can also be a claim that
+      something must be false because it hasn''t been proven true. This is also
+      known as the burden of proof fallacy.'
+  context: 'There must be fairies living in our attic because nobody''s ever
+      proven that there aren''t fairies living in our attic.'
+  question: 'Can you spot the fallacy and describe it?'
+- answer: 'This is a circular argument and is one that uses the same statement
+      as both the premise and the conclusion. No new information or justification
+      is introduced.'
+  context: 'Peppers are the easiest vegetable to grow because I think peppers
+      are the easiest vegetable to grow.'
+  question: 'Can you spot the fallacy and describe it?'
+- answer: 'This is a causal fallacy and implies a relationship between two things
+      where one can’t actually be proven.'
+  context: 'When ice cream sales are up, so are shark attacks. Therefore, buying
+      ice cream increases your risk of being bitten by a shark.'
+  question: 'Can you spot the fallacy and describe it?'
+- answer: 'This is a formal logic fallacy; this argument is invalid because even
+      though Spider-Man is in fact Peter Parker, the citizens of New York don''t
+      necessarily know Spider-Man''s true identity and therefore don''t necessarily
+      know that Peter Parker saved their city.'
+  context: 'Premise 1: Peter Parker is Spider-Man.
+      Premise 2: The citizens of New York know that Spider-Man saved their city.
+      Conclusion: The citizens of New York know that Peter Parker saved their city.'
+  question: 'Can you spot the fallacy and describe it?'
+- answer: 'This is a "Cum Hoc, Ergo Propter Hoc" fallacy and it happens when it is
+      assumed that, because two things occur together, they must be related.'
+  context: 'People who eat oatmeal have healthy hearts. Roosters crow before sunrise.
+      Therefore, roosters cause the sun to rise.'
+  question: 'Can you spot the fallacy and describe it?'
+- answer: 'This is a False Analogy fallacy and it happens when you make an assumption
+      about two things that are alike. Because they are alike in one respect, it is
+      assumed they are alike in another.'
+  context: 'People and watches are both complex. Therefore, they both must be the
+      product of complex design.'
+  question: 'Can you spot the fallacy and describe it?'
+- answer: 'This is a "Post Hoc, Ergo Propter Hoc" and these fallacies occur when it
+      is assumed that, because one thing happened after another, it must have
+      occurred as a result of it.'
+  context: 'Right when I sneezed, the power went off. I must''ve caused the outage.'
+  question: 'Can you spot the fallacy and describe it?'
+- answer: 'This is a "Post Hoc, Ergo Propter Hoc" and these fallacies occur when it
+      is assumed that, because one thing happened after another, it must have
+      occurred as a result of it.'
+  context: 'Mary wore her favorite necklace today and aced her spelling test. That
+      necklace must be lucky.'
+  question: 'Can you spot the fallacy and describe it?'
+task_description: 'Identify a fallacy'
+
