@@ -1,0 +1,23 @@
+---
+task_description: |
+  Translate Chinese company names into English.
+created_by: pezhang
+seed_examples:
+  - question: 比亚迪
+    answer: BYD
+  - question: 宁德时代
+    answer: CATL
+  - question: 贵州茅台
+    answer: Kweichow Moutai
+  - question: 海康威视
+    answer: Hikvision
+  - question: 美的集团
+    answer: Midea Group
+  - question: 格力电气
+    answer: Gree Electric
+  - question: 华为
+    answer: Huawei
+  - question: 中国商飞
+    answer: COMAC
+  - question: 中国中车
+    answer: CRRC
