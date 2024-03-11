@@ -1,52 +1,26 @@
-created_by: mairin
+task_description: |
+  The pun task enables the telling of funny pun-based jokes about nacionalities.
+created_by: mcastrol # Use your GitHub username; only one creator supported
 seed_examples:
-- answer: 'Why do birds eat wood?
+  - question: Tell me a pun about argentinian.
+    answer: |  # The | is needed to escape characters like ` or '
+      Why can't Argentinians play hide and seek?
+      Because they always find themselves talking to each other.
+  - question: Tell me a pun about argentinian.
+    answer: |
+      Why do Argentinians always carry an umbrella when they go to the bathroom?
 
+      Because they always like to be under the shower.
+  - question: Tell me a pun about argentinian.
+    answer: |
+      What does an Argentinian do with a $100 bill?
 
-    Because they''re peckish!
+      They spend it as if it were $1000 and treat it as if it were $10, but they never let go of it!
+  - question: Tell me a pun about spain people from galician (gallegos).
+    answer: |
+      Why do Galicians bring a glass of water to the cinema?
 
-    '
-  question: Tell me a pun about birds.
-- answer: 'Why do French people always eat snails?
-
-
-    They don''t like fast food.
-
-    '
-  question: Tell me a pun about fast food.
-- answer: 'Why did the car have a belly ache?
-
-
-    Because it had too much gas!
-
-    '
-  question: Tell me a pun about gas.
-- answer: 'What did the ocean say to the ocean?
-
-
-    Nothing. It just waved!
-
-    '
-  question: Tell me a pun about waves.
-- answer: 'Do you want to hear a roof joke?
-
-
-    Nevermind. The first one''s on the house!
-
-    '
-  question: Tell me a pun about roofs.
-- answer: 'What do dentists call their x-rays?
-
-
-    Tooth pics!
-
-    '
-  question: Tell me a pun about x-rays.
-- answer: 'Why does Peter Pan always fly?
-
-
-    Because he never lands.
-
-    '
-  question: Tell me a pun about Neverland.
-task_description: ''
+      In case the movie is bad, they can have a good nap!
+  - question: how can an argentina commit suicide?
+    answer: |
+      They throw themselves from the height of their ego.
