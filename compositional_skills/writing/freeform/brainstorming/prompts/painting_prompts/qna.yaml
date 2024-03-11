@@ -1,0 +1,46 @@
+task_description: >-
+  This skill enables the model to provide a variety of prompts to inspire a
+  painting.
+created_by: ousleyp
+seed_examples:
+  - question: >-
+      Give me a list of 5 painting prompts. These should be very short (1-4
+      words).
+    answer: |
+      1. Summer school.
+      2. Post office back room.
+      3. Above the cathedral.
+      4. Gas station at night.
+      5. Witches dancing with cats.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >-
+      Give me a list of 5 painting prompts. Each prompt must not be longer than
+      10 words.
+    answer: |
+      1. A weeping willow tree, at night, under a full moon.
+      2. A family of ducks crossed Broadway in Manhattan.
+      3. Undiscovered bioluminescent creatures lit up the cave depths.
+      4. High up in the sky, the workers ate their lunches.
+      5. Everything in the palace was golden.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Give me a list of 5 painting prompts in the form of sentences.
+    answer: >
+      1. The servers' LEDs blinked in the eyes of the cobra that lurked beneath
+      them.
+
+      2. The old man trudged through the snow, leaving the fire to engulf the
+      house behind him.
+
+      3. The pet shop's walls were covered in aquariums that glowed through the
+      night.
+
+      4. How did the octopus get into the abandoned elementary school?
+
+      5. The forest child had decorated the grove with found objects.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
