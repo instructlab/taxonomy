@@ -1,38 +1,37 @@
-created_by: gadig17
-seed_example:
- - answer: |
-     For a beginner aiming to run a marathon in six months, consider the following training schedule:
-      - Week 1-4: Build endurance with 3-4 short runs (3-5 miles) and one long run (6-8 miles) per week.
-      - Week 5-8: Increase mileage with 4-5 short runs (4-6 miles) and one long run (8-10 miles) per week.
-      - Week 9-12: Add speed work with intervals and maintain a long run of 10-12 miles.
-      - Week 13-16: Focus on hill training and increase long run to 14-16 miles.
-      - Week 17-20: Taper down mileage but maintain intensity.
-      - Week 21-24: Final taper and prepare mentally for the marathon.
-   context: |
-     | **Training Phase**     | **Weekly Mileage**             | **Key Workouts**                            |
-     |------------------------|---------------------------------|---------------------------------------------|
-     | Initial Buildup        | 15-20 miles per week           | Short runs, one long run (6-8 miles)       |
-     | Endurance Building     | 20-25 miles per week           | Increase long run (8-10 miles)             |
-     | Speed and Intervals    | 25-30 miles per week           | Intervals, maintain long run (10-12 miles)|
-     | Hill Training          | 30-35 miles per week           | Hill workouts, longer long run (14-16 miles)|
-     | Tapering Down          | 20-25 miles per week           | Reduce mileage, maintain intensity         |
-     | Final Taper            | 15-20 miles per week           | Final preparations, mental focus           |
-   question: |
-     Provide a marathon training plan for a beginner aiming to run a marathon in six months.
-
- - answer: |
-     For an intermediate runner aiming to improve their marathon time, consider the following key workouts:
-      - Tempo runs at a pace slightly faster than marathon pace.
-      - Long runs with progression, gradually increasing pace.
-      - Interval training with 800m to 1-mile repeats.
-      - Back-to-back long runs to simulate race fatigue.
-   context: |
-     | **Training Focus**     | **Key Workouts**                   |
-     |------------------------|------------------------------------|
-     | Speed and Endurance    | Tempo runs, long runs with progression|
-     | Interval Training       | 800m to 1-mile repeats             |
-     | Race Simulation        | Back-to-back long runs             |
-   question: |
-     What are key workouts for an intermediate runner aiming to improve their marathon time?
 task_description: |
   Provide personalized marathon training plans based on runner's fitness level, goals and available time.
+created_by: gadig17
+seed_examples:
+  - context: |
+      | **Training Phase**     | **Weekly Mileage**             | **Key Workouts**                            |
+      |------------------------|---------------------------------|---------------------------------------------|
+      | Initial Buildup        | 15-20 miles per week           | Short runs, one long run (6-8 miles)       |
+      | Endurance Building     | 20-25 miles per week           | Increase long run (8-10 miles)             |
+      | Speed and Intervals    | 25-30 miles per week           | Intervals, maintain long run (10-12 miles)|
+      | Hill Training          | 30-35 miles per week           | Hill workouts, longer long run (14-16 miles)|
+      | Tapering Down          | 20-25 miles per week           | Reduce mileage, maintain intensity         |
+      | Final Taper            | 15-20 miles per week           | Final preparations, mental focus           |
+    question: |
+      Provide a marathon training plan for a beginner aiming to run a marathon in six months.
+    answer: |
+      For a beginner aiming to run a marathon in six months, consider the following training schedule:
+       - Week 1-4: Build endurance with 3-4 short runs (3-5 miles) and one long run (6-8 miles) per week.
+       - Week 5-8: Increase mileage with 4-5 short runs (4-6 miles) and one long run (8-10 miles) per week.
+       - Week 9-12: Add speed work with intervals and maintain a long run of 10-12 miles.
+       - Week 13-16: Focus on hill training and increase long run to 14-16 miles.
+       - Week 17-20: Taper down mileage but maintain intensity.
+       - Week 21-24: Final taper and prepare mentally for the marathon.
+  - context: |
+      | **Training Focus**     | **Key Workouts**                   |
+      |------------------------|------------------------------------|
+      | Speed and Endurance    | Tempo runs, long runs with progression|
+      | Interval Training       | 800m to 1-mile repeats             |
+      | Race Simulation        | Back-to-back long runs             |
+    question: |
+      What are key workouts for an intermediate runner aiming to improve their marathon time?
+    answer: |
+      For an intermediate runner aiming to improve their marathon time, consider the following key workouts:
+       - Tempo runs at a pace slightly faster than marathon pace.
+       - Long runs with progression, gradually increasing pace.
+       - Interval training with 800m to 1-mile repeats.
+       - Back-to-back long runs to simulate race fatigue.
