@@ -1,0 +1,44 @@
+---
+created_by: durandom
+seed_examples:
+  - answer: |
+      The Reverse Numeric format would "6 left", "4 right", "1 right", "5 left", "3 left", "2 right"
+    context: |
+      | Numeric | Reverse Numeric | Desriptive |
+      |---------|-----------------|------------|
+      | 1       | 6               | Hairpin    |
+      | 2       | 5               | Bad        |
+      | 3       | 4               | 90         |
+      | 4       | 3               | Medium     |
+      | 5       | 2               | Fast       |
+      | 6       | 1               | Easy       |
+    question: |
+      Given the the notes in Numeric format: "1 left", "3 right", "6 right",  "2 left", "4 left", "5 right". Reformat the notes into Reverse Numeric format.
+  - answer: |
+      The reformatted notes in descriptive format are: "Hairpin left", "90 right", "Easy right", "Bad left", "Medium left", "Fast right".
+    context: |
+      | Numeric | Reverse Numeric | Desriptive |
+      |---------|-----------------|------------|
+      | 1       | 6               | Hairpin    |
+      | 2       | 5               | Bad        |
+      | 3       | 4               | 90         |
+      | 4       | 3               | Medium     |
+      | 5       | 2               | Fast       |
+      | 6       | 1               | Easy       |
+    question: |
+      Given the the notes in Numeric format: "1 left", "3 right", "6 right",  "2 left", "4 left", "5 right". Reformat the notes into descriptive format.
+  - answer: |
+      The reformatted notes in numeric format are: "6 left", "4 right", "1 right", "5 left", "3 left", "2 right".
+    context: |
+      | Numeric | Reverse Numeric | Desriptive |
+      |---------|-----------------|------------|
+      | 1       | 6               | Hairpin    |
+      | 2       | 5               | Bad        |
+      | 3       | 4               | 90         |
+      | 4       | 3               | Medium     |
+      | 5       | 2               | Fast       |
+      | 6       | 1               | Easy       |
+    question: |
+      Given the the notes in Reverse Numeric format: "1 left", "3 right", "6 right",  "2 left", "4 left", "5 right". Reformat the notes into Numeric format.
+task_description: |
+  Translating Pacenotes from one scheme to another - or translating entries from mapping tables with additional noise.
