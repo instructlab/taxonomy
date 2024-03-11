@@ -36,4 +36,3 @@ seed_examples:
     Support exceptions follow a multi-acknowledgment process and take time to review. Support exceptions are not automatically granted. Once all the approvers are identified, then discussion with the requestor can begin. Specific concerns, complexities, hardware requirements, customer testing, review of proposed language, and many other factors need to be considered. Expect at least one week at a minimum for a simple request. It is not uncommon for a support exception to take one month or more to review.
     "
   question: How long does it take to review a support exception?
-task_description: ''
