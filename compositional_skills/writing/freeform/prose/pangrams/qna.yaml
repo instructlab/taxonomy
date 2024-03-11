@@ -1,0 +1,17 @@
+created_by: richm
+seed_examples:
+- answer: A brown jug and a quick minx have fun and play zestfully.
+  question: Write a pangram with the word jug.
+- answer: Why does the quiz make prim bacon fig jelly vexed?
+  question: Write a pangram with the word bacon.
+- answer: Canny pox finks make the best quotidian jungle wizard views.
+  question: Write a pangram with the word wizard.
+- answer: Jolly quartz boxes make for happy dancing wig vials.
+  question: Write a pangram with the word quartz.
+- answer: Quiz me nightly for a wicked perspex job view.
+  question: Write a pangram with the word wicked.
+- answer: Wax eloquently about perfectly good massive hi jinks at the zoo.
+  question: Write a pangram with the word zoo.
+- answer: We must have quietly displaced the box of jokers in the game zone.
+  question: Write a pangram with the word jokers.
+task_description: Training about pangrams.
