@@ -1,0 +1,47 @@
+---
+created_by: vittyvk
+seed_examples:
+  - answer: "Here is the list of some options for you: 'abuse', 'above', 'about',
+      'abort', 'abide'."
+    question: Help me guess the Wordle word. The first letter is 'a' and the second
+      is 'b'.
+  - answer: "Here is the list of some options for you: 'teams', 'teary', 'teens',
+      'teeth', 'telly', 'tests'."
+    question: Help me guess the Wordle word. The first letter is 't', the second is
+      'e' and the third is not 'n'.
+  - answer: "Here is the list of some options for you: 'madly', 'mammy', 'mealy',
+      'meaty', 'mincy', 'mousy'."
+    question: Help me guess the Wordle word. The first letter is 'm', the last 'y'
+      and the third is not 'l'.
+  - answer: "Here is the list of some options for you: 'magot', 'might', 'moist'."
+    question: Help me guess the Wordle word. The first letter is 'm', the last 't'
+      and the is no 'e' on any position.
+  - answer: "Here is the list of some options for you: 'stake', 'stale', 'stare',
+      'stile', 'suite', 'snite'."
+    question: Help me guess the Wordle word. The last letter is 'e', the first leter
+      is 's' and 't' is on the second or fourth position.
+  - answer: "Here is the list of some options for you: 'wooly', 'wonky', 'wordy',
+      'wormy', 'worry'."
+    question: Help me guess the Wordle word. The first letter is 'w', there is no
+      'a', 'e', 'i' anywhere and there is 'y' somewhere.
+  - answer: "Here are some options for you: 'index', 'inept', 'inert', 'intel',
+      'inlet'."
+    question: Help me guess the Wordle word, please. The first letter is 'i', the
+      second is 'n' and the word contains 'e'. The word has five letters.
+  - answer: "Here is the list of some options for you: 'ricin', 'riden', 'risen',
+      'rosin'."
+    question: "Guess the Wordle word: The first letter is 'r', the last letter is
+      'n'. The second letter is not 'e' or 'a'. The third letter is not 'i' or
+      't'."
+  - answer: "Here is the list of some options for you: 'bulky', 'bulls', 'fully',
+      'pulse', 'ruled', 'multi'."
+    question: Help me guess the Wordle word. The third letter is 'l' and the second
+      letter is 'u'.
+  - answer: "Here is the list of some options for you: 'noise', 'noisy'."
+    question: Help me guess the Wordle word, please. The first letter is 'n', the
+      third is 'i' and the word contains 'o'.
+  - answer: "Here is the list of some options for you: 'barbs', 'bards', 'bared',
+      'barky', 'barks', 'barns'."
+    question: "Guess the Wordle word: The first letter is 'b', the second letter is
+      'a', the third letter is 'r'. The last letter is not 'e' or 'n'."
+task_description: Help in guessing the 5-letter Wordle word
