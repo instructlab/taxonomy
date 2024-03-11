@@ -35,19 +35,19 @@ seed_examples:
        - Long runs with progression, gradually increasing pace.
        - Interval training with 800m to 1-mile repeats.
        - Back-to-back long runs to simulate race fatigue.
-   - context: |
-       | **Training Phase**     | **Weekly Mileage**             | **Key Workouts**                            |
-       |------------------------|---------------------------------|---------------------------------------------|
-       | Base Building          | 70-80 miles per week           | High-mileage, long runs (18-20 miles)       |
-       | Speed and Strength     | 75-85 miles per week           | Tempo runs, intervals, hill repeats        |
-       | Lactate Threshold      | 80-90 miles per week           | Lactate threshold workouts, race pace runs |
-       | Race Pace Refinement   | 85-95 miles per week           | Long runs with goal race pace segments    |
-       | Tapering Down          | 70-80 miles per week           | Reduce mileage, maintain intensity         |
-       | Final Taper            | 60-70 miles per week           | Short, intense sessions, mental focus      |
-     question: |
-       Provide an advanced marathon training plan for a runner aiming to achieve a sub-3-hour marathon.
-     answer: |
-       For an advanced runner aiming to achieve a sub-3-hour marathon, consider the following advanced training schedule:
+  - context: |
+      | **Training Phase**     | **Weekly Mileage**             | **Key Workouts**                            |
+      |------------------------|---------------------------------|---------------------------------------------|
+      | Base Building          | 70-80 miles per week           | High-mileage, long runs (18-20 miles)       |
+      | Speed and Strength     | 75-85 miles per week           | Tempo runs, intervals, hill repeats        |
+      | Lactate Threshold      | 80-90 miles per week           | Lactate threshold workouts, race pace runs |
+      | Race Pace Refinement   | 85-95 miles per week           | Long runs with goal race pace segments    |
+      | Tapering Down          | 70-80 miles per week           | Reduce mileage, maintain intensity         |
+      | Final Taper            | 60-70 miles per week           | Short, intense sessions, mental focus      |
+    question: |
+      Provide an advanced marathon training plan for a runner aiming to achieve a sub-3-hour marathon.
+    answer: |
+      For an advanced runner aiming to achieve a sub-3-hour marathon, consider the following advanced training schedule:
        - Week 1-4: High-mileage base building with 5-6 runs per week, including a weekly long run of 18-20 miles.
        - Week 5-8: Incorporate tempo runs at marathon pace, interval sessions, and hill repeats for strength and speed.
        - Week 9-12: Focus on lactate threshold workouts and incorporate race-specific pace runs.
