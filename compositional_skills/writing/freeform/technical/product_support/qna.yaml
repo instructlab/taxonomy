@@ -1,38 +1,59 @@
 created_by: r2munz
-task_description: |
-  The task enables describing what is a support exception for an open-source product
+task_description: >
+  The task enables describing what is a support exception for an open-source
+  product
 seed_examples:
-- answer: "
-    A support exception is a guidance delivered from the product selling company to a customer that explains how the selling company will over-deliver on service by providing support outside of the normal scope of coverage or life cycle policies of a product.
+  - answer: >2
+       A support exception is a guidance delivered from the product selling company to a customer that explains how the selling company will over-deliver on service by providing support outside of the normal scope of coverage or life cycle policies of a product.
+      As Red Hat is widely believed to be the open-source software world leader
+      company, here are few examples of what is a support exception in Red Hat:
 
-    As Red Hat is widely believed to be the open-source software world leader company, here are few examples of what is a support exception in Red Hat:
+      * A support exception is a good-faith, non-binding statement of intent,
+      delivered from Red Hat to a customer that explains how Red Hat will
+      over-deliver on service by providing support outside of the normal scope
+      of coverage or life cycle policies of a product. A support exception could
+      only be binding if the customer is only purchasing Red Hat software on the
+      condition of the exception, these purchase agreements would be subject to
+      legal review. * A support exception is considered on a case-by-case basis
+      and is specific to the particular customer for which it is granted. * A
+      support exception is very specific and approved language. * A support
+      exception applies to one or more specific, identified products for which
+      the customer has a subscription. * A support exception is always requested
+      for a strong business case. Details about the business case and impact
+      must be provided with the SE request. * A support exception is always
+      subject to approval by various teams, including PM, Engineering, QE, SD
+      and CEE approval.  Sometimes also requires Business Affairs, Finance,
+      and/or Quality Engineering input. * A support exception is always granted
+      final approval by the Product Experience Engineer (PXE) after all required
+      ACKs are recorded in the tool, * A support exception is added to SFDC as a
+      Support Exception account note type.
 
-    * A support exception is a good-faith, non-binding statement of intent, delivered from Red Hat to a customer that explains how Red Hat will over-deliver on service by providing support outside of the normal scope of coverage or life cycle policies of a product. A support exception could only be binding if the customer is only purchasing Red Hat software on the condition of the exception, these purchase agreements would be subject to legal review.
-    * A support exception is considered on a case-by-case basis and is specific to the particular customer for which it is granted.
-    * A support exception is very specific and approved language.
-    * A support exception applies to one or more specific, identified products for which the customer has a subscription.
-    * A support exception is always requested for a strong business case. Details about the business case and impact must be provided with the SE request.
-    * A support exception is always subject to approval by various teams, including PM, Engineering, QE, SD and CEE approval.  Sometimes also requires Business Affairs, Finance, and/or Quality Engineering input.
-    * A support exception is always granted final approval by the Product Experience Engineer (PXE) after all required ACKs are recorded in the tool,
-    * A support exception is added to SFDC as a Support Exception account note type.
+      On the other hand here are few examples of what support exception in Red
+      Hat is not:
 
-    On the other hand here are few examples of what support exception in Red Hat is not:
-
-    * A support exception is not a parmanent fix
-    * A support exception is not a grant of an entitlement. The customer MUST have subscriptions that cover the Red Hat products at issue during the entire time frame of the exception. Support Exceptions can not be used to cover a “gap” in a customer’s subscription coverage or timing before a renewal or before paperwork is completed. If such coverage is needed, a short-term subscription will be required.
-    * A support exception is not a way that customers can get Red Hat to support upstream / community versions of projects. SEs and the resulting account notes can only to apply to Red Hat productized products that we know we can support. Example: We will NOT provide a support exception that provides support for an upstream release like Keycloak or Infinispan or Kubernetes.
-    * A support exception is not a hotfix or any other package provided in other release channels that do not require an official contractual agreement.
-    * A support exception is not a sale tool; in other words, it either must be part of a deal or in addition to something already sold.
-
-    "
-  question: What is a support exception for an open-source product?
-- answer: "
-    Early!  Do not wait until the end of a customer engagement to request a support exception. As soon as you identify an aspect of a solution that cannot be supported per standard terms please reach out for assistance. Given how long it take to review and approve support exceptions it is in the customer's best interest to engage early.
-
-    However - too early is also not advantageous. The Support Exception process is not to be used to design a customer solution. We need many details to evaluate a request, so if you are unsure what is being delivered to the customer it may be best to wait.
-    "
-  question: When to ask for a support exception for an open-source product?
-- answer: "
-    Support exceptions follow a multi-acknowledgment process and take time to review. Support exceptions are not automatically granted. Once all the approvers are identified, then discussion with the requestor can begin. Specific concerns, complexities, hardware requirements, customer testing, review of proposed language, and many other factors need to be considered. Expect at least one week at a minimum for a simple request. It is not uncommon for a support exception to take one month or more to review.
-    "
-  question: How long does it take to review a support exception?
+      * A support exception is not a parmanent fix * A support exception is not
+      a grant of an entitlement. The customer MUST have subscriptions that cover
+      the Red Hat products at issue during the entire time frame of the
+      exception. Support Exceptions can not be used to cover a “gap” in a
+      customer’s subscription coverage or timing before a renewal or before
+      paperwork is completed. If such coverage is needed, a short-term
+      subscription will be required. * A support exception is not a way that
+      customers can get Red Hat to support upstream / community versions of
+      projects. SEs and the resulting account notes can only to apply to Red Hat
+      productized products that we know we can support. Example: We will NOT
+      provide a support exception that provides support for an upstream release
+      like Keycloak or Infinispan or Kubernetes. * A support exception is not a
+      hotfix or any other package provided in other release channels that do not
+      require an official contractual agreement. * A support exception is not a
+      sale tool; in other words, it either must be part of a deal or in addition
+      to something already sold.
+    question: What is a support exception for an open-source product?
+  - answer: >2-
+       Early!  Do not wait until the end of a customer engagement to request a support exception. As soon as you identify an aspect of a solution that cannot be supported per standard terms please reach out for assistance. Given how long it take to review and approve support exceptions it is in the customer's best interest to engage early.
+      However - too early is also not advantageous. The Support Exception
+      process is not to be used to design a customer solution. We need many
+      details to evaluate a request, so if you are unsure what is being
+      delivered to the customer it may be best to wait. 
+    question: When to ask for a support exception for an open-source product?
+  - answer: ' Support exceptions follow a multi-acknowledgment process and take time to review. Support exceptions are not automatically granted. Once all the approvers are identified, then discussion with the requestor can begin. Specific concerns, complexities, hardware requirements, customer testing, review of proposed language, and many other factors need to be considered. Expect at least one week at a minimum for a simple request. It is not uncommon for a support exception to take one month or more to review. '
+    question: How long does it take to review a support exception?
