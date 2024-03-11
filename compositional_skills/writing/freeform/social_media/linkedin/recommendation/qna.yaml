@@ -9,4 +9,5 @@ seed_examples:
     their talents in action! #Recommendation #ProfessionalGrowth #CareerDevelopment'
   question: Help me draft a LinkedIn recommendation for a colleague or connection
     that highlights their strengths and achievements.
-task_description: ''
+task_description: This skill helps the model write a LinkedIn recommendation as
+  per provided input
