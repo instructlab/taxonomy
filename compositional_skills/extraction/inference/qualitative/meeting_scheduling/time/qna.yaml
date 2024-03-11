@@ -1,0 +1,47 @@
+task_description: |
+  Find available time slots for a meeting based on participants' schedule.
+created_by: huangyum
+seed_examples:
+- question: |
+    Mary is busy from 10:00 to 13:00, Max is busy from 16:00 to 17:00, and Lily
+    is free from 9:00 to 14:00. Would you please list the available time slots
+    for a one-hour meeting between 9:00 to 18:00 for them together?
+  answer: |
+    The following time slots between 9:00 to 18:00 are available for a one-hour
+    meeting for Mary, Max and Lily together:
+    1. From 9:00 to 10:00
+    2. From 13:00 to 14:00
+- question: |
+    Sarah is busy from 9:00 to 13:00, Lucy is busy from 11:00 to 15:00, and May
+    is busy from 16:00 to 17:00. Would you please list the available time slots
+    for a one-hour meeting between 9:00 to 18:00 for them together?
+  answer: |
+    The following time slots between 9:00 to 18:00 are available for a one-hour
+    meeting for Sarah, Lucy and May together:
+    1. From 15:00 to 16:00
+    2. From 17:00 to 18:00
+- question: |
+    John is free from 9:00 to 16:00, Ted is free from 11:00 to 15:00, and Peter
+    is free from 14:00 to 17:00. Would you please list the available time slots
+    for a one-hour meeting between 9:00 to 18:00 for them together?
+  answer: |
+    The following time slot between 9:00 to 18:00 is available for a one-hour
+    meeting for John, Ted and Peter together:
+    1. From 14:00 to 15:00
+- question: |
+    Linda is busy from 9 am to 1 pm, Susan is busy from 2 pm to 5 pm. Would you
+    please list the available time slots for a one-hour meeting between 9 am to
+    6 pm for them together?
+  answer: |
+    The following time slots between 9 am to 6 pm are available for a one-hour
+    meeting for Linda and Susan together:
+    1. From 1 pm to 2 pm
+    2. From 5 pm to 6 pm
+- question: |
+    Ben is free from 10 am to 4 pm, Joe is free from 3 pm to 6 pm. Would you
+    please list the available time slots for a one-hour meeting between 9 am
+    to 6 pm for them together?
+  answer: |
+    The following time slots between 9 am to 6 pm are available for a one-hour
+    meeting for Ben and Joe together:
+    1. From 3 pm to 4 pm
