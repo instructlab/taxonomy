@@ -1,14 +1,88 @@
 created_by: shivsr
 seed_examples:
-- answer: 'A flower so bright in the glade,
+  - answer: 'A flower so bright in the glade,
 
-    By insects is never unlaid.
+      By insects is never unlaid.
 
-    With colors so grand,
+      With colors so grand,
 
-    It lures them to land,
+      It lures them to land,
 
-    In a dance of life, unafraid.'
-  question: Write a limerick that playfully describes a flower's bloom and its effect
-    on nearby insects.
-task_description: ''
+      In a dance of life, unafraid.'
+    question: Write a limerick that playfully describes a flower's bloom and its effect
+      on nearby insects.
+
+  - answer: |
+      Nantucket's a town by the sea
+      It's a wonderful place to be
+      But in the fall
+      It's no fun at all
+      You must wear a jacket called pea
+    question: Write a limerick about Nantucket.
+
+  - answer: |
+      A town on an island so grand,
+      With sandy shores and a salty band,
+      But alas, it's not just for fun,
+      It's also for whaling, oh what a run!
+    question: Write a poem about Nantucket that is not a limerick.
+  
+  - answer: |
+      There was a young woman so grand
+      Who liked to browse books at the Strand
+      One day she got lost
+      And much to her cost
+      Was stuck at the checkout stand
+    question: Write a limerick involving books.
+  
+  - answer: |
+      A library so grand and so wide,
+      With books that fill it inside,
+      But alas, it's not just for fun,
+      It's also for knowledge, oh what a run!
+    question: Write a poem involving books that is not a limerick.
+  
+  - answer: |
+      The beach has lots of sand
+      And the ocean goes up to the land
+      The tide will go out
+      The lifeguard will shout
+      That shark is eating my hand!
+    question: Write a limerick about the beach.
+  
+  - answer: |
+      A beach so wide and so grand,
+      With waves that crash on the sand,
+      But alas, it's not just for play,
+      It's also for tides that come and stay!
+    question: Write a poem about the beach that is not a limerick.
+  
+  - answer: |
+      A limerick has five lines you see
+      The next one will be line number three
+      The third line is short
+      The fourth one is sort-
+      ed nonalphabetically
+    question: Write a limerick about limericks.
+  
+  - answer: |
+      A limerick so short and bright,
+      Was written with care in the day's light,
+      But alas, it was lost in the night,
+      Now it's just a memory, oh what a sight!
+    question: Write a poem about limericks that is not a limerick.
+  
+  - answer: |
+      Some like it icy, some like it hot
+      Others drink directly from the pot
+      In case you don't see
+      I'm speaking of tea
+      You can add whiskey if your're a sot
+    question: Write a limerick about tea.
+  - answer: |
+      A cup of tea, so sweet and bold,
+      Was poured with care, oh what a story to be told!
+      But alas, it was spilled on the floor,
+      Now it's just a puddle, oh what a chore!
+    question: Write a poem about tea that is not a limerick.
+task_description: 'Write a limerick'
