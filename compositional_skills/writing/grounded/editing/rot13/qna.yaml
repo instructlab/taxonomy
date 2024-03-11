@@ -1,0 +1,133 @@
+# This task attempts to teach how to apply ROT13 to a text.
+# ROT13 is a simple substitution cipher that involves replacing each letter
+# by the one 13 positions ahead in the alphabet.
+---
+created_by: codificat
+seed_examples:
+  - answer: "Gur dhvpx oebja sbk whzcf bire gur ynml qbt"
+    context: |
+      ROT13 (or rot13, Rot13 or ROT-13) is a simple letter substitution cipher
+      that replaces a letter with the 13th letter after it in the Latin
+      alphabet.
+
+      Applying ROT13 to a text fragment requires examining its alphabetic
+      characters and replacing each one by the letter 13 places further along in
+      the alphabet, wrapping back to the beginning if necessary. A becomes N, B
+      becomes O, and so on up to M, which becomes Z, then the sequence continues
+      at the beginning of the alphabet: N becomes A, O becomes B, and so on to
+      Z, which becomes M.
+
+      Therefore, the letters are mapped as follows: A->N N->A B->O O->B C->P
+      P->C D->Q Q->D E->R R->E F->S S->F G->T T->G H->U U->H I->V V->I J->W W->J
+      K->X X->K L->Y Y->L M->Z Z->M
+
+      Only those letters which occur in the English alphabet are affected;
+      numbers, symbols, punctuation, whitespace, and all other characters are
+      left unchanged.
+
+      For example, the text "Sphinx of black quartz, judge my vow." becomes
+      "Fcuvak bs oynpx dhnegm, whqtr zl ibj." when ROT13 is applied.
+    question: |
+      ROT13 the following text: "The quick brown fox jumps over the lazy dog"
+  - answer: "Gur gbxravmre jvyy unhag lbh!"
+    context: |
+      ROT13 (or rot13, Rot13 or ROT-13) is a simple letter substitution cipher
+      that replaces a letter with the 13th letter after it in the Latin
+      alphabet.
+
+      Applying ROT13 to a text fragment requires examining its alphabetic
+      characters and replacing each one by the letter 13 places further along in
+      the alphabet, wrapping back to the beginning if necessary. A becomes N, B
+      becomes O, and so on up to M, which becomes Z, then the sequence continues
+      at the beginning of the alphabet: N becomes A, O becomes B, and so on to
+      Z, which becomes M.
+
+      Therefore, the letters are mapped as follows: A->N N->A B->O O->B C->P
+      P->C D->Q Q->D E->R R->E F->S S->F G->T T->G H->U U->H I->V V->I J->W W->J
+      K->X X->K L->Y Y->L M->Z Z->M
+
+      Only those letters which occur in the English alphabet are affected;
+      numbers, symbols, punctuation, whitespace, and all other characters are
+      left unchanged.
+
+      For example, the text "Sphinx of black quartz, judge my vow." becomes
+      "Fcuvak bs oynpx dhnegm, whqtr zl ibj." when ROT13 is applied.
+    question: |
+      rot13 this sentence: "The tokenizer will haunt you!"
+  - answer: "Tbbq zbeavat, zl sevraq."
+    context: |
+      ROT13 (or rot13, Rot13 or ROT-13) is a simple letter substitution cipher
+      that replaces a letter with the 13th letter after it in the Latin
+      alphabet.
+
+      Applying ROT13 to a text fragment requires examining its alphabetic
+      characters and replacing each one by the letter 13 places further along in
+      the alphabet, wrapping back to the beginning if necessary. A becomes N, B
+      becomes O, and so on up to M, which becomes Z, then the sequence continues
+      at the beginning of the alphabet: N becomes A, O becomes B, and so on to
+      Z, which becomes M.
+
+      Therefore, the letters are mapped as follows: A->N N->A B->O O->B C->P
+      P->C D->Q Q->D E->R R->E F->S S->F G->T T->G H->U U->H I->V V->I J->W W->J
+      K->X X->K L->Y Y->L M->Z Z->M
+
+      Only those letters which occur in the English alphabet are affected;
+      numbers, symbols, punctuation, whitespace, and all other characters are
+      left unchanged.
+
+      For example, the text "Sphinx of black quartz, judge my vow." becomes
+      "Fcuvak bs oynpx dhnegm, whqtr zl ibj." when ROT13 is applied.
+    question: |
+      Rot13 this text: "Good morning, my friend."
+  - answer: "Good morning, my friend."
+    context: |
+      ROT13 (or rot13, Rot13 or ROT-13) is a simple letter substitution cipher
+      that replaces a letter with the 13th letter after it in the Latin
+      alphabet.
+
+      Applying ROT13 to a text fragment requires examining its alphabetic
+      characters and replacing each one by the letter 13 places further along in
+      the alphabet, wrapping back to the beginning if necessary. A becomes N, B
+      becomes O, and so on up to M, which becomes Z, then the sequence continues
+      at the beginning of the alphabet: N becomes A, O becomes B, and so on to
+      Z, which becomes M.
+
+      Therefore, the letters are mapped as follows: A->N N->A B->O O->B C->P
+      P->C D->Q Q->D E->R R->E F->S S->F G->T T->G H->U U->H I->V V->I J->W W->J
+      K->X X->K L->Y Y->L M->Z Z->M
+
+      Only those letters which occur in the English alphabet are affected;
+      numbers, symbols, punctuation, whitespace, and all other characters are
+      left unchanged.
+
+      For example, the text "Sphinx of black quartz, judge my vow." becomes
+      "Fcuvak bs oynpx dhnegm, whqtr zl ibj." when ROT13 is applied.
+    question: |
+      What is the ROT13 of "Tbbq zbeavat, zl sevraq."?
+  - answer: "Jub jnagf gb yvir sberire, jura ybir zhfg qvr?"
+    context: |
+      ROT13 (or rot13, Rot13 or ROT-13) is a simple letter substitution cipher
+      that replaces a letter with the 13th letter after it in the Latin
+      alphabet.
+
+      Applying ROT13 to a text fragment requires examining its alphabetic
+      characters and replacing each one by the letter 13 places further along in
+      the alphabet, wrapping back to the beginning if necessary. A becomes N, B
+      becomes O, and so on up to M, which becomes Z, then the sequence continues
+      at the beginning of the alphabet: N becomes A, O becomes B, and so on to
+      Z, which becomes M.
+
+      Therefore, the letters are mapped as follows: A->N N->A B->O O->B C->P
+      P->C D->Q Q->D E->R R->E F->S S->F G->T T->G H->U U->H I->V V->I J->W W->J
+      K->X X->K L->Y Y->L M->Z Z->M
+
+      Only those letters which occur in the English alphabet are affected;
+      numbers, symbols, punctuation, whitespace, and all other characters are
+      left unchanged.
+
+      For example, the text "Sphinx of black quartz, judge my vow." becomes
+      "Fcuvak bs oynpx dhnegm, whqtr zl ibj." when ROT13 is applied.
+    question: |
+      Apply rot13 to: "Who wants to live forever, when love must die?"
+task_description: |
+  The rot13 skill enables to encode text with ROT13
