@@ -1,0 +1,30 @@
+---
+created_by: ggraziol
+seed_examples:
+  - answer: 7H3 QU1CK 8r0WN F0X JUMP5 0V3r 7H3 14ZY D06
+    question: Write the sentence 'The quick brown fox jumps over the lazy dog' in simple leet-speak.
+  - answer: p4ck my 80x w17h f1v3 d023n 11qu02 ju95.
+    question: Write the sentence 'Pack my box with five dozen liquor jugs.' in simple leet-speak.
+  - answer: "h0w m4ny 8077135 0f 41c0h01 d0 1 n33d?"
+    question: Write the sentence 'How many bottles of alcohol do I need?' in simple leet-speak.
+  - answer: "wh47 d0 y0u c411 4 248817 w17h n0 3y35?"
+    question: Write the sentence 'What do you call a rabbit with no eyes?' in simple leet-speak
+  - answer: '1 7h1nk 1''ll 60 h0m3 n0w.'
+    question: Write the sentence 'I think I''ll go home now.' in simple leet-speak.
+  - answer: 'wh47 15 7h3 d1ff3r3nc3 b37w33n 4 b1rd 4nd 4n 41rpl4n3?'
+    question: Write the sentence 'What is the difference between a bird and an airplane?' in simple leet-speak.
+  - answer: '1 4m hun6ry.'
+    question: Write the sentence 'I am hungry.' in simple leet-speak.
+  - answer: '1 4m 3xc173d.'
+    question: Write the sentence 'I am excited.' in simple leet-speak.
+  - answer: wh47 15 7h3 f457357 4n1m4l?
+    question: Write the sentence 'What is the fastest animal?' in simple leet-speak
+  - answer: wh47 15 7h3 m34n1n6 0f l1f3?
+    question: Write the sentence 'What is the meaning of life?' in simple leet-speak.
+  - answer: 1 l0v3 pl4y1n6 64m35.
+    question: Write the sentence 'I love playing games.' in simple leet-speak.
+  - answer: 1 w4n7 70 w47ch 4 m0v13
+    question: Write the sentence 'I want to watch a movie.' in simple leet-speak.
+  - answer: 1 w0uld l1k3 70 pl4y ch355.
+    question: Write the sentence 'I would like to play chess.' in simple leet-speak.
+task_description: ''
