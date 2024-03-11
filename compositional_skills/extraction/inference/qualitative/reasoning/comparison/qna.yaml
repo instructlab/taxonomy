@@ -1,0 +1,87 @@
+task_description: 'Properly compare qualities of several subjects'
+created_by: trgeiger
+seed_examples:
+  - question: |
+      A scientist runs an experiment testing the relative speeds of 4 mice.
+      Mouse 1 beats mouse 2 in the first race. In the second race, mouse 2 runs
+      faster than mouse 3. In the third race, mouse 4 runs faster than mouse 3.
+      Assuming each mouse runs at the same speed as they did in these races,
+      would mouse 1 beat mouse 2?
+    answer: |
+      Yes, mouse 1 would beat mouse 2 in a race because mouse 1 is faster than
+      mouse 2. We know this since the given information tells us that mouse 1
+      already beat mouse 2 in a race, and we are to assume that that the mice
+      will run at the same speeds as they did in the previous races.
+  - question: |
+      A scientist runs an experiment testing the relative speeds of 4 mice.
+      Mouse 1 beats mouse 2 in the first race. In the second race, mouse 2 runs
+      faster than mouse 3. In the third race, mouse 4 runs faster than mouse 3.
+      Assuming each mouse runs at the same speed as they did in these races,
+      would mouse 4 beat mouse 1?
+    answer: |
+      We cannot conclude whether mouse 4 would beat mouse 1 in a race. Based on
+      the given information, we know that mouse 1 is faster than both mice 2 and
+      3. We also know that mouse 4 is faster than mouse 3. However, since we do
+      not know the actual speeds of any of the mice and have to rely on only the
+      3 comparison races, we do not have adequate information to compare mouse 4
+      to either mouse 1 or 2. Mouse 4 could be the fastest of them all, it could
+      be faster than mouse 2 but slower than mouse 1, or it could be slower than
+      both mouse 1 and mouse 2. All are equally possible with the given
+      information. All we can conclude about mouse 4 is that it is faster than
+      mouse 3.
+  - question: |
+      A scientist runs an experiment testing the relative speeds of 4 mice.
+      Mouse 1 beats mouse 2 in the first race. In the second race, mouse 2 runs
+      faster than mouse 3. In the third race, mouse 4 runs faster than mouse 3.
+      Assuming each mouse runs at the same speed as they did in these races,
+      would mouse 3 beat mouse 1?
+    answer: |
+      No, mouse 3 would not beat mouse 1 in a race since mouse 3 is slower than
+      mouse 1. We know from the results of the three races that Mouse 1 is
+      faster than mouse 2 and mouse 2 is faster than mouse 3. Therefore, mouse 1
+      is also faster than mouse 3 which means mouse 3 would lose to mouse 1 in a
+      race.
+  - question: |
+      Consider 3 companies named Banana Incorporated, Banana International, and
+      Bananas for Bananas. If Banana Incorporated has more bananas in its
+      stockpile than Bananas for Bananas, and Banana International has fewer
+      bananas in its stockpile than Banana Incorporated, does Bananas for
+      Bananas have more bananas than Banana International?
+    answer: |
+      Based on the information provided, we do not know how the stockpiles of
+      Bananas for Bananas and Bananas International compare. All we know is that
+      both of these companies have fewer bananas than Bananas Incorporated. In
+      this scenario, either company could have more bananas than the other.
+
+  - question: |
+      Consider 3 companies named Banana Incorporated, Banana International, and
+      Bananas for Bananas. If Banana Incorporated has more bananas in its
+      stockpile than Bananas for Bananas, and Banana International has fewer
+      bananas in its stockpile than Banana Incorporated, which company has the
+      most bananas?
+    answer: |
+      We can conclude that Bananas Incorporated has the most bananas. The
+      provided information tells us that Bananas Incorporated has more bananas
+      than both Bananas for Bananas and Bananas International. While we cannot
+      directly compare the number of bananas in the stockpiles of Bananas for
+      Bananas and Bananas International, we do know for certain that both have
+      fewer bananas than Bananas Incorporated.
+  - question: |
+      Ada is taller than Markus. Markus is taller than Evelyn. Is Evelyn taller
+      than Ada?
+    answer: |
+      No, Evelyn is not taller than Ada. Since we know the relative heights of
+      Ada, Markus, and Evelyn, we can conclude that Ada is the tallest, since
+      she is taller than Markus, and Evelyn is the shortest, since she is
+      shorter than Markus. Put another way, Evelyn cannot possibly be taller
+      than Ada since we know that Ada is taller than Markus and Markus is taller
+      than Evelyn.
+  - question: |
+      Ada is taller than Markus. Markus is taller than Evelyn. Is Ada taller
+      than Evelyn?
+    answer: |
+      Yes, Ada is taller than Evelyn. Since we know the relative heights of Ada,
+      Markus, and Evelyn, we can conclude that Ada is the tallest, since she is
+      taller than Markus, and Evenlyn is the shortest, since she is shorter than
+      Markus. Put another way, Evelyn cannot possibly be taller than Ada since
+      we know that Ada is taller than Markus and Markus is taller than Evelyn.
