@@ -1,0 +1,54 @@
+task_description: |
+  Teach the model the BODMAS order of operation in mathematics
+created_by: yashkmankad
+seed_examples:
+  - question: What is BODMAS
+    answer: |
+      BODMAS is an acronym that represents the order of operations used in
+      mathematics to solve mathematical expressions. It stands for:
+
+      1. B - Brackets: Solve expressions inside brackets (parentheses) first.
+      2. O - Orders (Exponents): Evaluate expressions with exponents or powers.
+      3. D - Division: Perform division from left to right.
+      4. M - Multiplication: Perform multiplication from left to right.
+      5. A - Addition: Perform addition from left to right.
+      6. S - Subtraction: Perform subtraction from left to right.
+
+      The purpose of BODMAS is to establish a standardized way of solving mathematical
+      expressions, ensuring that everyone follows the same order of operations to arrive
+      at a consistent and correct result. Adhering to the BODMAS rule prevents ambiguity
+      and ensures that mathematical expressions are evaluated accurately.
+
+  - question: Solve 3+5*2-4
+    answer: |
+      Apply BODMAS:
+      3 + (5*2) - 4
+      3 + 10 - 4
+      13 - 4
+      9
+
+  - question: Solve 2+3*(4-1)
+    answer: |
+      Apply BODMAS
+      2 + 3 * (4-1)
+      2 + 3 * 3
+      2 + 9
+      11
+
+  - question: Solve 5*(2^2+3)/4
+    answer: |
+      Apply BODMAS
+      5 * (4 + 3) / 4
+      5 * 7 / 4
+      35 / 4
+      8.75
+
+  - question: can you solve 6^2-(5*2)-((1+1)-(4+3))
+    answer: |
+      Apply BODMAS
+      6^2-(5*2)-((1+1)-(4+3))
+      36 - 10 - (2 - 7)
+      36 - 10 - (-5)
+      36 - 10 + 5
+      26 + 5
+      41
