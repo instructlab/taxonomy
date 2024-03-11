@@ -1,0 +1,148 @@
+created_by: dave-tucker
+seed_examples:
+  - answer: |
+      Amble and Saunter do not belong with the others.
+
+      Rush, Hurry, and Dash are all words that describe fast movement.
+      Amble and Saunter are words that describe slow movement.
+      Therefore, Amble and Saunter do not belong with the other three.
+    question: |
+      In each group of words, three of them go together.
+      Which two words do not belong with the other three?
+      Amble, Rush, Hurry, Saunter, Dash
+  - answer: |
+      Paper and Notebook do not belong with the others.
+
+      You can write on paper and you can write in a notebook.
+      However, a pencil, pen, and biro are used to write with.
+    question: |
+      In each group of words, three of them go together.
+      Which two words do not belong with the other three?
+      pencil, paper, pen, notebook, biro
+  - answer: |
+      Cry and Weep do not belong with the others.
+
+      Crying and weeping both involve shedding tears and can occur in both
+      happy and sad situations.
+      However, laughing, chuckling and giggling are all words that describe the
+      act of laughter.
+      Therefore, cry and weep do not belong with the other three.
+    question: |
+      In each group of words, three of them go together.
+      Which two words do not belong with the other three?
+      cry, laugh, weep, chuckle, giggle
+  - answer: |
+      Cold and Snow do not belong with the others.
+
+      A hat, gloves, and scarf are all items of clothing that are worn to keep
+      warm in cold weather. Cold and snow are weather conditions.
+    question: |
+      In each group of words, three of them go together.
+      Which two words do not belong with the other three?
+      cold, hat, gloves, snow, scarf
+  - answer: |
+      Horse and Hamster do not belong with the others.
+
+      A beetle, ant, and centipede are all invertibrates, while horse and
+      hamster are vertebrates.
+      Therefore, horse and hamster do not belong with the other three.
+    question: |
+      In each group of words, three of them go together.
+      Which two words do not belong with the other three?
+      horse, beetle, ant, hamster, centipede
+  - answer: |
+      Cat and Dog do not belong with the others.
+
+      Eagles, parrots, and pigeons are all birds.
+      Dogs and cats are mammals.
+      Therefore, cat and dog do not belong with the other three.
+    question: |
+      In each group of words, three of them go together.
+      Which two words do not belong with the other three?
+      cat, pigeon, dog, parrot, eagle
+  - answer: |
+      Train and Lorry do not belong with the others.
+
+      A Train is a series of connected vehicles that run on tracks.
+      Train tracks (also called rails) are found on land.
+
+      A Lorry (or truck) is a large vehicle used to transport goods.
+      Lorries are also found on land.
+
+      A ship, boat, and yacht are all types of watercraft.
+      Therefore, train and lorry do not belong with the other three.
+    question: |
+      In each group of words, three of them go together.
+      Which two words do not belong with the other three?
+      train, ship, boat, lorry, yacht
+  - answer: |
+      Elephant and Giraffe do not belong with the others.
+
+      An Elephant and a Giraffe are both surface-dwelling mammals.
+      While Dolphins are mammals, they live in water.
+      Sharks and Fish also live in water.
+      Therefore, elephant and giraffe do not belong with the other three.
+    question: |
+      In each group of words, three of them go together.
+      Which two words do not belong with the other three?
+      elephant, fish, shark, dolphin, giraffe
+  - answer: |
+      Bat and Racket do not belong with the others.
+
+      Rugby, tennis, and golf are all sports.
+      A bat and a racket are both pieces of sports equipment.
+      Therefore, bat and racket do not belong with the other three.
+    question: |
+      In each group of words, three of them go together.
+      Which two words do not belong with the other three?
+      rugby, tennis, bat, racket, golf
+  - answer: |
+      Blue and Carrot do not belong with the others.
+
+      Apple, pear, and orange are all fruits.
+      While orange is also a color, given the context here there is a stronger
+      association between the 3 fruits (apple, pear, and orange) than if we
+      were to interpret orange as a color where we'd have 3 foods (apple, pear,
+      and carrot).
+      Therefore, blue and carrot do not belong with the other three.
+    question: |
+      In each group of words, three of them go together.
+      Which two words do not belong with the other three?
+      blue, orange, apple, pear, carrot
+  - answer: |
+      Lemon and Cow do not belong with the others.
+
+      Juice, water and milk are all liquids that can be drunk.
+      A lemon is a fruit and a cow is an animal.
+      Therefore, lemon and cow do not belong with the other three.
+    question: |
+      In each group of words, three of them go together.
+      Which two words do not belong with the other three?
+      juice, lemon, milk, cow, water
+  - answer: |
+      Yellow and yoghurt do not belong with the others.
+
+      Strawberry, pear, and orange are all fruits.
+      Yoghurt is a dairy product.
+      Yellow is a color.
+      While orange is also a color, given the context here there is a stronger
+      association between the 3 fruits (strawberry, pear, and orange) than the
+      two colors (yellow and orange).
+      Therefore, yellow and yoghurt do not belong with the other three.
+    question: |
+      In each group of words, three of them go together.
+      Which two words do not belong with the other three?
+      strawberry, yoghurt, yellow, pear, orange
+  - answer: |
+      Rose and Violet do not belong with the others.
+
+      Red, blue, and green are all colors.
+      Rose and violet are flowers although violet may also refer to a
+      shade of purple.
+      Therefore, rose and violet do not belong with the other three.
+    question: |
+      In each group of words, three of them go together.
+      Which two words do not belong with the other three?
+      red, blue, violet, rose, green
+task_description: |
+  Given a list of 5 words, identify 2 words that do not belong with the others 3
