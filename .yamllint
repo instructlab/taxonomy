@@ -1,0 +1,12 @@
+---
+
+extends: relaxed
+
+ignore:
+  - .tox/
+  - .github/
+
+rules:
+  line-length:
+    level: error
+    max: 120
