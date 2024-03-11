@@ -1,0 +1,14 @@
+task_description: |
+  Some jokes for kids that are genuinely funny
+created_by: henrywang
+seed_examples:
+  - question: How do you make an octopus laugh?
+    answer: With ten-tickles!
+  - question: How do all the oceans say hello to each other?
+    answer: They wave!
+  - question: What did one wall say to the other wall?
+    answer: I’ll meet you at the corner!
+  - question: What did 0 say to 8?
+    answer: Nice belt!
+  - question: What do you call an old snowman?
+    answer: Water
