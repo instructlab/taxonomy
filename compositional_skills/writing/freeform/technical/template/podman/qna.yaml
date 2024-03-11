@@ -1,0 +1,43 @@
+created_by: odilhao
+seed_examples:
+  - answer: |
+      [Unit]
+      Description=A templated sleepy container
+
+      [Container]
+      Image=quay.io/fedora/fedora
+      Exec=sleep %i
+
+      [Service]
+      # Restart service when sleep finishes
+      Restart=always
+
+      [Install]
+      WantedBy=multi-user.target
+      DefaultInstance=100
+    question: Write one basic quadlet systemd unit
+  - answer: |
+      [Unit]
+      Description=A templated nginx container
+
+      [Container]
+      Image=nginx
+      #Publish the 8080 Port on the Host
+      #and binds to the contianer port 80
+      PublishPort=8080:80
+
+
+      [Service]
+      # Restart service when nginx finishes
+      Restart=always
+
+      [Install]
+      WantedBy=multi-user.target
+      DefaultInstance=100
+    question: Write one quadlet system unit that runs nginx
+  - answer: >
+      Quadlet is a tool for running Podman containers under systemd  in an
+      optimal way by allowing containers to run under systemd in  a
+      declarative.
+    question: What is Podman Quadlet?
+task_description: null
