@@ -48,12 +48,16 @@ seed_examples:
       sale tool; in other words, it either must be part of a deal or in addition
       to something already sold.
     question: What is a support exception for an open-source product?
-  - answer: >2-
-       Early!  Do not wait until the end of a customer engagement to request a support exception. As soon as you identify an aspect of a solution that cannot be supported per standard terms please reach out for assistance. Given how long it take to review and approve support exceptions it is in the customer's best interest to engage early.
-      However - too early is also not advantageous. The Support Exception
-      process is not to be used to design a customer solution. We need many
-      details to evaluate a request, so if you are unsure what is being
-      delivered to the customer it may be best to wait. 
+  - answer: >-
+      Early!  Do not wait until the end of a customer engagement to request a
+      support exception. As soon as you identify an aspect of a solution that
+      cannot be supported per standard terms please reach out for assistance.
+      Given how long it take to review and approve support exceptions it is in
+      the customer's best interest to engage early. However - too early is also
+      not advantageous. The Support Exception process is not to be used to
+      design a customer solution. We need many details to evaluate a request, so
+      if you are unsure what is being delivered to the customer it may be best
+      to wait. 
     question: When to ask for a support exception for an open-source product?
   - answer: ' Support exceptions follow a multi-acknowledgment process and take time to review. Support exceptions are not automatically granted. Once all the approvers are identified, then discussion with the requestor can begin. Specific concerns, complexities, hardware requirements, customer testing, review of proposed language, and many other factors need to be considered. Expect at least one week at a minimum for a simple request. It is not uncommon for a support exception to take one month or more to review. '
     question: How long does it take to review a support exception?
