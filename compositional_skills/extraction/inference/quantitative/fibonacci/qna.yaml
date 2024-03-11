@@ -1,0 +1,18 @@
+created_by: rokkbert
+seed_examples:
+  - answer: "'0'"
+    context: "'0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144'"
+    question: "'What is the first number in the fibonacci sequence?'"
+  - answer: "'0, 1, 1, 2'"
+    question: "'What are the first four numbers in the fibonacci sequence?'"
+  - answer: "'0, 1, 1, 2, 3, 5, 8, 13'"
+    question: "'What are the first eight numbers in the fibonacci sequence?'"
+  - answer: "'0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233'"
+    question: "'What are the first 14 numbers in the fibonacci sequence?'"
+  - answer: "'The fibonacci sequence is an infinite sequence of integers and as such
+      does not have a last number.'"
+    question: "'What is the last number in the fibonacci sequence?'"
+  - answer: "'55'"
+    context: "'21, 34'"
+    question: "'What is the nextfibonacci number?'"
+task_description: "'Tell some fibonacci numbers.'"
