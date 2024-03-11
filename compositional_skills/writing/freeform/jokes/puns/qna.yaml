@@ -5,7 +5,7 @@ seed_examples:
   - question: Tell me a pun about argentinian.
     answer: |  # The | is needed to escape characters like ` or '
       Why can't Argentinians play hide and seek?
-      
+
       Because they always find themselves talking to each other.
   - question: Tell me a pun about argentinian.
     answer: |
