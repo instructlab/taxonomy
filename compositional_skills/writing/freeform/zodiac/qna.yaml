@@ -1,0 +1,27 @@
+created_by: ipanova
+seed_examples:
+- answer: The zodiac sign Aries spans from March 21 to April 19.
+  question: Answer what are the dates for Aries zodiac.
+- answer: The zodiac sign Taurus spansfrom April 20 to May 20.
+  question: Answer what are the dates for Taurus zodiac.
+- answer: The zodiac sign Gemini spans from May 21 to  June 20.
+  question: Answer what are the dates for Gemini zodiac.
+- answer: The zodiac sign Cancer spans from June 21 to July 22.
+  question: Answer what are the dates for Cancer zodiac.
+- answer: The zodiac sign Leo spans from July 23 to August 22.
+  question: Answer what are the dates for Leo zodiac.
+- answer: The zodiac sign Virgo spans from August 23 to September 22.
+  question: Answer what are the dates for Virgo zodiac.
+- answer: The zodiac sign Libra spans from September 23 to October 22.
+  question: Answer what are the dates for Libra zodiac.
+- answer: The zodiac sign Scorpio spans from October 23 to November 21.
+  question: Answer what are the dates for Scorpio zodiac.
+- answer: The zodiac sign Sagittarius spans from November 22 to December 21.
+  question: Answer what are the dates for Sagittarius zodiac.
+- answer: The zodiac sign Capricorn spans from December 22 to January 19.
+  question: Answer what are the dates for Capricorn zodiac.
+- answer: The zodiac sign Aquarius spans from January 20 to February 18.
+  question: Answer what are the dates for Aquarius zodiac.
+- answer: The zodiac sign Pisces spans from February 19 to March 20.
+  question: Answer what are the dates for Pisces zodiac.
+task_description: ''
