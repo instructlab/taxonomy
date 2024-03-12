@@ -47,11 +47,13 @@ seed_examples:
   question: 'Spell ''wishmay'' using the NATO phonetic alphabet'
 - answer: 'Foxtrot, Lima, Oscar, Oscar, Romeo, Echo, Romeo'
   question: 'Spell ''floorer'' using the NATO phonetic alphabet'
-- answer: 'Charlie, Oscar, Uniform, November, Tango, Echo, Romeo, Tango, Romeo, Alpha, Victor, Echo, Romeo, Sierra, Echo'
+- answer: 'Charlie, Oscar, Uniform, November, Tango, Echo, Romeo, Tango, Romeo, Alpha, Victor, Echo, Romeo,
+           Sierra, Echo'
   question: 'Spell ''countertraverse'' using the NATO phonetic alphabet'
 - answer: 'Uniform, November, Charlie, Romeo, Alpha, Victor, India, November, Golf, Lima, Yankee'
   question: 'Spell ''uncravingly'' using the NATO phonetic alphabet'
-- answer: 'Echo, Charlie, Hotel, India, November, Oscar, Sierra, Papa, Hotel, Alpha, Echo, Romeo, India, Tango, Echo, Sierra'
+- answer: 'Echo, Charlie, Hotel, India, November, Oscar, Sierra, Papa, Hotel, Alpha, Echo, Romeo, India, Tango,
+           Echo, Sierra'
   question: 'Spell ''Echinosphaerites'' using the NATO phonetic alphabet'
 - answer: 'Bravo, Oscar, Romeo, Alpha, Charlie, India, Foxtrot, Echo, Romeo, Oscar, Uniform, Sierra'
   question: 'Spell ''boraciferous'' using the NATO phonetic alphabet'
@@ -143,7 +145,8 @@ seed_examples:
   question: 'Spell ''unlink'' using the NATO phonetic alphabet'
 - answer: 'Zulu, Oscar, Oscar, Golf, Echo, Oscar, Golf, Romeo, Alpha, Papa, Hotel, India, Charlie'
   question: 'Spell ''zoogeographic'' using the NATO phonetic alphabet'
-- answer: 'Sierra, Uniform, Bravo, Bravo, Romeo, Alpha, Charlie, Hotel, Yankee, Charlie, Echo, Papa, Hotel, Alpha, Lima, Yankee'
+- answer: 'Sierra, Uniform, Bravo, Bravo, Romeo, Alpha, Charlie, Hotel, Yankee, Charlie, Echo, Papa,
+           Hotel, Alpha, Lima, Yankee'
   question: 'Spell ''subbrachycephaly'' using the NATO phonetic alphabet'
 - answer: 'Sierra, Papa, Alpha, Tango, Uniform, Lima, Echo'
   question: 'Spell ''spatule'' using the NATO phonetic alphabet'
@@ -343,29 +346,41 @@ seed_examples:
   question: 'replace each letter in ''ABCDEFGHIJKLM'' with the corresponding NATO Phonetic alphabet code'
 - answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November'
   question: 'replace each letter in ''ABCDEFGHIJKLMN'' with the corresponding NATO Phonetic alphabet code'
-- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar'
+- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November,
+           Oscar'
   question: 'replace each letter in ''ABCDEFGHIJKLMNO'' with the corresponding NATO Phonetic alphabet code'
-- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa'
+- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November,
+           Oscar, Papa'
   question: 'replace each letter in ''ABCDEFGHIJKLMNOP'' with the corresponding NATO Phonetic alphabet code'
-- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec'
+- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November,
+           Oscar, Papa, Quebec'
   question: 'replace each letter in ''ABCDEFGHIJKLMNOPQ'' with the corresponding NATO Phonetic alphabet code'
-- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo'
+- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November,
+           Oscar, Papa, Quebec, Romeo'
   question: 'replace each letter in ''ABCDEFGHIJKLMNOPQR'' with the corresponding NATO Phonetic alphabet code'
-- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra'
+- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November,
+           Oscar, Papa, Quebec, Romeo, Sierra'
   question: 'replace each letter in ''ABCDEFGHIJKLMNOPQRS'' with the corresponding NATO Phonetic alphabet code'
-- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango'
+- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November,
+           Oscar, Papa, Quebec, Romeo, Sierra, Tango'
   question: 'replace each letter in ''ABCDEFGHIJKLMNOPQRST'' with the corresponding NATO Phonetic alphabet code'
-- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform'
+- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November,
+           Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform'
   question: 'replace each letter in ''ABCDEFGHIJKLMNOPQRSTU'' with the corresponding NATO Phonetic alphabet code'
-- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor'
+- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November,
+           Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor'
   question: 'replace each letter in ''ABCDEFGHIJKLMNOPQRSTUV'' with the corresponding NATO Phonetic alphabet code'
-- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey'
+- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November,
+           Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey'
   question: 'replace each letter in ''ABCDEFGHIJKLMNOPQRSTUVW'' with the corresponding NATO Phonetic alphabet code'
-- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, Xray'
+- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November,
+           Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, Xray'
   question: 'replace each letter in ''ABCDEFGHIJKLMNOPQRSTUVWX'' with the corresponding NATO Phonetic alphabet code'
-- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, Xray, Yankee'
+- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November,
+           Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, Xray, Yankee'
   question: 'replace each letter in ''ABCDEFGHIJKLMNOPQRSTUVWXY'' with the corresponding NATO Phonetic alphabet code'
-- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, Xray, Yankee, Zulu'
+- answer: 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November,
+           Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, Xray, Yankee, Zulu'
   question: 'replace each letter in ''ABCDEFGHIJKLMNOPQRSTUVWXYZ'' with the corresponding NATO Phonetic alphabet code'
 - answer: 'Zero'
   question: 'What is the NATO phonetic alphabet code for ''0'''
