@@ -1,25 +1,31 @@
 @startditaa
-                  begin
-                    |
-              /-----+-----\
-    +-------->|contributor| 
-    |         \-----+-----/
-    |               |
-    |               |
-    v               |
-/--------\          v
-|reviewer|<--->pull request---------+
-\--------/          |               |
-    ^               v               v
-    |             +---+ recipe /---------\
-    |             |SDG|<-------+mainainer|
-    |             +-+-+        \---------/
-    |               |
-    |               v
-    +----------data samples
-                    |
-                    v
-                +-------+
-                |trainer|
-                +-------+
+                   +---+                         legend          
+                   |CLI|                           +-------+     
+                   ++--+                           |lab CLI|     
+    change request  | ^ revise examples based on   +-------+     
+    and review      v | reviewers' feedback        /--------\    
+    discussion /------+----\                       |human in|    
+    +--------->|contributor|                       |the loop|    
+    |          \-----+-----/                       \--------/    
+    |                | create/update PR            +------------+
+    |                |                             |backend cGRE|
+    v 1. initial PR  |                             +------------+
+/--------\ review    v                                           
+|reviewer|<---->pull request                                     
+\--+-+---/           |                                           
+   |^| initial       v                                           
+   ||| checks   +---------+                                      
+   ||| pass     |Synthetic|                                      
+   ||+--------->|Data cGRE|<---simple recipe           
+   ||           |Generator|      e.g. 50 samples per PR
+   || 2. review +----+---++                                      
+   || generated      |   :                                       
+   || samples        v   +-=- backend                            
+   |+-----------data samples                                     
+   |                 |                                           
+   | samples         v                                           
+   | approved    +-------+                                       
+   +------------>|trainer|                                       
+                 |   cGRE|                                       
+                 +-------+                                       
 @endditaa
