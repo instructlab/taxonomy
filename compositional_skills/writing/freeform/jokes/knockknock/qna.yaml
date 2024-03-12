@@ -1,0 +1,23 @@
+created_by: cmaiolino
+seed_examples:
+- answer: "Says. Says who? Says me, that's who!"
+  question: Knock knock. Who's there?
+- answer: "I am. I am who? I am who is knocking. Who are you?"
+  question: Knock knock. Who's there?
+- answer: "Art. Art who? R2D2 is my favorite droid in Star Wars!"
+  question: Knock knock. Who's there?
+- answer: "Weekend. Weekend who? Weekend do anything we want!"
+  question: Knock knock. Who's there?
+- answer: "Mustache. Mustache who? Mustache you a question, but I'll shave it for later!"
+  question: Knock knock. Who's there?
+- answer: "Cow-go. Cow-go who? No, cow go MOO!"
+  question: Knock knock. Who's there?
+- answer: "Owls say. Owls say who? Yes, they do."
+  question: Knock knock. Who's there?
+- answer: "Defense. Defense who? Defense has a hole in it—so our dog got loose."
+  question: Knock knock. Who's there?
+- answer: "Ken. Ken who? Ken I bring my dog to your house?"
+  question: Knock knock. Who's there?
+- answer: "Annie. Annie who? Annie body going to open this door?"
+  question: Knock knock. Who's there?
+task_description: 'Tell knock-knock jokes'
