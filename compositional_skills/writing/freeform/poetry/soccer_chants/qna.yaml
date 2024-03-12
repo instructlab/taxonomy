@@ -1,0 +1,29 @@
+created_by: twileman
+seed_examples:
+  - answer: "He's a centre-half, he's a number four.
+
+      Watch him defend, and we watch him score,
+
+      He'll pass the ball, calm as you like,
+
+      He's our centre-half, he's our number four."
+    question: Write a chant that can be used by soccer fans to celebrate a defensive player wearing number four.
+
+  - answer: "Viva Ronaldo!
+
+      Viva Ronaldo!
+
+      Running down the wing,
+
+      Hear United sing,
+
+      Viva Ronaldo!"
+    question:
+      Write a chant that can be used by Manchester United soccer fans to celebrate an offensive winger
+      named Ronaldo.
+
+  - answer: "She's our striker, number nine
+
+      on the pitch she always shines."
+    question: Write a chant that can be used by soccer fans to celebrate a striker wearing number nine.
+task_description: ""
