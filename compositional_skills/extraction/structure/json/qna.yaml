@@ -51,8 +51,9 @@ seed_examples:
           "uuid": "55555555-5555-5555-5555-555555555555"
         }
       ]
-    question: |
-      Create a JSON structure containing a parent and child relationship between similar tag keys.
+    question: >
+      Create a JSON structure containing a parent and child relationship between
+      similar tag keys.
   - answer: |
       [
         {
@@ -111,8 +112,9 @@ seed_examples:
           "uuid": "66666666-6666-6666-6666-666666666666"
         }
       ]
-    question: |
-      Create a JSON structure containing parent and child relationship between similar tag keys.
+    question: >
+      Create a JSON structure containing parent and child relationship between
+      similar tag keys.
   - answer: |
       [
         {
@@ -159,8 +161,9 @@ seed_examples:
           "key": "free_tierretained"
         }
       ]
-    question: |
-      Create a JSON structure containing a parent and child relationship between similar tag keys.
+    question: >
+      Create a JSON structure containing a parent and child relationship between
+      similar tag keys.
   - answer: |
       [
         {
@@ -223,8 +226,9 @@ seed_examples:
             "uuid": "66666666-6666-6666-6666-666666666666"
         }
       ]
-    question: |
-      Create a JSON structure containing a parent and child relationship between similar tag keys.
+    question: >
+      Create a JSON structure containing a parent and child relationship between
+      similar tag keys.
   - answer: |
       [
         {
@@ -307,8 +311,9 @@ seed_examples:
             "key": "CreatedOn2"
         },
       ]
-    question: |
-      Create a JSON structure containing a parent and child relationship between similar tag keys.
+    question: >
+      Create a JSON structure containing a parent and child relationship between
+      similar tag keys.
   - answer: |
       [
           {
@@ -363,5 +368,6 @@ seed_examples:
           "uuid": "55555555-5555-5555-5555-555555555555"
         }
       ]
-    question:
-      Create a JSON structure containing a parent and child relationship between similar tag keys.
+    question: >-
+      Create a JSON structure containing a parent and child relationship between
+      similar tag keys.
