@@ -1,0 +1,367 @@
+task_description: Create a parent and child relationship between similar tag keys.
+created_by: myersCody
+seed_examples:
+  - answer: |
+      [
+        {
+          "parent": {
+            "key": "app",
+            "uuid": "55555555-5555-5555-5555-555555555555"
+          },
+          "children": [
+            {
+              "key": "App",
+              "uuid": "11111111-1111-1111-1111-111111111111"
+            },
+            {
+              "key": "Applicationn",
+              "uuid": "22222222-2222-2222-2222-222222222222"
+            },
+            {
+              "key": "app1",
+              "uuid": "33333333-3333-3333-3333-333333333333"
+            },
+            {
+              "key": "app",
+              "uuid": "44444444-4444-4444-4444-444444444444"
+            }
+          ]
+        }
+      ]
+    context: |
+      [
+        {
+          "key": "App",
+          "uuid": "11111111-1111-1111-1111-111111111111"
+        },
+        {
+          "key": "Applicationn",
+          "uuid": "22222222-2222-2222-2222-222222222222"
+        },
+        {
+          "key": "app1",
+          "uuid": "33333333-3333-3333-3333-333333333333"
+        },
+        {
+          "key": "app",
+          "uuid": "44444444-4444-4444-4444-444444444444"
+        },
+        {
+          "key": "app",
+          "uuid": "55555555-5555-5555-5555-555555555555"
+        }
+      ]
+    question: |
+      Create a JSON structure containing a parent and child relationship between similar tag keys.
+  - answer: |
+      [
+        {
+          "parent": {
+            "key": "app",
+            "uuid": "33333333-3333-3333-3333-333333333333"
+          },
+          "children": [
+            {
+              "key": "App",
+              "uuid": "11111111-1111-1111-1111-111111111111"
+            },
+            {
+              "key": "Applicationn",
+              "uuid": "22222222-2222-2222-2222-222222222222"
+            }
+          ]
+        },
+        {
+          "parent": {
+            "key": "env",
+            "uuid": "44444444-4444-4444-4444-444444444444""
+          },
+          "children": [
+            {
+              "key": "environment",
+              "uuid": "55555555-5555-5555-5555-555555555555"
+            }
+          ]
+        }
+      ]
+    context: |
+      [
+        {
+          "key": "App",
+          "uuid": "11111111-1111-1111-1111-111111111111"
+        },
+        {
+          "key": "Applicationn",
+          "uuid": "22222222-2222-2222-2222-222222222222"
+        },
+        {
+          "key": "app",
+          "uuid": "33333333-3333-3333-3333-333333333333"
+        },
+        {
+          "key": "env",
+          "uuid": "44444444-4444-4444-4444-444444444444""
+        },
+        {
+          "key": "environment",
+          "uuid": "55555555-5555-5555-5555-555555555555"
+        },
+        {
+          "key": "nilla",
+          "uuid": "66666666-6666-6666-6666-666666666666"
+        }
+      ]
+    question: |
+      Create a JSON structure containing parent and child relationship between similar tag keys.
+  - answer: |
+      [
+        {
+          "parent": {
+            "key": "storage_class",
+            "uuid": "11111111-1111-1111-1111-111111111111"
+          },
+          "children": [
+            {
+              "key": "storageclass1",
+              "uuid": "33333333-3333-3333-3333-333333333333"
+            },
+            {
+              "key": "storageclass",
+              "uuid": "55555555-5555-5555-5555-555555555555"
+            }
+          ]
+        }
+      ]
+    context: |
+      [
+        {
+          "uuid": "11111111-1111-1111-1111-111111111111",
+          "key": "storage_class"
+        },
+        {
+          "uuid": "22222222-2222-2222-2222-222222222222",
+          "key": "environment"
+        },
+        {
+          "uuid": "33333333-3333-3333-3333-333333333333",
+          "key": "storageclass1"
+        },
+        {
+          "uuid": "44444444-4444-4444-4444-444444444444",
+          "key": "CreatedOn"
+        },
+        {
+          "uuid": "55555555-5555-5555-5555-555555555555",
+          "key": "storageclass"
+        },
+        {
+          "uuid": "66666666-6666-6666-6666-666666666666",
+          "key": "free_tierretained"
+        }
+      ]
+    question: |
+      Create a JSON structure containing a parent and child relationship between similar tag keys.
+  - answer: |
+      [
+        {
+          "parent": {
+            "key": "Application",
+            "uuid": "33333333-3333-3333-3333-333333333333"
+          },
+          "children": [
+            {
+              "key": "App",
+              "uuid": "11111111-1111-1111-1111-111111111111"
+            },
+            {
+              "key": "Applications",
+              "uuid": "22222222-2222-2222-2222-222222222222"
+            }
+          ]
+        },
+        {
+          "parent": {
+            "key": "environments",
+            "uuid": "55555555-5555-5555-5555-555555555555"
+          },
+          "children": [
+            {
+              "key": "enviroment",
+              "uuid": "66666666-6666-6666-6666-666666666666"
+            },
+            {
+              "key": "env",
+              "uuid": "44444444-4444-4444-4444-444444444444"
+            }
+          ]
+        }
+      ]
+    context: |
+      [
+        {
+            "key": "App",
+            "uuid": "11111111-1111-1111-1111-111111111111"
+        },
+        {
+            "key": "Applications",
+            "uuid": "22222222-2222-2222-2222-222222222222"
+        },
+        {
+            "key": "Application",
+            "uuid": "33333333-3333-3333-3333-333333333333"
+        },
+        {
+            "key": "env",
+            "uuid": "44444444-4444-4444-4444-444444444444"
+        },
+        {
+            "key": "environments",
+            "uuid": "55555555-5555-5555-5555-555555555555"
+        },
+        {
+            "key": "enviroment",
+            "uuid": "66666666-6666-6666-6666-666666666666"
+        }
+      ]
+    question: |
+      Create a JSON structure containing a parent and child relationship between similar tag keys.
+  - answer: |
+      [
+        {
+          "parent": {
+            "uuid": "33333333-3333-3333-3333-333333333333",
+            "key": "storageclass"
+          },
+          "children": [
+            {
+              "uuid": "55555555-5555-5555-5555-555555555555",
+              "key": "storageclass1"
+            }
+          ]
+        },
+        {
+          "parent": {
+            "uuid": "22222222-2222-2222-2222-222222222222",
+            "key": "environment"
+          },
+          "children": [
+            {
+              "uuid": "11111111-1111-1111-1111-111111111111",
+              "key": "environments"
+            },
+            {
+              "uuid": "66666666-6666-6666-6666-666666666666",
+              "key": "enviroment"
+            }
+          ]
+        },
+        {
+          "parent": {
+            "uuid": "77777777-7777-7777-7777-777777777777",
+            "key": "CreatedOn"
+          },
+          "children": [
+            {
+              "uuid": "44444444-4444-4444-4444-444444444444",
+              "key": "CreatedOn1"
+            },
+            {
+              "uuid": "88888888-8888-8888-8888-888888888888",
+              "key": "CreatedOn2"
+            }
+          ]
+        }
+      ]
+    context: |
+      [
+        {
+            "uuid": "11111111-1111-1111-1111-111111111111",
+            "key": "environments"
+        },
+        {
+            "uuid": "22222222-2222-2222-2222-222222222222",
+            "key": "environment"
+        },
+        {
+            "uuid": "33333333-3333-3333-3333-333333333333",
+            "key": "storageclass"
+        },
+        {
+            "uuid": "44444444-4444-4444-4444-444444444444",
+            "key": "CreatedOn1"
+        },
+        {
+            "uuid": "55555555-5555-5555-5555-555555555555",
+            "key": "storageclass1"
+        },
+        {
+            "uuid": "66666666-6666-6666-6666-666666666666",
+            "key": "enviroment"
+        },
+        {
+            "uuid": "77777777-7777-7777-7777-777777777777",
+            "key": "CreatedOn"
+        },
+        {
+            "uuid": "88888888-8888-8888-8888-888888888888",
+            "key": "CreatedOn2"
+        },
+      ]
+    question: |
+      Create a JSON structure containing a parent and child relationship between similar tag keys.
+  - answer: |
+      [
+          {
+            "parent": {
+              "uuid": "33333333-3333-3333-3333-333333333333",
+              "key": "Vanilla"
+            },
+            "children": [
+              {
+                "uuid": "55555555-5555-5555-5555-555555555555",
+                "key": "nilla"
+              }
+            ]
+          },
+          {
+            "parent": {
+              "uuid": "22222222-2222-2222-2222-222222222222",
+              "key": "test"
+            },
+            "children": [
+              {
+                "uuid": "11111111-1111-1111-1111-111111111111",
+                "key": "test2"
+              },
+              {
+                "uuid": "66666666-6666-6666-6666-666666666666",
+                "key": "test3"
+              }
+            ]
+          }
+        ]
+    context: |
+      [
+        {
+          "key": "Vanilla",
+          "uuid": "11111111-1111-1111-1111-111111111111"
+        },
+        {
+          "key": "nilla",
+          "uuid": "22222222-2222-2222-2222-222222222222"
+        },
+        {
+          "key": "test",
+          "uuid": "33333333-3333-3333-3333-333333333333"
+        },
+        {
+          "key": "test1",
+          "uuid": "44444444-4444-4444-4444-444444444444"
+        },
+        {
+          "key": "test3",
+          "uuid": "55555555-5555-5555-5555-555555555555"
+        }
+      ]
+    question:
+      Create a JSON structure containing a parent and child relationship between similar tag keys.
