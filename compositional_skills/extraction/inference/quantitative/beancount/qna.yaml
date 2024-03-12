@@ -5,29 +5,89 @@ seed_examples:
 - question: "Record the following in a Beancount ledger: I spent 80 EUR in cash on groceries."
   answer: |
     2024-01-01 * "Buying groceries"
-      Assets:Cash              -80.00 EUR
       Expenses:Food:Groceries   80.00 EUR
+      Assets:Cash
+
+- question: "Record the following in a Beancount ledger: I spent 40.15 EUR in cash on groceries."
+  answer: |
+    2024-01-01 * "Buying groceries"
+      Expenses:Food:Groceries   40.15 EUR
+      Assets:Cash
+
+- question: "Record the following in a Beancount ledger: I spent 120.56 EUR in cash on groceries."
+  answer: |
+    2024-01-01 * "Buying groceries"
+      Expenses:Food:Groceries   120.56 EUR
+      Assets:Cash
 
 - question: "Record the following in a Beancount ledger: I paid 40 EUR in cash in the restaurant."
   answer: |
     2024-01-01 * "Restaurant"
-      Assets:Cash              -40.00 EUR
       Expenses:Food:Restaurant  40.00 EUR
+      Assets:Cash
+
+- question: "Record the following in a Beancount ledger: I paid 12.15 EUR at the bakery."
+  answer: |
+    2024-01-01 * "Bakery"
+      Expenses:Food:Bakery      12.15 EUR
+      Assets:Cash
 
 - question: "Write the following in a Beancount ledger: I paid 150 EUR for my car insurance bill."
   answer: |
     2024-01-01 * "Car Insurance"
-      Assets:Bank              -150.00 EUR
       Expenses:Car:Insurance    150.00 EUR
+      Assets:Bank
 
 - question: "Write the following in a Beancount ledger: I paid 1000 EUR for my rent."
   answer: |
     2024-01-01 * "Rent"
-      Assets:Bank              -1000.00 EUR
       Expenses:Housing:Rent     1000.00 EUR
+      Assets:Bank
+
+- question: "Record the following in a Beancount ledger: I paid 300.00 EUR in student fees."
+  answer: |
+    2024-01-01 * "Student fees"
+      Expenses:Education:University  300.00 EUR
+      Assets:Bank
 
 - question: "Record the following in a Beancount ledger: I withdrew 123 EUR from my bank account."
   answer: |
     2024-01-01 * "Cash withdrawal"
-      Assets:Bank              -123.00 EUR
       Assets:Cash               123.00 EUR
+      Assets:Bank
+
+- question: "Record the following in a Beancount ledger: I received 12 EUR for selling a book."
+  answer: |
+    2024-01-01 * "Sell book"
+      Assets:Cash              12.00 EUR
+      Income:GarageSale
+
+- question: "Record the following in a Beancount ledger: I paid off my credit card bill worth 250 GBP."
+  answer: |
+    2024-01-01 * "Credit card payment"
+      Liabilities:CreditCard    250.00 GBP
+      Assets:Bank
+
+- question: "Record in your Beancount ledger: I bought a new mobile phone for 350 EUR cash."
+  answer: |
+    2024-01-01 * "New Mobile Phone"
+      Expenses:MobilePhone     350.00 EUR
+      Assets:Cash
+
+- question: "Record the following in a Beancount ledger: I bought a pair of shoes for 70 EUR."
+  answer: |
+    2024-01-01 * "Buying shoes"
+      Expenses:Clothing        70.00 EUR
+      Assets:Cash
+
+- question: "Record the following in a Beancount ledger: I gave 20 EUR to charity."
+  answer: |
+    2024-01-01 * "Donating to charity"
+      Expenses:Charity         20.00 EUR
+      Assets:Cash
+
+- question: "Record the following in a Beancount ledger: I bought a book for 18 EUR on Amazon."
+  answer: |
+    2024-01-01 * "Purchase on Amazon"
+      Expenses:Books     18.00 EUR
+      Assets:CreditCard
