@@ -1,0 +1,14 @@
+created_by: sinnykumari
+seed_examples:
+- answer: 'YouTube can be used to share varieties of content. You can create and upload long duration videos to share bigger ideas,
+    1 minute video to catch quick attention, community posts to share freeform written content. If you are looking for streaming live,
+    you can do that as well.'
+  question: I am interested in sharing content on Youtube. Tell me what I can do?
+- answer: 'You can create video content based on skills, creativity or hobbies you have.
+    * Suppose you have good painting skills. Then, create tutorial videos on teaching about painting, tooling involved, best practices and so on.
+    * Suppose you like cooking cuisine from around the world. You can share cooking recipe videos, techniques, etc of food dishes you prepare.'
+  question: I want to create regular videos, please provide me with some examples.
+- answer: 'Analyzing likes, views and comments on your posted video can tell what your viewers think about the content.
+    Also, it is a good idea to periodically ask for the feedback and incorporate feedback received in future videos.'
+  question: How can I ensure people are liking my videos?
+task_description: ''
