@@ -1,0 +1,94 @@
+created_by: f-trivino
+task_description: 'Use awk to manipulate data'
+seed_examples:
+  - question: |
+      How can I use awk to print the second column of a text file?
+    context: |
+      Let's say you have a file named "data.txt" with multiple columns separated by spaces.
+      ```
+      $ cat data.txt
+      1 John Doe
+      2 Alice Smith
+      3 Bob Johnson
+      ```
+    answer: |
+      You can use awk to print the second column like this:
+      ```
+      $ awk '{print $2}' data.txt
+      John
+      Alice
+      Bob
+      ```
+  - question: |
+      How do I extract the usernames from the output of the "who" command using awk?
+    context: |
+      When you run the "who" command, it displays information about currently logged in users.
+      ```
+      $ who
+      user1   tty1  2022-03-10 08:00
+      user2   tty2  2022-03-10 08:10
+      user3   tty3  2022-03-10 08:15
+      ```
+    answer: |
+      You can extract the usernames using awk like this:
+      ```
+      $ who | awk '{print $1}'
+      user1
+      user2
+      user3
+      ```
+  - question: |
+      How can I use awk to filter lines containing a specific pattern?
+    context: |
+      Suppose you have a file named "emails.txt" containing email addresses, and you want to filter out only the lines containing the domain "@example.com".
+      ```
+      $ cat emails.txt
+      user1@example.com
+      user2@gmail.com
+      user3@example.com
+      ```
+    answer: |
+      You can use awk to filter lines containing "@example.com" like this:
+      ```
+      $ awk '/@example.com/' emails.txt
+      user1@example.com
+      user3@example.com
+      ```
+  - question: |
+      How can I use awk to calculate the total of numbers in a column?
+    context: |
+      Let's say you have a file named "numbers.txt" with numbers in the second column, and you want to calculate their total.
+      ```
+      $ cat numbers.txt
+      A 10
+      B 20
+      C 30
+      ```
+    answer: |
+      You can use awk to calculate the total of numbers in the second column like this:
+      ```
+      $ awk '{sum+=$2} END {print sum}' numbers.txt
+      60
+      ```
+  - question: |
+      How do I use awk to print lines between two patterns?
+    context: |
+      Suppose you have a file named "file.txt" with multiple lines, and you want to print lines between the patterns "start" and "end".
+      ```
+      $ cat file.txt
+      line1
+      start
+      line2
+      line3
+      end
+      line4
+      ```
+    answer: |
+      You can use awk to print lines between "start" and "end" patterns like this:
+      ```
+      $ awk '/start/, /end/' file.txt
+      start
+      line2
+      line3
+      end
+      ```
