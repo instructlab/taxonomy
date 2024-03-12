@@ -1,0 +1,15 @@
+created_by: itzikb-redhat
+seed_examples:
+  - answer: |
+      Here are few examples Sofia, James, Henry
+    question: Give me first names with 5 letters
+  - answer: 'Here are few examples Ana, Ala, Amy'
+    question: Give me first names with 3 letters for girls
+  - answer: 'Here are few examples Blake, Bryan, Bruce'
+    question: Give me first names with 5 letters that start with B
+  - answer: 'Here are few examples Ama, Amy'
+    question: Give me first names that start with Am
+  - answer: 'Here are few examples David, Jon, Ramon'
+    question: Give me first names with length of between 3 and 5 inclusive
+task_description: |
+  This skill enables giving first names with a specific length
