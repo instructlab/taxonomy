@@ -1,0 +1,18 @@
+created_by: morucci
+seed_examples:
+- answer: 'The filtered list of words is: mouse, dentist
+    '
+  context: dog, cat, mouse, dentist
+  question: 'Filter the following list of words by keeping only the words composed of the letter "e"
+    '
+- answer: 'The filtered list of words is: dog, mouse
+    '
+  context: dog, cat, mouse, dentist
+  question: 'Filter the following list of words by keeping only the words composed of the letter "o"
+    '
+- answer: 'The filtered list of words is: dog, dentist
+    '
+  context: dog, cat, mouse, dentist
+  question: 'Filter the following list of words by keeping only the words composed of the letter "d"
+    '
+task_description: 'Ability to filter a list of words based on the predicate if it contains the given letter.'
