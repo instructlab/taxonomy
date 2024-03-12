@@ -38,19 +38,19 @@ seed_examples:
     `ls -l /dev/disk/by-id/`
     NOTE: A specific disk ids must be used to maintain persistence
     3. Setup chosen devices for SBD
-    `pcs stonith sbd device setup device=/dev/disk/by-id/<first-disk-id> device=/dev/disk/by-id/<second-disk-id> 
+    `pcs stonith sbd device setup device=/dev/disk/by-id/<first-disk-id> device=/dev/disk/by-id/<second-disk-id>
     device=/dev/disk/by-id/<third-disk-id>`
     4. Enable SBD fencing and specify the devices
-    `pcs stonith sbd enable device=/dev/disk/by-id/<first-disk-id> device=/dev/disk/by-id/<second-disk-id> 
+    `pcs stonith sbd enable device=/dev/disk/by-id/<first-disk-id> device=/dev/disk/by-id/<second-disk-id>
     device=/dev/disk/by-id/<third-disk-id>`
     5. Start the cluster
     `pcs cluster start --all`
     6. Create SBD fence agent
-    `pcs stonith create <agent-name> fence_sbd 
+    `pcs stonith create <agent-name> fence_sbd
     devices=/dev/disk/by-id/<first-disk-id>,/dev/disk/by-id/<second-disk-id>,/dev/disk/by-id/<third-disk-id>`
   question: How to configure SBD fencing with multiple disks in a pacemaker cluster?
 - answer: |
-    This is a way to configure SBD fencing with one shared disk with id /dev/disk/by-id/disk172731 in a running 
+    This is a way to configure SBD fencing with one shared disk with id /dev/disk/by-id/disk172731 in a running
     2-node pacemaker cluster, that would have a fence_sbd agent named fencing-agent-1:
     1. Stop the cluster
     `pcs cluster stop --all`
@@ -62,15 +62,15 @@ seed_examples:
     `pcs cluster start --all`
     5. Create SBD fence agent named fencing-agent-1
     `pcs stonith create fencing-agent-1 fence_sbd devices=/dev/disk/by-id/disk172731`
-  question: How to configure SBD fencing with one disk with id /dev/disk/by-id/disk172731 
+  question: How to configure SBD fencing with one disk with id /dev/disk/by-id/disk172731
     and fence agent with name fencing-agent-1 in a running 2-node pacemaker cluster?
 - answer: |
-    This is a way to configure SBD fencing with two shared disks with ids /dev/disk/by-id/disk17111 
-    and /dev/disk/by-id/disk17122 with watchdog device /dev/watchdog2 in a running 
+    This is a way to configure SBD fencing with two shared disks with ids /dev/disk/by-id/disk17111
+    and /dev/disk/by-id/disk17122 with watchdog device /dev/watchdog2 in a running
     2-node pacemaker cluster, that would have a fence_sbd agent named fencing-agent-sbd:
     1. Stop the cluster
     `pcs cluster stop --all`
-    2. Setup devices /dev/disk/by-id/disk17111 
+    2. Setup devices /dev/disk/by-id/disk17111
     and /dev/disk/by-id/disk17122 for SBD
     `pcs stonith sbd device setup device=/dev/disk/by-id/disk17111 device=/dev/disk/by-id/disk17122`
     3. Enable SBD fencing and specify the devices /dev/disk/by-id/disk17111 and /dev/disk/by-id/disk17122
@@ -81,5 +81,6 @@ seed_examples:
     5. Create SBD fence agent named fencing-agent-sbd
     `pcs stonith create fencing-agent-1 fence_sbd devices=/dev/disk/by-id/disk17111,/dev/disk/by-id/disk17122`
   question: How to configure SBD fencing with two disks with ids /dev/disk/by-id/disk17111 and /dev/disk/by-id/disk17122
-    and fence agent with name fencing-agent-sbd and watchdog device /dev/watchdog2 in a running 2-node pacemaker cluster?
+    and fence agent with name fencing-agent-sbd and watchdog device /dev/watchdog2
+    in a running 2-node pacemaker cluster?
 task_description: 'Setup of SBD fencing method in a 2-node pacemaker cluster via pcs cli'
