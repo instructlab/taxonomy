@@ -1,0 +1,15 @@
+task_description: provides the result in a fast way with decimals
+created_by: mcasquer
+seed_examples:
+  - question: 4*8+6-2*7/6
+    answer: 35.67
+  - question: Fast calculation with decimals 4*8+6-2*7/6
+    answer: The result is 35.67
+  - question: Fast calculation with decimals 7+4*6-8/3
+    answer: The result is 28.33
+  - question: 7+4*6-8/3
+    answer: 28.33
+  - question: Fast calculation with decimals 7+4*6-8/3
+    answer: The result is 19.83
+  - question: 7+4*6-8/3
+    answer: 19.83
