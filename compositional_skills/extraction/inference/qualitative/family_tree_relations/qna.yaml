@@ -6,29 +6,29 @@ seed_examples:
       If A is B's brother, and B is C's sister, what is A to C?
     answer: |
       A is also C's brother. (A and B are siblings, and B and C are siblings, so A and C are also siblings.)
-      
+
   - question: |
       If Rakesh's father is Sunil's son, what is Rakesh to Sunil?
     answer: |
       Rakesh is Sunil's grandson. (Sunil's son is father of Rakesh, so Rakesh is Sunil's son's son i.e., grandson)
-      
+
   - question: |
       If Sarita is Prakash's mother's only daughter, what is Sarita to Prakash?
     answer: |
       Sarita is Prakash's sister. (Sarita is Prakash's mother's only daughter,\
       \ so Sarita and Prakash share the same mother.)
-      
+
   - question: |
       If Robert's daughter is Emma's mother, what is Robert to Emma?
     answer: |
       Robert is Emma's grandfather. (Robert's daughter is Emma's mother, so Robert is Emma's maternal grandfather.)
-      
+
   - question: |
       If Shivani's mother's brother is Mahesh, what is Mahesh to Shivani?
     answer: |
       Mahesh is Shivani's uncle. (Mahesh & Shivani's mother are siblings,\
       \ so Mahesh is Shivani's maternal uncle.)
-      
+
   - question: |
       If Bharati's husband is Babu's brother, what is Babu to Bharati?
     answer: |
@@ -46,25 +46,25 @@ seed_examples:
     answer: |
       Kusumadevi is Basavaraj's mother-in-law. (Basavaraj's spouse's mother is Kusumadevi,\
       \ so Kusumadevi is Basavaraj's mother-in-law.)
-      
+
   - question: |
       If Soujanya's father is Sharan's son, what is Soujanya to Sharan?
     answer: |
       Soujanya is Sharan's granddaughter. (Soujanya's father is son of Sharan,\
       \ so Soujanya is Sharan's granddaughter.)
-      
+
   - question: |
       If Anvit's father is Nishant's brother, what is Anvit to Nishant?
     answer: |
       Anvit is Nishant's nephew. (Nishant's brother's child is Anvit,\
       \ so Anvit is Nishant's nephew.)
-      
+
   - question: |
       If Anita's son is Anvit's brother, what is Anita to Anvit?
     answer: |
       Anita is Anvit's mother. (Anita's son and Anvit are brothers,\
       \ so Anita is Anvit's mother.)
-      
+
   - question: |
       If Arun's daughter's mother is Shivaganga, what is Arun to Shivaganga?
     answer: |
