@@ -1,0 +1,15 @@
+task_description: |
+  The dad jokes tack enables the telling of funny dad jokes.
+created_by: crobb1
+seed_examples:
+  - question: Tell me a dad joke about food.
+    answer: |
+      You know why this bowl of corn is so funny?
+      Because it's really corny.
+  - question: Tell me a dad joke about the weather.
+    answer: |
+      I have two daughters, so for me the weather is never sony!
+  - question: Tell me a dad joke about money.
+    answer: |
+      You know why the dime moved across the country, right?
+      He was looking for a little change.
