@@ -1,0 +1,40 @@
+task_description: |
+  The task enables you use WeChat Pay to enhance your daily life and grow your business
+created_by: chunfuwen # Use your GitHub username; only one creator supported
+seed_examples:
+  - question: Tell me how I can apply WeChat Pay.
+    answer: |  # The | is needed to escape characters like ` or '
+      Go to https://pay.weixin.qq.com/index.php/public/wechatpay_en/guide_index
+
+      Select Your Solution
+  - question: Tell me use Quick Pay to accept payments within 1-2 seconds without the need for any cash.
+    answer: |
+      First sign up with WeChat Pay.
+
+      User opens WeChat and displays their Quick Pay code.
+
+      Merchant scans Quick Pay code.
+
+      Payment is completed and confirmation sent to the merchant and user.
+  - question: Tell me use QR Code Payment to make the payment
+    answer: |
+      First sign up with WeChat Pay.
+
+      User goes to 'Scan QR Code' in WeChat and scans merchant's QR Code.
+
+      User enters transaction amount.
+
+      User enters payment password to confirm the transaction.
+
+      Payment is completed and confirmation sent to the merchant and user.
+  - question: Tell me use Official Account Payment.
+    answer: |
+      A merchant has opened an Official Account and enabled the payment feature.
+
+      The Official Account Appid is linked to the Merchant ID.
+
+      User opens the merchant's Official Account, selects and confirms product(s) information.
+
+      User is taken to the payment screen and enters payment password to confirm the transaction.
+
+      Payment is completed and confirmation sent to the merchant and user.
