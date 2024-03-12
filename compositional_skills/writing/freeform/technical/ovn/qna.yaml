@@ -1,0 +1,14 @@
+created_by: linup2011
+seed_examples:
+- answer: 'On fedora37, there are multiple packages related to ovn, to fully use
+           the features for ovn, you need to run following commands:
+           sudo dnf install ovn ovn-central ovn-host -y'
+  question: How could I install ovn(Open Virtual Network) ovn fedora37?
+- answer: 'On fedora37, before you tried to start ovn-northd, you need to confirm
+    that ovn-northd is installed with following command:
+    systemctl status ovn-northd,if the command passed, it means that ovn-northd
+    is installed, then you can start ovn-northd with following command
+    systemctl start ovn-northd'
+  question: How could I start ovn-northd on fedora37?
+
+task_description: 'Skills regarding OVN(Open Virtual Network) on fedora37'
