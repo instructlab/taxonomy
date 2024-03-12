@@ -1,0 +1,12 @@
+created_by: ajithkrishnanunni
+seed_examples:
+- answer: 'Kerala Blasters Football club based in Kerala, India has an offical
+  \song or chant starting with ole ole ole. This was heard during many of their matches.'
+  question: what is the chant or song of kerala Blasters FC? 
+- answer: 'Mumbai City Football club based in Mumbai, India has an offical
+  \song or chant called la la la la la. This was heard during many of their matches.'
+  question: what is the chant or song of Mumbai City FC? 
+- answer: 'Bengaluru Football club (BFC) based in Bengaluru, India has an offical
+  \song or chant called haadu santhoshakke. This was heard during many of their matches.'
+  question: what is the chant or song of Bengaluru FC? 
+task_description: ''

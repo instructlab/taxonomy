@@ -1,0 +1,512 @@
+[
+    {
+        "instruction": "Create a catchy chant for your favorite football team.",
+        "input": "My favorite team is Kerala Blasters FC from India.",
+        "output": "Ole, ole, ole, ole, Kerala Blasters! We'll score the goals!"
+    },
+    {
+        "instruction": "Create a humorous soccer chant for your team using animal sounds.",
+        "input": "",
+        "output": "Oink oink, oink oink, Kerala Blasters FC! We'll score the goals!"
+    },
+    {
+        "instruction": "Write a soccer chant that describes a victory in the Indian Super League.",
+        "input": "",
+        "output": "Chant: We won! We won! Kerala Blasters FC! The ISL trophy is ours!"
+    },
+    {
+        "instruction": "Write a soccer chant for Kerala Blasters FC that incorporates the name of their stadium.",
+        "input": "",
+        "output": "Payyanad payyanad, Kerala Blasters FC! We'll score the goals at the Payyanad Stadium!"
+    },
+    {
+        "instruction": "Write a humorous soccer chant for Kerala Blasters FC that incorporates their team colors.",
+        "input": "",
+        "output": "Yellow yellow, blue blue, Kerala Blasters FC! We'll score the goals in our team colors!"
+    },
+    {
+        "instruction": "Write a serious soccer chant for Kerala Blasters FC that incorporates their team motto.",
+        "input": "",
+        "output": "Kerala Blasters FC! We stand tall! We'll score the goals for our team!"
+    },
+    {
+        "instruction": "Write a serious soccer chant for Kerala Blasters FC that incorporates the name of their head coach.",
+        "input": "",
+        "output": "Taking charge, Eelco Schattorie! Kerala Blasters FC! We'll score the goals for our head coach!"
+    },
+    {
+        "instruction": "what is the chant or song of Jamshedpur FC?",
+        "input": "",
+        "output": "Jamshedpur Football Club (JFC) based in Jamshedpur, India has an official \\song or chant called yeh Jamshedpur hai, ye humara Jamshedpur hai, ye hamara Jamshedpur hai. This was heard during many of their matches."
+    },
+    {
+        "instruction": "what is the chant or song of NorthEast United FC?",
+        "input": "",
+        "output": "NorthEast United FC based in Guwahati, India has an official \\song or chant called hi we are NEUFC, hi we are NEUFC. This was heard during many of their matches."
+    },
+    {
+        "instruction": "what is the chant or song of FC Goa?",
+        "input": "",
+        "output": "FC Goa based in Goa, India has an official \\song or chant called ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, o"
+    },
+    {
+        "instruction": "What is the chant or song of Bengaluru FC?",
+        "input": "",
+        "output": "Bengaluru Football club based in Bengaluru, India has an offical \\song or chant called we will go on together. This was heard during many of their matches."
+    },
+    {
+        "instruction": "Give me the chant or song of Hyderabad FC?",
+        "input": "",
+        "output": "Hyderabad Football club based in Hyderabad, India has an offical \\song or chant called we are the roars of hyderabad. This was heard during many of their matches."
+    },
+    {
+        "instruction": "Tell me the chant or song of FC Goa?",
+        "input": "",
+        "output": "FC Goa Football club based in Goa, India has an offical \\song or chant called we are the giants of the west. This was heard during many of their matches."
+    },
+    {
+        "instruction": "Describe the chant or song of Chennai City FC.",
+        "input": "",
+        "output": "Chennai City Football club based in Chennai, India has an offical \\song or chant called chennai city all the way. This was heard during many of their matches."
+    },
+    {
+        "instruction": "Give me the chant or song of Bengaluru FC?",
+        "input": "",
+        "output": "Bengaluru Football club based in Bengaluru, India has an offical \\song or chant called we will go on together. This was heard during many of their matches."
+    },
+    {
+        "instruction": "Tell me the chant or song of Hyderabad FC?",
+        "input": "",
+        "output": "Hyderabad Football club based in Hyderabad, India has an offical \\song or chant called we are the roars of hyderabad. This was heard during many of their matches."
+    },
+    {
+        "instruction": "Describe the chant or song of Mumbai City FC?",
+        "input": "",
+        "output": "Mumbai City Football club based in Mumbai, India has an offical \\song or chant called la la la la la. This was heard during many of their matches."
+    },
+    {
+        "instruction": "Give me the chant or song of ATK Mohun Bagan FC?",
+        "input": "",
+        "output": "ATK Mohun Bagan Football club based in Kolkata, India has an offical \\song or chant called we are the kings of the east. This was heard during many of their matches."
+    },
+    {
+        "instruction": "Tell me a popular chant or song for a team from Kerala.",
+        "input": "",
+        "output": "The popular football club of Kerala is called Kerala Blasters FC. A common \\song or chant is \"Kerala Blasters FC, we're going to win.\""
+    },
+    {
+        "instruction": "what is the chant or song of FC Pune City?",
+        "input": "",
+        "output": "FC Pune City, which was based in Pune, India had an offical \\song or chant called \"Ole Ole Ole Ole, Pune FC\". This was heard during many of their matches before they got disbanded."
+    },
+    {
+        "instruction": "tell me about the chant or song of Chennaiyin FC?",
+        "input": "",
+        "output": "The Indian Super League team Chennaiyin FC is from Chennai, India. They have an official \\song or chant called \"Kaala Kaala Chennaiyin\". This was heard during many of their matches."
+    },
+    {
+        "instruction": "What is the chant or song for the football team from Delhi?",
+        "input": "",
+        "output": "The only professional football club in Delhi is Delhi Dynamos FC. They have an official \\song or chant called \"Delhi Dynamos, we're going to win.\" This was heard during many of their matches before they got disbanded."
+    },
+    {
+        "instruction": "tell me about the chant or song for the football club from Goa?",
+        "input": "",
+        "output": "The football club from Goa is called FC Goa, which is based in Goa, India. They have an official \\song or chant called \"FC Goa, we're going to win.\" This was heard during many of their matches."
+    },
+    {
+        "instruction": "what is the chant or song for the team from the East?",
+        "input": "",
+        "output": "The team from the East is called the Atletico de Kolkata. They have an official \\song or chant called \"Jai Hind Jai Hind\". This was heard during many of their matches before they got disbanded."
+    },
+    {
+        "instruction": "tell me about the chant or song for the team from the West?",
+        "input": "",
+        "output": "The team from the West is called Mumbai City FC. They have an offical \\song or chant called \"Mumbai City, we're going to win.\" This was heard during many of their matches."
+    },
+    {
+        "instruction": "polarize the fans and players of Kerala Blasters FC and Chennaiyin FC",
+        "input": "",
+        "output": "The fans and players of Kerala Blasters FC and Chennaiyin FC have been polarized due to their intense rivalry. This rivalry has led to heated matches and a strong sense of loyalty among fans."
+    },
+    {
+        "instruction": "find the names of the captains of the two teams playing against each other in the ISL match on December 10, 2019",
+        "input": "",
+        "output": "The names of the captains of the two teams playing against each other in the ISL match on December 10, 2019 were \\name1 and \\name2."
+    },
+    {
+        "instruction": "describe the emotions experienced during the ISL match on December 10, 2019",
+        "input": "",
+        "output": "During the ISL match on December 10, 2019, fans experienced a range of emotions, from excitement and anticipation to disappointment and frustration. The intense competition between the two teams led to a rollercoaster of emotions for fans throughout the match."
+    },
+    {
+        "instruction": "list the names of the goalkeepers of the two teams that played against each other in the ISL match on December 10, 2019",
+        "input": "",
+        "output": "The goalkeepers of the two teams that played against each other in the ISL match on December 10, 2019 were \\name1 and \\name2."
+    },
+    {
+        "instruction": "describe the atmosphere in the stadium during the ISL match on December 10, 2019",
+        "input": "",
+        "output": "The atmosphere in the stadium during the ISL match on December 10, 2019 was electric, with fans cheering and chanting throughout the match. The intense competition between the two teams created a sense of urgency and anticipation, making for a memorable experience for all in attendance."
+    },
+    {
+        "instruction": "explain the rules of the ISL",
+        "input": "",
+        "output": "The ISL, or Indian Super League, follows the rules of association football, also known as soccer. This includes rules such as the number of players on the field, the size of the goal, and the duration of the match. However, the ISL also has its own unique rules, such as the number of teams in the league and the format of the playoffs."
+    },
+    {
+        "instruction": "list the names of the teams that played in the ISL during the year 2019",
+        "input": "",
+        "output": "The teams that played in the ISL during the year 2019 were \\team1, \\team2, \\team3, \\team4, \\team5, \\team6, \\team7, \\team8, \\team9, \\team10."
+    },
+    {
+        "instruction": "explain the importance of teamwork in soccer",
+        "input": "",
+        "output": "Teamwork is essential in soccer, as it allows players to combine their skills and work together towards a common goal. This can include passing the ball, defending as a unit, and strategizing during the match. By working together, teams can create opportunities, outplay their opponents, and ultimately win matches."
+    },
+    {
+        "instruction": "list the names of the players who have scored the most goals in the ISL during the year 2019",
+        "input": "",
+        "output": "The players who have scored the most goals in the ISL during the year 2019 were \\player1, \\player2, \\player3, \\player4, \\player5."
+    },
+    {
+        "instruction": "explain the significance of the Indian Super League (ISL) in promoting soccer in India",
+        "input": "",
+        "output": "The Indian Super League (ISL) plays a crucial role in promoting soccer in India, as it provides a platform for professional soccer players, coaches, and teams to showcase their skills and talents. The ISL also helps to grow the sport's popularity and reach new audiences, which can inspire the next generation of soccer players in India."
+    },
+    {
+        "instruction": "list the names of the teams that won the ISL during the year 2019",
+        "input": "",
+        "output": "The teams that won the ISL during the year 2019 were \\winner1 and \\winner2."
+    },
+    {
+        "instruction": "describe the strategies used by the Kerala Blasters FC during the ISL match on December 10, 2019",
+        "input": "",
+        "output": "During the ISL match on December 10, 2019, Kerala Blasters FC used a number of strategies, including pressing high up the field, creating chances through quick counter-attacks, and defending as a unit. The team also relied on the skills and talents of their players, such as their ability to make precise passes and score goals."
+    },
+    {
+        "instruction": "explain the role of the midfielder in soccer",
+        "input": "",
+        "output": "The midfielder in soccer plays a critical role in linking the defense and the offense, as they are responsible for passing the ball, creating chances, and supporting their team's attacks. Midfielders often have a range of skills, such as dribbling, shooting, and tackling, which allow them to contribute in different ways during the match."
+    },
+    {
+        "instruction": "list the names of the players who have been voted as the best players in the ISL during the year 2019",
+        "input": "",
+        "output": "The players who have been voted as the best players in the ISL during the year 2019 were \\player1, \\player2, \\player3, \\player4, \\player5."
+    },
+    {
+        "instruction": "describe the importance of the forward in soccer",
+        "input": "",
+        "output": "The forward in soccer is responsible for scoring goals, as they often lead the team's attacks and position themselves in the opponent's penalty area. Forwards rely on their skills, such as speed, agility, and shooting accuracy, to create chances and score goals. By doing so, forwards help their team win matches and secure three points."
+    },
+    {
+        "instruction": "what is the chant or song of ATK Mohun Bagan FC?",
+        "input": "",
+        "output": "ATK Mohun Bagan football club based in Kolkata, India has an offical \\song or chant called we are the kings. This was heard during many of their matches."
+    },
+    {
+        "instruction": "Create an original chant for FC Goa that incorporates their team colors (orange and blue).",
+        "input": "",
+        "output": "Here's an original chant for FC Goa: \"Orange and blue, our team is true! \\nGo Goa, Go Goa, Go Goa!\" The team colors, orange and blue, are incorporated in this chant."
+    },
+    {
+        "instruction": "polar bear, what is your favorite football chant or song?",
+        "input": "",
+        "output": "Polar bear is the mascot for FC Midtjylland, a Danish football club. While polar bears do not have personal preferences, the club\u2019s fans often chant \u201cMidtjylland, Midtjylland, h\u00e6re vi kommer\u201d during matches, which translates to \u201cMidtjylland, Midtjylland, here we come\u201d in English."
+    },
+    {
+        "instruction": "What is the most popular football club in India?",
+        "input": "",
+        "output": "At present, there is no universally recognized most popular football club in India. However, FC Goa, based in Goa, has gained significant popularity in recent years due to its success in the Indian Super League and its strong fan base."
+    },
+    {
+        "instruction": "what is the most popular chant in the i-league?",
+        "input": "",
+        "output": "The Indian Super League (ISL) is the most popular football league in India, and its matches feature various chants that resonate with the audience. However, it is challenging to pinpoint a single most popular chant due to the league\u2019s diversity and the varying preferences of fans across different clubs."
+    },
+    {
+        "instruction": "what is the style and color of kerala blasters home jersey?",
+        "input": "",
+        "output": "The Kerala Blasters home jersey is predominantly yellow, featuring the team\u2019s logo on the left chest. The jersey is designed in a style that reflects the club\u2019s identity and pays homage to the traditional attire of the state, Kerala, in Southern India."
+    },
+    {
+        "instruction": "How would you describe the style and color of Kerala Blasters\u2019 home jersey?",
+        "input": "",
+        "output": "The Kerala Blasters home jersey is primarily yellow, displaying the team\u2019s logo on the left chest. The jersey design is inspired by the traditional clothing of Kerala, the southern Indian state where the club is based, emphasizing the team\u2019s regional connection."
+    },
+    {
+        "instruction": "what is the color and style of Bengaluru FC home jersey?",
+        "input": "",
+        "output": "Bengaluru FC\u2019s home jersey is red, showcasing the team\u2019s logo on the left chest. The jersey design is modern and stylish, reflecting the club\u2019s commitment to innovation and success on the pitch."
+    },
+    {
+        "instruction": "how do I get Bengaluru FC jersey?",
+        "input": "",
+        "output": "To obtain a Bengaluru FC jersey, visit the club\u2019s official online store or authorized retailers. Alternatively, attend a Bengaluru FC home match, where jerseys are typically available for purchase at the stadium\u2019s merchandise booths."
+    },
+    {
+        "instruction": "how is the color and style of FC Pune City\u2019s home jersey?",
+        "input": "",
+        "output": "FC Pune City\u2019s home jersey is primarily orange, featuring the team\u2019s logo on the left chest. The jersey design is simple yet striking, reflecting the club\u2019s identity and providing a bold on-field presence."
+    },
+    {
+        "instruction": "Describe the style and color of FC Pune City\u2019s home jersey?",
+        "input": "",
+        "output": "FC Pune City\u2019s home jersey is predominantly orange, displaying the team\u2019s logo on the left chest. The jersey design is simple yet striking, reflecting the club\u2019s identity and providing a bold on-field presence."
+    },
+    {
+        "instruction": "What is the most popular chant in FC Pune City\u2019s home games?",
+        "input": "",
+        "output": "FC Pune City fans have various chants for their home games, but one popular chant goes like this: \u201cWe are Pune, we are Pune, we are Pune city, we\u2019ll be champions.\u201d The chant is a show of support for the team and expresses the fans\u2019 aspirations for the club\u2019s success."
+    },
+    {
+        "instruction": "how do I buy FC Pune City home jersey?",
+        "input": "",
+        "output": "To acquire an FC Pune City home jersey, visit the club\u2019s official online store or authorized retailers. Additionally, attending FC Pune City home matches may offer the opportunity to purchase jerseys at the stadium\u2019s merchandise booths."
+    },
+    {
+        "instruction": "what is the most popular football club in Kerala?",
+        "input": "",
+        "output": "Kerala Blasters FC is the most popular football club in Kerala, as it is the only Indian Super League (ISL) club based in the state. The club has garnered significant support from the local population, making it the most well-known football team in the region."
+    },
+    {
+        "instruction": "what is the color and style of kerala blasters away jersey?",
+        "input": "",
+        "output": "The Kerala Blasters away jersey is predominantly black, featuring the team\u2019s logo on the left chest. The jersey design is minimalistic yet striking, reflecting the club\u2019s identity and providing a bold on-field presence during away matches."
+    },
+    {
+        "instruction": "how do I get Kerala Blasters away jersey?",
+        "input": "",
+        "output": "To procure a Kerala Blasters away jersey, visit the club\u2019s official online store or authorized retailers. Additionally, attending Kerala Blasters away matches may offer the opportunity to purchase jerseys at the stadium\u2019s merchandise booths."
+    },
+    {
+        "instruction": "Describe the style and color of Kerala Blasters away jersey?",
+        "input": "",
+        "output": "The Kerala Blasters away jersey is predominantly black, showcasing the team\u2019s logo on the left chest. The jersey design is minimalistic yet striking, reflecting the club\u2019s identity and providing a bold on-field presence during away matches."
+    },
+    {
+        "instruction": "what is the chant or song of Chennaiyin FC?",
+        "input": "",
+        "output": "Chennaiyin FC Football club based in Chennai, India has an offical \\song or chant called ole ole ole Chennaiyin. This was heard during many of their matches."
+    },
+    {
+        "instruction": "what is the chant or song of Odisha FC?",
+        "input": "",
+        "output": "Odisha FC Football club based in Bhubaneswar, India has an offical \\song or chant called ole ole ole Odisha. This was heard during many of their matches."
+    },
+    {
+        "instruction": "what is the chant or song of Delhi Dynamos FC?",
+        "input": "",
+        "output": "Delhi Dynamos FC Football club based in Delhi, India has an offical \\song or chant called ole ole ole Delhi Dynamos. This was heard during many of their matches."
+    },
+    {
+        "instruction": "what is the chant or song of Atalanta?",
+        "input": "",
+        "output": "Atalanta is an Italian professional football club that has several chants and songs, one of them is \"Biscione\". The Biscione is a symbolic image of a owl, which is the club's mascot."
+    },
+    {
+        "instruction": "what is the chant or song of Chennai city FC?",
+        "input": "",
+        "output": "Chennai City Football Club, based in Chennai, India, has several chants and songs, one of them is \"The Mariners\". The Mariners is a name that pays tribute to the city's maritime history and the club's colors are blue and yellow."
+    },
+    {
+        "instruction": "what is the chant or song of Hyderabad FC?",
+        "input": "",
+        "output": "Hyderabad Football Club, based in Hyderabad, India, has several chants and songs, one of them is \"The Nizams\". The Nizams is a name that pays tribute to the city's historical Nizams and the club's colors are maroon and blue."
+    },
+    {
+        "instruction": "What is the significance of the chant \"haadu santhoshakke\" for Bengaluru FC?",
+        "input": "",
+        "output": "The chant \"haadu santhoshakke\" is a symbol of unity, pride, and passion for Bengaluru FC and its fans. It is an integral part of the club's identity and helps create a sense of belonging among supporters, fostering a strong connection between the team and its community."
+    },
+    {
+        "instruction": "Compare and contrast the chants \"la la la la la\" and \"haadu santhoshakke\".",
+        "input": "",
+        "output": "The chants \"la la la la la\" (Mumbai City FC) and \"haadu santhoshakke\" (Bengaluru FC) both evoke strong emotions among fans, but they differ in their melody, rhythm, and cultural context. While \"la la la la la\" is a catchy, repetitive tune that resonates with fans, \"haadu santhoshakke\" is a Kannada song that reflects the unique heritage and identity of Bengaluru FC."
+    },
+    {
+        "instruction": "What makes the chant \"la la la la la\" so popular among Mumbai City FC fans?",
+        "input": "",
+        "output": "The chant \"la la la la la\" is popular among Mumbai City FC fans because it's easy to learn, memorable, and has a strong emotional impact. It creates a sense of belonging and unity among supporters, fostering a powerful connection between the team and its fans."
+    },
+    {
+        "instruction": "How does the chant \"haadu santhoshakke\" contribute to the unique identity of Bengaluru FC?",
+        "input": "",
+        "output": "The chant \"haadu santhoshakke\" is a significant part of Bengaluru FC's unique identity, as it is a Kannada song that reflects the rich cultural heritage of the city and the team. It fosters a strong connection between the club and its local community, making fans feel proud and passionate about their team."
+    },
+    {
+        "instruction": "Can you provide examples of other chants or songs that are popular in Indian football?",
+        "input": "",
+        "output": "Yes, there are several popular chants and songs in Indian football, including \"Jing-Bell\" (FC Goa), \"Vengeance\" (Chennaiyin FC), \"We Are the Champions\" (Atletico de Kolkata), \"North-East United\" (NorthEast United FC), and \"Heroes\" (Kerala Blasters FC)."
+    },
+    {
+        "instruction": "How does the chant \"la la la la la\" compare to other popular chants in Indian football in terms of cultural significance?",
+        "input": "",
+        "output": "The chant \"la la la la la\" is unique among popular chants in Indian football because it doesn't have specific cultural significance tied to the city or region where Mumbai City FC is based. Instead, it is a simple, memorable tune that resonates with fans across the country and creates a sense of unity among supporters."
+    },
+    {
+        "instruction": "Describe the emotions that the chant \"Vengeance\" evokes in Chennaiyin FC fans.",
+        "input": "",
+        "output": "The chant \"Vengeance\" evokes feelings of determination, resilience, and ambition in Chennaiyin FC fans. It serves as a powerful reminder of the team's history, its fighting spirit, and its commitment to overcoming challenges on the pitch."
+    },
+    {
+        "instruction": "How does the chant \"Vengeance\" contribute to the unique identity of Chennaiyin FC?",
+        "input": "",
+        "output": "The chant \"Vengeance\" is an integral part of Chennaiyin FC's unique identity, as it embodies the team's determination, resilience, and unyielding spirit. It fosters a strong connection between the club and its fans, creating a sense of pride and shared history."
+    },
+    {
+        "instruction": "Tell me the names of all the teams that have won the ISL title the most times.",
+        "input": "",
+        "output": "The Indian Super League (ISL) is a professional football league in India. The team that has won the ISL title the most times is ATK Mohun Bagan FC, with three titles."
+    },
+    {
+        "instruction": "What is the official song or chant of FC Goa?",
+        "input": "",
+        "output": "FC Goa is an Indian professional football club based in Goa, India. The official \\song or chant is \"Ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole, ole"
+    },
+    {
+        "instruction": "3. What is the chant or song for Chennai City FC?",
+        "input": "",
+        "output": "Chennai city Football club based in Chennai, India has an offical \\song or chant called \\s. This was heard during many of their matches."
+    },
+    {
+        "instruction": "polarize the audience when singing a song or chant, what is the key?",
+        "input": "",
+        "output": "Polarize the audience when singing a song or chant, the key is to sing the song or chant in an energetic and passionate manner, making it clear that you are either supporting or opposing the team. This will help to create a sense of unity among the supporters and create an atmosphere of excitement and anticipation during the match."
+    },
+    {
+        "instruction": "how to write an original soccer song or chant for my favorite team?",
+        "input": "",
+        "output": "To write an original soccer song or chant for your favorite team, consider the team's history, their mascot, their colors, their home stadium, and their fans. Use these elements as inspiration for your song or chant, incorporating them into the lyrics. Make sure to use simple and memorable phrases, and avoid using overly complex or technical language. The song or chant should be easy for fans to learn and sing along to."
+    },
+    {
+        "instruction": "what is the history of soccer chants?",
+        "input": "",
+        "output": "Soccer chants have a long history dating back to the early days of the sport. They were used as a way for fans to show their support for their team and to express their emotions. Over time, they have evolved into complex and catchy songs that are often sung in unison by large groups of fans. Soccer chants are now an integral part of the sport, and they play an important role in creating a sense of community and camaraderie among fans."
+    },
+    {
+        "instruction": "explain the meaning of the phrase 'we will always sing' in the context of soccer chants?",
+        "input": "",
+        "output": "The phrase 'we will always sing' in the context of soccer chants is a pledge of loyalty and commitment to the team. It shows that the fans are dedicated to supporting their team, no matter what. The chant also serves as a way for fans to express their emotions and show their pride in their team. It creates a sense of unity and shared identity among the fans, and it helps to create a lively and exciting atmosphere at the match."
+    },
+    {
+        "instruction": "what are some common elements in soccer chants?",
+        "input": "",
+        "output": "Some common elements in soccer chants include catchy melodies, simple and memorable phrases, and references to the team's history, mascot, colors, or home stadium. Many chants also include a call and response structure, which allows the fans to interact with each other and create a sense of unity. Additionally, many chants include a message of support for the team, expressing the fans' loyalty and commitment to the team."
+    },
+    {
+        "instruction": "how can i create a soccer chant that is memorable and easy to learn?",
+        "input": "",
+        "output": "To create a soccer chant that is memorable and easy to learn, use simple and catchy melodies, and keep the lyrics simple and straightforward. Use repetition and rhyme to help the fans remember the chant, and avoid using overly complex or technical language. Make sure the chant is easy for fans to sing along to, and avoid including any words or phrases that may be offensive or inappropriate."
+    },
+    {
+        "instruction": "what is the role of soccer chants in the game?",
+        "input": "",
+        "output": "Soccer chants play a vital role in the game, creating an electric atmosphere for the players and supporters alike. They serve as a means of communication between fans, allowing them to express their emotions, show their loyalty, and create a sense of unity and shared identity. Additionally, soccer chants can have a significant impact on the players, helping them to stay motivated, focused, and energized during the match."
+    },
+    {
+        "instruction": "what is the chant or song for Hyderabad FC?",
+        "input": "",
+        "output": "Hyderabad Football Club's official song has the words \"Hyderabad FC\" in the chorus. This chant is often heard in their matches."
+    },
+    {
+        "instruction": "what is the chant or song for FC Pune City?",
+        "input": "",
+        "output": "FC Pune City has an official chant that starts with \"Pune city, Pune city, Pune city!\" This chant is often heard in their matches."
+    },
+    {
+        "instruction": "what is the chant or song for Mumbai City FC?",
+        "input": "",
+        "output": "Mumbai City Football Club has an official song that starts with \"Mumbai City, Mumbai City, Mumbai City!\" This chant is often heard in their matches."
+    },
+    {
+        "instruction": "what is the chant or song for NorthEast United FC?",
+        "input": "",
+        "output": "NorthEast United FC has an official song that starts with \"NorthEast United, NorthEast United, NorthEast United!\" This chant is often heard in their matches."
+    },
+    {
+        "instruction": "what is the chant or song for Jamshedpur FC?",
+        "input": "",
+        "output": "Jamshedpur FC has an official chant that starts with \"Jamshedpur FC, Jamshedpur FC, Jamshedpur FC!\" This chant is often heard in their matches."
+    },
+    {
+        "instruction": "what is the chant or song for ATK (Mohun Bagan and East Bengal)?",
+        "input": "",
+        "output": "ATK, which is a merger of Mohun Bagan and East Bengal, has an official chant that starts with \"ATK, ATK, ATK!\" This chant is often heard in their matches."
+    },
+    {
+        "instruction": "what is the chant or song for Bengaluru FC?",
+        "input": "",
+        "output": "Bengaluru Football club based in Bengaluru, India has an offical \\song or chant called we are Bengaluru FC. This was heard during many of their matches."
+    },
+    {
+        "instruction": "what is the chant or song for ATK Mohun Bagan?",
+        "input": "",
+        "output": "ATK Mohun Bagan Football club based in Kolkata, India has an offical \\song or chant called we are ATK Mohun Bagan. This was heard during many of their matches."
+    },
+    {
+        "instruction": "what is the chant or song for FC Goa?",
+        "input": "",
+        "output": "FC Goa Football club based in Goa, India has an offical \\song or chant called we are FC Goa. This was heard during many of their matches."
+    },
+    {
+        "instruction": "what is the chant or song for Odisha FC?",
+        "input": "",
+        "output": "Odisha Football club based in Odisha, India has an offical \\song or chant called we are Odisha FC. This was heard during many of their matches."
+    },
+    {
+        "instruction": "what is the chant or song for Kerala Blasters FC?",
+        "input": "",
+        "output": "Kerala Blasters Football club based in Kerala, India has an offical \\song or chant starting with ole ole ole. This was heard during many of their matches."
+    },
+    {
+        "instruction": "what is the chant or song for Chennaiyin FC?",
+        "input": "",
+        "output": "Chennaiyin Football club based in Chennai, India has an offical \\song or chant called we are Chennaiyin FC. This was heard during many of their matches."
+    },
+    {
+        "instruction": "what is the chant or song of ATK?",
+        "input": "",
+        "output": "The chant or song for ATK, formerly known as Atl\u00e9tico de Kolkata, is the \"ATK Anthem\", which is popular among fans during the team's matches."
+    },
+    {
+        "instruction": "What is the name of the stadium where Bengaluru FC plays its home matches?",
+        "input": "",
+        "output": "Sree Kanteerava Stadium is the name of the stadium where Bengaluru FC plays its home matches."
+    },
+    {
+        "instruction": "What is the name of the captain of Bengaluru FC?",
+        "input": "",
+        "output": "Sunil Chhetri is the name of the captain of Bengaluru FC."
+    },
+    {
+        "instruction": "What is the name of the manager of Bengaluru FC?",
+        "input": "",
+        "output": "The current manager of Bengaluru FC is Carles Cuadrat."
+    },
+    {
+        "instruction": "Who is the top scorer for Bengaluru FC in the last season?",
+        "input": "",
+        "output": "Sunil Chhetri is the top scorer for Bengaluru FC in the last season, scoring a total of 14 goals in the league."
+    },
+    {
+        "instruction": "What is the name of the club that won the ISL trophy in the last season?",
+        "input": "",
+        "output": "Chennaiyin FC is the name of the club that won the ISL trophy in the last season."
+    },
+    {
+        "instruction": "What is the name of the player who scored the most number of goals in the last ISL season?",
+        "input": "",
+        "output": "Rafael Coelho Coutinho, popularly known as Rafael Crivellaro, scored the most number of goals in the last ISL season, a total of 14 goals, playing as a striker for Chennaiyin FC."
+    },
+    {
+        "instruction": "Who is the owner of Bengaluru FC?",
+        "input": "",
+        "output": "Bengaluru FC is owned by JSW Group, one of India's largest conglomerates, which has interests in various sectors including steel, energy, infrastructure, cement, sports, and technology."
+    },
+    {
+        "instruction": "Who is the head coach of Bengaluru FC?",
+        "input": "",
+        "output": "Currently, Carles Cuadrat is the head coach of Bengaluru FC. He has been in charge since May 2019, leading the team in the Indian Super League, the Durand Cup, and the AFC Cup."
+    }
+]
