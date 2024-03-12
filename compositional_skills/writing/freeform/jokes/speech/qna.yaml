@@ -1,0 +1,9 @@
+created_by: ai_cooper
+seed_examples:
+- answer: 
+     Say nothing. Pause for a minute.
+  question: How do you grab the attention of the audience in a speech?
+- answer: 
+    Sleep in a car. Ker is a car, and neru is to get some sleep. 
+  question: What is kernel in Japanese?
+task_description: a speech skill and joke
