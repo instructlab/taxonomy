@@ -1,0 +1,68 @@
+created_by: avinashsingh77
+seed_examples:
+  - answer: >
+      Certainly! Here's a draft for your LinkedIn bio: DevOps Expert with a
+      Passion for AI and MLOPs. Experienced DevOps professional with a keen eye
+      for streamlining operations and optimizing efficiency in software
+      development lifecycles. Eager to leverage my expertise in DevOps
+      methodologies, automation, and infrastructure as code to propel my career
+      into the exciting realms of Artificial Intelligence and MLOps. Skills &
+      Specializations:
+       DevOps: Automation, CI/CD pipelines, Infrastructure as Code (IaC), Configuration Management
+       Cloud Platforms: AWS, Azure, GCP
+       Containerization: Docker, Kubernetes
+       Monitoring & Logging: ELK Stack, Prometheus, Grafana
+       Scripting & Programming: Python, Bash, Go
+       AI & ML Fundamentals: Neural Networks, Machine Learning Algorithms
+      Goals:
+       Passionate about bridging the gap between development and operations while integrating AI
+       and machine learning technologies into robust, scalable, and efficient systems.
+       Committed to staying at the forefront of advancements in AI and MLOps, continuously learning,
+       and adapting to new technologies and methodologies.
+      Open to Opportunities:
+       Seeking roles where I can apply my expertise in DevOps alongside my growing knowledge in AI
+       and MLOps to drive innovation,solve complex challenges, and contribute to cutting-edge projects
+       that are shaping the future of technology.
+      Let's connect and explore opportunities to collaborate on exciting
+      ventures at the intersection
+       of DevOps and AI/MLOps!
+    question: >
+      Help me draft a LinkedIn Bio for me. I am an experienced devops
+      professional aspiring to transition my career in AI and MLOPs.
+  - answer: >
+      Certainly! Here's a draft for your LinkedIn bio: Experienced software
+      developer with a strong background in Java backend services. Passionate
+      about crafting robust, scalable solutions to meet business needs. Aspiring
+      to transition my career into the dynamic world of DevOps and
+      Infrastructure services. Excited to leverage my development experience to
+      streamline processes, enhance automation, and optimize infrastructure for
+      efficiency and reliability. Proficient in Java, with a keen eye for
+      performance optimization and code quality. Committed to continuous
+      learning and staying updated with the latest tools and technologies in the
+      DevOps ecosystem. Let's connect to explore opportunities for collaboration
+      and growth in the intersection of software development and infrastructure
+      management!!
+    question: >
+      Help me draft a LinkedIn Bio for me.  I am an experienced software
+      developer with expertise in java backend services. I am aspiring to
+      transition my career in DevOps and Infrastructure service
+  - answer: >
+      Certainly! Here's a draft for your LinkedIn bio summary:
+
+      Experienced software developer specializing in Quality Assurance
+      automation with a passion for ensuring top-notch product quality. With a
+      robust background in software development and a keen eye for detail, I
+      excel in crafting efficient and reliable testing frameworks.
+
+      Now, I'm embarking on an exciting journey to transition my career into a
+      Scrum Master role. My goal is to leverage my technical expertise and
+      project management skills to drive agile processes and facilitate seamless
+      collaboration within cross-functional teams.
+
+      Let's connect and explore how I can contribute to your team's success as a
+      dynamic Scrum Master.
+    question: >
+      Help me draft a LinkedIn Bio summary for me. I am an experienced software
+      developer with expertise in Quality Assurance automation. I am aspiring to
+      transition my career in a scrum master role.
+task_description: This skill helps the model write a LinkedIn Bio as per provided input
