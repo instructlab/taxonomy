@@ -1,0 +1,51 @@
+created_by: spoore1
+seed_examples:
+  - answer: |
+      Shorter and smaller than most, you're able to hide more easily because
+      people just tend to miss that you're there. You use this to your advantage
+      along with your agile hands to pick-pocket tavern-goers as well as castle
+      guards (both on and off duty). Able to snag keys off of a guard to free
+      your captured friends (or the Queen's nephew), your skills provide access
+      to certain places you probably shouldn't be. And don't forget that if you
+      can't yank that key off the guard, you can probably still pick the lock
+      with your trusty lock picking kit. When you need to actually fight, don't
+      forget that dagger you normally use for cutting bread and cheese. And
+      certainly don't forget to share those herbs you stole from the King's
+      pantry with the chef. Everyone will thank you.
+    question: Generate a description of a dwarven thief
+  - answer: |
+      Fast and agile with a keen eye, you are able to hit a wasp with an arrow
+      from your trusty long bow at a range that most can't even see. Your
+      perception and intelligence can make you a fast talking negotiator but, be
+      careful of saying the wrong thing to the wrong person. Insulting a local
+      can result in needing to use that speed and agility to escape an angry
+      mob. Once you've put some distance between yourself and the angry locals,
+      you can then fire an explosive warning shot with your bow. Remember that
+      in addition to fighting your bow can also be used for hunting in order to
+      feed yourself and, should you so choose, your party or even the angry
+      locals. You might be surprised at how quickly you make friends with food.
+    question: Generate a description of an elven archer
+  - answer: |
+      Not as quick and nimble as an elf, you are still fast with your hands and
+      even faster with your spells. Able to wield healing, environmental,
+      deception, and attack spells, you provide a wide variety of support
+      depending on the situation and the need. You are able to roast an orc with
+      a fire spell or perfectly cook a goose with the same spell assuming you
+      get the time and temperature correct. Your hooded cloak provides you a lot
+      of protection from the elements (and sometimes attacks). But, to be
+      serious, you really only wear it because it just looks cool.  And don't
+      forget when your magic won't work, you can always club your enemies with
+      your staff.
+    question: Generate a description of a human wizard
+  - answer: |
+      Standing at 2.5m tall, and seemingly as wide, you tower over the majority
+      of people and creatures. Able to carry much larger weapons than most, your
+      weapon of choice is an oversized warhammer. You litterally use this to
+      crush your enemies or sometimes ice for drinks at the local tavern.
+      Although much slower than most other humanoids, your strength greatly
+      makes up for your lack of speed.  And although most people assume that you
+      are slow witted because you are a troll, you are far more intelligent than
+      your average troll. Your keen eyes allow you to catch pick-pockets and
+      slight-of-hand easily in most cases.  Be careful of the sunlight, though.
+      If you are exposed for too long, you may turn to stone.
+    question: Generate a description of a troll warrior
