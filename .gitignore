@@ -130,6 +130,15 @@ dmypy.json
 
 scratch.ipynb
 
+# IDEs
+.vscode/
+.idea/
+
+# Mac personalization files
+.DS_Store
+
+# Tox envs
+.tox/
 
 # Ignore config.yaml from the cli
 config.yaml
