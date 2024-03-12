@@ -6,4 +6,4 @@ seed_examples:
 - answer:
     Sleep in a car. Ker is a car, and neru is to get some sleep.
   question: What is kernel in Japanese?
-task_description: a speech skill and joke
+task_description: a speech joke
