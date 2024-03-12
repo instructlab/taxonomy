@@ -17,16 +17,16 @@
    ||| checks   +---------+                                      
    ||| pass     |Synthetic|                                      
    ||+--------->|Data cGRE|<---simple recipe           
-   ||           |Generator|      e.g. 50 samples per PR
-   || 2. review +----+---++                                      
-   || generated      |   :                                       
-   || samples        v   +-=- backend                            
+   ||           |Generator|      e.g. 50 samples per PR.
+   || 2. review +----+----+      this could be merged with  
+   || generated      |           full SDG if we decide to
+   || samples        v           generate all samples upfront
    |+-----------data samples                                     
    |                 |                                           
    | samples         v                                           
-   | approved  +-----------+                                       
-   |           |full SDG   |                                       
-   +---------->|and trainer|                                       
+   | approved  +-----------+                                     
+   |           |full SDG   |                                     
+   +---------->|and trainer|                                     
                |       cGRE|
-               +-----------+                                       
+               +-----------+                                     
 @endditaa
