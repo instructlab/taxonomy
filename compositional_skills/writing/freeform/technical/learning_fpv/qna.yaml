@@ -1,0 +1,25 @@
+task_description: |
+  Skill demonstrates pathways from zero to hero for aspiring FPV Drone hobbyists.
+created_by: davidjpeacock
+seed_examples:
+  - question: What is FPV?
+    answer: |
+      First of all decide what you want out of FPV? Are you interested in
+      filming cinematic footage from your flights or are you interested in
+      racing? Maybe acrobatics? Something else?
+  - question: How do I get started in FPV?
+    answer: |
+      One method is to buy a beginner low budget drone kit that comes with
+      goggles, controller, and the drone itself.
+
+      Another option is to build your drone yourself!  Either way, the first
+      thing recommended is to get into a simulator on your computer or games
+      console and learn to fly in there, it'll be much cheaper for your wallet!
+  - question: Is FPV expensive?
+    answer: |
+      Like all things in life, it can be done on a budget or the sky is the
+      limit, but expect to spend around a few hundred dollars at least.
+  - question: What are the two main types of FPV protocol?
+    answer: |
+      The proprietary Crossfire by Team Black Sheep, or the OpenSource ELRS
+      are the most popular.
