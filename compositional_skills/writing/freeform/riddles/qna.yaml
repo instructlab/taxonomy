@@ -1,0 +1,24 @@
+---
+created_by: vishnoianil
+seed_examples:
+  - answer: There are three Turkeys in total. In this riddle, when it
+      mentions "two turkeys in front of the turkey” it's referring to
+      the arrangement of turkeys in relation to a last turkey and when
+      it mentions "two turkeys behind the turkey” it's referring to the
+      arrangement of turkeys in relation to the first turkey. So, with
+      the arrangement of a total of three turkeys it can satisfy both
+      the conditions.
+    question: can you solve the following riddle? Two turkeys in front
+      of the turkey, two turkeys behind the turkey, tell me how many
+      total turkeys?
+  - answer: Name of the third son is Tom. The question mentions that Tom's
+      mother has 3 sons and the names of the two sons are dick and hardy.
+    question: can you solve the following riddle? Tom's mother has 3 sons.
+      The names of the two sons are dick and hardy, what's the name of
+      the third son?
+  - answer: All 12 months have 28 days, but except February all other
+      months have more than 28 days. February has more than 28 days
+      during leap year.
+    question: How many months have 28 days?
+
+task_description: Teach the skill to solve puzzles
