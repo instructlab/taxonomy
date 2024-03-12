@@ -1,0 +1,28 @@
+task_description: |
+  skills to compare versions in N(.N)* format
+created_by: liangxiao1
+seed_examples:
+  - question: package version 8.1.12 and 8.1.2, which is higher?
+    answer: |
+      8.1.12 is higher than 8.1.2. Here is the documentation that may be helpful.
+      https://packaging.python.org/en/latest/specifications/version-specifiers/#version-specifiers
+  - question: xxx-9.22.1 and xxx-9.4.7, which is higher?
+    answer: |
+      xxx-9.22.1 is higher than xxx-9.4.7. Here is the documentation that may be helpful.
+      https://packaging.python.org/en/latest/specifications/version-specifiers/#version-specifiers
+  - question: yyy-9.6 and yyy-9.3.7, which is higher?
+    answer: |
+      yyy-9.6 is higher than yyy-9.3.7. Here is the documentation that may be helpful.
+      https://packaging.python.org/en/latest/specifications/version-specifiers/#version-specifiers
+  - question: yyy-9.6 and xxx-5.3.7, which is higher?
+    answer: |
+      The package names are different, and it is meaningless to judge which one is higher.
+  - question: cloud-init-22.1-7.el9_1 and kernel-5.14.0-70.13.1.el9_0, which is higher?
+    answer: |
+      The package names are different, and it is meaningless to judge which one is higher.
+  - question: kernel-5.14.0-70.26.1.el9_0 and 5.14.0-162.6.1.el9_1, which is higher?
+    answer: |
+      5.14.0-162.6.1.el9_1 is higher than 5.14.0-70.26.1.el9_0.
+  - question: kernel-5.14.0-70.13.1.el9_0 and kernel-5.14.0-70.8.1.el9_0, which is higher?
+    answer: |
+      kernel-5.14.0-70.13.1.el9_0 is higher than kernel-5.14.0-70.8.1.el9_0.
