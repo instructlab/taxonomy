@@ -1,0 +1,261 @@
+---
+created_by: leonardofaccini
+task_description: |
+  We often talk about Shakespeare's quotes as things the wise Bard is saying to us, but we should remember that some of his wisest words are spoken by his biggest fools.
+  Source: https://nosweatshakespeare.com/quotes/famous/
+
+seed_examples:
+  - answer: |
+      'To be, or not to be: that is the question'
+      (Hamlet, Act 3, Scene 1)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'All the world's a stage, and all the men and women merely players. They have their exits and their entrances; And one man in his time plays many parts.'
+      (As You Like It, Act 2, Scene 7)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Romeo, Romeo! Wherefore art thou Romeo?'
+      (Romeo and Juliet, Act 2, Scene 2)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Now is the winter of our discontent'
+      (Richard III, Act 1, Scene 1)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Is this a dagger which I see before me, the handle toward my hand?'
+      (Macbeth, Act 2, Scene 1)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'The lady doth protest too much, methinks'
+      (Hamlet, Act 3, Scene 2)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Beware the Ides of March.'
+      (Julius Caesar, Act 1, Scene 2)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Get thee to a nunnery.'
+      (Hamlet, Act 3, Scene 1)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'If music be the food of love play on.'
+      (Twelfth Night, Act 1, Scene 1)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'What's in a name? A rose by any other name would smell as sweet.'
+      (Romeo and Juliet, Act 2, Scene 2)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'The better part of valor is discretion'
+      (Henry IV, Part 1, Act 5, Scene 4)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'All that glisters is not gold.'
+      (The Merchant of Venice, Act 2, Scene 7)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Friends, Romans, countrymen, lend me your ears: I come to bury Caesar, not to praise him.'
+      (Julius Caesar, Act 3, Scene 2)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Cry “havoc!” and let slip the dogs of war'
+      (Julius Caesar, Act 3, Scene 1)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'A horse! a horse! my kingdom for a horse!'
+      (Richard III, Act 5, Scene 4)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'There are more things in heaven and earth, Horatio, than are dreamt of in your philosophy.'
+      (Hamlet, Act 1, Scene 5)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Love looks not with the eyes, but with the mind; and therefore is winged Cupid painted blind.'
+      (A Midsummer Night's Dream, Act 1, Scene 1)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Shall I compare thee to a summer's day? Thou art more lovely and more temperate.'
+      (Sonnet 18)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Uneasy lies the head that wears the crown.'
+      (Henry IV, Part 2, Act 3, Scene 1)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Brevity is the soul of wit.'
+      (Hamlet, Act 2, Scene 2)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'This royal throne of kings, this sceptred isle… This blessed plot, this earth, this realm, this England.'
+      (Richard II, Act 2, Scene 1)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'What light through yonder window breaks.'
+      (Romeo and Juliet, Act 2, Scene 2)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Some are born great, some achieve greatness, and some have greatness thrust upon them.'
+      (Twelfth Night, Act 2, Scene 5)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Cowards die many times before their deaths; the valiant never taste of death but once.'
+      (Julius Caesar, Act 2, Scene 2)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Full fathom five thy father lies, of his bones are coral made. Those are pearls that were his eyes. Nothing of him that doth fade, but doth suffer a sea-change into something rich and strange.'
+      (The Tempest, Act 1, Scene 2)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'A man can die but once.'
+      (Henry IV, Part 2, Act 3, Part 2)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'How sharper than a serpent's tooth it is to have a thankless child!'
+      (King Lear, Act 1, Scene 4)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Frailty, thy name is woman.'
+      (Hamlet Act 1, Scene 2)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'If you prick us, do we not bleed? If you tickle us, do we not laugh? If you poison us, do we not die? And if you wrong us, shall we not revenge?'
+      (The Merchant of Venice, Act 3, Scene 1)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'I am one who loved not wisely but too well.'
+      (Othello, Act 5, Scene 2)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'We are such stuff as dreams are made on, and our little life is rounded with a sleep.'
+      (The Tempest, Act 4, Scene 1)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Life's but a walking shadow, a poor player, that struts and frets his hour upon the stage, and then is heard no more; it is a tale told by an idiot, full of sound and fury, signifying nothing.'
+      (Macbeth, Act 5, Scene 5)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'To thine own self be true, and it must follow, as the night the day, thou canst not then be false to any man.'
+      (Hamlet, Act 1, Scene 3)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Et tu, Brute?'
+      (Julius Caesar, Act 3, Scene 1)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'There is nothing either good or bad, but thinking makes it so.'
+      (Hamlet, Act 2, Scene 2)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Nothing will come of nothing.'
+      (King Lear, Act 1, Scene 1)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'The course of true love never did run smooth.'
+      (A Midsummer Night's Dream, Act 1, Scene 1)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Lord, what fools these mortals be!'
+      (A Midsummer Night's Dream, Act 1, Scene 1)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'The fault, dear Brutus, lies not within the stars, but in ourselves, that we are underlings.'
+      (Julius Caesar, Act 1, Scene 2)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Let me not to the marriage of true minds admit impediments.'
+      (Sonnet 116)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'The evil that men do lives after them; The good is oft interrèd with their bones.'
+      (Julius Caesar, Act 3, Scene 2)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'But, for my own part, it was Greek to me.'
+      (Julius Caesar, Act 1, Scene 2)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Neither a borrower nor a lender be; for loan oft loses both itself and friend, and borrowing dulls the edge of husbandry.'
+      (Hamlet, Act 1, Scene 3)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'We know what we are, but know not what we may be.'
+      (Hamlet, Act 4, Scene 5)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Off with his head!'
+      (Richard III, Act 3, Scene 4)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Misery acquaints a man with strange bedfellows.'
+      (The Tempest, Act 2, Scene 2)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'This is very midsummer madness.'
+      (Twelfth Night, Act 3, Scene 4)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'Some Cupid kills with arrows, some with traps.'
+      (Much Ado About Nothing, Act 3, Scene 1)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'I cannot tell what the dickens his name is.'
+      (The Merry Wives of Windsor, Act 3, Scene 2)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'We have seen better days.'
+      (Timon of Athens, Act 4, Scene 2)
+    question: Tell me a Shakespeare quote.
+
+  - answer: |
+      'I  am a man more sinned against than sinning.'
+      (King Lear, Act 3, Scene 2)
+    question: Tell me a Shakespeare quote.
