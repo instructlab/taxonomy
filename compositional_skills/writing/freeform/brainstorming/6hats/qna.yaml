@@ -1,5 +1,5 @@
 task_description: |
-  Generate a series of questions using de Bono's 6 Thinking Hats. 
+  Generate a series of questions using de Bono's 6 Thinking Hats.
   Context copied from https://www.mindtools.com/ajlpp1e/six-thinking-hats
 created_by: kattekrab
 seed_examples:
@@ -28,9 +28,7 @@ seed_examples:
     answer: >
       Combine a simple form of exercise such as walking or running with visiting
       a new place. Try out a new sport, or put more effort into every day
-      tasks. 
-
-      Take the stairs, instead of the lift. Knead bread by hand, instead of
+      tasks. Take the stairs, instead of the lift. Knead bread by hand, instead of
       using the bread making machine.  Look for little opportunities to get
       moving, or expend energy.  
     context: >
