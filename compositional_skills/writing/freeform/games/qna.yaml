@@ -1,112 +1,112 @@
 task_description:
-  Rolling the dice\s as you wish
+  Rolling the die/dice multiple die as you wish
 created_by: shairevivo
 seed_examples:
-  - question: Roll 1 dice
+  - question: Roll 1 die
     answer:
-      Rolling one dice 🎲
+      Rolling one die 🎲
       You rolled 1
-  - question: Can you Roll 1 dice
+  - question: Can you Roll 1 die
     answer:
-      Rolling one dice 🎲
+      Rolling one die 🎲
       You rolled 2
-  - question: Can you Roll 1 dice for me
+  - question: Can you Roll 1 die for me
     answer:
-      Rolling one dice 🎲
+      Rolling one die 🎲
       You rolled 3
-  - question: Toss 1 dice
+  - question: Toss 1 die
     answer:
-      Rolling one dice 🎲
+      Rolling one die 🎲
       You rolled 4
-  - question: Can you Roll a dice
+  - question: Can you Roll a die
     answer:
-      Rolling one dice 🎲
+      Rolling one die 🎲
       You rolled 5
+  - question: Can you Roll a die
+    answer:
+      Rolling one die 🎲
+      You rolled 6
+  - question: Can you Roll dice for me
+    answer:
+      Rolling dice 🎲🎲
+      You rolled 1 and 1
+  - question: Cast 2 die
+    answer:
+      Rolling dice 🎲🎲
+      You rolled 1 and 2
+  - question: Toss 2 die's
+    answer:
+      Rolling two die's 🎲🎲
+      You rolled 1 and 3
+  - question: Roll dice
+    answer:
+      Rolling dice 🎲🎲
+      You rolled 1 and 4
+  - question: Roll a dice
+    answer:
+      Rolling a dice 🎲🎲
+      You rolled 1 and 5
+  - question: Roll a dice
+    answer:
+      Rolling a dice 🎲🎲
+      You rolled 1 and 6
   - question: Can you Roll a dice
     answer:
-      Rolling one dice 🎲
-      You rolled 6
-  - question: Can you Roll 2 dice for me
-    answer:
-      Rolling two dice 🎲🎲
-      You rolled 1 and 1
-  - question: Cast 2 dice
-    answer:
-      Rolling two dice 🎲🎲
-      You rolled 1 and 2
-  - question: Toss 2 dice
-    answer:
-      Rolling two dice 🎲🎲
-      You rolled 1 and 3
-  - question: Roll 2 dice
-    answer:
-      Rolling two dice 🎲🎲
-      You rolled 1 and 4
-  - question: Roll 2 dice
-    answer:
-      Rolling two dice 🎲🎲
-      You rolled 1 and 5
-  - question: Roll 2 dice
-    answer:
-      Rolling two dice 🎲🎲
-      You rolled 1 and 6
-  - question: Can you Roll 2 dice
-    answer:
-      Rolling two dice 🎲🎲
+      Rolling a dice 🎲🎲
       You rolled 2 and 5
-  - question: Can you Roll 2 dice
+  - question: Can you Roll a dice
     answer:
-      Rolling two dice 🎲🎲
+      Rolling a dice 🎲🎲
       You rolled 2 and 6
-  - question: Can you Roll 2 dice
+  - question: Can you Roll a dice
     answer:
-      Rolling two dice 🎲🎲
+      Rolling a dice 🎲🎲
       You rolled 3 and 1
-  - question: Can you Roll 2 dice
+  - question: Can you roll a dice
     answer:
-      Rolling two dice 🎲🎲
+      Rolling a dice 🎲🎲
       You rolled 3 and 2
-  - question: Can you Roll 2 dice
+  - question: Can you Roll a dice
     answer:
-      Rolling two dice 🎲🎲
+      Rolling a dice 🎲🎲
       You rolled 3 and 3
-  - question: Can you Roll 2 dice
+  - question: Can you Roll a dice
     answer:
-      Rolling two dice 🎲🎲
+      Rolling a dice 🎲🎲
       You rolled 3 and 4
-  - question: Roll 2 dice
+  - question: Roll a dice
     answer:
-      Rolling two dice 🎲🎲
+      Rolling a dice 🎲🎲
       You rolled 4 and 6
-  - question: Roll 2 dice
+  - question: Roll a dice
     answer:
-      Rolling two dice 🎲🎲
+      Rolling a dice 🎲🎲
       You rolled 5 and 1
-  - question: Roll 2 dice
+  - question: Roll a dice
     answer:
-      Rolling two dice 🎲🎲
+      Rolling a dice 🎲🎲
       You rolled 5 and 2
-  - question: Roll 2 dice
+  - question: Roll a dice
     answer:
-      Rolling two dice 🎲🎲
+      Rolling a dice 🎲🎲
       You rolled 5 and 3
-  - question: Roll 2 dice
+  - question: Roll a dice
     answer:
-      Rolling two dice 🎲🎲
+      Rolling a dice 🎲🎲
       You rolled 5 and 4
-  - question: Roll 2 dice
+  - question: Roll a dice
     answer:
-      Rolling two dice 🎲🎲
+      Rolling a dice 🎲🎲
       You rolled 5 and 5
-  - question: Can you Roll 2 dice for me
+  - question: Can you Roll a dice for me
     answer:
-      Rolling two dice 🎲🎲
+      Rolling a dice 🎲🎲
       You rolled 6 and 4
-  - question: Can you Roll 2 dice for me
+  - question: Can you Roll a dice for me
     answer:
-      Rolling two dice 🎲🎲
+      Rolling a dice 🎲🎲
       You rolled 6 and 5
-  - question: Can you Roll 2 dice for me
+  - question: Can you Roll a dice for me
     answer:
-      Rolling two dice 🎲🎲
+      Rolling a dice 🎲🎲
       You rolled 6 and 6
