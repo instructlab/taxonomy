@@ -32,6 +32,5 @@ seed_examples:
       | 0                | 2            | OCP         | 10          |
     question: |
       Should a Support Exception be granted?
-task_description: | 
+task_description: |
     This skill provides the ability to provide a recommendation for a Support Exception request.
-    
