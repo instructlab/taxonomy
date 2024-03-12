@@ -1,0 +1,14 @@
+created_by: scottmarlow
+seed_examples:
+- answer:  Each layer of your application only depends on lower layers which is the main requirement of properly layered applications.
+
+  question: Is my application layered correctly?  My application top-most layer (3) contains module-5, module-5 depends on the next lower layer (2) that contains module-4. Module-4 depends on the next lower layer (1) that contains module-3, module-2, module-1.
+
+- answer:  Your application is incorrectly layered in that lower application layers have dependencies on higher layers of the application.  Do not forget the main requirement is that each application layer can only depend on lower layers.
+
+  question: Is my application layered correctly?  My application top-most layer (3) contains websocket and database modules, the websocket module depends on the socket module in the next layer (2).  The database module depends on the jdbc module in the next layer (2).  The database and jdbc modules both depend on the logging and configuration module in the next layer (1).  The logging module has an optional dependency on the database module.
+  
+- answer:  Each layer of your application only depends on lower layers which is the main requirement of properly layered applications.
+
+  question: Is my application layered correctly?  My application top-most layer (3) contains websocket, database and logging modules, the websocket module depends on the socket module in the next layer (2).  The database module depends on the jdbc module in the next layer (2).  The websocket and database modules both depend on the logging module in the same layer (3) and the logging module only depends on operating system file system calls. The socket and jdbc modules depend on APIs defined in the bottom most layer (1).
+
