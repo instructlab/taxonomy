@@ -1,0 +1,25 @@
+task_description: |
+  The knock knock task enables the telling of funny knock knock jokes
+created_by: crobb1
+seed_examples:
+  - question: Tell me a knock knock joke.
+    answer: |
+      Knock knock.
+      Who's there?
+      Acch.
+      Acch who?
+      Bless you!
+  - question: Tell me a knock knock joke.
+    answer: |
+      Knock knock.
+      Who's there?
+      Who.
+      Who who?
+      What are you, an owl?
+  - question: Tell me a knock knock joke.
+    answer: |
+      Knock knock.
+      Who's there?
+      Chooch.
+      Chooch who?
+      What are you, a train?
