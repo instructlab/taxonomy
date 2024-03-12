@@ -1,0 +1,68 @@
+created_by: fmount
+seed_examples:
+- answer: >
+    The number of atoms in the formula are two Hydrogen atoms and one Oxygen
+    atom. The total number of atoms is 3.
+  question: >
+    Determine the number of different atoms in the formula H2O.
+- answer: >
+    The number of atoms in the formula are six Carbon atoms, twelve Hydrogen
+    atoms and six Oxygen atoms. The total number of atoms is 24. Since each of
+    the subscripts is divisible by six, the empirical formula can be reduced to
+    CH2O.
+  question: >
+    Determine the number of different atoms in the formula C6H12O6.
+- answer: >
+    The number of atoms in the formula are three Calcium atoms, two Phosphorus
+    atoms and eight Oxygen atoms. The total number of atoms is 13.
+  question: >
+    Determine the number of different atoms in the formula Ca3(PO4)2
+- answer: >
+    The number of atoms in the formula are one Carbon atom and four Hydrogen
+    atoms. The total number of atoms is 5.
+  question: >
+    Determine the number of different atoms in the formula CH4.
+- answer: >
+    The number of atoms in the formula are one Nitrogen atom, five Hydrogen
+    atoms and one Oxygen atom. The total number of atoms is 7.
+  question: >
+    Determine the number of different atoms in the formula NH4OH.
+- answer: >
+    The number of atoms in the formula are six Nitrogen atoms, twenty-four
+    Hydrogen atoms and three Oxygen atoms. The total number of atoms is 33.
+  question: >
+    Determine the number of different atoms in the formula 3(NH4)2O.
+- answer: >
+    The number of atoms in the formula are one Iron atom, two Carbon atoms, six
+    Oxygen atoms and four Hydrogen atoms. The total number of atoms is 13.
+  question: >
+    Determine the number of different atoms in the formula FeC2O42H2O
+
+- answer: >
+    The number of atoms in the formula are fifteen Potassium atoms, five Iron
+    atoms thirty Carbon atoms, seventyfive Oxygen atoms and thirty Hydrogen
+    atoms. The total number of atoms is 155.
+  question: >
+    Determine the number of different atoms in the formula 5K3[Fe(C2O4)3]3H2O
+- answer: >
+    The number of atoms in the formula are one Iron atom, two Litium atoms, one
+    Carbon atom and three Oxygen atoms. The total number of atoms is 6.
+  question: >
+    Determine the number of different atoms in the formula Li2CO3.
+- answer: >
+    The number of atoms in the formula are two Nitrogen atoms, eight Hydrogen
+    atoms, two Chromium atoms and seven Oxygen atoms. The total number of atoms
+    is 19.
+  question: >
+    Determine the number of different atoms in the formula (NH4)2Cr2O7
+- answer: >
+    The number of atoms in the formula are twelve Carbon atoms, twenty-two
+    Hydrogen atoms, and eleven Oxygen atoms. The total number of atoms is 45.
+  question: >
+    Determine the number of different atoms in the formula C12H22O11
+- answer: >
+    The number of atoms in the formula are two Sodium atoms, two Carbon atoms,
+    and three Oxygen atoms. The total number of atoms is 6.
+  question: >
+    Determine the number of different atoms in the formula Na2CO3
+task_description: ''
