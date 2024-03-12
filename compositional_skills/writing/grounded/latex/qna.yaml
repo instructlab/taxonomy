@@ -32,6 +32,17 @@ seed_examples:
     \\maketitle % This command generates the title page
     \\lipsum
     \\end{document}}"
-   context: ''
+   context: "lorem impsum"
    question: write an short sample Lorem Ipsum LaTeX article
+ - answer: "
+    \\documentclass{article}
+    \\begin{document}
+    \\title{title}
+    \\author{author}
+    \\maketitle % This command generates the title page
+    This is a short describtion and the first paragraph in an article.
+    \\end{document}}"
+   context: "title\n by author\n This is a short describtion and the first\n
+     paragraph in an article."
+   question: write a generic latex article template
 task_description: 'Output text as LaTeX article'
