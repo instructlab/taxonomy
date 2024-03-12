@@ -1,5 +1,5 @@
 created_by: Abhi-B
-domain: ibm_rebooks
+domain: ibm_redbooks
 seed_examples:
 - answer: The Cross Applications - Situation Handling capability in SAP S/4HANA allows
     specific groups of end users to be notified about important issues, defined as
