@@ -1,0 +1,22 @@
+task_description: |
+  This skill provides the ability to extract bit numbers from hex bitmasks
+created_by: valschneider
+seed_examples:
+  - context: |
+      0x42
+    question: |
+      Which bits are set in the following number
+    answer: |
+      0x42 has bit 2 and bit 6 set.
+  - context: |
+      0xFED
+    question: |
+      Which bits are set in the following number
+    answer: |
+      0xFED has bit 0, 2, 3, 5, 6, 7, 8, 9, 10 and 11 set.
+  - context: |
+      0x0
+    question: |
+      Which bits are set in the following number
+    answer: |
+      0x0 has no bits set.
