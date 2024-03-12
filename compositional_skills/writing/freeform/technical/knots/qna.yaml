@@ -1,0 +1,31 @@
+---
+created by: dkhater
+task_description: |
+   Skill that demonstrates how to tie common knots.
+seed_examples:
+   - question: How do I tie a square knot?
+     answer: |
+       Used for joining two ends of a single line to bind around an object. Not
+       recommended for joining two ropes together as it can slip under tension.
+       Lay the ends of two ropes parallel to each other. Take the right end over
+       and under the left end. Repeat by taking the new right end over and under
+       the new left end. Pull both ends to tighten the knot.
+   - question: How do I tie a bowline knot?
+     answer: |
+       Creates a fixed loop at the end of a rope. Known for its strength and
+       ease of untying, it's useful in rescue situations, sailing, and securing
+       objects. Make a small loop (the rabbit hole) with enough rope for the
+       desired loop size. Bring the end up through the hole, around the standing
+       part, and back down. Pull on the end to tighten the knot.
+   - question: How do I tie a figure-eight knot?
+     answer: |
+       A knot preventing the rope from running out of a retaining device.
+       Commonly used in climbing for its strength and simplicity. Make a loop
+       in the rope. Pass the end under the standing part and then back through
+       the loop. Tighten by pulling the end while holding the standing part.
+   - question: How do I tie a clove hitch knot?
+     answer: |
+       Used for attaching a rope to a post or tree securely. It's easily
+       adjustable and quick to tie and untie. Pass the rope around the object.
+       Cross the standing part by bringing the rope over again. Tuck the end
+       under the last pass before tightening the knot.
