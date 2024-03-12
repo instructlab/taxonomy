@@ -1,0 +1,40 @@
+---
+task_description: Understanding of RPM distribution tags
+created_by: The-Mule
+seed_examples:
+  - question: |
+      What is the distribution tag of rpm package in RHEL-9?
+    answer: |
+      In all minor versions of RHEL-9 rpm packages have distribution
+      tag starting with "el9" where "el" stands for (Red Hat)
+      Enterprise Linux and "9" stands for major version 9.
+  - question: |
+      What is the distribution tag of rpm package in RHEL-8?
+    answer: |
+      In all minor versions of RHEL-8 rpm packages have distribution
+      tag starting "el8" where "el" stands for (Red Hat) Enterprise
+      Linux and "8" stands for major version 8.
+  - question: |
+      What is the distribution tag of rpm package in RHEL-7?
+    answer: |
+      In all minor versions of RHEL-8 rpm packages have distribution
+      tag starting with "el7" where "el" stands for (Red Hat) Enterprise
+      Linux and "7" stands for major version 7.
+  - question: |
+      What is the distribution tag of rpm package in Fedora 38?
+    answer: |
+      In all minor versions of RHEL-8 rpm packages have distribution
+      tag "fc38" where "fc" stands for Fedora Core and 38 for version
+      of Fedora.
+  - question: |
+      What is the distribution tag of libfido2-1.13.0-1.el8 package?
+    answer: |
+      Distribution tag is a part of RPM release. In this case release
+      is "1.el8" and hence the distribution tag of this package is
+      "el8" that stands for (Red Hat) Enterprise Linux 8.
+  - question: |
+      What is the distribution tag of libfido2-1.13.0-1.el9_1 package?
+    answer: |
+      Distribution tag is a part of RPM release. In this case release
+      is "1.el9_1" and hence the distribution tag of this package is
+      "el9_1" that stands for (Red Hat) Enterprise Linux 9.
