@@ -1,1 +1,38 @@
-
+created_by: thenzl
+task_description: Calculates the total number of words according to the user's input
+seed_examples:
+  - answer: The word 'find' appears 2 times in the text.
+    context: >-
+      Analogy - find and fix a bug in the model’s capabilities. Find something
+      the model does poorly.
+    question: How many times is the word find used in the following text
+  - answer: The word 'word' appears 2 times in the text.
+    context: >-
+      Although it is impossible to predict word boundaries from stress alone in
+      languages with phonemic stress, there will be just one syllable with
+      primary stress per word, which allows for determining the total number of
+      words in an utterance.
+    question: How many occurrences of the word word are in the text?
+  - answer: The word 'stress' appears 0 times in the text.
+    context: >-
+      Many phonological rules operate only within a phonological word or
+      specifically across word boundaries.
+    question: Tell the occurrences of the word stress in the text.
+  - answer: The word 'a' appears 9 times in the text.
+    context: >-
+      A disyllabic verb root may take a zero suffix, e.g. luwa-ø 'hit!', but a
+      monosyllabic root must take a suffix, e.g. ya-nta 'go!', thus conforming
+      to a segmental pattern of Walmatjari words. In the Pitjantjatjara dialect
+      of the Wati language, another language form Australia, a word-medial
+      syllable can end with a consonant but a word-final syllable must end with
+      a vowel.
+    question: Tell the occurrences of the word 'a' in the text.
+  - answer: The word 'the' appears 4 times in the text.
+    context: >-
+      Much of the difficulty stems from the eurocentric bias, as languages from
+      outside of Europe may not follow the intuitions of European scholars. Some
+      of the criteria developed for 'word' can only be applicable to languages
+      of broadly European synthetic structure. Because of this unclear status,
+      some linguists propose avoiding the term 'word' altogether, instead
+      focusing on better defined terms such as morphemes.
+    question: Count the occurrences of the word 'the' in the text.
