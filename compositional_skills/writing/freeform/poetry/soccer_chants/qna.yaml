@@ -18,8 +18,7 @@ seed_examples:
       Hear United sing,
 
       Viva Ronaldo!"
-    question:
-      Write a chant that can be used by Manchester United soccer fans to celebrate an offensive winger
+    question: Write a chant that can be used by Manchester United soccer fans to celebrate an offensive winger
       named Ronaldo.
 
   - answer: "She's our striker, number nine
