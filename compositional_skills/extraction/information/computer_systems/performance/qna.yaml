@@ -1,0 +1,38 @@
+---
+created_by: natoscott
+seed_examples:
+  - answer: |
+      The `pmlogger(1)` command is used to record metrics in PCP.
+      It is typically enabled using
+      ```bash
+      sudo systemctl enable --now pmlogger
+      ```
+      Recording is also automatically enabled when pcp-zeroconf is installed.
+      Some PCP tools provide an option for recording the metrics they are
+      currently configured to use.  These include `pmrep(1)` and `pmchart(1)`.
+    question: |
+      How can I record performance data with Performance Co-Pilot (PCP)?
+
+  - answer: |
+      The `pmlogger(1)` command is used to record metrics in PCP, and it is
+      configured using either the `pmlogconf(1)` command, or through direct
+      editing of configuration files.
+    question: |
+      How to configure which metrics are recorded by Performance Co-Pilot (PCP)?
+
+  - answer: |
+      The `pmlogger(1)` command is used to record metrics in PCP, and it has
+      a default behaviour of sampling once every 60 seconds.
+      This can be configured in a number of ways:
+      1. Installation of the pcp-zeroconf package changes the default sampling
+         interval to 10 seconds.
+      2. The -t/--interval command line option changes the sampling interval.
+      3. The pmlogger environment variable PMLOGGER_INTERVAL can be used.
+         When run as a service the /etc/sysconfig/pmlogger can be modified
+         to change this value.
+      4. Each performance metric group in the pmlogger configuration file can
+         have a logging interval configured specifically for that group.
+    question: |
+      How do I configure the recording interval in Performance Co-Pilot (PCP)?
+
+task_description: Configure recording with Performance Co-Pilot (PCP)
