@@ -11,9 +11,9 @@
 |reviewer|<--->pull request---------+
 \--------/          |               |
     ^               v               v
-    |             +---+ recipe /---------\
-    |             |SDG|<-------+mainainer|
-    |             +-+-+        \---------/
+    |             +---+ recipe /----------\
+    |             |SDG|<-------+maintainer|
+    |             +-+-+        \----------/
     |               |
     |               v
     +----------data samples
