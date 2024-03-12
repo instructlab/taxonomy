@@ -1,0 +1,50 @@
+---
+task_description: acrostic poem
+created_by: wshi
+seed_examples:
+  - question: Write an acrostic poem that uses the first letter to spell the word "candy"
+    answer: |
+      Crunchy chewy
+      Awesome
+      Nice and sweet
+      Delightful and delicious
+      Yummy treat
+  - question: Write an acrostic poem that uses the first letter to spell the word "cats"
+    answer: |
+      Cuddly
+      Acrobatic
+      Tenacious and terrifying
+      Softly purring
+  - question: Write an acrostic poem that uses the first letter to spell the word "fear"
+    answer: |
+      Frightening
+      Eerie and strange
+      Anxiety rises
+      Ready to flee
+  - question: Write an acrostic poem that uses the first letter to spell the word "spring"
+    answer: |
+      Sunny days
+      Plants awakening
+      Raindrops on the roof
+      Interesting clouds
+      New flowers
+      Gray skies
+  - question: Write an acrostic poem that uses the first letter to spell the word "house"
+    answer: |
+      Home
+      Open and inviting
+      Universal
+      Safe and warm
+      Everything
+  - question: Write an acrostic poem that uses the letter at the end of the line to spell the word "star"
+    answer: |
+      Shines and twinkleS
+      In the nighT
+      There is a plethorA
+      Forever and eveR
+  - question: Write an acrostic poem that uses the letter at the end of the line to spell the word "food"
+    answer: |
+      Chicken or beeF
+      Rice or potatO
+      Broccoli or tomatO
+      White wine or reD
