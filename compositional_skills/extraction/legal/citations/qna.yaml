@@ -1,0 +1,65 @@
+created_by: adampingel
+seed_examples:
+- answer: 'Here is a list of legal citations in the provided text:
+
+    * Washington, V. & M. Coach Co. v. Labor Board, 301 U. S. 142
+    * Consolidated Edison Co. v. Labor Board, 305 U. S. 197
+    '
+  context: "
+  This Court read \"evidence\" to mean \"substantial evidence,\"
+  Washington, V. & M. Coach Co. v. Labor Board, 301 U. S. 142,
+  and we said that \"[s]ubstantial evidence is more than a mere scintilla.
+  It means such relevant evidence as a reasonable mind might accept as adequate
+  to support a conclusion.\" Consolidated Edison Co. v. Labor Board, 305 U. S. 197, 229.
+  "
+
+  question: Extract a list of legal opinions cited in the given text.
+
+  source:
+    url: https://case.law/caselaw/?reporter=us&volume=340&case=0474-01
+    name: Universal Camera Corp. v. National Labor Relations Board
+    citation: 340 U.S. 474
+
+- answer: 'Here is a list of legal citations in the provided text:
+
+    * United States v. Fields, 832 F.3d 831
+    * Illinois v. Wardlow, 528 U.S. 119
+    '
+  context: "
+  The Fourth Amendment prohibits unreasonable searches and seizures. Law
+  enforcement \"may, consistent with the Fourth Amendment, conduct a brief,
+  investigatory stop when the officer has a reasonable, articulable suspicion
+  that criminal activity is afoot.\" United States v. Fields , 832 F.3d 831,
+  834 (8th Cir. 2016) (quoting Illinois v. Wardlow , 528 U.S. 119, 123,
+  120 S.Ct. 673, 145 L.Ed.2d 570 (2000) ). The government concedes that such
+  a stop occurred when Officer Hand ordered Lowry to come to him."
+
+  question: Extract a list of legal opinions cited in the given text.
+
+  source:
+    url: https://case.law/caselaw/?reporter=f3d&volume=935&case=0638-01
+    name: United States v. Lowry
+    citation: 935 F.3d 638
+    notes: Second also has parallel citations
+
+- answer: "Here is a list of legal citations in the provided text:
+
+    * Spaziano v. Florida, 468 U.S. 447
+    * Harris v. Alabama, 513 U.S. 504
+    "
+  context: "
+  In Spaziano v. Florida, 468 U.S. 447, 104 S.Ct. 3154, 82 L.Ed.2d 340 (1984),
+  we upheld Florida's judicial-override sentencing statute. And in Harris v.
+  Alabama, 513 U.S. 504, 115 S.Ct. 1031, 130 L.Ed.2d 1004 (1995), we upheld
+  Alabama's similar statute. Eighteen years have passed since we decided Harris,
+  and in my view, the time has come for us to reconsider that decision."
+
+  question: Extract a list of legal opinions cited in the given text.
+
+  source:
+    url: https://case.law/caselaw/?reporter=us&volume=571&case=1045-04
+    name: Woodward v. Ala.
+    citation: 571 U.S. 1045
+    notes: Both have several parallel citations
+
+task_description: ''
