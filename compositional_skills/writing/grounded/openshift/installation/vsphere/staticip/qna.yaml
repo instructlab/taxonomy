@@ -1,0 +1,342 @@
+created_by: rvanderp3
+task_description: |
+  Generate an install-config.yaml with static IPs for install OpenShift on VMware
+seed_examples:
+  - question: |
+      Can you describe and show me an example of an install-config.yaml for an OpenShift cluster
+      on VMware with static IPs?
+    context: |
+      The cluster will be installed with platform vsphere with static IPs.
+      The cluster will have an API and Ingress VIP. A host's IP, gateway
+      and nameserver will not be the same address. Available roles are bootstrap,
+      control-plane, and compute. The number of replicas is not provided to hosts.
+    answer: |
+      When installing with static IPs, each node to be created by the
+      installer must be respresented in the hosts array. For a typical
+      OpenShift cluster, 1 bootstrap node, 3 control plane nodes, and 3
+      compute nodes would be defined in `hosts`.
+
+      apiVersion: v1
+      baseDomain: example.com
+      metadata:
+        name: test
+      platform:
+        vsphere:
+          apiVIPs:
+            - 10.0.0.1
+          hosts:
+          - role: bootstrap
+            networkDevice:
+              ipAddrs:
+              - 192.168.100.230/23
+              gateway: 192.168.100.1
+              nameservers:
+              - 8.8.8.8
+          - role: control-plane
+            networkDevice:
+              ipAddrs:
+              - 192.168.100.231/23
+              gateway: 192.168.100.1
+              nameservers:
+              - 8.8.8.8
+          - role: compute
+            networkDevice:
+              ipAddrs:
+              - 192.168.100.231/23
+              gateway: 192.168.100.1
+              nameservers:
+              - 8.8.8.8
+          failureDomains:
+          - name: <failure_domain_name>
+            region: <default_region_name>
+            server: <fully_qualified_domain_name>
+            topology:
+              computeCluster: "/<datacenter>/host/<cluster>"
+              datacenter: <datacenter>
+              datastore: "/<datacenter>/datastore/<datastore>"
+              networks:
+              - <VM_Network_name>
+              resourcePool: "/<datacenter>/host/<cluster>/Resources/<resourcePool>"
+              folder: "/<datacenter_name>/vm/<folder_name>/<subfolder_name>"
+            zone: <default_zone_name>
+          ingressVIPs:
+          - 10.0.0.2
+          vcenters:
+          - datacenters:
+            - <datacenter>
+            password: <password>
+            port: 443
+            server: <fully_qualified_domain_name>
+            user: administrator@vsphere.local
+          diskType: thin
+  - question: |
+      Can you describe and show me an example of an install-config.yaml for an OpenShift cluster
+      on VMware with static IPs in the 192.168.100.0/24 subnet?
+    context: |
+      The cluster will be installed with platform vsphere with static IPs.
+      The cluster will have an API and Ingress VIP. A host's IP, gateway
+      and nameserver will not be the same address. Available roles are bootstrap,
+      control-plane, and compute. The number of replicas is not provided to hosts.
+    answer: |
+      When installing with static IPs, each node to be created by the
+      installer must be respresented in the hosts array. For a typical
+      OpenShift cluster, 1 bootstrap node, 3 control plane nodes, and 3
+      compute nodes would be defined in `hosts`.
+
+      apiVersion: v1
+      baseDomain: example.com
+      metadata:
+        name: test
+      platform:
+        vsphere:
+          apiVIPs:
+            - 10.0.0.1
+          hosts:
+          - role: bootstrap
+            networkDevice:
+              ipAddrs:
+              - 192.168.100.230/24
+              gateway: 192.168.100.1
+              nameservers:
+              - 8.8.8.8
+          - role: control-plane
+            networkDevice:
+              ipAddrs:
+              - 192.168.100.231/24
+              gateway: 192.168.100.1
+              nameservers:
+              - 8.8.8.8
+          - role: compute
+            networkDevice:
+              ipAddrs:
+              - 192.168.100.231/24
+              gateway: 192.168.100.1
+              nameservers:
+              - 8.8.8.8
+          failureDomains:
+          - name: <failure_domain_name>
+            region: <default_region_name>
+            server: <fully_qualified_domain_name>
+            topology:
+              computeCluster: "/<datacenter>/host/<cluster>"
+              datacenter: <datacenter>
+              datastore: "/<datacenter>/datastore/<datastore>"
+              networks:
+              - <VM_Network_name>
+              resourcePool: "/<datacenter>/host/<cluster>/Resources/<resourcePool>"
+              folder: "/<datacenter_name>/vm/<folder_name>/<subfolder_name>"
+            zone: <default_zone_name>
+          ingressVIPs:
+          - 10.0.0.2
+          vcenters:
+          - datacenters:
+            - <datacenter>
+            password: <password>
+            port: 443
+            server: <fully_qualified_domain_name>
+            user: administrator@vsphere.local
+          diskType: thin
+  - question: |
+      Can you describe and show me an example of an install-config.yaml for an OpenShift cluster
+      on VMware with static IPs in the 192.168.100.0/24 subnet with a nameserver
+      of 1.1.1.1?
+    context: |
+      The cluster will be installed with platform vsphere with static IPs.
+      The cluster will have an API and Ingress VIP. A host's IP, gateway
+      and nameserver will not be the same address. Available roles are bootstrap,
+      control-plane, and compute. The number of replicas is not provided to hosts.
+    answer: |
+      When installing with static IPs, each node to be created by the
+      installer must be respresented in the hosts array. For a typical
+      OpenShift cluster, 1 bootstrap node, 3 control plane nodes, and 3
+      compute nodes would be defined in `hosts`.
+
+      apiVersion: v1
+      baseDomain: example.com
+      metadata:
+        name: test
+      platform:
+        vsphere:
+          apiVIPs:
+            - 10.0.0.1
+          hosts:
+          - role: bootstrap
+            networkDevice:
+              ipAddrs:
+              - 192.168.100.230/24
+              gateway: 192.168.100.1
+              nameservers:
+              - 1.1.1.1
+          - role: control-plane
+            networkDevice:
+              ipAddrs:
+              - 192.168.100.231/24
+              gateway: 192.168.100.1
+              nameservers:
+              - 1.1.1.1
+          - role: compute
+            networkDevice:
+              ipAddrs:
+              - 192.168.100.231/24
+              gateway: 192.168.100.1
+              nameservers:
+              - 1.1.1.1
+          failureDomains:
+          - name: <failure_domain_name>
+            region: <default_region_name>
+            server: <fully_qualified_domain_name>
+            topology:
+              computeCluster: "/<datacenter>/host/<cluster>"
+              datacenter: <datacenter>
+              datastore: "/<datacenter>/datastore/<datastore>"
+              networks:
+              - <VM_Network_name>
+              resourcePool: "/<datacenter>/host/<cluster>/Resources/<resourcePool>"
+              folder: "/<datacenter_name>/vm/<folder_name>/<subfolder_name>"
+            zone: <default_zone_name>
+          ingressVIPs:
+          - 10.0.0.2
+          vcenters:
+          - datacenters:
+            - <datacenter>
+            password: <password>
+            port: 443
+            server: <fully_qualified_domain_name>
+            user: administrator@vsphere.local
+          diskType: thin
+  - question: |
+      Can you describe and show me an example of an install-config.yaml for an OpenShift cluster
+      on VMware with static IPs in the 192.168.100.0/24 subnet with a DNS server
+      of 1.1.1.1?
+    context: |
+      The cluster will be installed with platform vsphere with static IPs.
+      The cluster will have an API and Ingress VIP. A host's IP, gateway
+      and nameserver will not be the same address. Available roles are bootstrap,
+      control-plane, and compute. The number of replicas is not provided to hosts.
+    answer: |
+      When installing with static IPs, each node to be created by the
+      installer must be respresented in the hosts array. For a typical
+      OpenShift cluster, 1 bootstrap node, 3 control plane nodes, and 3
+      compute nodes would be defined in `hosts`.
+
+      apiVersion: v1
+      baseDomain: example.com
+      metadata:
+        name: test
+      platform:
+        vsphere:
+          apiVIPs:
+            - 10.0.0.1
+          hosts:
+          - role: bootstrap
+            networkDevice:
+              ipAddrs:
+              - 192.168.100.230/24
+              gateway: 192.168.100.1
+              nameservers:
+              - 1.1.1.1
+          - role: control-plane
+            networkDevice:
+              ipAddrs:
+              - 192.168.100.231/24
+              gateway: 192.168.100.1
+              nameservers:
+              - 1.1.1.1
+          - role: compute
+            networkDevice:
+              ipAddrs:
+              - 192.168.100.231/24
+              gateway: 192.168.100.1
+              nameservers:
+              - 1.1.1.1
+          failureDomains:
+          - name: <failure_domain_name>
+            region: <default_region_name>
+            server: <fully_qualified_domain_name>
+            topology:
+              computeCluster: "/<datacenter>/host/<cluster>"
+              datacenter: <datacenter>
+              datastore: "/<datacenter>/datastore/<datastore>"
+              networks:
+              - <VM_Network_name>
+              resourcePool: "/<datacenter>/host/<cluster>/Resources/<resourcePool>"
+              folder: "/<datacenter_name>/vm/<folder_name>/<subfolder_name>"
+            zone: <default_zone_name>
+          ingressVIPs:
+          - 10.0.0.2
+          vcenters:
+          - datacenters:
+            - <datacenter>
+            password: <password>
+            port: 443
+            server: <fully_qualified_domain_name>
+            user: administrator@vsphere.local
+          diskType: thin
+  - question: |
+      Can you describe and show me an example of an install-config.yaml for an OpenShift cluster
+      on VMware with static IPs in the 192.168.100.0/24 subnet with a gateway
+      of 192.168.100.99?
+    context: |
+      The cluster will be installed with platform vsphere with static IPs.
+      The cluster will have an API and Ingress VIP. A host's IP, gateway
+      and nameserver will not be the same address. Available roles are bootstrap,
+      control-plane, and compute. The number of replicas is not provided to hosts.
+    answer: |
+      When installing with static IPs, each node to be created by the
+      installer must be respresented in the hosts array. For a typical
+      OpenShift cluster, 1 bootstrap node, 3 control plane nodes, and 3
+      compute nodes would be defined in `hosts`.
+
+      apiVersion: v1
+      baseDomain: example.com
+      metadata:
+        name: test
+      platform:
+        vsphere:
+          apiVIPs:
+            - 10.0.0.1
+          hosts:
+          - role: bootstrap
+            networkDevice:
+              ipAddrs:
+              - 192.168.100.230/24
+              gateway: 192.168.100.99
+              nameservers:
+              - 8.8.8.8
+          - role: control-plane
+            networkDevice:
+              ipAddrs:
+              - 192.168.100.231/24
+              gateway: 192.168.100.99
+              nameservers:
+              - 8.8.8.8
+          - role: compute
+            networkDevice:
+              ipAddrs:
+              - 192.168.100.231/24
+              gateway: 192.168.100.99
+              nameservers:
+              - 8.8.8.8
+          failureDomains:
+          - name: <failure_domain_name>
+            region: <default_region_name>
+            server: <fully_qualified_domain_name>
+            topology:
+              computeCluster: "/<datacenter>/host/<cluster>"
+              datacenter: <datacenter>
+              datastore: "/<datacenter>/datastore/<datastore>"
+              networks:
+              - <VM_Network_name>
+              resourcePool: "/<datacenter>/host/<cluster>/Resources/<resourcePool>"
+              folder: "/<datacenter_name>/vm/<folder_name>/<subfolder_name>"
+            zone: <default_zone_name>
+          ingressVIPs:
+          - 10.0.0.2
+          vcenters:
+          - datacenters:
+            - <datacenter>
+            password: <password>
+            port: 443
+            server: <fully_qualified_domain_name>
+            user: administrator@vsphere.local
+          diskType: thin
