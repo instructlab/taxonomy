@@ -1,0 +1,442 @@
+---
+created_by: Akrog
+seed_examples:
+  - question: Transform this text into its Bionic Reading counterpart using markdown
+    context: >-
+      Bionic Reading is a new method facilitating the reading process by guiding
+      the eyes through text with artificial fixation points. As a result, the
+      reader is only focusing on the highlighted initial letters and lets the
+      brain center complete the word. In a digital world dominated by shallow
+      forms of reading, Bionic Reading aims to encourage a more in-depth reading
+      and understanding of written content.
+    answer: >-
+      **Bio**nic **Rea**ding **i**s **a** **n**ew **met**hod **facili**tating
+      **t**he **read**ing **proc**ess **b**y **guid**ing **t**he **ey**es
+      **thro**ugh **te**xt **wi**th **artif**icial **fixa**tion **poi**nts.
+      **A**s **a** **res**ult, **t**he **rea**der **i**s **on**ly **focu**sing
+      **o**n **t**he **highli**ghted **init**ial **lett**ers **a**nd **le**ts
+      **t**he **bra**in **cen**ter **comp**lete **t**he **wo**rd. **I**n **a**
+      **digi**tal **wor**ld **domin**ated **b**y **shal**low **for**ms **o**f
+      **read**ing, **Bio**nic **Read**ing **ai**ms **t**o **encou**rage **a**
+      **mo**re **i**n-**dep**th **read**ing **a**nd **underst**anding **o**f
+      **writ**ten **cont**ent.
+  - question: Convert text into Bionic Reading using markdown for bold words
+    context: >-
+      Subject to the terms and conditions of this License, each Contributor
+      hereby grants to You a perpetual, worldwide, non-exclusive, no-charge,
+      royalty-free, irrevocable (except as stated in this section) patent
+      license to make, have made, use, offer to sell, sell, import, and
+      otherwise transfer the Work, where such license applies only to those
+      patent claims licensable by such Contributor that are necessarily
+      infringed by their Contribution(s) alone or by combination of their
+      Contribution(s) with the Work to which such Contribution(s) was submitted.
+    answer: >-
+      **Subj**ect **t**o **t**he **ter**ms **a**nd **condi**tions **o**f
+      **th**is **Lice**nse, **ea**ch **Contri**butor **her**eby **gra**nts
+      **t**o **Y**ou **a** **perpe**tual, **world**wide, **n**on-**exclu**sive,
+      **n**o-**cha**rge, **roya**lty-**fr**ee, **irrevo**cable (**exc**ept
+      **a**s **sta**ted **i**n **th**is **sect**ion) **pat**ent **lice**nse
+      **t**o **ma**ke, **ha**ve **ma**de, **u**se, **off**er **t**o **se**ll,
+      **se**ll, **imp**ort, **a**nd **other**wise **tran**sfer **t**he **Wo**rk,
+      **whe**re **su**ch **lice**nse **appl**ies **on**ly **t**o **tho**se
+      **pat**ent **cla**ims **licen**sable **b**y **su**ch **Contri**butor
+      **th**at **a**re **necess**arily **infri**nged **b**y **the**ir
+      **Contrib**ution(s) **alo**ne **o**r **b**y **combin**ation **o**f
+      **the**ir **Contrib**ution(s) **wi**th **t**he **Wo**rk **t**o **whi**ch
+      **su**ch **Contrib**ution(s) **w**as **submi**tted.
+  - question: Convert text into Bionic Reading using markdown for bold words
+    context: >-
+      If You institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work or a
+      Contribution incorporated within the Work constitutes direct or
+      contributory patent infringement, then any patent licenses granted to You
+      under this License for that Work shall terminate as of the date such
+      litigation is filed.
+    answer: >-
+      **I**f **Y**ou **insti**tute **pat**ent **litig**ation **agai**nst **a**ny
+      **ent**ity (**inclu**ding **a** **cro**ss-**cla**im **o**r
+      **counte**rclaim **i**n **a** **laws**uit) **alle**ging **th**at **t**he
+      **Wo**rk **o**r **a** **Contri**bution **incorp**orated **wit**hin **t**he
+      **Wo**rk **consti**tutes **dir**ect **o**r **contri**butory **pat**ent
+      **infrin**gement, **th**en **a**ny **pat**ent **lice**nses **gran**ted
+      **t**o **Y**ou **und**er **th**is **Lice**nse **f**or **th**at **Wo**rk
+      **sha**ll **termi**nate **a**s **o**f **t**he **da**te **su**ch
+      **litig**ation **i**s **fil**ed.
+  - question: Convert this text into Bionic Reading with markdown
+    context: >-
+      You will rejoice to hear that no disaster has accompanied the commencement
+      of an enterprise which you have regarded with such evil forebodings. I
+      arrived here yesterday, and my first task is to assure my dear sister of
+      my welfare and increasing confidence in the success of my undertaking.
+    answer: >-
+      **Y**ou **wi**ll **rejo**ice **t**o **he**ar **th**at **n**o **disa**ster
+      **h**as **accomp**anied **t**he **commen**cement **o**f **a**n
+      **enter**prise **whi**ch **y**ou **ha**ve **rega**rded **wi**th **su**ch
+      **ev**il **forebo**dings. **I** **arri**ved **he**re **yeste**rday,
+      **a**nd **m**y **fir**st **ta**sk **i**s **t**o **ass**ure **m**y **de**ar
+      **sis**ter **o**f **m**y **welf**are **a**nd **incre**asing **confi**dence
+      **i**n **t**he **succ**ess **o**f **m**y **undert**aking.
+  - question: Convert text to Bionic Reading using markdown
+    context: >-
+      Farewell, my dear, excellent Margaret. Heaven shower down blessings on
+      you, and save me, that I may again and again testify my gratitude for all
+      your love and kindness.
+    answer: >-
+      **Fare**well, **m**y **de**ar, **excel**lent **Marg**aret. **Hea**ven
+      **sho**wer **do**wn **bless**ings **o**n **y**ou, **a**nd **sa**ve **m**e,
+      **th**at **I** **m**ay **aga**in **a**nd **aga**in **test**ify **m**y
+      **grati**tude **f**or **a**ll **yo**ur **lo**ve **a**nd **kind**ness.
+  - question: Convert paragraph to Bionic Reading using markdown
+    context: >-
+      How slowly the time passes here, encompassed as I am by frost and snow!
+      Yet a second step is taken towards my enterprise. I have hired a vessel
+      and am occupied in collecting my sailors; those whom I have already
+      engaged appear to be men on whom I can depend and are certainly possessed
+      of dauntless courage.
+    answer: >-
+      **H**ow **slo**wly **t**he **ti**me **pas**ses **he**re, **encomp**assed
+      **a**s **I** **a**m **b**y **fro**st **a**nd **sn**ow! **Y**et **a**
+      **sec**ond **st**ep **i**s **tak**en **towa**rds **m**y **enter**prise.
+      **I** **ha**ve **hir**ed **a** **ves**sel **a**nd **a**m **occu**pied
+      **i**n **colle**cting **m**y **sail**ors; **tho**se **wh**om **I**
+      **ha**ve **alre**ady **enga**ged **app**ear **t**o **b**e **m**en **o**n
+      **wh**om **I** **c**an **dep**end **a**nd **a**re **certa**inly
+      **posse**ssed **o**f **daunt**less **cour**age.
+  - question: Change these sentences into an easier form to read using markdown
+    context: >-
+      Adieu, my dear Margaret. Be assured that for my own sake, as well as
+      yours, I will not rashly encounter danger. I will be cool, persevering,
+      and prudent.
+    answer: >-
+      **Adi**eu, **m**y **de**ar **Marg**aret. **B**e **assu**red **th**at
+      **f**or **m**y **o**wn **sa**ke, **a**s **we**ll **a**s **you**rs, **I**
+      **wi**ll **n**ot **ras**hly **encou**nter **dan**ger. **I** **wi**ll
+      **b**e **co**ol, **persev**ering, **a**nd **prud**ent.
+  - question: Make this text easier for me to read. You can use markdown.
+    context: >-
+      But success shall crown my endeavours. Wherefore not? Thus far I have
+      gone, tracing a secure way over the pathless seas, the very stars
+      themselves being witnesses and testimonies of my triumph. Why not still
+      proceed over the untamed yet obedient element? What can stop the
+      determined heart and resolved will of man?
+    answer: >-
+      **B**ut **succ**ess **sha**ll **cro**wn **m**y **endea**vours.
+      **Where**fore **n**ot? **Th**us **f**ar **I** **ha**ve **go**ne,
+      **trac**ing **a** **sec**ure **w**ay **ov**er **t**he **path**less
+      **se**as, **t**he **ve**ry **sta**rs **thems**elves **bei**ng
+      **witne**sses **a**nd **testim**onies **o**f **m**y **triu**mph. **W**hy
+      **n**ot **sti**ll **proc**eed **ov**er **t**he **unta**med **y**et
+      **obed**ient **elem**ent?  **Wh**at **c**an **st**op **t**he
+      **deter**mined **hea**rt **a**nd **reso**lved **wi**ll **o**f **m**an?
+  - question: Convert text to be easier to read. Using markdown is ok.
+    context: >-
+      So strange an accident has happened to us that I cannot forbear recording
+      it, although it is very probable that you will see me before these papers
+      can come into your possession.
+    answer: >-
+      **S**o **stra**nge **a**n **acci**dent **h**as **happ**ened **t**o **u**s
+      **th**at **I** **can**not **forb**ear **recor**ding **i**t, **alth**ough
+      **i**t **i**s **ve**ry **prob**able **th**at **y**ou **wi**ll **s**ee
+      **m**e **bef**ore **the**se **pap**ers **c**an **co**me **in**to **yo**ur
+      **posse**ssion.
+  - question: Change this excerpt from a book using markdown so it is easier to read.
+    context: >-
+      I am already far north of London, and as I walk in the streets of
+      Petersburgh, I feel a cold northern breeze play upon my cheeks, which
+      braces my nerves and fills me with delight. Do you understand this
+      feeling? This breeze, which has travelled from the regions towards which I
+      am advancing, gives me a foretaste of those icy climes. Inspirited by this
+      wind of promise, my daydreams become more fervent and vivid. I try in vain
+      to be persuaded that the pole is the seat of frost and desolation; it ever
+      presents itself to my imagination as the region of beauty and delight.
+      There, Margaret, the sun is for ever visible, its broad disk just skirting
+      the horizon and diffusing a perpetual splendour. There—for with your
+      leave, my sister, I will put some trust in preceding navigators—there snow
+      and frost are banished; and, sailing over a calm sea, we may be wafted to
+      a land surpassing in wonders and in beauty every region hitherto
+      discovered on the habitable globe. Its productions and features may be
+      without example, as the phenomena of the heavenly bodies undoubtedly are
+      in those undiscovered solitudes. What may not be expected in a country of
+      eternal light? I may there discover the wondrous power which attracts the
+      needle and may regulate a thousand celestial observations that require
+      only this voyage to render their seeming eccentricities consistent for
+      ever. I shall satiate my ardent curiosity with the sight of a part of the
+      world never before visited, and may tread a land never before imprinted by
+      the foot of man. These are my enticements, and they are sufficient to
+      conquer all fear of danger or death and to induce me to commence this
+      laborious voyage with the joy a child feels when he embarks in a little
+      boat, with his holiday mates, on an expedition of discovery up his native
+      river. But supposing all these conjectures to be false, you cannot contest
+      the inestimable benefit which I shall confer on all mankind, to the last
+      generation, by discovering a passage near the pole to those countries, to
+      reach which at present so many months are requisite; or by ascertaining
+      the secret of the magnet, which, if at all possible, can only be effected
+      by an undertaking such as mine.
+    answer: >-
+      **I** **a**m **alre**ady **f**ar **nor**th **o**f **Lon**don, **a**nd
+      **a**s **I** **wa**lk **i**n **t**he **stre**ets **o**f **Peters**burgh,
+      **I** **fe**el **a** **co**ld **nort**hern **bre**eze **pl**ay **up**on
+      **m**y **che**eks, **whi**ch **bra**ces **m**y **ner**ves **a**nd
+      **fil**ls **m**e **wi**th **deli**ght. **D**o **y**ou **under**stand
+      **th**is **feel**ing? **Th**is **bre**eze, **whi**ch **h**as **trave**lled
+      **fr**om **t**he **regi**ons **towa**rds **whi**ch **I** **a**m
+      **advan**cing, **giv**es **m**e **a** **foret**aste **o**f **tho**se
+      **i**cy **cli**mes.  **Inspi**rited **b**y **th**is **wi**nd **o**f
+      **prom**ise, **m**y **daydr**eams **bec**ome **mo**re **ferv**ent **a**nd
+      **viv**id. **I** **t**ry **i**n **va**in **t**o **b**e **persu**aded
+      **th**at **t**he **po**le **i**s **t**he **se**at **o**f **fro**st **a**nd
+      **desol**ation; **i**t **ev**er **pres**ents **its**elf **t**o **m**y
+      **imagin**ation **a**s **t**he **reg**ion **o**f **bea**uty **a**nd
+      **deli**ght. **The**re, **Marg**aret, **t**he **s**un **i**s **f**or
+      **ev**er **visi**ble, **i**ts **bro**ad **di**sk **ju**st **skir**ting
+      **t**he **hori**zon **a**nd **diffu**sing **a** **perpe**tual
+      **splen**dour. **There**—for **wi**th **yo**ur **lea**ve, **m**y
+      **sis**ter, **I** **wi**ll **p**ut **so**me **tru**st **i**n **prece**ding
+      **navigato**rs—there **sn**ow **a**nd **fro**st **a**re **bani**shed;
+      **a**nd, **sail**ing **ov**er **a** **ca**lm **s**ea, **w**e **m**ay
+      **b**e **waf**ted **t**o **a** **la**nd **surpa**ssing **i**n **wond**ers
+      **a**nd **i**n **bea**uty **eve**ry **reg**ion **hith**erto **disco**vered
+      **o**n **t**he **habit**able **glo**be. **I**ts **produc**tions **a**nd
+      **feat**ures **m**ay **b**e **with**out **exam**ple, **a**s **t**he
+      **pheno**mena **o**f **t**he **heav**enly **bod**ies **undoub**tedly
+      **a**re **i**n **tho**se **undisc**overed **solit**udes. **Wh**at **m**ay
+      **n**ot **b**e **expe**cted **i**n **a** **coun**try **o**f **eter**nal
+      **lig**ht? **I** **m**ay **the**re **disc**over **t**he **wond**rous
+      **pow**er **whi**ch **attr**acts **t**he **nee**dle **a**nd **m**ay
+      **regu**late **a** **thou**sand **celes**tial **observ**ations **th**at
+      **requ**ire **on**ly **th**is **voy**age **t**o **ren**der **the**ir
+      **seem**ing **eccentr**icities **consi**stent **f**or **ev**er. **I**
+      **sha**ll **sati**ate **m**y **ard**ent **curio**sity **wi**th **t**he
+      **sig**ht **o**f **a** **pa**rt **o**f **t**he **wor**ld **nev**er
+      **bef**ore **visi**ted, **a**nd **m**ay **tre**ad **a** **la**nd **nev**er
+      **bef**ore **impri**nted **b**y **t**he **fo**ot **o**f **m**an. **The**se
+      **a**re **m**y **entice**ments, **a**nd **th**ey **a**re **suffi**cient
+      **t**o **conq**uer **a**ll **fe**ar **o**f **dan**ger **o**r **dea**th
+      **a**nd **t**o **ind**uce **m**e **t**o **comm**ence **th**is
+      **labor**ious **voy**age **wi**th **t**he **j**oy **a** **chi**ld
+      **fee**ls **wh**en **h**e **emba**rks **i**n **a** **lit**tle **bo**at,
+      **wi**th **h**is **holi**day **mat**es, **o**n **a**n **exped**ition
+      **o**f **disco**very **u**p **h**is **nat**ive **riv**er. **B**ut
+      **suppo**sing **a**ll **the**se **conjec**tures **t**o **b**e **fal**se,
+      **y**ou **can**not **cont**est **t**he **inesti**mable **bene**fit
+      **whi**ch **I** **sha**ll **con**fer **o**n **a**ll **mank**ind, **t**o
+      **t**he **la**st **gener**ation, **b**y **discov**ering **a** **pass**age
+      **ne**ar **t**he **po**le
+  - question: Transform this text into its Bionic Reading counterpart using markdown
+    context: >-
+      So strange an accident has happened to us that I cannot forbear recording
+      it, although it is very probable that you will see me before these papers
+      can come into your possession.
+    answer: >-
+      **S**o **stra**nge **a**n **acci**dent **h**as **happ**ened **t**o **u**s
+      **th**at **I** **can**not **forb**ear **recor**ding **i**t, **alth**ough
+      **i**t **i**s **ve**ry **prob**able **th**at **y**ou **wi**ll **s**ee
+      **m**e **bef**ore **the**se **pap**ers **c**an **co**me **in**to **yo**ur
+      **posse**ssion.
+  - question: Transform this text into its Bionic Reading counterpart using markdown
+    context: >-
+      Last Monday (July 31st) we were nearly surrounded by ice, which closed in
+      the ship on all sides, scarcely leaving her the sea-room in which she
+      floated. Our situation was somewhat dangerous, especially as we were
+      compassed round by a very thick fog. We accordingly lay to, hoping that
+      some change would take place in the atmosphere and weather.
+    answer: >-
+      **La**st **Mon**day (**Ju**ly **31**st) **w**e **we**re **nea**rly
+      **surro**unded **b**y **i**ce, **whi**ch **clo**sed **i**n **t**he
+      **sh**ip **o**n **a**ll **sid**es, **scar**cely **leav**ing **h**er
+      **t**he **s**ea-**ro**om **i**n **whi**ch **s**he **floa**ted. **O**ur
+      **situa**tion **w**as **some**what **dange**rous, **espec**ially **a**s
+      **w**e **we**re **compa**ssed **rou**nd **b**y **a** **ve**ry **thi**ck
+      **f**og. **W**e **accord**ingly **l**ay **t**o, **hop**ing **th**at
+      **so**me **cha**nge **wou**ld **ta**ke **pla**ce **i**n **t**he
+      **atmos**phere **a**nd **weat**her.
+  - question: Transform this text into its Bionic Reading counterpart using markdown
+    context: >-
+      About two o’clock the mist cleared away, and we beheld, stretched out in
+      every direction, vast and irregular plains of ice, which seemed to have no
+      end. Some of my comrades groaned, and my own mind began to grow watchful
+      with anxious thoughts, when a strange sight suddenly attracted our
+      attention and diverted our solicitude from our own situation. We perceived
+      a low carriage, fixed on a sledge and drawn by dogs, pass on towards the
+      north, at the distance of half a mile; a being which had the shape of a
+      man, but apparently of gigantic stature, sat in the sledge and guided the
+      dogs. We watched the rapid progress of the traveller with our telescopes
+      until he was lost among the distant inequalities of the ice.
+    answer: >-
+      **Abo**ut **t**wo **o**’**clo**ck **t**he **mi**st **clea**red **aw**ay,
+      **a**nd **w**e **beh**eld, **stret**ched **o**ut **i**n **eve**ry
+      **direc**tion, **va**st **a**nd **irreg**ular **pla**ins **o**f **i**ce,
+      **whi**ch **see**med **t**o **ha**ve **n**o **e**nd. **So**me **o**f
+      **m**y **comr**ades **groa**ned, **a**nd **m**y **o**wn **mi**nd **beg**an
+      **t**o **gr**ow **watc**hful **wi**th **anxi**ous **thou**ghts, **wh**en
+      **a** **stra**nge **sig**ht **sudd**enly **attra**cted **o**ur
+      **atten**tion **a**nd **dive**rted **o**ur **solic**itude **fr**om **o**ur
+      **o**wn **situa**tion. **W**e **perce**ived **a** **l**ow **carr**iage,
+      **fix**ed **o**n **a** **sle**dge **a**nd **dra**wn **b**y **do**gs,
+      **pa**ss **o**n **towa**rds **t**he **nor**th, **a**t **t**he **dist**ance
+      **o**f **ha**lf **a** **mi**le; **a** **bei**ng **whi**ch **h**ad **t**he
+      **sha**pe **o**f **a** **m**an, **b**ut **appar**ently **o**f **giga**ntic
+      **stat**ure, **s**at **i**n **t**he **sle**dge **a**nd **gui**ded **t**he
+      **do**gs. **W**e **watc**hed **t**he **rap**id **prog**ress **o**f **t**he
+      **trave**ller **wi**th **o**ur **teles**copes **unt**il **h**e **w**as
+      **lo**st **amo**ng **t**he **dist**ant **inequa**lities **o**f **t**he
+      **i**ce.
+  - question: Transform this text into its Bionic Reading counterpart using markdown
+    context: >-
+      This appearance excited our unqualified wonder. We were, as we believed,
+      many hundred miles from any land; but this apparition seemed to denote
+      that it was not, in reality, so distant as we had supposed. Shut in,
+      however, by ice, it was impossible to follow his track, which we had
+      observed with the greatest attention.
+    answer: >-
+      **Th**is **appea**rance **exci**ted **o**ur **unqual**ified **won**der.
+      **W**e **we**re, **a**s **w**e **beli**eved, **ma**ny **hund**red
+      **mil**es **fr**om **a**ny **la**nd; **b**ut **th**is **appar**ition
+      **see**med **t**o **den**ote **th**at **i**t **w**as **n**ot, **i**n
+      **real**ity, **s**o **dist**ant **a**s **w**e **h**ad **supp**osed.
+      **Sh**ut **i**n, **howe**ver, **b**y **i**ce, **i**t **w**as
+      **impos**sible **t**o **fol**low **h**is **tra**ck, **whi**ch **w**e
+      **h**ad **obse**rved **wi**th **t**he **grea**test **atten**tion.
+  - question: Transform this text into its Bionic Reading counterpart using markdown
+    context: >-
+      About two hours after this occurrence we heard the ground sea, and before
+      night the ice broke and freed our ship. We, however, lay to until the
+      morning, fearing to encounter in the dark those large loose masses which
+      float about after the breaking up of the ice. I profited of this time to
+      rest for a few hours.
+    answer: >-
+      **Abo**ut **t**wo **hou**rs **aft**er **th**is **occur**rence **w**e
+      **hea**rd **t**he **gro**und **s**ea, **a**nd **bef**ore **nig**ht **t**he
+      **i**ce **bro**ke **a**nd **fre**ed **o**ur **sh**ip. **W**e, **howe**ver,
+      **l**ay **t**o **unt**il **t**he **morn**ing, **fear**ing **t**o
+      **encou**nter **i**n **t**he **da**rk **tho**se **lar**ge **loo**se
+      **mas**ses **whi**ch **flo**at **abo**ut **aft**er **t**he **brea**king
+      **u**p **o**f **t**he **i**ce. **I** **prof**ited **o**f **th**is **ti**me
+      **t**o **re**st **f**or **a** **f**ew **hou**rs.
+  - question: Transform this text into its Bionic Reading counterpart using markdown
+    context: >-
+      In the morning, however, as soon as it was light, I went upon deck and
+      found all the sailors busy on one side of the vessel, apparently talking
+      to someone in the sea. It was, in fact, a sledge, like that we had seen
+      before, which had drifted towards us in the night on a large fragment of
+      ice. Only one dog remained alive; but there was a human being within it
+      whom the sailors were persuading to enter the vessel. He was not, as the
+      other traveller seemed to be, a savage inhabitant of some undiscovered
+      island, but a European. When I appeared on deck the master said, “Here is
+      our captain, and he will not allow you to perish on the open sea.”
+    answer: >-
+      **I**n **t**he **morn**ing, **howe**ver, **a**s **so**on **a**s **i**t
+      **w**as **lig**ht, **I** **we**nt **up**on **de**ck **a**nd **fou**nd
+      **a**ll **t**he **sail**ors **bu**sy **o**n **o**ne **si**de **o**f
+      **t**he **ves**sel, **appar**ently **talk**ing **t**o **some**one **i**n
+      **t**he **s**ea. **I**t **w**as, **i**n **fa**ct, **a** **sle**dge,
+      **li**ke **th**at **w**e **h**ad **se**en **bef**ore, **whi**ch **h**ad
+      **drif**ted **towa**rds **u**s **i**n **t**he **nig**ht **o**n **a**
+      **lar**ge **frag**ment **o**f **i**ce. **On**ly **o**ne **d**og
+      **rema**ined **ali**ve; **b**ut **the**re **w**as **a** **hum**an
+      **bei**ng **wit**hin **i**t **wh**om **t**he **sail**ors **we**re
+      **persu**ading **t**o **ent**er **t**he **ves**sel. **H**e **w**as
+      **n**ot, **a**s **t**he **oth**er **trave**ller **see**med **t**o **b**e,
+      **a** **sav**age **inhab**itant **o**f **so**me **undisc**overed
+      **isl**and, **b**ut **a** **Euro**pean. **Wh**en **I** **appe**ared **o**n
+      **de**ck **t**he **mas**ter **sa**id, “**He**re **i**s **o**ur
+      **capt**ain, **a**nd **h**e **wi**ll **n**ot **all**ow **y**ou **t**o
+      **per**ish **o**n **t**he **op**en **s**ea.”
+  - question: Transform this text into its Bionic Reading counterpart using markdown
+    context: >-
+      On perceiving me, the stranger addressed me in English, although with a
+      foreign accent. “Before I come on board your vessel,” said he, “will you
+      have the kindness to inform me whither you are bound?”
+    answer: >-
+      **O**n **perce**iving **m**e, **t**he **stra**nger **addre**ssed **m**e
+      **i**n **Engl**ish, **alth**ough **wi**th **a** **fore**ign **acc**ent.
+      “**Bef**ore **I** **co**me **o**n **boa**rd **yo**ur **ves**sel,” **sa**id
+      **h**e, “**wi**ll **y**ou **ha**ve **t**he **kind**ness **t**o **inf**orm
+      **m**e **whit**her **y**ou **a**re **bou**nd?”
+  - question: Transform this text into its Bionic Reading counterpart using markdown
+    context: >-
+      You may conceive my astonishment on hearing such a question addressed to
+      me from a man on the brink of destruction and to whom I should have
+      supposed that my vessel would have been a resource which he would not have
+      exchanged for the most precious wealth the earth can afford. I replied,
+      however, that we were on a voyage of discovery towards the northern pole.
+    answer: >-
+      **Y**ou **m**ay **conc**eive **m**y **astoni**shment **o**n **hear**ing
+      **su**ch **a** **ques**tion **addre**ssed **t**o **m**e **fr**om **a**
+      **m**an **o**n **t**he **bri**nk **o**f **destru**ction **a**nd **t**o
+      **wh**om **I** **sho**uld **ha**ve **supp**osed **th**at **m**y **ves**sel
+      **wou**ld **ha**ve **be**en **a** **reso**urce **whi**ch **h**e **wou**ld
+      **n**ot **ha**ve **excha**nged **f**or **t**he **mo**st **prec**ious
+      **wea**lth **t**he **ear**th **c**an **aff**ord. **I** **repl**ied,
+      **howe**ver, **th**at **w**e **we**re **o**n **a** **voy**age **o**f
+      **disco**very **towa**rds **t**he **nort**hern **po**le.
+  - question: Transform this text into its Bionic Reading counterpart using markdown
+    context: >-
+      Upon hearing this he appeared satisfied and consented to come on board.
+      Good God! Margaret, if you had seen the man who thus capitulated for his
+      safety, your surprise would have been boundless. His limbs were nearly
+      frozen, and his body dreadfully emaciated by fatigue and suffering. I
+      never saw a man in so wretched a condition. We attempted to carry him into
+      the cabin, but as soon as he had quitted the fresh air he fainted. We
+      accordingly brought him back to the deck and restored him to animation by
+      rubbing him with brandy and forcing him to swallow a small quantity. As
+      soon as he showed signs of life we wrapped him up in blankets and placed
+      him near the chimney of the kitchen stove. By slow degrees he recovered
+      and ate a little soup, which restored him wonderfully.
+    answer: >-
+      **Up**on **hear**ing **th**is **h**e **appe**ared **satis**fied **a**nd
+      **conse**nted **t**o **co**me **o**n **boa**rd. **Go**od **G**od!
+      **Marg**aret, **i**f **y**ou **h**ad **se**en **t**he **m**an **w**ho
+      **th**us **capitu**lated **f**or **h**is **saf**ety, **yo**ur **surp**rise
+      **wou**ld **ha**ve **be**en **bound**less. **H**is **lim**bs **we**re
+      **nea**rly **fro**zen, **a**nd **h**is **bo**dy **dread**fully
+      **emaci**ated **b**y **fati**gue **a**nd **suffe**ring. **I** **nev**er
+      **s**aw **a** **m**an **i**n **s**o **wret**ched **a** **condi**tion.
+      **W**e **attem**pted **t**o **car**ry **h**im **in**to **t**he **cab**in,
+      **b**ut **a**s **so**on **a**s **h**e **h**ad **quit**ted **t**he
+      **fre**sh **a**ir **h**e **fain**ted. **W**e **accord**ingly **brou**ght
+      **h**im **ba**ck **t**o **t**he **de**ck **a**nd **rest**ored **h**im
+      **t**o **anima**tion **b**y **rubb**ing **h**im **wi**th **bra**ndy
+      **a**nd **forc**ing **h**im **t**o **swal**low **a** **sma**ll
+      **quan**tity. **A**s **so**on **a**s **h**e **sho**wed **sig**ns **o**f
+      **li**fe **w**e **wrap**ped **h**im **u**p **i**n **blan**kets **a**nd
+      **pla**ced **h**im **ne**ar **t**he **chim**ney **o**f **t**he **kitc**hen
+      **sto**ve. **B**y **sl**ow **degr**ees **h**e **recov**ered **a**nd
+      **a**te **a** **lit**tle **so**up, **whi**ch **rest**ored **h**im
+      **wonder**fully.
+  - question: Transform this text into its Bionic Reading counterpart using markdown
+    context: >-
+      Two days passed in this manner before he was able to speak, and I often
+      feared that his sufferings had deprived him of understanding. When he had
+      in some measure recovered, I removed him to my own cabin and attended on
+      him as much as my duty would permit. I never saw a more interesting
+      creature: his eyes have generally an expression of wildness, and even
+      madness, but there are moments when, if anyone performs an act of kindness
+      towards him or does him any the most trifling service, his whole
+      countenance is lighted up, as it were, with a beam of benevolence and
+      sweetness that I never saw equalled. But he is generally melancholy and
+      despairing, and sometimes he gnashes his teeth, as if impatient of the
+      weight of woes that oppresses him.
+    answer: >-
+      **T**wo **da**ys **pas**sed **i**n **th**is **man**ner **bef**ore **h**e
+      **w**as **ab**le **t**o **spe**ak, **a**nd **I** **oft**en **fea**red
+      **th**at **h**is **suffe**rings **h**ad **depr**ived **h**im **o**f
+      **underst**anding. **Wh**en **h**e **h**ad **i**n **so**me **meas**ure
+      **recov**ered, **I** **remo**ved **h**im **t**o **m**y **o**wn **cab**in
+      **a**nd **atte**nded **o**n **h**im **a**s **mu**ch **a**s **m**y **du**ty
+      **wou**ld **per**mit. **I** **nev**er **s**aw **a** **mo**re
+      **intere**sting **crea**ture: **h**is **ey**es **ha**ve **gener**ally
+      **a**n **expre**ssion **o**f **wild**ness, **a**nd **ev**en **madn**ess,
+      **b**ut **the**re **a**re **mome**nts **wh**en, **i**f **any**one
+      **perf**orms **a**n **a**ct **o**f **kind**ness **towa**rds **h**im **o**r
+      **do**es **h**im **a**ny **t**he **mo**st **trif**ling **serv**ice,
+      **h**is **who**le **counte**nance **i**s **ligh**ted **u**p, **a**s **i**t
+      **we**re, **wi**th **a** **be**am **o**f **benevo**lence **a**nd
+      **sweet**ness **th**at **I** **nev**er **s**aw **equa**lled.  **B**ut
+      **h**e **i**s **gener**ally **melan**choly **a**nd **despa**iring, **a**nd
+      **somet**imes **h**e **gnas**hes **h**is **tee**th, **a**s **i**f
+      **impat**ient **o**f **t**he **wei**ght **o**f **wo**es **th**at
+      **oppre**sses **h**im.
+task_description: >-
+  Convert text into Bionic Reading, which is the same text but with the first
+  letters of each word in bold. Use markdown to format the text and add the bold
