@@ -1,0 +1,647 @@
+created_by: veruu
+seed_examples:
+- question: Give me a sed command to prefix all lines starting with "prefixthis" with "# "
+  answer: |
+    To prefix all lines starting with "prefixthis" with "# ", you can use the following
+    `sed` command:
+
+    ```bash
+    sed -i 's/^prefixthis/# &/g' file.txt
+    ```
+
+    This command uses the `^` anchor to match the beginning of each line, followed by
+    the text "prefixthis". The `&` is a backreference that represents the entire matched
+    text, which is then prefixed with "# ". The `g` flag makes the substitution global,
+    ensuring that all matching lines are modified.
+- question: Can you give me a sed command to prefix all lines containing "test" with "// "
+  answer: |
+    To prefix all lines containing the text "test" with "// ", you can use the following
+    `sed` command:
+
+    ```bash
+    sed -i 's/.*test.*/\/\/ &/g' file.txt
+    ```
+
+    This command checks for the string "test" surrounded by any text. Each "/" in the
+    substitution needs to be prefixed by a backslash, as "/" is a special character for
+    the `sed` command.
+- question: Can you give me a sed command to suffix all lines matching "oops" with " # TODO"
+  answer: |
+    To suffix all lines matching the text "oops" with "# TODO", you can use the following
+    `sed` command:
+
+    ```bash
+    sed -i 's/oops.*$/& # TODO/g' file.txt
+    ```
+
+    This command uses the `s` substitution command to append " # TODO" to the end of each
+    line of the file that contains "oops". The ".*" matches any followup characters and the
+    "$" anchor matches the end of each line. The `g` flag makes the substitution global,
+    ensuring that all lines matching the pattern are modified.
+- question: Can you give me a sed command to suffix all lines ending with "oops" with " # TODO"
+  answer: |
+    To suffix all lines matching the text "oops" with "# TODO", you can use the following
+    `sed` command:
+
+    ```bash
+    sed -i 's/oops$/& # TODO/g' file.txt
+    ```
+
+    This command uses the `s` substitution command to append " # TODO" to the end of each
+    line of the file that ends with "oops". The "$" anchor matches the end of each line.
+    The `&` is a backreference to refer to the previous pattern, and the `g` flag makes
+    the substitution global, ensuring that all lines matching the pattern are modified.
+- question: Can you give me a sed command to substitute first match of "secret" with "[REDACTED]"
+  answer: |
+    To substitute the first match of "secret" with "[REDACTED]", you can use the following
+    `sed` command:
+
+    ```bash
+    sed -i 's/secret/[REDACTED]/' file.txt
+    ```
+
+    This command uses the `s` substitution command to replace first match of "secret"
+    with "[REDACTED]".
+- question: Can you help me insert a newline after every line containing "insert" using sed?
+  answer: |
+    To insert a newline after every line containing "insert", you can use the following
+    `sed` command:
+
+    ```bash
+    sed -i 's/insert.*$/&\n/g' file.txt
+    ```
+
+    This command uses the `s` substitution command with the `$` anchor matching the end-of-line,
+    The `g` flag makes the substitution global, ensuring that the newline is inserted after
+    every line containing "insert".
+- question: Give me a sed command that removes all matches of "Default"
+  answer: |
+    To remove all matches of "Default", you can use the following `sed` command:
+
+    ```bash
+    sed -i 's/Default//g' file.txt
+    ```
+
+    This command uses the `s` substitution command with an empty replacement. The `g`
+    flag makes the substitution global, ensuring that each match is removed.
+- question: Give me a sed command that removes all lines that contain "Default"
+  answer: |
+    To remove all lines containing "Default", you can use the following `sed` command:
+
+    ```bash
+    sed -i '/Default/d' file.txt
+    ```
+
+    This command uses the `sed` deletion command `d` to remove every line containing
+    "Default" string.
+- question: Give me a sed command that removes all lines that don't contain "Default"
+  answer: |
+    To remove all lines not containing "Default", you can use the following `sed` command:
+
+    ```bash
+    sed -i '/Default/!d' file.txt
+    ```
+
+    This command uses the negated `sed` deletion command `!d` to keep every line
+    containing "Default" string, thus removing every line not containing it.
+- question: |
+    Give me a sed command that removes all lines that contain "Default", but only if
+    they don't contain "Text"
+  answer: |
+    To remove lines that contain "Default" but not "Text", you can use the following
+    `sed` command:
+
+    ```bash
+    sed -i '/Default/{/Text/!d}' file.txt
+    ```
+
+    This command uses nested `sed` commands to only delete lines that contain
+    "Default", but not "Text".
+- question: |
+    Give me a sed command that removes all lines that contain "Default" but keeps
+    "Default Text"
+  answer: |
+    To remove lines that contain "Default" but not "Default Text", you can use the
+    following `sed` command:
+
+    ```bash
+    sed -i '/Default/{/Default Text/!d}' file.txt
+    ```
+
+    This command uses nested `sed` commands to only delete lines that contain
+    "Default", but not "Default Text".
+- question: |
+    Give me a sed command that replaces "bad text" with "nice" but only on lines
+    that contain "cool".
+  answer: |
+    To replace "bad text" with "nice" if the line contains "cool", you can use the
+    following `sed` command:
+
+    ```bash
+    sed -i '/cool/s/bad text/nice/g' file.txt
+    ```
+
+    This command finds all lines containing "cool", and then uses the `sed` substitution
+    command `s` to substitute "bad text" with "nice".
+- question: |
+    Give me a sed command that replaces first match of "secret" with "[REDACTED]",
+    but only if the line starts with "KEY".
+  answer: |
+    To replace the first match of "secret" with "[REDACTED]" on the first line starting with
+    "KEY", you can use the following `sed` command:
+
+    ```bash
+    sed -i '/^KEY/s/secret/[REDACTED]/' file.txt
+    ```
+
+    This command looks for a line starting with "KEY" with the help of `^` anchor marking
+    the beginning of the line, and the performs the substitution on this line.
+- question: |
+    Give me a sed command that deletes all lines containing both "delete" and "this".
+  answer: |
+    To delete all lines that contain both "delete" and "this" words, you can use the
+    following `sed` command:
+
+    ```bash
+    sed -i -E '/delete.*this|this.*delete/d' file.txt
+    ```
+
+    This command uses the `sed` deletion command `d` to remove lines containing both
+    "delete" and "this". As no order of the words was specified, both orders need to
+    be included in the match. The `-E` flag marks the usage of extended regex which is
+    needed to use "|" without escaping.
+- question: |
+    Give me a sed command that deletes all lines containing "delete" followed by "this".
+  answer: |
+    To delete all lines that contain "delete" followed by "this", you can use the
+    following `sed` command:
+
+    ```bash
+    sed -i '/delete.*this/d' file.txt
+    ```
+
+    This command uses the `sed` deletion command `d` to remove lines containing
+    "delete" followed by "this".
+- question: Give me a sed command that appends " ##" to all lines not containing "oops".
+  answer: |
+    To append " ##" to all lines not containing the text "oops", you can use the following
+    `sed` command:
+
+    ```bash
+    sed -i '/oops/!s/$/ ##/g' file.txt
+    ```
+
+    This command uses the negated `s` substitution command to find all lines not containing
+    "oops". Then, it substitutes the end of line character `$` by " ##", which results in
+    appending the " ##" text to those lines. The `g` flag makes the substitution global,
+    ensuring that all lines are modified.
+- question: |
+    Give me a sed command that replaces all matches on lines starting with "test" with
+    "production".
+  answer: |
+    To replace all matches on lines starting with "test" with "production", you can use
+    the following `sed` command:
+
+    ```bash
+    sed -i 's/^test/production/g' file.txt
+    ```
+
+    This command uses the `s` substitution command to find all lines starting with "test".
+    Then, it substitutes it with "production". The `g` flag makes the substitution global,
+    ensuring that all matching lines are modified.
+- question: |
+    Give me a sed command that removes first two characters of every line.
+  answer: |
+    To remove first two characters of every line, you can use the following `sed` command:
+
+    ```bash
+    sed -i 's/^..//g' file.txt
+    ```
+
+    This command uses the `s` substitution command and substitutes first two characters
+    by an empty string, thus removing them. The `g` flag makes the substitution global,
+    ensuring that all lines are modified.
+- question: |
+    Give me a sed command that removes first two characters of every line containing "test".
+  answer: |
+    To remove first two characters of every line containing "test", you can use the
+    following `sed` command:
+
+    ```bash
+    sed -i '/test/s/^..//g' file.txt
+    ```
+
+    This command looks up lines containing "test", and then uses the `s` substitution
+    command and substitutes first two characters by an empty string, thus removing them.
+    The `g` flag makes the substitution global, ensuring that all matching lines are modified.
+- question: |
+    Give me a sed command that removes all lines that contain "contact" or "default".
+  answer: |
+    To remove all lines containing "contact" or "default", you can use the following `sed`
+    command:
+
+    ```bash
+    sed -i -E '/contact|default/d' file.txt
+    ```
+
+    This command uses the `sed` deletion command `d` to remove the lines containing
+    "contact" or "default". The `-E` flag marks the usage of extended regex syntax which
+    is needed to use "|" without escaping.
+- question: Can you give me a sed command that prints numbers of lines containing "Default"?
+  answer: |
+    To print the line numbers of lines containing "Default", you can use the following
+    `sed` command:
+
+    ```bash
+    sed -n '/Default/=' file.txt
+    ```
+
+    This command uses the `-n` flag to suppres the default output. The "/Default/" part
+    matches the correct lines and the `=` command prints the line numbers.
+- question: Can you give me a sed command to delete all lines starting with "text"?
+  answer: |
+    To remove all lines starting with "text", use the following `sed` command:
+
+    ```bash
+    sed -i '/^text/d' file.txt
+    ```
+
+    This command uses the `sed` deletion command `d` to remove all lines starting with
+    "text". The `^` anchor matches the start of each line.
+- question: Give me a sed command that removes all text after "Contact".
+  answer: |
+    To remove all text following "Contact", use the following `sed` command:
+
+    ```bash
+    sed -i 's/Contact.*/Contact/g' file.txt
+    ```
+
+    This command uses the `sed` substitution command `s` to substitute "Contact"
+    followed by any text by "Contact" only, thus removing the rest of the line.
+- question: |
+    Give me a sed command to substitute "a" with "b", but only if not prefixed by "c"
+  answer: |
+    To substitute any "a" with "b", but only if "c" is not preceding "a", you can use
+    the following `sed` command":
+
+    ```bash
+    sed -i -E 's/([^c])a/\1b/g' file.txt
+    ```
+
+    This command uses the `sed` substitution command `s`. It looks for "a" prefixed
+    by anything but "c" and substitutes it by the original character followed by "b",
+    thus replacing "a" by "b" on these lines. The `-E` flag marks usage of the
+    extended regex syntax which is needed to use `()` without escaping, and the `g`
+    flag at the end means all matches will be replaced.
+- question: Give me a sed command to substitute all upper case letters by lower case.
+  answer: |
+    To substitute all upper case letters by lower case, you can use the following
+    `sed` command":
+
+    ```bash
+    sed -i 's/.*/\L&/g' file.txt
+    ```
+
+    This command uses the `sed` substitution command `s`. It matches any text and
+    using the `\L` command, substitutes it with lower case. The `&` symbol is a
+    backreference to the original match. The `g` flag at the end means all matches
+    will be replaced.
+- question: Give me a sed command to substitute all lower case letters by upper case.
+  answer: |
+    To substitute all lower case letters by upper case, you can use the following
+    `sed` command":
+
+    ```bash
+    sed -i 's/.*/\U&/g' file.txt
+    ```
+
+    This command uses the `sed` substitution command `s`. It matches any text and
+    using the `\U` command, substitutes it with upper case. The `&` symbol is a
+    backreference to the original match. The `g` flag at the end means all matches
+    will be replaced.
+- question: Give me a sed command to delete the first line of the file.
+  answer: |
+    To remove the first line of the file, you can use the following `sed` command:
+
+    ```bash
+    sed -i '1d' file.txt
+    ```
+
+    This command uses the `sed` deletion command `d`, prefixed by the index of the
+    line which to remove, in this case 1.
+- question: Give me a sed command to delete the tenth line of the file.
+  answer: |
+    To remove the tenth line of the file, you can use the following `sed` command:
+
+    ```bash
+    sed -i '10d' file.txt
+    ```
+
+    This command uses the `sed` deletion command `d`, prefixed by the index of the
+    line which to remove, in this case 10.
+- question: Give me a sed command to delete the last line of the file.
+  answer: |
+    To remove the last line of the file, you can use the following `sed` command:
+
+    ```bash
+    sed -i '$d' file.txt
+    ```
+
+    This command uses the `sed` deletion command `d`, prefixed by the index of the
+    line which to remove, in this case `$`, which matches the end of file.
+- question: |
+    Give me a sed command that removes all lines that contain "This" at the beginning
+    of the line, but keeps the lines that have it in the middle or at the end.
+  answer: |
+    To remove lines that contain "This" at the beginning but keep those with "This" in
+    the middle or end, use the following `sed` command:
+
+    ```bash
+    sed -i '/^This/d' file.txt
+    ```
+
+    This command uses the `sed` deletion command `d` to remove lines that contain "This"
+    at the beginning. It doesn't remove any other lines, thus keeping the lines that
+    contain "This" in the middle or at the end.
+- question: |
+    Give me a sed command that removes lines containing "test", unless they also contain
+    "production"
+  answer: |
+    To remove lines that contain "test" but not if they also contain "production",
+    you can use the following `sed` command:
+
+    ```bash
+    sed -i '/test/{/production/!d}' file.txt
+    ```
+
+    This command uses nested `sed` commands to only delete lines that contain
+    "test", but not "production".
+- question: |
+    Give me a sed command that deletes all occurrences of "test" on lines containing
+    "production"
+  answer: |
+    To remove matches of "test" on lines that contain "production", you can use the
+    following `sed` command:
+
+    ```bash
+    sed -i '/production/{s/test//g}' file.txt
+    ```
+
+    This command uses nested `sed` commands. First, we find the lines that contain
+    "production", and then we substitute any occurrences of "test" on these lines
+    with empty string, thus removing the "test" match.
+- question: |
+    Give me a sed command that inserts "text" at the beginning of each line containing
+    "great".
+  answer: |
+    To insert "text" on lines that contain "great", you can use the following `sed` command:
+
+    ```bash
+    sed -i '/great/s/^/text/g' file.txt
+    ```
+
+    This command uses chained `sed` commands. First, we find the lines that contain
+    "great", and then we substitute any occurrences of "^", which indicates the beginning
+    of the line, with "text". The `g` flag makes sure all lines are modified.
+- question: |
+    Can you give me a sed command to change all occurrences of "test" in any case
+    to uppercase?
+  answer: |
+    To change all occurrences of "test" in any case to upper case, you can use the
+    following `sed` command":
+
+    ```bash
+    sed -i 's/test/\U&/gI' file.txt
+    ```
+
+    This command uses the `sed` substitution command `s`. It matches the "test" word
+    and using the `\U` command, substitutes it with upper case. The `&` symbol is a
+    backreference to the original match. The `g` flag at the end means all matches
+    will be replaced, and the `I` flag means case insensitive search.
+- question: |
+    Give me a sed command that inserts "insert" after every occurrence of "insert".
+  answer: |
+    To insert "insert" after every occurrence of "insert" in the input text, you
+    can use the following `sed` command:
+
+    ```bash
+    sed -i 's/insert/insert insert/g' file.txt
+    ```
+
+    This command uses the `sed` substitution command `s` to replace every occurrence of
+    "insert" with "insert insert". The `g` flag marks global substitution.
+- question: |
+    Give me a sed command that removes all lines that only contain "this", but keeps
+    the lines where other content is present.
+  answer: |
+    To remove lines that only contain "this" but keep other lines intact, you can use the
+    following `sed` command:
+
+    ```bash
+    sed -i '/^this$/d' file.txt
+    ```
+
+    This command uses the `sed` deletion command `d` to remove lines that only contain
+    "this" and nothing else. This is marked by the markers of beginning of the line "^"
+    and the end of the line "$".
+- question: Give me a sed command that substitutes the first match of "test" with "prod".
+  answer: |
+    To substitute the first match of "test" with "prod", you can use the following `sed`
+    command:
+
+    ```bash
+    sed -i 's/test/prod/' file.txt
+    ```
+
+    This command uses the `sed` substitution command `s` to substitute the first match
+    of "this" with "prod".
+- question: Give me a sed command that deletes all lines containing "test" but not "oops".
+  answer: |
+    To delete lines that contain "this" but not "oops", you can use the following `sed`
+    command:
+
+    ```bash
+    sed -i '/this/{/oops/!d}' file.txt
+    ```
+
+    This command uses nested `sed` commands to only delete lines that contain
+    "this", but not "oops".
+- question: |
+    Give me a sed command that changes all matches of "contact" or "email" to "default".
+  answer: |
+    To change all matches of "contact" or "email" to "default", you can use the following
+    `sed` command:
+
+    ```bash
+    sed -i -E 's/contact|email/default/g' file.txt
+    ```
+
+    This command uses the `sed` substitution command `s` to change the lines containing
+    "contact" or "email" to "default". The `-E` flag marks the usage of extended regex
+    syntax which is needed to use "|" without escaping. The final `g` flag marks global
+    changes, so that all matches are changed.
+- question: Give me a sed command that replaces "test" on the third line with "prod".
+  answer: |
+    To replace "test" with "prod" on the third line, you can use the following `sed` command:
+
+    ```bash
+    sed -i '3s/test/prod/' file.txt
+    ```
+
+    This command uses the `sed` substitution command `s`, prefixed by the line index, in
+    this case 3, to replace "test" with "prod".
+- question: Can you give me a sed command to filter lines containing "fail" or "warn"?
+  answer: |
+    To filter out lines containing "fail" or "error", you can use the following
+    `sed` command:
+
+    ```bash
+    sed -n -E '/(fail|warn)/p' file.txt
+    ```
+
+    This command uses the `-n` option to suppress the printing of lines, and the `p`
+    command to print only lines that match the given pattern. The pattern matches lines
+    containing the strings "fail" or "warn". The `-E` flag marks the usage of extended
+    regex which is needed to use `()` and `|` without escaping.
+- question: Give me a sed command that removes all occurrences of the word "test".
+  answer: |
+    To remove all occurrences of the word "test", you can use the following `sed` command:
+
+    ```bash
+    sed -i 's/test//g' file.txt
+    ```
+
+    This command uses the `sed` substitution command `s` to replace "test" with an empty
+    string. The flag `g` indicates global substitution, which means all occurrences
+    will be removed.
+- question: |
+    Can you write a sed command that inserts `[REDACTED]` in front of every line that
+    contains "myusername"?
+  answer: |
+    To insert "[REDACTED]" in front of lines that contain "myusername", you can use
+    the following `sed` command:
+
+    ```bash
+    sed -i '/myusername/s/^/[REDACTED]/g' file.txt
+    ```
+
+    This command uses chained `sed` commands. First, we find the lines that contain
+    "myusername", and then we substitute any occurrences of "^", which indicates the
+    beginning of the line, with "[REDACTED]". The `g` flag makes sure all lines are modified.
+- question: Give me a sed command that deletes all matches of "error" or "fail".
+  answer: |
+    To remove all lines matching of "error" or "fail", you can use the following `sed` command:
+
+    ```bash
+    sed -i -E '/error|fail/d' file.txt
+    ```
+
+    This command uses the `sed` deletion command `d` to remove the lines containing
+    "error" or "fail". The `-E` flag marks the usage of extended regex syntax which is
+    needed to use "|" without escaping. The final `g` flag marks global changes, so that
+    all matches are changed.
+- question: Give me a sed command that deletes lines that start with "This" or "That".
+  answer: |
+    To remove all lines starting with "This" or "That", you can use the following
+    `sed` command:
+
+    ```bash
+    sed -i -E '/^(This|That)/d' file.txt
+    ```
+
+    This command uses the `sed` deletion command `d` to remove the lines. "^" symbol
+    denotes matching the start of the line. The `-E` flag marks the usage of extended
+    regex syntax which is needed to use "|" and "()" without escaping.
+- question: Write a sed command that deletes all lines longer than 20 characters.
+  answer: |
+    To remove all lines longer than 20 characters, you can use the following `sed` command:
+
+    ```bash
+    sed -i -E '/^.{1,20}$/!d' file.txt
+    ```
+
+    This command uses the negated `sed` deletion command `!d` to not remove lines that
+    are shorter, thus removing lines that are longer. The "^" symbol denotes matching the
+    start of the line, `.{1,20}` matches 1 to 20 occurrences of any character, and the
+    "$S" symbol marks the end of the line. The `-E` flag marks the usage of extended
+    regex syntax which is needed to enable the match.
+- question: Give me a sed command that deletes lines that don't start with "This".
+  answer: |
+    To remove all lines not starting with "This", you can use the following `sed` command:
+
+    ```bash
+    sed -i '/^This/!d' file.txt
+    ```
+
+    This command uses the inegated `sed` deletion command `!d` to not remove the lines
+    that start with "This", thus removing the lines not matching. The "^" symbol denotes
+    matching the start of the line.
+- question: Give me a sed command that deletes the word "test" from the beginning of the line.
+  answer: |
+    To remove the word "test" from the beginning of the line, you can use the following
+    `sed` command:
+
+    ```bash
+    sed -i 's/^test//g' file.txt
+    ```
+
+    This command uses the `sed` substitution command `s` to replace "test" with an empty
+    string. The "^" anchor symbolizes the beginning of the line. The flag `g` indicates
+    global substitution, which means all occurrences at the beginning of the line will be
+    removed.
+- question: |
+    Give me a sed command that changes all matches of "fail", "error" or "warn" to "pass".
+  answer: |
+    To change all matches of "fail", "error" or "warn" to "pass", you can use the following
+    `sed` command:
+
+    ```bash
+    sed -i -E 's/fail|error|warn/pass/g' file.txt
+    ```
+
+    This command uses the `sed` substitution command `s` to change the lines containing
+    "fail", "error" or "warn" to "pass". The `-E` flag marks the usage of extended regex
+    syntax which is needed to use "|" without escaping. The final `g` flag marks global
+    changes, so that all matches are changed.
+- question: Give me a sed command that changes all lines that end in "a" or "b" to uppercase.
+  answer: |
+    To change all lines that end with "a" or "b" to uppercase, you can use the following
+    `sed` command:
+
+    ```bash
+    sed -i -E 's/.*a$|.*b$/\U&/g' file.txt
+    ```
+
+    This command uses the `sed` substitution command `s` to change the lines ending in "a" or
+    "b" to uppercase. To change the whole line, we must match it, which is why the match
+    includes ".*". The "$" marks the end of the line. The "\U" command transforms the match
+    to uppercase, with "&" marking the match. The `-E` flag marks the usage of extended regex
+    syntax which is needed to use "|" without escaping. The final `g` flag marks global
+    changes, so that all matches are changed.
+- question: Can you give me a sed command to print lines containing "fail"?
+  answer: |
+    To print lines containing "fail", you can use the following `sed` command:
+
+    ```bash
+    sed -n '/fail/p' file.txt
+    ```
+
+    This command uses the `-n` option to suppress the printing of lines, and the `p`
+    command to print only lines that match the given pattern. The pattern matches lines
+    containing the text "fail".
+- question: |
+    Write a sed command that deletes "test" from the line, but only if it's preceded by "oops".
+  answer: |
+    To delete the word "test" from the line only if it's preceded by "oops", you can use
+    the following `sed` command:
+
+    ```bash
+    sed -i -E 's/(oops.*)test/\1/g' file.txt
+    ```
+
+    This command uses the `sed` substitution command `s` to find lines where "test" is
+    preceded with "oops". It then substitutes the original match with the match without
+    "test", by using "\1" as a reference to the match. The "-E" flag is needed to use "()"
+    without escaping, and the "g" flag indicates global substitution, which means occurrences
+    on all lines will be modified.
+task_description: 'Generate simple `sed` commands'
