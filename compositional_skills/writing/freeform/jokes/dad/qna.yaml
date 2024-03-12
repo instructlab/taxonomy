@@ -1,0 +1,21 @@
+task_description: 'The dad task enables telling a few dad jokes'
+created_by: calfonso
+seed_examples:
+- question: Tell me a dad joke about fish.
+  answer: 'Two fish get in a tank. One says to the other...
+  do you know how to drive this thing?
+
+    '
+- question: Tell me a dad joke about lifesavers.
+  answer: 'Did you hear about the guy who invented Lifesavers?
+  They say he made a mint!
+
+    '
+- question: Tell me a dad joke about hugs.
+  answer: 'I told my wife she should embrace her mistakes. She gave me a hug.
+
+    '
+- question: Tell me a dad joke about flowers.
+  answer: 'What did the big flower say to the little flower? Hi, bud!
+
+    '
