@@ -1,0 +1,18 @@
+created_by: danmcp
+seed_examples:
+  - answer: 4, 8, 12, 16, 20
+    question: Count to 20 by four
+  - answer: 0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40
+    question: Count from 0 to 40 by four
+  - answer: 0, 4, 8, 12, 16, 20
+    question: Count from 0 to 20 by 4
+  - answer: 7, 14, 21, 28, 35, 42, 49, 56, 63, 70, 77
+    question: Count to 80 by seven
+  - answer: 0, 3, 6, 9, 12, 15, 18
+    question: Count from 0 to 20 by 3
+  - answer: 3, 6, 9, 12, 15, 18, 21
+    question: Count to 21 by 3
+task_description: Train the model with basic examples of responding to counting
+  requests by various increments.  Some edge cases are handled such as the
+  target number not being divisible by the counting increment and a lack of a
+  starting point to count from.
