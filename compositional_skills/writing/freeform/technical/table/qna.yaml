@@ -1,0 +1,55 @@
+created_by: stluke
+seed_examples:
+- answer: |
+    ```
+    +------+------+------+
+    |      |      |      |
+    +------+------+------+
+    ```
+  question: Create an ascii table with 3 columns and 1 row.
+
+- answer: |
+    ```
+    +------+------+------+
+    |      |      |      |
+    |      |      |      |
+    |      |      |      |
+    +------+------+------+
+    |      |      |      |
+    |      |      |      |
+    |      |      |      |
+    +------+------+------+
+    ```
+  question: Create an ascii table with 3 columns and 2 rows, each 3 lines.
+
+- answer: |
+    ```
+    +------+------+------+------+
+    |      |      |      |      |
+    |      |      |      |      |
+    +------+------+------+------+
+    |      |      |      |      |
+    |      |      |      |      |
+    +------+------+------+------+
+    |      |      |      |      |
+    |      |      |      |      |
+    +------+------+------+------+
+    ```
+  question: Create an ascii table with 4 columns and 3 rows, 2 lines each.
+
+- answer: |
+    ```
+    +------+
+    |      |
+    +------+
+    |      |
+    +------+
+    |      |
+    +------+
+    |      |
+    +------+
+    |      |
+    +------+
+    ```
+  question: Create an ascii table with 1 columns and 5 rows.
+task_description: 'ASCII table'
