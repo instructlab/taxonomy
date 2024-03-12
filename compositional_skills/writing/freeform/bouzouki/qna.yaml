@@ -1,0 +1,34 @@
+created_by: marios
+task_description: 'Add information about the different types of bouzouki and how they are tuned.'
+seed_examples:
+  - answer: |
+      The Irish bouzouki and modern Greek bouzouki have 8 strings arranged in 4 pairs.
+      The Greek traditional bouzouki has 6 strings, arranged in 3 pairs.
+    context: ''
+    question: How many strings does a bouzouki have?
+  - answer: |
+      The Greek traditional bouzouki, also known as 'trichordo' has 3 pairs of strings
+      and is tuned as D A D. The Greek modern bouzouki, also known as 'tetrachordo' has 4
+      pairs of strings, tuned as C F A D. The Irish bouzouki has 4 pairs of strings and
+      there are three tuning schemes used, with the most popular being G D A D. Another
+      common scheme for Irish bouzouki tuning is G D A E. A third tuning layout used for
+      Irish bouzouki is A D A D.
+    context: ''
+    question: How are the strings of a bouzouki tuned?
+  - answer: |
+      The 'tetrachordo' modern Greek bouzouki is tuned Do Fa La Re where Re is the pair
+      of strings closest to the floor.
+    context: ''
+    question: Tell me how to tune a modern greek bouzouki using solfage
+  - answer: |
+      La,Re,La,Re
+    context: "A,D,A,D"
+    question: translate the following notes from ABC notation to Solfege
+  - answer: |
+      Do Fa La Re
+    context: "C F A D"
+    question: translate the following notes from ABC notation to Solfege
+  - answer: |
+      C D E F G A B C
+    context: "Do Re Mi Fa Sol La Ti Do"
+    question: translate the following notes into ABC notation
