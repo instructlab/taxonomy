@@ -24,8 +24,9 @@
    |+-----------data samples                                     
    |                 |                                           
    | samples         v                                           
-   | approved    +-------+                                       
-   +------------>|trainer|                                       
-                 |   cGRE|                                       
-                 +-------+                                       
+   | approved  +-----------+                                       
+   |           |full SDG   |                                       
+   +---------->|and trainer|                                       
+               |       cGRE|
+               +-----------+                                       
 @endditaa
