@@ -1,0 +1,71 @@
+created_by: jarodwilson
+seed_examples:
+- answer: Huskies
+  context: The Washington Huskies are the intercollegiate athletic teams that
+    represent the University of Washington, located in Seattle. The school
+    competes at the National Collegiate Athletic Association (NCAA) Division I
+    level as a member of the Pac-12 Conference.
+
+    Washington students, sports teams, and alumni are called Huskies. The husky
+    was selected as the school mascot by the Associated Students of UW in 1922.
+    It replaced the "Sun Dodger", an abstract reference to the local weather
+    that was quickly dropped in favor of something more tangible. The costumed
+    "Harry the Husky" performs at sporting and special events, and a live
+    Alaskan Malamute, currently named Dubs, traditionally leads the football
+    team onto the field at the start of games. The school colors of purple and
+    gold were adopted in 1892 by student vote.
+  question: What is the team name for the University of Washington?
+- answer: Ducks
+  context: The Oregon Ducks are the intercollegiate athletic teams that
+    represent the University of Oregon, located in Eugene. The Ducks compete
+    at the National Collegiate Athletic Association (NCAA) Division I level as
+    a member of the Big Ten. With eighteen varsity teams, Oregon is best known
+    for its American football team and track and field program, which has
+    helped Eugene gain a reputation as "Track Town, USA". Oregon's main
+    rivalries are with the Oregon State Beavers (the Civil War) and the
+    Washington Huskies.
+
+    Oregon teams were originally known as Webfoots, possibly as early as the
+    1890s. The Webfoots name originally applied to a group of fishermen from
+    the coast of Massachusetts who had been heroes during the American
+    Revolutionary War; their descendants had settled in Oregon's Willamette
+    Valley in the 19th century and the name stayed with them. A naming
+    contest in 1926 won by Oregonian sports editor L. H. Gregory made the
+    Webfoots name official, and a subsequent student vote in 1932 affirmed
+    the nickname, chosen over other suggested nicknames such as Pioneers,
+    Trappers, Lumberjacks, Wolves, and Yellow Jackets.
+
+    Ducks, with their webbed feet, began to be associated with the team in
+    the 1920s, and live duck mascots were adopted to represent the team.
+    Journalists, especially headline writers, also adopted the shorter Duck
+    nickname, but it was not until the 1940s that the image of Donald Duck,
+    permitted via a handshake deal between Walt Disney and Oregon athletic
+    director Leo Harris, cemented the image of the Duck as the school's
+    mascot. Both nicknames were still in use well into the 1970s.
+
+    In 1978, a student cartoonist came up with a new duck image, but students
+    rejected the alternative by a 2-to-1 margin. Although Donald was not on
+    that ballot, the University Archivist declared that the election made
+    Ducks the school's official mascot, replacing Webfoots.
+
+  question: What is the official team name for the University of Oregon?
+- answer: Bulldogs
+  context: Mississippi State Bulldogs is the name given to the athletic teams
+    of Mississippi State University, in Mississippi State, Mississippi. The
+    university is a founding member of the Southeastern Conference and
+    competes in NCAA Division I. 
+  question: What is the sports team name of Mississippi State?
+- answer: Bruins
+  context: The UCLA Bruins are the athletic teams that represent the
+    University of California, Los Angeles. The Bruin men's and women's teams
+    participate in NCAA Division I as part of the Pac-12 Conference and the
+    Mountain Pacific Sports Federation (MPSF). For football, they are in the
+    Football Bowl Subdivision of Division I (formerly Division I-A). UCLA is
+    second to only Stanford University as the school with the most NCAA team
+    championships at 121 NCAA team championships. UCLA offers 11 varsity
+    sports programs for men and 14 for women.
+
+    UCLA is scheduled to join the Big Ten Conference with their crosstown
+    rival, USC, in 2024.
+  question: What are UCLA's sports teams called?
+task_description: 'Report the given school team name/mascot'
