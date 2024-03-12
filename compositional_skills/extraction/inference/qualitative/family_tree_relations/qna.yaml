@@ -10,7 +10,7 @@ seed_examples:
   - question: |
       If Rakesh's father is Sunil's son, what is Rakesh to Sunil?
     answer: |
-      Rakesh is Sunil's son. (Rakesh's father is Sunil's son, so Sunil is Rakesh's father.)
+      Rakesh is Sunil's grandson. (Sunil's son is father of Rakesh, so Rakesh is Sunil's son's son i.e., grandson)
 
   - question: |
       If Sarita is Prakash's mother's only daughter, what is Sarita to Prakash?
