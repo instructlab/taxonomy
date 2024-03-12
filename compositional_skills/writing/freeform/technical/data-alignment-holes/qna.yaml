@@ -1,9 +1,9 @@
 created_by: acmel
 seed_examples:
-- answer: 'Computer processors access information according to some rules: a byte can be at any place, but 32-bit integers need to be in addresses that are multiple
-           of 4 bytes, 64-bit on multiple of 8 bytes, etc.
-           When a member of type char is followed by another of type int, the structure will be 8 bytes long instead of 5 because the second member will be aligned
-           3 bytes after the first.
+- answer: 'Computer processors access information according to some rules: a byte can be at any place, but 32-bit integers need
+           to be in addresses that are multiple of 4 bytes, 64-bit on multiple of 8 bytes, etc.
+           When a member of type char is followed by another of type int, the structure will be 8 bytes long instead of 5 because
+           the second member will be aligned 3 bytes after the first.
     '
   question: What are alingment holes in data structures?
 
