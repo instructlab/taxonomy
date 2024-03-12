@@ -1,0 +1,9 @@
+created_by: abrugaro
+seed_examples:
+- answer: |
+    A Laud is a plucked string musical instrument, whose origin dates back to the Middle Ages. It is similar to the bandurria, but with a larger body and less high-pitched sound than it.
+  question: What type of instrument a laud is?
+- answer: |
+    The tuning of the laud, by pairs of strings, from the thinnest strings to the thickest, is as follows:
+    A, E, B, F#, C#, G#.
+  question: What is the tuning of a laud? 

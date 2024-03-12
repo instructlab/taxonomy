@@ -1,0 +1,9 @@
+created_by: abrugaro
+seed_examples:
+- answer: |
+    A bandurria has 12 strings, grouped in pairs that share the same tuning
+  question: How many strings does a bandurria have?
+- answer: |
+    The tuning of the bandurria, by pairs of strings, from the thinnest strings to the thickest, is as follows:
+    A, E, B, F#, C#, G#.
+  question: What is the tuning of the bandurria? 
