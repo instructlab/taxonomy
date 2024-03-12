@@ -1,0 +1,24 @@
+task_description: |
+  The skill enables determining the relationship in a family tree or blood relations with necessary reasoning
+created_by: code2automate
+seed_examples:
+  - question: |
+      If A is B's brother, and B is C's sister, what is A to C?
+    answer: |
+      A is also C's brother. (A and B are siblings, and B and C are siblings, so A and C are also siblings.)
+
+  - question: |
+      If Rakesh's father is Sunil's son, what is Rakesh to Sunil?
+    answer: |
+      Rakesh is Sunil's son. (Rakesh's father is Sunil's son, so Sunil is Rakesh's father.)
+
+  - question: |
+      If Sarita is Prakash's mother's only daughter, what is Sarita to Prakash?
+    answer: |
+      Sarita is Prakash's sister. (Sarita is Prakash's mother's only daughter, so Sarita and Prakash share the same mother.)
+
+  - question: |
+      If Robert's daughter is Emma's mother, what is Robert to Emma?
+    answer: |
+      Robert is Emma's grandfather. (Robert's daughter is Emma's mother, so Robert is Emma's maternal grandfather.)
+   
