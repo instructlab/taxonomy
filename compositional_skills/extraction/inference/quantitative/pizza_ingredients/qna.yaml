@@ -1,0 +1,52 @@
+created_by: runcom
+seed_examples:
+  - answer: 'flour, 1739g\nwater, 1391\nsalt, 35g\noil, 35g\nyeast, 12.30g'
+    context: >
+      4 pizza dough, each weighting 800 grams, hydrated at 80% with 25 grams of
+
+      salt and oil per liter of water, with 24 hours of total rest time, of
+      which 23
+
+      in the fridge. The temperature to rest outside the fridge for the
+      remaining
+
+      1 hour is going to be 25 degrees Celsius
+    question: >
+      Give me the amount in grams of each ingredients to make a tray pizza. I
+      need
+
+      the amount of flour, water, salt, oil and yeast after I tell you
+
+      the number of pizza dough I want to make, their weight per dough in grams,
+
+      the hydration percentage, salt and oil weight in grams per liter of water,
+
+      total rest time in hours, total rest time in the fridge in hours
+
+      and temperature to rest outside the fridge in degree Celsius.
+  - answer: 'flour, 119g\nwater, 77\nsalt, 2g\noil, 2g\nyeast, 0.50g'
+    context: >
+      2 pizza dough, each weighting 200 grams, hydrated at 65% with 25 grams of
+
+      salt and oil per liter of water, with 24 hours of total rest time, of
+      which 18
+
+      in the fridge. The temperature to rest outside the fridge for the
+      remaining
+
+      6 hours is going to be 20 degrees Celsius.
+    question: >
+      Given the number of pizza dough I want to make, their weight per dough in
+      grams,
+
+      the hydration percentage, salt and oil weight in grams per liter of water,
+
+      total rest time in hours, total rest time in the fridge in hours
+
+      and temperature to rest outside the fridge in degree Celsius, tell me
+
+      how much flour, water, salt, oil and yeast I need to make a tray pizza.
+
+      Give me the results in grams.
+task_description: ingredients to make tray pizza
+
