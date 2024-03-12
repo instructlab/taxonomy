@@ -69,10 +69,10 @@ Skills require a much smaller volume of content to contribute. A skill
 contribution to the taxonomy tree can be just a few lines of YAML (its
 `qna.yaml` file - "qna" is short for "questions and answers") in its entirety:
 
-Each `qna.yaml` file is required to contain a minimum of three question and
+Each `qna.yaml` file is required to contain a minimum of five question and
 answer pairs. The `qna.yaml` format should include the following fields:
 
-- `seed_examples` (three or more examples of question and answer pairs)
+- `seed_examples` (five or more examples of question and answer pairs)
 - `created_by` (your GitHub username)
 - `task_description` (an optional description of the skill).
 
@@ -213,10 +213,10 @@ Each knowledge node in the tree has a `qna.yaml` similar to the format of the
 `knowledge_documents`. The knowledge document formats currently supported are
 markdown (.md) and text (.txt).
 
-Each `qna.yaml` file is required to contain a minimum of three question-answer
+Each `qna.yaml` file is required to contain a minimum of five question-answer
 pairs. The `qna.yaml` format should include the following fields:
 
-- `seed_examples` (three or more examples sourced from the provided knowledge
+- `seed_examples` (five or more examples sourced from the provided knowledge
   documents)
 - `created_by` (your GitHub username)
 - `task_description` (an optional description of the knowledge).
@@ -513,7 +513,7 @@ You can contribute to the taxonomy in the following two ways:
     - Add new examples to the qna.yaml files as a new entry to the list
 
 2. Adding **new branches/skills** corresponding to the existing domain:
-    - You can add new folders under the corresponding category
+    - You can add new folders under the corresponding category (replace any spaces ` ` with underscores `_`)
     - Create a new qna.yaml file with examples for the new skill
   
 ### Detailed Contribution Instructions
@@ -566,6 +566,7 @@ It can be a little tricky mechanically to create directories in GitHub's web UI:
 * Click the "Add File" dropdown button in the upper right corner of the screen.
 * Start typing the name of the first directory you want to create. In the animation below we use "jokes/" as the first directory. 
 * When you type the "/" character, the directory name will "lock in" and you'll be able to type the next of the next subdirectory under it, as desired. Below we typed "knock-knock/" as the next directory name.
+* Make sure to replace any spaces (` `) in the folder name with underscores (`_`)
 * Finally, you'll type the file name. The file name should always be qna.yaml. (qna stands for "Question aNd Answer.")  
 
 Here's an animated graphic to show how it works:
