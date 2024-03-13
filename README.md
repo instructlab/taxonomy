@@ -13,7 +13,7 @@ method.
 
 ## Learning
 
-Learn about the concepts of "skills" and "knowledge" in our [InstructLab Community Learning Guide](https://github.com/instruct-lab/community/docs/README.md).
+Learn about the concepts of "skills" and "knowledge" in our [InstructLab Community Learning Guide](https://github.com/instruct-lab/community/blob/main/docs/README.md).
 
 ## Getting Started with Skill Contributions
 
@@ -93,7 +93,7 @@ in terms of a taxonomy contribution:
 
 #### Grounded compositional skill: YAML example
 
-Remember that [grounded compositional skills](https://github.com/instruct-lab/community/learning/SKILLS_GUIDE.md) require additional context.
+Remember that [grounded compositional skills](https://github.com/instruct-lab/community/blob/main/docs/SKILLS_GUIDE.md) require additional context.
 
 This example assumes the GitHub username `mairin`:
 
