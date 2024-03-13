@@ -1,0 +1,29 @@
+---
+created_by: drugilsberg
+seed_examples:
+  - answer: 'Sanh, Victor, Albert Webson, Colin Raffel, Stephen H. Bach, Lintang Sutawika, Zaid Alyafeai, Antoine Chaffin et al. "Multitask prompted training
+      enables zero-shot task generalization." arXiv preprint arXiv:2110.08207 (2021).'
+    question: 'Format the following .bib into Chicago style: @article{sanh2021multitask, title={Multitask prompted training enables zero-shot task generalization},
+      author={Sanh, Victor and Webson, Albert and Raffel, Colin and Bach, Stephen H and Sutawika, Lintang and Alyafeai, Zaid and Chaffin, Antoine and Stiegler,
+      Arnaud and Scao, Teven Le and Raja, Arun and others}, journal={arXiv preprint arXiv:2110.08207}, year={2021} }'
+  - answer: 'Manica, Matteo, Jannis Born, Joris Cadow, Dimitrios Christofidellis, Ashish Dave, Dean Clarke, Yves Gaetan Nana Teukam et al. "Accelerating
+      material design with the generative toolkit for scientific discovery." npj Computational Materials 9, no. 1 (2023): 69.'
+    question: 'Format the following .bib into Chicago style: @article{manica2023accelerating, title={Accelerating material design with the generative toolkit
+      for scientific discovery}, author={Manica, Matteo and Born, Jannis and Cadow, Joris and Christofidellis, Dimitrios and Dave, Ashish and Clarke, Dean
+      and Teukam, Yves Gaetan Nana and Giannone, Giorgio and Hoffman, Samuel C and Buchan, Matthew and others}, journal={npj Computational Materials}, volume={9},
+      number={1}, pages={69}, year={2023}, publisher={Nature Publishing Group UK London} }'
+  - answer: 'Sudalairaj, Shivchander, Abhishek Bhandwaldar, Aldo Pareja, Kai Xu, David D. Cox, and Akash Srivastava. "LAB: Large-Scale Alignment for ChatBots."
+      arXiv preprint arXiv:2403.01081 (2024).'
+    question: 'Format the following .bib into Chicago style: @article{sudalairaj2024lab, title={LAB: Large-Scale Alignment for ChatBots}, author={Sudalairaj,
+      Shivchander and Bhandwaldar, Abhishek and Pareja, Aldo and Xu, Kai and Cox, David D and Srivastava, Akash}, journal={arXiv preprint arXiv:2403.01081},
+      year={2024} }'
+  - answer: 'Vaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, and Illia Polosukhin. "Attention is
+      all you need." Advances in neural information processing systems 30 (2017).'
+    question: 'Format the following .bib into Chicago style: @article{vaswani2017attention,title={Attention is all you need}, author={Vaswani, Ashish and
+      Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia}, journal={Advances
+      in neural information processing systems}, volume={30}, year={2017} }'
+  - answer: 'Tian, Katherine, Eric Mitchell, Huaxiu Yao, Christopher D. Manning, and Chelsea Finn. "Fine-tuning language models for factuality." arXiv preprint
+      arXiv:2311.08401 (2023).'
+    question: 'Format the following .bib into Chicago style: @article{tian2023fine, title={Fine-tuning language models for factuality}, author={Tian, Katherine
+      and Mitchell, Eric and Yao, Huaxiu and Manning, Christopher D and Finn, Chelsea}, journal={arXiv preprint arXiv:2311.08401}, year={2023} }'
+task_description: 'Formatting .bib references following the Chicago style.'
