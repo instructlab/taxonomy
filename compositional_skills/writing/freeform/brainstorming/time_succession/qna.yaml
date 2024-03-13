@@ -8,3 +8,26 @@ seed_examples:
     question: >-
       The first man was born in 1976 and the second man was born in 1980 which
       one is older ?
+  - answer: >-
+      The person born in 1970 is older then the person born in 1980 as it is
+      older by 10 years as difference between 1980 and 1970 is 10 years.
+    question: >-
+      Which person is older and by how many years when one person is born 1970
+      and other person is born in 1980 ?
+  - answer: >-
+      The person born in 10BC would have 42 years as we add 10 plus 32, he person
+      born in 10AD would be 22 years old as we just substrace 10 from 32.
+    question: >-
+      When someone was born 10b.c.  and man in the year 10 and we have year 32  how old are these people?
+  - answer: >-
+      As both person were born in the same year, the one who has been born in the earlier
+      month is older. As the September follows the July, the person born July is older.
+    question: >-
+      One person was born in July and other in September in the same year, Who is older ?
+  - answer: >-
+      If today is 1st August 2023, then the first man was born on 1st Aug 2023 - 33 years = 1st Aug 1990.
+      The second man, who is younger by 6 years, was born on 1st August 1990 + 6 years = 1st Aug 1996.
+      Therefore, the second man was born in 1984.
+    question: >-
+      One man has 33 years and the second man is younger by 6 years.
+      Both were born on 1st. August. In which year second man was born if today is 1st. August 2023?
