@@ -76,6 +76,67 @@ seed_examples:
       Help me draft a LinkedIn Profile summary for me. I am an experienced
       software developer with expertise in Quality Assurance automation. I am
       aspiring to transition my career in a scrum master role.
+  - answer: >
+      Certainly! Here's a draft for your LinkedIn profile summary:
+      Passionate and results-driven software developer with over 5 years of hands-on
+      experience specializing in Frontend web development. Proficient in leveraging
+      cutting-edge technologies to craft seamless user experiences and deliver
+      high-quality solutions.
+      My expertise spans across React JS, NodeJS, and Streamlit frameworks,
+      where I've demonstrated a knack for transforming intricate concepts into intuitive
+      and efficient applications. Whether it's architecting robust frontend systems
+      or optimizing backend processes, I thrive on pushing the boundaries of what's
+      possible in web development.
+      Throughout my career, I've been dedicated to staying abreast of emerging
+      trends and best practices in the industry, ensuring that my skill set
+      remains at the forefront of innovation. I'm committed to continuous learning
+      and collaboration, always eager to contribute to dynamic teams and tackle
+      new challenges head-on.
+      Let's connect to discuss how my experience and skills can contribute
+      to your projects and drive tangible results in the ever-evolving
+      landscape of software development.
+    question: >
+      Help me draft a LinkedIn profile summary for me. I am an experienced
+      software developer with 5 years of experience in Frontend web development.
+      Primarily, I have experience across React JS, NodeJS and Streamlit
+      framewroks.
+  - answer: >
+      Experienced Software Developer & Project Manager with a Passion for
+      Innovation
+
+      With a decade of hands-on experience in software development
+      coupled with proficient project management skills, I bring a unique blend of
+      technical expertise and strategic vision to the table. Throughout my career,
+      I've been dedicated to delivering high-quality software solutions while
+      effectively leading teams and projects to success.
+
+      Technical Proficiency: Proficient in various programming languages and frameworks,
+      I have a deep understanding of software development methodologies and best practices. My
+      technical prowess enables me to architect robust and scalable solutions
+      tailored to meet the specific needs of each project.
+
+      Project Management Excellence: As a seasoned project manager, I excel in coordinating
+      cross-functional teams, managing resources, and driving projects from
+      conception to completion. I thrive in dynamic environments, adept at
+      handling multiple priorities while maintaining a sharp focus on delivering
+      results on time and within budget.
+
+      Innovation and Problem-Solving: I am passionate about innovation and
+      thrive on solving complex challenges.
+      Whether it's optimizing processes, implementing cutting-edge technologies,
+      or identifying opportunities for improvement, I'm always eager to leverage
+      my skills to drive innovation and drive business success.
+
+      Collaborative Leader: I believe in the power of collaboration and teamwork. By fostering
+      an environment of open communication and mutual respect, I empower team
+      members to reach their full potential and foster a culture of continuous
+      learning and growth.
+
+      Let's connect to explore opportunities for collaboration and innovation
+      in the ever-evolving world of software development and project management.
+    question: >
+      Help me draft a LinkedIn profile summary for me. I am an experienced
+      software developer with 10 years of experience in Project Management.
 task_description: >-
   This skill helps the model write a LinkedIn profile summary as per provided
   input
