@@ -1,0 +1,208 @@
+created_by: jeremychoi
+task_description: convert a message to the SARIF format
+seed_examples:
+- answer: |
+    To convert the text result message "Remote Code Execution" to the SARIF format, use the following Python script as a starting point:
+    ```python     
+    def convert_text_message_to_sarif(text_message):    
+        sarif_message = { 
+            "version": "2.1.0",
+            "runs": [
+                {
+                    "tool": {
+                         "driver": {
+                             "name": "scanner1",
+                             "version": "1.0.0"
+                         }
+                    },
+                    "results": [
+                        {
+                            "message": "Remote Code Execution",
+                            "level": "warning",
+                            "locations": {
+                                "physicalLocation": {
+                                    "artifactLocation": {
+                                        "uri": "file:///path/to/your/python/codebase"
+                                    },
+                                    "region" {
+                                        "startLine": 1,
+                                        "endLine": 43,
+                                        "snippet": {
+                                            "text": "os.system(user_input)\n\n"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+        return sarif_message
+    ```
+    Replace `"message": ""` with the desired text message, such as "Remote Code Execution". The resulting SARIF message can be used to represent the security issue in the SARIF format. Keep in mind that this is just a basic example, and the actual conversion process might be more complex depending on the specific text result message format and the desired SARIF format version. Also, the SARIF specification is continuously evolving, so it's essential to stay updated on the latest version and its requirements when working with SARIF data. 
+  question:  convert the text result message, "Remote Code Execution", to the SARIF format
+- answer: |
+    To convert the text result message "Hello World" to the SARIF format, use the following Python script as a starting point:
+    ```python
+    def convert_text_message_to_sarif(text_message): 
+        sarif_message = { 
+            "version": "2.1.0",
+            "runs": [ 
+                {   
+                    "tool": {
+                         "driver": { 
+                             "name": "scanner1",
+                             "version": "1.0.0"
+                         } 
+                    },
+                    "results": [ 
+                        {   
+                            "message": "Hello World",
+                            "level": "warning",
+                            "locations": {
+                                "physicalLocation": {
+                                    "artifactLocation": {
+                                        "uri": "file:///path/to/your/python/codebase"
+                                    },
+                                    "region" { 
+                                        "startLine": 1,
+                                        "endLine": 43,
+                                        "snippet": {
+                                            "text": "os.system(user_input)\n\n"
+                                        }
+                                    }
+                                } 
+                            } 
+                        }   
+                    ] 
+                } 
+            ] 
+        }
+        return sarif_message
+    ```
+    Replace `"message": ""` with the desired text message, such as "Hello World". The resulting SARIF message can be used to represent the security issue in the SARIF format. Keep in mind that this is just a basic example, and the actual conversion process might be more complex depending on the specific text result message format and the desired SARIF format version. Also, the SARIF specification is continuously evolving, so it's essential to stay updated on the latest version and its requirements when working with SARIF data. 
+  question:  convert a result message such as, "Hello World", to the SARIF format
+- answer: |
+    To convert the text result message "Hello World" to the SARIF format, use the following Python script as a starting point:
+    ```python
+    def convert_text_message_to_sarif(text_message): 
+        sarif_message = { 
+            "version": "2.1.0",
+            "runs": [ 
+                {   
+                    "tool": {
+                         "driver": { 
+                             "name": "scanner1",
+                             "version": "1.0.0"
+                         } 
+                    },
+                    "results": [ 
+                        {   
+                            "message": "Hello World",
+                            "level": "warning",
+                            "locations": {
+                                "physicalLocation": {
+                                    "artifactLocation": {
+                                        "uri": "file:///path/to/your/python/codebase"
+                                    },
+                                    "region" { 
+                                        "startLine": 1,
+                                        "endLine": 43,
+                                        "snippet": {
+                                            "text": "os.system(user_input)\n\n"
+                                        }
+                                    }
+                                } 
+                            } 
+                        }   
+                    ] 
+                } 
+            ] 
+        }
+        return sarif_message
+    ```
+    Replace `"message": ""` with the desired text message, such as "Hello World". The resulting SARIF message can be used to represent the security issue in the SARIF format. Keep in mind that this is just a basic example, and the actual conversion process might be more complex depending on the specific text result message format and the desired SARIF format version. Also, the SARIF specification is continuously evolving, so it's essential to stay updated on the latest version and its requirements when working with SARIF data. 
+  question: rewrite a text message such as "Hello World" in the SARIF format
+- answer: |
+    To write a text message such as "Hello World" in the SARIF format to integrate with other security automation tools, use the following Python script as a starting point:
+    ```python
+    def convert_text_message_to_sarif(text_message): 
+        sarif_message = { 
+            "version": "2.1.0",
+            "runs": [
+                {   
+                    "tool": {
+                         "driver": {
+                             "name": "scanner1",
+                             "version": "1.0.0"
+                         }
+                    },
+                    "results": [
+                        {   
+                            "message": "Hello World",
+                            "level": "warning",
+                            "locations": {
+                                "physicalLocation": {
+                                    "artifactLocation": {
+                                        "uri": "file:///path/to/your/python/codebase"
+                                    },
+                                    "region" { 
+                                        "startLine": 1,
+                                        "endLine": 43,
+                                        "snippet": {
+                                            "text": "os.system(user_input)\n\n"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+        return sarif_message
+    ```
+    Replace `"message": ""` with the desired text message, such as "Hello World". The resulting SARIF message can be used to represent the security issue in the SARIF format. Keep in mind that this is just a basic example, and the actual conversion process might be more complex depending on the specific text result message format and the desired SARIF format version. Also, the SARIF specification is continuously evolving, so it's essential to stay updated on the latest version and its requirements when working with SARIF data.
+  question: write a text message such as "Hello World" in the SARIF format
+- answer: |
+    To write a text security log such as "SQL injection" in the SARIF format to integrate with other security automation tools, use the following Python script as a starting point:
+    ```python
+    def convert_text_message_to_sarif(text_message): 
+        sarif_message = { 
+            "version": "2.1.0",
+            "runs": [
+                {   
+                    "tool": {
+                         "driver": {
+                             "name": "scanner1",
+                             "version": "1.0.0"
+                         }
+                    },
+                    "results": [
+                        {   
+                            "message": "SQL injection",
+                            "level": "warning",
+                            "locations": {
+                                "physicalLocation": {
+                                    "artifactLocation": {
+                                        "uri": "file:///path/to/your/python/codebase"
+                                    },
+                                    "region" { 
+                                        "startLine": 1,
+                                        "endLine": 43,
+                                        "snippet": {
+                                            "text": "os.system(user_input)\n\n"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+        return sarif_message
+    ```
+    Replace `"message": ""` with the desired text message, such as "SQL injection". The resulting SARIF message can be used to represent the security issue in the SARIF format. Keep in mind that this is just a basic example, and the actual conversion process might be more complex depending on the specific text result message format and the desired SARIF format version. Also, the SARIF specification is continuously evolving, so it's essential to stay updated on the latest version and its requirements when working with SARIF data.
+  question: Write a text security log such as "SQL injection" in the SARIF format
