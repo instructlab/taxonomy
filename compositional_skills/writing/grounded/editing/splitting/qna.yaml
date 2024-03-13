@@ -1,0 +1,73 @@
+task_description: |
+  Split the text into multiple lines per length
+created_by: qinpingli
+seed_examples:
+  - context: |
+      Xxxxx xxx xxxx xxxxxx, xxx xx xxxxxxxx xxxx \
+      xx xxxxx xxx xx x xxxxxx xxx. Xxxx xxxx xxx xxx.
+    question: |
+      Split the following text into multiple lines, limited to \
+      "20" characters per line:
+    answer: |
+      Xxxxx xxx xxxx xxxxx
+
+      x, xxx xx xxxxxxxx x
+
+      xxx xx xxxxx xxx xx \
+
+      x xxxxxx xxx. Xxxx x
+
+      xxx xxx xxx.
+  - context: |
+      Xxxxx xxx xxxx xxxxxx, xxx xx  xxxxx. Xxxx xxxx xxx xxx.
+    question: |
+      Split the following text into multiple lines, limited to \
+      "8" characters per line:
+    answer: |
+      Xxxxx xx
+
+      x xxxx x
+
+      xxxxx, x
+
+      xx xx  x
+
+      xxxx. Xx
+
+      xx xxxx \
+
+      xxx xxx.
+  - context: |
+      Xxxxx xxx xxxx xxxxxx, xxx xx  xxxxx. Xxxx xxxx \
+      xxx xxx. Xxxxx xx x xxxx xxxx xxxx, X xxxx xxx.
+    question: |
+      Split the following text into multiple lines, limited to \
+      "32" characters per line:
+    answer: |
+      Xxxxx xxx xxxx xxxxxx, xxx xx  x
+
+      xxxx. Xxxx xxxx xxx xxx. Xxxxx x
+
+      x x xxxx xxxx xxxx, X xxxx xxx.
+  - context: |
+      Xxxxx xxx xxxx xxxxxx, xxx xx  xxxxx. Xxxx xxxx \
+      xxx xxx. Xxxxx xx x xxxx xxxx xxxx, X xxxx xxx.
+    question: |
+      Split the following text into multiple lines, limited to \
+      "44" characters per line:
+    answer: |
+      Xxxxx xxx xxxx xxxxxx, xxx xx  xxxxx. Xxxx x
+
+      xxx xxx xxx. Xxxxx xx x xxxx xxxx xxxx, X xx
+
+      xx xxx.
+  - context: |
+      Xxxxx xxx xxxx xxxxxx, xxx xx  xxxxx. Xxxx xxxx \
+      xxx xxx. Xxxxx xx x xxxx xxxx xxxx, X xxxx xxx.
+    question: |
+      Split the following text into multiple lines, limited to \
+      "50" characters per line:
+    answer: |
+      Xxxxx xxx xxxx xxxxxx, xxx xx  xxxxx. Xxxx xxxx xx
+
+      x xxx. Xxxxx xx x xxxx xxxx xxxx, X xxxx xxx.
