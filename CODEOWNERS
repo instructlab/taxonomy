@@ -8,4 +8,6 @@
 #  https://help.github.com/en/articles/about-code-owners
 #
 
+/docs/ @mairin @juliadenham
+*.md   @mairin @juliadenham
 * @instruct-lab/taxonomy-approvers
