@@ -1,0 +1,22 @@
+created_by: vcandapp
+seed_examples:
+  - question: Find the odd word from this word list - Table, Chair, Cupboard, Computer, door
+    answer: Computer
+    # Hint: All other are furniture except computer. computer is an electronic device
+  - question: Find the odd word from this word list - Salt, Black pepper, Chilli, Coriander, Jeera
+    answer: Salt
+    # Hint: All other are spices except Salt. Salt is a taste enhancer
+  - question: Find the odd word from this word list - Bat, Spider, Mosquito, Butterfly, Cockroach
+    answer: Bat
+    # Hint: Only bat is a mammal, rest are not
+  - question: Find the odd word from this word list - java, coffee, linux, html, wordpad
+    answer: coffee
+    # Hint: All words except coffee are related to IT/computer, coffee is a drink
+  - question: Find the odd word from this word list - sugar, butter, oven, stairs, milk
+    answer: stairs
+    # Hint: All other are items are used in/for cooking
+  - question: Find the odd word from this word list - bus, tree, cart, car, walk
+    answer: tree
+    # Hint: All other items except tree are related to transportation
+task_description: Four out of five are alike in a certain way and hence form a group.
+                  Find out which one does not belong to the group?
