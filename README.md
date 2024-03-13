@@ -21,11 +21,10 @@ Skills require a much smaller volume of content to contribute. A skill
 contribution to the taxonomy tree can be just a few lines of YAML (its
 `qna.yaml` file - "qna" is short for "questions and answers") in its entirety:
 
-Each `qna.yaml` file is required to contain a minimum of three question and
+Each `qna.yaml` file is required to contain a minimum of five question and
 answer pairs. The `qna.yaml` format should include the following fields:
 
-- `seed_examples` (three or more examples of question and answer pairs)
-- `created_by` (your GitHub username)
+- `seed_examples` (five or more examples of question and answer pairs)
 - `task_description` (an optional description of the skill).
 
 > [!TIP]
@@ -44,7 +43,6 @@ This example assumes the GitHub username `mairin`:
 ``` yaml
 task_description: |
   The pun task enables the telling of funny pun-based jokes.
-created_by: mairin # Use your GitHub username; only one creator supported
 seed_examples:
   - question: Tell me a pun about birds.
     answer: |  # The | is needed to escape characters like ` or '
@@ -102,7 +100,6 @@ This example assumes the GitHub username `mairin`:
 ``` yaml
 task_description: | 
     This skill provides the ability to read a markdown-formatted table.
-created_by: mairin # Use your GitHub username; only one creator supported
 seed_examples:
   - context: |
       | **Breed**      | **Size**     | **Barking** | **Energy** |
@@ -175,12 +172,11 @@ Each knowledge node in the tree has a `qna.yaml` similar to the format of the
 `knowledge_documents`. The knowledge document formats currently supported are
 markdown (.md) and text (.txt).
 
-Each `qna.yaml` file is required to contain a minimum of three question-answer
+Each `qna.yaml` file is required to contain a minimum of five question-answer
 pairs. The `qna.yaml` format should include the following fields:
 
-- `seed_examples` (three or more examples sourced from the provided knowledge
+- `seed_examples` (five or more examples sourced from the provided knowledge
   documents)
-- `created_by` (your GitHub username)
 - `task_description` (an optional description of the knowledge).
 
 #### Knowledge: yaml example
@@ -188,7 +184,6 @@ pairs. The `qna.yaml` format should include the following fields:
 ``` yaml
 task_description: |
   Knowledge about Taylor Swift's music.
-created_by: mairin   # Use your GitHub username; only one creator supported
 seed_examples:
   - question: |
       Is Taytay coming to Boston in 2024?
@@ -291,10 +286,9 @@ referenced above might look like in the tree:
 
 Taxonomy skill files can be any valid [YAML](https://yaml.org/) file ending in
 `.yaml` containing a set of key/value entries, in which the following three
-keys are recognized: `task_description`, `created_by`, and `seed_examples`.
+keys are recognized: `task_description` and `seed_examples`.
 
 * The value of the `task_description` key can be any string.
-* The value of the `created_by` key can be any string.
 * The value of the `seed_examples` key is a collection of one or more key/value entries in which the
 three recognized keys are: `context`, `question`, and `answer`, each of which can have any string
 as value. For an entry to be valid, it **MUST** have the question and answer specified. 
@@ -302,15 +296,14 @@ as value. For an entry to be valid, it **MUST** have the question and answer spe
 Other keys at any level are currently ignored.
 
 To make these files easier and faster for humans to read, it is recommended to 
-specify the `task_description` first, followed by `created_by`, and finally 
-`seed_examples`. In `seed_examples`, it is recommended to specify the `context` 
+specify the `task_description` first, followed by `seed_examples`. 
+In `seed_examples`, it is recommended to specify the `context` 
 first (if applicable), followed by the `question`, and finally the `answer`.
 
 So in essence the format looks something like this:
 
 ``` yaml
 task_description: <string>
-created_by: <string>
 seed_examples:
   - question: <string>
     answer: |
@@ -466,6 +459,9 @@ This taxonomy repository will be used as the seed to synthesize the training dat
 
 By contributing your skills and knowledge to this repository, you will see your changes built into an LLM within days of your contribution rather than months or years! If you are working with a model and notice its knowledge or ability lacking, you could correct it by contributing knowledge or skills and check if it's improved once your changes are built.
 
+While public contributions are welcome to help drive community progress, you can also fork this repository under [the Apache License, Version 2.0](LICENSE), add your own internal skills, and train your own models internally.
+However, you may need your own access to significant compute infrastructure to perform sufficient retraining.
+
 ## Ways to Contribute
 
 You can contribute to the taxonomy in the following two ways: 
@@ -475,7 +471,7 @@ You can contribute to the taxonomy in the following two ways:
     - Add new examples to the qna.yaml files as a new entry to the list
 
 2. Adding **new branches/skills** corresponding to the existing domain:
-    - You can add new folders under the corresponding category
+    - You can add new folders under the corresponding category (replace any spaces ` ` with underscores `_`)
     - Create a new qna.yaml file with examples for the new skill
   
 ### Detailed Contribution Instructions
@@ -528,6 +524,7 @@ It can be a little tricky mechanically to create directories in GitHub's web UI:
 * Click the "Add File" dropdown button in the upper right corner of the screen.
 * Start typing the name of the first directory you want to create. In the animation below we use "jokes/" as the first directory. 
 * When you type the "/" character, the directory name will "lock in" and you'll be able to type the next of the next subdirectory under it, as desired. Below we typed "knock-knock/" as the next directory name.
+* Make sure to replace any spaces (` `) in the folder name with underscores (`_`)
 * Finally, you'll type the file name. The file name should always be qna.yaml. (qna stands for "Question aNd Answer.")  
 
 Here's an animated graphic to show how it works:
