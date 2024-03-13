@@ -1,1 +1,48 @@
+created_by: veda10
+seed_examples:
+- answer: '
+    Between 1 to 100, there are 20 occurrences of digit 9.
+    9,19,29,39,49,59,69, 79,89,90,91,92,93,94,95,96,97,98 are the numbers
+    where 9 is occurred once and 99 is the number where 9 has occurred twice.
 
+    '
+  question: A book has 100 pages. If you count the pages from 1 to 100, how many times
+    does the number 9 appear?
+- answer: '
+    The entire 5cm of the eraser is left. Using half of the pencil does not
+    affect the length of the eraser. So, if the eraser was 5 cm long to begin
+    with, it remains 5 cm long regardless of how much of the pencil is used.
+
+    '
+  question: A pencil is 15 cm long, including a 5 cm eraser. If you use half of the
+    pencil, how much eraser is left?
+- answer: '
+    Given it takes 20 minutes to fill the bathtub with both the hot and cold taps
+    open, and both taps have the same flow rate, then each tap alone
+    contributes half the flow needed to fill the tub. Therefore, if only the
+    hot tap is open, it will take twice as long to fill the tub since only one
+    of the two sources of water is being used. So, it will take 40 minutes to
+    fill the tub with just the hot tap open.
+
+    '
+  question: If it takes 20 minutes to fill a bathtub with both the hot and cold taps
+    open, how long will it take to fill the tub if you open only the hot tap,
+    assuming it has the same flow rate as the cold tap?
+- answer: '
+    Let us say Alice age is A and Bob age is B. As per given information, 10
+    years ago Alice age was A-10 and Bob age was B-10 and also A-10= 2(B-10).
+    As A is 70, solving this we get B as 40. So Bob is 40 years old now.
+
+    '
+  question: Ten years ago, Alice was twice as old as Bob was. If Alice is now 70 years
+    old, how old is Bob?
+- answer: '
+    Workout starting time is 1:55 PM. Workout duration is 7 minutes. So the
+    workout ends after 7 minutes. Add the minutes directly to the starting
+    minute count. If it exceeds 60, adjust the overflow to hours. Since adding
+    7 minutes to 1:55 brings us past the hour, 1 hour changes to 2. 1:55 + 7
+    minutes is 2:02 PM.
+
+    '
+  question: You start a 7-minute workout at 1:55 PM. What time does it end?
+task_description: 'Mathematical puzzles'
