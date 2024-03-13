@@ -1,0 +1,74 @@
+task_description: Apply conscious language edits to given text.
+created_by: kahowell
+seed_examples:
+- question: Apply conscious language to the given text.
+  context: |
+    In order to abort the operation, press CTRL+C.
+  answer: |
+    In order to cancel the operation, press CTRL+C.
+
+- question: Apply conscious language to the given text.
+  context: |
+    There are lots of black hats attempting to exploit our systems.
+  answer: |
+    There are lots of unethical hackers attempting to exploit our systems.
+
+- question: Apply conscious language to the given text.
+  context: |
+    There are lots of white hats working on securing our systems.
+  answer: |
+    There are lots of ethical hackers working on securing our systems.
+
+- question: Apply conscious language to the given text.
+  context: |
+    The DDOS attack crippled our DNS services.
+  answer: |
+    The DDOS attack degraded our DNS services.
+
+- question: Apply conscious language to the given text.
+  context: |
+    The AI hallucinated some wrong syntax.
+  answer: |
+    The AI generated inaccurate infromation having wrong syntax.
+
+- question: Apply conscious language to the given text.
+  context: |
+    The master repo copy has the most up-to-date code.
+  answer: |
+    The main repo copy has the most up-to-date code.
+
+- question: Apply conscious language to the given text.
+  context: |
+    The database uses a master/slave failover strategy.
+  answer: |
+    The database uses a primary/secondary failover strategy.
+
+- question: Apply conscious language to the given text.
+  context: |
+    We use a master/slave architecture to perform updates without downtime.
+  answer: |
+    We use a primary/replica architecture to perform updates without downtime.
+
+- question: Apply conscious language to the given text.
+  context: |
+    We need to perform a sanity-check before proceeding.
+  answer: |
+    We need to perform a confidence check before proceeding.
+
+- question: Apply conscious language to the given text.
+  context: |
+    Our internal network is segregated from our external network for security reasons.
+  answer: |
+    Our internal network is segmented off from our external network for security reasons.
+
+- question: Apply conscious language to the given text.
+  context: |
+    Users in the whitelist are allowed to use our application.
+  answer: |
+    Users in the allowlist are allowed to use our application.
+
+- question: Apply conscious language to the given text.
+  context: |
+    Users in the blacklist are not allowed to use our application.
+  answer: |
+    Users in the denylist are not allowed to use our application.
