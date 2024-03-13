@@ -1,0 +1,11 @@
+documentation:
+- CODE_OF_CONDUCT.md
+- README.md
+- CONTRIBUTING.md
+- docs/**/*
+
+knowledge:
+- knowledge/**/*
+
+skill:
+- compositional_skills/**/*
