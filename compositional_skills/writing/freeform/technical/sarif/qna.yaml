@@ -265,4 +265,3 @@ seed_examples:
       essential to stay updated on the latest version and its requirements when
       working with SARIF data.
     question: Write a text security log such as "SQL injection" in the SARIF format
-
