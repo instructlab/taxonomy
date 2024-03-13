@@ -1,0 +1,55 @@
+created_by: mchoma
+task_description: >-
+  This skill provides the ability to find version matching between upstream
+  project and downstream product
+seed_examples:
+  - context: |
+      JBoss EAP Version     WildFly Version
+      8.0     28
+      7.4     23
+      7.3     18
+      7.2     14
+      7.1     11
+      7.0     10
+    question: What Wildfly version is EAP 7.4 based on?
+    answer: EAP 7.4 is based on Wildfly 23.
+  - context: |
+      JBoss EAP Version     WildFly Version
+      8.0     28
+      7.4     23
+      7.3     18
+      7.2     14
+      7.1     11
+      7.0     10
+    question: What Wildfly version is EAP 7.3 based on?
+    answer: EAP 7.3 is based on Wildfly 18.
+  - context: |
+      JBoss EAP Version     WildFly Version
+      8.0     28
+      7.4     23
+      7.3     18
+      7.2     14
+      7.1     11
+      7.0     10
+    question: What Wildfly version is EAP 7.2 based on?
+    answer: EAP 7.2 is based on Wildfly 14.
+  - context: |
+      JBoss EAP Version     WildFly Version
+      8.0     28
+      7.4     23
+      7.3     18
+      7.2     14
+      7.1     11
+      7.0     10
+    question: What Wildfly version is EAP 7.1 based on?
+    answer: EAP 7.1 is based on Wildfly 11.
+  - context: |
+      JBoss EAP Version     WildFly Version
+      8.0     28
+      7.4     23
+      7.3     18
+      7.2     14
+      7.1     11
+      7.0     10
+    question: What Wildfly version is EAP 7.0 based on?
+    answer: EAP 7.0 is based on Wildfly 10.
