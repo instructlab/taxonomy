@@ -1,36 +1,36 @@
 @startditaa
-                    PRs with  legend           
-                    2 reviews   +------------+ 
-                        |       |backend cGRE| 
-                        v       +------------+ 
-                   +---------+  /--------\     
-/---------\ recipe |Synthetic|  |human in|     
-|mainainer+------->|Data cGRE|  |the loop|     
-\---------/        |Generator|  \--------/     
-                   +----+---++                 
-                        |                      
-                        v           +---------+
-                    synthetic --+-->|data cGRE|
-                      data      |   |publisher|
-                        |       |   +---------+
-                        v       |              
-                    +-------+   |              
-                    |trainer|   |              
-                    |   cGRE|   |              
-                    +---+---+   |              
-                        |       |              
-     +----------+       v       |              
-     |model cGRE|<-- updated    |              
-     |publisher |    model      |              
-     +----------+       |       |              
-                        v       |              
-                    +--------+  |              
-                    |PR-Bench|  |              
-                    |    cGRE|  |              
-                    +---+----+  |              
-                        |       |              
-         /-----\        v       |              
-         |merge|<-- successful -+              
-         | PRs |       PRs                     
-         \-----/                               
+                     PRs with  legend           
+                     2 reviews   +------------+ 
+                         |       |backend cGRE| 
+                         v       +------------+ 
+                    +---------+  /--------\     
+/----------\ recipe |Synthetic|  |human in|     
+|maintainer+------->|Data cGRE|  |the loop|     
+\----------/        |Generator|  \--------/     
+                    +----+---++                 
+                         |                      
+                         v           +---------+
+                     synthetic --+-->|data cGRE|
+                       data      |   |publisher|
+                         |       |   +---------+
+                         v       |              
+                     +-------+   |              
+                     |trainer|   |              
+                     |   cGRE|   |              
+                     +---+---+   |              
+                         |       |              
+      +----------+       v       |              
+      |model cGRE|<-- updated    |              
+      |publisher |    model      |              
+      +----------+       |       |              
+                         v       |              
+                     +--------+  |              
+                     |PR-Bench|  |              
+                     |    cGRE|  |              
+                     +---+----+  |              
+                         |       |              
+          /-----\        v       |              
+          |merge|<-- successful -+              
+          | PRs |       PRs                     
+          \-----/                               
 @endditaa
