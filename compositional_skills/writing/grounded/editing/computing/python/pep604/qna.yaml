@@ -1,0 +1,199 @@
+---
+task_description: >
+  Update Python code to use "|"-style, modern type unions (PEP 604)
+created_by: nphilipp
+seed_examples:
+- question: |-
+    Please convert all union types in this piece of Python code to the modern
+    style using the "|" sign:
+  context: |-
+    ```python
+    from typing import Union
+
+    def a_function(param: Union[int, float]) -> None:
+        ...
+    ```
+  answer: |-
+    ```python
+    def a_function(param: int | float) -> None:
+        ...
+    ```
+- question: |-
+    How would this piece of Python code look if its optional parameters were
+    modernized for Python 3.10 or later?
+  context: |-
+    ```python
+    from typing import Optional
+
+    def fn(foo: Optional[str]) -> str:
+        ...
+    ```
+  answer: |-
+    ```python
+    def fn(foo: str | None) -> str:
+        ...
+    ```
+- question: |-
+    Please update this piece of Python code to reduce reliance on the typing
+    module:
+  context: |-
+    ```python
+    from typing import Any, Optional, Union
+
+    def some_func(numero_uno: Any, numero_due: Optional[Union[int, str]]) -> Any:
+        ...
+    ```
+  answer: |-
+    ```python
+    from typing import Any
+
+    def some_func(numero_uno: Any, numero_due: int | str | None) -> Any:
+        ...
+    ```
+- question: |-
+    Make this piece of code use features of modern Python versions for union
+    types:
+  context: |-
+    ```
+    from pathlib import Path
+    from typing import Union
+
+    class SomeClass:
+        def some_method(self, arg_list: list[Union[str, Path]]) -> list[Path]:
+            return [Path(p) for p in arg_list]
+
+    some_obj = SomeClass()
+    print(some_obj.some_method(["/etc"]))
+    ```
+  answer: |-
+    ```
+    from pathlib import Path
+
+    class SomeClass:
+        def some_method(self, arg_list: list[str | Path]) -> list[Path]:
+            return [Path(p) for p in arg_list]
+
+    some_obj = SomeClass()
+    print(some_obj.some_method(["/etc"]))
+    ```
+- question: |-
+    How would this look with "|"-style union types?
+  context: |-
+    ```python
+    from typing import Optional, TypeVar, Union
+
+    T = TypeVar("T", bound=Union[int, float, str])
+
+    def is_greater_than(arg1: T, arg2: Optional[T] = None) -> bool:
+        if arg2 is None:
+            return True
+        return arg1 > arg2
+    ```
+  answer: |-
+    ```python
+    from typing import TypeVar
+
+    T = TypeVar("T", bound=int | float | str)
+
+    def is_greater_than(arg1: T, arg2: T | None = None) -> bool:
+        if arg2 is None:
+            return True
+        return arg1 > arg2
+    ```
+- question: |-
+    How should I use type unions in the following code?
+  context: |-
+    ```python
+    def greet(name: str, age: Optional[int] = None) -> str:
+        if age is None:
+            return f"Hello, {name}!"
+        return f"Hello, {name}, your age is {age}!"
+    ```
+  answer: |-
+    ```python
+    def greet(name: str, age: int | None = None) -> str:
+    if age is None:
+        return f"Hello, {name}!"
+    return f"Hello, {name}, your age is {age}!"
+    ```
+- question: |-
+    Can someone provide an example of how to use type unions in the following
+    code snippet?
+  context: |-
+    ```python
+    def add_numbers(numbers: list[Union[int | float]]) -> int:
+        return sum(numbers)
+    ```
+  answer: |-
+    ```python
+    def add_numbers(numbers: list[Union[int | float]]) -> int:
+        return sum(numbers)
+    ```
+- question: |-
+    Make this piece of code use type hints in the modern way:
+  context: |-
+    ```python
+    from typing import List
+    def some_function(self, arg_list: List[Union[int, float, str]]) -> List[str]:
+        return ", ".join(str(arg) for arg in arg_list)
+    ```
+  answer: |-
+    ```python
+    def some_function(self, arg_list: list[int | float | str]) -> list[str]:
+        return ", ".join(str(arg) for arg in arg_list)
+    ```
+- question: |-
+    Please convert the following code snippet to use type hints:
+  context: |-
+    ```python
+    class User:
+        pass
+
+    class Group:
+        pass
+
+    class Permission:
+        def __init__(self, principal):
+            self.principal = principal
+    ```
+  answer: |-
+    ```python
+    class User:
+        pass
+
+    class Group:
+        pass
+
+    class Permission:
+        def __init__(self, principal: User | Group) -> None:
+            self.principal = principal
+    ```
+- question: |-
+    How do I convert this code snippet to use the new syntax of type unions?
+  context: |-
+    ```python
+    from typing import List, Union
+
+    def my_function(param: List[Union[int, str]]) -> None:
+        ...
+    ```
+  answer: |-
+    ```python
+    def my_function(param: list[int | str]) -> None:
+        ...
+    ```
+- question: |-
+    How do I update how this function uses type unions?
+  context: |-
+    ```python
+    from typing import List, Union
+
+    def my_function(param: Union[List[int], List[str]]) -> None:
+        ...
+    ```
+  answer: |-
+    ```python
+    def my_function(param: list[int] | list[str]]) -> None:
+        ...
+    ```
+...
