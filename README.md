@@ -69,10 +69,10 @@ Skills require a much smaller volume of content to contribute. A skill
 contribution to the taxonomy tree can be just a few lines of YAML (its
 `qna.yaml` file - "qna" is short for "questions and answers") in its entirety:
 
-Each `qna.yaml` file is required to contain a minimum of three question and
+Each `qna.yaml` file is required to contain a minimum of five question and
 answer pairs. The `qna.yaml` format should include the following fields:
 
-- `seed_examples` (three or more examples of question and answer pairs)
+- `seed_examples` (five or more examples of question and answer pairs)
 - `created_by` (your GitHub username)
 - `task_description` (an optional description of the skill).
 
@@ -213,10 +213,10 @@ Each knowledge node in the tree has a `qna.yaml` similar to the format of the
 `knowledge_documents`. The knowledge document formats currently supported are
 markdown (.md) and text (.txt).
 
-Each `qna.yaml` file is required to contain a minimum of three question-answer
+Each `qna.yaml` file is required to contain a minimum of five question-answer
 pairs. The `qna.yaml` format should include the following fields:
 
-- `seed_examples` (three or more examples sourced from the provided knowledge
+- `seed_examples` (five or more examples sourced from the provided knowledge
   documents)
 - `created_by` (your GitHub username)
 - `task_description` (an optional description of the knowledge).
@@ -504,6 +504,9 @@ This taxonomy repository will be used as the seed to synthesize the training dat
 
 By contributing your skills and knowledge to this repository, you will see your changes built into an LLM within days of your contribution rather than months or years! If you are working with a model and notice its knowledge or ability lacking, you could correct it by contributing knowledge or skills and check if it's improved once your changes are built.
 
+While public contributions are welcome to help drive community progress, you can also fork this repository under [the Apache License, Version 2.0](LICENSE), add your own internal skills, and train your own models internally.
+However, you may need your own access to significant compute infrastructure to perform sufficient retraining.
+
 ## Ways to Contribute
 
 You can contribute to the taxonomy in the following two ways: 
@@ -513,7 +516,7 @@ You can contribute to the taxonomy in the following two ways:
     - Add new examples to the qna.yaml files as a new entry to the list
 
 2. Adding **new branches/skills** corresponding to the existing domain:
-    - You can add new folders under the corresponding category
+    - You can add new folders under the corresponding category (replace any spaces ` ` with underscores `_`)
     - Create a new qna.yaml file with examples for the new skill
   
 ### Detailed Contribution Instructions
@@ -540,7 +543,7 @@ When you are ready, press the **Create Fork** button.
 
 #### Contributing a skill
 
-In the screenshot, you can see we are under the compositional skills directory. This is the directory under which you want to contribute skills. (The other top-level directory you can contribute to is the knowledge directory, which is a little different than skills. You can read more about the difference between skills and knowledge [in that section of this README](#k-vs-s) above.) 
+In the screenshot, you can see we are under the compositional skills directory. This is the directory under which you want to contribute skills. (The other top-level directory you can contribute to is the knowledge directory, which is a little different than skills. You can read more about the difference between skills and knowledge [in that section of this README](#compositional-skills-vs-knowledge) above.) 
 
 ![Screenshot from 2024-02-28 12-44-05](https://github.com/instruct-lab/taxonomy/assets/799683/2038e035-5400-4848-91fb-f575db35b565)
 
@@ -566,6 +569,7 @@ It can be a little tricky mechanically to create directories in GitHub's web UI:
 * Click the "Add File" dropdown button in the upper right corner of the screen.
 * Start typing the name of the first directory you want to create. In the animation below we use "jokes/" as the first directory. 
 * When you type the "/" character, the directory name will "lock in" and you'll be able to type the next of the next subdirectory under it, as desired. Below we typed "knock-knock/" as the next directory name.
+* Make sure to replace any spaces (` `) in the folder name with underscores (`_`)
 * Finally, you'll type the file name. The file name should always be qna.yaml. (qna stands for "Question aNd Answer.")  
 
 Here's an animated graphic to show how it works:
