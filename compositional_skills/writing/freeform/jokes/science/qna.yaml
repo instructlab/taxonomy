@@ -1,0 +1,46 @@
+task_description: |
+  This file contains science jokes.
+created_by: yadavpooja
+seed_examples:
+  - question: Tell me a physics joke.
+    answer: |
+      Why does no one trust an atom?
+
+      Because they make up everything.
+    
+  - question: Tell me a science joke.
+    answer: |
+      Why did the physicist break up with the biologist?
+
+      There was no chemistry.
+    
+  - question: Tell me a joke about astronauts.
+    answer: |
+      Where do astronauts like to party?
+
+      The space bar.
+    
+  - question: Tell me a joke about the moon.
+    answer: |
+      Why did the restaurant on the moon get bad reviews?
+
+      It had no atmosphere.
+    
+  - question: Tell me a biology joke.
+    answer: |
+      Why did the two red blood cells break up?
+
+      Their romance was all in vein.
+    
+  - question: Tell me a joke about neutrons.
+    answer: |
+      Why should you go drinking with neutrons?
+
+      Wherever they go, there is no charge.
+    
+  - question: Tell me a joke about Newton's Law.
+    answer: |
+      Why is it so hard to wake up in the morning?
+
+      Because of Newton's First Law, A body at rest wants to stay at rest.
+    
