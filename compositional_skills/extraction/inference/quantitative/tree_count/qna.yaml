@@ -1,0 +1,58 @@
+created_by: karthiksundaravel
+seed_examples:
+- answer: 'The trees are planted on the intersection between the horizontal and
+    vertical lines. The spacing between the horizontal lines are 10 ft and the
+    spacing between the vertical lines 10 ft. If the trees are planted only inside
+    the boundary then the calculation of vertical and horizontal lines would be as
+    follows. The number of vertical lines would be = (200/10) - 1 = 19. The number
+    of horizontal lines would be = 100/10 - 1 = 9. The number of trees would be
+    equal to 9 x 19 = 171. Therefore 171 trees could be planted in the rectangular farm.'
+  question: 'If trees are planted 10ft apart, then how many trees can be planted
+    in an rectanglular plot of length 100 ft and braeadth 200 ft. The trees shall not be
+    planted on the boundaries'
+  context: 'We have a farm of length 100 ft breadth 200 ft'
+- answer: 'The trees are planted on the intersection between the horizontal and
+    vertical lines. The spacing between the horizontal lines are 20 ft and the
+    spacing between the vertical lines 20 ft. If the trees could be planted on
+    the boundaries, then the calculation of the vertical and horizontal lines are as
+    follows. The number of vertical lines would be = 1 + (300/20) = 16. The number of horizontal
+    lines would be = 1 + 220/20 = 12. The number of trees would be equal to 12 x 16 = 192.
+    Therefore 192 trees could be planted in the rectangular farm.'
+  question: 'If trees are planted 20ft apart, then how many trees can be planted
+    in an rectanglular plot of length 220ft and breadth 300 ft. The trees could be planted on the
+    boundaries as well'
+  context: 'We have a farm of length 220 ft breadth 300 ft'
+- answer: 'The trees are planted on the intersection between the horizontal and
+    vertical lines. The spacing between the horizontal lines are 15 ft and the
+    spacing between the vertical lines 15 ft. If the trees could be planted on
+    the boundaries, then the calculation of the vertical and horizontal lines are as
+    follows. The number of vertical lines would be = 1 + (300/15) = 21. The number of horizontal
+    lines would be = 1 + (180/15) = 13. The number of trees would be equal to 13 x 21 = 273.
+    Therefore 273 trees could be planted in the rectangular farm.'
+  question: 'If trees are planted 15 ft apart, then how many trees can be planted
+    in an rectanglular plot of length 180 ft and breadth 300 ft. The trees could be planted on the
+    boundaries as well'
+  context: 'We have a farm of length 180 ft breadth 300 ft'
+- answer: 'The trees are planted on the intersection between the horizontal and
+    vertical lines. The spacing between the horizontal lines are 25 ft and the
+    spacing between the vertical lines 25 ft. If the trees are planted only inside
+    the boundary then the calculation of vertical and horizontal lines would be as
+    follows. The number of vertical lines would be = (200/25) - 1 = 7. The number
+    of horizontal lines would be = 100/25 - 1 = 3. The number of trees would be
+    equal to 7 x 3 = 21. Therefore 21 trees could be planted in the rectangular farm.'
+  question: 'If trees are planted 25 ft apart, then how many trees can be planted
+    in an rectanglular plot of length 100 ft and braeadth 200 ft. The trees shall not be
+    planted on the boundaries'
+  context: 'We have a farm of length 100 ft breadth 200 ft'
+- answer: 'The trees are planted on the intersection between the horizontal and
+    vertical lines. The spacing between the horizontal lines are 25 ft and the
+    spacing between the vertical lines 25 ft. If the trees could be planted on
+    the boundaries, then the calculation of the vertical and horizontal lines are as
+    follows. The number of vertical lines would be = 1 + (50/25) = 3. The number of horizontal
+    lines would be = 1 + (25/25) = 2. The number of trees would be equal to 3 x 2 = 6.
+    Therefore 6 trees could be planted in the rectangular farm.'
+  question: 'If trees are planted 25 ft apart, then how many trees can be planted
+    in an rectanglular plot of length 25 ft and breadth 50 ft. The trees could be planted on the
+    boundaries as well'
+  context: 'We have a farm of length 25 ft breadth 50 ft'
+task_description: 'Counts the total number of trees planted evenly inside a large rectangle'
