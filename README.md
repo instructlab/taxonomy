@@ -11,59 +11,11 @@ This repository contains a taxonomy tree that will allow you to create models
 tuned with your data (enhanced via synthetic data generation) using LAB 🐶
 method.
 
-The top-level categories are:
+## Learning
 
-1. **Core Skills**:
+Learn about the concepts of "skills" and "knowledge" in our [InstructLab Community Learning Guide](https://github.com/instruct-lab/community/docs/README.md).
 
-    Core skills are foundational skills like math, reasoning, and coding.
-
-    🗒️ **Note:** Unlike **knowledge** and **compositional skills**, core skills
-    are not contributable to the tree. So when you see reference to contributing
-    "skills" to the taxonomy from this point forward, it is **compositional
-    skills** that are being referenced.
-2. **Knowledge**:
-
-    Knowledge consists of data and facts and is backed by documents. When you
-    create knowledge for a model, you're giving it additional data to more
-    accurately answer questions.
-3. **Compositional Skills**:
-
-    Skills are performative. When you create a skill for the model, you're
-    teaching it how to do something: "write me a song," "talk like a pirate,"
-    "summarize an email."
-
-There are two types of compositional skills:
-
-1. **Freeform Compositional Skills**:
-
-     Freeform compositional skills are performative and do **not** require
-     additional context. An example of a compositional skill is "talk like a
-     pirate." You could provide examples of "pirate-like" speech. By providing
-     those examples, you're essentially tickling the latent knowledge of the
-     LLM. In our "talk like a pirate" example, you're enabling the LLM to be
-     able to recall pirate-like speeches in its latent knowledge.
-      
-2. **Grounded Compositional Skills**:
-
-     Grounded skills are performative and **do** require additional context. An
-     example of a grounded skill would be to read the value of a cell in a table
-     layout, or to parse a JSON file. To create a grounded skill to read a 
-     markdown formatted table layout, the additional context could be an example
-     table layout. This additional context is including in the YAML for the
-     skill and not external to it. 
-
-     🗒️ **Note:** The content of the table layout will not be used in training
-     or aligning the model; only the table layout format itself will be used.
-
-## Compositional Skills vs. Knowledge
-
-You can contribute both **compositional skills** (and in the future, 
-**knowledge**) to the Taxonomy. What is the difference?
-
-### Compositional Skills
-
-Again, think of skills as "performative." You're teaching the model how to
-**do** something when you contribute a skill.
+## Getting Started with Skill Contributions
 
 Skills require a much smaller volume of content to contribute. A skill
 contribution to the taxonomy tree can be just a few lines of YAML (its
@@ -74,6 +26,15 @@ answer pairs. The `qna.yaml` format should include the following fields:
 
 - `seed_examples` (five or more examples of question and answer pairs)
 - `task_description` (an optional description of the skill).
+
+> [!TIP]
+> The skill taxonomy structure is used in several ways:
+>    1. Selecting the right subset of the taxonomy to use for data generation.
+>    2. Interpretability by human contributors and maintainers.
+>    3. As part of the prompt to GPT model used to generate synthetic samples.
+> Therefore: Make sure the names of directories match the intent of the
+> taxonomy files, perhaps also see if there's a more logical place in the
+> taxonomy structure for a person's contribution to live before signing off.
 
 #### Freeform compositional skill: YAML example
 
@@ -132,7 +93,7 @@ in terms of a taxonomy contribution:
 
 #### Grounded compositional skill: YAML example
 
-Remember that grounded compositional skills require additional context
+Remember that [grounded compositional skills](https://github.com/instruct-lab/community/learning/SKILLS_GUIDE.md) require additional context.
 
 This example assumes the GitHub username `mairin`:
 
@@ -198,8 +159,9 @@ seed_examples:
 
 ### Knowledge
 
-⚠️ **Note:** We are not currently accepting knowledge contributions, but we 
-will open this up in the future!
+> [!NOTE]
+> We are not currently accepting knowledge contributions, but we will open this
+> up in the future!
 
 Meanwhile, knowledge is based more on answering questions that involve facts,
 data, or references.
