@@ -2,7 +2,7 @@ task_description: |
     New skill for advice on security maturity assessments 
 created_by: boogiespook
 seed_examples:
-  - question: What are the main technical domains to consider for a security maturity assessment?
+  - question: What are the 7 main technical domains to consider for a security maturity assessment?
     answer: |  
       The main technical domains are Secure Infrastructure, Secure Data, Secure Identity, Secure Application, Secure Network, Secure Recovery and Secure Operations
 
