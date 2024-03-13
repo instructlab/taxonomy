@@ -1,0 +1,169 @@
+created_by: pcahyna
+seed_examples:
+  - answer: >-
+      Relax-and-Recover (abbreviated ReaR) is a tool for disaster recovery of
+      Linux systems. It has many configuration variables that you can specify in
+      the `/etc/rear/local.conf` file. Basic configuration variables are
+      documented in the `rear(8)` manual  page. Use the `man rear` command to
+      view it. All configuration variables with their default values are
+      documented in the file `/usr/share/rear/conf/default.conf`. View the file
+      like this:
+
+      ```bash
+
+      less /usr/share/rear/conf/default.conf
+
+      ```
+
+      and search for the variable by using the `/` command:
+
+      `/BACKUP_PROG_INCLUDE`.
+
+
+      If `BACKUP_PROG_INCLUDE` is a valid configuration variable of ReaR, it
+      will be found in the file.
+
+
+      As the variables and their default values change over time, the
+      `/usr/share/rear/conf/default.conf` is the best source of documentation,
+      as it is kept up to date and matches the ReaR version you are using.
+    question: What is the meaning of the `BACKUP_PROG_INCLUDE` setting of ReaR?
+  - answer: >-
+      Relax-and-Recover (abbreviated ReaR) is a tool for disaster recovery of
+      Linux systems. It has many configuration variables that you can specify in
+      the `/etc/rear/local.conf` file. Basic configuration variables are
+      documented in the `rear(8)` manual page. Use the `man rear` command to
+      view it. All configuration variables with their default values are
+      documented in the file `/usr/share/rear/conf/default.conf`. View the file
+      like this:
+
+      ```bash
+
+      less /usr/share/rear/conf/default.conf
+
+      ```
+
+      and search for the variable by using the `/` command:
+
+      `/OUTPUT`.
+
+      If `OUTPUT` is a valid configuration variable of ReaR, it will be found in
+      the file.
+
+      As the variables and their default values change over time, the
+      `/usr/share/rear/conf/default.conf` is the best source of documentation,
+      as it is kept up to date and matches the ReaR version you have installed.
+    question: >-
+      What is the meaning and possible values of the ReaR configuration variable
+      `OUTPUT`?
+  - answer: >-
+      Relax-and-Recover (abbreviated ReaR) is a tool for disaster recovery of
+      Linux systems. It has many configuration variables that you can specify in
+      the `/etc/rear/local.conf` file. Basic configuration variables are
+      documented in the `rear(8)` manual page. Use the `man rear` command to
+      view it. All configuration variables with their default values are
+      documented in the file `/usr/share/rear/conf/default.conf`. View the file
+      like this:
+
+      ```bash
+
+      less /usr/share/rear/conf/default.conf
+
+      ```
+
+      and search for the variable by using the `/` command:
+
+      `/EXCLUDE_RECREATE`.
+
+
+      If `EXCLUDE_RECREATE` is a valid configuration variable of ReaR, it will
+      be found in the file.
+
+
+      As the variables and their default values change over time, the
+      `/usr/share/rear/conf/default.conf` is the best source of documentation,
+      as it is kept up to date and matches the ReaR version you have installed.
+    question: How to use the ReaR setting `EXCLUDE_RECREATE`?
+  - answer: >-
+      Relax-and-Recover (abbreviated ReaR) is a tool for disaster recovery of
+      Linux systems. It is invoked using the `rear` command in the command line.
+      The command accepts multiple options and arguments, which are documented
+      in the `rear(8)` manual page. Use the `man rear` command to view it, like
+      this:
+
+      ```bash
+
+      man rear
+
+      ```
+
+      If `-D` is a valid command line option of ReaR it will be described in the
+      OPTIONS section of the manual page.
+
+
+      As options change over time, the manual page is the best source of
+      documentation, as it is kept up to date and matches the ReaR version you
+      have installed.
+    question: What does the -D command line option of ReaR do?
+  - answer: >-
+      Relax-and-Recover (abbreviated ReaR) is a tool for disaster recovery of
+      Linux systems. It is invoked using the `rear` command in the command line.
+      The command accepts multiple options and arguments, which are documented
+      in the `rear(8)` manual page. Use the `man rear` command to view it, like
+      this:
+
+      ```bash
+
+      man rear
+
+      ```
+
+      If `--debugscripts` is a valid command line option of ReaR it will be
+      described in the OPTIONS section of the manual page.
+
+      As options change over time, the manual page is the best source of
+      documentation, as it is kept up to date and matches the ReaR version you
+      have installed.
+    question: How to use the --debugscripts command line option of ReaR?
+  - answer: >-
+      Relax-and-Recover (abbreviated ReaR) is a tool for disaster recovery of
+      Linux systems. It is invoked using the `rear` command in the command line.
+      The command accepts multiple options and arguments, which are documented
+      in the `rear(8)` manual page. Use the `man rear` command to view it, like
+      this:
+
+      ```bash
+
+      man rear
+
+      ```
+
+      As options change over time, the manual page is the best source of
+      documentation, as it is kept up to date and matches the ReaR version you
+      have installed.
+    question: What command line options and arguments does the `rear` tool accept?
+  - answer: >-
+      Relax-and-Recover (abbreviated ReaR) is a tool for disaster recovery of
+      Linux systems. It can be used to back up a system before an upgrade and
+      recover it if needed. It has many configuration variables that you can
+      specify in the `/etc/rear/local.conf` file. Basic configuration variables
+      are documented in the `rear(8)` manual page. Use the `man rear` command to
+      view it. All configuration variables with their default values are
+      documented in the file `/usr/share/rear/conf/default.conf`. View the file
+      like this:
+
+      ```bash
+
+      less /usr/share/rear/conf/default.conf
+
+      ```
+
+      As the variables and their default values change over time, the
+      `/usr/share/rear/conf/default.conf` is the best source of documentation,
+      as it is kept up to date and matches the ReaR version you have installed.
+    question: >-
+      How to configure Relax-and-Recover to back up my server before system
+      upgrade?
+task_description: >-
+  Refer the user to the docs when asked about technical details of the ReaR tool
+  instead of trying to come up with an answer.
