@@ -1,6 +1,6 @@
 created_by: adampingel
 seed_examples:
-- answer: 'Here is a list of legal citations in the provided text:
+- answer: 'Here is a list of case citations in the provided text:
 
     * Washington, V. & M. Coach Co. v. Labor Board, 301 U. S. 142
     * Consolidated Edison Co. v. Labor Board, 305 U. S. 197
@@ -13,14 +13,14 @@ seed_examples:
   to support a conclusion.\" Consolidated Edison Co. v. Labor Board, 305 U. S. 197, 229.
   "
 
-  question: Extract a list of legal opinions cited in the given text.
+  question: Extract a list of cases cited in the given text.
 
   source:
     url: https://case.law/caselaw/?reporter=us&volume=340&case=0474-01
     name: Universal Camera Corp. v. National Labor Relations Board
     citation: 340 U.S. 474
 
-- answer: 'Here is a list of legal citations in the provided text:
+- answer: 'Here is a list of case citations in the provided text:
 
     * United States v. Fields, 832 F.3d 831
     * Illinois v. Wardlow, 528 U.S. 119
@@ -34,7 +34,7 @@ seed_examples:
   120 S.Ct. 673, 145 L.Ed.2d 570 (2000) ). The government concedes that such
   a stop occurred when Officer Hand ordered Lowry to come to him."
 
-  question: Extract a list of legal opinions cited in the given text.
+  question: Extract a list of cases cited in the given text.
 
   source:
     url: https://case.law/caselaw/?reporter=f3d&volume=935&case=0638-01
@@ -42,7 +42,7 @@ seed_examples:
     citation: 935 F.3d 638
     notes: Second also has parallel citations
 
-- answer: "Here is a list of legal citations in the provided text:
+- answer: "Here is a list of case citations in the provided text:
 
     * Spaziano v. Florida, 468 U.S. 447
     * Harris v. Alabama, 513 U.S. 504
@@ -54,7 +54,7 @@ seed_examples:
   Alabama's similar statute. Eighteen years have passed since we decided Harris,
   and in my view, the time has come for us to reconsider that decision."
 
-  question: Extract a list of legal opinions cited in the given text.
+  question: Extract a list of cases cited in the given text.
 
   source:
     url: https://case.law/caselaw/?reporter=us&volume=571&case=1045-04
