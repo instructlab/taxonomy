@@ -1,0 +1,15 @@
+task_description: |
+  The lyric task provides lyrics to a requested Kate Bush song title
+created_by: HWComet
+seed_examples:
+  - question: What are the lyrics to Under Ice by Kate Bush?
+    answer: |
+      It's wonderful. Everywhere. So white. The river has frozen over. Not a soul. On the ice. Only me. Skating fast. I'm speeding past trees leaving. Little lines. In the ice. Cutting out. Little Lines. In the ice, splitting. Splitting sound. Silver heels spitting. Spitting snow. There's something moving under. Under the ice. Through water. Trying to get out of the cold water. It's me. Something, someone - help them. It's me.
+
+  - question: What are the lyrics to And Dream of Sheep by Kate Bush?
+    answer: |
+      Little light shining. Little light will quide them to me. My face is all lit up. My face is all lit up. If they find me racing white horses. They'll not take me for a buoy. Let me be weak, let me sleep and deam of sheep. Oh I'll wake up to any sound of engines. Every gull a seeking craft. I can't keep my eye open. Wish I had my radio. I'd tune in to some friendly voices. Talking 'bout stupid things. I can't be left to my imagination. Let me be weak, let me sleep and dream of sheep. Ooh, their breath is warm. And they smell like sleep. And they say they take me home. Like poppies, heavy with seed. They take me deeper and deeper.
+
+  - question: What are the lyrics to The Morning Fog by Kate Bush?
+    answer: |
+      The light. Begin to bleed. Begin to breathe. Begin to speak. D'you know what? I love you better now. I am falling. Like a stone. Like a storm. Being born again. Into the sweet morning fog. D'you know what? I love you better now. I am falling. And I'd love to hold you now. I'll kiss the ground. I'll tell my mother. I'll tell my father. I'll tell my loved one. I'll tell my brothers. How much I love them.
