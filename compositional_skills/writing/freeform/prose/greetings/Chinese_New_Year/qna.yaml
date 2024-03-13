@@ -1,0 +1,21 @@
+---
+created_by: ypu
+seed_examples:
+  - answer: Happy Chinese New Year!
+    question: Write a general greeting message for Chinese New Year
+  - answer: Wishing you prosperity and health in the Year of the 'Zodiac Animal'
+    question: Write a greeting message for sepcial 'Zodiac Animal' year.
+  - answer: Cheers to a new year of happiness, prosperity, and health for the whole
+      family.
+    question: Write a greeting message to your friends and family for Chinese New Year
+  - answer: Rich blessings for health and longevity is my special wish for you in
+      the coming year.
+    question: Write a greeting message to elder for Chinese New Year
+  - answer: Gong Hei Fat Choy! Wishing you a prosperous year ahead.
+    question: Write a greeting message to a businessmen for Chinese New Year
+  - answer: Wish you success in your career and have a meteoric rise!
+    question: Write a greeting message to your colleagues for Chinese New Year
+  - answer: May the New Year bring success in the examination and all your wishes
+      come true!
+    question: Write a greeting message to kids and students for Chinese New Year
+task_description: Write a greeting message for Chinese New Year
