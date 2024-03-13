@@ -1,35 +1,54 @@
-task_description: | 
-    New skill for advice on security maturity assessments 
+---
+task_description: |
+    New skill for advice on security maturity assessments
 created_by: boogiespook
 seed_examples:
-  - question: What are the 7 main technical domains to consider for a security maturity assessment?
-    answer: |  
-      The main technical domains are Secure Infrastructure, Secure Data, Secure Identity, Secure Application, Secure Network, Secure Recovery and Secure Operations
-
+  - question: What are the 7 main technical domains to consider \
+              for a security maturity assessment?
+    answer: |
+      The main technical domains are Secure Infrastructure, Secure Data, \
+      Secure Identity, Secure Application, Secure Network, \
+      Secure Recovery and Secure Operations
   - question: What sub-domains are part of a Secure Infrastructure assessment?
     answer: |
-      The sub-domains are: Config Management, Segmentation / Isolation, Logging & Monitoring, Automated Policy / Enforcement, Secrets Management, Secrets Management, Service Mesh Security and Identity-Based Perimeter
-
+      The sub-domains are: Config Management, Segmentation / Isolation, \
+      Logging & Monitoring, Automated Policy / Enforcement, \
+      Secrets Management, Secrets Management, Service Mesh Security\
+      and Identity-Based Perimeter
   - question: What sub-domains are part of a Secure Data assessment?
     answer: |
-      The sub-domains are: Classification, Encryption, Access Control, Tokenization, Loss Prevention, Automated Posture Management, Immutable Storage, Anomaly Detection
-
+      The sub-domains are: Classification, Encryption, Access Control,\
+      Tokenization,       Loss Prevention, Automated Posture Management, \
+      Immutable Storage, Anomaly Detection
   - question: What sub-domains are part of a Secure Identity assessment?
     answer: |
-      The sub-domains are: Passwords, Role-Based Access Control, Multi-Factor Identification, Single Sign On, Privileged Access Managemet, Identity Federation, AI/ML Anomaly Detection, Contextual / Risk Based Access
-
+      The sub-domains are: Passwords, Role-Based Access Control, \
+      Multi-Factor Identification, Single Sign On, Privileged Access Managemet,\
+      Identity Federation, AI/ML Anomaly Detection, \
+       Contextual / Risk Based Access
   - question: What sub-domains are part of a Secure Application assessment?
     answer: |
-      The sub-domains are: Dependency Management, Static Application Security Testing, Secure Code Practices, Dynamic Application Security Testing, Web Application Firewall, Container Scanning, Runtime Application Self Protection, Interactive Application Security Testing
-
+      The sub-domains are: Dependency Management, Static Application \
+      Security Testing, Secure Code Practices, Dynamic Application Security \
+      Testing, Web Application Firewall, \
+      Container Scanning, Runtime Application Self Protection, Interactive\
+      Application Security Testing
   - question: What sub-domains are part of a Secure Network assessment?
     answer: |
-      The sub-domains are: Firewalls & Segmentation, Secure Protocols, Access Control Lists, Intrusion Detection / Prevention, Traffic Analysis, Secure Connections, Microsegmentation, Zero Trust Network Access
-
+      The sub-domains are: Firewalls & Segmentation, Secure Protocols, \
+      Access Control Lists, Intrusion Detection / Prevention, Traffic \
+      Analysis, Secure Connections, Microsegmentation, \
+      Zero Trust Network Access
   - question: What sub-domains are part of a Secure Recovery assessment?
     answer: |
-      The sub-domains are: Backup & Redundancy, Disaster Recovery Plan, Consistent Versioning, Automated Failovers, Lifecycle Management, Storage Scanning & Monitoring, Advanced Key Management, Predictive Recovery
-
+      The sub-domains are: Backup & Redundancy, Disaster Recovery Plan, \
+      Consistent Versioning, Automated Failovers, Lifecycle Management, \
+      Storage Scanning & Monitoring, Advanced Key Management, \
+      Predictive Recovery
   - question: What sub-domains are part of a Secure Operations assessment?
     answer: |
-      The sub-domains are: Incident Response Plan, Anti-Virus scan, Security Information & Event Management, Endpoint Detection & Response, Orchestration, Automation, Response, Threat Intelligence Integration, APT Detection & Response, Purple Teaming
+      The sub-domains are: Incident Response Plan, Anti-Virus scan, \
+      Security Information & Event Management, Endpoint Detection\
+      & Response, Orchestration, Automation, Response, \
+      Threat Intelligence Integration,\
+      APT Detection & Response, Purple Teaming
