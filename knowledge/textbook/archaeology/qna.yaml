@@ -1,0 +1,10 @@
+created_by: Osvaldo Melo
+domain: archaeology
+seed_examples:
+  - answer: Ancient Greek pottery is widely recognized for its aesthetic qualities and the depiction of mythological and everyday scenes. Archaeologists use these artifacts to gain a deeper understanding of Ancient Greek society, economy, and culture, as different styles and forms provide insights into the period and region of production, as well as everyday use and rituals.
+    question: What is the significance of pottery in Ancient Greek archaeology, and what does it reveal about Greek society?
+  - answer: Archaeologists use carbon-14 dating to determine the age of organic artifacts at archaeological sites. This method measures the remaining amount of carbon-14 in a sample to estimate when the organism died, providing an approximate date for the archaeological layer where the object was found.
+    question: How do archaeologists use carbon-14 dating in archaeology, and why is it important?
+  - answer: The pyramids of Egypt were primarily constructed during the Old Kingdom of Egypt as monumental tombs for pharaohs and their consorts. The Great Pyramid of Giza, one of the Seven Wonders of the Ancient World, demonstrates remarkable mathematical precision and engineering, reflecting the advanced knowledge of the time.
+    question: What was the purpose of the Egyptian pyramids, and what do they reveal about Egyptian civilization?
+task_description: ''

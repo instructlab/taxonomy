@@ -1,0 +1,12 @@
+created_by: Osvaldo Melo
+domain: astronomy
+seed_examples:
+- answer: The Hubble Space Telescope has significantly advanced our understanding of the universe by capturing high-resolution images of space, allowing astronomers to observe and study distant galaxies, nebulae, stars, and planets in detail. These observations have led to discoveries about the rate of expansion of the universe, the existence of dark matter and dark energy, and the age and size of the universe.
+  question: How has the Hubble Space Telescope contributed to our understanding of the universe?
+- answer: A black hole is a region of spacetime where gravity is so strong that nothing, not even light, can escape from it. They are formed when massive stars collapse at the end of their life cycles. The existence of black holes was predicted by Einstein's theory of general relativity, and they play a crucial role in the dynamics of galaxies and the evolution of the universe.
+  question: What is a black hole, and how is it formed?
+- answer: The lifecycle of a star depends on its mass. Small stars like our Sun become red giants and then end as white dwarfs surrounded by planetary nebulae. Massive stars explode as supernovae, leaving behind neutron stars or black holes. These processes are fundamental to the chemical enrichment of the universe, as they distribute elements necessary for life, like carbon and oxygen.
+  question: What are the different stages in the life cycle of a star and their significance in the universe?
+- answer: Exoplanets, or extrasolar planets, are planets that orbit a star other than the Sun. They are discovered using various methods, such as the transit method, where a planet passes in front of its host star, dimming the star's light slightly. Studying exoplanets helps scientists understand the potential for life outside our solar system and the formation and evolution of planetary systems.
+  question: What are exoplanets and how do they contribute to our knowledge of the universe?
+task_description: ''
