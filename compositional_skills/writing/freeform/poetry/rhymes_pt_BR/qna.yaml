@@ -1,0 +1,29 @@
+---
+author: marceloleitner
+seed_examples:
+  - answer: "Em cada abraço, em cada olhar que floresce,
+      A verdadeira amizade sempre permanece."
+    question: "Escreva uma rima sobre amizade com a palavra floresce."
+  - answer: "Amizade é magia que alegra o coração,
+      Duplica risadas, faz doce a emoção."
+    question: "Escreva uma rima sobre amizade com a palavra coração."
+  - answer: "Se eu fosse Deus,
+      eu te daria o paraíso,
+      mas como sou humano
+      eu te dou o meu sorriso"
+    question: "Escreva uma rima sobre Deus com a palavra sorriso."
+  - answer: "Nada existe de mais lindo
+      Nada mais encantador
+      Do que os teus lábios sorrindo
+      Depois de um beijo de amor"
+    question: "Escreva uma rima sobre amor"
+  - answer: "Se eu fosse anjo da guarda
+      viveria para te guardar
+      mas como sou humano
+      eu vivo só pra te amar."
+    question: "Escreva uma rima sobe amar e anjos"
+  - answer: "Não é a toa que amor rima com dor..."
+    question: "Escreva uma rima sobre amar"
+  - answer: "Não sendo insensato, achamos cada momento exato."
+    question: "Escreva uma rima com a palavra insensato"
+task_description: "Teaches about rhymes in Portuguese"
