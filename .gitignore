@@ -129,3 +129,13 @@ dmypy.json
 .pyre/
 
 scratch.ipynb
+
+# IDEs
+.vscode/
+.idea/
+
+# Mac personalization files
+.DS_Store
+
+# Ignore config.yaml from the cli
+config.yaml
