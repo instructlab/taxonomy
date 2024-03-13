@@ -18,7 +18,7 @@ seed_examples:
   - question: Tell me a pun about roosters.
   - answer: |
       What kind of a bird can assist with Cajun cooking?
-  
+
       A roux-stir!
   - question: Tell me a joke about hummingbirds.
   - answer: |
