@@ -3,20 +3,18 @@ task_description: |
 created_by: jberets
 seed_examples:
   - question: Tell me a joke about parrots.
-    answer: |  
+    answer: |
       A parrot is misbehaving, using salty language and upsetting its owner's family.
       The family repeatedly tells the parrot to be quiet, but it persists with the bad behavior.
       The parrot's owner threatens that if the parrot misbehaves again, it will be punished.
       The parrot persists.
       The owner, in frustration, puts the parrot in the freezer.
       The parrot, scared and confused, leans over to a frozen chicken next to him and says "What did YOU do!?"
-      
   - question: Tell me a pun about birds.
     answer: |
       What bird is of little significance?
 
       A my-nah!
-
   - question: What kind of a bird can assist with Cajun cooking?
   - answer: |
       A roux-stir!
