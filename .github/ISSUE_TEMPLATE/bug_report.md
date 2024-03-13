@@ -8,15 +8,13 @@ assignees: ''
 ---
 
 **Describe the bug**
-A clear and concise description of what the bug is.
+<!-- A clear and concise description of what the bug is. -->
 
 **Input given at the prompt**
-What you entered.
-
+<!-- What you entered. -->
 
 **Response that was received**
-What you received in response to your input.
-
+<!-- What you received in response to your input. -->
 
 **Response that was expected**
-What you expected to receive instead.
+<!-- What you expected to receive instead. -->
