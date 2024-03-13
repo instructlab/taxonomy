@@ -1,0 +1,89 @@
+created_by: vijaykc-4
+seed_examples:
+  - answer: A Grandfather and A grandmother should be considered as 2 whole people
+      Grandfather is also a father. It looks like his son also has children
+      making him another father. We can conclude Grandfather, Grandmother and
+      their son are three people. Grandmother is also a wife and should be
+      included in the person count. The second count for a wife, is the wife of
+      son. So we can conclude we have a Grandfather, a grandmother, their son
+      and his wife. This makes it a total of 4 people present in the party.
+    question: At the party there was a grandfather, a grandmother, 2 fathers, 2
+      mothers and 2 wives present. Can you Tell how many people were present at
+      the party?'
+  - answer: A Grandfather and A grandmother should be considered as 2 whole people
+      grandfather = 1    grandmother = 1 Grandfather is also a father It looks
+      like his son also has children making him another father. Son = 1
+      Grandmother is also a wife and should be included in the person count The
+      second count for a wife is the wife of the son. Wife = 1 The son is a
+      child of the grandfather so he should not be included in the child list.
+      This makes the son to have three children Children = 3 A brother and two
+      sisters are included in the children so no new person count. Father inlaw
+      is already included in the count as Grandfather is the father inlaw for
+      the sons wife. Motherinlaw is already included in the count, as the
+      Grandmother is also mother in law to the sons wife. Total minimum number
+      of people one grandfather + one grandmother + one son + his wife + their
+      three children making it 7.
+    question: In a family gathering there were the following people, a grandfather,
+      grandmother, two fathers, two mothers,  four children, three
+      grandchildren, a brother, two sisters, two sons, two daughters, a
+      father-in-law, a mother-in-law and a daughter-in-law, what is the minimum
+      number of people attending the family gathering. Can you Tell the minimum
+      number of people who were present at the party.
+  - answer: A Grandfather and A grandmother should be considered as 2 whole people
+      grandfather = 1    grandmother = 1 Grandfather is also a father It looks
+      like his son also has children making him another father. Son = 1
+      Grandmother is also a wife and should be included in the person count The
+      second count for a wife is the wife of the son. Wife = 1 The son is a
+      child of the grandfather so he should not be included in the child list.
+      This makes the son to have four children Children = 4 two brothers and two
+      sisters are included in the children so no new person count. Father inlaw
+      is already included in the count as Grandfather is the father inlaw for
+      the sons wife. Motherinlaw is already included in the count, as the
+      Grandmother is also mother in law to the sons wife. Total minimum number
+      of people one grandfather + one grandmother + one son + his wife + their
+      four children making it 8.
+    question: In a family gathering there were the following people, a grandfather,
+      grandmother, two fathers, two mothers,  four children, three
+      grandchildren, a brother, two sisters, three sons, two daughters, a
+      father-in-law, a mother-in-law and a daughter-in-law, what is the minimum
+      number of people attending the family gathering? Can you Tell the minimum
+      number of people who were present at the party?
+  - answer: A Grandfather and A grandmother should be considered as 2 whole people
+      grandfather = 1    grandmother = 1 Grandfather is also a father It looks
+      like his son also has children making him another father. Son = 1
+      Grandmother is also a wife and should be included in the person count The
+      second count for a wife is the wife of the son. Wife = 1 The son is a
+      child of the grandfather so he should not be included in the child list.
+      This makes the son to have four children Children = 4 A brother and three
+      sisters are included in the children so no new person count. Father inlaw
+      is already included in the count as Grandfather is the father inlaw for
+      the sons wife. Motherinlaw is already included in the count, as the
+      Grandmother is also mother in law to the sons wife. Total minimum number
+      of people one grandfather + one grandmother + one son + his wife + their
+      four children making it 8.
+    question: In a family gathering there were the following people, a grandfather,
+      grandmother, two fathers, two mothers,  four children, three
+      grandchildren, a brother, two sisters, two sons, three daughters, a
+      father-in-law, a mother-in-law and a daughter-in-law, what is the minimum
+      number of people attending the family gathering? Can you Tell the minimum
+      number of people who were present at the party?
+  - answer: A Grandfather and A grandmother should be considered as 2 whole people
+      grandfather = 1    grandmother = 1 Grandfather is also a father It looks
+      like his son also has children making him another father. Son = 1
+      Grandmother is also a wife and should be included in the person count The
+      second count for a wife is the wife of the son. Wife = 1 The son is a
+      child of the grandfather so he should not be included in the child list.
+      This makes the son to have three children Children = 3 A brother and two
+      sisters are included in the children so no new person count. Father inlaw
+      is already included in the count as Grandfather is the father inlaw for
+      the sons wife. Motherinlaw is already included in the count, as the
+      Grandmother is also mother in law to the sons wife. Total minimum number
+      of people one grandfather + one grandmother + one son + his wife + their
+      three children plus their dog making it 9.
+    question: In a family gathering there were the following people, a grandfather,
+      grandmother, two fathers, two mothers,  four children, three
+      grandchildren, a brother, two sisters, two sons, two daughters, a
+      father-in-law, a mother-in-law and a daughter-in-law and their dog, what is the minimum
+      number of living beings attending the family gathering? Can you Tell the minimum
+      number of living beings who were present at the party?
+task_description: Count the minimum number of people inline with their relationships
