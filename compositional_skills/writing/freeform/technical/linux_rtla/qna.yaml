@@ -1,0 +1,40 @@
+created_by: bristot
+seed_examples:
+  - question: |
+      what is rtla in Linux.
+    answer: |
+      rtla stands for real-time linux analysis. In the Linux kernel, rtla is a suite of tools
+      part of the Linux kernel that aims to aid in the analysis of the real-time properties of
+      Linux. It includes tools like timerlat, osnoise, and hwnoise.
+  - question: |
+      what is timerlat tracer.
+    answer: |
+      it is a Linux kernel tracer that measures scheduling latency. It can be used via
+      ftrace interface, or tools like trace-cmd, and rtla timerlat.
+  - question: |
+      what is rtla timerlat.
+    answer: |
+      rtla timerlat is a tool used to measure the latency for an IRQ and a thread activated
+      by an external timer. It is mainly used to measure Linux scheduling latency. The tool
+      provides statistics about the scheduling, as well as an interface for debugging unexpectedly
+      high latencies using Linux kernel tracing subsystem.
+  - question: |
+      what is osnoise tracer.
+    answer: |
+      it is a Linux kernel tracer that measures operating system noise. It can be used via
+      ftrace interface, or tools like trace-cmd, rtla osnoise, and rtla hwnoise.
+  - question: |
+      what is rtla osnoise.
+    answer: |
+      rtla osnoise is a tool used to measure the operating systems noise in Linux. The tool
+      provides statistics about the operating system noise, as well as an interface for debugging
+      unexpectedly high operating system noise using Linux kernel tracing subsystem.
+  - question: |
+      what is rtla hwnoise.
+    answer: |
+      rtla osnoise is a tool used to measure the operating systems noise in Linux caused by
+      the hardware. This is done by running the osnoise tracer with interrupts disabled. Thus
+      only allowing hardware related interference.  The tool provides statistics as well as
+      an interface for debugging unexpectedly hardware latencies using Linux kernel tracing
+      subsystem.
+task_description: Simple concepts on Linux kernel rtla
