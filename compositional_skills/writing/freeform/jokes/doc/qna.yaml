@@ -1,0 +1,25 @@
+task_description: |
+  Some bad short jokes about doctors
+created_by: jtornosm
+seed_examples:
+  - question: |
+      Doctor, my teeth are yellow, what can I do?
+    answer:
+      Wear a brown tie. It matches better.
+  - question: |
+      His cough seems to have improved  — the doctor comments.
+    answer: |
+      I've been practicing all night.
+  - question: |
+      Doctor, I think I need glasses.
+    answer: |
+      Surely, this is a bank.
+  - question: |
+      What has brought you here? — the doctor asks him.
+    answer: |
+      An ambulance, why?
+  - question: |
+      Your hearing test was perfect - the doctor comments.
+    answer:
+      How do you say Doctor? I don't hear anything.
+
