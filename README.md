@@ -25,6 +25,7 @@ Each `qna.yaml` file is required to contain a minimum of five question and
 answer pairs. The `qna.yaml` format should include the following fields:
 
 - `seed_examples` (five or more examples of question and answer pairs)
+- `created_by` (your GitHub username)
 - `task_description` (an optional description of the skill).
 
 > [!TIP]
@@ -43,6 +44,7 @@ This example assumes the GitHub username `mairin`:
 ``` yaml
 task_description: |
   The pun task enables the telling of funny pun-based jokes.
+created_by: mairin # Use your GitHub username; only one creator supported
 seed_examples:
   - question: Tell me a pun about birds.
     answer: |  # The | is needed to escape characters like ` or '
@@ -100,6 +102,7 @@ This example assumes the GitHub username `mairin`:
 ``` yaml
 task_description: | 
     This skill provides the ability to read a markdown-formatted table.
+created_by: mairin # Use your GitHub username; only one creator supported
 seed_examples:
   - context: |
       | **Breed**      | **Size**     | **Barking** | **Energy** |
@@ -177,6 +180,7 @@ pairs. The `qna.yaml` format should include the following fields:
 
 - `seed_examples` (five or more examples sourced from the provided knowledge
   documents)
+- `created_by` (your GitHub username)
 - `task_description` (an optional description of the knowledge).
 
 #### Knowledge: yaml example
@@ -184,6 +188,7 @@ pairs. The `qna.yaml` format should include the following fields:
 ``` yaml
 task_description: |
   Knowledge about Taylor Swift's music.
+created_by: mairin   # Use your GitHub username; only one creator supported
 seed_examples:
   - question: |
       Is Taytay coming to Boston in 2024?
@@ -286,9 +291,10 @@ referenced above might look like in the tree:
 
 Taxonomy skill files can be any valid [YAML](https://yaml.org/) file ending in
 `.yaml` containing a set of key/value entries, in which the following three
-keys are recognized: `task_description` and `seed_examples`.
+keys are recognized: `task_description`, `created_by`, and `seed_examples`.
 
 * The value of the `task_description` key can be any string.
+* The value of the `created_by` key can be any string.
 * The value of the `seed_examples` key is a collection of one or more key/value entries in which the
 three recognized keys are: `context`, `question`, and `answer`, each of which can have any string
 as value. For an entry to be valid, it **MUST** have the question and answer specified. 
@@ -296,14 +302,15 @@ as value. For an entry to be valid, it **MUST** have the question and answer spe
 Other keys at any level are currently ignored.
 
 To make these files easier and faster for humans to read, it is recommended to 
-specify the `task_description` first, followed by `seed_examples`. 
-In `seed_examples`, it is recommended to specify the `context` 
+specify the `task_description` first, followed by `created_by`, and finally 
+`seed_examples`. In `seed_examples`, it is recommended to specify the `context` 
 first (if applicable), followed by the `question`, and finally the `answer`.
 
 So in essence the format looks something like this:
 
 ``` yaml
 task_description: <string>
+created_by: <string>
 seed_examples:
   - question: <string>
     answer: |
