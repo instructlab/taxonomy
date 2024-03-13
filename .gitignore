@@ -139,3 +139,8 @@ scratch.ipynb
 
 # Ignore config.yaml from the cli
 config.yaml
+
+# Ignore generated training data
+generated_*
+test_*
+train_*
