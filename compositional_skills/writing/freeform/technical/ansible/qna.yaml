@@ -1,0 +1,192 @@
+task_description: |
+  This skill provides examples of Ansible tasks.
+created_by: marcusburghardt
+seed_examples:
+  - answer: >
+      Certainly! Here's an example of a Playbook with an Ansible task that ensures a line
+      in a file using the `ansible.builtin.lineinfile` module:
+
+      ```
+      - hosts: webservers
+        gather_facts: false
+        tasks:
+          - name: Ensure worker_processes directive in /etc/nginx/nginx.conf
+            ansible.builtin.lineinfile:
+              path: /etc/nginx/nginx.conf
+              line: worker_processes 4;
+              regexp: ^.*worker_processes .*;
+              backup: true
+              state: present
+      ```
+
+      In this example:
+      * `path`: specifies the path to the file where the line must be ensured.
+      * `line`: specifies the exact line to be ensured.
+      * `regexp`: specifies a search pattern for existing lines.
+      * `backup`: ensures a backup of the original file before making any changes.
+      * `state`: ensures that the specified line exists in the file.
+
+      In NGINX implementations, the `worker_processes` directive is commonly defined by
+      default. The use of the `regexp` parameter ensures idempotence and avoid duplicated
+      lines. If no line matches the `regexp` parameter, Ansible will append the line to
+      the end of the file.
+
+      Before executing this Playbook, update the targets in `hosts` according to your
+      inventory. `gather_facts: false` is optional but will likely improve the
+      performance of the Playbook.
+    question: Can you provide an example of an Ansible task to ensure a line in a file?
+  - answer: >
+      Sure! Here's an example of a Playbook with an Ansible task that ensures a specific
+      content in a file using the `ansible.builtin.copy` module:
+
+      ```
+      - hosts: servers
+        gather_facts: false
+        tasks:
+          - name: Ensure a System Message of The Day
+            ansible.builtin.copy:
+              content: |
+                Authorized uses only.
+                All activity may be monitored and reported.
+              dest: /etc/motd
+              owner: root
+              group: root
+              mode: '0644'
+              backup: false
+      ```
+
+      In this example:
+      * `content`: specifies the exact content to be ensured.
+      * `dest`: specifies the path to the file where the content must be ensured.
+      * `owner`: specifies the expected owner of the file.
+      * `group`: specifies the expected group of the file.
+      * `mode`: specifies the expected permission of the file.
+      * `backup`: ensures a backup of the original file before making any changes.
+
+      Specifying the `owner`, `group` and `mode` parameters also ensures the proper
+      access to the file in the same task. For content with many lines, such as a whole
+      configuration file, the `src` parameter may be better than the `content` parameter.
+      Also note that for advanced formatting or if content contains a variable, the
+      `ansible.builtin.template` module is more appropriate.
+
+      Before executing this Playbook, update the targets in `hosts` according to your
+      inventory. `gather_facts: false` is optional but will likely improve the
+      performance of the Playbook.
+    question: Can you provide an example of an Ansible task to ensure the content of a file?
+  - answer: >
+      Yes! Here's an example of a Playbook with two Ansible tasks where a package is
+      removed only if a specific file is present:
+
+      ```
+      - hosts: webservers
+        tasks:
+          - name: Check for the existence of the NGINX configuration file
+            ansible.builtin.stat:
+              path: /etc/nginx/nginx.conf
+            register: nginx_config_file
+
+          - name: Ensure Apache package is removed if NGINX configuration file is present
+            ansible.builtin.package:
+              name: httpd
+              state: absent
+            when: nginx_config_file.stat is defined and nginx_config_file.stat.exists
+      ```
+
+      In this example the `ansible.builtin.stat` module is used to check the existence of
+      the `/etc/nginx/nginx.conf` file and store the result in a register. The register
+      is then used in a `when` condition for the second task with the
+      `ansible.builtin.package` module. If the register is defined and the result from
+      the first task confirms the NGINX configuration file exists, the absence of the
+      `httpd` package is ensured. Note that the name of the Apache package may be
+      different depending on the Linux distribution.
+
+      Before executing this Playbook, update the targets in `hosts` according to your
+      inventory.
+    question: Could you provide an example of Ansible Playbook where a package is
+      removed only if a specific file exists?
+  - answer: >
+      Yes! Here's an example of a Playbook with an Ansible task to install the `htop`
+      package on all linux hosts in the inventory:
+
+      ```
+      - hosts: all_linux
+        become: true
+        tasks:
+          - name: Ensure `htop` package is present
+            ansible.builtin.package:
+              name: htop
+              state: present
+      ```
+
+      In this example the `ansible.builtin.package` module will ensure the presence of
+      `htop` package on all Linux, regardless of the package manager. Using a more
+      generic module, such as `ansible.builtin.package` instead of `ansible.builtin.dnf`
+      or `ansible.builtin.apt` makes the Playbook simpler and more compatible. Note that
+      `htop` package may not be available for all Linux distributions, so it is important
+      to also ensure the repositories are properly configured.
+
+      Before executing this Playbook, update the targets in `hosts` according to your
+      inventory.
+    question: Please provide a simple Ansible playbook that installs the `htop` package
+      on all Linux hosts in your inventory.
+  - answer: >
+      Ansible can be used to configure the firewall settings on remote hosts through
+      different Ansible modules, such as `ansible.posix.firewalld`,
+      `ansible.builtin.iptables` or `community.general.ufw`, depending on the firewall
+      manager used by the remote host. For example, if you're using Fedora or
+      RedHat-based systems, the best option is the `ansible.posix.firewalld` module.
+      Here's an example of a Playbook with a task that ensures `https` service is
+      enabled using `ansible.posix.firewalld`:
+
+      ```
+      - hosts: webservers
+        become: true
+        tasks:
+          - name: Ensure `https` service is enabled in firewalld
+            ansible.posix.firewalld:
+              service: https
+              state: enabled
+              permanent: true
+              immediate: true
+      ```
+
+      In this example:
+      * `service`: specifies the service name to enable.
+      * `state`: ensures the services listed in `name` must be enabled.
+      * `permanent`: specifies the configuration must persist after reboot.
+      * `immediate`: ensures the configuration is promptly applied.
+
+      Before executing this Playbook, update the targets in `hosts` according to your
+      inventory.
+    question: How can Ansible be used to configure the firewall settings on remote hosts?
+  - answer: >
+      Ansible can be used to configure options in an INI file using the
+      `community.general.ini_file` module. Here's an example of how to configure options
+      in an INI file:
+
+      ```
+      - hosts: localhost
+        gather_facts: false
+        tasks:
+          - name: Ensure "editor = vim" is in the "[core]" section in the specified ".gitconfig" file
+            community.general.ini_file:
+              path: /home/{{ ansible_user }}/.gitconfig
+              section: core
+              option: editor
+              value: vim
+              mode: '0644'
+              backup: true
+      ```
+
+      In this example:
+      * `path`: specifies the path to the ini file to be configured.
+      * `section`: specifies the section where the "option" must be configured.
+      * `option`: specifies the "option" to be configured in "section".
+      * `mode`: specifies the expected permission of the file.
+      * `backup`: ensures a backup of the original file before making any changes.
+
+      Note that this task is using the Ansible fact "{{ ansible_user }}" to dynamically
+      specify the file path. By default, `community.general.ini_file` module will create
+      a new file if the file specified in "path" does not exist. `gather_facts: false` is
+      optional but will likely improve the performance of the Playbook.
+    question: How can Ansible be used to configure options in an INI file?
