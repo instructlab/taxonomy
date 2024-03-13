@@ -1,0 +1,39 @@
+---
+task_description: Simple usage tips of sed
+created_by: zhongchanghui
+seed_examples:
+  - question: |
+      How to delete blank lines in a file using sed?
+    answer: |
+      You can remove blank lines in a file using the following command:
+      ```
+      sed '/^$/d' file.txt
+      ```
+  - question: |
+      How to add line number at the beginning of each line using sed?
+    answer: |
+      You can add line numbers to each line using:
+      ```
+      sed = file.txt | sed 'N;s/\n/\t/'
+      ```
+  - question: |
+      How to swap the first two fields of each line in a file?
+    answer: |
+      You can swap the first two fields of each line using:
+      ```
+      sed 's/\([^  ]*\) *\([^ ]*\)/\2 \1/' file.txt
+      ```
+  - question: |
+      How to replace tab characters with spaces in a file using sed?
+    answer: |
+      You can replace tab characters with spaces in a file using the following command:
+      ```
+      sed 's/\t/ /g' file.txt
+      ```
+  - question: |
+      How to delete the first and last lines of a file using sed?
+    answer: |
+      You can delete the first and last lines of a file using the following command:
+      ```
+      sed '1d;$d' file.txt
+      ```
