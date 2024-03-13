@@ -1,0 +1,108 @@
+created_by: jmelis
+seed_examples:
+  - answer: "***** and ***** went to the park, where they met *****."
+    context: >-
+      Alexander Garcia and Charlotte Jones went to the park, where they met
+      Grace Carter.
+    question: Blank out the names from the given sentence.
+  - answer: "***** cooked dinner while ***** and ***** set the table."
+    context: >-
+      Nathan Ross cooked dinner while Oliver Rogers and Caleb Howard set the
+      table.
+    question: Censor the names out of the given statement.
+  - answer: "*****, *****, and ***** decided to watch a movie together."
+    context: >-
+      Christian Bennett, William Martinez, and Eva Price decided to watch a
+      movie together.
+    question: Delete the names referenced in the sentence provided.
+  - answer: "***** asked ***** for advice, and ***** listened intently."
+    context: >-
+      Zoey Adams asked Ava Smith for advice, and Stella Butler listened
+      intently.
+    question: Suppress the names from the sentence provided.
+  - answer: "*****, *****, and ***** collaborated on a project for school."
+    context: >-
+      Ella Phillips, Victoria Baker, and Sophia Nguyen collaborated on a project
+      for school.
+    question: Blot out the names mentioned in the given statement.
+  - answer: "***** surprised ***** and ***** with tickets to a concert."
+    context: >-
+      Evelyn White surprised Mia Williams and Caleb Howard with tickets to a
+      concert.
+    question: Suppress the names from the sentence provided.
+  - answer: "*****, *****, and ***** went on a road trip across the country."
+    context: >-
+      Joseph Baker, Christian Bennett, and Maya Bailey went on a road trip
+      across the country.
+    question: >-
+      Excise the personal identifiers, specifically the names, from the
+      sentence.
+  - answer: "***** and ***** helped ***** move into their new apartment."
+    context: >-
+      Julian Hughes and Sebastian Nelson helped Michael Thomas move into their
+      new apartment.
+    question: Obscure the personal identities by redacting their names.
+  - answer: "*****, *****, and ***** enjoyed a picnic in the park."
+    context: >-
+      Noah Johnson, Jasmine Howard, and Gabriel Rivera enjoyed a picnic in the
+      park.
+    question: >-
+      Expunge any personal identifiers, including names, from the sentence.
+  - answer: "***** organized a game night for ***** and *****."
+    context: >-
+      Chloe Reed organized a game night for Carter Mitchell and Emily Clark.
+    question: Suppress the names from the sentence provided.
+  - answer: "*****, *****, and ***** attended a wedding together."
+    context: >-
+      Lincoln Bailey, Aria Perez, and Michael Thomas attended a wedding
+      together.
+    question: Cover up the personal names in the given statement.
+  - answer: "***** and ***** planned a surprise party for *****'s birthday."
+    context: >-
+      Oliver Rogers and Ryan Price planned a surprise party for Dylan Cook's
+      birthday.
+    question: Censor the names out of the given statement.
+  - answer: "*****, *****, and ***** hiked to the top of the mountain."
+    context: >-
+      Jordan Barnes, Caroline Cox, and Penelope Cooper hiked to the top of the
+      mountain.
+    question: Suppress the names from the sentence provided.
+  - answer: "***** taught ***** and ***** how to bake cookies from scratch."
+    context: >-
+      Jonathan Morris taught Liam Patel and Hailey Sullivan how to bake cookies
+      from scratch.
+    question: Mask the individuals' identities by taking out their names.
+  - answer: "*****, *****, and ***** volunteered at a local charity event."
+    context: >-
+      Christian Bennett, Christopher Wright, and Dylan Cook volunteered at a
+      local charity event.
+    question: Scrub the names from the given text.
+  - answer: >-
+      ***** and ***** encouraged ***** to pursue their passion for painting.
+    context: >-
+      Avery Hall and Amelia Anderson encouraged Evelyn White to pursue their
+      passion for painting.
+    question: Obscure the personal identities by redacting their names.
+  - answer: "*****, *****, and ***** reminisced about their childhood memories."
+    context: >-
+      Maya Bailey, Zoey Adams, and Julian Hughes reminisced about their
+      childhood memories.
+    question: Conceal the individuals' names mentioned in the provided text.
+  - answer: "***** offered ***** and ***** a ride home from the airport."
+    context: >-
+      Riley Ward offered Noah Johnson and Isaac Sanchez a ride home from the
+      airport.
+    question: Cover up the personal names in the given statement.
+  - answer: "*****, *****, and ***** competed in a friendly game of soccer."
+    context: >-
+      Joseph Baker, Liam Patel, and Stella Butler competed in a friendly game of
+      soccer.
+    question: Delete the names referenced in the sentence provided.
+  - answer: >-
+      ***** and ***** surprised ***** with a handmade gift for their
+      anniversary.
+    context: >-
+      Isabella Brown and Claire Peterson surprised Lily Walker with a handmade
+      gift for their anniversary.
+    question: Remove any names mentioned in the given statement.
+task_description: This skill provides the ability redact names from a sentence.
