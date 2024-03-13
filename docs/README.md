@@ -1,5 +1,7 @@
 # Docs
 
+See the [README.md in `cli/docs`](https://github.com/instruct-lab/cli/blob/main/docs/README.md) on how to modify and render the flowcharts.
+
 ## Review Process
 The review process starts with contributor drafting the PR.
 1. At the PR stage, reviewers would manually check its contents (e.g. making sure the examples are added to the correct path, inspecting the contents of examples; full list TBD).
