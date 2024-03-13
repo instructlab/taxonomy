@@ -1,0 +1,37 @@
+task_description: Some basic security measures to follow during Jenkins pipeline development
+created_by: devendra104
+seed_examples:
+  - question: How to keep the secrets in the CI repository?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    answer:
+      Keep the secret in the `secrets` directory, which contains all the secrets and should be be encrypted and \
+      decrypted by the user's GPG key.
+  - question: How to keep the secrets secure in the secrets management server and jenkins ?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    answer:
+      Grant the permissions only to the eligible one and allow them only to encrypt or decrypt the secrets.
+  - question: How to make the secrets available for the pipeline job?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    answer:
+      Store the secrets on the OpenShift's secret management or HashiCorp Vault server and then mount the secrets on \
+      the jenkins controller.
+  - question: How the secrets consume by the jenkins config?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    answer:
+      As the new secrets are available in the Vault server or OpenShift project's secret management, \
+      we can add them as environment variables using the `secretEnvVar` to make them available for that job.
+  - question: How to use the enabled secrets in the job?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    answer:
+      The newly added secret is enabled for that job, and we can directly use the secret environment key in the job, \
+      which gets enabled and hidden.
