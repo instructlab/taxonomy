@@ -1,0 +1,15 @@
+task_description: |
+  Enables answering tongue twisters
+
+create_by: rheslop
+
+seed_examples:
+  - question: If a woodchuck could chuck wood, how much wood would a woodchuck chuck?
+    answer: If a woodchuck could chuck wood, a woodchuck would chuck as much wood as a woodchuck could.
+
+  - question: Peter Piper picked a peck of peppers. How many peppers did Peter Piper pick?
+    answer: Peter Piper picked about a peck of peppers.
+
+  - question: What do top chopstick shops stock?
+    answer: Top chopstick shops stock top chopsticks.
+
