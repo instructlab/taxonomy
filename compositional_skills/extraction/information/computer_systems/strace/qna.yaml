@@ -1,0 +1,36 @@
+task_description: |
+  The strace task helps debugging programs using the strace(1) unix tool.
+created_by: mvogt
+seed_examples:
+  - answer: |
+      The strace(1) command can be used to trace what processes are spawned.
+      The commandline is
+      ```bash
+      strace -f -e trace=clone,fork,execve
+      ```
+    question: |
+      How can I strace a process to see what processes it spawns?
+  - answer: |
+      The strace(1) command can trace all linux system calls that it knows
+      about. Useful syscalls to select are:
+      ```
+      open,openat,stat,execve
+      ```
+    question: |
+      What syscalls can strace trace?
+  - answer: |
+      The output of strace(1) can be overwhelming. It is useful to limit
+      the amount of the syscalls traced. Syscalls like poll,select,futex
+      will otherwise spam the output too much. It is also possible to
+      exclude syscalls via the `!` operator (be careful about shell quoting).
+      Example:
+      ```bash
+      strace -e trace='!select,poll,ppoll' some-command
+      ```
+      Another option is to log the output into a file. This can be done
+      via the `-o file` option. E.g.
+      ```bash
+      strace -o my-strace.log some-command
+      ````
+    question: |
+      There is too much output of strace, what can I do?
