@@ -1,5 +1,5 @@
 created_by: yuefliu
-task_description: 'Write easy addition or subtraction problems for kids'
+task_description: 'Write addition or subtraction problems for kids'
 seed_examples:
   - answer:
       (1)2+5=
