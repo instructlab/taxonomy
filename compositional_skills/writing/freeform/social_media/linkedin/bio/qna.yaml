@@ -62,4 +62,32 @@ seed_examples:
       Help me draft a LinkedIn Bio summary for me. I am an experienced software
       developer with expertise in Quality Assurance automation. I am aspiring to
       transition my career in a scrum master role.
+  - answer: >
+      Certainly! Here's a draft for your LinkedIn bio summary:
+      Experienced software developer with a strong background in project
+      management, boasting a decade of comprehensive expertise in both domains.
+      Throughout my career, I've seamlessly integrated technical proficiency with
+      strategic project oversight, consistently delivering innovative solutions
+      while ensuring project objectives are met on time and within budget. Skilled
+      in leading cross-functional teams, I thrive in dynamic environments where
+      collaboration and innovation are paramount. With a proven track record of
+      successfully delivering high-quality projects, I am passionate about
+      leveraging technology to drive business growth and achieve organizational
+      goals. Let's connect and explore opportunities to collaborate!
+    question: >
+      Help me draft a LinkedIn Bio summary for me. I am an experienced software
+      developer with 10 years of experience in Project Management.
+  - answer: >
+      Certainly! Here's a draft for your LinkedIn bio summary:
+      Experienced Frontend Web Developer proficient in React JS, NodeJS, and Streamlit
+      frameworks, with a track record of delivering high-quality solutions. With
+      five years of hands-on experience in software development, I excel in
+      crafting user-centric interfaces and scalable applications. Passionate about
+      leveraging cutting-edge technologies to drive innovation and enhance user
+      experiences. Let's connect and discuss how we can collaborate to bring your
+      projects to life.
+    question: >
+      Help me draft a LinkedIn Bio summary for me. I am an experienced software
+      developer with 5 years of experience in Frontend web development. Primarily,
+      I have experience across React JS, NodeJS and Streamlit  frameworks.
 task_description: This skill helps the model write a LinkedIn Bio as per provided input
