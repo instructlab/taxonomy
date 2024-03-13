@@ -1,0 +1,85 @@
+task_description: >
+  The antimetabole skill composes antimetaboles that aren't actually examples
+  of other rhetorical devices.
+created_by: nalind
+seed_examples:
+  - question: tell me an example of an antimetabole about life and time
+    answer: 'It''s not the years in the life, it''s the life in the years.'
+  - question: tell me an example of an antimetabole about fights and dogs
+    answer: >-
+      It's not the size of dog in the fight, it's the size of the fight in the
+      dog.
+  - question: tell me an example of an antimetabole about beginnings and endings
+    answer: 'It''s not the beginning of the end, it''s the end of the beginning.'
+  - question: tell me an example of an antimetabole about countries
+    answer: >-
+      Ask not what your country can do for you, ask what you can do for your
+      country.
+  - question: tell me an example of an antimetabole about liking things
+    answer: 'I know what I like, and I like what I know.'
+  - question: tell me an example of an antimetabole about difficulties
+    answer: 'When the going gets tough, the tough get going.'
+  - question: tell me an example of an antimetabole about success and happiness
+    answer: Success is not the key to happiness. Happiness is the key to success.
+  - question: give me an example of an antimetabole about work-life balance
+    answer: 'Don''t live to work, work to live.'
+  - question: tell me an example of an antimetabole about voting
+    answer: 'It''s not who votes that counts, it''s who counts the votes.'
+  - question: tell me an example of an antimetabole about clues
+    answer: 'It''s not what is there, it''s what is not there.'
+  - question: tell me an example of an antimetabole about health and happiness
+    answer: >-
+      A healthy body leads to a happy mind, and a happy mind leads to a healthy
+      body.
+  - question: tell me an example of an antimetabole about love
+    answer: 'It''s not what I do for love, but what love does for me.'
+  - question: tell me an antimetabole about nature and urbanization
+    answer: 'Urbanization destroys nature, but nature also destroys urbanization.'
+  - question: tell me an antimetabole about love and relationships
+    answer: 'Love requires effort, and effort requires love.'
+  - question: tell me an antimetabole about art and creativity
+    answer: 'Art inspires creativity, but creativity also inspires art.'
+  - question: tell me an antimetabole about wealth and wisdom
+    answer: >-
+      It's not the money that brings happiness, it's the happiness that brings
+      money.
+  - question: Give me an example of an antimetabole about love
+    answer: Love is not something you find. Love is something that finds you.
+  - question: tell me an example of an antimetabole about wanting and having things
+    answer: 'It''s not having what you want, it''s wanting what you have.'
+  - question: tell me an example of an antimetabole about the value of friendship
+    answer: >-
+      Friendship is not just about sharing happiness; happiness is also about
+      sharing friendship.
+  - question: tell me an example of an antimetabole about humility
+    answer: >-
+      Humility is not about thinking less of ourselves, it is about thinking
+      about ourselves less.
+  - question: create an antimetabole about the impact of empathy on relationships
+    answer: >-
+      Empathy strengthens relationships, but relationships also strengthen
+      empathy.
+  - question: invent an antimetabole about the significance of kindness
+    answer: 'Kindness leads to happiness, but happiness also leads to kindness.'
+  - question: create an antimetabole about the importance of communication
+    answer: 'Clear communication is essential, and essential communication is clear.'
+  - question: provide an antimetabole about the connection between learning and teaching
+    answer: 'Teaching is learning, and learning is teaching.'
+  - question: tell me an antimetabole about the importance of empathy
+    answer: 'Empathy is understanding, but understanding is also empathy.'
+  - question: create an antimetabole using the words "inspiration" and "creation"
+    answer: 'Inspiration fuels creation, but creation also fuels inspiration.'
+  - question: create an antimetabole about the value of hard work
+    answer: 'Hard work brings success, but success also brings hard work.'
+  - question: >-
+      create an antimetabole about the impact of generosity on social
+      relationships
+    answer: >-
+      Generosity strengthens social relationships, but social relationships also
+      strengthen generosity.
+  - question: create an antimetabole about the power of kindness in building connections
+    answer: 'Kindness builds connections, but connections also build kindness.'
+  - question: >-
+      write a sentence that is antimetabole for the concept of optimism in
+      facing challenges
+    answer: 'Optimism faces challenges, but challenges also face optimism.'
