@@ -2,6 +2,14 @@ created_by: stluke
 seed_examples:
 - answer: |
     ```
+    +------+
+    |      |
+    +------+
+    ```
+  question: Create an ascii table with 1 column and 1 row.
+
+- answer: |
+    ```
     +------+------+------+
     |      |      |      |
     +------+------+------+
