@@ -1,0 +1,30 @@
+{
+  "problemMatcher": [
+    {
+      "owner": "lint-warning",
+      "severity": "warning",
+      "pattern": [
+        {
+          "regexp": "^WARN:\\s+(.+):(\\d+):(\\d+):\\s+(.+)$",
+          "file": 1,
+          "line": 2,
+          "column": 3,
+          "message": 4
+        }
+      ]
+    },
+    {
+      "owner": "lint-error",
+      "severity": "error",
+      "pattern": [
+        {
+          "regexp": "^ERROR:\\s+(.+):(\\d+):(\\d+):\\s+(.+)$",
+          "file": 1,
+          "line": 2,
+          "column": 3,
+          "message": 4
+        }
+      ]
+    }
+  ]
+}
