@@ -1,0 +1,45 @@
+---
+task_description: |
+    New skill to use the Red Hat Securty Data API service
+created_by: boogiespook
+seed_examples:
+  - question: What it the Red Hat Security Data API Service?
+    answer: |
+      The Red Hat Security Data API exposes a list of endpoints to query
+      security data with certain parameters and retrieve CSAF, CVE and
+      OVAL data easily.
+  - question: What data does the Red Hat Security Data API Service provide?
+    answer: |
+      The data provided by the Security Data API is the same as what is found
+      on the Security Data page: OVAL definitions, Common Vulnerability
+      Reporting Framework (CVRF) documents and CVE data. All data is available
+      in its native XML format or in a representative JSON format.
+  - question: What format does the Red Hat Security Data API Service output?
+    answer: |
+      The API supports JSON, XML, and HTML formats. The format can be
+      specified as an extension to the url like .json or .xml.
+  - question: What is the base URL for the Red Hat Security Data API Service ?
+    answer: |
+      The base URL is https://access.redhat.com/hydra/rest/securitydata
+  - question: How can I look for a CVE in the the Red Hat
+              Security Data API Service?
+    answer: |
+      You can use curl to get the results from a specific CVE. For example,
+      if you would like information on CVE-2023-44487 you can run:
+      $ export api_url = "https://access.redhat.com/hydra/rest/securitydata/cve"
+      $ curl -s ${api_url}/CVE-2023-44487.json
+  - question: How do I parse the JSON output to return certain fields?
+    answer: |
+      Once you're comfortable using curl, you can then pipe the output in to
+      jq.  jq  can  transform JSON in various ways, by selecting, iterating,
+      reducing and otherwise mangling JSON documents
+      An example is to extract the Severity of a CVE:
+      $ export api_url = "https://access.redhat.com/hydra/rest/securitydata/cve"
+      $ curl -s ${api_url}/CVE-2023-44487.json
+        | jq -r '.threat_severity'
+        Important
+  - question: How can I return the CVSS Score for a specific CVE?
+    answer: |
+      You can use jq to extract the CVSS score from a CVE
+      $ export api_url = "https://access.redhat.com/hydra/rest/securitydata/cve"
+      $ curl -s ${api_url}/CVE-2023-44487.json | jq -r '.cvss3.cvss3_base_score'
