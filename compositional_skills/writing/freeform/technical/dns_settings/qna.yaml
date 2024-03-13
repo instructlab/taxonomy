@@ -1,0 +1,67 @@
+created_by: gdicks
+seed_examples:
+  - answer: |
+      You can update a host's DNS settings with Ansible by using the `nmcli` module, which is the CLI for the NetworkManager utility that configures NICs, routes, VLAN's, DNS etc.
+
+      Here is a simple example playbook that uses the `nmcli` module:
+
+      ```yaml
+
+      ---
+      - name: "DNS server config updated"
+        hosts: my_hosts # replace with your ansible inventory
+
+        tasks:
+          - name: "DNS server set using nmcli"
+            nmcli:
+              conn_name: my_connection_name # replace with the name of the nmcli connection
+              type: ethernet
+              dns4:
+                - 192.168.53.53 # replace this with the IP address of your actual DNS server
+            state: present
+            notify: Restart NetworkManager
+
+        handlers:
+          - name: Restart NetworkManager
+            service:
+              name: NetworkManager
+              state: restarted
+      ```
+      The task described above applies the configuration for the ethernet connection specified by conn_name.
+      The IP address specified in the `dns4` key should be replaced by the IP address of your actual DNS server (in production environments ensure at least two DNS servers).
+      The playbook then invokes a handler, which uses the `service` module to restart the connection and activate the new DNS configuration.
+
+    question: How do I update a host's DNS settings using Ansible?
+  - answer: |
+      You can update a host's DNS settings with Ansible by using the `nmcli` module, which is the CLI for the NetworkManager utility that configures NICs, routes, VLAN's, DNS etc.
+
+      Here is a simple example playbook that uses the `nmcli` module:
+
+      ```yaml
+
+      ---
+      - name: "DNS server config updated"
+        hosts: my_hosts # replace with your ansible inventory
+
+        tasks:
+          - name: "DNS server set using nmcli"
+            nmcli:
+              conn_name: my_connection_name # replace with the name of the nmcli connection
+              type: ethernet
+              dns4:
+                - 192.168.53.53 # replace this with the IP address of your actual DNS server
+            state: present
+            notify: Restart NetworkManager
+
+        handlers:
+          - name: Restart NetworkManager
+            service:
+              name: NetworkManager
+              state: restarted
+      ```
+      The task described above applies the configuration for the ethernet connection specified by conn_name.
+      The IP address specified in the `dns4` key should be replaced by the IP address of your actual DNS server (in production environments ensure at least two DNS servers).
+      The playbook then invokes a handler, which uses the `service` module to restart the connection and activate the new DNS configuration.
+
+    question: How do I add a new DNS server in Linux using Ansible?
+task_description:
