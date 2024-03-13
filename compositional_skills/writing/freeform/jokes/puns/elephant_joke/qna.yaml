@@ -1,0 +1,10 @@
+---
+task_description: |
+  Response to a joke about an elephant with diarrhea.
+created_by: mletalie
+seed_examples:
+  - question: What do you give an elephant with diarrhea?
+    answer: |+
+      Plenty of room!
+       
+
