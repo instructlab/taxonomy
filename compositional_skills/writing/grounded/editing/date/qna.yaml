@@ -1,0 +1,79 @@
+---
+created_by: krcmarik
+task_description: >
+  The task enables the converstion of a given date into little
+  or big endian date format.
+seed_examples:
+  - question: Convert the given date to the big-endian date format.
+    answer: >
+      To convert the given date, June 1st 2023, to the big-endian date format,
+
+      we first need to identify the day, month, and year components of the given date.
+
+      In this case, the day is 1st, the month is June, and the year is 2023.
+
+      So, the 1st of June 2023 would be represented in the big-endian date format as:
+
+      2023 June 1st.
+    context: |
+      June 1st 2023
+  - question: Convert the given date to the big-endian date format.
+    answer: >
+      To convert the given date, 16th December 1999, to the big-endian date
+      format,
+
+      we first need to identify the day, month, and year components of the given date.
+
+      In this case, the day is 16th, the month is December, and the year is 1999.
+
+      So, the 16th of December 1999 would be represented in the big-endian date format as:
+
+      1999 December 16th.
+    context: |
+      16th December 1999
+  - question: Convert the given date to the little-endian date format.
+    answer: >
+      To convert the given date, 2024 December 23rd, to the little-endian date
+      format,
+
+      we first need to identify the day, month, and year components of the given date.
+
+      In this case, the day is 23rd, the month is December, and the year is 2024.
+
+      So, the 23rd of December 2024 would be represented in the little-endian date format as:
+
+      23rd December 2024.
+    context: |
+      2024 December 23rd
+  - question: Convert the given date to the little-endian date format.
+    answer: >
+      To convert the given date, June 1st 2023, to the little-endian date
+      format,
+
+      we first need to identify the day, month, and year components of the given date.
+
+      In this case, the day is 1st, the month is June, and the year is 2023.
+
+      So, the 1st of June 2023 would be represented in the little-endian date format as:
+
+      1st June 2023.
+    context: |
+      June 1st 2023
+  - question: Convert the given date to the little-endian date format.
+    answer: >
+      The 26th of May 2021 would be represented in the little-endian date
+      format as 26-05-2021.
+    context: |
+      2021-05-26
+  - question: Convert the given date to the big-endian date format.
+    answer: >
+      The 28-02-1876 would be represented in the big-endian date format as
+      1876-02-28.
+    context: |
+      28-02-1876
+  - question: Given the date, determine the date in the big-endian format.
+    answer: >
+      The December 31st, 2010 would be represented in the big-endian date
+      format as 2010 December 31st.
+    context: |
+      December 31st, 2010
