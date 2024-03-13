@@ -1,0 +1,50 @@
+created_by: abhiramnarayana
+seed_examples:
+- answer: 'If we assume that each shirt dries independently of the others
+    and that the drying process is not affected by the presence of other
+    shirts, then the time it takes for all five shirts to dry would be
+    approximately the same as it takes for one shirt to dry. \nSo, if it
+    takes 2 hours for one shirt to dry, then it would also take 2 hours for
+    all five shirts to dry, provided they are hung in such a way that they
+    receive even sunlight and airflow. Each shirt would dry at the same rate
+    as if it were the only shirt being dried. Therefore, the presence of
+    additional shirts does not affect the drying time of each individual
+    shirt.'
+  question: 'If I hang 1 shirt in sunlight it takes approximately 2 hours to
+    dry. Assuming 5 shirts all of equal level of wetness hanged at the same
+    time and hanged such that they get even sunlight, how long does it take
+    for all shirts to dry?'
+- answer: 'If each cook can prepare one dish in one hour, and all five cooks
+    start preparing the dishes simultaneously, then all five dishes will be
+    ready at the same time.\nSince each cook is capable of preparing one dish
+    in one hour, and they are all working independently and simultaneously,
+    the time it takes for all five dishes to be ready will still be 1 hour.
+    Therefore, all five dishes will be ready in 1 hour.'
+  question: 'If 1 dish can be prepared in 1 hour. Assuming 5 different
+    cooks having equal capabilities and working with separate equipment and
+    ingredients start preparing the dish at the same time, how long does it
+    take for the 5 dishes to be ready?'
+- answer: 'Since each kid is capable of writing the assignment in 30 minutes,
+    and they are all working independently and simultaneously, the time it
+    takes for all 5 kids to finish the assignment is 30 minutes'
+  question: 'If a kid takes 30 minutes to complete an assignment. Assuming 5
+    different kids having equal capabilities and writing speed working
+    independently. If all kids start at same time how long does it take for
+    each of them to complete the assignment?'
+- answer: 'Since each painter is capable of painting a room in 45 minutes,
+    and they are all working independently and simultaneously, the time it
+    takes for all 5 painters to finish painting 5 separate rooms is also
+    45 minutes'
+  question: 'If it takes 45 minutes for one painter to paint a room. Assuming
+    each painter is equally capable and has required equipment to work
+    independently, then how long will 5 painters working simultaneously on 5
+    separate rooms take to complete the painting?'
+- answer: 'Since each worker is capable of assembling a car in 5 hours,
+    and they are all working independently and simultaneously, the time it
+    takes for all 5 workers to finish assembling 5 separate cars is also
+    5 hours'
+  question: 'If it takes 5 hours for one worker to assemble a car. Assuming
+    each worker is equally capable and working with different setup and
+    equipment, then how long will 5 workers working simultaneously on 5
+    different cars take to complete the assembling?'
+task_description: 'Do critical thinking'
