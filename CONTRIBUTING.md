@@ -24,7 +24,7 @@ The whole point of InstructLab 🥼 is to enable true collaborative development 
 
 So, the general gist of making a contribution to this project consists of writing an extension to the existing taxonomy, make a pull request, and your work will be reviewed and merged so that it can benefit the whole community.
 
-Before investing time into developing a contribution, it's best to [write an issue](https://github.com/instruct-lab/taxonomy/issues/new?assignees=&labels=&template=proposal.md&title=) first to discuss it with the maintainers.
+Before investing time into developing a contribution, it's best to [open an issue](https://github.com/instruct-lab/taxonomy/issues/new?assignees=&labels=&template=proposal.md&title=) first to discuss your proposal idea with the maintainers.
 
 You should also review what others have already proposed to avoid duplicating efforts. You might instead be able to join forces with them by providing input to what they have started.
 
