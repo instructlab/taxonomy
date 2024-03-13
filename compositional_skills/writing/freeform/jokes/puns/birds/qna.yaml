@@ -14,7 +14,19 @@ seed_examples:
     answer: |
       What bird is of little significance?
 
-      A my-nah!
-  - question: What kind of a bird can assist with Cajun cooking?
+      A mynah bird!
+  - question: Tell me a pun about roosters.
   - answer: |
+      What kind of a bird can assist with Cajun cooking?
+      
       A roux-stir!
+  - question: Tell me a joke about hummingbirds.
+  - answer: |
+      Why do hummingbirds hum?
+
+      Because they don't know the words.
+  - question: Tell me a pun about ducks.
+  - answer: |
+      Why do ducks avoid going to the doctor?
+
+      Because they think they are all quacks!
