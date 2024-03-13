@@ -1,0 +1,15 @@
+---
+created_by: jpalanis
+seed_examples:
+  - answer: 4
+    question: if one=3 two=3 three=5 four=4 then five=?
+  - answer: 5
+    question: if three=5 four=4 five=4 six=3 then seven=?
+  - answer: 4
+    question: if six=3 seven=5 eight=5 then nine=?
+  - answer: 3
+    question: if ten=3 five=4 three=5 then two=?
+  - answer: 6
+    question: if eleven=6 thirteen=8 fifteen=6 then twenty=?
+
+task_description: Teach the skill to recognize pattern
