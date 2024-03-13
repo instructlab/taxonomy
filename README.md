@@ -504,6 +504,9 @@ This taxonomy repository will be used as the seed to synthesize the training dat
 
 By contributing your skills and knowledge to this repository, you will see your changes built into an LLM within days of your contribution rather than months or years! If you are working with a model and notice its knowledge or ability lacking, you could correct it by contributing knowledge or skills and check if it's improved once your changes are built.
 
+While public contributions are welcome to help drive community progress, you can also fork this repository under [the Apache License, Version 2.0](LICENSE), add your own internal skills, and train your own models internally.
+However, you may need your own access to significant compute infrastructure to perform sufficient retraining.
+
 ## Ways to Contribute
 
 You can contribute to the taxonomy in the following two ways: 
