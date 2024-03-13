@@ -9,6 +9,6 @@
 #
 
 * @instruct-lab/taxonomy-approvers
-*.md   @mairin @juliadenham @instruct-lab/taxonomy-approvers
+*.md   @mairin @juliadenham @kelbrown20 @instruct-lab/taxonomy-approvers
 /.github/ @instruct-lab/taxonomy-maintainers @instruct-lab/taxonomy-approvers
-/docs/ @mairin @juliadenham @instruct-lab/taxonomy-approvers
+/docs/ @mairin @juliadenham @kelbrown20 @instruct-lab/taxonomy-approvers
