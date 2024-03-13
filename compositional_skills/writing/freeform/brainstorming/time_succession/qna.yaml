@@ -1,0 +1,10 @@
+task_description: Recognize which person is older from year of birth
+created_by: zkabelac
+seed_examples:
+  - answer: >-
+      The first man, who was born in 1976, is older than the second man, who was
+      born in 1980. This is because the second man has experienced less time
+      since his birth, making him older than the first man.
+    question: >-
+      The first man was born in 1976 and the second man was born in 1980 which
+      one is older ?
