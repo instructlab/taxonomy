@@ -1,0 +1,26 @@
+created_by: ueno
+
+seed_examples:
+  - answer: It is twenty three past six on Thursday, sixth of June.
+    context: Thu Jun  6 06:23:00 AM BST 2024
+    question: Convert the given time to regular English without numerals.
+
+  - answer: It is a quarter past six on Thursday, sixth of June.
+    context: Thu Jun  6 06:15:00 AM BST 2024
+    question: Convert the given time into plain English.
+
+  - answer: It is eleven to eleven on Thursday, sixth of June
+    context: Fri Jun  6 10:49:00 AM BST 2024
+    question: Rewrite the given time as plain English.
+
+  - answer: It is midnight on Monday, second of June
+    context: Mon Jun  2 12:00:00 AM BST 2024
+    question: Rewrite the given time in standard English.
+
+  - answer: It is a quarter to four in the afternoon on Monday, second of June.
+    context: 15:45
+    question: Rewrite the given time as plain English, considering it is on Monday, second of June.
+
+task_description: >-
+  Provides example of rewriting numerical date and time in plain
+  English without numerals.
