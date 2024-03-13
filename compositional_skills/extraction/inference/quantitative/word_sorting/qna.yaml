@@ -1,0 +1,67 @@
+task_description: This skill instructs to sort words by their length.
+created_by: stefano-garzarella
+seed_examples:
+  - context: 'a, definition, an, be, but, could, pizza, asd, k, welcome, park'
+    question: Sort the following words in ascending order by their length
+    answer: |
+      Here's the list of words sorted in ascending order based on their length:
+      a (1 letter)
+      k (1 letter)
+      an (2 letters)
+      be (2 letters)
+      but (3 letters)
+      asd (3 letters)
+      park (4 letters)
+      could (5 letters)
+      pizza (5 letters)
+      welcome (7 letters)
+      definition (10 letters)
+  - context: 'a, definition, an, be, but, could, pizza, asd, k, welcome, park'
+    question: Sort the following words in descending order by their length
+    answer: |
+      Here's the list of words sorted in descending order based on their length:
+      definition (10 letters)
+      welcome (7 letters)
+      pizza (5 letters)
+      could (5 letters)
+      park (4 letters)
+      asd (3 letters)
+      but (3 letters)
+      be (2 letters)
+      an (2 letters)
+      k (1 letter)
+      a (1 letter)
+  - context: 'Italy, Liberia, USA, China, Australia, Brasil, Japan, Cuba'
+    question: Sort the following words in descending order by their length
+    answer: |
+      Here's the list of words sorted in descending order based on their length:
+      Australia (9 letters)
+      Liberia (7 letters)
+      Brasil (6 letters)
+      Italy (5 letters)
+      China (5 letters)
+      Japan (5 letters)
+      Cuba (4 letters)
+      USA (3 letters)
+  - context: 'Italy, Liberia, USA, China, Australia, Brasil, Japan, Cuba'
+    question: Sort the following words in ascending order by their length
+    answer: |
+      Here's the list of words sorted in ascending order based on their length:
+      USA (3 letters)
+      Cuba (4 letters)
+      Japan (5 letters)
+      China (5 letters)
+      Italy (5 letters)
+      Brasil (6 letters)
+      Liberia (7 letters)
+      Australia (9 letters)
+  - context: 'ciao, pizza, pasta, spaghetti, cappuccino, mozzarella'
+    question: Sort the following words in descending order by their length
+    answer: |
+      Here's the list of words sorted in descending order based on their length:
+      mozzarella (10 letters)
+      cappuccino (10 letters)
+      spaghetti (9 letters)
+      pizza (5 letters)
+      pasta (5 letters)
+      ciao (4 letters)
