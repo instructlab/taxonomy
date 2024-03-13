@@ -1,7 +1,7 @@
 created_by: gdicks
 seed_examples:
   - answer: |
-      You can update a host's DNS settings with Ansible by using the `nmcli` module, which is the CLI for the NetworkManager utility that configures NICs, routes, VLAN's, DNS etc.
+      You can update a host's DNS settings with Ansible by using the `nmcli` module, which is the CLI for the NetworkManager utility that configures NICs, routes, VLANs, DNS etc.
 
       Here is a simple example playbook that uses the `nmcli` module:
 
@@ -33,7 +33,7 @@ seed_examples:
 
     question: How do I update a host's DNS settings using Ansible?
   - answer: |
-      You can update a host's DNS settings with Ansible by using the `nmcli` module, which is the CLI for the NetworkManager utility that configures NICs, routes, VLAN's, DNS etc.
+      You can update a host's DNS settings with Ansible by using the `nmcli` module, which is the CLI for the NetworkManager utility that configures NICs, routes, VLANs, DNS etc.
 
       Here is a simple example playbook that uses the `nmcli` module:
 
