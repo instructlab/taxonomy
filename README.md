@@ -13,7 +13,7 @@ method.
 
 ## Learning
 
-Learn about the concepts of "skills" and "knowledge" in our [InstructLab Community Learning Guide](https://github.com/instruct-lab/community/learning/README.md).
+Learn about the concepts of "skills" and "knowledge" in our [InstructLab Community Learning Guide](https://github.com/instruct-lab/community/docs/README.md).
 
 ## Getting Started with Skill Contributions
 
