@@ -71,7 +71,6 @@ All contributions that leverage third party content should either come from the 
 - CC0-1.0
 - CDLA-Permissive-2.0
 - CC-BY-4.0
-- CC-BY-SA-4.0
 - Apache-2.0
 - MIT
 
