@@ -1,0 +1,54 @@
+task_description: script approval in the jenkins using the scriptApproval plugin
+created_by: devendra104
+seed_examples:
+  - question: How to approve the script in the jenkins?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    answer:
+      From Jenkins UI, We use the following steps to approve the script
+        * Login on the Jenkins Server from the supported browsers like `firefox`, `chrome` etc.
+        * Go on the left sidebar and click on the `Manage Jenkins` option
+        * Go on the `Security` section and then click on the In-process Script Approval
+        * Click on the `Approve` and the script gets approved successfully.
+  - question: How to approve the script in the jenkins from GUI?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    answer: |
+      From Jenkins UI, We use the following steps to approve the script
+        * Login on the Jenkins Server from the supported browsers like firefox, chrome etc.
+        * Go on the left side and click on the `Manage Jenkins` option
+        * Go on the `Security` section and then click on the In-process Script Approval
+        * Click on the Approve and the script gets approved successfully.
+
+  - question: How to approve the script in the jenkins using the configuration as code?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    answer: |
+      Add the signature for the script approval under the 'approvedSignatures' list
+        ```security:
+            scriptApproval:
+              approvedSignatures:
+                - <Add the approved script signature from here >```
+  - question: how to revoke the approved signatures in the jerkins UI?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    answer: |
+      * Login on the Jenkins Server from the supported browsers like firefox, chrome etc.
+      * Go on the left side and click on the "Manage Jenkins" option
+      * Go on the `Security` section and then click on the In-process Script Approval
+      * Click on the Clear Approvals and it removed all the approved signatures.
+
+  - question: How to remove the script signature in the jenkins using the configuration?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    answer: |
+      Remove the signature from the `approvedSignatures` list
+      ```security:
+          scriptApproval:
+            approvedSignatures:
+              - <Remove the approved script signature from here> ```
