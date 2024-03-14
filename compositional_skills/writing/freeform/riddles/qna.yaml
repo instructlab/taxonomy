@@ -1,0 +1,20 @@
+created_by: snarayan-redhat
+seed_examples:
+  - answer: |
+      The cleaner I get, the darker I become. Who am I?
+      Blackboard
+    question: Tell me a riddle about blackboard.
+  - answer: |
+      What is full of holes and still retains water?
+      A sponge
+    question: Tell me a riddle about sponge.
+  - answer: |
+      What breaks when you say it?
+      Silence
+    question: Tell me a riddle about silence.
+  - answer: |
+      What gets wet while drying?
+      A towel
+    question: Tell me a riddle about towel.
+task_description: |
+  The riddles are interesting and tests your attention to detail in the question.
