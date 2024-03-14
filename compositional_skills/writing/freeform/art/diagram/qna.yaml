@@ -20,16 +20,7 @@ seed_examples:
        o
         o
          d
-
-           i
-            s
-
-              r
-               e
-                a
-                 d
-                  y
-    question: First, take the word "food is ready". Second, each letter will
+    question: First, take the word "food". Second, each letter will
       be in a different line. Third, each line will start with the number of
       spaces of the current line number.
   - answer: |
@@ -42,5 +33,28 @@ seed_examples:
            a
     question: First, take the word "banana". Second, each letter will be in
       a different line. Third, each line will start with the number of
+      spaces of the current line number.
+  - answer: |
+      c
+       o
+        r
+         r
+          e
+           c
+            t
+    question: Write the word "correct" with each letter in
+      a different line and  each line will start with the number of
+      spaces of the current line number.
+  - answer: |
+      q
+       u
+        e
+         s
+          t
+           i
+            o
+             n
+    question: Write the word "question" with each letter in
+      a different line and  each line will start with the number of
       spaces of the current line number.
 task_description: an ascii diagram
