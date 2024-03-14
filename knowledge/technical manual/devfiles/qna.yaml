@@ -2,7 +2,7 @@
 created_by: thepetk
 domain: devfiles
 seed_examples:
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: che
@@ -65,7 +65,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name che and typescript as programming language? The devfile should have 6 commands. 1: id update-contributing,\
       \ 2: id check-contributing-is-updated, 3: id tests-update-dependencies, 4: id tests-lint-project, 5: id tests-build-tests, 6: id tests-happy-path-remote.\
       \ The devfile should have 1 components. 1: name devtools and container image quay.io/devfile/universal-developer-image:ubi8-latest."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: npm install
@@ -139,7 +139,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name helloworld-example using Node.js, Express, ubi8 and JavaScript as programming language? The\
       \ devfile should have 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container\
       \ image registry.access.redhat.com/ubi8/nodejs-16:latest."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: go build ./gin-k8s-auth/examples/server/main.go
@@ -198,7 +198,7 @@ seed_examples:
         name: go-starter
     question: "Could you generate a devfile sample with name gin-k8s-auth-example using Go and Go as programming language? The devfile should have 2 commands.\
       \ 1: id build, 2: id run. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi9/go-toolset:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: python
@@ -264,7 +264,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name python using Flask, Python, Pip and Python as programming language? The devfile should have\
       \ 3 commands. 1: id pip-install-requirements, 2: id run-app, 3: id debugpy. The devfile should have 1 components. 1: name py-web and container image\
       \ registry.access.redhat.com/ubi9/python-39:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs
@@ -305,7 +305,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name nodejs using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should have\
       \ 2 commands. 1: id build-image, 2: id deploy. The devfile should have 1 components. 1: name outerloop-build and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-springboot
@@ -365,7 +365,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-springboot using Java, Spring and Java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: nodejs
@@ -428,7 +428,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name nodejs using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should have\
       \ 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-14:latest."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: mvn clean -Dmaven.repo.local=/home/user/.m2/repository package -Dmaven.test.skip=true
@@ -530,7 +530,7 @@ seed_examples:
       \ 6 commands. 1: id build, 2: id run, 3: id debug, 4: id build-image, 5: id deployk8s, 6: id deploy. The devfile should have 4 components. 1: name\
       \ outerloop-build and container image , 2: name outerloop-deploy and container image , 3: name tools and container image quay.io/eclipse/che-java11-maven:7.36.0,\
       \ 4: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: devfile-registry-community
@@ -639,7 +639,7 @@ seed_examples:
       \ image , 2: name index-generator and container image registry.access.redhat.com/ubi8/go-toolset:1.19, 3: name devfile-registry-deployment and container\
       \ image , 4: name devfile-registry-service and container image , 5: name devfile-registry-configmap and container image , 6: name devfile-registry-ingress\
       \ and container image , 7: name devfile-registry-route and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: GOCACHE=${PROJECT_SOURCE}/.cache go build server.go
@@ -708,7 +708,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name todo using Go and Go as programming language? The devfile should have 2 commands. 1: id build,\
       \ 2: id run. The devfile should have 2 components. 1: name runtime and container image quay.io/devfile/golang:latest, 2: name todo-cluster-sample\
       \ and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: pip install -r requirements.txt
@@ -782,7 +782,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name demosa using Django, Python, Pip and Python as programming language? The devfile should have\
       \ 4 commands. 1: id pip-install-requirements, 2: id run-app, 3: id run-migrations, 4: id debug. The devfile should have 1 components. 1: name py-web\
       \ and container image registry.access.redhat.com/ubi9/python-39:1-161."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs
@@ -842,7 +842,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name nodejs using Node.js, Express, ubi8 and JavaScript as programming language? The devfile should\
       \ have 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image\
       \ , 2: name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: python
@@ -905,7 +905,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name python using Python, Pip, Flask and Python as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: pipeline-service-exporter
@@ -937,7 +937,7 @@ seed_examples:
           component: image-build
     question: "Could you generate a devfile sample with name pipeline-service-exporter using Go and Go as programming language? The devfile should have\
       \ 1 commands. 1: id build-image. The devfile should have 1 components. 1: name image-build and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-springboot
@@ -997,7 +997,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-springboot using Java, Spring and Java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: python
@@ -1060,7 +1060,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name python using Python, Pip, Flask and Python as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: python
@@ -1123,7 +1123,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name python using Python, Pip, Flask and Python as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: python
@@ -1186,7 +1186,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name python using Python, Pip, Flask and Python as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: python
@@ -1249,7 +1249,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name python using Python, Pip, Flask and Python as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: python
@@ -1301,7 +1301,7 @@ seed_examples:
             kind: debug
     question: "Could you generate a devfile sample with name python using Python, pip and python as programming language? The devfile should have 3 commands.\
       \ 1: id pip-install-requirements, 2: id run-app, 3: id debugpy. The devfile should have 1 components. 1: name py-web and container image quay.io/eclipse/che-python-3.7:nightly."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: go
@@ -1360,7 +1360,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name go using Go and Go as programming language? The devfile should have 3 commands. 1: id build-image,\
       \ 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2: name kubernetes-deploy and container\
       \ image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: dsrin
@@ -1419,7 +1419,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name dsrin using Python, Pip and Python as programming language? The devfile should have 3 commands.\
       \ 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2: name kubernetes-deploy\
       \ and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-quarkus
@@ -1478,7 +1478,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-quarkus using Java, Quarkus and Java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: yarn install --frozen-lockfile
@@ -1543,7 +1543,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name nodejs-react using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should\
       \ have 2 commands. 1: id install, 2: id run. The devfile should have 3 components. 1: name builder and container image node:slim, 2: name server and\
       \ container image nginxinc/nginx-unprivileged:alpine, 3: name dist and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: dotnet-basic
@@ -1657,7 +1657,7 @@ seed_examples:
       \ 1: id build, 2: id run, 3: id build-image, 4: id deploy-deployment, 5: id deploy-service, 6: id deploy. The devfile should have 4 components. 1:\
       \ name dotnet and container image registry.access.redhat.com/ubi8/dotnet-60:6.0, 2: name image-build and container image , 3: name kubernetes-deploy\
       \ and container image , 4: name kubernetes-service and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: single-nodejs-app
@@ -1681,7 +1681,7 @@ seed_examples:
           component: outerloop-build
     question: "Could you generate a devfile sample with name single-nodejs-app and container as programming language? The devfile should have 1 commands.\
       \ 1: id build-image. The devfile should have 1 components. 1: name outerloop-build and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: tektutor-springboot-microservice
@@ -1734,7 +1734,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name tektutor-springboot-microservice using Java, Spring, Microservice, OpenShift and Java as programming\
       \ language? The devfile should have 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build\
       \ and container image , 2: name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs
@@ -1797,7 +1797,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name nodejs using Node.js, Express, ubi8, sscs, sbom, acs and JavaScript as programming language?\
       \ The devfile should have 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build\
       \ and container image , 2: name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: news-backend
@@ -1869,7 +1869,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name news-backend using Java, Quarkus and java as programming language? The devfile should have\
       \ 3 commands. 1: id init-compile, 2: id dev-run, 3: id dev-debug. The devfile should have 2 components. 1: name tools and container image registry.access.redhat.com/ubi8/openjdk-11,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: binary
@@ -1917,7 +1917,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name binary and binary as programming language? The devfile should have 3 commands. 1: id build-image,\
       \ 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name outerloop-build and container image , 2: name kubernetes-deploy and\
       \ container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         description: Go is an open source programming language that makes it easy to build
@@ -1932,7 +1932,7 @@ seed_examples:
         - Go
         version: 1.0.2
     question: "Could you generate a devfile sample with name go using Go and Go as programming language?"
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: nodejs-svelte
@@ -1986,7 +1986,7 @@ seed_examples:
         id: run
     question: "Could you generate a devfile sample with name nodejs-svelte using Node.js, Svelte and TypeScript as programming language? The devfile should\
       \ have 2 commands. 1: id install, 2: id run. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-18:1-94."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: mvn -Dmaven.repo.local=/home/user/.m2/repository compile
@@ -2062,7 +2062,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name mono2microtest4 using Java, Quarkus and Java as programming language? The devfile should have\
       \ 3 commands. 1: id init-compile, 2: id dev-run, 3: id dev-debug. The devfile should have 2 components. 1: name tools and container image registry.access.redhat.com/ubi8/openjdk-17:1.16-1,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: python-django
@@ -2121,7 +2121,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name python-django using Python, pip, Django and python as programming language? The devfile should\
       \ have 4 commands. 1: id pip-install-requirements, 2: id run-app, 3: id run-migrations, 4: id debug. The devfile should have 1 components. 1: name\
       \ py-web and container image quay.io/eclipse/che-python-3.7:nightly."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: thelocals
@@ -2214,7 +2214,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name thelocals using Python, Pip, Flask and Python as programming language? The devfile should have\
       \ 3 commands. 1: id pip-install-requirements, 2: id run-odoo, 3: id debug-py. The devfile should have 3 components. 1: name py and container image\
       \ registry.access.redhat.com/ubi9/python-39:latest, 2: name odoo and container image odoo-image:latest, 3: name odoo-image and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: kill $(pidof dotnet); dotnet build -c $CONFIGURATION $STARTUP_PROJECT
@@ -2304,7 +2304,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name person-service using .NET, .NET 7.0 and .NET as programming language? The devfile should have\
       \ 2 commands. 1: id build, 2: id run. The devfile should have 3 components. 1: name dotnet and container image registry.access.redhat.com/ubi8/dotnet-70:latest,\
       \ 2: name postgresql and container image registry.redhat.io/rhel9/postgresql-15, 3: name postgresql-storage and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-quarkus
@@ -2353,7 +2353,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-quarkus using Java, Quarkus and java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name outerloop-build and container image\
       \ , 2: name outerloop-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: tektutor-springboot-microservice
@@ -2401,7 +2401,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name tektutor-springboot-microservice using Java, Spring, Microservice, OpenShift and Java as programming\
       \ language? The devfile should have 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build\
       \ and container image , 2: name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: chapeaux-project
@@ -2482,7 +2482,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name chapeaux-project and javascript as programming language? The devfile should have 6 commands.\
       \ 1: id serve-app, 2: id test-cpx, 3: id test-watch, 4: id build-scripts, 5: id build-watch, 6: id fmt-cpx. The devfile should have 2 components.\
       \ 1: name deno-www and container image quay.io/chapeaux/deno-che:latest, 2: name deno-cache and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-springboot
@@ -2545,7 +2545,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-springboot using Java, Spring Boot and Java as programming language? The devfile should\
       \ have 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image\
       \ , 2: name kubernetes-only-deploy and container image ."
-  - answer: >
+  - answer: |
       metadata:
         description: Stack with Node.js 14
         displayName: Node.js Runtime
@@ -2586,7 +2586,7 @@ seed_examples:
           uri: outerloop-deploy.yaml
     question: "Could you generate a devfile sample with name web-nodejs using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should\
       \ have 2 components. 1: name outerloop-build and container image , 2: name outerloop-deploy and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: GOCACHE=${PROJECT_SOURCE}/.cache go build main.go
@@ -2638,7 +2638,7 @@ seed_examples:
         name: go-starter
     question: "Could you generate a devfile sample with name my-go-app using Go and go as programming language? The devfile should have 2 commands. 1: id\
       \ build, 2: id run. The devfile should have 1 components. 1: name runtime and container image golang:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs
@@ -2701,7 +2701,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name nodejs using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should have\
       \ 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-14:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         description: Stack with the latest Go version with devfile v2.0.0 schema verison
@@ -2750,7 +2750,7 @@ seed_examples:
         id: run
     question: "Could you generate a devfile sample with name go using Go and go as programming language? The devfile should have 2 commands. 1: id build,\
       \ 2: id run. The devfile should have 1 components. 1: name runtime and container image golang:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-openliberty
@@ -2830,7 +2830,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name java-openliberty and java as programming language? The devfile should have 5 commands. 1: id\
       \ build, 2: id run, 3: id run-test-off, 4: id debug, 5: id test. The devfile should have 1 components. 1: name devruntime and container image openliberty/application-stack:0.5."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: python-django
@@ -2890,7 +2890,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name python-django using Python, pip, Django and python as programming language? The devfile should\
       \ have 4 commands. 1: id pip-install-requirements, 2: id run-app, 3: id run-migrations, 4: id debug. The devfile should have 1 components. 1: name\
       \ py-web and container image quay.io/eclipse/che-python-3.7:nightly."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         description: Stack with the latest Go version with devfile v2.1.0 schema verison
@@ -2942,7 +2942,7 @@ seed_examples:
         id: run
     question: "Could you generate a devfile sample with name go using testtag and go as programming language? The devfile should have 2 commands. 1: id\
       \ build, 2: id run. The devfile should have 1 components. 1: name runtime and container image golang:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: python
@@ -3044,7 +3044,7 @@ seed_examples:
       \ 6 commands. 1: id pip-install-requirements, 2: id run-app, 3: id debug-py, 4: id build-image, 5: id deployk8s, 6: id deploy. The devfile should\
       \ have 3 components. 1: name py and container image registry.access.redhat.com/ubi9/python-39:1-153.1699551718, 2: name build and container image\
       \ , 3: name deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: dotnet60
@@ -3108,7 +3108,7 @@ seed_examples:
             kind: run
     question: "Could you generate a devfile sample with name dotnet60 using .NET, .NET 6.0 and .NET as programming language? The devfile should have 2 commands.\
       \ 1: id build, 2: id run. The devfile should have 1 components. 1: name dotnet and container image registry.access.redhat.com/ubi8/dotnet-60:6.0-43."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: nodejs-angular
@@ -3165,7 +3165,7 @@ seed_examples:
         id: run
     question: "Could you generate a devfile sample with name nodejs-angular using Node.js, Angular and TypeScript as programming language? The devfile should\
       \ have 2 commands. 1: id install, 2: id run. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-16:1-139."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: go
@@ -3224,7 +3224,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name go using Go and Go as programming language? The devfile should have 3 commands. 1: id build-image,\
       \ 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2: name kubernetes-deploy and container\
       \ image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: go
@@ -3283,7 +3283,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name go using Go and Go as programming language? The devfile should have 3 commands. 1: id build-image,\
       \ 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2: name kubernetes-deploy and container\
       \ image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: go
@@ -3342,7 +3342,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name go using Go and Go as programming language? The devfile should have 3 commands. 1: id build-image,\
       \ 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2: name kubernetes-deploy and container\
       \ image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: go
@@ -3401,7 +3401,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name go using Go and Go as programming language? The devfile should have 3 commands. 1: id build-image,\
       \ 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2: name kubernetes-deploy and container\
       \ image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: python-django
@@ -3460,7 +3460,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name python-django using Python, pip, Django and python as programming language? The devfile should\
       \ have 4 commands. 1: id pip-install-requirements, 2: id run-app, 3: id run-migrations, 4: id debug. The devfile should have 1 components. 1: name\
       \ py-web and container image quay.io/eclipse/che-python-3.7:nightly."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: python-django
@@ -3519,7 +3519,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name python-django using Python, pip, Django and python as programming language? The devfile should\
       \ have 4 commands. 1: id pip-install-requirements, 2: id run-app, 3: id run-migrations, 4: id debug. The devfile should have 1 components. 1: name\
       \ py-web and container image quay.io/eclipse/che-python-3.7:nightly."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-springboot
@@ -3582,7 +3582,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-springboot using Java, Spring Boot and Java as programming language? The devfile should\
       \ have 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image\
       \ , 2: name kubernetes-only-deploy and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: GOCACHE=${PROJECT_SOURCE}/.cache go build main.go
@@ -3634,7 +3634,7 @@ seed_examples:
         name: go-starter
     question: "Could you generate a devfile sample with name my-go-app using Go and go as programming language? The devfile should have 2 commands. 1: id\
       \ build, 2: id run. The devfile should have 1 components. 1: name runtime and container image golang:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: python
@@ -3736,7 +3736,7 @@ seed_examples:
       \ 6 commands. 1: id pip-install-requirements, 2: id run-app, 3: id debug-py, 4: id build-image, 5: id deployk8s, 6: id deploy. The devfile should\
       \ have 3 components. 1: name py and container image registry.access.redhat.com/ubi9/python-39:1-153.1699551718, 2: name build and container image\
       \ , 3: name deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: dotnet60
@@ -3800,7 +3800,7 @@ seed_examples:
             kind: run
     question: "Could you generate a devfile sample with name dotnet60 using .NET, .NET 6.0 and .NET as programming language? The devfile should have 2 commands.\
       \ 1: id build, 2: id run. The devfile should have 1 components. 1: name dotnet and container image registry.access.redhat.com/ubi8/dotnet-60:6.0-43."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: nodejs-angular
@@ -3857,7 +3857,7 @@ seed_examples:
         id: run
     question: "Could you generate a devfile sample with name nodejs-angular using Node.js, Angular and TypeScript as programming language? The devfile should\
       \ have 2 commands. 1: id install, 2: id run. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-16:1-139."
-  - answer: >
+  - answer: |
       commands:
       - apply:
           component: build
@@ -3910,7 +3910,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name weather and Python as programming language? The devfile should have 2 commands. 1: id build-image,\
       \ 2: id deployk8s. The devfile should have 3 components. 1: name build and container image , 2: name deploy and container image , 3: name py and container\
       \ image registry.ocp4.example.com:8443/ubi8/python-39:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: rhods-quick-course
@@ -3984,7 +3984,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name rhods-quick-course using Node.js, Antora, ubi8 and JavaScript as programming language? The\
       \ devfile should have 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container\
       \ image registry.access.redhat.com/ubi8/nodejs-16:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: aws-universal
@@ -4008,7 +4008,7 @@ seed_examples:
           size: 16Gi
     question: "Could you generate a devfile sample with name aws-universal using aws, al2? The devfile should have 2 components. 1: name aws-runtime and\
       \ container image public.ecr.aws/aws-mde/universal-image:latest, 2: name docker-store and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-springboot
@@ -4109,7 +4109,7 @@ seed_examples:
       \ 6 commands. 1: id build, 2: id run, 3: id debug, 4: id build-image, 5: id deployk8s, 6: id deploy. The devfile should have 4 components. 1: name\
       \ tools and container image registry.access.redhat.com/ubi9/openjdk-17:1.17-1.1705573248, 2: name m2 and container image , 3: name build and container\
       \ image , 4: name deploy and container image ."
-  - answer: >
+  - answer: |
       commands:
       - id: build-and-deploy-my-app
         composite:
@@ -4187,7 +4187,7 @@ seed_examples:
       \ have 5 commands. 1: id build-and-deploy-my-app, 2: id build-my-image, 3: id deploy-to-my-k8s, 4: id install-my-packages, 5: id start-my-app. The\
       \ devfile should have 3 components. 1: name image-build and container image , 2: name kubernetes-deploy and container image , 3: name msb-container\
       \ and container image registry.access.redhat.com/ubi8/nodejs-16:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs
@@ -4247,7 +4247,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name nodejs using Node.js, Express, ubi8 and JavaScript as programming language? The devfile should\
       \ have 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image\
       \ , 2: name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: mvn clean -Dmaven.repo.local=/home/user/.m2/repository package -Dmaven.test.skip=true
@@ -4334,7 +4334,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-springboot using Java, Spring and java as programming language? The devfile should have\
       \ 4 commands. 1: id build, 2: id run, 3: id debug, 4: id build-image. The devfile should have 3 components. 1: name outerloop-build and container\
       \ image , 2: name tools and container image quay.io/eclipse/che-java11-maven:7.36.0, 3: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-springboot
@@ -4382,7 +4382,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-springboot using Java, Spring and java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name outerloop-build and container image\
       \ , 2: name outerloop-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         attributes:
@@ -4440,7 +4440,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-springboot using Java, Spring Boot and Java as programming language? The devfile should\
       \ have 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image\
       \ , 2: name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: eynodejs
@@ -4456,7 +4456,7 @@ seed_examples:
       parent:
         uri: https://raw.githubusercontent.com/devfile/registry/main/stacks/nodejs/devfile.yaml
     question: "Could you generate a devfile sample with name eynodejs using NodeJS, Express, ubi8 and nodejs as programming language?"
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs
@@ -4514,7 +4514,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name nodejs using Node.js, Express, ubi8 and JavaScript as programming language? The devfile should\
       \ have 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image\
       \ , 2: name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: jvm-build-test-project
@@ -4569,7 +4569,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name jvm-build-test-project using Java, Maven and java as programming language? The devfile should\
       \ have 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image\
       \ , 2: name outerloop-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: java-maven
@@ -4621,7 +4621,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-maven using Java, Maven and java as programming language? The devfile should have 3 commands.\
       \ 1: id mvn-package, 2: id run, 3: id debug. The devfile should have 2 components. 1: name tools and container image quay.io/eclipse/che-java11-maven:nightly,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: nodejs
@@ -4683,7 +4683,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name nodejs using NextJS and nodejs as programming language? The devfile should have 4 commands.\
       \ 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-14:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-springboot
@@ -4746,7 +4746,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-springboot using Java, Spring Boot and Java as programming language? The devfile should\
       \ have 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image\
       \ , 2: name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs
@@ -4806,7 +4806,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name nodejs using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs
@@ -4855,7 +4855,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name nodejs using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name outerloop-build and container image\
       \ , 2: name outerloop-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: python
@@ -4920,7 +4920,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name python using Python, Pip, Flask and Python as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-quarkus
@@ -4957,7 +4957,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name java-quarkus using Java, Quarkus and java as programming language? The devfile should have\
       \ 2 commands. 1: id deployk8s, 2: id deploy. The devfile should have 1 components. 1: name outerloop-deploy and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: yarn install --frozen-lockfile
@@ -5026,7 +5026,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name nodejs-nextjs using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should\
       \ have 4 commands. 1: id install, 2: id build, 3: id init-server, 4: id run. The devfile should have 1 components. 1: name runtime and container image\
       \ node:slim."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: mongo-db-example
@@ -5063,7 +5063,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name mongo-db-example and container as programming language? The devfile should have 3 commands.\
       \ 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name outerloop-build and container image , 2: name outerloop-deploy\
       \ and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: go build main.go
@@ -5137,7 +5137,7 @@ seed_examples:
         name: go-starter
     question: "Could you generate a devfile sample with name ocwebsvc using Go and Go as programming language? The devfile should have 3 commands. 1: id\
       \ build, 2: id run, 3: id debug. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi9/go-toolset:1.19.13-4.1697647145."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: spring-web-server
@@ -5196,7 +5196,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name spring-web-server using Java, Spring and Java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       metadata:
         description: Quarkus with Java
         displayName: Quarkus Java
@@ -5232,7 +5232,7 @@ seed_examples:
           uri: outerloop-deploy.yaml
     question: "Could you generate a devfile sample with name inventory-quarkus using Java, Quarkus and java as programming language? The devfile should\
       \ have 2 components. 1: name outerloop-build and container image , 2: name outerloop-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-quarkus
@@ -5293,7 +5293,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-quarkus using Java, Quarkus and Java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs
@@ -5326,7 +5326,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name nodejs using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should have\
       \ 1 commands. 1: id deployk8s. The devfile should have 1 components. 1: name outerloop-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: python
@@ -5377,7 +5377,7 @@ seed_examples:
             kind: debug
     question: "Could you generate a devfile sample with name python using Python, pip and python as programming language? The devfile should have 3 commands.\
       \ 1: id pip-install-requirements, 2: id run-app, 3: id debugpy. The devfile should have 1 components. 1: name py-web and container image quay.io/eclipse/che-python-3.7:nightly."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: dotnet60
@@ -5487,7 +5487,7 @@ seed_examples:
       \ 1: id build, 2: id run, 3: id build-image, 4: id deploy-deployment, 5: id deploy-service, 6: id deploy. The devfile should have 4 components. 1:\
       \ name dotnet and container image registry.access.redhat.com/ubi8/dotnet-60:6.0, 2: name outerloop-build and container image , 3: name outerloop-deploy\
       \ and container image , 4: name outerloop-service and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-springboot
@@ -5588,7 +5588,7 @@ seed_examples:
       \ 6 commands. 1: id build, 2: id run, 3: id debug, 4: id build-image, 5: id deployk8s, 6: id deploy. The devfile should have 4 components. 1: name\
       \ tools and container image registry.access.redhat.com/ubi9/openjdk-17:1.17-1, 2: name m2 and container image , 3: name build and container image\
       \ , 4: name deploy and container image ."
-  - answer: >
+  - answer: |
       commands:
       - apply:
           component: build
@@ -5641,7 +5641,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name weather and Python as programming language? The devfile should have 2 commands. 1: id build-image,\
       \ 2: id deployk8s. The devfile should have 3 components. 1: name build and container image , 2: name deploy and container image , 3: name py and container\
       \ image registry.ocp4.example.com:8443/ubi8/python-39:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: rhods-quick-course
@@ -5715,7 +5715,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name rhods-quick-course using Node.js, Antora, ubi8 and JavaScript as programming language? The\
       \ devfile should have 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container\
       \ image registry.access.redhat.com/ubi8/nodejs-16:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-springboot
@@ -5763,7 +5763,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-springboot using Java, Spring and java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name outerloop-build and container image\
       \ , 2: name outerloop-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-springboot
@@ -5811,7 +5811,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-springboot using Java, Spring and java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name outerloop-build and container image\
       \ , 2: name outerloop-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: python
@@ -5876,7 +5876,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name python using Python, Pip, Flask and Python as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: python
@@ -5941,7 +5941,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name python using Python, Pip, Flask and Python as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: python
@@ -6006,7 +6006,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name python using Python, Pip, Flask and Python as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: python
@@ -6071,7 +6071,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name python using Python, Pip, Flask and Python as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: python
@@ -6122,7 +6122,7 @@ seed_examples:
             kind: debug
     question: "Could you generate a devfile sample with name python using Python, pip and python as programming language? The devfile should have 3 commands.\
       \ 1: id pip-install-requirements, 2: id run-app, 3: id debugpy. The devfile should have 1 components. 1: name py-web and container image quay.io/eclipse/che-python-3.7:nightly."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: python
@@ -6173,7 +6173,7 @@ seed_examples:
             kind: debug
     question: "Could you generate a devfile sample with name python using Python, pip and python as programming language? The devfile should have 3 commands.\
       \ 1: id pip-install-requirements, 2: id run-app, 3: id debugpy. The devfile should have 1 components. 1: name py-web and container image quay.io/eclipse/che-python-3.7:nightly."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-springboot
@@ -6274,7 +6274,7 @@ seed_examples:
       \ 6 commands. 1: id build, 2: id run, 3: id debug, 4: id build-image, 5: id deployk8s, 6: id deploy. The devfile should have 4 components. 1: name\
       \ tools and container image registry.access.redhat.com/ubi9/openjdk-17:1.17-1, 2: name m2 and container image , 3: name build and container image\
       \ , 4: name deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: container
@@ -6326,7 +6326,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name container and javascript as programming language? The devfile should have 3 commands. 1: id\
       \ build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2: name kubernetes-deploy\
       \ and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: nodejs-nuxtjs
@@ -6382,7 +6382,7 @@ seed_examples:
         id: run
     question: "Could you generate a devfile sample with name nodejs-nuxtjs using Node.js, Nuxt.js and TypeScript as programming language? The devfile should\
       \ have 2 commands. 1: id install, 2: id run. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-18:1-94."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: npm install
@@ -6455,7 +6455,7 @@ seed_examples:
         name: nodejs-starter
     question: "Could you generate a devfile sample with name odotest using Node.js, Express, ubi8 and JavaScript as programming language? The devfile should\
       \ have 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-16:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs
@@ -6496,7 +6496,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name nodejs using Node.js, Express, ubi8 and JavaScript as programming language? The devfile should\
       \ have 2 commands. 1: id build-image, 2: id deploy. The devfile should have 1 components. 1: name image-build and container image ."
-  - answer: >
+  - answer: |
       commands:
       - apply:
           component: truststore-initcontainer
@@ -6599,7 +6599,7 @@ seed_examples:
       \ 4 commands. 1: id mount-truststore, 2: id init-compile, 3: id dev-run, 4: id dev-debug. The devfile should have 5 components. 1: name tools and\
       \ container image registry.access.redhat.com/ubi8/openjdk-11, 2: name truststore-initcontainer and container image quay.io/murph83/truststore-initcontainer@sha256:b817ab95fbdda03049c6cd970ea481ac7672e9fd6dbbe96e3668a1599461a539,\
       \ 3: name truststore-volume and container image , 4: name m2 and container image , 5: name cache-service and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-springboot
@@ -6647,7 +6647,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name java-springboot using Java, Spring and Java as programming language? The devfile should have\
       \ 2 commands. 1: id deployk8s, 2: id deploy. The devfile should have 1 components. 1: name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: mvn -Dmaven.repo.local=/home/user/.m2/repository compile
@@ -6726,7 +6726,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name quarkus-rest-plusplus using Java, Quarkus and Java as programming language? The devfile should\
       \ have 3 commands. 1: id init-compile, 2: id dev-run, 3: id dev-debug. The devfile should have 2 components. 1: name tools and container image registry.access.redhat.com/ubi8/openjdk-17,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: fbc-v4.15
@@ -6756,7 +6756,7 @@ seed_examples:
           component: image-build
     question: "Could you generate a devfile sample with name fbc-v4.15 and fbc as programming language? The devfile should have 1 commands. 1: id build-image.\
       \ The devfile should have 2 components. 1: name image-build and container image , 2: name kubernetes and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: go
@@ -6811,7 +6811,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name go using Go and go as programming language? The devfile should have 3 commands. 1: id build-image,\
       \ 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name outerloop-build and container image , 2: name outerloop-deploy and\
       \ container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: nodejs-angular
@@ -6868,7 +6868,7 @@ seed_examples:
         id: run
     question: "Could you generate a devfile sample with name nodejs-angular using Node.js, Angular and TypeScript as programming language? The devfile should\
       \ have 2 commands. 1: id install, 2: id run. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-18:1-94."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: fbc-v4.12
@@ -6898,7 +6898,7 @@ seed_examples:
           component: image-build
     question: "Could you generate a devfile sample with name fbc-v4.12 and fbc as programming language? The devfile should have 1 commands. 1: id build-image.\
       \ The devfile should have 2 components. 1: name image-build and container image , 2: name kubernetes and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: aws-universal
@@ -6922,7 +6922,7 @@ seed_examples:
           size: 16Gi
     question: "Could you generate a devfile sample with name aws-universal using aws, a12? The devfile should have 2 components. 1: name aws-runtime and\
       \ container image public.ecr.aws/aws-mde/universal-image:latest, 2: name docker-store and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: npm install
@@ -6996,7 +6996,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name nodejs-starter using Node.js, Express, ubi8 and JavaScript as programming language? The devfile\
       \ should have 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container image\
       \ registry.access.redhat.com/ubi8/nodejs-16:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: nodejs-vue
@@ -7055,7 +7055,7 @@ seed_examples:
         id: build
     question: "Could you generate a devfile sample with name nodejs-vue using Node.js, Vue and TypeScript as programming language? The devfile should have\
       \ 2 commands. 1: id install, 2: id build. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-18:1-94."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: pip install -r requirements.txt
@@ -7143,7 +7143,7 @@ seed_examples:
       \ have 6 commands. 1: id pip-install-requirements, 2: id run-app, 3: id debug-py, 4: id build-image, 5: id deployk8s, 6: id deploy. The devfile should\
       \ have 3 components. 1: name py and container image registry.access.redhat.com/ubi9/python-39:1-108, 2: name build and container image , 3: name deploy\
       \ and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: make build
@@ -7199,7 +7199,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name gosnappass using Go and Go as programming language? The devfile should have 2 commands. 1:\
       \ id build, 2: id run. The devfile should have 2 components. 1: name runtime and container image docker.io/golang:1.19, 2: name db and container image\
       \ docker.io/redis/redis-stack."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: java-openliberty
@@ -7277,7 +7277,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name java-openliberty and java as programming language? The devfile should have 5 commands. 1: id\
       \ build, 2: id run, 3: id run-test-off, 4: id debug, 5: id test. The devfile should have 1 components. 1: name devruntime and container image openliberty/application-stack:0.5."
-  - answer: >
+  - answer: |
       commands:
       - apply:
           component: build
@@ -7374,7 +7374,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name my-go-app using Go and Go as programming language? The devfile should have 5 commands. 1: id\
       \ build-image, 2: id deployk8s, 3: id deploy, 4: id build, 5: id run. The devfile should have 3 components. 1: name build and container image , 2:\
       \ name deploy and container image , 3: name runtime and container image registry.access.redhat.com/ubi9/go-toolset:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-quarkus
@@ -7433,7 +7433,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-quarkus using Java, Quarkus and Java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: pip install -r requirements.txt
@@ -7507,7 +7507,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name flask-example using Flask, Python, Pip and Python as programming language? The devfile should\
       \ have 3 commands. 1: id pip-install-requirements, 2: id run-app, 3: id debugpy. The devfile should have 1 components. 1: name py-web and container\
       \ image registry.access.redhat.com/ubi9/python-39:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         description: Service Names and Port Numbers
@@ -7587,7 +7587,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name service-names-port-numbers using gradle, kotlin, spring, service-names-port-numbers and kotlin\
       \ as programming language? The devfile should have 4 commands. 1: id build, 2: id test, 3: id run, 4: id debug. The devfile should have 2 components.\
       \ 1: name tools and container image eclipse-temurin:17-jdk, 2: name gradle-cache and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: golang
@@ -7624,7 +7624,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name golang and golang as programming language? The devfile should have 3 commands. 1: id build-image,\
       \ 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name outerloop-build and container image , 2: name outerloop-deploy and\
       \ container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: quarkus-restapi
@@ -7722,7 +7722,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name quarkus-restapi using Java, Quarkus, Maven, REST, API and java as programming language? The\
       \ devfile should have 7 commands. 1: id compile, 2: id analyze, 3: id package, 4: id rununittests, 5: id run, 6: id debug, 7: id build. The devfile\
       \ should have 2 components. 1: name mvn and container image registry.access.redhat.com/ubi8/openjdk-11, 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-springboot
@@ -7823,7 +7823,7 @@ seed_examples:
       \ 6 commands. 1: id build, 2: id run, 3: id debug, 4: id build-image, 5: id deployk8s, 6: id deploy. The devfile should have 4 components. 1: name\
       \ tools and container image registry.access.redhat.com/ubi8/openjdk-11:1.18-2.1705602259, 2: name m2 and container image , 3: name build and container\
       \ image , 4: name deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: ux-github-actions
@@ -7847,7 +7847,7 @@ seed_examples:
           component: outerloop-build
     question: "Could you generate a devfile sample with name ux-github-actions and container as programming language? The devfile should have 1 commands.\
       \ 1: id build-image. The devfile should have 1 components. 1: name outerloop-build and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs-react
@@ -7901,7 +7901,7 @@ seed_examples:
         id: run
     question: "Could you generate a devfile sample with name nodejs-react using Node.js, React and TypeScript as programming language? The devfile should\
       \ have 2 commands. 1: id install, 2: id run. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-18:1-94."
-  - answer: >
+  - answer: |
       metadata:
         description: Upstream Vert.x using Java
         displayName: Vert.x Java
@@ -7945,7 +7945,7 @@ seed_examples:
           uri: outerloop-deploy.yaml
     question: "Could you generate a devfile sample with name gateway-vertx using Java, Vert.x and java as programming language? The devfile should have\
       \ 2 components. 1: name outerloop-build and container image , 2: name outerloop-deploy and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: mvn clean -Dmaven.repo.local=/home/user/.m2/repository package -Dmaven.test.skip=true
@@ -8018,7 +8018,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name demo using Java, Spring and Java as programming language? The devfile should have 3 commands.\
       \ 1: id build, 2: id run, 3: id debug. The devfile should have 2 components. 1: name tools and container image registry.access.redhat.com/ubi8/openjdk-11:latest,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs-vue
@@ -8077,7 +8077,7 @@ seed_examples:
         id: build
     question: "Could you generate a devfile sample with name nodejs-vue using Node.js, Vue and TypeScript as programming language? The devfile should have\
       \ 2 commands. 1: id install, 2: id build. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-18:1-94."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: dotnet-basic
@@ -8188,7 +8188,7 @@ seed_examples:
       \ 1: id build, 2: id run, 3: id build-image, 4: id deploy-deployment, 5: id deploy-service, 6: id deploy. The devfile should have 4 components. 1:\
       \ name dotnet and container image registry.access.redhat.com/ubi8/dotnet-60:6.0, 2: name image-build and container image , 3: name kubernetes-deploy\
       \ and container image , 4: name kubernetes-service and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs
@@ -8252,7 +8252,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name nodejs using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should have\
       \ 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-14:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: java-maven
@@ -8317,7 +8317,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-maven using Java, Maven and java as programming language? The devfile should have 3 commands.\
       \ 1: id mvn-package, 2: id run, 3: id debug. The devfile should have 2 components. 1: name tools and container image quay.io/eclipse/che-java11-maven:nightly,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: java-maven
@@ -8388,7 +8388,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-maven using Java, Maven and Java as programming language? The devfile should have 3 commands.\
       \ 1: id mvn-package, 2: id run, 3: id debug. The devfile should have 2 components. 1: name tools and container image registry.access.redhat.com/ubi9/openjdk-17:1.17-1,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: npm install
@@ -8442,7 +8442,7 @@ seed_examples:
         name: nodejs-react-starter
     question: "Could you generate a devfile sample with name comp4 using Node.js, React and Typescript as programming language? The devfile should have\
       \ 2 commands. 1: id install, 2: id run. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-18:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: fbc-v4.15
@@ -8472,7 +8472,7 @@ seed_examples:
           component: image-build
     question: "Could you generate a devfile sample with name fbc-v4.15 and fbc as programming language? The devfile should have 1 commands. 1: id build-image.\
       \ The devfile should have 2 components. 1: name image-build and container image , 2: name kubernetes and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: aws-universal
@@ -8496,7 +8496,7 @@ seed_examples:
           size: 16Gi
     question: "Could you generate a devfile sample with name aws-universal using aws, a12? The devfile should have 2 components. 1: name aws-runtime and\
       \ container image public.ecr.aws/aws-mde/universal-image:latest, 2: name docker-store and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: pip install -r requirements.txt
@@ -8584,7 +8584,7 @@ seed_examples:
       \ have 6 commands. 1: id pip-install-requirements, 2: id run-app, 3: id debug-py, 4: id build-image, 5: id deployk8s, 6: id deploy. The devfile should\
       \ have 3 components. 1: name py and container image registry.access.redhat.com/ubi9/python-39:1-108, 2: name build and container image , 3: name deploy\
       \ and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: java-openliberty
@@ -8662,7 +8662,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name java-openliberty and java as programming language? The devfile should have 5 commands. 1: id\
       \ build, 2: id run, 3: id run-test-off, 4: id debug, 5: id test. The devfile should have 1 components. 1: name devruntime and container image openliberty/application-stack:0.5."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-quarkus
@@ -8721,7 +8721,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-quarkus using Java, Quarkus and Java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-quarkus
@@ -8780,7 +8780,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-quarkus using Java, Quarkus and Java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       metadata:
         description: Upstream Vert.x using Java
         displayName: Vert.x Java
@@ -8824,7 +8824,7 @@ seed_examples:
           uri: outerloop-deploy.yaml
     question: "Could you generate a devfile sample with name gateway-vertx using Java, Vert.x and java as programming language? The devfile should have\
       \ 2 components. 1: name outerloop-build and container image , 2: name outerloop-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: java-maven
@@ -8895,7 +8895,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-maven using Java, Maven and Java as programming language? The devfile should have 3 commands.\
       \ 1: id mvn-package, 2: id run, 3: id debug. The devfile should have 2 components. 1: name tools and container image registry.access.redhat.com/ubi9/openjdk-17:1.17-1,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: mvn clean -Dmaven.repo.local=/home/user/.m2/repository package -Dmaven.test.skip=true
@@ -8997,7 +8997,7 @@ seed_examples:
       \ 6 commands. 1: id build, 2: id run, 3: id debug, 4: id build-image, 5: id deployk8s, 6: id deploy. The devfile should have 4 components. 1: name\
       \ outerloop-build and container image , 2: name outerloop-deploy and container image , 3: name tools and container image quay.io/eclipse/che-java11-maven:7.36.0,\
       \ 4: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: python
@@ -9061,7 +9061,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name python using Python, Pip, Flask and Python as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       components:
       - container:
@@ -9157,7 +9157,7 @@ seed_examples:
       \ 1: id build, 2: id run, 3: id debug. The devfile should have 4 components. 1: name tools and container image quay.io/devfile/universal-developer-image:ubi8-latest,\
       \ 2: name postgres and container image registry.redhat.io/rhel8/postgresql-12, 3: name m2 and container image , 4: name bash-history-mount and container\
       \ image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: service-provider-integration-oauth
@@ -9179,7 +9179,7 @@ seed_examples:
           component: outerloop-build
     question: "Could you generate a devfile sample with name service-provider-integration-oauth and container as programming language? The devfile should\
       \ have 1 commands. 1: id build-image. The devfile should have 1 components. 1: name outerloop-build and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-quarkus
@@ -9238,7 +9238,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-quarkus using Java, Quarkus and java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name outerloop-build and container image\
       \ , 2: name outerloop-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: python
@@ -9248,7 +9248,7 @@ seed_examples:
         language: Python
         version: 2.0.2
     question: "Could you generate a devfile sample with name python and Python as programming language?"
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: dotnet50
@@ -9312,7 +9312,7 @@ seed_examples:
             kind: run
     question: "Could you generate a devfile sample with name dotnet50 using .NET, .NET 5.0 and .NET as programming language? The devfile should have 2 commands.\
       \ 1: id build, 2: id run. The devfile should have 1 components. 1: name dotnet and container image registry.access.redhat.com/ubi8/dotnet-50:5.0-39."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: python
@@ -9379,7 +9379,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name python using Python, Pip, Flask, sscs, sbom, acs and Python as programming language? The devfile\
       \ should have 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container\
       \ image , 2: name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: python
@@ -9481,7 +9481,7 @@ seed_examples:
       \ 6 commands. 1: id pip-install-requirements, 2: id run-app, 3: id debug-py, 4: id build-image, 5: id deployk8s, 6: id deploy. The devfile should\
       \ have 3 components. 1: name py and container image registry.access.redhat.com/ubi9/python-39:1-165, 2: name build and container image , 3: name deploy\
       \ and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-springboot
@@ -9533,7 +9533,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-springboot using Java, Spring and Java as programming language? The devfile should have\
       \ 3 components. 1: name image-build and container image , 2: name image-build2 and container image , 3: name kubernetes-deploy and container image\
       \ ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: kcp
@@ -9555,7 +9555,7 @@ seed_examples:
           component: outerloop-build
     question: "Could you generate a devfile sample with name kcp and container as programming language? The devfile should have 1 commands. 1: id build-image.\
       \ The devfile should have 1 components. 1: name outerloop-build and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: nodejs-angular
@@ -9612,7 +9612,7 @@ seed_examples:
         id: run
     question: "Could you generate a devfile sample with name nodejs-angular using Node.js, Angular and TypeScript as programming language? The devfile should\
       \ have 2 commands. 1: id install, 2: id run. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-16:1-105.1684740145."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: fbc-4.10
@@ -9639,7 +9639,7 @@ seed_examples:
           component: image-build
     question: "Could you generate a devfile sample with name fbc-4.10 and fbc as programming language? The devfile should have 1 commands. 1: id build-image.\
       \ The devfile should have 2 components. 1: name image-build and container image , 2: name kubernetes and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: go
@@ -9727,7 +9727,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name go using Go, Deprecated and Go as programming language? The devfile should have 5 commands.\
       \ 1: id build-image, 2: id deployk8s, 3: id deploy, 4: id build, 5: id run. The devfile should have 3 components. 1: name build and container image\
       \ , 2: name deploy and container image , 3: name runtime and container image registry.access.redhat.com/ubi9/go-toolset:1.18.10-4."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-quarkus
@@ -9783,7 +9783,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-quarkus using Java, Quarkus and java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name outerloop-build and container image\
       \ , 2: name outerloop-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: java-maven
@@ -9840,7 +9840,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-maven using Java, Maven and java as programming language? The devfile should have 3 commands.\
       \ 1: id mvn-package, 2: id run, 3: id debug. The devfile should have 2 components. 1: name tools and container image quay.io/eclipse/che-java11-maven:nightly,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: nodejs-svelte
@@ -9894,7 +9894,7 @@ seed_examples:
         id: run
     question: "Could you generate a devfile sample with name nodejs-svelte using Node.js, Svelte and TypeScript as programming language? The devfile should\
       \ have 2 commands. 1: id install, 2: id run. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-16:1-153."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: onguard
@@ -9930,7 +9930,7 @@ seed_examples:
           component: image-build
     question: "Could you generate a devfile sample with name onguard using Exhort, RHTPA, Java, Quarkus, NVD, OSV and Java as programming language? The\
       \ devfile should have 1 commands. 1: id build-image. The devfile should have 1 components. 1: name image-build and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs-angular
@@ -9987,7 +9987,7 @@ seed_examples:
         id: run
     question: "Could you generate a devfile sample with name nodejs-angular using Node.js, Angular and TypeScript as programming language? The devfile should\
       \ have 2 commands. 1: id install, 2: id run. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-18:1-94."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: java-quarkus
@@ -10054,7 +10054,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-quarkus using Java, Quarkus and java as programming language? The devfile should have\
       \ 3 commands. 1: id init-compile, 2: id dev-run, 3: id dev-debug. The devfile should have 2 components. 1: name tools and container image quay.io/eclipse/che-quarkus:nightly,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: aws-universal
@@ -10078,7 +10078,7 @@ seed_examples:
           size: 16Gi
     question: "Could you generate a devfile sample with name aws-universal using aws, al2? The devfile should have 2 components. 1: name aws-runtime and\
       \ container image public.ecr.aws/aws-mde/universal-image:3.0, 2: name docker-store and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: go
@@ -10141,7 +10141,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name go using Go, sscs, sbom, acs and Go as programming language? The devfile should have 3 commands.\
       \ 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2: name kubernetes-deploy\
       \ and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs
@@ -10175,7 +10175,7 @@ seed_examples:
           component: outerloop-build
     question: "Could you generate a devfile sample with name nodejs using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should have\
       \ 1 commands. 1: id build-image. The devfile should have 1 components. 1: name outerloop-build and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: nodejs
@@ -10238,7 +10238,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name nodejs using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should have\
       \ 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-14:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: java-maven
@@ -10309,7 +10309,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-maven using Java, Maven and Java as programming language? The devfile should have 3 commands.\
       \ 1: id mvn-package, 2: id run, 3: id debug. The devfile should have 2 components. 1: name tools and container image registry.access.redhat.com/ubi8/openjdk-11:1.18-2.1705602259,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       metadata:
         description: Stack with Node.js 14
         displayName: Node.js Runtime
@@ -10336,7 +10336,7 @@ seed_examples:
               exposure: internal
           name: runtime
     question: "Could you generate a devfile sample with name web-nodejs using NodeJS, Express, ubi8 and nodejs as programming language?"
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: java-openliberty-gradle
@@ -10433,7 +10433,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name java-openliberty-gradle using Java, Gradle and Java as programming language? The devfile should\
       \ have 4 commands. 1: id run, 2: id run-test-off, 3: id debug, 4: id test. The devfile should have 1 components. 1: name dev and container image icr.io/appcafe/open-liberty-devfile-stack:{{liberty-version}}-gradle."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-quarkus
@@ -10493,7 +10493,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-quarkus using Java, Quarkus and Java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-springboot
@@ -10537,7 +10537,7 @@ seed_examples:
             path: /
     question: "Could you generate a devfile sample with name java-springboot using Java, Spring Boot and Java as programming language? The devfile should\
       \ have 2 components. 1: name image-build and container image , 2: name kubernetes-no-cmd-ref and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: golang
@@ -10585,7 +10585,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name golang and golang as programming language? The devfile should have 3 commands. 1: id build-image,\
       \ 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name outerloop-build and container image , 2: name kubernetes-deploy and\
       \ container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: mvn clean -Dmaven.repo.local=/home/user/.m2/repository package -Dmaven.test.skip=true
@@ -10658,7 +10658,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name hello-rest-comp using Java, Spring and Java as programming language? The devfile should have\
       \ 3 commands. 1: id build, 2: id run, 3: id debug. The devfile should have 2 components. 1: name tools and container image registry.access.redhat.com/ubi8/openjdk-11:1.16-1,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: binary
@@ -10695,7 +10695,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name binary and binary as programming language? The devfile should have 3 commands. 1: id build-image,\
       \ 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name outerloop-build and container image , 2: name outerloop-deploy and\
       \ container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: nodejs-angular
@@ -10752,7 +10752,7 @@ seed_examples:
         id: run
     question: "Could you generate a devfile sample with name nodejs-angular using Node.js, Angular and TypeScript as programming language? The devfile should\
       \ have 2 commands. 1: id install, 2: id run. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-18:1-86."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: python
@@ -10815,7 +10815,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name python using Python, Pip, Flask and Python as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: nodejs
@@ -10878,7 +10878,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name nodejs using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should have\
       \ 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-14:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: hacbs-jvm-build-test-project
@@ -10898,7 +10898,7 @@ seed_examples:
         id: java-maven
         registryUrl: https://registry.devfile.io
     question: "Could you generate a devfile sample with name hacbs-jvm-build-test-project using Java, Maven and java as programming language?"
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: fbc-v4.14
@@ -10928,7 +10928,7 @@ seed_examples:
           component: image-build
     question: "Could you generate a devfile sample with name fbc-v4.14 and fbc as programming language? The devfile should have 1 commands. 1: id build-image.\
       \ The devfile should have 2 components. 1: name image-build and container image , 2: name kubernetes and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: java-quarkus
@@ -10995,7 +10995,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-quarkus using Java, Quarkus and java as programming language? The devfile should have\
       \ 3 commands. 1: id init-compile, 2: id dev-run, 3: id dev-debug. The devfile should have 2 components. 1: name tools and container image registry.access.redhat.com/ubi8/openjdk-11,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: python
@@ -11046,7 +11046,7 @@ seed_examples:
             kind: debug
     question: "Could you generate a devfile sample with name python using Python, pip and python as programming language? The devfile should have 3 commands.\
       \ 1: id pip-install-requirements, 2: id run-app, 3: id debugpy. The devfile should have 1 components. 1: name py-web and container image quay.io/eclipse/che-python-3.7:nightly."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: nodejs
@@ -11117,7 +11117,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name nodejs using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should have\
       \ 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 2 components. 1: name buildguidance and container image buildguidanceimage-placeholder,\
       \ 2: name runtime and container image registry.access.redhat.com/ubi8/nodejs-14:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-quarkus
@@ -11186,7 +11186,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-quarkus using Java, Quarkus and java as programming language? The devfile should have\
       \ 3 commands. 1: id init-compile, 2: id dev-run, 3: id dev-debug. The devfile should have 2 components. 1: name tools and container image quay.io/eclipse/che-quarkus:nightly,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: ./main {{ PARAMS }}
@@ -11225,7 +11225,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name my-go-app using Go and go as programming language? The devfile should have 1 commands. 1: id\
       \ run. The devfile should have 3 components. 1: name runtime and container image golang:latest, 2: name outerloop-deploy and container image , 3:\
       \ name outerloop-deploy2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs-angular
@@ -11282,7 +11282,7 @@ seed_examples:
         id: run
     question: "Could you generate a devfile sample with name nodejs-angular using Node.js, Angular and TypeScript as programming language? The devfile should\
       \ have 2 commands. 1: id install, 2: id run. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-18:1-81."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: python
@@ -11346,7 +11346,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name python using Python, Pip, Flask and Python as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: python
@@ -11356,7 +11356,7 @@ seed_examples:
         language: Python
         version: 2.0.2
     question: "Could you generate a devfile sample with name python and Python as programming language?"
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: python
@@ -11366,7 +11366,7 @@ seed_examples:
         language: Python
         version: 2.0.2
     question: "Could you generate a devfile sample with name python and Python as programming language?"
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: python
@@ -11376,7 +11376,7 @@ seed_examples:
         language: Python
         version: 2.0.2
     question: "Could you generate a devfile sample with name python and Python as programming language?"
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: python
@@ -11386,7 +11386,7 @@ seed_examples:
         language: Python
         version: 2.0.2
     question: "Could you generate a devfile sample with name python and Python as programming language?"
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: dotnet50
@@ -11450,7 +11450,7 @@ seed_examples:
             kind: run
     question: "Could you generate a devfile sample with name dotnet50 using .NET, .NET 5.0 and .NET as programming language? The devfile should have 2 commands.\
       \ 1: id build, 2: id run. The devfile should have 1 components. 1: name dotnet and container image registry.access.redhat.com/ubi8/dotnet-50:5.0-39."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: dotnet50
@@ -11514,7 +11514,7 @@ seed_examples:
             kind: run
     question: "Could you generate a devfile sample with name dotnet50 using .NET, .NET 5.0 and .NET as programming language? The devfile should have 2 commands.\
       \ 1: id build, 2: id run. The devfile should have 1 components. 1: name dotnet and container image registry.access.redhat.com/ubi8/dotnet-50:5.0-39."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: java-maven
@@ -11571,7 +11571,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-maven using Java, Maven and java as programming language? The devfile should have 3 commands.\
       \ 1: id mvn-package, 2: id run, 3: id debug. The devfile should have 2 components. 1: name tools and container image quay.io/eclipse/che-java11-maven:nightly,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: java-maven
@@ -11628,7 +11628,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-maven using Java, Maven and java as programming language? The devfile should have 3 commands.\
       \ 1: id mvn-package, 2: id run, 3: id debug. The devfile should have 2 components. 1: name tools and container image quay.io/eclipse/che-java11-maven:nightly,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: java-quarkus
@@ -11695,7 +11695,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-quarkus using Java, Quarkus and java as programming language? The devfile should have\
       \ 3 commands. 1: id init-compile, 2: id dev-run, 3: id dev-debug. The devfile should have 2 components. 1: name tools and container image quay.io/eclipse/che-quarkus:nightly,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: go
@@ -11758,7 +11758,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name go using Go, sscs, sbom, acs and Go as programming language? The devfile should have 3 commands.\
       \ 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2: name kubernetes-deploy\
       \ and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: go
@@ -11821,7 +11821,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name go using Go, sscs, sbom, acs and Go as programming language? The devfile should have 3 commands.\
       \ 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2: name kubernetes-deploy\
       \ and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: nodejs
@@ -11884,7 +11884,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name nodejs using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should have\
       \ 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-14:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: nodejs
@@ -11947,7 +11947,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name nodejs using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should have\
       \ 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-14:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-quarkus
@@ -12007,7 +12007,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-quarkus using Java, Quarkus and Java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: nodejs
@@ -12070,7 +12070,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name nodejs using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should have\
       \ 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-14:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: hacbs-jvm-build-test-project
@@ -12090,7 +12090,7 @@ seed_examples:
         id: java-maven
         registryUrl: https://registry.devfile.io
     question: "Could you generate a devfile sample with name hacbs-jvm-build-test-project using Java, Maven and java as programming language?"
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs-angular
@@ -12147,7 +12147,7 @@ seed_examples:
         id: run
     question: "Could you generate a devfile sample with name nodejs-angular using Node.js, Angular and TypeScript as programming language? The devfile should\
       \ have 2 commands. 1: id install, 2: id run. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-18:1-81."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: python22222
@@ -12190,7 +12190,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name python22222 and python as programming language? The devfile should have 3 commands. 1: id build-image,\
       \ 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name outerloop-build and container image , 2: name outerloop-deploy and\
       \ container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: openshift-quickstart
@@ -12290,7 +12290,7 @@ seed_examples:
       \ have 3 commands. 1: id 1-package, 2: id 2-startdev, 3: id 3-deploy. The devfile should have 5 components. 1: name tools and container image registry.redhat.io/devspaces/udi-rhel8@sha256:7e942155ebd808256e34a9411b85e41ae41d771353146cf6c15ed0b6bd4caacd,\
       \ 2: name postgresql and container image registry.redhat.io/rhel9/postgresql-15, 3: name postgres and container image , 4: name m2 and container image\
       \ , 5: name postgresql-storage and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: pip install -r requirements.txt
@@ -12378,7 +12378,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name testflask using Python, Pip, Flask and Python as programming language? The devfile should have\
       \ 3 commands. 1: id install-python-requirements-file, 2: id run, 3: id debug. The devfile should have 1 components. 1: name python-39 and container\
       \ image registry.access.redhat.com/ubi9/python-39:latest."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: mvn clean -Dmaven.repo.local=/home/user/.m2/repository package -Dmaven.test.skip=true
@@ -12446,7 +12446,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name menu using Java, Spring and java as programming language? The devfile should have 3 commands.\
       \ 1: id build, 2: id run, 3: id debug. The devfile should have 2 components. 1: name tools and container image quay.io/eclipse/che-java11-maven:next,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: nodejs-nextjs
@@ -12501,7 +12501,7 @@ seed_examples:
         id: run
     question: "Could you generate a devfile sample with name nodejs-nextjs using Node.js, Next.js and TypeScript as programming language? The devfile should\
       \ have 2 commands. 1: id install, 2: id run. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-16:1-153."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-springboot
@@ -12561,7 +12561,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-springboot using Java, Spring and Java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: nodejs-react
@@ -12615,7 +12615,7 @@ seed_examples:
         id: run
     question: "Could you generate a devfile sample with name nodejs-react using Node.js, React and TypeScript as programming language? The devfile should\
       \ have 2 commands. 1: id install, 2: id run. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-18:1-94."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: java-springboot
@@ -12688,7 +12688,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-springboot using Java, Spring and Java as programming language? The devfile should have\
       \ 3 commands. 1: id build, 2: id run, 3: id debug. The devfile should have 2 components. 1: name tools and container image registry.access.redhat.com/ubi8/openjdk-11:1.18-2.1705602259,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: python
@@ -12740,7 +12740,7 @@ seed_examples:
             kind: debug
     question: "Could you generate a devfile sample with name python using Python, pip and python as programming language? The devfile should have 3 commands.\
       \ 1: id pip-install-requirements, 2: id run-app, 3: id debugpy. The devfile should have 1 components. 1: name py-web and container image quay.io/eclipse/che-python-3.7:nightly."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs
@@ -12777,7 +12777,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name nodejs and golang as programming language? The devfile should have 3 commands. 1: id build-image,\
       \ 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name outerloop-build and container image , 2: name outerloop-deploy and\
       \ container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: aws-universal
@@ -12824,7 +12824,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name aws-universal using aws, al2? The devfile should have 1 commands. 1: id install. The devfile\
       \ should have 2 components. 1: name aws-runtime and container image public.ecr.aws/aws-mde/universal-image:latest, 2: name docker-store and container\
       \ image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: php-laravel
@@ -12927,7 +12927,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name php-laravel using PHP, Composer, Laravel and PHP as programming language? The devfile should\
       \ have 7 commands. 1: id install, 2: id cp-env, 3: id clear-config, 4: id gen-new-app-key, 5: id composer-dump, 6: id init-server, 7: id run. The\
       \ devfile should have 1 components. 1: name runtime and container image quay.io/devfile/composer:2.5.8."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: go
@@ -12983,7 +12983,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name go using Go and Go as programming language? The devfile should have 3 commands. 1: id build-image,\
       \ 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2: name kubernetes-deploy and container\
       \ image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-websphereliberty
@@ -13110,7 +13110,7 @@ seed_examples:
       \ have 9 commands. 1: id run, 2: id run-test-off, 3: id debug, 4: id test, 5: id build-image-stack-provided, 6: id build-image-app-provided, 7: id\
       \ outerloop-deploy, 8: id deploy, 9: id deploy-app-image. The devfile should have 4 components. 1: name dev and container image icr.io/appcafe/websphere-liberty-devfile-stack:{{liberty-version}},\
       \ 2: name outerloop-build-app and container image , 3: name outerloop-build-stack and container image , 4: name myk8sdeploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: advent-of-code
@@ -13157,7 +13157,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name advent-of-code using Java, Maven? The devfile should have 2 components. 1: name tools and container\
       \ image quay.io/devfile/universal-developer-image@sha256:6e4095cd243be852970fc7aec20935a0e3c334c5541aa82903fb803b61970ca0, 2: name m2 and container\
       \ image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: go
@@ -13261,7 +13261,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name go using Go and Go as programming language? The devfile should have 6 commands. 1: id build-image,\
       \ 2: id deployk8s, 3: id deploy, 4: id build, 5: id run, 6: id debug. The devfile should have 3 components. 1: name build and container image , 2:\
       \ name deploy and container image , 3: name runtime and container image registry.access.redhat.com/ubi9/go-toolset:1.20.10-11."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: docker-shell-test
@@ -13284,7 +13284,7 @@ seed_examples:
             rootRequired: false
     question: "Could you generate a devfile sample with name docker-shell-test using demo and none as programming language? The devfile should have 1 components.\
       \ 1: name outerloop-build and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         description: 'Angular is a development platform, built on TypeScript. As a platform,
@@ -13345,7 +13345,7 @@ seed_examples:
         id: run
     question: "Could you generate a devfile sample with name nodejs-angular using NodeJS, Angular and TypeScript as programming language? The devfile should\
       \ have 2 commands. 1: id install, 2: id run. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-16:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: nodejs
@@ -13418,7 +13418,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name nodejs using Node.js, Express, ubi8 and JavaScript as programming language? The devfile should\
       \ have 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-16:latest."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: mvn -Dmaven.repo.local=/home/user/.m2/repository compile
@@ -13496,7 +13496,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name serviceb using Java, Quarkus and Java as programming language? The devfile should have 3 commands.\
       \ 1: id init-compile, 2: id dev-run, 3: id dev-debug. The devfile should have 2 components. 1: name tools and container image registry.access.redhat.com/ubi8/openjdk-17,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: yarn install --frozen-lockfile
@@ -13561,7 +13561,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name nodejs-angular using NodeJS, Express, ubi8 and nodejs as programming language? The devfile\
       \ should have 2 commands. 1: id install, 2: id run. The devfile should have 3 components. 1: name builder and container image node:slim, 2: name server\
       \ and container image nginxinc/nginx-unprivileged:alpine, 3: name dist and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: npm install
@@ -13628,7 +13628,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name odo-website using NodeJS, Express, ubi8 and javascript as programming language? The devfile\
       \ should have 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container image\
       \ registry.access.redhat.com/ubi8/nodejs-14:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-springboot
@@ -13688,7 +13688,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-springboot using Java, Spring and Java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: rhods-quick-course
@@ -13762,7 +13762,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name rhods-quick-course using Node.js, Antora, ubi8 and JavaScript as programming language? The\
       \ devfile should have 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container\
       \ image registry.access.redhat.com/ubi8/nodejs-16:latest."
-  - answer: >
+  - answer: |
       components:
       - container:
           image: python:3.7-slim
@@ -13773,7 +13773,7 @@ seed_examples:
         - devrunner-generated
       schemaVersion: 2.1.0
     question: "Could you generate a devfile sample using devrunner-generated? The devfile should have 1 components. 1: name python and container image python:3.7-slim."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: cheese-quizz
@@ -13889,7 +13889,7 @@ seed_examples:
       \ 4 commands. 1: id model-install, 2: id client-devmode, 3: id question-devmode, 4: id tkn-start-pipeline. The devfile should have 4 components. 1:\
       \ name tools and container image registry.redhat.io/devspaces/udi-rhel8:3.3, 2: name m2 and container image , 3: name kube and container image , 4:\
       \ name openshift and container image quay.io/openshift/origin-cli:4.11."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: go
@@ -13993,7 +13993,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name go using Go and Go as programming language? The devfile should have 6 commands. 1: id build-image,\
       \ 2: id deployk8s, 3: id deploy, 4: id build, 5: id run, 6: id debug. The devfile should have 3 components. 1: name build and container image , 2:\
       \ name deploy and container image , 3: name runtime and container image registry.access.redhat.com/ubi9/go-toolset:1.19.13-4.1697647145."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: hacbs-jvm-build-test-project
@@ -14049,7 +14049,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name hacbs-jvm-build-test-project using Java, Maven and java as programming language? The devfile\
       \ should have 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container\
       \ image , 2: name outerloop-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: calc-quarkus
@@ -14108,7 +14108,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name calc-quarkus using Java, Quarkus and Java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: mvn clean -Dmaven.repo.local=/home/user/.m2/repository package -Dmaven.test.skip=true
@@ -14185,7 +14185,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name booking-service using Java, Spring and Java as programming language? The devfile should have\
       \ 3 commands. 1: id build, 2: id run, 3: id debug. The devfile should have 2 components. 1: name tools and container image registry.access.redhat.com/ubi9/openjdk-17:1.17-1,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-quarkus
@@ -14205,7 +14205,7 @@ seed_examples:
         id: java-quarkus
         registryUrl: https://registry.devfile.io
     question: "Could you generate a devfile sample with name java-quarkus using Java, Quarkus and java as programming language?"
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: R
@@ -14248,7 +14248,7 @@ seed_examples:
             origin: https://github.com/ThierryO/qrcode
     question: "Could you generate a devfile sample with name R using R, ccrn, pq and R as programming language? The devfile should have 1 components. 1:\
       \ name runtime and container image quay.io/hyperkineticnerd/devfile-r:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs
@@ -14297,7 +14297,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name nodejs using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name outerloop-build and container image\
       \ , 2: name outerloop-deploy and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: mvn -Dmaven.repo.local=/home/user/.m2/repository compile
@@ -14377,7 +14377,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name my-component using Java, Quarkus and java as programming language? The devfile should have\
       \ 4 commands. 1: id init-compile, 2: id build, 3: id dev-run, 4: id dev-debug. The devfile should have 2 components. 1: name tools and container image\
       \ registry.access.redhat.com/ubi8/openjdk-11, 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: nodejs
@@ -14446,7 +14446,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name nodejs using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should have\
       \ 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-14:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-spring-boot
@@ -14505,7 +14505,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-spring-boot and java as programming language? The devfile should have 2 commands. 1: id\
       \ defaultbuild, 2: id defaultrun. The devfile should have 3 components. 1: name tools and container image registry.access.redhat.com/ubi8/openjdk-11:latest,\
       \ 2: name runtime and container image registry.access.redhat.com/ubi8/openjdk-11:latest, 3: name springbootpvc and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-maven
@@ -14563,7 +14563,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-maven using Java, Maven and java as programming language? The devfile should have 3 commands.\
       \ 1: id mvn-package, 2: id run, 3: id debug. The devfile should have 2 components. 1: name tools and container image quay.io/eclipse/che-java11-maven:nightly,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs-react
@@ -14617,7 +14617,7 @@ seed_examples:
         id: run
     question: "Could you generate a devfile sample with name nodejs-react using Node.js, React and TypeScript as programming language? The devfile should\
       \ have 2 commands. 1: id install, 2: id run. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-18:1-81."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-springboot
@@ -14677,7 +14677,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-springboot using Java, Spring and Java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-springboot
@@ -14737,7 +14737,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-springboot using Java, Spring and Java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-springboot
@@ -14797,7 +14797,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-springboot using Java, Spring and Java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: nodejs
@@ -14870,7 +14870,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name nodejs using Node.js, Express, ubi8 and JavaScript as programming language? The devfile should\
       \ have 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-16:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: nodejs
@@ -14943,7 +14943,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name nodejs using Node.js, Express, ubi8 and JavaScript as programming language? The devfile should\
       \ have 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-16:latest."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: mvn -Dmaven.repo.local=/home/user/.m2/repository compile
@@ -15021,7 +15021,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name serviceb using Java, Quarkus and Java as programming language? The devfile should have 3 commands.\
       \ 1: id init-compile, 2: id dev-run, 3: id dev-debug. The devfile should have 2 components. 1: name tools and container image registry.access.redhat.com/ubi8/openjdk-17,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: rhods-quick-course
@@ -15095,7 +15095,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name rhods-quick-course using Node.js, Antora, ubi8 and JavaScript as programming language? The\
       \ devfile should have 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container\
       \ image registry.access.redhat.com/ubi8/nodejs-16:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: rhods-quick-course
@@ -15169,7 +15169,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name rhods-quick-course using Node.js, Antora, ubi8 and JavaScript as programming language? The\
       \ devfile should have 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container\
       \ image registry.access.redhat.com/ubi8/nodejs-16:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: rhods-quick-course
@@ -15243,7 +15243,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name rhods-quick-course using Node.js, Antora, ubi8 and JavaScript as programming language? The\
       \ devfile should have 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container\
       \ image registry.access.redhat.com/ubi8/nodejs-16:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: rhods-quick-course
@@ -15317,7 +15317,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name rhods-quick-course using Node.js, Antora, ubi8 and JavaScript as programming language? The\
       \ devfile should have 4 commands. 1: id install, 2: id run, 3: id debug, 4: id test. The devfile should have 1 components. 1: name runtime and container\
       \ image registry.access.redhat.com/ubi8/nodejs-16:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: go
@@ -15421,7 +15421,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name go using Go and Go as programming language? The devfile should have 6 commands. 1: id build-image,\
       \ 2: id deployk8s, 3: id deploy, 4: id build, 5: id run, 6: id debug. The devfile should have 3 components. 1: name build and container image , 2:\
       \ name deploy and container image , 3: name runtime and container image registry.access.redhat.com/ubi9/go-toolset:1.19.13-4.1697647145."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: go
@@ -15525,7 +15525,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name go using Go and Go as programming language? The devfile should have 6 commands. 1: id build-image,\
       \ 2: id deployk8s, 3: id deploy, 4: id build, 5: id run, 6: id debug. The devfile should have 3 components. 1: name build and container image , 2:\
       \ name deploy and container image , 3: name runtime and container image registry.access.redhat.com/ubi9/go-toolset:1.19.13-4.1697647145."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs
@@ -15574,7 +15574,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name nodejs using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name outerloop-build and container image\
       \ , 2: name outerloop-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs
@@ -15623,7 +15623,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name nodejs using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name outerloop-build and container image\
       \ , 2: name outerloop-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs
@@ -15672,7 +15672,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name nodejs using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name outerloop-build and container image\
       \ , 2: name outerloop-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs-react
@@ -15726,7 +15726,7 @@ seed_examples:
         id: run
     question: "Could you generate a devfile sample with name nodejs-react using Node.js, React and TypeScript as programming language? The devfile should\
       \ have 2 commands. 1: id install, 2: id run. The devfile should have 1 components. 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-18:1-81."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs
@@ -15818,7 +15818,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name nodejs using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should have\
       \ 7 commands. 1: id install, 2: id run, 3: id debug, 4: id test, 5: id build-image, 6: id deployk8s, 7: id deploy. The devfile should have 3 components.\
       \ 1: name outerloop-build and container image , 2: name outerloop-deploy and container image , 3: name runtime and container image registry.access.redhat.com/ubi8/nodejs-14:latest."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: dotnetcore31
@@ -15882,7 +15882,7 @@ seed_examples:
             kind: run
     question: "Could you generate a devfile sample with name dotnetcore31 using .NET, .NET Core App 3.1 and .NET as programming language? The devfile should\
       \ have 2 commands. 1: id build, 2: id run. The devfile should have 1 components. 1: name dotnet and container image registry.access.redhat.com/ubi8/dotnet-31:3.1-61."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: fast-do-nothing-container
@@ -15905,7 +15905,7 @@ seed_examples:
             rootRequired: false
     question: "Could you generate a devfile sample with name fast-do-nothing-container using demo and none as programming language? The devfile should have\
       \ 1 components. 1: name outerloop-build and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: binary
@@ -15942,7 +15942,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name binary and binary as programming language? The devfile should have 3 commands. 1: id build-image,\
       \ 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name outerloop-build and container image , 2: name outerloop-deploy and\
       \ container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: java-quarkus
@@ -16021,7 +16021,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-quarkus using Java, Quarkus and java as programming language? The devfile should have\
       \ 3 commands. 1: id init-compile, 2: id dev-run, 3: id dev-debug. The devfile should have 3 components. 1: name buildguidance and container image\
       \ buildguidanceimage-placeholder, 2: name tools and container image quay.io/eclipse/che-quarkus:nightly, 3: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs-react
@@ -16075,7 +16075,7 @@ seed_examples:
         id: run
     question: "Could you generate a devfile sample with name nodejs-react using Node.js, React and TypeScript as programming language? The devfile should\
       \ have 2 commands. 1: id install, 2: id run. The devfile should have 1 components. 1: name runtime and container image quay.io/aobuchow/universal-developer-image:no-node-on-path."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-springboot
@@ -16134,7 +16134,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-springboot using Java, Spring and Java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs
@@ -16192,7 +16192,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name nodejs using Node.js, Express, ubi8 and JavaScript as programming language? The devfile should\
       \ have 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image\
       \ , 2: name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: fbc-v4.14
@@ -16222,7 +16222,7 @@ seed_examples:
           component: image-build
     question: "Could you generate a devfile sample with name fbc-v4.14 and fbc as programming language? The devfile should have 1 commands. 1: id build-image.\
       \ The devfile should have 2 components. 1: name image-build and container image , 2: name kubernetes and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         language: javascript
@@ -16297,7 +16297,7 @@ seed_examples:
       \ 1: id install, 2: id run, 3: id build-image, 4: id deploy-deployment, 5: id deploy-service, 6: id deploy. The devfile should have 4 components.\
       \ 1: name runtime and container image registry.access.redhat.com/ubi8/nodejs-14:latest, 2: name prod-image and container image , 3: name outerloop-deploy\
       \ and container image , 4: name outerloop-service and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: mvn clean -Dmaven.repo.local=/home/user/.m2/repository package -Dmaven.test.skip=true
@@ -16381,7 +16381,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name sample-spring-kotlin-microservice using Java, Spring and Java as programming language? The\
       \ devfile should have 5 commands. 1: id build, 2: id run, 3: id debug, 4: id deploy, 5: id deploy-k8s. The devfile should have 2 components. 1: name\
       \ kubernetes-deploy and container image registry.access.redhat.com/ubi9/openjdk-17:1.16, 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.0.0
       metadata:
         name: java-springboot
@@ -16451,7 +16451,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-springboot using Java, Spring and java as programming language? The devfile should have\
       \ 3 commands. 1: id build, 2: id run, 3: id debug. The devfile should have 3 components. 1: name buildguidance and container image buildguidanceimage-placeholder,\
       \ 2: name tools and container image quay.io/eclipse/che-java11-maven:nightly, 3: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: fbc-v4.12
@@ -16481,7 +16481,7 @@ seed_examples:
           component: image-build
     question: "Could you generate a devfile sample with name fbc-v4.12 and fbc as programming language? The devfile should have 1 commands. 1: id build-image.\
       \ The devfile should have 2 components. 1: name image-build and container image , 2: name kubernetes and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-quarkus
@@ -16540,7 +16540,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-quarkus using Java, Quarkus and Java as programming language? The devfile should have\
       \ 3 commands. 1: id build-image, 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name image-build and container image , 2:\
       \ name kubernetes-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: node-rebuild
@@ -16577,7 +16577,7 @@ seed_examples:
             isDefault: true
     question: "Could you generate a devfile sample with name node-rebuild using nodejs and nodejs as programming language? The devfile should have 2 commands.\
       \ 1: id build-image, 2: id deploy. The devfile should have 1 components. 1: name image-build and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         description: .Net TodoList
@@ -16703,7 +16703,7 @@ seed_examples:
       \ image registry.redhat.io/devspaces/udi-rhel8@sha256:d55549aad15742f6f7310da0c7abc1e65dd5d3ad2e3efb8fbf414cf91b9efac7, 2: name adminer and container\
       \ image quay.io/official-images/adminer@sha256:44397ff6d1367c0bd1293206ad08f21d4146cca9e38698ea7c2fe0bedda9f25a, 3: name mssql and container image\
       \ mcr.microsoft.com/mssql/server:2019-latest, 4: name dbdata and container image ."
-  - answer: >
+  - answer: |
       metadata:
         description: "Spring Boot\xAE using Java"
         displayName: "Spring Boot\xAE"
@@ -16740,7 +16740,7 @@ seed_examples:
           uri: outerloop-deploy.yaml
     question: "Could you generate a devfile sample with name catalog-springboot using Java, Spring and java as programming language? The devfile should\
       \ have 2 components. 1: name outerloop-build and container image , 2: name outerloop-deploy and container image ."
-  - answer: >
+  - answer: |
       commands:
       - exec:
           commandLine: yarn install --frozen-lockfile
@@ -16805,7 +16805,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name nodejs-vue using NodeJS, Express, ubi8 and nodejs as programming language? The devfile should\
       \ have 2 commands. 1: id install, 2: id build. The devfile should have 3 components. 1: name builder and container image node:slim, 2: name server\
       \ and container image nginxinc/nginx-unprivileged:alpine, 3: name dist and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: udi-tooling-test
@@ -16880,7 +16880,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name udi-tooling-test using Java, Spring and Java as programming language? The devfile should have\
       \ 3 commands. 1: id test-binaries, 2: id log-binaries, 3: id load-environment. The devfile should have 3 components. 1: name tools and container image\
       \ quay.io/devfile/universal-developer-image:ubi8-latest, 2: name build and container image , 3: name deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: java-springboot
@@ -16927,7 +16927,7 @@ seed_examples:
             path: /
     question: "Could you generate a devfile sample with name java-springboot using Java, Spring Boot and Java as programming language? The devfile should\
       \ have 2 components. 1: name image-build and container image , 2: name kubernetes-only-deploy and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: java-quarkus
@@ -17005,7 +17005,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name java-quarkus using Java, Quarkus and Java as programming language? The devfile should have\
       \ 3 commands. 1: id init-compile, 2: id dev-run, 3: id dev-debug. The devfile should have 2 components. 1: name tools and container image registry.access.redhat.com/ubi8/openjdk-17:1.18-2,\
       \ 2: name m2 and container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.2.0
       metadata:
         name: nodejs
@@ -17053,7 +17053,7 @@ seed_examples:
     question: "Could you generate a devfile sample with name nodejs and golang as programming language? The devfile should have 3 commands. 1: id build-image,\
       \ 2: id deployk8s, 3: id deploy. The devfile should have 2 components. 1: name outerloop-build and container image , 2: name kubernetes-deploy and\
       \ container image ."
-  - answer: >
+  - answer: |
       schemaVersion: 2.1.0
       metadata:
         name: chapeaux-project
