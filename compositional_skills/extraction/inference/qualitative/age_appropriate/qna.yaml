@@ -2,7 +2,14 @@
 created_by: dsneddon
 seed_examples:
   - answer: >
+      This content appears to be appropriate for ages 15 and above. It contains
+      moderate levels of violence and gore, moderate levels of alcohol, tobacco,
+      or drug use, and very frigntening or intense scenes that may disturb
+      younger viewers. The themes used in the plot include betrayal, conspiracy,
+      murder, deception, and other negative aspects of human behavior. Viewer
+      discretion is advised.
     question: >
+      What would be an appropriate age for a TV show with the following content.
     context: >
       Sex & Nudity: Mild;
       Violence & Gore: Moderate;
