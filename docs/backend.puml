@@ -1,5 +1,5 @@
 @startditaa
-                     PRs with  legend           
+                     PRs with    legend           
                      2 reviews   +------------+ 
                          |       |backend cGRE| 
                          v       +------------+ 
@@ -13,7 +13,16 @@
                      synthetic --+-->|data cGRE|
                        data      |   |publisher|
                          |       |   +---------+
-                         v       |              
+                         |       |
+                         v       |
+                     /-------\   |              
+/-----\              |Data   |   |
+|close|<-conflicting-|Mixing |   |              
+|PR   |    skill     |step   |   |              
+|     |              \-------/   |
+\-----/                  |       |
+                         |       |
+                         v       |
                      +-------+   |              
                      |trainer|   |              
                      |   cGRE|   |              
