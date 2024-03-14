@@ -1,0 +1,25 @@
+task_description: |
+  The task enables finding 2 words or less to classify the intent from a block of text
+
+created_by: tommyrico81
+seed_examples: 
+
+  - Context: During a meeting with a client, the client discloses that there is a need to purchase additional software for systems that will go into production in the next 3 to 6 months. The client requests a quote for the quantity equal to the number of servers that will be needed for that environment.
+
+  - question: Create a 2 word classification of the intent described within the text
+    answer: |
+      Growth Customer
+
+  - Context: On your weekly cadence call with a customer, you learn that there are plans for a customer to shutdown a data center so they will not be renewing a large portion of their software subscriptions. You learn that they are considering moving their on-premise compute workloads to the public cloud.
+
+  - question: Create a 2 word classification of the intent described within the text
+
+    answer: |
+      Declining Growth
+
+  - Context: Its time for your custome to renew their annual subscriptions and you have prepared a quote with the exact same quantities with a slight percentatge increase to account for forecasted growth for the next year. The customer rejects the proposal and states they can get the same software from another vendor for a fraction of the cost.
+
+  - question: Create a 2 word classification of the intent described within the text
+
+    answer: |
+      Competitive risk
