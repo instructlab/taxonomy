@@ -174,3 +174,4 @@ seed_examples:
   question: Write a manual on how to perform a security audit for a small to medium-sized
     business.
 task_description: ''
+attribution: 'self_authored'
