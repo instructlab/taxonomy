@@ -32,3 +32,4 @@ seed_examples:
   question: I'm selling hand-painted wall art. Can you help me write descriptions
     that showcase their unique designs, durability, and versatility?
 task_description: ''
+attribution: 'self_authored'
