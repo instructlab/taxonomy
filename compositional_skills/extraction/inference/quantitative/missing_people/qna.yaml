@@ -1,0 +1,29 @@
+task_description: |
+  This task can help to list the names who are missing in a meeting.
+created_by: pezhang
+seed_examples:
+  - question: >-
+      Today's meeting is important. We should have Lily, Lucy, Tom, Tim, David
+      and John here, we only see Lily, Lucy, David and John here, tell me who
+      are missing?
+    answer: Tom and Tim are missing.
+  - question: >-
+      We should have Lily, Lucy, Tom, Tim, David and John in today's meeting, we
+      only see Lily, Lucy, David and John here, tell me who are missing?
+    answer: Tom and Tim are missing.
+  - question: >-
+      We should have Lily, Lucy, Tom, Tim, David and John in today's meeting, we
+      only see Lily, Lucy, Tom, David and John here, tell me who are missing?
+    answer: Tim is missing.
+  - question: >-
+      Lily, Lucy, Tom, Tim, David and John should attend today's meeting, but we
+      only see Tom, Tim, David and John here, tell me who are missing?
+    answer: Lily and Lucy are missing.
+  - question: >-
+      We should have Lily, Lucy, Tom, Tim, David and John in today's meeting, we
+      only see Lily, Lucy, Tom and David here, tell me who are missing?
+    answer: Tim and John is missing.
+  - question: >-
+      We should have Lily, Lucy, Tom, Tim, David and Pei attending this meeting,
+      we only see David, Pei, Tom and Tim here, tell me who are missing?
+    answer: Licy and Lucy are missing.
