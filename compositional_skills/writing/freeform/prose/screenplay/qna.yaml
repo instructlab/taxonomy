@@ -120,3 +120,4 @@ seed_examples:
     '
   question: Write a screenplay about a heist gone wrong.
 task_description: ''
+attribution: 'self_authored'
