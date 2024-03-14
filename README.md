@@ -11,70 +11,31 @@ This repository contains a taxonomy tree that will allow you to create models
 tuned with your data (enhanced via synthetic data generation) using LAB 🐶
 method.
 
-The top-level categories are:
+## Learning
 
-1. **Core Skills**:
+Learn about the concepts of "skills" and "knowledge" in our [InstructLab Community Learning Guide](https://github.com/instruct-lab/community/blob/main/docs/README.md).
 
-    Core skills are foundational skills like math, reasoning, and coding.
-
-    🗒️ **Note:** Unlike **knowledge** and **compositional skills**, core skills
-    are not contributable to the tree. So when you see reference to contributing
-    "skills" to the taxonomy from this point forward, it is **compositional
-    skills** that are being referenced.
-2. **Knowledge**:
-
-    Knowledge consists of data and facts and is backed by documents. When you
-    create knowledge for a model, you're giving it additional data to more
-    accurately answer questions.
-3. **Compositional Skills**:
-
-    Skills are performative. When you create a skill for the model, you're
-    teaching it how to do something: "write me a song," "talk like a pirate,"
-    "summarize an email."
-
-There are two types of compositional skills:
-
-1. **Freeform Compositional Skills**:
-
-     Freeform compositional skills are performative and do **not** require
-     additional context. An example of a compositional skill is "talk like a
-     pirate." You could provide examples of "pirate-like" speech. By providing
-     those examples, you're essentially tickling the latent knowledge of the
-     LLM. In our "talk like a pirate" example, you're enabling the LLM to be
-     able to recall pirate-like speeches in its latent knowledge.
-      
-2. **Grounded Compositional Skills**:
-
-     Grounded skills are performative and **do** require additional context. An
-     example of a grounded skill would be to read the value of a cell in a table
-     layout, or to parse a JSON file. To create a grounded skill to read a 
-     markdown formatted table layout, the additional context could be an example
-     table layout. This additional context is including in the YAML for the
-     skill and not external to it. 
-
-     🗒️ **Note:** The content of the table layout will not be used in training
-     or aligning the model; only the table layout format itself will be used.
-
-## Compositional Skills vs. Knowledge
-
-You can contribute both **compositional skills** (and in the future, 
-**knowledge**) to the Taxonomy. What is the difference?
-
-### Compositional Skills
-
-Again, think of skills as "performative." You're teaching the model how to
-**do** something when you contribute a skill.
+## Getting Started with Skill Contributions
 
 Skills require a much smaller volume of content to contribute. A skill
 contribution to the taxonomy tree can be just a few lines of YAML (its
 `qna.yaml` file - "qna" is short for "questions and answers") in its entirety:
 
-Each `qna.yaml` file is required to contain a minimum of three question and
+Each `qna.yaml` file is required to contain a minimum of five question and
 answer pairs. The `qna.yaml` format should include the following fields:
 
-- `seed_examples` (three or more examples of question and answer pairs)
+- `seed_examples` (five or more examples of question and answer pairs)
 - `created_by` (your GitHub username)
 - `task_description` (an optional description of the skill).
+
+> [!TIP]
+> The skill taxonomy structure is used in several ways:
+>    1. Selecting the right subset of the taxonomy to use for data generation.
+>    2. Interpretability by human contributors and maintainers.
+>    3. As part of the prompt to GPT model used to generate synthetic samples.
+> Therefore: Make sure the names of directories match the intent of the
+> taxonomy files, perhaps also see if there's a more logical place in the
+> taxonomy structure for a person's contribution to live before signing off.
 
 #### Freeform compositional skill: YAML example
 
@@ -134,7 +95,7 @@ in terms of a taxonomy contribution:
 
 #### Grounded compositional skill: YAML example
 
-Remember that grounded compositional skills require additional context
+Remember that [grounded compositional skills](https://github.com/instruct-lab/community/blob/main/docs/SKILLS_GUIDE.md) require additional context.
 
 This example assumes the GitHub username `mairin`:
 
@@ -201,8 +162,9 @@ seed_examples:
 
 ### Knowledge
 
-⚠️ **Note:** We are not currently accepting knowledge contributions, but we 
-will open this up in the future!
+> [!NOTE]
+> We are not currently accepting knowledge contributions, but we will open this
+> up in the future!
 
 Meanwhile, knowledge is based more on answering questions that involve facts,
 data, or references.
@@ -213,10 +175,10 @@ Each knowledge node in the tree has a `qna.yaml` similar to the format of the
 `knowledge_documents`. The knowledge document formats currently supported are
 markdown (.md) and text (.txt).
 
-Each `qna.yaml` file is required to contain a minimum of three question-answer
+Each `qna.yaml` file is required to contain a minimum of five question-answer
 pairs. The `qna.yaml` format should include the following fields:
 
-- `seed_examples` (three or more examples sourced from the provided knowledge
+- `seed_examples` (five or more examples sourced from the provided knowledge
   documents)
 - `created_by` (your GitHub username)
 - `task_description` (an optional description of the knowledge).
@@ -504,6 +466,9 @@ This taxonomy repository will be used as the seed to synthesize the training dat
 
 By contributing your skills and knowledge to this repository, you will see your changes built into an LLM within days of your contribution rather than months or years! If you are working with a model and notice its knowledge or ability lacking, you could correct it by contributing knowledge or skills and check if it's improved once your changes are built.
 
+While public contributions are welcome to help drive community progress, you can also fork this repository under [the Apache License, Version 2.0](LICENSE), add your own internal skills, and train your own models internally.
+However, you may need your own access to significant compute infrastructure to perform sufficient retraining.
+
 ## Ways to Contribute
 
 You can contribute to the taxonomy in the following two ways: 
@@ -513,7 +478,7 @@ You can contribute to the taxonomy in the following two ways:
     - Add new examples to the qna.yaml files as a new entry to the list
 
 2. Adding **new branches/skills** corresponding to the existing domain:
-    - You can add new folders under the corresponding category
+    - You can add new folders under the corresponding category (replace any spaces ` ` with underscores `_`)
     - Create a new qna.yaml file with examples for the new skill
   
 ### Detailed Contribution Instructions
@@ -540,7 +505,7 @@ When you are ready, press the **Create Fork** button.
 
 #### Contributing a skill
 
-In the screenshot, you can see we are under the compositional skills directory. This is the directory under which you want to contribute skills. (The other top-level directory you can contribute to is the knowledge directory, which is a little different than skills. You can read more about the difference between skills and knowledge [in that section of this README](#k-vs-s) above.) 
+In the screenshot, you can see we are under the compositional skills directory. This is the directory under which you want to contribute skills. (The other top-level directory you can contribute to is the knowledge directory, which is a little different than skills. You can read more about the difference between skills and knowledge [in that section of this README](#compositional-skills-vs-knowledge) above.) 
 
 ![Screenshot from 2024-02-28 12-44-05](https://github.com/instruct-lab/taxonomy/assets/799683/2038e035-5400-4848-91fb-f575db35b565)
 
@@ -566,6 +531,7 @@ It can be a little tricky mechanically to create directories in GitHub's web UI:
 * Click the "Add File" dropdown button in the upper right corner of the screen.
 * Start typing the name of the first directory you want to create. In the animation below we use "jokes/" as the first directory. 
 * When you type the "/" character, the directory name will "lock in" and you'll be able to type the next of the next subdirectory under it, as desired. Below we typed "knock-knock/" as the next directory name.
+* Make sure to replace any spaces (` `) in the folder name with underscores (`_`)
 * Finally, you'll type the file name. The file name should always be qna.yaml. (qna stands for "Question aNd Answer.")  
 
 Here's an animated graphic to show how it works:
