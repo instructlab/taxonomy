@@ -1,0 +1,53 @@
+created_by: husky-parul
+seed_examples:
+- question: What are the essentials clothing to pack on a hiking trip in summer?
+  answer: |
+    Consider packing the following items for a hiking trip in summer.
+    1. Shell jacket
+    2. Running shorts
+    3. Hooded hiking shirt for sun protection
+    4. Light fleece jacket
+    5. Hiking shoes, consider gortex if there is water on the trail
+- question: What are the essentials items to pack on a hiking trip in summer?
+  answer: |
+    Consider packing the following items for a hiking trip in summer.
+    1. Headlamp
+    2. First Aid Kit
+    3. Knife
+    4. Compass
+    5. Emergency Bivy (above tree line)
+    6. Hiking Pants
+    7. Hiking Shoes
+    8. Trekking Poles
+- question: What are the essentials clothing to pack on a hiking trip in winter?
+  answer: |
+    Consider packing the following items for a hiking trip in summer.
+    1. Shell Jacket
+    2. Fleece mid Layer
+    3. Merino wool base Layer (top and bottom)
+    4. Puffy Jacket synthetic/down
+    5. Water proof hiking boots
+- question: What are the essentials in a sleeping kit on a backcoutry hiking trip?
+  answer: |
+    Consider packing the following items for a hiking trip in summer.
+    1. Sleeping tent
+    2. Sleeping bag
+    3. Sleeping pad
+- question: What are the essentials items to pack on a backcoutry hiking trip?
+  answer: |
+    Consider packing the following items for a hiking trip in summer.
+    1. Headlamp
+    2. First Aid Kit
+    3. Knife
+    4. Compass
+    5. Emergency Bivy (above tree line)
+    6. Hiking Pants
+    7. Hiking Shoes
+    8. Trekking Poles
+    9. Shelter
+    10. Clothing as per the season
+    11. Bug Nets
+    12. Hat
+    13. Compact utensils and stove
+task_description: |
+  This files contains list of items to pack on a hiking trip.
