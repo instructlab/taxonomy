@@ -59,3 +59,4 @@ seed_examples:
     \ actor.\n"
   question: Generate the main takeaways from the given text.
 task_description: ''
+attribution: 'self authored'
