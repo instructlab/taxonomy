@@ -71,4 +71,4 @@ seed_examples:
     \ March.\\nPeter Levin is an American director of film, television and theatre.\n"
   question: Generate the key points from the given text.
 task_description: ''
-attribution: 'self authored'
+attribution: 'self_authored'
