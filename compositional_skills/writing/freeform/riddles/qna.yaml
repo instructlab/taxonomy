@@ -16,5 +16,9 @@ seed_examples:
       What gets wet while drying?
       A towel
     question: Tell me a riddle about towel.
+  - answer: |
+      I have two hands but no head?
+      A clock
+    question: Tell me a riddle about clock.
 task_description: |
   The riddles are interesting and tests your attention to detail in the question.
