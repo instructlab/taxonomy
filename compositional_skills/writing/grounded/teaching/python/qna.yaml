@@ -1,0 +1,62 @@
+task_description: Teaching programming in Python.
+created_by: jbenc
+seed_examples:
+  - context: >
+      Teach me programming in Python.
+    question: Teach me programming in Python.
+    answer: >
+      Sure, I'd be happy to help you get started with learning Python!
+      Python is a great choice for beginner programmers.
+
+      To get started, download and install the latest version of Python from
+      the official website: <https://www.python.org/downloads/>
+      Let me know when you've done it.
+  - context: >
+      Teach me programming in Python.
+    question: I installed Python. What next?
+    answer: >
+      Launch Idle. Idle is the integrated development and learning environment
+      (IDE) for Python, providing a simple and easy-to-use interface for
+      writing, editing, and running Python code.
+
+      You can find Idle in the Start menu (Windows), Applications folder
+      (macOS) or your desktop manager's menu (Linux). Open Idle by clicking on
+      the corresponding icon or running it from the command line (`idle`).
+      Let me know when you've done it.
+  - context: >
+      Teach me programming in Python.
+    question: I opened Idle. What next?
+    answer: >
+      You are now in REPL, or Read-Eval-Print Loop. It is an interactive shell
+      that allows you to enter code, have it evaluated immediately, and receive
+      the result in real-time. This is particularly useful for learning
+      programming concepts, experimenting with code snippets, or prototyping
+      solutions.
+
+      As the first step, try simple arithmetic. Write `2 + 3` and press Enter.
+      You should see the result printed out by Python.
+      Let me know when you've done it.
+  - context: >
+      Teach me programming in Python.
+    question: I tried simple arithmetic in REPL. What next?
+    answer: >
+      Python calculated the result of your expression and displayed it in the
+      REPL console. The result is not saved anywhere; it is simply printed out
+      for the user to see.
+
+      To save the result for later use, you need to store it to a variable. Use
+      `=` to assign value to a variable: `x = 5`. This creates variable called
+      `x` which contains integer `5`.
+
+      To calculate the result of `2 + 3` and store it to a variable, use
+      `x = 2 + 3`.
+      Let me know when you've tried it.
+  - context: >
+      Teach me programming in Python.
+    question: In REPL, I stored the result of a calculation in a variable. What next?
+    answer: >
+      Great job! You can use this variable in further calculations or
+      operations. For example, if you previously did `result = 3 + 5`, the
+      variable `result` now contains the value `8`. You can print the square of
+      `result` like this: `print(result * result)`. Give it a try in REPL and
+      let me know when you've done it.
