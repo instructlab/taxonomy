@@ -1,0 +1,131 @@
+created_by: subpop
+seed_examples:
+  - question: tell me a "books never written" joke
+    answer: Under the Grand Stands by Seymor Buts
+  - question: tell me a "books never written" joke
+    answer: To the Outhouse by Willie Maket, illustrated by Betty Wont
+  - question: tell me a "books never written" joke
+    answer: How to Survive a Bear Attack by Ben Eaton
+  - question: tell me a "books never written" joke
+    answer: Walking to School by Misty Bus
+  - question: tell me a "books never written" joke
+    answer: How to Check a Pulse by Izzy Dead
+  - question: tell me a "books never written" joke
+    answer: Where Have All the Animals Gone? by Darin Dabarn
+  - question: tell me a "books never written" joke
+    answer: The Yellow River by I.P. Daily
+  - question: tell me a "books never written" joke
+    answer: Over the Mountaintop by Hugo First
+  - question: tell me a "books never written" joke
+    answer: The Numbers Game by Cal Q. Later
+  - question: tell me a "books never written" joke
+    answer: Rusty Bed Springs by I.P. Freeley
+  - question: tell me a "books never written" joke
+    answer: Falling Off a Cliff by Eileen Dover
+  - question: tell me a "books never written" joke
+    answer: The Joys of Drinking by Al Coholic
+  - question: tell me a "books never written" joke
+    answer: My Life with Igor by Frank N. Stein
+  - question: tell me a "books never written" joke
+    answer: Supporting Athletes by Jacques Strappe
+  - question: tell me a "books never written" joke
+    answer: I Was Prepared by Justin Case
+  - question: tell me a "books never written" joke
+    answer: Green Spots on the Wall by Picken and Flicken
+  - question: tell me a "books never written" joke
+    answer: Caulking Made Easy by Phil McKrevis
+  - question: tell me a "books never written" joke
+    answer: The Future of Robotics by Cy Borg and Anne Droid
+  - question: tell me a "books never written" joke
+    answer: What to Do if You're in a Car Accident by Rhea Ender
+  - question: tell me a "books never written" joke
+    answer: Breathing Lessons by Hal E. Tosis
+  - question: tell me a "books never written" joke
+    answer: Why Should I Walk? by Iona Carr
+  - question: tell me a "books never written" joke
+    answer: Deep in Debt by Owen A. Lott
+  - question: tell me a "books never written" joke
+    answer: Taking Tests by B.A. Wiseman
+  - question: tell me a "books never written" joke
+    answer: Pie by Don Cherry
+  - question: tell me a "books never written" joke
+    answer: Computer Memory by Meg A. Byte
+  - question: tell me a "books never written" joke
+    answer: Gotta Go by C. U. Later
+  - question: tell me a "books never written" joke
+    answer: How to Serve Your Fellow Man by The Cannibals
+  - question: tell me a "books never written" joke
+    answer: The Membership List by Ross Terr
+  - question: tell me a "books never written" joke
+    answer: The Giant Clock Tower by Big Ben
+  - question: tell me a "books never written" joke
+    answer: All About Flowers by Chris Anthymum
+  - question: tell me a "books never written" joke
+    answer: Boy Scout Brigade by Pat Troll
+  - question: tell me a "books never written" joke
+    answer: The Lost Scout by Werram Eye
+  - question: tell me a "books never written" joke
+    answer: Late for Work by Dr. Wages
+  - question: tell me a "books never written" joke
+    answer: Ten Years in the Bathtub by Rink Lee Prune
+  - question: tell me a "books never written" joke
+    answer: How to Eat Cereal by Poor A. Bowl
+  - question: tell me a "books never written" joke
+    answer: Smelly Stuff by Anita Bath
+  - question: tell me a "books never written" joke
+    answer: Technology in the 21st Century by Rob Ott
+  - question: tell me a "books never written" joke
+    answer: A Safe Hitchiker's Guide by Ren Tacar
+  - question: tell me a "books never written" joke
+    answer: The Art of Being Discreet by Anonymous
+  - question: tell me a "books never written" joke
+    answer: Bubbles in the Bath by Ivor Windybottom
+  - question: tell me a "books never written" joke
+    answer: Microsoft Business Practices by Eve Hill
+  - question: tell me a "books never written" joke
+    answer: Gotta Go Again by D. I. Aria
+  - question: tell me a "books never written" joke
+    answer: Interesting Places Around The World by Ben There & Don That
+  - question: tell me a "books never written" joke
+    answer: 101 Ways To Die by Sue I. Cide
+  - question: tell me a "books never written" joke
+    answer: Household Book of Tools by M.C. Hammer
+  - question: tell me a "books never written" joke
+    answer: Paris Monuments by I. Phil Taurer
+  - question: tell me a "books never written" joke
+    answer: How to Exercise by Eileen and Ben Dover
+  - question: tell me a "books never written" joke
+    answer: Magical Bed Wettings by Peter Pants
+  - question: tell me a "books never written" joke
+    answer: 101 Ways to Diet by I. M. Hungry
+  - question: tell me a "books never written" joke
+    answer: Getting Fired by Anita Job
+  - question: tell me a "books never written" joke
+    answer: Crossing a Man with a Duck by Willie Waddle
+  - question: tell me a "books never written" joke
+    answer: A Sailor's Adventure by Ron A. Ground
+  - question: tell me a "books never written" joke
+    answer: Green Vegetables by Brock Ali
+  - question: tell me a "books never written" joke
+    answer: Raise Your Arms by Harry Pitt
+  - question: tell me a "books never written" joke
+    answer: Long Walk Home by Miss. D. Bus
+  - question: tell me a "books never written" joke
+    answer: Sitting on the Beach by Sandy Cheeks
+  - question: tell me a "books never written" joke
+    answer: Window Coverings by Kurt and Rod
+  - question: tell me a "books never written" joke
+    answer: Wheels in China by Rick Shaw
+  - question: tell me a "books never written" joke
+    answer: How To Dance by Sheik Yerbouti
+  - question: tell me a "books never written" joke
+    answer: Something Smells by I. Ben Pharting
+  - question: tell me a "books never written" joke
+    answer: I.Q. Competitions by Samar T. Pants
+  - question: tell me a "books never written" joke
+    answer: Depressing Jobs by Paul Bearer
+  - question: tell me a "books never written" joke
+    answer: The Skyline by Bill Ding
+  - question: tell me a "books never written" joke
+    answer: My Life as a Gas Station Attendant by Phil R. Awp
+task_description: telling books never written jokes
