@@ -1,0 +1,13 @@
+created_by: pkis
+seed_examples:
+- answer: 'ba-nan-a'
+  question: 'Can you break the word banana into syllables?'
+- answer: 'An-a'
+  question: 'Can you break the word Ana into syllables?'
+- answer: 'be-spoke'
+  question: 'Can you break the word bespoke into syllables?'
+- answer: 'ar-e-a'
+  question: 'Can you break the word area into syllables?'
+- answer: 'reach'
+  question: 'Can you break the word reach into syllables?'
+task_description: ''
