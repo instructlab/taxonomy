@@ -33,3 +33,4 @@ seed_examples:
   question: I require help drafting a business contract for a service I will provide.
     Can you outline the terms, payment schedule, and liability clauses?
 task_description: ''
+attribution: 'self_authored'
