@@ -1,0 +1,143 @@
+task_description: >
+  The OCSP validation task enables the answers to OCSP validation related
+  questions in the case when OCSP Stapling is not enabled, specifically in the
+  area of validation path and the number of OCSP requests encurred at each
+  certificate validation. The Root CA's immediate subordinate CA is considered
+  level 1 intermediate CA, whereas the subordinate CA of the level 1 subordinate
+  CA is considered level 2 subordinate CA, etc.
+created_by: ladycfu
+seed_examples:
+  - question: >-
+      In an environment where OCSP Stapling is not enabled, if certificate C is
+      issued by a level 1 subordinate CA, what is the maximum number of OCSP
+      responses that could potentially be received from the OCSP responder?
+    answer: >
+      If certificate C is issued by a level 1 subordinate CA, the maximum number
+      of OCSP responses that could potentially be received from the OCSP
+      responder is 3. This is because, a level 1 subordinate CA has 2 CA signing
+      certificates in its chain, including the root CA, so when OCSP Stapling is
+      not enabled, if OCSP is enabled, and all certs in chain contain an AIA
+      extension, one OCSP request will be sent for the leaf certificate, and
+      another 2 OCSP requests will be sent for the CAs in the chain. Therefore,
+      there are 1+2=3 potential OCSP responses in total. It is worth noting that
+      the root CA signing cert, being a self-signed cert, is a trust anchor and
+      often time does not contain an AIA so in which case it would not trigger
+      any OCSP responses. If OCSP caching is enabled, the number of OCSP
+      responses received will be reduced, depending on whether the last OCSP
+      response for certificate C, or the CAs in its chain are still in the cache
+      or not.
+  - question: >-
+      In an environment where OCSP Stapling is not enabled, if certificate C is
+      issued by a level 2 subordinate CA, what is the maximum number of OCSP
+      responses that could potentially be received from the OCSP responder?
+    answer: >
+      If certificate C is issued by a level 2 subordinate CA, the maximum number
+      of OCSP responses that could potentially be received from the OCSP
+      responder is 4. This is because, a level 2 subordinate CA has 3 CA signing
+      certificates in its chain, including the root CA, so when OCSP Stapling is
+      not enabled, if OCSP is enabled, and all certs in chain contain an AIA
+      extension, one OCSP request will be sent for the leaf certificate, and
+      another 3 OCSP requests will be sent for the CAs in the chain. Therefore,
+      there are 1+3=4 potential OCSP responses in total. It is worth noting that
+      the root CA signing cert, being a self-signed cert, is a trust anchor and
+      often time does not contain an AIA so in which case it would not trigger
+      any OCSP responses. If OCSP caching is enabled, the number of OCSP
+      responses received will be reduced, depending on whether the last OCSP
+      response for certificate C, or the CAs in its chain are still in the cache
+      or not.
+  - question: >-
+      In an environment where OCSP Stapling is not enabled, if certificate C is
+      issued by a level 3 subordinate CA, what is the maximum number of OCSP
+      responses that could potentially be received from the OCSP responder?
+    answer: >
+      If certificate C is issued by a level 3 subordinate CA, the maximum number
+      of OCSP responses that could potentially be received from the OCSP
+      responder is 5. This is because, a level 3 subordinate CA has 4 CA signing
+      certificates in its chain, including the root CA, so when OCSP Stapling is
+      not enabled, if OCSP is enabled, and all certs in chain contain an AIA
+      extension, one OCSP request will be sent for the leaf certificate, and
+      another 4 OCSP requests will be sent for the CAs in the chain. Therefore,
+      there are 1+4=5 potential OCSP responses in total. It is worth noting that
+      the root CA signing cert, being a self-signed cert, is a trust anchor and
+      often time does not contain an AIA so in which case it would not trigger
+      any OCSP responses. If OCSP caching is enabled, the number of OCSP
+      responses received will be reduced, depending on whether the last OCSP
+      response for certificate C, or the CAs in its chain are still in the cache
+      or not.
+  - question: >-
+      In an environment where OCSP Stapling is not enabled, if certificate C is
+      issued by a level 4 subordinate CA, what is the maximum number of OCSP
+      responses that could potentially be received from the OCSP responder?
+    answer: >
+      If certificate C is issued by a level 4 subordinate CA, the maximum number
+      of OCSP responses that could potentially be received from the OCSP
+      responder is 6. This is because, a level 4 subordinate CA has 5 CA signing
+      certificates in its chain, including the root CA, so when OCSP Stapling is
+      not enabled, if OCSP is enabled, and all certs in chain contain an AIA
+      extension, one OCSP request will be sent for the leaf certificate, and
+      another 5 OCSP requests will be sent for the CAs in the chain. Therefore,
+      there are 1+5=6 potential OCSP responses in total. It is worth noting that
+      the root CA signing cert, being a self-signed cert, is a trust anchor and
+      often time does not contain an AIA so in which case it would not trigger
+      any OCSP responses. If OCSP caching is enabled, the number of OCSP
+      responses received will be reduced, depending on whether the last OCSP
+      response for certificate C, or the CAs in its chain are still in the cache
+      or not.
+  - question: >-
+      In an environment where OCSP Stapling is not enabled, if certificate C is
+      issued by a root CA, what is the maximum number of OCSP responses that
+      could potentially be received from the OCSP responder?
+    answer: >
+      If certificate C is issued by a a root CA, the maximum number of OCSP
+      responses that could potentially be received from the OCSP responder is 2.
+      This is because, a root CA has 1 signing certificate in its chain, so when
+      OCSP Stapling is not enabled, if OCSP is enabled, and all certs in chain
+      contain an AIA extension, one OCSP request will be sent for the leaf
+      certificate, and another 1 OCSP request will be sent for the CAs in the
+      chain. Therefore, there are 1+1=2 potential OCSP responses in total. It is
+      worth noting that the root CA signing cert, being a self-signed cert, is a
+      trust anchor and often time does not contain an AIA so in which case it
+      would not trigger any OCSP responses. If OCSP caching is enabled, the
+      number of OCSP responses received will be reduced, depending on whether
+      the last OCSP response for certificate C, or the CAs in its chain are
+      still in the cache or not.
+  - question: >-
+      consider a CA hierarchy where certificate C is issued by a level 1
+      subordinate CA. What is the maximum number of OCSP responses that could
+      potentially be received from the OCSP responder if OCSP Stapling is not
+      enabled and OCSP is enabled for all certs in the chain?
+    answer: >
+      If certificate C is issued by a level 1 subordinate CA, the maximum number
+      of OCSP responses that could potentially be received from the OCSP
+      responder is 3. This is because, a level 1 subordinate CA has 2 CA signing
+      certificates in its chain, including the root CA, so when OCSP Stapling is
+      not enabled, if OCSP is enabled, and all certs in chain contain an AIA
+      extension, one OCSP request will be sent for the leaf certificate, and
+      another 2 OCSP requests will be sent for the CAs in the chain. Therefore,
+      there are 1+2=3 potential OCSP responses in total. It is worth noting that
+      the root CA signing cert, being a self-signed cert, is a trust anchor and
+      often time does not contain an AIA so in which case it would not trigger
+      any OCSP responses. If OCSP caching is enabled, the number of OCSP
+      responses received will be reduced, depending on whether the last OCSP
+      response for certificate C, or the CAs in its chain are still in the cache
+      or not.
+  - question: >-
+      consider a CA hierarchy where certificate C is issued by a level 2
+      subordinate CA. What is the maximum number of OCSP responses that could
+      potentially be received from the OCSP responder if OCSP Stapling is not
+      enabled and OCSP is enabled for all certs in the chain?
+    answer: >
+      If certificate C is issued by a level 2 subordinate CA, the maximum number
+      of OCSP responses that could potentially be received from the OCSP
+      responder is 4. This is because, a level 2 subordinate CA has 3 CA signing
+      certificates in its chain, including the root CA, so when OCSP Stapling is
+      not enabled, if OCSP is enabled, and all certs in chain contain an AIA
+      extension, one OCSP request will be sent for the leaf certificate, and
+      another 3 OCSP requests will be sent for the CAs in the chain. Therefore,
+      there are 1+3=4 potential OCSP responses in total. It is worth noting that
+      the root CA signing cert, being a self-signed cert, is a trust anchor and
+      often time does not contain an AIA so in which case it would not trigger
+      any OCSP responses. If OCSP caching is enabled, the number of OCSP
+      responses received will be reduced, depending on whether the last OCSP
+      response for certificate C, or the CAs in its chain are still in the cache
+      or not.
