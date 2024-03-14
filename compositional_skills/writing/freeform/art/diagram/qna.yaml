@@ -11,18 +11,20 @@ seed_examples:
             a
              l
               l
-    question: First, take the word "waterfall". Second, each letter will be in
-      a different line. Third, each line will start with the number of
-      spaces of the current line number.
+    question: Please write the word "waterfall" in all uppercase letters on
+      each line, and each line should start with the number of spaces that
+      equals the current line number. For example, the first letter is on
+      the first line, the second letter is on the second line, and so on.
   - answer: |
       like this:
       f
        o
         o
          d
-    question: First, take the word "food". Second, each letter will
-      be in a different line. Third, each line will start with the number of
-      spaces of the current line number.
+    question: Please write the word "food" in all uppercase letters on
+      each line, and each line should start with the number of spaces that
+      equals the current line number. For example, the first letter is on
+      the first line, the second letter is on the second line, and so on.
   - answer: |
       like this:
       b
@@ -33,7 +35,8 @@ seed_examples:
            a
     question: First, take the word "banana". Second, each letter will be in
       a different line. Third, each line will start with the number of
-      spaces of the current line number.
+      spaces of the current line number. For example, the first letter is on
+      the first line, the second letter is on the second line, and so on.
   - answer: |
       c
        o
@@ -44,7 +47,8 @@ seed_examples:
             t
     question: Write the word "correct" with each letter in
       a different line and  each line will start with the number of
-      spaces of the current line number.
+      spaces of the current line number. For example, the first letter is on
+      the first line, the second letter is on the second line, and so on.
   - answer: |
       q
        u
@@ -56,5 +60,6 @@ seed_examples:
              n
     question: Write the word "question" with each letter in
       a different line and  each line will start with the number of
-      spaces of the current line number.
+      spaces of the current line number. For example, the first letter is on
+      the first line, the second letter is on the second line, and so on.
 task_description: an ascii diagram
