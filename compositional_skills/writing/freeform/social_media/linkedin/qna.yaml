@@ -10,3 +10,4 @@ seed_examples:
   question: Help me draft a LinkedIn recommendation for a colleague or connection
     that highlights their strengths and achievements.
 task_description: ''
+attribution: 'self_authored'
