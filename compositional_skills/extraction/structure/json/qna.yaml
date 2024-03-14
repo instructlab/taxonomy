@@ -26,6 +26,7 @@ seed_examples:
     }
   question: |
     Extract a valid JSON blob from input that matches the following JSON Schema.
+    The response must only contain the JSON blob.
     Input: Sydney is 25 degrees and sunny.
 - answer: |
     {
@@ -52,6 +53,7 @@ seed_examples:
     }
   question: |
     Extract a valid JSON blob from input that matches the following JSON Schema.
+    The response must only contain the JSON blob.
     Input: Sydney is raining.
 - answer: |
     {
@@ -78,5 +80,6 @@ seed_examples:
     }
   question: |
     Extract a valid JSON blob from input that matches the following JSON Schema.
+    The response must only contain the JSON blob.
     Input: Sydney is 25 degrees.
 task_description: 'Extract information in structured JSON formats'
