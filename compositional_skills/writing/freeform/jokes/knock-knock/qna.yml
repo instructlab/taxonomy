@@ -1,0 +1,59 @@
+task_description: |
+  The knock-knock task encourages the creation of humorous and engaging knock-knock jokes suitable for a wide audience.
+created_by: tommyrico81
+seed_examples:
+  - question: Tell me a knock-knock joke about food.
+    answer: |
+      Knock, knock.
+      
+      Who’s there?
+      
+      Orange.
+      
+      Orange who?
+      
+      Orange you glad I didn't say banana?
+  - question: Tell me a knock-knock joke about animals.
+    answer: |
+      Knock, knock.
+      
+      Who’s there?
+      
+      Cow says.
+      
+      Cow says who?
+      
+      Cow says moooo!
+  - question: Tell me a knock-knock joke about music.
+    answer: |
+      Knock, knock.
+      
+      Who’s there?
+      
+      Beethoven.
+      
+      Beethoven who?
+      
+      Beethoven is too big to fit in my house!
+  - question: Tell me a knock-knock joke about trees.
+    answer: |
+      Knock, knock.
+      
+      Who’s there?
+      
+      Leaf.
+      
+      Leaf who?
+      
+      Leaf me alone!
+  - question: Tell me a knock-knock joke about weather.
+    answer: |
+      Knock, knock.
+      
+      Who’s there?
+      
+      Snow.
+      
+      Snow who?
+      
+      Snow use. I forgot my key again!
