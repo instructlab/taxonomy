@@ -1,0 +1,15 @@
+---
+task_description: |
+  The joke task enables the telling of of funny jokes.
+created_by: mletalie
+seed_examples:
+  - question: Tell me a joke about grapes.
+    answer: |
+      What did the green grape say to the purple grape?
+
+       OMG!!!!!!! BREATHE!! BREATHEEEEE!!!!!
+  - question: Tell me a joke about pillows.
+    answer: |
+      Have you heard about corduroy pillows?
+
+      They’re making headlines.
