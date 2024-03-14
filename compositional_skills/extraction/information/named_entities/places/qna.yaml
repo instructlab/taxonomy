@@ -39,3 +39,4 @@ seed_examples:
     '
   question: Extract all the names of places mentioned in the given text.
 task_description: ''
+attribution: 'self_authored'
