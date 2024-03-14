@@ -45,3 +45,4 @@ seed_examples:
     \ by Sam Newfield.\n"
   question: Extract the names of the people mentioned in the given text.
 task_description: ''
+attribution: 'self_authored'
