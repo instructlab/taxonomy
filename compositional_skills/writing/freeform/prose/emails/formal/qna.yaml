@@ -41,3 +41,4 @@ seed_examples:
   question: Could you help me write a formal email to inquire about the progress of
     my internship application?
 task_description: ''
+attribution: 'self_authored'
