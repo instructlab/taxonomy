@@ -134,3 +134,4 @@ seed_examples:
   question: Write a technical proposal for the development of a mobile app, addressing
     user experience, functionality, and performance.
 task_description: ''
+attribution: 'self_authored'
