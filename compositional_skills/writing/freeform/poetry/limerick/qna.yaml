@@ -12,3 +12,4 @@ seed_examples:
   question: Write a limerick that playfully describes a flower's bloom and its effect
     on nearby insects.
 task_description: ''
+attribution: 'self_authored'
