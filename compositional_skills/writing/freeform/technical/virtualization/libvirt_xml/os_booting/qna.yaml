@@ -1,0 +1,72 @@
+task_description: |
+  This task is used to generate 'os' section of libvirt VM XML configuration
+created_by: weizhan
+seed_examples:
+  - question: >-
+      Generate 'os' section of a libvirt VM XML configuration with default
+      firmware, serial console and SMBIOS
+    answer: |
+      <os>
+        <type>hvm</type>
+        <boot dev='cdrom'/>
+        <bootmenu enable='yes' timeout='3000'/>
+        <smbios mode='sysinfo'/>
+        <bios useserial='yes' rebootTimeout='0'/>
+      </os>
+  - question: >-
+      Generate 'os' section of a libvirt VM XML configuration with UEFI manual
+      firmware and secure boot
+    answer: |
+      <os>
+        <type>hvm</type>
+        <loader readonly='yes' secure='yes' type='pflash'>/usr/share/OVMF/OVMF_CODE.fd</loader>
+        <nvram template='/usr/share/OVMF/OVMF_VARS.fd'>/var/lib/libvirt/nvram/guest_VARS.fd</nvram>
+        <boot dev='hd'/>
+      </os>
+  - question: >-
+      Generate 'os' section of a libvirt VM XML configuration with UEFI manual
+      firmware and secure boot and with NVRAM type 'file'
+    answer: |
+      <os>
+        <type>hvm</type>
+        <loader readonly='yes' secure='yes' type='pflash'>/usr/share/OVMF/OVMF_CODE.fd</loader>
+        <nvram type='file' template='/usr/share/OVMF/OVMF_VARS.fd'>
+          <source file='/var/lib/libvirt/nvram/guest_VARS.fd'/>
+        </nvram>
+        <boot dev='hd'/>
+      </os>
+  - question: >-
+      Generate 'os' section of a libvirt VM XML configuration with UEFI manual
+      firmware and secure boot and with network backed NVRAM'
+    answer: |
+      <os>
+        <type>hvm</type>
+        <loader readonly='yes' secure='yes' type='pflash'>/usr/share/OVMF/OVMF_CODE.fd</loader>
+        <nvram type='network'>
+          <source protocol='iscsi' name='iqn.2013-07.com.example:iscsi-nopool/0'>
+            <host name='example.com' port='6000'/>
+            <auth username='myname'>
+              <secret type='iscsi' usage='mycluster_myname'/>
+            </auth>
+          </source>
+        </nvram>
+        <boot dev='hd'/>
+      </os>
+  - question: >-
+      Generate 'os' section of a libvirt VM XML configuration with automatic
+      UEFI firmware and secure boot
+    answer: |
+      <os firmware='efi'>
+        <type>hvm</type>
+        <loader secure='yes'/>
+        <boot dev='hd'/>
+      </os>
+  - question: >-
+      Generate 'os' section of a libvirt VM XML configuration with automatic
+      UEFI stateless firmware for AMD SEV
+    answer: |
+      <os firmware='efi'>
+        <type>hvm</type>
+        <loader stateless='yes'/>
+        <boot dev='hd'/>
+      </os>
