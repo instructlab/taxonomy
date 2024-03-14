@@ -175,3 +175,4 @@ seed_examples:
   question: Create a technical guide on implementing a containerization strategy using
     Docker and Kubernetes.
 task_description: ''
+attribution: 'self_authored'
