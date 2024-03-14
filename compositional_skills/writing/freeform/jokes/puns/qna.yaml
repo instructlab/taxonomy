@@ -50,3 +50,4 @@ seed_examples:
     '
   question: Tell me a pun about Neverland.
 task_description: ''
+attribution: 'self_authored'
