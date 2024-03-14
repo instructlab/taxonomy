@@ -8,4 +8,7 @@
 #  https://help.github.com/en/articles/about-code-owners
 #
 
-* @instruct-lab/taxonomy-maintainers
+* @instruct-lab/taxonomy-approvers
+*.md   @mairin @juliadenham @kelbrown20 @instruct-lab/taxonomy-approvers
+/.github/ @instruct-lab/taxonomy-maintainers @instruct-lab/taxonomy-approvers
+/docs/ @mairin @juliadenham @kelbrown20 @instruct-lab/taxonomy-approvers
