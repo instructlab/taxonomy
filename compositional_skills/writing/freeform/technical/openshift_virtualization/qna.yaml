@@ -1,0 +1,149 @@
+---
+task_description: |
+  This skill provides the ability to manage VM lifecycle in OpenShift Virtualization.
+created_by: Grace-chhu
+seed_examples:
+- question: How to start a VM in OpenShift Virtualization ?
+  answer: |
+    You can start a virtual machine (VM) in OpenShift Virtualization,
+    either through the web console or the command line.
+    If you're using the command line, use the `virtctl` provided by Red Hat.
+    Here's a step-by-step guide to help you get started:
+    1. Access your OpenShift cluster:
+       Ensure you have access to your OpenShift cluster, either through the web console or the command line.
+       If you're using the command line, log in with the `oc login` command.
+    2. Switch to the correct project:
+       Use the `oc project` command to switch to the project where your VM is located.
+    3. List available VMs:
+       Type `oc get vm` to view a list of available VMs in your project.
+    4. Start the VM:
+       To start a specific VM, use the `virtctl start` command followed by the name of the VM.
+       For example, `virtctl start myvm`.
+    5. Verify the status:
+       After starting the VM, use the `oc get vm` command to check its status.
+       It should now show as `Running`.
+
+    Here's an example of starting a VM named `myvm`:
+
+      oc project myproject
+      oc get vm
+      virtctl start myvm
+
+    Keep in mind that the exact commands and syntax might vary depending on your OpenShift version and configuration.
+    Always consult the official documentation for the most accurate and up-to-date information.
+
+- question: How to restart a VM in OpenShift Virtualization ?
+  answer: |
+    You can restart a virtual machine (VM) in OpenShift Virtualization,
+    either through the web console or the command line.
+    If you're using the command line, use the `virtctl` provided by Red Hat.
+    Here's a step-by-step guide to help you get started:
+    1. Access your OpenShift cluster:
+       Ensure you have access to your OpenShift cluster, either through the web console or the command line.
+       If you're using the command line, log in with the `oc login` command.
+    2. Switch to the correct project:
+       Use the `oc project` command to switch to the project where your VM is located.
+    3. List available VMs:
+       Type `oc get vm` to view a list of available VMs in your project.
+    4. Restart the VM:
+       To restart a specific VM, use the `virtctl restart` command followed by the name of the VM.
+       For example, `virtctl restart myvm`.
+    5. Verify the status:
+       After restarting the VM, use the `oc get vm` command to check its status.
+       It should change from `Stopped` to `Starting`, then it shows as `Running`.
+
+    Here's an example of restarting a VM named `myvm`:
+
+      oc project myproject
+      oc get vm
+      virtctl restart myvm
+
+    Keep in mind that the exact commands and syntax might vary depending on your OpenShift version and configuration.
+    Always consult the official documentation for the most accurate and up-to-date information.
+
+- question: How to pause a VM in OpenShift Virtualization ?
+  answer: |
+    You can pause a virtual machine (VM) in OpenShift Virtualization,
+    either through the web console or the command line.
+    If you're using the command line, use the `virtctl` provided by Red Hat.
+    Here's a step-by-step guide to help you get started:
+    1. Access your OpenShift cluster:
+       Ensure you have access to your OpenShift cluster, either through the web console or the command line.
+       If you're using the command line, log in with the `oc login` command.
+    2. Switch to the correct project:
+       Use the `oc project` command to switch to the project where your VM is located.
+    3. List available VMs:
+       Type `oc get vm` to view a list of available VMs in your project.
+    4. Pause the VM:
+       To pause a specific VM, use the `virtctl pause` command followed by the name of the VM.
+       For example, `virtctl pause vm myvm`.
+    5. Verify the status:
+       After pausing the VM, use the `oc get vm` command to check its status.
+       It should change to `Paused`.
+
+    Here's an example to pause a VM named `myvm`:
+
+      oc project myproject
+      oc get vm
+      virtctl pause vm myvm
+
+    Keep in mind that the exact commands and syntax might vary depending on your OpenShift version and configuration.
+    Always consult the official documentation for the most accurate and up-to-date information.
+
+- question: How to unpause a VM in OpenShift Virtualization ?
+  answer: |
+    You can unpause a virtual machine (VM) in OpenShift Virtualization,
+    either through the web console or the command line.
+    If you're using the command line, use the `virtctl` provided by Red Hat.
+    Here's a step-by-step guide to help you get started:
+    1. Access your OpenShift cluster:
+       Ensure you have access to your OpenShift cluster, either through the web console or the command line.
+       If you're using the command line, log in with the `oc login` command.
+    2. Switch to the correct project:
+       Use the `oc project` command to switch to the project where your VM is located.
+    3. List available VMs:
+       Type `oc get vm` to view a list of available VMs in your project.
+    4. Unpause the VM:
+       To unpause a specific VM, use the `virtctl unpause` command followed by the name of the VM.
+       For example, `virtctl unpause vm myvm`.
+    5. Verify the status:
+       After unpausing the VM, use the `oc get vm` command to check its status.
+       It should change to `Running`.
+
+    Here's an example to unpause a VM named `myvm`:
+
+    oc project myproject
+    oc get vm
+    virtctl unpause vm myvm
+
+    Keep in mind that the exact commands and syntax might vary depending on your OpenShift version and configuration.
+    Always consult the official documentation for the most accurate and up-to-date information.
+
+- question: How to stop a VM in OpenShift Virtualization ?
+  answer: |
+    You can stop a virtual machine (VM) in OpenShift Virtualization,
+    either through the web console or the command line.
+    If you're using the command line, use the `virtctl` provided by Red Hat.
+    Here's a step-by-step guide to help you get started:
+    1. Access your OpenShift cluster:
+       Ensure you have access to your OpenShift cluster, either through the web console or the command line.
+       If you're using the command line, log in with the `oc login` command.
+    2. Switch to the correct project:
+       Use the `oc project` command to switch to the project where your VM is located.
+    3. List available VMs:
+       Type `oc get vm` to view a list of available VMs in your project.
+    4. Stop the VM:
+       To stop a specific VM, use the `virtctl stop` command followed by the name of the VM.
+       For example, `virtctl stop vm myvm`.
+    5. Verify the status:
+       After stopping the VM, use the `oc get vm` command to check its status.
+       It should change to `Stopped`.
+
+    Here's an example to stop a VM named `myvm`:
+
+    oc project myproject
+    oc get vm
+    virtctl stop vm myvm
+
+    Keep in mind that the exact commands and syntax might vary depending on your OpenShift version and configuration.
+    Always consult the official documentation for the most accurate and up-to-date information.
