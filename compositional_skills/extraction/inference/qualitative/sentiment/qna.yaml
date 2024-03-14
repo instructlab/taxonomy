@@ -17,4 +17,18 @@ seed_examples:
   question: Evaluate the following movies on a scale of 1 to 5, with 1 being very
     negative, 3 being neutral, and 5 being very positive. Return the answer as a JSON
     array of integers.
+- answer: '- "good"
+
+    - "neutral"
+
+    - "bad"
+
+    '
+  context: I- Beef bourguignon is real killer. The wine-based juice is delicious.\n
+           II- This mango fruit salad is merely ordinary.\n
+           III- I really hated the duck confit served in this restaurant. The cooking
+                 was completely messed up. It is a crime to poorly cook such good quality meat.
+  question: Evaluate these recipes. The possible evaluation outcomes are good, neutral and bad.
+    Return the answer as a JSON array of strings.
+
 task_description: ''
