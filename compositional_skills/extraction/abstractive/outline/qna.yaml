@@ -80,3 +80,4 @@ seed_examples:
     \ is an American director of film, television and theatre.\n"
   question: For the given text, could you generate an outline?
 task_description: ''
+attribution: 'self authored'
