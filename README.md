@@ -39,7 +39,9 @@ answer pairs. The `qna.yaml` format should include the following fields:
 
 #### Freeform compositional skill: YAML example
 
-This example assumes the GitHub username `mairin`:
+This example snippet assumes the GitHub username `mairin`, showing
+some of the question/answer pairs that would be present in the actual
+file:
 
 ``` yaml
 task_description: |
@@ -61,11 +63,6 @@ seed_examples:
       Why did the car have a belly ache?
 
       Because it had too much gas!
-  - question: Tell me a pun about waves.
-    answer: |
-      What did the ocean say to the ocean?
-
-      Nothing. It just waved!
 ```
 
 Seriously, that's it.
@@ -97,7 +94,8 @@ in terms of a taxonomy contribution:
 
 Remember that [grounded compositional skills](https://github.com/instruct-lab/community/blob/main/docs/SKILLS_GUIDE.md) require additional context.
 
-This example assumes the GitHub username `mairin`:
+This example snippet assumes the GitHub username `mairin`, again
+omitting some of the question/answer pairs in the actual file:
 
 ``` yaml
 task_description: | 
@@ -295,9 +293,13 @@ keys are recognized: `task_description`, `created_by`, and `seed_examples`.
 
 * The value of the `task_description` key can be any string.
 * The value of the `created_by` key can be any string.
-* The value of the `seed_examples` key is a collection of one or more key/value entries in which the
-three recognized keys are: `context`, `question`, and `answer`, each of which can have any string
-as value. For an entry to be valid, it **MUST** have the question and answer specified. 
+* The value of the `seed_examples` key is a collection of one or more
+key/value entries in which the three recognized keys are: `context`,
+`question`, and `answer`, each of which can have any string as
+value. For an entry to be valid, it **MUST** have the question and
+answer specified.  While older files may have fewer question/answer
+pairs, it is recommended that all new additions contain at least five
+pairs.
 
 Other keys at any level are currently ignored.
 
