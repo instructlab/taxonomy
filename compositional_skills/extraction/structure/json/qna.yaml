@@ -82,4 +82,54 @@ seed_examples:
     Extract a valid JSON blob from input that matches the following JSON Schema.
     The response must only contain the JSON blob.
     Input: Sydney is 25 degrees.
+- answer: |
+    {
+        "name": "Bob",
+        "age": 10
+    }
+  context: |
+    {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "age": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "name",
+        "age"
+      ]
+    }
+  question: |
+    Extract a valid JSON blob from input that matches the following JSON Schema.
+    The response must only contain the JSON blob.
+    Input: Bob is 10 years old.
+- answer: |
+    {
+        "name": "Alice",
+        "age": 10
+    }
+  context: |
+    {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "age": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "name",
+        "age"
+      ]
+    }
+  question: |
+    Extract a valid JSON blob from input that matches the following JSON Schema.
+    The response must only contain the JSON blob.
+    Input: Alice was born a decade ago.
 task_description: 'Extract information in structured JSON formats'
