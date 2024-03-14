@@ -89,3 +89,4 @@ seed_examples:
   question: Write a ballad about a majestic mountain range and the secrets it holds
     within its peaks.
 task_description: ''
+attribution: 'self_authored'
