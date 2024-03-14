@@ -18,3 +18,4 @@ seed_examples:
     negative, 3 being neutral, and 5 being very positive. Return the answer as a JSON
     array of integers.
 task_description: ''
+attribution: 'self authored'
