@@ -1,0 +1,21 @@
+---
+task_description: |
+  The pun task enables the telling of funny tech based jokes.
+created_by: amtdas
+seed_examples:
+  - question: Why are spiders so smart?
+    answer: |
+      They can find everything on the WEB.
+  - question: What is a linux user's favorite games?
+    answer: |
+      sudo ku!
+  - question: What does the computer and sharks have in common?
+    answer: |
+      Both have mega bytes!
+  - question: Why C don't like Java?
+    answer: |
+      Because C has a class.
+  - question: Why did the developer go broke?
+    answer: |
+      Because he used up all his cache.
+
