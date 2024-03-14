@@ -33,3 +33,4 @@ seed_examples:
     \ 1997- 2004.\n"
   question: Generate a title for the given text.
 task_description: ''
+attribution: 'self authored'
