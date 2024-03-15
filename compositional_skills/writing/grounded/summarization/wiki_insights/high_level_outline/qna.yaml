@@ -52,3 +52,4 @@ seed_examples:
     \n"
   question: Generate a high-level outline for the given text.
 task_description: ''
+attribution: 'https://huggingface.co/datasets/hotpot_qa (CC-by-SA 4.0)'
