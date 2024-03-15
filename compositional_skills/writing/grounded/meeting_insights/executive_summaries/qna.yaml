@@ -66,5 +66,5 @@ seed_examples:
   question: Generate an executive summary of the given meeting transcript.
 task_description: ''
 attribution:
--source: 'self_authored'
- license: 'Apache-2.0'
+  - source: 'self_authored'
+    license: 'Apache 2.0'
