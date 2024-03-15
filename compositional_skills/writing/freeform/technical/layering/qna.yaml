@@ -9,8 +9,8 @@ seed_examples:
     answer: Each layer of your application only depends on lower (or current)
        layers which is the main requirement of properly layered applications.
     attribution:
-      source: self-authored
-      license: Apache-2.0
+      - source: self-authored
+        license: Apache-2.0
   - question: Is my application layered correctly?  My application top-most
       layer (3) contains websocket and database modules, the websocket module
       depends on the socket module in the next layer (2).  The database module
@@ -23,8 +23,8 @@ seed_examples:
       forget the main requirement is that each application layer can only
       depend on lower (or current) layers.
     attribution:
-      source: self-authored
-      license: Apache-2.0
+      - source: self-authored
+        license: Apache-2.0
   - question: Is my application layered correctly?  My application top-most
       layer (3) contains websocket, database and logging modules, the websocket
       module depends on the socket module in the next layer (2).  The database
@@ -36,8 +36,8 @@ seed_examples:
     answer: Each layer of your application only depends on lower layers which
       is the main requirement of properly layered applications.
     attribution:
-      source: self-authored
-      license: Apache-2.0
+      - source: self-authored
+        license: Apache-2.0
   - question: Is my application layered correctly?  My application top-most
       layer (5) contains websocket and database modules, the websocket module
       depends on the socket module in the next layer (4).  The database module
@@ -50,8 +50,8 @@ seed_examples:
     answer: Each layer of your application only depends on lower layers which
       is the main requirement of properly layered applications.
     attribution:
-      source: self-authored
-      license: Apache-2.0
+      - source: self-authored
+        license: Apache-2.0
   - question: Is my application layered correctly?  My application top-most
       layer (1) contains hundreds of different modules in my
       application but there are not other layers as I just have one big
@@ -59,5 +59,5 @@ seed_examples:
     answer: Each layer of your application only depends on lower (or current)
        layers which is the main requirement of properly layered applications.
     attribution:
-      source: self-authored
-      license: Apache-2.0
+      - source: self-authored
+        license: Apache-2.0
