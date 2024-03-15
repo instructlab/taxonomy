@@ -26,5 +26,5 @@ seed_examples:
     between an economist, a sociologist, and a policy maker.
 task_description: ''
 attribution:
--source: 'self_authored'
- license: 'Apache-2.0'
+  - source: 'self_authored'
+    license: 'Apache 2.0'
