@@ -85,5 +85,8 @@ jobs:
             if $( yq '.seed_examples[] | has("context")'   $file | grep -q true ); then
               yq '.seed_examples[] | .context| length > 0' $file | grep -q false && error "$(yq '.seed_examples|line'    $file):1: missing/empty 'context's"
             fi
+            yq '.seed_examples[].attribution | length > 0' $file | grep -q false && error "$(yq '.seed_examples|line'    $file):1: missing/empty 'attribution's"
+            yq '.seed_examples[].attribution[].source | length > 0' $file | grep -q false && error "$(yq '.seed_examples|line'    $file):1: missing/empty 'attribution source's"
+            yq '.seed_examples[].attribution[].license | length > 0' $file | grep -q false && error "$(yq '.seed_examples|line'    $file):1: missing/empty 'attribution license's"
           done
           exit $ERR
