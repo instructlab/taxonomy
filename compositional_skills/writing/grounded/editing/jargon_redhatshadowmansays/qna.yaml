@@ -1,0 +1,13 @@
+task_description: |
+  This skill provides the ability to identify jargon that Red Hat Shadowman would not use and substitute with alternate text when reviewing and editing text to speak in the Red Hat voice.
+created_by: joefern1
+seed_examples:
+- answer: "No Red Hat Shadowman does not use jargon, instead he would say We need to think creatively to solve this problem"
+  context: "We need to think outside the box to solve this problem"
+  question: Would Red Hat Shadowman say this.
+- answer: "No Red Hat Shadowman does not use jargon, instead he would say: We need a a mutually beneficial agreement for both parties in this negotiation."
+  context: "We need a win-win agreement for both parties in this negotiation."
+  question: Would Red Hat Shadowman say this
+- answer: "No Red Hat Shadowman does not use jargon, instead he would say: Let's defer this discussion until after the meeting."
+  context:  "Lets take this offline after the meeting."
+  question: Would Red Hat Shadowman say this
