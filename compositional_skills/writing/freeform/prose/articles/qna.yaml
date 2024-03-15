@@ -35,5 +35,5 @@ seed_examples:
     practices in schools and communities.
 task_description: ''
 attribution:
--source: 'self_authored'
- license: 'Apache-2.0'
+  - source: 'self_authored'
+    license: 'Apache 2.0'
