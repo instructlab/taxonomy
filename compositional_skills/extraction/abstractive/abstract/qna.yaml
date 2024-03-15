@@ -104,4 +104,6 @@ seed_examples:
     \ vihuela, a guitar- shaped string instrument.\n"
   question: Could you generate an abstract for the given text?
 task_description: ''
-attribution: 'self_authored'
+attribution: 
+-source: 'self_authored'
+license: 'Apach 2.0'
