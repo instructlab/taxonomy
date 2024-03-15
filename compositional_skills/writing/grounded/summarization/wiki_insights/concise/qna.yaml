@@ -37,4 +37,6 @@ seed_examples:
     \nAt the 2006 census, its existence was noted, but its population was not reported."
   question: Generate a concise summary for the given text.
 task_description: ''
-attribution: 'https://huggingface.co/datasets/hotpot_qa (CC-by-SA 4.0)'
+attribution: 
+-source: 'https://huggingface.co/datasets/hotpot_qa'
+ license: 'CC-by-SA 4.0'
