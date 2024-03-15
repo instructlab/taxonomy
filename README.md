@@ -196,7 +196,7 @@ in terms of a taxonomy contribution:
 
 #### Grounded compositional skill: YAML example
 
-Remember that [grounded compositional skills](https://github.com/instruct-lab/community/learning/SKILLS_GUIDE.md) require additional context and include a `context` field. 
+Remember that [grounded compositional skills](https://github.com/instruct-lab/community/blob/main/docs/SKILLS_GUIDE.md) require additional context and include a `context` field. 
 
 This example assumes the GitHub username `mairin`:
 
