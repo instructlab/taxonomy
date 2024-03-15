@@ -65,3 +65,4 @@ seed_examples:
     and reconvene in a month to evaluate our progress.'
   question: Generate an executive summary of the given meeting transcript.
 task_description: ''
+attribution: 'self_authored'
