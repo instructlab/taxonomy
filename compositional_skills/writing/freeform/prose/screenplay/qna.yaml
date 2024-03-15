@@ -121,5 +121,5 @@ seed_examples:
   question: Write a screenplay about a heist gone wrong.
 task_description: ''
 attribution:
--source: 'self_authored'
- license: 'Apache-2.0'
+  - source: 'self_authored'
+    license: 'Apache 2.0'
