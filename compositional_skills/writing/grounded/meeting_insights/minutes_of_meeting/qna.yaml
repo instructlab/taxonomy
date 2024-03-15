@@ -160,4 +160,6 @@ seed_examples:
     next steps.'
   question: Could you generate the minutes of the meeting from the given transcript?
 task_description: ''
-attribution: 'self_authored'
+attribution:
+-source: 'self_authored'
+ license: 'Apache-2.0'
