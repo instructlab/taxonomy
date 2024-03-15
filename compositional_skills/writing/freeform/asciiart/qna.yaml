@@ -27,4 +27,35 @@ seed_examples:
                 |* |
               ~~~~~~~~'
   question: Draw a tree with ASCII art.
+- answer: '
+    --------------------------
+    |                        |
+    |                        |
+    |                        |
+    |                        |
+    |                        |
+    |                        |
+    |                        |
+    |                        |
+    |                        |
+    --------------------------'
+  question: Draw a square with ASCII art.
+- answer: '
+        /\
+       /  \
+      /    \
+     /      \
+    /        \
+   /          \
+   ------------'
+  question: Draw a triangle with ASCII art.
+- answer: '
+        /\     /\
+       /  \___/  \
+      /           \
+     (  ()     ()  )
+    >(-     o     -)<
+       (___/ \___)
+        (_______)'
+  question: Draw a cat with ASCII art.
 task_description: 'This task enables/improves drawing using ASCII art.'
