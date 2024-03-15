@@ -1,0 +1,82 @@
+created_by: srampal
+seed_examples:
+- answer: 'Here is an example sentence in Hinglish or Hindi-English: \
+   \
+   - Main abhi okay feel kar rahaa hoon\
+   \
+   In this example, the words "Main", "abhi", "kar", "rahaa" and "hoon" are in Hindi (written here \
+   in English script), whereas the words "okay" and "feel" are in English. Yet despite this mix of \
+   languages, the overall sentence would make sense to someone familiar with Hinglish. It translates \
+   in English to "I am feeling okay now".\
+   '
+  question: Give me an example of a sentence in Hinglish.
+  attribution:
+      - source: self-authored
+        license: Apache-2.0
+- answer: 'Here is an example sentence in Hinglish or Hindi-English: \
+   \
+   - The traffic is moving so dheere dheere\
+   \
+   In this example, the word "dheere" is in Hindi (written here in English script), \
+   whereas the words "The", "traffic", "is", "moving", and "so" are in English. Yet despite this mix of \
+   languages, the overall sentence would make sense to someone familiar with Hinglish. It translates \
+   in English to "The traffic is moving so slowly". \
+   '
+  question: Give me an example of a sentence in Hinglish.
+  attribution:
+      - source: self-authored
+        license: Apache-2.0
+- answer: 'Here is an example sentence in Hinglish or Hindi-English: \
+   \
+   - Yeh sab AI technology is amazing\
+   \
+   In this example, the words "Yeh" and "sab" are in Hindi (written here in English script), \
+   whereas the words "AI", "technology", "is", and "amazing" are in English. Yet despite this mix of \
+   languages, the overall sentence would make sense to someone familiar with Hinglish. It translates \
+   in English to "All this AI technology is amazing".\
+   '
+  question: Give me an example of a sentence in Hinglish.
+  attribution:
+      - source: self-authored
+        license: Apache-2.0
+- answer: 'Here is an example sentence in Hinglish or Hindi-English: \
+   \
+   - No one speaks pure Hindi aaj kal, aisa kyon ?\
+   \
+   In this example, the words "aaj", "kal", "aisa" and "kyon" are in Hindi (written here in English script), \
+   whereas the words "No", "one", "speaks", "pure" and "Hindi" are in English. Yet despite this mix of \
+   languages, the overall sentence would make sense to someone familiar with Hinglish. In English this \
+   sentence translates to "No one speaks pure Hindi these days, why is this so ?".\
+   '
+  question: Give me an example of a sentence in Hinglish.
+  attribution:
+      - source: self-authored
+        license: Apache-2.0
+- answer: 'Here is an example sentence in Hinglish or Hindi-English: \
+   \
+   - Does AI understand yeh kya bol rahi hai ?\
+   \
+   In this example, the words "yeh", "kya", "bol", "rahi" and "hai" are in Hindi (written here in English script), \
+   whereas the words "Does", "AI" and "understand" are in English. Yet despite this mix of \
+   languages, the overall sentence would make sense to someone familiar with Hinglish. In English\
+   this would translate to "Does AI understand what she (it) is saying ?" \
+   '
+  question: Give me an example of a sentence in Hinglish.
+  attribution:
+      - source: self-authored
+        license: Apache-2.0
+- answer: 'Here is an example sentence in Hinglish or Hindi-English: \
+   \
+   - I would like to sing lekin mujhe aata nahin hai\
+   \
+   In this example, the words "lekin", "mujhe", "aata", "nahin" and "hai" are in Hindi (written here \
+   in English script), whereas the words "I", "would", "like", "to", and "sing" are in English. \
+   Yet despite this mix of languages, the overall sentence would make sense to someone familiar \
+   with Hinglish. In English, this would translate to "I would like to sing but I dont know to".\
+   '
+  question: Give me an example of a sentence in Hinglish.
+  attribution:
+      - source: self-authored
+        license: Apache-2.0
+task_description: 'This task provides examples of sentences in Hinglish which is a mix of the \
+   Hindi and English languages and is spoken mostly in urban areas of India and elsewhere.'
