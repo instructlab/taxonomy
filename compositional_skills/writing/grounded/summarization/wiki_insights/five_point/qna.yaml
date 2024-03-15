@@ -74,3 +74,4 @@ seed_examples:
     \ located in the Gang-seo District of Seoul, Korea."
   question: Give a five point summary for the given text.
 task_description: ''
+attribution: 'https://huggingface.co/datasets/hotpot_qa (CC-by-SA 4.0)'
