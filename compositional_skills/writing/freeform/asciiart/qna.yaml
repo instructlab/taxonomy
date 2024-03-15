@@ -46,8 +46,7 @@ seed_examples:
       /    \
      /      \
     /        \
-   /          \
-   ------------'
+   /__________\'
   question: Draw a triangle with ASCII art.
 - answer: '
         /\     /\
