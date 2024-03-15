@@ -1,1 +1,26 @@
-
+task_description: This skill will found the number of words in the input
+created_by: alking
+ - context: |
+      This is a sentence that has been created as an example to help teach a counting skill to the AI model.
+    question: |
+      How many words are in the statement?
+    answer: |
+     21
+ - context: |
+      Friday night is a great night to make pizza with your family. Enjoying a delicious meal on a Friday evening sets the weekend up for success!
+    question: |
+      Can you count the words in the statement?
+    answer: |
+      26
+ - context: |
+      Helping to train an AI model is something I never thought I would be doing. Having this opportunity to contribute to revolutionary technology is really exciting! I can't wait to see what is next for us!
+    question: |
+      Tell me how many words are in this statement.
+    answer: |
+      36
+   - context: |
+      Every season brings its own type of fun. As we head out of winter, many folks in the Northern Hemisphere are looking forward to warmer weather and more outdoor activities. 
+    question: |
+      Count the words in this statement.
+    answer: |
+      30
