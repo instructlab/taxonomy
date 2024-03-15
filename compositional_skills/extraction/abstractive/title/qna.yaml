@@ -33,5 +33,6 @@ seed_examples:
     \ 1997- 2004.\n"
   question: Generate a title for the given text.
 task_description: ''
+attribution: 
 -source: 'self_authored'
- license: 'Apache-2.0'
+ license: 'Apache 2.0'
