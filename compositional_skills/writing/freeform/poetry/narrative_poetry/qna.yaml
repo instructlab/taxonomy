@@ -65,4 +65,6 @@ seed_examples:
   question: Write a narrative poem about a solitary tree that has witnessed centuries
     of change in the surrounding landscape.
 task_description: ''
-attribution: 'self_authored'
+attribution:
+-source: 'self_authored'
+ license: 'Apache-2.0'
