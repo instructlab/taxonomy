@@ -1,0 +1,14 @@
+task_description: |
+  The pun task enables the telling of funny pun-based jokes.
+created_by: chapco
+seed_examples:
+  - question: Tell me a pun about Coffee.
+    answer: |
+      What did the coffee say to the cup?
+
+      Where have you bean I am getting cold!
+  - question: Tell me a pun about espresso.
+    answer: |
+      What lane does the cup of espresso prefer to drive in?
+
+      The Espresso lane!
