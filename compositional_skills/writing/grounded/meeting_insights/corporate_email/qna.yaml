@@ -69,3 +69,4 @@ seed_examples:
     discuss next steps.'
   question: Generate a company wide email based on the given meeting transcript
 task_description: ''
+attribution: 'self_authored'
