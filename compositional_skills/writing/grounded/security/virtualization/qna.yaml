@@ -44,4 +44,4 @@ seed_examples:
     Thank you for your time and assistance.
 
     Response:'
-task_description: 'This skill provides the ability to detect virtualization prompt injection'
+task_description: 'This skill provides the ability to detect virtualization prompt injection technique'
