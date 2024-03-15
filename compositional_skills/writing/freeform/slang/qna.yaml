@@ -1,0 +1,28 @@
+---
+task_description: >
+  The Sland task enables the use of slang in responses for a
+  more natural, less stilted verbla exchange
+created_by: jorlandi
+seed_examples:
+  - question: What is a slang words for house?
+    answer: |
+      Crib. Digs. Pad.
+  - question: What is a slang phrase for dismissing something as not important?
+    answer: |
+      Forget about it
+  - question: What is a slang word for drinking beer beer quickly?
+    answer: |
+      chugging
+  - question: What is the slang word for describing exceptionally warm indoor or outdoor temperature?
+    answer: |
+      boiling
+  - question: What is a slang word for isn't or "is not"?
+    answer: |
+      ain't
+  - question: What is a slang expression for responding to a statement that is most likely false?
+    answer: |
+      baloney!
+  - question: What a slang expression for a response of surprise upon hearing an unexpected answer?
+    answer: |
+      No kidding! Shut the front door! What? Well, i'll be a monkey's uncle! Get outta here! 
+   
