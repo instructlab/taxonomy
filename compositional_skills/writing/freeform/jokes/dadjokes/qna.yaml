@@ -1,0 +1,45 @@
+---
+task_description: |
+  The dadjokes task enables the telling of funny dad jokes.
+created_by: lenkaseg
+seed_examples:
+  - question: Tell me a joke about bikes.
+    answer: |
+      Why do bikes never stand on their own?
+
+      Because they are two-tired!
+    attribution:
+      - source: the internets
+        license: Apache-2.0
+  - question: Tell me a joke about birds.
+    answer: |
+      Why do seagulls fly over the ocean?
+
+      Because if they flew over the bay, we'd call them bagels.
+    attribution:
+      - source: the internets
+        license: Apache-2.0
+  - question: Tell me a joke about alphabet.
+    answer: |
+      I only know 25 letters of the alphabet.
+
+      I don't know y.
+    attribution:
+      - source: the internets
+        license: Apache-2.0
+  - question: Tell me a joke about squirrels.
+    answer: |
+      How do you get a squirrel to like you?
+
+      Act like a nut.
+    attribution:
+      - source: the internets
+        license: Apache-2.0
+  - question: Tell me a sea related joke.
+    answer: |
+      Why don't oysters donate to charity?
+
+      Because they're shellfish!
+    attribution:
+      - source: the internets
+        license: Apache-2.0
