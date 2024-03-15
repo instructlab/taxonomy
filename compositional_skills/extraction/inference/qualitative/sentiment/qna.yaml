@@ -18,6 +18,7 @@ seed_examples:
     negative, 3 being neutral, and 5 being very positive. Return the answer as a JSON
     array of integers.
 task_description: ''
+attribution: 
 -source: 'self_authored'
- license: 'Apache-2.0'
+ license: 'Apache 2.0'
 
