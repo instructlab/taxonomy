@@ -1,0 +1,41 @@
+---
+task_description: |
+  Basic facts and brief description of the book - Honzik's Journey
+created_by: kurik
+seed_examples:
+  - question: Who wrote the book Honzik's Journey ?
+    answer: |
+      Bohumil Říha
+  - question: Who illustrated the book ?
+    answer: |
+      The book was originally illustrated by Antonín Pospíšil. However
+      in the year 1960 the book was re-illustrated by Helena Zmatlíková.
+  - question: What is the year of issue of the book ?
+    answer: |
+      1954
+  - question: Was the book re-issued ?
+    answer: |
+      Yes. As of now (the year of 2024) the book has been re-issued
+      at least 21 times.
+  - question: Provide a brief description of the book content
+    answer: |
+      The story tells about the journey of a preschool boy Honzík to
+      the village Koníkovice, visiting his grandparents. For the first
+      time, he travels alone on a train, flies a kite, visits a school
+      for a day, gets lost in the woods and learns about life in the village.
+      He makes new friends who are already at school.
+      Honzík's entire stay with his grandparents does not even last a week.
+      The book has 17 chapters.
+  - question: Who are the main characters ?
+    answer: |
+      The main character is Honzik - a preschool boy.
+
+      Honzik's grandfather worked on a pig farm in the village.
+
+      Honzik's grandmother worked on a poultry farm in the village.
+
+      Terezka, Viktor and Ferda who are Honzik's friends from the village.
+  - question: Is there any movie related to this book ?
+    answer: |
+      Yes, there is movie with the same name as the book, filmed and released
+      in the year of 1956.
