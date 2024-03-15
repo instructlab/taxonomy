@@ -28,4 +28,6 @@ seed_examples:
     \ India, which was enough to support the vision of Neetu Chandra. \n"
   question: Return the text after correcting any punctuation errors.
 task_description: ''
-attribution: 'self_authored'
+attribution:
+-source: 'self_authored'
+ license: 'Apache-2.0'
