@@ -39,5 +39,6 @@ seed_examples:
     '
   question: Extract all the names of places mentioned in the given text.
 task_description: ''
+attribution: 
 -source: 'self_authored'
- license: 'Apache-2.0'
+ license: 'Apache 2.0'
