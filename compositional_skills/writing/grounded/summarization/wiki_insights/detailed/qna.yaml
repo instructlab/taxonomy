@@ -66,6 +66,6 @@ seed_examples:
     \ a heart attack.\"\n"
   question: Generate a detailed summary for the given text.
 task_description: ''
-attribution: 
--source: 'https://huggingface.co/datasets/hotpot_qa'
- license: 'CC-by-SA 4.0'
+attribution:
+  - source: 'https://huggingface.co/datasets/hotpot_qa'
+    license: 'CC-by-SA 4.0'
