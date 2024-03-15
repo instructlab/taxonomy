@@ -66,3 +66,4 @@ seed_examples:
     \ was 877, in 174 families.\n"
   question: Fix any spelling errors in the given text.
 task_description: ''
+attribution: 'self_authored'
