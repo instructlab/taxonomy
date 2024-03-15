@@ -33,4 +33,6 @@ seed_examples:
   question: Produce three convincing arguments that support the claim that universal
     healthcare is a necessary component of a just society.
 task_description: ''
-attribution: 'self_authored'
+attribution:
+-source: 'self_authored'
+ license: 'Apache-2.0'
