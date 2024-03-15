@@ -1,0 +1,51 @@
+"created_by": "yourusername"
+"task_description": "task description"
+"seed_examples":
+  - "question": "Tell me a pun about birds."
+    "answer": "Why do birds eat wood?
+
+
+      \    Because they're peckish!"
+  - "question": "what is the time?"
+    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit arcu, hendrerit at cursus
+      vitae, luctus quis erat. Cras ultrices elit lectus, et malesuada tortor tincidunt rutrum. Aliquam tempus
+      quam eget lorem venenatis, vel luctus est aliquet. Nullam ultrices porttitor ligula eu luctus. Nam
+      aliquam dapibus velit ultricies porta. Mauris nec purus ac ante placerat tempor. In quis placerat felis,
+      vel facilisis elit. In hac habitasse platea dictumst. Integer scelerisque lacus quis porta mollis.
+      Mauris efficitur urna non lectus suscipit vestibulum."
+  - "question": "what is the Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit arcu,
+      hendrerit at cursus vitae, luctus quis erat. Cras ultrices elit lectus, et malesuada tortor tincidunt
+      rutrum. Aliquam tempus quam eget lorem venenatis, vel luctus est aliquet. Nullam ultrices porttitor
+      ligula eu luctus. Nam aliquam dapibus velit ultricies porta. Mauris nec purus ac ante placerat tempor.
+      In quis placerat felis, vel facilisis elit. In hac habitasse platea dictumst. Integer scelerisque lacus
+      quis porta mollis. Mauris efficitur urna non lectus suscipit vestibulum.?"
+    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit arcu, hendrerit at cursus
+      vitae, luctus quis erat. Cras ultrices elit lectus, et malesuada tortor tincidunt rutrum. Aliquam tempus
+      quam eget lorem venenatis, vel luctus est aliquet. Nullam ultrices porttitor ligula eu luctus. Nam
+      aliquam dapibus velit ultricies porta. Mauris nec purus ac ante placerat tempor. In quis placerat felis,
+      vel facilisis elit. In hac habitasse platea dictumst. Integer scelerisque lacus quis porta mollis.
+      Mauris efficitur urna non lectus suscipit vestibulum.
+
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit arcu, hendrerit at cursus vitae,
+      luctus quis erat. Cras ultrices elit lectus, et malesuada tortor tincidunt rutrum. Aliquam tempus quam
+      eget lorem venenatis, vel luctus est aliquet. Nullam ultrices porttitor ligula eu luctus. Nam aliquam
+      dapibus velit ultricies porta. Mauris nec purus ac ante placerat tempor. In quis placerat felis, vel
+      facilisis elit. In hac habitasse platea dictumst. Integer scelerisque lacus quis porta mollis. Mauris
+      efficitur urna non lectus suscipit vestibulum."
+  - "question": "what is the banana?"
+    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit arcu, hendrerit at cursus
+      vitae, luctus quis erat. Cras ultrices elit lectus, et malesuada tortor tincidunt rutrum. Aliquam tempus
+      quam eget lorem venenatis, vel luctus est aliquet. Nullam ultrices porttitor ligula eu luctus. Nam
+      aliquam dapibus velit ultricies porta. Mauris nec purus ac ante placerat tempor. In quis placerat felis,
+      vel facilisis elit. In hac habitasse platea dictumst. Integer scelerisque lacus quis porta mollis.
+      Mauris efficitur urna non lectus suscipit vestibulum."
+  - "question": "what is the time?"
+    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit arcu, hendrerit at cursus
+      vitae, luctus quis erat. Cras ultrices elit lectus, et malesuada tortor tincidunt rutrum. Aliquam tempus
+      quam eget lorem venenatis, vel luctus est aliquet. Nullam ultrices porttitor ligula eu luctus. Nam
+      aliquam dapibus velit ultricies porta. Mauris nec purus ac ante placerat tempor. In quis placerat felis,
+      vel facilisis elit. In hac habitasse platea dictumst. Integer scelerisque lacus quis porta mollis.
+      Mauris efficitur urna non lectus suscipit vestibulum."
+  - "question": "what is the time?"
+    "answer": "it is time for second breakfast"
