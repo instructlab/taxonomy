@@ -1,0 +1,35 @@
+task_description: |
+  Return a simple but representative ascii art picture of a keyboard.
+created_by: aireilly
+seed_examples:
+  - question: Give me a simple ascii art representation of a 2 octave piano keyboard
+    answer: |
+      │ └┬┘└┬┘ │ └┬┘└┬┘└┬┘ │ └┬┘└┬┘ │ └┬┘└┬┘└┬┘ │
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Draw an ascii art picture of piano keys
+    answer: |
+      │└│└││└│└│└││└│└││└│└│└││
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Draw an ascii art piano keyboard
+    answer: |
+      |YY|YYY|YY|YYY|
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Show me a simple representation of piano keys using only ascii
+      characters
+    answer: |
+      .'.'..'.'.'.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Give me an ascii art representation of a one octave piano keyboard
+    answer: |
+      ::.:::.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
