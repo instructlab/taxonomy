@@ -51,5 +51,5 @@ seed_examples:
   question: Tell me a pun about Neverland.
 task_description: ''
 attribution:
--source: 'self_authored'
- license: 'Apache-2.0'
+  - source: 'self_authored'
+    license: 'Apache 2.0'
