@@ -34,4 +34,6 @@ seed_examples:
   question: Seeking insights for an article on the benefits of restorative justice
     practices in schools and communities.
 task_description: ''
-attribution: 'self_authored'
+attribution:
+-source: 'self_authored'
+ license: 'Apache-2.0'
