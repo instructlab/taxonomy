@@ -1,37 +1,38 @@
----
+task_description: |
+  Ability to recognize gmail aliases and extract unique email addresses
 created_by: falox
 seed_examples:
   - context: |
       john.doe@gmail.com, johndoe@gmail.com
     question: |
       Which are the unique email addresses?
-    answer: >
+    answer: |
       john.doe@gmail.com and johndoe@gmail.com are actually the same address,
       because the Gmail email provider ignores the dots in the username.
-  - context: >
+  - context: |
       john.doe@example.com, johndoe@example.com, john.doe@gmail.com,
       johndoe@gmail.com
     question: |
       Which are the unique email addresses?
-    answer: >
-      The unique email addresses are: john.doe@example.com,
-      johndoe@example.com, john.doe@gmail.com. john.doe@gmail.com,
-      johndoe@gmail.com are actually the same address, because the Gmail
-      email  provider ignores the dots in the username.
+    answer: |
+      The unique email addresses are: john.doe@example.com, johndoe@example.com,
+      john.doe@gmail.com. john.doe@gmail.com, johndoe@gmail.com are actually the
+      same address, because the Gmail email  provider ignores the dots in the
+      username.
   - context: |
       john.doe@gmail.com, johndoe@gmail.com, j.ohndoe@gmail.com
     question: |
       Which are the unique email addresses?
-    answer: >
-      john.doe@gmail.com, johndoe@gmail.com, and j.ohndoe@gmail.com are
-      actually the same address, because the Gmail email provider ignores the
-      dots in the username.
-  - context: >
+    answer: |
+      john.doe@gmail.com, johndoe@gmail.com, and j.ohndoe@gmail.com are actually
+      the same address, because the Gmail email provider ignores the dots in the
+      username.
+  - context: |
       john.doe@example.com, jane.doe@example.com, john.doe@gmail.com,
       jane.doe@gmail.com
     question: |
       Which are the unique email addresses?
-    answer: >
+    answer: |
       The unique email addresses are: john.doe@example.com,
       jane.doe@example.com, john.doe@gmail.com, jane.doe@gmail.com.
   - context: |
@@ -40,5 +41,3 @@ seed_examples:
       Which are the unique email addresses?
     answer: |
       The unique email addresses are: john.doe@example.com, johndoe@example.com
-task_description: |
-  Ability to recognize gmail aliases and extract unique email addresses
