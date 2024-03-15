@@ -11,6 +11,9 @@ seed_examples:
         /      /  \       /    \
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
   question: Draw mountains with ASCII art.
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
 - answer: '
                  /\
                 /  \
@@ -27,6 +30,9 @@ seed_examples:
                 |* |
               ~~~~~~~~'
   question: Draw a tree with ASCII art.
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
 - answer: '
     --------------------------
     |                        |
@@ -40,6 +46,9 @@ seed_examples:
     |                        |
     --------------------------'
   question: Draw a square with ASCII art.
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
 - answer: '
         /\
        /  \
@@ -48,6 +57,9 @@ seed_examples:
     /        \
    /__________\'
   question: Draw a triangle with ASCII art.
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
 - answer: '
         /\     /\
        /  \___/  \
@@ -57,4 +69,7 @@ seed_examples:
        (___/ \___)
         (_______)'
   question: Draw a cat with ASCII art.
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
 task_description: 'This task enables/improves drawing using ASCII art.'
