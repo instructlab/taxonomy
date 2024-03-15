@@ -59,6 +59,6 @@ seed_examples:
     \ actor.\n"
   question: Generate the main takeaways from the given text.
 task_description: ''
-attribution: 
--source: 'self_authored'
- license: 'Apache 2.0'
+attribution:
+  - source: 'self_authored'
+    license: 'Apache 2.0'
