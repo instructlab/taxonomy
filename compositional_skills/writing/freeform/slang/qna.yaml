@@ -7,42 +7,46 @@ seed_examples:
   - question: What are slang words for house?
     attribution:
       - source: self-authored
-       license:Apache-2.0
+        license: Apache-2.0
     answer: |
       Crib. Digs. Pad.
   - question: What is a slang phrase for dismissing something as not important?
     attribution:
       - source: self-authored
-       license:Apache-2.0
+        license: Apache-2.0
     answer: |
       Forget about it
   - question: What is a slang word for drinking beer quickly?
     attribution:
       - source: self-authored
-       license:Apache-2.0
+        license: Apache-2.0
     answer: |
       chugging
-  - question: What is the slang word for describing an exceptionally warm indoor or outdoor temperature?
+  - question: What is the slang word for describing an exceptionally warm indoor or
+      outdoor temperature?
     attribution:
       - source: self-authored
-       license:Apache-2.0
+        license: Apache-2.0
     answer: |
       boiling
   - question: What is a slang word for isn't or "is not"?
     attribution:
       - source: self-authored
-       license:Apache-2.0
+        license: Apache-2.0
     answer: |
       ain't
-  - question: What is a slang expression for responding to a statement that is most likely false?
+  - question: What is a slang expression for responding to a statement that is most
+      likely false?
     attribution:
       - source: self-authored
-       license:Apache-2.0
+        license: Apache-2.0
     answer: |
       baloney!
-  - question: What are slang expressions for a response of surprise upon hearing an unexpected answer?
+  - question: What are slang expressions for a response of surprise upon hearing an
+      unexpected answer?
     attribution:
       - source: self-authored
-       license:Apache-2.0
-    answer: |
-      No kidding! Shut the front door! What? Well, i'll be a monkey's uncle! Get outta here!
+        license: Apache-2.0
+    answer: >
+      No kidding! Shut the front door! What? Well, i'll be a monkey's uncle!
+      Get outta here!
