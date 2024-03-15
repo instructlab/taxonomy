@@ -45,6 +45,6 @@ seed_examples:
     \ by Sam Newfield.\n"
   question: Extract the names of the people mentioned in the given text.
 task_description: ''
-attribution: 
--source: 'self_authored'
- license: 'Apache 2.0'
+attribution:
+  - source: 'self_authored'
+    license: 'Apache 2.0'
