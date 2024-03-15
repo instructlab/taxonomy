@@ -132,4 +132,6 @@ seed_examples:
   question: Compose a technical report on the benefits and challenges of implementing
     microservices architecture in software development.
 task_description: ''
-attribution: 'self_authored'
+attribution:
+-source: 'self_authored'
+ license: 'Apache-2.0'
