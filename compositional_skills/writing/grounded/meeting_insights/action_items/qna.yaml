@@ -81,5 +81,5 @@ seed_examples:
   question: Get all the action items from the given meeting transcript.
 task_description: ''
 attribution:
--source: 'self_authored'
- license: 'Apache-2.0'
+  - source: 'self_authored'
+    license: 'Apache 2.0'
