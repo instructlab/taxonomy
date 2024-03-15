@@ -161,5 +161,5 @@ seed_examples:
   question: Could you generate the minutes of the meeting from the given transcript?
 task_description: ''
 attribution:
--source: 'self_authored'
- license: 'Apache-2.0'
+  - source: 'self_authored'
+    license: 'Apache 2.0'
