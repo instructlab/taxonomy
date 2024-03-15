@@ -4,7 +4,7 @@ task_description: >
   more natural, less stilted verbla exchange
 created_by: jorlandi
 seed_examples:
-  - question: What is a slang words for house?
+  - question: What are slang words for house?
     answer: |
       Crib. Digs. Pad.
   - question: What is a slang phrase for dismissing something as not important?
@@ -22,7 +22,7 @@ seed_examples:
   - question: What is a slang expression for responding to a statement that is most likely false?
     answer: |
       baloney!
-  - question: What a slang expression for a response of surprise upon hearing an unexpected answer?
+  - question: What are slang expressions for a response of surprise upon hearing an unexpected answer?
     answer: |
       No kidding! Shut the front door! What? Well, i'll be a monkey's uncle! Get outta here! 
    
