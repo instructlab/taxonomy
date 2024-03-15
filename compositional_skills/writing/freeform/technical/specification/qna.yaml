@@ -126,4 +126,6 @@ seed_examples:
   question: Develop a technical specification for a new hardware or software component,
     including requirements, design, and testing.
 task_description: ''
-attribution: 'self_authored'
+attribution:
+-source: 'self_authored'
+ license: 'Apache-2.0'
