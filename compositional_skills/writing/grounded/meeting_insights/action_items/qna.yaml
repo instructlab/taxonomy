@@ -80,3 +80,4 @@ seed_examples:
     *Ms. Thompson:* Excellent. Let''s make employee retention a top priority.'
   question: Get all the action items from the given meeting transcript.
 task_description: ''
+attribution: 'self_authored'
