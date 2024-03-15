@@ -34,5 +34,5 @@ seed_examples:
     healthcare is a necessary component of a just society.
 task_description: ''
 attribution:
--source: 'self_authored'
- license: 'Apache-2.0'
+  - source: 'self_authored'
+    license: 'Apache 2.0'
