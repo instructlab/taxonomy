@@ -81,5 +81,6 @@ seed_examples:
   question: For the given text, could you generate an outline?
 task_description: ''
 attribution: 
--source: 'self_authored'
- license: 'Apache 2.0'
+attribution:
+  - source: 'self_authored'
+    license: 'Apache 2.0'
