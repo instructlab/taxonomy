@@ -1,7 +1,10 @@
-created_by: virtual-auto-dk-code
+attribution:
+  - source: self-authored
+    license: Apache-2.0
 task_description: |
   The quote task involves sharing a variety of quotes, including
   motivational and success quotes.
+created_by: virtual-auto-dk-code
 seed_examples:
   - question: Tell me a quote on motivation and curiosity.
     answer: |
