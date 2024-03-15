@@ -1,31 +1,21 @@
-task_description: |
-  The quote task involves sharing a variety of quotes, including motivational and success quotes.
-
+---
+task_description: >
+  The quote task involves sharing a variety of quotes, including
+  motivational and success quotes.
 created_by: virtual-auto-dk-code
-
 seed_examples:
-
-    - question:
-        Tell me a quote on motivation and curiosity.
-      answer: |
-            'Emerging curiosity is a universal source of creativity.'
-       
-    - question:
-        Give me a quote about a successful life and obstacles.
-      answer: |
-            'A successful life is always the result of overcoming obstacles in life.'
-
-    - question:
-        Quote about struggle and a successful life, please.
-      answer: |
-            'Struggling through difficulties is the foundation of a successful life.'
-   
-    - question:
-        Provide a quote about destiny.
-      answer: |
-            'Executed actions always influence destiny.'
-   
-    - question:
-        Give me a quote that expresses motivation and failure.
-      answer: |
-            'Failures always create the most versatile and resilient characters.'
+  - question: Tell me a quote on motivation and curiosity.
+    answer: |
+      'Emerging curiosity is a universal source of creativity.'
+  - question: Give me a quote about a successful life and obstacles.
+    answer: |
+      'A successful life is always the result of overcoming obstacles in life.'
+  - question: Quote about struggle and a successful life, please.
+    answer: |
+      'Struggling through difficulties is the foundation of a successful life.'
+  - question: Provide a quote about destiny.
+    answer: |
+      'Executed actions always influence destiny.'
+  - question: Give me a quote that expresses motivation and failure.
+    answer: |
+      'Failures always create the most versatile and resilient characters.'
