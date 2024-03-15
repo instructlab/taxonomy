@@ -17,4 +17,6 @@ seed_examples:
   question: Write an informal email to a friend asking for advice on planning a surprise
     party.
 task_description: ''
-attribution: 'self_authored'
+attribution:
+-source: 'self_authored'
+ license: 'Apache-2.0'
