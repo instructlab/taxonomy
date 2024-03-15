@@ -32,5 +32,6 @@ seed_examples:
   question: Identify potential challenges and refutations against the claim that the
     use of genetically modified mosquitoes is not harmful to the environment.
 task_description: ''
+attribution: 
 -source: 'self_authored'
- license: 'Apache-2.0'
+ license: 'Apache 2.0'
