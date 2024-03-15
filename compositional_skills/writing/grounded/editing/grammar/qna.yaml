@@ -75,3 +75,4 @@ seed_examples:
     n\\nMarie Louise Coidavid was born in Milot, Haiti.\\n\\nShe died in Pisa, Italy.\n"
   question: Could you correct any grammatical errors in the given text?
 task_description: ''
+attribution: 'self_authored'
