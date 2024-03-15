@@ -77,4 +77,5 @@ seed_examples:
     \ Gallery of Australia( Canberra) from 1997- 2004.\n"
   question: Extract the dates and events mentioned in the given text.
 task_description: ''
-attribution: 'self_authored'
+-source: 'self_authored'
+ license: 'Apache-2.0'
