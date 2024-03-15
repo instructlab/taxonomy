@@ -40,4 +40,6 @@ seed_examples:
   question: I need to create a licensing agreement for my intellectual property. Can
     you help me draft the terms and conditions, including royalties and exclusivity?
 task_description: ''
-attribution: 'self_authored'
+attribution:
+-source: 'self_authored'
+ license: 'Apache-2.0'
