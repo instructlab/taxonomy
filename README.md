@@ -11,76 +11,37 @@ This repository contains a taxonomy tree that will allow you to create models
 tuned with your data (enhanced via synthetic data generation) using LAB 🐶
 method.
 
-The top-level categories are:
+## Learning
 
-1. **Core Skills**:
+Learn about the concepts of "skills" and "knowledge" in our [InstructLab Community Learning Guide](https://github.com/instruct-lab/community/blob/main/docs/README.md).
 
-    Core skills are foundational skills like math, reasoning, and coding.
-
-    🗒️ **Note:** Unlike **knowledge** and **compositional skills**, core skills
-    are not contributable to the tree. So when you see reference to contributing
-    "skills" to the taxonomy from this point forward, it is **compositional
-    skills** that are being referenced.
-2. **Knowledge**:
-
-    Knowledge consists of data and facts and is backed by documents. When you
-    create knowledge for a model, you're giving it additional data to more
-    accurately answer questions.
-3. **Compositional Skills**:
-
-    Skills are performative. When you create a skill for the model, you're
-    teaching it how to do something: "write me a song," "talk like a pirate,"
-    "summarize an email."
-
-There are two types of compositional skills:
-
-1. **Freeform Compositional Skills**:
-
-     Freeform compositional skills are performative and do **not** require
-     additional context. An example of a compositional skill is "talk like a
-     pirate." You could provide examples of "pirate-like" speech. By providing
-     those examples, you're essentially tickling the latent knowledge of the
-     LLM. In our "talk like a pirate" example, you're enabling the LLM to be
-     able to recall pirate-like speeches in its latent knowledge.
-      
-2. **Grounded Compositional Skills**:
-
-     Grounded skills are performative and **do** require additional context. An
-     example of a grounded skill would be to read the value of a cell in a table
-     layout, or to parse a JSON file. To create a grounded skill to read a 
-     markdown formatted table layout, the additional context could be an example
-     table layout. This additional context is including in the YAML for the
-     skill and not external to it. 
-
-     🗒️ **Note:** The content of the table layout will not be used in training
-     or aligning the model; only the table layout format itself will be used.
-
-## Compositional Skills vs. Knowledge
-
-You can contribute both **compositional skills** (and in the future, 
-**knowledge**) to the Taxonomy. What is the difference?
-
-### Compositional Skills
-
-Again, think of skills as "performative." You're teaching the model how to
-**do** something when you contribute a skill.
+## Getting Started with Skill Contributions
 
 Skills require a much smaller volume of content to contribute. A skill
 contribution to the taxonomy tree can be just a few lines of YAML (its
 `qna.yaml` file - "qna" is short for "questions and answers") in its entirety:
 
-Each `qna.yaml` file is required to contain a minimum of three question and
+Each `qna.yaml` file is required to contain a minimum of five question and
 answer pairs. The `qna.yaml` format should include the following fields:
 
-- `seed_examples` (three or more examples of question and answer pairs)
+- `seed_examples` (five or more examples of question and answer pairs)
 - `created_by` (your GitHub username)
 - `task_description` (an optional description of the skill).
+
+> [!TIP]
+> The skill taxonomy structure is used in several ways:
+>    1. Selecting the right subset of the taxonomy to use for data generation.
+>    2. Interpretability by human contributors and maintainers.
+>    3. As part of the prompt to GPT model used to generate synthetic samples.
+> Therefore: Make sure the names of directories match the intent of the
+> taxonomy files, perhaps also see if there's a more logical place in the
+> taxonomy structure for a person's contribution to live before signing off.
 
 #### Freeform compositional skill: YAML example
 
 This example assumes the GitHub username `mairin`:
 
-``` yaml
+```yaml
 task_description: |
   The pun task enables the telling of funny pun-based jokes.
 created_by: mairin # Use your GitHub username; only one creator supported
@@ -90,21 +51,33 @@ seed_examples:
       Why do birds eat wood?
       
       Because they're peckish!
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: Tell me a pun about x-rays.
     answer: |
       What do dentists call their x-rays?
 
       Tooth pics!
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: Tell me a pun about gas.
     answer: |
       Why did the car have a belly ache?
 
       Because it had too much gas!
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: Tell me a pun about waves.
     answer: |
       What did the ocean say to the ocean?
 
       Nothing. It just waved!
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
 ```
 
 Seriously, that's it.
@@ -115,7 +88,7 @@ in terms of a taxonomy contribution:
 
 #### Freeform compositional skill: Directory tree example
 
-``` ascii
+```ascii
 [...]
 
 └── writing
@@ -134,11 +107,11 @@ in terms of a taxonomy contribution:
 
 #### Grounded compositional skill: YAML example
 
-Remember that grounded compositional skills require additional context
+Remember that [grounded compositional skills](https://github.com/instruct-lab/community/blob/main/docs/SKILLS_GUIDE.md) require additional context.
 
 This example assumes the GitHub username `mairin`:
 
-``` yaml
+```yaml
 task_description: | 
     This skill provides the ability to read a markdown-formatted table.
 created_by: mairin # Use your GitHub username; only one creator supported
@@ -154,6 +127,9 @@ seed_examples:
       Which breed has the most energy?
     answer: |
       The breed with the most energy is the Labrador.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - context: |
       | **Name** | **Date** | **Color** | **Letter** | **Number** |
       |----------|----------|-----------|------------|------------|
@@ -166,6 +142,9 @@ seed_examples:
       What is Gráinne's letter and what is her color?
     answer: |
       Gráinne's letter is B and her color is red.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - context: |
       | Banana | Apple      | Blueberry | Strawberry |
       |--------|------------|-----------|------------|
@@ -176,11 +155,14 @@ seed_examples:
       Which fruit is blue, small, and has no peel?
     answer: |
       The blueberry is blue, small, and has no peel.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
 ```
 
 #### Grounded compositional skill: Directory tree example
 
-``` ascii
+```ascii
 [...]
 
 └── extraction
@@ -201,8 +183,9 @@ seed_examples:
 
 ### Knowledge
 
-⚠️ **Note:** We are not currently accepting knowledge contributions, but we 
-will open this up in the future!
+> [!NOTE]
+> We are not currently accepting knowledge contributions, but we will open this
+> up in the future!
 
 Meanwhile, knowledge is based more on answering questions that involve facts,
 data, or references.
@@ -213,17 +196,17 @@ Each knowledge node in the tree has a `qna.yaml` similar to the format of the
 `knowledge_documents`. The knowledge document formats currently supported are
 markdown (.md) and text (.txt).
 
-Each `qna.yaml` file is required to contain a minimum of three question-answer
+Each `qna.yaml` file is required to contain a minimum of five question-answer
 pairs. The `qna.yaml` format should include the following fields:
 
-- `seed_examples` (three or more examples sourced from the provided knowledge
+- `seed_examples` (five or more examples sourced from the provided knowledge
   documents)
 - `created_by` (your GitHub username)
 - `task_description` (an optional description of the knowledge).
 
 #### Knowledge: yaml example
 
-``` yaml
+```yaml
 task_description: |
   Knowledge about Taylor Swift's music.
 created_by: mairin   # Use your GitHub username; only one creator supported
@@ -235,6 +218,9 @@ seed_examples:
       the Gilette Stadium in Foxboro, MA for 3 nights from Friday May 19, 2023 
       to Sunday May 21, 2023. In 2024, she is making international tour stops 
       for her Eras tour outside of the United States.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: |
       Which album was released more recently, Reputation or Midnights?
     answer: |
@@ -244,14 +230,20 @@ seed_examples:
       Reputation called Reputation (Taylor's version) in the later half of 2024 
       which would make that the most recently-released album of the set at that 
       time.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: |
       Which album has the song "You Need to Calm Down?"
     answer: |
       The song "You Need to Calm Down" appears on Taylor Swift's 2019 album 
       Lover as track 14.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
 ```
 
-This knowledge references two markdown files: 
+This knowledge references two markdown files:
 `ts-world-tour-2024-schedule.md` as well as `ts-discography-2024.md` - these
 files in their entirety need to be submitted along with the knowledge's
 `qna.yaml` file in a `knowledge_documents` folder, which means that knowledge
@@ -264,7 +256,7 @@ pull requests are simpler and require less time and effort to review.
 What might these markdown files look like? They can be freeform. Here's what a
 snippet of `ts-discography-2024.md` might look like:
 
-``` markdown
+```markdown
 # Albums
 
 ## Studio Albums
@@ -301,7 +293,7 @@ referenced above might look like in the tree:
 
 #### Knowledge: directory tree example
 
-``` ascii
+```ascii
 [...]
 
 └── knowledge
@@ -327,42 +319,58 @@ referenced above might look like in the tree:
 
 ## YAML Format
 
-Taxonomy skill files can be any valid [YAML](https://yaml.org/) file ending in
-`.yaml` containing a set of key/value entries, in which the following three
-keys are recognized: `task_description`, `created_by`, and `seed_examples`.
+Taxonomy skill files can be any valid [YAML](https://yaml.org/) file named
+`qna.yaml` containing a set of key/value entries which contain the following keys:
 
-* The value of the `task_description` key can be any string.
-* The value of the `created_by` key can be any string.
-* The value of the `seed_examples` key is a collection of one or more key/value entries in which the
-three recognized keys are: `context`, `question`, and `answer`, each of which can have any string
-as value. For an entry to be valid, it **MUST** have the question and answer specified. 
+- `task_description` - A description of the skill. This key is required.
+
+- `created_by` - The GitHub username of the contributor. This key is required.
+
+- `seed_examples` - A collection of key/value entries which contain the following keys. This key is required.
+
+  - `question` - A question for the model. This key is required.
+
+  - `answer` The desired response from the model. This key is required.
+
+  - `context` - Grounded skills require the user to provide context containing information that the model is expected to take into account during processing. This is different from knowledge, where the model is expected to gain facts and background knowledge from the tuning process. The context key is optional for freeform skills.
+
+  - `attribution` - A collection of key/value entries which contain the following keys. All sources of information must be specified. This key is required.
+
+    - `source` - If information in the context, question, or answer come from a 3rd party, for example Wikipedia, then the value must specify a URL to the source material. If the contributor self-authored all the information, then the value must be `self-authored`. This key is required.
+
+    - `license` - The value must specify the [SPDX License Identifier](https://spdx.org/licenses/) of the source information. See [CONTRIBUTING.MD](./CONTRIBUTING.md#legal) for guidance on acceptable licenses for source information. If the information is self-authored, then `Apache-2.0` must be used. This key is required.
 
 Other keys at any level are currently ignored.
 
-To make these files easier and faster for humans to read, it is recommended to 
-specify the `task_description` first, followed by `created_by`, and finally 
-`seed_examples`. In `seed_examples`, it is recommended to specify the `context` 
-first (if applicable), followed by the `question`, and finally the `answer`.
+To make these files easier and faster for humans to read, it is recommended to
+specify `task_description` first, followed by `created_by`, and finally `seed_examples`.
+In `seed_examples`, it is recommended to specify `context`
+first (if applicable), followed by `question`, `answer`, and finally `attribution`.
 
 So in essence the format looks something like this:
 
-``` yaml
+```yaml
 task_description: <string>
 created_by: <string>
 seed_examples:
   - question: <string>
     answer: |
       <multi-line string>
+    attribution:
+      - source: <string>
+        license: <SPDX license identifier>
   - context: |
       <multi-line string>
     question: <string>
     answer: |
       <multi-line string>
+    attribution:
+      - source: <string>
+        license: <SPDX license identifier>
   ...  
 ```
 
-
-If you have not written YAML before, don't be intimidated - it's just text. 
+If you have not written YAML before, don't be intimidated - it's just text.
 There's a few things to know:
 
 - Spaces and indentation matter in YAML. Two spaces to indent.
@@ -382,7 +390,7 @@ tool. There is a very nice website you can use to do this:
 [yamllint.com](https://yamllint.com)
 
 You can copy/paste your YAML into the box and click the "Go" button to have it
-analyse your YAML and make recommendations.
+analyze your YAML and make recommendations.
 
 Online tools like [prettified](https://onlineyamltools.com/prettify-yaml) and
 [yaml-validator](https://jsonformatter.org/yaml-validator) can automatically
@@ -397,7 +405,7 @@ domain.
 
 Below is an illustrative directory structure to show this layout:
 
-``` ascii
+```ascii
 .
 └── writing
     ├── freeform
@@ -496,51 +504,61 @@ Below is an illustrative directory structure to show this layout:
                 └── one_line
                     └── qna.yaml
 ```
+
 ## Contribute knowledge and skills to the taxonomy!
 
 The ability to contribute to a large language model (LLM) has been difficult in no small part because it is difficult to get access to the necessary compute infrastructure.
 
-This taxonomy repository will be used as the seed to synthesize the training data for InstructLab-trained models. We intend to re-train the model(s) using the main branch following InstructLab's progressive training on a regular basis. This enables fast iteration of the model(s), for the benefit of the open source community. 
+This taxonomy repository will be used as the seed to synthesize the training data for InstructLab-trained models. We intend to re-train the model(s) using the main branch following InstructLab's progressive training on a regular basis. This enables fast iteration of the model(s), for the benefit of the open source community.
 
 By contributing your skills and knowledge to this repository, you will see your changes built into an LLM within days of your contribution rather than months or years! If you are working with a model and notice its knowledge or ability lacking, you could correct it by contributing knowledge or skills and check if it's improved once your changes are built.
 
+While public contributions are welcome to help drive community progress, you can also fork this repository under [the Apache License, Version 2.0](LICENSE), add your own internal skills, and train your own models internally.
+However, you may need your own access to significant compute infrastructure to perform sufficient retraining.
+
 ## Ways to Contribute
 
-You can contribute to the taxonomy in the following two ways: 
+You can contribute to the taxonomy in the following two ways:
 
-1. Adding new examples to **existing leaf nodes**: 
+1. Adding new examples to **existing leaf nodes**:
+
     - Go to the corresponding leaf node / end of the branch and modify the yaml 
     - Add new examples to the qna.yaml files as a new entry to the list
 
 2. Adding **new branches/skills** corresponding to the existing domain:
-    - You can add new folders under the corresponding category
+
+    - You can add new folders under the corresponding category (replace any spaces ` ` with underscores `_`)
     - Create a new qna.yaml file with examples for the new skill
   
 ### Detailed Contribution Instructions
 
-#### Pre-requisites:
+#### Pre-requisites
+
 - You need a GitHub account
 - You need access to this repo
 
 #### Make a copy of the taxonomy repo
 
 1. Go to [github.com/instruct-lab/taxonomy](https://github.com/instruct-lab/taxonomy)
+
 2. Press the Fork button in the upper right:
-   ![fork-button](https://github.com/instruct-lab/taxonomy/assets/799683/8487bff2-425e-483c-b27c-ef03da1c57a8)
+
+    ![fork-button](https://github.com/instruct-lab/taxonomy/assets/799683/8487bff2-425e-483c-b27c-ef03da1c57a8)
+
 3. On the "Create a new fork" form:
-   - **Repository name:** `taxonomy` is fine
-   - **Description:** This is the description of _your fork_, not of the skills you will create. You can write something that makes sense to you or leave it blank.
-   - **Copy the main branch only:** It's OK to leave this checked on.
+    - **Repository name:** `taxonomy` is fine
+    - **Description:** This is the description of _your fork_, not of the skills you will create. You can write something that makes sense to you or leave it blank.
+    - **Copy the main branch only:** It's OK to leave this checked on.
 
-When you are ready, press the **Create Fork** button.
+    When you are ready, press the **Create Fork** button.
 
-![Screenshot from 2024-02-28 12-41-59](https://github.com/instruct-lab/taxonomy/assets/799683/656608ef-3040-4858-96f0-9b695bea0e8f)
+    ![Screenshot from 2024-02-28 12-41-59](https://github.com/instruct-lab/taxonomy/assets/799683/656608ef-3040-4858-96f0-9b695bea0e8f)
 
 4. You will get a copy of the taxonomy repo in your github account. This is your own copy, so don't worry about making mistakes or anything like that. *(If you do end up making a mistake and want to start over: you can delete the fork and create a new fork.)*
 
 #### Contributing a skill
 
-In the screenshot, you can see we are under the compositional skills directory. This is the directory under which you want to contribute skills. (The other top-level directory you can contribute to is the knowledge directory, which is a little different than skills. You can read more about the difference between skills and knowledge [in that section of this README](#compositional-skills-vs-knowledge) above.) 
+In the screenshot, you can see we are under the compositional skills directory. This is the directory under which you want to contribute skills. (The other top-level directory you can contribute to is the knowledge directory, which is a little different than skills. You can read more about the difference between skills and knowledge [community documentation](https://github.com/instruct-lab/community/blob/main/docs/README.md).)
 
 ![Screenshot from 2024-02-28 12-44-05](https://github.com/instruct-lab/taxonomy/assets/799683/2038e035-5400-4848-91fb-f575db35b565)
 
@@ -562,11 +580,17 @@ Puns seemed to fit best under the freeform directory, but I didn't think they fi
 
 It can be a little tricky mechanically to create directories in GitHub's web UI:
 
-* Navigate to the folder in which you want to create the directory inside of.
-* Click the "Add File" dropdown button in the upper right corner of the screen.
-* Start typing the name of the first directory you want to create. In the animation below we use "jokes/" as the first directory. 
-* When you type the "/" character, the directory name will "lock in" and you'll be able to type the next of the next subdirectory under it, as desired. Below we typed "knock-knock/" as the next directory name.
-* Finally, you'll type the file name. The file name should always be qna.yaml. (qna stands for "Question aNd Answer.")  
+- Navigate to the folder in which you want to create the directory inside of.
+
+- Click the "Add File" dropdown button in the upper right corner of the screen.
+
+- Start typing the name of the first directory you want to create. In the animation below we use "jokes/" as the first directory.
+
+- When you type the "/" character, the directory name will "lock in" and you'll be able to type the next of the next subdirectory under it, as desired. Below we typed "knock-knock/" as the next directory name.
+
+- Make sure to replace any spaces (` `) in the folder name with underscores (`_`)
+
+- Finally, you'll type the file name. The file name should always be qna.yaml. (qna stands for "Question aNd Answer.")
 
 Here's an animated graphic to show how it works:
 
@@ -576,7 +600,7 @@ Here's an animated graphic to show how it works:
 
 ### How should I contribute?
 
-For additional information on how to make a contribution, please, consult the 
+For additional information on how to make a contribution, please, consult the
 [documentation on contributing](CONTRIBUTING.md).
 
 ### Why should I contribute?
