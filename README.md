@@ -25,8 +25,9 @@ Each `qna.yaml` file is required to contain a minimum of five question and
 answer pairs. The `qna.yaml` format should include the following fields:
 
 - `seed_examples` (five or more examples of question and answer pairs)
-- `created_by` (your GitHub username)
+- `created_by` (your Github username)
 - `task_description` (an optional description of the skill).
+- `attribution` `source` `license` (cite your sources)
 
 > [!TIP]
 > The skill taxonomy structure is used in several ways:
@@ -36,6 +37,87 @@ answer pairs. The `qna.yaml` format should include the following fields:
 > Therefore: Make sure the names of directories match the intent of the
 > taxonomy files, perhaps also see if there's a more logical place in the
 > taxonomy structure for a person's contribution to live before signing off.
+
+## YAML Format
+
+Taxonomy skill files must be a valid [YAML](https://yaml.org/) file named
+`qna.yaml` containing a set of key/value entries which contain the following keys:
+
+- `task_description` - A description of the skill. This key is required.
+
+- `created_by` - The GitHub username of the contributor. This key is required.
+
+- `seed_examples` - A collection of key/value entries which contain the following keys. This key is required.
+
+  - `question` - A question for the model. This key is required.
+
+  - `answer` The desired response from the model. This key is required.
+
+  - `context` - Grounded skills require the user to provide context containing information that the model is expected to take into account during processing. This is different from knowledge, where the model is expected to gain facts and background knowledge from the tuning process. The context key is optional for freeform skills.
+
+  - `attribution` - A collection of key/value entries which contain the following keys. All sources of information must be specified. This key is required.
+
+    - `source` - If information in the context, question, or answer come from a 3rd party, for example Wikipedia, then the value must specify a URL to the source material. If the contributor self-authored all the information, then the value must be `self-authored`. This key is required.
+
+    - `license` - The value must specify the [SPDX License Identifier](https://spdx.org/licenses/) of the source information. See [CONTRIBUTING.MD](./CONTRIBUTING.md#legal) for guidance on acceptable licenses for source information. If the information is self-authored, then `Apache-2.0` must be used. This key is required.
+
+Other keys at any level are currently ignored.
+
+To make these files easier and faster for humans to read, it is recommended to
+specify `task_description` first, followed by `created_by`, and finally `seed_examples`.
+In `seed_examples`, it is recommended to specify `context`
+first (if applicable), followed by `question`, `answer`, and finally `attribution`.
+
+So in essence the format looks something like this:
+
+```yaml
+task_description: <string>
+created_by: <string>
+seed_examples:
+  - question: <string>
+    answer: |
+      <multi-line string>
+    attribution:
+      - source: <string>
+        license: <SPDX license identifier>
+  - context: |
+      <multi-line string>
+    question: <string>
+    answer: |
+      <multi-line string>
+    attribution:
+      - source: <string>
+        license: <SPDX license identifier>
+  ...  
+```
+
+If you have not written YAML before, don't be intimidated - it's just text.
+There's a few things to know:
+
+- Spaces and indentation matter in YAML. Two spaces to indent.
+- Don't use tabs!
+- Be careful to not have trailing spaces at the end of a line.
+- Each example in `seed_examples` begins with a "-". Place this "-" in
+  front of the first field (`question` or `context`). The remaining keys in the
+  example should not have this "-".
+- Some special characters such as " and ' need to be "escaped." This is why some
+  of the lines for keys in the example YAML we provided have the '|' character.
+  This character escapes all of the special characters in the value for the key.
+  You may also want to use the '|' character for multi-line strings.
+
+It is recommended that you **lint**, or verify your YAML using a
+tool. There is a very nice website you can use to do this:
+
+[yamllint.com](https://yamllint.com)
+
+You can copy/paste your YAML into the box and click the "Go" button to have it
+analyze your YAML and make recommendations.
+
+Online tools like [prettified](https://onlineyamltools.com/prettify-yaml) and
+[yaml-validator](https://jsonformatter.org/yaml-validator) can automatically
+reformat your YAML to adhere to our `yamllint` PR checks, like breaking lines
+longer than 120 characters.
+
 
 #### Freeform compositional skill: YAML example
 
@@ -78,6 +160,14 @@ seed_examples:
     attribution:
       - source: self-authored
         license: Apache-2.0
+  - question: Tell me a pun about frogs.
+    answer: |
+      What happens when frogs park illegally? 
+
+      They get toad. 
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
 ```
 
 Seriously, that's it.
@@ -93,9 +183,8 @@ in terms of a taxonomy contribution:
 
 └── writing
     └── freeform
-    |   └── jokes
-    |   |    └── puns <=== here it is :)
-    |   |         └── qna.yaml
+    |   └── jokes/puns <=== here it is :)
+    |   |   └── qna.yaml
     │   ├── debate
     │   │   └── qna.yaml
     │   ├── legal
@@ -107,7 +196,7 @@ in terms of a taxonomy contribution:
 
 #### Grounded compositional skill: YAML example
 
-Remember that [grounded compositional skills](https://github.com/instruct-lab/community/blob/main/docs/SKILLS_GUIDE.md) require additional context.
+Remember that [grounded compositional skills](https://github.com/instruct-lab/community/blob/main/docs/SKILLS_GUIDE.md) require additional context and include a `context` field. 
 
 This example assumes the GitHub username `mairin`:
 
@@ -173,7 +262,7 @@ seed_examples:
     |   |    └── tone_and_style
     |   |         └── qna.yaml
     │   ├── quantitative
-    │   │   ├── markdown_table <=== here it is :)
+    │   │   ├── table_analysis <=== here it is :)
     │   |   |    └── qna.yaml
     │   │   ├── word_frequency
     │   │   │   └── qna.yaml
@@ -194,22 +283,25 @@ Knowledge in the taxonomy tree also consists of a few more elements than skills.
 Each knowledge node in the tree has a `qna.yaml` similar to the format of the
 `qna.yaml` for skills, but it has an extra folder for knowledge documents called
 `knowledge_documents`. The knowledge document formats currently supported are
-markdown (.md) and text (.txt).
+markdown (.md).
 
 Each `qna.yaml` file is required to contain a minimum of five question-answer
-pairs. The `qna.yaml` format should include the following fields:
+pairs. The `qna.yaml` format must include the following fields:
 
-- `seed_examples` (five or more examples sourced from the provided knowledge
-  documents)
+- `created_by` (your Github username)
+- `domain` (category the knowledge falls under)
+- `seed_examples` (five or more examples sourced from the provided knowledge documents)
 - `created_by` (your GitHub username)
 - `task_description` (an optional description of the knowledge).
+- `attribution` `source` `license` (cite your sources)
 
 #### Knowledge: yaml example
 
 ```yaml
 task_description: |
   Knowledge about Taylor Swift's music.
-created_by: mairin   # Use your GitHub username; only one creator supported
+created_by: mairin
+domain: pop culture 
 seed_examples:
   - question: |
       Is Taytay coming to Boston in 2024?
@@ -317,91 +409,12 @@ referenced above might look like in the tree:
 [...]
 ```
 
-## YAML Format
-
-Taxonomy skill files can be any valid [YAML](https://yaml.org/) file named
-`qna.yaml` containing a set of key/value entries which contain the following keys:
-
-- `task_description` - A description of the skill. This key is required.
-
-- `created_by` - The GitHub username of the contributor. This key is required.
-
-- `seed_examples` - A collection of key/value entries which contain the following keys. This key is required.
-
-  - `question` - A question for the model. This key is required.
-
-  - `answer` The desired response from the model. This key is required.
-
-  - `context` - Grounded skills require the user to provide context containing information that the model is expected to take into account during processing. This is different from knowledge, where the model is expected to gain facts and background knowledge from the tuning process. The context key is optional for freeform skills.
-
-  - `attribution` - A collection of key/value entries which contain the following keys. All sources of information must be specified. This key is required.
-
-    - `source` - If information in the context, question, or answer come from a 3rd party, for example Wikipedia, then the value must specify a URL to the source material. If the contributor self-authored all the information, then the value must be `self-authored`. This key is required.
-
-    - `license` - The value must specify the [SPDX License Identifier](https://spdx.org/licenses/) of the source information. See [CONTRIBUTING.MD](./CONTRIBUTING.md#legal) for guidance on acceptable licenses for source information. If the information is self-authored, then `Apache-2.0` must be used. This key is required.
-
-Other keys at any level are currently ignored.
-
-To make these files easier and faster for humans to read, it is recommended to
-specify `task_description` first, followed by `created_by`, and finally `seed_examples`.
-In `seed_examples`, it is recommended to specify `context`
-first (if applicable), followed by `question`, `answer`, and finally `attribution`.
-
-So in essence the format looks something like this:
-
-```yaml
-task_description: <string>
-created_by: <string>
-seed_examples:
-  - question: <string>
-    answer: |
-      <multi-line string>
-    attribution:
-      - source: <string>
-        license: <SPDX license identifier>
-  - context: |
-      <multi-line string>
-    question: <string>
-    answer: |
-      <multi-line string>
-    attribution:
-      - source: <string>
-        license: <SPDX license identifier>
-  ...  
-```
-
-If you have not written YAML before, don't be intimidated - it's just text.
-There's a few things to know:
-
-- Spaces and indentation matter in YAML. Two spaces to indent.
-- Don't use tabs!
-- Be careful to not have trailing spaces at the end of a line.
-- Each example in `seed_examples` should start with a "-". Place this "-" in
-  front of the first field (`question` or `context`). The remaining keys in the
-  example should not have this "-".
-- Some special characters such as " and ' need to be "escaped." This is why some
-  of the lines for keys in the example YAML we provided have the "|" character.
-  This character escapes all of the special characters in the value for the key.
-  You may also want to use the "|" character for multi-line strings.
-
-It is recommended that you **lint**, or check that the YAML is correct using a
-tool. There is a very nice website you can use to do this:
-
-[yamllint.com](https://yamllint.com)
-
-You can copy/paste your YAML into the box and click the "Go" button to have it
-analyze your YAML and make recommendations.
-
-Online tools like [prettified](https://onlineyamltools.com/prettify-yaml) and
-[yaml-validator](https://jsonformatter.org/yaml-validator) can automatically
-reformat your YAML to adhere to our `yamllint` PR checks, like breaking lines
-longer than 120 characters.
-
 ## Layout
 
 The taxonomy tree is organized in a cascading directory structure. At the end of
 each branch, there is a YAML file (qna.yaml) that contains the examples for that
-domain.
+domain. The branch names can change or more can be added, that decision is up to the maintainers. 
+> **Note:** Folder names should not have a space. 
 
 Below is an illustrative directory structure to show this layout:
 
@@ -507,7 +520,7 @@ Below is an illustrative directory structure to show this layout:
 
 ## Contribute knowledge and skills to the taxonomy!
 
-The ability to contribute to a large language model (LLM) has been difficult in no small part because it is difficult to get access to the necessary compute infrastructure.
+The ability to contribute to a Large Language Model (LLM) has been difficult in no small part because it is difficult to get access to the necessary compute infrastructure.
 
 This taxonomy repository will be used as the seed to synthesize the training data for InstructLab-trained models. We intend to re-train the model(s) using the main branch following InstructLab's progressive training on a regular basis. This enables fast iteration of the model(s), for the benefit of the open source community.
 
@@ -597,6 +610,9 @@ Here's an animated graphic to show how it works:
 ![screencast-directory-naming](https://github.com/instruct-lab/taxonomy/assets/799683/2cb2b031-52f6-46de-bfd9-c4eae82ec9d3)
 
 **TO BE CONTINUED**
+
+#### Contributing Knowledge
+This information will be added once knowledge contributions are opened up. 
 
 ### How should I contribute?
 
