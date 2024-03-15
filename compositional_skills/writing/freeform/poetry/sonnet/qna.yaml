@@ -33,5 +33,5 @@ seed_examples:
   question: Compose a sonnet that portrays the vibrant colors of a fall foliage.
 task_description: ''
 attribution:
--source: 'self_authored'
- license: 'Apache-2.0'
+  - source: 'self_authored'
+    license: 'Apache 2.0'
