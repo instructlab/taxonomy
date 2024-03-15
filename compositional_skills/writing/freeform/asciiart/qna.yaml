@@ -27,4 +27,4 @@ seed_examples:
                 |* |
               ~~~~~~~~'
   question: Draw a tree with ASCII art.
-task_description: ''
+task_description: 'This task enables/improves drawing using ASCII art.'
