@@ -32,6 +32,10 @@ on:
       - knowledge/**/*.yaml
       - knowledge/**/*.yml
 
+defaults:
+  run:
+    shell: bash
+
 jobs:
   lint:
     runs-on: ubuntu-latest
@@ -41,7 +45,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: "Find changed skills files"
+      - name: "Find changed skills and knowledge files"
         id: changed-files
         uses: tj-actions/changed-files@v42
         with:
@@ -59,9 +63,9 @@ jobs:
       # use yq to verify YAML fields exist and generate a matchable log message with line number and error severity
       # the added matcher .github/workflows/matchers/lint.json will parse those log messages to generate annotation
       # the generated annotations are then applied in the GH PR Changed Files view under the changed line of code
-      - name: "Check skills file contents"
+      - name: "Check file contents"
         if: steps.changed-files.outputs.any_changed == 'true'
-        shell: bash
         run: |
           echo "::add-matcher::.github/workflows/matchers/lint.json"
-          scripts/check-skills.sh ${{ steps.changed-files.outputs.all_changed_files }}
+          echo
+          .github/scripts/check-yaml.sh "${{ steps.changed-files.outputs.all_changed_files }}"
