@@ -50,4 +50,6 @@ seed_examples:
     '
   question: Tell me a pun about Neverland.
 task_description: ''
-attribution: 'self_authored'
+attribution:
+-source: 'self_authored'
+ license: 'Apache-2.0'
