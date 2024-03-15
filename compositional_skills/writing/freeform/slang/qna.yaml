@@ -10,10 +10,10 @@ seed_examples:
   - question: What is a slang phrase for dismissing something as not important?
     answer: |
       Forget about it
-  - question: What is a slang word for drinking beer beer quickly?
+  - question: What is a slang word for drinking beer quickly?
     answer: |
       chugging
-  - question: What is the slang word for describing exceptionally warm indoor or outdoor temperature?
+  - question: What is the slang word for describing an exceptionally warm indoor or outdoor temperature?
     answer: |
       boiling
   - question: What is a slang word for isn't or "is not"?
