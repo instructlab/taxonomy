@@ -1,0 +1,21 @@
+created_by: saberkan
+seed_examples:
+  - answer: >-
+      15th March 2024 in gregorian calendar correspends to 5th Ramadan 1445 in
+      arabic calendar
+    question: convert 15th March 2024 from gregorian calendar into arabic calendar
+  - answer: >-
+      4th July 1998 from gregorian calendar matchs 11th Tamuz 5750 in hebrew
+      calendar
+    question: convert 4th July 1990 from gregorian calendar into hebrew calendar
+  - answer: 1st April 1543 from gregorian calendar correspends to 11th Farvardin 922
+    question: convert 1st April 1543 from gregorian calendar into persian calendar
+  - answer: >-
+      11th Farvardin 922 from persian calendar correspends to 1st April 1543 in
+      gregorian calendar
+    question: convert 11th Farvardin 922 from persian calendar into gregorian calendar
+  - answer: >-
+      15th Tishri 4511 from hebrew calendar correspends to 14th Safar 133 in
+      arabic calendar
+    question: convert 15th Tishri 4511 from hebrew calendar into arabic calendar
+task_description: Date conversion between calendars
