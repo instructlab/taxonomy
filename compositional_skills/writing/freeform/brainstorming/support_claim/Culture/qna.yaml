@@ -7,6 +7,9 @@ seed_examples:
       Servant leaders increases employee performance, deepen employee
       commitment, promote psychological safety, and lead by example, enabling individuals
       to work together to be their best.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: What are three ways servant leaders improve employee performance?
     answer: |
       Servant leaders treat employees in ways that allow them to perform well
@@ -14,6 +17,9 @@ seed_examples:
       ways.  Servant leaders remove blockers, making it easier for employees to
       meet and exceed performance. Servant leaders demonstrate they care about
       their employees, helping reduce stress.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: What are three ways servant leaders deepen employee commitment?
     answer: |
       Servant leaders promote autonomy which enables accountability,
@@ -22,6 +28,9 @@ seed_examples:
       population.  Servant leaders are committed to growth of individuals,
       helping members build skills and knowledge, showing investment in their
       capabilities.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: What are three ways servant leaders strengthen employee psychological
       safety?
     answer: |
@@ -31,6 +40,9 @@ seed_examples:
       need to feel safe to take risks such as sharing ideas and soliciting
       feedback.  Servant leaders demonstrate psychological safety by leading
       with honesty, transparency, compassion and self-awareness.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: What are three ways servant leaders lead by example?
     answer: |
       Servant leaders lead by example by working alongside teams to understand
