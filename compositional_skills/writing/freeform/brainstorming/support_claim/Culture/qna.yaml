@@ -2,11 +2,11 @@
 created_by: denthomp
 task_description: ‘Impacts of Servant Leadership on Company Culture’
 seed_examples:
-  - question: What are three ways servant leaders promotes company culture?
+  - question: What are ways servant leaders promotes company culture?
     answer: |
       Servant leaders increases employee performance, deepen employee
-      commitment, and promote psychological safety, enabling individuals to work
-      together to be their best.
+      commitment, promote psychological safety, and lead by example, enabling individuals
+      to work together to be their best.
   - question: What are three ways servant leaders improve employee performance?
     answer: |
       Servant leaders treat employees in ways that allow them to perform well
@@ -31,3 +31,12 @@ seed_examples:
       need to feel safe to take risks such as sharing ideas and soliciting
       feedback.  Servant leaders demonstrate psychological safety by leading
       with honesty, transparency, compassion and self-awareness.
+  - question: What are three ways servant leaders lead by example?
+    answer: |
+      Servant leaders lead by example by working alongside teams to understand
+      struggles and improve morale.  Servant leaders listen to others and solicit
+      feedback for self-assessment and decision-making.  Servant leaders follow the
+      rules set by the organization, leading by example.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
