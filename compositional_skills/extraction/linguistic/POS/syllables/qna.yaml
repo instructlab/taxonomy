@@ -1,0 +1,342 @@
+---
+created_by: pauljevans
+task_description: |
+  Breakdown a given word into its corresponding syllables.
+seed_examples:
+  - question: Divide "bed" into it's component syllables?
+    answer: |
+      bed.
+  - question: Divide "layer" into it's component syllables?
+    answer: |
+      lay-er.
+  - question: Divide "president" into it's component syllables?
+    answer: |
+      pres-i-dent.
+  - question: Divide "responsible" into it's component syllables?
+    answer: |
+      re-spon-si-ble.
+  - question: Divide "electricity" into it's component syllables?
+    answer: |
+      e-lec-tric-i-ty.
+  - question: Divide "differentiated" into it's component syllables?
+    answer: |
+      dif-fer-en-ti-at-ed.
+  - question: Divide "indivisibility" into it's component syllables?
+    answer: |
+      in-di-vis-i-bil-i-ty.
+  - question: Divide "love" into it's component syllables?
+    answer: |
+      love.
+  - question: Divide "sound" into it's component syllables?
+    answer: |
+      sound.
+  - question: Divide "bicycle" into it's component syllables?
+    answer: |
+      bi-cy-cle.
+  - question: Divide "rabbit" into it's component syllables?
+    answer: |
+      rab-bit.
+  - question: Divide "water" into it's component syllables?
+    answer: |
+      wat-er.
+  - question: Divide "teacher" into it's component syllables?
+    answer: |
+      teach-er.
+  - question: Divide "diaeresis" into it's component syllables?
+    answer: |
+      di-aer-e-sis.
+  - question: Divide "coat" into it's component syllables?
+    answer: |
+      coat.
+  - question: Divide "unusual" into it's component syllables?
+    answer: |
+      un-u-su-al.
+  - question: Divide "breakfast" into it's component syllables?
+    answer: |
+      break-fast.
+  - question: Divide "fumble" into it's component syllables?
+    answer: |
+      fum-ble.
+  - question: Divide "tackle" into it's component syllables?
+    answer: |
+      tack-le.
+  - question: Divide "banana" into it's component syllables?
+    answer: |
+      ba-na-na.
+  - question: Divide "children" into it's component syllables?
+    answer: |
+      chil-dren.
+  - question: Divide "void" into it's component syllables?
+    answer: |
+      void.
+  - question: Divide "beautiful" into it's component syllables?
+    answer: |
+      beau-ti-ful.
+  - question: Divide "basic" into it's component syllables?
+    answer: |
+      ba-sic.
+  - question: Divide "robotinto it's component syllables?
+    answer: |
+      ro-bot.
+  - question: Divide "river" into it's component syllables?
+    answer: |
+      riv-er.
+  - question: Divide "model" into it's component syllables?
+    answer: |
+      mod-el.
+  - question: Divide "panel" into it's component syllables?
+    answer: |
+      pan-el.
+  - question: Divide "teacher" into it's component syllables?
+    answer: |
+      teach-er.
+  - question: Divide "lashes" into it's component syllables?
+    answer: |
+      lash-es.
+  - question: Divide "graphic" into it's component syllables?
+    answer: |
+      graph-ic has 2 syllables.
+  - question: Divide "panther" into it's component syllables?
+    answer: |
+      pan-ther.
+  - question: Divide "whether" into it's component syllables?
+    answer: |
+      wheth-er.
+  - question: Divide "together" into it's component syllables?
+    answer: |
+      to-geth-er.
+  - question: Divide "meet" into it's component syllables?
+    answer: |
+      meet.
+  - question: Divide "cupcake" into it's component syllables?
+    answer: |
+      cup-cake.
+  - question: Divide "something" into it's component syllables?
+    answer: |
+      some-thing.
+  - question: Divide "babysitter" into it's component syllables?
+    answer: |
+      ba-by-sit-ter.
+  - question: Divide "sunflower" into it's component syllables?
+    answer: |
+      sun-flow-er.
+  - question: Divide "able" into it's component syllables?
+    answer: |
+      a-ble.
+  - question: Divide "candle" into it's component syllables?
+    answer: |
+      can-dle.
+  - question: Divide "prepaid" into it's component syllables?
+    answer: |
+      pre-paid.
+  - question: Divide "unkindly" into it's component syllables?
+    answer: |
+      un-kind-ly.
+  - question: Divide "paying" into it's component syllables?
+    answer: |
+      pay-ing.
+  - question: Divide "philosophy" into it's component syllables?
+    answer: |
+      phi-los-o-phy.
+  - question: Divide "gymnastics"
+    answer: |
+      gym-nas-tics.
+  - question: Divide "administrator" into it's component syllables?
+    answer: |
+      ad-min-is-tra-tor.
+  - question: Divide "elephant" into it's component syllables?
+    answer: |
+      el-e-phant.
+  - question: Divide "universe" into it's component syllables?
+    answer: |
+      u-ni-verse.
+  - question: Divide "elevator" into it's component syllables?
+    answer: |
+      el-e-vat-or.
+  - question: Divide "synchronization" into it's component syllables?
+    answer: |
+      syn-chro-ni-za-tion
+  - question: Divide "Mammoth" into it's component syllables?
+    answer: |
+      mam-moth.
+  - question: Divide "telescope" into it's component syllables?
+    answer: |
+      tel-e-scope.
+  - question: Divide "syllables" into it's component syllables?
+    answer: |
+      syl-la-bles.
+  - question: Divide "apple" into it's component syllables?
+    answer: |
+      ap-ple.
+  - question: Divide "telephony" into it's component syllables?
+    answer: |
+      te-leph-o-ny.
+  - question: Divide "automatically" into it's component syllables?
+    answer: |
+      auto-mat-i-cal-ly.
+  - question: Divide "sincerely" into it's component syllables?
+    answer: |
+      sin-cere-ly.
+  - question: Divide "microscope" into it's component syllables?
+    answer: |
+      mi-cro-scope.
+  - question: Divide "internationalization" into it's component syllables?
+    answer: |
+      in-ter-na-tion-al-i-za-tion.
+  - question: Divide "unnecessary" into it's component syllables?
+    answer: |
+      un-nec-es-sar-y.
+  - question: Divide "television" into it's component syllables?
+    answer: |
+      tel-e-vi-sion.
+  - question: Divide "academia" into it's component syllables?
+    answer: |
+      ac-a-de-mi-a.
+  - question: Divide "apparatus" into it's component syllables?
+    answer: |
+      ap-pa-rat-us.
+  - question: Divide "phenomenon" into it's component syllables?
+    answer: |
+      phe-nom-e-non.
+  - question: Divide "extraction" into it's component syllables?
+    answer: |
+      ex-trac-tion.
+  - question: Divide "bacteria" into it's compoent syllables?
+    answer: |
+      bac-te-ri-a.
+  - question: Divide "psychology" into it's component syllables?
+    answer: |
+      psy-chol-o-gy.
+  - question: Divide "giraffe" into it's component syllables?
+    answer: |
+      gi-raffe.
+  - question: Divide "orchestration" into it's component syllables?
+    answer: |
+      or-ches-tra-tion.
+  - question: Divide "phonology" into it's component syllables?
+    answer: |
+      pho-nol-o-gy.
+  - question: Divide "orchestra" into it's component syllables?
+    answer: |
+      or-ches-tra.
+  - question: Divide "complementary" into it's component syllables?
+    answer: |
+      com-ple-men-ta-ry.
+  - question: Divide "antidisestablishmentarianism" into it's component syllables?
+    answer: |
+      an-ti-dis-es-tab-lish-men-tar-i-an-ism.
+  - question: Divide "persevere" into it's component syllables?
+    answer: |
+      per-se-vere.
+  - question: Divide "government" into it's component syllables?
+    answer: |
+      gov-ern-ment.
+  - question: Divide "spaghetti" into it's component syllables?
+    answer: |
+      spa-ghet-ti.
+  - question: Divide "democratically" into it's component syllables?
+    answer: |
+      dem-o-crat-i-cal-ly.
+  - question: Divide "microprocessor" into it's component syllables?
+    answer: |
+      mi-cro-proc-es-sor.
+  - question: Divide "academic" into it's component syllables?
+    answer: |
+      ac-a-dem-ic.
+  - question: Divide "intelligent" into it's component syllables?
+    answer: |
+      in-tel-li-gent.
+  - question: Divide "fascinating" into it's component syllables?
+    answer: |
+      fas-ci-nat-ing.
+  - question: Divide "emancipation" into it's component syllables?
+    answer: |
+      e-man-ci-pa-tion.
+  - question: Divide "linguistic" into it's component syllables?
+    answer: |
+      lin-guis-tic.
+  - question: Divide "technology" into it's component syllables?
+    answer: |
+      tech-nol-o-gy.
+  - question: Divide "mammal" into it's component syllables?
+    answer: |
+      mam-mal.
+  - question: Divide "recommendation" into it's component syllables?
+    answer: |
+      rec-om-men-da-tion.
+  - question: Divide "opportunity" into it's component syllables?
+    answer: |
+      op-por-tu-ni-ty.
+  - question: Divide "orchestrate" into it's component syllables?
+    answer: |
+      or-ches-trate.
+  - question: Divide "squir-rel" into it's component syllables?
+    answer: |
+      squir-rel.
+  - question: Divide "governance" into it's component syllables?
+    answer: |
+      gov-ern-ance.
+  - question: Divide "prospect" into it's component syllables?
+    answer: |
+      pros-pect
+  - question: Divide "consistency" into it's component syllables?
+    answer: |
+      con-sist-en-cy.
+  - question: Divide "recreational" into it's component syllables?
+    answer: |
+      rec-re-a-tion-al.
+  - question: Divide "fascination" into it's component syllables?
+    answer: |
+      fas-ci-na-tion.
+  - question: Divide "existence" into it's component syllables?
+    answer: |
+      ex-ist-ence.
+  - question: Divide "cryptography" into it's component syllables?
+    answer: |
+      cryp-tog-ra-phy.
+  - question: Divide "astronomy" into it's component syllables?
+    answer: |
+      as-tron-o-my.
+  - question: Divide "professional" into it's component syllables?
+    answer: |
+      pro-fes-sion-al.
+  - question: Divide "fascination" into it's component syllables?
+    answer: |
+      fas-ci-na-tion.
+  - question: Divide "parliament" into it's component syllables?
+    answer: |
+      par-lia-ment.
+  - question: Divide "temporary" into it's component syllables?
+    answer: |
+      tem-po-rar-y.
+  - question: Divide "strange" into it's component syllables?
+    answer: |
+      strange.
+  - question: Divide "cybersecurity" into it's component syllables?
+    answer: |
+      cy-ber-se-cu-ri-ty.
+  - question: Divide "philosopher" into it's component syllables?
+    answer: |
+      phi-los-o-pher.
+  - question: Divide "electronics" into it's component syllables?
+    answer: |
+      e-lec-tron-ics.
+  - question: Divide "impossible" into it's component syllables?
+    answer: |
+      im-pos-si-ble.
+  - question: Divide "breakdown" into it's component syllables?
+    answer: |
+      break-down.
+  - question: Divide "astronaut" into it's component syllables?
+    answer: |
+      as-tro-naut.
+  - question: Divide "antarctica" into it's component syllables?
+    answer: |
+      ant-arc-ti-ca.
+  - question: Divide "pneumonoultramicroscopicsilicovolcanoconiosis" into it's
+      component syllables?
+    answer: |
+      pneu-mo-no-ul-tra-mi-cro-scop-ic-sil-i-co-vol-ca-no-co-ni-o-sis.
+  - question: Divide "restructuring" into it's component syllables?
+    answer: |
+      re-struc-tur-ing.
