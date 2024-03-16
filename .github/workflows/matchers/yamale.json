@@ -1,0 +1,19 @@
+{
+  "problemMatcher": [
+    {
+      "owner": "validate-qna",
+      "severity": "error",
+      "pattern": [
+        {
+          "regexp": "(\/.*\/qna.yaml)",
+          "file": 1
+        },
+        {
+          "regexp": "(^\t.*)",
+          "message": 1,
+          "loop": true
+        }
+      ]
+    }
+  ]
+}

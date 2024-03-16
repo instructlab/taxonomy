@@ -1,0 +1,80 @@
+name: Validate QNA
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'compositional_skills/**/qna.yaml'
+      - 'knowledge/**/qna.yaml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'compositional_skills/**/qna.yaml'
+      - 'knowledge/**/qna.yaml'
+
+jobs:
+  validate:
+    name: Validate ${{ matrix.pairs.path }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        pairs:
+          - path: knowledge/
+            schema: knowledge_schema
+          - path: compositional_skills/writing/freeform/
+            schema: skills_freeform_schema
+          - path: compositional_skills/writing/grounded/
+            schema: skills_grounded_schema
+          - path: compositional_skills/extraction
+            schema: skills_extraction_schema
+    steps:
+      - uses: actions/checkout@v4
+      - name: Get diff files
+        uses: actions/github-script@v7
+        id: compare
+        with:
+          script: |
+            var owner = context.repo.owner
+            var repo = context.repo.repo
+            switch (context.eventName) {
+              case 'pull_request':
+                var base = context.payload.pull_request.base.sha
+                var head = context.payload.pull_request.head.sha
+                break
+              case 'push':
+                var base = context.payload.before
+                var head = context.payload.after
+                break
+              default:
+                core.setFailed('this only works for push and pull requests')
+            }
+
+            var response = await github.rest.repos.compareCommits({owner, repo, base, head})
+
+            const path = require('node:path')
+            var yamls = response.data.files
+              .filter(f => ['modified', 'added'].includes(f.status))
+              .map(f => f.filename)
+              .filter(f => 'qna.yaml' === path.basename(f))
+              .join(' ')
+
+            core.setOutput('found', yamls.length > 0)
+            core.setOutput('yamls', yamls)
+
+      - run: pip install yamale
+        if: ${{ steps.compare.outputs.found == 'true' }}
+
+      - name: Add yamale matcher
+        run: echo "::add-matcher::.github/workflows/matchers/yamale.json"
+
+      - name: Run yamale
+        if: ${{ steps.compare.outputs.found == 'true' }}
+        run: >
+          for file in ${{ steps.compare.outputs.yamls }}; do
+            if [[ $(dirname "$file") == ${{ matrix.pairs.path }}* ]]; then
+              yamale -s .github/schemas/${{ matrix.pairs.schema }}.yaml "$file"
+            fi
+          done
