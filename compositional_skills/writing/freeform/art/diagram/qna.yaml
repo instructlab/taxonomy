@@ -15,6 +15,9 @@ seed_examples:
       each line, and each line should start with the number of spaces that
       equals the current line number. For example, the first letter is on
       the first line, the second letter is on the second line, and so on.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - answer: |
       like this:
       f
@@ -25,6 +28,9 @@ seed_examples:
       each line, and each line should start with the number of spaces that
       equals the current line number. For example, the first letter is on
       the first line, the second letter is on the second line, and so on.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - answer: |
       like this:
       b
@@ -37,6 +43,9 @@ seed_examples:
       a different line. Third, each line will start with the number of
       spaces of the current line number. For example, the first letter is on
       the first line, the second letter is on the second line, and so on.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - answer: |
       c
        o
@@ -49,6 +58,9 @@ seed_examples:
       a different line and  each line will start with the number of
       spaces of the current line number. For example, the first letter is on
       the first line, the second letter is on the second line, and so on.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - answer: |
       q
        u
@@ -62,4 +74,7 @@ seed_examples:
       a different line and  each line will start with the number of
       spaces of the current line number. For example, the first letter is on
       the first line, the second letter is on the second line, and so on.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
 task_description: an ascii diagram
