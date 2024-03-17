@@ -3,340 +3,676 @@ created_by: pauljevans
 task_description: |
   Breakdown a given word into its corresponding syllables.
 seed_examples:
-  - question: Divide "bed" into it's component syllables?
+  - question: Divide "bed" into its component syllables?
     answer: |
       bed.
-  - question: Divide "layer" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "layer" into its component syllables?
     answer: |
       lay-er.
-  - question: Divide "president" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "president" into its component syllables?
     answer: |
       pres-i-dent.
-  - question: Divide "responsible" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "responsible" into its component syllables?
     answer: |
       re-spon-si-ble.
-  - question: Divide "electricity" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "electricity" into its component syllables?
     answer: |
       e-lec-tric-i-ty.
-  - question: Divide "differentiated" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "differentiated" into its component syllables?
     answer: |
       dif-fer-en-ti-at-ed.
-  - question: Divide "indivisibility" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "indivisibility" into its component syllables?
     answer: |
       in-di-vis-i-bil-i-ty.
-  - question: Divide "love" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "love" into its component syllables?
     answer: |
       love.
-  - question: Divide "sound" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "sound" into its component syllables?
     answer: |
       sound.
-  - question: Divide "bicycle" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "bicycle" into its component syllables?
     answer: |
       bi-cy-cle.
-  - question: Divide "rabbit" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "rabbit" into its component syllables?
     answer: |
       rab-bit.
-  - question: Divide "water" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "water" into its component syllables?
     answer: |
       wat-er.
-  - question: Divide "teacher" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "teacher" into its component syllables?
     answer: |
       teach-er.
-  - question: Divide "diaeresis" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "diaeresis" into its component syllables?
     answer: |
       di-aer-e-sis.
-  - question: Divide "coat" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "coat" into its component syllables?
     answer: |
       coat.
-  - question: Divide "unusual" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "unusual" into its component syllables?
     answer: |
       un-u-su-al.
-  - question: Divide "breakfast" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "breakfast" into its component syllables?
     answer: |
       break-fast.
-  - question: Divide "fumble" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "fumble" into its component syllables?
     answer: |
       fum-ble.
-  - question: Divide "tackle" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "tackle" into its component syllables?
     answer: |
       tack-le.
-  - question: Divide "banana" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "banana" into its component syllables?
     answer: |
       ba-na-na.
-  - question: Divide "children" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "children" into its component syllables?
     answer: |
       chil-dren.
-  - question: Divide "void" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "void" into its component syllables?
     answer: |
       void.
-  - question: Divide "beautiful" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "beautiful" into its component syllables?
     answer: |
       beau-ti-ful.
-  - question: Divide "basic" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "basic" into its component syllables?
     answer: |
       ba-sic.
-  - question: Divide "robotinto it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "robotinto its component syllables?
     answer: |
       ro-bot.
-  - question: Divide "river" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "river" into its component syllables?
     answer: |
       riv-er.
-  - question: Divide "model" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "model" into its component syllables?
     answer: |
       mod-el.
-  - question: Divide "panel" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "panel" into its component syllables?
     answer: |
       pan-el.
-  - question: Divide "teacher" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "teacher" into its component syllables?
     answer: |
       teach-er.
-  - question: Divide "lashes" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "lashes" into its component syllables?
     answer: |
       lash-es.
-  - question: Divide "graphic" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "graphic" into its component syllables?
     answer: |
       graph-ic has 2 syllables.
-  - question: Divide "panther" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "panther" into its component syllables?
     answer: |
       pan-ther.
-  - question: Divide "whether" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "whether" into its component syllables?
     answer: |
       wheth-er.
-  - question: Divide "together" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "together" into its component syllables?
     answer: |
       to-geth-er.
-  - question: Divide "meet" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "meet" into its component syllables?
     answer: |
       meet.
-  - question: Divide "cupcake" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "cupcake" into its component syllables?
     answer: |
       cup-cake.
-  - question: Divide "something" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "something" into its component syllables?
     answer: |
       some-thing.
-  - question: Divide "babysitter" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "babysitter" into its component syllables?
     answer: |
       ba-by-sit-ter.
-  - question: Divide "sunflower" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "sunflower" into its component syllables?
     answer: |
       sun-flow-er.
-  - question: Divide "able" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "able" into its component syllables?
     answer: |
       a-ble.
-  - question: Divide "candle" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "candle" into its component syllables?
     answer: |
       can-dle.
-  - question: Divide "prepaid" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "prepaid" into its component syllables?
     answer: |
       pre-paid.
-  - question: Divide "unkindly" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "unkindly" into its component syllables?
     answer: |
       un-kind-ly.
-  - question: Divide "paying" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "paying" into its component syllables?
     answer: |
       pay-ing.
-  - question: Divide "philosophy" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "philosophy" into its component syllables?
     answer: |
       phi-los-o-phy.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: Divide "gymnastics"
     answer: |
       gym-nas-tics.
-  - question: Divide "administrator" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "administrator" into its component syllables?
     answer: |
       ad-min-is-tra-tor.
-  - question: Divide "elephant" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "elephant" into its component syllables?
     answer: |
       el-e-phant.
-  - question: Divide "universe" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "universe" into its component syllables?
     answer: |
       u-ni-verse.
-  - question: Divide "elevator" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "elevator" into its component syllables?
     answer: |
       el-e-vat-or.
-  - question: Divide "synchronization" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "synchronization" into its component syllables?
     answer: |
-      syn-chro-ni-za-tion
-  - question: Divide "Mammoth" into it's component syllables?
+      syn-chro-ni-za-tion.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "Mammoth" into its component syllables?
     answer: |
       mam-moth.
-  - question: Divide "telescope" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "telescope" into its component syllables?
     answer: |
       tel-e-scope.
-  - question: Divide "syllables" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "syllables" into its component syllables?
     answer: |
       syl-la-bles.
-  - question: Divide "apple" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "apple" into its component syllables?
     answer: |
       ap-ple.
-  - question: Divide "telephony" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "telephony" into its component syllables?
     answer: |
       te-leph-o-ny.
-  - question: Divide "automatically" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "automatically" into its component syllables?
     answer: |
       auto-mat-i-cal-ly.
-  - question: Divide "sincerely" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "sincerely" into its component syllables?
     answer: |
       sin-cere-ly.
-  - question: Divide "microscope" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "microscope" into its component syllables?
     answer: |
       mi-cro-scope.
-  - question: Divide "internationalization" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "internationalization" into its component syllables?
     answer: |
       in-ter-na-tion-al-i-za-tion.
-  - question: Divide "unnecessary" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "unnecessary" into its component syllables?
     answer: |
       un-nec-es-sar-y.
-  - question: Divide "television" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "television" into its component syllables?
     answer: |
       tel-e-vi-sion.
-  - question: Divide "academia" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "academia" into its component syllables?
     answer: |
       ac-a-de-mi-a.
-  - question: Divide "apparatus" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "apparatus" into its component syllables?
     answer: |
       ap-pa-rat-us.
-  - question: Divide "phenomenon" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "phenomenon" into its component syllables?
     answer: |
       phe-nom-e-non.
-  - question: Divide "extraction" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "extraction" into its component syllables?
     answer: |
       ex-trac-tion.
-  - question: Divide "bacteria" into it's compoent syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "bacteria" into its compoent syllables?
     answer: |
       bac-te-ri-a.
-  - question: Divide "psychology" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "psychology" into its component syllables?
     answer: |
       psy-chol-o-gy.
-  - question: Divide "giraffe" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "giraffe" into its component syllables?
     answer: |
       gi-raffe.
-  - question: Divide "orchestration" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "orchestration" into its component syllables?
     answer: |
       or-ches-tra-tion.
-  - question: Divide "phonology" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "phonology" into its component syllables?
     answer: |
       pho-nol-o-gy.
-  - question: Divide "orchestra" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "orchestra" into its component syllables?
     answer: |
       or-ches-tra.
-  - question: Divide "complementary" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "complementary" into its component syllables?
     answer: |
       com-ple-men-ta-ry.
-  - question: Divide "antidisestablishmentarianism" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "antidisestablishmentarianism" into its component syllables?
     answer: |
       an-ti-dis-es-tab-lish-men-tar-i-an-ism.
-  - question: Divide "persevere" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "persevere" into its component syllables?
     answer: |
       per-se-vere.
-  - question: Divide "government" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "government" into its component syllables?
     answer: |
       gov-ern-ment.
-  - question: Divide "spaghetti" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "spaghetti" into its component syllables?
     answer: |
       spa-ghet-ti.
-  - question: Divide "democratically" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "democratically" into its component syllables?
     answer: |
       dem-o-crat-i-cal-ly.
-  - question: Divide "microprocessor" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "microprocessor" into its component syllables?
     answer: |
       mi-cro-proc-es-sor.
-  - question: Divide "academic" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "academic" into its component syllables?
     answer: |
       ac-a-dem-ic.
-  - question: Divide "intelligent" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "intelligent" into its component syllables?
     answer: |
       in-tel-li-gent.
-  - question: Divide "fascinating" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "fascinating" into its component syllables?
     answer: |
       fas-ci-nat-ing.
-  - question: Divide "emancipation" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "emancipation" into its component syllables?
     answer: |
       e-man-ci-pa-tion.
-  - question: Divide "linguistic" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "linguistic" into its component syllables?
     answer: |
       lin-guis-tic.
-  - question: Divide "technology" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "technology" into its component syllables?
     answer: |
       tech-nol-o-gy.
-  - question: Divide "mammal" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "mammal" into its component syllables?
     answer: |
       mam-mal.
-  - question: Divide "recommendation" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "recommendation" into its component syllables?
     answer: |
       rec-om-men-da-tion.
-  - question: Divide "opportunity" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "opportunity" into its component syllables?
     answer: |
       op-por-tu-ni-ty.
-  - question: Divide "orchestrate" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "orchestrate" into its component syllables?
     answer: |
       or-ches-trate.
-  - question: Divide "squir-rel" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "squir-rel" into its component syllables?
     answer: |
       squir-rel.
-  - question: Divide "governance" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "governance" into its component syllables?
     answer: |
       gov-ern-ance.
-  - question: Divide "prospect" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "prospect" into its component syllables?
     answer: |
-      pros-pect
-  - question: Divide "consistency" into it's component syllables?
+      pros-pect.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "consistency" into its component syllables?
     answer: |
       con-sist-en-cy.
-  - question: Divide "recreational" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "recreational" into its component syllables?
     answer: |
       rec-re-a-tion-al.
-  - question: Divide "fascination" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "fascination" into its component syllables?
     answer: |
       fas-ci-na-tion.
-  - question: Divide "existence" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "existence" into its component syllables?
     answer: |
       ex-ist-ence.
-  - question: Divide "cryptography" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "cryptography" into its component syllables?
     answer: |
       cryp-tog-ra-phy.
-  - question: Divide "astronomy" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "astronomy" into its component syllables?
     answer: |
       as-tron-o-my.
-  - question: Divide "professional" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "professional" into its component syllables?
     answer: |
       pro-fes-sion-al.
-  - question: Divide "fascination" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "fascination" into its component syllables?
     answer: |
       fas-ci-na-tion.
-  - question: Divide "parliament" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "parliament" into its component syllables?
     answer: |
       par-lia-ment.
-  - question: Divide "temporary" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "temporary" into its component syllables?
     answer: |
       tem-po-rar-y.
-  - question: Divide "strange" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "strange" into its component syllables?
     answer: |
       strange.
-  - question: Divide "cybersecurity" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "cybersecurity" into its component syllables?
     answer: |
       cy-ber-se-cu-ri-ty.
-  - question: Divide "philosopher" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "philosopher" into its component syllables?
     answer: |
       phi-los-o-pher.
-  - question: Divide "electronics" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "electronics" into its component syllables?
     answer: |
       e-lec-tron-ics.
-  - question: Divide "impossible" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "impossible" into its component syllables?
     answer: |
       im-pos-si-ble.
-  - question: Divide "breakdown" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "breakdown" into its component syllables?
     answer: |
       break-down.
-  - question: Divide "astronaut" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "astronaut" into its component syllables?
     answer: |
       as-tro-naut.
-  - question: Divide "antarctica" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "antarctica" into its component syllables?
     answer: |
       ant-arc-ti-ca.
-  - question: Divide "pneumonoultramicroscopicsilicovolcanoconiosis" into it's
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "pneumonoultramicroscopicsilicovolcanoconiosis" into its
       component syllables?
     answer: |
       pneu-mo-no-ul-tra-mi-cro-scop-ic-sil-i-co-vol-ca-no-co-ni-o-sis.
-  - question: Divide "restructuring" into it's component syllables?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Divide "restructuring" into its component syllables?
     answer: |
       re-struc-tur-ing.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
