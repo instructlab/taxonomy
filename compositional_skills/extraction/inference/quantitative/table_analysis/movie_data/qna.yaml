@@ -154,3 +154,6 @@ seed_examples:
     answer: |
       American Sniper was the top grossing Drama movie after 2010 and it was
       released in Dec 25, 2014.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
