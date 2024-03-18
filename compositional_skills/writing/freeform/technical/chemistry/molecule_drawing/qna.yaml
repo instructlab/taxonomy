@@ -2,7 +2,7 @@ task_description: 'Generate an ASCII representation of a molecule.'
 created_by: lucas-morin
 seed_examples:
 - answer: |
-```
+    ```
     H--C==O
        |
        C
