@@ -1,1 +1,5 @@
-
+created_by: aspanner
+seed_examples:
+- answer: "Sally is 1 of her brothers 2 sisters. Therefore Sally has 1 sister."
+  question: Sally is a girl. Sally has 3 brothers. Each brother has 2 sisters. How many sisters does Sally have?
+task_description: ''
