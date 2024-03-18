@@ -1,0 +1,57 @@
+task_description: |
+  This skill provides the ability to select the most appropriate meme
+created_by: abompard
+seed_examples:
+  - question: >-
+      I have made a risky deployment of software without testing it. I want to
+      let off steam with my colleagues by using a meme. Which one should I use?
+    answer: >-
+      You could use the "Most Interesting Man In The World" meme, where a
+      charismatic man speaks about his tastes. The label could be "I don't
+      always test my code, but when I do, I do it in production".
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >-
+      I have found much better way of doing something than what most people do.
+      How could I express it with a meme?
+    answer: >-
+      You could use the "Drake" meme. In the first box, describe what most
+      people do, and in the second box describe the way you do it.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >-
+      I'm supposed to do my homework but I'd rather play online with my friends,
+      what meme should I use to let them know I'm always available?
+    answer: >-
+      You could use the "Exit 12" meme, where a car aggressively exists the
+      freeway. The car would be labeled "Me", the freeway sign would be labeled
+      "Doing my homework", and the exit sign would be labeled "Playing online
+      with you".
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >-
+      What meme should I use when I have something boring I have committed to do
+      and something more exciting I'd rather do?
+    answer: >-
+      You could use the "Distracted Boyfriend" meme where a couple walks down
+      the street and the boyfriends turns back and looks at a woman passing by.
+      The boyfriend would be labeled "Me", the girlfriend would be labeled as
+      the task you have committed to do, and the passing by woman would be
+      labeled as the exciting thing you'd rather do.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >-
+      I pulled the fire alarm at school to avoid a test, what's the best meme to
+      send to my friends?
+    answer: >-
+      The most appropriate meme would be "Disaster Girl", where a young girl
+      looks back at the camera with a burning house at the back. You could label
+      the girl "Me" and the building "School", or edit a picture of you on the
+      girl's face.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
