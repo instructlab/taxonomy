@@ -14,7 +14,7 @@ seed_examples:
       Both have mega bytes!
   - question: Why does C not like Java?
     answer: |
-      Because C has a class.
+      Because Java has a class.
   - question: Why did the developer go broke?
     answer: |
       Because he used up all his cache.
