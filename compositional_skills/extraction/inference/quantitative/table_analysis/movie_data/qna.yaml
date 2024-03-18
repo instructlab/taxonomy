@@ -1,0 +1,156 @@
+task_description: |
+  This skill provides the ability to read a markdown-formatted table.
+created_by: donaghbr
+seed_examples:
+  - context: |
+      | **Rank** | **Movie**                          | **Release Date** | **Genre** | **2023 Gross** |
+
+      |----------|------------------------------------|------------------|------------|---------------|
+
+      | 1        | Barbie                             | Jul 21, 2023     | Comedy     | $636,225,983  |
+
+      | 2        | The Super Mario Bros. Movie        | Apr 5, 2023      | Action     | $574,934,330  |
+
+      | 3        | Spider-Man: Across the Spider-Verse| Jun 2, 2023      | Adventure  | $381,311,319  |
+
+      | 4        | Guardians of the Galaxy Vol 3      | May 5, 2023      | Action     | $358,995,815  |
+
+      | 5        | Oppenheimer                        | Jul 21, 2023     | Drama      | $326,101,370  |
+
+      | 6        | The Little Mermaid                 | May 26, 2023     | Adventure  | $298,172,056  |
+
+      | 7        | Avatar: The Way of Water           | Dec 16, 2022     | Action     | $283,067,859  |
+
+      | 8        | Ant-Man and the Wasp: Quantumania  | Feb 17, 2023     | Action     | $214,504,909  |
+
+      | 9        | John Wick: Chapter 4               | Mar 24, 2023     | Action     | $187,131,806  |
+
+      |10        | Sound of Freedom                   | Jul 4, 2023      | Thriller   | $184,178,046  |
+    question: |
+      Which movie in the Action genre has the highest 2023 gross earnings
+      and how much did it earn?
+    answer: |
+      The action movie with the highest 2023 gross earnings was The Super
+      Mario Bros. Movie and it earned $574,934,330.
+  - context: |
+      | **Rank** | **Movie**                       | **Release Date** | **Genre**   | **2023 Gross** |
+
+      |----------|---------------------------------|------------------|------------ |----------------|
+
+      | 543      | This Much We Know               | Jul 21, 2023     | Documentary | $2,296         |
+
+      | 544      | Brainwashed: Sex-Camera-Power   | Apr 5, 2023      | Documentary | $1,890	     |
+
+      | 545      | Loudmouth                       | Jun 2, 2023      | Documentary | $1,677	     |
+
+      | 546      | Operation Napoleon              | May 5, 2023      | Thriller    | $1,618	     |
+
+      | 547      | Imagining the Indian            | Jul 21, 2023     | Drama       | $1,380	     |
+
+      | 548      | Venus                           | May 26, 2023     | Adventure   | $1,242	     |
+
+      | 549      | Christmas Bloody Christmas      | Dec 16, 2022     | Action      | $812	     |
+
+      | 550      | Asedio                          | Feb 17, 2023     | Action      | $684	     |
+
+      | 551      | La marginale                    | Mar 24, 2023     | Action      | $539	     |
+
+      | 552      | When Men Were Men               | Jul 4, 2023      | Drama       | $363	     |
+    question: |
+      Which action movie had the lowest 2023 gross?
+    answer: |
+      The action movie had the lowest 2023 gross was La marginale.
+  - context: |
+      | **Rank** | **Movie**                          | **Release Date** | **Rating** |**Total Gross**|
+
+      |----------|------------------------------   ---|------------------|------------|---------------|
+
+      | 1        | Barbie                             | Jul 21, 2023     | PG-13      | $636,225,983  |
+
+      | 2        | Meet the Fockers                   | Dec 22, 2004     | PG-13      | $279,167,575  |
+
+      | 3        | Austin Powers                      | Jun 10, 1999     | PG-13      | $206,040,085  |
+
+      | 4        | Bruce Almighty                     | May 23, 2003     | PG-13      | $242,704,995  |
+
+      | 5        | Liar Liar                          | Mar 21, 1997     | PG-13      | $181,410,615  |
+
+      | 6        | The Hangover                       | Jun 5, 2009      | R          | $277,322,503  |
+
+      | 7        | Austin Powers in Goldmember        | Jul 25, 2002     | PG-13      | $283,067,859  |
+
+      | 8        | The Waterboy                       | Nov 6, 1998      | PG-13      | $214,504,909  |
+
+      | 9        | The Hangover Part II               | May 26, 2011     | R          | $187,131,806  |
+
+      |10        | Wedding Crashers                   | Jul 15, 2005     | R          | $184,178,046  |
+    question: |
+      When was Austin Powers released and how much did it earn?
+    answer: |
+      Austin Powers was released on Jun 10, 1999 and it earned $206,040,085.
+  - context: |
+      | **Rank** | **Movie**                          | **Release Date** | **Rating** |**Total Gross**|
+
+      |----------|------------------------------   ---|------------------|------------|---------------|
+
+      | 1        | Titanic                            | Dec 19, 1997     | PG-13      | $1,446,878,504|
+
+      | 2        | The Passion of the Christ          | Feb 25, 2004     | R          | $628,691,986  |
+
+      | 3        | Saving Private Ryan                | Jul 24, 1998     | R          | $481,278,241  |
+
+      | 4        | American Sniper                    | Dec 25, 2014     | R          | $447,820,518  |
+
+      | 5        | Apollo 13                          | Jun 30, 1995     | PG-13      | $429,529,930  |
+
+      | 6        | The Twilight Saga: New Moon        | Jun 5, 2009      | PG-13      | $415,857,963  |
+
+      | 7        | The Twilight Saga: Eclipse         | Jun 30, 2010     | PG-13      | $401,089,901  |
+
+      | 8        | The Twilight Saga: Breaking Dawn 1 | Nov 18, 2011     | PG-13      | $395,796,626  |
+
+      | 9        | The Twilight Saga: Breaking Dawn 2 | Nov 16, 2012     | PG-13      | $382,350,743  |
+
+      |10        | The Blind Side                     | Nov 20, 2009     | PG-13      | $364,525,538  |
+
+      |11        | The Perfect Storm                  | Jun 30, 2000     | PG-13      | $356,766,625  |
+
+      |12        | Oppenheimer                        | Jul 21, 2023     | PG-13      | $329,703,000  |
+    question: |
+      What was the top grossing Drama movie of 1998 and what was its rating?
+    answer: |
+      Saving Private Ryan was the top grossing Drama movie of 1998 and its
+      rating was R.
+  - context: |
+      | **Rank** | **Movie**                          | **Release Date** | **Rating** |**Total Gross**|
+
+      |----------|------------------------------   ---|------------------|------------|---------------|
+
+      | 1        | Titanic                            | Dec 19, 1997     | PG-13      | $1,446,878,504|
+
+      | 2        | The Passion of the Christ          | Feb 25, 2004     | R          | $628,691,986  |
+
+      | 3        | Saving Private Ryan                | Jul 24, 1998     | R          | $481,278,241  |
+
+      | 4        | American Sniper                    | Dec 25, 2014     | R          | $447,820,518  |
+
+      | 5        | Apollo 13                          | Jun 30, 1995     | PG-13      | $429,529,930  |
+
+      | 6        | The Twilight Saga: New Moon        | Jun 5, 2009      | PG-13      | $415,857,963  |
+
+      | 7        | The Twilight Saga: Eclipse         | Jun 30, 2010     | PG-13      | $401,089,901  |
+
+      | 8        | The Twilight Saga: Breaking Dawn 1 | Nov 18, 2011     | PG-13      | $395,796,626  |
+
+      | 9        | The Twilight Saga: Breaking Dawn 2 | Nov 16, 2012     | PG-13      | $382,350,743  |
+
+      |10        | The Blind Side                     | Nov 20, 2009     | PG-13      | $364,525,538  |
+
+      |11        | The Perfect Storm                  | Jun 30, 2000     | PG-13      | $356,766,625  |
+
+      |12        | Oppenheimer                        | Jul 21, 2023     | PG-13      | $329,703,000  |
+    question: |
+      What was the top grossing Drama movie after 2010 and when was it released?
+    answer: |
+      American Sniper was the top grossing Drama movie after 2010 and it was
+      released in Dec 25, 2014.
