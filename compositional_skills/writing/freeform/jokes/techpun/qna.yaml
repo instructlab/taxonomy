@@ -6,13 +6,13 @@ seed_examples:
   - question: Why are spiders so smart?
     answer: |
       They can find everything on the WEB.
-  - question: What is a linux user's favorite games?
+  - question: What is a linux user's favorite game?
     answer: |
       sudo ku!
-  - question: What does the computer and sharks have in common?
+  - question: What do computers and sharks have in common?
     answer: |
       Both have mega bytes!
-  - question: Why C don't like Java?
+  - question: Why does C not like Java?
     answer: |
       Because C has a class.
   - question: Why did the developer go broke?
