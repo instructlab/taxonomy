@@ -14,6 +14,9 @@ seed_examples:
       RUN dnf clean all \
           && rm -rf /var/cache/dnf
       ```
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: Create a Dockerfile for a toolbox image with the development tools
     answer: |-
       ```
@@ -26,6 +29,9 @@ seed_examples:
       RUN dnf clean all \
           && rm -rf /var/cache/dnf
       ```
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: Create a Dockerfile for a toolbox image with golang
     answer: |-
       ```
@@ -38,6 +44,9 @@ seed_examples:
       RUN dnf clean all \
           && rm -rf /var/cache/dnf
       ```
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: Create a Dockerfile for a toolbox image with python
     answer: |-
       ```
@@ -50,6 +59,9 @@ seed_examples:
       RUN dnf clean all \
           && rm -rf /var/cache/dnf
       ```
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: Create a Dockerfile for a toolbox image with python and emacs
     answer: |-
       ```
@@ -63,3 +75,6 @@ seed_examples:
       RUN dnf clean all \
           && rm -rf /var/cache/dnf
       ```
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
