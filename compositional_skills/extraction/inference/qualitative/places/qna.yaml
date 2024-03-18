@@ -1,0 +1,71 @@
+task_description: |
+  Recognize when statements are referring to the same place.  I.e., if m
+  different statements are made about a given space having n things, then the
+  total number of things in the space is n and not m*n.
+created_by: anfredette
+seed_examples:
+  - question: |
+      Bob has two dogs. Each dog lives with three cats. How many cats does
+      Bob live with?
+    answer: |
+      Bob lives with 3 cats. If each of Bob's two dogs lives with three cats,
+      and these cats are shared among the dogs rather than being unique to each
+      dog, then Bob lives with 3 cats in total.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: |
+      Alice and Bob live together. Alice lives with 2 dogs. Bob lives with two
+      dogs. How many dogs are in the house?
+    answer: |
+      There are two dogs in the house. If Alice and Bob live together, and Alice
+      lives with 2 dogs while Bob also lives with 2 dogs, but they are sharing
+      the same living space, it means they collectively have 2 dogs in the
+      house, not 4, since the description implies they are counting the same
+      dogs.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: |
+      Andrew and Ben work in the same office building. Andrew's office building
+      has two conference rooms. Ben's office building has two conference rooms.
+      What is the total number of conference rooms in the building?
+    answer: |
+      There are two conference rooms in the office building. If Andrew and
+      Ben work in the same office building, and the information about the number
+      of conference rooms is given for both Andrew's and Ben's office building,
+      we're actually talking about the same building. Therefore, the total
+      number of conference rooms in the building is two.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: |
+      Brooke lives with three cats. Alice lives with Brooke. How many cats does
+      Alice live with??
+    answer: |
+      Alice lives with three cats. If Brooke has three cats and Alice lives with
+      Brooke, then Alice lives with three cats as well.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: |
+      Andrew and Bob live on the same street. There are two stop signs on Bob's
+      street. There are two stop signs on Andrew's street. How many stop signs
+      are there?
+    answer: |
+      There are a total of two stop signs on the street. If Andrew and Bob live
+      on the same street, and both statements refer to this street having two
+      stop signs, then there are a total of two stop signs on the street.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: |
+      Brooke lives with three cats. Alice lives with three cats. Alice and
+      Brooke live together in the same house. How many cats are in the house?
+    answer: |
+      If Brooke and Alice live together in the same house and both statements
+      about living with three cats refer to the same group of cats, then there
+      are a total of three cats in the house.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
