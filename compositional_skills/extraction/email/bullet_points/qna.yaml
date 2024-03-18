@@ -25,8 +25,8 @@ seed_examples:
 
     '
   document: "Subject: High-Def Monitor Update\n\nDate:\n\nFriday, February 23, 2024\
-    \ at 9:13:32$_{ }$PM Eastern Standard Time\n\nFrom:\n\nLuke Inglis\n\nTo:\n\n\
-    Kate Soule\n\nHi Kate,\n\nI am writing to explain to you the delay in our lab\
+    \ at 9:13:32$_{ }$PM Eastern Standard Time\n\nFrom:\n\nChad Smith\n\nTo:\n\n\
+    Mary Jane\n\nHi Mary,\n\nI am writing to explain to you the delay in our lab\
     \ receiving monitors. On Dec 2$^{nd,}$ 2023, I started the process of purchasing\
     \ 7 high-def Samsung monitors for the MIT-IBM Watson AI Lab. I think you already\
     \ know, but I wanted to outline the steps needed to make this purchase.\n\n1.\
@@ -47,7 +47,7 @@ seed_examples:
     \ address the shipping date for the Odyssey Ark 55-inch. I know the 10th of May\
     \ 2024 is not ideal but there was confusion as the supplier is in Europe and thought\
     \ that 5/10/2024 was actually 10/5/2024.\n\nI apologize for the confusion.\n\n\
-    Regards,\n\nLuke Inglis Operations Manager AI Models & MIT-IBM Watson AI Lab IBM\
+    Regards,\n\nChad Smith Operations Manager AI Models & MIT-IBM Watson AI Lab IBM\
     \ Research\n"
   question: 'Provide a bulleted list of all steps needed to complete the monitor purchase.
 
@@ -60,8 +60,8 @@ seed_examples:
 
     '
   document: "Subject: High-Def Monitor Update\n\nDate:\n\nFriday, February 23, 2024\
-    \ at 9:13:32$_{ }$PM Eastern Standard Time\n\nFrom:\n\nLuke Inglis\n\nTo:\n\n\
-    Kate Soule\n\nHi Kate,\n\nI am writing to explain to you the delay in our lab\
+    \ at 9:13:32$_{ }$PM Eastern Standard Time\n\nFrom:\n\nChad Smith\n\nTo:\n\n\
+    Mary Jane\n\nHi Mary,\n\nI am writing to explain to you the delay in our lab\
     \ receiving monitors. On Dec 2$^{nd,}$ 2023, I started the process of purchasing\
     \ 7 high-def Samsung monitors for the MIT-IBM Watson AI Lab. I think you already\
     \ know, but I wanted to outline the steps needed to make this purchase.\n\n1.\
@@ -82,7 +82,7 @@ seed_examples:
     \ address the shipping date for the Odyssey Ark 55-inch. I know the 10th of May\
     \ 2024 is not ideal but there was confusion as the supplier is in Europe and thought\
     \ that 5/10/2024 was actually 10/5/2024.\n\nI apologize for the confusion.\n\n\
-    Regards,\n\nLuke Inglis Operations Manager AI Models & MIT-IBM Watson AI Lab IBM\
+    Regards,\n\nChad Smith Operations Manager AI Models & MIT-IBM Watson AI Lab IBM\
     \ Research\n"
   question: Give me a bullet list of all Monitor types that were purchased
 - answer: '- Line VP
@@ -95,8 +95,8 @@ seed_examples:
 
     '
   document: "Subject: High-Def Monitor Update\n\nDate:\n\nFriday, February 23, 2024\
-    \ at 9:13:32$_{ }$PM Eastern Standard Time\n\nFrom:\n\nLuke Inglis\n\nTo:\n\n\
-    Kate Soule\n\nHi Kate,\n\nI am writing to explain to you the delay in our lab\
+    \ at 9:13:32$_{ }$PM Eastern Standard Time\n\nFrom:\n\nChad Smith\n\nTo:\n\n\
+    Mary Jane\n\nHi Mary,\n\nI am writing to explain to you the delay in our lab\
     \ receiving monitors. On Dec 2$^{nd,}$ 2023, I started the process of purchasing\
     \ 7 high-def Samsung monitors for the MIT-IBM Watson AI Lab. I think you already\
     \ know, but I wanted to outline the steps needed to make this purchase.\n\n1.\
@@ -117,7 +117,7 @@ seed_examples:
     \ address the shipping date for the Odyssey Ark 55-inch. I know the 10th of May\
     \ 2024 is not ideal but there was confusion as the supplier is in Europe and thought\
     \ that 5/10/2024 was actually 10/5/2024.\n\nI apologize for the confusion.\n\n\
-    Regards,\n\nLuke Inglis Operations Manager AI Models & MIT-IBM Watson AI Lab IBM\
+    Regards,\n\nChad Smith Operations Manager AI Models & MIT-IBM Watson AI Lab IBM\
     \ Research\n"
   question: 'Return a bulleted listing of all people needed for approval before the
     purchase can be completed.
