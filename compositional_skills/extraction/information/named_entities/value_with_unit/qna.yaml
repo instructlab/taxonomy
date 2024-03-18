@@ -23,16 +23,18 @@ seed_examples:
       value, unit
       1.7, eV
       1.08, eV
-    context: The highest performance of the tandem cell has been confirmed by optimizing the electrical and optical properties of window, top absorber,
-      CdSe (bandgap 1.7 eV), bottom absorber, CuSbSe2 (bandgap 1.08 eV) and back surface layers.
+    context: >
+      The highest performance of the tandem cell has been confirmed by optimizing the electrical and optical properties of
+      window, top absorber, CdSe (bandgap 1.7 eV), bottom absorber, CuSbSe2 (bandgap 1.08 eV) and back surface layers.
     question: Extract in CSV all values with their units from the following text
     attribution:
       - source: self-authored
         license: Apache-2.0
   - answer: |
       [{"value": 1.7, "unit": "eV"}, {"value": 1.08, "unit": "eV"}]
-    context: The highest performance of the tandem cell has been confirmed by optimizing the electrical and optical properties of window, top absorber,
-      CdSe (bandgap 1.7 eV), bottom absorber, CuSbSe2 (bandgap 1.08 eV) and back surface layers.
+    context: >
+      The highest performance of the tandem cell has been confirmed by optimizing the electrical and optical properties of
+      window, top absorber, CdSe (bandgap 1.7 eV), bottom absorber, CuSbSe2 (bandgap 1.08 eV) and back surface layers.
     question: Extract in JSON all values with their units from the following text
     attribution:
       - source: self-authored
@@ -40,15 +42,17 @@ seed_examples:
   - answer: |
       value, unit
       100, PeV
-    context: In-ice radio-detection is a promising technique to discover and characterize ultra-high-energy (UHE) neutrinos, with energies above 100 PeV,
-      adopted by present - ARA, ARIANNA, and RNO-G - and planned - IceCube-Gen2.
+    context: >
+      In-ice radio-detection is a promising technique to discover and characterize ultra-high-energy (UHE) neutrinos, with
+      energies above 100 PeV, adopted by present - ARA, ARIANNA, and RNO-G - and planned - IceCube-Gen2.
     question: Extract the value with their units in CSV
     attribution:
       - source: self-authored
         license: Apache-2.0
   - answer: [{"value": "100", "unit": "PeV"}]
-    context: In-ice radio-detection is a promising technique to discover and characterize ultra-high-energy (UHE) neutrinos, with energies above 100 PeV,
-      adopted by present - ARA, ARIANNA, and RNO-G - and planned - IceCube-Gen2.
+    context: >
+      In-ice radio-detection is a promising technique to discover and characterize ultra-high-energy (UHE) neutrinos, with
+      energies above 100 PeV, adopted by present - ARA, ARIANNA, and RNO-G - and planned - IceCube-Gen2.
     question: Extract the value with their units in JSON
     attribution:
       - source: self-authored
@@ -57,15 +61,17 @@ seed_examples:
       value, unit
       98, %
       0.70, {\mu}m
-    context: The microstructure of the samples sintered in N2 was equiaxed with a grain size of 0.70 {\mu}m and a density of 98% of the theoretical value
-      regardless of the sintering time.
+    context: >
+      The microstructure of the samples sintered in N2 was equiaxed with a grain size of 0.70 {\mu}m and a density of 98%
+      of the theoretical value regardless of the sintering time.
     question: Extract the value with their units in CSV
     attribution:
       - source: self-authored
         license: Apache-2.0
   - answer: [{"value": "98", "unit": "%"}, {"value": "0.70", "unit": "{\\mu}m"}]
-    context: The microstructure of the samples sintered in N2 was equiaxed with a grain size of 0.70 {\mu}m and a density of 98% of the theoretical value
-      regardless of the sintering time.
+    context: >
+      The microstructure of the samples sintered in N2 was equiaxed with a grain size of 0.70 {\mu}m and a density of 98%
+      of the theoretical value regardless of the sintering time.
     question: Extract the value with their units in JSON
     attribution:
       - source: self-authored
