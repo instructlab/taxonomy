@@ -1,0 +1,72 @@
+---
+task_description: >
+  Update Dockerfile writing skills to be able to generate Toolbox images
+created_by: josecastillolema
+seed_examples:
+- question: |-
+    Create a Dockerfile for a toolbox image with the emacs package
+  answer: |-
+    ```
+    FROM registry.fedoraproject.org/fedora-toolbox:latest
+
+    RUN dnf install -y \
+      emacs
+
+    # Clean
+    RUN dnf clean all \
+        && rm -rf /var/cache/dnf
+    ```
+- question: |-
+    Create a Dockerfile for a toolbox image with the development tools
+  answer: |-
+    ```
+    FROM registry.fedoraproject.org/fedora-toolbox:latest
+
+    RUN dnf install -y \
+      @development-tools
+
+    # Clean
+    RUN dnf clean all \
+        && rm -rf /var/cache/dnf
+    ```
+- question: |-
+    Create a Dockerfile for a toolbox image with golang
+  answer: |-
+    ```
+    FROM registry.fedoraproject.org/fedora-toolbox:latest
+
+    RUN dnf install -y \
+      golang
+
+    # Clean
+    RUN dnf clean all \
+        && rm -rf /var/cache/dnf
+    ```
+- question: |-
+    Create a Dockerfile for a toolbox image with python
+  answer: |-
+    ```
+    FROM registry.fedoraproject.org/fedora-toolbox:latest
+
+    RUN dnf install -y \
+      python3
+
+    # Clean
+    RUN dnf clean all \
+        && rm -rf /var/cache/dnf
+    ```
+- question: |-
+    Create a Dockerfile for a toolbox image with python and emacs
+  answer: |-
+    ```
+    FROM registry.fedoraproject.org/fedora-toolbox:latest
+
+    RUN dnf install -y \
+      emacs \
+      python2
+
+    # Clean
+    RUN dnf clean all \
+        && rm -rf /var/cache/dnf
+    ```
+...
