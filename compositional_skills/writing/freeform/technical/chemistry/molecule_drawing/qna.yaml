@@ -30,6 +30,21 @@ seed_examples:
     C--C==O
        |
        O
+    ```
+  question: Draw an ASCII representation for the molecule "CC(=O)O".
 
+- answer: |
+    ```
+       O
+       |
+    C--C==O
+    ```
+  question: Draw an ASCII representation for the molecule "CC(=O)O".
+
+- answer: |
+    ```
+    O--C==O
+       |
+       C
     ```
   question: Draw an ASCII representation for the molecule "CC(=O)O".
