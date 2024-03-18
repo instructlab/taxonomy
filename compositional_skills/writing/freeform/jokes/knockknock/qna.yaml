@@ -1,5 +1,8 @@
 task_description: telling knock knock jokes
 created_by: tjcramer
+attribution:
+- source: self-authored
+  license: Apache-2.0
 seed_examples:
 - answer: |
     (j) knock knock
@@ -168,6 +171,3 @@ seed_examples:
     (b) interupting cow
     (j) mooooooo!
   question: Tell me a knock knock joke
-  attribution:
-   - source: self-authored
-     license: Apache-2.0
