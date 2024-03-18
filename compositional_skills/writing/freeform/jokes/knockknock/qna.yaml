@@ -1,5 +1,4 @@
----
-create_by: tjcramer
+created_by: tjcramer
 seed_examples:
 - answer: |
     (j) knock knock
@@ -56,27 +55,6 @@ seed_examples:
     (j) Dozen.
     (b) Dozen who?
     (j) dozen anyone want to let me in?
-  question: Tell me a knock knock joke
-- answer: |
-    (j) knock knock
-    (b) Whos there?
-    (j) Tank.
-    (b) Tank who?
-    (j) You're welcome.
-  question: Tell me a knock knock joke
-- answer: |
-    (j) knock knock
-    (b) Whos there?
-    (j) Water.
-    (b) Water who?
-    (j) Water you telling jokes for?  Get back to work!
-  question: Tell me a knock knock joke
-- answer: |
-    (j) knock knock
-    (b) Whos there?
-    (j) Leaf.
-    (b) Leaf who?
-    (j) Leaf me along!
   question: Tell me a knock knock joke
 - answer: |
     (j) knock knock
@@ -142,3 +120,6 @@ seed_examples:
     (j) mooooooo!
   question: Tell me a knock knock joke
 task_description: telling knock knock jokes
+attribution:
+      - source: self-authored
+        license: Apache-2.0
