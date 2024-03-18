@@ -32,6 +32,9 @@ seed_examples:
     answer: |
       The action movie with the highest 2023 gross earnings was The Super
       Mario Bros. Movie and it earned $574,934,330.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - context: |
       | **Rank** | **Movie**                       | **Release Date** | **Genre**   | **2023 Gross** |
 
@@ -60,6 +63,9 @@ seed_examples:
       Which action movie had the lowest 2023 gross?
     answer: |
       The action movie had the lowest 2023 gross was La marginale.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - context: |
       | **Rank** | **Movie**                          | **Release Date** | **Rating** |**Total Gross**|
 
@@ -88,6 +94,9 @@ seed_examples:
       When was Austin Powers released and how much did it earn?
     answer: |
       Austin Powers was released on Jun 10, 1999 and it earned $206,040,085.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - context: |
       | **Rank** | **Movie**                          | **Release Date** | **Rating** |**Total Gross**|
 
@@ -121,6 +130,9 @@ seed_examples:
     answer: |
       Saving Private Ryan was the top grossing Drama movie of 1998 and its
       rating was R.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - context: |
       | **Rank** | **Movie**                          | **Release Date** | **Rating** |**Total Gross**|
 
