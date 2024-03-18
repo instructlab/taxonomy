@@ -1,0 +1,72 @@
+created_by: fmount
+seed_examples:
+- answer: >
+    The elements in the formula H2O are Hydrogen (H) and Oxygen (O).
+  question: >
+    List the elements in the formula H2O.
+- answer: >
+    The elements in the formula C6H12O6 are Carbon (C), Hydrogen (H) and Oxygen (O).
+  question: >
+    List the elements in the formula C6H12O6.
+- answer: >
+    The elements in the formula Ca3(PO4)2 are Calcium (Ca), Phosphorus (P), and 
+    Oxygen elements (O).
+  question: >
+    List the elements in the formula Ca3(PO4)2
+- answer: >
+    The elements in the formula CH4 are Carbon (C) and Hydrogen (H).
+  question: >
+    List the elements in the formula CH4.
+- answer: >
+    The elements in the formula NH4OH are Nitrogen (N), Hydrogen (H), and Oxygen
+    (O).
+  question: >
+    List the elements in the formula NH4OH.
+- answer: >
+    The elements in the formula 3(NH4)2O are Nitrogen (N), Hydrogen (H) and Oxygen
+    (O).
+  question: >
+    List the elements in the formula 3(NH4)2O.
+- answer: >
+    The elements in the formula FeC2O42H2O are one Iron (Fe), Carbon (C), Oxygen
+    (O) and Hydrogen (H) elements.
+  question: >
+    List the elements in the formula FeC2O42H2O.
+- answer: >
+    The elements in the formula 5K3[Fe(C2O4)3]3H2O are Potassium (K), Iron (Fe),
+    Carbon (C), Oxygen (O) and Hydrogen (H).
+  question: >
+    List the elements in the formula 5K3[Fe(C2O4)3]3H2O
+- answer: >
+    The elements in the formula Li2CO3 are Litium (Li), Carbon (C) and Oxygen (O).
+  question: >
+    List the elements in the formula Li2CO3.
+- answer: >
+    The elements in the formula (NH4)2Cr2O7 are Nitrogen (N), Hydrogen (H),
+    Chromium (Cr) and Oxygen (O).
+  question: >
+    List the elements in the formula (NH4)2Cr2O7.
+- answer: >
+    The elements in the formula C12H22O11 are Carbon (C), Hydrogen (H) and Oxygen
+    (O).
+  question: >
+    List the elements in the C12H22O11 formula.
+- answer: >
+    The elements in the formula Na2CO3 are Sodium (Na), Carbon (C) and Oxygen (O).
+  question: >
+    List the elements in the formula Na2CO3.
+- answer: >
+    The elements in the formula Na2H20B4O17 are Sodium (Na), Hydrogen (H), Oxygen
+    (O) and Boron (B).
+  question: >
+    List the elements in the formula Na2H20B4O17.
+- answer: >
+    The elements in the formula ZnSO47(H2O) are Zinc (Zn), Sulfur (S), Oxygen (O)
+    and Hydrogen (H).
+  question: >
+    List the elements in the formula ZnSO47(H2O).
+- answer: >
+    The elements in the formula WO3 are Tungsten (W) and Oxygen (O).
+  question: >
+    List the elements in the formula WO3.
+task_description: 'List elements in a chemical formula'
