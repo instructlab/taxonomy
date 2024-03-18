@@ -12,4 +12,7 @@ seed_examples:
   - answer: Carl has 3 sisters in total, therefore each of Carl's sister has 2 sisters.
     question: Carl is a boy and has 3 sisters. How many sisters do the sisters of
       Carl have?
-task_description: ""
+  attribution:
+      - source: self-authored
+      - license: Apache-2.0
+task_description: "Adding logical reasoning to the model."
