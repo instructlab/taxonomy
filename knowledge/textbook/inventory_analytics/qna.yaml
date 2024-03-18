@@ -1,0 +1,19 @@
+created_by: IBM Research
+seed_examples:
+- answer: The 'priority' attribute denotes the priority level of the event in the
+    DES. Events with lower priority numbers are processed first.
+  question: What is the significance of the 'priority' attribute in the classes?
+- answer: The Powers-of-two Policy Lemma is a concept in inventory management that
+    states that the optimal cycle length T in a powers-of-two policy is the smallest
+    integer k that satisfies a certain condition. This lemma is used to determine
+    the optimal cycle length in settings where order coordination across a range of
+    stock keeping units is sought.
+  question: What is the Powers-of-two Policy Lemma and how is it used in inventory
+    management?
+- answer: The 'pmf' parameter in the 'InventoryControl' class instance represents
+    the probability mass function of the demand distribution, where each element in
+    the list is a list of tuples, with each tuple containing a possible demand value
+    and its corresponding probability.
+  question: What is the significance of the 'pmf' parameter in the 'InventoryControl'
+    class instance?
+task_description: ''

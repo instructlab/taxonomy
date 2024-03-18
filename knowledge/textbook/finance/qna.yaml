@@ -1,0 +1,68 @@
+created_by: IBM Research
+seed_examples:
+- answer: 'When a business collects sales tax from customers, the Sales Tax Payable
+    account is increased. The journal entry to record a sale for cash with 8% sales
+    tax would involve debiting Cash for the total amount of the sale (including sales
+    tax), crediting Sales for the sale price excluding sales tax, and crediting Sales
+    Tax Payable for the amount of sales tax collected.
+
+
+    For example, if a business sells a product for $100 plus 8% sales tax, the journal
+    entry would be:
+
+
+    Date | Account | Debit | Credit
+
+    --- | --- | --- | ---
+
+    20b | Cash | $108 |
+
+    | Sales | | $100 |
+
+    | Sales Tax Payable | | $8 |'
+  question: What is the impact on the Sales Tax Payable account when a business collects
+    sales tax from customers? Provide an example of a journal entry to record a sale
+    for cash with 8% sales tax.
+- answer: 'The matching principle in accounting is a fundamental accounting concept
+    that requires recognizing revenues and expenses in the same accounting period.
+    This principle ensures that financial statements accurately reflect the performance
+    of a business during a specific period.
+
+
+    Closing entries directly support the matching principle by transferring the balances
+    of revenue and expense accounts to Retained Earnings at the end of an accounting
+    period. This process ensures that revenues and expenses are reported in the same
+    period, adhering to the matching principle.
+
+
+    For example, if a company earns $5,000 in revenue and incurs $3,000 in expenses
+    during a given period, the matching principle requires that both amounts be reported
+    in the same income statement. Closing entries facilitate this by resetting the
+    revenue and expense account balances to zero, while simultaneously updating Retained
+    Earnings to reflect the net income or loss for the period.'
+  question: What is the matching principle in accounting and how does it relate to
+    the closing entries process?
+- answer: 'The purpose of the adjusting entry for prepaid rent is to recognize the
+    portion of prepaid rent that has expired and should be reported as rent expense
+    for the current accounting period. This adjusting entry helps ensure that the
+    financial statements accurately reflect the company''s financial position and
+    activities.
+
+
+    The adjusting entry for prepaid rent impacts both the balance sheet and the income
+    statement. On the balance sheet, the adjusting entry reduces the amount of prepaid
+    rent and updates the account to reflect the correct, up-to-date amount of unexpired
+    prepaid rent, which remains an asset. On the income statement, the adjusting entry
+    increases the Rent Expense account, reflecting the actual rent expense incurred
+    during the period.
+
+
+    For example, if a company has prepaid $12,000 for rent for a year, after one month,
+    $1,000 of the prepaid rent has expired and should be recognized as rent expense.
+    The adjusting entry would transfer $1,000 from the Prepaid Rent account to the
+    Rent Expense account. As a result, the balance sheet will show $11,000 in unexpired
+    prepaid rent, and the income statement will report $1,000 in rent expense for
+    the current period.'
+  question: What is the purpose of the adjusting entry for prepaid rent, and how does
+    it impact the financial statements of a company?
+task_description: ''

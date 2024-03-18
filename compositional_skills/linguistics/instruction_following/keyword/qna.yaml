@@ -1,0 +1,23 @@
+created_by: luke.inglis@ibm.com
+seed_examples:
+- answer: 'The Purple Kayak event of the year sounds like an amazing time. Before
+    I commit to attend I need to know why the kayak is purple.
+
+    '
+  question: 'Write a two sentence response to an event inquiry that must include the
+    words purple and kayak twice
+
+    '
+- answer: "Hi Tom would you like to come to my party on Saturday? It is crazy to think\
+    \ I will be entering my 40's. \n"
+  question: How do I invite Tom to my birthday party where I dont explicitly say its
+    my birthday but he would understand
+- answer: 'Its quacky questions that quickly quiet quick witted leaders.
+
+    '
+  question: 'Write a sentence that includes the letter q 5 times
+
+    '
+task_description: 'To teach a language model to follow instructions on keywords
+
+  '

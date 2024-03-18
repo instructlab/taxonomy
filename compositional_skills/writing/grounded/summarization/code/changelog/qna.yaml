@@ -1,0 +1,19 @@
+created_by: davidmalcolm
+seed_examples:
+- answer: "gcc/rust/ChangeLog:\n\t* typecheck/rust-hir-trait-reference.cc (TraitItemReference::is_optional):\
+    \ Remove\n\tstray semicolon.\n"
+  question: "Generate a ChangeLog entry for the following patch\ndiff --git a/gcc/rust/typecheck/rust-hir-trait-reference.cc\
+    \ b/gcc/rust/typecheck/rust-hir-trait-reference.cc\nindex 499999429fde..6afb6f4df6d1\
+    \ 100644\n--- a/gcc/rust/typecheck/rust-hir-trait-reference.cc\n+++ b/gcc/rust/typecheck/rust-hir-trait-reference.cc\n\
+    @@ -37,7 +37,7 @@ bool\n TraitItemReference::is_optional () const\n {\n   return\
+    \ optional_flag;\n-};\n+}\n \n std::string\n TraitItemReference::get_identifier\
+    \ () const\n"
+- answer: "gcc/ChangeLog:\t* Makefile.in: Add $(ZLIBINC) to CFLAGS-analyzer/engine.o.\n"
+  question: "Make me a ChangeLog entry for this patch:\ndiff --git a/gcc/Makefile.in\
+    \ b/gcc/Makefile.in\nindex c710bad27b17..9c6c1c93b976 100644\n--- a/gcc/Makefile.in\n\
+    +++ b/gcc/Makefile.in\n@@ -2296,6 +2296,7 @@ s-bversion: BASE-VER\n \n CFLAGS-toplev.o\
+    \ += -DTARGET_NAME=\\\"$(target_noncanonical)\\\"\n CFLAGS-optinfo-emit-json.o\
+    \ += -DTARGET_NAME=\\\"$(target_noncanonical)\\\" $(ZLIBINC)\n+CFLAGS-analyzer/engine.o\
+    \ += $(ZLIBINC)\n \n pass-instances.def: $(srcdir)/passes.def $(PASSES_EXTRA)\
+    \ \\n \t\t    $(srcdir)/gen-pass-instances.awk\n"
+task_description: Generate formatted ChangeLog entries from patches

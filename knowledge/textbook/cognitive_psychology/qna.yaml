@@ -1,0 +1,26 @@
+created_by: IBM Research
+seed_examples:
+- answer: Automatic thoughts are spontaneous, often negative, thoughts that arise
+    in response to a particular situation. Core beliefs, on the other hand, are global,
+    generalized beliefs about oneself, others, and the world that are deeply ingrained
+    and influence how one perceives and interacts with the world.
+  question: What is the difference between automatic thoughts and core beliefs in
+    cognitive therapy?
+- answer: b. dyslexia
+  question: '16. Which of the following is an example of a learning disability?
+
+
+    a. intellectual disability
+
+
+    b. dyslexia
+
+
+    c. autism spectrum disorder
+
+
+    d. attention deficit hyperactivity disorder'
+- answer: The hypothalamus is involved in the regulation of metabolism, and hypothalamic
+    abnormalities in Prader-Willi Syndrome (PWS) can result in reduced rates of metabolism.
+  question: What is the role of the hypothalamus in the regulation of metabolism?
+task_description: ''

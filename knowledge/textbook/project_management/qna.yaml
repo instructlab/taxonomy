@@ -1,0 +1,43 @@
+created_by: IBM Research
+seed_examples:
+- answer: The purpose of monitoring and controlling in project management is to reconcile
+    projected performance stated in planning documentation with the team's actual
+    performance, and make changes where necessary to get the project back on track.
+    It occurs simultaneously with execution and involves collecting progress data
+    and sharing it with the people who need to see it in a way that allows them to
+    understand and respond to it.
+  question: What is the purpose of monitoring and controlling in project management?
+- answer: 'Some strategies for breaking an impasse in a negotiation include:
+
+
+    1. Taking a break and reconvening later.
+
+    2. Changing the negotiation format or location.
+
+    3. Bringing in a mediator or third-party facilitator.
+
+    4. Focusing on interests rather than positions.
+
+    5. Brainstorming creative solutions.
+
+    6. Making small concessions to build trust and momentum.
+
+    7. Exploring trade-offs and package deals.
+
+    8. Re-framing the issue or problem.
+
+    9. Identifying shared values and goals.
+
+    10. Acknowledging the other party''s concerns and perspectives.'
+  question: What are some strategies for breaking an impasse in a negotiation?
+- answer: Behavioral economics, led by researchers like Richard H. Thaler, has challenged
+    the traditional economic assumption that humans are entirely predictable in their
+    self-interested decision-making. Thaler's work demonstrates that people's choices
+    are often influenced by supposedly irrelevant factors, such as emotions or biases,
+    which can significantly impact their economic behavior. This realization highlights
+    the importance of understanding living order in project management, as human behavior
+    can be unpredictable and have far-reaching consequences for project outcomes.
+  question: How does the field of behavioral economics challenge the assumption that
+    humans are totally predictable in their tendency to make choices that enhance
+    their financial well-being?
+task_description: ''

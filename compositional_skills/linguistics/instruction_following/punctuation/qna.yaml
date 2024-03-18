@@ -1,0 +1,48 @@
+created_by: luke.inglis@ibm.com
+seed_examples:
+- answer: "Once upon a time in a dense forest lived a large brown bear named Bruno.\
+    \ He was known for his immense strength and gentle nature among all creatures\
+    \ of the woodland. While exploring the woods he stumbled upon a small bird trapped\
+    \ in a thorny bush. The poor creature couldn't free itself from the entanglement.\
+    \ Bruno approached slowly so as not to scare it further. He used his powerful\
+    \ paws to remove the thorns until finally releasing the tiny bird. The little\
+    \ bird flew away chirping joyfully. \n"
+  question: 'Please write me a short story about a brown bear, without using any commas
+
+    '
+- answer: 'The fish swam gracefully in the ocean blue.. The sun shone through the
+    water, casting dappled light on their scales.. They glided effortlessly, as if
+    dancing to an unheard melody..
+
+    A school of silver minnows darted around them, playful and curious.. The larger
+    fish watched over them, protecting them from potential threats lurking beneath
+    the surface..
+
+    Suddenly, a shadow fell upon the scene. A menacing predator approached, its jaws
+    wide open.. The smaller fish scattered, seeking refuge among the coral reefs..
+
+    But the wise old guardian knew just how to handle this situation. It changed course,
+    leading the young ones away from danger while signaling others for backup..
+
+    Together, they formed a formidable barrier against the intruder.. With courage
+    in their hearts and unity in their actions, they safeguarded their home until
+    peace was restored once more..
+
+    And so ends our journey beneath the waves; let us remember that even amidst challenges,
+    there exists strength when we stand together, bound by love and respect for one
+    another..
+
+    '
+  question: Please write me a short story about fish but please add an extra period
+    for every sentence
+- answer: 'Please.Stop.Calling.My.Phone.
+
+    '
+  question: 'Please rewrite the following but add a period after each word
+
+
+    Please stop calling my phone
+
+    '
+task_description: "To teach a language model to follow instructions on punctuation\
+  \ \n"

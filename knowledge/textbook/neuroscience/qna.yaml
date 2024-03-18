@@ -1,0 +1,35 @@
+created_by: IBM Research
+seed_examples:
+- answer: "Humans can distinguish four types of thermal sensations: cold, cool, warm,\
+    \ and hot. Low-threshold cold receptors, which are small-diameter A\u03B4 fibers\
+    \ with unmyelinated sensory endings, are responsible for the cold sensation. Warm\
+    \ receptors, which are unmyelinated small-diameter C fibers, are responsible for\
+    \ the warm sensation. Heat nociceptors, which are activated at temperatures greater\
+    \ than 45\xB0C and have their output transmitted by both A\u03B4 and C fibers,\
+    \ are responsible for the hot and burning pain sensation."
+  question: What are the four types of thermal sensations that humans can distinguish,
+    and which types of afferent fibers are responsible for each sensation?
+- answer: The medial system in the descending control of movement is a part of the
+    descending motor systems that includes the cerebral cortical motor areas, brainstem
+    nuclei, and spinal circuitry. The medial system is involved in the control of
+    posture and locomotion and is organized somatotopically, with the medial group
+    innervating axial muscles of the neck and the back and the lateral group innervating
+    proximal and distal muscles. Damage to the medial system can result in behavioral
+    deficits such as difficulty with posture and locomotion, as well as impaired control
+    of axial muscles. The severity of the deficits depends on the location and extent
+    of the damage.
+  question: What is the medial system in the descending control of movement and what
+    are the behavioral deficits that result from damage at this level?
+- answer: 'The three pairs of extraocular muscles that control eye movements are:
+
+
+    1. Medial and lateral rectus: rotate the eye toward the nose or towards the temple,
+    respectively.
+
+    2. Superior and inferior rectus: rotate the eye upward or downward, respectively.
+
+    3. Superior oblique and inferior oblique: produce torsional movement toward the
+    nose and down, or toward the temple and up, respectively.'
+  question: What are the three pairs of extraocular muscles that control eye movements
+    and their respective actions?
+task_description: ''

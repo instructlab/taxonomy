@@ -1,0 +1,53 @@
+created_by: IBM Research
+seed_examples:
+- answer: 'Virtue ethics is an approach to ethics that focuses on the character and
+    virtues of the moral agent, rather than on the consequences of actions or the
+    adherence to rules or principles. Virtue ethics differs from consequentialism
+    and deontology in several ways.
+
+
+    First, virtue ethics focuses on the character of the moral agent, rather than
+    on the consequences of actions or the adherence to rules or principles. Virtue
+    ethicists argue that the moral worth of an action is determined by the character
+    of the person performing the action, rather than by the consequences of the action
+    or the adherence to rules or principles.
+
+
+    Second, virtue ethics emphasizes the importance of virtues, such as honesty, courage,
+    and compassion, in moral decision-making. Virtue ethicists argue that the development
+    of virtues is essential for living a good life and for making moral decisions.
+
+
+    Third, virtue ethics recognizes that moral decision-making is complex and contextual,
+    and that there are often no easy answers or simple rules to follow. Virtue ethicists
+    argue that moral decision-making requires practical wisdom, judgment, and discernment,
+    rather than adherence to abstract principles or rules.
+
+
+    In summary, virtue ethics differs from consequentialism and deontology in its
+    focus on the character of the moral agent, its emphasis on virtues, and its recognition
+    of the complexity and contextuality of moral decision-making.'
+  question: What is virtue ethics and how does it differ from consequentialism and
+    deontology?
+- answer: Moral pluralism and moral relativism are two distinct concepts in the study
+    of ethics. Moral pluralism asserts that there are multiple moral frameworks that
+    cannot be unified into one, and cultural differences often play a role in this
+    understanding of morality. On the other hand, moral relativism makes a larger
+    claim by stating that each moral framework is equally valid insofar as individuals,
+    communities, and cultures determine what is moral. Moral relativism also prohibits
+    cultures from judging each other's value systems. Martha Nussbaum's example of
+    genital mutilation highlights the issues with moral relativism, as it becomes
+    impossible for outsiders to condemn harmful practices if morality is completely
+    relative to a culture's own traditions and values. Nussbaum argues for a universal
+    account of justice that is sensitive to differences between cultures, which she
+    calls reasonable pluralism.
+  question: What is the difference between moral pluralism and moral relativism?
+- answer: Wu wei is a key concept in Daoist ethics, which refers to the idea of acting
+    in harmony with the natural way, or the Dao. It is often translated as "effortless
+    action" or "action without intent." Wu wei involves acting spontaneously and naturally,
+    without force or struggle, in a way that is in harmony with the natural flow of
+    the universe. This concept is central to Daoist ethics, as it emphasizes living
+    in accordance with the Dao and promoting harmony and accord with the natural way
+    of things.
+  question: What is the relationship between wu wei and Daoist ethics?
+task_description: ''
