@@ -1,5 +1,6 @@
 ---
 created_by: thepetk
+task_description: learn devfile sample generation instructions
 domain: devfiles
 seed_examples:
   - answer: |
