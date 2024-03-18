@@ -1,5 +1,25 @@
 created_by: mairin
 seed_examples:
+- answer: 'Why do you not trust trees?
+
+
+    They are shady!
+
+    '
+  question: Tell me a pun about trees.
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+- answer: 'Why do you not trust atoms?
+
+
+    They make up everything!
+
+    '
+  question: Tell me a pun about atoms.
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
 - answer: 'Why do birds eat wood?
 
 
@@ -7,6 +27,9 @@ seed_examples:
 
     '
   question: Tell me a pun about birds.
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
 - answer: 'Why do French people always eat snails?
 
 
@@ -14,6 +37,9 @@ seed_examples:
 
     '
   question: Tell me a pun about fast food.
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
 - answer: 'Why did the car have a belly ache?
 
 
@@ -21,6 +47,9 @@ seed_examples:
 
     '
   question: Tell me a pun about gas.
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
 - answer: 'What did the ocean say to the ocean?
 
 
@@ -28,6 +57,9 @@ seed_examples:
 
     '
   question: Tell me a pun about waves.
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
 - answer: 'Do you want to hear a roof joke?
 
 
@@ -35,6 +67,9 @@ seed_examples:
 
     '
   question: Tell me a pun about roofs.
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
 - answer: 'What do dentists call their x-rays?
 
 
@@ -42,6 +77,9 @@ seed_examples:
 
     '
   question: Tell me a pun about x-rays.
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
 - answer: 'Why does Peter Pan always fly?
 
 
@@ -49,4 +87,10 @@ seed_examples:
 
     '
   question: Tell me a pun about Neverland.
-task_description: ''
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+task_description: 'This task provides examples of puns in English. A pun is a \
+ usage of a word or phrase that means different things in different contexts \
+ or sentences. These different contexts are combined in a humorous way to form a pun.'
+
