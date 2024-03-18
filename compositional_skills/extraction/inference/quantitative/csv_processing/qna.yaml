@@ -1,0 +1,79 @@
+created_by: imitruk
+seed_examples:
+ - question: Which employee makes the most money?
+   context: |
+    username,mail,phone number,yearly salary,years of employement,performance
+    ahftrx,ahftrx@gmail.com,+1250165258,85583,28,Does not meet expectations
+    sieyicc,sieyicc@amazon.com,+141902683106,7192467,39,Meets expectations
+    wwjlve,wwjlve@gmail.com,+371396568720,1272172,18,Meets expectations
+    gfywirkxl,gfywirkxl@aol.com,+97453914781,711615,16,Does not meet expectations
+    pkpmgoyrc,pkpmgoyrc@amazon.com,+24498251982,7838506,18,Exceeds expectations
+    pdtounaiay,pdtounaiay@redhat.com,+1890407714,7731521,20,Exceeds expectations
+    gwlfosf,gwlfosf@facebook.com,+91235220629,981670,24,Meets expectations
+    nhmosw,nhmosw@facebook.com,+7063480660,3330198,16,Exceeds expectations
+    ucendemw,ucendemw@gmail.com,+198998142403,66828,36,Meets expectations
+    yuhssurm,yuhssurm@gmail.com,+9705581901,370611,14,Exceeds expectations
+   answer: "The best earning employee, according to provided data, is pkpmgoyrc with yearly salary 7838506."
+ - question: How many employees have worked for company for more than 20 years?
+   context: |
+    username,mail,phone number,yearly salary,years of employement,performance
+    spymva,spymva@redhat.com,+9352583387,2563195,11,Exceeds expectations
+    zpiejasnb,zpiejasnb@redhat.com,+288525828110,854278,1,Meets expectations
+    nfjtxbi,nfjtxbi@facebook.com,+1815151448,12905,33,Meets expectations
+    dtqcwjqa,dtqcwjqa@facebook.com,+119723405527,17892,5,Does not meet expectations
+    dnfrfrp,dnfrfrp@redhat.com,+8675189041,7153340,25,Does not meet expectations
+    fvfjcwyna,fvfjcwyna@gmail.com,+15040505410,29581,20,Does not meet expectations
+    pshsdbn,pshsdbn@aol.com,+8688928682,8390021,13,Exceeds expectations
+    trbbyz,trbbyz@redhat.com,+76654274708,8531107,21,Meets expectations
+    zdcrhy,zdcrhy@facebook.com,+93439548909,2082850,7,Meets expectations
+    cnyahn,cnyahn@redhat.com,+33229931127,1783231,8,Does not meet expectations
+   answer: "3 employees have worked for companny for more than 20 years:\n - nfjtxbi\n - dnfrfrp\n - trbbyz"
+ - question: "What employee has joined the company last?"
+   context:
+    username,mail,phone number,yearly salary,years of employement,performance
+    bmpzdxojpm,bmpzdxojpm@aol.com,+5111195187,3098705,38,Meets expectations
+    jualppy,jualppy@amazon.com,+832338078898,3577942,14,Exceeds expectations
+    lbifvhh,lbifvhh@amazon.com,+24441345287,5896743,6,Meets expectations
+    nryxpju,nryxpju@facebook.com,+4361126973,804527,39,Meets expectations
+    ejoidmznwi,ejoidmznwi@amazon.com,+563557563165,1657718,17,Does not meet expectations
+    rwmvfjup,rwmvfjup@aol.com,+9436110627,4429415,31,Exceeds expectations
+    catrelcc,catrelcc@facebook.com,+8087890127,126727,22,Meets expectations
+    aqgpwzd,aqgpwzd@amazon.com,+413500107501,5015173,27,Does not meet expectations
+    xfqnzn,xfqnzn@aol.com,+1694358759,26751,31,Meets expectations
+    woigyv,woigyv@amazon.com,+1588127585,5744795,12,Does not meet expectations
+   answer: "It appears that last to join the company was lbifvhh, who joined 6 years ago."
+ - question: Where are the ISP links connected?
+   context: |
+     Hostname,Model,SN,A-end Port,Connector,Cable,B-end Hostname,B-end Port,B-end Connector,End Port SN
+     rtr01-edge.com,juniper SRX1500,SN000002,ge-0/0/0,RJ-45,UTP,sw01-spine.com,Ethernet1,RJ-45,SN000003
+     rtr01-edge.com,juniper SRX1500,SN000002,ge-0/0/1,RJ-45,UTP,sw02-spine.com,Ethernet1,RJ-45,SN000004
+     rtr01-edge.com,juniper SRX1500,SN000002,ge-0/0/2,RJ-45,UTP,oob01.com,NET2,RJ-45,SN000000001
+     rtr01-edge.com,juniper SRX1500,SN000002,ge-0/0/3,RJ-45,UTP,ISP,-,-,-
+     rtr02-edge.com,juniper SRX1500,SN000005,ge-0/0/0,RJ-45,UTP,sw01-spine.com,Ethernet3,RJ-45,SN000003
+     rtr02-edge.com,juniper SRX1500,SN000005,ge-0/0/1,RJ-45,UTP,sw02-spine.com,Ethernet3,RJ-45,SN000004
+     rtr02-edge.com,juniper SRX1500,SN000005,ge-0/0/3,RJ-45,UTP,ISP2,-,-,-
+     sw01-spine.com,arista 720XP-96ZC2,SN000003,Ethernet1,RJ-45,UTP,rtr01-edge.com,ge-0/0/0,RJ-45,SN000002
+     sw01-spine.com,arista 720XP-96ZC2,SN000003,Ethernet3,RJ-45,UTP,rtr02-edge.com,ge-0/0/0,RJ-45,SN000005
+     sw01-spine.com,arista 720XP-96ZC2,SN000003,Ethernet2,RJ-45,UTP,oob01.com,NET1,RJ-45,SN000000001
+     sw01-spine.com,arista 720XP-96ZC2,SN000003,Ethernet99,SFP-25G-LR,os,sw02-spine.com,Ethernet99,SFP-25G-LR,SN000004
+     sw02-spine.com,arista 720XP-96ZC2,SN000004,Ethernet1,RJ-45,UTP,rtr01-edge.com,ge-0/0/1,RJ-45,SN000002
+     sw02-spine.com,arista 720XP-96ZC2,SN000004,Ethernet3,RJ-45,UTP,rtr02-edge.com,ge-0/0/1,RJ-45,SN000005
+     sw02-spine.com,arista 720XP-96ZC2,SN000004,Ethernet99,SFP-25G-LR,os,sw01-spine.com,Ethernet99,SFP-25G-LR,SN000003
+     oob01.com,opengear im72,SN000000001,NET1,RJ-45,UTP,sw01-spine.com,Ethernet2,RJ-45,SN000003
+     oob01.com,opengear im72,SN000000001,NET2,RJ-45,UTP,rtr02-edge.com,ge-0/0/2,RJ-45,SN000002
+   answer: "The ISP links are connected to port ge-0/0/3 on rtr01-edge.com and rtr02-edge.com."
+ - question:
+    What items do I need to reorder?
+   context: |
+    Product Code,Description,In Stock,Low Stock Threshold,Reorder Level,Supplier Code
+    1001,Apple - Red Delicious,21,25,40,SC123
+    1002,Apple - Granny Smith,30,20,35,SC123
+    1003,Orange - Navel,70,40,60,SC456
+    1004,Banana - Dwarf Cavendish,60,40,70,SC789
+    1005,Pineapple - Sweet,40,30,45,SC10
+    1006,Grapes - Thompson Seedless,59,60,70,SC20
+   answer: |
+    According to available information, you should order:
+     - 19 Apples Red Delicious (1001)
+     - 11 Thompson Seedless Grapes (1006)
+task_description: Extracting informaiton from CSV.
