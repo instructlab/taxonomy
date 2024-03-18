@@ -1,0 +1,21 @@
+---
+task_description: |
+  The word solver to find all possible dictionary words by rearranging it.
+created_by: amtdas
+seed_examples:
+  - question: Another 5 letter dictionary words from BELOW.
+    answer: |
+      ELBOW
+      BOWEL
+  - question: Another 6 letter dictionary words from GAINLY.
+    answer: |
+      LAYING
+  - question: Another 5 letter dictionary words from NIGHT.
+    answer: |
+      THING
+  - question: Another 6 letter dictionary words from METEOR.
+    answer: |
+      REMOTE
+  - question: Another 6 letter dictionary words from SILENT.
+    answer: |
+      LISTEN
