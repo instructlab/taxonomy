@@ -1,0 +1,107 @@
+task_description: |
+  'Basic OpenSCAP (oscap) tool usage and examples.'
+created_by: matusmarhefka
+seed_examples:
+  - question: How can I perform configuration compliance scan of my RHEL system?
+    answer: |
+      First make sure you have the openscap-scanner and scap-secuity-guide
+      packages installed. Scanning can be performed by the `oscap xccdf eval`
+      command with the following parameters:
+      ```
+      # oscap xccdf eval --profile PROFILE_ID --report REPORT_FILE SOURCE_DATA_STREAM_FILE
+      ```
+
+      Where:
+      * `PROFILE_ID` is the ID of an XCCDF profile
+      * `REPORT_FILE` is the file path where a report in HTML format will be generated
+      * `SOURCE_DATA_STREAM_FILE` is the file path of the evaluated SCAP source data stream
+
+      For example, to evaluate compliance of Red Hat Enterprise Linux 9 with the PCI-DSS
+      profile from the `/usr/share/xml/scap/ssg/content/ssg-rhel9-ds.xml` SCAP source data
+      stream run this command:
+      ```
+      # oscap xccdf eval --profile pci-dss --report report.html /usr/share/xml/scap/ssg/content/ssg-rhel9-ds.xml
+      ```
+      The progress and results will be shown in the terminal. Detailed results can be found in
+      the generated HTML report `report.html` file which can be opened in any web browser.
+    attribution:
+      - source: https://static.open-scap.org/openscap-1.3/oscap_user_manual.html
+        license: LGPL-2.1-only
+  - question: How can I remediate my RHEL system to be compliant with a specific SCAP profile?
+    answer: |
+      First make sure you have the openscap-scanner and scap-secuity-guide
+      packages installed. To remediate a system to align with a profile provided
+      by scap-security-guide use the `oscap xccdf eval` command with the `--remediate`
+      option and following parameters:
+      ```
+      # oscap xccdf eval --remediate --profile PROFILE_ID --report REPORT_FILE SOURCE_DATA_STREAM_FILE
+      ```
+
+      Where:
+      * `PROFILE_ID` is the ID of an XCCDF profile
+      * `REPORT_FILE` is the file path where a report in HTML format will be generated
+      * `SOURCE_DATA_STREAM_FILE` is the file path of the evaluated SCAP source data stream
+
+      For example, to perform evaluation and remediation of Red Hat Enterprise Linux 9
+      to align with the PCI-DSS profile from the `/usr/share/xml/scap/ssg/content/ssg-rhel9-ds.xml`
+      SCAP source data stream run this command:
+      ```
+      # oscap xccdf eval --remediate --profile pci-dss --report report.html /usr/share/xml/scap/ssg/content/ssg-rhel9-ds.xml
+      ```
+      The output of this command consists of two sections. The first section shows the result
+      of the scan prior to the remediation, and the second section shows the result of the scan
+      after applying the remediation. The second part can contain only `fixed` and `error` results.
+      The `fixed` result indicates that the scan performed after the remediation passed. The `error`
+      result indicates that even after applying the remediation, the evaluation still does not pass.
+    attribution:
+      - source: https://static.open-scap.org/openscap-1.3/oscap_user_manual.html
+        license: LGPL-2.1-only
+  - question: How can I display information about SCAP source datastream?
+    answer: |
+      Information about an SCAP file can be displayed using the `oscap info` command.
+      For example, to display information about SCAP source data stream
+      `/usr/share/xml/scap/ssg/content/ssg-rhel9-ds.xml` from the scap-security-guide
+      package run this command:
+      ```
+      # oscap info /usr/share/xml/scap/ssg/content/ssg-rhel9-ds.xml
+      ```
+    attribution:
+      - source: https://static.open-scap.org/openscap-1.3/oscap_user_manual.html
+        license: LGPL-2.1-only
+  - question: How can I scan my RHEL system for vulnerabilities?
+    answer: |
+      First make sure the openscap-scanner and bzip2 packages are installed.
+      Then download the latest RHSA OVAL definitions for your system, for example
+      Red Hat Enterprise Linux 9 RHSA OVAL definitions:
+      ```
+      # wget -O - https://www.redhat.com/security/data/oval/v2/RHEL9/rhel-9.oval.xml.bz2 | bzip2 --decompress > rhel-9.oval.xml
+      ```
+      Scan the system for vulnerabilities and save results to the `vulnerability.html` file:
+      ```
+      # oscap oval eval --report vulnerability.html rhel-9.oval.xml
+      ```
+      Finally, open the generated HTML report `vulnerability.html` file with detailed
+      results and review if your system contains any vulnerable versions of RPM packages.
+    attribution:
+      - source: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/security_hardening/scanning-the-system-for-configuration-compliance-and-vulnerabilities_security-hardening#scanning-the-system-for-vulnerabilities_vulnerability-scanning
+        license: CC-BY-SA-3.0
+  - question: How can I scan a remote system for vulnerabilities?
+    answer: |
+      The openscap-utils and bzip2 packages are installed on the system you use for
+      scanning. On the remote system the openscap-scanner package is installed and
+      SSH server is running.
+      Then download the latest RHSA OVAL definitions for your system, for example
+      Red Hat Enterprise Linux 9 RHSA OVAL definitions:
+      ```
+      # wget -O - https://www.redhat.com/security/data/oval/v2/RHEL9/rhel-9.oval.xml.bz2 | bzip2 --decompress > rhel-9.oval.xml
+      ```
+      Scan a remote system with the machine1 host name, SSH running on port 22, and the joesec
+      user name for vulnerabilities and save results to the `remote-vulnerability.html` file:
+      ```
+      # oscap-ssh joesec@machine1 22 oval eval --report remote-vulnerability.html rhel-9.oval.xml
+      ```
+      Finally, open the generated HTML report `remote-vulnerability.html` file with detailed
+      results and review if the remote system contains any vulnerable versions of RPM packages.
+    attribution:
+      - source: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/security_hardening/scanning-the-system-for-configuration-compliance-and-vulnerabilities_security-hardening#scanning-remote-systems-for-vulnerabilities_vulnerability-scanning
+        license: CC-BY-SA-3.0
