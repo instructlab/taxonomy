@@ -12,7 +12,7 @@ seed_examples:
     (j) Figs the doorbell, it's broken!
   question: Tell me a knock knock joke
   attribution:
-   - source: self-authored
+  - source: self-authored
      license: Apache-2.0
 - answer: |
     (j) knock knock
@@ -22,7 +22,7 @@ seed_examples:
     (j) Luke through the peep hole and you'll see me.
   question: Tell me a knock knock joke
   attribution:
-   - source: self-authored
+  - source: self-authored
      license: Apache-2.0
 - answer: |
     (j) knock knock
@@ -32,7 +32,7 @@ seed_examples:
     (j) Annie thing you can do, I can do better!
   question: Tell me a knock knock joke
   attribution:
-   - source: self-authored
+  - source: self-authored
      license: Apache-2.0
 - answer: |
     (j) knock knock
@@ -42,7 +42,7 @@ seed_examples:
     (j) No, a cow says mooooo!
   question: Tell me a knock knock joke
   attribution:
-   - source: self-authored
+  - source: self-authored
      license: Apache-2.0
 - answer: |
     (j) knock knock
@@ -52,7 +52,7 @@ seed_examples:
     (j) You're welcome.
   question: Tell me a knock knock joke
   attribution:
-   - source: self-authored
+  - source: self-authored
      license: Apache-2.0
 - answer: |
     (j) knock knock
@@ -62,7 +62,7 @@ seed_examples:
     (j) Water you telling jokes for?  Get back to work!
   question: Tell me a knock knock joke
   attribution:
-   - source: self-authored
+  - source: self-authored
      license: Apache-2.0
 - answer: |
     (j) knock knock
@@ -72,7 +72,7 @@ seed_examples:
     (j) Leaf me along!
   question: Tell me a knock knock joke
   attribution:
-   - source: self-authored
+  - source: self-authored
      license: Apache-2.0
 - answer: |
     (j) knock knock
@@ -82,7 +82,7 @@ seed_examples:
     (j) dozen anyone want to let me in?
   question: Tell me a knock knock joke
   attribution:
-   - source: self-authored
+  - source: self-authored
      license: Apache-2.0
 - answer: |
     (j) knock knock
@@ -92,7 +92,7 @@ seed_examples:
     (j) dozen anyone want to let me in?
   question: Tell me a knock knock joke
   attribution:
-   - source: self-authored
+  - source: self-authored
      license: Apache-2.0
 - answer: |
     (j) knock knock
@@ -102,7 +102,7 @@ seed_examples:
     (j) Why am i so lazy?  Must key lounge??
   question: Tell me a knock knock joke
   attribution:
-   - source: self-authored
+  - source: self-authored
      license: Apache-2.0
 - answer: |
     (j) knock knock
@@ -112,7 +112,7 @@ seed_examples:
     (j) Well i can't believe you don't know who!
   question: Tell me a knock knock joke
   attribution:
-   - source: self-authored
+  - source: self-authored
      license: Apache-2.0
 - answer: |
     (j) knock knock
@@ -122,7 +122,7 @@ seed_examples:
     (j) Orange you glad to see me?
   question: Tell me a knock knock joke
   attribution:
-   - source: self-authored
+  - source: self-authored
      license: Apache-2.0
 - answer: |
     (j) knock knock
@@ -132,7 +132,7 @@ seed_examples:
     (j) I didn't know you were an owl!
   question: Tell me a knock knock joke
   attribution:
-   - source: self-authored
+  - source: self-authored
      license: Apache-2.0
 - answer: |
     (j) knock knock
@@ -142,7 +142,7 @@ seed_examples:
     (j) I'm excited too!
   question: Tell me a knock knock joke
   attribution:
-   - source: self-authored
+  - source: self-authored
      license: Apache-2.0
 - answer: |
     (j) knock knock
@@ -152,7 +152,7 @@ seed_examples:
     (j) Bless you!
   question: Tell me a knock knock joke
   attribution:
-   - source: self-authored
+  - source: self-authored
      license: Apache-2.0
 - answer: |
     (j) knock knock
@@ -162,7 +162,7 @@ seed_examples:
     (j) It is not, I'm just knocking to get in the door!
   question: Tell me a knock knock joke
   attribution:
-   - source: self-authored
+  - source: self-authored
      license: Apache-2.0
 - answer: |
     (j) knock knock
