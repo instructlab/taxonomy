@@ -1,4 +1,4 @@
-task_description: Generate an ASCII representation of a molecule.
+task_description: 'Generate an ASCII representation of a molecule.'
 created_by: lucas-morin
 seed_examples:
   - answer: |
