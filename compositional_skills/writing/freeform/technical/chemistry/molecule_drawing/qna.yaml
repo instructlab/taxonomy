@@ -1,50 +1,46 @@
-task_description: 'Generate an ASCII representation of a molecule.'
+task_description: Generate an ASCII representation of a molecule.
 created_by: lucas-morin
 seed_examples:
-- answer: |
-    ```
-    H--C==O
-       |
-       C
-      // \ 
-     C    C
-     |    ||
-     C    C
-      \\ /
-       C
-    ```
-  question: Draw an ASCII representation for the molecule "C1=CC=C(C=C1)C=O".
-
-- answer: |
-    ```
-          C
-          |
-    C--O--C--C
-          |
-          C
-    ```
-  question: Draw an ASCII representation for the molecule "COC(C)(C)C".
-
-- answer: |
-    ```
-    C--C==O
-       |
-       O
-    ```
-  question: Draw an ASCII representation for the molecule "CC(=O)O".
-
-- answer: |
-    ```
-       O
-       |
-    C--C==O
-    ```
-  question: Draw an ASCII representation for the molecule "CC(=O)O".
-
-- answer: |
-    ```
-    O--C==O
-       |
-       C
-    ```
-  question: Draw an ASCII representation for the molecule "CC(=O)O".
+  - answer: |
+      ```
+      H--C==O
+         |
+         C
+        // \ 
+       C    C
+       |    ||
+       C    C
+        \\ /
+         C
+      ```
+    question: Draw an ASCII representation for the molecule "C1=CC=C(C=C1)C=O".
+  - answer: |
+      ```
+            C
+            |
+      C--O--C--C
+            |
+            C
+      ```
+    question: Draw an ASCII representation for the molecule "COC(C)(C)C".
+  - answer: |
+      ```
+      C--C==O
+         |
+         O
+      ```
+    question: Draw an ASCII representation for the molecule "CC(=O)O".
+  - answer: |
+      ```
+         O
+         |
+      C--C==O
+      ```
+    question: Draw an ASCII representation for the molecule "CC(=O)O".
+  - answer: |
+      ```
+      O--C==O
+         |
+         C
+      ```
+    question: Draw an ASCII representation for the molecule "CC(=O)O".
