@@ -1,9 +1,9 @@
 task_description: telling knock knock jokes
 created_by: tjcramer
-seed_examples:
 attribution:
 - source: self-authored
   license: Apache-2.0
+seed_examples:
 - answer: |
     (j) knock knock
     (b) who's there?
