@@ -188,3 +188,6 @@ seed_examples:
     answer:
       Rolling 3 dice 🎲🎲🎲
       You rolled 6, 6 and 6
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
