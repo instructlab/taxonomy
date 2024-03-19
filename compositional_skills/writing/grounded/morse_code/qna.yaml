@@ -2,11 +2,11 @@ task_description: |
   This skill improves the model's translation from/to Morse Code.
 created_by: wznoinsk
 seed_examples:
-  - question: >
+  - answer: The Morse Code for 'Hello' is '.... . .-.. .-.. ---'.
+    question: >
       If a word is translated from English to Morse Code, how would it look
       like? For example, the English word 'hello' is translated into '.... .
       .-.. .-.. ---'. What would the Morse Code for 'Hello' look like?
-    answer: The Morse Code for 'Hello' is '.... . .-.. .-.. ---'.
     attribution:
       - source: self-authored
         license: Apache-2.0
