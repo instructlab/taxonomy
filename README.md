@@ -47,7 +47,9 @@ Taxonomy skill files must be a valid [YAML](https://yaml.org/) file named
 
 - `created_by` - The GitHub username of the contributor. This key is required.
 
-- `seed_examples` - A collection of key/value entries which contain the following keys. This key is required.
+- `seed_examples` - A collection of key/value entries.  New
+  submissions should generally have at least five entries, although
+  older files may have fewer. This key is required.
 
   - `question` - A question for the model. This key is required.
 
@@ -151,22 +153,6 @@ seed_examples:
       Why did the car have a belly ache?
 
       Because it had too much gas!
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
-  - question: Tell me a pun about waves.
-    answer: |
-      What did the ocean say to the ocean?
-
-      Nothing. It just waved!
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
-  - question: Tell me a pun about frogs.
-    answer: |
-      What happens when frogs park illegally? 
-
-      They get toad. 
     attribution:
       - source: self-authored
         license: Apache-2.0
@@ -411,83 +397,6 @@ referenced above might look like in the tree:
 
 [...]
 ```
-
-## YAML Format
-
-Taxonomy skill files can be any valid [YAML](https://yaml.org/) file ending in
-`.yaml` containing a set of key/value entries, in which the following three
-keys are recognized: `task_description`, `created_by`, and `seed_examples`.
-
-* The value of the `task_description` key can be any string.
-* The value of the `created_by` key can be any string.
-* The value of the `seed_examples` key is a collection of one or more
-key/value entries in which the three recognized keys are: `context`,
-`question`, and `answer`, each of which can have any string as
-value. For an entry to be valid, it **MUST** have the question and
-answer specified.  While older files may have fewer question/answer
-pairs, it is recommended that all new additions contain at least five
-pairs.
-* Under the `attribution` key, the value of `source` should state where 
-the content came from, and the value of `license` should state the license of
-the content.
-
-Other keys at any level are currently ignored.
-
-To make these files easier and faster for humans to read, it is recommended to 
-specify the `task_description` first, followed by `created_by`, and finally 
-`seed_examples`. In `seed_examples`, it is recommended to specify the `context` 
-first (if applicable), followed by the `question`, and finally the `answer`.
-
-So in essence the format looks something like this:
-
-``` yaml
-task_description: <string>
-created_by: <string>
-seed_examples:
-  - question: <string>
-    answer: |
-      <multi-line string>
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
-  - context: |
-      <multi-line string>
-    question: <string>
-    answer: |
-      <multi-line string>
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
-  ...  
-```
-
-
-If you have not written YAML before, don't be intimidated - it's just text. 
-There's a few things to know:
-
-- Spaces and indentation matter in YAML. Two spaces to indent.
-- Don't use tabs!
-- Be careful to not have trailing spaces at the end of a line.
-- Each example in `seed_examples` should start with a "-". Place this "-" in
-  front of the first field (`question` or `context`). The remaining keys in the
-  example should not have this "-".
-- Some special characters such as " and ' need to be "escaped." This is why some
-  of the lines for keys in the example YAML we provided have the "|" character.
-  This character escapes all of the special characters in the value for the key.
-  You may also want to use the "|" character for multi-line strings.
-
-It is recommended that you **lint**, or check that the YAML is correct using a
-tool. There is a very nice website you can use to do this:
-
-[yamllint.com](https://yamllint.com)
-
-You can copy/paste your YAML into the box and click the "Go" button to have it
-analyse your YAML and make recommendations.
-
-Online tools like [prettified](https://onlineyamltools.com/prettify-yaml) and
-[yaml-validator](https://jsonformatter.org/yaml-validator) can automatically
-reformat your YAML to adhere to our `yamllint` PR checks, like breaking lines
-longer than 120 characters.
 
 ## Layout
 
