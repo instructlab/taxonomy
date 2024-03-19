@@ -24,7 +24,7 @@ seed_examples:
     attribution:
       - source: self-authored
         license: Apache-2.0
-    
+
   - question: I am a technical manager. Help me write a profile headline for my LinkedIn profile.
     answer: 'Results-Driven Technical Leader | Orchestrating Success in Complex Work Environments'
     attribution:
