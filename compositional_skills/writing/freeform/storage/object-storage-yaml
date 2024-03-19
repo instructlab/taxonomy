@@ -1,0 +1,19 @@
+task_description: |
+  The pun task enables the telling of funny pun-based jokes.
+created_by: mschindl
+seed_examples:
+  - question: Tell me more about object storage
+    answer: |  
+      Object Storage is a type of storage to save unstructured data in a way which is different from traditonal block or file data storage systems. In addition to that it also a highly scaleable system with data redundancy across multiple data center in a region or over the globe.
+  - question: How is persistent storage structured in Kubernetes?
+    answer: |
+      Kubernetes provides a Persistent Volume (PV) framework that allows a cluster administrator to provision persistent storage. Persistent volumes are requested by developers or the application deployment department through Persistent Volume Claims (PVC) without knowing about the underlying infrastructure.
+  - question: What is a data pipeline?
+    answer: |
+      A data pipeline is  useful if you want to access data between different locations over the globe and access and write from various operating systems and application, i.e. Linux <-> Windows <-> macOS <-> Application-X.
+  - question: Which data is typical saved in an object storage?
+    answer: |
+      A large amount of unstructed data, such as images, video, documents and backups.
+  - question: What is the most common object storage interface?
+    answer: |
+      Amazon S3 is the most common object storage interace / protocoll and is called "Amazon Simple Storage Service".
