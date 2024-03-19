@@ -37,7 +37,7 @@ seed_examples:
         license: Apache-2.0
   - question: Tell me a tech pun about developers.
     answer: |
-      Why did the developer go broke? 
+      Why did the developer go broke?
 
       Because they used up all of the Cache!
     attribution:
