@@ -1,14 +1,36 @@
-created_by: shivsr
+created_by: PS-RH
+task_description: This task enables the model to generate limericks
 seed_examples:
-- answer: 'A flower so bright in the glade,
-
-    By insects is never unlaid.
-
-    With colors so grand,
-
-    It lures them to land,
-
-    In a dance of life, unafraid.'
-  question: Write a limerick that playfully describes a flower's bloom and its effect
-    on nearby insects.
-task_description: ''
+  - question: Write a funny limerick
+    answer: Once a girl Lola lived in a Spanish town Clouded vision made her brows
+      frown Broke a few vases, As she looked for her glasses Only to find they
+      were on her crown!
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Tell me a limerick about cats
+    answer: A little boy Toby once thought What if the cats could talk? Would they
+      just bleat About what they get to eat? Or simply be lazy to even talk?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Tell me a funny limerick
+    answer: Bob baked a party cake for all But it turned out too small So he made
+      another one, And swiftly reached the function Only to trip with them over
+      a ball!
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Tell me a famous limerick for kids.
+    answer: Little miss Muffet, sat on her tuffet Eating her curd and whey Along
+      came a spider, Who sat down beside her And frightened miss Muffet away!
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Can you write me a limerick?
+    answer: Hilda was a girl from the town of Montana She lived in a little house
+      with her Nanna She got late to school So rushed fearful And slipped over a
+      peel of banana!
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
