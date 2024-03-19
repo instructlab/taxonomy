@@ -1,0 +1,14 @@
+created_by: amsharma
+seed_examples:
+  - answer: |
+      1. Engage in Face-to-Face Interaction: In today's world, especially amidst the COVID pandemic, many of us have grown accustomed to staying indoors, 
+      limiting our interactions with others. This trend can significantly contribute to our stress levels. It's crucial to break this pattern and make an effort to 
+      connect with people in real life. Whether it's visiting a park, returning to the office, or simply socializing with friends, engaging in face-to-face 
+      conversations with like-minded individuals can greatly reduce stress and inject some enjoyment into our lives.
+      2. Pursue Your Passions: Everyone possesses hobbies or interests that bring them joy, whether it's dancing, singing, painting, or cycling. Dedicate regular 
+      time to indulge in these activities. Not only do hobbies provide a source of relaxation and fulfillment, but they also serve as an effective means of stress reduction.
+      3. Prioritize Physical Activity: Exercise is renowned for its ability to enhance both physical and mental well-being. By stimulating the release of dopamine in the 
+      body, regular exercise offers a natural mood boost and helps alleviate stress. Make it a point to incorporate exercise into your routine consistently to reap its 
+      stress-relieving benefits.
+    question: Tell me top 3 ways to deal with stress.
+    task_description: ''
