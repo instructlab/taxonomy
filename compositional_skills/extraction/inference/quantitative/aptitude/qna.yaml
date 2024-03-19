@@ -1,0 +1,10 @@
+created_by: hakhande
+seed_examples:
+- answer: '60 mins'
+  context: Trains are comming in opposite direction. So they will collide with each other. Now, take the current distance between them. It is 100 KM. Both trains are running at 50 KM per hour speed.
+           So after 1 hour both train would have cross 50 KMs from each side and thus distance between the train now is 0. So trains will collide with each other in an hour. 
+  question: '
+            If 2 trains are coming in opposite directions with a speed of 50 Km/h, they are right now 100 KM away from each other. In how many minutes do these 2 trains collide with each other?
+            '
+
+task_description: ''
