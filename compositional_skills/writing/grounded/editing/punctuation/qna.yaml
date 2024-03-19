@@ -27,4 +27,36 @@ seed_examples:
     \ to get selected at Indian Panorama section of International Film Festival of\
     \ India, which was enough to support the vision of Neetu Chandra. \n"
   question: Return the text after correcting any punctuation errors.
-task_description: ''
+  attribution:
+  - source: https://en.wikipedia.org/wiki/Deswa
+    license: Creative Commons Attribution-ShareAlike 4.0 International License
+- answer: |
+    They undertook to study in the past the physiology of nations, and hoped by applying the experimental method on a large scale to deduce some lessons of real value about the conditions on which the welfare of society mainly depend.—Lecky, The Political Value of History.
+  context: |
+     They undertook to study in the past the physiology of nations and hoped by applying the experimental method on a large scale to deduce some lessons of real value about the conditions on which the welfare of society mainly depend —Lecky The Political Value of History
+  question: Return the text after correcting any punctuation errors.
+  attribution:
+  - source: https://www.gutenberg.org/files/37134/37134-h/37134-h.htm
+    license: public domain
+- answer: |
+    He stayed in Berlin from February to July, 1916.
+  context: |
+    He stayed in Berlin from February to July 1916.
+  question: Add commas wherever necessary to the following text.
+  attribution:
+  - source: https://www.gutenberg.org/files/37134/37134-h/37134-h.htm
+    license: public domain
+- answer: |
+    Nether Stowey, where Coleridge wrote The Rime of the Ancient Mariner, is a few miles from Bridgewater.
+    The day will come when you will admit your mistake.
+  context: |
+    Nether Stowey where Coleridge wrote The Rime of the Ancient Mariner is a few miles from Bridgewater.
+    The day will come when you will admit your mistake.
+  question: Add commas wherever necessary to the following text.
+- answer: The audience, which had at first been indifferent, became more and more interested.
+  context: The audience had at first been indifferent. It became more and more interested.
+  question: Combine these two sentences with correct punctuation.
+  attribution:
+  - source: https://www.gutenberg.org/files/37134/37134-h/37134-h.htm
+    license: public domain
+task_description: 'Correct punctuation errors'
