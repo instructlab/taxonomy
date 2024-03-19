@@ -1,18 +1,43 @@
+task_description: 'This adds examples of Irish proverbs for getting work done'
 created_by: judyobrienie
 seed_examples:
 - answer: 'The longest way around is the shortest way home
     Is one of many Irish sayings that’ll be familiar to fans of James Joyce. In particular, his book ‘Ulysses’.
     The phrase “The longest way round is the shortest way home” is an Irish proverb that suggests that, sometimes,
-    taking a more indirect route to achieve a goal can actually be more efficient in the long run.'
+    taking a more indirect route to achieve a goal can be more efficient in the long run.'
   question: Give me an example of an Irish proverb about getting work done
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
 - answer: 'It is not a fish until it is on the bank
      Conjures up an image of a fisherman with what they think is a great big salmon at the end of their line.
      However, when they get it out of the water they realise that it is actually a kettle'
   question: Give me an example of an Irish proverb about finishing a task
+  attribution:
+     - source: self-authored
+       license: Apache-2.0
 - answer: |
      'Ní neart go cur le chéile.
      Translation: "There is no strength without unity."/n
      This proverb can be interpreted as emphasizing the importance of teamwork
      /nand collaboration in accomplishing tasks or goals.'
   question: Give me an example of an Irish proverb about getting work done
-task_description: 'this adds examples of Irish proverbs for getting work done'
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
+- answer: |
+     'You’ll never plough a field by turning it over in your mind
+     Procrastination is the enemy of a productive project team.
+     /nSpending too long planning or delaying a task until the time is right means you will never get any work done.'
+  question: Give me an example of an Irish proverb about getting work done
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
+- answer: |
+     'Everyone lays a burden on the willing horse
+     Be careful as people are quick to take helpful people for granted'
+  question: Give me an example of an Irish proverb about getting work done
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
+
