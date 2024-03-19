@@ -1,18 +1,37 @@
 ---
 created_by: aspanner
 seed_examples:
-  - answer: Andrea (a girl) is 1 of her brothers 2 sisters. Therefore Sally has 1
+  - answer: Andrea is one of her brothers 2 sisters. Therefore Andrea has 1
       sister.
     question: Andrea is a girl. Andrea has 3 brothers. Each brother has 2 sisters.
       How many sisters does Andrea have?
-  - answer: Bruce is 1 of his mum's sons and he has 3 brothers. Therefore Bruce's
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: Andrea is one of her brothers 3 sisters. Therefore Andrea has 2
+      sister.
+    question: Andrea is a girl. Andrea has 4 brothers. Each brother has 3 sisters.
+      How many sisters does Andrea have?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: Bruce is one of his mum's sons and he has 3 brothers. Therefore Bruce's
       mum has 4 sons.
     question: Bruce is a boy. Bruce has 3 brothers. How many sons does the mum of
       Bruce have?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - answer: Carl has 3 sisters in total, therefore each of Carl's sister has 2 sisters.
     question: Carl is a boy and has 3 sisters. How many sisters do the sisters of
       Carl have?
-  attribution:
+    attribution:
       - source: self-authored
-      - license: Apache-2.0
-task_description: "Adding logical reasoning to the model."
+        license: Apache-2.0
+  - answer: Carl has 5 sisters in total, therefore each of Carl's sister has 4 sisters.
+    question: Carl is a boy and has 5 sisters. How many sisters do the sisters of
+      Carl have?
+    attribution:
+    - source: self-authored
+      license: Apache-2.0
+task_description: "Finding an answer to a question based on logical reasoning and understanding the context."
