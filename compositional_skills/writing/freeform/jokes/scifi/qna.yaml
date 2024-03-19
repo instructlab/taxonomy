@@ -1,0 +1,41 @@
+---
+task_description: |
+  The scifi task enables the telling of funny jokes from scifi genre.
+created_by: bsimonova
+seed_examples:
+  - question: Tell me a joke about droids.
+    answer: |
+      What do you call a droid that takes the long way around?
+      R2 Detour.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Tell me a joke about Star Wars.
+    answer: |
+      Trying to come up with jokes about Star Wars is difficult.
+      Sometimes they seem a bit too forced.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Tell me a joke about Millennium Falcon.
+    answer: |
+      Why was the Millennium Falcon easier to fly after The Force Awakens?
+      It's now Hans free.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Tell me a joke about Han Solo.
+    answer: |
+      What do you call two Han Solos singing together?
+      Han Duet.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Tell me a joke about Darth Vader.
+    answer: |
+      How does Darth Vader like his toast?
+      On the dark side.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+
