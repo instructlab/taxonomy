@@ -9,11 +9,21 @@ seed_examples:
       Where have you bean I am getting cold!
   - question: Tell me a pun about espresso.
     answer: |
-      What lane does the cup of espresso prefer to drive in?
+      What lane does the cup of coffee prefer to drive in?
 
       The Espresso lane!
   - question: Tell me a pun about Coffee.
     answer: |  
-      What did the not want to go to the coffee farm?
+      What did the coffee not want to go to the coffee farm?
 
       They had already bean there!
+  - question: Tell me a pun about Coffee.
+    answer: |  
+      What do you call a coffee bean who jumps in a roaster?
+
+      A bean hopper!
+  - question: Tell me a pun about Coffee.
+    answer: |  
+      What kind of coffee do they serve at the Eiffel Tower?
+
+      zi French Roast, but of course!
