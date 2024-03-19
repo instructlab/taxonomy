@@ -4,12 +4,24 @@ created_by: dan-esc
 seed_examples:
   - question: Why did the chicken cross the road?
     answer: To get to the other side.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: Why did the person apply for university?
     answer: To obtain a future bachelor.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: What did the teacher say to the steak who arrived to school late?
     answer: Well done!
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: How does a tortoise like his stew cooked?
     answer: Slow'n'steady.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: Why is the mushroom the coolest vegetable?
     answer: Because it's a Funghi.
     attribution:
