@@ -1,111 +1,189 @@
 task_description:
-  Rolling the dice/2 dice multiple dice as you wish
+  Rolling a dice,2 dice or multiple dice as you wish
 created_by: shairevivo
-seed_examples:
+seed_examples: 
   - question: Roll 1 dice
     answer:
       Rolling 1 dice 🎲
       You rolled 1
+    attribution:
+      - source: self-authored
+        license: Apache-2.0     
   - question: Can you Roll 1 dice
     answer:
       Rolling 1 dice 🎲
       You rolled 2
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Can you Roll 1 dice for me
     answer:
       Rolling 1 dice 🎲
       You rolled 3
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Toss 1 dice
     answer:
       Rolling one dice 🎲
       You rolled 4
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Can you Roll dice
     answer:
       Rolling one dice 🎲
       You rolled 5
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Can you Roll dice
     answer:
       Rolling one dice 🎲
       You rolled 6
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Can you Roll 2 dice for me
     answer:
       Rolling 2 dice 🎲🎲
       You rolled 1 and 1
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Cast 2 dice
     answer:
       Rolling 2 dice 🎲🎲
       You rolled 1 and 2
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Toss 2 dice
     answer:
       Rolling two dice 🎲🎲
       You rolled 1 and 3
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Roll 2 dice
     answer:
       Rolling 2 dice 🎲🎲
       You rolled 1 and 4
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Roll 2 dice
     answer:
       Rolling 2 dice 🎲🎲
       You rolled 1 and 5
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Roll 2 dice
     answer:
       Rolling 2 dice 🎲🎲
       You rolled 1 and 6
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Can you Roll 2 dice
     answer:
       Rolling 2 dice 🎲🎲
       You rolled 2 and 5
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Can you Roll 2 dice
     answer:
       Rolling 2 dice 🎲🎲
       You rolled 2 and 6
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Can you Roll 2 dice
     answer:
       Rolling 2 dice 🎲🎲
       You rolled 3 and 1
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Can you roll 2 dice
     answer:
       Rolling 2 dice 🎲🎲
       You rolled 3 and 2
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Can you Roll 2 dice
     answer:
       Rolling 2 dice 🎲🎲
       You rolled 3 and 3
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Can you Roll 2 dice
     answer:
       Rolling 2 dice 🎲🎲
       You rolled 3 and 4
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Roll 2 dice
     answer:
       Rolling 2 dice 🎲🎲
       You rolled 4 and 6
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Roll 2 dice
     answer:
       Rolling 2 dice 🎲🎲
       You rolled 5 and 1
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Roll 2 dice
     answer:
       Rolling 2 dice 🎲🎲
       You rolled 5 and 2
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Roll 2 dice
     answer:
       Rolling 2 dice 🎲🎲
       You rolled 5 and 3
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Roll 2 dice
     answer:
       Rolling 2 dice 🎲🎲
       You rolled 5 and 4
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Roll 2 dice
     answer:
       Rolling 2 dice 🎲🎲
       You rolled 5 and 5
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Can you Roll 3 dice for me
     answer:
       Rolling 3 dice 🎲🎲🎲
       You rolled 6, 1 and 4
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Can you Roll 4 dice for me
     answer:
       Rolling 4 dice 🎲🎲🎲🎲
       You rolled 6, 3, 4 and 5
+    attribution:
+      - source: self-authored
+        license: Apache-2.0   
   - question: Can you Roll 3 dice for me
     answer:
       Rolling 3 dice 🎲🎲🎲
