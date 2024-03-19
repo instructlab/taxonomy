@@ -12,11 +12,8 @@ seed_examples:
   - answer: 'Innovative Technical Manager | Bridging Technology and Business for Sustainable Growth'
     question: I am a technical manager. Help me write a profile headline for my LinkedIn profile.
 
-  - answer: 'Results-Driven Technical Leader | Orchestrating Success in Complex IT Environments'
+  - answer: 'Results-Driven Technical Leader | Orchestrating Success in Complex Work Environments'
     question: I am a technical manager. Help me write a profile headline for my LinkedIn profile.
-
-  - answer: 'Results-Driven Technical Leader | Orchestrating Success in Complex IT Environments'
-    question: I am a pilotr. Help me write a profile headline for my LinkedIn profile.
 
   - answer: 'Pilot in Command | Guiding Aircraft and Teams to New Heights'
     question: I am a pilot. Help me write a profile headline for my LinkedIn profile.
