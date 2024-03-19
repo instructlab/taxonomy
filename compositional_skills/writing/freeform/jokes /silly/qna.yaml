@@ -1,5 +1,5 @@
 ---
-task_description: Tell some silly jokes
+task_description: Create some silly jokes
 created_by: dan-esc
 seed_examples:
   - question: Why did the chicken cross the road?
@@ -8,6 +8,10 @@ seed_examples:
     answer: To obtain a future bachelor.
   - question: What did the teacher say to the steak who arrived to school late?
     answer: Well done!
+  - question: What did tortoise say to the hare?
+    answer: Slow'n'steady.
+  - question: Why is the mushroom the coolest vegetable?
+    answer: Because it's a Funghi
     attribution:
       - source: self-authored
         license: Apache-2.0
