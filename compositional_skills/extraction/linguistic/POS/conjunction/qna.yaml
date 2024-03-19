@@ -1,6 +1,55 @@
-created_by: shivsr
+created_by: chipmc
+domain: linguistic
+task_description: |
+  Practice identifying the conjunction in a sentence
 seed_examples:
-- answer: null
-  context: null
-  question: null
-task_description: ''
+- context: |
+    I am learning a new skill and helping open source AI |
+  question: |
+    Find the conjunction in this sentence.
+  answer: |
+    and
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
+- context: |
+    This is importance since the future is open!
+  question: |
+    Find the conjunction in this sentence.
+  answer: |
+    since
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
+- context: |
+    We could keep knowledge to ourselves or we should collaborate.
+  question: |
+    Find the conjunction in this sentence.
+  answer: |
+    or
+  attribution: 
+    - source: self-authored
+    license: Apache-2.0
+- context: |
+    It is hard to capture the world's knowledge yet the result will be worth it.
+  question: |
+    Find the conjunction in this sentence.
+  answer: |
+    yet
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
+- context: |
+    This work will be done as soon as all human knowledge is captured.
+  question: |
+    Find the conjunction in this sentence.
+  answer: |
+    as soon as
+  attribution: 
+    - source: self-authored
+    license: Apache-2.0
+
+  
+   
+
+
