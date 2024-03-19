@@ -1,8 +1,29 @@
+---
 created_by: nirjhar
 seed_examples:
-  - question: "I have to train my model on compositional skills and good skills to add are Adding new types of documents and writing styles - e.g. song lyrics, 5 paragraph essays, emails, tweets… Skills to better format and reassemble information (adding headlines, making text shorter…) Chain-of-Thought Reasoning (e.g. Sisi is prettier than Nora, Katie is prettier than both of them. Who is the ugliest?) Table Analysis and Processing (e.g. sorting, joining…) Word Problems (e.g. Can LLM be a personal trainer?) Searching, Extraction and Summarization (e.g. create a TODO list, create a headline…) Complex Rulesets and Games (you need to provide the rules as a context of every example) Writing Style and Personalities (adapting the answer to a particular personality - e.g. 5 year old; you need to describe the personality in the context or in the question) Instruction-Following Behavior (e.g. answer this question n 200 words or less etc.)"
-    answer: |
-      "Training your model on compositional skills and enhancing its abilities across various tasks, such as handling different document types, formatting information, and complex reasoning, is ambitious. Testing its limits can help you identify areas for improvement. Here are questions and tasks designed to challenge your model in the areas you mentioned. These are likely to be difficult for many models unless they have been specifically trained or fine-tuned to handle such nuanced requests:
+  - question: I have to train my model on compositional skills and good skills to
+      add are Adding new types of documents and writing styles - e.g. song
+      lyrics, 5 paragraph essays, emails, tweets… Skills to better format and
+      reassemble information (adding headlines, making text shorter…)
+      Chain-of-Thought Reasoning (e.g. Sisi is prettier than Nora, Katie is
+      prettier than both of them. Who is the ugliest?) Table Analysis and
+      Processing (e.g. sorting, joining…) Word Problems (e.g. Can LLM be a
+      personal trainer?) Searching, Extraction and Summarization (e.g. create a
+      TODO list, create a headline…) Complex Rulesets and Games (you need to
+      provide the rules as a context of every example) Writing Style and
+      Personalities (adapting the answer to a particular personality - e.g. 5
+      year old; you need to describe the personality in the context or in the
+      question) Instruction-Following Behavior (e.g. answer this question n 200
+      words or less etc.)
+    answer: >
+      "Training your model on compositional skills and enhancing its abilities
+      across various tasks, such as handling different document types,
+      formatting information, and complex reasoning, is ambitious. Testing its
+      limits can help you identify areas for improvement. Here are questions and
+      tasks designed to challenge your model in the areas you mentioned. These
+      are likely to be difficult for many models unless they have been
+      specifically trained or fine-tuned to handle such nuanced requests:
+
 
       Adding New Types of Documents and Writing Styles:
           'Write a song lyric about the journey of a leaf falling from a tree, incorporating scientific terms.'
@@ -39,20 +60,39 @@ seed_examples:
       Instruction-Following Behavior:
           'Answer the following question in exactly 200 words: What are the implications of quantum supremacy for encryption technologies?'
           'Provide instructions for baking a cake, but format them as a diary entry.'"
-  - question: "if A likes B and B likes c and C likes A, do you think A also like C"
-    answer: |
-      "If A likes B, B likes C, and C likes A, it suggests a mutual appreciation between A and C, at least from C's perspective. While this scenario creates a positive loop of liking each other, whether A likes C directly cannot be conclusively determined without understanding the reasons behind their likes. Personal preferences and affections can be influenced by various factors and are not automatically reciprocal just because of mutual connections. However, this setup does create a conducive environment for A to potentially like C, given the positive connections among them."
-  - question: "how is the day today?"
-    answer: |
-      "I'm not able to provide real-time or location-specific weather updates or current day conditions. For the most accurate and up-to-date information on the weather or how the day is in your area, it's best to check a reliable weather service or app. Is there anything else you'd like to know or discuss that doesn't involve real-time data?"
-  - question: "Which of the following statements comparing linear and logistic regressions is TRUE?"
-    choices: 
-      - "Both linear and logistic regression can be used to predict categorical responses and attain a point’s likelihood of belonging to each class."
-      - "In this course, linear regression minimizes the mean absolute error, while logistic regression minimizes the mean squared error."
-      - "Linear regression is used for a continuous target whereas logistic regression is more suitable for a categorical target."
-      - "Independent variables in linear regression can be continuous or categorical, but can only be categorical in logistic regression."
-    answer: |
-      "Linear regression is used for a continuous target whereas logistic regression is more suitable for a categorical target.
+  - question: if A likes B and B likes c and C likes A, do you think A also like C
+    answer: >
+      "If A likes B, B likes C, and C likes A, it suggests a mutual
+      appreciation between A and C, at least from C's perspective. While this
+      scenario creates a positive loop of liking each other, whether A likes C
+      directly cannot be conclusively determined without understanding the
+      reasons behind their likes. Personal preferences and affections can be
+      influenced by various factors and are not automatically reciprocal just
+      because of mutual connections. However, this setup does create a conducive
+      environment for A to potentially like C, given the positive connections
+      among them."
+  - question: how is the day today?
+    answer: >
+      "I'm not able to provide real-time or location-specific weather updates
+      or current day conditions. For the most accurate and up-to-date
+      information on the weather or how the day is in your area, it's best to
+      check a reliable weather service or app. Is there anything else you'd like
+      to know or discuss that doesn't involve real-time data?"
+  - question: Which of the following statements comparing linear and logistic
+      regressions is TRUE?
+    choices:
+      - Both linear and logistic regression can be used to predict categorical
+        responses and attain a point’s likelihood of belonging to each class.
+      - In this course, linear regression minimizes the mean absolute error,
+        while logistic regression minimizes the mean squared error.
+      - Linear regression is used for a continuous target whereas logistic
+        regression is more suitable for a categorical target.
+      - Independent variables in linear regression can be continuous or
+        categorical, but can only be categorical in logistic regression.
+    answer: >
+      "Linear regression is used for a continuous target whereas logistic
+      regression is more suitable for a categorical target.
+
 
       This statement accurately reflects the primary difference in the applications of linear and logistic regression. Linear regression is used for predicting outcomes that are continuous (e.g., house prices, temperatures), while logistic regression is used for binary (or categorical) outcomes (e.g., yes/no, win/lose)."
-task_description: ''
+task_description: ""
