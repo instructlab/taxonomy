@@ -1,4 +1,4 @@
-created_by: suransam@in.ibm.com
+created_by: IBM
 seed_examples:
 - answer: 'The system is experiencing significant high system load and a virtual machine
     is undersized or the hypervisor host is overloaded, indicating potential performance
