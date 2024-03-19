@@ -15,7 +15,7 @@ seed_examples:
       You rolled 2
     attribution:
       - source: self-authored
-        license: Apache-2.0 
+        license: Apache-2.0
   - question: Can you Roll 1 dice for me
     answer:
       Rolling 1 dice 🎲
