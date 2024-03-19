@@ -6,14 +6,14 @@ seed_examples:
       Yes please scratch me there!
       Right above my tail! Behold,
       elevator butt.
-    question: Write a haiku about cats.
+    question: Write a haiku about cats
   - answer: |-
       I sound the alarm!
       Mail guy come to kill us all.
       Come see, come see now!
-    question: Write a haiku about dogs.
+    question: Write a haiku about dogs
   - answer: |-
       Nibbles on their food.
       Those adorable small teeth.
       Lost them in the wall.
-    question: Write a haiku about hamsters.
+    question: Write a haiku about hamsters
