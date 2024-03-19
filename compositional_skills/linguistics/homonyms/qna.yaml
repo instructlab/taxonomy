@@ -1,0 +1,56 @@
+task_description: >
+  The homonym task identifies words which are either homographs (words that have
+  the same spelling, regardless of pronunciation) — or homophones (words that
+  have the same pronunciation, regardless of spelling) — or both.
+created_by: laurennewman
+seed_examples:
+  - question: What are some homographs of bow?
+    answer: >
+      Some homographs of the word "bow" include:
+
+      bow: a long stick with horse hair that is used to play certain string
+      instruments such as the violin
+
+      bow: to bend forward at the waist in respect
+
+      bow: the front of the ship
+  - question: What are the homophones of are?
+    answer: >
+      The words "are", "hour", and "our" are homophones.  They share the same
+      pronunciation, while the spellings and meanings differ.
+  - question: What are some common English homonyms?
+    answer: |
+      Some common English homonyms include the following words:
+      Bank (financial institution) and bank (side of a river)
+      Bat (nocturnal flying mammal) and bat (sports equipment)
+      Bark (sound a dog makes) and bark (outer covering of a tree)
+      Bear (large mammal) and bear (tolerate or carry)
+      Lead (a soft, malleable metal) and lead (to guide or direct)
+  - question: What are some common English homophones?
+    answer: >
+      Some common English homphones - words that share the same pronunciations
+      but have different spelling and meaning, include:
+
+      Two, to, and too
+
+      Their, they're, and there
+
+      Flour and flower
+
+      Pear and pair
+  - question: What are some animal-related homonyms?
+    answer: >
+      Animal-related homonyms are fun word-play that can be used in jokes and
+      riddles!  Here are some common animal-related homonyms in English:
+
+      Bare (uncovered) and bear
+
+      Dough (uncooked bread) and doe
+
+      You and ewe (female sheep)
+
+      Guerilla (warrior) and gorilla
+
+      Hair and hare
+
+      Hoarse (croaky) and horse
