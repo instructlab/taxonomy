@@ -5,7 +5,7 @@ seed_examples:
     Insurance mandated by the services agreement covers.
 
     '
-  document: '8. Indemnification and Insurance. Consultant shall indemnify and hold
+  context: '8. Indemnification and Insurance. Consultant shall indemnify and hold
     harmless the County from and against all claims, damages, losses, and expenses
     arising out of or resulting from acts or omissions of the Consultant, Consultant''s
     sub-Consultants or otherwise arising out of the performance of services by Consultant.
@@ -59,7 +59,7 @@ seed_examples:
     \ the county written notice thirty (30) days prior to the termination of the insurance.\
     \ This means that you have breached the Agreement and the Agreement will automatically\
     \ terminate.\_\n"
-  document: '8. Indemnification and Insurance. Consultant shall indemnify and hold
+  context: '8. Indemnification and Insurance. Consultant shall indemnify and hold
     harmless the County from and against all claims, damages, losses, and expenses
     arising out of or resulting from acts or omissions of the Consultant, Consultant''s
     sub-Consultants or otherwise arising out of the performance of services by Consultant.
@@ -111,7 +111,7 @@ seed_examples:
     (property damage).
 
     '
-  document: '8. Indemnification and Insurance. Consultant shall indemnify and hold
+  context: '8. Indemnification and Insurance. Consultant shall indemnify and hold
     harmless the County from and against all claims, damages, losses, and expenses
     arising out of or resulting from acts or omissions of the Consultant, Consultant''s
     sub-Consultants or otherwise arising out of the performance of services by Consultant.
@@ -161,7 +161,7 @@ seed_examples:
     s requirements?\_\n"
 - answer: "The County is obligated to pay the Consultant for all work performed up\
     \ to April 3rd. \n"
-  document: 'requirements. Upon request, Consultant shall provide documentation of
+  context: 'requirements. Upon request, Consultant shall provide documentation of
     its expenses. Payment of such invoices will be due within twenty-five (25) days
     of the receipt thereof.
 
@@ -233,7 +233,7 @@ seed_examples:
 - answer: "No. The Consultant is an independent contractor, not an employee of the\
     \ County, therefore is not entitled to employment benefits like educational and\
     \ professional development. \n"
-  document: 'requirements. Upon request, Consultant shall provide documentation of
+  context: 'requirements. Upon request, Consultant shall provide documentation of
     its expenses. Payment of such invoices will be due within twenty-five (25) days
     of the receipt thereof.
 
@@ -302,7 +302,7 @@ seed_examples:
     benefits provided by the county? '
 - answer: "Yes, the County can refuse to pay the full invoice amount based on Section\
     \ B. \n"
-  document: 'requirements. Upon request, Consultant shall provide documentation of
+  context: 'requirements. Upon request, Consultant shall provide documentation of
     its expenses. Payment of such invoices will be due within twenty-five (25) days
     of the receipt thereof.
 

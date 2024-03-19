@@ -2,7 +2,7 @@ created_by: IBM
 seed_examples:
 - answer: "Given that the monthly rent is $100,000 after the termination date, with\
     \ the budget of one 1 million, the lease can last another 10 months. \n"
-  document: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
+  context: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
     \ into on December 1, 2013, by and between Temple CB, LLC, whose address is 4350\
     \ Temple City Boulevard, El Monte, California 91731 (hereinafter referred to as\
     \ 'Landlord '), and Okra Energy, Inc., whose address is 4350 Temple City Boulevard,\
@@ -42,7 +42,7 @@ seed_examples:
     \ (6 months)\n- June 1, 2014 - May 31, 2015: $30,000 (12 months)\n- June 1, 2015\
     \ - May 31, 2016: $40,000 (12 months)\nSo in total, there are 30 months where\
     \ the rent is less than $50,000. \n\n"
-  document: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
+  context: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
     \ into on December 1, 2013, by and between Temple CB, LLC, whose address is 4350\
     \ Temple City Boulevard, El Monte, California 91731 (hereinafter referred to as\
     \ 'Landlord '), and Okra Energy, Inc., whose address is 4350 Temple City Boulevard,\
@@ -78,7 +78,7 @@ seed_examples:
   question: 'In total, how many months have a month rate of less than $50,000? '
 - answer: "Between May 31, 2014 and June 1, 2014, there is a price increase of $30,000,\
     \ which is the steepest price change of all time. \n"
-  document: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
+  context: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
     \ into on December 1, 2013, by and between Temple CB, LLC, whose address is 4350\
     \ Temple City Boulevard, El Monte, California 91731 (hereinafter referred to as\
     \ 'Landlord '), and Okra Energy, Inc., whose address is 4350 Temple City Boulevard,\

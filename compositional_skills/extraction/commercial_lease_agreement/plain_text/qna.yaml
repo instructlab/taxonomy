@@ -2,7 +2,7 @@ created_by: IBM
 seed_examples:
 - answer: "The time period during which the rent is $50,000 is June 1, 2016 to May\
     \ 31, 2017. \n"
-  document: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
+  context: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
     \ into on December 1, 2013, by and between Temple CB, LLC, whose address is 4350\
     \ Temple City Boulevard, El Monte, California 91731 (hereinafter referred to as\
     \ 'Landlord '), and Okra Energy, Inc., whose address is 4350 Temple City Boulevard,\
@@ -40,7 +40,7 @@ seed_examples:
     and Okra Energy, Inc.
 
     '
-  document: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
+  context: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
     \ into on December 1, 2013, by and between Temple CB, LLC, whose address is 4350\
     \ Temple City Boulevard, El Monte, California 91731 (hereinafter referred to as\
     \ 'Landlord '), and Okra Energy, Inc., whose address is 4350 Temple City Boulevard,\
@@ -76,7 +76,7 @@ seed_examples:
   question: 'What organizations are mentioned in this agreement? '
 - answer: "The lease beginning date is December 1, 2013, and the end date is May 31,\
     \ 2020. \n"
-  document: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
+  context: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
     \ into on December 1, 2013, by and between Temple CB, LLC, whose address is 4350\
     \ Temple City Boulevard, El Monte, California 91731 (hereinafter referred to as\
     \ 'Landlord '), and Okra Energy, Inc., whose address is 4350 Temple City Boulevard,\
@@ -113,7 +113,7 @@ seed_examples:
 - answer: "The late payment is defined as he tenant must be late on rent three times\
     \ or more and each late payment must be\_ten or more days past the due date.\n\
     \n"
-  document: '## ARTICLE XVI-DEFAULT
+  context: '## ARTICLE XVI-DEFAULT
 
 
     ## Section 1. Landlord''s Remedies. In the event that:
@@ -175,7 +175,7 @@ seed_examples:
   question: "What is the definitions of late payment from the tenant, before it triggers\
     \ possible consequences for the tenant? \n"
 - answer: "30 days. \n"
-  document: '## ARTICLE XVI-DEFAULT
+  context: '## ARTICLE XVI-DEFAULT
 
 
     ## Section 1. Landlord''s Remedies. In the event that:
@@ -241,7 +241,7 @@ seed_examples:
     lease up to the date of termination.
 
     '
-  document: '## ARTICLE XVI-DEFAULT
+  context: '## ARTICLE XVI-DEFAULT
 
 
     ## Section 1. Landlord''s Remedies. In the event that:

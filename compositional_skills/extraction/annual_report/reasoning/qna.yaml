@@ -4,7 +4,7 @@ seed_examples:
     \ in the table in 2021 as Liabilities ($105,222) + Equity ($22,021) is equal to\
     \ Assets ($127,243) and in 2022 where the Liabilities ($113,005) + Equity ($18,996)\
     \ is equal to Assets ($132,001). \n"
-  document: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
+  context: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
     \ and shares in millions except per share amounts)\n\n| For year ended December\
     \ 31:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_| 2022 *\_\_\_\_| 2021\_\_\_\_\_\
     | Yr.-to-Yr. Percent/Margin Change\_\_|\n|----------------------------------------------------------------------|--------------|---------------|------------------------------------|\n\
@@ -85,7 +85,7 @@ seed_examples:
 - answer: "\"Income from continuing operations before income taxes\" had the greatest\
     \ difference between 2021 and 2022 with a year-to-year percent/margin change of\
     \ -76.1%. \n"
-  document: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
+  context: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
     \ and shares in millions except per share amounts)\n\n| For year ended December\
     \ 31:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_| 2022 *\_\_\_\_| 2021\_\_\_\_\_\
     | Yr.-to-Yr. Percent/Margin Change\_\_|\n|----------------------------------------------------------------------|--------------|---------------|------------------------------------|\n\
@@ -167,7 +167,7 @@ seed_examples:
     \ more accretive acquisitions, executing price increases across all of their product-based\
     \ businesses, and deploying hedging programs to defer the impact of currency.\
     \ \n"
-  document: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
+  context: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
     \ and shares in millions except per share amounts)\n\n| For year ended December\
     \ 31:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_| 2022 *\_\_\_\_| 2021\_\_\_\_\_\
     | Yr.-to-Yr. Percent/Margin Change\_\_|\n|----------------------------------------------------------------------|--------------|---------------|------------------------------------|\n\

@@ -5,7 +5,7 @@ seed_examples:
     \ insurance by $100,000 on account of any one person for a total limit of $350,000\
     \ \n- Increase the limit of your Automobile Liability insurance by $10,000 for\
     \ bodily injury per person for a total limit of $100,000 \n"
-  document: '8. Indemnification and Insurance. Consultant shall indemnify and hold
+  context: '8. Indemnification and Insurance. Consultant shall indemnify and hold
     harmless the County from and against all claims, damages, losses, and expenses
     arising out of or resulting from acts or omissions of the Consultant, Consultant''s
     sub-Consultants or otherwise arising out of the performance of services by Consultant.
@@ -62,7 +62,7 @@ seed_examples:
     for each occurrence of property damage and personal injury
 
     '
-  document: '8. Indemnification and Insurance. Consultant shall indemnify and hold
+  context: '8. Indemnification and Insurance. Consultant shall indemnify and hold
     harmless the County from and against all claims, damages, losses, and expenses
     arising out of or resulting from acts or omissions of the Consultant, Consultant''s
     sub-Consultants or otherwise arising out of the performance of services by Consultant.
@@ -108,7 +108,7 @@ seed_examples:
   question: 'Make a bulleted list of all the types of insurance with limits over $300,001
     required by the service agreement. '
 - answer: "- The Consultant\n- The Consultant\u2019s sub-Consultants\n\n"
-  document: '8. Indemnification and Insurance. Consultant shall indemnify and hold
+  context: '8. Indemnification and Insurance. Consultant shall indemnify and hold
     harmless the County from and against all claims, damages, losses, and expenses
     arising out of or resulting from acts or omissions of the Consultant, Consultant''s
     sub-Consultants or otherwise arising out of the performance of services by Consultant.

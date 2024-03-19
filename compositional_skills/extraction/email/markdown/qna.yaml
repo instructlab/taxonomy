@@ -3,7 +3,7 @@ seed_examples:
 - answer: "|Monitor Name\_\_\_\_|Qty|Price |\n|--------------------|---|------|\n\
     |Odyssey Ark 55-inch |1\_|$1,952|\n|Odyssey G7 32-Inch\_|3\_|$669\_|\n|Odyssey\
     \ G55C 27-Inch|3\_|$297\_|\n"
-  document: "Subject: High-Def Monitor Update\n\nDate:\n\nFriday, February 23, 2024\
+  context: "Subject: High-Def Monitor Update\n\nDate:\n\nFriday, February 23, 2024\
     \ at 9:13:32$_{ }$PM Eastern Standard Time\n\nFrom:\n\nLuke Inglis\n\nTo:\n\n\
     Kate Soule\n\nHi Kate,\n\nI am writing to explain to you the delay in our lab\
     \ receiving monitors. On Dec 2$^{nd,}$ 2023, I started the process of purchasing\
@@ -35,7 +35,7 @@ seed_examples:
 - answer: "|Approval\_\_\_\_\_\_|Step|\n|--------------------|----|\n|Approval from\
     \ Line VP|3\_\_|\n|Approval from Manager|5\_\_|\n|Approval from 2nd line Manager|6\_\
     \_|\n|Approval from Finance|7\_\_|\n"
-  document: "Subject: High-Def Monitor Update\n\nDate:\n\nFriday, February 23, 2024\
+  context: "Subject: High-Def Monitor Update\n\nDate:\n\nFriday, February 23, 2024\
     \ at 9:13:32$_{ }$PM Eastern Standard Time\n\nFrom:\n\nLuke Inglis\n\nTo:\n\n\
     Kate Soule\n\nHi Kate,\n\nI am writing to explain to you the delay in our lab\
     \ receiving monitors. On Dec 2$^{nd,}$ 2023, I started the process of purchasing\
@@ -66,7 +66,7 @@ seed_examples:
 - answer: "|Type\_\_\_\_\_\_\_\_|Delivery date\_\_|\n|--------------------|----------------|\n\
     |Odyssey Ark 55-Inch |May 10, 2024\_\_|\n|Odyssey G7 32-Inch\_|March 7, 2024\_\
     \_|\n|Odyssey G55C 27-Inch|Febuary 27, 2024|\n"
-  document: "Subject: High-Def Monitor Update\n\nDate:\n\nFriday, February 23, 2024\
+  context: "Subject: High-Def Monitor Update\n\nDate:\n\nFriday, February 23, 2024\
     \ at 9:13:32$_{ }$PM Eastern Standard Time\n\nFrom:\n\nLuke Inglis\n\nTo:\n\n\
     Kate Soule\n\nHi Kate,\n\nI am writing to explain to you the delay in our lab\
     \ receiving monitors. On Dec 2$^{nd,}$ 2023, I started the process of purchasing\

@@ -7,7 +7,7 @@ seed_examples:
     Female,84.81% (74.97-91.90),91.46% (83.20-96.50)
 
     '
-  document: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
+  context: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
     \n## Performance Data\n\nA retrospective study has been carried out to assess\
     \ the standalone performance of the image analysis algorithm and notification\
     \ functionality of Triage ICH. The study evaluated the Triage ICH image analysis\
@@ -91,7 +91,7 @@ seed_examples:
     \ < 1.5 mm,87.50% (79.92-92.99),94.21% (88.44-97.64)\n1.5mm \u2264 Slice Thickness\
     \ < 3 mm,95.65% (78.05-99.89),100.00% (82.35-100.00)\nSlice Thickness \u2265 3\
     \ mm,90.62% (74.98-98.02),76.47% (58.83-89.25)\n"
-  document: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
+  context: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
     \n## Performance Data\n\nA retrospective study has been carried out to assess\
     \ the standalone performance of the image analysis algorithm and notification\
     \ functionality of Triage ICH. The study evaluated the Triage ICH image analysis\
@@ -175,7 +175,7 @@ seed_examples:
     149,15,159,18
 
     '
-  document: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
+  context: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
     \n## Performance Data\n\nA retrospective study has been carried out to assess\
     \ the standalone performance of the image analysis algorithm and notification\
     \ functionality of Triage ICH. The study evaluated the Triage ICH image analysis\

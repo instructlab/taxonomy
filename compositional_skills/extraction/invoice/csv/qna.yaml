@@ -27,8 +27,8 @@ seed_examples:
     ,,TOTAL DUE,57202.89
 
     '
-  document: "## INVOICE\n\n555 5 $^{th}$ st Boston, Ma 01234 Phone: 123-456-7890\n\
-    \n## PURCHASED BY:\n\nJohn Doe J&J corp 777 77 $^{th}$ st Newark, Nj 56789 Phone:\
+  context: "## INVOICE\n\n555 5 $^{th}$ st Boston, Ma 01234 Phone: 123-456-7890\n\n\
+    ## PURCHASED BY:\n\nJohn Doe J&J corp 777 77 $^{th}$ st Newark, Nj 56789 Phone:\
     \ 111-222-3333\n\n## COMMENTS OR SPECIAL INSTRUCTIONS:\n\nDue upon receipt\n\n\
     | QUANTITY\_\_| DESCRIPTION\_\_\_\_\_\_\_\_\_| UNIT PRICE\_\_\_\_\_\_| TOTAL\_\
     \_\_|\n|------------|------------------------------|-----------------------|-----------|\n\
@@ -60,8 +60,8 @@ seed_examples:
     Phone: 111-222-3333,Phone: 111-222-3333
 
     '
-  document: "## INVOICE\n\n555 5 $^{th}$ st Boston, Ma 01234 Phone: 123-456-7890\n\
-    \n## PURCHASED BY:\n\nJohn Doe J&J corp 777 77 $^{th}$ st Newark, Nj 56789 Phone:\
+  context: "## INVOICE\n\n555 5 $^{th}$ st Boston, Ma 01234 Phone: 123-456-7890\n\n\
+    ## PURCHASED BY:\n\nJohn Doe J&J corp 777 77 $^{th}$ st Newark, Nj 56789 Phone:\
     \ 111-222-3333\n\n## COMMENTS OR SPECIAL INSTRUCTIONS:\n\nDue upon receipt\n\n\
     | QUANTITY\_\_| DESCRIPTION\_\_\_\_\_\_\_\_\_| UNIT PRICE\_\_\_\_\_\_| TOTAL\_\
     \_\_|\n|------------|------------------------------|-----------------------|-----------|\n\
@@ -106,8 +106,8 @@ seed_examples:
     ,,TOTAL DUE,57227.89
 
     '
-  document: "## INVOICE\n\n555 5 $^{th}$ st Boston, Ma 01234 Phone: 123-456-7890\n\
-    \n## PURCHASED BY:\n\nJohn Doe J&J corp 777 77 $^{th}$ st Newark, Nj 56789 Phone:\
+  context: "## INVOICE\n\n555 5 $^{th}$ st Boston, Ma 01234 Phone: 123-456-7890\n\n\
+    ## PURCHASED BY:\n\nJohn Doe J&J corp 777 77 $^{th}$ st Newark, Nj 56789 Phone:\
     \ 111-222-3333\n\n## COMMENTS OR SPECIAL INSTRUCTIONS:\n\nDue upon receipt\n\n\
     | QUANTITY\_\_| DESCRIPTION\_\_\_\_\_\_\_\_\_| UNIT PRICE\_\_\_\_\_\_| TOTAL\_\
     \_\_|\n|------------|------------------------------|-----------------------|-----------|\n\
@@ -154,8 +154,8 @@ seed_examples:
     ,,TOTAL DUE,57202.89
 
     '
-  document: "## INVOICE\n\n555 5 $^{th}$ st Boston, Ma 01234 Phone: 123-456-7890\n\
-    \n## PURCHASED BY:\n\nJohn Doe J&J corp 777 77 $^{th}$ st Newark, Nj 56789 Phone:\
+  context: "## INVOICE\n\n555 5 $^{th}$ st Boston, Ma 01234 Phone: 123-456-7890\n\n\
+    ## PURCHASED BY:\n\nJohn Doe J&J corp 777 77 $^{th}$ st Newark, Nj 56789 Phone:\
     \ 111-222-3333\n\n## COMMENTS OR SPECIAL INSTRUCTIONS:\n\nDue upon receipt\n\n\
     | QUANTITY\_\_| DESCRIPTION\_\_\_\_\_\_\_\_\_| UNIT PRICE\_\_\_\_\_\_| TOTAL\_\
     \_\_|\n|------------|------------------------------|-----------------------|-----------|\n\
@@ -187,8 +187,8 @@ seed_examples:
     Phone: 111-222-3333,Phone: 111-222-3333
 
     '
-  document: "## INVOICE\n\n555 5 $^{th}$ st Boston, Ma 01234 Phone: 123-456-7890\n\
-    \n## PURCHASED BY:\n\nJohn Doe J&J corp 777 77 $^{th}$ st Newark, Nj 56789 Phone:\
+  context: "## INVOICE\n\n555 5 $^{th}$ st Boston, Ma 01234 Phone: 123-456-7890\n\n\
+    ## PURCHASED BY:\n\nJohn Doe J&J corp 777 77 $^{th}$ st Newark, Nj 56789 Phone:\
     \ 111-222-3333\n\n## COMMENTS OR SPECIAL INSTRUCTIONS:\n\nDue upon receipt\n\n\
     | QUANTITY\_\_| DESCRIPTION\_\_\_\_\_\_\_\_\_| UNIT PRICE\_\_\_\_\_\_| TOTAL\_\
     \_\_|\n|------------|------------------------------|-----------------------|-----------|\n\
@@ -233,8 +233,8 @@ seed_examples:
     ,,TOTAL DUE,57227.89
 
     '
-  document: "## INVOICE\n\n555 5 $^{th}$ st Boston, Ma 01234 Phone: 123-456-7890\n\
-    \n## PURCHASED BY:\n\nJohn Doe J&J corp 777 77 $^{th}$ st Newark, Nj 56789 Phone:\
+  context: "## INVOICE\n\n555 5 $^{th}$ st Boston, Ma 01234 Phone: 123-456-7890\n\n\
+    ## PURCHASED BY:\n\nJohn Doe J&J corp 777 77 $^{th}$ st Newark, Nj 56789 Phone:\
     \ 111-222-3333\n\n## COMMENTS OR SPECIAL INSTRUCTIONS:\n\nDue upon receipt\n\n\
     | QUANTITY\_\_| DESCRIPTION\_\_\_\_\_\_\_\_\_| UNIT PRICE\_\_\_\_\_\_| TOTAL\_\
     \_\_|\n|------------|------------------------------|-----------------------|-----------|\n\

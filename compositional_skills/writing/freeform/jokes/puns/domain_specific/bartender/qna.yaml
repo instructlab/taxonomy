@@ -1,0 +1,16 @@
+created_by: fabiobrz
+seed_examples:
+- answer: 'A guy walks into a bar. He asks the bartender, "Do you have any helicopter
+    flavored potato chips?"
+
+    The bartender shakes his head and says, "No, we only have plain"
+
+    '
+  question: Tell me a bar joke about aircrafts.
+- answer: 'A guy walks into a wedding reception. He goes up to the Bartender and asks,
+
+    "Is this the punch line?"
+
+    '
+  question: Tell me a bar joke about cocktails.
+task_description: The pun task enables the telling of funny bar jokes.

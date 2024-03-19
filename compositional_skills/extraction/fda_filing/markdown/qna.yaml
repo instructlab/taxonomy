@@ -5,7 +5,7 @@ seed_examples:
     \_\_\_|\n| United Kingdom\_\_\_\_| Location\_\_\_\_|\n| US board\_\_\_\_\_\_\_\
     | Institution\_\_\_|\n| U.S.\_\_\_\_\_\_\_\_\_| Location\_\_\_\_|\n| Boston Medical\
     \ Centre | Institution\_\_\_|\n"
-  document: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
+  context: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
     \n## Performance Data\n\nA retrospective study has been carried out to assess\
     \ the standalone performance of the image analysis algorithm and notification\
     \ functionality of Triage ICH. The study evaluated the Triage ICH image analysis\
@@ -92,7 +92,7 @@ seed_examples:
     \ < 50 | 83.33% (67.19-93.63)\_| 88.73% (79.00-95.01)\_\_|\n| 50 \u2264 Age <\
     \ 70 | 92.75% (83.89-97.61)\_| 91.25% (82.80-96.41)\_\_|\n| Age \u2265 70\_\_\_\
     | 88.71% (78.11-95.34)\_| 100.00% (85.18-100.00) |\n\n"
-  document: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
+  context: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
     \n## Performance Data\n\nA retrospective study has been carried out to assess\
     \ the standalone performance of the image analysis algorithm and notification\
     \ functionality of Triage ICH. The study evaluated the Triage ICH image analysis\
@@ -181,7 +181,7 @@ seed_examples:
     \_\_| Summary of the performance metrics for the subsets of scans stratified by\
     \ referring hospital |\n| Table 6\_\_\_\_\_|\_Summary of the sensitivity for the\
     \ subsets of scans stratified by ICH volume\_\_\_\_\_\_\_\_\_|\n"
-  document: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
+  context: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
     \n## Performance Data\n\nA retrospective study has been carried out to assess\
     \ the standalone performance of the image analysis algorithm and notification\
     \ functionality of Triage ICH. The study evaluated the Triage ICH image analysis\

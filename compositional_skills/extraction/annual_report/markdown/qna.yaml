@@ -7,7 +7,7 @@ seed_examples:
     \ | 4,933\\* | 1,031 | NM    |\n| \_\_\_\_U.S. tax reform impacts            \
     \             | (70)    | 89    | NM    |\n| \_\_\_\_Kyndryl-related impacts \
     \                        | 351     | (81)  | NM    |\n```\n\n"
-  document: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
+  context: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
     \ and shares in millions except per share amounts)\n\n| For year ended December\
     \ 31:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_| 2022 *\_\_\_\_| 2021\_\_\_\_\_\
     | Yr.-to-Yr. Percent/Margin Change\_\_|\n|----------------------------------------------------------------------|--------------|---------------|------------------------------------|\n\
@@ -95,7 +95,7 @@ seed_examples:
     \        | 904.6        | 0.8%                            |\n| Equity        \
     \                                        | $ 22,021     | $18,996      | 15.9%\
     \   \n```\n\n"
-  document: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
+  context: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
     \ and shares in millions except per share amounts)\n\n| For year ended December\
     \ 31:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_| 2022 *\_\_\_\_| 2021\_\_\_\_\_\
     | Yr.-to-Yr. Percent/Margin Change\_\_|\n|----------------------------------------------------------------------|--------------|---------------|------------------------------------|\n\
@@ -178,7 +178,7 @@ seed_examples:
     \ -------------- | ------------- |\n| Assets      | \_$\_\_\_127,243   | \_$\_\
     \_\_132,001  |\n| Liabilities | \_$\_\_\_105,222   | \_$\_\_\_113,005  |\n| Equity\
     \      | \_$\_\_\_\_22,021   | \_$\_\_\_\_18,996  |\n```\n\n"
-  document: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
+  context: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
     \ and shares in millions except per share amounts)\n\n| For year ended December\
     \ 31:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_| 2022 *\_\_\_\_| 2021\_\_\_\_\_\
     | Yr.-to-Yr. Percent/Margin Change\_\_|\n|----------------------------------------------------------------------|--------------|---------------|------------------------------------|\n\

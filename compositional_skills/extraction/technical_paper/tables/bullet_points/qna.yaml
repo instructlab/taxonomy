@@ -13,7 +13,7 @@ seed_examples:
     - Home-credit
 
     '
-  document: "Table 1: We compare synthetic data generated without and with our post-processing\
+  context: "Table 1: We compare synthetic data generated without and with our post-processing\
     \ technique, all under the same privacy budget \u03F5 =2. We demonstrate utility\
     \ improvement (higher is better, positive numbers imply improvement) and F1 score\
     \ for downstream models trained on synthetic data and tested on real data. For\
@@ -120,7 +120,7 @@ seed_examples:
     - GEM
 
     '
-  document: "Table 1: We compare synthetic data generated without and with our post-processing\
+  context: "Table 1: We compare synthetic data generated without and with our post-processing\
     \ technique, all under the same privacy budget \u03F5 =2. We demonstrate utility\
     \ improvement (higher is better, positive numbers imply improvement) and F1 score\
     \ for downstream models trained on synthetic data and tested on real data. For\
@@ -229,7 +229,7 @@ seed_examples:
     - Inverse KL (w/ post-processing)
 
     '
-  document: "Table 1: We compare synthetic data generated without and with our post-processing\
+  context: "Table 1: We compare synthetic data generated without and with our post-processing\
     \ technique, all under the same privacy budget \u03F5 =2. We demonstrate utility\
     \ improvement (higher is better, positive numbers imply improvement) and F1 score\
     \ for downstream models trained on synthetic data and tested on real data. For\

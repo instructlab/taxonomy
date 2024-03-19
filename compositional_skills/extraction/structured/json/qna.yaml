@@ -1,0 +1,37 @@
+created_by: hemslo
+seed_examples:
+- answer: "{\n    \"location\": \"Sydney\",\n    \"temperature\": 25,\n    \"condition\"\
+    : \"sunny\"\n}\n"
+  context: "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"location\": {\n\
+    \      \"type\": \"string\"\n    },\n    \"temperature\": {\n      \"type\": \"\
+    integer\"\n    },\n    \"condition\": {\n      \"type\": \"string\"\n    }\n \
+    \ },\n  \"required\": [\n    \"location\"\n  ]\n}\n"
+  question: 'Extract a valid JSON blob from input that matches the following JSON
+    Schema.
+
+    Input: Sydney is 25 degrees and sunny.
+
+    '
+- answer: "{\n    \"location\": \"Sydney\",\n    \"condition\": \"raining\"\n}\n"
+  context: "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"location\": {\n\
+    \      \"type\": \"string\"\n    },\n    \"temperature\": {\n      \"type\": \"\
+    integer\"\n    },\n    \"condition\": {\n      \"type\": \"string\"\n    }\n \
+    \ },\n  \"required\": [\n    \"location\"\n  ]\n}\n"
+  question: 'Extract a valid JSON blob from input that matches the following JSON
+    Schema.
+
+    Input: Sydney is raining.
+
+    '
+- answer: "{\n    \"location\": \"Sydney\",\n    \"temperature\": 25\n}\n"
+  context: "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"location\": {\n\
+    \      \"type\": \"string\"\n    },\n    \"temperature\": {\n      \"type\": \"\
+    integer\"\n    },\n    \"condition\": {\n      \"type\": \"string\"\n    }\n \
+    \ },\n  \"required\": [\n    \"location\"\n  ]\n}\n"
+  question: 'Extract a valid JSON blob from input that matches the following JSON
+    Schema.
+
+    Input: Sydney is 25 degrees.
+
+    '
+task_description: Extract information in structured JSON formats

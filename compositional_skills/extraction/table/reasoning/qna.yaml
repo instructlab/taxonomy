@@ -3,7 +3,7 @@ seed_examples:
 - answer: "Based on their performance in the 2022-2023 season, I would expect Arsenal\
     \ to perform better than Everton in the 2023-2024 season. Arsenal was ranked 2nd\
     \ with 23 wins and Everton was ranked 17th with only 18 wins. \n"
-  document: "## English Premier League\n\n| 2022-2023\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\
+  context: "## English Premier League\n\n| 2022-2023\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\
     \_\_\_|\_\_GP |\_\_w |\_\_Q |\_\_.b | f\_\_\_| A\_|\_\_GD |\_\_.e |\n|---------------------------------------------|------|-----|-----|------|--------|----|------|------|\n\
     | 1\_Manchester City\_\_\_\_\_\_\_\_\_\_\_\_\_|\_\_38 |\_28 |\_\_5 |\_\_5 | 94\_\
     \_\_| 33 |\_+61 |\_\_89 |\n| 2\_Arsenal\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_|\_\_\
@@ -41,7 +41,7 @@ seed_examples:
     \ League in the 2022-2023 season, \"GP\" likely stands for \"Games Played\", \"\
     W\" probably stands for \"Wins\", \"D\" likely stands for \"Draws\", and \"L\"\
     \ probably stands for \"Losses\". \n"
-  document: "## English Premier League\n\n| 2022-2023\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\
+  context: "## English Premier League\n\n| 2022-2023\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\
     \_\_\_|\_\_GP |\_\_w |\_\_Q |\_\_.b | f\_\_\_| A\_|\_\_GD |\_\_.e |\n|---------------------------------------------|------|-----|-----|------|--------|----|------|------|\n\
     | 1\_Manchester City\_\_\_\_\_\_\_\_\_\_\_\_\_|\_\_38 |\_28 |\_\_5 |\_\_5 | 94\_\
     \_\_| 33 |\_+61 |\_\_89 |\n| 2\_Arsenal\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_|\_\_\
@@ -73,7 +73,7 @@ seed_examples:
     \_25 | 36\_\_\_| 73 |\_-37 |\_\_25 |\n"
   question: What do all of the heading "GP", "W", D", and "L" stand for in this document?
 - answer: "All of the teams had 38 GPs in the 2022-2023 season. \n"
-  document: "## English Premier League\n\n| 2022-2023\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\
+  context: "## English Premier League\n\n| 2022-2023\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\
     \_\_\_|\_\_GP |\_\_w |\_\_Q |\_\_.b | f\_\_\_| A\_|\_\_GD |\_\_.e |\n|---------------------------------------------|------|-----|-----|------|--------|----|------|------|\n\
     | 1\_Manchester City\_\_\_\_\_\_\_\_\_\_\_\_\_|\_\_38 |\_28 |\_\_5 |\_\_5 | 94\_\
     \_\_| 33 |\_+61 |\_\_89 |\n| 2\_Arsenal\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_|\_\_\

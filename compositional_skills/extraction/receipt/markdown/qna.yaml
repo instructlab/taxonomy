@@ -10,7 +10,7 @@ seed_examples:
     \_\_\_\_\_\_\_\_|1\_\_\_\_|$3.50 |\n|salsa roja + chips|\_\_\_\_\_\_\_\_\_\_\_\
     \_\_\_\_\_\_\_|1\_\_\_\_|$4.35 |\n|spiced chicken verde|\_\_\_\_\_\_\_\_\_\_\_\
     \_\_\_\_\_\_\_|1\_\_\_\_|$18.69|\n\n"
-  document: "## Thanks for tipping, Luke\n\nHere's your updated receipt for bartaco\
+  context: "## Thanks for tipping, Luke\n\nHere's your updated receipt for bartaco\
     \ (Seaport).\n\n## Total\n\n## $289.71\n\n| Subtotal\_\_\_| $239.99\_\_|\n|---------------|-----------|\n\
     | Service Fee\_\_| $14.12\_\_|\n| Tax\_\_\_\_\_\_| $16.05\_\_|\n| Delivery Fee\_\
     | $0.49\_\_\_|\n| Tip\_\_\_\_\_\_| $27.06\_\_|\n| Special Offer | -$8.00\_\_|\n\
@@ -26,7 +26,7 @@ seed_examples:
     \_\_\_\_\_\_\_\_\_\_|\n|Tax\_|$16.05\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_|\n|Delivery\
     \ Fee|$0.49\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_|\n|Tip\_|$27.06\_\_\_\_\_\_\_\_\_\_\
     \_\_\_\_\_|\n|Special Offer|-$8.00\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_|\n"
-  document: "## Thanks for tipping, Luke\n\nHere's your updated receipt for bartaco\
+  context: "## Thanks for tipping, Luke\n\nHere's your updated receipt for bartaco\
     \ (Seaport).\n\n## Total\n\n## $289.71\n\n| Subtotal\_\_\_| $239.99\_\_|\n|---------------|-----------|\n\
     | Service Fee\_\_| $14.12\_\_|\n| Tax\_\_\_\_\_\_| $16.05\_\_|\n| Delivery Fee\_\
     | $0.49\_\_\_|\n| Tip\_\_\_\_\_\_| $27.06\_\_|\n| Special Offer | -$8.00\_\_|\n\
@@ -39,7 +39,7 @@ seed_examples:
     |mushroom bowl|$14.10\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_|\n|roasted duck bowl|$14.29\_\
     \_\_\_\_\_\_\_\_\_\_\_\_\_\_|\n|ahi tuna bowl|$13.75\_\_\_\_\_\_\_\_\_\_\_\_\_\
     \_\_|\n|spiced chicken verde bowl|$19.89\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_|\n\n"
-  document: "## Thanks for tipping, Luke\n\nHere's your updated receipt for bartaco\
+  context: "## Thanks for tipping, Luke\n\nHere's your updated receipt for bartaco\
     \ (Seaport).\n\n## Total\n\n## $289.71\n\n| Subtotal\_\_\_| $239.99\_\_|\n|---------------|-----------|\n\
     | Service Fee\_\_| $14.12\_\_|\n| Tax\_\_\_\_\_\_| $16.05\_\_|\n| Delivery Fee\_\
     | $0.49\_\_\_|\n| Tip\_\_\_\_\_\_| $27.06\_\_|\n| Special Offer | -$8.00\_\_|\n\

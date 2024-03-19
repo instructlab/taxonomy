@@ -2,7 +2,7 @@ created_by: IBM
 seed_examples:
 - answer: "Yes, performance was the same or improved across all datasets and DP mechanisms.\
     \ \n"
-  document: "Table 1: We compare synthetic data generated without and with our post-processing\
+  context: "Table 1: We compare synthetic data generated without and with our post-processing\
     \ technique, all under the same privacy budget \u03F5 =2. We demonstrate utility\
     \ improvement (higher is better, positive numbers imply improvement) and F1 score\
     \ for downstream models trained on synthetic data and tested on real data. For\
@@ -101,7 +101,7 @@ seed_examples:
     based on the F1 scores.
 
     '
-  document: "Table 1: We compare synthetic data generated without and with our post-processing\
+  context: "Table 1: We compare synthetic data generated without and with our post-processing\
     \ technique, all under the same privacy budget \u03F5 =2. We demonstrate utility\
     \ improvement (higher is better, positive numbers imply improvement) and F1 score\
     \ for downstream models trained on synthetic data and tested on real data. For\
@@ -197,7 +197,7 @@ seed_examples:
 - answer: 'MST was the highest utility score with 0.32.
 
     '
-  document: "Table 1: We compare synthetic data generated without and with our post-processing\
+  context: "Table 1: We compare synthetic data generated without and with our post-processing\
     \ technique, all under the same privacy budget \u03F5 =2. We demonstrate utility\
     \ improvement (higher is better, positive numbers imply improvement) and F1 score\
     \ for downstream models trained on synthetic data and tested on real data. For\

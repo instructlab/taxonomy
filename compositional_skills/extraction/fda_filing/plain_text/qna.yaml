@@ -3,7 +3,7 @@ seed_examples:
 - answer: 'Oxford, United Kingdom, U.S., Massachusetts
 
     '
-  document: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
+  context: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
     \n## Performance Data\n\nA retrospective study has been carried out to assess\
     \ the standalone performance of the image analysis algorithm and notification\
     \ functionality of Triage ICH. The study evaluated the Triage ICH image analysis\
@@ -89,7 +89,7 @@ seed_examples:
     Hemorrhage; SAH, Subarachnoid Hemorrhage; SDH, Subdural Hemorrhage
 
     '
-  document: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
+  context: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
     \n## Performance Data\n\nA retrospective study has been carried out to assess\
     \ the standalone performance of the image analysis algorithm and notification\
     \ functionality of Triage ICH. The study evaluated the Triage ICH image analysis\
@@ -170,7 +170,7 @@ seed_examples:
     the acronym stands for.
 - answer: "Males had a sensitivity of 93.18% (85.75-97.46)\_and specificity of 91.30%\
     \ (83.58-96.17).\n"
-  document: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
+  context: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
     \n## Performance Data\n\nA retrospective study has been carried out to assess\
     \ the standalone performance of the image analysis algorithm and notification\
     \ functionality of Triage ICH. The study evaluated the Triage ICH image analysis\

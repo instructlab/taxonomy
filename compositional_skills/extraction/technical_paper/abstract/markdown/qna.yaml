@@ -19,7 +19,7 @@ seed_examples:
     ```
 
     '
-  document: "## Post-processing Private Synthetic Data for Improving Utility on Selected\
+  context: "## Post-processing Private Synthetic Data for Improving Utility on Selected\
     \ Measures\n\nHao Wang, Shivchander Sudalairaj, John Henning, Kristjan Greenewald,\
     \ Akash Srivastava \u2217 MIT-IBM Watson AI Lab\n\n## Abstract\n\nExisting private\
     \ synthetic data generation algorithms are agnostic to downstream tasks. However,\
@@ -76,7 +76,7 @@ seed_examples:
     ```
 
     '
-  document: "## Post-processing Private Synthetic Data for Improving Utility on Selected\
+  context: "## Post-processing Private Synthetic Data for Improving Utility on Selected\
     \ Measures\n\nHao Wang, Shivchander Sudalairaj, John Henning, Kristjan Greenewald,\
     \ Akash Srivastava \u2217 MIT-IBM Watson AI Lab\n\n## Abstract\n\nExisting private\
     \ synthetic data generation algorithms are agnostic to downstream tasks. However,\
@@ -135,7 +135,7 @@ seed_examples:
 
 
     '
-  document: "## Post-processing Private Synthetic Data for Improving Utility on Selected\
+  context: "## Post-processing Private Synthetic Data for Improving Utility on Selected\
     \ Measures\n\nHao Wang, Shivchander Sudalairaj, John Henning, Kristjan Greenewald,\
     \ Akash Srivastava \u2217 MIT-IBM Watson AI Lab\n\n## Abstract\n\nExisting private\
     \ synthetic data generation algorithms are agnostic to downstream tasks. However,\

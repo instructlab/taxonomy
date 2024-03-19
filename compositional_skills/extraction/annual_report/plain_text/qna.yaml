@@ -1,7 +1,7 @@
 created_by: IBM
 seed_examples:
 - answer: "Revenue, Profit, Cash Generation \n"
-  document: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
+  context: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
     \ and shares in millions except per share amounts)\n\n| For year ended December\
     \ 31:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_| 2022 *\_\_\_\_| 2021\_\_\_\_\_\
     | Yr.-to-Yr. Percent/Margin Change\_\_|\n|----------------------------------------------------------------------|--------------|---------------|------------------------------------|\n\
@@ -83,7 +83,7 @@ seed_examples:
 - answer: '$7,174,000,000, $8,326,000,000
 
     '
-  document: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
+  context: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
     \ and shares in millions except per share amounts)\n\n| For year ended December\
     \ 31:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_| 2022 *\_\_\_\_| 2021\_\_\_\_\_\
     | Yr.-to-Yr. Percent/Margin Change\_\_|\n|----------------------------------------------------------------------|--------------|---------------|------------------------------------|\n\
@@ -162,7 +162,7 @@ seed_examples:
     2022, respectively. '
 - answer: "Acquisition-related charges, non-operating retirement-related costs/ (income),\
     \ U.S. tax reform impacts, Kyndryl-related impacts. \n"
-  document: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
+  context: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
     \ and shares in millions except per share amounts)\n\n| For year ended December\
     \ 31:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_| 2022 *\_\_\_\_| 2021\_\_\_\_\_\
     | Yr.-to-Yr. Percent/Margin Change\_\_|\n|----------------------------------------------------------------------|--------------|---------------|------------------------------------|\n\

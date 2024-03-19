@@ -1,0 +1,167 @@
+created_by: davemulford
+seed_examples:
+- answer: 'My snowman threw a temper tantrum. I''m talking a complete meltdown.
+
+    '
+  question: Tell me a dad joke about a snowman.
+- answer: 'Cinderella is not a great soccer player. She''s always running away from
+    the ball.
+
+    '
+  question: Tell me a dad joke about Cinderella.
+- answer: 'Thank you so much for explaining the word "many" to me. It means a lot.
+
+    '
+  question: Tell me a dad joke about the word many.
+- answer: 'What do all ninjas wear to work?
+
+
+    Sneakers
+
+    '
+  question: Tell me a dad joke about ninjas.
+- answer: 'When does a farmer dance?
+
+
+    When the beet drops.
+
+    '
+  question: Tell me a dad joke about farmers.
+- answer: 'To the person who stole my copy of Microsoft Office, I will find you. You
+    have my Word.
+
+    '
+  question: Tell me a dad joke about Microsoft.
+- answer: 'I got hired as a security guard, and my boss told me that it was my job
+    to watch the office. I''m on season eight, and I still can''t figure out what
+    this has to do with security.
+
+    '
+  question: Tell me a dad joke about The Office.
+- answer: 'What do ducks made of avocados say to each other?
+
+
+    Guac!
+
+    '
+  question: Tell me a dad joke about ducks.
+- answer: 'I''ve been hit by the same bike three times this week. It''s a vicious
+    cycle.
+
+    '
+  question: Tell me a dad joke about bikes.
+- answer: 'My boss always used to laugh at my jokes in the office but stopped laughing
+    now that we''re on video calls. She says my jokes aren''t remotely funny.
+
+    '
+  question: Tell me a dad joke about bosses.
+- answer: 'Who invented air conditioning?
+
+
+    A cool guy.
+
+    '
+  question: Tell me a dad joke about air conditioning.
+- answer: 'What happens when you try to kick a volcano?
+
+
+    You Krakatoa.
+
+    '
+  question: Tell me a dad joke about volcanoes.
+- answer: 'What do you call a feud between celebrities?
+
+
+    Star wars.
+
+    '
+  question: Tell me a dad joke about celebrities.
+- answer: 'What do you call a boat with a hole at the bottom?
+
+
+    A sink.
+
+    '
+  question: Tell me a dad joke about boats.
+- answer: 'Why do you think the teacher''s eyes were crossed?
+
+
+    He couldn''t control his pupils.
+
+    '
+  question: Tell me a dad joke about teachers.
+- answer: 'I can''t afford the new gaming system everyone has and it''s getting me
+    down. No one knows how to console me.
+
+    '
+  question: Tell me a dad joke about gaming.
+- answer: 'My dad used to always say, "The sky''s the limit!" That''s probably why
+    he got fired as an astronaut from NASA.
+
+    '
+  question: Tell me a dad joke about space.
+- answer: 'I tried to call the tinnitus helpline, but it just kept ringing.
+
+    '
+  question: Tell me a dad joke about ears.
+- answer: 'Harry Potter can''t tell the difference between his cooking pot and his
+    best friend. They''re both cauldron.
+
+    '
+  question: Tell me a dad joke about Harry Potter.
+- answer: 'What is a hyena''s favorite type of candy?
+
+
+    Snickers.
+
+    '
+  question: Tell me a dad joke about hyenas.
+- answer: 'I confronted a mime today. He did unspeakable things.
+
+    '
+  question: Tell me a dad joke about mimes.
+- answer: 'Dad, are we pyromaniacs?
+
+
+    We arson.
+
+    '
+  question: Tell me a dad joke about fire.
+- answer: 'My friends claim I''m the cheapest person they''ve ever met, but I''m not
+    buying it.
+
+    '
+  question: Tell me a dad joke about money.
+- answer: 'Where do you find books about oil in the library?
+
+
+    In the non-friction section.
+
+    '
+  question: Tell me a dad joke about oil.
+- answer: 'I was accused of being a plagiarist. Their words, not mine.
+
+    '
+  question: Tell me a dad joke about plagiarism.
+- answer: 'I''m having trouble organizing a hide-and-seek league. Good players are
+    hard to find.
+
+    '
+  question: Tell me a dad joke about hide-and-seek.
+- answer: 'Can you believe Aquaman backed into my car three times yesterday? Left
+    me with a trident.
+
+    '
+  question: Tell me a dad joke about Aquaman.
+- answer: 'How do trees access the internet?
+
+
+    They log on.
+
+    '
+  question: Tell me a dad joke about the internet.
+- answer: 'I hate negative numbers. I will stop at nothing to avoid them.
+
+    '
+  question: Tell me a dad joke about numbers.
+task_description: Tell dad jokes

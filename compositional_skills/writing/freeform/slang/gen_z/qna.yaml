@@ -1,0 +1,81 @@
+created_by: alinaryan
+seed_examples:
+- answer: ate and left no crumbs
+  question: What is the Gen Z equivalent phrase used to show admiration or praise
+    for someone who succeeded or performed well in something.
+- answer: basic
+  question: What is the Gen Z equivalent phrase used to denote those who prefer mainstream
+    products, trends, and music.
+- answer: big yikes
+  question: What is the Gen Z equivalent used to describe something embarrassing or
+    cringey, particularly in response to an offensive comment.
+- answer: bruh
+  question: What is the Gen Z equivalent phrase used to express a feeling of shock,
+    embarrassment, or disappointment toward something or someone.
+- answer: bussin'
+  question: What is the Gen Z equivalent phrase used to describe something extremely
+    good, excellent or used to describe good food.
+- answer: cap
+  question: What is the Gen Z equivalent phrase that means to lie.
+- answer: drip
+  question: What is the Gen Z equivalent phrase used to describe trendy high-class
+    fashion.
+- answer: extra
+  question: What is the Gen Z equivalent phrase used to describe someone or something
+    that is over-the-top, excessive, or dramatic in behavior, appearance, or actions.
+- answer: gatekeep
+  question: What is the Gen Z equivalent phrase used to describe withholding information
+    or knowledge from others to keep something exclusive to oneself.
+- answer: ghost
+  question: What is the Gen Z equivalent phrase used to describe ending communication
+    or contact with someone without warning.
+- answer: glow-up
+  question: What is the Gen Z equivalent phrase used to describe a major improvement
+    in one's self, usually an improvement in appearance, confidence, and style.
+- answer: gucci
+  question: What is the Gen Z equivalent phrase meaning good, cool, fashionable, excellent
+    or used to express approval or satisfaction for something.
+- answer: ick
+  question: What is the Gen Z equivalent phrase used to refer to a sudden feeling
+    of disgust or repulsion to a dating partner someone was previously attracted to.
+- answer: I oop
+  question: What is the Gen Z equivalent phrase used to express shock, embarrassment,
+    and or amusement.
+- answer: it's giving
+  question: What is the Gen Z equivalent phrase used to describe the attitude or connotation
+    of something or someone or also used to give general admiration toward something.
+- answer: lit
+  question: What is the Gen Z equivalent used to describe something remarkable, interesting,
+    fun, amusing or generally positive.
+- answer: mid
+  question: What is the Gen Z equivalent used to label something as average or not
+    special and sometimes used in a negative or insulting way.
+- answer: rent free
+  question: "What is the Gen Z equivalent used to describe a situation where someone\
+    \ or something is occupying a significant amount of someone\u2019s mind or thoughts."
+- answer: rizz
+  question: What is the Gen Z equivalent used to describe one's charm or charisma.
+- answer: secure the bag
+  question: What is the Gen Z equivalent used to describe working to reach your goals,
+    usually referring to making money.
+- answer: shook
+  question: What is the Gen Z equivalent used to describe shock, surprise, or being
+    bothered.
+- answer: slaps
+  question: What is the Gen Z equivalent used to refer to something that is perceived
+    to be good, particularly used when referring to music.
+- answer: slay
+  question: What is the Gen Z equivalent that means to do something well.
+- answer: stan
+  question: What is the Gen Z equivalent that means to support someone or something.
+- answer: sus
+  question: What is the Gen Z equivalent term for suspect or suspicious.
+- answer: tea
+  question: What is the Gen Z equivalent that means gossip.
+- answer: touch grass
+  question: What is the Gen Z equivalent phrase used to tell someone to "go outside",
+    usually after said person is believed to have been on social media for too long.
+- answer: yeet
+  question: What is the Gen Z equivalent phrase that means to throw something with
+    force and without regard and can also be used as a generic positive exclamation.
+task_description: Answer questions in the style of Gen Z.

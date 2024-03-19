@@ -5,7 +5,7 @@ seed_examples:
     \ Adult dataset ranged from 0.33 to 0.61. The shopper dataset ranged from 0.3\
     \ to 0.48 and the Bank dataset ranged from 0.23 to 0.46. Additionally, the F1\
     \ scores for the real data were the highest for the Mushroom dataset. \n"
-  document: "Table 1: We compare synthetic data generated without and with our post-processing\
+  context: "Table 1: We compare synthetic data generated without and with our post-processing\
     \ technique, all under the same privacy budget \u03F5 =2. We demonstrate utility\
     \ improvement (higher is better, positive numbers imply improvement) and F1 score\
     \ for downstream models trained on synthetic data and tested on real data. For\
@@ -106,7 +106,7 @@ seed_examples:
     PATECTGAN mechanism was 0.4475.
 
     '
-  document: "Table 1: We compare synthetic data generated without and with our post-processing\
+  context: "Table 1: We compare synthetic data generated without and with our post-processing\
     \ technique, all under the same privacy budget \u03F5 =2. We demonstrate utility\
     \ improvement (higher is better, positive numbers imply improvement) and F1 score\
     \ for downstream models trained on synthetic data and tested on real data. For\
@@ -206,7 +206,7 @@ seed_examples:
     of 0.375.
 
     '
-  document: "Table 1: We compare synthetic data generated without and with our post-processing\
+  context: "Table 1: We compare synthetic data generated without and with our post-processing\
     \ technique, all under the same privacy budget \u03F5 =2. We demonstrate utility\
     \ improvement (higher is better, positive numbers imply improvement) and F1 score\
     \ for downstream models trained on synthetic data and tested on real data. For\

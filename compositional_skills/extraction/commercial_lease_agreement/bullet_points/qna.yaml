@@ -5,7 +5,7 @@ seed_examples:
     \ Temple City Boulevard, El Monte, California 91731\n- Tenant:\n    - Name: Okra\
     \ Energy, Inc.\n    - Address: 4350 Temple City Boulevard, El Monte, California\
     \ 91731\n\n"
-  document: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
+  context: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
     \ into on December 1, 2013, by and between Temple CB, LLC, whose address is 4350\
     \ Temple City Boulevard, El Monte, California 91731 (hereinafter referred to as\
     \ 'Landlord '), and Okra Energy, Inc., whose address is 4350 Temple City Boulevard,\
@@ -44,7 +44,7 @@ seed_examples:
 - answer: "The monthly rent after Jun 2026 is listed below: \n- June 1, 2016 - May\
     \ 31, 2017: $50,000\n- June 1, 2017 - May 31, 2018: $60,000\n- June 1, 2019 -\
     \ May 31, 2020: $70,000\n"
-  document: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
+  context: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
     \ into on December 1, 2013, by and between Temple CB, LLC, whose address is 4350\
     \ Temple City Boulevard, El Monte, California 91731 (hereinafter referred to as\
     \ 'Landlord '), and Okra Energy, Inc., whose address is 4350 Temple City Boulevard,\
@@ -84,7 +84,7 @@ seed_examples:
     \ 2015 - May 31, 2016 is $40,000.\n- The monthly rent for June 1, 2016 - May 31,\
     \ 2017 is $50,000.\n- The monthly rent for June 1, 2017 - May 31, 2018 is $60,000.\n\
     - The monthly rent for June 1, 2019 - May 31, 2020 is $70,000.\n"
-  document: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
+  context: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
     \ into on December 1, 2013, by and between Temple CB, LLC, whose address is 4350\
     \ Temple City Boulevard, El Monte, California 91731 (hereinafter referred to as\
     \ 'Landlord '), and Okra Energy, Inc., whose address is 4350 Temple City Boulevard,\

@@ -12,7 +12,7 @@ seed_examples:
     benchmark datasets and state-of-the-art synthetic data generation algorithms.
 
     '
-  document: "## Post-processing Private Synthetic Data for Improving Utility on Selected\
+  context: "## Post-processing Private Synthetic Data for Improving Utility on Selected\
     \ Measures\n\nHao Wang, Shivchander Sudalairaj, John Henning, Kristjan Greenewald,\
     \ Akash Srivastava \u2217 MIT-IBM Watson AI Lab\n\n## Abstract\n\nExisting private\
     \ synthetic data generation algorithms are agnostic to downstream tasks. However,\
@@ -69,7 +69,7 @@ seed_examples:
     - akash.srivastava@ibm.com
 
     '
-  document: "## Post-processing Private Synthetic Data for Improving Utility on Selected\
+  context: "## Post-processing Private Synthetic Data for Improving Utility on Selected\
     \ Measures\n\nHao Wang, Shivchander Sudalairaj, John Henning, Kristjan Greenewald,\
     \ Akash Srivastava \u2217 MIT-IBM Watson AI Lab\n\n## Abstract\n\nExisting private\
     \ synthetic data generation algorithms are agnostic to downstream tasks. However,\
@@ -120,7 +120,7 @@ seed_examples:
     \ Methods include\n    - GAN-based [XLW+18, BJWW+19, JYVDS19, TWB+19]\n    - Marginal-based\
     \ [ZCP+17, MSM19, MMS21]\n    - Workload-based [VTB+20, ABK+21, LVW21, MMSM22,\
     \ VAA+22]\n"
-  document: "## Post-processing Private Synthetic Data for Improving Utility on Selected\
+  context: "## Post-processing Private Synthetic Data for Improving Utility on Selected\
     \ Measures\n\nHao Wang, Shivchander Sudalairaj, John Henning, Kristjan Greenewald,\
     \ Akash Srivastava \u2217 MIT-IBM Watson AI Lab\n\n## Abstract\n\nExisting private\
     \ synthetic data generation algorithms are agnostic to downstream tasks. However,\

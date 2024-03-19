@@ -9,7 +9,7 @@ seed_examples:
     - Kyndryl-related impacts
 
     '
-  document: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
+  context: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
     \ and shares in millions except per share amounts)\n\n| For year ended December\
     \ 31:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_| 2022 *\_\_\_\_| 2021\_\_\_\_\_\
     | Yr.-to-Yr. Percent/Margin Change\_\_|\n|----------------------------------------------------------------------|--------------|---------------|------------------------------------|\n\
@@ -89,7 +89,7 @@ seed_examples:
 - answer: "- Income from continuing operations before income tax\n- Income from continue\
     \ operations\n- Income from continuing operations margin\n- Income/ (loss) from\
     \ discontinued operations, net of tax\n- Net income \n"
-  document: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
+  context: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
     \ and shares in millions except per share amounts)\n\n| For year ended December\
     \ 31:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_| 2022 *\_\_\_\_| 2021\_\_\_\_\_\
     | Yr.-to-Yr. Percent/Margin Change\_\_|\n|----------------------------------------------------------------------|--------------|---------------|------------------------------------|\n\
@@ -171,7 +171,7 @@ seed_examples:
     - 2022
 
     '
-  document: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
+  context: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
     \ and shares in millions except per share amounts)\n\n| For year ended December\
     \ 31:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_| 2022 *\_\_\_\_| 2021\_\_\_\_\_\
     | Yr.-to-Yr. Percent/Margin Change\_\_|\n|----------------------------------------------------------------------|--------------|---------------|------------------------------------|\n\

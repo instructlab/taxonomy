@@ -9,7 +9,7 @@ seed_examples:
     but the exact hospital names were not provided.
 
     '
-  document: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
+  context: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
     \n## Performance Data\n\nA retrospective study has been carried out to assess\
     \ the standalone performance of the image analysis algorithm and notification\
     \ functionality of Triage ICH. The study evaluated the Triage ICH image analysis\
@@ -100,7 +100,7 @@ seed_examples:
     - traumatic vs non traumatic etiology
 
     '
-  document: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
+  context: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
     \n## Performance Data\n\nA retrospective study has been carried out to assess\
     \ the standalone performance of the image analysis algorithm and notification\
     \ functionality of Triage ICH. The study evaluated the Triage ICH image analysis\
@@ -186,7 +186,7 @@ seed_examples:
     \   - Specificity (95% CI): 100.00% (82.35-100.00)\n- Slice Thickness \u2265 3\
     \ mm\n    - Sensitivity (95% CI): 90.62% (74.98-98.02)\n    - Specificity (95%\
     \ CI): 76.47% (58.83-89.25)\n"
-  document: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
+  context: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
     \n## Performance Data\n\nA retrospective study has been carried out to assess\
     \ the standalone performance of the image analysis algorithm and notification\
     \ functionality of Triage ICH. The study evaluated the Triage ICH image analysis\

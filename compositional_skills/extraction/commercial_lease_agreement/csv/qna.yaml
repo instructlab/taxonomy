@@ -10,7 +10,7 @@ seed_examples:
 
 
     '
-  document: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
+  context: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
     \ into on December 1, 2013, by and between Temple CB, LLC, whose address is 4350\
     \ Temple City Boulevard, El Monte, California 91731 (hereinafter referred to as\
     \ 'Landlord '), and Okra Energy, Inc., whose address is 4350 Temple City Boulevard,\
@@ -53,7 +53,7 @@ seed_examples:
     End data, May 31, 2020
 
     '
-  document: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
+  context: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
     \ into on December 1, 2013, by and between Temple CB, LLC, whose address is 4350\
     \ Temple City Boulevard, El Monte, California 91731 (hereinafter referred to as\
     \ 'Landlord '), and Okra Energy, Inc., whose address is 4350 Temple City Boulevard,\
@@ -104,7 +104,7 @@ seed_examples:
     "June 1, 2019 to May 31, 2020:" $70000
 
     '
-  document: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
+  context: "## COMMERCIAL LEASE AGREEMENT\n\nTHIS LEASE AGREEMENT is made and entered\
     \ into on December 1, 2013, by and between Temple CB, LLC, whose address is 4350\
     \ Temple City Boulevard, El Monte, California 91731 (hereinafter referred to as\
     \ 'Landlord '), and Okra Energy, Inc., whose address is 4350 Temple City Boulevard,\

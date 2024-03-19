@@ -11,7 +11,7 @@ seed_examples:
     - spiced chicken verde bowl
 
     '
-  document: "## Thanks for tipping, Luke\n\nHere's your updated receipt for bartaco\
+  context: "## Thanks for tipping, Luke\n\nHere's your updated receipt for bartaco\
     \ (Seaport).\n\n## Total\n\n## $289.71\n\n| Subtotal\_\_\_| $239.99\_\_|\n|---------------|-----------|\n\
     | Service Fee\_\_| $14.12\_\_|\n| Tax\_\_\_\_\_\_| $16.05\_\_|\n| Delivery Fee\_\
     | $0.49\_\_\_|\n| Tip\_\_\_\_\_\_| $27.06\_\_|\n| Special Offer | -$8.00\_\_|\n\
@@ -23,7 +23,7 @@ seed_examples:
     '
 - answer: "- jalapeno hot sauce \u2013 to-go\n- pineapple habanero hot sauce \u2013\
     \ to-go\n- roja hot sauce \u2013 to-go\n- jalapeno hot sauce \u2013 to-go\n"
-  document: "## Thanks for tipping, Luke\n\nHere's your updated receipt for bartaco\
+  context: "## Thanks for tipping, Luke\n\nHere's your updated receipt for bartaco\
     \ (Seaport).\n\n## Total\n\n## $289.71\n\n| Subtotal\_\_\_| $239.99\_\_|\n|---------------|-----------|\n\
     | Service Fee\_\_| $14.12\_\_|\n| Tax\_\_\_\_\_\_| $16.05\_\_|\n| Delivery Fee\_\
     | $0.49\_\_\_|\n| Tip\_\_\_\_\_\_| $27.06\_\_|\n| Special Offer | -$8.00\_\_|\n\
@@ -36,7 +36,7 @@ seed_examples:
     - ahi tuna bowl
 
     '
-  document: "## Thanks for tipping, Luke\n\nHere's your updated receipt for bartaco\
+  context: "## Thanks for tipping, Luke\n\nHere's your updated receipt for bartaco\
     \ (Seaport).\n\n## Total\n\n## $289.71\n\n| Subtotal\_\_\_| $239.99\_\_|\n|---------------|-----------|\n\
     | Service Fee\_\_| $14.12\_\_|\n| Tax\_\_\_\_\_\_| $16.05\_\_|\n| Delivery Fee\_\
     | $0.49\_\_\_|\n| Tip\_\_\_\_\_\_| $27.06\_\_|\n| Special Offer | -$8.00\_\_|\n\

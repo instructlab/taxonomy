@@ -13,7 +13,7 @@ seed_examples:
     Akash Srivastava,MIT-IBM Watson AI Lab,akash.srivastava@ibm.com
 
     '
-  document: "## Post-processing Private Synthetic Data for Improving Utility on Selected\
+  context: "## Post-processing Private Synthetic Data for Improving Utility on Selected\
     \ Measures\n\nHao Wang, Shivchander Sudalairaj, John Henning, Kristjan Greenewald,\
     \ Akash Srivastava \u2217 MIT-IBM Watson AI Lab\n\n## Abstract\n\nExisting private\
     \ synthetic data generation algorithms are agnostic to downstream tasks. However,\
@@ -65,7 +65,7 @@ seed_examples:
     Workload-based,VTB+20,ABK+21,LVW21,MMSM22,VAA+22
 
     '
-  document: "## Post-processing Private Synthetic Data for Improving Utility on Selected\
+  context: "## Post-processing Private Synthetic Data for Improving Utility on Selected\
     \ Measures\n\nHao Wang, Shivchander Sudalairaj, John Henning, Kristjan Greenewald,\
     \ Akash Srivastava \u2217 MIT-IBM Watson AI Lab\n\n## Abstract\n\nExisting private\
     \ synthetic data generation algorithms are agnostic to downstream tasks. However,\
@@ -119,7 +119,7 @@ seed_examples:
     Workload-based,5
 
     '
-  document: "## Post-processing Private Synthetic Data for Improving Utility on Selected\
+  context: "## Post-processing Private Synthetic Data for Improving Utility on Selected\
     \ Measures\n\nHao Wang, Shivchander Sudalairaj, John Henning, Kristjan Greenewald,\
     \ Akash Srivastava \u2217 MIT-IBM Watson AI Lab\n\n## Abstract\n\nExisting private\
     \ synthetic data generation algorithms are agnostic to downstream tasks. However,\

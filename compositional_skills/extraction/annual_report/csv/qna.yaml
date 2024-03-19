@@ -7,7 +7,7 @@ seed_examples:
     \ costs/(income),\"4,933\\*\"\n\_\_\_U.S. tax reform impacts,(70)\n\_\_\_Kyndryl-related\
     \ impacts,351\nOperating (non-GAAP) earnings,\"$8,326 \"\nDiluted operating (non-GAAP)\
     \ earning per share,$9.13\_\n"
-  document: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
+  context: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
     \ and shares in millions except per share amounts)\n\n| For year ended December\
     \ 31:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_| 2022 *\_\_\_\_| 2021\_\_\_\_\_\
     | Yr.-to-Yr. Percent/Margin Change\_\_|\n|----------------------------------------------------------------------|--------------|---------------|------------------------------------|\n\
@@ -106,7 +106,7 @@ seed_examples:
     Net income," $1,639 "," $5,743 ",(71.5)%
 
     '
-  document: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
+  context: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
     \ and shares in millions except per share amounts)\n\n| For year ended December\
     \ 31:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_| 2022 *\_\_\_\_| 2021\_\_\_\_\_\
     | Yr.-to-Yr. Percent/Margin Change\_\_|\n|----------------------------------------------------------------------|--------------|---------------|------------------------------------|\n\
@@ -215,7 +215,7 @@ seed_examples:
     Equity,15.9%
 
     '
-  document: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
+  context: "## 8 Management Discussion\n\n## MANAGEMENT DISCUSSION SNAPSHOT\n\n($\
     \ and shares in millions except per share amounts)\n\n| For year ended December\
     \ 31:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_| 2022 *\_\_\_\_| 2021\_\_\_\_\_\
     | Yr.-to-Yr. Percent/Margin Change\_\_|\n|----------------------------------------------------------------------|--------------|---------------|------------------------------------|\n\

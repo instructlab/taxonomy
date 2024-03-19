@@ -5,7 +5,7 @@ seed_examples:
     F1,0.61,0.95,0.54,0.47
 
     '
-  document: "Table 1: We compare synthetic data generated without and with our post-processing\
+  context: "Table 1: We compare synthetic data generated without and with our post-processing\
     \ technique, all under the same privacy budget \u03F5 =2. We demonstrate utility\
     \ improvement (higher is better, positive numbers imply improvement) and F1 score\
     \ for downstream models trained on synthetic data and tested on real data. For\
@@ -101,7 +101,7 @@ seed_examples:
 - answer: "Dataset (DP mechanism),F1 score (w/post-proc)\nAdult (AIM),0.61 \xB10.0\n\
     Mushroom (AIM),0.93 \xB10.0\nShopper (AIM),0.48 \xB10.02\nBank (AIM),0.46 \xB1\
     0.01\n"
-  document: "Table 1: We compare synthetic data generated without and with our post-processing\
+  context: "Table 1: We compare synthetic data generated without and with our post-processing\
     \ technique, all under the same privacy budget \u03F5 =2. We demonstrate utility\
     \ improvement (higher is better, positive numbers imply improvement) and F1 score\
     \ for downstream models trained on synthetic data and tested on real data. For\
@@ -196,7 +196,7 @@ seed_examples:
     mechanism and the f1 scores with post processing.
 - answer: "DP Mechanism,Utility Improvement\nDPCTGAN,0.81 \xB10.09\nPATECTGAN,0.6\
     \ \xB10.04\nMST,0.22 \xB10.02\nAIM,0.13 \xB10.03\n"
-  document: "Table 1: We compare synthetic data generated without and with our post-processing\
+  context: "Table 1: We compare synthetic data generated without and with our post-processing\
     \ technique, all under the same privacy budget \u03F5 =2. We demonstrate utility\
     \ improvement (higher is better, positive numbers imply improvement) and F1 score\
     \ for downstream models trained on synthetic data and tested on real data. For\

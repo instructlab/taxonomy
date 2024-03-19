@@ -59,7 +59,7 @@ seed_examples:
     \nDP has two important properties: post-processing immunity and composition rule.\
     \ Specifically, if M : X n \u2192 R satisfies (\u03F5 \u21AA \u03B4)-DP and g\
     \ : R \u2192 R ' is any randomized (or deterministic) function, then\n\n"
-  document: "## 1.1 Related Work\n\nDP synthetic data generation mechanisms. Generating\
+  context: "## 1.1 Related Work\n\nDP synthetic data generation mechanisms. Generating\
     \ synthetic data using DP mechanisms is an active area of research [see e.g.,\
     \ HLM12, BLR13, GAH + 14, CXZX15, BSG17, AZK + 19, UV20, GMHI20, TMH + 21, VAA\
     \ + 22, BSV22]. Along this line of work, the closest ones to ours are workload-aware\
@@ -128,7 +128,7 @@ seed_examples:
     | 1\_\_|\n| VAA + 22\_| 1\_\_|\n| BSV22\_\_| 1\_\_|\n| VTB + 20\_| 2\_\_|\n| ABK\
     \ + 21\_| 2\_\_|\n| MMSM22\_\_| 2\_\_|\n| LVW21\_\_| 5\_\_|\n| LVS + 21\_| 2\_\
     \_|\n| NWD20\_\_| 1\_\_|\n| TMH + 21\_| 1\_\_|\n| DR14\_\_\_| 1\_\_|\n"
-  document: "## 1.1 Related Work\n\nDP synthetic data generation mechanisms. Generating\
+  context: "## 1.1 Related Work\n\nDP synthetic data generation mechanisms. Generating\
     \ synthetic data using DP mechanisms is an active area of research [see e.g.,\
     \ HLM12, BLR13, GAH + 14, CXZX15, BSG17, AZK + 19, UV20, GMHI20, TMH + 21, VAA\
     \ + 22, BSV22]. Along this line of work, the closest ones to ours are workload-aware\
@@ -205,7 +205,7 @@ seed_examples:
 
 
     '
-  document: "## 1.1 Related Work\n\nDP synthetic data generation mechanisms. Generating\
+  context: "## 1.1 Related Work\n\nDP synthetic data generation mechanisms. Generating\
     \ synthetic data using DP mechanisms is an active area of research [see e.g.,\
     \ HLM12, BLR13, GAH + 14, CXZX15, BSG17, AZK + 19, UV20, GMHI20, TMH + 21, VAA\
     \ + 22, BSV22]. Along this line of work, the closest ones to ours are workload-aware\
@@ -283,7 +283,7 @@ seed_examples:
     | GEM | [LVW21] |
 
     '
-  document: "data across multiple datasets and state-of-the-art privacy mechanisms.\
+  context: "data across multiple datasets and state-of-the-art privacy mechanisms.\
     \ Additionally, it achieves this without degrading the performance of downstream\
     \ models or statistical metrics. We provide additional experimental results and\
     \ implementation details in Appendix C.\n\nBenchmark. We evaluate our algorithm\
@@ -348,7 +348,7 @@ seed_examples:
 - answer: "| Parameter | Value |\n|---|---|\n| \u03B3 | 1e-5 |\n| Batch size (UCI)\
     \ | 256 |\n| Batch size (home-credit) | 4096 |\n| Epochs | 200 |\n| Experiment\
     \ repetitions | 5 |\n"
-  document: "data across multiple datasets and state-of-the-art privacy mechanisms.\
+  context: "data across multiple datasets and state-of-the-art privacy mechanisms.\
     \ Additionally, it achieves this without degrading the performance of downstream\
     \ models or statistical metrics. We provide additional experimental results and\
     \ implementation details in Appendix C.\n\nBenchmark. We evaluate our algorithm\
@@ -420,7 +420,7 @@ seed_examples:
     | 0 (totally different) to 1 (identical) |
 
     '
-  document: "data across multiple datasets and state-of-the-art privacy mechanisms.\
+  context: "data across multiple datasets and state-of-the-art privacy mechanisms.\
     \ Additionally, it achieves this without degrading the performance of downstream\
     \ models or statistical metrics. We provide additional experimental results and\
     \ implementation details in Appendix C.\n\nBenchmark. We evaluate our algorithm\

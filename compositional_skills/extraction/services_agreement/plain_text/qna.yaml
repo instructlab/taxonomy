@@ -6,7 +6,7 @@ seed_examples:
     \ each occurrence of property damage and personal injury, and Automobile Liability\
     \ insurance with limits of not less than $100,000 (bodily injury per person),\
     \ $300,000 (each accident) and $50,000 (property damage).\_\n"
-  document: '8. Indemnification and Insurance. Consultant shall indemnify and hold
+  context: '8. Indemnification and Insurance. Consultant shall indemnify and hold
     harmless the County from and against all claims, damages, losses, and expenses
     arising out of or resulting from acts or omissions of the Consultant, Consultant''s
     sub-Consultants or otherwise arising out of the performance of services by Consultant.
@@ -56,7 +56,7 @@ seed_examples:
 - answer: "You need to provide to the County Certificates of Standard Workers\u2019\
     \ Compensation, Comprehensive General Liability Insurance, and Automobile Liability\
     \ insurance for yourself, agents, and sub-consultants.\n"
-  document: '8. Indemnification and Insurance. Consultant shall indemnify and hold
+  context: '8. Indemnification and Insurance. Consultant shall indemnify and hold
     harmless the County from and against all claims, damages, losses, and expenses
     arising out of or resulting from acts or omissions of the Consultant, Consultant''s
     sub-Consultants or otherwise arising out of the performance of services by Consultant.
@@ -107,7 +107,7 @@ seed_examples:
     and $50,000 (property damage).
 
     '
-  document: '8. Indemnification and Insurance. Consultant shall indemnify and hold
+  context: '8. Indemnification and Insurance. Consultant shall indemnify and hold
     harmless the County from and against all claims, damages, losses, and expenses
     arising out of or resulting from acts or omissions of the Consultant, Consultant''s
     sub-Consultants or otherwise arising out of the performance of services by Consultant.
@@ -156,7 +156,7 @@ seed_examples:
 
     '
 - answer: "25 days. \n"
-  document: 'requirements. Upon request, Consultant shall provide documentation of
+  context: 'requirements. Upon request, Consultant shall provide documentation of
     its expenses. Payment of such invoices will be due within twenty-five (25) days
     of the receipt thereof.
 
@@ -229,7 +229,7 @@ seed_examples:
     County employment benefits.
 
     '
-  document: 'requirements. Upon request, Consultant shall provide documentation of
+  context: 'requirements. Upon request, Consultant shall provide documentation of
     its expenses. Payment of such invoices will be due within twenty-five (25) days
     of the receipt thereof.
 
@@ -296,7 +296,7 @@ seed_examples:
     '
   question: Is the Consultant considered an employee of the County?
 - answer: "The State of Colorado is mentioned. \n"
-  document: 'requirements. Upon request, Consultant shall provide documentation of
+  context: 'requirements. Upon request, Consultant shall provide documentation of
     its expenses. Payment of such invoices will be due within twenty-five (25) days
     of the receipt thereof.
 

@@ -10,7 +10,7 @@ seed_examples:
     ML models on the synthetic data and measuring their performance on real test data.
 
     '
-  document: "## 1.1 Related Work\n\nDP synthetic data generation mechanisms. Generating\
+  context: "## 1.1 Related Work\n\nDP synthetic data generation mechanisms. Generating\
     \ synthetic data using DP mechanisms is an active area of research [see e.g.,\
     \ HLM12, BLR13, GAH + 14, CXZX15, BSG17, AZK + 19, UV20, GMHI20, TMH + 21, VAA\
     \ + 22, BSV22]. Along this line of work, the closest ones to ours are workload-aware\
@@ -78,7 +78,7 @@ seed_examples:
     \ minimizing the corresponding Lagrangian function.\n- Extended Algorithm 4 in\
     \ [LVW21] by allowing any non-negative violation tolerance (i.e., any \u03B3 \u2265\
     \ 0 in (3b)) compared with \u03B3 = 0 in [LVW21]\n"
-  document: "## 1.1 Related Work\n\nDP synthetic data generation mechanisms. Generating\
+  context: "## 1.1 Related Work\n\nDP synthetic data generation mechanisms. Generating\
     \ synthetic data using DP mechanisms is an active area of research [see e.g.,\
     \ HLM12, BLR13, GAH + 14, CXZX15, BSG17, AZK + 19, UV20, GMHI20, TMH + 21, VAA\
     \ + 22, BSV22]. Along this line of work, the closest ones to ours are workload-aware\
@@ -178,7 +178,7 @@ seed_examples:
     - DR14
 
     '
-  document: "## 1.1 Related Work\n\nDP synthetic data generation mechanisms. Generating\
+  context: "## 1.1 Related Work\n\nDP synthetic data generation mechanisms. Generating\
     \ synthetic data using DP mechanisms is an active area of research [see e.g.,\
     \ HLM12, BLR13, GAH + 14, CXZX15, BSG17, AZK + 19, UV20, GMHI20, TMH + 21, VAA\
     \ + 22, BSV22]. Along this line of work, the closest ones to ours are workload-aware\
@@ -243,7 +243,7 @@ seed_examples:
 - answer: "- **Synthetic Dataset Generation Methods:**\n    - AIM [MMSM22]\n    -\
     \ MST [MMS21]\n    - DPCTGAN. [RLP + 20]\n    - PATECTGAN [RLP + 20]\n    - GEM\
     \ [LVW21]\n\n"
-  document: "data across multiple datasets and state-of-the-art privacy mechanisms.\
+  context: "data across multiple datasets and state-of-the-art privacy mechanisms.\
     \ Additionally, it achieves this without degrading the performance of downstream\
     \ models or statistical metrics. We provide additional experimental results and\
     \ implementation details in Appendix C.\n\nBenchmark. We evaluate our algorithm\
@@ -306,7 +306,7 @@ seed_examples:
     \ and the corresponding citation in a bulleted list. \n\n"
 - answer: "- \u03B3,1e-5\n- batch\\_size (for UCI),256\n- batch\\_size (for home-credit),4096\n\
     - epochs,200\n- experiment runs, 5\n"
-  document: "data across multiple datasets and state-of-the-art privacy mechanisms.\
+  context: "data across multiple datasets and state-of-the-art privacy mechanisms.\
     \ Additionally, it achieves this without degrading the performance of downstream\
     \ models or statistical metrics. We provide additional experimental results and\
     \ implementation details in Appendix C.\n\nBenchmark. We evaluate our algorithm\
@@ -372,7 +372,7 @@ seed_examples:
     \ different).\n- **Average Inverse KL-Divergence:**\_Measures the average Inverse\
     \ KL-Divergence between marginal distributions, ranging from 0 (totally different)\
     \ to 1 (identical).\n\n"
-  document: "data across multiple datasets and state-of-the-art privacy mechanisms.\
+  context: "data across multiple datasets and state-of-the-art privacy mechanisms.\
     \ Additionally, it achieves this without degrading the performance of downstream\
     \ models or statistical metrics. We provide additional experimental results and\
     \ implementation details in Appendix C.\n\nBenchmark. We evaluate our algorithm\

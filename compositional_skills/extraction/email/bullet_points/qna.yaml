@@ -24,7 +24,7 @@ seed_examples:
     - Monitors are then shipped to our location
 
     '
-  document: "Subject: High-Def Monitor Update\n\nDate:\n\nFriday, February 23, 2024\
+  context: "Subject: High-Def Monitor Update\n\nDate:\n\nFriday, February 23, 2024\
     \ at 9:13:32$_{ }$PM Eastern Standard Time\n\nFrom:\n\nLuke Inglis\n\nTo:\n\n\
     Kate Soule\n\nHi Kate,\n\nI am writing to explain to you the delay in our lab\
     \ receiving monitors. On Dec 2$^{nd,}$ 2023, I started the process of purchasing\
@@ -59,7 +59,7 @@ seed_examples:
     - Odyssey G55C 27-Inch
 
     '
-  document: "Subject: High-Def Monitor Update\n\nDate:\n\nFriday, February 23, 2024\
+  context: "Subject: High-Def Monitor Update\n\nDate:\n\nFriday, February 23, 2024\
     \ at 9:13:32$_{ }$PM Eastern Standard Time\n\nFrom:\n\nLuke Inglis\n\nTo:\n\n\
     Kate Soule\n\nHi Kate,\n\nI am writing to explain to you the delay in our lab\
     \ receiving monitors. On Dec 2$^{nd,}$ 2023, I started the process of purchasing\
@@ -94,7 +94,7 @@ seed_examples:
     - Finance
 
     '
-  document: "Subject: High-Def Monitor Update\n\nDate:\n\nFriday, February 23, 2024\
+  context: "Subject: High-Def Monitor Update\n\nDate:\n\nFriday, February 23, 2024\
     \ at 9:13:32$_{ }$PM Eastern Standard Time\n\nFrom:\n\nLuke Inglis\n\nTo:\n\n\
     Kate Soule\n\nHi Kate,\n\nI am writing to explain to you the delay in our lab\
     \ receiving monitors. On Dec 2$^{nd,}$ 2023, I started the process of purchasing\

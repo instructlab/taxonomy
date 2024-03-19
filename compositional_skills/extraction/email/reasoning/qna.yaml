@@ -7,7 +7,7 @@ seed_examples:
     \ each.\n\nTo determine the total cost, we need to add the price of all the items\
     \ together. 1,952 + 669 + 669 + 669 + 297 + 297 + 297 = 4,850. So the total cost\
     \ for all items is $4,850. \n"
-  document: "Subject: High-Def Monitor Update\n\nDate:\n\nFriday, February 23, 2024\
+  context: "Subject: High-Def Monitor Update\n\nDate:\n\nFriday, February 23, 2024\
     \ at 9:13:32$_{ }$PM Eastern Standard Time\n\nFrom:\n\nLuke Inglis\n\nTo:\n\n\
     Kate Soule\n\nHi Kate,\n\nI am writing to explain to you the delay in our lab\
     \ receiving monitors. On Dec 2$^{nd,}$ 2023, I started the process of purchasing\
@@ -47,7 +47,7 @@ seed_examples:
     MIT-IBM Watson AI Lab.
 
     '
-  document: "Subject: High-Def Monitor Update\n\nDate:\n\nFriday, February 23, 2024\
+  context: "Subject: High-Def Monitor Update\n\nDate:\n\nFriday, February 23, 2024\
     \ at 9:13:32$_{ }$PM Eastern Standard Time\n\nFrom:\n\nLuke Inglis\n\nTo:\n\n\
     Kate Soule\n\nHi Kate,\n\nI am writing to explain to you the delay in our lab\
     \ receiving monitors. On Dec 2$^{nd,}$ 2023, I started the process of purchasing\
@@ -84,7 +84,7 @@ seed_examples:
     \ 1,952 divided by 297 is 6.57. \n\nThis means 6 additional Odyssey G55C 27-Inch\
     \ monitors could be afforded by spending $1,782 out of our $1,952 budget, with\
     \ $170 left over.\_\n"
-  document: "Subject: High-Def Monitor Update\n\nDate:\n\nFriday, February 23, 2024\
+  context: "Subject: High-Def Monitor Update\n\nDate:\n\nFriday, February 23, 2024\
     \ at 9:13:32$_{ }$PM Eastern Standard Time\n\nFrom:\n\nLuke Inglis\n\nTo:\n\n\
     Kate Soule\n\nHi Kate,\n\nI am writing to explain to you the delay in our lab\
     \ receiving monitors. On Dec 2$^{nd,}$ 2023, I started the process of purchasing\

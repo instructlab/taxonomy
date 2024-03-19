@@ -8,7 +8,7 @@ seed_examples:
     works well for all studied types of ICH.
 
     '
-  document: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
+  context: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
     \n## Performance Data\n\nA retrospective study has been carried out to assess\
     \ the standalone performance of the image analysis algorithm and notification\
     \ functionality of Triage ICH. The study evaluated the Triage ICH image analysis\
@@ -97,7 +97,7 @@ seed_examples:
     intervals of the two specificities.
 
     '
-  document: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
+  context: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
     \n## Performance Data\n\nA retrospective study has been carried out to assess\
     \ the standalone performance of the image analysis algorithm and notification\
     \ functionality of Triage ICH. The study evaluated the Triage ICH image analysis\
@@ -177,7 +177,7 @@ seed_examples:
   question: Did the clinical site have an impact on the algorithm's performance?
 - answer: "Slice thicknesses between 1.5mm and 3mm appear to have performed the best,\
     \ with a sensitivity of 95.65% (78.05-99.89)\_and specificity of 100.00% (82.35-100.00).\n"
-  document: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
+  context: "First Floor, Seacourt Tower, West Way Oxford OX2 0JJ, United Kingdom\n\
     \n## Performance Data\n\nA retrospective study has been carried out to assess\
     \ the standalone performance of the image analysis algorithm and notification\
     \ functionality of Triage ICH. The study evaluated the Triage ICH image analysis\
