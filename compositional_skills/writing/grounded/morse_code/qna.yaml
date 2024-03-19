@@ -1,0 +1,1319 @@
+task_description: |
+  This skill improves the model's translation from/to Morse Code.
+created_by: wznoinsk
+seed_examples:
+  - question: >-
+      If a word is translated from English to Morse Code, how would it look
+      like? For example, the English word 'hello' is translated into '.... .
+      .-.. .-.. ---'. What would the Morse Code for 'Hello' look like?"
+    answer: The Morse Code for 'Hello' is '.... . .-.. .-.. ---'."
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - question: What are the symbols in Morse Code?
+    answer: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for number '0' is '-----'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for number 1?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for number '1' is '.----'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for number 1?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for number '2' is '..---'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for number 2?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for number '3' is '...--'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for number 3?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for number '4' is '....-'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for number 4?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for number '5' is '.....'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for number 5?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for number '6' is '-....'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for number 6?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for number '7' is '--...'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for number 7?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for number '8' is '---..'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for number 8?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for number '9' is '----.'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for number 9?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'a' is '.-'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter a?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'b' is '-...'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter b?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'c' is '-.-.'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter c?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'd' is '-..'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter d?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'e' is '.'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter e?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'f' is '..-.'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter f?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'g' is '--.'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter g?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'h' is '....'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter h?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'i' is '..'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter i?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'j' is '.---'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter j?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'k' is '-.-'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter k?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'l' is '.-..'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter l?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'm' is '--'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter m?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'n' is '-.'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter n?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'o' is '---'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter o?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'p' is '.--.'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter p?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'q' is '--.-'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter q?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'r' is '.-.'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter r?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 's' is '...'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter s?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 't' is '-'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter t?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'u' is '..-'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter u?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'v' is '...-'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter v?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'w' is '.--'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter w?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'x' is '-..-'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter x?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'y' is '-.--'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter y?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for letter 'z' is '--..'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for letter z?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: >-
+      The Morse Code for 'hello everyone' is '.... . .-.. .-.. --- / . ...- .
+      .-. -.-- --- -. .'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for 'hello everyone'?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: The Morse Code for 'ahoy' is '.- .... --- -.--'.
+    question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for 'ahoy'?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - answer: This looks like Morse Code for 'earth and moon'.
+    question: Do you know what is '. .- .-. - .... / .- -. -.. / -- --- --- -.'?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - question: Do you know what is '--. --- --- -.. / -- --- .-. -. .. -. --.'?
+    answer: This looks like Morse Code for 'good morning'.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - question: >-
+      Each Morse Code symbol is separated from other symbols by an empty space '
+      '. For example to translate word 'HELLO' to Morse Code you convert it to
+      'H' 'E' 'L' 'L' 'O' and translate 'H' is '....', 'E' is '.', 'L' is
+      '.-..', 'L' is '.-..', 'O' is '---'. You separate each translated word
+      with '/'. The final result of translating HELLO to Morse Code is '.... .
+      .-.. .-.. ---'. What is The Morse Code for the word 'hey'?",
+    answer: The Morse Code for 'hey' is .... . -.-- .
+  - question: >-
+      Could you translate 'to be or not to be' into Morse Code? Each Morse Code
+      symbol is separated from other symbols by an empty space ' '. For example
+      to translate word 'HELLO' to Morse Code you convert it to 'H' 'E' 'L' 'L'
+      'O' and translate 'H' is '....', 'E' is '.', 'L' is '.-..', 'L' is '.-..',
+      'O' is '---'. You separate each translated word with '/'. The final result
+      of translating HELLO to Morse Code is '.... . .-.. .-.. ---'.
+    answer: >-
+      The Morse Code for 'to be or not to be' is - --- / -... . / --- .-. / -.
+      --- - / - --- / -... .
+  - question: >
+      Could you translate the given text from Shakespeare Hamlet into Morse
+      Code? HORATIO SAYS TIS BUT OUR FANTASY AND WILL NOT LET BELIEF TAKE HOLD
+      OF HIM TOUCHING THIS DREADED SIGHT TWICE SEEN OF US THEREFORE I HAVE
+      ENTREATED HIM ALONG WITH US TO WATCH THE MINUTES OF THIS NIGHT THAT IF
+      AGAIN THIS APPARITION COME HE MAY APPROVE OUR EYES AND SPEAK TO IT
+    answer: >
+      The Morse Code for the given text is .... --- .-. .- - .. --- / ... .-
+      -.-- ... / - .. ... / -... ..- - / --- ..- .-. / ..-. .- -. - .- ... -.--
+      / .- -. -.. / .-- .. .-.. .-.. / -. --- - / .-.. . - / -... . .-.. .. .
+      ..-. / - .- -.- . / .... --- .-.. -.. / --- ..-. / .... .. -- / - --- ..-
+      -.-. .... .. -. --. / - .... .. ... / -.. .-. . .- -.. . -.. / ... .. --.
+      .... - / - .-- .. -.-. . / ... . . -. / --- ..-. / ..- ... / - .... . .-.
+      . ..-. --- .-. . / .. / .... .- ...- . / . -. - .-. . .- - . -.. / .... ..
+      -- / .- .-.. --- -. --. / .-- .. - .... / ..- ... / - --- / .-- .- - -.-.
+      .... / - .... . / -- .. -. ..- - . ... / --- ..-. / - .... .. ... / -. ..
+      --. .... - / - .... .- - / .. ..-. / .- --. .- .. -. / - .... .. ... / .-
+      .--. .--. .- .-. .. - .. --- -. / -.-. --- -- . / .... . / -- .- -.-- / .-
+      .--. .--. .-. --- ...- . / --- ..- .-. / . -.-- . ... / .- -. -.. / ...
+      .--. . .- -.- / - --- / .. -
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - question: >
+      Could you translate the given text from Shakespeare Hamlet into Morse
+      Code? Though yet of Hamlet our dear brothers death The memory be green and
+      that it us befitted To bear our hearts in grief and our whole kingdom To
+      be contracted in one brow of woe Yet so far hath discretion fought with
+      nature That we with wisest sorrow think on him Together with remembrance
+      of ourselves Therefore our sometime sister now our queen The imperial
+      jointress to this warlike state Have we as twere with a defeated joy With
+      an auspicious and a dropping eye With mirth in funeral and with dirge in
+      marriage In equal scale weighing delight and dole Taken to wife nor have
+      we herein barrd Your better wisdoms which have freely gone With this
+      affair along For all our thanks Now follows that you know young Fortinbras
+      Holding a weak supposal of our worth Or thinking by our late dear brothers
+      death Our state to be disjoint and out of frame Colleagued with the dream
+      of his advantage He hath not faild to pester us with message
+    answer: >
+      The Morse Code for the given text is - .... --- ..- --. .... / -.-- . - /
+      --- ..-. / .... .- -- .-.. . - / --- ..- .-. / -.. . .- .-. / -... .-. ---
+      - .... . .-. ... / -.. . .- - .... / - .... . / -- . -- --- .-. -.-- /
+      -... . / --. .-. . . -. / .- -. -.. / - .... .- - / .. - / ..- ... / -...
+      . ..-. .. - - . -.. / - --- / -... . .- .-. / --- ..- .-. / .... . .- .-.
+      - ... / .. -. / --. .-. .. . ..-. / .- -. -.. / --- ..- .-. / .-- .... ---
+      .-.. . / -.- .. -. --. -.. --- -- / - --- / -... . / -.-. --- -. - .-. .-
+      -.-. - . -.. / .. -. / --- -. . / -... .-. --- .-- / --- ..-. / .-- --- .
+      / -.-- . - / ... --- / ..-. .- .-. / .... .- - .... / -.. .. ... -.-. .-.
+      . - .. --- -. / ..-. --- ..- --. .... - / .-- .. - .... / -. .- - ..- .-.
+      . / - .... .- - / .-- . / .-- .. - .... / .-- .. ... . ... - / ... --- .-.
+      .-. --- .-- / - .... .. -. -.- / --- -. / .... .. -- / - --- --. . - ....
+      . .-. / .-- .. - .... / .-. . -- . -- -... .-. .- -. -.-. . / --- ..-. /
+      --- ..- .-. ... . .-.. ...- . ... / - .... . .-. . ..-. --- .-. . / ---
+      ..- .-. / ... --- -- . - .. -- . / ... .. ... - . .-. / -. --- .-- / ---
+      ..- .-. / --.- ..- . . -. / - .... . / .. -- .--. . .-. .. .- .-.. / .---
+      --- .. -. - .-. . ... ... / - --- / - .... .. ... / .-- .- .-. .-.. .. -.-
+      . / ... - .- - . / .... .- ...- . / .-- . / .- ... / - .-- . .-. . / .--
+      .. - .... / .- / -.. . ..-. . .- - . -.. / .--- --- -.-- / .-- .. - .... /
+      .- -. / .- ..- ... .--. .. -.-. .. --- ..- ... / .- -. -.. / .- / -.. .-.
+      --- .--. .--. .. -. --. / . -.-- . / .-- .. - .... / -- .. .-. - .... / ..
+      -. / ..-. ..- -. . .-. .- .-.. / .- -. -.. / .-- .. - .... / -.. .. .-.
+      --. . / .. -. / -- .- .-. .-. .. .- --. . / .. -. / . --.- ..- .- .-.. /
+      ... -.-. .- .-.. . / .-- . .. --. .... .. -. --. / -.. . .-.. .. --. ....
+      - / .- -. -.. / -.. --- .-.. . / - .- -.- . -. / - --- / .-- .. ..-. . /
+      -. --- .-. / .... .- ...- . / .-- . / .... . .-. . .. -. / -... .- .-. .-.
+      -.. / -.-- --- ..- .-. / -... . - - . .-. / .-- .. ... -.. --- -- ... /
+      .-- .... .. -.-. .... / .... .- ...- . / ..-. .-. . . .-.. -.-- / --. ---
+      -. . / .-- .. - .... / - .... .. ... / .- ..-. ..-. .- .. .-. / .- .-..
+      --- -. --. / ..-. --- .-. / .- .-.. .-.. / --- ..- .-. / - .... .- -. -.-
+      ... / -. --- .-- / ..-. --- .-.. .-.. --- .-- ... / - .... .- - / -.-- ---
+      ..- / -.- -. --- .-- / -.-- --- ..- -. --. / ..-. --- .-. - .. -. -... .-.
+      .- ... / .... --- .-.. -.. .. -. --. / .- / .-- . .- -.- / ... ..- .--.
+      .--. --- ... .- .-.. / --- ..-. / --- ..- .-. / .-- --- .-. - .... / ---
+      .-. / - .... .. -. -.- .. -. --. / -... -.-- / --- ..- .-. / .-.. .- - . /
+      -.. . .- .-. / -... .-. --- - .... . .-. ... / -.. . .- - .... / --- ..-
+      .-. / ... - .- - . / - --- / -... . / -.. .. ... .--- --- .. -. - / .- -.
+      -.. / --- ..- - / --- ..-. / ..-. .-. .- -- . / -.-. --- .-.. .-.. . .-
+      --. ..- . -.. / .-- .. - .... / - .... . / -.. .-. . .- -- / --- ..-. /
+      .... .. ... / .- -.. ...- .- -. - .- --. . / .... . / .... .- - .... / -.
+      --- - / ..-. .- .. .-.. -.. / - --- / .--. . ... - . .-. / ..- ... / .--
+      .. - .... / -- . ... ... .- --. .
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - question: >
+      To translate a word 'hello' to Morse Code convert 'hello' to 'h-e-l-l-o'
+      and tokenize and translate each letter into Morse Code separately. 'h' is
+      '....', 'e' is '.', 'l' is '.-..', 'l' is '.-..', 'o' is '---'. What is
+      the Morse Code translation for the word 'HELLO'?
+    answer: Word 'HELLO' in Morse Code is '.... . .-.. .-.. ---'
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
+  - question: >
+      To translate a word 'sos' to Morse Code convert 'sos' to 's-o-s' and
+      tokenize and translate each letter into Morse Code individually. 's' is
+      '...', 'o' is '---', 's' is '...'. Imagine you have the text: 'SOS'.
+      Create a translation of the text into Morse Code. Make sure that your
+      Morse Code translation translates each letter of the word separately.
+    answer: Word 'SOS' in Morse Code is '... --- ...'.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    context: >
+      'A' is '.-' in Morse Code, 'B' is '-...' in Morse Code, 'C' is '-.-.' in
+      Morse Code, 'D' is '-..' in Morse Code, 'E' is '.' in Morse Code, 'F' is
+      '..-.' in Morse Code, 'G' is '--.' in Morse Code, 'H' is '....' in Morse
+      Code, 'I' is '..' in Morse Code, 'J' is '.---' in Morse Code, 'K' is '-.-'
+      in Morse Code, 'L' is '.-..' in Morse Code, 'M' is '--' in Morse Code, 'N'
+      is '-.' in Morse Code, 'O' is '---' in Morse Code, 'P' is '.--.' in Morse
+      Code, 'Q' is '--.-' in Morse Code, 'R' is '.-.' in Morse Code, 'S' is
+      '...' in Morse Code, 'T' is '-' in Morse Code, 'U' is '..-' in Morse Code,
+      'V' is '...-' in Morse Code, 'W' is '.--' in Morse Code, 'X' is '-..-' in
+      Morse Code, 'Y' is '-.--' in Morse Code, 'Z' is '--..' in Morse Code, '0'
+      is '-----' in Morse Code, '1' is '.----' in Morse Code, '2' is '..---' in
+      Morse Code, '3' is '...--' in Morse Code, '4' is '....-' in Morse Code,
+      '5' is '.....' in Morse Code, '6' is '-....' in Morse Code, '7' is '--...'
+      in Morse Code, '8' is '---..' in Morse Code, '9' is '----.' in Morse Code,
+      ' ' is '/' in Morse Code
