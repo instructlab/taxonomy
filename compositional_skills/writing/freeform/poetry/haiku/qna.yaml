@@ -1,9 +1,19 @@
-created_by: shivsr
+---
+task_description: ""
+created_by: lizsurette
 seed_examples:
-- answer: 'Crimson leaf adrift,
-
-    Dancing on a cool fall breeze,
-
-    Nature''s art takes flight.'
-  question: Write a haiku that captures the beauty of a single autumn leaf.
-task_description: ''
+  - answer: |-
+      Yes please scratch me there!
+      Right above my tail! Behold,
+      elevator butt.
+    question: Write a haiku about cats.
+  - answer: |-
+      I sound the alarm!
+      Mail guy come to kill us all.
+      Come see, come see now!
+    question: Write a haiku about dogs.
+  - answer: |-
+      Nibbles on their food.
+      Those adorable small teeth.
+      Lost them in the wall.
+    question: Write a haiku about hamsters.
