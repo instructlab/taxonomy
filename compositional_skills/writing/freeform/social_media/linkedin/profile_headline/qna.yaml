@@ -1,21 +1,38 @@
+task_description: 'This skill help individuals write their LinkedIn profile heading'
 created_by: pujathacker2210
 seed_examples:
-  - answer: 'Data Architect | AWS & Openshift Expert | Transforming Insights into Action'
-    question: I am a Data Architect working with AWS, Openshift. Help me write a headline for my LinkedIn profile
+  - question: I am a Data Architect working with AWS, Openshift. Help me write a headline for my LinkedIn profile
+    answer: 'Data Architect | AWS & Openshift Expert | Transforming Insights into Action'
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
 
-  - answer: 'Data Engineer | Snowflake & Redshift Specialist | Driving Scalable Solutions'
-    question: I am a Data Engineer specializing with Snowflake, Redshift. Suggest a headline for my LinkedIn profile
+  - question: I am a Data Engineer specializing with Snowflake, Redshift. Suggest a headline for my LinkedIn profile
+    answer: 'Data Engineer | Snowflake & Redshift Specialist | Driving Scalable Solutions'
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
 
-  - answer: 'Passionate Data Platform Engineer | AWS, Openshift, Redshift | Innovating for Impact'
-    question: I am a Data Engineer working with Openshift, Redshift. Help me write a headline for my LinkedIn profile.
+  - question: I am a Data Engineer working with Openshift, Redshift. Help me write a headline for my LinkedIn profile.
+    answer: 'Passionate Data Platform Engineer | AWS, Openshift, Redshift | Innovating for Impact'
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
 
-  - answer: 'Innovative Technical Manager | Bridging Technology and Business for Sustainable Growth'
-    question: I am a technical manager. Help me write a profile headline for my LinkedIn profile.
+  - question: I am a technical manager. Help me write a profile headline for my LinkedIn profile.
+    answer: 'Innovative Technical Manager | Bridging Technology and Business for Sustainable Growth'
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+    
+  - question: I am a technical manager. Help me write a profile headline for my LinkedIn profile.
+    answer: 'Results-Driven Technical Leader | Orchestrating Success in Complex Work Environments'
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
 
-  - answer: 'Results-Driven Technical Leader | Orchestrating Success in Complex Work Environments'
-    question: I am a technical manager. Help me write a profile headline for my LinkedIn profile.
-
-  - answer: 'Pilot in Command | Guiding Aircraft and Teams to New Heights'
-    question: I am a pilot. Help me write a profile headline for my LinkedIn profile.
-
-task_description: ''
+  - question: I am a pilot. Help me write a profile headline for my LinkedIn profile.
+    answer: 'Pilot in Command | Guiding Aircraft and Teams to New Heights'
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
