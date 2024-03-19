@@ -3,16 +3,15 @@ task_description: |
 created_by: nhaklik
 seed_examples:
   - question: Why did the developer go broke?
-    answer: |  
+    answer: |
       Because he used up all his cache
-      
-  - question: His Mom sends the developer to the grocery store, saying: 'Bring bread, and if they have eggs, ten.'
-      After a while the developer returns without any eggs, carrying ten loaves of bread. 
-      His Mom asks: 'What's wrong with you? Why are you bringing ten loaves of bread?''
+  - question: |
+      His Mom sends the developer to the grocery store, saying: 'Bring bread, and if they have eggs, ten.'
+      After a while the developer returns without any eggs, carrying ten loaves of bread.
+      His Mom asks: 'What's wrong with you? Why are you bringing ten loaves of bread?'
       What does the developer answer?
     answer: |
       'They had eggs.'
-
   - question: Why do submarines all run Linux?
     answer: |
       Because you can't open Windows under water.
