@@ -1,0 +1,492 @@
+task_description: |
+  This task involves answering questions about the shapes of various major chords. The questions will be in the form of 
+  "Can you provide the shape for the B major chord?" or "What does the C major chord look like?". 
+  The answers should include the chord shape and a link to the chord for further exploration.
+
+  The chords to be covered are:
+    - A major
+    - A minor
+    - A# major
+    - A# minor
+    - B major
+    - B minor
+    - B# major
+    - B# minor
+    - C major
+    - C minor
+    - C# major
+    - C# minor
+    - D major
+    - D minor
+    - D# major
+    - D# minor
+    - E major
+    - E minor
+    - E# major
+    - F# major
+    - F major
+    - F minor
+    - G major
+    - G minor
+    - G# major
+    - G# minor
+
+  The chord shapes and links to the chords will be provided in the answer.
+  
+  Next steps:
+    - include flat chords
+    - include 7th chords
+    - include minor 7th chords
+    - include different shapes for major chords
+    - include different shapes for minor chords
+    - include different shapes for 7th chords
+    - include different shapes for minor 7th chords
+created_by: spolti
+domain: music
+seed_examples:
+  - question: >
+      Show me the A major chord shape, please.
+    answer: >
+      Certainly! Here's the A major chord shape:
+      ```
+            e|---0---|
+            B|---2---|
+            G|---2---|
+            D|---2---|
+            A|---0---|
+            E|-------|
+      ```
+
+      Explore the A major chord: [Link to A major chord](https://chordbank.com/chords/a-major)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Can you provide the shape for the A minor chord?
+    answer: >
+      Absolutely! Here's the A minor chord:
+      ```
+            e|---0---|
+            B|---1---|
+            G|---2---|
+            D|---2---|
+            A|---0---|
+            E|-------|
+      ```
+
+      See the A minor chord here: [Link to A minor chord](https://chordbank.com/chords/a-minor)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Can you provide the shape for the A# major chord?
+    answer: >
+      Absolutely! Here's the A# major chord:
+      ```
+            e|---1---|
+            B|---1---|
+            G|---2---|
+            D|---3---|
+            A|---3---|
+            E|---1---|
+      ```
+
+      See the A# major chord here: [Link to A# major chord](https://chordbank.com/chords/a-sharp-major)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Show me the A# minor chord shape, please.
+    answer: >
+      Here's the A# minor chord shape:
+      ```
+            e|---1---|
+            B|---2---|
+            G|---2---|
+            D|---1---|
+            A|---1---|
+            E|---1---|
+      ```
+
+      Explore the A# minor chord: [Link to A# minor chord](https://chordbank.com/chords/a-sharp-minor)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Can you provide the shape for the B major chord?
+    answer: >
+      Absolutely! Here's the B major chord:
+      ```
+            e|---2---|
+            B|---4---|
+            G|---4---|
+            D|---4---|
+            A|---2---|
+            E|-------|
+      ```
+
+      See the B major chord here: [Link to B major chord](https://chordbank.com/chords/b-major)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Show me the B minor chord shape, please.
+    answer: >
+      Certainly! Here's the B minor chord shape:
+      ```
+            e|---2---|
+            B|---3---|
+            G|---4---|
+            D|---4---|
+            A|---2---|
+            E|-------|
+      ```
+
+      Explore the B minor chord: [Link to B minor chord](https://chordbank.com/chords/b-minor)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Show me the B# major chord shape, please.
+    answer: >
+      Here's the B# major chord shape:
+      ```
+            e|---4---|
+            B|---4---|
+            G|---4---|
+            D|---6---|
+            A|---6---|
+            E|---4---|
+      ```
+
+      Explore the B# major chord: [Link to B# major chord](https://chordbank.com/chords/b-sharp-major)
+
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Can you provide the shape for the B# minor chord?
+    answer: >
+      Absolutely! Here's the B# minor chord:
+      ```
+            e|---4---|
+            B|---4---|
+            G|---4---|
+            D|---6---|
+            A|---7---|
+            E|---4---|
+      ```
+
+      See the B# minor chord here: [Link to B# minor chord](https://chordbank.com/chords/b-sharp-minor)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      What does the C major chord look like?
+    answer: >
+      Here's the chord shape for C major:
+      ```
+            e|---0---|
+            B|---1---|
+            G|---0---|
+            D|---2---|
+            A|---3---|
+            E|-------|
+      ```
+
+      Review the C major chord: [Link to C major chord](https://chordbank.com/chords/c-major)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      What's the shape for the C minor chord?
+    answer: >
+      Of course! Here's the C minor chord shape:
+      ```
+            e|---3---|
+            B|---4---|
+            G|---5---|
+            D|---5---|
+            A|---3---|
+            E|-------|
+      ```
+
+      Explore the C minor chord: [Link to C minor chord](https://chordbank.com/chords/c-minor)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Show me the C# major chord shape.
+    answer: >
+      Here's the C# major chord shape:
+      ```
+            e|---4---|
+            B|---6---|
+            G|---6---|
+            D|---6---|
+            A|---4---|
+            E|---4---|
+      ```
+
+      Explore the C# major chord: [Link to C# major chord](https://chordbank.com/chords/c-sharp-major)
+
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      What's the C# minor chord shape?
+    answer: >
+      Here's the C# minor chord shape:
+      ```
+            e|---4---|
+            B|---5---|
+            G|---6---|
+            D|---6---|
+            A|---4---|
+            E|-------|
+      ```
+
+      Explore the C# minor chord: [Link to C# minor chord](https://chordbank.com/chords/c-sharp-minor)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Show me the D major chord shape, please.
+    answer: >
+      Certainly! Here's the D major chord shape:
+      ```
+            e|---2---|
+            B|---3---|
+            G|---2---|
+            D|---0---|
+            A|-------|
+            E|-------|
+      ```
+
+      Explore the D major chord: [Link to D major chord](https://chordbank.com/chords/d-major)
+
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Can you provide the shape for the D minor chord?
+    answer: >
+      Absolutely! Here's the D minor chord:
+      ```
+            e|---1---|
+            B|---3---|
+            G|---2---|
+            D|---0---|
+            A|-------|
+            E|-------|
+      ```
+
+      See the D minor chord here: [Link to D minor chord](https://chordbank.com/chords/d-minor)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Show me the D# major chord shape, please.
+    answer: >
+      Certainly! Here's the D# major chord shape:
+      ```
+            e|---6---|
+            B|---6---|
+            G|---6---|
+            D|---8---|
+            A|---8---|
+            E|---6---|
+      ```
+
+      Explore the D# major chord: [Link to D# major chord](https://chordbank.com/chords/d-sharp-major)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Show me the D# minor chord shape.
+    answer: >
+      Here's the D# minor chord shape:
+      ```
+            e|---6---|
+            B|---7---|
+            G|---8---|
+            D|---8---|
+            A|---6---|
+            E|-------|
+      ```
+
+      Explore the D# minor chord: [Link to D# minor chord](https://chordbank.com/chords/d-sharp-minor)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Show me the E chord shape.
+    answer: >
+      Here's the E chord shape:
+      ```
+            e|---0---|
+            B|---0---|
+            G|---1---|
+            D|---2---|
+            A|---2---|
+            E|---0---|
+      ```
+
+      Explore the E chord: [Link to E chord](https://chordbank.com/chords/e)
+
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Show me the E minor chord shape.
+    answer: >
+      Here's the E minor chord shape:
+      ```
+            e|---0---|
+            B|---0---|
+            G|---0---|
+            D|---2---|
+            A|---2---|
+            E|---0---|
+      ```
+
+      Explore the E minor chord: [Link to E minor chord](https://chordbank.com/chords/e-minor)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Can you provide the shape for the E# major chord?
+    answer: >
+      Absolutely! Here's the E# major chord:
+      ```
+            e|---1---|
+            B|---1---|
+            G|---1---|
+            D|---3---|
+            A|---3---|
+            E|---1---|
+      ```
+
+      See the E# major chord here: [Link to E# major chord](https://chordbank.com/chords/e-sharp-major)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Hey, what is the F major chord shape?
+    answer: >
+      Hello! Here is the shape for the F major chord:
+      ```
+            e|---1---|
+            B|---1---|
+            G|---2---|
+            D|---3---|
+            A|---3---|
+            E|---1---|
+      ```
+       Explore the E minor chord: [Link to E minor chord](https://chordbank.com/chords/e-minor)
+
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Hey, what is the F minor chord shape?
+    answer: >
+      Hello! Here is the shape for the F minor chord:
+      ```
+            e|---1---|
+            B|---1---|
+            G|---1---|
+            D|---3---|
+            A|---3---|
+            E|---1---|
+      ```
+      Explore the E minor chord: [Link to E minor chord](https://chordbank.com/chords/e-minor)
+
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      What does the F# major chord look like?
+    answer: >
+      Here's the chord shape for F# major:
+      ```
+            e|---2---|
+            B|---2---|
+            G|---3---|
+            D|---4---|
+            A|---4---|
+            E|---2---|
+      ```
+
+      Review the F# major chord: [Link to F# major chord](https://chordbank.com/chords/f-sharp-major)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Show me the G major chord shape, please.
+    answer: >
+      Certainly! Here's the G major chord shape:
+      ```
+            e|---3---|
+            B|---3---|
+            G|---0---|
+            D|---0---|
+            A|---2---|
+            E|---3---|
+      ```
+
+      Explore the G major chord: [Link to G major chord](https://chordbank.com/chords/g-major)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Show me the G minor chord shape, please.
+    answer: >
+      Certainly! Here's the G minor chord shape:
+      ```
+            e|---3---|
+            B|---3---|
+            G|---3---|
+            D|---5---|
+            A|---5---|
+            E|---3---|
+      ```
+      
+      Explore the G minor chord: [Link to G minor chord](https://chordbank.com/chords/g-minor)
+
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Show me the G# chord shape, please.
+    answer: >
+      Certainly! Here's the G# chord shape: 
+      ```
+            e|---4---|
+            B|---4---|
+            G|---4---|
+            D|---6---|
+            A|---6---|
+            E|---4---|
+      ```
+      
+      Explore the G# chord: [Link to G# chord](https://chordbank.com/chords/gsharp)
+
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >
+      Show me the G# minor chord shape, please.
+    answer: >
+      Certainly! Here's the G# minor chord shape:
+      
+      ```
+            e|---4---|
+            B|---4---|
+            G|---4---|
+            D|---6---|
+            A|---6---|
+            E|---4---|
+      ```
+      
+      Explore the G# minor chord: [Link to G# minor chord](https://chordbank.com/chords/gsharp-minor)
