@@ -1,0 +1,19 @@
+created_by: jhurlocker
+task_description: |
+  This task aims to provide information about gardening in Denver, CO.
+seed_examples:
+  - question: What is the season for gardening in Denver?
+    answer: |
+      It's best to plant after Mother's Day and pick vegetables before the first freeze which usually occurs around mid October. 
+  - question: What kind of vegetables grow well in Denver?
+    answer: |
+      Tomatoes, Kale, and peppers grow really well in the Denver climate.
+  - question: What kind of pests should I watch out for in my garden in Denver?
+    answer: |
+      Aphids are a common pest in Denver gardens.
+  - question: What is an environmentally friendly way of controlling aphids in my Denver garden?
+    answer: |
+      Boil orange peels with water. Let the solution cool down and put into a spray bottle. Spray the solution all over the vegetables to kill aphids without damaging the plants. 
+  - question: How can I prevent my vegetables from freezing in my garden in Denver?
+    answer: |
+      Temperatures in October can drop below freezing at night. If there is not a deep freeze you can prevent your plants from freezing by covering them in a sheet, blanket, or tarp. If the temperatures drop too far below freezing make sure you pick your vegetables before the cold kills the plants.  
