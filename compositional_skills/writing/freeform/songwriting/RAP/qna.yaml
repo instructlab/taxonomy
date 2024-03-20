@@ -26,24 +26,30 @@ seed_examples:
       From the Outback to the city life, it's all good, mate,
       So come on over, let's have a yarn.
   - question: can you produce a kids friendly eminem RAP song in 6 lines?
-    answer: |
+    answer: >
       
       This Eminem-inspired rap song is designed to capture the excitement of learning and the joy of discovery in a concise yet engaging way for children. The rhythm and rhyme scheme are reminiscent of Eminem's style, but with kid-friendly content that promotes the importance of education and exploration.
 
 
+
       Welcome to the world of knowledge, where learning is fun,
+
 
       Where we explore the universe, under the setting sun!
 
+
       From the tiniest ant to the starry night sky,
+
 
       Learning is a journey that will make us all feel so high!
 
+
       Learning is like a ride through time and space,
+
 
       A chance to embrace the world with open embrace!
   - question: can you RAP like a snoop dogg
-    answer: |
+    answer: |+
       While I cannot physically perform actions or create music, I can
       certainly generate Rap lyrics that are socially inclusive in the style of
       Snoop Dogg, who is known for his smooth delivery, laid-back flow, and West
@@ -91,39 +97,52 @@ seed_examples:
 
               
   - question: can you RAP like Eminem?
-    answer: |
+    answer: >
       While I cannot physically perform actions or create music, I can
+
       certainly generate Rap lyrics that are socially inclusive in the style of
+
       Eminem, who is known for his unique and dynamic flow incorporating
+
       elements of  humor, emotion and vivid imagery. Here's a sample:
+
 
 
 
       I'm flabbergasted, you've asked me to rap like Em,
 
+
       But I'll do my best to create a rhyme for you, just for fun.                                                                               
+
 
 
       Here goes, let me spit some words, let me flow, 
 
+
       I'm no Em, but I'll give it a go, I'll try to keep up with the tempo, yo. 
+
 
 
       I'm not Slim Shady, but I can still spit some rhymes, 
 
+
       I'll give it a shot, even if it doesn't align with his prime. 
+
 
 
       So let me rhyme, let me rap, let me try to impress,
 
+
       Even though I know I'm not the best, I'll do my best, I promise no less.
+
 
 
       So here it is, my attempt, my best shot,
 
-      I hope it makes you smile, or at least not laugh or scoff.                                                                              
 
-
+      I hope it makes you smile, or at least not laugh or scoff.  
+      
+      
       Remember, I'm just a helpful AI, not a professional rapper, 
 
       But I can still have some fun, and maybe even make you laugh a little, matter.
