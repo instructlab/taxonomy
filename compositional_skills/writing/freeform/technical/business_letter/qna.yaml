@@ -1,0 +1,246 @@
+task_description: |
+  Describe the proper format of a business letter.
+created_by: billy99
+seed_examples:
+- question: What is the format of a business letter?
+  answer: |
+    A standard business letter format includes the following elements separated by blank lines:
+
+    1. Heading: Your address. Contact information may be in the letterhead and
+    may optionally also include your title, company, phone number, and email address.
+    2. Date: The date the letter is being written, written as month day, year (e.g., March 15, 2023).
+    3. Inside Address: The recipient's name, title, company name, and address.
+    4. Greeting: A formal salutation, such as "Dear [Mr./Mrs./Ms./Dr. Recipient's last name]:".
+    5. Body: The main content of the letter, which includes the introduction, the details of the matter, and any
+    relevant examples or supporting information.
+    6. Closing: A formal closing, such as "Sincerely," or "Cordially,".
+    7. Handwritten Signature: Your handwritten signature.
+    8. Typed Name: Your full name, 4 lines after the Complimentary Close.
+    9. Your Additional Information: Optionally, any of your additional information if not included in the Heading.
+- question: What is the format of a business email?
+  answer: |
+    A standard business email format includes the following elements separated by blank lines:
+
+    1. Subject: Subject to be concise and describe the exact purpose of the email.
+    2. Greeting: A formal salutation, such as "Dear [Mr./Mrs./Ms./Dr. Recipient's last name]:".
+    3. Body: The main content of the letter, which includes the introduction, the details of the matter, and any
+    relevant examples or supporting information.
+    4. Closing: A formal closing, such as "Sincerely," or "Cordially,".
+    5. Email Signature: Your name and optionally, any of your additional information such as title, company,
+    phone number, and email address.
+- question: Write a business letter to Ms Samanth Smith from John Doe after an interview.
+  answer: |
+    11 Main St.
+    Springfield, MA  01101
+
+    January 12, 2024
+
+    Ms. Samanth Smith
+    22 2nd Ave
+    Springfield, MA  01101
+
+    Dear Ms. Smith:
+
+    I interviewed with you on January 10, 2024 and I wanted to thank you for time. I am
+    very excited for the opportunity of working with you and your colleages. Your product
+    has a lot of potential and I would loved the chance to help contribute to its success.
+    My current experience at Acme Inc. would complement your team nicely and I think I
+    could make an impact right away if given the chance.
+
+    Thank you for your time and consideration. I look forward to hearing from you soon.
+
+    Sincerely,
+
+    John G Doe [Signature]
+
+    John G Doe
+    Senior Software Engineer, Acme Inc.
+- question: Write a business email to Ms Samanth Smith from John Doe after an interview.
+  answer: |
+    Subject: Thank you for your time
+
+    Dear Ms. Smith:
+
+    I interviewed with you on January 10, 2024 and I wanted to thank you for time. I am
+    very excited for the opportunity of working with you and your colleages. Your product
+    has a lot of potential and I would loved the chance to help contribute to its success.
+    My current experience at Acme Inc. would complement your team nicely and I think I
+    could make an impact right away if given the chance.
+
+    Thank you for your time and consideration. I look forward to hearing from you soon.
+
+    Sincerely,
+
+    John G Doe
+    Senior Software Engineer, Acme Inc.
+    john.doe@acme.inc
+- question: Give an example of a business letter
+  answer: |
+    12345 State Dr.
+    New York, NY  10001
+
+    June 24, 2020
+
+    State College
+    Admissions Department
+    22 Washington Ave
+    New Town, MA  01101
+
+    To Whom It May Concern,
+
+    I am a rising high school senior and I would like to receive information on your
+    any scholorships that are available and not listed on your website. I have been told
+    that there some finacial aid that is available if requested but not always posted
+    on larger outlets like brochures and websites. I have always been interested in
+    State College and would love an opportunity to attend.
+
+    Thank you and I hope to hearing from you in the near future.
+
+    Cordially,
+
+    Mary S Halley [Signature]
+
+    Mary S Halley
+- question: Give another example of a business letter
+  answer: |
+    55 Fifth St.
+    Washington, DC  20001
+
+    August 14, 2022
+
+    William J Harding
+
+    22 Washington Ave
+    New Town, MA  01101
+
+    Dear Dr Harding,
+
+    I was tasked with reviewing your proposal for an addition to the Lancaster's house located at 32 Main St.,
+    Charlotte, NC. The proposal looks good but there are a few minor details that need to be addressed before
+    the proposal can be approved. See the three items highlighted in the attached documents. Once these items
+    have been addressed and an amendment has been submitted, we will reevaluate the proposal.
+
+    I will keep an eye out for the submitted amendment.
+
+    Sincerely,
+
+    Jason M Jones [Signature]
+
+    Jason M Jones
+    Consultant Engineer
+    Smith Engineering Company
+
+    Enclosure
+- question: What is the layout of a business letter?
+  answer: |
+    [Sender's Address]
+    [Sender's City, State  ZIP]
+
+    [Date]
+
+    [Recipient's Name - If Known]
+    [Recipient's Title - Optional]
+    [Recipient's Company - Optional]
+    [Recipient's Address]
+    [City, State  ZIP]
+
+    [Salutation - Dear Mr./Mrs./Ms./Dr. [Last Name] OR To Whom It May Concern]:
+
+    [Body of the letter: Include the purpose of the letter, specific details, and any necessary
+    background information. Be sure to use proper grammar, punctuation, and spelling throughout
+    the letter.]
+
+    Thank you for your time and consideration. I look forward to hearing from you soon.
+
+    [Closing Salutation],
+
+    [Sender's Signature]
+
+
+    [Sender's Name]
+    [Sender's Title, Sender's Company]
+    [Sender's Phone Number - Optional]
+    [Sender's Email Address - Optional]
+- question: Describe the proper format of a business letter.
+  answer: |
+    A business letter typically includes the following elements:
+    - Sender's Address: The sender's address, city, state, and ZIP code.
+    - Date: The date the letter was written, using the month, day, and year format.
+    - Recipient's Address: The recipient's name, title, company name, address, city, state, and ZIP code.
+    - Greeting: A formal salutation, such as "Dear [Recipient's Name]," or "To [Recipient's Name]:" followed by
+    a colon or a comma.
+    - Body: The main content of the letter, which includes the purpose, context, and details of the message.
+    - Closing: A formal closing, such as "Sincerely," "Yours truly," or "Best regards,".
+    - Sender's Signature: A handwritten signature, if the letter is sent as a hard copy.
+    - Sender's Name: Name, title, company name, and email address.
+- question: How to start off a professional letter?
+  answer: |
+    [Sender's Address]
+    [Sender's City, State  ZIP]
+
+    [Date]
+
+    [Recipient's Name - If Known]
+    [Recipient's Title - Optional]
+    [Recipient's Company - Optional]
+    [Recipient's Address]
+    [City, State  ZIP]
+
+    [Salutation - Dear Mr./Mrs./Ms./Dr. [Last Name] OR To Whom It May Concern]:
+- question: Write down the main sections of the business letter format.
+  answer: |
+    A typical business letter format includes the following main sections:
+
+    1. Sender's Address: The sender's address, city, state, and ZIP code.
+    2. Date: The date the letter was written, using the month, day, and year format.
+    3. Recipient's Address: The recipient's name, title, company name, address, city, state, and ZIP code.
+    4. Greeting: A formal salutation, such as "Dear [Recipient's Name]," or "To [Recipient's Name]:" followed by
+    a colon or a comma.
+    5. Body: The main content of the letter, which includes the purpose, context, and details of the message.
+    6. Closing: A formal closing, such as "Sincerely," "Yours truly," or "Best regards,".
+    7. Sender's Signature: A handwritten signature, if the letter is sent as a hard copy.
+    8. Sender's Name: Name, title, company name, and email address.
+- question: Does a business letter have a subject?
+  answer: |
+    No, a business letter does not have a subject. But a business email does have a subject.
+- question: Does a business email have a subject?
+  answer: |
+    Yes, a business email does have a subject. The subject should be concise and describe the exact purpose of
+    the email. A business letter does not have a subject.
+- question: In a business letter, should the sender's address also contain the sender's name and other info?
+  answer: |
+    No, in a business letter, the sender's address only contains the sender's address. It is placed in the top
+    left corner. The name and other contact information are included at the bottom of the business letter after
+    the sender's signature. The only exception is if the business letter is written on letterhead that contains
+    some of the contact information in the header.
+- question: Describe the correct format for the sender's address in a business letter.
+  answer: |
+    The sender's address in a business letter is placed in the top left corner, followed by the date. It includes:
+    - The street address, including the apartment number or suite number, if applicable.
+    - The city, state, and ZIP code, formatted as "[City, State] [ZIP Code]".
+- question: Explain the correct way to address a business letter when the recipient has a title and company name.
+  answer: |
+    [Sender's Address]
+    [Sender's City, State ZIP]
+
+    [Date]
+
+    [Recipient's Name]
+    [Recipient's Title, Company Name]
+    [Recipient's Address]
+    [Sender's City, State ZIP]
+
+    [Salutation - Dear Mr./Mrs./Ms./Dr. [Last Name] OR To Whom It May Concern]:
+
+    [Letter Body]
+
+    [Sender's Name]
+    [Sender's Title, Company Name]
+    [Sender's Email Address]
+    [Sender's Phone Number]
+
+    For example:
+    Ms. Jane Doe
+    Marketing Analyst, Acme Inc.
+    123 Main Street
+    Anytown, CA 12345
