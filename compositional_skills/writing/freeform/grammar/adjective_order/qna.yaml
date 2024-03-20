@@ -1,8 +1,6 @@
----
 task_description: >
-  The adjectival order task enables the explanation of the
-  common order based on the general rule for ordering cumulative adjectives in
-  English.
+  The adjectival order task enables the explanation of the common order based on
+  the general rule for ordering cumulative adjectives in English.
 created_by: gerjantd
 seed_examples:
   - question: Explain the order of the adjectives in "bad little wolf"
@@ -30,7 +28,8 @@ seed_examples:
       are two words, the first vowel is I and the second is usually either A or
       O.
 
-      Ablaut reduplication takes precedence over the common order in English adjective placement.
+      Ablaut reduplication takes precedence over the common order in English
+      adjective placement.
   - question: Explain the order of the adjectives in "good Carpathian wolf"
     answer: >
       The adjectives "good" and "Carpathian" appear in the order of opinion
