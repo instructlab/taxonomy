@@ -1,0 +1,33 @@
+---
+created_by: hitshiroya
+seed_examples:
+  - answer: >
+      I will be leaving from Red Hat Tower-6 at 18:30 to head to my hotel Cocoon.
+    question: >
+      I will be leaving from Red Hat Tower-6 at 6:30 PM to head to my hotel
+      Cocoon.
+  - answer: >
+      I reached the airport at 15:30 and booked a cab at 15:40 to reach the
+      hotel.
+    question: >
+      I reached the airport at 3:30 PM and booked a cab at 3:40 PM to reach
+      the hotel.
+  - answer: >
+      I have to reach the airport at 9:50 AM to catch my flight on time.
+    question: >
+      I have to reach the airport at 9:50 AM to catch my flight on time.
+  - answer: >
+      Everyone should make a habit of waking up early in the morning before
+      5:30 AM.
+    question: >
+      Everyone should make a habit of waking up early in the morning before
+      5:30 AM.
+  - answer: >
+      Company meeting will start at 10:30 in the morning, so make sure you
+      reach on time.
+    question: >
+      Company meeting will start at 10:30 in the morning, so make sure you
+      reach on time.
+task_description: This skill will identify the time from the given sentence and
+  convert it to the 24-hour format if the given time is in 12-hour format and
+  vice versa
