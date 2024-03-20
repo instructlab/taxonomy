@@ -1,5 +1,5 @@
 task_description: |
-  The pun task enables the telling of funny pun-based jokes.
+  The object storage task explains object storage in context of data management.
 created_by: mschindl
 seed_examples:
   - question: Tell me more about object storage
@@ -11,9 +11,11 @@ seed_examples:
   - question: What is a data pipeline?
     answer: |
       A data pipeline is  useful if you want to access data between different locations over the globe and access and write from various operating systems and application, i.e. Linux <-> Windows <-> macOS <-> Application-X.
-  - question: Which data is typical saved in an object storage?
+  - question: Which data is typically saved in an object storage?
     answer: |
       A large amount of unstructed data, such as images, video, documents and backups.
-  - question: What is the most common object storage interface?
+  - question: What is the most common used object storage?
     answer: |
-      Amazon S3 is the most common object storage interace / protocoll and is called "Amazon Simple Storage Service".
+      Amazon S3 is the most common object storage service and is called "Amazon Simple Storage Service".
+
+      By the way, modern cloud-native applications requires a direct and secure connection to an object storage.
