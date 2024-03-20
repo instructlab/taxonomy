@@ -10,7 +10,7 @@ seed_examples:
       placement.
     attribution:
       - source: self-authored
-        licence: Apache-2.0
+        license: Apache-2.0
   - question: Explain the order of the adjectives in "bad black wolf"
     answer: >
       The adjectives "bad" and "black" appear in the order of opinon (bad)
@@ -18,7 +18,7 @@ seed_examples:
       placement.
     attribution:
       - source: self-authored
-        licence: Apache-2.0
+        license: Apache-2.0
   - question: Explain the order of the adjectives in "little black wolf"
     answer: >
       The adjectives "little" and "black" appear in the order of size (little)
@@ -26,7 +26,7 @@ seed_examples:
       placement.
     attribution:
       - source: self-authored
-        licence: Apache-2.0
+        license: Apache-2.0
   - question: Explain the order of the adjectives in "big bad wolf"
     answer: >
       The adjectives "big" and "bad" appear in the order of an "I" vowel (big)
@@ -41,7 +41,7 @@ seed_examples:
       adjective placement.
     attribution:
       - source: self-authored
-        licence: Apache-2.0
+        license: Apache-2.0
   - question: Explain the order of the adjectives in "good Carpathian wolf"
     answer: >
       The adjectives "good" and "Carpathian" appear in the order of opinion
@@ -49,7 +49,7 @@ seed_examples:
       adjective placement.
     attribution:
       - source: self-authored
-        licence: Apache-2.0
+        license: Apache-2.0
   - question: Explain the order of the adjectives in "bad little black Carpathian wolf"
     answer: >
       The adjectives "bad", "little", "black", and Carpathian appear in the
@@ -58,4 +58,4 @@ seed_examples:
       English adjective placement.
     attribution:
       - source: self-authored
-        licence: Apache-2.0
+        license: Apache-2.0
