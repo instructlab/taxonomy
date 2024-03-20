@@ -8,16 +8,25 @@ seed_examples:
       The adjectives "bad" and "little" appear in the order of opinion (bad)
       followed by size (little), which is a common order in English adjective
       placement.
+    attribution:
+      - source: self-authored
+        licence: Apache-2.0
   - question: Explain the order of the adjectives in "bad black wolf"
     answer: >
       The adjectives "bad" and "black" appear in the order of opinon (bad)
       followed by colour (black), which is a common order in English adjective
       placement.
+    attribution:
+      - source: self-authored
+        licence: Apache-2.0
   - question: Explain the order of the adjectives in "little black wolf"
     answer: >
       The adjectives "little" and "black" appear in the order of size (little)
       followed by colour (black), which is a common order in English adjective
       placement.
+    attribution:
+      - source: self-authored
+        licence: Apache-2.0
   - question: Explain the order of the adjectives in "big bad wolf"
     answer: >
       The adjectives "big" and "bad" appear in the order of an "I" vowel (big)
@@ -30,14 +39,23 @@ seed_examples:
 
       Ablaut reduplication takes precedence over the common order in English
       adjective placement.
+    attribution:
+      - source: self-authored
+        licence: Apache-2.0
   - question: Explain the order of the adjectives in "good Carpathian wolf"
     answer: >
       The adjectives "good" and "Carpathian" appear in the order of opinion
       (good) followed by origin (Carpathian), which is a common order in English
       adjective placement.
+    attribution:
+      - source: self-authored
+        licence: Apache-2.0
   - question: Explain the order of the adjectives in "bad little black Carpathian wolf"
     answer: >
       The adjectives "bad", "little", "black", and Carpathian appear in the
       order of opinion (bad) followed by size (little) followed by colour
       (black) followed by origin (Carpathian), which is a common order in
       English adjective placement.
+    attribution:
+      - source: self-authored
+        licence: Apache-2.0
