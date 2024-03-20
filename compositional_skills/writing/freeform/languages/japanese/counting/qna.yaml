@@ -1,0 +1,55 @@
+---
+created_by: kumsingh
+task_description: Count in Japanese
+seed_examples:
+- answer: |
+    ゼロ
+    1つ
+    二
+    三つ
+    四
+    五
+  question: Count from 0 to 5 in the Japanese language
+  attribution:
+      - source: self-authored
+        license: Apache-2.0
+- answer: |
+    六
+    セブン
+    八
+    九
+    十
+  question: Count from 6 to 10 in the Japanese language
+  attribution:
+      - source: self-authored
+        license: Apache-2.0
+- answer: |
+    十一
+    十二
+    十三
+    十四
+    十五
+  question: Count from 11 to 15 in the Japanese language
+  attribution:
+      - source: self-authored
+        license: Apache-2.0
+- answer: |
+    じゅういち
+    じゅうに
+    じゅうさん
+    じゅうよん・し
+    じゅうご
+  question: Count from 11 to 15 using Sino-Japanese numbers
+  attribution:
+      - source: self-authored
+        license: Apache-2.0
+- answer: |
+    じゅうろく
+    じゅうなな・しち
+    じゅうはち
+    じゅうきゅう・く
+    にじゅう
+  question: Count from 16 to 20 using Sino-Japanese numbers
+  attribution:
+      - source: self-authored
+        license: Apache-2.0
