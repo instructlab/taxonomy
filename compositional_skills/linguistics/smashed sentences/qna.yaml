@@ -1,0 +1,36 @@
+task_description: >
+  The parsing tasks takes texts that are mashed together sentences and splits
+  them up into logical parts
+created_by: JesseHat
+seed_examples:
+  - question: >-
+      Parse this sentence into separate words 
+      T14GEN4CUSTOMFEDORAI71365GERMANYPRJ09324
+    answer: |
+      T14 GEN4 CUSTOM FEDORA I7 1365 GERMANY PRJ09324
+  - question: Parse this sentence into separate words  CY23Q4LEDProjectorC1002
+    answer: |
+      CY23 Q4 LED Projector C1002
+  - question: >-
+      Parse this sentence into separate words 
+      AdditionalrouterforTASK9898234JesseFarnhamPO098203984
+    answer: |
+      Additional router for TASK9898234 Jesse Farnham PO098203984
+  - question: >-
+      Parse this sentence into separate words 
+      TimmyOptimizationLMNOmeetingroomupgradesMonoStudioX52
+    answer: |
+      Timmy Optimization LMNO meeting room upgrades Mono Studio X52
+  - question: Parse this sentence into separate words  Sallysellsseashellsbytheseashore
+    answer: |
+      Sally sells sea shells by the sea shore
+  - question: >-
+      Parse this sentence into separate words 
+      transferofcomputersfromdurhamtoraleighperPO123456forCC1999
+    answer: |
+      transfer of computers from durham to raleigh per PO123456 for CC1999
+  - question: >-
+      Parse this sentence into separate words 
+      MtgRmAVConfigurationRedHatTowerURGENTPLEASEforalanalda
+    answer: |
+      Mtg Rm AV Configuration RedHat Tower URGENT PLEASE for alan alda
