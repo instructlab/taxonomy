@@ -1,0 +1,44 @@
+task_description: |
+  This task requires identifying the items still needed based on
+  a given shopping list and purchased items.
+created_by: quanwenli
+seed_examples:
+  - question: |
+      Our shopping list includes apples, bananas, oranges, grapes, and
+      pears. We have already purchased apples and oranges. What fruits do we
+      still need to buy?
+    answer: We still need to buy bananas, grapes, and pears.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Our shopping list consists of bread, milk, eggs, butter, and jam. We
+      have already prepared bread and butter. What items do we still need to
+      buy?
+    answer: We still need to buy milk, eggs, and jam.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: |
+      We are planning a barbecue. The shopping list includes hamburgers, hot
+      dogs, chips, drinks, and ice cream. We have already prepared hamburgers
+      and chips. What items do we still need to buy?
+    answer: We still need to buy hot dogs, drinks, and ice cream.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: |
+      We need to prepare items for dinner. The shopping list includes
+      chicken breasts, steaks, spaghetti, tomatoes, and cheese. We have already
+      purchased chicken breasts and cheese. What items do we still need to buy?
+    answer: We still need to buy steaks, spaghetti, and tomatoes.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: |
+      We are planning a party. The shopping list includes cake, snacks,
+      drinks, napkins, and balloons. We have already prepared cake, snacks, and
+      balloons. What items do we still need to buy?
+    answer: We still need to buy drinks and napkins.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
