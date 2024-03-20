@@ -4,10 +4,10 @@ task_description: |
   acceptable,inclusive, non-violent, kids friendly, positively  theme RAP song
 created_by: waiweng
 seed_examples:
+  - question: can you create a RAP songs that has 6 lines?
     attribution:
       - source: self-authored
         license: Apache-2.0
-  - question: can you create a RAP songs that has 6 lines?
     answer: |
       Of course! Here's a rap song with six lines:
 
@@ -18,6 +18,9 @@ seed_examples:
       In the rhythm, I find my release,
       A symphony of sounds, my soul's ease.
   - question: create a RAP song with an Aussie slang in 6 lines
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
     answer: |
       Here's a rap song with Australian slang, tailored to your request:
 
@@ -28,6 +31,9 @@ seed_examples:
       From the Outback to the city life, it's all good, mate,
       So come on over, let's have a yarn.
   - question: can you produce a kids friendly eminem RAP song in 6 lines?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
     answer: >
 
       This Eminem-inspired rap song is designed to capture the excitement of learning
@@ -53,6 +59,9 @@ seed_examples:
 
       A chance to embrace the world with open embrace!
   - question: can you RAP like a snoop dogg
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
     answer: |+
       While I cannot physically perform actions or create music, I can
       certainly generate Rap lyrics that are socially inclusive in the style of
@@ -99,6 +108,9 @@ seed_examples:
 
       We're gonna make it right, we're gonna make it right, oh yeah!
   - question: can you RAP like Eminem?
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
     answer: >
       While I cannot physically perform actions or create music, I can
 
