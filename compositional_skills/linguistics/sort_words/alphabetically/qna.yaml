@@ -1,0 +1,72 @@
+---
+task_description: This skill instructs to sort in alphabetical order.
+created_by: fstavela
+seed_examples:
+  - context: 'car, building, hopefully, mother, fish, sun, ideally'
+    question: 'Arrange the following words in ascending alphabetical order:'
+    answer: >-
+      The words arranged in ascending alphabetical order are: building, car,
+      fish, hopefully, ideally, mother, sun.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: 'car, building, hopefully, mother, fish, sun, ideally'
+    question: 'Arrange the following words in descending alphabetical order:'
+    answer: >-
+      The words arranged in descending alphabetical order are: sun, mother,
+      ideally, hopefully, fish, car, building.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: >-
+      cat, mountain, flower, chair, book, elephant, river, pencil, tree, star,
+      laptop, apple, cloud, ocean, window, guitar, bird, moon, ta ble, dog
+    question: 'Sort the following words alphabetically from A to Z:'
+    answer: >-
+      The sorted list of words from A to Z is: apple, bird, book, cat, chair,
+      cloud, dog, elephant, flower, guitar, laptop, moon, mountain, ocean,
+      pencil, river, star, table, tree, window.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: >-
+      cat, mountain, flower, chair, book, elephant, river, pencil, tree, star,
+      laptop, apple, cloud, ocean, window, guitar, bird, moon, ta ble, dog
+    question: 'Sort the following words alphabetically from Z to A:'
+    answer: >-
+      The sorted list of words from Z to A is: window, tree, table, star, river,
+      pencil, ocean, mountain, moon, laptop, guitar, flower, elephant, dog,
+      cloud, chair, cat, book, bird, apple.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: >-
+      mango, blanket, cookie, necklace, pillowcase, microphone, radio, envelope,
+      umbrella, carpet, scissors, towel, mirror, backpack, glove, bracelet,
+      soap, ladder, glove, compass
+    question: >-
+      Put the listed words in alphabetical order starting from the beginning of
+      the alphabet:
+    answer: >-
+      The sorted list of words starting from the beginning of the alphabet is:
+      backpack, blanket, bracelet, carpet, compass, cookie, envelope, glove,
+      ladder, mango, microphone, mirror, necklace, pillowcase, radio, scissors,
+      soap, towel, umbrella.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: >-
+      mango, blanket, cookie, necklace, pillowcase, microphone, radio, envelope,
+      umbrella, carpet, scissors, towel, mirror, backpack, glove, bracelet,
+      soap, ladder, glove, compass
+    question: >-
+      Put the listed words in alphabetical order starting from the end of the
+      alphabet:
+    answer: >-
+      The sorted list of words starting from the end of the alphabet is:
+      umbrella, towel, soap, scissors, radio, pillowcase, necklace, mirror,
+      microphone, mango, ladder, glove, envelope, cookie, compass, carpet,
+      bracelet, blanket, backpack.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
