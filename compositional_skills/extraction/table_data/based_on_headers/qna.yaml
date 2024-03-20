@@ -1,0 +1,80 @@
+task_description: >
+  This skill provides the ability to extract data from a table based on its
+  headers.
+created_by: efzrh
+seed_examples:
+  - context: |
+      | **Color**  | **Fruit** |
+      |------------|-----------|
+      | orange     | orange    |
+      | red, green | apple     |
+      | olive      | avocado   |
+    question: |
+      What are the fruits in this table?
+    answer: |
+      The fruits in this table are orange, apple, and avocado.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |
+      | **Color**  | **Fruit** |
+      |------------|-----------|
+      | orange     | orange    |
+      | red, green | apple     |
+      | olive      | avocado   |
+    question: |
+      What are the colors in this table?
+    answer: |
+      The colors in this table are orange, red, green, and olive.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |
+      | **Name**   | **Letter**   | **Number**   |
+      |------------|--------------|--------------|
+      | James      | A            | 1            |
+      | Mary       | B            | 2            |
+      | John       | C            | 3            |
+      | Patricia   | D            | 4            |
+      | Robert     | E            | 5            |
+      | Linda      | F            | 6            |
+    question: |
+      What are the names in this table?
+    answer: |
+      The names in this table are James, Mary, John, Patricia, Robert, and
+      Linda.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |
+      | **Name**   | **Letter**   | **Number**   |
+      |------------|--------------|--------------|
+      | James      | A            | 1            |
+      | Mary       | B            | 2            |
+      | John       | C            | 3            |
+      | Patricia   | D            | 4            |
+      | Robert     | E            | 5            |
+      | Linda      | F            | 6            |
+    question: |
+      What are the letters in this table?
+    answer: |
+      The names in this table are A, B, C, D, E, and F.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |
+      | **Name**   | **Letter**   | **Number**   |
+      |------------|--------------|--------------|
+      | James      | A            | 1            |
+      | Mary       | B            | 2            |
+      | John       | C            | 3            |
+      | Patricia   | D            | 4            |
+      | Robert     | E            | 5            |
+      | Linda      | F            | 6            |
+    question: |
+      What are the numbers in this table?
+    answer: |
+      The numbers in this table are 1, 2, 3, 4, 5, and 6.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
