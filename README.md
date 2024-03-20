@@ -76,20 +76,20 @@ So in essence the format looks something like this:
 task_description: <string>
 created_by: <string>
 seed_examples:
-  - question: <string>
-    answer: |
-      <multi-line string>
-    attribution:
-      - source: <string>
-        license: <SPDX license identifier>
-  - context: |
-      <multi-line string>
-    question: <string>
-    answer: |
-      <multi-line string>
-    attribution:
-      - source: <string>
-        license: <SPDX license identifier>
+- question: <string>
+  answer: |
+    <multi-line string>
+  attribution:
+  - source: <string>
+    license: <SPDX license identifier>
+- context: |
+    <multi-line string>
+  question: <string>
+  answer: |
+    <multi-line string>
+  attribution:
+  - source: <string>
+    license: <SPDX license identifier>
   ...  
 ```
 
