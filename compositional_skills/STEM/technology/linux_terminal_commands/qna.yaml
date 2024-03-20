@@ -1,0 +1,121 @@
+---
+task_description: Basic Linux terminal commands
+created_by: sallyom
+seed_examples:
+- question: How do I print system architecture information from the terminal?
+  answer: |
+    The `uname -m` command will print system architecture information.
+    For example:
+
+    ```bash
+    uname -m
+    ```
+
+    Here are some common values returned by `uname -m` with the architectures:
+
+    - `x86_64`: 64-bit Intel/AMD architecture
+    - `i686` or `i386`: 32-bit Intel/AMD (x86) architecture
+    - `armv7l`: 32-bit ARM architecture
+    - `armv8` or `aarch64`: 64-bit ARM architecture
+    - `ppc64le`: 64-bit PowerPC architecture
+    - `s390x`: 64-bit IBM Z architecture
+
+    The output of `uname -m` is useful for determining the system's architecture, especially when considering
+    software or drivers that are architecture-dependent.
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+- question: What command will print the current user of a Linux system?
+  answer: |
+    The `id` command prints information about the current effective user of a Linux system:
+    For example:
+
+    ```bash
+    id -un
+    ```
+
+    This will output the username of the effective user on a Linux system.
+    The `whoami` command is also commonly used to find the username of the user currently logged into a system.
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+- question: What command will show which files and directories are taking up the most disk space on my system?
+  answer: |
+    To find out which files and directories are taking up the most disk space on your system, you can use the `du` command.
+    `du` can be used with other commands like `sort` and `head`. Here is a common example:
+
+    ```bash
+    du -h /path/to/directory | sort -rh | head -n 50
+    ```
+
+    This command will display the top 50 (`head -n 50`) files and directories taking up the most disk space within the specified directory
+    (/path/to/directory). Adjust the /path/to/directory to the directory you want to analyze. The results will be sorted
+    in reverse order (`-r`) based on the disk usage size, and displayed as human-readable output (`-h`).
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+- question: What command provides information about which processes are consuming the most memory on my system?
+  answer: |
+    To identify which processes are using the most memory on your system, you can use the `top` command, and sort the output specific to
+    memory usage. The `top` command provides a dynamic view of system processes and resource usage.
+    Here's an example of sorting `top` output based on memory usage::
+
+    ```bash
+    top -o %MEM
+    ```
+
+    The `-o %MEM` option sorts the processes by memory usage in reverse order.
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+- question: How can I find the ID of a running process on a Linux system?
+  answer: |
+    To find the ID (Process ID or PID) of a running process in Linux, you can use various commands, such as `ps`, `pgrep`, or `top`.
+    Choose the method that suits your needs. Each of these commands provides the PID of a running process based on its name.
+
+    - **`ps`**
+
+    You can use the `ps` command to list processes along with their PIDs. You can filter the output using `grep` to find a specific process.
+    For example:
+
+    ```bash
+    ps aux | grep "process"
+    ```
+
+    Replace `"process"` with the name of the process you're interested in. This will display the process details including its PID.
+
+    - **`pgrep`**
+
+    The `pgrep` command is specifically designed to search for processes by name and retrieve their PIDs.
+    For example:
+
+    ```bash
+    pgrep "process"
+    ```
+
+    This command will output the PID(s) of the process matching the given name.
+
+    - **`top`**
+
+    `top` displays a dynamic list of processes along with their PIDs. The PID will be displayed in the first column.
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+- question: What's the easiest way to view the contents of files from the terminal??
+  answer: |
+    The easiest way to view the contents of a file from the terminal is by using the `cat` command.
+
+    Here's an example `cat` command:
+
+    ```bash
+    cat filename
+    ```
+
+    Replace `filename` with the name of the file you want to view.
+    Using `cat`, you can quickly view the contents of a file without additional steps or navigation.
+    It's convenient for small to moderately sized files. It's common to use the `more` or `less` commands to view
+    the contents of larger files, since these commands add the ability to navigate files one page at a time.
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+
