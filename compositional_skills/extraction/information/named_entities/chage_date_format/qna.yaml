@@ -1,4 +1,7 @@
 ---
+task_description: This skill will identify the time from the given sentence and
+  convert it to the 24-hour format if the given time is in 12-hour format and
+  vice versa
 created_by: hitshiroya
 seed_examples:
   - answer: >
@@ -28,6 +31,6 @@ seed_examples:
     question: >
       Company meeting will start at 10:30 in the morning, so make sure you
       reach on time.
-task_description: This skill will identify the time from the given sentence and
-  convert it to the 24-hour format if the given time is in 12-hour format and
-  vice versa
+  attribution:
+      - source: self-authored
+        license: Apache-2.0
