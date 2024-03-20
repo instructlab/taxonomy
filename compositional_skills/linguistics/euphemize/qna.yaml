@@ -1,0 +1,41 @@
+task_description: |
+  Provide euphemisms for bluntly worded sentences so they are more appropriate for a 
+  corporate setting.
+created_by: h-bails
+seed_examples:
+  - question: How do I say this more politely?
+    context: "This slide deck is terrible."
+    answer: "This is a good start, but let’s look at where we can refine it further."
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: How do I say this more politely?
+    context: "I want to stop talking about this."
+    answer: "Let's circle back on this topic at a later stage."
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: How do I say this more politely?
+    context: "This meeting will be a waste of time."
+    answer: "Is a meeting the most productive platform for this discussion?"
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: How do I say this more politely?
+    context: "I have no idea what you're saying."
+    answer: "There seems to be some confusion. Let's make sure we're on the same page."
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: How do I say this more politely?
+    context: "We messed this up."
+    answer: "We decided to pivot our approach."
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: How do I say this more politely?
+    context: "This is not the appropriate time to discuss this."
+    answer: "Let's take this offline."
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
