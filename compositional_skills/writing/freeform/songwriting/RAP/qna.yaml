@@ -123,6 +123,6 @@ seed_examples:
 
       Remember, I'm just a helpful AI, not a professional rapper,
       But I can still have some fun, and maybe even make you laugh a little, matter.
-  attribution:
-  - source: self-authored
-    license: Apache-2.0
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
