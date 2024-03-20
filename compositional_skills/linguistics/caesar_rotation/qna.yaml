@@ -1,77 +1,88 @@
 created_by: krisv
 seed_examples:
-- answer: 'The caesar rotation is "ifmmp".
-
-    '
-  question: 'Perform the caesar rotation (1) of the word hello
-
-    '
-- answer: 'The caesar rotation is "jgnnq".
-
-    '
-  question: 'Perform the caesar rotation (2) of the word hello
-
-    '
-- answer: 'The caesar rotation is "khoor".
-
-    '
-  question: 'Perform the caesar rotation (3) of the word hello
-
-    '
-- answer: 'The caesar rotation is "lipps".
-
-    '
-  question: 'Perform the caesar rotation (4) of the word hello
-
-    '
-- answer: 'The caesar rotation is "mjqqt".
-
-    '
-  question: 'Perform the caesar rotation (5) of the word hello
-
-    '
-- answer: 'The caesar rotation is "spwwz".
-
-    '
-  question: 'Perform the caesar rotation (11) of the word hello
-
-    '
-- answer: 'The caesar rotation is "tqxxa".
-
-    '
-  question: 'Perform the caesar rotation (12) of the word hello
-
-    '
-- answer: 'The caesar rotation is "vszzc".
-
-    '
-  question: 'Perform the caesar rotation (14) of the word hello
-
-    '
-- answer: 'The caesar rotation is "wtaad".
-
-    '
-  question: 'Perform the caesar rotation (15) of the word hello
-
-    '
-- answer: 'The caesar rotation is "hppeczf".
-
-    '
-  question: 'Perform the caesar rotation (1) of the word goodbye
-
-    '
-- answer: 'The caesar rotation is "iqqfdag".
-
-    '
-  question: 'Perform the caesar rotation (2) of the word goodbye
-
-    '
-- answer: 'The caesar rotation is "jrrgebh".
-
-    '
-  question: 'Perform the caesar rotation (3) of the word goodbye
-
-    '
-task_description: 'To teach a language model about caesar rotation
-
-  '
+  - answer: |
+      The caesar rotation is "ifmmp".
+    question: |
+      Perform the caesar rotation (1) of the word hello
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      The caesar rotation is "jgnnq".
+    question: |
+      Perform the caesar rotation (2) of the word hello
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      The caesar rotation is "khoor".
+    question: |
+      Perform the caesar rotation (3) of the word hello
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      The caesar rotation is "lipps".
+    question: |
+      Perform the caesar rotation (4) of the word hello
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      The caesar rotation is "mjqqt".
+    question: |
+      Perform the caesar rotation (5) of the word hello
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      The caesar rotation is "spwwz".
+    question: |
+      Perform the caesar rotation (11) of the word hello
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      The caesar rotation is "tqxxa".
+    question: |
+      Perform the caesar rotation (12) of the word hello
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      The caesar rotation is "vszzc".
+    question: |
+      Perform the caesar rotation (14) of the word hello
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      The caesar rotation is "wtaad".
+    question: |
+      Perform the caesar rotation (15) of the word hello
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      The caesar rotation is "hppeczf".
+    question: |
+      Perform the caesar rotation (1) of the word goodbye
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      The caesar rotation is "iqqfdag".
+    question: |
+      Perform the caesar rotation (2) of the word goodbye
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: |
+      The caesar rotation is "jrrgebh".
+    question: |
+      Perform the caesar rotation (3) of the word goodbye
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+task_description: |
+  To teach a language model about caesar rotation
