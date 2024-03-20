@@ -1,0 +1,48 @@
+task_description: A map navigation skill for trips or orienteering races.
+created_by: jan-kolarik
+seed_examples:
+  - question: How can I find the optimal route to a nearby location on foot using a map?
+    answer: |
+      Look for a distinctive landmark in the destination area, something unique or uncommonly found elsewhere. This
+      landmark will serve as a useful reference point during your journey. If you have a compass, orient your map before
+      setting out. Otherwise, use nearby significant objects for orientation. If the map includes contour lines, align
+      them with the actual terrain.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: How can I find the optimal route to a distant location on foot using a map?
+    answer: |
+      Look for multiple paths leading to your destination and visually estimate the shortest one. Take into account
+      elevation changes by observing contour lines on the map. Prefer using paths when available, but consider shorter
+      routes through terrain that avoid dense vegetation or difficult terrain. Divide your journey into sections based
+      on significant landmarks to create checkpoints for navigation. This helps ensure you're on track and provides
+      backup points if you encounter unfamiliar areas.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: How can I find the optimal route to a location on foot using a map if there are no or very few landmarks?
+    answer: |
+      In such situations, having a compass is essential. Set an azimuth to your destination and maintain the direction
+      until you arrive. Alternatively, you can estimate distance by counting steps. Using the map's scale and distance
+      between your current location and the destination, approximate the real distance. Assuming one step equals
+      approximately one meter, you can calculate the number of steps required to reach your destination.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: How to navigate challenging terrain quickly on foot using a map?
+    answer: |
+      You need to constantly look under your feet to avoid tripping. Try to periodically pause to memorize upcoming
+      sections of your route from the map, focusing on key landmarks. Then continue running, using azimuth without
+      constantly referring to the map until the next stop.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: How to navigate terrain on foot using only a map, without a compass?
+    answer: |
+      Rotate your map until paths, water courses, and landmarks align with their real directions. To confirm alignment,
+      choose three distant but clearly visible objects. Compare the directions to these objects on the map from your
+      current location; they should correspond to their real-world positions. Then, navigate to your destination using
+      the map's directions.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
