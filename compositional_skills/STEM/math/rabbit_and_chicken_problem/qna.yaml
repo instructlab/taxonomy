@@ -1,0 +1,94 @@
+task_description: |
+  skills to calcluate The Chicken and Rabbit in the Same Cage Problem
+created_by: yuxisun1217
+seed_examples:
+  - question: |
+      There are rabbits and chickens in the same cage. There are int(x) feet in total, and int(y) heads in total.
+      What are the numbers of rabbits and chickens in this cage?
+    answer: |
+      rabbits = (x - y * 2) / 2
+      chickens = y - rabbits
+      http://mathelogical.in/non-routine-mathematics/the-famous-rabbit-and-chicken-problem/
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+
+  - question: |
+      There are rabbits and chickens in the same cage. There are 100 feet in total, and 40 heads in total.
+      What are the numbers of rabbits and chickens in this cage?
+    answer: |
+      rabbits = (100 - 40 * 2) / 2 = 10
+      chickens = 40 - 10 = 30
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+
+  - question: |
+      There are rabbits and chickens in the same cage. There are 150 feet in total, and 60 heads in total.
+      What are the numbers of rabbits and chickens in this cage?
+    answer: |
+      rabbits = (150 - 60 * 2) / 2 = 15
+      chickens = 60 - 15 = 45
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+
+  - question: |
+      There are rabbits and chickens in the same cage. There are 300 feet in total, and 100 heads in total.
+      What are the numbers of rabbits and chickens in this cage?
+    answer: |
+      rabbits = (300 - 100 * 2) / 2 = 50
+      chickens = 100 - 50 = 50
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+
+  - question: |
+      There are rabbits and chickens in the same cage. There are 20 feet in total, and 10 heads in total.
+      What are the numbers of rabbits and chickens in this cage?
+    answer: |
+      rabbits = (20 - 10 * 2) / 2 = 0
+      chickens = 10 - 0 = 10
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+
+  - question: |
+      There are rabbits and chickens in the same cage. There are 40 feet in total, and 10 heads in total.
+      What are the numbers of rabbits and chickens in this cage?
+    answer: |
+      rabbits = (40 - 10 * 2) / 2 = 10
+      chickens = 10 - 10 = 0
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+
+  - question: |
+      There are rabbits and chickens in the same cage. There are 100 feet in total, and 20 heads in total.
+      What are the numbers of rabbits and chickens in this cage?
+    answer: |
+      rabbits = (100 - 20 * 2) / 2 = 30 rabbits
+      The rabbits is over the 20 total heads. So this group of numbers is wrong.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+
+  - question: |
+      There are rabbits and chickens in the same cage. There are 80 feet in total, and 30 heads in total.
+      What are the numbers of rabbits and chickens in this cage?
+    answer: |
+      rabbits = (80 - 30 * 2) / 2 = 10
+      chickens = 30 - 10 = 20
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+
+  - question: |
+      There are rabbits and chickens in the same cage. There are 200 feet in total, and 120 heads in total.
+      What are the numbers of rabbits and chickens in this cage?
+    answer: |
+      rabbits = (200 - 120 * 2) / 2 = -20
+      The rabbits is not a positive integer. So this group of numbers is wrong.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
