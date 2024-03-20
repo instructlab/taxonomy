@@ -2,7 +2,7 @@
 task_description: >
   This skill provides the ability to extract the referenced
   source in the text using the IEEE in-text citation style.
-created_by: null
+created_by: amitman3
 seed_examples:
   - answer: Y. LeCun, Y. Bengio, & G. Hinton, Deep learning, Nature, vol. 521, no.
       7553, pp. 436-444, 2015.
