@@ -1,10 +1,13 @@
 task_description: |
-  The adjectival order task enables the explanation of the correct order based on the general rule for ordering cumulative adjectives in English.
+  The adjectival order task enables the explanation of the common order based on the general rule for ordering cumulative adjectives in English.
 created_by: gerjantd
 seed_examples:
   - question: Explain the order of the adjectives in "bad little wolf" 
     answer: |
       The adjectives "bad" and "little" appear in the order of opinion (bad) followed by size (little), which is a common order in English adjective placement.
+  - question: Explain the order of the adjectives in "bad black wolf" 
+    answer: |
+      The adjectives "bad" and "black" appear in the order of opinon (bad) followed by colour (black), which is a common order in English adjective placement.
   - question: Explain the order of the adjectives in "little black wolf" 
     answer: |
       The adjectives "little" and "black" appear in the order of size (little) followed by colour (black), which is a common order in English adjective placement.
@@ -12,3 +15,10 @@ seed_examples:
     answer: |
       The adjectives "big" and "bad" appear in the order of an "I" vowel (big) followed by an "A" vowel (bad), in a pair of near-identical words. This rule is know as ablaut reduplication and refers to a vowel change which, in reduplicates (sequences of two or three near-identical words), often follows a particular vowel pattern, such as zigzag or sing-song. If there are two words, the first vowel is I and the second is usually either A or O.
       Ablaut reduplication takes precedence over the common order in English adjective placement.
+  - question: Explain the order of the adjectives in "good Carpathian wolf" 
+    answer: |
+      The adjectives "good" and "Carpathian" appear in the order of opinion (good) followed by origin (Carpathian), which is a common order in English adjective placement.
+  - question: Explain the order of the adjectives in "bad little black Carpathian wolf" 
+    answer: |
+      The adjectives "bad", "little", "black", and Carpathian appear in the order of opinion (bad) followed by size (little) followed by colour (black) followed by origin (Carpathian), which is a common order in English adjective placement.
+
