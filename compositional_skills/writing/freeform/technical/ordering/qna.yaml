@@ -1,39 +1,61 @@
+task_description: 'Weight unit ordering skill.'
 created_by: omejzlik
 seed_examples:
-  - answer: 1.  1t (one ton) 2. 1000kg (1000 kilograms, 1 ton) 3. 100kg (one hundred
+  - question: >-
+      'arrange these weights from heaviest to lightest: 1kg 2kg 100g 1g 1t 100kg
+      1000kg 200g'
+    answer: >-
+      1.  1t (one ton) 2. 1000kg (1000 kilograms, 1 ton) 3. 100kg (one hundred
       kilograms) - Equivalent to 100 times 1kg (100kg = 100 x 1kg) 4. 2kg (two
       kilograms) 5. 1kg (one kilogram) 6. 200g (two hundred grams) - Equivalent
       two tenths of a kilogram (200g = 0.2 x 1kg) 7. 100g (one hundred grams) -
       Equivalent one tenth of a kilogram (100g = 0.1 x 1kg) 8. 1g (one gram) -
       Equivalent one thousandth of a kilogram (1g = 0.001 x 1kg)
-    question: "'arrange these weights from heaviest to lightest: 1kg 2kg 100g 1g 1t
-      100kg 1000kg 200g'"
-  - answer: 1. 1t (one ton) - Equivalent to 1,000 kilograms 2. 100kg (one hundred
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: 'arrange these weights from heaviest to lightest: 10g 100kg 1t 1g'
+    answer: >-
+      1. 1t (one ton) - Equivalent to 1,000 kilograms 2. 100kg (one hundred
       kilograms) - Equivalent to one hundred times 1kg (100kg = 100 x 1kg) 3.
       10g (ten grams) - Equivalent to ten times 1g (10g = 10 x 1g) 4. 1g (one
       gram) - This is a smaller unit of weight, often used for small objects or
       when precise measurements  are required.
-    question: "'arrange these weights from heaviest to lightest: 10g 100kg 1t 1g'"
-  - answer: 1. 1t (one ton) - Equivalent to 1,000 kilograms (1t = 1,000kg)  2. 5kg
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: 'arrange these weights from heaviest to lightest: 1500g 1t 5kg 10g'
+    answer: >-
+      1. 1t (one ton) - Equivalent to 1,000 kilograms (1t = 1,000kg)  2. 5kg
       (five kilograms)  3. 1500g (one thousand five hundred grams) - Equivalent
       to 1,5 kilograms 4. 10g (ten grams) - Equivalent to one hundredth of a
       kilogram (10g = 0.01 x 1kg) - 1 centigram
-    question: "'arrange these weights from heaviest to lightest: 1500g 1t 5kg 10g'"
-  - answer: 1. 1kg (one kilogram) - This is the standard unit for weighing objects
-      in the metric system. 2. 200g (two hundred grams) - Equivalent to two
-      tenths of a kilogram (200g = 0.2 x 1kg) 3. 100g (one hundred grams) -
-      Equivalent to one tenth of a kilogram (100g = 0.1 x 1kg) 4. 10g (one gram)
-      - This is a smaller unit of weight, often used for small objects or when
-      precise measurements  are required.
-    question: "'arrange these weights from heaviest to lightest: 10g 100g 1kg 200g'"
-  - answer: 1. 10000kg (ten thousand kilograms) - Equivalent to ten tons (10000kg =
-      10 x 1t) 2. 1t (one ton) - Equivalent to 1,000 kilograms (1t = 1,000kg) 3.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: 'arrange these weights from heaviest to lightest: 10g 100g 1kg 200g'
+    answer: >-
+      1. 1kg (one kilogram) - This is the standard unit for weighing objects in
+      the metric system. 2. 200g (two hundred grams) - Equivalent to two tenths
+      of a kilogram (200g = 0.2 x 1kg) 3. 100g (one hundred grams) - Equivalent
+      to one tenth of a kilogram (100g = 0.1 x 1kg) 4. 10g (one gram) - This is
+      a smaller unit of weight, often used for small objects or when precise
+      measurements  are required.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: >-
+      'arrange these weights from heaviest to lightest: 1g 300g 1t 10000kg 1kg
+      200g'
+    answer: >-
+      1. 10000kg (ten thousand kilograms) - Equivalent to ten tons (10000kg = 10
+      x 1t) 2. 1t (one ton) - Equivalent to 1,000 kilograms (1t = 1,000kg) 3.
       1kg (one kilogram) - This is the standard unit for weighing objects in the
       metric system. 4. 300g (three hundred grams) - Equivalent to three tenths
       of a kilogram (300g = 0.3 x 1kg) 5. 200g (two hundred grams) - Equivalent
       to two tenths of a kilogram (200g = 0.2 x 1kg) 6. 1g (one gram) - This is
       a smaller unit of weight, often used for small objects or when precise
       measurements  are required.
-    question: "'arrange these weights from heaviest to lightest: 1g 300g 1t 10000kg
-      1kg 200g'"
-task_description: "Weight unit ordering skill."
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
