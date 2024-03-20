@@ -1,0 +1,38 @@
+created_by: danmacpherson
+seed_examples:
+- answer: "Certainly! Here's the converted HTML output: I like <strong>pizza</strong>."
+  question: "Can you convert the following AsciiDoc snippet into HTML: I like *pizza*."
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
+- answer: "Certainly! Here's the converted HTML output: I like <em>pizza</em>."
+  question: "Can you convert the following AsciiDoc snippet into HTML: I like _pizza_."
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
+- answer: "Certainly! Here's the converted HTML output: I like to <strong>eat</strong> <em>pizza</em> from my local <strong><em>pizzeria</em></strong>."
+  question: "Can you convert the following AsciiDoc snippet into HTML: I like to *eat* _pizza_ from my local *_pizzeria_*."
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
+- answer: "Certainly! Here's the converted HTML output: Run the <code>oc</code> command to run the OpenShift command line interface."
+  question: "Can you convert the following AsciiDoc snippet into HTML: Run the `oc` command to run the OpenShift command line interface."
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
+- answer: "Certainly! Here's the converted HTML output: E = mc<sup>2</sup>"
+  question: "Can you convert the following AsciiDoc snippet into HTML: E = mc^2^"
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
+- answer: "Certainly! Here's the converted HTML output: H<sub>2</sub>O"
+  question: "Can you convert the following AsciiDoc snippet into HTML: H~2~O"
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
+- answer: "Certainly! Here's the converted HTML output: For more information, go to the <a href=\"https://access.redhat.com/\">Red Hat Customer Portal</a>."
+  question: "Can you convert the following AsciiDoc snippet into HTML: For more information, go to the https://access.redhat.com/[Red Hat Customer Portal]."
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
+task_description: 'Some basic AsciiDoc to HTML conversion.'
