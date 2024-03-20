@@ -1,19 +1,167 @@
-task_description: |
-  This skill provides the ability to extract the referenced source in the text using the IEEE in-text citation style.
-created_by: 
+task_description: >
+  This skill provides the ability to extract the referenced source in text
+  that uses the IEEE in-text citation style.
+created_by: null
 seed_examples:
-- answer: "Y. LeCun, Y. Bengio, & G. Hinton, Deep learning, Nature, vol. 521, no. 7553, pp. 436-444, 2015."
-  context: "The field of artificial intelligence (AI) has seen remarkable advancements in recent years. Machine learning algorithms, particularly deep learning models, have played a pivotal role in these advancements [1].Deep learning is a subset of machine learning that utilizes neural networks with multiple layers to learn complex patterns in data.\n\n\n\nREFERENCES\n[1] Y. LeCun, Y. Bengio, & G. Hinton, Deep learning, Nature, vol. 521, no. 7553, pp. 436-444, 2015.\n[2] I. Goodfellow, Y. Bengio, & A. Courville, Deep learning. MIT Press, 2016.\n[3] K. He et al., Deep residual learning for image recognition, in Proceedings of the IEEE conference on computer vision and pattern recognition, 2016, pp. 770-778.\n[4] A. Vaswani et al., Attention is all you need, in Advances in neural information processing systems, 2017, pp. 5998-6008.\n[5] A. Conneau et al., Unsupervised cross-lingual representation learning at scale, in Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, 2020, pp. 8440-8451."
-  question: Which source is being referenced in the text
-- answer: "I. Goodfellow, Y. Bengio, & A. Courville, Deep learning. MIT Press, 2016"
-  context: "The field of artificial intelligence (AI) has seen remarkable advancements in recent years. Machine learning algorithms, particularly deep learning models, have played a pivotal role in these advancements.Deep learning is a subset of machine learning that utilizes neural networks with multiple layers to learn complex patterns in data [2].\n\n\n\nREFERENCES\n[1] Y. LeCun, Y. Bengio, & G. Hinton, Deep learning, Nature, vol. 521, no. 7553, pp. 436-444, 2015.\n[2] I. Goodfellow, Y. Bengio, & A. Courville, Deep learning. MIT Press, 2016.\n[3] K. He et al., Deep residual learning for image recognition, in Proceedings of the IEEE conference on computer vision and pattern recognition, 2016, pp. 770-778.\n[4] A. Vaswani et al., Attention is all you need, in Advances in neural information processing systems, 2017, pp. 5998-6008.\n[5] A. Conneau et al., Unsupervised cross-lingual representation learning at scale, in Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, 2020, pp. 8440-8451."
-  question: Which source is being referenced in the text
-- answer: "K. He et al., Deep residual learning for image recognition, in Proceedings of the IEEE conference on computer vision and pattern recognition, 2016, pp. 770-778"
-  context: "Deep learning is a subset of machine learning that utilizes neural networks with multiple layers to learn complex patterns in data.Convolutional Neural Networks (CNNs), a type of deep learning model, have been widely used in computer vision tasks such as image recognition and object detection [3].\n\n\n\nREFERENCES\n[1] Y. LeCun, Y. Bengio, & G. Hinton, Deep learning, Nature, vol. 521, no. 7553, pp. 436-444, 2015.\n[2] I. Goodfellow, Y. Bengio, & A. Courville, Deep learning. MIT Press, 2016.\n[3] K. He et al., Deep residual learning for image recognition, in Proceedings of the IEEE conference on computer vision and pattern recognition, 2016, pp. 770-778.\n[4] A. Vaswani et al., Attention is all you need, in Advances in neural information processing systems, 2017, pp. 5998-6008.\n[5] A. Conneau et al., Unsupervised cross-lingual representation learning at scale, in Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, 2020, pp. 8440-8451."
-  question: Which source is being referenced in the text
-- answer: "A. Vaswani et al., Attention is all you need, in Advances in neural information processing systems, 2017, pp. 5998-6008"
-  context: "Natural Language Processing (NLP) is another area where AI has made significant strides. Transformer models, introduced by Vaswani et al., have revolutionized NLP tasks by enabling efficient processing of sequential data through self-attention mechanisms [4].These models have achieved state-of-the-art performance in various language understanding tasks, including machine translation.\n\n\n\nREFERENCES\n[1] Y. LeCun, Y. Bengio, & G. Hinton, Deep learning, Nature, vol. 521, no. 7553, pp. 436-444, 2015.\n[2] I. Goodfellow, Y. Bengio, & A. Courville, Deep learning. MIT Press, 2016.\n[3] K. He et al., Deep residual learning for image recognition, in Proceedings of the IEEE conference on computer vision and pattern recognition, 2016, pp. 770-778.\n[4] A. Vaswani et al., Attention is all you need, in Advances in neural information processing systems, 2017, pp. 5998-6008.\n[5] A. Conneau et al., Unsupervised cross-lingual representation learning at scale, in Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, 2020, pp. 8440-8451."
-  question: Which source is being referenced in the text
-- answer: "A. Conneau et al., Unsupervised cross-lingual representation learning at scale, in Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, 2020, pp. 8440-8451"
-  context: "Natural Language Processing (NLP) is another area where AI has made significant strides. Transformer models, introduced by Vaswani et al., have revolutionized NLP tasks by enabling efficient processing of sequential data through self-attention mechanisms.These models have achieved state-of-the-art performance in various language understanding tasks, including machine translation [5].\n\n\n\nREFERENCES\n[1] Y. LeCun, Y. Bengio, & G. Hinton, Deep learning, Nature, vol. 521, no. 7553, pp. 436-444, 2015.\n[2] I. Goodfellow, Y. Bengio, & A. Courville, Deep learning. MIT Press, 2016.\n[3] K. He et al., Deep residual learning for image recognition, in Proceedings of the IEEE conference on computer vision and pattern recognition, 2016, pp. 770-778.\n[4] A. Vaswani et al., Attention is all you need, in Advances in neural information processing systems, 2017, pp. 5998-6008.\n[5] A. Conneau et al., Unsupervised cross-lingual representation learning at scale, in Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, 2020, pp. 8440-8451."
-  question: Which source is being referenced in the text
+  - answer: >-
+      Y. LeCun, Y. Bengio, & G. Hinton, Deep learning, Nature, vol. 521, no.
+      7553, pp. 436-444, 2015.
+    context: >-
+      The field of artificial intelligence (AI) has seen remarkable advancements
+      in recent years. Machine learning algorithms, particularly deep learning
+      models, have played a pivotal role in these advancements [1].Deep learning
+      is a subset of machine learning that utilizes neural networks with
+      multiple layers to learn complex patterns in data.
+
+
+
+
+      REFERENCES
+
+      [1] Y. LeCun, Y. Bengio, & G. Hinton, Deep learning, Nature, vol. 521, no.
+      7553, pp. 436-444, 2015.
+
+      [2] I. Goodfellow, Y. Bengio, & A. Courville, Deep learning. MIT Press,
+      2016.
+
+      [3] K. He et al., Deep residual learning for image recognition, in
+      Proceedings of the IEEE conference on computer vision and pattern
+      recognition, 2016, pp. 770-778.
+
+      [4] A. Vaswani et al., Attention is all you need, in Advances in neural
+      information processing systems, 2017, pp. 5998-6008.
+
+      [5] A. Conneau et al., Unsupervised cross-lingual representation learning
+      at scale, in Proceedings of the 58th Annual Meeting of the Association for
+      Computational Linguistics, 2020, pp. 8440-8451.
+    question: Which source is being referenced in the following text
+  - answer: 'I. Goodfellow, Y. Bengio, & A. Courville, Deep learning. MIT Press, 2016'
+    context: >-
+      The field of artificial intelligence (AI) has seen remarkable advancements
+      in recent years. Machine learning algorithms, particularly deep learning
+      models, have played a pivotal role in these advancements.Deep learning is
+      a subset of machine learning that utilizes neural networks with multiple
+      layers to learn complex patterns in data [2].
+
+
+
+
+      REFERENCES
+
+      [1] Y. LeCun, Y. Bengio, & G. Hinton, Deep learning, Nature, vol. 521, no.
+      7553, pp. 436-444, 2015.
+
+      [2] I. Goodfellow, Y. Bengio, & A. Courville, Deep learning. MIT Press,
+      2016.
+
+      [3] K. He et al., Deep residual learning for image recognition, in
+      Proceedings of the IEEE conference on computer vision and pattern
+      recognition, 2016, pp. 770-778.
+
+      [4] A. Vaswani et al., Attention is all you need, in Advances in neural
+      information processing systems, 2017, pp. 5998-6008.
+
+      [5] A. Conneau et al., Unsupervised cross-lingual representation learning
+      at scale, in Proceedings of the 58th Annual Meeting of the Association for
+      Computational Linguistics, 2020, pp. 8440-8451.
+    question: Which source is being referenced in the following text
+  - answer: >-
+      K. He et al., Deep residual learning for image recognition, in Proceedings
+      of the IEEE conference on computer vision and pattern recognition, 2016,
+      pp. 770-778
+    context: >-
+      Deep learning is a subset of machine learning that utilizes neural
+      networks with multiple layers to learn complex patterns in
+      data.Convolutional Neural Networks (CNNs), a type of deep learning model,
+      have been widely used in computer vision tasks such as image recognition
+      and object detection [3].
+
+
+
+
+      REFERENCES
+
+      [1] Y. LeCun, Y. Bengio, & G. Hinton, Deep learning, Nature, vol. 521, no.
+      7553, pp. 436-444, 2015.
+
+      [2] I. Goodfellow, Y. Bengio, & A. Courville, Deep learning. MIT Press,
+      2016.
+
+      [3] K. He et al., Deep residual learning for image recognition, in
+      Proceedings of the IEEE conference on computer vision and pattern
+      recognition, 2016, pp. 770-778.
+
+      [4] A. Vaswani et al., Attention is all you need, in Advances in neural
+      information processing systems, 2017, pp. 5998-6008.
+
+      [5] A. Conneau et al., Unsupervised cross-lingual representation learning
+      at scale, in Proceedings of the 58th Annual Meeting of the Association for
+      Computational Linguistics, 2020, pp. 8440-8451.
+    question: Which source is being referenced in the following text
+  - answer: >-
+      A. Vaswani et al., Attention is all you need, in Advances in neural
+      information processing systems, 2017, pp. 5998-6008
+    context: >-
+      Natural Language Processing (NLP) is another area where AI has made
+      significant strides. Transformer models, introduced by Vaswani et al.,
+      have revolutionized NLP tasks by enabling efficient processing of
+      sequential data through self-attention mechanisms [4].These models have
+      achieved state-of-the-art performance in various language understanding
+      tasks, including machine translation.
+
+
+
+
+      REFERENCES
+
+      [1] Y. LeCun, Y. Bengio, & G. Hinton, Deep learning, Nature, vol. 521, no.
+      7553, pp. 436-444, 2015.
+
+      [2] I. Goodfellow, Y. Bengio, & A. Courville, Deep learning. MIT Press,
+      2016.
+
+      [3] K. He et al., Deep residual learning for image recognition, in
+      Proceedings of the IEEE conference on computer vision and pattern
+      recognition, 2016, pp. 770-778.
+
+      [4] A. Vaswani et al., Attention is all you need, in Advances in neural
+      information processing systems, 2017, pp. 5998-6008.
+
+      [5] A. Conneau et al., Unsupervised cross-lingual representation learning
+      at scale, in Proceedings of the 58th Annual Meeting of the Association for
+      Computational Linguistics, 2020, pp. 8440-8451.
+    question: Which source is being referenced in the following text
+  - answer: >-
+      A. Conneau et al., Unsupervised cross-lingual representation learning at
+      scale, in Proceedings of the 58th Annual Meeting of the Association for
+      Computational Linguistics, 2020, pp. 8440-8451
+    context: >-
+      Natural Language Processing (NLP) is another area where AI has made
+      significant strides. Transformer models, introduced by Vaswani et al.,
+      have revolutionized NLP tasks by enabling efficient processing of
+      sequential data through self-attention mechanisms.These models have
+      achieved state-of-the-art performance in various language understanding
+      tasks, including machine translation [5].
+
+
+
+
+      REFERENCES
+
+      [1] Y. LeCun, Y. Bengio, & G. Hinton, Deep learning, Nature, vol. 521, no.
+      7553, pp. 436-444, 2015.
+
+      [2] I. Goodfellow, Y. Bengio, & A. Courville, Deep learning. MIT Press,
+      2016.
+
+      [3] K. He et al., Deep residual learning for image recognition, in
+      Proceedings of the IEEE conference on computer vision and pattern
+      recognition, 2016, pp. 770-778.
+
+      [4] A. Vaswani et al., Attention is all you need, in Advances in neural
+      information processing systems, 2017, pp. 5998-6008.
+
+      [5] A. Conneau et al., Unsupervised cross-lingual representation learning
+      at scale, in Proceedings of the 58th Annual Meeting of the Association for
+      Computational Linguistics, 2020, pp. 8440-8451.
+    question: Which source is being referenced in the following text
