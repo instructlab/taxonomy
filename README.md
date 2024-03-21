@@ -27,7 +27,7 @@ contribution to the taxonomy tree can be just a few lines of YAML in the
 >    2. To determine the interpretability by human contributors and maintainers.
 >    3. As part of the prompt to the GPT model used to generate synthetic samples.
 
-> To get the best use of this structure, make sure the names of directories match the intent of the
+> **NOTE:** To get the best use of this structure, make sure the names of directories match the intent of the
 > taxonomy files. You can also verify that a person's contribution is in the most logical location in the
 > taxonomy structure before signing off.
 
@@ -56,7 +56,7 @@ Taxonomy skill files must be a valid [YAML](https://yaml.org/) file named
 
 Other keys at any level are currently ignored.
 
-## Skills: YAML example
+### Skills: YAML example
 
 To make the `qna.yaml` files easier and faster for humans to read, it is recommended to specify `task_description` first, followed by `created_by`, and finally `seed_examples`.
 In `seed_examples`, it is recommended to specify `context` first (if applicable), followed by `question`, `answer`, and finally `attribution`. 
@@ -269,7 +269,7 @@ pairs. The `qna.yaml` format must include the following fields:
 - `task_description` (an optional description of the knowledge).
 - `attribution` `source` `license` (cite your sources)
 
-#### Knowledge: YAML example
+### Knowledge: YAML example
 
 ```yaml
 task_description: |
@@ -388,7 +388,7 @@ The taxonomy tree is organized in a cascading directory structure. At the end of
 each branch, there is a YAML file (qna.yaml) that contains the examples for that
 domain. Maintainers can decide to change the names of the existing branches or to add new branches.
 
-> [!Note] 
+> [Note] 
 > Folder names should not have a space. 
 
 Below is an illustrative directory structure to show this layout:
@@ -533,9 +533,9 @@ You can contribute to the taxonomy in the following two ways:
     ![fork-button](https://github.com/instruct-lab/taxonomy/assets/799683/8487bff2-425e-483c-b27c-ef03da1c57a8)
 
 3. On the **Create a new fork** page, enter the information into the following fields:
-    - **Repository name:**: `taxonomy` is fine
-    - **Description:**: Enter the description of _your fork_, not of the skills you will create. You can write something that makes sense to you or leave it blank.
-    - **Copy the main branch only:**: The box is selected by default. You can choose to leave the box selected or clear it.
+    - **Repository name:** `taxonomy` is fine
+    - **Description:** Enter the description of _your fork_, not of the skills you will create. You can write something that makes sense to you or leave it blank.
+    - **Copy the main branch only:** The box is selected by default. You can choose to leave the box selected or clear it.
 
 4. Click **Create Fork**.
 
