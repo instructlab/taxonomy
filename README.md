@@ -244,7 +244,7 @@ seed_examples:
 [...]
 ```
 
-### Knowledge
+## Getting Started with Knowledge Contributions
 
 > [!NOTE]
 > We are not currently accepting knowledge contributions, but we will open this
@@ -557,11 +557,11 @@ For example, I want to contribute a skill for creating puns. Puns are a specific
 
 ![Screenshot from 2024-02-28 12-57-00](https://github.com/instruct-lab/taxonomy/assets/799683/2fab5b92-194a-491e-8a6f-f464a8e8f2f5)
 
-Under freeform, I saw subdirectories such as brainstorming, debate, legal, poetry, prose, etc.
+Under the freeform directory, I saw subdirectories such as brainstorming, debate, legal, poetry, prose, etc.
 
 ![Screenshot from 2024-02-28 12-57-35](https://github.com/instruct-lab/taxonomy/assets/799683/e52ea423-d86f-49a8-9229-b09418f1510b)
 
-Under grounded, I saw subdirectories such as editing, meeting_insights, summarization/wiki_insights.
+Under the grounded directory, I saw subdirectories such as editing, meeting_insights, summarization/wiki_insights.
 
 ![Screenshot from 2024-02-28 12-59-10](https://github.com/instruct-lab/taxonomy/assets/799683/98370d70-d7e4-4595-a259-f6ffa4ef00fb)
 
