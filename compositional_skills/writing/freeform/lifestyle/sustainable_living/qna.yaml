@@ -1,0 +1,63 @@
+task_description: The task tells about how we can lead a sustainable life.
+created_by: aloganat
+seed_examples:
+  - question: Why sustainability living is important?
+    answer: |
+       It is important to conserve and protect the natural resources and make a green earth.
+
+       Here are the reasons why sustainable living is essential to be adapted into our way of living!
+
+       1. Helps in reducing the amounts of carbon footprint.
+       2. Improve life balance by reducing our dependence on vehicles or machinery.
+       3. Sustainable practices lead to a significant reduction in long-term energy costs.
+
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: What are the three pillars of sustainability?
+    answer: |
+       The three pillars of sustainability are
+
+       1. Social - includes environmental justice, human health, resource security, and education, among other important social elements of society. For example, people's diet choices can have a greater impact on both human health and the health of the environment.
+       2. Economic - includes profitability and proper accounting of ecosystem services for optimal cost-benefit analyses. For example, recycling valuable materials, such as electronic waste and textile waste can lower operating costs.
+       3. Environment - includes water quality, air quality and well being of the environment.
+
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Sustainable Practices for Kitchen
+    answer: |
+       Sustainable living can begin right at home, if we mindfully use and reuse available resources.
+
+       Here are some simple ways to save the environment right from the kitchen!
+       1. Waste Management - Compost kitchen waste to enrich the soil and reduce landfill waste.
+       2. Replace the plastic - You can use plastic containers with glass jar, steel or metal containers that you can wash and resume each time.
+       3. Use Natural Cleaning Products - such as mild soap and water, vinegar, baking soda, and lemon juice to keep your kitchen clean without polluting the environment.
+
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Sustainable Practices for offices
+    answer: |
+       Here are simple ways to save the environment by practicing sustainable living in office.
+
+       1. Make Transportation Adjustments - Try to avoid automobiles as much as possible, at least for short distances. If you can’t walk or use public transportation, opt to carpool.
+       2. Implement energy-efficient practices  - Encouraging your team to turn off lights and equipment when not in use.
+       3. Reduce paper usage
+
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: How can we start living sustainable lifestyle?
+    answer: |
+       Here are the tips to start living sustainable lifestyle.
+
+       1. Recycle, reuse, reduce.
+       2. Conserve natural resources by saving water, reduce air pollution.
+       3. Minimize food waste
+       4. Consume renewable energy
+       5. Educate yourself and others.
+
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
