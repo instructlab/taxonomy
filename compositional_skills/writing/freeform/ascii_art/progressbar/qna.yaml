@@ -28,4 +28,3 @@ seed_examples:
         license: Apache-2.0
 task_description: Output ASCII-style progress bar with a specified percentage
   straight at the users request, without python code generation.
-
