@@ -1,0 +1,98 @@
+task_description: 'Fill in missing dataset fields in CSV and Markdown formats'
+created_by: nikos-livathinos
+seed_examples:
+  - context: |
+      News;Currency;Amount
+      John gives $10 to Mary;USD;
+      An 1 millon euro investment for the next 10 years;EUR;
+      The Swiss franc has appreciated against all the world’s major currencies;;
+      We want to buy 100 Polish Zloty;;100
+    question: 'Fill in the missing data'
+    answer: |
+      News;Currency;Amount
+      John gives $10 to Mary;USD;10
+      An 1 millon euro investment for the next 10 years;EUR;1 million
+      The Swiss franc has appreciated against all the world’s major currencies;CHF;
+      We want to buy 100 Polish Zloty;PLN;100
+
+  - context: |
+      | News                                                                      | Currency  | Amount  |
+      |---------------------------------------------------------------------------|-----------|---------|
+      | John gives $10 to Mary                                                    | USD       |         |
+      | An 1 millon euro investment for the next 10 years                         | EUR       |         |
+      | The Swiss franc has appreciated against all the world’s major currencies  |           |         |
+      | We want to buy 100 Polish Zloty                                           |           | 100     |
+    question: 'Fill in the missing data in the following table'
+    answer: |
+      | News                                                                      | Currency  | Amount  |
+      |---------------------------------------------------------------------------|-----------|---------|
+      | John gives $10 to Mary                                                    | USD       | 10      |
+      | An 1 millon euro investment for the next 10 years                         | EUR       | 1000000 |
+      | The Swiss franc has appreciated against all the world’s major currencies  | CHF       |         |
+      | We want to buy 100 Polish Zloty                                           | PLN       | 100     |
+
+
+  - context: |
+      News;Color;Item
+      A red apple is on the table;;Apple
+      John bought a new green car;;Car
+      The bright blue color of the sky;Blue;
+      Mary decided to put on a shirt and blue jeans;;Jeans
+      The little girl reads the Snow White;White;
+      The day after the wildfires the landscape was turned into black;;
+    question: 'Fill in the missing data'
+    answer: |
+      News;Color;Item
+      A red apple is on the table;Red;Apple
+      John bought a new green car;Green;Car
+      The bright blue color of the sky;Blue;Sky
+      Mary decided to put on a shirt and blue jeans;Blue;Jeans
+      The little girl reads the Snow White;White;Snow
+      The day after the wildfires the landscape was turned into black;Black;Landscape
+
+  - context: |
+      | News                                                                      | Color     | Item    |
+      |---------------------------------------------------------------------------|-----------|---------|
+      | A red apple is on the table                                               |           | Apple   |
+      | John bought a new green car                                               |           | Car     |
+      | The bright blue color of the sky                                          | Blue      |         |
+      | Mary decided to put on a shirt and blue jeans                             |           | Jeans   |
+      | The little girl reads the Snow White                                      | White     |         |
+      | The day after the wildfires the landscape was turned into black           |           |         |
+    question: 'Fill in the missing data'
+    answer: |
+      | News                                                                      | Color     | Item    |
+      |---------------------------------------------------------------------------|-----------|---------|
+      | A red apple is on the table                                               | Red       | Apple   |
+      | John bought a new green car                                               | Green     | Car     |
+      | The bright blue color of the sky                                          | Blue      | Sky     |
+      | Mary decided to put on a shirt and blue jeans                             | Blue      | Jeans   |
+      | The little girl reads the Snow White                                      | White     | Snow    |
+      | The day after the wildfires the landscape was turned into black           | Black     |Landscape|
+
+
+  - context: |
+      Description;Item;Dimenions
+      White bed with storage cabinet 160x200cm;;160x200cm
+      Table outdoor beige 211x90x75cm;Table;
+      Chest of 3 drawers for children room, white/pale pink, 60x42x63cm;;
+    question: 'Fill in the missing data'
+    answer:
+      Description;Item;Dimenions
+      White bed with storage cabinet 160x200cm;Bed;160x200cm
+      Table outdoor beige 211x90x75cm;Table; 211x90x75cm
+      Chest of 3 drawers for children room, white/pale pink, 60x42x63cm;Chest of drawers;60x42x63cm
+
+  - context: |
+      |Description                                                       |Item            | Dimenions   |
+      |------------------------------------------------------------------|----------------|-------------|
+      |White bed with storage cabinet 160x200cm                          |                | 160x200cm   |
+      |Table outdoor beige 211x90x75cm                                   | Table          |             |
+      |Chest of 3 drawers for children room, white/pale pink, 60x42x63cm |                |             |
+    question: 'Fill in the missing data'
+    answer: |
+      |Description                                                       |Item            | Dimenions   |
+      |------------------------------------------------------------------|----------------|-------------|
+      |White bed with storage cabinet 160x200cm                          | Bed            | 160x200cm   |
+      |Table outdoor beige 211x90x75cm                                   | Table          | 211x90x75cm |
+      |Chest of 3 drawers for children room, white/pale pink, 60x42x63cm |Chest of drawers| 60x42x63cm  |
