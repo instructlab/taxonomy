@@ -1,30 +1,30 @@
----
 created_by: cau-git
 seed_examples:
-  - answer: "[=============================>--------------------] 60%"
+  - answer: '[=============================>--------------------] 60%'
     question: Print an ASCII progress bar with 60% progress.
     attribution:
       - source: self-authored
         license: Apache-2.0
-  - answer: "[--------------------------------------------------]  0%"
+  - answer: '[--------------------------------------------------]  0%'
     question: Print an ASCII progress bar with 0% progress.
     attribution:
       - source: self-authored
         license: Apache-2.0
-  - answer: "[==================================================] 100%"
+  - answer: '[==================================================] 100%'
     question: Print an ASCII progress bar with 100% progress.
     attribution:
       - source: self-authored
         license: Apache-2.0
-  - answer: "[==========>---------------------------------------] 20%"
+  - answer: '[==========>---------------------------------------] 20%'
     question: Print an ASCII progress bar with 20% progress.
     attribution:
       - source: self-authored
         license: Apache-2.0
-  - answer: "[==================================================]=========> 120%"
+  - answer: '[==================================================]=========> 120%'
     question: Print an ASCII progress bar with 120% progress.
     attribution:
       - source: self-authored
         license: Apache-2.0
-task_description: Output ASCII-style progress bar with a specified percentage
-  straight at the users request, without python code generation.
+task_description: >-
+  Output ASCII-style progress bar with a specified percentage straight at the
+  users request, without python code generation.
