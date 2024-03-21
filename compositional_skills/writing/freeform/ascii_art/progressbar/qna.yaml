@@ -1,0 +1,13 @@
+created_by: cau-git
+seed_examples:
+- answer: '[=============================>--------------------] 60%'
+  question: Print an ASCII progress bar with 60% progress.
+- answer: '[--------------------------------------------------]  0%'
+  question: Print an ASCII progress bar with 0% progress.
+- answer: '[==================================================] 100%'
+  question: Print an ASCII progress bar with 100% progress.
+- answer: '[==========>---------------------------------------] 20%'
+  question: Print an ASCII progress bar with 20% progress.
+- answer: '[==================================================]=========> 120%'
+  question: Print an ASCII progress bar with 120% progress.
+task_description: ''
