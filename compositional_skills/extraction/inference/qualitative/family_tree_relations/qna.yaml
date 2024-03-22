@@ -1,72 +1,106 @@
-task_description: |
-  The skill enables determining the relationship in a family tree or blood relations with necessary reasoning
+---
+task_description: >
+  The skill enables determining the relationship in a family
+  tree or blood relations with necessary reasoning
 created_by: code2automate
 seed_examples:
   - question: |
       If A is B's brother, and B is C's sister, what is A to C?
-    answer: |
-      A is also C's brother. (A and B are siblings, and B and C are siblings, so A and C are also siblings.)
-
+    answer: >
+      A is also C's brother. (A and B are siblings, and B and C are siblings,
+      so A and C are also siblings.)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: |
       If Rakesh's father is Sunil's son, what is Rakesh to Sunil?
-    answer: |
-      Rakesh is Sunil's grandson. (Sunil's son is father of Rakesh, so Rakesh is Sunil's son's son i.e., grandson)
-
+    answer: >
+      Rakesh is Sunil's grandson. (Sunil's son is father of Rakesh, so Rakesh
+      is Sunil's son's son i.e., grandson)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: |
       If Sarita is Prakash's mother's only daughter, what is Sarita to Prakash?
     answer: |
       Sarita is Prakash's sister. (Sarita is Prakash's mother's only daughter,\
       \ so Sarita and Prakash share the same mother.)
-
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: |
       If Robert's daughter is Emma's mother, what is Robert to Emma?
-    answer: |
-      Robert is Emma's grandfather. (Robert's daughter is Emma's mother, so Robert is Emma's maternal grandfather.)
-
+    answer: >
+      Robert is Emma's grandfather. (Robert's daughter is Emma's mother, so
+      Robert is Emma's maternal grandfather.)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: |
       If Shivani's mother's brother is Mahesh, what is Mahesh to Shivani?
     answer: |
       Mahesh is Shivani's uncle. (Mahesh & Shivani's mother are siblings,\
       \ so Mahesh is Shivani's maternal uncle.)
-
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: |
       If Bharati's husband is Babu's brother, what is Babu to Bharati?
-    answer: |
-      Babu is Bharati's brother-in-law. (Bharati's husband and Babu are brothers,\
-      \ so Babu is Bharati's brother-in-law.)
+    answer: >
+      Babu is Bharati's brother-in-law. (Bharati's husband and Babu are
+      brothers,\
 
+      \ so Babu is Bharati's brother-in-law.)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: |
       If Amit's wife is Pooja's sister, what is Pooja to Amit?
     answer: |
       Pooja is Amit's sister-in-law. (Amit's wife's and Pooja are sisters,\
       \ so Pooja is Amit's sister-in-law.)
-
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: |
       If Basavaraj is Kusumadevi's son-in-law, what is Kusumadevi to Basavaraj?
-    answer: |
-      Kusumadevi is Basavaraj's mother-in-law. (Basavaraj's spouse's mother is Kusumadevi,\
-      \ so Kusumadevi is Basavaraj's mother-in-law.)
+    answer: >
+      Kusumadevi is Basavaraj's mother-in-law. (Basavaraj's spouse's mother is
+      Kusumadevi,\
 
+      \ so Kusumadevi is Basavaraj's mother-in-law.)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: |
       If Soujanya's father is Sharan's son, what is Soujanya to Sharan?
     answer: |
       Soujanya is Sharan's granddaughter. (Soujanya's father is son of Sharan,\
       \ so Soujanya is Sharan's granddaughter.)
-
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: |
       If Anvit's father is Nishant's brother, what is Anvit to Nishant?
     answer: |
       Anvit is Nishant's nephew. (Nishant's brother's child is Anvit,\
       \ so Anvit is Nishant's nephew.)
-
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: |
       If Anita's son is Anvit's brother, what is Anita to Anvit?
     answer: |
       Anita is Anvit's mother. (Anita's son and Anvit are brothers,\
       \ so Anita is Anvit's mother.)
-
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
   - question: |
       If Arun's daughter's mother is Shivaganga, what is Arun to Shivaganga?
     answer: |
       Arun is Shivaganga's spouse. (Shivaganga is mother of Arun's daugther,\
       \ so Arun is Shivaganga's spouse)
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
