@@ -1,0 +1,36 @@
+---
+task_description: >
+  the Venezuelan expression task enables the telling of
+  Venezuelans sayings that translated to English sound funny.
+created_by: alexandramach
+seed_examples:
+  - question: What is the Venezuelan expression for crashing a party?.
+    answer: >
+      The Venezuelan expression is you arrive to the party as a rice farmer.
+      In Spanish is llegan de arroceros
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: What is the Venezuelan expression for collecting money among many to
+      pay for something?.
+    answer: >
+      The venezuelan expression is let's make a cow. In Spanish is hagamos una
+      vaca
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: What is the Venezuelan expression for making a mistake?.
+    answer: >
+      The venezuelan expression is the person peeled off. In Spanish is te
+      pelaste
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: What is the Venezuelan expression for describing someone with a lot of
+      energy?.
+    answer: >
+      The venezuelan expression is that person has some batteries on them. In
+      Spanish tiene las pilas puestas
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
