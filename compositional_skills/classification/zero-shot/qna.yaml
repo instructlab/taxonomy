@@ -2,8 +2,7 @@
 task_description: 'Zero shot classification with class descriptions '
 created_by: abratnap
 seed_examples:
-  - answer: 'Sport '
-    context: >-
+  - context: >-
       Finance: Finance encompasses a wide range of activities related to the
       management, investment, and examination of money, assets, and liabilities,
       as well as the mechanisms  through which money is acquired and allocated.
@@ -48,8 +47,11 @@ seed_examples:
       Classify below query as Finance, Sport, Politics or Other
       Who was the first batsman to score a double century in a One Day
       International (ODI) cricket match?.
-  - answer: 'Finance '
-    context: >-
+    answer: 'Sport '
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: >-
       Finance: Finance encompasses a wide range of activities related to the
       management, investment, and examination of money, assets, and liabilities,
       as well as the mechanisms  through which money is acquired and allocated.
@@ -93,8 +95,11 @@ seed_examples:
     question: >
       Classify below query as Finance, Sport, Politics or Other
       How do market fluctuations impact the performance of mutual funds?
-  - answer: 'Other '
-    context: >-
+    answer: 'Finance '
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: >-
       Finance: Finance encompasses a wide range of activities related to the
       management, investment, and examination of money, assets, and liabilities,
       as well as the mechanisms  through which money is acquired and allocated.
@@ -138,8 +143,11 @@ seed_examples:
     question: >
       Classify below query as Finance, Sport, Politics or Other
       Which artists are expected to breakout at the SXSW 2024 Music Festival?
-  - answer: 'Human Resource '
-    context: >-
+    answer: 'Other '
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: >-
       Human Resource: Terms found within human resource (HR) documents are
       essential for  delineating the framework of employee-employer interactions
       within a company. Such documents  typically include employment agreements,
@@ -154,8 +162,11 @@ seed_examples:
     question: >-
       Classify below query as Human Resource or Other.
       What is the maternity leave policy?
-  - answer: 'Other '
-    context: >-
+    answer: 'Human Resource '
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: >-
       Human Resource: Terms found within human resource (HR) documents are
       essential for  delineating the framework of employee-employer interactions
       within a company. Such documents  typically include employment agreements,
@@ -170,3 +181,7 @@ seed_examples:
     question: >-
       Classify below query as Human Resource or Other.
       What learning resources are available for Sales team?
+    answer: 'Other '
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
