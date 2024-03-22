@@ -1,0 +1,16 @@
+created_by: kwk
+attribution:
+  - source: self-authored
+  - license: Apache-2.0
+seed_examples:
+  - answer: |
+      Let's assume that you're familiar with how to read the treble clef. It has
+      five lines in a stave and the note on the lowest line is an "e". Now, the
+      bass clef also has 5 lines in a stave but the note on the lowest line is a
+      "g". That said, when reading the bass clef you can simply think of the
+      note name in the treble clef that's two lines higher in the stave. For
+      example, the note name between the bottom two lines in the bass clef has
+      the same name as the note between the second and third line in the treble
+      clef, namely "a".
+    question: 'How can I learn how to read the bass clef?'
+task_description: 'teach a large language model about music notation'
