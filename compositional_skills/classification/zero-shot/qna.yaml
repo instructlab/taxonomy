@@ -1,69 +1,77 @@
+task_description: 'Zero shot classification with class descriptions '
 created_by: abratnap
 seed_examples:
-- answer: 'Sport
-    '
-  context: "Finance: Finance encompasses a wide range of activities related to the management,
-   investment, and examination of money, assets, and liabilities, as well as the mechanisms 
-   through which money is acquired and allocated. It spans three primary sectors: personal 
-   finance, which concentrates on the financial decisions and planning of individuals and 
-   families; corporate finance, which addresses the fiscal strategies and structures of 
-   corporations, including funding, investing, and managing capital; and public finance, 
-   which involves the budgeting, spending, and debt issuance policies of government entities 
-   and public organizations. This field merges principles of economics with practical approaches 
-   to ensure efficient resource distribution, aiming for sustained financial health and growth 
-   across different scales of economic activity.\n\n
-   Sport: Sport encompass a diverse range of physical activities and games, each designed to test 
-   skill, physical ability, and endurance in competitive and recreational contexts. Broadly 
-   categorized into team sports, such as football (soccer), basketball, and cricket, which require
-   collective effort towards a common goal, and individual sports like tennis, golf, and 
-   athletics, where the focus is on personal excellence and achievement. Other important aspects
-   include extreme sports, which challenge participants against the most daunting natural terrains
-   and conditions, like surfing and mountain climbing, and esports, a rapidly growing sector that 
-   involves competitive video gaming. Sports are not only about competition; they play significant 
-   roles in promoting physical health, mental well-being, social connections, and cultural identity, 
-   reflecting a universal aspect of human society across the globe.\n\n  
-   Politics: Politics is the complex domain of activities, actions, and policies through which 
-   groups of people make collective decisions and govern societies. It encompasses several key 
-   areas: governance, the system by which a community or political entity is managed; political 
-   theory, which explores the concepts and philosophies underlying political systems and behaviors; 
-   international relations, the study of the interactions between nations and the global order; 
-   public policy, the development and implementation of governmental policies to address societal 
-   issues; and political campaigns and elections, where candidates and parties vie for power within 
-   democratic systems. Politics is deeply intertwined with the exercise of power, the allocation 
-   of resources, and the negotiation of conflicting interests, playing a critical role in shaping 
-   the economic, social, and cultural landscape of communities and nations around the world."
-  question: 'Classify below query as Finance, Sport, Politics or Other
-    Who was the first batsman to score a double century in a One Day International (ODI) cricket match?.
+  - answer: 'Sport '
+    context: >-
+      Finance: Finance encompasses a wide range of activities related to the
+      management, investment, and examination of money, assets, and liabilities,
+      as well as the mechanisms  through which money is acquired and allocated.
+      It spans three primary sectors: personal  finance, which concentrates on
+      the financial decisions and planning of individuals and  families;
+      corporate finance, which addresses the fiscal strategies and structures
+      of  corporations, including funding, investing, and managing capital; and
+      public finance,  which involves the budgeting, spending, and debt issuance
+      policies of government entities  and public organizations. This field
+      merges principles of economics with practical approaches  to ensure
+      efficient resource distribution, aiming for sustained financial health and
+      growth  across different scales of economic activity.
 
-    '
-- answer: 'Human Resource
-  '
-  context: "Human Resource: Terms found within human resource (HR) documents are essential for 
-  delineating the framework of employee-employer interactions within a company. Such documents 
-  typically include employment agreements, detailing job duties, remuneration, and conditions of 
-  employment; confidentiality agreements to safeguard proprietary information; restrictions on 
-  competition to prevent ex-employees from competing against the company; and manuals for employees 
-  that specify organizational policies, values, and employee expectations. Furthermore, these 
-  documents might encompass forms for evaluating employee performance, requests for time off, 
-  documentation related to employee benefits, and adherence to regulatory labor standards."
-           
-  question: 'Classify below query as Human Resource related or not.
-             What types of leaves available for employees?
-    '
-- answer: 'Not Human Resource
-    '
-  context: "Human Resource: Terms found within human resource (HR) documents are essential for 
-  delineating the framework of employee-employer interactions within a company. Such documents 
-  typically include employment agreements, detailing job duties, remuneration, and conditions 
-  of employment; confidentiality agreements to safeguard proprietary information; restrictions 
-  on competition to prevent ex-employees from competing against the company; and manuals for 
-  employees that specify organizational policies, values, and employee expectations. Furthermore, 
-  these documents might encompass forms for evaluating employee performance, requests for time 
-  off, documentation related to employee benefits, and adherence to regulatory labor standards."
-  question: 'Classify below query as Human Resource related or not.
-             What learning resources are available for Sales team?
-    '
+      Sport: Sport encompass a diverse range of physical activities and games, each 
+      designed to test  skill, physical ability, and endurance in competitive and recreational 
+      contexts. Broadly  categorized into team sports, such as football (soccer), basketball, 
+      and cricket, which require collective effort towards a common goal, and individual sports 
+      like tennis, golf, and  athletics, where the focus is on personal excellence and achievement. 
+      Other important aspects include extreme sports, which challenge participants against the most 
+      daunting natural terrains and conditions, like surfing and mountain climbing, and esports, 
+      a rapidly growing sector that  involves competitive video gaming. Sports are not only about 
+      competition; they play significant  roles in promoting physical health, mental well-being, 
+      social connections, and cultural identity,  reflecting a universal aspect of human society 
+      across the globe.
 
-task_description: 'Zero shot classification with class descriptions
-
-  '
+      Politics: Politics is the complex domain of activities, actions, and policies through 
+      which  groups of people make collective decisions and govern societies. It encompasses 
+      several key  areas: governance, the system by which a community or political entity is 
+      managed; political  theory, which explores the concepts and philosophies underlying political 
+      systems and behaviors;  international relations, the study of the interactions between nations 
+      and the global order;  public policy, the development and implementation of governmental policies 
+      to address societal  issues; and political campaigns and elections, where candidates and parties 
+      vie for power within  democratic systems. Politics is deeply intertwined with the exercise of 
+      power, the allocation  of resources, and the negotiation of conflicting interests, playing a 
+      critical role in shaping  the economic, social, and cultural landscape of communities and 
+      nations around the world.
+    question: >
+      Classify below query as Finance, Sport, Politics or Other Who was the
+      first batsman to score a double century in a One Day International (ODI)
+      cricket match?.
+  - answer: 'Human Resource '
+    context: >-
+      Human Resource: Terms found within human resource (HR) documents are
+      essential for  delineating the framework of employee-employer interactions
+      within a company. Such documents  typically include employment agreements,
+      detailing job duties, remuneration, and conditions of  employment;
+      confidentiality agreements to safeguard proprietary information;
+      restrictions on  competition to prevent ex-employees from competing
+      against the company; and manuals for employees  that specify
+      organizational policies, values, and employee expectations. Furthermore,
+      these  documents might encompass forms for evaluating employee
+      performance, requests for time off,  documentation related to employee
+      benefits, and adherence to regulatory labor standards.
+    question: >-
+      Classify below query as Human Resource related or not. 
+      What is the maternity leave policy? 
+  - answer: 'Not Human Resource '
+    context: >-
+      Human Resource: Terms found within human resource (HR) documents are
+      essential for  delineating the framework of employee-employer interactions
+      within a company. Such documents  typically include employment agreements,
+      detailing job duties, remuneration, and conditions  of employment;
+      confidentiality agreements to safeguard proprietary information;
+      restrictions  on competition to prevent ex-employees from competing
+      against the company; and manuals for  employees that specify
+      organizational policies, values, and employee expectations. Furthermore, 
+      these documents might encompass forms for evaluating employee performance,
+      requests for time  off, documentation related to employee benefits, and
+      adherence to regulatory labor standards.
+    question: >-
+      Classify below query as Human Resource related or not.
+      What learning resources are available for Sales team? 
