@@ -7,8 +7,9 @@ seed_examples:
       - Headphones or earplugs can increase the bacteria in your ears.
       - Teeth are the only part of the human body that can not heal themselves.
       - A shrimp's heart is in its head.
-      - Babies have more bones than adults. Fully developed humans have 206 bones, but they have 300 bones when they are born.
-      Many of these bones fuse together when we grow older and taller, resulting in 206 bones in the adult human body.
+      - Babies have more bones than adults. Fully developed humans have 206 bones,
+      but they have 300 bones when they are born. Many of these bones fuse together when we grow older and taller,
+      resulting in 206 bones in the adult human body.
       - Octopuses have three hearts and blue blood.
     attribution:
       - source: self-authored
@@ -17,10 +18,10 @@ seed_examples:
     answer: >
       - Teeth are the only part of the human body that can not heal themselves.
       - The liver is the superhero of the human body as it can regenerate itself.
-      A liver can regrow to a normal size even after 90% of it has removed.
+      A liver can regrow to a normal size even after 90% of it has been removed.
       - Babies have more bones, humans have 206 bones but they have 300 bones when they are born,
       many of these bones fuse together when we grow older and taller, resulting in 206 bones in adults.
-      - Humans can glow in dark but the light they emits is 1000 times weaker than the human eye can detect it.
+      - Humans can glow in the dark but the light they emit is 1000 times weaker than the human eye can detect.
       - The Cornea is the only part of the human body that has no blood supply and it gets oxygen directly through air.
     attribution:
       - source: self-authored
@@ -28,8 +29,8 @@ seed_examples:
   - question: Tell me some fun facts about mosquitoes
     answer: >
       - Only female mosquitoes bite.
-      - Mosquitos are called the deadliest animal in the world due to their ability to cause around one million human deaths annually.
-      Comparatively, only 100,000 human deaths are caused by snakes and only 250 are caused by lions.
+      - Mosquitos are called the deadliest animal in the world due to their ability to cause around one million human
+      deaths annually. Comparatively, only 100,000 human deaths are caused by snakes and only 250 are caused by lions.
       - Mosquitoes can learn and remember what their hosts smell like.
       - Mosquitoes spend their first 10 days in water.
       - Mosquitoes drink up to three times their weight in blood.
