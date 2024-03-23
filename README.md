@@ -47,7 +47,9 @@ Taxonomy skill files must be a valid [YAML](https://yaml.org/) file named
 
 - `created_by` - The GitHub username of the contributor. This key is required.
 
-- `seed_examples` - A collection of key/value entries which contain the following keys. This key is required.
+- `seed_examples` - A collection of key/value entries.  New
+  submissions should generally have at least five entries, although
+  older files may have fewer. This key is required.
 
   - `question` - A question for the model. This key is required.
 
@@ -121,7 +123,9 @@ longer than 120 characters.
 
 #### Freeform compositional skill: YAML example
 
-This example assumes the GitHub username `mairin`:
+This example snippet assumes the GitHub username `mairin`, showing
+some of the question/answer pairs that would be present in the actual
+file:
 
 ```yaml
 task_description: |
@@ -149,22 +153,6 @@ seed_examples:
       Why did the car have a belly ache?
 
       Because it had too much gas!
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
-  - question: Tell me a pun about waves.
-    answer: |
-      What did the ocean say to the ocean?
-
-      Nothing. It just waved!
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
-  - question: Tell me a pun about frogs.
-    answer: |
-      What happens when frogs park illegally? 
-
-      They get toad. 
     attribution:
       - source: self-authored
         license: Apache-2.0
@@ -198,7 +186,8 @@ in terms of a taxonomy contribution:
 
 Remember that [grounded compositional skills](https://github.com/instruct-lab/community/blob/main/docs/SKILLS_GUIDE.md) require additional context and include a `context` field. 
 
-This example assumes the GitHub username `mairin`:
+This example snippet assumes the GitHub username `mairin`, again
+omitting some of the question/answer pairs in the actual file:
 
 ```yaml
 task_description: | 
