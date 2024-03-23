@@ -4,32 +4,32 @@ created_by: mail2nadeem92
 seed_examples:
   - question: Tell me some random fun facts
     answer: >
-      - Headfones or earplugs can increase the bacteria in your ears.
+      - Headphones or earplugs can increase the bacteria in your ears.
       - Teeth are the only part of the human body that can not heal themselves.
-      - A shrimps heart is in its head.
-      - Babies have more bones, humans have 206 bones but they have 300 bones when they are born,
-      many of these bones fuse together when we grow older and taller, resulting in 206 bones in adults.
-      - Octopus have three hearts and blue blood.
+      - A shrimp's heart is in its head.
+      - Babies have more bones than adults. Fully developed humans have 206 bones, but they have 300 bones when they are born.
+      Many of these bones fuse together when we grow older and taller, resulting in 206 bones in the adult human body.
+      - Octopuses have three hearts and blue blood.
     attribution:
       - source: self-authored
         license: Apache-2.0
   - question: Tell me some fun facts about humans
     answer: >
       - Teeth are the only part of the human body that can not heal themselves.
-      - Liver is the superhero of human body as it can regenerate itself.
+      - The liver is the superhero of the human body as it can regenerate itself.
       A liver can regrow to a normal size even after 90% of it has removed.
       - Babies have more bones, humans have 206 bones but they have 300 bones when they are born,
       many of these bones fuse together when we grow older and taller, resulting in 206 bones in adults.
       - Humans can glow in dark but the light they emits is 1000 times weaker than the human eye can detect it.
-      - The Cornea is the only part of human body that has no blood supply and it gets oxygen directly through air.
+      - The Cornea is the only part of the human body that has no blood supply and it gets oxygen directly through air.
     attribution:
       - source: self-authored
         license: Apache-2.0
   - question: Tell me some fun facts about mosquitoes
     answer: >
       - Only female mosquitoes bite.
-      - Mosquitos are called the deadliest animal in the world, when it comes to annual human deaths,
-      causing around one million deaths per year, compared to 100,000 deaths from snakes and 250 from lions.
+      - Mosquitos are called the deadliest animal in the world due to their ability to cause around one million human deaths annually.
+      Comparatively, only 100,000 human deaths are caused by snakes and only 250 are caused by lions.
       - Mosquitoes can learn and remember what their hosts smell like.
       - Mosquitoes spend their first 10 days in water.
       - Mosquitoes drink up to three times their weight in blood.
@@ -38,9 +38,9 @@ seed_examples:
         license: Apache-2.0
   - question: Tell me some fun facts about the Amazon rainforest
     answer: >
-      - The Amazon rainforest called the lungs of the earth.
+      - The Amazon rainforest is called the lungs of the earth.
       - The Amazon rainforest spans 9 countries.
-      - Amazon river is the largest by volume.
+      - The Amazon river is the largest by volume.
       - The Amazon rainforest is the home to deadly creatures.
       - The Amazon Rainforest is also inhabited by 400-500 indigenous tribes
     attribution:
