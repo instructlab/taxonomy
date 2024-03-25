@@ -1,0 +1,7 @@
+seed_examples: list(include('seed'), min=5)
+task_description: str(min=1)
+---
+seed:
+  answer: str(min=1)
+  context: str(min=1)
+  question: str(min=1)
