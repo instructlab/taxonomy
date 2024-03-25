@@ -1,0 +1,24 @@
+created_by: yogeshpmandre
+seed_examples:
+- answer: 'Even Numbers are integers that are exactly divisible by 2
+
+    '
+  question: 'Which is even number from given numbers 1,2,5,8,10,11?
+
+    '
+- answer: "2,8,10 are even numbers as they are completely divisible by 2"
+  
+
+    Spot even number from given series 7 8 9?'
+- answer: '8 is even number in the given series.
+
+    '
+  question: 'What is even number?
+  - answer: 'Even Number is an integer that is exactly divisible by 2.
+
+    '
+  question: 'What are examples of even numbers?
+  - answer: 'The examples of even numbers are 2, 6, 10, 20, 50, etc.
+
+    '
+task_description: "To teach a language model about mathematical foundational skills. \n"
