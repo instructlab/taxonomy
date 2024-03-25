@@ -2,7 +2,7 @@
 created_by: vishnoianil
 seed_examples:
   - answer: >-
-      There are three Turkeys in total. In this riddle, when it mentions "two
+      There are three turkeys in total. In this riddle, when it mentions "two
       turkeys in front of the turkey” it's referring to the arrangement of
       turkeys in relation to a last turkey and when it mentions "two turkeys
       behind the turkey” it's referring to the arrangement of turkeys in
@@ -13,10 +13,10 @@ seed_examples:
       two turkeys behind the turkey, tell me how many total turkeys?
   - answer: >-
       Name of the third son is Tom. The question mentions that Tom's mother has
-      3 sons and the names of the two sons are dick and hardy.
+      3 sons and the names of the two sons are Dick and Hardy.
     question: >-
       can you solve the following riddle? Tom's mother has 3 sons. The names of
-      the two sons are dick and hardy, what's the name of the third son?
+      the two sons are Dick and Hardy, what's the name of the third son?
   - answer: >-
       All 12 months have 28 days, but except February all other months have more
       than 28 days. February has more than 28 days during leap year.
@@ -27,7 +27,7 @@ seed_examples:
       Additionally, 3 passengers get on, bringing the total to 6+3=9 passengers.
       At the second stop, 3 passengers get off, leaving (9 − 3 = 6) passengers
       on the bus. Furthermore, 5 passengers get on, making the total 6+5=11
-      passengers. So, to answer your question, The driver is ChatGPT (assuming
+      passengers. So, to answer your question, The driver is merlinite (assuming
       I'm driving the bus) and 11 passengers will get off the bus at the final
       stop.
     question: >-
