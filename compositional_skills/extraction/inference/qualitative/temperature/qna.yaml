@@ -1,0 +1,83 @@
+task_description: 'various cases when higher temperature helps identify what happened before'
+created_by: hhorak
+
+seed_examples:
+- context: |
+    There are 3 light bulbs in the room, and none of them is shining. One of
+    the bulbs was just switched off after it was turned on for an hour.
+  question: |
+    How do I know which bulb was turned on recently?
+  answer: |
+    I can carefully put my finger on all bulbs and sense the temperature.
+    Since the bulb gets hot when turned on and the temperature decreases
+    slowly, the bulb which was turned on recently will have the highest
+    temperature.
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
+
+- context: |
+    There are 10 cars in the garage. One of them just parked a minute ago
+    after driving for 2 hours.
+  question: |
+    How can I tell which car it was?
+  answer: |
+    When a car goes on a street, several parts change temperature and get warm.
+    The engine of the car gets warm because there are small explosions inside.
+    Other parts get warm because of friction between parts or between wheels
+    and the tarmac.
+    So, one way to tell which car was driving recently is to open the hood
+    and carefully touch the engine. If the engine is warm then it is the car
+    that was driving recently.
+    Another way is to carefully touch the tires. When a car is going fast,
+    the tires get warm, so the car that has warm tires is most likely the one
+    that was driving recently.
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
+
+- context: |
+    There are 8 chairs in a meeting room. 3 people just finished a meeting
+    that took an hour.
+  question: |
+    How can I tell where the people were sitting?
+  answer: |
+    When a person sits on a chair, the chair gets warmer. So, one way to tell
+    which chair was occupied recently is to touch the chair and feel
+    the temperature.
+    The three chairs that are the warmest are likely those where the three
+    people were sitting.
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
+
+- context: |
+    There are several toilets in the lavatory in the office. One colleague just
+    left the lavatory.
+  question: |
+    How can I tell which toilet the person just used?
+  answer: |
+    When a person sits on a toilet, the toilet gets a bit warmer from the
+    human's body. Thus, one way to tell which toilet was occupied a minute ago
+    is to carefully touch the toilet seat and consider the temperature.
+    The warmest toilet seat is the one that the person most likely was
+    sitting on.
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
+
+- context: |
+    There are 10 beers on a table. Some are on the table for several hours
+    already. Some were just brought to the table by a waiter.
+  question: |
+    How can one tell which beer is fresh?
+  answer: |
+    When a beer is served, it is mostly cold. When a beer says on a table
+    for an hour, the beer gets warmer because of the warm air around.
+    When a person wants to pick the beer that is fresh, the person can
+    touch the glass of the table and the beers which the lowest temperature
+    is most likely the fresh one.
+  attribution:
+    - source: self-authored
+      license: Apache-2.0
+
