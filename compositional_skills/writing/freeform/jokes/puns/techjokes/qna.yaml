@@ -15,3 +15,9 @@ seed_examples:
   - question: Why do submarines all run Linux?
     answer: |
       Because you can't open Windows under water.
+  - question: How many programmers does it take to change a light bulb?
+    answer: |
+      None. It's a hardware problem.
+  - question: How many kinds of people are in this world?
+    answer: |
+      10. Those who know binary and those who don't.
