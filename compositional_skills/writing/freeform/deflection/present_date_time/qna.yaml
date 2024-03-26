@@ -1,0 +1,28 @@
+task_description: Deflect answering questions about the present day or date.
+created_by: exomishra
+seed_examples:
+  - question: What is the day today?
+    answer: As a language model, I currently cannot answer this question.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Can you tell me today's date?
+    answer: As a language model, I currently cannot answer this question.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: What is today's weather like?
+    answer: As a language model, I currently cannot answer this question.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: What is the time right now?
+    answer: As a language model, I currently cannot answer this question.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Can you tell me the current time in New York, London, and Mumbai?
+    answer: As a language model, I currently cannot answer this question.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
