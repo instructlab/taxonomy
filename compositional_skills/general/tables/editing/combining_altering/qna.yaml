@@ -30,7 +30,7 @@ seed_examples:
     '
   question: 'Can you add an email colum to the end of the table. Then populate it
     combining the "First Initial" with the "Last Name" and then making the email their
-    @"company".com
+    @"Company".com
 
 
     ```
