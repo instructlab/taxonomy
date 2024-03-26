@@ -1,0 +1,193 @@
+created_by: leeyamin
+seed_examples:
+- answer: '```
+
+    | First Initial | Last Name  | Company |
+
+    | ------------- | ---------- | ------- |
+
+    | a             | smith      | xyz     |
+
+    | b             | jones      | xyz     |
+
+    | d             | hicks      | xyz     |
+
+    | g             | burn       | xyz     |
+
+    ```
+
+
+    '
+  question: 'Can you please filter the following table by "Company" of xyz?
+
+
+    ```
+
+    | First Initial | Last Name  | Company |
+
+    | ------------- | ---------- | ------- |
+
+    | a             | smith      | xyz     |
+
+    | b             | jones      | xyz     |
+
+    | c             | george     | abc     |
+
+    | d             | hicks      | xyz     |
+
+    | e             | long       | abc     |
+
+    | f             | parker     | abc     |
+
+    | g             | burn       | xyz     |
+
+    | h             | talbot     | abc     |
+
+    | i             | washington | abc     |
+
+    ```
+
+
+    '
+- answer: '
+
+    ```
+
+    | First Initial | Last Name  | Company |
+
+    | ------------- | ---------- | ------- |
+
+    ```
+
+
+    '
+  question: 'Can you please filter the following table by "Company" of mnp?
+
+    ```
+
+    | First Initial | Last Name  | Company |
+
+    | ------------- | ---------- | ------- |
+
+    | a             | smith      | xyz     |
+
+    | b             | jones      | xyz     |
+
+    | c             | george     | abc     |
+
+    | d             | hicks      | xyz     |
+
+    | e             | long       | abc     |
+
+    | f             | parker     | abc     |
+
+    | g             | burn       | xyz     |
+
+    | h             | talbot     | abc     |
+
+    | i             | washington | abc     |
+
+    ```
+    
+    
+    '
+- answer: '
+
+    ```
+
+    | First Initial | Last Name  | Company | Birthday         |
+
+    | ------------- | ---------- | ------- | ---------------- |
+
+    | d             | hicks      | xyz     | 04/04/1990       |
+
+    | f             | parker     | abc     | 06/04/1986       |
+
+    | i             | washington | abc     | 09/04/1989       |
+
+    ```
+
+
+    '
+  question: 'Can you please filter the following table by "Birthday" to months of 4?
+
+
+    ```
+
+    | First Initial | Last Name  | Company | Birthday         |
+
+    | ------------- | ---------- | ------- | ---------------- |
+
+    | a             | smith      | xyz     | 01/01/1980       |
+
+    | b             | jones      | xyz     | 02/08/1980       |
+
+    | c             | george     | abc     | 03/02/1981       |
+
+    | d             | hicks      | xyz     | 04/04/1990       |
+
+    | e             | long       | abc     | 05/09/1985       |
+
+    | f             | parker     | abc     | 06/04/1986       |
+
+    | g             | burn       | xyz     | 07/12/1982       |
+
+    | h             | talbot     | abc     | 08/07/1990       |
+
+    | i             | washington | abc     | 09/04/1989       |
+
+    ```
+    
+    '
+- answer: '
+
+    ```
+
+    | First Initial | Last Name  | Company | Birthday         |
+
+    | ------------- | ---------- | ------- | ---------------- |
+
+    | d             | hicks      | xyz     | 04/04/1990       |
+
+    | f             | parker     | abc     | 06/04/1986       |
+
+    | i             | washington | abc     | 09/04/1989       |
+
+    ```
+
+
+    '
+  question: 'Can you please filter the following table by "Birthday" in April?
+
+
+    ```
+
+    | First Initial | Last Name  | Company | Birthday         |
+
+    | ------------- | ---------- | ------- | ---------------- |
+
+    | a             | smith      | xyz     | 01/01/1980       |
+
+    | b             | jones      | xyz     | 02/08/1980       |
+
+    | c             | george     | abc     | 03/02/1981       |
+
+    | d             | hicks      | xyz     | 04/04/1990       |
+
+    | e             | long       | abc     | 05/09/1985       |
+
+    | f             | parker     | abc     | 06/04/1986       |
+
+    | g             | burn       | xyz     | 07/12/1982       |
+
+    | h             | talbot     | abc     | 08/07/1990       |
+
+    | i             | washington | abc     | 09/04/1989       |
+
+    ```
+
+
+    '
+task_description: 'To teach a language model about filtering tables by data
+
+  '
