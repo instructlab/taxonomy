@@ -1,0 +1,789 @@
+task_description: 'skill to improve understanding of UNIX file permissions'
+created_by: n1hility
+seed_examples:
+  - answer: >-
+      The second set of three characters, "---", corresponds to the group
+      permissions of the file. The group has no access permissions to the file.
+    question: What are the group permissions in the following file permission string?
+    context: r-x---r--
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "--x", corresponds to the group
+      permissions of the file. The group has execute access to the file, but no
+      other permissions.
+    question: What are the group permissions in the following file permission string?
+    context: r-x--xr--
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "-w-", corresponds to the group
+      permissions of the file. The group has write access to the file, but no
+      other permissions.
+    question: What are the group permissions in the following file permission string?
+    context: r-x-w-r--
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "-wx", corresponds to the group
+      permissions of the file. The group has write and execute access to the
+      file, but no other permissions.
+    question: What are the group permissions in the following file permission string?
+    context: r-x-wxr--
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "r--", corresponds to the group
+      permissions of the file. The group has read access to the file, but no
+      other permissions.
+    question: What are the group permissions in the following file permission string?
+    context: r-xr--r--
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "r-x", corresponds to the group
+      permissions of the file. The group has read and execute access to the
+      file, but no other permissions.
+    question: What are the group permissions in the following file permission string?
+    context: r-xr-xr--
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "rw-", corresponds to the group
+      permissions of the file. The group has read and write access to the file,
+      but no other permissions.
+    question: What are the group permissions in the following file permission string?
+    context: r-xrw-r--
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "rwx", corresponds to the group
+      permissions of the file. The group has read,write, and execute access to
+      the file, but no other permissions.
+    question: What are the group permissions in the following file permission string?
+    context: r-xrwxr--
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "---", corresponds to the group
+      permissions of the file. The group has no access permissions to the file.
+    question: What are the group permissions in the following file permission string?
+    context: rwx-----x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "--x", corresponds to the group
+      permissions of the file. The group has execute access to the file, but no
+      other permissions.
+    question: What are the group permissions in the following file permission string?
+    context: rwx--x--x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "-w-", corresponds to the group
+      permissions of the file. The group has write access to the file, but no
+      other permissions.
+    question: What are the group permissions in the following file permission string?
+    context: rwx-w---x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "-wx", corresponds to the group
+      permissions of the file. The group has write and execute access to the
+      file, but no other permissions.
+    question: What are the group permissions in the following file permission string?
+    context: rwx-wx--x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "r--", corresponds to the group
+      permissions of the file. The group has read access to the file, but no
+      other permissions.
+    question: What are the group permissions in the following file permission string?
+    context: rwxr----x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "r-x", corresponds to the group
+      permissions of the file. The group has read and execute access to the
+      file, but no other permissions.
+    question: What are the group permissions in the following file permission string?
+    context: rwxr-x--x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "rw-", corresponds to the group
+      permissions of the file. The group has read and write access to the file,
+      but no other permissions.
+    question: What are the group permissions in the following file permission string?
+    context: rwxrw---x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "rwx", corresponds to the group
+      permissions of the file. The group has read,write, and execute access to
+      the file, but no other permissions.
+    question: What are the group permissions in the following file permission string?
+    context: rwxrwx--x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "---", corresponds to the group
+      permissions of the file. The group has no access permissions to the file.
+    question: What are the group permissions in the following file permission string?
+    context: rw----r-x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "--x", corresponds to the group
+      permissions of the file. The group has execute access to the file, but no
+      other permissions.
+    question: What are the group permissions in the following file permission string?
+    context: rw---xr-x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "-w-", corresponds to the group
+      permissions of the file. The group has write access to the file, but no
+      other permissions.
+    question: What are the group permissions in the following file permission string?
+    context: rw--w-r-x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "-wx", corresponds to the group
+      permissions of the file. The group has write and execute access to the
+      file, but no other permissions.
+    question: What are the group permissions in the following file permission string?
+    context: rw--wxr-x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "r--", corresponds to the group
+      permissions of the file. The group has read access to the file, but no
+      other permissions.
+    question: What are the group permissions in the following file permission string?
+    context: rw-r--r-x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "r-x", corresponds to the group
+      permissions of the file. The group has read and execute access to the
+      file, but no other permissions.
+    question: What are the group permissions in the following file permission string?
+    context: rw-r-xr-x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "rw-", corresponds to the group
+      permissions of the file. The group has read and write access to the file,
+      but no other permissions.
+    question: What are the group permissions in the following file permission string?
+    context: rw-rw-r-x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The second set of three characters, "rwx", corresponds to the group
+      permissions of the file. The group has read,write, and execute access to
+      the file, but no other permissions.
+    question: What are the group permissions in the following file permission string?
+    context: rw-rwxr-x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "---", corresponds to the owner
+      permissions of the file. The owner has no access permissions to the file.
+    question: What are the owner permissions in the following file permission string?
+    context: '---r-xr--'
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "--x", corresponds to the owner
+      permissions of the file. The owner has execute access to the file, but no
+      other permissions.
+    question: What are the owner permissions in the following file permission string?
+    context: '--xr-xr--'
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "-w-", corresponds to the owner
+      permissions of the file. The owner has write access to the file, but no
+      other permissions.
+    question: What are the owner permissions in the following file permission string?
+    context: '-w-r-xr--'
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "-wx", corresponds to the owner
+      permissions of the file. The owner has write and execute access to the
+      file, but no other permissions.
+    question: What are the owner permissions in the following file permission string?
+    context: '-wxr-xr--'
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "r--", corresponds to the owner
+      permissions of the file. The owner has read access to the file, but no
+      other permissions.
+    question: What are the owner permissions in the following file permission string?
+    context: r--r-xr--
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "r-x", corresponds to the owner
+      permissions of the file. The owner has read and execute access to the
+      file, but no other permissions.
+    question: What are the owner permissions in the following file permission string?
+    context: r-xr-xr--
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "rw-", corresponds to the owner
+      permissions of the file. The owner has read and write access to the file,
+      but no other permissions.
+    question: What are the owner permissions in the following file permission string?
+    context: rw-r-xr--
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "rwx", corresponds to the owner
+      permissions of the file. The owner has read,write, and execute access to
+      the file, but no other permissions.
+    question: What are the owner permissions in the following file permission string?
+    context: rwxr-xr--
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "---", corresponds to the owner
+      permissions of the file. The owner has no access permissions to the file.
+    question: What are the owner permissions in the following file permission string?
+    context: '---rwx--x'
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "--x", corresponds to the owner
+      permissions of the file. The owner has execute access to the file, but no
+      other permissions.
+    question: What are the owner permissions in the following file permission string?
+    context: '--xrwx--x'
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "-w-", corresponds to the owner
+      permissions of the file. The owner has write access to the file, but no
+      other permissions.
+    question: What are the owner permissions in the following file permission string?
+    context: '-w-rwx--x'
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "-wx", corresponds to the owner
+      permissions of the file. The owner has write and execute access to the
+      file, but no other permissions.
+    question: What are the owner permissions in the following file permission string?
+    context: '-wxrwx--x'
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "r--", corresponds to the owner
+      permissions of the file. The owner has read access to the file, but no
+      other permissions.
+    question: What are the owner permissions in the following file permission string?
+    context: r--rwx--x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "r-x", corresponds to the owner
+      permissions of the file. The owner has read and execute access to the
+      file, but no other permissions.
+    question: What are the owner permissions in the following file permission string?
+    context: r-xrwx--x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "rw-", corresponds to the owner
+      permissions of the file. The owner has read and write access to the file,
+      but no other permissions.
+    question: What are the owner permissions in the following file permission string?
+    context: rw-rwx--x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "rwx", corresponds to the owner
+      permissions of the file. The owner has read,write, and execute access to
+      the file, but no other permissions.
+    question: What are the owner permissions in the following file permission string?
+    context: rwxrwx--x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "---", corresponds to the owner
+      permissions of the file. The owner has no access permissions to the file.
+    question: What are the owner permissions in the following file permission string?
+    context: '---rw-r-x'
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "--x", corresponds to the owner
+      permissions of the file. The owner has execute access to the file, but no
+      other permissions.
+    question: What are the owner permissions in the following file permission string?
+    context: '--xrw-r-x'
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "-w-", corresponds to the owner
+      permissions of the file. The owner has write access to the file, but no
+      other permissions.
+    question: What are the owner permissions in the following file permission string?
+    context: '-w-rw-r-x'
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "-wx", corresponds to the owner
+      permissions of the file. The owner has write and execute access to the
+      file, but no other permissions.
+    question: What are the owner permissions in the following file permission string?
+    context: '-wxrw-r-x'
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "r--", corresponds to the owner
+      permissions of the file. The owner has read access to the file, but no
+      other permissions.
+    question: What are the owner permissions in the following file permission string?
+    context: r--rw-r-x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "r-x", corresponds to the owner
+      permissions of the file. The owner has read and execute access to the
+      file, but no other permissions.
+    question: What are the owner permissions in the following file permission string?
+    context: r-xrw-r-x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "rw-", corresponds to the owner
+      permissions of the file. The owner has read and write access to the file,
+      but no other permissions.
+    question: What are the owner permissions in the following file permission string?
+    context: rw-rw-r-x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The first set of three characters, "rwx", corresponds to the owner
+      permissions of the file. The owner has read,write, and execute access to
+      the file, but no other permissions.
+    question: What are the owner permissions in the following file permission string?
+    context: rwxrw-r-x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "---", corresponds to the other (or
+      world) permissions of the file. Users in other have no access permissions
+      to the file.
+    question: What are the permissions of other in the following file permission string?
+    context: r-xr-----
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "--x", corresponds to the other (or
+      world) permissions of the file. Users in other have execute access to the
+      file, but no other permissions.
+    question: What are the permissions of other in the following file permission string?
+    context: r-xr----x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "-w-", corresponds to the other (or
+      world) permissions of the file. Users in other have write access to the
+      file, but no other permissions.
+    question: What are the permissions of other in the following file permission string?
+    context: r-xr---w-
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "-wx", corresponds to the other (or
+      world) permissions of the file. Users in other have write and execute
+      access to the file, but no other permissions.
+    question: What are the permissions of other in the following file permission string?
+    context: r-xr---wx
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "r--", corresponds to the other (or
+      world) permissions of the file. Users in other have read access to the
+      file, but no other permissions.
+    question: What are the permissions of other in the following file permission string?
+    context: r-xr--r--
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "r-x", corresponds to the other (or
+      world) permissions of the file. Users in other have read and execute
+      access to the file, but no other permissions.
+    question: What are the permissions of other in the following file permission string?
+    context: r-xr--r-x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "rw-", corresponds to the other (or
+      world) permissions of the file. Users in other have read and write access
+      to the file, but no other permissions.
+    question: What are the permissions of other in the following file permission string?
+    context: r-xr--rw-
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "rwx", corresponds to the other (or
+      world) permissions of the file. Users in other have read,write, and
+      execute access to the file, but no other permissions.
+    question: What are the permissions of other in the following file permission string?
+    context: r-xr--rwx
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "---", corresponds to the other (or
+      world) permissions of the file. Users in other have no access permissions
+      to the file.
+    question: What are the permissions of other in the following file permission string?
+    context: rwx--x---
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "--x", corresponds to the other (or
+      world) permissions of the file. Users in other have execute access to the
+      file, but no other permissions.
+    question: What are the permissions of other in the following file permission string?
+    context: rwx--x--x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "-w-", corresponds to the other (or
+      world) permissions of the file. Users in other have write access to the
+      file, but no other permissions.
+    question: What are the permissions of other in the following file permission string?
+    context: rwx--x-w-
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "-wx", corresponds to the other (or
+      world) permissions of the file. Users in other have write and execute
+      access to the file, but no other permissions.
+    question: What are the permissions of other in the following file permission string?
+    context: rwx--x-wx
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "r--", corresponds to the other (or
+      world) permissions of the file. Users in other have read access to the
+      file, but no other permissions.
+    question: What are the permissions of other in the following file permission string?
+    context: rwx--xr--
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "r-x", corresponds to the other (or
+      world) permissions of the file. Users in other have read and execute
+      access to the file, but no other permissions.
+    question: What are the permissions of other in the following file permission string?
+    context: rwx--xr-x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "rw-", corresponds to the other (or
+      world) permissions of the file. Users in other have read and write access
+      to the file, but no other permissions.
+    question: What are the permissions of other in the following file permission string?
+    context: rwx--xrw-
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "rwx", corresponds to the other (or
+      world) permissions of the file. Users in other have read,write, and
+      execute access to the file, but no other permissions.
+    question: What are the permissions of other in the following file permission string?
+    context: rwx--xrwx
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "---", corresponds to the other (or
+      world) permissions of the file. Users in other have no access permissions
+      to the file.
+    question: What are the permissions of other in the following file permission string?
+    context: rw-r-x---
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "--x", corresponds to the other (or
+      world) permissions of the file. Users in other have execute access to the
+      file, but no other permissions.
+    question: What are the permissions of other in the following file permission string?
+    context: rw-r-x--x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "-w-", corresponds to the other (or
+      world) permissions of the file. Users in other have write access to the
+      file, but no other permissions.
+    question: What are the permissions of other in the following file permission string?
+    context: rw-r-x-w-
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "-wx", corresponds to the other (or
+      world) permissions of the file. Users in other have write and execute
+      access to the file, but no other permissions.
+    question: What are the permissions of other in the following file permission string?
+    context: rw-r-x-wx
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "r--", corresponds to the other (or
+      world) permissions of the file. Users in other have read access to the
+      file, but no other permissions.
+    question: What are the permissions of other in the following file permission string?
+    context: rw-r-xr--
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "r-x", corresponds to the other (or
+      world) permissions of the file. Users in other have read and execute
+      access to the file, but no other permissions.
+    question: What are the permissions of other in the following file permission string?
+    context: rw-r-xr-x
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "rw-", corresponds to the other (or
+      world) permissions of the file. Users in other have read and write access
+      to the file, but no other permissions.
+    question: What are the permissions of other in the following file permission string?
+    context: rw-r-xrw-
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - answer: >-
+      The third set of three characters, "rwx", corresponds to the other (or
+      world) permissions of the file. Users in other have read,write, and
+      execute access to the file, but no other permissions.
+    question: What are the permissions of other in the following file permission string?
+    context: rw-r-xrwx
+    allow_words:
+      - file
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
