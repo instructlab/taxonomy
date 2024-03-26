@@ -12,7 +12,13 @@
 - answer: Yes, you need to buy sugar and salt.
   question: "I'm making lemonade. Recipe says: water, lemon, sugar and a pinch of salt. I have water and lemon, do I need to buy anything?"
 - answer: You need to buy mozzarella or some other cheese of your choice.
-  question: "I'm making pizza. The recipe: flour, water, salt, yest, tomato puree, mozzarella or other cheese and a handful of basil. I have flour, water, tomato puree and basil. What do I need to buy?"
+  question: "I'm making pizza. The recipe: flour, water, salt, yeast, tomato puree, mozzarella or other cheese and a handful of basil. I have flour, water, tomato puree and basil. What do I need to buy?"
 - answer: You need to buy mozzarella or some other cheese of your choice, and basil.
-  question: "I'm making pizza. The recipe: flour, water, salt, yest, tomato puree, mozzarella or other cheese and a handful of basil. I have flour, water, tomato puree. What do I need to buy?"
+  question: "I'm making pizza. The recipe: flour, water, salt, yeast, tomato puree, mozzarella or other cheese and a handful of basil. I have flour, water, tomato puree. What do I need to buy?"
+- answer: You should buy chicken broth, butter, onion, salt, parmesan, black pepper.
+  question: "I'm cooking risotto. I need the following ingredients: chicken broth, butter, onion, salt, rice, parmesan, black pepper. I have only rice. What should I buy?"
+- answer: You don't need to buy anything, you have all the ingredients.
+  question: "I'm cooking pork schnitzel. The required ingredients include pork chops, flour, salt, black pepper, eggs, bread crumbs, oil. I have pork chops, flour, salt, black pepper, eggs, bread crumbs, oil. What do I need to buy?"
+- answer: You need to put butter on your shopping list.
+  question: "I want to prepare mashed potatoes for dinner. The recipe calls for: potatoes, milk, butter, salt and black pepper. I have milk, potatoes, black pepper and salt. What do I need to put on my shopping list?"
 
