@@ -1,0 +1,294 @@
+created_by: leeyamin
+seed_examples:
+- answer: '
+
+    ```
+
+    | First Initial | Last Name  | Company |
+
+    | ------------- | ---------- | ------- |
+
+    | c             | george     | abc     |
+
+    | e             | long       | abc     |
+
+    | f             | parker     | abc     |
+
+    | h             | talbot     | abc     |
+
+    | i             | washington | abc     |
+
+    | a             | smith      | xyz     |
+
+    | b             | jones      | xyz     |
+
+    | d             | hicks      | xyz     |
+
+    | g             | burn       | xyz     |
+
+    ```
+    '
+  question: 'Can you please sort the following table by "Company"?
+
+
+    ```
+
+    | First Initial | Last Name  | Company |
+
+    | ------------- | ---------- | ------- |
+
+    | a             | smith      | xyz     |
+
+    | b             | jones      | xyz     |
+
+    | c             | george     | abc     |
+
+    | d             | hicks      | xyz     |
+
+    | e             | long       | abc     |
+
+    | f             | parker     | abc     |
+
+    | g             | burn       | xyz     |
+
+    | h             | talbot     | abc     |
+
+    | i             | washington | abc     |
+
+    ```
+
+
+    '
+- answer: '
+
+    ```
+
+    | First Initial | Last Name  | Company |
+
+    | ------------- | ---------- | ------- |
+
+    | c             | george     | abc     |
+
+    | e             | long       | abc     |
+
+    | f             | parker     | abc     |
+
+    | h             | talbot     | abc     |
+
+    | i             | washington | abc     |
+
+    | a             | smith      | xyz     |
+
+    | b             | jones      | xyz     |
+
+    | d             | hicks      | xyz     |
+
+    | g             | burn       | xyz     |
+
+    ```
+    '
+  question: 'Can you please sort the following table by "Company" Alphabetically in ascending order?
+
+
+    ```
+
+    | First Initial | Last Name  | Company |
+
+    | ------------- | ---------- | ------- |
+
+    | a             | smith      | xyz     |
+
+    | b             | jones      | xyz     |
+
+    | c             | george     | abc     |
+
+    | d             | hicks      | xyz     |
+
+    | e             | long       | abc     |
+
+    | f             | parker     | abc     |
+
+    | g             | burn       | xyz     |
+
+    | h             | talbot     | abc     |
+
+    | i             | washington | abc     |
+
+    ```
+
+
+    '
+- answer: '
+
+    ```
+
+    | First Initial | Last Name  | Company |
+
+    | ------------- | ---------- | ------- |
+
+    | a             | smith      | xyz     |
+
+    | b             | jones      | xyz     |
+
+    | d             | hicks      | xyz     |
+
+    | g             | burn       | xyz     |
+    
+    | c             | george     | abc     |
+
+    | e             | long       | abc     |
+
+    | f             | parker     | abc     |
+
+    | h             | talbot     | abc     |
+
+    | i             | washington | abc     |
+
+    ```
+    '
+  question: 'Can you please sort the following table by "Company" Alphabetically in descending order?
+
+
+    ```
+
+    | First Initial | Last Name  | Company |
+
+    | ------------- | ---------- | ------- |
+
+    | a             | smith      | xyz     |
+
+    | b             | jones      | xyz     |
+
+    | c             | george     | abc     |
+
+    | d             | hicks      | xyz     |
+
+    | e             | long       | abc     |
+
+    | f             | parker     | abc     |
+
+    | g             | burn       | xyz     |
+
+    | h             | talbot     | abc     |
+
+    | i             | washington | abc     |
+
+    ```
+
+
+    '
+- answer: '
+
+    ```
+    | First Initial | Last Name  | Company | Birthday |
+
+    | ------------- | ---------- | ------- | -------- |
+
+    | a             | smith      | xyz     | 01/01    |
+    
+    | c             | george     | abc     | 03/02    |
+
+    | d             | hicks      | xyz     | 04/04    |
+  
+    | f             | parker     | abc     | 06/04    |
+
+    | i             | washington | abc     | 09/04    |
+
+    | h             | talbot     | abc     | 08/07    |
+
+    | b             | jones      | xyz     | 02/08    |
+
+    | e             | long       | abc     | 05/09    |
+
+    | g             | burn       | xyz     | 07/12    |
+
+    ```
+    '
+  question: 'Can you please sort the following table by "Birthday"?
+
+    ```
+    | First Initial | Last Name  | Company | Birthday |
+
+    | ------------- | ---------- | ------- | -------- |
+
+    | a             | smith      | xyz     | 01/01    |
+
+    | b             | jones      | xyz     | 02/08    |
+
+    | c             | george     | abc     | 03/02    |
+
+    | d             | hicks      | xyz     | 04/04    |
+
+    | e             | long       | abc     | 05/09    |
+
+    | f             | parker     | abc     | 06/04    |
+
+    | g             | burn       | xyz     | 07/12    |
+
+    | h             | talbot     | abc     | 08/07    |
+
+    | i             | washington | abc     | 09/04    |
+
+    ```
+    '
+
+- answer: '
+
+    ```
+
+    | First Initial | Last Name  | Company | Birthday         |
+
+    | ------------- | ---------- | ------- | ---------------- |
+
+    | a             | smith      | xyz     | 01/01/1980       |
+
+    | b             | jones      | xyz     | 02/08/1980       |
+
+    | c             | george     | abc     | 03/02/1981       |
+
+    | g             | burn       | xyz     | 07/12/1982       |
+
+    | e             | long       | abc     | 05/09/1985       |
+
+    | f             | parker     | abc     | 06/04/1986       |
+
+    | i             | washington | abc     | 09/04/1989       |
+
+    | d             | hicks      | xyz     | 04/04/1990       |
+
+    | h             | talbot     | abc     | 08/07/1990       |
+
+    ```
+    '
+  question: 'Can you please sort the following table by "Birthday" by year in ascending order?
+
+    ```
+
+    | First Initial | Last Name  | Company | Birthday         |
+
+    | ------------- | ---------- | ------- | ---------------- |
+
+    | a             | smith      | xyz     | 01/01/1980       |
+
+    | c             | george     | abc     | 03/02/1981       |
+   
+    | d             | hicks      | xyz     | 04/04/1990       |
+
+    | f             | parker     | abc     | 06/04/1986       |
+
+    | i             | washington | abc     | 09/04/1989       |
+
+    | h             | talbot     | abc     | 08/07/1990       |
+
+    | b             | jones      | xyz     | 02/08/1980       |
+
+    | e             | long       | abc     | 05/09/1985       |
+
+    | g             | burn       | xyz     | 07/12/1982       |
+
+    ```
+    '
+    
+task_description: 'To teach a language model about sorting tables by data
+
+  '
