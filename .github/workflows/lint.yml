@@ -66,6 +66,7 @@ jobs:
       - name: "Check file contents"
         if: steps.changed-files.outputs.any_changed == 'true'
         run: |
+          pip install check-jsonschema
           echo "::add-matcher::.github/workflows/matchers/lint.json"
           echo
           .github/scripts/check-yaml.sh "${{ steps.changed-files.outputs.all_changed_files }}"
