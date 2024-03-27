@@ -2,13 +2,14 @@
     "title": "Knowledge",
     "description": "A knowledge skill.",
     "type": "object",
+    "$ref": "./version.json",
     "required": [
         "created_by",
         "domain",
         "task_description",
         "seed_examples"
     ],
-    "additionalProperties": false,
+    "unevaluatedProperties": false,
     "properties": {
         "created_by": {
             "description": "The GitHub username of the contributor.",
@@ -36,7 +37,7 @@
                     "question",
                     "answer"
                 ],
-                "additionalProperties": false,
+                "unevaluatedProperties": false,
                 "properties": {
                     "question": {
                         "description": "A question used for synthetic data generation.",

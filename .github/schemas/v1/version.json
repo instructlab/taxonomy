@@ -1,0 +1,13 @@
+{
+    "title": "Version subschema",
+    "type": "object",
+    "$comment": "After version 1, the 'version' property must become required.",
+    "properties": {
+        "version": {
+            "description": "The schema version of the document.",
+            "type": "integer",
+            "$comment": "This value must match the number in the containing folder.",
+            "const": 1
+        }
+    }
+}
