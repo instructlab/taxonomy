@@ -43,25 +43,25 @@ answer pairs. The `qna.yaml` format should include the following fields:
 Taxonomy skill files must be a valid [YAML](https://yaml.org/) file named
 `qna.yaml` containing a set of key/value entries which contain the following keys:
 
-- `task_description` - A description of the skill. This key is required.
+- `task_description` - A description of the skill. **Required**
 
-- `created_by` - The GitHub username of the contributor. This key is required.
+- `created_by` - The GitHub username of the contributor. **Required**
 
 - `seed_examples` - A collection of key/value entries.  New
   submissions should generally have at least five entries, although
-  older files may have fewer. This key is required.
+  older files may have fewer. **Required**
 
-  - `question` - A question for the model. This key is required.
+  - `question` - A question for the model. **Required**
 
-  - `answer` The desired response from the model. This key is required.
+  - `answer` The desired response from the model. **Required**
 
   - `context` - Grounded skills require the user to provide context containing information that the model is expected to take into account during processing. This is different from knowledge, where the model is expected to gain facts and background knowledge from the tuning process. The context key is optional for freeform skills.
 
-  - `attribution` - A collection of key/value entries which contain the following keys. All sources of information must be specified. This key is required.
+  - `attribution` - A collection of key/value entries which contain the following keys. All sources of information must be specified. **Required**
 
-    - `source` - If information in the context, question, or answer come from a 3rd party, for example Wikipedia, then the value must specify a URL to the source material. If the contributor self-authored all the information, then the value must be `self-authored`. This key is required.
+    - `source` - If information in the context, question, or answer come from a 3rd party, for example Wikipedia, then the value must specify a URL to the source material. If the contributor self-authored all the information, then the value must be `self-authored`. **Required**
 
-    - `license` - The value must specify the [SPDX License Identifier](https://spdx.org/licenses/) of the source information. See [CONTRIBUTING.MD](./CONTRIBUTING.md#legal) for guidance on acceptable licenses for source information. If the information is self-authored, then `Apache-2.0` must be used. This key is required.
+    - `license` - The value must specify the [SPDX License Identifier](https://spdx.org/licenses/) of the source information. See [CONTRIBUTING.MD](./CONTRIBUTING.md#legal) for guidance on acceptable licenses for source information. If the information is self-authored, then `Apache-2.0` must be used. **Required**
 
 Other keys at any level are currently ignored.
 
