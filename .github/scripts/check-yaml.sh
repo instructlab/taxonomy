@@ -18,7 +18,8 @@ if [ $# -lt 1 ]; then
     exit 1
 fi
 
-SCHEMAS="$(dirname ${BASH_SOURCE[0]})/../schemas"
+SCHEMA_VERSION=1
+SCHEMAS="$(dirname ${BASH_SOURCE[0]})/../schemas/v${SCHEMA_VERSION}"
 CHANGED_FILES="$@"
 ERR=0
 error() { printf "ERROR: %s: %s \"%s\"\n" "$1" "$2" "$3" 1>&2; ERR=1; }
@@ -26,7 +27,7 @@ warn() { printf "WARN: %s: %s \"%s\"\n" "$1" "$2" "$3" 1>&2; }
 for file in ${CHANGED_FILES}; do
     case $file in 
       compositional_skills/*/qna.yaml)
-        eval "$(check-jsonschema --schemafile $SCHEMAS/compositional_skills.json -o JSON $file | jq -r '.errors[] | (.path | ltrimstr("$")) as $path | "\($path)|line" as $yqline | @sh "$(yq \($yqline) \(.filename))" as $yqcmd | @sh "\(.message[-200:])" as $message | "error \"\(.filename):\($yqcmd):1\" \"\($path)\" \($message)"')"
+        eval "$(check-jsonschema --schemafile $SCHEMAS/compositional_skills.json -o JSON $file | jq -r '.errors[] | (.path | ltrimstr("$") | select(. != "") // ".") as $path | "\($path)|line" as $yqline | @sh "$(yq \($yqline) \(.filename))" as $yqcmd | @sh "\(.message[-200:])" as $message | "error \"\(.filename):\($yqcmd):1\" \"\($path)\" \($message)"')"
         ;;
       knowledge/*)
         error "$file:1:1" "." "We do not accept knowledge PRs at this time"
