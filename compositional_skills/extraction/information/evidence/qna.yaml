@@ -1,0 +1,316 @@
+created_by: ae2015
+task_description: >
+    Given a claim grounded in a document, extract evidence from the document
+    that supports the claim. The evidence must be a verbatim quote from the
+    document, although it may contain ellipsis to indicate skipped text.
+    The evidence must be self-contained and sufficient to verify that
+    the claim is supported by the document. Beyond that, the evidence must
+    contain as little additional text as possible.
+seed_examples:
+- context: >
+    THE FOUNDATION INCUBATOR
+
+    To support and encourage new projects, the ASF created the Incubator
+    to help new efforts join the foundation.
+
+    Since the meritocratic rules operate across the ASF from bottom to top,
+    it is vital for the long-term stability of this form of government
+    that a project's initial set of committers has to understand very well
+    the dynamics of such a system, and to share the same philosophical attitude
+    toward collaboration and openness that the ASF expects from its projects.
+
+    The incubator is responsible for:
+
+    * filtering proposals about the creation of a new project or sub-project
+
+    * helping create the new project and the infrastructure that it needs to operate
+
+    * supervising and mentoring the incubated community to help it create an open,
+    meritocratic environment
+
+    * evaluating the maturity of the incubated project, and deciding whether to
+    promote it to official project / sub-project status or, in case of failure,
+    to retire it.
+
+    The incubator (like the board) does not perform filtering on the basis of
+    technical issues. The foundation respects and supports a variety of technical
+    approaches. It doesn't fear innovation or even internal confrontation between
+    projects which overlap in functionality.
+
+    The incubator filters projects on the basis of the likelihood of projects becoming
+    successful meritocratic communities. The basic requirements for incubation are:
+
+    * a working codebase -- over the years and after several failures, the foundation
+    came to understand that without an initial working codebase, it is generally hard
+    to bootstrap a community. This is because merit is not well-recognized by
+    developers without a working codebase. Also, the friction that can develop during
+    the initial design stage is likely to fragment the community.
+
+    * the intention to assign sufficient intellectual property rights to the software
+    to the ASF -- this allows the foundation to obtain an irrevocable and permanent
+    right to redistribute and work on the code, without fearing lock-in for itself
+    or for its users, while still allowing the original author to maintain their copyright.
+
+    * a sponsoring ASF member or officer -- this person acts as the main mentor,
+    giving directions to the project, helping out in the day-to-day details and
+    keeping contact with the incubator PMC.
+
+    The incubation period normally serves to estimate whether the project is able
+    to increase the diversity of its committer base and play within the meritocratic
+    rules of the foundation.
+
+    It might seem rather easy to achieve, but, in a volunteer and highly selective
+    environment, attracting new committers is not automatic.
+
+    Diversity of committership is important for two main reasons:
+
+    * it gives long term stability to the project's development. In fact, with
+    all the developers affiliated to the same entity, the chance of seeing all
+    of them moving away from the project at the same time is much greater than
+    with a community of individuals affiliated to unrelated entities.
+
+    * it gives a greater variety of technical visions, This guarantees a better
+    adherence to the environment and users' needs, thus a higher chance of finding
+    real-life use of the software.
+  question: >
+    From the given document, copy the entire relevant passage that supports
+    the following claim:
+
+    "The Foundation Incubator requires projects to assign certain property rights
+    to the ASF."
+
+    Copy the passage verbatim, do not paraphrase. Replace all irrelevant parts
+    in the passage with ellipsis. If no relevant passage is found, write None.
+  answer: >
+    The incubator filters projects on the basis of the likelihood of projects becoming
+    successful meritocratic communities. The basic requirements for incubation are:
+
+    ...
+
+    * the intention to assign sufficient intellectual property rights to the software
+    to the ASF -- this allows the foundation to obtain an irrevocable and permanent
+    right to redistribute and work on the code, without fearing lock-in for itself
+    or for its users, while still allowing the original author to maintain their copyright.
+
+- context: >
+    Site Policy on GitHub
+
+    The universe of policies and procedures that govern the use of GitHub,
+    open-sourced for your use and inspiration. We created this repository
+    as a place for people to fork, contribute to, and provide feedback on
+    our policies. While this is our official repo of open-sourced policies,
+    it may not reflect the exact policies that are live on GitHub because
+    this site is updated separately from the Help site.
+
+    What can I do here?
+
+    First, you can use and adapt our policies!
+
+    We are proud to offer the policies in this repository under CC0-1.0.
+    That means that if any of them are useful to you, even in part, you're
+    welcome to use them, without restriction. Of course, keep in mind that
+    we wrote these policies as they apply to GitHub, so you'll need to
+    make sure the content applies to what you're using it for, and adapt
+    it as appropriate. See the license section for use guidelines.
+
+    Because we are providing these policies to our community, we believe
+    it is only responsible to also provide the history and insight that
+    a repository of commits, pull requests, and issues can offer. Over
+    time, the repository's commits, pull requests, and issues will allow
+    anyone wanting to use our policies to see the discussions and
+    alterations that have gone into them.
+
+    Second, you can contribute to making our policies even better.
+
+    We host collaborative development on GitHub's site policies, procedures,
+    and guidelines here. That means you're welcome to provide feedback via
+    a pull request or by opening an issue. When opening an issue, please
+    look over the Contribution Guidelines. This will help us respond to your
+    concern more quickly.
+
+    That seems like great power! What about the great responsibility?
+
+    That's easy: just be responsible. Follow our Code of Conduct, and help
+    us maintain a respectful environment for all contributors.
+
+    There are a few things you should not post in this repository:
+
+    * Please don't post legal complaints or ask for technical support.
+    We may not respond to issues promptly. If you need help, contact Support
+    and they'll get you an answer.
+
+    * Please avoid hypotheticals. We can't give you legal advice, which
+    means we often can't tell you if a hypothetical situation would or
+    wouldn't be a violation of our policies. We also can't tell you what
+    you should or shouldn't do. We can tell you how we interpret our policies.
+
+    * Please don't give other users legal advice, to avoid confusion.
+
+  question: >
+    From the given document, copy the entire relevant passage that supports
+    the following claim:
+
+    "You are allowed to use the policies provided in Site Policy on GitHub
+    without restriction."
+
+    Copy the passage verbatim, do not paraphrase. Replace all irrelevant parts
+    in the passage with ellipsis. If no relevant passage is found, write None.
+  answer: >
+    Site Policy on GitHub
+
+    ...
+
+    We are proud to offer the policies in this repository under CC0-1.0.
+    That means that if any of them are useful to you, even in part, you're
+    welcome to use them, without restriction.
+
+- context: >
+    The El Dorado County Library immediately put its 3-D printers to work
+    creating masks and face shields for healthcare workers. By early April 2020,
+    they had formed a partnership with a local pharmaceutical startup to help
+    produce and distribute thousands of face shields to local medical personnel
+    and frontline workers. By October, the library was also partnering with
+    the El Dorado County Registrar of Voters to provide more face shields
+    to poll workers, as well as hosting a voting center and drive-up ballot
+    collection boxes at branches countywide.
+
+    The library distributes free food, diapers, and other essentials in partnership
+    with the Placer Food Bank, El Dorado Community Foundation, and
+    First 5 El Dorado Commission. Library staff also help community members
+    register for vaccine appointments online. Many in the county do not have
+    computers or access to the internet. The library received 200 calls and
+    had dozens of people waiting at the library doors in the first three hours
+    of offering this service.
+  question: >
+    From the given document, copy the entire relevant passage that supports
+    the following claim:
+
+    "The El Dorado County Library had dozens of people waiting at its doors
+    to register for vaccine appointments."
+
+    Copy the passage verbatim, do not paraphrase. Replace all irrelevant parts
+    in the passage with ellipsis. If no relevant passage is found, write None.
+  answer: >
+    The El Dorado County Library immediately put its 3-D printers to work
+    creating masks and face shields for healthcare workers. ... Library staff
+    also help community members register for vaccine appointments online.
+    ... The library received 200 calls and had dozens of people waiting at
+    the library doors in the first three hours of offering this service.
+
+- context: >
+    This publication explains how individuals claim a deduction for charitable
+    contributions. It discusses the types of organizations to which you can make
+    deductible charitable contributions and the types of contributions you can
+    deduct. It also discusses how much you can deduct, what records you must keep,
+    and how to report charitable contributions.
+
+    A charitable contribution is a donation or gift to, or for the use of, a
+    qualified organization. It is voluntary and is made without getting, or
+    expecting to get, anything of equal value.
+
+    Qualified organizations. Qualified organizations include nonprofit groups
+    that are religious, charitable, educational, scientific, or literary in purpose,
+    or that work to prevent cruelty to children or animals. You will find
+    descriptions of these organizations under Organizations That Qualify To
+    Receive Deductible Contributions.
+
+    Schedule A (Form 1040) required. Generally, to deduct a charitable contribution,
+    you must itemize deductions on Schedule A (Form 1040). The amount of your
+    deduction may be limited if certain rules and limits explained in this
+    publication apply to you.
+
+    Comments and suggestions. We welcome your comments about this publication and
+    suggestions for future editions.
+
+    You can send us comments through IRS.gov/FormComments. Or, you can write to
+    the Internal Revenue Service, Tax Forms and Publications,
+    1111 Constitution Ave. NW, IR-6526, Washington, DC 20224.
+
+    Although we can't respond individually to each comment received, we do
+    appreciate your feedback and will consider your comments and suggestions as
+    we revise our tax forms, instructions, and publications. Don't send tax
+    questions, tax returns, or payments to the above address.
+  question: >
+    From the given document, copy the entire relevant passage that supports
+    the following claim:
+
+    "Tax returns should not be sent to 1111 Constitution Ave. NW, IR-6526,
+    Washington, DC 20224."
+
+    Copy the passage verbatim, do not paraphrase. Replace all irrelevant parts
+    in the passage with ellipsis. If no relevant passage is found, write None.
+  answer: >
+    You can send us comments through IRS.gov/FormComments. Or, you can write to
+    the Internal Revenue Service, Tax Forms and Publications,
+    1111 Constitution Ave. NW, IR-6526, Washington, DC 20224.
+    ... Don't send tax questions, tax returns, or payments to the above address.
+
+- context: >
+    Feature Summary
+
+    The following are the key features of Maven in a nutshell:
+
+    * Simple project setup that follows best practices - get a new project
+    or module started in seconds
+
+    * Consistent usage across all projects - means no ramp up time for new
+    developers coming onto a project
+
+    * Superior dependency management including automatic updating,
+    dependency closures (also known as transitive dependencies)
+
+    * Able to easily work with multiple projects at the same time
+
+    * A large and growing repository of libraries and metadata to use out
+    of the box, and arrangements in place with the largest Open Source
+    projects for real-time availability of their latest releases
+
+    * Extensible, with the ability to easily write plugins in Java or
+    scripting languages
+
+    * Instant access to new features with little or no extra configuration
+
+    * Ant tasks for dependency management and deployment outside of Maven
+
+    * Model based builds: Maven is able to build any number of projects
+    into predefined output types such as a JAR, WAR, or distribution based
+    on metadata about the project, without the need to do any scripting in
+    most cases.
+
+    * Coherent site of project information: Using the same metadata as for
+    the build process, Maven is able to generate a web site or PDF
+    including any documentation you care to add, and adds to that standard
+    reports about the state of development of the project. Examples of this
+    information can be seen at the bottom of the left-hand navigation of
+    this site under the "Project Information" and "Project Reports" submenus.
+
+    * Release management and distribution publication: Without much
+    additional configuration, Maven will integrate with your source control
+    system (such as Subversion or Git) and manage the release of a project
+    based on a certain tag. It can also publish this to a distribution
+    location for use by other projects. Maven is able to publish individual
+    outputs such as a JAR, an archive including other dependencies and
+    documentation, or as a source distribution.
+
+    * Dependency management: Maven encourages the use of a central repository
+    of JARs and other dependencies. Maven comes with a mechanism that your
+    project's clients can use to download any JARs required for building your
+    project from a central JAR repository much like Perl's CPAN. This allows
+    users of Maven to reuse JARs across projects and encourages communication
+    between projects to ensure that backward compatibility issues are dealt with.
+  question: >
+    From the given document, copy the entire relevant passage that supports
+    the following claim:
+
+    "The ability to easily write plugins in Java or scripting languages is
+    a key feature of Maven."
+
+    Copy the passage verbatim, do not paraphrase. Replace all irrelevant parts
+    in the passage with ellipsis. If no relevant passage is found, write None.
+  answer: >
+    The following are the key features of Maven in a nutshell:
+
+    ...
+
+    * Extensible, with the ability to easily write plugins in Java or
+    scripting languages
