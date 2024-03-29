@@ -24,7 +24,9 @@ The whole point of InstructLab 🥼 is to enable true collaborative development 
 
 So, the general gist of making a contribution to this project consists of writing an extension to the existing taxonomy, make a pull request, and your work will be reviewed and merged so that it can benefit the whole community.
 
-If you're planning on making a large addition or if you find a problem with the existing taxonomy, it's best to [write an issue](https://github.com/instruct-lab/cli/issues/new?assignees=&labels=&template=feature_request.md&title=) first to discuss it with maintainers.
+Before investing time into developing a contribution, it's best to [open an issue](https://github.com/instruct-lab/taxonomy/issues/new?assignees=&labels=&template=proposal.md&title=) first to discuss your proposal idea with the maintainers.
+
+You should also review what others have already proposed, in open issues and pull requests, to avoid duplicating efforts. You might instead be able to join forces with them by providing input to what they have started.
 
 To contribute to this repo, you'll use the Fork and Pull model common in many open source repositories. For details on this process, check out [The GitHub Workflow
 Guide](https://github.com/kubernetes/community/blob/master/contributors/guide/github-workflow.md)
@@ -62,7 +64,18 @@ Once you've [created a pull request](#how-can-i-contribute), maintainers will re
 We have tried to make it as easy as possible to make contributions.
 This applies to how we handle the legal aspects of contribution.
 We use the same approach - the [Developer's Certificate of Origin 1.1 (DCO)][DCO] - that [the Linux Kernel community uses][Linux-DCO] to manage code contributions.
-For this project, unless the file says otherwise, the relevant open source license is [the Apache License, Version 2.0](LICENSE).
+
+For this project, unless the file says otherwise, or unless the attributed source provided in the file says otherwise, the relevant open source license is [the Apache License, Version 2.0](LICENSE).
+All contributions that leverage third party content should either come from the public domain or be licensed with an open data license that does not restrict commercial use or the creation of derivative works, including the following license types:
+
+- CC0-1.0
+- CDLA-Permissive-2.0
+- CC-BY-4.0
+- Apache-2.0
+- MIT
+
+Any third party content contributed to this project undergoes modifications in order to formulate it in the templated format required for submission to this project.
+
 We simply ask that when submitting a patch for review, the developer must include a sign-off statement in the commit message.
 
 Here is an example `Signed-off-by` line, which indicates that the submitter accepts the DCO:
