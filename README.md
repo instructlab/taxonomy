@@ -25,7 +25,7 @@ Each `qna.yaml` file is required to contain a minimum of five question and
 answer pairs. The `qna.yaml` format should include the following fields:
 
 - `seed_examples` (five or more examples of question and answer pairs)
-- `created_by` (your Github username)
+- `created_by` (your GitHub username)
 - `task_description` (an optional description of the skill).
 - `attribution` `source` `license` (cite your sources)
 
@@ -277,7 +277,7 @@ markdown (.md).
 Each `qna.yaml` file is required to contain a minimum of five question-answer
 pairs. The `qna.yaml` format must include the following fields:
 
-- `created_by` (your Github username)
+- `created_by` (your GitHub username)
 - `domain` (category the knowledge falls under)
 - `seed_examples` (five or more examples sourced from the provided knowledge documents)
 - `created_by` (your GitHub username)
