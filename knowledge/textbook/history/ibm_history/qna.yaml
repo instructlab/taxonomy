@@ -53,6 +53,6 @@ task_description: ""
 document:
   repo: https://github.com/abhi1092/ibm-history-documents
   commit: 1dc85d0fc19e21ad8adbf5f98bd8aa1e31257d0a
-  pattern: 
+  pattern:
     - ibm*.md
     - origins_of_ibm*.md
