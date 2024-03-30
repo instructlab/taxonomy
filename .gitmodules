@@ -1,0 +1,3 @@
+[submodule "knowledge/textbook/history/ibm_history/documents"]
+	path = knowledge/textbook/history/ibm_history/documents
+	url = https://github.com/abhi1092/ibm-history-documents.git
