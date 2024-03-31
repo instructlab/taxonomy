@@ -88,8 +88,6 @@ seed_examples:
     | i             | washington | abc     |
 
     ```
-    
-    
     '
 - answer: '
 
@@ -137,7 +135,6 @@ seed_examples:
     | i             | washington | abc     | 09/04/1989       |
 
     ```
-    
     '
 - answer: '
 
