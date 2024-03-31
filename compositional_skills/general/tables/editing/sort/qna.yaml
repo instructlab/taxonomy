@@ -88,8 +88,6 @@ seed_examples:
     ```
     '
   question: 'Can you please sort the following table by "Company" Alphabetically in ascending order?
-
-
     ```
 
     | First Initial | Last Name  | Company |
@@ -121,7 +119,6 @@ seed_examples:
 - answer: '
 
     ```
-
     | First Initial | Last Name  | Company |
 
     | ------------- | ---------- | ------- |
@@ -147,8 +144,7 @@ seed_examples:
     ```
     '
   question: 'Can you please sort the following table by "Company" Alphabetically in descending order?
-
-
+    
     ```
 
     | First Initial | Last Name  | Company |
@@ -174,8 +170,6 @@ seed_examples:
     | i             | washington | abc     |
 
     ```
-
-
     '
 - answer: '
 
@@ -231,7 +225,6 @@ seed_examples:
 
     ```
     '
-
 - answer: '
 
     ```
