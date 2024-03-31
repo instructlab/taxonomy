@@ -262,7 +262,7 @@ markdown (.md).
 Each `qna.yaml` file requires a minimum of five question-answer
 pairs. The `qna.yaml` format must include the following fields:
 
-- `created_by` (your Github username)
+- `created_by` (your GitHub username)
 - `domain` (category the knowledge falls under)
 - `seed_examples` (five or more examples sourced from the provided knowledge documents)
 - `created_by` (your GitHub username)
