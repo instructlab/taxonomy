@@ -144,7 +144,6 @@ seed_examples:
     ```
     '
   question: 'Can you please sort the following table by "Company" Alphabetically in descending order?
-    
     ```
 
     | First Initial | Last Name  | Company |
@@ -264,7 +263,7 @@ seed_examples:
     | a             | smith      | xyz     | 01/01/1980       |
 
     | c             | george     | abc     | 03/02/1981       |
-   
+
     | d             | hicks      | xyz     | 04/04/1990       |
 
     | f             | parker     | abc     | 06/04/1986       |
@@ -281,7 +280,6 @@ seed_examples:
 
     ```
     '
-    
 task_description: 'To teach a language model about sorting tables by data
 
   '
