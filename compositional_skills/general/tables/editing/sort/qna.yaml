@@ -130,7 +130,7 @@ seed_examples:
     | d             | hicks      | xyz     |
 
     | g             | burn       | xyz     |
-    
+
     | c             | george     | abc     |
 
     | e             | long       | abc     |
@@ -145,7 +145,6 @@ seed_examples:
     '
   question: 'Can you please sort the following table by "Company" Alphabetically in descending order?
     ```
-
     | First Initial | Last Name  | Company |
 
     | ------------- | ---------- | ------- |
@@ -178,11 +177,11 @@ seed_examples:
     | ------------- | ---------- | ------- | -------- |
 
     | a             | smith      | xyz     | 01/01    |
-    
+
     | c             | george     | abc     | 03/02    |
 
     | d             | hicks      | xyz     | 04/04    |
-  
+
     | f             | parker     | abc     | 06/04    |
 
     | i             | washington | abc     | 09/04    |
@@ -281,5 +280,4 @@ seed_examples:
     ```
     '
 task_description: 'To teach a language model about sorting tables by data
-
   '
