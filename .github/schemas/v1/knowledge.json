@@ -7,7 +7,8 @@
         "created_by",
         "domain",
         "task_description",
-        "seed_examples"
+        "seed_examples",
+        "document"
     ],
     "unevaluatedProperties": false,
     "properties": {
@@ -48,6 +49,47 @@
                         "description": "The desired response for the question.",
                         "type": "string",
                         "minLength": 1
+                    }
+                }
+            }
+        },
+        "document": {
+            "description": "The knowledge documents.",
+            "type": "object",
+            "required": [
+                "repo",
+                "commit",
+                "pattern"
+            ],
+            "unevaluatedProperties": false,
+            "properties": {
+                "repo": {
+                    "description": "The URL to a Git repository holding the knowledge documents.",
+                    "type": "string",
+                    "minLength": 1,
+                    "examples": [
+                        "https://github.com/instruct-lab/cli"
+                    ]
+                },
+                "commit": {
+                    "description": "The commit in the Git repository containing the knowledge documents.",
+                    "type": "string",
+                    "minLength": 1,
+                    "examples": [
+                        "951999a"
+                    ]
+                },
+                "pattern": {
+                    "description": "An array of glob patterns of the knowledge documents in the Git repository.",
+                    "type": "array",
+                    "minItems": 1,
+                    "uniqueItems": true,
+                    "items": {
+                        "type": "string",
+                        "minLength": 1,
+                        "examples": [
+                            "*.md"
+                        ]
                     }
                 }
             }

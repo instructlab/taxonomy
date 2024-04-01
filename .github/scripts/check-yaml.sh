@@ -29,8 +29,8 @@ for file in ${CHANGED_FILES}; do
       compositional_skills/*/qna.yaml)
         eval "$(check-jsonschema --schemafile $SCHEMAS/compositional_skills.json -o JSON $file | jq -r '.errors[] | (.path | ltrimstr("$") | select(. != "") // ".") as $path | "\($path)|line" as $yqline | @sh "$(yq \($yqline) \(.filename))" as $yqcmd | @sh "\(.message[-200:])" as $message | "error \"\(.filename):\($yqcmd):1\" \"\($path)\" \($message)"')"
         ;;
-      knowledge/*)
-        error "$file:1:1" "." "We do not accept knowledge PRs at this time"
+      knowledge/*/qna.yaml)
+        eval "$(check-jsonschema --schemafile $SCHEMAS/knowledge.json -o JSON $file | jq -r '.errors[] | (.path | ltrimstr("$") | select(. != "") // ".") as $path | "\($path)|line" as $yqline | @sh "$(yq \($yqline) \(.filename))" as $yqcmd | @sh "\(.message[-200:])" as $message | "error \"\(.filename):\($yqcmd):1\" \"\($path)\" \($message)"')"
         ;;
       *)
         error "$file:1:1" "." "Taxonomy file must be named 'qna.yaml', not '$(basename $file)'"
