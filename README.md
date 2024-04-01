@@ -1,4 +1,18 @@
-# InstructLab 🥼 (LAB) Taxonomy
+# InstructLab 🥼 Taxonomy
+
+## Contents 📖 
+
+- [Welcome to the InstructLab Taxonomy](#welcome-to-the-instructlab-taxonomy)
+- [Learning](#learning)
+- [Getting Started with Skill Contributions](#getting-started-with-skill-contributions)
+  - [Skills: YAML examples](#skills-yaml-examples)
+- [Getting Started with Knowledge Contributions](#getting-started-with-knowledge-contributions)
+  - [Knowledge: YAML examples](#knowledge-yaml-examples)
+- [Taxonomy tree layout](#taxonomy-tree-layout)
+- [Contribute knowledge and skills to the taxonomy!](#contribute-knowledge-and-skills-to-the-taxonomy)
+  - [Ways to contribute](#ways-to-contribute)
+  - [Detailed Contribution Instructions](#detailed-contribution-instructions)
+## Welcome to the InstructLab Taxonomy
 
 InstructLab 🥼 uses a novel synthetic data-based alignment tuning method for
 Large Language Models (LLMs.) The "**lab**" in Instruct**Lab** 🥼 stands for
@@ -27,7 +41,8 @@ contribution to the taxonomy tree can be just a few lines of YAML in the
 >    2. To determine the interpretability by human contributors and maintainers.
 >    3. As part of the prompt to the GPT model used to generate synthetic samples.
 
-> **NOTE:** To get the best use of this structure, make sure the names of directories match the intent of the
+> [!NOTE]
+> To get the best use of this structure, make sure the names of directories match the intent of the
 > taxonomy files. You can also verify that a person's contribution is in the most logical location in the
 > taxonomy structure before signing off.
 
@@ -56,7 +71,7 @@ Taxonomy skill files must be a valid [YAML](https://yaml.org/) file named
 
 Other keys at any level are currently ignored.
 
-### Skills: YAML example
+### Skills: YAML examples
 
 To make the `qna.yaml` files easier and faster for humans to read, it is recommended to specify `task_description` first, followed by `created_by`, and finally `seed_examples`.
 In `seed_examples`, it is recommended to specify `context` first (if applicable), followed by `question`, `answer`, and finally `attribution`. 
@@ -247,8 +262,7 @@ seed_examples:
 ## Getting Started with Knowledge Contributions
 
 > [!NOTE]
-> We are not currently accepting knowledge contributions, but we will open this
-> up in the future!
+> We are not currently accepting knowledge contributions, but we will open this up in the future!
 
 While skills are foundational or performative, knowledge is based more on answering questions that involve facts,
 data, or references.
@@ -269,7 +283,7 @@ pairs. The `qna.yaml` format must include the following fields:
 - `task_description` (an optional description of the knowledge).
 - `attribution` `source` `license` (cite your sources)
 
-### Knowledge: YAML example
+### Knowledge: YAML examples
 
 ```yaml
 task_description: |
@@ -321,6 +335,8 @@ pull requests are simpler and require less time and effort to review.
 
 What might these markdown files look like? They can be freeform. Here's what a
 snippet of `ts-discography-2024.md` might look like:
+
+#### Knowledge: Freeform example
 
 ```markdown
 # Albums
@@ -382,14 +398,14 @@ In contrast to the layout of skills in the taxonomy, here's what the previously 
 [...]
 ```
 
-## Layout
+## Taxonomy tree Layout
 
 The taxonomy tree is organized in a cascading directory structure. At the end of
 each branch, there is a YAML file (qna.yaml) that contains the examples for that
 domain. Maintainers can decide to change the names of the existing branches or to add new branches.
 
-> [Note] 
-> Folder names should not have a space. 
+> [!IMPORTANT] 
+> Folder names do not have spaces. 
 
 Below is an illustrative directory structure to show this layout:
 
@@ -402,32 +418,11 @@ Below is an illustrative directory structure to show this layout:
     │   │   │   └── qna.yaml
     │   │   ├── refute_claim
     │   │   │   └── qna.yaml
-    │   │   └── support_claim
-    │   │       └── qna.yaml
-    │   ├── debate
-    │   │   └── qna.yaml
-    │   ├── legal
-    │   │   ├── agreement
-    │   │   │   └── qna.yaml
-    │   │   └── contracts
-    │   │       └── qna.yaml
     │   ├── poetry
     │   │   ├── ballad
     │   │   │   └── qna.yaml
     │   │   ├── epic_poetry
     │   │   │   └── qna.yaml
-    │   │   ├── freeverse
-    │   │   │   └── qna.yaml
-    │   │   ├── haiku
-    │   │   │   └── qna.yaml
-    │   │   ├── limerick
-    │   │   │   └── qna.yaml
-    │   │   ├── narrative_poetry
-    │   │   │   └── qna.yaml
-    │   │   ├── ode
-    │   │   │   └── qna.yaml
-    │   │   └── sonnet
-    │   │       └── qna.yaml
     │   ├── prose
     │   │   ├── articles
     │   │   │   └── qna.yaml
@@ -436,37 +431,9 @@ Below is an illustrative directory structure to show this layout:
     │   │   │   │   └── qna.yaml
     │   │   │   └── informal
     │   │   │       └── qna.yaml
-    │   │   ├── screenplay
-    │   │   │   └── qna.yaml
-    │   │   └── stories
-    │   │       └── qna.yaml
-    │   ├── social_media
-    │   │   ├── facebook
-    │   │   │   └── qna.yaml
-    │   │   ├── instagram
-    │   │   │   └── qna.yaml
-    │   │   ├── linkedin
-    │   │   │   └── qna.yaml
-    │   │   └── twitter
-    │   │       └── qna.yaml
-    │   └── technical
-    │       ├── guide
-    │       │   └── qna.yaml
-    │       ├── product_description
-    │       │   └── qna.yaml
-    │       ├── proposal
-    │       │   └── qna.yaml
-    │       ├── report
-    │       │   └── qna.yaml
-    │       ├── specification
-    │       │   └── qna.yaml
-    │       └── user_manual
-    │           └── qna.yaml
     └── grounded
         ├── editing
         │   ├── grammar
-        │   │   └── qna.yaml
-        │   ├── punctuation
         │   │   └── qna.yaml
         │   └── spelling
         │       └── qna.yaml
@@ -475,23 +442,14 @@ Below is an illustrative directory structure to show this layout:
         │   │   └── qna.yaml
         │   ├── corporate_email
         │   │   └── qna.yaml
-        │   ├── executive_summaries
-        │   │   └── qna.yaml
-        │   └── minutes_of_meeting
-        │       └── qna.yaml
         └── summarization
             └── wiki_insights
                 ├── concise
                 │   └── qna.yaml
                 ├── detailed
-                │   └── qna.yaml
-                ├── five_point
-                │   └── qna.yaml
-                ├── high_level_outline
-                │   └── qna.yaml
-                └── one_line
-                    └── qna.yaml
 ```
+
+For an extensive example of this layout see, [taxonomy_tree_layout](https://github.com/instruct-lab/taxonomy/tree/main/docs/taxonomy_tree_layout.md) in the documentation folder.
 
 ## Contribute knowledge and skills to the taxonomy!
 
