@@ -11,7 +11,7 @@ https://instruct-lab-host.s3.us-east.cloud-object-storage.appdomain.cloud/
 
 > **_NOTE:_** Currently the full synthetic data is not yet available, it will be ready during the next model release.
 
-To download a particular set of synthetic data, use the above link + the directory path + model filename + file extension as the URL link. Currently, the two file extensions are `.parquet` for full synthetic data and `preview.json` to preview the first 10 examples in JSON. For example:
+To download a particular set of synthetic data, use the above link + the directory path + model filename + file extension as the URL link. Currently, the two file extensions are `.parquet` for full synthetic data and `.preview.json` to preview the first 10 examples in JSON. For example:
 
 - The synthetic data for `compositional_skills/extraction/abstractive/abstract` using the `mistrial-7b` model:
   - Full synthetic data: https://instruct-lab-host.s3.us-east.cloud-object-storage.appdomain.cloud/compositional_skills/extraction/abstractive/abstract/mistrial-7b.parquet
