@@ -1,7 +1,7 @@
 created_by: afsilva
 seed_examples:
   - answer: |
-      like this:
+      like this
       w
        a
         t
@@ -19,7 +19,7 @@ seed_examples:
       - source: self-authored
         license: Apache-2.0
   - answer: |
-      like this:
+      like this
       f
        o
         o
@@ -32,7 +32,7 @@ seed_examples:
       - source: self-authored
         license: Apache-2.0
   - answer: |
-      like this:
+      like this
       b
        a
         n
