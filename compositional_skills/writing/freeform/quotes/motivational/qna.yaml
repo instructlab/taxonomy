@@ -6,30 +6,15 @@ seed_examples:
   - question: Tell me a quote on motivation and curiosity.
     answer: |
       'Emerging curiosity is a universal source of creativity.'
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - question: Give me a quote about a successful life and obstacles.
     answer: |
       'A successful life is always the result of overcoming obstacles in life.'
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - question: Quote about struggle and a successful life, please.
     answer: |
       'Struggling through difficulties is the foundation of a successful life.'
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - question: Provide a quote about destiny.
     answer: |
       'Executed actions always influence destiny.'
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - question: Give me a quote that expresses motivation and failure.
     answer: |
       'Failures always create the most versatile and resilient characters.'
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
