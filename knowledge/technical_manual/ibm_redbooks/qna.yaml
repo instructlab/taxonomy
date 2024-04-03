@@ -30,10 +30,7 @@ seed_examples:
     D. It is used for visualizing and navigating the EHS location hierarchy in a graphical
     interface.'
 task_description: ''
-document:
-  repo: <document-repository-url-goes-here>
-  commit: <commit-hash-to-use>
-  pattern:
-    - <file-search-patter 1>
-    - <file-search-patter 2>
-    - <file-search-patter 3>
+documents:
+- <file-search-pattern 1>
+- <file-search-pattern 2>
+- <file-search-pattern 3>
