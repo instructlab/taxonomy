@@ -34,7 +34,7 @@ Triagers should review open pull requests and use labels to manage their state a
 > The skill taxonomy structure is used in several ways:
 >    1. Selecting the right subset of the taxonomy to use for data generation.
 >    2. Interpretability by human contributors and maintainers.
->    3. As part of the prompt to GPT model used to generate synthetic samples.
+>    3. As part of the prompt to the model used to generate synthetic samples.
 > Therefore: Make sure the names of directories match the intent of the
 > taxonomy files, perhaps also see if there's a more logical place in the
 > taxonomy structure for a person's contribution to live before signing off.
