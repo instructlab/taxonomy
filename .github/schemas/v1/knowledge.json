@@ -59,7 +59,7 @@
             "required": [
                 "repo",
                 "commit",
-                "pattern"
+                "patterns"
             ],
             "unevaluatedProperties": false,
             "properties": {
@@ -79,7 +79,7 @@
                         "951999a"
                     ]
                 },
-                "pattern": {
+                "patterns": {
                     "description": "An array of glob patterns of the knowledge documents in the Git repository.",
                     "type": "array",
                     "minItems": 1,
@@ -88,7 +88,9 @@
                         "type": "string",
                         "minLength": 1,
                         "examples": [
-                            "*.md"
+                            "*.md",
+                            "folder/*.md",
+                            "folder/knowledge_doc.md"
                         ]
                     }
                 }
