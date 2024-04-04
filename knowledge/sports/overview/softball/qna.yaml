@@ -4,7 +4,7 @@ seed_examples:
 - answer: |
     1st base, 2nd base, 3rd base, and Home
   question: |
-    What are the 4 bases in Softball?
+    What are the 4 bases in softball?
 - answer: |
     Kitten ball was the first version of modern day softball.
   question: |
@@ -40,15 +40,15 @@ seed_examples:
 - answer: |
     43 feet (13.11 m)
   question: |
-    What is the fast ball pitching distance for adult (over 16 years) female distance?
+    What is the fastball pitching distance for adult (over 16 years) female distance?
 - answer: |
     43 feet (13.11 m)
   question: |
-    What is the fast ball pitching distance for under 16 years but older then 13 female distance?
+    What is the fastball pitching distance for under 16 years but older then 13 female distance?
 - answer: |
     35 feet (10.67 m)
   question: |
-    What is the fast ball pitching distance for under 10 years but older then 8 female distance?
+    What is the fastball pitching distance for under 10 years but older then 8 female distance?
 - answer: |
     wood, aluminum, or composite materials such as carbon fiber
   question: |
