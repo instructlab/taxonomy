@@ -72,6 +72,6 @@ seed_examples:
 task_description: 'Overview of the sport of softball'
 document:
   repo: https://github.com/asgharlabs/taxonomy-softball-knowledge
-  commit: TBD
+  commit: 3047387170cd0b7e6d94c3a387acd8fa7e1f230b
   patterns: |
     softball.md
