@@ -48,9 +48,6 @@ seed_examples:
       Who was the first batsman to score a double century in a One Day
       International (ODI) cricket match?.
     answer: 'Sport '
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - context: >-
       Finance: Finance encompasses a wide range of activities related to the
       management, investment, and examination of money, assets, and liabilities,
@@ -96,9 +93,6 @@ seed_examples:
       Classify below query as Finance, Sport, Politics or Other
       How do market fluctuations impact the performance of mutual funds?
     answer: 'Finance '
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - context: >-
       Finance: Finance encompasses a wide range of activities related to the
       management, investment, and examination of money, assets, and liabilities,
@@ -144,9 +138,6 @@ seed_examples:
       Classify below query as Finance, Sport, Politics or Other
       Which artists are expected to breakout at the SXSW 2024 Music Festival?
     answer: 'Other '
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - context: >-
       Human Resource: Terms found within human resource (HR) documents are
       essential for  delineating the framework of employee-employer interactions
@@ -163,9 +154,6 @@ seed_examples:
       Classify below query as Human Resource or Other.
       What is the maternity leave policy?
     answer: 'Human Resource '
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - context: >-
       Human Resource: Terms found within human resource (HR) documents are
       essential for  delineating the framework of employee-employer interactions
@@ -182,6 +170,3 @@ seed_examples:
       Classify below query as Human Resource or Other.
       What learning resources are available for Sales team?
     answer: 'Other '
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
