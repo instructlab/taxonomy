@@ -1,6 +1,6 @@
 # InstructLab 🥼 Taxonomy
 
-## Contents 📖 
+## Contents 📖
 
 - [Welcome to the InstructLab Taxonomy](#welcome-to-the-instructlab-taxonomy)
 - [Learning](#learning)
@@ -11,7 +11,7 @@
 - [Taxonomy tree layout](#taxonomy-tree-layout)
 - [Contribute knowledge and skills to the taxonomy!](#contribute-knowledge-and-skills-to-the-taxonomy)
   - [Ways to contribute](#ways-to-contribute)
-  - [Detailed Contribution Instructions](#detailed-contribution-instructions)
+
 ## Welcome to the InstructLab Taxonomy
 
 InstructLab 🥼 uses a novel synthetic data-based alignment tuning method for
@@ -74,7 +74,7 @@ Other keys at any level are currently ignored.
 ### Skills: YAML examples
 
 To make the `qna.yaml` files easier and faster for humans to read, it is recommended to specify `task_description` first, followed by `created_by`, and finally `seed_examples`.
-In `seed_examples`, it is recommended to specify `context` first (if applicable), followed by `question`, `answer`, and finally `attribution`. 
+In `seed_examples`, it is recommended to specify `context` first (if applicable), followed by `question`, `answer`, and finally `attribution`.
 
 ```yaml
 task_description: <string>
@@ -94,7 +94,7 @@ seed_examples:
     attribution:
       - source: <string>
         license: <SPDX license identifier>
-  ...  
+  ...
 ```
 
 If you have not written YAML before, don't be intimidated - it's just text.
@@ -111,7 +111,7 @@ If you have not written YAML before, don't be intimidated - it's just text.
   This character escapes all of the special characters in the value for the key.
   You might also want to use the '|' character for multi-line strings.
 
-It is recommended that you **lint**, or verify your YAML using a tool. 
+It is recommended that you **lint**, or verify your YAML using a tool.
 
 One linter option is [yamllint.com](https://yamllint.com). You can copy/paste your YAML into the box and click **Go** to have it
 analyze your YAML and make recommendations.
@@ -136,7 +136,7 @@ seed_examples:
   - question: Tell me a pun about birds.
     answer: |  # The | is needed to escape characters like ` or '
       Why do birds eat wood?
-      
+
       Because they're peckish!
     attribution:
       - source: self-authored
@@ -185,12 +185,12 @@ in terms of a taxonomy contribution:
 
 #### Grounded compositional skill: YAML example
 
-Remember that [grounded compositional skills](https://github.com/instruct-lab/community/blob/main/docs/SKILLS_GUIDE.md) require additional context and include a `context` field. 
+Remember that [grounded compositional skills](https://github.com/instruct-lab/community/blob/main/docs/SKILLS_GUIDE.md) require additional context and include a `context` field.
 
 This example snippet assumes the GitHub username `mairin` and shows some of the question/answer pairs present in the actual file:
 
 ```yaml
-task_description: | 
+task_description: |
     This skill provides the ability to read a markdown-formatted table.
 created_by: mairin # Use your GitHub username; only one creator supported
 seed_examples:
@@ -289,14 +289,14 @@ pairs. The `qna.yaml` format must include the following fields:
 task_description: |
   Knowledge about Taylor Swift's music.
 created_by: mairin
-domain: pop culture 
+domain: pop culture
 seed_examples:
   - question: |
       Is Taytay coming to Boston in 2024?
     answer: |
-      Not that is known yet. Taylor Swift last performed in the Boston area at 
-      the Gilette Stadium in Foxboro, MA for 3 nights from Friday May 19, 2023 
-      to Sunday May 21, 2023. In 2024, she is making international tour stops 
+      Not that is known yet. Taylor Swift last performed in the Boston area at
+      the Gilette Stadium in Foxboro, MA for 3 nights from Friday May 19, 2023
+      to Sunday May 21, 2023. In 2024, she is making international tour stops
       for her Eras tour outside of the United States.
     attribution:
       - source: self-authored
@@ -304,11 +304,11 @@ seed_examples:
   - question: |
       Which album was released more recently, Reputation or Midnights?
     answer: |
-      The Taylor Swift Album Reputation was released on November 10, 2017. 
-      Midnights was released October 21, 2022. Midnights was released more 
-      recently, but there are rumors that there will be a re-release of 
-      Reputation called Reputation (Taylor's version) in the later half of 2024 
-      which would make that the most recently-released album of the set at that 
+      The Taylor Swift Album Reputation was released on November 10, 2017.
+      Midnights was released October 21, 2022. Midnights was released more
+      recently, but there are rumors that there will be a re-release of
+      Reputation called Reputation (Taylor's version) in the later half of 2024
+      which would make that the most recently-released album of the set at that
       time.
     attribution:
       - source: self-authored
@@ -316,7 +316,7 @@ seed_examples:
   - question: |
       Which album has the song "You Need to Calm Down?"
     answer: |
-      The song "You Need to Calm Down" appears on Taylor Swift's 2019 album 
+      The song "You Need to Calm Down" appears on Taylor Swift's 2019 album
       Lover as track 14.
     attribution:
       - source: self-authored
@@ -404,8 +404,8 @@ The taxonomy tree is organized in a cascading directory structure. At the end of
 each branch, there is a YAML file (qna.yaml) that contains the examples for that
 domain. Maintainers can decide to change the names of the existing branches or to add new branches.
 
-> [!IMPORTANT] 
-> Folder names do not have spaces. 
+> [!IMPORTANT]
+> Folder names do not have spaces.
 
 Below is an illustrative directory structure to show this layout:
 
@@ -474,81 +474,9 @@ You can contribute to the taxonomy in the following two ways:
 
     - You can add new folders under the corresponding category (replace any spaces ` ` with underscores `_`)
     - Create a new `qna.yaml` file containing examples for the new skill
-  
-### Detailed Contribution Instructions
-
-#### Prerequisites
-
-- You have a GitHub account
-- You have access to this repo
-
-#### Make a copy of the taxonomy repo
-
-1. Go to [github.com/instruct-lab/taxonomy](https://github.com/instruct-lab/taxonomy).
-
-2. Click **Fork** to fork your own copy of the repo.
-
-    ![fork-button](https://github.com/instruct-lab/taxonomy/assets/799683/8487bff2-425e-483c-b27c-ef03da1c57a8)
-
-3. On the **Create a new fork** page, enter the information into the following fields:
-    - **Repository name:** `taxonomy` is fine
-    - **Description:** Enter the description of _your fork_, not of the skills you will create. You can write something that makes sense to you or leave it blank.
-    - **Copy the main branch only:** The box is selected by default. You can choose to leave the box selected or clear it.
-
-4. Click **Create Fork**.
-
-    ![Screenshot from 2024-02-28 12-41-59](https://github.com/instruct-lab/taxonomy/assets/799683/656608ef-3040-4858-96f0-9b695bea0e8f)
-
-You will get a copy of the taxonomy repo in your github account. This is your own copy, so don't worry about making mistakes. *If you do end up making a mistake and want to start over: you can delete the fork and create a new fork.*
-
-#### Contributing a skill
-
-The following image shows the compositional skills directory and its contents. Skills are contributed to this directory. 
-
-![Screenshot from 2024-02-28 12-44-05](https://github.com/instruct-lab/taxonomy/assets/799683/2038e035-5400-4848-91fb-f575db35b565)
-
-The other top-level directory you can contribute to is the knowledge directory, which is used for knowlege contributions. You can read more about the difference between skills and knowledge in the [community documentation](https://github.com/instruct-lab/community/blob/main/docs/README.md).
-
-Based on the directories that exist in the tree, make a best guess at where in the tree structure to add the skill that you want to contribute. If you get to a point where you've gone deep enough into the tree and you can't find any directories that match, feel free to create a new directory (and subdirectories, if needed) to best represent your skill.
-
-For example, I want to contribute a skill for creating puns. Puns are a specific type of joke. I started in the writing directory of the tree, and saw two main directories there: freeform and grounded. 
-
-![Screenshot from 2024-02-28 12-57-00](https://github.com/instruct-lab/taxonomy/assets/799683/2fab5b92-194a-491e-8a6f-f464a8e8f2f5)
-
-Under the freeform directory, I saw subdirectories such as brainstorming, debate, legal, poetry, prose, etc.
-
-![Screenshot from 2024-02-28 12-57-35](https://github.com/instruct-lab/taxonomy/assets/799683/e52ea423-d86f-49a8-9229-b09418f1510b)
-
-Under the grounded directory, I saw subdirectories such as editing, meeting_insights, summarization/wiki_insights.
-
-![Screenshot from 2024-02-28 12-59-10](https://github.com/instruct-lab/taxonomy/assets/799683/98370d70-d7e4-4595-a259-f6ffa4ef00fb)
-
-Puns seemed to fit best under the freeform directory, but I didn't think they fit under any of the pre-existing directories under freeform, so I created a jokes directory. Under jokes, I created a puns subdirectory. By making jokes a directory, I can continue to add subdirectories for different types of jokes. For example, I can add a new subdirectory for the knock-knock joke skill that I want to create. 🙂
-
-It can be a little tricky mechanically to create directories in GitHub's web UI, but you can complete the process using the following steps: 
-
-1. In the GitHub repo, click the folder that you want to create the new directory inside of.
-
-2. Click **Add File** and select **Create new file** from the menu.
-
-3. Type the name of the first directory that you want to create. In the example animation, we use "jokes/" as the first directory.
-
-> [!NOTE]
-> When you type the "/" character, the directory name will "lock in" and you'll be able to type the name of the subdirectory that you want to add under it. In the example, we typed "knock-knock/" as the subdirectory name.
-
-> [!NOTE]
-> Make sure to replace any spaces (` `) in the folder name with underscores (`_`)
-
-4. After you have entered the name of all of the directories that you want to add, type the file name. The file name should always be `qna.yaml` (qna stands for "Question aNd Answer.")
-
-Here's an animated graphic to show how it works:
-
-![screencast-directory-naming](https://github.com/instruct-lab/taxonomy/assets/799683/2cb2b031-52f6-46de-bfd9-c4eae82ec9d3)
-
-**TO BE CONTINUED**
 
 #### Contributing Knowledge
-This information will be added once knowledge contributions are opened up. 
+This information will be added once knowledge contributions are opened up.
 
 ### How should I contribute?
 
