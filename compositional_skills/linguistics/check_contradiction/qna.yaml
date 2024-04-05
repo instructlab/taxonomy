@@ -11,7 +11,7 @@ seed_examples:
     Passage 2:
 
     All employees in Plan ABC are eligible for Service XYZ. This includes employees
-    in HMOs, but excludes those who have opted out. 
+    in HMOs, but excludes those who have opted out.
   question: >
     Does Passage 1 contradict Passage 2?
   answer: >
