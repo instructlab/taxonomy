@@ -14,9 +14,6 @@ seed_examples:
        C
     ```
   question: Generate an ASCII representation for the molecule "C1=CC=C(C=C1)C=O".
-  attribution:
-      - source: self-authored
-        license: Apache-2.0
 - answer: |
     ```
           C
@@ -26,9 +23,6 @@ seed_examples:
           C
     ```
   question: Draw an ASCII representation for the molecule "COC(C)(C)C".
-  attribution:
-      - source: self-authored
-        license: Apache-2.0
 - answer: |
     ```
     C--C==O
@@ -36,9 +30,6 @@ seed_examples:
        O
     ```
   question: Create an ASCII representation for the molecule "CC(=O)O".
-  attribution:
-      - source: self-authored
-        license: Apache-2.0
 - answer: |
     ```
        O
@@ -46,9 +37,6 @@ seed_examples:
     C--C==O
     ```
   question: Draw an ASCII representation for the molecule "CC(=O)O".
-  attribution:
-      - source: self-authored
-        license: Apache-2.0
 - answer: |
     ```
     O--C==O
@@ -56,6 +44,3 @@ seed_examples:
        C
     ```
   question: Draw an ASCII representation for the molecule "CC(=O)O".
-  attribution:
-      - source: self-authored
-        license: Apache-2.0
