@@ -139,3 +139,6 @@ scratch.ipynb
 
 # Ignore config.yaml from the cli
 config.yaml
+
+# Spellcheck
+dictionary.dic

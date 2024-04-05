@@ -28,7 +28,7 @@ Before investing time into developing a contribution, it's best to [open an issu
 
 You should also review what others have already proposed, in open issues and pull requests, to avoid duplicating efforts. You might instead be able to join forces with them by providing input to what they have started.
 
-To contribute to this repo, you'll use the Fork and Pull model common in many open source repositories. For details on this process, check out [The GitHub Workflow
+To contribute to this repository, you'll use the Fork and Pull model common in many open source repositories. For details on this process, check out [The GitHub Workflow
 Guide](https://github.com/kubernetes/community/blob/master/contributors/guide/github-workflow.md)
 from Kubernetes.
 

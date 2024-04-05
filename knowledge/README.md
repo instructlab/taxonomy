@@ -1,4 +1,4 @@
-# Instructlab (LAB) Knowledge 
+# InstructLab (LAB) Knowledge
 
 Knowledge consists of data and facts and is backed by documents. When you create knowledge for a model, you're giving it additional data to more accurately answer questions. The knowledge document formats currently supported are markdown (.md) and text (.txt).
 
@@ -29,15 +29,15 @@ Each qna.yaml file is required to contain a minimum of five question-answer pair
 | https://openstax.org/details/books/university-physics-volume-3  | college_physics | CC BY 4.0  |
 | https://opentextbc.ca/introductorybusinessstatistics | business_statistics | CC BY 4.0 |
 | https://openstax.org/details/books/principles-macroeconomics-3e | econometrics | CC BY 4.0 |
-| https://openstax.org/details/books/algebra-and-trigonometry-2e | high_school_mathmatics | CC BY 4.0 |
-| https://openstax.org/details/books/precalculus-2e | high_school_mathmatics | CC BY 4.0 |
-| https://openstax.org/details/books/introductory-business-statistics | high_school_mathmatics | CC BY 4.0 |
-| https://openstax.org/details/books/contemporary-mathematics | high_school_mathmatics | CC BY 4.0 |
-| https://openstax.org/details/books/introductory-statistics | high_school_mathmatics | CC BY 4.0 |
-| https://openstax.org/details/books/statistics | high_school_mathmatics | CC BY 4.0 |
-| https://openstax.org/details/books/college-algebra-2e | high_school_mathmatics | CC BY 4.0 |
-| https://mathbooks.unl.edu/BCalculus/colophon-1.html | high_school_mathmatics | CC BY 4.0 |
-| https://mathbooks.unl.edu/Calculus | high_school_mathmatics | CC BY 4.0 |
+| https://openstax.org/details/books/algebra-and-trigonometry-2e | high_school_mathematics | CC BY 4.0 |
+| https://openstax.org/details/books/precalculus-2e | high_school_mathematics | CC BY 4.0 |
+| https://openstax.org/details/books/introductory-business-statistics | high_school_mathematics | CC BY 4.0 |
+| https://openstax.org/details/books/contemporary-mathematics | high_school_mathematics | CC BY 4.0 |
+| https://openstax.org/details/books/introductory-statistics | high_school_mathematics | CC BY 4.0 |
+| https://openstax.org/details/books/statistics | high_school_mathematics | CC BY 4.0 |
+| https://openstax.org/details/books/college-algebra-2e | high_school_mathematics | CC BY 4.0 |
+| https://mathbooks.unl.edu/BCalculus/colophon-1.html | high_school_mathematics | CC BY 4.0 |
+| https://mathbooks.unl.edu/Calculus | high_school_mathematics | CC BY 4.0 |
 | https://openstax.org/details/books/principles-economics-3e | high_school_microeconomics  | CC BY 4.0 |
 | https://openstax.org/details/books/principles-microeconomics-3e | high_school_microeconomics | CC BY 4.0 |
 | https://openstax.org/details/books/physics | high_school_physics | CC BY 4.0 |

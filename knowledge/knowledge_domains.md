@@ -70,8 +70,8 @@
         * SQL
         * Go 
         * Java
-        * Web developoment languages and frameworks
-          * Javascript
+        * Web development languages and frameworks
+          * JavaScript
           * HTML & CSS
           * PHP
         * C & C++
@@ -205,7 +205,7 @@
   * History of South America 
   * History of other areas
 * People // TBD 
-  * Business (CEOs, business leaders, enterpreneus)
+  * Business (CEOs, business leaders, entrepreneurs)
   * Science and Technology (scientists, engineers)
 * Organizations and Companies
   * Public Sector

@@ -439,13 +439,13 @@ You can contribute to the taxonomy in the following two ways:
 #### Prerequisites
 
 - You have a GitHub account
-- You have access to this repo
+- You have access to this repository
 
-#### Make a copy of the taxonomy repo
+#### Make a copy of the taxonomy repository
 
 1. Go to [github.com/instruct-lab/taxonomy](https://github.com/instruct-lab/taxonomy).
 
-2. Click **Fork** to fork your own copy of the repo.
+2. Click **Fork** to fork your own copy of the repository.
 
     ![fork-button](https://github.com/instruct-lab/taxonomy/assets/799683/8487bff2-425e-483c-b27c-ef03da1c57a8)
 
@@ -458,7 +458,7 @@ You can contribute to the taxonomy in the following two ways:
 
     ![Screenshot from 2024-02-28 12-41-59](https://github.com/instruct-lab/taxonomy/assets/799683/656608ef-3040-4858-96f0-9b695bea0e8f)
 
-You will get a copy of the taxonomy repo in your github account. This is your own copy, so don't worry about making mistakes. *If you do end up making a mistake and want to start over: you can delete the fork and create a new fork.*
+You will get a copy of the taxonomy repository in your github account. This is your own copy, so don't worry about making mistakes. *If you do end up making a mistake and want to start over: you can delete the fork and create a new fork.*
 
 #### Contributing a skill
 
@@ -486,7 +486,7 @@ Puns seemed to fit best under the freeform directory, but I didn't think they fi
 
 It can be a little tricky mechanically to create directories in GitHub's web UI, but you can complete the process using the following steps: 
 
-1. In the GitHub repo, click the folder that you want to create the new directory inside of.
+1. In the GitHub repository, click the folder that you want to create the new directory inside of.
 
 2. Click **Add File** and select **Create new file** from the menu.
 
