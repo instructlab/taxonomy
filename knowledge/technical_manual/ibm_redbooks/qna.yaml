@@ -33,7 +33,7 @@ task_description: ''
 document:
   repo: <document-repository-url-goes-here>
   commit: <commit-hash-to-use>
-  pattern:
+  patterns:
     - <file-search-patter 1>
     - <file-search-patter 2>
     - <file-search-patter 3>
