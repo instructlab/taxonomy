@@ -2,12 +2,13 @@
     "title": "Compositional Skill",
     "description": "A compositional skill.",
     "type": "object",
+    "$ref": "./version.json",
     "required": [
         "created_by",
         "task_description",
         "seed_examples"
     ],
-    "additionalProperties": false,
+    "unevaluatedProperties": false,
     "properties": {
         "created_by": {
             "description": "The GitHub username of the contributor.",
@@ -30,7 +31,7 @@
                     "question",
                     "answer"
                 ],
-                "additionalProperties": false,
+                "unevaluatedProperties": false,
                 "properties": {
                     "context": {
                         "description": "Information that the model is expected to take into account during processing. This is different from knowledge, where the model is expected to gain facts and background knowledge from the tuning process.",

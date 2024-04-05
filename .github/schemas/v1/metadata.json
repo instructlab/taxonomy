@@ -2,10 +2,11 @@
     "title": "Taxonomy metadata",
     "description": "Accompanying metadata for a peer taxonomy file.",
     "type": "object",
+    "$ref": "./version.json",
     "required": [
         "seed_examples"
     ],
-    "additionalProperties": false,
+    "unevaluatedProperties": false,
     "properties": {
         "seed_examples": {
             "description": "An array of metadata for the seed examples in the peer taxonomy file.",
@@ -17,7 +18,7 @@
                     "source",
                     "license"
                 ],
-                "additionalProperties": false,
+                "unevaluatedProperties": false,
                 "properties": {
                     "source": {
                         "title": "Attribution Source",
