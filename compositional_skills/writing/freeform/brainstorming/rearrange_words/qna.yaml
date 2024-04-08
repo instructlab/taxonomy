@@ -1,21 +1,36 @@
 ---
 task_description: |
-  The word solver to find all possible dictionary words by rearranging it.
+  The word solver to find all possible dictionary words by rearranging it. 
 created_by: amtdas
 seed_examples:
-  - question: Another 5 letter dictionary words from BELOW.
+  - question: Arrange letters in BELOW and give another 5 letter meaningful words.
     answer: |
       ELBOW
       BOWEL
-  - question: Another 6 letter dictionary words from GAINLY.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Arrange letters in GAINY and give another 6 letter meaningful words.
     answer: |
       LAYING
-  - question: Another 5 letter dictionary words from NIGHT.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Arrange letters in NIGHT and give another 5 letters meaningful words.
     answer: |
       THING
-  - question: Another 6 letter dictionary words from METEOR.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Arrange letters in METEOR and give another 6 letters meaningful words.
     answer: |
       REMOTE
-  - question: Another 6 letter dictionary words from SILENT.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - question: Arrange letters in SILENT and give another 6 letters meaningful words.
     answer: |
       LISTEN
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
