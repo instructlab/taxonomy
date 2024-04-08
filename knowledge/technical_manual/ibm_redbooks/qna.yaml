@@ -1,4 +1,4 @@
-created_by: Abhi-B
+created_by: IBM Research
 domain: ibm redbooks
 seed_examples:
 - answer: The Cross Applications - Situation Handling capability in SAP S/4HANA allows
@@ -30,3 +30,10 @@ seed_examples:
     D. It is used for visualizing and navigating the EHS location hierarchy in a graphical
     interface.'
 task_description: ''
+document:
+  repo: <document-repository-url-goes-here>
+  commit: <commit-hash-to-use>
+  patterns:
+    - <file-search-patter 1>
+    - <file-search-patter 2>
+    - <file-search-patter 3>
