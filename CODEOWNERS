@@ -12,3 +12,4 @@
 *.md   @mairin @juliadenham @kelbrown20 @obuzek @lehors @instruct-lab/taxonomy-approvers
 /.github/ @instruct-lab/taxonomy-maintainers @instruct-lab/taxonomy-approvers
 /docs/ @mairin @juliadenham @kelbrown20 @obuzek @lehors @instruct-lab/taxonomy-approvers
+/synthetic_data/ @Tomcli @juliadenham @joesepi @instruct-lab/taxonomy-approvers
