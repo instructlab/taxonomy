@@ -1,6 +1,6 @@
 ---
 task_description: |
-  The word solver to find all possible dictionary words by rearranging it. 
+  The word solver to find all possible dictionary words by rearranging it.
 created_by: amtdas
 seed_examples:
   - question: Arrange letters in BELOW and give another 5 letter meaningful words.
