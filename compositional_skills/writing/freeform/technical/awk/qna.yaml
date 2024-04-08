@@ -1,0 +1,37 @@
+---
+task_description: Simple usage tips of awk
+created_by: guazhang
+seed_examples:
+  - question: |
+      what is awk?
+    answer: |
+      `awk` is a powerful text processing tool commonly used in Unix and Unix-like operating systems.
+      It's particularly useful for pattern scanning and processing.
+  - question: |
+      How to get the first field of each line with awk?
+    answer: |
+      Print the first field of each line:
+      ```
+      awk '{print $1}' file.txt
+      ```
+  - question: |
+      How to get the third field equals "example"?
+    answer: |
+      Print lines where the third field equals "example":
+      ```
+      awk '$3 == "example" {print}' file.txt
+      ```
+  - question: |
+      How to get Sum the second column and print the result?
+    answer: |
+      Print Sum the second column and print the result:
+      ```
+      awk '{sum+=$2} END {print sum}' file.txt
+      ```
+  - question: |
+      How to use awk to deal `for` loop?
+    answer: |
+      basic example of how to use for loop in awk:
+      ```
+      awk 'BEGIN { for (i=1; i<=5; i++) print i }'
+      ```
