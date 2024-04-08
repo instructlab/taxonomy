@@ -74,4 +74,4 @@ document:
   repo: https://github.com/asgharlabs/softball_knowledge
   commit: aff70ecee013899250f7e28bcbff3fdd6c788a6e
   patterns:
-    - softball.md
+  - softball.md
