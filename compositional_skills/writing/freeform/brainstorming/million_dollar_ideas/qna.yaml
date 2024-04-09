@@ -1,0 +1,77 @@
+﻿task_description: >
+  The million dollar idea task provides impractical but somewhat creative ideas
+  for future inventions.
+created_by: halfline
+seed_examples:
+  - question: Tell me a million dollar idea for wallets.
+    answer: >
+      Metal wallet with switchable RFID antenna so you tap a button to change
+      which NFC card is used when tapping the closed wallet on a reader.
+  - question: Tell me a million dollar idea for refrigeration.
+    answer: |
+      Insta-chiller made from a salad spinner and a SodaStream cartridge.
+  - question: Tell me a million dollar idea for plugs that will not stay in the wall.
+    answer: >
+      Electroplating kit to thicken plug prongs so they fall out of power strips
+      less easily.
+  - question: Tell me a million dollar idea to bridge the music past with today.
+    answer: >
+      Retro-future record player that has no turntable, instead it projects a
+      lattice to scan the bumps and valleys of the disc.
+  - question: Tell me a million dollar idea to aid in clean up and waste disposal.
+    answer: >
+      Trash bags that come pre-nested in groups of 10, so changing trash is just
+      peeling out the innermost layer and tying off.
+  - question: Tell me a million dollar idea to make video conferencing easier.
+    answer: |
+      Vesa mount with a phone gripper.
+  - question: Tell me a million dollar idea to make someone give movie star vibes.
+    answer: >
+      Tooth glitter- so their mouth can literally sparkle like in those gum and
+      toothpaste commercials.
+  - question: Tell me a million dollar idea to protect phones.
+    answer: >
+      Strong iris shutter for phone case that closes automatically when you're
+      not looking at phone.
+  - question: Tell me a million dollar idea to make toast better.
+    answer: |
+      Toaster oven that steams/freshens bread before it toasts the bread.
+  - question: Tell me a million dollar idea to manage paper towels better.
+    answer: >
+      Paper towel roll holder that has a hopper with 2 or 3 other paper towel
+      rolls on standby. Bonus points if it autoreloads.
+  - question: Tell me a million dollar idea to make morning shaving less messy.
+    answer: >
+      Razor head attachment for shop vac, so you can shave without worrying
+      about stubble getting all over sink.
+  - question: Tell me a million dollar idea to help with wardrobe malfunctions at work.
+    answer: |
+      A "stapler" that "staples" a complete, fully tied off stitch of thread.
+  - question: Tell me a million dollar idea to aid with cleanup of tight spaces.
+    answer: |
+      Magic eraser in q-tip form factor.
+  - question: >-
+      Tell me a million dollar idea that helps hold pants up without using a
+      traditional belt.
+    answer: >
+      A belt that just clips to front belt loops of pants instead of going all
+      the way around. Like a clip-on tie, but instead you know... a buckle.
+  - question: Tell me a million dollar idea to make summer tanning more interesting.
+    answer: |
+      CNC sunscreen airbrush. Sunlight reveals temporary tattoos.
+  - question: Tell me a million dollar idea to avoid foggy mirrors during showers.
+    answer: >
+      Bathroom mirror that plugs into the hot water line so it always warms up
+      when the hot water is on and won't fog during showers.
+  - question: Tell me a million dollar idea to keep peanut butter smooth and consistent.
+    answer: >
+      Peanut butter tumbler that slowly spins the peanut butter jar like a rock
+      tumbler so the oil never separates.
+  - question: Tell me a million dollar idea for fridge inventory management.
+    answer: >
+      Rack and pinion system for fridge shelves so they can independently move
+      up and down easily to any height.
+  - question: Tell me a million dollar idea to make video conferencing easier.
+    answer: >
+      Portable monitor with pinhole camera built into the middle of the screen
+      so video conferences can be eye to eye.
