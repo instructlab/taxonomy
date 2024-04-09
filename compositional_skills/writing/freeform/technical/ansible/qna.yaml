@@ -2,7 +2,7 @@ task_description: |
   This skill provides examples of Ansible tasks.
 created_by: marcusburghardt
 seed_examples:
-  - answer: >
+  - answer: |-
       Certainly! Here's an example of a Playbook with an Ansible task that ensures a line
       in a file using the `ansible.builtin.lineinfile` module:
 
@@ -35,7 +35,7 @@ seed_examples:
       inventory. `gather_facts: false` is optional but will likely improve the
       performance of the Playbook.
     question: Can you provide an example of an Ansible task to ensure a line in a file?
-  - answer: >
+  - answer: |-
       Sure! Here's an example of a Playbook with an Ansible task that ensures a specific
       content in a file using the `ansible.builtin.copy` module:
 
@@ -73,7 +73,7 @@ seed_examples:
       inventory. `gather_facts: false` is optional but will likely improve the
       performance of the Playbook.
     question: Can you provide an example of an Ansible task to ensure the content of a file?
-  - answer: >
+  - answer: |-
       Yes! Here's an example of a Playbook with two Ansible tasks where a package is
       removed only if a specific file is present:
 
@@ -104,7 +104,7 @@ seed_examples:
       inventory.
     question: Could you provide an example of Ansible Playbook where a package is
       removed only if a specific file exists?
-  - answer: >
+  - answer: |-
       Yes! Here's an example of a Playbook with an Ansible task to install the `htop`
       package on all linux hosts in the inventory:
 
@@ -129,7 +129,7 @@ seed_examples:
       inventory.
     question: Please provide a simple Ansible playbook that installs the `htop` package
       on all Linux hosts in your inventory.
-  - answer: >
+  - answer: |-
       Ansible can be used to configure the firewall settings on remote hosts through
       different Ansible modules, such as `ansible.posix.firewalld`,
       `ansible.builtin.iptables` or `community.general.ufw`, depending on the firewall
@@ -159,7 +159,7 @@ seed_examples:
       Before executing this Playbook, update the targets in `hosts` according to your
       inventory.
     question: How can Ansible be used to configure the firewall settings on remote hosts?
-  - answer: >
+  - answer: |-
       Ansible can be used to configure options in an INI file using the
       `community.general.ini_file` module. Here's an example of how to configure options
       in an INI file:
