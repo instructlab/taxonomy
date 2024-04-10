@@ -1,0 +1,52 @@
+created_by: t184256
+seed_examples:
+  - answer: This continues to pose a problem for us.
+    context: This is still a problem.
+    question: Rewrite the given sentence into E-Prime.
+  - answer: Though outliers exist.
+    context: Though there are outliers.
+    question: |
+      Rewrite without using "to be", so that the sentence conforms to E-Prime.
+  - answer: The full responsibility lies on me.
+    context: I'm the one fully responsible for this.
+    question: Rephrase this sentence to avoid any forms "to be".
+  - answer: 'Until then, the situation remains unchanged.'
+    context: 'Until then, it is the way it is.'
+    question: Eliminate all forms of the verb "to be" from this sentence.
+  - answer: It has a pleasant heft to it.
+    context: It's pleasantly heavy.
+    question: |
+      Rewrite the given sentence in a way that does not use the verb "to be".
+  - answer: Roam the streets of a majestic city located just two miles away.
+    context: Roam the streets of a majestic city that is just two miles away.
+    question: Rewrite the given text into E-Prime.
+  - answer: |
+      Look at me, I have become an adult.
+    context: |
+      Look at me, I'm an adult now.
+    question: |
+      Rewrite without using "to be", so that the sentence conforms to E-Prime.
+  - answer: >
+      She makes me so angry. Her failure seems imminent, yet she does not
+      relent.
+    context: |
+      I'm so angry at her. She's about to fail, yet she's unrelenting.
+    question: Rephrase this text to avoid any forms "to be".
+  - answer: >
+      This food tastes disgusting. I can't help but wonder why they consider it
+      edible.
+    context: This food is disgusting. How is it even considered edible?
+    question: |
+      Rewrite the given text in a way that does not use any forms of "to be".
+  - answer: >
+      The parser places further restrictions on the right hand side values
+      validity. It accepts either numeric literals or constants resolvable into
+      numbers.
+    context: >
+      There are further parsing restrictions on which right hand side values are
+      considered valid. They could be either numeric literals or constants that
+      can be resolved into numbers.
+    question: Eliminate all forms of the verb "to be" from this text.
+task_description: >
+  Provides examples of rewriting text into E-Prime, a subset of English that
+  prohibits all forms of the verb "to be".
