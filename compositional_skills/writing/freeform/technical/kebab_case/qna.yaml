@@ -1,0 +1,29 @@
+created_by: Mohit-Gaur
+seed_examples:
+  - answer: the-quick-brown-fox-jumped-over-the-lazy-dog
+    question: "Convert this text to kebab-case format: the quick brown fox jumped
+    over the lazy dog"
+  - answer: the-quick-brown-fox-jumped-over-the-lazy-dog
+    question: "Convert this text to kebab-case form: The Quick Brown Fox Jumped Over
+    The Lazy Dog"
+  - answer: the-quick-brown-fox-jumped-over-the-lazy-dog
+    question: "Convert this text to kebab case format: THE QUICK BROWN FOX JUMPED
+    OVER THE LAZY DOG"
+  - answer: the-quick-brown-fox-jumped-over-the-lazy-dog
+    question: "Convert this text to kebab case form:
+    the_quick_brown_fox_jumped_over_the_lazy_dog"
+  - answer: check-out-my-website
+    question: "Transform this text to kebab case format: Check out my website"
+  - answer: ml-is-a-subset-of-artificial-intelligence
+    question: "Transform this text to kebab-case format: ML is a subset of
+    artificial intelligence"
+  - answer: is-unread
+    question: "Change this text to kebab-case format: is Unread"
+  - answer: this-is-the-title-of-the-document
+    question: "Change this text to kebab case format: This is the title of the document"
+  - answer: image-file-name
+    question: "Modify this text to kebab-case format: image file name"
+  - answer: sql-databases-use-tables-to-store-data
+    question: "Modify this text to kebab case format: SQL databases use tables to
+      store data"
+task_description: Converts a given piece of text into kebab case format
