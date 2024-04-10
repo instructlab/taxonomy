@@ -2,30 +2,30 @@ created_by: juliadenham
 domain: government_document
 seed_examples:
 - answer: |
-    JAB stands for Joint Authorization Board. 
-  question: What does JAB stand for? 
+    JAB stands for Joint Authorization Board.
+  question: What does JAB stand for?
 - answer: |
     For any vulnerability with a CVSSv3 base score assigned in the latest
     version of the NVD, the CVSSv3 base score must be used as the original risk
     rating. If no CVSSv3 score is available, a CVSSv2 base score is acceptable where
-    available. If no CVSS score is available, the native scanner base risk score can be used. 
+    available. If no CVSS score is available, the native scanner base risk score can be used.
   question: What are the CVSS scanning requirements?
 - answer: |
     Yes, If a scanner configuration change is required (above and beyond normal
-    patching and updates) the AO must be notified and approve of the change. 
+    patching and updates) the AO must be notified and approve of the change.
   question: If the configuration changes, does this effect the scanning requirements?
 - answer: |
     Container technology can be deployed on bare metal or virtual machines, on-premise systems, or within
     elastic cloud environments
   question: Can container technology run on virtual machines?
 - answer: |
-    A vulnerability is a scan detection that relates to a specific weakness, identified by a unique vulnerability ID. 
+    A vulnerability is a scan detection that relates to a specific weakness, identified by a unique vulnerability ID.
   question: What is a vulnerability?
 task_description: 'FedRAMP Vulnerability Scanning Requirements'
 document:
   repo: https://github.com/juliadenham/taxonomy_knowledge.git
   commit: b3f152b6fbdd4339972316e612b01da57f6ac5eb
-  patterns: 
+  patterns:
     - Scanning_Requirements_for_Systems_Using_Container_Technology.md
     - appendixA_glossary.md
     - background.md
