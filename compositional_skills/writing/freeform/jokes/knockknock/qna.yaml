@@ -8,9 +8,6 @@ seed_examples:
       (b) figs who?
       (j) Figs the doorbell, it's broken!
     question: Tell me a knock knock joke
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - answer: |
       (j) knock knock
       (b) Who's there?
@@ -18,9 +15,6 @@ seed_examples:
       (b) Luke who?
       (j) Luke through the peep hole and you'll see me.
     question: Tell me a knock knock joke
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - answer: |
       (j) knock knock
       (b) Who's there?
@@ -28,9 +22,6 @@ seed_examples:
       (b) Annie who?
       (j) Annie thing you can do, I can do better!
     question: Tell me a knock knock joke
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - answer: |
       (j) knock knock
       (b) Who's there?
@@ -38,9 +29,6 @@ seed_examples:
       (b) Cow says who?
       (j) No, a cow says mooooo!
     question: Tell me a knock knock joke
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - answer: |
       (j) knock knock
       (b) Who's there?
@@ -48,9 +36,6 @@ seed_examples:
       (b) Tank who?
       (j) You're welcome.
     question: Tell me a knock knock joke
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - answer: |
       (j) knock knock
       (b) Who's there?
@@ -58,9 +43,6 @@ seed_examples:
       (b) Water who?
       (j) Water you telling jokes for?  Get back to work!
     question: Tell me a knock knock joke
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - answer: |
       (j) knock knock
       (b) Who's there?
@@ -68,9 +50,6 @@ seed_examples:
       (b) Leaf who?
       (j) Leaf me alone!
     question: Tell me a knock knock joke
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - answer: |
       (j) knock knock
       (b) Who's there?
@@ -78,9 +57,6 @@ seed_examples:
       (b) Dozen who?
       (j) dozen anyone want to let me in?
     question: Tell me a knock knock joke
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - answer: |
       (j) knock knock
       (b) Who's there?
@@ -88,9 +64,6 @@ seed_examples:
       (b) Dozen who?
       (j) dozen anyone want to let me in?
     question: Tell me a knock knock joke
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - answer: |
       (j) knock knock
       (b) Who's there?
@@ -98,9 +71,6 @@ seed_examples:
       (b) musky who?
       (j) Why am i so lazy?  Must key lounge??
     question: Tell me a knock knock joke
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - answer: |
       (j) knock knock
       (b) Who's there?
@@ -108,9 +78,6 @@ seed_examples:
       (b) walleye who?
       (j) Well i can't believe you don't know who!
     question: Tell me a knock knock joke
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - answer: |
       (j) knock knock
       (b) Who's there?
@@ -118,9 +85,6 @@ seed_examples:
       (b) orange who?
       (j) Orange you glad to see me?
     question: Tell me a knock knock joke
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - answer: |
       (j) knock knock
       (b) Who's there?
@@ -128,9 +92,6 @@ seed_examples:
       (b) who who?
       (j) I didn't know you were an owl!
     question: Tell me a knock knock joke
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - answer: |
       (j) knock knock
       (b) Who's there?
@@ -138,9 +99,6 @@ seed_examples:
       (b) Ya who?
       (j) I'm excited too!
     question: Tell me a knock knock joke
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - answer: |
       (j) knock knock
       (b) Who's there?
@@ -148,9 +106,6 @@ seed_examples:
       (b) Kerch who?
       (j) Bless you!
     question: Tell me a knock knock joke
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - answer: |
       (j) knock knock
       (b) Who's there?
@@ -158,9 +113,6 @@ seed_examples:
       (b) bally who?
       (j) It is not, I'm just knocking to get in the door!
     question: Tell me a knock knock joke
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - answer: |
       (j) knock knock
       (b) Who's there?
@@ -168,6 +120,3 @@ seed_examples:
       (b) interupting cow
       (j) mooooooo!
     question: Tell me a knock knock joke
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
