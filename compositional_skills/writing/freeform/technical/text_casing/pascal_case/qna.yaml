@@ -1,0 +1,21 @@
+created_by: jjasghar
+task_description: This skill provides the ability to convert text into its PascalCase form.
+seed_examples:
+  - answer: FoodCommunityOperationPolicyPatienceWinnerTwoMembershipBloodInitiative
+    question:
+      "Convert this text into its Pascal case form: food
+        community operation policy patience winner two membership blood initiative"
+  - answer: SongSettingsRepublicCancerPersonSeriesFeedbackTennisVolumeAssociation
+    question:
+      "Convert the following text into Pascal case: song settings
+      republic cancer person series feedback tennis volume association"
+  - answer: ContextMeasurementStorageDebtTeacherTemperatureGrandmotherDirtAppleRatio
+    question:
+      "Transform these words in Pascal case: context measurement
+      storage debt teacher temperature grandmother dirt apple ratio"
+  - answer: ProblemDeskExamReaction
+    question:
+      "Convert these words to Pascal Case: problem Desk Exam reaction"
+  - answer: PoetryPaintingSaladExam
+    question:
+      "Transform these words into PascalCase: Poetry painting salad exam"
