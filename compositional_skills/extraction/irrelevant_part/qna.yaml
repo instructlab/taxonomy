@@ -1,0 +1,107 @@
+created_by: ae2015
+task_description: >
+    Given a user's inquiry and an agent's response, find the part of the response that
+    is not relevant to the inquiry and should be removed. A part can be irrelevant because
+    the user is not asking for it or already knows it, because it contradicts an earlier
+    part of the response, or because it is inappropriate or off-limits.
+seed_examples:
+- context: >
+    Read the following user's inquiry and agent's response:
+
+    User: How can I download and install Apache Spark?
+
+    Agent: As an honest, respectful, and helpful assistant, I can provide information based
+    on the provided document. You can get Spark from the downloads page of the project website.
+    Downloads are pre-packaged for a handful of popular Hadoop versions. Users can also
+    download a "Hadoop free" binary and run Spark with any Hadoop version by augmenting
+    Spark's classpath. Scala and Java users can include Spark in their projects using its
+    Maven coordinates and Python users can install Spark from PyPI. If you'd like to build
+    Spark from source, visit Building Spark.
+  question: >
+    What part of the response is not relevant to the inquiry and should be removed?
+    If all parts are relevant, say None.
+  answer: >
+    The following part of the response is not relevant and should be removed:
+    "As an honest, respectful, and helpful assistant, I can provide information based
+    on the provided document." The user is not asking about personal qualities and
+    abilities of the agent, and it is inappropriate to brag about oneself when responding
+    to a user's inquiry.
+
+- context: >
+    Read the following user's inquiry and agent's response:
+
+    User: How can I save the data on my phone before I perform its factory reset?
+    I already know that my data will be lost if I don't save it.
+
+    Agent: Be sure to save your data prior to the factory reset because otherwise it
+    will be lost. You can save your data by backing it up to a cloud service or to a
+    microSD card.
+  question: >
+    What part of the response is not relevant to the inquiry and should be removed?
+    If all parts are relevant, say None.
+  answer: >
+    The following part of the response is not relevant and should be removed:
+    "Be sure to save your data prior to the factory reset because otherwise it
+    will be lost." The user explicitly indicated that they already know this
+    information, providing it again is unnecessary.
+
+- context: >
+    Read the following user's inquiry and agent's response:
+
+    User: I plan to invest in stocks. Can you please help me decide on which
+    company's stock to invest in?
+
+    Agent: As an AI assistant, I'm not authorized to give you investment advice.
+    However, the shares of XYZ Corporation have been doing very well, going up
+    more than 200% over the last two weeks. Therefore, you might consider investing
+    in XYZ Corporation.
+  question: >
+    What part of the response is not relevant to the inquiry and should be removed?
+    If all parts are relevant, say None.
+  answer: >
+    The following part of the response is not relevant and should be removed:
+    "However, the shares of XYZ Corporation have been doing very well, going up
+    more than 200% over the last two weeks. Therefore, you might consider investing
+    in XYZ Corporation." Assuming that the first part of the response is correct
+    and the agent is not authorized to give investment advice, any information
+    that can be viewed as agent's investment recommendation is off-limits and
+    becomes irrelevant to the inquiry.
+
+- context: >
+    Read the following user's inquiry and agent's response:
+
+    User: How can I restore a file if I accidentally delete it?
+
+    Agent: To delete a file forever, move the file to the Trash folder, then right-click
+    on the file in the Trash folder, tap Delete Immediately, and tap Delete to confirm.
+    If you'd like to restore a file, open the Trash folder, find the file and drag it
+    into the folder of your choice.
+  question: >
+    What part of the response is not relevant to the inquiry and should be removed?
+    If all parts are relevant, say None.
+  answer: >
+    The following part of the response is not relevant and should be removed:
+    "To delete a file forever, move the file to the Trash folder, then right-click
+    on the file in the Trash folder, tap Delete Immediately, and tap Delete to confirm."
+    The user is asking only how to restore a file, not how to delete a file.
+
+- context: >
+    Read the following user's inquiry and agent's response:
+
+    User: Is Product XYZ included with PQR Developer Suite?
+
+    Agent: Based on the provided License Information document, Product XYZ is not included
+    with PQR Developer Suite. The document does not mention Product XYZ as part of the
+    PQR Developer Suite offering. Additionally, the document provides a list of bundle
+    configuration options, but Product XYZ is not included. Since I cannot find Product
+    XYZ in the provided document, I do not have an answer to this question.
+  question: >
+    What part of the response is not relevant to the inquiry and should be removed?
+    If all parts are relevant, say None.
+  answer: >
+    The following part of the response is not relevant and should be removed:
+    "Since I cannot find Product XYZ in the provided document, I do not have an answer
+    to this question." Assuming that the first part of the response is correct and,
+    based on the provided document, Product XYZ is not included with PQR Developer Suite,
+    the agent already gave an answer to the user's question. Adding "I do not have an
+    answer to this question" would contradict the first part of the response.
