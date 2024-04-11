@@ -24,6 +24,14 @@ import pyarrow.parquet as pq
 pq.read_pandas(mistrial-7b.parquet).to_pandas()
 ```
 
+To download the whole Synthetic Data all at once, run the following commands and all the Synthetic Data will be stored under the `full_synthetic_data` directory.
+
+```bash
+git clone https://github.com/instruct-lab/taxonomy
+cd taxonomy
+./synthetic_data/download_data.sh
+```
+
 ### Full synthetic data links
 - [https://instruct-lab.s3.us-east.cloud-object-storage.appdomain.cloud/compositional_skills/general/tables/empty/mistrial-7b.parquet](https://instruct-lab.s3.us-east.cloud-object-storage.appdomain.cloud/compositional_skills/general/tables/empty/mistrial-7b.parquet)
 - [https://instruct-lab.s3.us-east.cloud-object-storage.appdomain.cloud/compositional_skills/general/tables/editing/add_remove/mistrial-7b.parquet](https://instruct-lab.s3.us-east.cloud-object-storage.appdomain.cloud/compositional_skills/general/tables/editing/add_remove/mistrial-7b.parquet)

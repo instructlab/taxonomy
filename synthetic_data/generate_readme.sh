@@ -27,6 +27,14 @@ python3
 import pyarrow.parquet as pq
 pq.read_pandas(mistrial-7b.parquet).to_pandas()
 ```
+
+To download the whole Synthetic Data all at once, run the following commands and all the Synthetic Data will be stored under the `full_synthetic_data` directory.
+
+```bash
+git clone https://github.com/instruct-lab/taxonomy
+cd taxonomy
+./synthetic_data/download_data.sh
+```
 '
 
 echo "### Full synthetic data links"
