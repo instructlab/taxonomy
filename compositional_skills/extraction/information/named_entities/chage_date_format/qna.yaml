@@ -1,6 +1,6 @@
 ---
 task_description: This skill will identify the time from the given sentence and
-  convert 12-hour format to 24hour format.
+  convert 12-hour format to 24hour format
 created_by: hitshiroya
 seed_examples:
 - question: |
