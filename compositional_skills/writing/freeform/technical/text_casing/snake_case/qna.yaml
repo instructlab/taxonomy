@@ -13,3 +13,7 @@ seed_examples:
     question:
       "Transform these words in Snake case: inexhaustibleness intermediateness
       lexicographically copperas imperturbability electrophysiological balking aerothermodynamics"
+  - answer: this_is_a_long_text_string_that_needs_to_be_converted_into_snake_case
+    question: "Convert this text into its Snake case form: This Is A Long Text String That Needs To Be Converted Into Snake Case"
+  - answer: snake_case_transformation_of_a_long_sentence_with_multiple_words
+    question: "I have this text 'Snake Case Transformation Of A Long Sentence With Multiple Words'. Convert it to snake case"
