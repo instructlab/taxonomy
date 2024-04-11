@@ -1,7 +1,5 @@
 # Instructlab (LAB) Knowledge 
 
-⚠️ Note: We are not currently accepting knowledge contributions, but will be in the near future
-
 Knowledge consists of data and facts and is backed by documents. When you create knowledge for a model, you're giving it additional data to more accurately answer questions. The knowledge document formats currently supported are markdown (.md) and text (.txt).
 
 Each qna.yaml file is required to contain a minimum of five question-answer pairs. The qna.yaml format should include the following fields:
