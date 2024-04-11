@@ -557,6 +557,8 @@ Here is an example `Signed-off-by` line, which indicates that the submitter acce
 Signed-off-by: John Doe <john.doe@example.com>
 ```
 
+The Signed-off-by must be at the end of the commit message separated by a blank line from the body of the commit message. The name and email address must match those for your GitHub account. The DCO checks the name/email matches the author's.
+
 **TO BE CONTINUED**
 
 ### How should I contribute?
