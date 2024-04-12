@@ -507,7 +507,7 @@ The following image shows the compositional skills directory and its contents. S
 
 ![Screenshot from 2024-02-28 12-44-05](https://github.com/instruct-lab/taxonomy/assets/799683/2038e035-5400-4848-91fb-f575db35b565)
 
-The other top-level directory you can contribute to is the knowledge directory, which is used for knowlege contributions. You can read more about the difference between skills and knowledge in the [community documentation](https://github.com/instruct-lab/community/blob/main/docs/README.md).
+The other top-level directory you can contribute to is the knowledge directory, which is used for knowledge contributions. You can read more about the difference between skills and knowledge in the [community documentation](https://github.com/instruct-lab/community/blob/main/docs/README.md).
 
 Based on the directories that exist in the tree, make a best guess at where in the tree structure to add the skill that you want to contribute. If you get to a point where you've gone deep enough into the tree and you can't find any directories that match, feel free to create a new directory (and subdirectories, if needed) to best represent your skill.
 
