@@ -1,0 +1,30 @@
+created_by: juliadenham
+domain: pop_culture
+seed_examples:
+  - answer: |
+      The 2024 oscars were held on March 10, 2024.
+    question: When did the 2024 oscars happen?
+  - answer: |
+      Oppenheimer had 13 oscar nominations.
+    question: What film had the most oscar nominations in 2024?
+  - answer: |
+      Octavia Spencer.
+    question: Who presented the awards for Best Original Screenplay and Best Adapted Screenplay?
+  - answer: |
+      Jimmy Kimmel hosted the 96th Academy Awards ceremony.
+    question: Who hosted the 2024 oscars?
+  - answer: |
+      The nominees for director at the 2024 oscars was Christopher Nolan for Oppenheimer,
+      Justine Triet for Anatomy of a Fall, Martin Scorsese for Killers of the Flower Moon,
+      Yorgos Lanthimos for Poor Things, and Jonathan Glazer for The Zone of Interest.
+      Christopher Nolan won best director for Oppenheimer.
+    question: At the 2024 oscars, who were the nominees for best director and who won?
+  - answer: |
+      Yes Billie Eilish performed "What Was I Made For?" from Barbie.
+    question: Did Billie Eilish perform at the 2024 oscars?
+task_description: 'Teach the model the results of the 2024 oscars'
+document:
+  repo: https://github.com/juliadenham/oscars2024_knowledge
+  commit: a22148c
+  patterns:
+    - oscars2024_results.md
