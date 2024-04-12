@@ -31,9 +31,12 @@ Learn about the concepts of "skills" and "knowledge" in our [InstructLab Communi
 
 ## Getting Started with Skill Contributions
 
-Skills require a much smaller volume of content than knowledge contributions. An entire skill
-contribution to the taxonomy tree can be just a few lines of YAML in the
-`qna.yaml` file ("qna" is short for "questions and answers"). Each `qna.yaml` file requires a minimum of five question and answer pairs.
+Skills require a much smaller volume of content than knowledge contributions. An entire skill contribution to the taxonomy tree can be just a few lines of YAML in the `qna.yaml` file ("qna" is short for "questions and answers") and an `attribution.txt` file for citing sources. 
+
+Your skills contribution pull requests must include the following:
+- A `qna.yaml` that contains a set of key/value entries with the following keys
+  - Each `qna.yaml` file requires a minimum of five question and answer pairs.
+- A `attribution.txt` that includes the sources for the information used in the `qna.yaml`
 
 > [!TIP]
 > The skill taxonomy structure is used in several ways:
@@ -46,36 +49,25 @@ contribution to the taxonomy tree can be just a few lines of YAML in the
 > taxonomy files. You can also verify that a person's contribution is in the most logical location in the
 > taxonomy structure before signing off.
 
-Taxonomy skill files must be a valid [YAML](https://yaml.org/) file named
-`qna.yaml`. Each `qna.yaml` files contains a set of key/value entries with the following keys:
+Taxonomy skill files must be a valid [YAML](https://yaml.org/) file named `qna.yaml`. Each `qna.yaml` files contains a set of key/value entries with the following keys:
 
 - `task_description`: A description of the skill. This key is required.
-
 - `created_by`: The GitHub username of the contributor. This key is required.
-
 - `seed_examples`: A collection of key/value entries. New
   submissions should have at least five entries, although
   older files may have fewer. This key is required.
-
-  - `question`: A question for the model. This key is required.
-
-  - `answer`: The desired response from the model. This key is required.
-
   - `context`: Grounded skills require the user to provide context containing information that the model is expected to take into account during processing. This is different from knowledge, where the model is expected to gain facts and background knowledge from the tuning process. The context key is optional for freeform skills.
-
-  - `attribution`: A collection of key/value entries that contain the following keys. All sources of information must be specified. This key is required.
-
-    - `source`: The source of the provided information. If information in the context, question, or answer comes from a third party, such as Wikipedia, then the value must specify a URL to the source material. If the contributor self-authored all of the information, then the value must be `self-authored`. This key is required.
-
-    - `license`: The value must specify the [SPDX License Identifier](https://spdx.org/licenses/) of the source information. See [CONTRIBUTING.MD](./CONTRIBUTING.md#legal) for guidance on acceptable licenses for source information. If the information is self-authored, then the value must be `Apache-2.0`. This key is required.
+  - `question`: A question for the model. This key is required.
+  - `answer`: The desired response from the model. This key is required.
 
 Other keys at any level are currently ignored.
 
 ### Skills: YAML examples
 
 To make the `qna.yaml` files easier and faster for humans to read, it is recommended to specify `task_description` first, followed by `created_by`, and finally `seed_examples`.
-In `seed_examples`, it is recommended to specify `context` first (if applicable), followed by `question`, `answer`, and finally `attribution`. 
+In `seed_examples`, it is recommended to specify `context` first (if applicable), followed by `question` and `answer`.
 
+*Example `qna.yaml`*
 ```yaml
 task_description: <string>
 created_by: <string>
@@ -83,18 +75,21 @@ seed_examples:
   - question: <string>
     answer: |
       <multi-line string>
-    attribution:
-      - source: <string>
-        license: <SPDX license identifier>
   - context: |
       <multi-line string>
     question: <string>
     answer: |
       <multi-line string>
-    attribution:
-      - source: <string>
-        license: <SPDX license identifier>
   ...  
+```
+
+Then, you create an `attribution.txt` file that includes the sources of your information.
+
+*Example `attribution.txt`*
+```
+1. [Link to source]
+2. [Link to source 1], [Link to source 2] 
+3. Self-authored
 ```
 
 If you have not written YAML before, don't be intimidated - it's just text.
@@ -111,52 +106,39 @@ If you have not written YAML before, don't be intimidated - it's just text.
   This character escapes all of the special characters in the value for the key.
   You might also want to use the '|' character for multi-line strings.
 
-It is recommended that you **lint**, or verify your YAML using a tool. 
-
-One linter option is [yamllint.com](https://yamllint.com). You can copy/paste your YAML into the box and click **Go** to have it
-analyze your YAML and make recommendations.
-
-Online tools like [prettified](https://onlineyamltools.com/prettify-yaml) and
-[yaml-validator](https://jsonformatter.org/yaml-validator) can automatically
-reformat your YAML to adhere to our `yamllint` PR checks, such as breaking lines
-longer than 120 characters.
-
+It is recommended that you **lint**, or verify your YAML using a tool. One linter option is [yamllint.com](https://yamllint.com). You can copy/paste your YAML into the box and click **Go** to have it analyze your YAML and make recommendations. Online tools like [prettified](https://onlineyamltools.com/prettify-yaml) and [yaml-validator](https://jsonformatter.org/yaml-validator) can automatically reformat your YAML to adhere to our `yamllint` PR checks, such as breaking lines longer than 120 characters.
 
 #### Freeform compositional skill: YAML example
 
-This example snippet assumes the GitHub username `mairin` and shows
-some of the question/answer pairs present in the actual
-file:
-
 ```yaml
-task_description: |
-  The pun task enables the telling of funny pun-based jokes.
-created_by: mairin # Use your GitHub username; only one creator supported
+task_description: 'Write Haikus.'
+created_by: juliadenham
 seed_examples:
-  - question: Tell me a pun about birds.
-    answer: |  # The | is needed to escape characters like ` or '
-      Why do birds eat wood?
-      
-      Because they're peckish!
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
-  - question: Tell me a pun about x-rays.
+ -  question: Write me a 5-7-5 Haiku.
     answer: |
-      What do dentists call their x-rays?
-
-      Tooth pics!
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
-  - question: Tell me a pun about gas.
-    answer: |
-      Why did the car have a belly ache?
-
-      Because it had too much gas!
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
+     The wind of Fuji
+     I've brought on my fan
+     a gift from Edo.
+ - question: Write me a 5-7-5 Haiku.
+   answer: |
+     A blanket of fog
+     Engulfs the world around me
+     A dreary springtime.
+ - question: Write me a 5-7-5 Haiku.
+   answer: |
+     Bright, the near-full Moon
+     Craters look like gray flowers
+     Listen, Crickets call.
+ - question: Write me a 5-7-5 Haiku.
+   answer: |
+     The west wind whispered,
+     And touched the eyelids of spring,
+     Her eyes, Primroses.
+ - question: Write me a 5-7-5 Haiku.
+   answer: |
+     Introverts at home
+     Are plagued by hyper children
+     When will school start next?
 ```
 
 Seriously, that's it.
@@ -172,14 +154,16 @@ in terms of a taxonomy contribution:
 
 └── writing
     └── freeform
-    |   └── jokes/puns <=== here it is :)
+    |   └── haikus <=== here it is :)
     |   |   └── qna.yaml
+    |   |       attribution.txt 
     │   ├── debate
     │   │   └── qna.yaml
+    |   |       attribution.txt   
     │   ├── legal
     │   │   ├── agreement
-    │   │   │   └── qna.yaml
-
+    │   │   |    └── qna.yaml
+    |   |   |        attribution.txt
 [...]
 ```
 
@@ -205,9 +189,6 @@ seed_examples:
       Which breed has the most energy?
     answer: |
       The breed with the most energy is the Labrador.
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - context: |
       | **Name** | **Date** | **Color** | **Letter** | **Number** |
       |----------|----------|-----------|------------|------------|
@@ -220,9 +201,6 @@ seed_examples:
       What is Gráinne's letter and what is her color?
     answer: |
       Gráinne's letter is B and her color is red.
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - context: |
       | Banana | Apple      | Blueberry | Strawberry |
       |--------|------------|-----------|------------|
@@ -233,9 +211,6 @@ seed_examples:
       Which fruit is blue, small, and has no peel?
     answer: |
       The blueberry is blue, small, and has no peel.
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
 ```
 
 #### Grounded compositional skill: Directory tree example
@@ -248,131 +223,123 @@ seed_examples:
     |   └── qualitative
     |   |    ├── sentiment
     |   |    |    └── qna.yaml
+    |   |    |        attribution.txt 
     |   |    └── tone_and_style
     |   |         └── qna.yaml
+    |   |             attribution.txt
     │   ├── quantitative
     │   │   ├── table_analysis <=== here it is :)
     │   |   |    └── qna.yaml
+    │   │   │        attribution.txt
     │   │   ├── word_frequency
     │   │   │   └── qna.yaml
-
+    │   │   │        attribution.txt
 [...]
 ```
-
 ## Getting Started with Knowledge Contributions
-
-> [!NOTE]
-> We are not currently accepting knowledge contributions, but we will open this up in the future!
 
 While skills are foundational or performative, knowledge is based more on answering questions that involve facts,
 data, or references.
 
-Knowledge in the taxonomy tree also consists of a few more elements than skills.
-Each knowledge node in the tree has a `qna.yaml` similar to the format of the
-`qna.yaml` for skills, but it has an extra folder for knowledge documents called
-`knowledge_documents`. The knowledge document formats currently supported are
-markdown (.md).
+Knowledge in the taxonomy tree consists of a few more elements than skills:
 
-Each `qna.yaml` file requires a minimum of five question-answer
-pairs. The `qna.yaml` format must include the following fields:
+- Each knowledge node in the tree has a `qna.yaml`, similar to the format of the `qna.yaml` for skills. 
+- ⭐ Knowledge submissions require you to create a repository, can be with GitHub, that contains the markdown files of your knowledge contributions. These contributions in your repository must use the markdown (.md) format.
+- The `qna.yaml` includes parameters that contain information from your repository. 
 
-- `created_by` (your GitHub username)
-- `domain` (category the knowledge falls under)
-- `seed_examples` (five or more examples sourced from the provided knowledge documents)
-- `created_by` (your GitHub username)
-- `task_description` (an optional description of the knowledge).
-- `attribution` `source` `license` (cite your sources)
+> [!TIP] 
+> Guidelines for Knowledge contributions
+> - Submit the most up-to-date version of the document
+> - All submissions must be text, images will be ignored
+> - Tables can be added 
+
+Each `qna.yaml` file requires a minimum of five question-answer pairs. The `qna.yaml` format must include the following fields:
+ˇ
+- `task_description`: An optional description of the knowledge.
+- `created_by`: Your GitHub username.
+- `domain`: Category of the knowledge. 
+- `seed_examples`: Five or more examples sourced from the provided knowledge documents.
+  - `question`: A question for the model. This key is required.
+  - `answer`: The desired response from the model. This key is required.
+- `document`: The source of your knowledge contribution.
+  - `repo`: The URL to your repository that holds your knowledge markdown files.
+  - `commit`: The SHA of the commit in your repository with your knowledge markdown files.
+  - `patterns`: A list of glob patterns specifying the markdown files in your repository. Any glob pattern that starts with `*`, such as `*.md`, must be quoted due to YAML rules. For example, `"*.md"`.
 
 ### Knowledge: YAML examples
-
 ```yaml
-task_description: |
-  Knowledge about Taylor Swift's music.
-created_by: mairin
-domain: pop culture 
+task_description: 'Teach the model the results of the 2024 oscars'
+created_by: juliadenham
+domain: pop_culture
 seed_examples:
-  - question: |
-      Is Taytay coming to Boston in 2024?
-    answer: |
-      Not that is known yet. Taylor Swift last performed in the Boston area at 
-      the Gilette Stadium in Foxboro, MA for 3 nights from Friday May 19, 2023 
-      to Sunday May 21, 2023. In 2024, she is making international tour stops 
-      for her Eras tour outside of the United States.
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
-  - question: |
-      Which album was released more recently, Reputation or Midnights?
-    answer: |
-      The Taylor Swift Album Reputation was released on November 10, 2017. 
-      Midnights was released October 21, 2022. Midnights was released more 
-      recently, but there are rumors that there will be a re-release of 
-      Reputation called Reputation (Taylor's version) in the later half of 2024 
-      which would make that the most recently-released album of the set at that 
-      time.
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
-  - question: |
-      Which album has the song "You Need to Calm Down?"
-    answer: |
-      The song "You Need to Calm Down" appears on Taylor Swift's 2019 album 
-      Lover as track 14.
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
+ - question: When did the 2024 oscars happen?
+   answer: |
+     The 2024 oscars were held on March 10, 2024.
+ - question: What film had the most oscar nominations in 2024?
+   answer: |
+     Oppenheimer had 13 oscar nominations.
+ - question: Who presented the awards for Best Original Screenplay and Best Adapted Screenplay?
+   answer: |
+     Octavia Spencer.
+ - question: Who hosted the 2024 oscars?
+   answer: |
+     Jimmy Kimmel hosted the 96th Academy Awards ceremony.
+ - question: At the 2024 Oscars, who were the nominees for best director and who won?
+   answer: |
+     The nominees for director at the 2024 oscars was Christopher Nolan for Oppenheimer,
+     Justine Triet for Anatomy of a Fall, Martin Scorsese for Killers of the Flower Moon,
+     Yorgos Lanthimos for Poor Things, and Jonathan Glazer for The Zone of Interest.
+     Christopher Nolan won best director for Oppenheimer.
+ - question: Did Billie Eilish perform at the 2024 oscars?
+   answer: |
+     Yes Billie Eilish performed "What Was I Made For?" from Barbie.
+document:
+ repo: https://github.com/juliadenham/oscars2024_knowledge.git
+ commit: a22148c
+ patterns:
+   - oscars2024_results.md
 ```
+This knowledge example references one markdown file: `oscars2024_results.md`. You can also add multiple files for knowledge contributions. 
 
-This knowledge references two markdown files:
-`ts-world-tour-2024-schedule.md` and `ts-discography-2024.md`. You must submit these
-files in their entirety along with the knowledge's
-`qna.yaml` file in a `knowledge_documents` folder. Using multiple files means that knowledge
-consists of a much higher volume of content than a skill.
-
-Due to the higher volume, **it will naturally take longer to receive acceptance for
-a knowledge contribution pull request than for a skill pull request**. Smaller
-pull requests are simpler and require less time and effort to review.
+> [!NOTE]
+> Due to the higher volume, **it will naturally take longer to receive acceptance for
+> a knowledge contribution pull request than for a skill pull request**. Smaller
+> pull requests are simpler and require less time and effort to review.
 
 What might these markdown files look like? They can be freeform. Here's what a
-snippet of `ts-discography-2024.md` might look like:
+snippet of `oscars2024_results.md` might look like in your git repository.
 
 #### Knowledge: Freeform example
 
 ```markdown
-# Albums
+# 96th Academy awards
 
-## Studio Albums
+The **96th Academy Awards** ceremony, which was presented by the
+[Academy of Motion Picture Arts and
+Sciences](Academy_of_Motion_Picture_Arts_and_Sciences "wikilink")
+(AMPAS), took place on March 10, 2024, at the [Dolby
+Theatre](Dolby_Theatre "wikilink") in
+[Hollywood](Hollywood,_Los_Angeles "wikilink"), Los Angeles.[1] During
+the gala, the AMPAS presented [Academy
+Awards](Academy_Awards "wikilink") (commonly referred to as Oscars) in
+23 categories honoring [films released in
+2023](2023_in_film "wikilink"). Comedian [Jimmy
+Kimmel](Jimmy_Kimmel "wikilink") hosted the show for the fourth time.
 
-### Taylor Swift
-- Released: October 24, 2006
-- Label: Big Machine
-- Track Listing:
-  1. "Tim McGraw"
-  2. "Picture to Burn"
-  3. "Teardrops on My Guitar"
-  4. "A Place in This World"
-  5. "Cold as You"
-  6. "The Outside"
-  7. "Tied Together with a Smile"
-  8. "Stay Beautiful"
-  9. "Should've Said No"
-  10. "Mary's Song (Oh My My My)"
-  11. "Our Song"
-
-### Fearless
-- Released: November 11, 2008
-- Label: Big Machine
-- Track Listing:
-  1. "Fearless"
-  2. "Fifteen"
-  3. "Love Story"
-  4. "Hey Stephen"
+The nominations were announced on January 23, 2024.
+*[Oppenheimer](Oppenheimer_(film) "wikilink")* led with 13 nominations,
+followed by *[Poor Things](Poor_Things_(film) "wikilink")* and *[Killers
+of the Flower Moon](Killers_of_the_Flower_Moon_(film) "wikilink")* with
+11 and 10, respectively.[2][3][4] *Oppenheimer* won a leading seven
+awards, including [Best
+Picture](Academy_Award_for_Best_Picture "wikilink") and [Best
+Director](Academy_Award_for_Best_Director "wikilink")
 [..]
 ```
 
-In contrast to the layout of skills in the taxonomy, here's what the previously referenced knowledge might look like in the tree:
+In the taxonomy repository, here's what the previously referenced knowledge might look like in the tree:
 
-#### Knowledge: directory tree example
+#### Knowledge: directory tree example 
 
 ```ascii
 [...]
@@ -380,23 +347,18 @@ In contrast to the layout of skills in the taxonomy, here's what the previously 
 └── knowledge
     └── textbooks
         ├── culture
-        │ └── music
-        │     └── pop
-        │         ├── taylor swift <=== here it is :)
-        │         │ ├── knowledge_documents
-        │         │ │ ├── ts-discography-2024.md
-        │         │ │ └── ts-world-tour-2024-schedule.md
-        │         │ └── qna.yaml
-        │         └── the rolling stones
-        │             ├── knowledge_documents
-        │             │ ├── rs-discography-2024.md
-        │             │ ├── rs-guitar-tabs.md
-        │             │ ├── rs-lyrics-catalog-2024.md
-        │             │ └── rs-tour-history.md
+        │ └── movies
+        │     └── awards
+        │         ├── oscars  <=== here it is :)
+        │         │   └── qna.yaml
+        |         |       attribution.txt
+        │         └── golden_globes_movies
         │             └── qna.yaml
-
+        |                 attribution.txt
 [...]
 ```
+
+You can organize the knowledge markdown files in your repository however you want. You just need to ensure the YAML is pointing to the correct file. 
 
 ## Taxonomy tree Layout
 
@@ -416,37 +378,34 @@ Below is an illustrative directory structure to show this layout:
     │   ├── brainstorming
     │   │   ├── idea_generation
     │   │   │   └── qna.yaml
+    │   │   │       attribution.txt
     │   │   ├── refute_claim
     │   │   │   └── qna.yaml
-    │   ├── poetry
-    │   │   ├── ballad
-    │   │   │   └── qna.yaml
-    │   │   ├── epic_poetry
-    │   │   │   └── qna.yaml
+    │   │   │       attribution.txt
     │   ├── prose
     │   │   ├── articles
     │   │   │   └── qna.yaml
+    │   │   │       attribution.txt
     │   │   ├── emails
     │   │   │   ├── formal
     │   │   │   │   └── qna.yaml
+    │   │   │   │       attribution.txt
     │   │   │   └── informal
     │   │   │       └── qna.yaml
+    │   │   │           attribution.txt
     └── grounded
         ├── editing
         │   ├── grammar
         │   │   └── qna.yaml
+        │   │       attribution.txt
         │   └── spelling
         │       └── qna.yaml
-        ├── meeting_insights
-        │   ├── action_items
-        │   │   └── qna.yaml
-        │   ├── corporate_email
-        │   │   └── qna.yaml
+        │           attribution.txt
         └── summarization
             └── wiki_insights
-                ├── concise
-                │   └── qna.yaml
-                ├── detailed
+                └── concise
+                    └── qna.yaml
+                        attribution.txt
 ```
 
 For an extensive example of this layout see, [taxonomy_tree_layout](https://github.com/instruct-lab/taxonomy/tree/main/docs/taxonomy_tree_layout.md) in the documentation folder.
