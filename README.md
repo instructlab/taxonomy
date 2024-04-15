@@ -51,14 +51,14 @@ Your skills contribution pull requests must include the following:
 
 Taxonomy skill files must be a valid [YAML](https://yaml.org/) file named `qna.yaml`. Each `qna.yaml` files contains a set of key/value entries with the following keys:
 
-- `task_description`: A description of the skill. This key is required.
-- `created_by`: The GitHub username of the contributor. This key is required.
+- `task_description`: A description of the skill. **Required**
+- `created_by`: The GitHub username of the contributor. **Required**
 - `seed_examples`: A collection of key/value entries. New
   submissions should have at least five entries, although
-  older files may have fewer. This key is required.
+  older files may have fewer. **Required**
   - `context`: Grounded skills require the user to provide context containing information that the model is expected to take into account during processing. This is different from knowledge, where the model is expected to gain facts and background knowledge from the tuning process. The context key is optional for freeform skills.
-  - `question`: A question for the model. This key is required.
-  - `answer`: The desired response from the model. This key is required.
+  - `question`: A question for the model. **Required**
+  - `answer`: The desired response from the model. **Required**
 
 Other keys at any level are currently ignored.
 
