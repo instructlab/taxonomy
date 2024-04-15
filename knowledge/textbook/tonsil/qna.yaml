@@ -23,6 +23,6 @@ seed_examples:
 task_description: Teaching about human anatomy, specifically tonsils
 document:
   repo: https://github.com/luke-inglis/il-anatomy-knowledge
-  commit: 428b7cf
+  commit: cc7c6ca
   patterns:
     - anatomy1.md
