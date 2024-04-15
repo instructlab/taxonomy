@@ -20,7 +20,7 @@ seed_examples:
     question: In the back of my mouth i have a growth that is white and the size of a peppercorn, what is it?
   - answer: The adenoid grows until the age of 5, starts to shrink at the age of 7 and becomes small in adulthood.
     question: How long does the adenoid grow?
-task description: general tonsil knowledge
+task_description: Teaching about human anatomy, specifically tonsils
 document:
   repo: https://github.com/luke-inglis/il-anatomy-knowledge
   commit: 428b7cf
