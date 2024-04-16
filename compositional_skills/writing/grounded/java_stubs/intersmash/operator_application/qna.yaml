@@ -1,0 +1,107 @@
+---
+created_by: The Intersmash team
+seed_examples:
+  - answer: >
+      package org.jboss.intersmash.application.openshift;
+
+      import org.wildfly.v1alpha1.WildFlyServer;
+
+      /**
+       * End user Application interface which presents a WildFly operator application on OpenShift Container Platform.
+       */
+      public interface WildflyOperatorApplication extends OperatorApplication {
+        WildFlyServer getWildflyServer();
+      }
+    context: package_name=org.wildfly,crds=[[WildFlyServer,v1alpha1]]
+    question: >
+      Given a target package name and a set of CRD definitions, generate the source code for a Java interface
+      that defines the contract of a WildFly Operator application service, which can be deployed on OpenShift by
+      leveraging the Intersmash APIs.
+  - answer: >
+      package org.jboss.intersmash.application.openshift;
+
+      import java.util.List;
+
+      import io.amq.broker.v1beta1.ActiveMQArtemis;
+      import io.amq.broker.v1beta1.ActiveMQArtemisAddress;
+
+      /**
+       * End user Application interface which presents ActiveMQ operator application on OpenShift Container Platform.
+       */
+      public interface ActiveMQOperatorApplication extends OperatorApplication {
+
+      	ActiveMQArtemis getActiveMQArtemis();
+
+      	List<ActiveMQArtemisAddress> getActiveMQArtemisAddresses();
+      }
+    context: package_name=io.amq.broker,crds=[[ActiveMQArtemis,v1beta1],[ActiveMQArtemisAddress,v1beta1]]
+    question: >
+      Given a target package name and a set of CRD definitions, generate the source code for a Java interface
+      that defines the contract of an ActiveMQ Artemis Operator application service, which can be deployed on
+      OpenShift by leveraging the Intersmash APIs.
+  - answer: >
+      package org.jboss.intersmash.application.openshift;
+
+      import java.util.List;
+
+      import org.infinispan.v1.Infinispan;
+      import org.infinispan.v2alpha1.Cache;
+
+      /**
+       * End user Application interface which presents Infinispan operator application on OpenShift Container Platform.
+       */
+      public interface InfinispanOperatorApplication extends OperatorApplication {
+
+      	Infinispan getInfinispan();
+
+      	List<Cache> getCaches();
+      }
+    context: package_name=org.infinispan,crds=[[Infinispan,v1],[Cache,v2alpha1]]
+    question: >
+      Given a target package name and a set of CRD definitions, generate the source code for a Java interface
+      that defines the contract of an Infinispan Operator application service, which can be deployed on
+      OpenShift by leveraging the Intersmash APIs.
+  - answer: >
+      package org.jboss.intersmash.application.openshift;
+
+      import java.util.Collections;
+      import java.util.List;
+
+      import org.keycloak.k8s.v2alpha1.Keycloak;
+      import org.keycloak.k8s.v2alpha1.KeycloakRealmImport;
+
+      /**
+       * End user Application interface which presents Keycloak operator application on OpenShift Container Platform.
+       */
+      public interface KeycloakOperatorApplication extends OperatorApplication {
+
+      	Keycloak getKeycloak();
+
+      	default List<KeycloakRealmImport> getKeycloakRealmImports() {
+      		return Collections.emptyList();
+      	}
+      }
+    context: package_name=org.keycloak.k8s,crds=[[Keycloak,v2alpha1],[KeycloakRealmImport,v2alpha1]]
+    question: >
+      Given a target package name and a set of CRD definitions, generate the source code for a Java interface
+      that defines the contract of a Keycloak Operator application service, which can be deployed on
+      OpenShift by leveraging the Intersmash APIs.
+  - answer: >
+      package org.jboss.intersmash.application.openshift;
+
+      import io.hyperfoil.v1alpha2.Hyperfoil;
+      /**
+       * End user Application interface which presents Hyperfoil operator application on OpenShift Container Platform.
+       */
+      public interface HyperfoilOperatorApplication extends OperatorApplication {
+      	Hyperfoil getHyperfoil();
+      }
+    context: package_name=io.hyperfoil,crds=[[Hyperfoil,v1alpha2]]
+    question: >
+      Given a target package name and a set of CRD definitions, generate the source code for a Java interface
+      that defines the contract of a Hyperfoil Operator application service, which can be deployed on
+      OpenShift by leveraging the Intersmash APIs.
+task_description: To teach a language model how to generate the source code for Java interfaces describing any
+  given Operator-based application service that can be deployed on OpenShift, by leveraging the Intersmash APIs.
+  The context definition includes the generated package and information about any supported CRDs, namely the kind,
+  the version name and the URL for the definition.
