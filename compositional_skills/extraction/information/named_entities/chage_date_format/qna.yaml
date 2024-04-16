@@ -6,27 +6,12 @@ seed_examples:
   - question: "In the following passage, please convert instances of 12 hour time to 24 hour time: I will be leaving from Red Hat Tower-6 at 6:30 PM to head to my
       hotel Cocoon."
     answer: I will be leaving from Red Hat Tower-6 at 18:30 to head to my hotel Cocoon.
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - question: "In the following passage, please convert instances of 12 hour time to 24 hour time: I reached the airport at 3:30 PM and booked a cab at 3:40 PM to
       reach the hotel."
     answer: I reached the airport at 15:30 and booked a cab at 15:40 to reach the hotel.
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - question: "In the following passage, please convert instances of 12 hour time to 24 hour time: I have to reach the airport at 9:50 AM to catch my flight on time."
     answer: I have to reach the airport at 9:50 AM to catch my flight on time.
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - question: "In the following passage, please convert instances of 12 hour time to 24 hour time: Everyone should make a habit of waking up early in the morning before 5:30 AM."
     answer: Everyone should make a habit of waking up early in the morning before 5:30 AM.
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
   - question: "In the following passage, please convert instances of 12 hour time to 24 hour time: Company meeting will start at 10:30 in the morning, so make sure you reach on time."
     answer: Company meeting will start at 10:30 in the morning, so make sure you reach on time.
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
