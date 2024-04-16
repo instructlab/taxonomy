@@ -1,7 +1,6 @@
 ---
 task_description: This skill will identify the time from the given sentence and
-  convert it to the 24-hour format if the given time is in 12-hour format and
-  vice versa
+  convert 12hour time instance to 24hour time instance.
 created_by: hitshiroya
 seed_examples:
 - question: |
