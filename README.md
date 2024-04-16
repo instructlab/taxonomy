@@ -431,7 +431,7 @@ You can contribute to the taxonomy in the following two ways:
 1. Adding new examples to **existing leaf nodes**:
 2. Adding **new branches/skills** corresponding to the existing domain:
 
-For more information, see the [Ways of contributing to the taxonomy repository](https://github.com/intruct-lab/taxonomy/blob/main/CONTRIBUTING.md#ways-of-contributing-to-the-taxonomy-repository) documentation. 
+For more information, see the [Ways of contributing to the taxonomy repository](https://github.com/instruct-lab/taxonomy/blob/main/CONTRIBUTING.md#ways-of-contributing-to-the-taxonomy-repository) documentation. 
 ## How to contribute skills and knowledge
 
 To contribute to this repo, you'll use the _Fork and Pull_ model common in many open source repositories. You can add your skills and knowledge to the taxonomy in multiple ways; for additional information on how to make a contribution, see the [Documentation on contributing](CONTRIBUTING.md). You can also use the following guides to help with contributing: 
