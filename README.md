@@ -16,7 +16,7 @@
 
 InstructLab 🥼 uses a novel synthetic data-based alignment tuning method for
 Large Language Models (LLMs.) The "**lab**" in Instruct**Lab** 🥼 stands for
-**L**arge-scale **A**lignment for Chat **B**ots.
+[**L**arge-Scale **A**lignment for Chat**B**ots](https://arxiv.org/abs/2403.01081) [1].
 
 The LAB method is driven by taxonomies, which are largely created manually and
 with care.
@@ -24,6 +24,8 @@ with care.
 This repository contains a taxonomy tree that allows you to create models
 tuned with your data (enhanced via synthetic data generation) using LAB 🐶
 method.
+
+[1] Shivchander Sudalairaj*, Abhishek Bhandwaldar*, Aldo Pareja*, Kai Xu, David D. Cox, Akash Srivastava*. "LAB: Large-Scale Alignment for ChatBots", arXiv preprint arXiv: 2403.01081, 2024. (* denotes equal contributions)
 
 ## Learning
 
