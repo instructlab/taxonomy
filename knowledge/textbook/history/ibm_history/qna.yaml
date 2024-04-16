@@ -50,3 +50,9 @@ seed_examples:
     question: Describe the challenges the Computing-Tabulating-Recording Company
       faced shortly after its formation and how these were overcome.
 task_description: ""
+document:
+  repo: https://github.com/abhi1092/ibm-history-documents
+  commit: 1dc85d0fc19e21ad8adbf5f98bd8aa1e31257d0a
+  patterns:
+    - ibm*.md
+    - origins_of_ibm*.md

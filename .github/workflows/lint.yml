@@ -55,17 +55,24 @@ jobs:
             knowledge/**/*.yaml
             knowledge/**/*.yml
 
-      - name: "Run YAML lint"
+      - name: "Setup Python"
         if: steps.changed-files.outputs.any_changed == 'true'
-        run: |
-          yamllint -d "{extends: relaxed, rules: {line-length: {max: 120}}}" ${{ steps.changed-files.outputs.all_changed_files }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
 
-      # use yq to verify YAML fields exist and generate a matchable log message with line number and error severity
-      # the added matcher .github/workflows/matchers/lint.json will parse those log messages to generate annotation
-      # the generated annotations are then applied in the GH PR Changed Files view under the changed line of code
-      - name: "Check file contents"
+      - name: "Install Python Packages"
         if: steps.changed-files.outputs.any_changed == 'true'
         run: |
-          echo "::add-matcher::.github/workflows/matchers/lint.json"
-          echo
-          .github/scripts/check-yaml.sh "${{ steps.changed-files.outputs.all_changed_files }}"
+          pip install -r .github/scripts/requirements.txt
+
+      - name: "Check YAML file contents"
+        if: steps.changed-files.outputs.any_changed == 'true'
+        run: |
+          .github/scripts/check-yaml.py "${{ steps.changed-files.outputs.all_changed_files }}"
+        env:
+          SCHEMA_BASE: .github/schemas
+          YAMLLINT_CONFIG: "{extends: relaxed, rules: {line-length: {max: 120}}}"
+          TAXONOMY_FOLDERS: >-
+            compositional_skills
+            knowledge

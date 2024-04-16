@@ -1,5 +1,4 @@
 ---
-exclude: "index.json|^themes/"
 fail_fast: true
 repos:
   - hooks:
