@@ -42,12 +42,12 @@ Navigate to your forked taxonomy repository and ensure it is up-to-date.
 
 There are a few ways you can create a pull request: 
 - For details on the local process, check out [The GitHub Workflow Guide](https://github.com/kubernetes/community/blob/master/contributors/guide/github-workflow.md) in the kubernetes documentation and the [GitHub flow](https://docs.github.com/en/get-started/using-github/github-flow) in the GitHub documentation.
-- For details on contributing using the GitHub webpage UI, see [Contributing using the GH UI](https://github.com/instruct-lab/taxonomy/docs/contributing_via_GH_UI.md) or [Creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request?tool=webui) in the GitHub documentation.
+- For details on contributing using the GitHub webpage UI, see [Contributing using the GH UI](https://github.com/instructlab/taxonomy/docs/contributing_via_GH_UI.md) or [Creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request?tool=webui) in the GitHub documentation.
 
 ## Verification
 
 A few things to check before seeking reviews for your contribution: 
 
-- Your `qna.yaml` follows the proper formatting. See examples in [Knowledge: YAML examples](https://github.com/instruct-lab/taxonomy/blob/main/README.md#knowledge-yaml-examples)
+- Your `qna.yaml` follows the proper formatting. See examples in [Knowledge: YAML examples](https://github.com/instructlab/taxonomy/blob/main/README.md#knowledge-yaml-examples)
 - Ensure all parameters are set. Especially the `document`, `repo`, `commit` and `pattern` keys; these parameters are specific to knowledge contributions and require more analysis.
-- Include a `attribution.txt` file for citing your sources. see [For your attribution.txt file](https://github.com/instruct-lab/taxonomy/blob/main/CONTRIBUTING.md#for-your-attributiontxt-file) for more information. 
+- Include a `attribution.txt` file for citing your sources. see [For your attribution.txt file](https://github.com/instructlab/taxonomy/blob/main/CONTRIBUTING.md#for-your-attributiontxt-file) for more information. 

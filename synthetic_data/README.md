@@ -294,7 +294,7 @@ pq.read_pandas(mistrial-7b.parquet).to_pandas()
 To update this readme, please use the following commands:
 
 ```bash
-git clone https://github.com/instruct-lab/taxonomy
+git clone https://github.com/instructlab/taxonomy
 cd taxonomy
 ./synthetic_data/generate_readme.sh > ./synthetic_data/README.md
 ```

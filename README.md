@@ -29,7 +29,7 @@ method.
 
 ## Learning
 
-Learn about the concepts of "skills" and "knowledge" in our [InstructLab Community Learning Guide](https://github.com/instruct-lab/community/blob/main/docs/README.md).
+Learn about the concepts of "skills" and "knowledge" in our [InstructLab Community Learning Guide](https://github.com/instructlab/community/blob/main/docs/README.md).
 
 ## Getting Started with Skill Contributions
 
@@ -93,7 +93,7 @@ Then, you create an `attribution.txt` file that includes the sources of your inf
 2. [Link to source 1], [Link to source 2] 
 3. Self-authored
 ```
-For more information on what to include in your `attribution.txt` file, see [For your attribution.txt file](https://github.com/instruct-lab/taxonomy/blob/main/CONTRIBUTING.md#for-your-attributiontxt-file) in CONTRIBUTING.md.
+For more information on what to include in your `attribution.txt` file, see [For your attribution.txt file](https://github.com/instructlab/taxonomy/blob/main/CONTRIBUTING.md#for-your-attributiontxt-file) in CONTRIBUTING.md.
 
 If you have not written YAML before, don't be intimidated - it's just text.
 
@@ -172,7 +172,7 @@ in terms of a taxonomy contribution:
 
 #### Grounded compositional skill: YAML example
 
-Remember that [grounded compositional skills](https://github.com/instruct-lab/community/blob/main/docs/SKILLS_GUIDE.md) require additional context and include a `context` field. 
+Remember that [grounded compositional skills](https://github.com/instructlab/community/blob/main/docs/SKILLS_GUIDE.md) require additional context and include a `context` field. 
 
 This example snippet assumes the GitHub username `mairin` and shows some of the question/answer pairs present in the actual file:
 
@@ -360,7 +360,7 @@ In the taxonomy repository, here's what the previously referenced knowledge migh
         |                 attribution.txt
 [...]
 ```
-For more information on what to include in your `attribution.txt` file, see [For your attribution.txt file](https://github.com/instruct-lab/taxonomy/blob/main/CONTRIBUTING.md#for-your-attributiontxt-file) in CONTRIBUTING.md.
+For more information on what to include in your `attribution.txt` file, see [For your attribution.txt file](https://github.com/instructlab/taxonomy/blob/main/CONTRIBUTING.md#for-your-attributiontxt-file) in CONTRIBUTING.md.
 
 You can organize the knowledge markdown files in your repository however you want. You just need to ensure the YAML is pointing to the correct file. 
 
@@ -412,7 +412,7 @@ Below is an illustrative directory structure to show this layout:
                         attribution.txt
 ```
 
-For an extensive example of this layout see, [taxonomy_tree_layout](https://github.com/instruct-lab/taxonomy/tree/main/docs/taxonomy_tree_layout.md) in the documentation folder.
+For an extensive example of this layout see, [taxonomy_tree_layout](https://github.com/instructlab/taxonomy/tree/main/docs/taxonomy_tree_layout.md) in the documentation folder.
 
 ## Contribute knowledge and skills to the taxonomy!
 
@@ -431,7 +431,7 @@ You can contribute to the taxonomy in the following two ways:
 1. Adding new examples to **existing leaf nodes**:
 2. Adding **new branches/skills** corresponding to the existing domain:
 
-For more information, see the [Ways of contributing to the taxonomy repository](https://github.com/instruct-lab/taxonomy/blob/main/CONTRIBUTING.md#ways-of-contributing-to-the-taxonomy-repository) documentation. 
+For more information, see the [Ways of contributing to the taxonomy repository](https://github.com/instructlab/taxonomy/blob/main/CONTRIBUTING.md#ways-of-contributing-to-the-taxonomy-repository) documentation. 
 ## How to contribute skills and knowledge
 
 To contribute to this repo, you'll use the _Fork and Pull_ model common in many open source repositories. You can add your skills and knowledge to the taxonomy in multiple ways; for additional information on how to make a contribution, see the [Documentation on contributing](CONTRIBUTING.md). You can also use the following guides to help with contributing: 
