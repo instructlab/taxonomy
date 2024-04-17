@@ -1,6 +1,6 @@
 #####################################################
 #
-# List of approvers for instruct-lab/taxonomy repository
+# List of approvers for instructlab/taxonomy repository
 #
 #####################################################
 #
@@ -8,10 +8,10 @@
 #  https://help.github.com/en/articles/about-code-owners
 #
 
-* @instruct-lab/taxonomy-maintainers @instruct-lab/taxonomy-approvers
+* @instructlab/taxonomy-maintainers @instructlab/taxonomy-approvers
 
 # taxonomy folders owned by taxonomy-approvers
-/compositional_skills/ @instruct-lab/taxonomy-approvers
-/foundational_skills/ @instruct-lab/taxonomy-approvers
-/knowledge/ @instruct-lab/taxonomy-approvers
-/synthetic_data/ @instruct-lab/taxonomy-approvers
+/compositional_skills/ @instructlab/taxonomy-approvers
+/foundational_skills/ @instructlab/taxonomy-approvers
+/knowledge/ @instructlab/taxonomy-approvers
+/synthetic_data/ @instructlab/taxonomy-approvers

@@ -2,22 +2,22 @@
 
 👍🎉 First off, thank you for taking the time to contribute! 🎉👍
 
-The following is a set of guidelines for contributing. These are just guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request. Please read the [Community Contribution Guide](https://github.com/instruct-lab/community/blob/main/CONTRIBUTING.md) first for general practices for the InstructLab community.
+The following is a set of guidelines for contributing. These are just guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request. Please read the [Community Contribution Guide](https://github.com/instructlab/community/blob/main/CONTRIBUTING.md) first for general practices for the InstructLab community.
 
 ## What Should I Know Before I Get Started?
 
 ### Code of Conduct
 
-This project adheres to the [Contributor Covenant](https://github.com/instruct-lab/community/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
+This project adheres to the [Contributor Covenant](https://github.com/instructlab/community/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
 
-Please report unacceptable behavior to one of the [Maintainers](https://github.com/instruct-lab/community/blob/main/MAINTAINERS.md).
+Please report unacceptable behavior to one of the [Maintainers](https://github.com/instructlab/community/blob/main/MAINTAINERS.md).
 
 ### Related repositories
 
 In addition to this repository, InstructLab has two related repositories:
 
-- [CLI](https://github.com/instruct-lab/cli). This repository is responsible for the the `ilab` command-line interface (CLI) tool.
-- [Community](https://github.com/instruct-lab/community). This repository is responsible for showing collaboration details across the InstructLab community.
+- [CLI](https://github.com/instructlab/instructlab). This repository is responsible for the the `ilab` command-line interface (CLI) tool.
+- [Community](https://github.com/instructlab/community). This repository is responsible for showing collaboration details across the InstructLab community.
 
 The following sections provide a general overview for contributing to the Taxonomy repository.
 
@@ -44,7 +44,7 @@ Help on open source projects is always welcome and there is always something tha
 
 To propose a new feature, it's best to raise an issue in the appropriate repository. This way, features can be discussed with the project maintainers, ensuring that your time is not wasted working on a feature that the project developers will not accept into the codebase.
 
-*How Do I Submit A (Good) Enhancement or Improvement item?:* Enhancements and improvement items suggestions are tracked as [GitHub issues: Proposal](https://github.com/instruct-lab/taxonomy/issues/new?assignees=&labels=&projects=&template=proposal.md&title=). Create an issue and provide the information suggested in the proposal template.
+*How Do I Submit A (Good) Enhancement or Improvement item?:* Enhancements and improvement items suggestions are tracked as [GitHub issues: Proposal](https://github.com/instructlab/taxonomy/issues/new?assignees=&labels=&projects=&template=proposal.md&title=). Create an issue and provide the information suggested in the proposal template.
 
 ## How do I start contributing?
 
@@ -53,7 +53,7 @@ The following workflow is designed to help you begin your first contribution jou
 
 The goal of InstructLab is to enable true collaborative development around common Large Language Models (LLMs) using a technology that enables collaboration following standard open source development practices. A general overview of making a contribution to this project consists of writing an extension to the existing taxonomy, making a pull request, and getting your work reviewed and merged so that it can benefit the whole community.
 
-Before you start, review the [open issues](https://github.com/instruct-lab/taxonomy/issues) and [opened pull requests](https://github.com/instruct-lab/taxonomy/pulls) board to see if your contribution or enhancements are already proposed. You might instead be able to join forces with them by providing input to what they have started. If you are unsure about what kind of skill or knowledge to contribute, you can [open an issue](https://github.com/instruct-lab/taxonomy/issues/new?assignees=&labels=&template=proposal.md&title=) first to discuss your proposal idea with the maintainers.
+Before you start, review the [open issues](https://github.com/instructlab/taxonomy/issues) and [opened pull requests](https://github.com/instructlab/taxonomy/pulls) board to see if your contribution or enhancements are already proposed. You might instead be able to join forces with them by providing input to what they have started. If you are unsure about what kind of skill or knowledge to contribute, you can [open an issue](https://github.com/instructlab/taxonomy/issues/new?assignees=&labels=&template=proposal.md&title=) first to discuss your proposal idea with the maintainers.
 
 To contribute to this repo, you'll use the _Fork and Pull_ model common in many open source repositories. You can follow this process in a local terminal or in the GitHub web UI.
 - For details on the local process, check out the [GitHub flow](https://docs.github.com/en/get-started/using-github/github-flow) documentation from GitHub and [The GitHub Workflow Guide](https://github.com/kubernetes/community/blob/master/contributors/guide/github-workflow.md) documentation from Kubernetes.
@@ -61,17 +61,17 @@ To contribute to this repo, you'll use the _Fork and Pull_ model common in many 
 
 > [!IMPORTANT]
 > For all contributions to InstructLab 🥼, you want to become familiar with the workflow described in the [InstructLab 🥼 CLI
-> `ilab`](https://github.com/instruct-lab/cli) documentation. It would be best to understand how to test
+> `ilab`](https://github.com/instructlab/instructlab) documentation. It would be best to understand how to test
 > your changes, generating new data, training and downloading the new model, and testing it to check that it gives you the desired results.
 
 When your contribution is ready, you can create a pull request (PR). In general, we follow the standard [GitHub pull request](https://help.github.com/en/articles/about-pull-requests) process. Follow the template to provide details about your pull request to the maintainers. Before submitting pull requests, make sure your changes pass applicable formatting tests in the repository CI.
 
 >[!NOTE]
-> Always refer to the [README.md](https://github.com/instruct-lab/taxonomy/blob/main/README.md)
+> Always refer to the [README.md](https://github.com/instructlab/taxonomy/blob/main/README.md)
 > if you are unsure on how to format your contributions.
 ### What can I contribute?
 
-You can contribute [Knowledge](https://github.com/instruct-lab/taxonomy/blob/main/README.md#getting-started-with-knowledge-contributions) or [Skills](https://github.com/instruct-lab/taxonomy/blob/main/README.md#getting-started-with-skill-contributions) to the taxonomy tree. Make sure to review the [general documentation](README.md) for a detail explanation of these concepts and the differences between the two.
+You can contribute [Knowledge](https://github.com/instructlab/taxonomy/blob/main/README.md#getting-started-with-knowledge-contributions) or [Skills](https://github.com/instructlab/taxonomy/blob/main/README.md#getting-started-with-skill-contributions) to the taxonomy tree. Make sure to review the [general documentation](README.md) for a detail explanation of these concepts and the differences between the two.
 
 > [!IMPORTANT]
 > You can only contribute original material. **DO NOT** contribute copyrighted content or content coming from another system.
@@ -90,14 +90,14 @@ Once you've [created a pull request](#how-can-i-contribute), maintainers will re
 - Follow the project coding conventions
 - Include the DCO sign off, see [Legal](#legal)
 
-The project maintainers use `LGTM` (Looks Good To Me) in comments on the code review to indicate acceptance. You can see more information on the triaging process in the [Triaging skills](https://github.com/instruct-lab/taxonomy/blob/main/docs/skills-triage.md) documentation.
+The project maintainers use `LGTM` (Looks Good To Me) in comments on the code review to indicate acceptance. You can see more information on the triaging process in the [Triaging skills](https://github.com/instructlab/taxonomy/blob/main/docs/skills-triage.md) documentation.
 
-For a list of the maintainers and triagers, see the [MAINTAINERS.md](https://github.com/instruct-lab/community/blob/main/MAINTAINERS.md) page.
+For a list of the maintainers and triagers, see the [MAINTAINERS.md](https://github.com/instructlab/community/blob/main/MAINTAINERS.md) page.
 ## Submitting bugs
 
 To submit a new bug, raise an issue in the appropriate repository before creating a pull request. This ensures that the issue is properly tracked. To fix an existing bug, assign yourself a bug from the issues page of the desired repository. Then, submit a pull request for review.
 
-Bugs are tracked as [GitHub issues using the Bug Report template](https://github.com/instruct-lab/taxonomy/issues/new?assignees=&labels=&template=bug_report.md&title=). Create an issue on that and provide the information suggested in the bug report issue template.
+Bugs are tracked as [GitHub issues using the Bug Report template](https://github.com/instructlab/taxonomy/issues/new?assignees=&labels=&template=bug_report.md&title=). Create an issue on that and provide the information suggested in the bug report issue template.
 ## Legal
 
 We have tried to make it as easy as possible to make contributions.
@@ -146,10 +146,10 @@ An important part of contributing to the InstructLab project is citing your sour
 - Modification information
 - Indicate if work was itself derived from another openly licensed work
 
-You can also see this citation style in the [Data sources documentation](https://github.com/instruct-lab/community/blob/main/docs/DataSources.md)
+You can also see this citation style in the [Data sources documentation](https://github.com/instructlab/community/blob/main/docs/DataSources.md)
 ## Development
 
-Please consult the [CLI documentation](https://github.com/instruct-lab/cli) to set up your environment.
+Please consult the [CLI documentation](https://github.com/instructlab/instructlab) to set up your environment.
 
 [DCO]: https://developercertificate.org/
 [Linux-DCO]: https://docs.kernel.org/process/submitting-patches.html#sign-your-work-the-developer-s-certificate-of-origin

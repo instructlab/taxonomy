@@ -8,7 +8,7 @@ Each qna.yaml file is required to contain a minimum of five question-answer pair
 * created_by (your GitHub username)
 * task_description (an optional description of the knowledge)
 
-[See taxonomy readme.md for example](https://github.com/instruct-lab/taxonomy?tab=readme-ov-file#knowledge)
+[See taxonomy readme.md for example](https://github.com/instructlab/taxonomy?tab=readme-ov-file#knowledge)
 
 ## Textbook Knowledge
 
