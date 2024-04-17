@@ -20,12 +20,21 @@ on:
     branches:
       - main
     paths:
-      - 'compositional_skills/**/qna.yaml'
+      - compositional_skills/**/qna.yaml
+      - knowledge/**/qna.yaml
+
   pull_request:
     branches:
       - main
     paths:
-      - 'compositional_skills/**/qna.yaml'
+      - compositional_skills/**/*.yaml
+      - compositional_skills/**/*.yml
+      - knowledge/**/*.yaml
+      - knowledge/**/*.yml
+
+defaults:
+  run:
+    shell: bash
 
 jobs:
   lint:
@@ -33,7 +42,37 @@ jobs:
     steps:
       - name: "Checkout"
         uses: actions/checkout@v4
-        
-      - name: "Run YAML linter"
+        with:
+          fetch-depth: 0
+
+      - name: "Find changed skills and knowledge files"
+        id: changed-files
+        uses: tj-actions/changed-files@v42
+        with:
+          files: |
+            compositional_skills/**/*.yaml
+            compositional_skills/**/*.yml
+            knowledge/**/*.yaml
+            knowledge/**/*.yml
+
+      - name: "Setup Python"
+        if: steps.changed-files.outputs.any_changed == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: "Install Python Packages"
+        if: steps.changed-files.outputs.any_changed == 'true'
         run: |
-          yamllint -d "{extends: relaxed, rules: {line-length: {max: 120}}, yaml-files: ['qna.yaml']}" .
+          pip install -r .github/scripts/requirements.txt
+
+      - name: "Check YAML file contents"
+        if: steps.changed-files.outputs.any_changed == 'true'
+        run: |
+          .github/scripts/check-yaml.py "${{ steps.changed-files.outputs.all_changed_files }}"
+        env:
+          SCHEMA_BASE: .github/schemas
+          YAMLLINT_CONFIG: "{extends: relaxed, rules: {line-length: {max: 120}}}"
+          TAXONOMY_FOLDERS: >-
+            compositional_skills
+            knowledge
