@@ -49,7 +49,7 @@ Replace "..." with what you receive with the finetuned model. -->
 
 - [ ] The contribution was tested with `ilab generate`
 - [ ] No errors or warnings were produced by `ilab generate`
-- [ ] All [commits are signed off](https://github.com/instruct-lab/taxonomy/blob/main/CONTRIBUTING.md#legal) (DCO)
+- [ ] All [commits are signed off](https://github.com/instructlab/taxonomy/blob/main/CONTRIBUTING.md#legal) (DCO)
 - [ ] The `qna.yaml` file contains at least 5 `seed_examples`
 - [ ] The `qna.yaml` file was [linted](https://yamllint.com) and [prettified](https://onlineyamltools.com/prettify-yaml) ([yaml-validator](https://jsonformatter.org/yaml-validator) can do both)
 - [ ] An `attribution.txt` file in the same folder as the `qna.yaml` file.
