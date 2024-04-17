@@ -2,10 +2,10 @@
 
 Before you begin, familiarize yourself with the basic concepts around skills and knowledge, as well as the file formats for compositional skills, grounded vs freeform skills, and knowledge.
 
-* [InstructLab Community Learning Guide](https://github.com/instruct-lab/community/blob/main/docs/README.md)
+* [InstructLab Community Learning Guide](https://github.com/instructlab/community/blob/main/docs/README.md)
 * [Taxonomy README](../README.md)
 
-Skills triage is the practice of reviewing existing [skill pull requests (PRs)](https://github.com/instruct-lab/taxonomy/pulls?q=is%3Apr+is%3Aopen+label%3Askill) to make sure they're relevant, actionable, and have all the information needed to be fully evaluated by both the Taxonomy Triage team (Triagers, @taxonomy-triagers) and the Taxonomy Approvers (Approvers, @taxonomy-approvers).
+Skills triage is the practice of reviewing existing [skill pull requests (PRs)](https://github.com/instructlab/taxonomy/pulls?q=is%3Apr+is%3Aopen+label%3Askill) to make sure they're relevant, actionable, and have all the information needed to be fully evaluated by both the Taxonomy Triage team (Triagers, @taxonomy-triagers) and the Taxonomy Approvers (Approvers, @taxonomy-approvers).
 
 Triagers should review open pull requests and use labels to manage their state and any actions needed. Triagers are also encouraged to provide informative and helpful comments either back to the contributor, to other Triagers or to the Approvers. And remember to be nice.
 
@@ -47,26 +47,26 @@ Triagers should review open pull requests and use labels to manage their state a
 - generation check: do the teacher-model-generated instructions actually make sense with the skill being added?
 
 ## Labels:
-- https://github.com/instruct-lab/taxonomy/labels/skill - a skills contribution as opposed to documentation contribution or a knowledge contribution (not yet accepted)
-- https://github.com/instruct-lab/taxonomy/labels/unverified - skill has not been run through lmdk
-- https://github.com/instruct-lab/taxonomy/labels/triage-needed - skill needs a triager to review it
+- https://github.com/instructlab/taxonomy/labels/skill - a skills contribution as opposed to documentation contribution or a knowledge contribution (not yet accepted)
+- https://github.com/instructlab/taxonomy/labels/unverified - skill has not been run through lmdk
+- https://github.com/instructlab/taxonomy/labels/triage-needed - skill needs a triager to review it
   - triager assigns to themself when you beginning review
-- https://github.com/instruct-lab/taxonomy/labels/triage-requested-changes - skill has been reviewed; changes requested from contributor
+- https://github.com/instructlab/taxonomy/labels/triage-requested-changes - skill has been reviewed; changes requested from contributor
   - triager provides comment in PR asking for additional changes or information
   - triager assigns to contributor
-- https://github.com/instruct-lab/taxonomy/labels/triage-uncertain - triager is uncertain which can be for a variety of reasons
+- https://github.com/instructlab/taxonomy/labels/triage-uncertain - triager is uncertain which can be for a variety of reasons
   - triager stays assigned
   - use comment to ask the rest of the triage team for input tagging @taxonomy-triagers
   - if still uncertain
     - then re-assign to @taxonomy-approvers
     - triager tags @taxonomy-approvers in informative comment asking for further review from that team
-- https://github.com/instruct-lab/taxonomy/labels/triage-approved - skill meets criteria
+- https://github.com/instructlab/taxonomy/labels/triage-approved - skill meets criteria
   - re-assign to @taxonomy-approvers
   - add comment and tag @taxonomy-approvers
-- https://github.com/instruct-lab/taxonomy/labels/triage-rejected - skill fails criteria
+- https://github.com/instructlab/taxonomy/labels/triage-rejected - skill fails criteria
   - add informative comment while tagging @taxonomy-approvers
   - re-assign to @taxonomy-approvers
-- [triage-meta](https://github.com/instruct-lab/taxonomy/labels/triage-meta) - issues for discussion and clarification of edge cases and categories of examples
+- [triage-meta](https://github.com/instructlab/taxonomy/labels/triage-meta) - issues for discussion and clarification of edge cases and categories of examples
 
 ## Helpful guidance for different determinations
 
