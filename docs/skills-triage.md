@@ -1,5 +1,10 @@
 # Triaging Skills
 
+Before you begin, familiarize yourself with the basic concepts around skills and knowledge, as well as the file formats for compositional skills, grounded vs freeform skills, and knowledge.
+
+* [InstructLab Community Learning Guide](https://github.com/instruct-lab/community/blob/main/docs/README.md)
+* [Taxonomy README](../README.md)
+
 Skills triage is the practice of reviewing existing [skill pull requests (PRs)](https://github.com/instruct-lab/taxonomy/pulls?q=is%3Apr+is%3Aopen+label%3Askill) to make sure they're relevant, actionable, and have all the information needed to be fully evaluated by both the Taxonomy Triage team (Triagers, @taxonomy-triagers) and the Taxonomy Approvers (Approvers, @taxonomy-approvers).
 
 Triagers should review open pull requests and use labels to manage their state and any actions needed. Triagers are also encouraged to provide informative and helpful comments either back to the contributor, to other Triagers or to the Approvers. And remember to be nice.
@@ -11,7 +16,8 @@ Triagers should review open pull requests and use labels to manage their state a
 - Does the PR have the pull request template information filled out?
   - If skill has not been run through lmdk, assign unverified label
 - Did all the PR checks pass?
-- Does the skill have 3 or more examples?
+- Does the skill have 5 or more examples?
+  - **NOTE 2024-03-12:** This has been increased from 3 in the most recent guidance from the approvers!
 - Make sure fields in YAML are correct
   - configure tooling eventually: linting, formatting
 - No PII in content (may eventually be automated)
@@ -25,10 +31,13 @@ Triagers should review open pull requests and use labels to manage their state a
 - Is the skill appropriately placed within the taxonomy? (If outside of skill directory, address the issue)
 
 > [!NOTE]
-> The skill taxonomy structure is used in two ways:
->    1. Selecting the right subset of the taxonomy to use for data generation
->    2. Interpretability by human contributors and maintainers
-> Therefore: Don't overthink it, but do check to see if there's a more logical place in the taxonomy structure for a person's contribution to live before signing off.
+> The skill taxonomy structure is used in several ways:
+>    1. Selecting the right subset of the taxonomy to use for data generation.
+>    2. Interpretability by human contributors and maintainers.
+>    3. As part of the prompt to the model used to generate synthetic samples.
+> Therefore: Make sure the names of directories match the intent of the
+> taxonomy files, perhaps also see if there's a more logical place in the
+> taxonomy structure for a person's contribution to live before signing off.
 
 ## Potential automation: (at a later date)
 - HAP filtering
