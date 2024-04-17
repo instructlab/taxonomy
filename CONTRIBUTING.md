@@ -16,7 +16,7 @@ Please report unacceptable behavior to one of the [Maintainers](https://github.c
 
 In addition to this repository, InstructLab has two related repositories:
 
-- [CLI](https://github.com/instructlab/cli). This repository is responsible for the the `ilab` command-line interface (CLI) tool.
+- [CLI](https://github.com/instructlab/instructlab). This repository is responsible for the the `ilab` command-line interface (CLI) tool.
 - [Community](https://github.com/instructlab/community). This repository is responsible for showing collaboration details across the InstructLab community.
 
 The following sections provide a general overview for contributing to the Taxonomy repository.
@@ -61,7 +61,7 @@ To contribute to this repo, you'll use the _Fork and Pull_ model common in many 
 
 > [!IMPORTANT]
 > For all contributions to InstructLab 🥼, you want to become familiar with the workflow described in the [InstructLab 🥼 CLI
-> `ilab`](https://github.com/instructlab/cli) documentation. It would be best to understand how to test
+> `ilab`](https://github.com/instructlab/instructlab) documentation. It would be best to understand how to test
 > your changes, generating new data, training and downloading the new model, and testing it to check that it gives you the desired results.
 
 When your contribution is ready, you can create a pull request (PR). In general, we follow the standard [GitHub pull request](https://help.github.com/en/articles/about-pull-requests) process. Follow the template to provide details about your pull request to the maintainers. Before submitting pull requests, make sure your changes pass applicable formatting tests in the repository CI.
@@ -149,7 +149,7 @@ An important part of contributing to the InstructLab project is citing your sour
 You can also see this citation style in the [Data sources documentation](https://github.com/instructlab/community/blob/main/docs/DataSources.md)
 ## Development
 
-Please consult the [CLI documentation](https://github.com/instructlab/cli) to set up your environment.
+Please consult the [CLI documentation](https://github.com/instructlab/instructlab) to set up your environment.
 
 [DCO]: https://developercertificate.org/
 [Linux-DCO]: https://docs.kernel.org/process/submitting-patches.html#sign-your-work-the-developer-s-certificate-of-origin

@@ -1,6 +1,6 @@
 # Docs
 
-See the [README.md in `cli/docs`](https://github.com/instructlab/cli/blob/main/docs/README.md) on how to modify and render the flowcharts.
+See the [README.md in `cli/docs`](https://github.com/instructlab/instructlab/blob/main/docs/README.md) on how to modify and render the flowcharts.
 
 ## Review Process
 The review process starts with contributor drafting the PR.
