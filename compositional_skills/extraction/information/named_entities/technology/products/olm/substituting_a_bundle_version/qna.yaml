@@ -1,0 +1,46 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Substituting a bundle version in an upgrade graph pertains to an operation in schema manipulation. This procedure
+    involves replacing a bundle's versions with different versions in an upgrade graph. 1
+  context: |
+    Substituting a bundle version in the upgrade graph: This is an operation in schema manipulation which involves
+    replacing a bundle's versions with different versions in an upgrade graph.
+  question: |
+    What does substituting a bundle version in the upgrade graph pertain to?
+- answer: |
+    Substituting a bundle version in an upgrade graph pertains to an operation in schema manipulation. This procedure
+    involves replacing a bundle's versions with different versions in an upgrade graph. 2
+  context: |
+    Substituting a bundle version in the upgrade graph: This is an operation in schema manipulation which involves
+    replacing a bundle's versions with different versions in an upgrade graph.
+  question: |
+    What does substituting a bundle version in the upgrade graph pertain to?
+- answer: |
+    Substituting a bundle version in an upgrade graph pertains to an operation in schema manipulation. This procedure
+    involves replacing a bundle's versions with different versions in an upgrade graph. 3
+  context: |
+    Substituting a bundle version in the upgrade graph: This is an operation in schema manipulation which involves
+    replacing a bundle's versions with different versions in an upgrade graph.
+  question: |
+    What does substituting a bundle version in the upgrade graph pertain to?
+- answer: |
+    Substituting a bundle version in an upgrade graph pertains to an operation in schema manipulation. This procedure
+    involves replacing a bundle's versions with different versions in an upgrade graph. 4
+  context: |
+    Substituting a bundle version in the upgrade graph: This is an operation in schema manipulation which involves
+    replacing a bundle's versions with different versions in an upgrade graph.
+  question: |
+    What does substituting a bundle version in the upgrade graph pertain to?
+- answer: |
+    Substituting a bundle version in an upgrade graph pertains to an operation in schema manipulation. This procedure
+    involves replacing a bundle's versions with different versions in an upgrade graph. 5
+  context: |
+    Substituting a bundle version in the upgrade graph: This is an operation in schema manipulation which involves
+    replacing a bundle's versions with different versions in an upgrade graph.
+  question: |
+    What does substituting a bundle version in the upgrade graph pertain to?
+task_description: |
+  This skill helps in understanding the concept: Substituting a bundle version in the upgrade graph: This is an
+  operation in schema manipulation which involves replacing a bundle's versions with different versions in an
+  upgrade graph.

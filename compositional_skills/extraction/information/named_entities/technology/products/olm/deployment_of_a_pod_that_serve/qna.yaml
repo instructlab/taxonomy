@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    When a CatalogSource is created, it initiates the deployment of a pod that serves the Catalog content through a
+    grpc API endpoint. 1
+  context: |
+    Deployment of a pod that serves the Catalog content through a grpc API endpoint when a CatalogSource is created.
+  question: |
+    What happens when a CatalogSource is created in Kubernetes?
+- answer: |
+    When a CatalogSource is created, it initiates the deployment of a pod that serves the Catalog content through a
+    grpc API endpoint. 2
+  context: |
+    Deployment of a pod that serves the Catalog content through a grpc API endpoint when a CatalogSource is created.
+  question: |
+    What happens when a CatalogSource is created in Kubernetes?
+- answer: |
+    When a CatalogSource is created, it initiates the deployment of a pod that serves the Catalog content through a
+    grpc API endpoint. 3
+  context: |
+    Deployment of a pod that serves the Catalog content through a grpc API endpoint when a CatalogSource is created.
+  question: |
+    What happens when a CatalogSource is created in Kubernetes?
+- answer: |
+    When a CatalogSource is created, it initiates the deployment of a pod that serves the Catalog content through a
+    grpc API endpoint. 4
+  context: |
+    Deployment of a pod that serves the Catalog content through a grpc API endpoint when a CatalogSource is created.
+  question: |
+    What happens when a CatalogSource is created in Kubernetes?
+- answer: |
+    When a CatalogSource is created, it initiates the deployment of a pod that serves the Catalog content through a
+    grpc API endpoint. 5
+  context: |
+    Deployment of a pod that serves the Catalog content through a grpc API endpoint when a CatalogSource is created.
+  question: |
+    What happens when a CatalogSource is created in Kubernetes?
+task_description: |
+  This skill helps in understanding the concept: Deployment of a pod that serves the Catalog content through a grpc
+  API endpoint when a CatalogSource is created.

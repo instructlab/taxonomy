@@ -1,0 +1,41 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    You can check the status of a failing CSV in OLM operator using the kubectl command. 1
+  context: |
+    Debugging Failing CSV    - Description: The OLM operator will update the Status for a failing CSV with information
+    about its state. You can check the Status of your CSV using the kubectl command.
+  question: |
+    How can you check the status of a failing CSV in OLM operator?
+- answer: |
+    You can check the status of a failing CSV in OLM operator using the kubectl command. 2
+  context: |
+    Debugging Failing CSV    - Description: The OLM operator will update the Status for a failing CSV with information
+    about its state. You can check the Status of your CSV using the kubectl command.
+  question: |
+    How can you check the status of a failing CSV in OLM operator?
+- answer: |
+    You can check the status of a failing CSV in OLM operator using the kubectl command. 3
+  context: |
+    Debugging Failing CSV    - Description: The OLM operator will update the Status for a failing CSV with information
+    about its state. You can check the Status of your CSV using the kubectl command.
+  question: |
+    How can you check the status of a failing CSV in OLM operator?
+- answer: |
+    You can check the status of a failing CSV in OLM operator using the kubectl command. 4
+  context: |
+    Debugging Failing CSV    - Description: The OLM operator will update the Status for a failing CSV with information
+    about its state. You can check the Status of your CSV using the kubectl command.
+  question: |
+    How can you check the status of a failing CSV in OLM operator?
+- answer: |
+    You can check the status of a failing CSV in OLM operator using the kubectl command. 5
+  context: |
+    Debugging Failing CSV    - Description: The OLM operator will update the Status for a failing CSV with information
+    about its state. You can check the Status of your CSV using the kubectl command.
+  question: |
+    How can you check the status of a failing CSV in OLM operator?
+task_description: |
+  This skill helps in understanding the concept: Debugging Failing CSV    - Description: The OLM operator will
+  update the Status for a failing CSV with information about its state. You can check the Status of your CSV using
+  the kubectl command.

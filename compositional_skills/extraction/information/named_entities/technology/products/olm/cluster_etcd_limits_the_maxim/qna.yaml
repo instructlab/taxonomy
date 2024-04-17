@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The maximum limit of the cluster in relation to its etcd, which is a key-value store used to manage the cluster's
+    data, can be affected by Copied CSVs. 1
+  context: |
+    Cluster etcd limits: The maximum limits of the cluster in relation to its etcd, a key-value store used to manage
+    the cluster's data. It might get affected by the Copied CSVs.
+  question: |
+    What is the maximum limit of the cluster in relation to its etcd and what can possibly affect it?
+- answer: |
+    The maximum limit of the cluster in relation to its etcd, which is a key-value store used to manage the cluster's
+    data, can be affected by Copied CSVs. 2
+  context: |
+    Cluster etcd limits: The maximum limits of the cluster in relation to its etcd, a key-value store used to manage
+    the cluster's data. It might get affected by the Copied CSVs.
+  question: |
+    What is the maximum limit of the cluster in relation to its etcd and what can possibly affect it?
+- answer: |
+    The maximum limit of the cluster in relation to its etcd, which is a key-value store used to manage the cluster's
+    data, can be affected by Copied CSVs. 3
+  context: |
+    Cluster etcd limits: The maximum limits of the cluster in relation to its etcd, a key-value store used to manage
+    the cluster's data. It might get affected by the Copied CSVs.
+  question: |
+    What is the maximum limit of the cluster in relation to its etcd and what can possibly affect it?
+- answer: |
+    The maximum limit of the cluster in relation to its etcd, which is a key-value store used to manage the cluster's
+    data, can be affected by Copied CSVs. 4
+  context: |
+    Cluster etcd limits: The maximum limits of the cluster in relation to its etcd, a key-value store used to manage
+    the cluster's data. It might get affected by the Copied CSVs.
+  question: |
+    What is the maximum limit of the cluster in relation to its etcd and what can possibly affect it?
+- answer: |
+    The maximum limit of the cluster in relation to its etcd, which is a key-value store used to manage the cluster's
+    data, can be affected by Copied CSVs. 5
+  context: |
+    Cluster etcd limits: The maximum limits of the cluster in relation to its etcd, a key-value store used to manage
+    the cluster's data. It might get affected by the Copied CSVs.
+  question: |
+    What is the maximum limit of the cluster in relation to its etcd and what can possibly affect it?
+task_description: |
+  This skill helps in understanding the concept: Cluster etcd limits: The maximum limits of the cluster in relation
+  to its etcd, a key-value store used to manage the cluster's data. It might get affected by the Copied CSVs.

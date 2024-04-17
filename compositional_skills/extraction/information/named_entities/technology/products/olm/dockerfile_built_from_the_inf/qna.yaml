@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Dockerfile is used to build an operator bundle image utilizing the information in the directory that contains the
+    CSV and CRDs. 1
+  context: |
+    Dockerfile: Built from the information in the directory that also contains the CSV and CRDs to create an operator
+    bundle image.
+  question: |
+    What is Dockerfile used for in creating an operator bundle image?
+- answer: |
+    Dockerfile is used to build an operator bundle image utilizing the information in the directory that contains the
+    CSV and CRDs. 2
+  context: |
+    Dockerfile: Built from the information in the directory that also contains the CSV and CRDs to create an operator
+    bundle image.
+  question: |
+    What is Dockerfile used for in creating an operator bundle image?
+- answer: |
+    Dockerfile is used to build an operator bundle image utilizing the information in the directory that contains the
+    CSV and CRDs. 3
+  context: |
+    Dockerfile: Built from the information in the directory that also contains the CSV and CRDs to create an operator
+    bundle image.
+  question: |
+    What is Dockerfile used for in creating an operator bundle image?
+- answer: |
+    Dockerfile is used to build an operator bundle image utilizing the information in the directory that contains the
+    CSV and CRDs. 4
+  context: |
+    Dockerfile: Built from the information in the directory that also contains the CSV and CRDs to create an operator
+    bundle image.
+  question: |
+    What is Dockerfile used for in creating an operator bundle image?
+- answer: |
+    Dockerfile is used to build an operator bundle image utilizing the information in the directory that contains the
+    CSV and CRDs. 5
+  context: |
+    Dockerfile: Built from the information in the directory that also contains the CSV and CRDs to create an operator
+    bundle image.
+  question: |
+    What is Dockerfile used for in creating an operator bundle image?
+task_description: |
+  This skill helps in understanding the concept: Dockerfile: Built from the information in the directory that also
+  contains the CSV and CRDs to create an operator bundle image.

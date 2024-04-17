@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The OLMConfig document explains how to disable copied CSVs and change the package server sync interval. 1
+  context: |
+    OLMConfig: A document that explains how to disable copied CSVs and change the package server sync interval.
+  question: |
+    What is the purpose of the document OLMConfig?
+- answer: |
+    The OLMConfig document explains how to disable copied CSVs and change the package server sync interval. 2
+  context: |
+    OLMConfig: A document that explains how to disable copied CSVs and change the package server sync interval.
+  question: |
+    What is the purpose of the document OLMConfig?
+- answer: |
+    The OLMConfig document explains how to disable copied CSVs and change the package server sync interval. 3
+  context: |
+    OLMConfig: A document that explains how to disable copied CSVs and change the package server sync interval.
+  question: |
+    What is the purpose of the document OLMConfig?
+- answer: |
+    The OLMConfig document explains how to disable copied CSVs and change the package server sync interval. 4
+  context: |
+    OLMConfig: A document that explains how to disable copied CSVs and change the package server sync interval.
+  question: |
+    What is the purpose of the document OLMConfig?
+- answer: |
+    The OLMConfig document explains how to disable copied CSVs and change the package server sync interval. 5
+  context: |
+    OLMConfig: A document that explains how to disable copied CSVs and change the package server sync interval.
+  question: |
+    What is the purpose of the document OLMConfig?
+task_description: |
+  This skill helps in understanding the concept: OLMConfig: A document that explains how to disable copied CSVs and
+  change the package server sync interval.

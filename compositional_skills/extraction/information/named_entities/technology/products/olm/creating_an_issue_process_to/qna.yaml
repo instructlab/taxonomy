@@ -1,0 +1,49 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    If you encounter a problem in the docs, you typically need to create an issue. This usually involves going to the
+    issue tracker of the particular documentation, describing the problem in detail, and submitting it for review. The
+    documentation team will then take your input into account while making revisions or improvements. The specific
+    process may vary depending on the documentation platform used. 1
+  context: |
+    Creating an Issue: Process to report a problem in the docs.
+  question: |
+    What is the process to report a problem in the docs?
+- answer: |
+    If you encounter a problem in the docs, you typically need to create an issue. This usually involves going to the
+    issue tracker of the particular documentation, describing the problem in detail, and submitting it for review. The
+    documentation team will then take your input into account while making revisions or improvements. The specific
+    process may vary depending on the documentation platform used. 2
+  context: |
+    Creating an Issue: Process to report a problem in the docs.
+  question: |
+    What is the process to report a problem in the docs?
+- answer: |
+    If you encounter a problem in the docs, you typically need to create an issue. This usually involves going to the
+    issue tracker of the particular documentation, describing the problem in detail, and submitting it for review. The
+    documentation team will then take your input into account while making revisions or improvements. The specific
+    process may vary depending on the documentation platform used. 3
+  context: |
+    Creating an Issue: Process to report a problem in the docs.
+  question: |
+    What is the process to report a problem in the docs?
+- answer: |
+    If you encounter a problem in the docs, you typically need to create an issue. This usually involves going to the
+    issue tracker of the particular documentation, describing the problem in detail, and submitting it for review. The
+    documentation team will then take your input into account while making revisions or improvements. The specific
+    process may vary depending on the documentation platform used. 4
+  context: |
+    Creating an Issue: Process to report a problem in the docs.
+  question: |
+    What is the process to report a problem in the docs?
+- answer: |
+    If you encounter a problem in the docs, you typically need to create an issue. This usually involves going to the
+    issue tracker of the particular documentation, describing the problem in detail, and submitting it for review. The
+    documentation team will then take your input into account while making revisions or improvements. The specific
+    process may vary depending on the documentation platform used. 5
+  context: |
+    Creating an Issue: Process to report a problem in the docs.
+  question: |
+    What is the process to report a problem in the docs?
+task_description: |
+  This skill helps in understanding the concept: Creating an Issue: Process to report a problem in the docs.

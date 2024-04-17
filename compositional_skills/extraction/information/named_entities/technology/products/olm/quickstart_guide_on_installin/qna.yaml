@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    To install an operator using OLM in a Kubernetes cluster, you first need to install OLM itself. Here are the
+    simplified steps: 1
+  context: |
+    QuickStart: Guide on installing OLM in a kubernetes cluster, followed by installing an operator using OLM.
+  question: |
+    How can you install an operator using Operator Lifecycle Manager (OLM) in a Kubernetes cluster?
+- answer: |
+    To install an operator using OLM in a Kubernetes cluster, you first need to install OLM itself. Here are the
+    simplified steps: 2
+  context: |
+    QuickStart: Guide on installing OLM in a kubernetes cluster, followed by installing an operator using OLM.
+  question: |
+    How can you install an operator using Operator Lifecycle Manager (OLM) in a Kubernetes cluster?
+- answer: |
+    To install an operator using OLM in a Kubernetes cluster, you first need to install OLM itself. Here are the
+    simplified steps: 3
+  context: |
+    QuickStart: Guide on installing OLM in a kubernetes cluster, followed by installing an operator using OLM.
+  question: |
+    How can you install an operator using Operator Lifecycle Manager (OLM) in a Kubernetes cluster?
+- answer: |
+    To install an operator using OLM in a Kubernetes cluster, you first need to install OLM itself. Here are the
+    simplified steps: 4
+  context: |
+    QuickStart: Guide on installing OLM in a kubernetes cluster, followed by installing an operator using OLM.
+  question: |
+    How can you install an operator using Operator Lifecycle Manager (OLM) in a Kubernetes cluster?
+- answer: |
+    To install an operator using OLM in a Kubernetes cluster, you first need to install OLM itself. Here are the
+    simplified steps: 5
+  context: |
+    QuickStart: Guide on installing OLM in a kubernetes cluster, followed by installing an operator using OLM.
+  question: |
+    How can you install an operator using Operator Lifecycle Manager (OLM) in a Kubernetes cluster?
+task_description: |
+  This skill helps in understanding the concept: QuickStart: Guide on installing OLM in a kubernetes cluster,
+  followed by installing an operator using OLM.

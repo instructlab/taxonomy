@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    An Operator is a program designed to watch and control a specific resource or set of resources in a Kubernetes
+    cluster. 1
+  context: |
+    Operator: A program designed to watch and control a specific resource or set of resources in a Kubernetes cluster.
+  question: |
+    What is an Operator in the context of a Kubernetes cluster?
+- answer: |
+    An Operator is a program designed to watch and control a specific resource or set of resources in a Kubernetes
+    cluster. 2
+  context: |
+    Operator: A program designed to watch and control a specific resource or set of resources in a Kubernetes cluster.
+  question: |
+    What is an Operator in the context of a Kubernetes cluster?
+- answer: |
+    An Operator is a program designed to watch and control a specific resource or set of resources in a Kubernetes
+    cluster. 3
+  context: |
+    Operator: A program designed to watch and control a specific resource or set of resources in a Kubernetes cluster.
+  question: |
+    What is an Operator in the context of a Kubernetes cluster?
+- answer: |
+    An Operator is a program designed to watch and control a specific resource or set of resources in a Kubernetes
+    cluster. 4
+  context: |
+    Operator: A program designed to watch and control a specific resource or set of resources in a Kubernetes cluster.
+  question: |
+    What is an Operator in the context of a Kubernetes cluster?
+- answer: |
+    An Operator is a program designed to watch and control a specific resource or set of resources in a Kubernetes
+    cluster. 5
+  context: |
+    Operator: A program designed to watch and control a specific resource or set of resources in a Kubernetes cluster.
+  question: |
+    What is an Operator in the context of a Kubernetes cluster?
+task_description: |
+  This skill helps in understanding the concept: Operator: A program designed to watch and control a specific
+  resource or set of resources in a Kubernetes cluster.

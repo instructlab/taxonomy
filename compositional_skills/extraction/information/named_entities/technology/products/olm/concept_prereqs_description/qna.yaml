@@ -1,0 +1,51 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Yq is a helpful tool that is used for parsing yaml. While its installation is not necessary, it can add
+    convenience to some system commands. You can install yq by following the official installation steps. 1
+  context: |
+    Concept: Prereqs - Description: Some of the commands listed in this section assume that you have yq installed on
+    your system. While yq is not required, it is a useful tool when parsing yaml. You can install yq by following the
+    official installation steps.
+  question: |
+    What is the function of yq and is it necessary to have it installed on your system?
+- answer: |
+    Yq is a helpful tool that is used for parsing yaml. While its installation is not necessary, it can add
+    convenience to some system commands. You can install yq by following the official installation steps. 2
+  context: |
+    Concept: Prereqs - Description: Some of the commands listed in this section assume that you have yq installed on
+    your system. While yq is not required, it is a useful tool when parsing yaml. You can install yq by following the
+    official installation steps.
+  question: |
+    What is the function of yq and is it necessary to have it installed on your system?
+- answer: |
+    Yq is a helpful tool that is used for parsing yaml. While its installation is not necessary, it can add
+    convenience to some system commands. You can install yq by following the official installation steps. 3
+  context: |
+    Concept: Prereqs - Description: Some of the commands listed in this section assume that you have yq installed on
+    your system. While yq is not required, it is a useful tool when parsing yaml. You can install yq by following the
+    official installation steps.
+  question: |
+    What is the function of yq and is it necessary to have it installed on your system?
+- answer: |
+    Yq is a helpful tool that is used for parsing yaml. While its installation is not necessary, it can add
+    convenience to some system commands. You can install yq by following the official installation steps. 4
+  context: |
+    Concept: Prereqs - Description: Some of the commands listed in this section assume that you have yq installed on
+    your system. While yq is not required, it is a useful tool when parsing yaml. You can install yq by following the
+    official installation steps.
+  question: |
+    What is the function of yq and is it necessary to have it installed on your system?
+- answer: |
+    Yq is a helpful tool that is used for parsing yaml. While its installation is not necessary, it can add
+    convenience to some system commands. You can install yq by following the official installation steps. 5
+  context: |
+    Concept: Prereqs - Description: Some of the commands listed in this section assume that you have yq installed on
+    your system. While yq is not required, it is a useful tool when parsing yaml. You can install yq by following the
+    official installation steps.
+  question: |
+    What is the function of yq and is it necessary to have it installed on your system?
+task_description: |
+  This skill helps in understanding the concept: Concept: Prereqs - Description: Some of the commands listed in this
+  section assume that you have yq installed on your system. While yq is not required, it is a useful tool when
+  parsing yaml. You can install yq by following the official installation steps.

@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The two major functions of an Operator Lifecycle Manager (OLM) are packaging an operator for OLM and handling the
+    installation/uninstallation of an operator. 1
+  context: |
+    Packaging of an operator for OLM and installation/uninstallation of an operator
+  question: |
+    What are the two major functions of an Operator Lifecycle Manager (OLM)?
+- answer: |
+    The two major functions of an Operator Lifecycle Manager (OLM) are packaging an operator for OLM and handling the
+    installation/uninstallation of an operator. 2
+  context: |
+    Packaging of an operator for OLM and installation/uninstallation of an operator
+  question: |
+    What are the two major functions of an Operator Lifecycle Manager (OLM)?
+- answer: |
+    The two major functions of an Operator Lifecycle Manager (OLM) are packaging an operator for OLM and handling the
+    installation/uninstallation of an operator. 3
+  context: |
+    Packaging of an operator for OLM and installation/uninstallation of an operator
+  question: |
+    What are the two major functions of an Operator Lifecycle Manager (OLM)?
+- answer: |
+    The two major functions of an Operator Lifecycle Manager (OLM) are packaging an operator for OLM and handling the
+    installation/uninstallation of an operator. 4
+  context: |
+    Packaging of an operator for OLM and installation/uninstallation of an operator
+  question: |
+    What are the two major functions of an Operator Lifecycle Manager (OLM)?
+- answer: |
+    The two major functions of an Operator Lifecycle Manager (OLM) are packaging an operator for OLM and handling the
+    installation/uninstallation of an operator. 5
+  context: |
+    Packaging of an operator for OLM and installation/uninstallation of an operator
+  question: |
+    What are the two major functions of an Operator Lifecycle Manager (OLM)?
+task_description: |
+  This skill helps in understanding the concept: Packaging of an operator for OLM and installation/uninstallation of
+  an operator

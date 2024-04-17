@@ -1,0 +1,44 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Operatorframework.io/priorityclass is a term related to Kubernetes, signifying the specific priority class
+    assigned to an operator in the Kubernetes scheduling system. This can dictate the order of processing or resource
+    allocation for the operator in relation to others in the system. 1
+  context: |
+    Annotation: operatorframework.io/priorityclass
+  question: |
+    What is operatorframework.io/priorityclass?
+- answer: |
+    Operatorframework.io/priorityclass is a term related to Kubernetes, signifying the specific priority class
+    assigned to an operator in the Kubernetes scheduling system. This can dictate the order of processing or resource
+    allocation for the operator in relation to others in the system. 2
+  context: |
+    Annotation: operatorframework.io/priorityclass
+  question: |
+    What is operatorframework.io/priorityclass?
+- answer: |
+    Operatorframework.io/priorityclass is a term related to Kubernetes, signifying the specific priority class
+    assigned to an operator in the Kubernetes scheduling system. This can dictate the order of processing or resource
+    allocation for the operator in relation to others in the system. 3
+  context: |
+    Annotation: operatorframework.io/priorityclass
+  question: |
+    What is operatorframework.io/priorityclass?
+- answer: |
+    Operatorframework.io/priorityclass is a term related to Kubernetes, signifying the specific priority class
+    assigned to an operator in the Kubernetes scheduling system. This can dictate the order of processing or resource
+    allocation for the operator in relation to others in the system. 4
+  context: |
+    Annotation: operatorframework.io/priorityclass
+  question: |
+    What is operatorframework.io/priorityclass?
+- answer: |
+    Operatorframework.io/priorityclass is a term related to Kubernetes, signifying the specific priority class
+    assigned to an operator in the Kubernetes scheduling system. This can dictate the order of processing or resource
+    allocation for the operator in relation to others in the system. 5
+  context: |
+    Annotation: operatorframework.io/priorityclass
+  question: |
+    What is operatorframework.io/priorityclass?
+task_description: |
+  This skill helps in understanding the concept: Annotation: operatorframework.io/priorityclass

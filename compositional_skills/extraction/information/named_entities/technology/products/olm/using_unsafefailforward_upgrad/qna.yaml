@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    UnsafeFailForward upgrades can be implemented in a namespace scoped resource by using the OperatorGroup and
+    setting the upgradeStrategy field to TechPreviewUnsafeFailForward. 1
+  context: |
+    Using UnsafeFailForward Upgrades: This can be achieved using a namespace scoped resource, OperatorGroup, and
+    setting the upgradeStrategy field to TechPreviewUnsafeFailForward.
+  question: |
+    How can UnsafeFailForward upgrades be implemented in a namespace scoped resource?
+- answer: |
+    UnsafeFailForward upgrades can be implemented in a namespace scoped resource by using the OperatorGroup and
+    setting the upgradeStrategy field to TechPreviewUnsafeFailForward. 2
+  context: |
+    Using UnsafeFailForward Upgrades: This can be achieved using a namespace scoped resource, OperatorGroup, and
+    setting the upgradeStrategy field to TechPreviewUnsafeFailForward.
+  question: |
+    How can UnsafeFailForward upgrades be implemented in a namespace scoped resource?
+- answer: |
+    UnsafeFailForward upgrades can be implemented in a namespace scoped resource by using the OperatorGroup and
+    setting the upgradeStrategy field to TechPreviewUnsafeFailForward. 3
+  context: |
+    Using UnsafeFailForward Upgrades: This can be achieved using a namespace scoped resource, OperatorGroup, and
+    setting the upgradeStrategy field to TechPreviewUnsafeFailForward.
+  question: |
+    How can UnsafeFailForward upgrades be implemented in a namespace scoped resource?
+- answer: |
+    UnsafeFailForward upgrades can be implemented in a namespace scoped resource by using the OperatorGroup and
+    setting the upgradeStrategy field to TechPreviewUnsafeFailForward. 4
+  context: |
+    Using UnsafeFailForward Upgrades: This can be achieved using a namespace scoped resource, OperatorGroup, and
+    setting the upgradeStrategy field to TechPreviewUnsafeFailForward.
+  question: |
+    How can UnsafeFailForward upgrades be implemented in a namespace scoped resource?
+- answer: |
+    UnsafeFailForward upgrades can be implemented in a namespace scoped resource by using the OperatorGroup and
+    setting the upgradeStrategy field to TechPreviewUnsafeFailForward. 5
+  context: |
+    Using UnsafeFailForward Upgrades: This can be achieved using a namespace scoped resource, OperatorGroup, and
+    setting the upgradeStrategy field to TechPreviewUnsafeFailForward.
+  question: |
+    How can UnsafeFailForward upgrades be implemented in a namespace scoped resource?
+task_description: |
+  This skill helps in understanding the concept: Using UnsafeFailForward Upgrades: This can be achieved using a
+  namespace scoped resource, OperatorGroup, and setting the upgradeStrategy field to TechPreviewUnsafeFailForward.

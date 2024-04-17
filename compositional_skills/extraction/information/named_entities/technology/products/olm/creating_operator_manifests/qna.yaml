@@ -1,0 +1,110 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    A ClusterServiceVersion is a YAML manifest created from user-defined metadata that assists the Operator Lifecycle
+    Manager (OLM) in running the operator in a cluster. It includes information about the operator's deployment, its
+    dependencies and permissions, as well as the APIs it provides. It's a central part of the packaging metadata for
+    OLM. 1
+  context: |
+    - Creating operator manifests  - Operator Lifecycle Manager (OLM)  - Packaging metadata for OLM - Operator
+    Manifests - ClusterServiceVersion (CSV)  - Operator Deployment  - Metadata about an operator - Operator's
+    lifecycle  - Compatibility of metadata with OLM - Packaging software for a traditional operating system - User's
+    understanding of changes to the cluster  - Operator safety operation  - Example manifests  - CRDs (Custom Resource
+    Definitions) - RBAC (Role-based Access Control)  - ClusterServiceVersion from existing manifests - Basic Metadata
+    - Installation Metadata - Install Strategy  - Runtime components of operator  - InstallModes  - Operator scoping
+    with operatorgroups - Defined APIs  - Operator communication with Kubernetes API  - Owned APIs  - Required APIs -
+    Dependency resolution  - Ownership of operator  - NativeAPIs  - Additional objects packaging along with an
+    Operator - Limitations on Pod Disruption Budgets (PDB)  - Guidelines for PDB objects - Limitations on Priority
+    Classes  - Guidelines for PriorityClass objects  - Extension apiservers  - APIServices. - Advanced and Optional
+    features  - Operator SDK - Generating CSV using operator-sdk.
+  question: |
+    What is a ClusterServiceVersion (CSV) in relation to operator manifests?
+- answer: |
+    A ClusterServiceVersion is a YAML manifest created from user-defined metadata that assists the Operator Lifecycle
+    Manager (OLM) in running the operator in a cluster. It includes information about the operator's deployment, its
+    dependencies and permissions, as well as the APIs it provides. It's a central part of the packaging metadata for
+    OLM. 2
+  context: |
+    - Creating operator manifests  - Operator Lifecycle Manager (OLM)  - Packaging metadata for OLM - Operator
+    Manifests - ClusterServiceVersion (CSV)  - Operator Deployment  - Metadata about an operator - Operator's
+    lifecycle  - Compatibility of metadata with OLM - Packaging software for a traditional operating system - User's
+    understanding of changes to the cluster  - Operator safety operation  - Example manifests  - CRDs (Custom Resource
+    Definitions) - RBAC (Role-based Access Control)  - ClusterServiceVersion from existing manifests - Basic Metadata
+    - Installation Metadata - Install Strategy  - Runtime components of operator  - InstallModes  - Operator scoping
+    with operatorgroups - Defined APIs  - Operator communication with Kubernetes API  - Owned APIs  - Required APIs -
+    Dependency resolution  - Ownership of operator  - NativeAPIs  - Additional objects packaging along with an
+    Operator - Limitations on Pod Disruption Budgets (PDB)  - Guidelines for PDB objects - Limitations on Priority
+    Classes  - Guidelines for PriorityClass objects  - Extension apiservers  - APIServices. - Advanced and Optional
+    features  - Operator SDK - Generating CSV using operator-sdk.
+  question: |
+    What is a ClusterServiceVersion (CSV) in relation to operator manifests?
+- answer: |
+    A ClusterServiceVersion is a YAML manifest created from user-defined metadata that assists the Operator Lifecycle
+    Manager (OLM) in running the operator in a cluster. It includes information about the operator's deployment, its
+    dependencies and permissions, as well as the APIs it provides. It's a central part of the packaging metadata for
+    OLM. 3
+  context: |
+    - Creating operator manifests  - Operator Lifecycle Manager (OLM)  - Packaging metadata for OLM - Operator
+    Manifests - ClusterServiceVersion (CSV)  - Operator Deployment  - Metadata about an operator - Operator's
+    lifecycle  - Compatibility of metadata with OLM - Packaging software for a traditional operating system - User's
+    understanding of changes to the cluster  - Operator safety operation  - Example manifests  - CRDs (Custom Resource
+    Definitions) - RBAC (Role-based Access Control)  - ClusterServiceVersion from existing manifests - Basic Metadata
+    - Installation Metadata - Install Strategy  - Runtime components of operator  - InstallModes  - Operator scoping
+    with operatorgroups - Defined APIs  - Operator communication with Kubernetes API  - Owned APIs  - Required APIs -
+    Dependency resolution  - Ownership of operator  - NativeAPIs  - Additional objects packaging along with an
+    Operator - Limitations on Pod Disruption Budgets (PDB)  - Guidelines for PDB objects - Limitations on Priority
+    Classes  - Guidelines for PriorityClass objects  - Extension apiservers  - APIServices. - Advanced and Optional
+    features  - Operator SDK - Generating CSV using operator-sdk.
+  question: |
+    What is a ClusterServiceVersion (CSV) in relation to operator manifests?
+- answer: |
+    A ClusterServiceVersion is a YAML manifest created from user-defined metadata that assists the Operator Lifecycle
+    Manager (OLM) in running the operator in a cluster. It includes information about the operator's deployment, its
+    dependencies and permissions, as well as the APIs it provides. It's a central part of the packaging metadata for
+    OLM. 4
+  context: |
+    - Creating operator manifests  - Operator Lifecycle Manager (OLM)  - Packaging metadata for OLM - Operator
+    Manifests - ClusterServiceVersion (CSV)  - Operator Deployment  - Metadata about an operator - Operator's
+    lifecycle  - Compatibility of metadata with OLM - Packaging software for a traditional operating system - User's
+    understanding of changes to the cluster  - Operator safety operation  - Example manifests  - CRDs (Custom Resource
+    Definitions) - RBAC (Role-based Access Control)  - ClusterServiceVersion from existing manifests - Basic Metadata
+    - Installation Metadata - Install Strategy  - Runtime components of operator  - InstallModes  - Operator scoping
+    with operatorgroups - Defined APIs  - Operator communication with Kubernetes API  - Owned APIs  - Required APIs -
+    Dependency resolution  - Ownership of operator  - NativeAPIs  - Additional objects packaging along with an
+    Operator - Limitations on Pod Disruption Budgets (PDB)  - Guidelines for PDB objects - Limitations on Priority
+    Classes  - Guidelines for PriorityClass objects  - Extension apiservers  - APIServices. - Advanced and Optional
+    features  - Operator SDK - Generating CSV using operator-sdk.
+  question: |
+    What is a ClusterServiceVersion (CSV) in relation to operator manifests?
+- answer: |
+    A ClusterServiceVersion is a YAML manifest created from user-defined metadata that assists the Operator Lifecycle
+    Manager (OLM) in running the operator in a cluster. It includes information about the operator's deployment, its
+    dependencies and permissions, as well as the APIs it provides. It's a central part of the packaging metadata for
+    OLM. 5
+  context: |
+    - Creating operator manifests  - Operator Lifecycle Manager (OLM)  - Packaging metadata for OLM - Operator
+    Manifests - ClusterServiceVersion (CSV)  - Operator Deployment  - Metadata about an operator - Operator's
+    lifecycle  - Compatibility of metadata with OLM - Packaging software for a traditional operating system - User's
+    understanding of changes to the cluster  - Operator safety operation  - Example manifests  - CRDs (Custom Resource
+    Definitions) - RBAC (Role-based Access Control)  - ClusterServiceVersion from existing manifests - Basic Metadata
+    - Installation Metadata - Install Strategy  - Runtime components of operator  - InstallModes  - Operator scoping
+    with operatorgroups - Defined APIs  - Operator communication with Kubernetes API  - Owned APIs  - Required APIs -
+    Dependency resolution  - Ownership of operator  - NativeAPIs  - Additional objects packaging along with an
+    Operator - Limitations on Pod Disruption Budgets (PDB)  - Guidelines for PDB objects - Limitations on Priority
+    Classes  - Guidelines for PriorityClass objects  - Extension apiservers  - APIServices. - Advanced and Optional
+    features  - Operator SDK - Generating CSV using operator-sdk.
+  question: |
+    What is a ClusterServiceVersion (CSV) in relation to operator manifests?
+task_description: |
+  This skill helps in understanding the concept: - Creating operator manifests  - Operator Lifecycle Manager (OLM)
+  - Packaging metadata for OLM - Operator Manifests - ClusterServiceVersion (CSV)  - Operator Deployment  - Metadata
+  about an operator - Operator's lifecycle  - Compatibility of metadata with OLM - Packaging software for a
+  traditional operating system - User's understanding of changes to the cluster  - Operator safety operation  -
+  Example manifests  - CRDs (Custom Resource Definitions) - RBAC (Role-based Access Control)  -
+  ClusterServiceVersion from existing manifests - Basic Metadata  - Installation Metadata - Install Strategy  -
+  Runtime components of operator  - InstallModes  - Operator scoping with operatorgroups - Defined APIs  - Operator
+  communication with Kubernetes API  - Owned APIs  - Required APIs - Dependency resolution  - Ownership of operator
+  - NativeAPIs  - Additional objects packaging along with an Operator - Limitations on Pod Disruption Budgets (PDB)
+  - Guidelines for PDB objects - Limitations on Priority Classes  - Guidelines for PriorityClass objects  -
+  Extension apiservers  - APIServices. - Advanced and Optional features  - Operator SDK - Generating CSV using
+  operator-sdk.

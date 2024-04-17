@@ -1,0 +1,56 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    In Kubernetes, RBAC is used for managing permissions and access rights of service accounts. For instance, all
+    service accounts in the cluster service version (CSV) will be granted the RBAC to interact with the
+    OperatorCondition owned by the operator. 1
+  context: |
+    Concept: RBAC (Role-Based Access Control) - Definition: A concept in Kubernetes for managing permissions and
+    access rights of service accounts. - Usage: All service accounts in the CSV will be granted the RBAC to interact
+    with the OperatorCondition owned by the operator.
+  question: |
+    How is the concept of Role-Based Access Control (RBAC) utilized in Kubernetes?
+- answer: |
+    In Kubernetes, RBAC is used for managing permissions and access rights of service accounts. For instance, all
+    service accounts in the cluster service version (CSV) will be granted the RBAC to interact with the
+    OperatorCondition owned by the operator. 2
+  context: |
+    Concept: RBAC (Role-Based Access Control) - Definition: A concept in Kubernetes for managing permissions and
+    access rights of service accounts. - Usage: All service accounts in the CSV will be granted the RBAC to interact
+    with the OperatorCondition owned by the operator.
+  question: |
+    How is the concept of Role-Based Access Control (RBAC) utilized in Kubernetes?
+- answer: |
+    In Kubernetes, RBAC is used for managing permissions and access rights of service accounts. For instance, all
+    service accounts in the cluster service version (CSV) will be granted the RBAC to interact with the
+    OperatorCondition owned by the operator. 3
+  context: |
+    Concept: RBAC (Role-Based Access Control) - Definition: A concept in Kubernetes for managing permissions and
+    access rights of service accounts. - Usage: All service accounts in the CSV will be granted the RBAC to interact
+    with the OperatorCondition owned by the operator.
+  question: |
+    How is the concept of Role-Based Access Control (RBAC) utilized in Kubernetes?
+- answer: |
+    In Kubernetes, RBAC is used for managing permissions and access rights of service accounts. For instance, all
+    service accounts in the cluster service version (CSV) will be granted the RBAC to interact with the
+    OperatorCondition owned by the operator. 4
+  context: |
+    Concept: RBAC (Role-Based Access Control) - Definition: A concept in Kubernetes for managing permissions and
+    access rights of service accounts. - Usage: All service accounts in the CSV will be granted the RBAC to interact
+    with the OperatorCondition owned by the operator.
+  question: |
+    How is the concept of Role-Based Access Control (RBAC) utilized in Kubernetes?
+- answer: |
+    In Kubernetes, RBAC is used for managing permissions and access rights of service accounts. For instance, all
+    service accounts in the cluster service version (CSV) will be granted the RBAC to interact with the
+    OperatorCondition owned by the operator. 5
+  context: |
+    Concept: RBAC (Role-Based Access Control) - Definition: A concept in Kubernetes for managing permissions and
+    access rights of service accounts. - Usage: All service accounts in the CSV will be granted the RBAC to interact
+    with the OperatorCondition owned by the operator.
+  question: |
+    How is the concept of Role-Based Access Control (RBAC) utilized in Kubernetes?
+task_description: |
+  This skill helps in understanding the concept: Concept: RBAC (Role-Based Access Control) - Definition: A concept
+  in Kubernetes for managing permissions and access rights of service accounts. - Usage: All service accounts in the
+  CSV will be granted the RBAC to interact with the OperatorCondition owned by the operator.

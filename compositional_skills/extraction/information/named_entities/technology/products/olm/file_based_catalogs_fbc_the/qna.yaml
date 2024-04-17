@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    File-based-catalogs, or FBCs, are catalogs that provide operator authors with standardized schemas to express
+    operator upgrade graphs. 1
+  context: |
+    File-based-catalogs (FBC): These are catalogs that provide operator authors with standardized schemas to express
+    operator upgrade graphs.
+  question: |
+    What are file-based-catalogs in the context of operator authors?
+- answer: |
+    File-based-catalogs, or FBCs, are catalogs that provide operator authors with standardized schemas to express
+    operator upgrade graphs. 2
+  context: |
+    File-based-catalogs (FBC): These are catalogs that provide operator authors with standardized schemas to express
+    operator upgrade graphs.
+  question: |
+    What are file-based-catalogs in the context of operator authors?
+- answer: |
+    File-based-catalogs, or FBCs, are catalogs that provide operator authors with standardized schemas to express
+    operator upgrade graphs. 3
+  context: |
+    File-based-catalogs (FBC): These are catalogs that provide operator authors with standardized schemas to express
+    operator upgrade graphs.
+  question: |
+    What are file-based-catalogs in the context of operator authors?
+- answer: |
+    File-based-catalogs, or FBCs, are catalogs that provide operator authors with standardized schemas to express
+    operator upgrade graphs. 4
+  context: |
+    File-based-catalogs (FBC): These are catalogs that provide operator authors with standardized schemas to express
+    operator upgrade graphs.
+  question: |
+    What are file-based-catalogs in the context of operator authors?
+- answer: |
+    File-based-catalogs, or FBCs, are catalogs that provide operator authors with standardized schemas to express
+    operator upgrade graphs. 5
+  context: |
+    File-based-catalogs (FBC): These are catalogs that provide operator authors with standardized schemas to express
+    operator upgrade graphs.
+  question: |
+    What are file-based-catalogs in the context of operator authors?
+task_description: |
+  This skill helps in understanding the concept: File-based-catalogs (FBC): These are catalogs that provide operator
+  authors with standardized schemas to express operator upgrade graphs.

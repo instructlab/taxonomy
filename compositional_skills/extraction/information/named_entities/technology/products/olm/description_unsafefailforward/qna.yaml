@@ -1,0 +1,46 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The UnsafeFailForward feature allows for the automatic upgrade of failed installs and upgrades. However, it is
+    considered unsafe and should only be used in very specific circumstances. 1
+  context: |
+    Description: UnsafeFailForward upgrades is a feature that allows for the automatic upgrade of failed installs and
+    upgrades. It is ultimately unsafe and should only be used in very specific circumstances.
+  question: |
+    What is the UnsafeFailForward feature and when should it be used?
+- answer: |
+    The UnsafeFailForward feature allows for the automatic upgrade of failed installs and upgrades. However, it is
+    considered unsafe and should only be used in very specific circumstances. 2
+  context: |
+    Description: UnsafeFailForward upgrades is a feature that allows for the automatic upgrade of failed installs and
+    upgrades. It is ultimately unsafe and should only be used in very specific circumstances.
+  question: |
+    What is the UnsafeFailForward feature and when should it be used?
+- answer: |
+    The UnsafeFailForward feature allows for the automatic upgrade of failed installs and upgrades. However, it is
+    considered unsafe and should only be used in very specific circumstances. 3
+  context: |
+    Description: UnsafeFailForward upgrades is a feature that allows for the automatic upgrade of failed installs and
+    upgrades. It is ultimately unsafe and should only be used in very specific circumstances.
+  question: |
+    What is the UnsafeFailForward feature and when should it be used?
+- answer: |
+    The UnsafeFailForward feature allows for the automatic upgrade of failed installs and upgrades. However, it is
+    considered unsafe and should only be used in very specific circumstances. 4
+  context: |
+    Description: UnsafeFailForward upgrades is a feature that allows for the automatic upgrade of failed installs and
+    upgrades. It is ultimately unsafe and should only be used in very specific circumstances.
+  question: |
+    What is the UnsafeFailForward feature and when should it be used?
+- answer: |
+    The UnsafeFailForward feature allows for the automatic upgrade of failed installs and upgrades. However, it is
+    considered unsafe and should only be used in very specific circumstances. 5
+  context: |
+    Description: UnsafeFailForward upgrades is a feature that allows for the automatic upgrade of failed installs and
+    upgrades. It is ultimately unsafe and should only be used in very specific circumstances.
+  question: |
+    What is the UnsafeFailForward feature and when should it be used?
+task_description: |
+  This skill helps in understanding the concept: Description: UnsafeFailForward upgrades is a feature that allows
+  for the automatic upgrade of failed installs and upgrades. It is ultimately unsafe and should only be used in very
+  specific circumstances.

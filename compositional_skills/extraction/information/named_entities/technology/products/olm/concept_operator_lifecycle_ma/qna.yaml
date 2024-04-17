@@ -1,0 +1,57 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The Operator-Lifecycle-Manager (OLM) is a component of Kubernetes that infers the state of an operator from
+    resources that define the operator. Its main usage is to manage the lifecycle of an operator, including state
+    interpretation and lifecycle management based on additional operator-provided information. 1
+  context: |
+    Concept: Operator-Lifecycle-Manager (OLM) - Definition: A component of Kubernetes that infers the state of an
+    operator from resources that define the operator. - Usage: OLM manages the lifecycle of an operator, including
+    state interpretation and lifecycle management based on additional operator-provided information.
+  question: |
+    What is the Operator-Lifecycle-Manager (OLM) in Kubernetes and what is its usage?
+- answer: |
+    The Operator-Lifecycle-Manager (OLM) is a component of Kubernetes that infers the state of an operator from
+    resources that define the operator. Its main usage is to manage the lifecycle of an operator, including state
+    interpretation and lifecycle management based on additional operator-provided information. 2
+  context: |
+    Concept: Operator-Lifecycle-Manager (OLM) - Definition: A component of Kubernetes that infers the state of an
+    operator from resources that define the operator. - Usage: OLM manages the lifecycle of an operator, including
+    state interpretation and lifecycle management based on additional operator-provided information.
+  question: |
+    What is the Operator-Lifecycle-Manager (OLM) in Kubernetes and what is its usage?
+- answer: |
+    The Operator-Lifecycle-Manager (OLM) is a component of Kubernetes that infers the state of an operator from
+    resources that define the operator. Its main usage is to manage the lifecycle of an operator, including state
+    interpretation and lifecycle management based on additional operator-provided information. 3
+  context: |
+    Concept: Operator-Lifecycle-Manager (OLM) - Definition: A component of Kubernetes that infers the state of an
+    operator from resources that define the operator. - Usage: OLM manages the lifecycle of an operator, including
+    state interpretation and lifecycle management based on additional operator-provided information.
+  question: |
+    What is the Operator-Lifecycle-Manager (OLM) in Kubernetes and what is its usage?
+- answer: |
+    The Operator-Lifecycle-Manager (OLM) is a component of Kubernetes that infers the state of an operator from
+    resources that define the operator. Its main usage is to manage the lifecycle of an operator, including state
+    interpretation and lifecycle management based on additional operator-provided information. 4
+  context: |
+    Concept: Operator-Lifecycle-Manager (OLM) - Definition: A component of Kubernetes that infers the state of an
+    operator from resources that define the operator. - Usage: OLM manages the lifecycle of an operator, including
+    state interpretation and lifecycle management based on additional operator-provided information.
+  question: |
+    What is the Operator-Lifecycle-Manager (OLM) in Kubernetes and what is its usage?
+- answer: |
+    The Operator-Lifecycle-Manager (OLM) is a component of Kubernetes that infers the state of an operator from
+    resources that define the operator. Its main usage is to manage the lifecycle of an operator, including state
+    interpretation and lifecycle management based on additional operator-provided information. 5
+  context: |
+    Concept: Operator-Lifecycle-Manager (OLM) - Definition: A component of Kubernetes that infers the state of an
+    operator from resources that define the operator. - Usage: OLM manages the lifecycle of an operator, including
+    state interpretation and lifecycle management based on additional operator-provided information.
+  question: |
+    What is the Operator-Lifecycle-Manager (OLM) in Kubernetes and what is its usage?
+task_description: |
+  This skill helps in understanding the concept: Concept: Operator-Lifecycle-Manager (OLM) - Definition: A component
+  of Kubernetes that infers the state of an operator from resources that define the operator. - Usage: OLM manages
+  the lifecycle of an operator, including state interpretation and lifecycle management based on additional
+  operator-provided information.

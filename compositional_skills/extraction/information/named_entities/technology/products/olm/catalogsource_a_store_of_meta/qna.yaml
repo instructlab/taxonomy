@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    CatalogSource in Operator Lifecycle Manager (OLM) is a store of metadata that can be queried to discover and
+    install operators and their dependencies. 1
+  context: |
+    CatalogSource: A store of metadata that Operator Lifecycle Manager (OLM) can query to discover and install
+    operators and their dependencies.
+  question: |
+    What is the function of CatalogSource in Operator Lifecycle Manager (OLM)?
+- answer: |
+    CatalogSource in Operator Lifecycle Manager (OLM) is a store of metadata that can be queried to discover and
+    install operators and their dependencies. 2
+  context: |
+    CatalogSource: A store of metadata that Operator Lifecycle Manager (OLM) can query to discover and install
+    operators and their dependencies.
+  question: |
+    What is the function of CatalogSource in Operator Lifecycle Manager (OLM)?
+- answer: |
+    CatalogSource in Operator Lifecycle Manager (OLM) is a store of metadata that can be queried to discover and
+    install operators and their dependencies. 3
+  context: |
+    CatalogSource: A store of metadata that Operator Lifecycle Manager (OLM) can query to discover and install
+    operators and their dependencies.
+  question: |
+    What is the function of CatalogSource in Operator Lifecycle Manager (OLM)?
+- answer: |
+    CatalogSource in Operator Lifecycle Manager (OLM) is a store of metadata that can be queried to discover and
+    install operators and their dependencies. 4
+  context: |
+    CatalogSource: A store of metadata that Operator Lifecycle Manager (OLM) can query to discover and install
+    operators and their dependencies.
+  question: |
+    What is the function of CatalogSource in Operator Lifecycle Manager (OLM)?
+- answer: |
+    CatalogSource in Operator Lifecycle Manager (OLM) is a store of metadata that can be queried to discover and
+    install operators and their dependencies. 5
+  context: |
+    CatalogSource: A store of metadata that Operator Lifecycle Manager (OLM) can query to discover and install
+    operators and their dependencies.
+  question: |
+    What is the function of CatalogSource in Operator Lifecycle Manager (OLM)?
+task_description: |
+  This skill helps in understanding the concept: CatalogSource: A store of metadata that Operator Lifecycle Manager
+  (OLM) can query to discover and install operators and their dependencies.

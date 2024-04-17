@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The features used to skip known failing bundles in the upgrade graph are Skips or skipRange. 1
+  context: |
+    Using Skips or skipRange Feature: To avoid known failing bundles, these features can be used to skip such bundles
+    in the upgrade graph.
+  question: |
+    What are the features used to skip known failing bundles in the upgrade graph?
+- answer: |
+    The features used to skip known failing bundles in the upgrade graph are Skips or skipRange. 2
+  context: |
+    Using Skips or skipRange Feature: To avoid known failing bundles, these features can be used to skip such bundles
+    in the upgrade graph.
+  question: |
+    What are the features used to skip known failing bundles in the upgrade graph?
+- answer: |
+    The features used to skip known failing bundles in the upgrade graph are Skips or skipRange. 3
+  context: |
+    Using Skips or skipRange Feature: To avoid known failing bundles, these features can be used to skip such bundles
+    in the upgrade graph.
+  question: |
+    What are the features used to skip known failing bundles in the upgrade graph?
+- answer: |
+    The features used to skip known failing bundles in the upgrade graph are Skips or skipRange. 4
+  context: |
+    Using Skips or skipRange Feature: To avoid known failing bundles, these features can be used to skip such bundles
+    in the upgrade graph.
+  question: |
+    What are the features used to skip known failing bundles in the upgrade graph?
+- answer: |
+    The features used to skip known failing bundles in the upgrade graph are Skips or skipRange. 5
+  context: |
+    Using Skips or skipRange Feature: To avoid known failing bundles, these features can be used to skip such bundles
+    in the upgrade graph.
+  question: |
+    What are the features used to skip known failing bundles in the upgrade graph?
+task_description: |
+  This skill helps in understanding the concept: Using Skips or skipRange Feature: To avoid known failing bundles,
+  these features can be used to skip such bundles in the upgrade graph.

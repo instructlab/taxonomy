@@ -1,0 +1,56 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    OperatorConditions is a CustomResourceDefinition introduced by the Operator Lifecycle Manager (OLM) that allows
+    operators to communicate specific conditions to OLM. It is used to inform OLM about specific conditions that
+    influence the management of the operator. 1
+  context: |
+    Concept: OperatorConditions - Definition: A new CustomResourceDefinition introduced by OLM that allows operators
+    to communicate specific conditions to OLM. - Usage: It informs OLM about specific conditions that influence the
+    management of the operator.
+  question: |
+    What is OperatorConditions in the context of OLM and what is its usage?
+- answer: |
+    OperatorConditions is a CustomResourceDefinition introduced by the Operator Lifecycle Manager (OLM) that allows
+    operators to communicate specific conditions to OLM. It is used to inform OLM about specific conditions that
+    influence the management of the operator. 2
+  context: |
+    Concept: OperatorConditions - Definition: A new CustomResourceDefinition introduced by OLM that allows operators
+    to communicate specific conditions to OLM. - Usage: It informs OLM about specific conditions that influence the
+    management of the operator.
+  question: |
+    What is OperatorConditions in the context of OLM and what is its usage?
+- answer: |
+    OperatorConditions is a CustomResourceDefinition introduced by the Operator Lifecycle Manager (OLM) that allows
+    operators to communicate specific conditions to OLM. It is used to inform OLM about specific conditions that
+    influence the management of the operator. 3
+  context: |
+    Concept: OperatorConditions - Definition: A new CustomResourceDefinition introduced by OLM that allows operators
+    to communicate specific conditions to OLM. - Usage: It informs OLM about specific conditions that influence the
+    management of the operator.
+  question: |
+    What is OperatorConditions in the context of OLM and what is its usage?
+- answer: |
+    OperatorConditions is a CustomResourceDefinition introduced by the Operator Lifecycle Manager (OLM) that allows
+    operators to communicate specific conditions to OLM. It is used to inform OLM about specific conditions that
+    influence the management of the operator. 4
+  context: |
+    Concept: OperatorConditions - Definition: A new CustomResourceDefinition introduced by OLM that allows operators
+    to communicate specific conditions to OLM. - Usage: It informs OLM about specific conditions that influence the
+    management of the operator.
+  question: |
+    What is OperatorConditions in the context of OLM and what is its usage?
+- answer: |
+    OperatorConditions is a CustomResourceDefinition introduced by the Operator Lifecycle Manager (OLM) that allows
+    operators to communicate specific conditions to OLM. It is used to inform OLM about specific conditions that
+    influence the management of the operator. 5
+  context: |
+    Concept: OperatorConditions - Definition: A new CustomResourceDefinition introduced by OLM that allows operators
+    to communicate specific conditions to OLM. - Usage: It informs OLM about specific conditions that influence the
+    management of the operator.
+  question: |
+    What is OperatorConditions in the context of OLM and what is its usage?
+task_description: |
+  This skill helps in understanding the concept: Concept: OperatorConditions - Definition: A new
+  CustomResourceDefinition introduced by OLM that allows operators to communicate specific conditions to OLM. -
+  Usage: It informs OLM about specific conditions that influence the management of the operator.

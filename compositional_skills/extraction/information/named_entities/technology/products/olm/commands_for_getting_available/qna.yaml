@@ -1,0 +1,46 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    You can display the available operators in bash by executing the command `kubectl get packagemanifest -n
+    <namespace>`. 1
+  context: |
+    Commands for getting available operators: The available operators can be displayed by executing certain commands
+    in bash. One such command is ```kubectl get packagemanifest -n <namespace>```.
+  question: |
+    How can you display the available operators in bash?
+- answer: |
+    You can display the available operators in bash by executing the command `kubectl get packagemanifest -n
+    <namespace>`. 2
+  context: |
+    Commands for getting available operators: The available operators can be displayed by executing certain commands
+    in bash. One such command is ```kubectl get packagemanifest -n <namespace>```.
+  question: |
+    How can you display the available operators in bash?
+- answer: |
+    You can display the available operators in bash by executing the command `kubectl get packagemanifest -n
+    <namespace>`. 3
+  context: |
+    Commands for getting available operators: The available operators can be displayed by executing certain commands
+    in bash. One such command is ```kubectl get packagemanifest -n <namespace>```.
+  question: |
+    How can you display the available operators in bash?
+- answer: |
+    You can display the available operators in bash by executing the command `kubectl get packagemanifest -n
+    <namespace>`. 4
+  context: |
+    Commands for getting available operators: The available operators can be displayed by executing certain commands
+    in bash. One such command is ```kubectl get packagemanifest -n <namespace>```.
+  question: |
+    How can you display the available operators in bash?
+- answer: |
+    You can display the available operators in bash by executing the command `kubectl get packagemanifest -n
+    <namespace>`. 5
+  context: |
+    Commands for getting available operators: The available operators can be displayed by executing certain commands
+    in bash. One such command is ```kubectl get packagemanifest -n <namespace>```.
+  question: |
+    How can you display the available operators in bash?
+task_description: |
+  This skill helps in understanding the concept: Commands for getting available operators: The available operators
+  can be displayed by executing certain commands in bash. One such command is ```kubectl get packagemanifest -n
+  <namespace>```.

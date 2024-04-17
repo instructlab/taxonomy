@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The DPTP folks provide specific guidance for adding ci-operator to OLM operator setup. 1
+  context: |
+    Adding ci-operator to OLM operator setup: requires specific guidance from DPTP folks.
+  question: |
+    Who provides specific guidance for adding ci-operator to OLM operator setup?
+- answer: |
+    The DPTP folks provide specific guidance for adding ci-operator to OLM operator setup. 2
+  context: |
+    Adding ci-operator to OLM operator setup: requires specific guidance from DPTP folks.
+  question: |
+    Who provides specific guidance for adding ci-operator to OLM operator setup?
+- answer: |
+    The DPTP folks provide specific guidance for adding ci-operator to OLM operator setup. 3
+  context: |
+    Adding ci-operator to OLM operator setup: requires specific guidance from DPTP folks.
+  question: |
+    Who provides specific guidance for adding ci-operator to OLM operator setup?
+- answer: |
+    The DPTP folks provide specific guidance for adding ci-operator to OLM operator setup. 4
+  context: |
+    Adding ci-operator to OLM operator setup: requires specific guidance from DPTP folks.
+  question: |
+    Who provides specific guidance for adding ci-operator to OLM operator setup?
+- answer: |
+    The DPTP folks provide specific guidance for adding ci-operator to OLM operator setup. 5
+  context: |
+    Adding ci-operator to OLM operator setup: requires specific guidance from DPTP folks.
+  question: |
+    Who provides specific guidance for adding ci-operator to OLM operator setup?
+task_description: |
+  This skill helps in understanding the concept: Adding ci-operator to OLM operator setup: requires specific
+  guidance from DPTP folks.

@@ -1,0 +1,46 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    A missing Status suggests that there is an issue processing the CSV at an early stage and it is recommended to
+    review the logs of the OLM operator. 1
+  context: |
+    Status of CSV    - Description: If the Status is missing, it suggests that there is an issue processing the CSV at
+    an early stage, and the logs of the OLM operator should be reviewed.
+  question: |
+    What does a missing Status suggest when processing a CSV at an early stage?
+- answer: |
+    A missing Status suggests that there is an issue processing the CSV at an early stage and it is recommended to
+    review the logs of the OLM operator. 2
+  context: |
+    Status of CSV    - Description: If the Status is missing, it suggests that there is an issue processing the CSV at
+    an early stage, and the logs of the OLM operator should be reviewed.
+  question: |
+    What does a missing Status suggest when processing a CSV at an early stage?
+- answer: |
+    A missing Status suggests that there is an issue processing the CSV at an early stage and it is recommended to
+    review the logs of the OLM operator. 3
+  context: |
+    Status of CSV    - Description: If the Status is missing, it suggests that there is an issue processing the CSV at
+    an early stage, and the logs of the OLM operator should be reviewed.
+  question: |
+    What does a missing Status suggest when processing a CSV at an early stage?
+- answer: |
+    A missing Status suggests that there is an issue processing the CSV at an early stage and it is recommended to
+    review the logs of the OLM operator. 4
+  context: |
+    Status of CSV    - Description: If the Status is missing, it suggests that there is an issue processing the CSV at
+    an early stage, and the logs of the OLM operator should be reviewed.
+  question: |
+    What does a missing Status suggest when processing a CSV at an early stage?
+- answer: |
+    A missing Status suggests that there is an issue processing the CSV at an early stage and it is recommended to
+    review the logs of the OLM operator. 5
+  context: |
+    Status of CSV    - Description: If the Status is missing, it suggests that there is an issue processing the CSV at
+    an early stage, and the logs of the OLM operator should be reviewed.
+  question: |
+    What does a missing Status suggest when processing a CSV at an early stage?
+task_description: |
+  This skill helps in understanding the concept: Status of CSV    - Description: If the Status is missing, it
+  suggests that there is an issue processing the CSV at an early stage, and the logs of the OLM operator should be
+  reviewed.

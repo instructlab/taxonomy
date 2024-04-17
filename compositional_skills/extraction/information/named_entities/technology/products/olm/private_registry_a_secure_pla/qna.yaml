@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    A Private Registry is a secure place where images can be stored and pulled as per requirements. 1
+  context: |
+    Private Registry: A secure place where images can be stored and pulled as per requirements.
+  question: |
+    What is a Private Registry in the context of computing?
+- answer: |
+    A Private Registry is a secure place where images can be stored and pulled as per requirements. 2
+  context: |
+    Private Registry: A secure place where images can be stored and pulled as per requirements.
+  question: |
+    What is a Private Registry in the context of computing?
+- answer: |
+    A Private Registry is a secure place where images can be stored and pulled as per requirements. 3
+  context: |
+    Private Registry: A secure place where images can be stored and pulled as per requirements.
+  question: |
+    What is a Private Registry in the context of computing?
+- answer: |
+    A Private Registry is a secure place where images can be stored and pulled as per requirements. 4
+  context: |
+    Private Registry: A secure place where images can be stored and pulled as per requirements.
+  question: |
+    What is a Private Registry in the context of computing?
+- answer: |
+    A Private Registry is a secure place where images can be stored and pulled as per requirements. 5
+  context: |
+    Private Registry: A secure place where images can be stored and pulled as per requirements.
+  question: |
+    What is a Private Registry in the context of computing?
+task_description: |
+  This skill helps in understanding the concept: Private Registry: A secure place where images can be stored and
+  pulled as per requirements.

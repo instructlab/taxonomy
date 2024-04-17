@@ -1,0 +1,149 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    OperatorGroups in cluster operations allow cluster admins to control permissions. They are used to define the set
+    of permissions and namespaces granted to member operators. An admin can create a single OperatorGroup in a
+    namespace with the created ClusterServiceVersion in that namespace becoming a member operator of that
+    OperatorGroup. The privileges of an operator are confined to that of the specified ServiceAccount in the
+    OperatorGroup which defines the set of permissions for all member operators. This allows for self-sufficient
+    installation of Operators by non-cluster-admin users with a limited scope. 1
+  context: |
+    - Operator scoping with OperatorGroups - Carving a cluster with OperatorGroup - Operator Lifecycle Manager runs
+    with cluster-admin privileges - Operator can specify any set of permission in the ClusterServiceVersion file -
+    Operator can achieve cluster-scoped privileges - Concept of OperatorGroups for cluster admins to control
+    permissions - Admin can create a single OperatorGroup in a namespace - ClusterServiceVersion created in that
+    namespace becomes a member operator of that OperatorGroup - OperatorGroups allow defining the set of permissions
+    and namespaces granted to member operators - Configuring OperatorGroups - Scoping Member Operators to Specific
+    Namespaces using an OperatorGroup - Defining a set of namespaces - Defining a set of namespaces with a label
+    selector - Relationship between TargetNamespaces and InstallModes - Operators supporting four InstallModes:
+    OwnNamespace, SingleNamespace, MultiNamespace, AllNamespaces - OperatorGroup configuration supporting each
+    InstallMode  - Scoping Member Operator Permissions - Specifying a ServiceAccount in OperatorGroup that defines the
+    set of permissions for all member operators - Operator's privileges are confined to that of the specified
+    ServiceAccount - Cluster admin can limit an operator to a pre-defined set of Role-Based Access Control rules -
+    Self-sufficient installation of Operators by non-cluster-admin users with a limited scope - Defining a
+    ServiceAccount for an OperatorGroup - Configuring the End User Experience - Adding and removing operators from an
+    OperatorGroup by a cluster admin - Enabling Users to use an Operator - Tuning Role-Based Access Control privileges
+    to control users interaction with operators.
+  question: |
+    What is the purpose of an OperatorGroup in relation to Permissions and Namespaces in cluster operations?
+- answer: |
+    OperatorGroups in cluster operations allow cluster admins to control permissions. They are used to define the set
+    of permissions and namespaces granted to member operators. An admin can create a single OperatorGroup in a
+    namespace with the created ClusterServiceVersion in that namespace becoming a member operator of that
+    OperatorGroup. The privileges of an operator are confined to that of the specified ServiceAccount in the
+    OperatorGroup which defines the set of permissions for all member operators. This allows for self-sufficient
+    installation of Operators by non-cluster-admin users with a limited scope. 2
+  context: |
+    - Operator scoping with OperatorGroups - Carving a cluster with OperatorGroup - Operator Lifecycle Manager runs
+    with cluster-admin privileges - Operator can specify any set of permission in the ClusterServiceVersion file -
+    Operator can achieve cluster-scoped privileges - Concept of OperatorGroups for cluster admins to control
+    permissions - Admin can create a single OperatorGroup in a namespace - ClusterServiceVersion created in that
+    namespace becomes a member operator of that OperatorGroup - OperatorGroups allow defining the set of permissions
+    and namespaces granted to member operators - Configuring OperatorGroups - Scoping Member Operators to Specific
+    Namespaces using an OperatorGroup - Defining a set of namespaces - Defining a set of namespaces with a label
+    selector - Relationship between TargetNamespaces and InstallModes - Operators supporting four InstallModes:
+    OwnNamespace, SingleNamespace, MultiNamespace, AllNamespaces - OperatorGroup configuration supporting each
+    InstallMode  - Scoping Member Operator Permissions - Specifying a ServiceAccount in OperatorGroup that defines the
+    set of permissions for all member operators - Operator's privileges are confined to that of the specified
+    ServiceAccount - Cluster admin can limit an operator to a pre-defined set of Role-Based Access Control rules -
+    Self-sufficient installation of Operators by non-cluster-admin users with a limited scope - Defining a
+    ServiceAccount for an OperatorGroup - Configuring the End User Experience - Adding and removing operators from an
+    OperatorGroup by a cluster admin - Enabling Users to use an Operator - Tuning Role-Based Access Control privileges
+    to control users interaction with operators.
+  question: |
+    What is the purpose of an OperatorGroup in relation to Permissions and Namespaces in cluster operations?
+- answer: |
+    OperatorGroups in cluster operations allow cluster admins to control permissions. They are used to define the set
+    of permissions and namespaces granted to member operators. An admin can create a single OperatorGroup in a
+    namespace with the created ClusterServiceVersion in that namespace becoming a member operator of that
+    OperatorGroup. The privileges of an operator are confined to that of the specified ServiceAccount in the
+    OperatorGroup which defines the set of permissions for all member operators. This allows for self-sufficient
+    installation of Operators by non-cluster-admin users with a limited scope. 3
+  context: |
+    - Operator scoping with OperatorGroups - Carving a cluster with OperatorGroup - Operator Lifecycle Manager runs
+    with cluster-admin privileges - Operator can specify any set of permission in the ClusterServiceVersion file -
+    Operator can achieve cluster-scoped privileges - Concept of OperatorGroups for cluster admins to control
+    permissions - Admin can create a single OperatorGroup in a namespace - ClusterServiceVersion created in that
+    namespace becomes a member operator of that OperatorGroup - OperatorGroups allow defining the set of permissions
+    and namespaces granted to member operators - Configuring OperatorGroups - Scoping Member Operators to Specific
+    Namespaces using an OperatorGroup - Defining a set of namespaces - Defining a set of namespaces with a label
+    selector - Relationship between TargetNamespaces and InstallModes - Operators supporting four InstallModes:
+    OwnNamespace, SingleNamespace, MultiNamespace, AllNamespaces - OperatorGroup configuration supporting each
+    InstallMode  - Scoping Member Operator Permissions - Specifying a ServiceAccount in OperatorGroup that defines the
+    set of permissions for all member operators - Operator's privileges are confined to that of the specified
+    ServiceAccount - Cluster admin can limit an operator to a pre-defined set of Role-Based Access Control rules -
+    Self-sufficient installation of Operators by non-cluster-admin users with a limited scope - Defining a
+    ServiceAccount for an OperatorGroup - Configuring the End User Experience - Adding and removing operators from an
+    OperatorGroup by a cluster admin - Enabling Users to use an Operator - Tuning Role-Based Access Control privileges
+    to control users interaction with operators.
+  question: |
+    What is the purpose of an OperatorGroup in relation to Permissions and Namespaces in cluster operations?
+- answer: |
+    OperatorGroups in cluster operations allow cluster admins to control permissions. They are used to define the set
+    of permissions and namespaces granted to member operators. An admin can create a single OperatorGroup in a
+    namespace with the created ClusterServiceVersion in that namespace becoming a member operator of that
+    OperatorGroup. The privileges of an operator are confined to that of the specified ServiceAccount in the
+    OperatorGroup which defines the set of permissions for all member operators. This allows for self-sufficient
+    installation of Operators by non-cluster-admin users with a limited scope. 4
+  context: |
+    - Operator scoping with OperatorGroups - Carving a cluster with OperatorGroup - Operator Lifecycle Manager runs
+    with cluster-admin privileges - Operator can specify any set of permission in the ClusterServiceVersion file -
+    Operator can achieve cluster-scoped privileges - Concept of OperatorGroups for cluster admins to control
+    permissions - Admin can create a single OperatorGroup in a namespace - ClusterServiceVersion created in that
+    namespace becomes a member operator of that OperatorGroup - OperatorGroups allow defining the set of permissions
+    and namespaces granted to member operators - Configuring OperatorGroups - Scoping Member Operators to Specific
+    Namespaces using an OperatorGroup - Defining a set of namespaces - Defining a set of namespaces with a label
+    selector - Relationship between TargetNamespaces and InstallModes - Operators supporting four InstallModes:
+    OwnNamespace, SingleNamespace, MultiNamespace, AllNamespaces - OperatorGroup configuration supporting each
+    InstallMode  - Scoping Member Operator Permissions - Specifying a ServiceAccount in OperatorGroup that defines the
+    set of permissions for all member operators - Operator's privileges are confined to that of the specified
+    ServiceAccount - Cluster admin can limit an operator to a pre-defined set of Role-Based Access Control rules -
+    Self-sufficient installation of Operators by non-cluster-admin users with a limited scope - Defining a
+    ServiceAccount for an OperatorGroup - Configuring the End User Experience - Adding and removing operators from an
+    OperatorGroup by a cluster admin - Enabling Users to use an Operator - Tuning Role-Based Access Control privileges
+    to control users interaction with operators.
+  question: |
+    What is the purpose of an OperatorGroup in relation to Permissions and Namespaces in cluster operations?
+- answer: |
+    OperatorGroups in cluster operations allow cluster admins to control permissions. They are used to define the set
+    of permissions and namespaces granted to member operators. An admin can create a single OperatorGroup in a
+    namespace with the created ClusterServiceVersion in that namespace becoming a member operator of that
+    OperatorGroup. The privileges of an operator are confined to that of the specified ServiceAccount in the
+    OperatorGroup which defines the set of permissions for all member operators. This allows for self-sufficient
+    installation of Operators by non-cluster-admin users with a limited scope. 5
+  context: |
+    - Operator scoping with OperatorGroups - Carving a cluster with OperatorGroup - Operator Lifecycle Manager runs
+    with cluster-admin privileges - Operator can specify any set of permission in the ClusterServiceVersion file -
+    Operator can achieve cluster-scoped privileges - Concept of OperatorGroups for cluster admins to control
+    permissions - Admin can create a single OperatorGroup in a namespace - ClusterServiceVersion created in that
+    namespace becomes a member operator of that OperatorGroup - OperatorGroups allow defining the set of permissions
+    and namespaces granted to member operators - Configuring OperatorGroups - Scoping Member Operators to Specific
+    Namespaces using an OperatorGroup - Defining a set of namespaces - Defining a set of namespaces with a label
+    selector - Relationship between TargetNamespaces and InstallModes - Operators supporting four InstallModes:
+    OwnNamespace, SingleNamespace, MultiNamespace, AllNamespaces - OperatorGroup configuration supporting each
+    InstallMode  - Scoping Member Operator Permissions - Specifying a ServiceAccount in OperatorGroup that defines the
+    set of permissions for all member operators - Operator's privileges are confined to that of the specified
+    ServiceAccount - Cluster admin can limit an operator to a pre-defined set of Role-Based Access Control rules -
+    Self-sufficient installation of Operators by non-cluster-admin users with a limited scope - Defining a
+    ServiceAccount for an OperatorGroup - Configuring the End User Experience - Adding and removing operators from an
+    OperatorGroup by a cluster admin - Enabling Users to use an Operator - Tuning Role-Based Access Control privileges
+    to control users interaction with operators.
+  question: |
+    What is the purpose of an OperatorGroup in relation to Permissions and Namespaces in cluster operations?
+task_description: |
+  This skill helps in understanding the concept: - Operator scoping with OperatorGroups - Carving a cluster with
+  OperatorGroup - Operator Lifecycle Manager runs with cluster-admin privileges - Operator can specify any set of
+  permission in the ClusterServiceVersion file - Operator can achieve cluster-scoped privileges - Concept of
+  OperatorGroups for cluster admins to control permissions - Admin can create a single OperatorGroup in a namespace
+  - ClusterServiceVersion created in that namespace becomes a member operator of that OperatorGroup - OperatorGroups
+  allow defining the set of permissions and namespaces granted to member operators - Configuring OperatorGroups -
+  Scoping Member Operators to Specific Namespaces using an OperatorGroup - Defining a set of namespaces - Defining a
+  set of namespaces with a label selector - Relationship between TargetNamespaces and InstallModes - Operators
+  supporting four InstallModes: OwnNamespace, SingleNamespace, MultiNamespace, AllNamespaces - OperatorGroup
+  configuration supporting each InstallMode  - Scoping Member Operator Permissions - Specifying a ServiceAccount in
+  OperatorGroup that defines the set of permissions for all member operators - Operator's privileges are confined to
+  that of the specified ServiceAccount - Cluster admin can limit an operator to a pre-defined set of Role-Based
+  Access Control rules - Self-sufficient installation of Operators by non-cluster-admin users with a limited scope -
+  Defining a ServiceAccount for an OperatorGroup - Configuring the End User Experience - Adding and removing
+  operators from an OperatorGroup by a cluster admin - Enabling Users to use an Operator - Tuning Role-Based Access
+  Control privileges to control users interaction with operators.

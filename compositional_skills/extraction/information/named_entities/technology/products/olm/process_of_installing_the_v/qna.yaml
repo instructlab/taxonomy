@@ -1,0 +1,39 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    I'm sorry, but the information provided is incomplete. Please provide the complete software name or device name
+    that begins with "v" for a more accurate response. 1
+  context: |
+    Process of installing the v
+  question: |
+    What is the process of installing the v?
+- answer: |
+    I'm sorry, but the information provided is incomplete. Please provide the complete software name or device name
+    that begins with "v" for a more accurate response. 2
+  context: |
+    Process of installing the v
+  question: |
+    What is the process of installing the v?
+- answer: |
+    I'm sorry, but the information provided is incomplete. Please provide the complete software name or device name
+    that begins with "v" for a more accurate response. 3
+  context: |
+    Process of installing the v
+  question: |
+    What is the process of installing the v?
+- answer: |
+    I'm sorry, but the information provided is incomplete. Please provide the complete software name or device name
+    that begins with "v" for a more accurate response. 4
+  context: |
+    Process of installing the v
+  question: |
+    What is the process of installing the v?
+- answer: |
+    I'm sorry, but the information provided is incomplete. Please provide the complete software name or device name
+    that begins with "v" for a more accurate response. 5
+  context: |
+    Process of installing the v
+  question: |
+    What is the process of installing the v?
+task_description: |
+  This skill helps in understanding the concept: Process of installing the v

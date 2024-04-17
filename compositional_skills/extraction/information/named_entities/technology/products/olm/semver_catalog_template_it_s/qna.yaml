@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Semver Catalog Template is a subclass of catalog templates. It is used to version packages using the Semantic
+    Versioning (Semver) system. 1
+  context: |
+    Semver Catalog Template: It's a subclass of catalog templates, which is used to version packages using the
+    Semantic Versioning (Semver) system.
+  question: |
+    What is Semver Catalog Template?
+- answer: |
+    Semver Catalog Template is a subclass of catalog templates. It is used to version packages using the Semantic
+    Versioning (Semver) system. 2
+  context: |
+    Semver Catalog Template: It's a subclass of catalog templates, which is used to version packages using the
+    Semantic Versioning (Semver) system.
+  question: |
+    What is Semver Catalog Template?
+- answer: |
+    Semver Catalog Template is a subclass of catalog templates. It is used to version packages using the Semantic
+    Versioning (Semver) system. 3
+  context: |
+    Semver Catalog Template: It's a subclass of catalog templates, which is used to version packages using the
+    Semantic Versioning (Semver) system.
+  question: |
+    What is Semver Catalog Template?
+- answer: |
+    Semver Catalog Template is a subclass of catalog templates. It is used to version packages using the Semantic
+    Versioning (Semver) system. 4
+  context: |
+    Semver Catalog Template: It's a subclass of catalog templates, which is used to version packages using the
+    Semantic Versioning (Semver) system.
+  question: |
+    What is Semver Catalog Template?
+- answer: |
+    Semver Catalog Template is a subclass of catalog templates. It is used to version packages using the Semantic
+    Versioning (Semver) system. 5
+  context: |
+    Semver Catalog Template: It's a subclass of catalog templates, which is used to version packages using the
+    Semantic Versioning (Semver) system.
+  question: |
+    What is Semver Catalog Template?
+task_description: |
+  This skill helps in understanding the concept: Semver Catalog Template: It's a subclass of catalog templates,
+  which is used to version packages using the Semantic Versioning (Semver) system.

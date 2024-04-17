@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The term used to describe updates to a catalog source is known as an updateStrategy. Only one updateStrategy can
+    be supported at a time. 1
+  context: |
+    Updates to catalog source is known as an updateStrategy, with only one being supported at a time.
+  question: |
+    What is the term used to describe updates to a catalog source?
+- answer: |
+    The term used to describe updates to a catalog source is known as an updateStrategy. Only one updateStrategy can
+    be supported at a time. 2
+  context: |
+    Updates to catalog source is known as an updateStrategy, with only one being supported at a time.
+  question: |
+    What is the term used to describe updates to a catalog source?
+- answer: |
+    The term used to describe updates to a catalog source is known as an updateStrategy. Only one updateStrategy can
+    be supported at a time. 3
+  context: |
+    Updates to catalog source is known as an updateStrategy, with only one being supported at a time.
+  question: |
+    What is the term used to describe updates to a catalog source?
+- answer: |
+    The term used to describe updates to a catalog source is known as an updateStrategy. Only one updateStrategy can
+    be supported at a time. 4
+  context: |
+    Updates to catalog source is known as an updateStrategy, with only one being supported at a time.
+  question: |
+    What is the term used to describe updates to a catalog source?
+- answer: |
+    The term used to describe updates to a catalog source is known as an updateStrategy. Only one updateStrategy can
+    be supported at a time. 5
+  context: |
+    Updates to catalog source is known as an updateStrategy, with only one being supported at a time.
+  question: |
+    What is the term used to describe updates to a catalog source?
+task_description: |
+  This skill helps in understanding the concept: Updates to catalog source is known as an updateStrategy, with only
+  one being supported at a time.

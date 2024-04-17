@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    A single failing subscription can cause all subscriptions in a namespace to fail. This is because the namespace
+    treats all subscriptions as a set of operators. 1
+  context: |
+    Impact of a single failing subscription: A failing subscription can cause all subscriptions in a namespace to fail
+    as the namespace treats all subscription as a set of operators.
+  question: |
+    What impact can a single failing subscription have in a namespace?
+- answer: |
+    A single failing subscription can cause all subscriptions in a namespace to fail. This is because the namespace
+    treats all subscriptions as a set of operators. 2
+  context: |
+    Impact of a single failing subscription: A failing subscription can cause all subscriptions in a namespace to fail
+    as the namespace treats all subscription as a set of operators.
+  question: |
+    What impact can a single failing subscription have in a namespace?
+- answer: |
+    A single failing subscription can cause all subscriptions in a namespace to fail. This is because the namespace
+    treats all subscriptions as a set of operators. 3
+  context: |
+    Impact of a single failing subscription: A failing subscription can cause all subscriptions in a namespace to fail
+    as the namespace treats all subscription as a set of operators.
+  question: |
+    What impact can a single failing subscription have in a namespace?
+- answer: |
+    A single failing subscription can cause all subscriptions in a namespace to fail. This is because the namespace
+    treats all subscriptions as a set of operators. 4
+  context: |
+    Impact of a single failing subscription: A failing subscription can cause all subscriptions in a namespace to fail
+    as the namespace treats all subscription as a set of operators.
+  question: |
+    What impact can a single failing subscription have in a namespace?
+- answer: |
+    A single failing subscription can cause all subscriptions in a namespace to fail. This is because the namespace
+    treats all subscriptions as a set of operators. 5
+  context: |
+    Impact of a single failing subscription: A failing subscription can cause all subscriptions in a namespace to fail
+    as the namespace treats all subscription as a set of operators.
+  question: |
+    What impact can a single failing subscription have in a namespace?
+task_description: |
+  This skill helps in understanding the concept: Impact of a single failing subscription: A failing subscription can
+  cause all subscriptions in a namespace to fail as the namespace treats all subscription as a set of operators.

@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The prerequisite for troubleshooting a ClusterServiceVersion is yq. 1
+  context: |
+    Prerequisite: yq    - Description: yq is required for troubleshooting a ClusterServiceVersion.
+  question: |
+    What is the prerequisite for troubleshooting a ClusterServiceVersion?
+- answer: |
+    The prerequisite for troubleshooting a ClusterServiceVersion is yq. 2
+  context: |
+    Prerequisite: yq    - Description: yq is required for troubleshooting a ClusterServiceVersion.
+  question: |
+    What is the prerequisite for troubleshooting a ClusterServiceVersion?
+- answer: |
+    The prerequisite for troubleshooting a ClusterServiceVersion is yq. 3
+  context: |
+    Prerequisite: yq    - Description: yq is required for troubleshooting a ClusterServiceVersion.
+  question: |
+    What is the prerequisite for troubleshooting a ClusterServiceVersion?
+- answer: |
+    The prerequisite for troubleshooting a ClusterServiceVersion is yq. 4
+  context: |
+    Prerequisite: yq    - Description: yq is required for troubleshooting a ClusterServiceVersion.
+  question: |
+    What is the prerequisite for troubleshooting a ClusterServiceVersion?
+- answer: |
+    The prerequisite for troubleshooting a ClusterServiceVersion is yq. 5
+  context: |
+    Prerequisite: yq    - Description: yq is required for troubleshooting a ClusterServiceVersion.
+  question: |
+    What is the prerequisite for troubleshooting a ClusterServiceVersion?
+task_description: |
+  This skill helps in understanding the concept: Prerequisite: yq    - Description: yq is required for
+  troubleshooting a ClusterServiceVersion.

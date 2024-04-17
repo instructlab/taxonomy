@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The status of a CatalogSource reflects its current state. 1
+  context: |
+    Status of CatalogSource: It reflects the current state of a CatalogSource.
+  question: |
+    What does the status of a CatalogSource reflect?
+- answer: |
+    The status of a CatalogSource reflects its current state. 2
+  context: |
+    Status of CatalogSource: It reflects the current state of a CatalogSource.
+  question: |
+    What does the status of a CatalogSource reflect?
+- answer: |
+    The status of a CatalogSource reflects its current state. 3
+  context: |
+    Status of CatalogSource: It reflects the current state of a CatalogSource.
+  question: |
+    What does the status of a CatalogSource reflect?
+- answer: |
+    The status of a CatalogSource reflects its current state. 4
+  context: |
+    Status of CatalogSource: It reflects the current state of a CatalogSource.
+  question: |
+    What does the status of a CatalogSource reflect?
+- answer: |
+    The status of a CatalogSource reflects its current state. 5
+  context: |
+    Status of CatalogSource: It reflects the current state of a CatalogSource.
+  question: |
+    What does the status of a CatalogSource reflect?
+task_description: |
+  This skill helps in understanding the concept: Status of CatalogSource: It reflects the current state of a
+  CatalogSource.

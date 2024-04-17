@@ -1,0 +1,44 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The node selector "kubernetes.io/os=linux" in Kubernetes is used to ensure that a pod runs only on Linux nodes.
+    This is a way of imposing constraints on the type of node that is eligible to run a particular pod based on
+    labels. 1
+  context: |
+    Node selector: kubernetes.io/os=linux
+  question: |
+    What does the node selector "kubernetes.io/os=linux" indicate in Kubernetes?
+- answer: |
+    The node selector "kubernetes.io/os=linux" in Kubernetes is used to ensure that a pod runs only on Linux nodes.
+    This is a way of imposing constraints on the type of node that is eligible to run a particular pod based on
+    labels. 2
+  context: |
+    Node selector: kubernetes.io/os=linux
+  question: |
+    What does the node selector "kubernetes.io/os=linux" indicate in Kubernetes?
+- answer: |
+    The node selector "kubernetes.io/os=linux" in Kubernetes is used to ensure that a pod runs only on Linux nodes.
+    This is a way of imposing constraints on the type of node that is eligible to run a particular pod based on
+    labels. 3
+  context: |
+    Node selector: kubernetes.io/os=linux
+  question: |
+    What does the node selector "kubernetes.io/os=linux" indicate in Kubernetes?
+- answer: |
+    The node selector "kubernetes.io/os=linux" in Kubernetes is used to ensure that a pod runs only on Linux nodes.
+    This is a way of imposing constraints on the type of node that is eligible to run a particular pod based on
+    labels. 4
+  context: |
+    Node selector: kubernetes.io/os=linux
+  question: |
+    What does the node selector "kubernetes.io/os=linux" indicate in Kubernetes?
+- answer: |
+    The node selector "kubernetes.io/os=linux" in Kubernetes is used to ensure that a pod runs only on Linux nodes.
+    This is a way of imposing constraints on the type of node that is eligible to run a particular pod based on
+    labels. 5
+  context: |
+    Node selector: kubernetes.io/os=linux
+  question: |
+    What does the node selector "kubernetes.io/os=linux" indicate in Kubernetes?
+task_description: |
+  This skill helps in understanding the concept: Node selector: kubernetes.io/os=linux

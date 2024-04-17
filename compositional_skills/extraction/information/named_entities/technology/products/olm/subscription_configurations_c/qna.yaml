@@ -1,0 +1,57 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The Subscription configurations that can be customized in the YAML files include nodeAffinity, podAffinity, and
+    podAntiAffinity. In addition, you can specify the apiVersion, kind, metadata, namespace, spec, name, source,
+    sourceNamespace, and config for defined purposes. 1
+  context: |
+    Subscription Configurations: Customizing the Subscription configurations such as nodeAffinity, podAffinity, and
+    podAntiAffinity in the YAML files. Also specifying apiVersion, kind, metadata, namespace, spec, name, source,
+    sourceNamespace, and config in the YAML file for defined purposes.
+  question: |
+    What elements can be customized within the Subscription configurations in the YAML files?
+- answer: |
+    The Subscription configurations that can be customized in the YAML files include nodeAffinity, podAffinity, and
+    podAntiAffinity. In addition, you can specify the apiVersion, kind, metadata, namespace, spec, name, source,
+    sourceNamespace, and config for defined purposes. 2
+  context: |
+    Subscription Configurations: Customizing the Subscription configurations such as nodeAffinity, podAffinity, and
+    podAntiAffinity in the YAML files. Also specifying apiVersion, kind, metadata, namespace, spec, name, source,
+    sourceNamespace, and config in the YAML file for defined purposes.
+  question: |
+    What elements can be customized within the Subscription configurations in the YAML files?
+- answer: |
+    The Subscription configurations that can be customized in the YAML files include nodeAffinity, podAffinity, and
+    podAntiAffinity. In addition, you can specify the apiVersion, kind, metadata, namespace, spec, name, source,
+    sourceNamespace, and config for defined purposes. 3
+  context: |
+    Subscription Configurations: Customizing the Subscription configurations such as nodeAffinity, podAffinity, and
+    podAntiAffinity in the YAML files. Also specifying apiVersion, kind, metadata, namespace, spec, name, source,
+    sourceNamespace, and config in the YAML file for defined purposes.
+  question: |
+    What elements can be customized within the Subscription configurations in the YAML files?
+- answer: |
+    The Subscription configurations that can be customized in the YAML files include nodeAffinity, podAffinity, and
+    podAntiAffinity. In addition, you can specify the apiVersion, kind, metadata, namespace, spec, name, source,
+    sourceNamespace, and config for defined purposes. 4
+  context: |
+    Subscription Configurations: Customizing the Subscription configurations such as nodeAffinity, podAffinity, and
+    podAntiAffinity in the YAML files. Also specifying apiVersion, kind, metadata, namespace, spec, name, source,
+    sourceNamespace, and config in the YAML file for defined purposes.
+  question: |
+    What elements can be customized within the Subscription configurations in the YAML files?
+- answer: |
+    The Subscription configurations that can be customized in the YAML files include nodeAffinity, podAffinity, and
+    podAntiAffinity. In addition, you can specify the apiVersion, kind, metadata, namespace, spec, name, source,
+    sourceNamespace, and config for defined purposes. 5
+  context: |
+    Subscription Configurations: Customizing the Subscription configurations such as nodeAffinity, podAffinity, and
+    podAntiAffinity in the YAML files. Also specifying apiVersion, kind, metadata, namespace, spec, name, source,
+    sourceNamespace, and config in the YAML file for defined purposes.
+  question: |
+    What elements can be customized within the Subscription configurations in the YAML files?
+task_description: |
+  This skill helps in understanding the concept: Subscription Configurations: Customizing the Subscription
+  configurations such as nodeAffinity, podAffinity, and podAntiAffinity in the YAML files. Also specifying
+  apiVersion, kind, metadata, namespace, spec, name, source, sourceNamespace, and config in the YAML file for
+  defined purposes.

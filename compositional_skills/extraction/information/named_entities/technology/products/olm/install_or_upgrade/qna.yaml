@@ -1,0 +1,49 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The two procedures to enhance or update a software functionality are installation and upgrading. Installation
+    refers to the process of setting up a software on a device for the first time, while upgrading refers to the
+    process of installing a new version of the existing software to enhance or improve its features and
+    functionalities. 1
+  context: |
+    Install or upgrade
+  question: |
+    What are the two procedures to enhance or update a software functionality?
+- answer: |
+    The two procedures to enhance or update a software functionality are installation and upgrading. Installation
+    refers to the process of setting up a software on a device for the first time, while upgrading refers to the
+    process of installing a new version of the existing software to enhance or improve its features and
+    functionalities. 2
+  context: |
+    Install or upgrade
+  question: |
+    What are the two procedures to enhance or update a software functionality?
+- answer: |
+    The two procedures to enhance or update a software functionality are installation and upgrading. Installation
+    refers to the process of setting up a software on a device for the first time, while upgrading refers to the
+    process of installing a new version of the existing software to enhance or improve its features and
+    functionalities. 3
+  context: |
+    Install or upgrade
+  question: |
+    What are the two procedures to enhance or update a software functionality?
+- answer: |
+    The two procedures to enhance or update a software functionality are installation and upgrading. Installation
+    refers to the process of setting up a software on a device for the first time, while upgrading refers to the
+    process of installing a new version of the existing software to enhance or improve its features and
+    functionalities. 4
+  context: |
+    Install or upgrade
+  question: |
+    What are the two procedures to enhance or update a software functionality?
+- answer: |
+    The two procedures to enhance or update a software functionality are installation and upgrading. Installation
+    refers to the process of setting up a software on a device for the first time, while upgrading refers to the
+    process of installing a new version of the existing software to enhance or improve its features and
+    functionalities. 5
+  context: |
+    Install or upgrade
+  question: |
+    What are the two procedures to enhance or update a software functionality?
+task_description: |
+  This skill helps in understanding the concept: Install or upgrade

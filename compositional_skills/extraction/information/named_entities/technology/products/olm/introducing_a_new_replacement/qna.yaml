@@ -1,0 +1,46 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Introducing a new replacement relationship in the upgrade graph involves an operation in schema manipulation in
+    which a new link is introduced to replace an existing link in the upgrade graph. 1
+  context: |
+    Introducing a new replacement relationship in the upgrade graph: An operation in schema manipulation which
+    involves introducing a new link to replace an existing link in an upgrade graph.
+  question: |
+    What does introducing a new replacement relationship in the upgrade graph involve in terms of schema manipulation?
+- answer: |
+    Introducing a new replacement relationship in the upgrade graph involves an operation in schema manipulation in
+    which a new link is introduced to replace an existing link in the upgrade graph. 2
+  context: |
+    Introducing a new replacement relationship in the upgrade graph: An operation in schema manipulation which
+    involves introducing a new link to replace an existing link in an upgrade graph.
+  question: |
+    What does introducing a new replacement relationship in the upgrade graph involve in terms of schema manipulation?
+- answer: |
+    Introducing a new replacement relationship in the upgrade graph involves an operation in schema manipulation in
+    which a new link is introduced to replace an existing link in the upgrade graph. 3
+  context: |
+    Introducing a new replacement relationship in the upgrade graph: An operation in schema manipulation which
+    involves introducing a new link to replace an existing link in an upgrade graph.
+  question: |
+    What does introducing a new replacement relationship in the upgrade graph involve in terms of schema manipulation?
+- answer: |
+    Introducing a new replacement relationship in the upgrade graph involves an operation in schema manipulation in
+    which a new link is introduced to replace an existing link in the upgrade graph. 4
+  context: |
+    Introducing a new replacement relationship in the upgrade graph: An operation in schema manipulation which
+    involves introducing a new link to replace an existing link in an upgrade graph.
+  question: |
+    What does introducing a new replacement relationship in the upgrade graph involve in terms of schema manipulation?
+- answer: |
+    Introducing a new replacement relationship in the upgrade graph involves an operation in schema manipulation in
+    which a new link is introduced to replace an existing link in the upgrade graph. 5
+  context: |
+    Introducing a new replacement relationship in the upgrade graph: An operation in schema manipulation which
+    involves introducing a new link to replace an existing link in an upgrade graph.
+  question: |
+    What does introducing a new replacement relationship in the upgrade graph involve in terms of schema manipulation?
+task_description: |
+  This skill helps in understanding the concept: Introducing a new replacement relationship in the upgrade graph: An
+  operation in schema manipulation which involves introducing a new link to replace an existing link in an upgrade
+  graph.

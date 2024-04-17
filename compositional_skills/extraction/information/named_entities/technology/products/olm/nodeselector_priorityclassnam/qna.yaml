@@ -1,0 +1,39 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    In Kubernetes, nodeSelector is a field in the PodSpec. It specifies a map of key-value pairs. For the pod to be
+    eligible to run on a node, the node must have each of the indicated key-value pairs as labels. 1
+  context: |
+    nodeSelector, priorityClassName, and tolerations
+  question: |
+    What are nodeSelector, priorityClassName, and tolerations in the context of Kubernetes?
+- answer: |
+    In Kubernetes, nodeSelector is a field in the PodSpec. It specifies a map of key-value pairs. For the pod to be
+    eligible to run on a node, the node must have each of the indicated key-value pairs as labels. 2
+  context: |
+    nodeSelector, priorityClassName, and tolerations
+  question: |
+    What are nodeSelector, priorityClassName, and tolerations in the context of Kubernetes?
+- answer: |
+    In Kubernetes, nodeSelector is a field in the PodSpec. It specifies a map of key-value pairs. For the pod to be
+    eligible to run on a node, the node must have each of the indicated key-value pairs as labels. 3
+  context: |
+    nodeSelector, priorityClassName, and tolerations
+  question: |
+    What are nodeSelector, priorityClassName, and tolerations in the context of Kubernetes?
+- answer: |
+    In Kubernetes, nodeSelector is a field in the PodSpec. It specifies a map of key-value pairs. For the pod to be
+    eligible to run on a node, the node must have each of the indicated key-value pairs as labels. 4
+  context: |
+    nodeSelector, priorityClassName, and tolerations
+  question: |
+    What are nodeSelector, priorityClassName, and tolerations in the context of Kubernetes?
+- answer: |
+    In Kubernetes, nodeSelector is a field in the PodSpec. It specifies a map of key-value pairs. For the pod to be
+    eligible to run on a node, the node must have each of the indicated key-value pairs as labels. 5
+  context: |
+    nodeSelector, priorityClassName, and tolerations
+  question: |
+    What are nodeSelector, priorityClassName, and tolerations in the context of Kubernetes?
+task_description: |
+  This skill helps in understanding the concept: nodeSelector, priorityClassName, and tolerations

@@ -1,0 +1,54 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Building and serving documents locally typically involves creating and configuring files in a specific programming
+    language or platform on your local machine. It can often include setting up a local development server, generating
+    static HTML files from source files, and making them accessible through a web browser. The exact process may vary
+    depending on the technologies and tools you're using, and specific steps should be followed as per the respective
+    technology or tool documentation. 1
+  context: |
+    Title: Build and Serve the Docs Locally
+  question: |
+    How can one build and serve documents locally?
+- answer: |
+    Building and serving documents locally typically involves creating and configuring files in a specific programming
+    language or platform on your local machine. It can often include setting up a local development server, generating
+    static HTML files from source files, and making them accessible through a web browser. The exact process may vary
+    depending on the technologies and tools you're using, and specific steps should be followed as per the respective
+    technology or tool documentation. 2
+  context: |
+    Title: Build and Serve the Docs Locally
+  question: |
+    How can one build and serve documents locally?
+- answer: |
+    Building and serving documents locally typically involves creating and configuring files in a specific programming
+    language or platform on your local machine. It can often include setting up a local development server, generating
+    static HTML files from source files, and making them accessible through a web browser. The exact process may vary
+    depending on the technologies and tools you're using, and specific steps should be followed as per the respective
+    technology or tool documentation. 3
+  context: |
+    Title: Build and Serve the Docs Locally
+  question: |
+    How can one build and serve documents locally?
+- answer: |
+    Building and serving documents locally typically involves creating and configuring files in a specific programming
+    language or platform on your local machine. It can often include setting up a local development server, generating
+    static HTML files from source files, and making them accessible through a web browser. The exact process may vary
+    depending on the technologies and tools you're using, and specific steps should be followed as per the respective
+    technology or tool documentation. 4
+  context: |
+    Title: Build and Serve the Docs Locally
+  question: |
+    How can one build and serve documents locally?
+- answer: |
+    Building and serving documents locally typically involves creating and configuring files in a specific programming
+    language or platform on your local machine. It can often include setting up a local development server, generating
+    static HTML files from source files, and making them accessible through a web browser. The exact process may vary
+    depending on the technologies and tools you're using, and specific steps should be followed as per the respective
+    technology or tool documentation. 5
+  context: |
+    Title: Build and Serve the Docs Locally
+  question: |
+    How can one build and serve documents locally?
+task_description: |
+  This skill helps in understanding the concept: Title: Build and Serve the Docs Locally

@@ -1,0 +1,49 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    In Kubernetes, "priorityClassName: system-cluster-critical" refers to a class of pods that are critical to the
+    operation of the entire cluster. These critical pods will not be evicted from the Node, even when the node is
+    running out of resources under any circumstances. It ensures high priority tasks and processes in the cluster are
+    always running. 1
+  context: |
+    priorityClassName: system-cluster-critical
+  question: |
+    What does the term "priorityClassName: system-cluster-critical" refer to in Kubernetes?
+- answer: |
+    In Kubernetes, "priorityClassName: system-cluster-critical" refers to a class of pods that are critical to the
+    operation of the entire cluster. These critical pods will not be evicted from the Node, even when the node is
+    running out of resources under any circumstances. It ensures high priority tasks and processes in the cluster are
+    always running. 2
+  context: |
+    priorityClassName: system-cluster-critical
+  question: |
+    What does the term "priorityClassName: system-cluster-critical" refer to in Kubernetes?
+- answer: |
+    In Kubernetes, "priorityClassName: system-cluster-critical" refers to a class of pods that are critical to the
+    operation of the entire cluster. These critical pods will not be evicted from the Node, even when the node is
+    running out of resources under any circumstances. It ensures high priority tasks and processes in the cluster are
+    always running. 3
+  context: |
+    priorityClassName: system-cluster-critical
+  question: |
+    What does the term "priorityClassName: system-cluster-critical" refer to in Kubernetes?
+- answer: |
+    In Kubernetes, "priorityClassName: system-cluster-critical" refers to a class of pods that are critical to the
+    operation of the entire cluster. These critical pods will not be evicted from the Node, even when the node is
+    running out of resources under any circumstances. It ensures high priority tasks and processes in the cluster are
+    always running. 4
+  context: |
+    priorityClassName: system-cluster-critical
+  question: |
+    What does the term "priorityClassName: system-cluster-critical" refer to in Kubernetes?
+- answer: |
+    In Kubernetes, "priorityClassName: system-cluster-critical" refers to a class of pods that are critical to the
+    operation of the entire cluster. These critical pods will not be evicted from the Node, even when the node is
+    running out of resources under any circumstances. It ensures high priority tasks and processes in the cluster are
+    always running. 5
+  context: |
+    priorityClassName: system-cluster-critical
+  question: |
+    What does the term "priorityClassName: system-cluster-critical" refer to in Kubernetes?
+task_description: |
+  This skill helps in understanding the concept: priorityClassName: system-cluster-critical

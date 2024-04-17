@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    OLM prevents the installation of conflicting Operators owning the same APIs to ensure cluster stability. 1
+  context: |
+    Cluster Stability: OLM prevents the installation of conflicting Operators owning the same APIs to ensure cluster
+    stability.
+  question: |
+    What does OLM do to ensure cluster stability?
+- answer: |
+    OLM prevents the installation of conflicting Operators owning the same APIs to ensure cluster stability. 2
+  context: |
+    Cluster Stability: OLM prevents the installation of conflicting Operators owning the same APIs to ensure cluster
+    stability.
+  question: |
+    What does OLM do to ensure cluster stability?
+- answer: |
+    OLM prevents the installation of conflicting Operators owning the same APIs to ensure cluster stability. 3
+  context: |
+    Cluster Stability: OLM prevents the installation of conflicting Operators owning the same APIs to ensure cluster
+    stability.
+  question: |
+    What does OLM do to ensure cluster stability?
+- answer: |
+    OLM prevents the installation of conflicting Operators owning the same APIs to ensure cluster stability. 4
+  context: |
+    Cluster Stability: OLM prevents the installation of conflicting Operators owning the same APIs to ensure cluster
+    stability.
+  question: |
+    What does OLM do to ensure cluster stability?
+- answer: |
+    OLM prevents the installation of conflicting Operators owning the same APIs to ensure cluster stability. 5
+  context: |
+    Cluster Stability: OLM prevents the installation of conflicting Operators owning the same APIs to ensure cluster
+    stability.
+  question: |
+    What does OLM do to ensure cluster stability?
+task_description: |
+  This skill helps in understanding the concept: Cluster Stability: OLM prevents the installation of conflicting
+  Operators owning the same APIs to ensure cluster stability.

@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Catalog Templates are templates that provide operator authors with standardized schemas to express operator
+    upgrade graphs. 1
+  context: |
+    Catalog Templates: These are templates that provide operator authors with standardized schemas to express operator
+    upgrade graphs.
+  question: |
+    What are Catalog Templates in the context of operator authors?
+- answer: |
+    Catalog Templates are templates that provide operator authors with standardized schemas to express operator
+    upgrade graphs. 2
+  context: |
+    Catalog Templates: These are templates that provide operator authors with standardized schemas to express operator
+    upgrade graphs.
+  question: |
+    What are Catalog Templates in the context of operator authors?
+- answer: |
+    Catalog Templates are templates that provide operator authors with standardized schemas to express operator
+    upgrade graphs. 3
+  context: |
+    Catalog Templates: These are templates that provide operator authors with standardized schemas to express operator
+    upgrade graphs.
+  question: |
+    What are Catalog Templates in the context of operator authors?
+- answer: |
+    Catalog Templates are templates that provide operator authors with standardized schemas to express operator
+    upgrade graphs. 4
+  context: |
+    Catalog Templates: These are templates that provide operator authors with standardized schemas to express operator
+    upgrade graphs.
+  question: |
+    What are Catalog Templates in the context of operator authors?
+- answer: |
+    Catalog Templates are templates that provide operator authors with standardized schemas to express operator
+    upgrade graphs. 5
+  context: |
+    Catalog Templates: These are templates that provide operator authors with standardized schemas to express operator
+    upgrade graphs.
+  question: |
+    What are Catalog Templates in the context of operator authors?
+task_description: |
+  This skill helps in understanding the concept: Catalog Templates: These are templates that provide operator
+  authors with standardized schemas to express operator upgrade graphs.

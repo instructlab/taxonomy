@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The conversion webhook server needs to be investigated for potential issues when there are problems with webhooks
+    in the Dynatrace operator. 1
+  context: |
+    Issues with webhooks in Dynatrace operator: Need to investigate conversion webhook server for potential issues.
+  question: |
+    What needs to be investigated when there are issues with webhooks in the Dynatrace operator?
+- answer: |
+    The conversion webhook server needs to be investigated for potential issues when there are problems with webhooks
+    in the Dynatrace operator. 2
+  context: |
+    Issues with webhooks in Dynatrace operator: Need to investigate conversion webhook server for potential issues.
+  question: |
+    What needs to be investigated when there are issues with webhooks in the Dynatrace operator?
+- answer: |
+    The conversion webhook server needs to be investigated for potential issues when there are problems with webhooks
+    in the Dynatrace operator. 3
+  context: |
+    Issues with webhooks in Dynatrace operator: Need to investigate conversion webhook server for potential issues.
+  question: |
+    What needs to be investigated when there are issues with webhooks in the Dynatrace operator?
+- answer: |
+    The conversion webhook server needs to be investigated for potential issues when there are problems with webhooks
+    in the Dynatrace operator. 4
+  context: |
+    Issues with webhooks in Dynatrace operator: Need to investigate conversion webhook server for potential issues.
+  question: |
+    What needs to be investigated when there are issues with webhooks in the Dynatrace operator?
+- answer: |
+    The conversion webhook server needs to be investigated for potential issues when there are problems with webhooks
+    in the Dynatrace operator. 5
+  context: |
+    Issues with webhooks in Dynatrace operator: Need to investigate conversion webhook server for potential issues.
+  question: |
+    What needs to be investigated when there are issues with webhooks in the Dynatrace operator?
+task_description: |
+  This skill helps in understanding the concept: Issues with webhooks in Dynatrace operator: Need to investigate
+  conversion webhook server for potential issues.

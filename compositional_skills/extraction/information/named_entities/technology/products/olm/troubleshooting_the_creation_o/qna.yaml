@@ -1,0 +1,60 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Creating subscriptions could lead to a range of problems such as a failure to activate due to incorrect details,
+    unexpected errors during the process, or a decline in payment methods. These issues can most times be resolved by
+    ensuring all user details and payment methods are correct and up to date, restarting the subscription process, or
+    contacting customer support for further assistance. The solution will depend on the exact issue encountered during
+    the creation of the subscription. 1
+  context: |
+    Troubleshooting the creation of a Subscription: There can be some issues while creating subscriptions, and there
+    can be some useful tips and tricks to solve these problems.
+  question: |
+    What are some potential issues one may encounter while creating subscriptions and how can they be resolved?
+- answer: |
+    Creating subscriptions could lead to a range of problems such as a failure to activate due to incorrect details,
+    unexpected errors during the process, or a decline in payment methods. These issues can most times be resolved by
+    ensuring all user details and payment methods are correct and up to date, restarting the subscription process, or
+    contacting customer support for further assistance. The solution will depend on the exact issue encountered during
+    the creation of the subscription. 2
+  context: |
+    Troubleshooting the creation of a Subscription: There can be some issues while creating subscriptions, and there
+    can be some useful tips and tricks to solve these problems.
+  question: |
+    What are some potential issues one may encounter while creating subscriptions and how can they be resolved?
+- answer: |
+    Creating subscriptions could lead to a range of problems such as a failure to activate due to incorrect details,
+    unexpected errors during the process, or a decline in payment methods. These issues can most times be resolved by
+    ensuring all user details and payment methods are correct and up to date, restarting the subscription process, or
+    contacting customer support for further assistance. The solution will depend on the exact issue encountered during
+    the creation of the subscription. 3
+  context: |
+    Troubleshooting the creation of a Subscription: There can be some issues while creating subscriptions, and there
+    can be some useful tips and tricks to solve these problems.
+  question: |
+    What are some potential issues one may encounter while creating subscriptions and how can they be resolved?
+- answer: |
+    Creating subscriptions could lead to a range of problems such as a failure to activate due to incorrect details,
+    unexpected errors during the process, or a decline in payment methods. These issues can most times be resolved by
+    ensuring all user details and payment methods are correct and up to date, restarting the subscription process, or
+    contacting customer support for further assistance. The solution will depend on the exact issue encountered during
+    the creation of the subscription. 4
+  context: |
+    Troubleshooting the creation of a Subscription: There can be some issues while creating subscriptions, and there
+    can be some useful tips and tricks to solve these problems.
+  question: |
+    What are some potential issues one may encounter while creating subscriptions and how can they be resolved?
+- answer: |
+    Creating subscriptions could lead to a range of problems such as a failure to activate due to incorrect details,
+    unexpected errors during the process, or a decline in payment methods. These issues can most times be resolved by
+    ensuring all user details and payment methods are correct and up to date, restarting the subscription process, or
+    contacting customer support for further assistance. The solution will depend on the exact issue encountered during
+    the creation of the subscription. 5
+  context: |
+    Troubleshooting the creation of a Subscription: There can be some issues while creating subscriptions, and there
+    can be some useful tips and tricks to solve these problems.
+  question: |
+    What are some potential issues one may encounter while creating subscriptions and how can they be resolved?
+task_description: |
+  This skill helps in understanding the concept: Troubleshooting the creation of a Subscription: There can be some
+  issues while creating subscriptions, and there can be some useful tips and tricks to solve these problems.

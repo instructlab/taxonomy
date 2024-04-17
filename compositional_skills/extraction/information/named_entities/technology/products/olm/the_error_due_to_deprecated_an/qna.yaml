@@ -1,0 +1,62 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The error due to deprecated and removed APIs is generally due to the unavailability of the specific API on-
+    cluster. This error can occur while installing operator bundles with CustomResources. However, it typically
+    resolves itself once the necessary CustomResourceDefinition is installed. 1
+  context: |
+    The error due to deprecated and removed APIs: An error condition will be present on the subscription status
+    mentioning the unavailability of the specific API on-cluster. This error can occur while installing operator
+    bundles with CustomResources, and it should resolve itself once the required CustomResourceDefinition gets
+    installed.
+  question: |
+    What is the cause of an error due to deprecated and removed APIs during operator bundle installation?
+- answer: |
+    The error due to deprecated and removed APIs is generally due to the unavailability of the specific API on-
+    cluster. This error can occur while installing operator bundles with CustomResources. However, it typically
+    resolves itself once the necessary CustomResourceDefinition is installed. 2
+  context: |
+    The error due to deprecated and removed APIs: An error condition will be present on the subscription status
+    mentioning the unavailability of the specific API on-cluster. This error can occur while installing operator
+    bundles with CustomResources, and it should resolve itself once the required CustomResourceDefinition gets
+    installed.
+  question: |
+    What is the cause of an error due to deprecated and removed APIs during operator bundle installation?
+- answer: |
+    The error due to deprecated and removed APIs is generally due to the unavailability of the specific API on-
+    cluster. This error can occur while installing operator bundles with CustomResources. However, it typically
+    resolves itself once the necessary CustomResourceDefinition is installed. 3
+  context: |
+    The error due to deprecated and removed APIs: An error condition will be present on the subscription status
+    mentioning the unavailability of the specific API on-cluster. This error can occur while installing operator
+    bundles with CustomResources, and it should resolve itself once the required CustomResourceDefinition gets
+    installed.
+  question: |
+    What is the cause of an error due to deprecated and removed APIs during operator bundle installation?
+- answer: |
+    The error due to deprecated and removed APIs is generally due to the unavailability of the specific API on-
+    cluster. This error can occur while installing operator bundles with CustomResources. However, it typically
+    resolves itself once the necessary CustomResourceDefinition is installed. 4
+  context: |
+    The error due to deprecated and removed APIs: An error condition will be present on the subscription status
+    mentioning the unavailability of the specific API on-cluster. This error can occur while installing operator
+    bundles with CustomResources, and it should resolve itself once the required CustomResourceDefinition gets
+    installed.
+  question: |
+    What is the cause of an error due to deprecated and removed APIs during operator bundle installation?
+- answer: |
+    The error due to deprecated and removed APIs is generally due to the unavailability of the specific API on-
+    cluster. This error can occur while installing operator bundles with CustomResources. However, it typically
+    resolves itself once the necessary CustomResourceDefinition is installed. 5
+  context: |
+    The error due to deprecated and removed APIs: An error condition will be present on the subscription status
+    mentioning the unavailability of the specific API on-cluster. This error can occur while installing operator
+    bundles with CustomResources, and it should resolve itself once the required CustomResourceDefinition gets
+    installed.
+  question: |
+    What is the cause of an error due to deprecated and removed APIs during operator bundle installation?
+task_description: |
+  This skill helps in understanding the concept: The error due to deprecated and removed APIs: An error condition
+  will be present on the subscription status mentioning the unavailability of the specific API on-cluster. This
+  error can occur while installing operator bundles with CustomResources, and it should resolve itself once the
+  required CustomResourceDefinition gets installed.

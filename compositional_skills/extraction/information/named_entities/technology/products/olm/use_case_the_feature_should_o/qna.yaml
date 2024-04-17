@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The feature should only be used by users who have a deep understanding of their operator environment and who do
+    not want to manually upgrade their failed operators. 1
+  context: |
+    Use Case: The feature should only be used by users who have a deep understanding of their operator environment and
+    who do not want to manually upgrade their failed operators.
+  question: |
+    Who should use the feature of automatically upgrading failed operators?
+- answer: |
+    The feature should only be used by users who have a deep understanding of their operator environment and who do
+    not want to manually upgrade their failed operators. 2
+  context: |
+    Use Case: The feature should only be used by users who have a deep understanding of their operator environment and
+    who do not want to manually upgrade their failed operators.
+  question: |
+    Who should use the feature of automatically upgrading failed operators?
+- answer: |
+    The feature should only be used by users who have a deep understanding of their operator environment and who do
+    not want to manually upgrade their failed operators. 3
+  context: |
+    Use Case: The feature should only be used by users who have a deep understanding of their operator environment and
+    who do not want to manually upgrade their failed operators.
+  question: |
+    Who should use the feature of automatically upgrading failed operators?
+- answer: |
+    The feature should only be used by users who have a deep understanding of their operator environment and who do
+    not want to manually upgrade their failed operators. 4
+  context: |
+    Use Case: The feature should only be used by users who have a deep understanding of their operator environment and
+    who do not want to manually upgrade their failed operators.
+  question: |
+    Who should use the feature of automatically upgrading failed operators?
+- answer: |
+    The feature should only be used by users who have a deep understanding of their operator environment and who do
+    not want to manually upgrade their failed operators. 5
+  context: |
+    Use Case: The feature should only be used by users who have a deep understanding of their operator environment and
+    who do not want to manually upgrade their failed operators.
+  question: |
+    Who should use the feature of automatically upgrading failed operators?
+task_description: |
+  This skill helps in understanding the concept: Use Case: The feature should only be used by users who have a deep
+  understanding of their operator environment and who do not want to manually upgrade their failed operators.

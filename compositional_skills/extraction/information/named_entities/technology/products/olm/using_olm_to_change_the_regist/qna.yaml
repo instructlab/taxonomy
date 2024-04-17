@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The image content source policy API can be used for disconnected mirroring when changing the registry of a
+    container image using OLM. 1
+  context: |
+    Using OLM to change the registry of container image: The image content source policy API can be used for
+    disconnected mirroring.
+  question: |
+    What API can be used for disconnected mirroring when changing the registry of a container image using OLM?
+- answer: |
+    The image content source policy API can be used for disconnected mirroring when changing the registry of a
+    container image using OLM. 2
+  context: |
+    Using OLM to change the registry of container image: The image content source policy API can be used for
+    disconnected mirroring.
+  question: |
+    What API can be used for disconnected mirroring when changing the registry of a container image using OLM?
+- answer: |
+    The image content source policy API can be used for disconnected mirroring when changing the registry of a
+    container image using OLM. 3
+  context: |
+    Using OLM to change the registry of container image: The image content source policy API can be used for
+    disconnected mirroring.
+  question: |
+    What API can be used for disconnected mirroring when changing the registry of a container image using OLM?
+- answer: |
+    The image content source policy API can be used for disconnected mirroring when changing the registry of a
+    container image using OLM. 4
+  context: |
+    Using OLM to change the registry of container image: The image content source policy API can be used for
+    disconnected mirroring.
+  question: |
+    What API can be used for disconnected mirroring when changing the registry of a container image using OLM?
+- answer: |
+    The image content source policy API can be used for disconnected mirroring when changing the registry of a
+    container image using OLM. 5
+  context: |
+    Using OLM to change the registry of container image: The image content source policy API can be used for
+    disconnected mirroring.
+  question: |
+    What API can be used for disconnected mirroring when changing the registry of a container image using OLM?
+task_description: |
+  This skill helps in understanding the concept: Using OLM to change the registry of container image: The image
+  content source policy API can be used for disconnected mirroring.

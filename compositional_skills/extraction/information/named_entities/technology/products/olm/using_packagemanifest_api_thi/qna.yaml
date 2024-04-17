@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The PackageManifest API returns both globally and namespaced available operators, from the namespace you're
+    querying in. 1
+  context: |
+    Using PackageManifest API: This API, when queried, will return both globally and namespaced available operators,
+    from the namespace you're querying in.
+  question: |
+    What information does the PackageManifest API return when queried?
+- answer: |
+    The PackageManifest API returns both globally and namespaced available operators, from the namespace you're
+    querying in. 2
+  context: |
+    Using PackageManifest API: This API, when queried, will return both globally and namespaced available operators,
+    from the namespace you're querying in.
+  question: |
+    What information does the PackageManifest API return when queried?
+- answer: |
+    The PackageManifest API returns both globally and namespaced available operators, from the namespace you're
+    querying in. 3
+  context: |
+    Using PackageManifest API: This API, when queried, will return both globally and namespaced available operators,
+    from the namespace you're querying in.
+  question: |
+    What information does the PackageManifest API return when queried?
+- answer: |
+    The PackageManifest API returns both globally and namespaced available operators, from the namespace you're
+    querying in. 4
+  context: |
+    Using PackageManifest API: This API, when queried, will return both globally and namespaced available operators,
+    from the namespace you're querying in.
+  question: |
+    What information does the PackageManifest API return when queried?
+- answer: |
+    The PackageManifest API returns both globally and namespaced available operators, from the namespace you're
+    querying in. 5
+  context: |
+    Using PackageManifest API: This API, when queried, will return both globally and namespaced available operators,
+    from the namespace you're querying in.
+  question: |
+    What information does the PackageManifest API return when queried?
+task_description: |
+  This skill helps in understanding the concept: Using PackageManifest API: This API, when queried, will return both
+  globally and namespaced available operators, from the namespace you're querying in.

@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    You can refer to the Docsy User Guide and Hugo Documentation for additional guidance when using Docsy and Hugo. 1
+  context: |
+    Docsy User Guide and Hugo Documentation: Resources for additional guidance.
+  question: |
+    What are some resources for additional guidance if using Docsy and Hugo?
+- answer: |
+    You can refer to the Docsy User Guide and Hugo Documentation for additional guidance when using Docsy and Hugo. 2
+  context: |
+    Docsy User Guide and Hugo Documentation: Resources for additional guidance.
+  question: |
+    What are some resources for additional guidance if using Docsy and Hugo?
+- answer: |
+    You can refer to the Docsy User Guide and Hugo Documentation for additional guidance when using Docsy and Hugo. 3
+  context: |
+    Docsy User Guide and Hugo Documentation: Resources for additional guidance.
+  question: |
+    What are some resources for additional guidance if using Docsy and Hugo?
+- answer: |
+    You can refer to the Docsy User Guide and Hugo Documentation for additional guidance when using Docsy and Hugo. 4
+  context: |
+    Docsy User Guide and Hugo Documentation: Resources for additional guidance.
+  question: |
+    What are some resources for additional guidance if using Docsy and Hugo?
+- answer: |
+    You can refer to the Docsy User Guide and Hugo Documentation for additional guidance when using Docsy and Hugo. 5
+  context: |
+    Docsy User Guide and Hugo Documentation: Resources for additional guidance.
+  question: |
+    What are some resources for additional guidance if using Docsy and Hugo?
+task_description: |
+  This skill helps in understanding the concept: Docsy User Guide and Hugo Documentation: Resources for additional
+  guidance.

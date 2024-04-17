@@ -1,0 +1,39 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    In CatalogSource, the spec.grpcPodConfig is used to configure the gRPC pod. This includes settings related to
+    resources, node selector, tolerations, and other specific configuration options for the pod running gRPC. 1
+  context: |
+    CatalogSource's spec.grpcPodConfig
+  question: |
+    What is the function of spec.grpcPodConfig in CatalogSource?
+- answer: |
+    In CatalogSource, the spec.grpcPodConfig is used to configure the gRPC pod. This includes settings related to
+    resources, node selector, tolerations, and other specific configuration options for the pod running gRPC. 2
+  context: |
+    CatalogSource's spec.grpcPodConfig
+  question: |
+    What is the function of spec.grpcPodConfig in CatalogSource?
+- answer: |
+    In CatalogSource, the spec.grpcPodConfig is used to configure the gRPC pod. This includes settings related to
+    resources, node selector, tolerations, and other specific configuration options for the pod running gRPC. 3
+  context: |
+    CatalogSource's spec.grpcPodConfig
+  question: |
+    What is the function of spec.grpcPodConfig in CatalogSource?
+- answer: |
+    In CatalogSource, the spec.grpcPodConfig is used to configure the gRPC pod. This includes settings related to
+    resources, node selector, tolerations, and other specific configuration options for the pod running gRPC. 4
+  context: |
+    CatalogSource's spec.grpcPodConfig
+  question: |
+    What is the function of spec.grpcPodConfig in CatalogSource?
+- answer: |
+    In CatalogSource, the spec.grpcPodConfig is used to configure the gRPC pod. This includes settings related to
+    resources, node selector, tolerations, and other specific configuration options for the pod running gRPC. 5
+  context: |
+    CatalogSource's spec.grpcPodConfig
+  question: |
+    What is the function of spec.grpcPodConfig in CatalogSource?
+task_description: |
+  This skill helps in understanding the concept: CatalogSource's spec.grpcPodConfig

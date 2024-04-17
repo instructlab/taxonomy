@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The registryPoll updateStrategy checks for an updated version of the tag at specified intervals. 1
+  context: |
+    registryPoll updateStrategy checks for an updated version of the tag at specified intervals.
+  question: |
+    What function does the registryPoll updateStrategy perform?
+- answer: |
+    The registryPoll updateStrategy checks for an updated version of the tag at specified intervals. 2
+  context: |
+    registryPoll updateStrategy checks for an updated version of the tag at specified intervals.
+  question: |
+    What function does the registryPoll updateStrategy perform?
+- answer: |
+    The registryPoll updateStrategy checks for an updated version of the tag at specified intervals. 3
+  context: |
+    registryPoll updateStrategy checks for an updated version of the tag at specified intervals.
+  question: |
+    What function does the registryPoll updateStrategy perform?
+- answer: |
+    The registryPoll updateStrategy checks for an updated version of the tag at specified intervals. 4
+  context: |
+    registryPoll updateStrategy checks for an updated version of the tag at specified intervals.
+  question: |
+    What function does the registryPoll updateStrategy perform?
+- answer: |
+    The registryPoll updateStrategy checks for an updated version of the tag at specified intervals. 5
+  context: |
+    registryPoll updateStrategy checks for an updated version of the tag at specified intervals.
+  question: |
+    What function does the registryPoll updateStrategy perform?
+task_description: |
+  This skill helps in understanding the concept: registryPoll updateStrategy checks for an updated version of the
+  tag at specified intervals.

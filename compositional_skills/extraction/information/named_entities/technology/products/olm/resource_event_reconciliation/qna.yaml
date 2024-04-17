@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Resource event reconciliation is the process of matching and verifying resource events that are undertaken by a
+    controller and communicated through copied CSVs. 1
+  context: |
+    Resource event reconciliation: The process of matching and verifying resource events undertaken by a controller,
+    communicated through Copied CSVs.
+  question: |
+    What is the process of resource event reconciliation?
+- answer: |
+    Resource event reconciliation is the process of matching and verifying resource events that are undertaken by a
+    controller and communicated through copied CSVs. 2
+  context: |
+    Resource event reconciliation: The process of matching and verifying resource events undertaken by a controller,
+    communicated through Copied CSVs.
+  question: |
+    What is the process of resource event reconciliation?
+- answer: |
+    Resource event reconciliation is the process of matching and verifying resource events that are undertaken by a
+    controller and communicated through copied CSVs. 3
+  context: |
+    Resource event reconciliation: The process of matching and verifying resource events undertaken by a controller,
+    communicated through Copied CSVs.
+  question: |
+    What is the process of resource event reconciliation?
+- answer: |
+    Resource event reconciliation is the process of matching and verifying resource events that are undertaken by a
+    controller and communicated through copied CSVs. 4
+  context: |
+    Resource event reconciliation: The process of matching and verifying resource events undertaken by a controller,
+    communicated through Copied CSVs.
+  question: |
+    What is the process of resource event reconciliation?
+- answer: |
+    Resource event reconciliation is the process of matching and verifying resource events that are undertaken by a
+    controller and communicated through copied CSVs. 5
+  context: |
+    Resource event reconciliation: The process of matching and verifying resource events undertaken by a controller,
+    communicated through Copied CSVs.
+  question: |
+    What is the process of resource event reconciliation?
+task_description: |
+  This skill helps in understanding the concept: Resource event reconciliation: The process of matching and
+  verifying resource events undertaken by a controller, communicated through Copied CSVs.

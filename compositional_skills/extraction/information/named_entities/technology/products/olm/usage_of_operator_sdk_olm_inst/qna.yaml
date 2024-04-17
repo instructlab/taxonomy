@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The operator-sdk olm install command is used to install the Operator Lifecycle Manager (OLM) in your cluster. This
+    command helps to streamline the installation process and makes it easier to manage Operators in your cluster. It
+    can be used as follows: 1
+  context: |
+    Usage of operator-sdk olm install command to install OLM on a cluster
+  question: |
+    How do you use the operator-sdk olm install command to install OLM on a cluster?
+- answer: |
+    The operator-sdk olm install command is used to install the Operator Lifecycle Manager (OLM) in your cluster. This
+    command helps to streamline the installation process and makes it easier to manage Operators in your cluster. It
+    can be used as follows: 2
+  context: |
+    Usage of operator-sdk olm install command to install OLM on a cluster
+  question: |
+    How do you use the operator-sdk olm install command to install OLM on a cluster?
+- answer: |
+    The operator-sdk olm install command is used to install the Operator Lifecycle Manager (OLM) in your cluster. This
+    command helps to streamline the installation process and makes it easier to manage Operators in your cluster. It
+    can be used as follows: 3
+  context: |
+    Usage of operator-sdk olm install command to install OLM on a cluster
+  question: |
+    How do you use the operator-sdk olm install command to install OLM on a cluster?
+- answer: |
+    The operator-sdk olm install command is used to install the Operator Lifecycle Manager (OLM) in your cluster. This
+    command helps to streamline the installation process and makes it easier to manage Operators in your cluster. It
+    can be used as follows: 4
+  context: |
+    Usage of operator-sdk olm install command to install OLM on a cluster
+  question: |
+    How do you use the operator-sdk olm install command to install OLM on a cluster?
+- answer: |
+    The operator-sdk olm install command is used to install the Operator Lifecycle Manager (OLM) in your cluster. This
+    command helps to streamline the installation process and makes it easier to manage Operators in your cluster. It
+    can be used as follows: 5
+  context: |
+    Usage of operator-sdk olm install command to install OLM on a cluster
+  question: |
+    How do you use the operator-sdk olm install command to install OLM on a cluster?
+task_description: |
+  This skill helps in understanding the concept: Usage of operator-sdk olm install command to install OLM on a
+  cluster

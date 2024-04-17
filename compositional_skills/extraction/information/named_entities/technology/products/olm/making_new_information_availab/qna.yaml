@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The purpose of catalog polling is to make new information available by pulling down new versions of catalog
+    images. 1
+  context: |
+    Making new information available by pulling down new catalog image versions with catalog polling.
+  question: |
+    What is the purpose of catalog polling in terms of catalog image versions?
+- answer: |
+    The purpose of catalog polling is to make new information available by pulling down new versions of catalog
+    images. 2
+  context: |
+    Making new information available by pulling down new catalog image versions with catalog polling.
+  question: |
+    What is the purpose of catalog polling in terms of catalog image versions?
+- answer: |
+    The purpose of catalog polling is to make new information available by pulling down new versions of catalog
+    images. 3
+  context: |
+    Making new information available by pulling down new catalog image versions with catalog polling.
+  question: |
+    What is the purpose of catalog polling in terms of catalog image versions?
+- answer: |
+    The purpose of catalog polling is to make new information available by pulling down new versions of catalog
+    images. 4
+  context: |
+    Making new information available by pulling down new catalog image versions with catalog polling.
+  question: |
+    What is the purpose of catalog polling in terms of catalog image versions?
+- answer: |
+    The purpose of catalog polling is to make new information available by pulling down new versions of catalog
+    images. 5
+  context: |
+    Making new information available by pulling down new catalog image versions with catalog polling.
+  question: |
+    What is the purpose of catalog polling in terms of catalog image versions?
+task_description: |
+  This skill helps in understanding the concept: Making new information available by pulling down new catalog image
+  versions with catalog polling.

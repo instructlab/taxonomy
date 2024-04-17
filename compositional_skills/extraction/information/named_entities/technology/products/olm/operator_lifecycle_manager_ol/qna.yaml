@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The Operator Lifecycle Manager (OLM) is a tool used to manage the lifecycle of operators in a Kubernetes cluster.
+    1
+  context: |
+    Operator Lifecycle Manager (OLM): A tool to manage the lifecycle of operators in a Kubernetes cluster.
+  question: |
+    What is the function of the Operator Lifecycle Manager (OLM) in a Kubernetes cluster?
+- answer: |
+    The Operator Lifecycle Manager (OLM) is a tool used to manage the lifecycle of operators in a Kubernetes cluster.
+    2
+  context: |
+    Operator Lifecycle Manager (OLM): A tool to manage the lifecycle of operators in a Kubernetes cluster.
+  question: |
+    What is the function of the Operator Lifecycle Manager (OLM) in a Kubernetes cluster?
+- answer: |
+    The Operator Lifecycle Manager (OLM) is a tool used to manage the lifecycle of operators in a Kubernetes cluster.
+    3
+  context: |
+    Operator Lifecycle Manager (OLM): A tool to manage the lifecycle of operators in a Kubernetes cluster.
+  question: |
+    What is the function of the Operator Lifecycle Manager (OLM) in a Kubernetes cluster?
+- answer: |
+    The Operator Lifecycle Manager (OLM) is a tool used to manage the lifecycle of operators in a Kubernetes cluster.
+    4
+  context: |
+    Operator Lifecycle Manager (OLM): A tool to manage the lifecycle of operators in a Kubernetes cluster.
+  question: |
+    What is the function of the Operator Lifecycle Manager (OLM) in a Kubernetes cluster?
+- answer: |
+    The Operator Lifecycle Manager (OLM) is a tool used to manage the lifecycle of operators in a Kubernetes cluster.
+    5
+  context: |
+    Operator Lifecycle Manager (OLM): A tool to manage the lifecycle of operators in a Kubernetes cluster.
+  question: |
+    What is the function of the Operator Lifecycle Manager (OLM) in a Kubernetes cluster?
+task_description: |
+  This skill helps in understanding the concept: Operator Lifecycle Manager (OLM): A tool to manage the lifecycle of
+  operators in a Kubernetes cluster.

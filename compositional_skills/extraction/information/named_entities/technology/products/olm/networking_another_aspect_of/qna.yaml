@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Copied CSVs can affect the performance and stability of a cluster in networking by causing high network traffic or
+    congestion. This issue can potentially lead to increased latency, decreased throughput, and general instability of
+    the cluster. 1
+  context: |
+    Networking: Another aspect of a cluster that can be affected by Copied CSVs.
+  question: |
+    How can Copied CSVs affect a aspect of a cluster in networking?
+- answer: |
+    Copied CSVs can affect the performance and stability of a cluster in networking by causing high network traffic or
+    congestion. This issue can potentially lead to increased latency, decreased throughput, and general instability of
+    the cluster. 2
+  context: |
+    Networking: Another aspect of a cluster that can be affected by Copied CSVs.
+  question: |
+    How can Copied CSVs affect a aspect of a cluster in networking?
+- answer: |
+    Copied CSVs can affect the performance and stability of a cluster in networking by causing high network traffic or
+    congestion. This issue can potentially lead to increased latency, decreased throughput, and general instability of
+    the cluster. 3
+  context: |
+    Networking: Another aspect of a cluster that can be affected by Copied CSVs.
+  question: |
+    How can Copied CSVs affect a aspect of a cluster in networking?
+- answer: |
+    Copied CSVs can affect the performance and stability of a cluster in networking by causing high network traffic or
+    congestion. This issue can potentially lead to increased latency, decreased throughput, and general instability of
+    the cluster. 4
+  context: |
+    Networking: Another aspect of a cluster that can be affected by Copied CSVs.
+  question: |
+    How can Copied CSVs affect a aspect of a cluster in networking?
+- answer: |
+    Copied CSVs can affect the performance and stability of a cluster in networking by causing high network traffic or
+    congestion. This issue can potentially lead to increased latency, decreased throughput, and general instability of
+    the cluster. 5
+  context: |
+    Networking: Another aspect of a cluster that can be affected by Copied CSVs.
+  question: |
+    How can Copied CSVs affect a aspect of a cluster in networking?
+task_description: |
+  This skill helps in understanding the concept: Networking: Another aspect of a cluster that can be affected by
+  Copied CSVs.

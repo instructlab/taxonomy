@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Olm.channel objects represent the upgrade graph in both Floating Body Cell (FBC) and the basic catalog template. 1
+  context: |
+    olm.channel objects: They represent the upgrade graph in both FBC and the basic catalog template.
+  question: |
+    What do olm.channel objects represent?
+- answer: |
+    Olm.channel objects represent the upgrade graph in both Floating Body Cell (FBC) and the basic catalog template. 2
+  context: |
+    olm.channel objects: They represent the upgrade graph in both FBC and the basic catalog template.
+  question: |
+    What do olm.channel objects represent?
+- answer: |
+    Olm.channel objects represent the upgrade graph in both Floating Body Cell (FBC) and the basic catalog template. 3
+  context: |
+    olm.channel objects: They represent the upgrade graph in both FBC and the basic catalog template.
+  question: |
+    What do olm.channel objects represent?
+- answer: |
+    Olm.channel objects represent the upgrade graph in both Floating Body Cell (FBC) and the basic catalog template. 4
+  context: |
+    olm.channel objects: They represent the upgrade graph in both FBC and the basic catalog template.
+  question: |
+    What do olm.channel objects represent?
+- answer: |
+    Olm.channel objects represent the upgrade graph in both Floating Body Cell (FBC) and the basic catalog template. 5
+  context: |
+    olm.channel objects: They represent the upgrade graph in both FBC and the basic catalog template.
+  question: |
+    What do olm.channel objects represent?
+task_description: |
+  This skill helps in understanding the concept: olm.channel objects: They represent the upgrade graph in both FBC
+  and the basic catalog template.

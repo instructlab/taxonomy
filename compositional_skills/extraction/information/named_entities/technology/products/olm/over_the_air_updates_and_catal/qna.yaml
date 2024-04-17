@@ -1,0 +1,46 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Over-the-Air Updates and Catalogs with Operator Lifecycle Manager (OLM). 1
+  context: |
+    Over-the-Air Updates and Catalogs: With OLM, maintainers granularly author the update path to keep Kubernetes
+    clusters up to date, often using automatic and elaborate update mechanisms.
+  question: |
+    What allows maintainers to granularly author the update path to keep Kubernetes clusters up to date using
+    automatic and elaborate update mechanisms?
+- answer: |
+    Over-the-Air Updates and Catalogs with Operator Lifecycle Manager (OLM). 2
+  context: |
+    Over-the-Air Updates and Catalogs: With OLM, maintainers granularly author the update path to keep Kubernetes
+    clusters up to date, often using automatic and elaborate update mechanisms.
+  question: |
+    What allows maintainers to granularly author the update path to keep Kubernetes clusters up to date using
+    automatic and elaborate update mechanisms?
+- answer: |
+    Over-the-Air Updates and Catalogs with Operator Lifecycle Manager (OLM). 3
+  context: |
+    Over-the-Air Updates and Catalogs: With OLM, maintainers granularly author the update path to keep Kubernetes
+    clusters up to date, often using automatic and elaborate update mechanisms.
+  question: |
+    What allows maintainers to granularly author the update path to keep Kubernetes clusters up to date using
+    automatic and elaborate update mechanisms?
+- answer: |
+    Over-the-Air Updates and Catalogs with Operator Lifecycle Manager (OLM). 4
+  context: |
+    Over-the-Air Updates and Catalogs: With OLM, maintainers granularly author the update path to keep Kubernetes
+    clusters up to date, often using automatic and elaborate update mechanisms.
+  question: |
+    What allows maintainers to granularly author the update path to keep Kubernetes clusters up to date using
+    automatic and elaborate update mechanisms?
+- answer: |
+    Over-the-Air Updates and Catalogs with Operator Lifecycle Manager (OLM). 5
+  context: |
+    Over-the-Air Updates and Catalogs: With OLM, maintainers granularly author the update path to keep Kubernetes
+    clusters up to date, often using automatic and elaborate update mechanisms.
+  question: |
+    What allows maintainers to granularly author the update path to keep Kubernetes clusters up to date using
+    automatic and elaborate update mechanisms?
+task_description: |
+  This skill helps in understanding the concept: Over-the-Air Updates and Catalogs: With OLM, maintainers granularly
+  author the update path to keep Kubernetes clusters up to date, often using automatic and elaborate update
+  mechanisms.

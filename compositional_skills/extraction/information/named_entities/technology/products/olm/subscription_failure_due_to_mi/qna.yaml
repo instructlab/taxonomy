@@ -1,0 +1,51 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Subscription failure in newer versions of Kubernetes can be caused by the deprecation and removal of certain APIs
+    that the subscriptions rely on. This issue can be resolved by installing the required CustomResourceDefinition. 1
+  context: |
+    Subscription failure due to missing APIs: Newer versions of Kubernetes may deprecate and remove certain APIs
+    causing subscriptions relying on these APIs to fail. This error can be resolved by installing the required
+    CustomResourceDefinition.
+  question: |
+    What can cause subscription failure in newer versions of Kubernetes and how can this issue be resolved?
+- answer: |
+    Subscription failure in newer versions of Kubernetes can be caused by the deprecation and removal of certain APIs
+    that the subscriptions rely on. This issue can be resolved by installing the required CustomResourceDefinition. 2
+  context: |
+    Subscription failure due to missing APIs: Newer versions of Kubernetes may deprecate and remove certain APIs
+    causing subscriptions relying on these APIs to fail. This error can be resolved by installing the required
+    CustomResourceDefinition.
+  question: |
+    What can cause subscription failure in newer versions of Kubernetes and how can this issue be resolved?
+- answer: |
+    Subscription failure in newer versions of Kubernetes can be caused by the deprecation and removal of certain APIs
+    that the subscriptions rely on. This issue can be resolved by installing the required CustomResourceDefinition. 3
+  context: |
+    Subscription failure due to missing APIs: Newer versions of Kubernetes may deprecate and remove certain APIs
+    causing subscriptions relying on these APIs to fail. This error can be resolved by installing the required
+    CustomResourceDefinition.
+  question: |
+    What can cause subscription failure in newer versions of Kubernetes and how can this issue be resolved?
+- answer: |
+    Subscription failure in newer versions of Kubernetes can be caused by the deprecation and removal of certain APIs
+    that the subscriptions rely on. This issue can be resolved by installing the required CustomResourceDefinition. 4
+  context: |
+    Subscription failure due to missing APIs: Newer versions of Kubernetes may deprecate and remove certain APIs
+    causing subscriptions relying on these APIs to fail. This error can be resolved by installing the required
+    CustomResourceDefinition.
+  question: |
+    What can cause subscription failure in newer versions of Kubernetes and how can this issue be resolved?
+- answer: |
+    Subscription failure in newer versions of Kubernetes can be caused by the deprecation and removal of certain APIs
+    that the subscriptions rely on. This issue can be resolved by installing the required CustomResourceDefinition. 5
+  context: |
+    Subscription failure due to missing APIs: Newer versions of Kubernetes may deprecate and remove certain APIs
+    causing subscriptions relying on these APIs to fail. This error can be resolved by installing the required
+    CustomResourceDefinition.
+  question: |
+    What can cause subscription failure in newer versions of Kubernetes and how can this issue be resolved?
+task_description: |
+  This skill helps in understanding the concept: Subscription failure due to missing APIs: Newer versions of
+  Kubernetes may deprecate and remove certain APIs causing subscriptions relying on these APIs to fail. This error
+  can be resolved by installing the required CustomResourceDefinition.

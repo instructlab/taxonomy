@@ -1,0 +1,50 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    A ClusterServiceVersion, in computer networking, is an entity used in the Operator Lifecycle Manager (OLM) that
+    associates metadata with a certain Operator. This metadata may include information about the Operator's
+    deployment, required resources, provided APIs, and entrypoint for the Operator. Troubleshooting a
+    ClusterServiceVersion involves identifying and solving problems related to these aspects. 1
+  context: |
+    Title: ClusterServiceVersion    - Description: Tips and tricks related to troubleshooting a ClusterServiceVersion.
+  question: |
+    What is a ClusterServiceVersion in computer networking?
+- answer: |
+    A ClusterServiceVersion, in computer networking, is an entity used in the Operator Lifecycle Manager (OLM) that
+    associates metadata with a certain Operator. This metadata may include information about the Operator's
+    deployment, required resources, provided APIs, and entrypoint for the Operator. Troubleshooting a
+    ClusterServiceVersion involves identifying and solving problems related to these aspects. 2
+  context: |
+    Title: ClusterServiceVersion    - Description: Tips and tricks related to troubleshooting a ClusterServiceVersion.
+  question: |
+    What is a ClusterServiceVersion in computer networking?
+- answer: |
+    A ClusterServiceVersion, in computer networking, is an entity used in the Operator Lifecycle Manager (OLM) that
+    associates metadata with a certain Operator. This metadata may include information about the Operator's
+    deployment, required resources, provided APIs, and entrypoint for the Operator. Troubleshooting a
+    ClusterServiceVersion involves identifying and solving problems related to these aspects. 3
+  context: |
+    Title: ClusterServiceVersion    - Description: Tips and tricks related to troubleshooting a ClusterServiceVersion.
+  question: |
+    What is a ClusterServiceVersion in computer networking?
+- answer: |
+    A ClusterServiceVersion, in computer networking, is an entity used in the Operator Lifecycle Manager (OLM) that
+    associates metadata with a certain Operator. This metadata may include information about the Operator's
+    deployment, required resources, provided APIs, and entrypoint for the Operator. Troubleshooting a
+    ClusterServiceVersion involves identifying and solving problems related to these aspects. 4
+  context: |
+    Title: ClusterServiceVersion    - Description: Tips and tricks related to troubleshooting a ClusterServiceVersion.
+  question: |
+    What is a ClusterServiceVersion in computer networking?
+- answer: |
+    A ClusterServiceVersion, in computer networking, is an entity used in the Operator Lifecycle Manager (OLM) that
+    associates metadata with a certain Operator. This metadata may include information about the Operator's
+    deployment, required resources, provided APIs, and entrypoint for the Operator. Troubleshooting a
+    ClusterServiceVersion involves identifying and solving problems related to these aspects. 5
+  context: |
+    Title: ClusterServiceVersion    - Description: Tips and tricks related to troubleshooting a ClusterServiceVersion.
+  question: |
+    What is a ClusterServiceVersion in computer networking?
+task_description: |
+  This skill helps in understanding the concept: Title: ClusterServiceVersion    - Description: Tips and tricks
+  related to troubleshooting a ClusterServiceVersion.

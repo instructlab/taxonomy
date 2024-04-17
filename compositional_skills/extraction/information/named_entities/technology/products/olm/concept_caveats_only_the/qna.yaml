@@ -1,0 +1,57 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Only the labels on the HEAD of the default channel should be considered when filtering PackageManifests by label.
+    Although providing an alternate architecture for an operator in the non-default channel is possible, it will not
+    be available for filtering in the PackageManifest API. 1
+  context: |
+    Concept: Caveats    - Only the labels on the HEAD of the default channel are considered for filtering
+    PackageManifests by label. Providing an alternate architecture for an operator in the non-default channel is
+    possible, but will not be available for filtering in the PackageManifest API.
+  question: |
+    What should be considered when filtering PackageManifests by label?
+- answer: |
+    Only the labels on the HEAD of the default channel should be considered when filtering PackageManifests by label.
+    Although providing an alternate architecture for an operator in the non-default channel is possible, it will not
+    be available for filtering in the PackageManifest API. 2
+  context: |
+    Concept: Caveats    - Only the labels on the HEAD of the default channel are considered for filtering
+    PackageManifests by label. Providing an alternate architecture for an operator in the non-default channel is
+    possible, but will not be available for filtering in the PackageManifest API.
+  question: |
+    What should be considered when filtering PackageManifests by label?
+- answer: |
+    Only the labels on the HEAD of the default channel should be considered when filtering PackageManifests by label.
+    Although providing an alternate architecture for an operator in the non-default channel is possible, it will not
+    be available for filtering in the PackageManifest API. 3
+  context: |
+    Concept: Caveats    - Only the labels on the HEAD of the default channel are considered for filtering
+    PackageManifests by label. Providing an alternate architecture for an operator in the non-default channel is
+    possible, but will not be available for filtering in the PackageManifest API.
+  question: |
+    What should be considered when filtering PackageManifests by label?
+- answer: |
+    Only the labels on the HEAD of the default channel should be considered when filtering PackageManifests by label.
+    Although providing an alternate architecture for an operator in the non-default channel is possible, it will not
+    be available for filtering in the PackageManifest API. 4
+  context: |
+    Concept: Caveats    - Only the labels on the HEAD of the default channel are considered for filtering
+    PackageManifests by label. Providing an alternate architecture for an operator in the non-default channel is
+    possible, but will not be available for filtering in the PackageManifest API.
+  question: |
+    What should be considered when filtering PackageManifests by label?
+- answer: |
+    Only the labels on the HEAD of the default channel should be considered when filtering PackageManifests by label.
+    Although providing an alternate architecture for an operator in the non-default channel is possible, it will not
+    be available for filtering in the PackageManifest API. 5
+  context: |
+    Concept: Caveats    - Only the labels on the HEAD of the default channel are considered for filtering
+    PackageManifests by label. Providing an alternate architecture for an operator in the non-default channel is
+    possible, but will not be available for filtering in the PackageManifest API.
+  question: |
+    What should be considered when filtering PackageManifests by label?
+task_description: |
+  This skill helps in understanding the concept: Concept: Caveats    - Only the labels on the HEAD of the default
+  channel are considered for filtering PackageManifests by label. Providing an alternate architecture for an
+  operator in the non-default channel is possible, but will not be available for filtering in the PackageManifest
+  API.

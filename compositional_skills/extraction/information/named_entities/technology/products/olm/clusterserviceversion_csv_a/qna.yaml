@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    A ClusterServiceVersion (CSV) is a file that contains information about an operator, including the roles it needs
+    and the resources it will manage. 1
+  context: |
+    ClusterServiceVersion (CSV): A file that contains information about an operator, including the roles it needs and
+    the resources it will manage.
+  question: |
+    What is a ClusterServiceVersion (CSV) in terms of an operator?
+- answer: |
+    A ClusterServiceVersion (CSV) is a file that contains information about an operator, including the roles it needs
+    and the resources it will manage. 2
+  context: |
+    ClusterServiceVersion (CSV): A file that contains information about an operator, including the roles it needs and
+    the resources it will manage.
+  question: |
+    What is a ClusterServiceVersion (CSV) in terms of an operator?
+- answer: |
+    A ClusterServiceVersion (CSV) is a file that contains information about an operator, including the roles it needs
+    and the resources it will manage. 3
+  context: |
+    ClusterServiceVersion (CSV): A file that contains information about an operator, including the roles it needs and
+    the resources it will manage.
+  question: |
+    What is a ClusterServiceVersion (CSV) in terms of an operator?
+- answer: |
+    A ClusterServiceVersion (CSV) is a file that contains information about an operator, including the roles it needs
+    and the resources it will manage. 4
+  context: |
+    ClusterServiceVersion (CSV): A file that contains information about an operator, including the roles it needs and
+    the resources it will manage.
+  question: |
+    What is a ClusterServiceVersion (CSV) in terms of an operator?
+- answer: |
+    A ClusterServiceVersion (CSV) is a file that contains information about an operator, including the roles it needs
+    and the resources it will manage. 5
+  context: |
+    ClusterServiceVersion (CSV): A file that contains information about an operator, including the roles it needs and
+    the resources it will manage.
+  question: |
+    What is a ClusterServiceVersion (CSV) in terms of an operator?
+task_description: |
+  This skill helps in understanding the concept: ClusterServiceVersion (CSV): A file that contains information about
+  an operator, including the roles it needs and the resources it will manage.

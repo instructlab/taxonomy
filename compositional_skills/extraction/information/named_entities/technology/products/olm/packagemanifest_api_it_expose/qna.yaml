@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The PackageManifest API exposes content from existing CatalogSources on a cluster. It reveals the list of
+    operators available for installation. 1
+  context: |
+    PackageManifest API: It exposes content from existing CatalogSources on the cluster. Querying this API can reveal
+    the list of operators available for installation.
+  question: |
+    What does the PackageManifest API expose and reveal in a cluster?
+- answer: |
+    The PackageManifest API exposes content from existing CatalogSources on a cluster. It reveals the list of
+    operators available for installation. 2
+  context: |
+    PackageManifest API: It exposes content from existing CatalogSources on the cluster. Querying this API can reveal
+    the list of operators available for installation.
+  question: |
+    What does the PackageManifest API expose and reveal in a cluster?
+- answer: |
+    The PackageManifest API exposes content from existing CatalogSources on a cluster. It reveals the list of
+    operators available for installation. 3
+  context: |
+    PackageManifest API: It exposes content from existing CatalogSources on the cluster. Querying this API can reveal
+    the list of operators available for installation.
+  question: |
+    What does the PackageManifest API expose and reveal in a cluster?
+- answer: |
+    The PackageManifest API exposes content from existing CatalogSources on a cluster. It reveals the list of
+    operators available for installation. 4
+  context: |
+    PackageManifest API: It exposes content from existing CatalogSources on the cluster. Querying this API can reveal
+    the list of operators available for installation.
+  question: |
+    What does the PackageManifest API expose and reveal in a cluster?
+- answer: |
+    The PackageManifest API exposes content from existing CatalogSources on a cluster. It reveals the list of
+    operators available for installation. 5
+  context: |
+    PackageManifest API: It exposes content from existing CatalogSources on the cluster. Querying this API can reveal
+    the list of operators available for installation.
+  question: |
+    What does the PackageManifest API expose and reveal in a cluster?
+task_description: |
+  This skill helps in understanding the concept: PackageManifest API: It exposes content from existing
+  CatalogSources on the cluster. Querying this API can reveal the list of operators available for installation.

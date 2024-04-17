@@ -1,0 +1,51 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Global CatalogSources contain operators available for installation in all namespaces. Namespaced CatalogSources,
+    on the other hand, contain operators that are only available in a specific namespace. 1
+  context: |
+    CatalogSources in OLM: These can either be global or namespaced. Global CatalogSources contain operators available
+    for installation in all namespaces, while namespaced CatalogSources contain operators only available in a specific
+    namespace.
+  question: |
+    What is the difference between Global and Namespaced CatalogSources in OLM?
+- answer: |
+    Global CatalogSources contain operators available for installation in all namespaces. Namespaced CatalogSources,
+    on the other hand, contain operators that are only available in a specific namespace. 2
+  context: |
+    CatalogSources in OLM: These can either be global or namespaced. Global CatalogSources contain operators available
+    for installation in all namespaces, while namespaced CatalogSources contain operators only available in a specific
+    namespace.
+  question: |
+    What is the difference between Global and Namespaced CatalogSources in OLM?
+- answer: |
+    Global CatalogSources contain operators available for installation in all namespaces. Namespaced CatalogSources,
+    on the other hand, contain operators that are only available in a specific namespace. 3
+  context: |
+    CatalogSources in OLM: These can either be global or namespaced. Global CatalogSources contain operators available
+    for installation in all namespaces, while namespaced CatalogSources contain operators only available in a specific
+    namespace.
+  question: |
+    What is the difference between Global and Namespaced CatalogSources in OLM?
+- answer: |
+    Global CatalogSources contain operators available for installation in all namespaces. Namespaced CatalogSources,
+    on the other hand, contain operators that are only available in a specific namespace. 4
+  context: |
+    CatalogSources in OLM: These can either be global or namespaced. Global CatalogSources contain operators available
+    for installation in all namespaces, while namespaced CatalogSources contain operators only available in a specific
+    namespace.
+  question: |
+    What is the difference between Global and Namespaced CatalogSources in OLM?
+- answer: |
+    Global CatalogSources contain operators available for installation in all namespaces. Namespaced CatalogSources,
+    on the other hand, contain operators that are only available in a specific namespace. 5
+  context: |
+    CatalogSources in OLM: These can either be global or namespaced. Global CatalogSources contain operators available
+    for installation in all namespaces, while namespaced CatalogSources contain operators only available in a specific
+    namespace.
+  question: |
+    What is the difference between Global and Namespaced CatalogSources in OLM?
+task_description: |
+  This skill helps in understanding the concept: CatalogSources in OLM: These can either be global or namespaced.
+  Global CatalogSources contain operators available for installation in all namespaces, while namespaced
+  CatalogSources contain operators only available in a specific namespace.

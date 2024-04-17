@@ -1,0 +1,56 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The two scenarios that cause a failed installation or upgrade are: a failed CSV, where the CSV is in the FAILED
+    phase, and a failed InstallPlan, which usually occurs because a resource listed in the InstallPlan fails to be
+    created or updated. 1
+  context: |
+    Two Scenarios Cause a Failed Installation or Upgrade:     - A Failed CSV: The CSV is in the FAILED phase.    - A
+    Failed InstallPlan: This usually happens because a resource listed in the InstallPlan fails to be created or
+    updated.
+  question: |
+    What are two scenarios that cause a failed installation or upgrade?
+- answer: |
+    The two scenarios that cause a failed installation or upgrade are: a failed CSV, where the CSV is in the FAILED
+    phase, and a failed InstallPlan, which usually occurs because a resource listed in the InstallPlan fails to be
+    created or updated. 2
+  context: |
+    Two Scenarios Cause a Failed Installation or Upgrade:     - A Failed CSV: The CSV is in the FAILED phase.    - A
+    Failed InstallPlan: This usually happens because a resource listed in the InstallPlan fails to be created or
+    updated.
+  question: |
+    What are two scenarios that cause a failed installation or upgrade?
+- answer: |
+    The two scenarios that cause a failed installation or upgrade are: a failed CSV, where the CSV is in the FAILED
+    phase, and a failed InstallPlan, which usually occurs because a resource listed in the InstallPlan fails to be
+    created or updated. 3
+  context: |
+    Two Scenarios Cause a Failed Installation or Upgrade:     - A Failed CSV: The CSV is in the FAILED phase.    - A
+    Failed InstallPlan: This usually happens because a resource listed in the InstallPlan fails to be created or
+    updated.
+  question: |
+    What are two scenarios that cause a failed installation or upgrade?
+- answer: |
+    The two scenarios that cause a failed installation or upgrade are: a failed CSV, where the CSV is in the FAILED
+    phase, and a failed InstallPlan, which usually occurs because a resource listed in the InstallPlan fails to be
+    created or updated. 4
+  context: |
+    Two Scenarios Cause a Failed Installation or Upgrade:     - A Failed CSV: The CSV is in the FAILED phase.    - A
+    Failed InstallPlan: This usually happens because a resource listed in the InstallPlan fails to be created or
+    updated.
+  question: |
+    What are two scenarios that cause a failed installation or upgrade?
+- answer: |
+    The two scenarios that cause a failed installation or upgrade are: a failed CSV, where the CSV is in the FAILED
+    phase, and a failed InstallPlan, which usually occurs because a resource listed in the InstallPlan fails to be
+    created or updated. 5
+  context: |
+    Two Scenarios Cause a Failed Installation or Upgrade:     - A Failed CSV: The CSV is in the FAILED phase.    - A
+    Failed InstallPlan: This usually happens because a resource listed in the InstallPlan fails to be created or
+    updated.
+  question: |
+    What are two scenarios that cause a failed installation or upgrade?
+task_description: |
+  This skill helps in understanding the concept: Two Scenarios Cause a Failed Installation or Upgrade:     - A
+  Failed CSV: The CSV is in the FAILED phase.    - A Failed InstallPlan: This usually happens because a resource
+  listed in the InstallPlan fails to be created or updated.

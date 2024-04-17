@@ -1,0 +1,46 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Subscriptions cannot install operators that are provided by CatalogSources not in the same namespace, unless the
+    CatalogSource is created in the OLM namespace. 1
+  context: |
+    Namespace restriction: Subscriptions cannot install operators that are provided by CatalogSources not in the same
+    namespace, unless the CatalogSource is created in the olm namespace.
+  question: |
+    Where can subscriptions not install operators from in namespace restriction?
+- answer: |
+    Subscriptions cannot install operators that are provided by CatalogSources not in the same namespace, unless the
+    CatalogSource is created in the OLM namespace. 2
+  context: |
+    Namespace restriction: Subscriptions cannot install operators that are provided by CatalogSources not in the same
+    namespace, unless the CatalogSource is created in the olm namespace.
+  question: |
+    Where can subscriptions not install operators from in namespace restriction?
+- answer: |
+    Subscriptions cannot install operators that are provided by CatalogSources not in the same namespace, unless the
+    CatalogSource is created in the OLM namespace. 3
+  context: |
+    Namespace restriction: Subscriptions cannot install operators that are provided by CatalogSources not in the same
+    namespace, unless the CatalogSource is created in the olm namespace.
+  question: |
+    Where can subscriptions not install operators from in namespace restriction?
+- answer: |
+    Subscriptions cannot install operators that are provided by CatalogSources not in the same namespace, unless the
+    CatalogSource is created in the OLM namespace. 4
+  context: |
+    Namespace restriction: Subscriptions cannot install operators that are provided by CatalogSources not in the same
+    namespace, unless the CatalogSource is created in the olm namespace.
+  question: |
+    Where can subscriptions not install operators from in namespace restriction?
+- answer: |
+    Subscriptions cannot install operators that are provided by CatalogSources not in the same namespace, unless the
+    CatalogSource is created in the OLM namespace. 5
+  context: |
+    Namespace restriction: Subscriptions cannot install operators that are provided by CatalogSources not in the same
+    namespace, unless the CatalogSource is created in the olm namespace.
+  question: |
+    Where can subscriptions not install operators from in namespace restriction?
+task_description: |
+  This skill helps in understanding the concept: Namespace restriction: Subscriptions cannot install operators that
+  are provided by CatalogSources not in the same namespace, unless the CatalogSource is created in the olm
+  namespace.

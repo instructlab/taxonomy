@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The OPM tool is used to generate the necessary files for creating an operator bundle. 1
+  context: |
+    opm tool: Used to generate the necessary files for creating an operator bundle.
+  question: |
+    What is the function of the OPM tool in operator bundle creation?
+- answer: |
+    The OPM tool is used to generate the necessary files for creating an operator bundle. 2
+  context: |
+    opm tool: Used to generate the necessary files for creating an operator bundle.
+  question: |
+    What is the function of the OPM tool in operator bundle creation?
+- answer: |
+    The OPM tool is used to generate the necessary files for creating an operator bundle. 3
+  context: |
+    opm tool: Used to generate the necessary files for creating an operator bundle.
+  question: |
+    What is the function of the OPM tool in operator bundle creation?
+- answer: |
+    The OPM tool is used to generate the necessary files for creating an operator bundle. 4
+  context: |
+    opm tool: Used to generate the necessary files for creating an operator bundle.
+  question: |
+    What is the function of the OPM tool in operator bundle creation?
+- answer: |
+    The OPM tool is used to generate the necessary files for creating an operator bundle. 5
+  context: |
+    opm tool: Used to generate the necessary files for creating an operator bundle.
+  question: |
+    What is the function of the OPM tool in operator bundle creation?
+task_description: |
+  This skill helps in understanding the concept: opm tool: Used to generate the necessary files for creating an
+  operator bundle.

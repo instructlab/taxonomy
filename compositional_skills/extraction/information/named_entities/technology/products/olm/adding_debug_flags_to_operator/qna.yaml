@@ -1,0 +1,44 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Adding debug flags to operator deployments is meant to increase visibility and troubleshooting capabilities during
+    the deployment process. It allows the developers to see more detailed information about the operations occurring
+    during deployment, which can help identify and resolve potential issues more efficiently. 1
+  context: |
+    Adding debug flags to operator deployments
+  question: |
+    What is the purpose of adding debug flags to operator deployments?
+- answer: |
+    Adding debug flags to operator deployments is meant to increase visibility and troubleshooting capabilities during
+    the deployment process. It allows the developers to see more detailed information about the operations occurring
+    during deployment, which can help identify and resolve potential issues more efficiently. 2
+  context: |
+    Adding debug flags to operator deployments
+  question: |
+    What is the purpose of adding debug flags to operator deployments?
+- answer: |
+    Adding debug flags to operator deployments is meant to increase visibility and troubleshooting capabilities during
+    the deployment process. It allows the developers to see more detailed information about the operations occurring
+    during deployment, which can help identify and resolve potential issues more efficiently. 3
+  context: |
+    Adding debug flags to operator deployments
+  question: |
+    What is the purpose of adding debug flags to operator deployments?
+- answer: |
+    Adding debug flags to operator deployments is meant to increase visibility and troubleshooting capabilities during
+    the deployment process. It allows the developers to see more detailed information about the operations occurring
+    during deployment, which can help identify and resolve potential issues more efficiently. 4
+  context: |
+    Adding debug flags to operator deployments
+  question: |
+    What is the purpose of adding debug flags to operator deployments?
+- answer: |
+    Adding debug flags to operator deployments is meant to increase visibility and troubleshooting capabilities during
+    the deployment process. It allows the developers to see more detailed information about the operations occurring
+    during deployment, which can help identify and resolve potential issues more efficiently. 5
+  context: |
+    Adding debug flags to operator deployments
+  question: |
+    What is the purpose of adding debug flags to operator deployments?
+task_description: |
+  This skill helps in understanding the concept: Adding debug flags to operator deployments

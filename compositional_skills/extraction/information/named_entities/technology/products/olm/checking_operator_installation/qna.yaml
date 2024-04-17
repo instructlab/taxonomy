@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    One can ensure a successful installation of an operator by checking the ClusterServiceVersion and operator
+    deployment in the namespace. 1
+  context: |
+    Checking Operator Installation: To ensure the operator was installed successfully, the ClusterServiceVersion and
+    operator deployment in the namespace can be checked.
+  question: |
+    How can one ensure a successful installation of an operator?
+- answer: |
+    One can ensure a successful installation of an operator by checking the ClusterServiceVersion and operator
+    deployment in the namespace. 2
+  context: |
+    Checking Operator Installation: To ensure the operator was installed successfully, the ClusterServiceVersion and
+    operator deployment in the namespace can be checked.
+  question: |
+    How can one ensure a successful installation of an operator?
+- answer: |
+    One can ensure a successful installation of an operator by checking the ClusterServiceVersion and operator
+    deployment in the namespace. 3
+  context: |
+    Checking Operator Installation: To ensure the operator was installed successfully, the ClusterServiceVersion and
+    operator deployment in the namespace can be checked.
+  question: |
+    How can one ensure a successful installation of an operator?
+- answer: |
+    One can ensure a successful installation of an operator by checking the ClusterServiceVersion and operator
+    deployment in the namespace. 4
+  context: |
+    Checking Operator Installation: To ensure the operator was installed successfully, the ClusterServiceVersion and
+    operator deployment in the namespace can be checked.
+  question: |
+    How can one ensure a successful installation of an operator?
+- answer: |
+    One can ensure a successful installation of an operator by checking the ClusterServiceVersion and operator
+    deployment in the namespace. 5
+  context: |
+    Checking Operator Installation: To ensure the operator was installed successfully, the ClusterServiceVersion and
+    operator deployment in the namespace can be checked.
+  question: |
+    How can one ensure a successful installation of an operator?
+task_description: |
+  This skill helps in understanding the concept: Checking Operator Installation: To ensure the operator was
+  installed successfully, the ClusterServiceVersion and operator deployment in the namespace can be checked.

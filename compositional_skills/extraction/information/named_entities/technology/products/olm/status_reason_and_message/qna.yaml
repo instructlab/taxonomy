@@ -1,0 +1,50 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The status.reason and status.message fields typically contain important information about the state or condition
+    of a system or process. Any change or error in these fields can provide essential insights for troubleshooting,
+    performance evaluation, and general system monitoring. 1
+  context: |
+    Status Reason and Message    - Description: Special attention should be paid to the information within the
+    status.reason and status.message fields.
+  question: |
+    Why should special attention be paid to the status.reason and status.message fields?
+- answer: |
+    The status.reason and status.message fields typically contain important information about the state or condition
+    of a system or process. Any change or error in these fields can provide essential insights for troubleshooting,
+    performance evaluation, and general system monitoring. 2
+  context: |
+    Status Reason and Message    - Description: Special attention should be paid to the information within the
+    status.reason and status.message fields.
+  question: |
+    Why should special attention be paid to the status.reason and status.message fields?
+- answer: |
+    The status.reason and status.message fields typically contain important information about the state or condition
+    of a system or process. Any change or error in these fields can provide essential insights for troubleshooting,
+    performance evaluation, and general system monitoring. 3
+  context: |
+    Status Reason and Message    - Description: Special attention should be paid to the information within the
+    status.reason and status.message fields.
+  question: |
+    Why should special attention be paid to the status.reason and status.message fields?
+- answer: |
+    The status.reason and status.message fields typically contain important information about the state or condition
+    of a system or process. Any change or error in these fields can provide essential insights for troubleshooting,
+    performance evaluation, and general system monitoring. 4
+  context: |
+    Status Reason and Message    - Description: Special attention should be paid to the information within the
+    status.reason and status.message fields.
+  question: |
+    Why should special attention be paid to the status.reason and status.message fields?
+- answer: |
+    The status.reason and status.message fields typically contain important information about the state or condition
+    of a system or process. Any change or error in these fields can provide essential insights for troubleshooting,
+    performance evaluation, and general system monitoring. 5
+  context: |
+    Status Reason and Message    - Description: Special attention should be paid to the information within the
+    status.reason and status.message fields.
+  question: |
+    Why should special attention be paid to the status.reason and status.message fields?
+task_description: |
+  This skill helps in understanding the concept: Status Reason and Message    - Description: Special attention
+  should be paid to the information within the status.reason and status.message fields.

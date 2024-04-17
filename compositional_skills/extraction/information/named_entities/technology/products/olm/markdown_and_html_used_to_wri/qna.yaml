@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    In the context of Hugo, Markdown and HTML are used to write the pages that Hugo then turns into a website. 1
+  context: |
+    Markdown and HTML: Used to write the pages which Hugo turns into a website.
+  question: |
+    What are Markdown and HTML used for in the context of Hugo?
+- answer: |
+    In the context of Hugo, Markdown and HTML are used to write the pages that Hugo then turns into a website. 2
+  context: |
+    Markdown and HTML: Used to write the pages which Hugo turns into a website.
+  question: |
+    What are Markdown and HTML used for in the context of Hugo?
+- answer: |
+    In the context of Hugo, Markdown and HTML are used to write the pages that Hugo then turns into a website. 3
+  context: |
+    Markdown and HTML: Used to write the pages which Hugo turns into a website.
+  question: |
+    What are Markdown and HTML used for in the context of Hugo?
+- answer: |
+    In the context of Hugo, Markdown and HTML are used to write the pages that Hugo then turns into a website. 4
+  context: |
+    Markdown and HTML: Used to write the pages which Hugo turns into a website.
+  question: |
+    What are Markdown and HTML used for in the context of Hugo?
+- answer: |
+    In the context of Hugo, Markdown and HTML are used to write the pages that Hugo then turns into a website. 5
+  context: |
+    Markdown and HTML: Used to write the pages which Hugo turns into a website.
+  question: |
+    What are Markdown and HTML used for in the context of Hugo?
+task_description: |
+  This skill helps in understanding the concept: Markdown and HTML: Used to write the pages which Hugo turns into a
+  website.

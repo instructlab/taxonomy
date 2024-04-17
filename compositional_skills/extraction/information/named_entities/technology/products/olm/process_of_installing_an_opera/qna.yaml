@@ -1,0 +1,50 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The process of installing an Operator using OLM involves several steps. First, you need to create a Namespace for
+    the operator. This can be done with the following command: 1
+  context: |
+    Process of installing an Operator using OLM, including commands for creating an OperatorGroup and a Subscription
+    for an operator
+  question: |
+    What is the process of installing an Operator using Operator Lifecycle Manager (OLM), and what are the commands
+    for creating an OperatorGroup and a Subscription for an operator?
+- answer: |
+    The process of installing an Operator using OLM involves several steps. First, you need to create a Namespace for
+    the operator. This can be done with the following command: 2
+  context: |
+    Process of installing an Operator using OLM, including commands for creating an OperatorGroup and a Subscription
+    for an operator
+  question: |
+    What is the process of installing an Operator using Operator Lifecycle Manager (OLM), and what are the commands
+    for creating an OperatorGroup and a Subscription for an operator?
+- answer: |
+    The process of installing an Operator using OLM involves several steps. First, you need to create a Namespace for
+    the operator. This can be done with the following command: 3
+  context: |
+    Process of installing an Operator using OLM, including commands for creating an OperatorGroup and a Subscription
+    for an operator
+  question: |
+    What is the process of installing an Operator using Operator Lifecycle Manager (OLM), and what are the commands
+    for creating an OperatorGroup and a Subscription for an operator?
+- answer: |
+    The process of installing an Operator using OLM involves several steps. First, you need to create a Namespace for
+    the operator. This can be done with the following command: 4
+  context: |
+    Process of installing an Operator using OLM, including commands for creating an OperatorGroup and a Subscription
+    for an operator
+  question: |
+    What is the process of installing an Operator using Operator Lifecycle Manager (OLM), and what are the commands
+    for creating an OperatorGroup and a Subscription for an operator?
+- answer: |
+    The process of installing an Operator using OLM involves several steps. First, you need to create a Namespace for
+    the operator. This can be done with the following command: 5
+  context: |
+    Process of installing an Operator using OLM, including commands for creating an OperatorGroup and a Subscription
+    for an operator
+  question: |
+    What is the process of installing an Operator using Operator Lifecycle Manager (OLM), and what are the commands
+    for creating an OperatorGroup and a Subscription for an operator?
+task_description: |
+  This skill helps in understanding the concept: Process of installing an Operator using OLM, including commands for
+  creating an OperatorGroup and a Subscription for an operator

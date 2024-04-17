@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    An Operator Version in CatalogSource is a specific variant of an operator present in a CatalogSource. 1
+  context: |
+    Operator Version in CatalogSource: A specific variant of an operator present in a CatalogSource.
+  question: |
+    What is an Operator Version in CatalogSource?
+- answer: |
+    An Operator Version in CatalogSource is a specific variant of an operator present in a CatalogSource. 2
+  context: |
+    Operator Version in CatalogSource: A specific variant of an operator present in a CatalogSource.
+  question: |
+    What is an Operator Version in CatalogSource?
+- answer: |
+    An Operator Version in CatalogSource is a specific variant of an operator present in a CatalogSource. 3
+  context: |
+    Operator Version in CatalogSource: A specific variant of an operator present in a CatalogSource.
+  question: |
+    What is an Operator Version in CatalogSource?
+- answer: |
+    An Operator Version in CatalogSource is a specific variant of an operator present in a CatalogSource. 4
+  context: |
+    Operator Version in CatalogSource: A specific variant of an operator present in a CatalogSource.
+  question: |
+    What is an Operator Version in CatalogSource?
+- answer: |
+    An Operator Version in CatalogSource is a specific variant of an operator present in a CatalogSource. 5
+  context: |
+    Operator Version in CatalogSource: A specific variant of an operator present in a CatalogSource.
+  question: |
+    What is an Operator Version in CatalogSource?
+task_description: |
+  This skill helps in understanding the concept: Operator Version in CatalogSource: A specific variant of an
+  operator present in a CatalogSource.

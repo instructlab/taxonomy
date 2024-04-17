@@ -1,0 +1,51 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    In Declarative UI Controls, the Operators can behave similar to managed service providers. The Operator Lifecycle
+    Manager (OLM) plays an essential part by annotating APIs with descriptors. These are useful for creating rich
+    interfaces and forms that allow interaction with the Operator in a manner similar to a cloud platform. 1
+  context: |
+    Declarative UI Controls: Operators can behave like managed service providers. OLM annotates APIs with descriptors
+    for the creation of rich interfaces and forms to interact with the Operator in a cloud-like manner.
+  question: |
+    How do Operators in Declarative UI Controls behave and what is the role of OLM?
+- answer: |
+    In Declarative UI Controls, the Operators can behave similar to managed service providers. The Operator Lifecycle
+    Manager (OLM) plays an essential part by annotating APIs with descriptors. These are useful for creating rich
+    interfaces and forms that allow interaction with the Operator in a manner similar to a cloud platform. 2
+  context: |
+    Declarative UI Controls: Operators can behave like managed service providers. OLM annotates APIs with descriptors
+    for the creation of rich interfaces and forms to interact with the Operator in a cloud-like manner.
+  question: |
+    How do Operators in Declarative UI Controls behave and what is the role of OLM?
+- answer: |
+    In Declarative UI Controls, the Operators can behave similar to managed service providers. The Operator Lifecycle
+    Manager (OLM) plays an essential part by annotating APIs with descriptors. These are useful for creating rich
+    interfaces and forms that allow interaction with the Operator in a manner similar to a cloud platform. 3
+  context: |
+    Declarative UI Controls: Operators can behave like managed service providers. OLM annotates APIs with descriptors
+    for the creation of rich interfaces and forms to interact with the Operator in a cloud-like manner.
+  question: |
+    How do Operators in Declarative UI Controls behave and what is the role of OLM?
+- answer: |
+    In Declarative UI Controls, the Operators can behave similar to managed service providers. The Operator Lifecycle
+    Manager (OLM) plays an essential part by annotating APIs with descriptors. These are useful for creating rich
+    interfaces and forms that allow interaction with the Operator in a manner similar to a cloud platform. 4
+  context: |
+    Declarative UI Controls: Operators can behave like managed service providers. OLM annotates APIs with descriptors
+    for the creation of rich interfaces and forms to interact with the Operator in a cloud-like manner.
+  question: |
+    How do Operators in Declarative UI Controls behave and what is the role of OLM?
+- answer: |
+    In Declarative UI Controls, the Operators can behave similar to managed service providers. The Operator Lifecycle
+    Manager (OLM) plays an essential part by annotating APIs with descriptors. These are useful for creating rich
+    interfaces and forms that allow interaction with the Operator in a manner similar to a cloud platform. 5
+  context: |
+    Declarative UI Controls: Operators can behave like managed service providers. OLM annotates APIs with descriptors
+    for the creation of rich interfaces and forms to interact with the Operator in a cloud-like manner.
+  question: |
+    How do Operators in Declarative UI Controls behave and what is the role of OLM?
+task_description: |
+  This skill helps in understanding the concept: Declarative UI Controls: Operators can behave like managed service
+  providers. OLM annotates APIs with descriptors for the creation of rich interfaces and forms to interact with the
+  Operator in a cloud-like manner.

@@ -1,0 +1,59 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The Operator Lifecycle Manager (OLM) and Catalog Operator are fundamental components when debugging in the context
+    of a Kubernetes Operator. OLM manages the lifecycle of operators and their instances in a cluster, which aids in
+    debugging by managing and tracking the changes and issues in various Operators. The Catalog Operator, on the other
+    hand, is responsible for resolving and installing CSVs and CRDs in an Operator which can be essential in
+    identifying and rectifying errors and bugs in the system. They work together to ensure smooth operation and ease
+    troubleshooting process when an issue arises. 1
+  context: |
+    Debugging OLM and Catalog Operator
+  question: |
+    What is the function of the OLM and Catalog Operator in debugging?
+- answer: |
+    The Operator Lifecycle Manager (OLM) and Catalog Operator are fundamental components when debugging in the context
+    of a Kubernetes Operator. OLM manages the lifecycle of operators and their instances in a cluster, which aids in
+    debugging by managing and tracking the changes and issues in various Operators. The Catalog Operator, on the other
+    hand, is responsible for resolving and installing CSVs and CRDs in an Operator which can be essential in
+    identifying and rectifying errors and bugs in the system. They work together to ensure smooth operation and ease
+    troubleshooting process when an issue arises. 2
+  context: |
+    Debugging OLM and Catalog Operator
+  question: |
+    What is the function of the OLM and Catalog Operator in debugging?
+- answer: |
+    The Operator Lifecycle Manager (OLM) and Catalog Operator are fundamental components when debugging in the context
+    of a Kubernetes Operator. OLM manages the lifecycle of operators and their instances in a cluster, which aids in
+    debugging by managing and tracking the changes and issues in various Operators. The Catalog Operator, on the other
+    hand, is responsible for resolving and installing CSVs and CRDs in an Operator which can be essential in
+    identifying and rectifying errors and bugs in the system. They work together to ensure smooth operation and ease
+    troubleshooting process when an issue arises. 3
+  context: |
+    Debugging OLM and Catalog Operator
+  question: |
+    What is the function of the OLM and Catalog Operator in debugging?
+- answer: |
+    The Operator Lifecycle Manager (OLM) and Catalog Operator are fundamental components when debugging in the context
+    of a Kubernetes Operator. OLM manages the lifecycle of operators and their instances in a cluster, which aids in
+    debugging by managing and tracking the changes and issues in various Operators. The Catalog Operator, on the other
+    hand, is responsible for resolving and installing CSVs and CRDs in an Operator which can be essential in
+    identifying and rectifying errors and bugs in the system. They work together to ensure smooth operation and ease
+    troubleshooting process when an issue arises. 4
+  context: |
+    Debugging OLM and Catalog Operator
+  question: |
+    What is the function of the OLM and Catalog Operator in debugging?
+- answer: |
+    The Operator Lifecycle Manager (OLM) and Catalog Operator are fundamental components when debugging in the context
+    of a Kubernetes Operator. OLM manages the lifecycle of operators and their instances in a cluster, which aids in
+    debugging by managing and tracking the changes and issues in various Operators. The Catalog Operator, on the other
+    hand, is responsible for resolving and installing CSVs and CRDs in an Operator which can be essential in
+    identifying and rectifying errors and bugs in the system. They work together to ensure smooth operation and ease
+    troubleshooting process when an issue arises. 5
+  context: |
+    Debugging OLM and Catalog Operator
+  question: |
+    What is the function of the OLM and Catalog Operator in debugging?
+task_description: |
+  This skill helps in understanding the concept: Debugging OLM and Catalog Operator

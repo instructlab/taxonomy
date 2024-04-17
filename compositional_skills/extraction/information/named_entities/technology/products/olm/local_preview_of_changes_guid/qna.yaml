@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    To preview changes locally on a Hugo server, you need to run a local Hugo server. This is often referred to as a
+    'Local Preview of Changes'. This allows you to see your changes in real-time before pushing them live to the
+    server. 1
+  context: |
+    Local Preview of Changes: Guide to run local Hugo server for changes preview.
+  question: |
+    How can you preview changes locally on a Hugo server?
+- answer: |
+    To preview changes locally on a Hugo server, you need to run a local Hugo server. This is often referred to as a
+    'Local Preview of Changes'. This allows you to see your changes in real-time before pushing them live to the
+    server. 2
+  context: |
+    Local Preview of Changes: Guide to run local Hugo server for changes preview.
+  question: |
+    How can you preview changes locally on a Hugo server?
+- answer: |
+    To preview changes locally on a Hugo server, you need to run a local Hugo server. This is often referred to as a
+    'Local Preview of Changes'. This allows you to see your changes in real-time before pushing them live to the
+    server. 3
+  context: |
+    Local Preview of Changes: Guide to run local Hugo server for changes preview.
+  question: |
+    How can you preview changes locally on a Hugo server?
+- answer: |
+    To preview changes locally on a Hugo server, you need to run a local Hugo server. This is often referred to as a
+    'Local Preview of Changes'. This allows you to see your changes in real-time before pushing them live to the
+    server. 4
+  context: |
+    Local Preview of Changes: Guide to run local Hugo server for changes preview.
+  question: |
+    How can you preview changes locally on a Hugo server?
+- answer: |
+    To preview changes locally on a Hugo server, you need to run a local Hugo server. This is often referred to as a
+    'Local Preview of Changes'. This allows you to see your changes in real-time before pushing them live to the
+    server. 5
+  context: |
+    Local Preview of Changes: Guide to run local Hugo server for changes preview.
+  question: |
+    How can you preview changes locally on a Hugo server?
+task_description: |
+  This skill helps in understanding the concept: Local Preview of Changes: Guide to run local Hugo server for
+  changes preview.

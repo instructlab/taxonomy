@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    High-grained control provides users with deeper control over where pods are scheduled in the cluster. This is
+    based on certain criteria such as cost-effective architectures and service resilience. 1
+  context: |
+    High-grained control: Users have deeper control over where pods are scheduled in the cluster, based on certain
+    criteria, like cost-effective architectures and service resilience.
+  question: |
+    What does high-grained control provide users in terms of pod allocation in a cluster?
+- answer: |
+    High-grained control provides users with deeper control over where pods are scheduled in the cluster. This is
+    based on certain criteria such as cost-effective architectures and service resilience. 2
+  context: |
+    High-grained control: Users have deeper control over where pods are scheduled in the cluster, based on certain
+    criteria, like cost-effective architectures and service resilience.
+  question: |
+    What does high-grained control provide users in terms of pod allocation in a cluster?
+- answer: |
+    High-grained control provides users with deeper control over where pods are scheduled in the cluster. This is
+    based on certain criteria such as cost-effective architectures and service resilience. 3
+  context: |
+    High-grained control: Users have deeper control over where pods are scheduled in the cluster, based on certain
+    criteria, like cost-effective architectures and service resilience.
+  question: |
+    What does high-grained control provide users in terms of pod allocation in a cluster?
+- answer: |
+    High-grained control provides users with deeper control over where pods are scheduled in the cluster. This is
+    based on certain criteria such as cost-effective architectures and service resilience. 4
+  context: |
+    High-grained control: Users have deeper control over where pods are scheduled in the cluster, based on certain
+    criteria, like cost-effective architectures and service resilience.
+  question: |
+    What does high-grained control provide users in terms of pod allocation in a cluster?
+- answer: |
+    High-grained control provides users with deeper control over where pods are scheduled in the cluster. This is
+    based on certain criteria such as cost-effective architectures and service resilience. 5
+  context: |
+    High-grained control: Users have deeper control over where pods are scheduled in the cluster, based on certain
+    criteria, like cost-effective architectures and service resilience.
+  question: |
+    What does high-grained control provide users in terms of pod allocation in a cluster?
+task_description: |
+  This skill helps in understanding the concept: High-grained control: Users have deeper control over where pods are
+  scheduled in the cluster, based on certain criteria, like cost-effective architectures and service resilience.

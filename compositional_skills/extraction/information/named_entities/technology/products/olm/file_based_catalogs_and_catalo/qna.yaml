@@ -1,0 +1,56 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    OLM uses a plaintext file-based catalog format (JSON or YAML) to store records in a Catalog. The two approaches to
+    creating a Catalog are using Catalog Templates and Raw File-Based Catalogs. 1
+  context: |
+    File-Based Catalogs and Catalog Templates: OLM (Operator Lifecycle Manager) uses a plaintext file-based catalog
+    format (JSON or YAML) to store these records in a Catalog. Two approaches to creating a Catalog are discussed -
+    using Catalog Templates and Raw File-Based Catalogs.
+  question: |
+    What does the Operator Lifecycle Manager (OLM) use to store records in a Catalog and what are two approaches to
+    creating a Catalog?
+- answer: |
+    OLM uses a plaintext file-based catalog format (JSON or YAML) to store records in a Catalog. The two approaches to
+    creating a Catalog are using Catalog Templates and Raw File-Based Catalogs. 2
+  context: |
+    File-Based Catalogs and Catalog Templates: OLM (Operator Lifecycle Manager) uses a plaintext file-based catalog
+    format (JSON or YAML) to store these records in a Catalog. Two approaches to creating a Catalog are discussed -
+    using Catalog Templates and Raw File-Based Catalogs.
+  question: |
+    What does the Operator Lifecycle Manager (OLM) use to store records in a Catalog and what are two approaches to
+    creating a Catalog?
+- answer: |
+    OLM uses a plaintext file-based catalog format (JSON or YAML) to store records in a Catalog. The two approaches to
+    creating a Catalog are using Catalog Templates and Raw File-Based Catalogs. 3
+  context: |
+    File-Based Catalogs and Catalog Templates: OLM (Operator Lifecycle Manager) uses a plaintext file-based catalog
+    format (JSON or YAML) to store these records in a Catalog. Two approaches to creating a Catalog are discussed -
+    using Catalog Templates and Raw File-Based Catalogs.
+  question: |
+    What does the Operator Lifecycle Manager (OLM) use to store records in a Catalog and what are two approaches to
+    creating a Catalog?
+- answer: |
+    OLM uses a plaintext file-based catalog format (JSON or YAML) to store records in a Catalog. The two approaches to
+    creating a Catalog are using Catalog Templates and Raw File-Based Catalogs. 4
+  context: |
+    File-Based Catalogs and Catalog Templates: OLM (Operator Lifecycle Manager) uses a plaintext file-based catalog
+    format (JSON or YAML) to store these records in a Catalog. Two approaches to creating a Catalog are discussed -
+    using Catalog Templates and Raw File-Based Catalogs.
+  question: |
+    What does the Operator Lifecycle Manager (OLM) use to store records in a Catalog and what are two approaches to
+    creating a Catalog?
+- answer: |
+    OLM uses a plaintext file-based catalog format (JSON or YAML) to store records in a Catalog. The two approaches to
+    creating a Catalog are using Catalog Templates and Raw File-Based Catalogs. 5
+  context: |
+    File-Based Catalogs and Catalog Templates: OLM (Operator Lifecycle Manager) uses a plaintext file-based catalog
+    format (JSON or YAML) to store these records in a Catalog. Two approaches to creating a Catalog are discussed -
+    using Catalog Templates and Raw File-Based Catalogs.
+  question: |
+    What does the Operator Lifecycle Manager (OLM) use to store records in a Catalog and what are two approaches to
+    creating a Catalog?
+task_description: |
+  This skill helps in understanding the concept: File-Based Catalogs and Catalog Templates: OLM (Operator Lifecycle
+  Manager) uses a plaintext file-based catalog format (JSON or YAML) to store these records in a Catalog. Two
+  approaches to creating a Catalog are discussed - using Catalog Templates and Raw File-Based Catalogs.

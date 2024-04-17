@@ -1,0 +1,49 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The -debug flag in OLM (Operator Lifecycle Manager) and Catalog operators is used to provide detailed and debug-
+    level log information. It is particularly helpful in identifying issues, troubleshooting, and understanding the
+    internal workings of these operators. By using this flag, developers can access more detailed information to
+    improve or fix the problems of their system. 1
+  context: |
+    Usage of -debug flags in OLM and Catalog operators
+  question: |
+    What is the usage of -debug flags in OLM and Catalog operators?
+- answer: |
+    The -debug flag in OLM (Operator Lifecycle Manager) and Catalog operators is used to provide detailed and debug-
+    level log information. It is particularly helpful in identifying issues, troubleshooting, and understanding the
+    internal workings of these operators. By using this flag, developers can access more detailed information to
+    improve or fix the problems of their system. 2
+  context: |
+    Usage of -debug flags in OLM and Catalog operators
+  question: |
+    What is the usage of -debug flags in OLM and Catalog operators?
+- answer: |
+    The -debug flag in OLM (Operator Lifecycle Manager) and Catalog operators is used to provide detailed and debug-
+    level log information. It is particularly helpful in identifying issues, troubleshooting, and understanding the
+    internal workings of these operators. By using this flag, developers can access more detailed information to
+    improve or fix the problems of their system. 3
+  context: |
+    Usage of -debug flags in OLM and Catalog operators
+  question: |
+    What is the usage of -debug flags in OLM and Catalog operators?
+- answer: |
+    The -debug flag in OLM (Operator Lifecycle Manager) and Catalog operators is used to provide detailed and debug-
+    level log information. It is particularly helpful in identifying issues, troubleshooting, and understanding the
+    internal workings of these operators. By using this flag, developers can access more detailed information to
+    improve or fix the problems of their system. 4
+  context: |
+    Usage of -debug flags in OLM and Catalog operators
+  question: |
+    What is the usage of -debug flags in OLM and Catalog operators?
+- answer: |
+    The -debug flag in OLM (Operator Lifecycle Manager) and Catalog operators is used to provide detailed and debug-
+    level log information. It is particularly helpful in identifying issues, troubleshooting, and understanding the
+    internal workings of these operators. By using this flag, developers can access more detailed information to
+    improve or fix the problems of their system. 5
+  context: |
+    Usage of -debug flags in OLM and Catalog operators
+  question: |
+    What is the usage of -debug flags in OLM and Catalog operators?
+task_description: |
+  This skill helps in understanding the concept: Usage of -debug flags in OLM and Catalog operators

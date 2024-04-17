@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    A PackageManifest is a description of the package and includes metadata about a Kubernetes object. 1
+  context: |
+    Packagemanifest: A description of the package and metadata about a Kubernetes object.
+  question: |
+    What is a PackageManifest in the context of Kubernetes?
+- answer: |
+    A PackageManifest is a description of the package and includes metadata about a Kubernetes object. 2
+  context: |
+    Packagemanifest: A description of the package and metadata about a Kubernetes object.
+  question: |
+    What is a PackageManifest in the context of Kubernetes?
+- answer: |
+    A PackageManifest is a description of the package and includes metadata about a Kubernetes object. 3
+  context: |
+    Packagemanifest: A description of the package and metadata about a Kubernetes object.
+  question: |
+    What is a PackageManifest in the context of Kubernetes?
+- answer: |
+    A PackageManifest is a description of the package and includes metadata about a Kubernetes object. 4
+  context: |
+    Packagemanifest: A description of the package and metadata about a Kubernetes object.
+  question: |
+    What is a PackageManifest in the context of Kubernetes?
+- answer: |
+    A PackageManifest is a description of the package and includes metadata about a Kubernetes object. 5
+  context: |
+    Packagemanifest: A description of the package and metadata about a Kubernetes object.
+  question: |
+    What is a PackageManifest in the context of Kubernetes?
+task_description: |
+  This skill helps in understanding the concept: Packagemanifest: A description of the package and metadata about a
+  Kubernetes object.

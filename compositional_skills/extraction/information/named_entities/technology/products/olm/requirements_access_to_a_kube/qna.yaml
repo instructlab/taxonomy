@@ -1,0 +1,39 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    To access a Kubernetes version, you require administrative privileges, a configured kubectl command-line tool, and
+    correct login credentials. 1
+  context: |
+    Requirements: Access to a Kubernetes v
+  question: |
+    What is required to access a Kubernetes version?
+- answer: |
+    To access a Kubernetes version, you require administrative privileges, a configured kubectl command-line tool, and
+    correct login credentials. 2
+  context: |
+    Requirements: Access to a Kubernetes v
+  question: |
+    What is required to access a Kubernetes version?
+- answer: |
+    To access a Kubernetes version, you require administrative privileges, a configured kubectl command-line tool, and
+    correct login credentials. 3
+  context: |
+    Requirements: Access to a Kubernetes v
+  question: |
+    What is required to access a Kubernetes version?
+- answer: |
+    To access a Kubernetes version, you require administrative privileges, a configured kubectl command-line tool, and
+    correct login credentials. 4
+  context: |
+    Requirements: Access to a Kubernetes v
+  question: |
+    What is required to access a Kubernetes version?
+- answer: |
+    To access a Kubernetes version, you require administrative privileges, a configured kubectl command-line tool, and
+    correct login credentials. 5
+  context: |
+    Requirements: Access to a Kubernetes v
+  question: |
+    What is required to access a Kubernetes version?
+task_description: |
+  This skill helps in understanding the concept: Requirements: Access to a Kubernetes v

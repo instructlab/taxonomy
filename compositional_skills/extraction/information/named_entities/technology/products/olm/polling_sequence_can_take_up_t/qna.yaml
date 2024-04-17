@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The polling sequence might not work if the cluster is at its maximum capacity. Also, it can take up to 15 minutes
+    for the deployment process. 1
+  context: |
+    Polling sequence can take up to 15 minutes to deploy into the cluster and may not work if the cluster is at
+    maximum capacity.
+  question: |
+    Why may the polling sequence not work in deploying into a cluster?
+- answer: |
+    The polling sequence might not work if the cluster is at its maximum capacity. Also, it can take up to 15 minutes
+    for the deployment process. 2
+  context: |
+    Polling sequence can take up to 15 minutes to deploy into the cluster and may not work if the cluster is at
+    maximum capacity.
+  question: |
+    Why may the polling sequence not work in deploying into a cluster?
+- answer: |
+    The polling sequence might not work if the cluster is at its maximum capacity. Also, it can take up to 15 minutes
+    for the deployment process. 3
+  context: |
+    Polling sequence can take up to 15 minutes to deploy into the cluster and may not work if the cluster is at
+    maximum capacity.
+  question: |
+    Why may the polling sequence not work in deploying into a cluster?
+- answer: |
+    The polling sequence might not work if the cluster is at its maximum capacity. Also, it can take up to 15 minutes
+    for the deployment process. 4
+  context: |
+    Polling sequence can take up to 15 minutes to deploy into the cluster and may not work if the cluster is at
+    maximum capacity.
+  question: |
+    Why may the polling sequence not work in deploying into a cluster?
+- answer: |
+    The polling sequence might not work if the cluster is at its maximum capacity. Also, it can take up to 15 minutes
+    for the deployment process. 5
+  context: |
+    Polling sequence can take up to 15 minutes to deploy into the cluster and may not work if the cluster is at
+    maximum capacity.
+  question: |
+    Why may the polling sequence not work in deploying into a cluster?
+task_description: |
+  This skill helps in understanding the concept: Polling sequence can take up to 15 minutes to deploy into the
+  cluster and may not work if the cluster is at maximum capacity.

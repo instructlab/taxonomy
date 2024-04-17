@@ -1,0 +1,34 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Netlify is a tool used to manage the deployment of a website. 1
+  context: |
+    Netlify: Tool to manage deployment of the site.
+  question: |
+    What is the primary function of Netlify in website development?
+- answer: |
+    Netlify is a tool used to manage the deployment of a website. 2
+  context: |
+    Netlify: Tool to manage deployment of the site.
+  question: |
+    What is the primary function of Netlify in website development?
+- answer: |
+    Netlify is a tool used to manage the deployment of a website. 3
+  context: |
+    Netlify: Tool to manage deployment of the site.
+  question: |
+    What is the primary function of Netlify in website development?
+- answer: |
+    Netlify is a tool used to manage the deployment of a website. 4
+  context: |
+    Netlify: Tool to manage deployment of the site.
+  question: |
+    What is the primary function of Netlify in website development?
+- answer: |
+    Netlify is a tool used to manage the deployment of a website. 5
+  context: |
+    Netlify: Tool to manage deployment of the site.
+  question: |
+    What is the primary function of Netlify in website development?
+task_description: |
+  This skill helps in understanding the concept: Netlify: Tool to manage deployment of the site.

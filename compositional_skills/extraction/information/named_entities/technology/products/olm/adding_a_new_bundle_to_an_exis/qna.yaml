@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The operation is referred to as adding a new bundle to an existing channel. 1
+  context: |
+    Adding a new bundle to an existing channel: An operation in schema manipulation where a new bundle version is
+    added to a pre-existing channel.
+  question: |
+    What is the operation in schema manipulation where a new bundle version is added to a pre-existing channel called?
+- answer: |
+    The operation is referred to as adding a new bundle to an existing channel. 2
+  context: |
+    Adding a new bundle to an existing channel: An operation in schema manipulation where a new bundle version is
+    added to a pre-existing channel.
+  question: |
+    What is the operation in schema manipulation where a new bundle version is added to a pre-existing channel called?
+- answer: |
+    The operation is referred to as adding a new bundle to an existing channel. 3
+  context: |
+    Adding a new bundle to an existing channel: An operation in schema manipulation where a new bundle version is
+    added to a pre-existing channel.
+  question: |
+    What is the operation in schema manipulation where a new bundle version is added to a pre-existing channel called?
+- answer: |
+    The operation is referred to as adding a new bundle to an existing channel. 4
+  context: |
+    Adding a new bundle to an existing channel: An operation in schema manipulation where a new bundle version is
+    added to a pre-existing channel.
+  question: |
+    What is the operation in schema manipulation where a new bundle version is added to a pre-existing channel called?
+- answer: |
+    The operation is referred to as adding a new bundle to an existing channel. 5
+  context: |
+    Adding a new bundle to an existing channel: An operation in schema manipulation where a new bundle version is
+    added to a pre-existing channel.
+  question: |
+    What is the operation in schema manipulation where a new bundle version is added to a pre-existing channel called?
+task_description: |
+  This skill helps in understanding the concept: Adding a new bundle to an existing channel: An operation in schema
+  manipulation where a new bundle version is added to a pre-existing channel.

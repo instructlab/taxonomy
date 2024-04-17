@@ -1,0 +1,46 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The Subscription API in OLM allows users to override the affinity configuration of operator pods. This enables
+    users to define or override their affinity settings for operator deployments. 1
+  context: |
+    Subscription API in OLM: Overriding the affinity configuration of operator pods with the Subscription API,
+    enabling users to define or override their affinity settings for operator deployments.
+  question: |
+    What is the function of the Subscription API in OLM?
+- answer: |
+    The Subscription API in OLM allows users to override the affinity configuration of operator pods. This enables
+    users to define or override their affinity settings for operator deployments. 2
+  context: |
+    Subscription API in OLM: Overriding the affinity configuration of operator pods with the Subscription API,
+    enabling users to define or override their affinity settings for operator deployments.
+  question: |
+    What is the function of the Subscription API in OLM?
+- answer: |
+    The Subscription API in OLM allows users to override the affinity configuration of operator pods. This enables
+    users to define or override their affinity settings for operator deployments. 3
+  context: |
+    Subscription API in OLM: Overriding the affinity configuration of operator pods with the Subscription API,
+    enabling users to define or override their affinity settings for operator deployments.
+  question: |
+    What is the function of the Subscription API in OLM?
+- answer: |
+    The Subscription API in OLM allows users to override the affinity configuration of operator pods. This enables
+    users to define or override their affinity settings for operator deployments. 4
+  context: |
+    Subscription API in OLM: Overriding the affinity configuration of operator pods with the Subscription API,
+    enabling users to define or override their affinity settings for operator deployments.
+  question: |
+    What is the function of the Subscription API in OLM?
+- answer: |
+    The Subscription API in OLM allows users to override the affinity configuration of operator pods. This enables
+    users to define or override their affinity settings for operator deployments. 5
+  context: |
+    Subscription API in OLM: Overriding the affinity configuration of operator pods with the Subscription API,
+    enabling users to define or override their affinity settings for operator deployments.
+  question: |
+    What is the function of the Subscription API in OLM?
+task_description: |
+  This skill helps in understanding the concept: Subscription API in OLM: Overriding the affinity configuration of
+  operator pods with the Subscription API, enabling users to define or override their affinity settings for operator
+  deployments.

@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The two mechanisms for approving the installation or upgrade plan are manual and automatic. 1
+  context: |
+    Manual and Automatic InstallPlanApproval: Mechanisms for approving the installation or upgrade plan, either
+    manually or automatically.
+  question: |
+    What are the two mechanisms for approving the installation or upgrade plan?
+- answer: |
+    The two mechanisms for approving the installation or upgrade plan are manual and automatic. 2
+  context: |
+    Manual and Automatic InstallPlanApproval: Mechanisms for approving the installation or upgrade plan, either
+    manually or automatically.
+  question: |
+    What are the two mechanisms for approving the installation or upgrade plan?
+- answer: |
+    The two mechanisms for approving the installation or upgrade plan are manual and automatic. 3
+  context: |
+    Manual and Automatic InstallPlanApproval: Mechanisms for approving the installation or upgrade plan, either
+    manually or automatically.
+  question: |
+    What are the two mechanisms for approving the installation or upgrade plan?
+- answer: |
+    The two mechanisms for approving the installation or upgrade plan are manual and automatic. 4
+  context: |
+    Manual and Automatic InstallPlanApproval: Mechanisms for approving the installation or upgrade plan, either
+    manually or automatically.
+  question: |
+    What are the two mechanisms for approving the installation or upgrade plan?
+- answer: |
+    The two mechanisms for approving the installation or upgrade plan are manual and automatic. 5
+  context: |
+    Manual and Automatic InstallPlanApproval: Mechanisms for approving the installation or upgrade plan, either
+    manually or automatically.
+  question: |
+    What are the two mechanisms for approving the installation or upgrade plan?
+task_description: |
+  This skill helps in understanding the concept: Manual and Automatic InstallPlanApproval: Mechanisms for approving
+  the installation or upgrade plan, either manually or automatically.

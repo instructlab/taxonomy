@@ -1,0 +1,46 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The calculation of what needs to be installed during an UnsafeFailForward upgrade by the Resolver and OLM is
+    dependent on whether the Cluster Service Versions (CSVs) are claimed by a Subscription or not. 1
+  context: |
+    Understanding UnsafeFailForward Upgrades: It's important to understand how the Resolver and OLM calculate what
+    needs to be installed, this process is dependent on whether the CSVs are claimed by a Subscription or not.
+  question: |
+    How do the Resolver and OLM calculate what needs to be installed during an UnsafeFailForward upgrade?
+- answer: |
+    The calculation of what needs to be installed during an UnsafeFailForward upgrade by the Resolver and OLM is
+    dependent on whether the Cluster Service Versions (CSVs) are claimed by a Subscription or not. 2
+  context: |
+    Understanding UnsafeFailForward Upgrades: It's important to understand how the Resolver and OLM calculate what
+    needs to be installed, this process is dependent on whether the CSVs are claimed by a Subscription or not.
+  question: |
+    How do the Resolver and OLM calculate what needs to be installed during an UnsafeFailForward upgrade?
+- answer: |
+    The calculation of what needs to be installed during an UnsafeFailForward upgrade by the Resolver and OLM is
+    dependent on whether the Cluster Service Versions (CSVs) are claimed by a Subscription or not. 3
+  context: |
+    Understanding UnsafeFailForward Upgrades: It's important to understand how the Resolver and OLM calculate what
+    needs to be installed, this process is dependent on whether the CSVs are claimed by a Subscription or not.
+  question: |
+    How do the Resolver and OLM calculate what needs to be installed during an UnsafeFailForward upgrade?
+- answer: |
+    The calculation of what needs to be installed during an UnsafeFailForward upgrade by the Resolver and OLM is
+    dependent on whether the Cluster Service Versions (CSVs) are claimed by a Subscription or not. 4
+  context: |
+    Understanding UnsafeFailForward Upgrades: It's important to understand how the Resolver and OLM calculate what
+    needs to be installed, this process is dependent on whether the CSVs are claimed by a Subscription or not.
+  question: |
+    How do the Resolver and OLM calculate what needs to be installed during an UnsafeFailForward upgrade?
+- answer: |
+    The calculation of what needs to be installed during an UnsafeFailForward upgrade by the Resolver and OLM is
+    dependent on whether the Cluster Service Versions (CSVs) are claimed by a Subscription or not. 5
+  context: |
+    Understanding UnsafeFailForward Upgrades: It's important to understand how the Resolver and OLM calculate what
+    needs to be installed, this process is dependent on whether the CSVs are claimed by a Subscription or not.
+  question: |
+    How do the Resolver and OLM calculate what needs to be installed during an UnsafeFailForward upgrade?
+task_description: |
+  This skill helps in understanding the concept: Understanding UnsafeFailForward Upgrades: It's important to
+  understand how the Resolver and OLM calculate what needs to be installed, this process is dependent on whether the
+  CSVs are claimed by a Subscription or not.

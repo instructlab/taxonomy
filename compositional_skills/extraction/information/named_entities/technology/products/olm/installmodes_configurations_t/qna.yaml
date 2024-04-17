@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    "installModes" are configurations that specify the namespace scope for the operator. 1
+  context: |
+    installModes: Configurations that specify the namespace scope for the operator.
+  question: |
+    What is the purpose of "installModes" in the context of operators?
+- answer: |
+    "installModes" are configurations that specify the namespace scope for the operator. 2
+  context: |
+    installModes: Configurations that specify the namespace scope for the operator.
+  question: |
+    What is the purpose of "installModes" in the context of operators?
+- answer: |
+    "installModes" are configurations that specify the namespace scope for the operator. 3
+  context: |
+    installModes: Configurations that specify the namespace scope for the operator.
+  question: |
+    What is the purpose of "installModes" in the context of operators?
+- answer: |
+    "installModes" are configurations that specify the namespace scope for the operator. 4
+  context: |
+    installModes: Configurations that specify the namespace scope for the operator.
+  question: |
+    What is the purpose of "installModes" in the context of operators?
+- answer: |
+    "installModes" are configurations that specify the namespace scope for the operator. 5
+  context: |
+    installModes: Configurations that specify the namespace scope for the operator.
+  question: |
+    What is the purpose of "installModes" in the context of operators?
+task_description: |
+  This skill helps in understanding the concept: installModes: Configurations that specify the namespace scope for
+  the operator.

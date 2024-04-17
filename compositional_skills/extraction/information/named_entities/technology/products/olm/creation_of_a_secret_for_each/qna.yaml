@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The creation of a secret for each required private registry is needed to use images from private registries as
+    Catalog/bundle images. 1
+  context: |
+    Creation of a secret for each required private registry to use images from private registries as Catalog/bundle
+    images.
+  question: |
+    What is required to use images from private registries as Catalog/bundle images?
+- answer: |
+    The creation of a secret for each required private registry is needed to use images from private registries as
+    Catalog/bundle images. 2
+  context: |
+    Creation of a secret for each required private registry to use images from private registries as Catalog/bundle
+    images.
+  question: |
+    What is required to use images from private registries as Catalog/bundle images?
+- answer: |
+    The creation of a secret for each required private registry is needed to use images from private registries as
+    Catalog/bundle images. 3
+  context: |
+    Creation of a secret for each required private registry to use images from private registries as Catalog/bundle
+    images.
+  question: |
+    What is required to use images from private registries as Catalog/bundle images?
+- answer: |
+    The creation of a secret for each required private registry is needed to use images from private registries as
+    Catalog/bundle images. 4
+  context: |
+    Creation of a secret for each required private registry to use images from private registries as Catalog/bundle
+    images.
+  question: |
+    What is required to use images from private registries as Catalog/bundle images?
+- answer: |
+    The creation of a secret for each required private registry is needed to use images from private registries as
+    Catalog/bundle images. 5
+  context: |
+    Creation of a secret for each required private registry to use images from private registries as Catalog/bundle
+    images.
+  question: |
+    What is required to use images from private registries as Catalog/bundle images?
+task_description: |
+  This skill helps in understanding the concept: Creation of a secret for each required private registry to use
+  images from private registries as Catalog/bundle images.

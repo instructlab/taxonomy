@@ -1,0 +1,51 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    You should set the following environment variable and re-run the linting script: `make lint
+    CONTAINER_RUN_EXTRA_OPTIONS="--security-opt label=disable"`. 1
+  context: |
+    Troubleshooting:    - If permission denied errors occur when reading from a mounted volume, set the following
+    environment variable and re-run the linting script: `make lint CONTAINER_RUN_EXTRA_OPTIONS="--security-opt
+    label=disable"`
+  question: |
+    What should you do if permission denied errors occur when reading from a mounted volume while troubleshooting?
+- answer: |
+    You should set the following environment variable and re-run the linting script: `make lint
+    CONTAINER_RUN_EXTRA_OPTIONS="--security-opt label=disable"`. 2
+  context: |
+    Troubleshooting:    - If permission denied errors occur when reading from a mounted volume, set the following
+    environment variable and re-run the linting script: `make lint CONTAINER_RUN_EXTRA_OPTIONS="--security-opt
+    label=disable"`
+  question: |
+    What should you do if permission denied errors occur when reading from a mounted volume while troubleshooting?
+- answer: |
+    You should set the following environment variable and re-run the linting script: `make lint
+    CONTAINER_RUN_EXTRA_OPTIONS="--security-opt label=disable"`. 3
+  context: |
+    Troubleshooting:    - If permission denied errors occur when reading from a mounted volume, set the following
+    environment variable and re-run the linting script: `make lint CONTAINER_RUN_EXTRA_OPTIONS="--security-opt
+    label=disable"`
+  question: |
+    What should you do if permission denied errors occur when reading from a mounted volume while troubleshooting?
+- answer: |
+    You should set the following environment variable and re-run the linting script: `make lint
+    CONTAINER_RUN_EXTRA_OPTIONS="--security-opt label=disable"`. 4
+  context: |
+    Troubleshooting:    - If permission denied errors occur when reading from a mounted volume, set the following
+    environment variable and re-run the linting script: `make lint CONTAINER_RUN_EXTRA_OPTIONS="--security-opt
+    label=disable"`
+  question: |
+    What should you do if permission denied errors occur when reading from a mounted volume while troubleshooting?
+- answer: |
+    You should set the following environment variable and re-run the linting script: `make lint
+    CONTAINER_RUN_EXTRA_OPTIONS="--security-opt label=disable"`. 5
+  context: |
+    Troubleshooting:    - If permission denied errors occur when reading from a mounted volume, set the following
+    environment variable and re-run the linting script: `make lint CONTAINER_RUN_EXTRA_OPTIONS="--security-opt
+    label=disable"`
+  question: |
+    What should you do if permission denied errors occur when reading from a mounted volume while troubleshooting?
+task_description: |
+  This skill helps in understanding the concept: Troubleshooting:    - If permission denied errors occur when
+  reading from a mounted volume, set the following environment variable and re-run the linting script: `make lint
+  CONTAINER_RUN_EXTRA_OPTIONS="--security-opt label=disable"`

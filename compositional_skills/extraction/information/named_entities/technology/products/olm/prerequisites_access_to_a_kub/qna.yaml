@@ -1,0 +1,59 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The prerequisites to have access to a Kubernetes v depends on the specific version but generally you would need a
+    compatible system, a package manager to install Kubernetes, and a basic understanding of its functions. You may
+    also need cloud resources if you intend to use Kubernetes for cloud computing purposes. Standard prerequisites
+    might also include a network that supports the necessary level of data traffic, and hardware that meets the
+    minimum requirements for running the software. Specific prerequisites should be checked in the official Kubernetes
+    documentation for each version. 1
+  context: |
+    Prerequisites: Access to a Kubernetes v
+  question: |
+    What are the prerequisites needed to have access to a Kubernetes v?
+- answer: |
+    The prerequisites to have access to a Kubernetes v depends on the specific version but generally you would need a
+    compatible system, a package manager to install Kubernetes, and a basic understanding of its functions. You may
+    also need cloud resources if you intend to use Kubernetes for cloud computing purposes. Standard prerequisites
+    might also include a network that supports the necessary level of data traffic, and hardware that meets the
+    minimum requirements for running the software. Specific prerequisites should be checked in the official Kubernetes
+    documentation for each version. 2
+  context: |
+    Prerequisites: Access to a Kubernetes v
+  question: |
+    What are the prerequisites needed to have access to a Kubernetes v?
+- answer: |
+    The prerequisites to have access to a Kubernetes v depends on the specific version but generally you would need a
+    compatible system, a package manager to install Kubernetes, and a basic understanding of its functions. You may
+    also need cloud resources if you intend to use Kubernetes for cloud computing purposes. Standard prerequisites
+    might also include a network that supports the necessary level of data traffic, and hardware that meets the
+    minimum requirements for running the software. Specific prerequisites should be checked in the official Kubernetes
+    documentation for each version. 3
+  context: |
+    Prerequisites: Access to a Kubernetes v
+  question: |
+    What are the prerequisites needed to have access to a Kubernetes v?
+- answer: |
+    The prerequisites to have access to a Kubernetes v depends on the specific version but generally you would need a
+    compatible system, a package manager to install Kubernetes, and a basic understanding of its functions. You may
+    also need cloud resources if you intend to use Kubernetes for cloud computing purposes. Standard prerequisites
+    might also include a network that supports the necessary level of data traffic, and hardware that meets the
+    minimum requirements for running the software. Specific prerequisites should be checked in the official Kubernetes
+    documentation for each version. 4
+  context: |
+    Prerequisites: Access to a Kubernetes v
+  question: |
+    What are the prerequisites needed to have access to a Kubernetes v?
+- answer: |
+    The prerequisites to have access to a Kubernetes v depends on the specific version but generally you would need a
+    compatible system, a package manager to install Kubernetes, and a basic understanding of its functions. You may
+    also need cloud resources if you intend to use Kubernetes for cloud computing purposes. Standard prerequisites
+    might also include a network that supports the necessary level of data traffic, and hardware that meets the
+    minimum requirements for running the software. Specific prerequisites should be checked in the official Kubernetes
+    documentation for each version. 5
+  context: |
+    Prerequisites: Access to a Kubernetes v
+  question: |
+    What are the prerequisites needed to have access to a Kubernetes v?
+task_description: |
+  This skill helps in understanding the concept: Prerequisites: Access to a Kubernetes v

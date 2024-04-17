@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The label convention in an operator is used to define the target Operating Systems (OSes) and architectures that
+    are supported by an operator. 1
+  context: |
+    Concept: Supported Labels    - The label convention defines the target OSes and architectures supported by an
+    operator.
+  question: |
+    What is the purpose of the label convention in an operator?
+- answer: |
+    The label convention in an operator is used to define the target Operating Systems (OSes) and architectures that
+    are supported by an operator. 2
+  context: |
+    Concept: Supported Labels    - The label convention defines the target OSes and architectures supported by an
+    operator.
+  question: |
+    What is the purpose of the label convention in an operator?
+- answer: |
+    The label convention in an operator is used to define the target Operating Systems (OSes) and architectures that
+    are supported by an operator. 3
+  context: |
+    Concept: Supported Labels    - The label convention defines the target OSes and architectures supported by an
+    operator.
+  question: |
+    What is the purpose of the label convention in an operator?
+- answer: |
+    The label convention in an operator is used to define the target Operating Systems (OSes) and architectures that
+    are supported by an operator. 4
+  context: |
+    Concept: Supported Labels    - The label convention defines the target OSes and architectures supported by an
+    operator.
+  question: |
+    What is the purpose of the label convention in an operator?
+- answer: |
+    The label convention in an operator is used to define the target Operating Systems (OSes) and architectures that
+    are supported by an operator. 5
+  context: |
+    Concept: Supported Labels    - The label convention defines the target OSes and architectures supported by an
+    operator.
+  question: |
+    What is the purpose of the label convention in an operator?
+task_description: |
+  This skill helps in understanding the concept: Concept: Supported Labels    - The label convention defines the
+  target OSes and architectures supported by an operator.

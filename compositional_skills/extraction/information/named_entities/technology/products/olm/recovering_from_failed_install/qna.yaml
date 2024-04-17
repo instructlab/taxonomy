@@ -1,0 +1,51 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The Operator Lifecycle Manager (OLM) allows for recovery from failed installations and upgrades by enabling
+    Cluster Service Versions (CSVs) to shift from the FAILED phase to the REPLACING phase and by calculating new
+    InstallPlans for a set of installables. 1
+  context: |
+    Recovering from Failed Installs: OLM allows recovery from failed installations and upgrades by allowing CSVs to
+    move from the FAILED phase to the REPLACING phase and calculating new InstallPlans for a set of installables.
+  question: |
+    What does the Operator Lifecycle Manager (OLM) allow for recovery from failed installations and upgrades?
+- answer: |
+    The Operator Lifecycle Manager (OLM) allows for recovery from failed installations and upgrades by enabling
+    Cluster Service Versions (CSVs) to shift from the FAILED phase to the REPLACING phase and by calculating new
+    InstallPlans for a set of installables. 2
+  context: |
+    Recovering from Failed Installs: OLM allows recovery from failed installations and upgrades by allowing CSVs to
+    move from the FAILED phase to the REPLACING phase and calculating new InstallPlans for a set of installables.
+  question: |
+    What does the Operator Lifecycle Manager (OLM) allow for recovery from failed installations and upgrades?
+- answer: |
+    The Operator Lifecycle Manager (OLM) allows for recovery from failed installations and upgrades by enabling
+    Cluster Service Versions (CSVs) to shift from the FAILED phase to the REPLACING phase and by calculating new
+    InstallPlans for a set of installables. 3
+  context: |
+    Recovering from Failed Installs: OLM allows recovery from failed installations and upgrades by allowing CSVs to
+    move from the FAILED phase to the REPLACING phase and calculating new InstallPlans for a set of installables.
+  question: |
+    What does the Operator Lifecycle Manager (OLM) allow for recovery from failed installations and upgrades?
+- answer: |
+    The Operator Lifecycle Manager (OLM) allows for recovery from failed installations and upgrades by enabling
+    Cluster Service Versions (CSVs) to shift from the FAILED phase to the REPLACING phase and by calculating new
+    InstallPlans for a set of installables. 4
+  context: |
+    Recovering from Failed Installs: OLM allows recovery from failed installations and upgrades by allowing CSVs to
+    move from the FAILED phase to the REPLACING phase and calculating new InstallPlans for a set of installables.
+  question: |
+    What does the Operator Lifecycle Manager (OLM) allow for recovery from failed installations and upgrades?
+- answer: |
+    The Operator Lifecycle Manager (OLM) allows for recovery from failed installations and upgrades by enabling
+    Cluster Service Versions (CSVs) to shift from the FAILED phase to the REPLACING phase and by calculating new
+    InstallPlans for a set of installables. 5
+  context: |
+    Recovering from Failed Installs: OLM allows recovery from failed installations and upgrades by allowing CSVs to
+    move from the FAILED phase to the REPLACING phase and calculating new InstallPlans for a set of installables.
+  question: |
+    What does the Operator Lifecycle Manager (OLM) allow for recovery from failed installations and upgrades?
+task_description: |
+  This skill helps in understanding the concept: Recovering from Failed Installs: OLM allows recovery from failed
+  installations and upgrades by allowing CSVs to move from the FAILED phase to the REPLACING phase and calculating
+  new InstallPlans for a set of installables.

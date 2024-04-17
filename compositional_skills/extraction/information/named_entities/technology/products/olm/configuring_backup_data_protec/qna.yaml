@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The best practice is to run it with a more restricted service account. 1
+  context: |
+    Configuring backup data protection application: Best practice is to run with a more restricted service account.
+  question: |
+    What is the best practice for running a backup data protection application?
+- answer: |
+    The best practice is to run it with a more restricted service account. 2
+  context: |
+    Configuring backup data protection application: Best practice is to run with a more restricted service account.
+  question: |
+    What is the best practice for running a backup data protection application?
+- answer: |
+    The best practice is to run it with a more restricted service account. 3
+  context: |
+    Configuring backup data protection application: Best practice is to run with a more restricted service account.
+  question: |
+    What is the best practice for running a backup data protection application?
+- answer: |
+    The best practice is to run it with a more restricted service account. 4
+  context: |
+    Configuring backup data protection application: Best practice is to run with a more restricted service account.
+  question: |
+    What is the best practice for running a backup data protection application?
+- answer: |
+    The best practice is to run it with a more restricted service account. 5
+  context: |
+    Configuring backup data protection application: Best practice is to run with a more restricted service account.
+  question: |
+    What is the best practice for running a backup data protection application?
+task_description: |
+  This skill helps in understanding the concept: Configuring backup data protection application: Best practice is to
+  run with a more restricted service account.

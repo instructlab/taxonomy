@@ -1,0 +1,51 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    One can identify processing issues by checking the Status of the Subscription. The Catalog operator constantly
+    updates this. If the Status is absent, it could suggest that there are processing issues. This status can be
+    checked with a specific command. 1
+  context: |
+    Debugging a failing Subscription: the Catalog operator will constantly update the Status of Subscription. The
+    status can be checked with a specific command. The absence of Status could suggest processing issues.
+  question: |
+    How can one identify if there are processing issues with a Subscription in the Catalog operator?
+- answer: |
+    One can identify processing issues by checking the Status of the Subscription. The Catalog operator constantly
+    updates this. If the Status is absent, it could suggest that there are processing issues. This status can be
+    checked with a specific command. 2
+  context: |
+    Debugging a failing Subscription: the Catalog operator will constantly update the Status of Subscription. The
+    status can be checked with a specific command. The absence of Status could suggest processing issues.
+  question: |
+    How can one identify if there are processing issues with a Subscription in the Catalog operator?
+- answer: |
+    One can identify processing issues by checking the Status of the Subscription. The Catalog operator constantly
+    updates this. If the Status is absent, it could suggest that there are processing issues. This status can be
+    checked with a specific command. 3
+  context: |
+    Debugging a failing Subscription: the Catalog operator will constantly update the Status of Subscription. The
+    status can be checked with a specific command. The absence of Status could suggest processing issues.
+  question: |
+    How can one identify if there are processing issues with a Subscription in the Catalog operator?
+- answer: |
+    One can identify processing issues by checking the Status of the Subscription. The Catalog operator constantly
+    updates this. If the Status is absent, it could suggest that there are processing issues. This status can be
+    checked with a specific command. 4
+  context: |
+    Debugging a failing Subscription: the Catalog operator will constantly update the Status of Subscription. The
+    status can be checked with a specific command. The absence of Status could suggest processing issues.
+  question: |
+    How can one identify if there are processing issues with a Subscription in the Catalog operator?
+- answer: |
+    One can identify processing issues by checking the Status of the Subscription. The Catalog operator constantly
+    updates this. If the Status is absent, it could suggest that there are processing issues. This status can be
+    checked with a specific command. 5
+  context: |
+    Debugging a failing Subscription: the Catalog operator will constantly update the Status of Subscription. The
+    status can be checked with a specific command. The absence of Status could suggest processing issues.
+  question: |
+    How can one identify if there are processing issues with a Subscription in the Catalog operator?
+task_description: |
+  This skill helps in understanding the concept: Debugging a failing Subscription: the Catalog operator will
+  constantly update the Status of Subscription. The status can be checked with a specific command. The absence of
+  Status could suggest processing issues.

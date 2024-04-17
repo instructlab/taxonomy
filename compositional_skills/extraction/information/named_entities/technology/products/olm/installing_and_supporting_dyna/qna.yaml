@@ -1,0 +1,39 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    To install Dynatrace Monitoring Agent on the OpenShift Container Platform, the following steps should be typically
+    taken: 1
+  context: |
+    Installing and supporting Dynatrace Monitoring Agent on OCP
+  question: |
+    How can one install and support the Dynatrace Monitoring Agent on OpenShift Container Platform (OCP)?
+- answer: |
+    To install Dynatrace Monitoring Agent on the OpenShift Container Platform, the following steps should be typically
+    taken: 2
+  context: |
+    Installing and supporting Dynatrace Monitoring Agent on OCP
+  question: |
+    How can one install and support the Dynatrace Monitoring Agent on OpenShift Container Platform (OCP)?
+- answer: |
+    To install Dynatrace Monitoring Agent on the OpenShift Container Platform, the following steps should be typically
+    taken: 3
+  context: |
+    Installing and supporting Dynatrace Monitoring Agent on OCP
+  question: |
+    How can one install and support the Dynatrace Monitoring Agent on OpenShift Container Platform (OCP)?
+- answer: |
+    To install Dynatrace Monitoring Agent on the OpenShift Container Platform, the following steps should be typically
+    taken: 4
+  context: |
+    Installing and supporting Dynatrace Monitoring Agent on OCP
+  question: |
+    How can one install and support the Dynatrace Monitoring Agent on OpenShift Container Platform (OCP)?
+- answer: |
+    To install Dynatrace Monitoring Agent on the OpenShift Container Platform, the following steps should be typically
+    taken: 5
+  context: |
+    Installing and supporting Dynatrace Monitoring Agent on OCP
+  question: |
+    How can one install and support the Dynatrace Monitoring Agent on OpenShift Container Platform (OCP)?
+task_description: |
+  This skill helps in understanding the concept: Installing and supporting Dynatrace Monitoring Agent on OCP

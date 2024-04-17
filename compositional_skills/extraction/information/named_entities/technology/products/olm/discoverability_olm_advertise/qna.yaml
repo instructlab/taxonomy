@@ -1,0 +1,46 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    OLM advertises installed Operators and their services to tenants' namespaces. This allows the tenants to discover
+    which managed services are available and which Operators provide them. 1
+  context: |
+    Discoverability: OLM advertises installed Operators and their services to tenants' namespaces, allowing them to
+    discover which managed services are available and which Operators provide them.
+  question: |
+    What does OLM do to promote installed Operators and their services to tenants' namespaces?
+- answer: |
+    OLM advertises installed Operators and their services to tenants' namespaces. This allows the tenants to discover
+    which managed services are available and which Operators provide them. 2
+  context: |
+    Discoverability: OLM advertises installed Operators and their services to tenants' namespaces, allowing them to
+    discover which managed services are available and which Operators provide them.
+  question: |
+    What does OLM do to promote installed Operators and their services to tenants' namespaces?
+- answer: |
+    OLM advertises installed Operators and their services to tenants' namespaces. This allows the tenants to discover
+    which managed services are available and which Operators provide them. 3
+  context: |
+    Discoverability: OLM advertises installed Operators and their services to tenants' namespaces, allowing them to
+    discover which managed services are available and which Operators provide them.
+  question: |
+    What does OLM do to promote installed Operators and their services to tenants' namespaces?
+- answer: |
+    OLM advertises installed Operators and their services to tenants' namespaces. This allows the tenants to discover
+    which managed services are available and which Operators provide them. 4
+  context: |
+    Discoverability: OLM advertises installed Operators and their services to tenants' namespaces, allowing them to
+    discover which managed services are available and which Operators provide them.
+  question: |
+    What does OLM do to promote installed Operators and their services to tenants' namespaces?
+- answer: |
+    OLM advertises installed Operators and their services to tenants' namespaces. This allows the tenants to discover
+    which managed services are available and which Operators provide them. 5
+  context: |
+    Discoverability: OLM advertises installed Operators and their services to tenants' namespaces, allowing them to
+    discover which managed services are available and which Operators provide them.
+  question: |
+    What does OLM do to promote installed Operators and their services to tenants' namespaces?
+task_description: |
+  This skill helps in understanding the concept: Discoverability: OLM advertises installed Operators and their
+  services to tenants' namespaces, allowing them to discover which managed services are available and which
+  Operators provide them.

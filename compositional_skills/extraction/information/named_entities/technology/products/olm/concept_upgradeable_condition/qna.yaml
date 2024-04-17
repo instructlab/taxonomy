@@ -1,0 +1,68 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The Upgradeable Condition prevents the existing CSV from being replaced by a newer version. It is set to False
+    when an operator is about to start a critical process and should not be upgraded until the process is completed.
+    Therefore, it prevents a channel entry in a scheduled package that replaces the operator's existing CSV from
+    leaving the PendingPhase. 1
+  context: |
+    Concept: Upgradeable Condition  - Definition: Prevents the existing CSV from being replaced by a newer version of
+    the CSV. When the Upgradeable condition is set to False, OLM prevents a channel entry in a scheduled package that
+    replaces the operator's existing CSV from leaving the PendingPhase. - Usage: This condition is useful when an
+    operator is about to start a critical process and should not be upgraded until the process is completed.
+  question: |
+    What is the use of the Upgradeable Condition in the context of a CSV in a scheduled package?
+- answer: |
+    The Upgradeable Condition prevents the existing CSV from being replaced by a newer version. It is set to False
+    when an operator is about to start a critical process and should not be upgraded until the process is completed.
+    Therefore, it prevents a channel entry in a scheduled package that replaces the operator's existing CSV from
+    leaving the PendingPhase. 2
+  context: |
+    Concept: Upgradeable Condition  - Definition: Prevents the existing CSV from being replaced by a newer version of
+    the CSV. When the Upgradeable condition is set to False, OLM prevents a channel entry in a scheduled package that
+    replaces the operator's existing CSV from leaving the PendingPhase. - Usage: This condition is useful when an
+    operator is about to start a critical process and should not be upgraded until the process is completed.
+  question: |
+    What is the use of the Upgradeable Condition in the context of a CSV in a scheduled package?
+- answer: |
+    The Upgradeable Condition prevents the existing CSV from being replaced by a newer version. It is set to False
+    when an operator is about to start a critical process and should not be upgraded until the process is completed.
+    Therefore, it prevents a channel entry in a scheduled package that replaces the operator's existing CSV from
+    leaving the PendingPhase. 3
+  context: |
+    Concept: Upgradeable Condition  - Definition: Prevents the existing CSV from being replaced by a newer version of
+    the CSV. When the Upgradeable condition is set to False, OLM prevents a channel entry in a scheduled package that
+    replaces the operator's existing CSV from leaving the PendingPhase. - Usage: This condition is useful when an
+    operator is about to start a critical process and should not be upgraded until the process is completed.
+  question: |
+    What is the use of the Upgradeable Condition in the context of a CSV in a scheduled package?
+- answer: |
+    The Upgradeable Condition prevents the existing CSV from being replaced by a newer version. It is set to False
+    when an operator is about to start a critical process and should not be upgraded until the process is completed.
+    Therefore, it prevents a channel entry in a scheduled package that replaces the operator's existing CSV from
+    leaving the PendingPhase. 4
+  context: |
+    Concept: Upgradeable Condition  - Definition: Prevents the existing CSV from being replaced by a newer version of
+    the CSV. When the Upgradeable condition is set to False, OLM prevents a channel entry in a scheduled package that
+    replaces the operator's existing CSV from leaving the PendingPhase. - Usage: This condition is useful when an
+    operator is about to start a critical process and should not be upgraded until the process is completed.
+  question: |
+    What is the use of the Upgradeable Condition in the context of a CSV in a scheduled package?
+- answer: |
+    The Upgradeable Condition prevents the existing CSV from being replaced by a newer version. It is set to False
+    when an operator is about to start a critical process and should not be upgraded until the process is completed.
+    Therefore, it prevents a channel entry in a scheduled package that replaces the operator's existing CSV from
+    leaving the PendingPhase. 5
+  context: |
+    Concept: Upgradeable Condition  - Definition: Prevents the existing CSV from being replaced by a newer version of
+    the CSV. When the Upgradeable condition is set to False, OLM prevents a channel entry in a scheduled package that
+    replaces the operator's existing CSV from leaving the PendingPhase. - Usage: This condition is useful when an
+    operator is about to start a critical process and should not be upgraded until the process is completed.
+  question: |
+    What is the use of the Upgradeable Condition in the context of a CSV in a scheduled package?
+task_description: |
+  This skill helps in understanding the concept: Concept: Upgradeable Condition  - Definition: Prevents the existing
+  CSV from being replaced by a newer version of the CSV. When the Upgradeable condition is set to False, OLM
+  prevents a channel entry in a scheduled package that replaces the operator's existing CSV from leaving the
+  PendingPhase. - Usage: This condition is useful when an operator is about to start a critical process and should
+  not be upgraded until the process is completed.

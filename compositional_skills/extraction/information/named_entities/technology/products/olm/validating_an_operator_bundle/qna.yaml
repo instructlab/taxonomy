@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Validating an operator bundle ensures that the bundle is in the correct format. Tools such as operator-sdk and opm
+    can be used for this process. 1
+  context: |
+    Validating an operator bundle: Ensures the bundle is in correct format using tools like operator-sdk and opm.
+  question: |
+    What does validating an operator bundle ensure and which tools can be used for this process?
+- answer: |
+    Validating an operator bundle ensures that the bundle is in the correct format. Tools such as operator-sdk and opm
+    can be used for this process. 2
+  context: |
+    Validating an operator bundle: Ensures the bundle is in correct format using tools like operator-sdk and opm.
+  question: |
+    What does validating an operator bundle ensure and which tools can be used for this process?
+- answer: |
+    Validating an operator bundle ensures that the bundle is in the correct format. Tools such as operator-sdk and opm
+    can be used for this process. 3
+  context: |
+    Validating an operator bundle: Ensures the bundle is in correct format using tools like operator-sdk and opm.
+  question: |
+    What does validating an operator bundle ensure and which tools can be used for this process?
+- answer: |
+    Validating an operator bundle ensures that the bundle is in the correct format. Tools such as operator-sdk and opm
+    can be used for this process. 4
+  context: |
+    Validating an operator bundle: Ensures the bundle is in correct format using tools like operator-sdk and opm.
+  question: |
+    What does validating an operator bundle ensure and which tools can be used for this process?
+- answer: |
+    Validating an operator bundle ensures that the bundle is in the correct format. Tools such as operator-sdk and opm
+    can be used for this process. 5
+  context: |
+    Validating an operator bundle: Ensures the bundle is in correct format using tools like operator-sdk and opm.
+  question: |
+    What does validating an operator bundle ensure and which tools can be used for this process?
+task_description: |
+  This skill helps in understanding the concept: Validating an operator bundle: Ensures the bundle is in correct
+  format using tools like operator-sdk and opm.

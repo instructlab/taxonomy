@@ -1,0 +1,51 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The events in the operator's namespace can be recreated by adjusting the settings of the cluster olmConfig's spec
+    features.disableCopiedCSVs field to false. 1
+  context: |
+    Event capturing: In the event of disabling copied CSVs, an event capture will take place to record the information
+    in the operator's namespace. These events can be recreated by setting the cluster olmConfig's spec
+    features.disableCopiedCSVs field to false.
+  question: |
+    How can one recreate events in the operator's namespace when copied CSVs have been disabled?
+- answer: |
+    The events in the operator's namespace can be recreated by adjusting the settings of the cluster olmConfig's spec
+    features.disableCopiedCSVs field to false. 2
+  context: |
+    Event capturing: In the event of disabling copied CSVs, an event capture will take place to record the information
+    in the operator's namespace. These events can be recreated by setting the cluster olmConfig's spec
+    features.disableCopiedCSVs field to false.
+  question: |
+    How can one recreate events in the operator's namespace when copied CSVs have been disabled?
+- answer: |
+    The events in the operator's namespace can be recreated by adjusting the settings of the cluster olmConfig's spec
+    features.disableCopiedCSVs field to false. 3
+  context: |
+    Event capturing: In the event of disabling copied CSVs, an event capture will take place to record the information
+    in the operator's namespace. These events can be recreated by setting the cluster olmConfig's spec
+    features.disableCopiedCSVs field to false.
+  question: |
+    How can one recreate events in the operator's namespace when copied CSVs have been disabled?
+- answer: |
+    The events in the operator's namespace can be recreated by adjusting the settings of the cluster olmConfig's spec
+    features.disableCopiedCSVs field to false. 4
+  context: |
+    Event capturing: In the event of disabling copied CSVs, an event capture will take place to record the information
+    in the operator's namespace. These events can be recreated by setting the cluster olmConfig's spec
+    features.disableCopiedCSVs field to false.
+  question: |
+    How can one recreate events in the operator's namespace when copied CSVs have been disabled?
+- answer: |
+    The events in the operator's namespace can be recreated by adjusting the settings of the cluster olmConfig's spec
+    features.disableCopiedCSVs field to false. 5
+  context: |
+    Event capturing: In the event of disabling copied CSVs, an event capture will take place to record the information
+    in the operator's namespace. These events can be recreated by setting the cluster olmConfig's spec
+    features.disableCopiedCSVs field to false.
+  question: |
+    How can one recreate events in the operator's namespace when copied CSVs have been disabled?
+task_description: |
+  This skill helps in understanding the concept: Event capturing: In the event of disabling copied CSVs, an event
+  capture will take place to record the information in the operator's namespace. These events can be recreated by
+  setting the cluster olmConfig's spec features.disableCopiedCSVs field to false.

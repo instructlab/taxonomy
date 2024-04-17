@@ -1,0 +1,46 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    A CSV might fail to install due to the following reasons: 1
+  context: |
+    Failed CSV Reasons    - NoOperatorGroup: The CSV failed to install because it was deployed in a namespace that
+    does not include an OperatorGroup.    - UnsupportedOperatorGroup: The CSV failed to install because it does not
+    support the OperatorGroup defined in the namespace.
+  question: |
+    What could be two possible reasons for a CSV failing to install?
+- answer: |
+    A CSV might fail to install due to the following reasons: 2
+  context: |
+    Failed CSV Reasons    - NoOperatorGroup: The CSV failed to install because it was deployed in a namespace that
+    does not include an OperatorGroup.    - UnsupportedOperatorGroup: The CSV failed to install because it does not
+    support the OperatorGroup defined in the namespace.
+  question: |
+    What could be two possible reasons for a CSV failing to install?
+- answer: |
+    A CSV might fail to install due to the following reasons: 3
+  context: |
+    Failed CSV Reasons    - NoOperatorGroup: The CSV failed to install because it was deployed in a namespace that
+    does not include an OperatorGroup.    - UnsupportedOperatorGroup: The CSV failed to install because it does not
+    support the OperatorGroup defined in the namespace.
+  question: |
+    What could be two possible reasons for a CSV failing to install?
+- answer: |
+    A CSV might fail to install due to the following reasons: 4
+  context: |
+    Failed CSV Reasons    - NoOperatorGroup: The CSV failed to install because it was deployed in a namespace that
+    does not include an OperatorGroup.    - UnsupportedOperatorGroup: The CSV failed to install because it does not
+    support the OperatorGroup defined in the namespace.
+  question: |
+    What could be two possible reasons for a CSV failing to install?
+- answer: |
+    A CSV might fail to install due to the following reasons: 5
+  context: |
+    Failed CSV Reasons    - NoOperatorGroup: The CSV failed to install because it was deployed in a namespace that
+    does not include an OperatorGroup.    - UnsupportedOperatorGroup: The CSV failed to install because it does not
+    support the OperatorGroup defined in the namespace.
+  question: |
+    What could be two possible reasons for a CSV failing to install?
+task_description: |
+  This skill helps in understanding the concept: Failed CSV Reasons    - NoOperatorGroup: The CSV failed to install
+  because it was deployed in a namespace that does not include an OperatorGroup.    - UnsupportedOperatorGroup: The
+  CSV failed to install because it does not support the OperatorGroup defined in the namespace.

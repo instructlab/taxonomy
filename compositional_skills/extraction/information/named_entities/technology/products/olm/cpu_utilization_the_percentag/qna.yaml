@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    CPU utilization can be influenced by several factors, one of them being the sync interval of the Package Server. 1
+  context: |
+    CPU Utilization: The percentage of the CPU's capacity that is being used. This may get affected by the sync
+    interval of Package Server.
+  question: |
+    What influences the percentage of a CPU's capacity that is being used, often known as CPU utilization?
+- answer: |
+    CPU utilization can be influenced by several factors, one of them being the sync interval of the Package Server. 2
+  context: |
+    CPU Utilization: The percentage of the CPU's capacity that is being used. This may get affected by the sync
+    interval of Package Server.
+  question: |
+    What influences the percentage of a CPU's capacity that is being used, often known as CPU utilization?
+- answer: |
+    CPU utilization can be influenced by several factors, one of them being the sync interval of the Package Server. 3
+  context: |
+    CPU Utilization: The percentage of the CPU's capacity that is being used. This may get affected by the sync
+    interval of Package Server.
+  question: |
+    What influences the percentage of a CPU's capacity that is being used, often known as CPU utilization?
+- answer: |
+    CPU utilization can be influenced by several factors, one of them being the sync interval of the Package Server. 4
+  context: |
+    CPU Utilization: The percentage of the CPU's capacity that is being used. This may get affected by the sync
+    interval of Package Server.
+  question: |
+    What influences the percentage of a CPU's capacity that is being used, often known as CPU utilization?
+- answer: |
+    CPU utilization can be influenced by several factors, one of them being the sync interval of the Package Server. 5
+  context: |
+    CPU Utilization: The percentage of the CPU's capacity that is being used. This may get affected by the sync
+    interval of Package Server.
+  question: |
+    What influences the percentage of a CPU's capacity that is being used, often known as CPU utilization?
+task_description: |
+  This skill helps in understanding the concept: CPU Utilization: The percentage of the CPU's capacity that is being
+  used. This may get affected by the sync interval of Package Server.

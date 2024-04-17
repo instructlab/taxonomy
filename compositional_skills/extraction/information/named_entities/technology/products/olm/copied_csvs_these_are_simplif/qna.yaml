@@ -1,0 +1,51 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Copied CSVs are simplified duplicates of an operator's Cluster Service Version (CSV), present in every namespace
+    being watched by the operator. They play a crucial role in notifying users of the controllers currently
+    reconciling resource events within a namespace. 1
+  context: |
+    Copied CSVs: These are simplified duplicates of an operator's CSV, present in every namespace being watched by the
+    operator. They notify users of the controllers currently reconciling resource events within a namespace.
+  question: |
+    What are copied CSVs in the context of an operator's operation and how do they function within a namespace?
+- answer: |
+    Copied CSVs are simplified duplicates of an operator's Cluster Service Version (CSV), present in every namespace
+    being watched by the operator. They play a crucial role in notifying users of the controllers currently
+    reconciling resource events within a namespace. 2
+  context: |
+    Copied CSVs: These are simplified duplicates of an operator's CSV, present in every namespace being watched by the
+    operator. They notify users of the controllers currently reconciling resource events within a namespace.
+  question: |
+    What are copied CSVs in the context of an operator's operation and how do they function within a namespace?
+- answer: |
+    Copied CSVs are simplified duplicates of an operator's Cluster Service Version (CSV), present in every namespace
+    being watched by the operator. They play a crucial role in notifying users of the controllers currently
+    reconciling resource events within a namespace. 3
+  context: |
+    Copied CSVs: These are simplified duplicates of an operator's CSV, present in every namespace being watched by the
+    operator. They notify users of the controllers currently reconciling resource events within a namespace.
+  question: |
+    What are copied CSVs in the context of an operator's operation and how do they function within a namespace?
+- answer: |
+    Copied CSVs are simplified duplicates of an operator's Cluster Service Version (CSV), present in every namespace
+    being watched by the operator. They play a crucial role in notifying users of the controllers currently
+    reconciling resource events within a namespace. 4
+  context: |
+    Copied CSVs: These are simplified duplicates of an operator's CSV, present in every namespace being watched by the
+    operator. They notify users of the controllers currently reconciling resource events within a namespace.
+  question: |
+    What are copied CSVs in the context of an operator's operation and how do they function within a namespace?
+- answer: |
+    Copied CSVs are simplified duplicates of an operator's Cluster Service Version (CSV), present in every namespace
+    being watched by the operator. They play a crucial role in notifying users of the controllers currently
+    reconciling resource events within a namespace. 5
+  context: |
+    Copied CSVs: These are simplified duplicates of an operator's CSV, present in every namespace being watched by the
+    operator. They notify users of the controllers currently reconciling resource events within a namespace.
+  question: |
+    What are copied CSVs in the context of an operator's operation and how do they function within a namespace?
+task_description: |
+  This skill helps in understanding the concept: Copied CSVs: These are simplified duplicates of an operator's CSV,
+  present in every namespace being watched by the operator. They notify users of the controllers currently
+  reconciling resource events within a namespace.

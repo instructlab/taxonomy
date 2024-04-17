@@ -1,0 +1,114 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The steps a Cluster Admin should take when uninstalling an operator from a cluster include: identifying the
+    resources to remove, unsubscribing from the operator via the subscription resource, deleting the subscription
+    associated with the operator to prevent new versions from being installed, and deleting the operator's
+    ClusterServiceVersion (CSV). The Cluster Admin must also decide whether to delete the CustomResourceDefinitions
+    (CRDs) and APIServices introduced to the cluster by the operator, and can safely remove the CRD or APIServices if
+    no resources remain. 1
+  context: |
+    - Uninstalling an operator from the cluster - The choice of a Cluster Admin to remove or retain the
+    CustomResourceDefinitions (CRD), APIServices, and resources related to these types owned by the operator -
+    Protection against data loss through OLM not removing any of the operator's owned CRDs, APIServices, or CRs during
+    uninstallation - Steps a Cluster Admin should take when uninstalling an operator - Identification of resources to
+    remove - Unsubscribing from the Operator via the subscription resource - Possibility of reinstallations if the
+    operator was installed with Automatic Updates - Need to delete the subscription associated with the operator to
+    prevent new versions from being installed - Deletion of Operator's ClusterServiceVersion (CSV) - The CSV
+    containing all information needed by OLM to manage an operator - Combination of steps for simultaneous deletion of
+    Subscription and CSV - Decision on whether to delete the CRDs and APIServices introduced to the cluster by the
+    operator - Safe removal of the CRD or APIServices if no resources remain
+  question: |
+    What steps should a Cluster Admin take when uninstalling an operator from a cluster?
+- answer: |
+    The steps a Cluster Admin should take when uninstalling an operator from a cluster include: identifying the
+    resources to remove, unsubscribing from the operator via the subscription resource, deleting the subscription
+    associated with the operator to prevent new versions from being installed, and deleting the operator's
+    ClusterServiceVersion (CSV). The Cluster Admin must also decide whether to delete the CustomResourceDefinitions
+    (CRDs) and APIServices introduced to the cluster by the operator, and can safely remove the CRD or APIServices if
+    no resources remain. 2
+  context: |
+    - Uninstalling an operator from the cluster - The choice of a Cluster Admin to remove or retain the
+    CustomResourceDefinitions (CRD), APIServices, and resources related to these types owned by the operator -
+    Protection against data loss through OLM not removing any of the operator's owned CRDs, APIServices, or CRs during
+    uninstallation - Steps a Cluster Admin should take when uninstalling an operator - Identification of resources to
+    remove - Unsubscribing from the Operator via the subscription resource - Possibility of reinstallations if the
+    operator was installed with Automatic Updates - Need to delete the subscription associated with the operator to
+    prevent new versions from being installed - Deletion of Operator's ClusterServiceVersion (CSV) - The CSV
+    containing all information needed by OLM to manage an operator - Combination of steps for simultaneous deletion of
+    Subscription and CSV - Decision on whether to delete the CRDs and APIServices introduced to the cluster by the
+    operator - Safe removal of the CRD or APIServices if no resources remain
+  question: |
+    What steps should a Cluster Admin take when uninstalling an operator from a cluster?
+- answer: |
+    The steps a Cluster Admin should take when uninstalling an operator from a cluster include: identifying the
+    resources to remove, unsubscribing from the operator via the subscription resource, deleting the subscription
+    associated with the operator to prevent new versions from being installed, and deleting the operator's
+    ClusterServiceVersion (CSV). The Cluster Admin must also decide whether to delete the CustomResourceDefinitions
+    (CRDs) and APIServices introduced to the cluster by the operator, and can safely remove the CRD or APIServices if
+    no resources remain. 3
+  context: |
+    - Uninstalling an operator from the cluster - The choice of a Cluster Admin to remove or retain the
+    CustomResourceDefinitions (CRD), APIServices, and resources related to these types owned by the operator -
+    Protection against data loss through OLM not removing any of the operator's owned CRDs, APIServices, or CRs during
+    uninstallation - Steps a Cluster Admin should take when uninstalling an operator - Identification of resources to
+    remove - Unsubscribing from the Operator via the subscription resource - Possibility of reinstallations if the
+    operator was installed with Automatic Updates - Need to delete the subscription associated with the operator to
+    prevent new versions from being installed - Deletion of Operator's ClusterServiceVersion (CSV) - The CSV
+    containing all information needed by OLM to manage an operator - Combination of steps for simultaneous deletion of
+    Subscription and CSV - Decision on whether to delete the CRDs and APIServices introduced to the cluster by the
+    operator - Safe removal of the CRD or APIServices if no resources remain
+  question: |
+    What steps should a Cluster Admin take when uninstalling an operator from a cluster?
+- answer: |
+    The steps a Cluster Admin should take when uninstalling an operator from a cluster include: identifying the
+    resources to remove, unsubscribing from the operator via the subscription resource, deleting the subscription
+    associated with the operator to prevent new versions from being installed, and deleting the operator's
+    ClusterServiceVersion (CSV). The Cluster Admin must also decide whether to delete the CustomResourceDefinitions
+    (CRDs) and APIServices introduced to the cluster by the operator, and can safely remove the CRD or APIServices if
+    no resources remain. 4
+  context: |
+    - Uninstalling an operator from the cluster - The choice of a Cluster Admin to remove or retain the
+    CustomResourceDefinitions (CRD), APIServices, and resources related to these types owned by the operator -
+    Protection against data loss through OLM not removing any of the operator's owned CRDs, APIServices, or CRs during
+    uninstallation - Steps a Cluster Admin should take when uninstalling an operator - Identification of resources to
+    remove - Unsubscribing from the Operator via the subscription resource - Possibility of reinstallations if the
+    operator was installed with Automatic Updates - Need to delete the subscription associated with the operator to
+    prevent new versions from being installed - Deletion of Operator's ClusterServiceVersion (CSV) - The CSV
+    containing all information needed by OLM to manage an operator - Combination of steps for simultaneous deletion of
+    Subscription and CSV - Decision on whether to delete the CRDs and APIServices introduced to the cluster by the
+    operator - Safe removal of the CRD or APIServices if no resources remain
+  question: |
+    What steps should a Cluster Admin take when uninstalling an operator from a cluster?
+- answer: |
+    The steps a Cluster Admin should take when uninstalling an operator from a cluster include: identifying the
+    resources to remove, unsubscribing from the operator via the subscription resource, deleting the subscription
+    associated with the operator to prevent new versions from being installed, and deleting the operator's
+    ClusterServiceVersion (CSV). The Cluster Admin must also decide whether to delete the CustomResourceDefinitions
+    (CRDs) and APIServices introduced to the cluster by the operator, and can safely remove the CRD or APIServices if
+    no resources remain. 5
+  context: |
+    - Uninstalling an operator from the cluster - The choice of a Cluster Admin to remove or retain the
+    CustomResourceDefinitions (CRD), APIServices, and resources related to these types owned by the operator -
+    Protection against data loss through OLM not removing any of the operator's owned CRDs, APIServices, or CRs during
+    uninstallation - Steps a Cluster Admin should take when uninstalling an operator - Identification of resources to
+    remove - Unsubscribing from the Operator via the subscription resource - Possibility of reinstallations if the
+    operator was installed with Automatic Updates - Need to delete the subscription associated with the operator to
+    prevent new versions from being installed - Deletion of Operator's ClusterServiceVersion (CSV) - The CSV
+    containing all information needed by OLM to manage an operator - Combination of steps for simultaneous deletion of
+    Subscription and CSV - Decision on whether to delete the CRDs and APIServices introduced to the cluster by the
+    operator - Safe removal of the CRD or APIServices if no resources remain
+  question: |
+    What steps should a Cluster Admin take when uninstalling an operator from a cluster?
+task_description: |
+  This skill helps in understanding the concept: - Uninstalling an operator from the cluster - The choice of a
+  Cluster Admin to remove or retain the CustomResourceDefinitions (CRD), APIServices, and resources related to these
+  types owned by the operator - Protection against data loss through OLM not removing any of the operator's owned
+  CRDs, APIServices, or CRs during uninstallation - Steps a Cluster Admin should take when uninstalling an operator
+  - Identification of resources to remove - Unsubscribing from the Operator via the subscription resource -
+  Possibility of reinstallations if the operator was installed with Automatic Updates - Need to delete the
+  subscription associated with the operator to prevent new versions from being installed - Deletion of Operator's
+  ClusterServiceVersion (CSV) - The CSV containing all information needed by OLM to manage an operator - Combination
+  of steps for simultaneous deletion of Subscription and CSV - Decision on whether to delete the CRDs and
+  APIServices introduced to the cluster by the operator - Safe removal of the CRD or APIServices if no resources
+  remain

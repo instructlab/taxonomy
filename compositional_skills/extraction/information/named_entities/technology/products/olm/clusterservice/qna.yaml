@@ -1,0 +1,44 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    In computing terms, a ClusterService is a type of service that manages a cluster of servers or computers, ensuring
+    they work together effectively to perform tasks. This service is typically responsible for tasks such as load
+    balancing, data distribution, and managing failures to keep the system running smoothly. 1
+  context: |
+    ClusterService
+  question: |
+    What is a ClusterService in computing terms?
+- answer: |
+    In computing terms, a ClusterService is a type of service that manages a cluster of servers or computers, ensuring
+    they work together effectively to perform tasks. This service is typically responsible for tasks such as load
+    balancing, data distribution, and managing failures to keep the system running smoothly. 2
+  context: |
+    ClusterService
+  question: |
+    What is a ClusterService in computing terms?
+- answer: |
+    In computing terms, a ClusterService is a type of service that manages a cluster of servers or computers, ensuring
+    they work together effectively to perform tasks. This service is typically responsible for tasks such as load
+    balancing, data distribution, and managing failures to keep the system running smoothly. 3
+  context: |
+    ClusterService
+  question: |
+    What is a ClusterService in computing terms?
+- answer: |
+    In computing terms, a ClusterService is a type of service that manages a cluster of servers or computers, ensuring
+    they work together effectively to perform tasks. This service is typically responsible for tasks such as load
+    balancing, data distribution, and managing failures to keep the system running smoothly. 4
+  context: |
+    ClusterService
+  question: |
+    What is a ClusterService in computing terms?
+- answer: |
+    In computing terms, a ClusterService is a type of service that manages a cluster of servers or computers, ensuring
+    they work together effectively to perform tasks. This service is typically responsible for tasks such as load
+    balancing, data distribution, and managing failures to keep the system running smoothly. 5
+  context: |
+    ClusterService
+  question: |
+    What is a ClusterService in computing terms?
+task_description: |
+  This skill helps in understanding the concept: ClusterService

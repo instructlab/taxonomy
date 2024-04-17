@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The advanced tasks for packaging an operator for OLM include installing and uninstalling an operator. 1
+  context: |
+    Packaging operators for OLM: Advanced tasks for packaging your operator for OLM, and installing/uninstalling an
+    operator.
+  question: |
+    What are the advanced tasks involved in packaging an operator for OLM?
+- answer: |
+    The advanced tasks for packaging an operator for OLM include installing and uninstalling an operator. 2
+  context: |
+    Packaging operators for OLM: Advanced tasks for packaging your operator for OLM, and installing/uninstalling an
+    operator.
+  question: |
+    What are the advanced tasks involved in packaging an operator for OLM?
+- answer: |
+    The advanced tasks for packaging an operator for OLM include installing and uninstalling an operator. 3
+  context: |
+    Packaging operators for OLM: Advanced tasks for packaging your operator for OLM, and installing/uninstalling an
+    operator.
+  question: |
+    What are the advanced tasks involved in packaging an operator for OLM?
+- answer: |
+    The advanced tasks for packaging an operator for OLM include installing and uninstalling an operator. 4
+  context: |
+    Packaging operators for OLM: Advanced tasks for packaging your operator for OLM, and installing/uninstalling an
+    operator.
+  question: |
+    What are the advanced tasks involved in packaging an operator for OLM?
+- answer: |
+    The advanced tasks for packaging an operator for OLM include installing and uninstalling an operator. 5
+  context: |
+    Packaging operators for OLM: Advanced tasks for packaging your operator for OLM, and installing/uninstalling an
+    operator.
+  question: |
+    What are the advanced tasks involved in packaging an operator for OLM?
+task_description: |
+  This skill helps in understanding the concept: Packaging operators for OLM: Advanced tasks for packaging your
+  operator for OLM, and installing/uninstalling an operator.

@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    A Bundle Pullspec is a specific path from which to pull the versioned bundles that make up a product catalog
+    version. 1
+  context: |
+    Bundle Pullspec: A specific path from which to pull the versioned bundles which make up a product catalog version.
+  question: |
+    What is a Bundle Pullspec?
+- answer: |
+    A Bundle Pullspec is a specific path from which to pull the versioned bundles that make up a product catalog
+    version. 2
+  context: |
+    Bundle Pullspec: A specific path from which to pull the versioned bundles which make up a product catalog version.
+  question: |
+    What is a Bundle Pullspec?
+- answer: |
+    A Bundle Pullspec is a specific path from which to pull the versioned bundles that make up a product catalog
+    version. 3
+  context: |
+    Bundle Pullspec: A specific path from which to pull the versioned bundles which make up a product catalog version.
+  question: |
+    What is a Bundle Pullspec?
+- answer: |
+    A Bundle Pullspec is a specific path from which to pull the versioned bundles that make up a product catalog
+    version. 4
+  context: |
+    Bundle Pullspec: A specific path from which to pull the versioned bundles which make up a product catalog version.
+  question: |
+    What is a Bundle Pullspec?
+- answer: |
+    A Bundle Pullspec is a specific path from which to pull the versioned bundles that make up a product catalog
+    version. 5
+  context: |
+    Bundle Pullspec: A specific path from which to pull the versioned bundles which make up a product catalog version.
+  question: |
+    What is a Bundle Pullspec?
+task_description: |
+  This skill helps in understanding the concept: Bundle Pullspec: A specific path from which to pull the versioned
+  bundles which make up a product catalog version.

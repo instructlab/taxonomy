@@ -1,0 +1,44 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    CatalogSource of type grpc in Operator Lifecycle Manager (OLM) represents a repository of operators, stored in a
+    specific format on a container image or an grpc image. This allows the kube cluster to query and pull down
+    operators from this catalog source. 1
+  context: |
+    CatalogSource of type grpc
+  question: |
+    What is a CatalogSource of type grpc?
+- answer: |
+    CatalogSource of type grpc in Operator Lifecycle Manager (OLM) represents a repository of operators, stored in a
+    specific format on a container image or an grpc image. This allows the kube cluster to query and pull down
+    operators from this catalog source. 2
+  context: |
+    CatalogSource of type grpc
+  question: |
+    What is a CatalogSource of type grpc?
+- answer: |
+    CatalogSource of type grpc in Operator Lifecycle Manager (OLM) represents a repository of operators, stored in a
+    specific format on a container image or an grpc image. This allows the kube cluster to query and pull down
+    operators from this catalog source. 3
+  context: |
+    CatalogSource of type grpc
+  question: |
+    What is a CatalogSource of type grpc?
+- answer: |
+    CatalogSource of type grpc in Operator Lifecycle Manager (OLM) represents a repository of operators, stored in a
+    specific format on a container image or an grpc image. This allows the kube cluster to query and pull down
+    operators from this catalog source. 4
+  context: |
+    CatalogSource of type grpc
+  question: |
+    What is a CatalogSource of type grpc?
+- answer: |
+    CatalogSource of type grpc in Operator Lifecycle Manager (OLM) represents a repository of operators, stored in a
+    specific format on a container image or an grpc image. This allows the kube cluster to query and pull down
+    operators from this catalog source. 5
+  context: |
+    CatalogSource of type grpc
+  question: |
+    What is a CatalogSource of type grpc?
+task_description: |
+  This skill helps in understanding the concept: CatalogSource of type grpc

@@ -1,0 +1,56 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The error message "field is immutable" in a failed CSV indicates that the CSV is failing because its install
+    strategy changes some immutable field of an existing Deployment. This issue can be resolved by publishing a new
+    version of the operator that uses a different Deployment name. 1
+  context: |
+    Failed CSV Messages    - "field is immutable": The CSV is failing because its install strategy changes some
+    immutable field of an existing Deployment. The issue can be resolved by publishing a new version of the operator
+    that uses a different Deployment name.
+  question: |
+    What does the error message "field is immutable" in a failed CSV mean and how can it be resolved?
+- answer: |
+    The error message "field is immutable" in a failed CSV indicates that the CSV is failing because its install
+    strategy changes some immutable field of an existing Deployment. This issue can be resolved by publishing a new
+    version of the operator that uses a different Deployment name. 2
+  context: |
+    Failed CSV Messages    - "field is immutable": The CSV is failing because its install strategy changes some
+    immutable field of an existing Deployment. The issue can be resolved by publishing a new version of the operator
+    that uses a different Deployment name.
+  question: |
+    What does the error message "field is immutable" in a failed CSV mean and how can it be resolved?
+- answer: |
+    The error message "field is immutable" in a failed CSV indicates that the CSV is failing because its install
+    strategy changes some immutable field of an existing Deployment. This issue can be resolved by publishing a new
+    version of the operator that uses a different Deployment name. 3
+  context: |
+    Failed CSV Messages    - "field is immutable": The CSV is failing because its install strategy changes some
+    immutable field of an existing Deployment. The issue can be resolved by publishing a new version of the operator
+    that uses a different Deployment name.
+  question: |
+    What does the error message "field is immutable" in a failed CSV mean and how can it be resolved?
+- answer: |
+    The error message "field is immutable" in a failed CSV indicates that the CSV is failing because its install
+    strategy changes some immutable field of an existing Deployment. This issue can be resolved by publishing a new
+    version of the operator that uses a different Deployment name. 4
+  context: |
+    Failed CSV Messages    - "field is immutable": The CSV is failing because its install strategy changes some
+    immutable field of an existing Deployment. The issue can be resolved by publishing a new version of the operator
+    that uses a different Deployment name.
+  question: |
+    What does the error message "field is immutable" in a failed CSV mean and how can it be resolved?
+- answer: |
+    The error message "field is immutable" in a failed CSV indicates that the CSV is failing because its install
+    strategy changes some immutable field of an existing Deployment. This issue can be resolved by publishing a new
+    version of the operator that uses a different Deployment name. 5
+  context: |
+    Failed CSV Messages    - "field is immutable": The CSV is failing because its install strategy changes some
+    immutable field of an existing Deployment. The issue can be resolved by publishing a new version of the operator
+    that uses a different Deployment name.
+  question: |
+    What does the error message "field is immutable" in a failed CSV mean and how can it be resolved?
+task_description: |
+  This skill helps in understanding the concept: Failed CSV Messages    - "field is immutable": The CSV is failing
+  because its install strategy changes some immutable field of an existing Deployment. The issue can be resolved by
+  publishing a new version of the operator that uses a different Deployment name.

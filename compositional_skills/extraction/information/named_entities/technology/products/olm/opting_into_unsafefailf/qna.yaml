@@ -1,0 +1,44 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Opting into UnsafeFailForward refers to the decision of proceeding with an upgrade even when certain upgrades may
+    potentially fail. This could be beneficial in certain contexts but also brings inherent risks as interrupted
+    upgrades can lead to system instability or data loss. 1
+  context: |
+    Title: Opting into UnsafeFailForward upgrades
+  question: |
+    What does Opting into UnsafeFailForward feature mean in terms of upgrades?
+- answer: |
+    Opting into UnsafeFailForward refers to the decision of proceeding with an upgrade even when certain upgrades may
+    potentially fail. This could be beneficial in certain contexts but also brings inherent risks as interrupted
+    upgrades can lead to system instability or data loss. 2
+  context: |
+    Title: Opting into UnsafeFailForward upgrades
+  question: |
+    What does Opting into UnsafeFailForward feature mean in terms of upgrades?
+- answer: |
+    Opting into UnsafeFailForward refers to the decision of proceeding with an upgrade even when certain upgrades may
+    potentially fail. This could be beneficial in certain contexts but also brings inherent risks as interrupted
+    upgrades can lead to system instability or data loss. 3
+  context: |
+    Title: Opting into UnsafeFailForward upgrades
+  question: |
+    What does Opting into UnsafeFailForward feature mean in terms of upgrades?
+- answer: |
+    Opting into UnsafeFailForward refers to the decision of proceeding with an upgrade even when certain upgrades may
+    potentially fail. This could be beneficial in certain contexts but also brings inherent risks as interrupted
+    upgrades can lead to system instability or data loss. 4
+  context: |
+    Title: Opting into UnsafeFailForward upgrades
+  question: |
+    What does Opting into UnsafeFailForward feature mean in terms of upgrades?
+- answer: |
+    Opting into UnsafeFailForward refers to the decision of proceeding with an upgrade even when certain upgrades may
+    potentially fail. This could be beneficial in certain contexts but also brings inherent risks as interrupted
+    upgrades can lead to system instability or data loss. 5
+  context: |
+    Title: Opting into UnsafeFailForward upgrades
+  question: |
+    What does Opting into UnsafeFailForward feature mean in terms of upgrades?
+task_description: |
+  This skill helps in understanding the concept: Title: Opting into UnsafeFailForward upgrades

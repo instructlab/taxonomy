@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    GitHub Pull Requests. 1
+  context: |
+    GitHub Pull Requests: Method used for the review of all submissions.
+  question: |
+    What is the method used for the review of all submissions on GitHub?
+- answer: |
+    GitHub Pull Requests. 2
+  context: |
+    GitHub Pull Requests: Method used for the review of all submissions.
+  question: |
+    What is the method used for the review of all submissions on GitHub?
+- answer: |
+    GitHub Pull Requests. 3
+  context: |
+    GitHub Pull Requests: Method used for the review of all submissions.
+  question: |
+    What is the method used for the review of all submissions on GitHub?
+- answer: |
+    GitHub Pull Requests. 4
+  context: |
+    GitHub Pull Requests: Method used for the review of all submissions.
+  question: |
+    What is the method used for the review of all submissions on GitHub?
+- answer: |
+    GitHub Pull Requests. 5
+  context: |
+    GitHub Pull Requests: Method used for the review of all submissions.
+  question: |
+    What is the method used for the review of all submissions on GitHub?
+task_description: |
+  This skill helps in understanding the concept: GitHub Pull Requests: Method used for the review of all
+  submissions.

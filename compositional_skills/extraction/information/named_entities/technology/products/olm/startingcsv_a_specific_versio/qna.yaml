@@ -1,0 +1,34 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    A "StartingCSV" refers to a specific version of an operator that is set to be installed. 1
+  context: |
+    StartingCSV: A specific version of an operator to be installed.
+  question: |
+    What is a "StartingCSV" in terms of software installation?
+- answer: |
+    A "StartingCSV" refers to a specific version of an operator that is set to be installed. 2
+  context: |
+    StartingCSV: A specific version of an operator to be installed.
+  question: |
+    What is a "StartingCSV" in terms of software installation?
+- answer: |
+    A "StartingCSV" refers to a specific version of an operator that is set to be installed. 3
+  context: |
+    StartingCSV: A specific version of an operator to be installed.
+  question: |
+    What is a "StartingCSV" in terms of software installation?
+- answer: |
+    A "StartingCSV" refers to a specific version of an operator that is set to be installed. 4
+  context: |
+    StartingCSV: A specific version of an operator to be installed.
+  question: |
+    What is a "StartingCSV" in terms of software installation?
+- answer: |
+    A "StartingCSV" refers to a specific version of an operator that is set to be installed. 5
+  context: |
+    StartingCSV: A specific version of an operator to be installed.
+  question: |
+    What is a "StartingCSV" in terms of software installation?
+task_description: |
+  This skill helps in understanding the concept: StartingCSV: A specific version of an operator to be installed.

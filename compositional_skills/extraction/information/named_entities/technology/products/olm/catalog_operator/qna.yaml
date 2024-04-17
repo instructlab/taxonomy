@@ -1,0 +1,44 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    A catalog operator refers to an individual or system that organizes, maintains, and manages a catalog (database,
+    library, or collection of items). This role can involve tasks such as data entry, labeling and classification of
+    items, updating item information, and ensuring easy accessibility and retrieval of items. 1
+  context: |
+    Catalog operator
+  question: |
+    What is a catalog operator?
+- answer: |
+    A catalog operator refers to an individual or system that organizes, maintains, and manages a catalog (database,
+    library, or collection of items). This role can involve tasks such as data entry, labeling and classification of
+    items, updating item information, and ensuring easy accessibility and retrieval of items. 2
+  context: |
+    Catalog operator
+  question: |
+    What is a catalog operator?
+- answer: |
+    A catalog operator refers to an individual or system that organizes, maintains, and manages a catalog (database,
+    library, or collection of items). This role can involve tasks such as data entry, labeling and classification of
+    items, updating item information, and ensuring easy accessibility and retrieval of items. 3
+  context: |
+    Catalog operator
+  question: |
+    What is a catalog operator?
+- answer: |
+    A catalog operator refers to an individual or system that organizes, maintains, and manages a catalog (database,
+    library, or collection of items). This role can involve tasks such as data entry, labeling and classification of
+    items, updating item information, and ensuring easy accessibility and retrieval of items. 4
+  context: |
+    Catalog operator
+  question: |
+    What is a catalog operator?
+- answer: |
+    A catalog operator refers to an individual or system that organizes, maintains, and manages a catalog (database,
+    library, or collection of items). This role can involve tasks such as data entry, labeling and classification of
+    items, updating item information, and ensuring easy accessibility and retrieval of items. 5
+  context: |
+    Catalog operator
+  question: |
+    What is a catalog operator?
+task_description: |
+  This skill helps in understanding the concept: Catalog operator

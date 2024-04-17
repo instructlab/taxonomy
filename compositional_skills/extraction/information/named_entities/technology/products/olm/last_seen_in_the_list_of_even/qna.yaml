@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    "Last Seen" indicates when an event was last viewed by the user or system. 1
+  context: |
+    Last Seen: In the list of events, it indicates when an event was last seen by the user or system.
+  question: |
+    What does "Last Seen" refer to in the context of a list of events?
+- answer: |
+    "Last Seen" indicates when an event was last viewed by the user or system. 2
+  context: |
+    Last Seen: In the list of events, it indicates when an event was last seen by the user or system.
+  question: |
+    What does "Last Seen" refer to in the context of a list of events?
+- answer: |
+    "Last Seen" indicates when an event was last viewed by the user or system. 3
+  context: |
+    Last Seen: In the list of events, it indicates when an event was last seen by the user or system.
+  question: |
+    What does "Last Seen" refer to in the context of a list of events?
+- answer: |
+    "Last Seen" indicates when an event was last viewed by the user or system. 4
+  context: |
+    Last Seen: In the list of events, it indicates when an event was last seen by the user or system.
+  question: |
+    What does "Last Seen" refer to in the context of a list of events?
+- answer: |
+    "Last Seen" indicates when an event was last viewed by the user or system. 5
+  context: |
+    Last Seen: In the list of events, it indicates when an event was last seen by the user or system.
+  question: |
+    What does "Last Seen" refer to in the context of a list of events?
+task_description: |
+  This skill helps in understanding the concept: Last Seen: In the list of events, it indicates when an event was
+  last seen by the user or system.

@@ -1,0 +1,46 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The environment variable OPERATOR_BUNDLE_CATEGORIES is used to set the path to a json file. This file contains a
+    list of categories which are used when comparing CSV categories for operatorhub validation. 1
+  context: |
+    Environment variable OPERATOR_BUNDLE_CATEGORIES: Used to set the path to a json file containing a list of
+    categories to be used when comparing CSV categories for operatorhub validation.
+  question: |
+    What is the purpose of the environment variable OPERATOR_BUNDLE_CATEGORIES?
+- answer: |
+    The environment variable OPERATOR_BUNDLE_CATEGORIES is used to set the path to a json file. This file contains a
+    list of categories which are used when comparing CSV categories for operatorhub validation. 2
+  context: |
+    Environment variable OPERATOR_BUNDLE_CATEGORIES: Used to set the path to a json file containing a list of
+    categories to be used when comparing CSV categories for operatorhub validation.
+  question: |
+    What is the purpose of the environment variable OPERATOR_BUNDLE_CATEGORIES?
+- answer: |
+    The environment variable OPERATOR_BUNDLE_CATEGORIES is used to set the path to a json file. This file contains a
+    list of categories which are used when comparing CSV categories for operatorhub validation. 3
+  context: |
+    Environment variable OPERATOR_BUNDLE_CATEGORIES: Used to set the path to a json file containing a list of
+    categories to be used when comparing CSV categories for operatorhub validation.
+  question: |
+    What is the purpose of the environment variable OPERATOR_BUNDLE_CATEGORIES?
+- answer: |
+    The environment variable OPERATOR_BUNDLE_CATEGORIES is used to set the path to a json file. This file contains a
+    list of categories which are used when comparing CSV categories for operatorhub validation. 4
+  context: |
+    Environment variable OPERATOR_BUNDLE_CATEGORIES: Used to set the path to a json file containing a list of
+    categories to be used when comparing CSV categories for operatorhub validation.
+  question: |
+    What is the purpose of the environment variable OPERATOR_BUNDLE_CATEGORIES?
+- answer: |
+    The environment variable OPERATOR_BUNDLE_CATEGORIES is used to set the path to a json file. This file contains a
+    list of categories which are used when comparing CSV categories for operatorhub validation. 5
+  context: |
+    Environment variable OPERATOR_BUNDLE_CATEGORIES: Used to set the path to a json file containing a list of
+    categories to be used when comparing CSV categories for operatorhub validation.
+  question: |
+    What is the purpose of the environment variable OPERATOR_BUNDLE_CATEGORIES?
+task_description: |
+  This skill helps in understanding the concept: Environment variable OPERATOR_BUNDLE_CATEGORIES: Used to set the
+  path to a json file containing a list of categories to be used when comparing CSV categories for operatorhub
+  validation.

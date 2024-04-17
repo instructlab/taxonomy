@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Operators can be filtered by their OS or architecture configuration using labels. 1
+  context: |
+    Concept: Filtering Available Operators by OS or Arch    - Operators can be filtered by their OS or architecture
+    configuration using labels.
+  question: |
+    How can operators be filtered by their OS or architecture configuration?
+- answer: |
+    Operators can be filtered by their OS or architecture configuration using labels. 2
+  context: |
+    Concept: Filtering Available Operators by OS or Arch    - Operators can be filtered by their OS or architecture
+    configuration using labels.
+  question: |
+    How can operators be filtered by their OS or architecture configuration?
+- answer: |
+    Operators can be filtered by their OS or architecture configuration using labels. 3
+  context: |
+    Concept: Filtering Available Operators by OS or Arch    - Operators can be filtered by their OS or architecture
+    configuration using labels.
+  question: |
+    How can operators be filtered by their OS or architecture configuration?
+- answer: |
+    Operators can be filtered by their OS or architecture configuration using labels. 4
+  context: |
+    Concept: Filtering Available Operators by OS or Arch    - Operators can be filtered by their OS or architecture
+    configuration using labels.
+  question: |
+    How can operators be filtered by their OS or architecture configuration?
+- answer: |
+    Operators can be filtered by their OS or architecture configuration using labels. 5
+  context: |
+    Concept: Filtering Available Operators by OS or Arch    - Operators can be filtered by their OS or architecture
+    configuration using labels.
+  question: |
+    How can operators be filtered by their OS or architecture configuration?
+task_description: |
+  This skill helps in understanding the concept: Concept: Filtering Available Operators by OS or Arch    - Operators
+  can be filtered by their OS or architecture configuration using labels.

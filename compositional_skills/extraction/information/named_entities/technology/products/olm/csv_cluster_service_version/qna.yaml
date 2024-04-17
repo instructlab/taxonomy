@@ -1,0 +1,34 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    In the context of computer technology, CSV stands for Cluster Service Version. 1
+  context: |
+    CSV (Cluster Service Version)
+  question: |
+    What does CSV stand for in the context of computer technology?
+- answer: |
+    In the context of computer technology, CSV stands for Cluster Service Version. 2
+  context: |
+    CSV (Cluster Service Version)
+  question: |
+    What does CSV stand for in the context of computer technology?
+- answer: |
+    In the context of computer technology, CSV stands for Cluster Service Version. 3
+  context: |
+    CSV (Cluster Service Version)
+  question: |
+    What does CSV stand for in the context of computer technology?
+- answer: |
+    In the context of computer technology, CSV stands for Cluster Service Version. 4
+  context: |
+    CSV (Cluster Service Version)
+  question: |
+    What does CSV stand for in the context of computer technology?
+- answer: |
+    In the context of computer technology, CSV stands for Cluster Service Version. 5
+  context: |
+    CSV (Cluster Service Version)
+  question: |
+    What does CSV stand for in the context of computer technology?
+task_description: |
+  This skill helps in understanding the concept: CSV (Cluster Service Version)

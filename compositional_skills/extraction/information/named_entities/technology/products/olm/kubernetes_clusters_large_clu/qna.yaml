@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Large Kubernetes clusters may require the disabling of Copied CSVs. 1
+  context: |
+    Kubernetes clusters: Large clusters may require the disabling of Copied CSVs due to resource consumption.
+  question: |
+    What might large Kubernetes clusters require disabling due to resource consumption?
+- answer: |
+    Large Kubernetes clusters may require the disabling of Copied CSVs. 2
+  context: |
+    Kubernetes clusters: Large clusters may require the disabling of Copied CSVs due to resource consumption.
+  question: |
+    What might large Kubernetes clusters require disabling due to resource consumption?
+- answer: |
+    Large Kubernetes clusters may require the disabling of Copied CSVs. 3
+  context: |
+    Kubernetes clusters: Large clusters may require the disabling of Copied CSVs due to resource consumption.
+  question: |
+    What might large Kubernetes clusters require disabling due to resource consumption?
+- answer: |
+    Large Kubernetes clusters may require the disabling of Copied CSVs. 4
+  context: |
+    Kubernetes clusters: Large clusters may require the disabling of Copied CSVs due to resource consumption.
+  question: |
+    What might large Kubernetes clusters require disabling due to resource consumption?
+- answer: |
+    Large Kubernetes clusters may require the disabling of Copied CSVs. 5
+  context: |
+    Kubernetes clusters: Large clusters may require the disabling of Copied CSVs due to resource consumption.
+  question: |
+    What might large Kubernetes clusters require disabling due to resource consumption?
+task_description: |
+  This skill helps in understanding the concept: Kubernetes clusters: Large clusters may require the disabling of
+  Copied CSVs due to resource consumption.

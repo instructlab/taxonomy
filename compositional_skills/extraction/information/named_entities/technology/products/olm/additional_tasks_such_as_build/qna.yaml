@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Building a production version and linting are additional tasks that require the installation of Node.js LTS and
+    Docker or Podman. 1
+  context: |
+    Additional tasks such as building production version and linting require:    - Installation of Node.js LTS    -
+    Installation of Docker or Podman
+  question: |
+    What additional tasks require the installation of Node.js LTS and Docker or Podman?
+- answer: |
+    Building a production version and linting are additional tasks that require the installation of Node.js LTS and
+    Docker or Podman. 2
+  context: |
+    Additional tasks such as building production version and linting require:    - Installation of Node.js LTS    -
+    Installation of Docker or Podman
+  question: |
+    What additional tasks require the installation of Node.js LTS and Docker or Podman?
+- answer: |
+    Building a production version and linting are additional tasks that require the installation of Node.js LTS and
+    Docker or Podman. 3
+  context: |
+    Additional tasks such as building production version and linting require:    - Installation of Node.js LTS    -
+    Installation of Docker or Podman
+  question: |
+    What additional tasks require the installation of Node.js LTS and Docker or Podman?
+- answer: |
+    Building a production version and linting are additional tasks that require the installation of Node.js LTS and
+    Docker or Podman. 4
+  context: |
+    Additional tasks such as building production version and linting require:    - Installation of Node.js LTS    -
+    Installation of Docker or Podman
+  question: |
+    What additional tasks require the installation of Node.js LTS and Docker or Podman?
+- answer: |
+    Building a production version and linting are additional tasks that require the installation of Node.js LTS and
+    Docker or Podman. 5
+  context: |
+    Additional tasks such as building production version and linting require:    - Installation of Node.js LTS    -
+    Installation of Docker or Podman
+  question: |
+    What additional tasks require the installation of Node.js LTS and Docker or Podman?
+task_description: |
+  This skill helps in understanding the concept: Additional tasks such as building production version and linting
+  require:    - Installation of Node.js LTS    - Installation of Docker or Podman

@@ -1,0 +1,34 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The CSV can be obtained from the bundle container using the opm render command. 1
+  context: |
+    Getting CSV from bundle container with opm render: As of
+  question: |
+    How can the CSV be obtained from a bundle container?
+- answer: |
+    The CSV can be obtained from the bundle container using the opm render command. 2
+  context: |
+    Getting CSV from bundle container with opm render: As of
+  question: |
+    How can the CSV be obtained from a bundle container?
+- answer: |
+    The CSV can be obtained from the bundle container using the opm render command. 3
+  context: |
+    Getting CSV from bundle container with opm render: As of
+  question: |
+    How can the CSV be obtained from a bundle container?
+- answer: |
+    The CSV can be obtained from the bundle container using the opm render command. 4
+  context: |
+    Getting CSV from bundle container with opm render: As of
+  question: |
+    How can the CSV be obtained from a bundle container?
+- answer: |
+    The CSV can be obtained from the bundle container using the opm render command. 5
+  context: |
+    Getting CSV from bundle container with opm render: As of
+  question: |
+    How can the CSV be obtained from a bundle container?
+task_description: |
+  This skill helps in understanding the concept: Getting CSV from bundle container with opm render: As of

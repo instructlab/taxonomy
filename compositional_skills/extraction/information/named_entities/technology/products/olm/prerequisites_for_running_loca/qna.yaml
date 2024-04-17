@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The prerequisites for running a local dev server are the installation of a stable version of Go and the cloning of
+    the repository from https://github.com/operator-framework/olm-docs/. 1
+  context: |
+    Prerequisites for running local dev server:    - Installation of stable version of Go.    - Cloning of the
+    repository: https://github.com/operator-framework/olm-docs/
+  question: |
+    What are the prerequisites for running a local dev server?
+- answer: |
+    The prerequisites for running a local dev server are the installation of a stable version of Go and the cloning of
+    the repository from https://github.com/operator-framework/olm-docs/. 2
+  context: |
+    Prerequisites for running local dev server:    - Installation of stable version of Go.    - Cloning of the
+    repository: https://github.com/operator-framework/olm-docs/
+  question: |
+    What are the prerequisites for running a local dev server?
+- answer: |
+    The prerequisites for running a local dev server are the installation of a stable version of Go and the cloning of
+    the repository from https://github.com/operator-framework/olm-docs/. 3
+  context: |
+    Prerequisites for running local dev server:    - Installation of stable version of Go.    - Cloning of the
+    repository: https://github.com/operator-framework/olm-docs/
+  question: |
+    What are the prerequisites for running a local dev server?
+- answer: |
+    The prerequisites for running a local dev server are the installation of a stable version of Go and the cloning of
+    the repository from https://github.com/operator-framework/olm-docs/. 4
+  context: |
+    Prerequisites for running local dev server:    - Installation of stable version of Go.    - Cloning of the
+    repository: https://github.com/operator-framework/olm-docs/
+  question: |
+    What are the prerequisites for running a local dev server?
+- answer: |
+    The prerequisites for running a local dev server are the installation of a stable version of Go and the cloning of
+    the repository from https://github.com/operator-framework/olm-docs/. 5
+  context: |
+    Prerequisites for running local dev server:    - Installation of stable version of Go.    - Cloning of the
+    repository: https://github.com/operator-framework/olm-docs/
+  question: |
+    What are the prerequisites for running a local dev server?
+task_description: |
+  This skill helps in understanding the concept: Prerequisites for running local dev server:    - Installation of
+  stable version of Go.    - Cloning of the repository: https://github.com/operator-framework/olm-docs/

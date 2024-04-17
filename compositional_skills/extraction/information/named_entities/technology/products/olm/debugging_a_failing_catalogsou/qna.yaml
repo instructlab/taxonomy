@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The process is known as Debugging a Failing CatalogSource. 1
+  context: |
+    Debugging a Failing CatalogSource: A process to identify the issues in a CatalogSource that is not functioning
+    properly.
+  question: |
+    What is the process to identify the issues in a CatalogSource that is not functioning properly?
+- answer: |
+    The process is known as Debugging a Failing CatalogSource. 2
+  context: |
+    Debugging a Failing CatalogSource: A process to identify the issues in a CatalogSource that is not functioning
+    properly.
+  question: |
+    What is the process to identify the issues in a CatalogSource that is not functioning properly?
+- answer: |
+    The process is known as Debugging a Failing CatalogSource. 3
+  context: |
+    Debugging a Failing CatalogSource: A process to identify the issues in a CatalogSource that is not functioning
+    properly.
+  question: |
+    What is the process to identify the issues in a CatalogSource that is not functioning properly?
+- answer: |
+    The process is known as Debugging a Failing CatalogSource. 4
+  context: |
+    Debugging a Failing CatalogSource: A process to identify the issues in a CatalogSource that is not functioning
+    properly.
+  question: |
+    What is the process to identify the issues in a CatalogSource that is not functioning properly?
+- answer: |
+    The process is known as Debugging a Failing CatalogSource. 5
+  context: |
+    Debugging a Failing CatalogSource: A process to identify the issues in a CatalogSource that is not functioning
+    properly.
+  question: |
+    What is the process to identify the issues in a CatalogSource that is not functioning properly?
+task_description: |
+  This skill helps in understanding the concept: Debugging a Failing CatalogSource: A process to identify the issues
+  in a CatalogSource that is not functioning properly.

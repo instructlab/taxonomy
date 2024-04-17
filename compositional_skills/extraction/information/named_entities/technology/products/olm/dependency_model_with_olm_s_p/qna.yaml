@@ -1,0 +1,46 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The dependency model of OLM's packaging format allows Operators to express dependencies on the platform or other
+    Operators. It ensures these requirements are met as long as the cluster is operating. 1
+  context: |
+    Dependency Model: With OLM's packaging format, Operators can express dependencies on the platform or other
+    Operators. OLM ensures these requirements are respected for as long as the cluster is up.
+  question: |
+    What does the dependency model of OLM's packaging format allow Operators to express?
+- answer: |
+    The dependency model of OLM's packaging format allows Operators to express dependencies on the platform or other
+    Operators. It ensures these requirements are met as long as the cluster is operating. 2
+  context: |
+    Dependency Model: With OLM's packaging format, Operators can express dependencies on the platform or other
+    Operators. OLM ensures these requirements are respected for as long as the cluster is up.
+  question: |
+    What does the dependency model of OLM's packaging format allow Operators to express?
+- answer: |
+    The dependency model of OLM's packaging format allows Operators to express dependencies on the platform or other
+    Operators. It ensures these requirements are met as long as the cluster is operating. 3
+  context: |
+    Dependency Model: With OLM's packaging format, Operators can express dependencies on the platform or other
+    Operators. OLM ensures these requirements are respected for as long as the cluster is up.
+  question: |
+    What does the dependency model of OLM's packaging format allow Operators to express?
+- answer: |
+    The dependency model of OLM's packaging format allows Operators to express dependencies on the platform or other
+    Operators. It ensures these requirements are met as long as the cluster is operating. 4
+  context: |
+    Dependency Model: With OLM's packaging format, Operators can express dependencies on the platform or other
+    Operators. OLM ensures these requirements are respected for as long as the cluster is up.
+  question: |
+    What does the dependency model of OLM's packaging format allow Operators to express?
+- answer: |
+    The dependency model of OLM's packaging format allows Operators to express dependencies on the platform or other
+    Operators. It ensures these requirements are met as long as the cluster is operating. 5
+  context: |
+    Dependency Model: With OLM's packaging format, Operators can express dependencies on the platform or other
+    Operators. OLM ensures these requirements are respected for as long as the cluster is up.
+  question: |
+    What does the dependency model of OLM's packaging format allow Operators to express?
+task_description: |
+  This skill helps in understanding the concept: Dependency Model: With OLM's packaging format, Operators can
+  express dependencies on the platform or other Operators. OLM ensures these requirements are respected for as long
+  as the cluster is up.

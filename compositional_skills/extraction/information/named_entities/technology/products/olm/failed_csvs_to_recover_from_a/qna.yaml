@@ -1,0 +1,51 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    To recover from a failed CSV upgrade, the Operator Lifecycle Manager (OLM) does not include CSVs in the REPLACING
+    phase in the set of arguments sent to the Resolver. This allows CSVs to move from the FAILED phase to the
+    REPLACING phase. 1
+  context: |
+    Failed CSVs: To recover from a failed CSV upgrade, OLM does not include CSVs in the REPLACING phase in the set of
+    arguments sent to the Resolver and allows CSVs to move from the FAILED phase to the REPLACING phase.
+  question: |
+    What process does the OLM follow to recover from a failed CSV upgrade?
+- answer: |
+    To recover from a failed CSV upgrade, the Operator Lifecycle Manager (OLM) does not include CSVs in the REPLACING
+    phase in the set of arguments sent to the Resolver. This allows CSVs to move from the FAILED phase to the
+    REPLACING phase. 2
+  context: |
+    Failed CSVs: To recover from a failed CSV upgrade, OLM does not include CSVs in the REPLACING phase in the set of
+    arguments sent to the Resolver and allows CSVs to move from the FAILED phase to the REPLACING phase.
+  question: |
+    What process does the OLM follow to recover from a failed CSV upgrade?
+- answer: |
+    To recover from a failed CSV upgrade, the Operator Lifecycle Manager (OLM) does not include CSVs in the REPLACING
+    phase in the set of arguments sent to the Resolver. This allows CSVs to move from the FAILED phase to the
+    REPLACING phase. 3
+  context: |
+    Failed CSVs: To recover from a failed CSV upgrade, OLM does not include CSVs in the REPLACING phase in the set of
+    arguments sent to the Resolver and allows CSVs to move from the FAILED phase to the REPLACING phase.
+  question: |
+    What process does the OLM follow to recover from a failed CSV upgrade?
+- answer: |
+    To recover from a failed CSV upgrade, the Operator Lifecycle Manager (OLM) does not include CSVs in the REPLACING
+    phase in the set of arguments sent to the Resolver. This allows CSVs to move from the FAILED phase to the
+    REPLACING phase. 4
+  context: |
+    Failed CSVs: To recover from a failed CSV upgrade, OLM does not include CSVs in the REPLACING phase in the set of
+    arguments sent to the Resolver and allows CSVs to move from the FAILED phase to the REPLACING phase.
+  question: |
+    What process does the OLM follow to recover from a failed CSV upgrade?
+- answer: |
+    To recover from a failed CSV upgrade, the Operator Lifecycle Manager (OLM) does not include CSVs in the REPLACING
+    phase in the set of arguments sent to the Resolver. This allows CSVs to move from the FAILED phase to the
+    REPLACING phase. 5
+  context: |
+    Failed CSVs: To recover from a failed CSV upgrade, OLM does not include CSVs in the REPLACING phase in the set of
+    arguments sent to the Resolver and allows CSVs to move from the FAILED phase to the REPLACING phase.
+  question: |
+    What process does the OLM follow to recover from a failed CSV upgrade?
+task_description: |
+  This skill helps in understanding the concept: Failed CSVs: To recover from a failed CSV upgrade, OLM does not
+  include CSVs in the REPLACING phase in the set of arguments sent to the Resolver and allows CSVs to move from the
+  FAILED phase to the REPLACING phase.

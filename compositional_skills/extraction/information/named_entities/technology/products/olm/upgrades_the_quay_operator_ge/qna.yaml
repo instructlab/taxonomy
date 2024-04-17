@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The quay operator gets upgraded to the latest version in the cluster after installation. 1
+  context: |
+    Upgrades: The quay operator gets upgraded to the latest version in the cluster after installation.
+  question: |
+    When does the quay operator get upgraded in the cluster?
+- answer: |
+    The quay operator gets upgraded to the latest version in the cluster after installation. 2
+  context: |
+    Upgrades: The quay operator gets upgraded to the latest version in the cluster after installation.
+  question: |
+    When does the quay operator get upgraded in the cluster?
+- answer: |
+    The quay operator gets upgraded to the latest version in the cluster after installation. 3
+  context: |
+    Upgrades: The quay operator gets upgraded to the latest version in the cluster after installation.
+  question: |
+    When does the quay operator get upgraded in the cluster?
+- answer: |
+    The quay operator gets upgraded to the latest version in the cluster after installation. 4
+  context: |
+    Upgrades: The quay operator gets upgraded to the latest version in the cluster after installation.
+  question: |
+    When does the quay operator get upgraded in the cluster?
+- answer: |
+    The quay operator gets upgraded to the latest version in the cluster after installation. 5
+  context: |
+    Upgrades: The quay operator gets upgraded to the latest version in the cluster after installation.
+  question: |
+    When does the quay operator get upgraded in the cluster?
+task_description: |
+  This skill helps in understanding the concept: Upgrades: The quay operator gets upgraded to the latest version in
+  the cluster after installation.

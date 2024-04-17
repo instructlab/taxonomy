@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The OCI-compliant container registry is where the operator bundle is pushed to and pulled from. 1
+  context: |
+    OCI-compliant container registry: The operator bundle is pushed and pulled from this registry.
+  question: |
+    What is the function of the OCI-compliant container registry in relation to the operator bundle?
+- answer: |
+    The OCI-compliant container registry is where the operator bundle is pushed to and pulled from. 2
+  context: |
+    OCI-compliant container registry: The operator bundle is pushed and pulled from this registry.
+  question: |
+    What is the function of the OCI-compliant container registry in relation to the operator bundle?
+- answer: |
+    The OCI-compliant container registry is where the operator bundle is pushed to and pulled from. 3
+  context: |
+    OCI-compliant container registry: The operator bundle is pushed and pulled from this registry.
+  question: |
+    What is the function of the OCI-compliant container registry in relation to the operator bundle?
+- answer: |
+    The OCI-compliant container registry is where the operator bundle is pushed to and pulled from. 4
+  context: |
+    OCI-compliant container registry: The operator bundle is pushed and pulled from this registry.
+  question: |
+    What is the function of the OCI-compliant container registry in relation to the operator bundle?
+- answer: |
+    The OCI-compliant container registry is where the operator bundle is pushed to and pulled from. 5
+  context: |
+    OCI-compliant container registry: The operator bundle is pushed and pulled from this registry.
+  question: |
+    What is the function of the OCI-compliant container registry in relation to the operator bundle?
+task_description: |
+  This skill helps in understanding the concept: OCI-compliant container registry: The operator bundle is pushed and
+  pulled from this registry.

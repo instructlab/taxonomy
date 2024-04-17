@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    A ClusterServiceVersion (CSV) is a type of Kubernetes resource that the Operator Lifecycle Manager (OLM) manages.
+    In its usage, the OLM creates an OperatorCondition for each CSV that it reconciles. 1
+  context: |
+    Concept: ClusterServiceVersion (CSV) - Definition: A type of Kubernetes resource that OLM manages. - Usage: OLM
+    creates an OperatorCondition for each CSV that it reconciles.
+  question: |
+    What is a ClusterServiceVersion (CSV) and how is it used in Kubernetes?
+- answer: |
+    A ClusterServiceVersion (CSV) is a type of Kubernetes resource that the Operator Lifecycle Manager (OLM) manages.
+    In its usage, the OLM creates an OperatorCondition for each CSV that it reconciles. 2
+  context: |
+    Concept: ClusterServiceVersion (CSV) - Definition: A type of Kubernetes resource that OLM manages. - Usage: OLM
+    creates an OperatorCondition for each CSV that it reconciles.
+  question: |
+    What is a ClusterServiceVersion (CSV) and how is it used in Kubernetes?
+- answer: |
+    A ClusterServiceVersion (CSV) is a type of Kubernetes resource that the Operator Lifecycle Manager (OLM) manages.
+    In its usage, the OLM creates an OperatorCondition for each CSV that it reconciles. 3
+  context: |
+    Concept: ClusterServiceVersion (CSV) - Definition: A type of Kubernetes resource that OLM manages. - Usage: OLM
+    creates an OperatorCondition for each CSV that it reconciles.
+  question: |
+    What is a ClusterServiceVersion (CSV) and how is it used in Kubernetes?
+- answer: |
+    A ClusterServiceVersion (CSV) is a type of Kubernetes resource that the Operator Lifecycle Manager (OLM) manages.
+    In its usage, the OLM creates an OperatorCondition for each CSV that it reconciles. 4
+  context: |
+    Concept: ClusterServiceVersion (CSV) - Definition: A type of Kubernetes resource that OLM manages. - Usage: OLM
+    creates an OperatorCondition for each CSV that it reconciles.
+  question: |
+    What is a ClusterServiceVersion (CSV) and how is it used in Kubernetes?
+- answer: |
+    A ClusterServiceVersion (CSV) is a type of Kubernetes resource that the Operator Lifecycle Manager (OLM) manages.
+    In its usage, the OLM creates an OperatorCondition for each CSV that it reconciles. 5
+  context: |
+    Concept: ClusterServiceVersion (CSV) - Definition: A type of Kubernetes resource that OLM manages. - Usage: OLM
+    creates an OperatorCondition for each CSV that it reconciles.
+  question: |
+    What is a ClusterServiceVersion (CSV) and how is it used in Kubernetes?
+task_description: |
+  This skill helps in understanding the concept: Concept: ClusterServiceVersion (CSV) - Definition: A type of
+  Kubernetes resource that OLM manages. - Usage: OLM creates an OperatorCondition for each CSV that it reconciles.

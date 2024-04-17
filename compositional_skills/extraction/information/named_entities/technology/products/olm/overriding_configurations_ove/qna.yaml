@@ -1,0 +1,56 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Overriding configurations will completely change the nodeAffinity configuration. If the affinity is removed, the
+    original affinity configurations get canceled. 1
+  context: |
+    Overriding Configurations: Overriding configurations will completely change the nodeAffinity configuration defined
+    in the pod spec by the operator author. Similarly, in case of removing the affinity, the original affinity
+    configurations get canceled.
+  question: |
+    What happens when you override configurations in the nodeAffinity configuration defined in the pod spec by the
+    operator author?
+- answer: |
+    Overriding configurations will completely change the nodeAffinity configuration. If the affinity is removed, the
+    original affinity configurations get canceled. 2
+  context: |
+    Overriding Configurations: Overriding configurations will completely change the nodeAffinity configuration defined
+    in the pod spec by the operator author. Similarly, in case of removing the affinity, the original affinity
+    configurations get canceled.
+  question: |
+    What happens when you override configurations in the nodeAffinity configuration defined in the pod spec by the
+    operator author?
+- answer: |
+    Overriding configurations will completely change the nodeAffinity configuration. If the affinity is removed, the
+    original affinity configurations get canceled. 3
+  context: |
+    Overriding Configurations: Overriding configurations will completely change the nodeAffinity configuration defined
+    in the pod spec by the operator author. Similarly, in case of removing the affinity, the original affinity
+    configurations get canceled.
+  question: |
+    What happens when you override configurations in the nodeAffinity configuration defined in the pod spec by the
+    operator author?
+- answer: |
+    Overriding configurations will completely change the nodeAffinity configuration. If the affinity is removed, the
+    original affinity configurations get canceled. 4
+  context: |
+    Overriding Configurations: Overriding configurations will completely change the nodeAffinity configuration defined
+    in the pod spec by the operator author. Similarly, in case of removing the affinity, the original affinity
+    configurations get canceled.
+  question: |
+    What happens when you override configurations in the nodeAffinity configuration defined in the pod spec by the
+    operator author?
+- answer: |
+    Overriding configurations will completely change the nodeAffinity configuration. If the affinity is removed, the
+    original affinity configurations get canceled. 5
+  context: |
+    Overriding Configurations: Overriding configurations will completely change the nodeAffinity configuration defined
+    in the pod spec by the operator author. Similarly, in case of removing the affinity, the original affinity
+    configurations get canceled.
+  question: |
+    What happens when you override configurations in the nodeAffinity configuration defined in the pod spec by the
+    operator author?
+task_description: |
+  This skill helps in understanding the concept: Overriding Configurations: Overriding configurations will
+  completely change the nodeAffinity configuration defined in the pod spec by the operator author. Similarly, in
+  case of removing the affinity, the original affinity configurations get canceled.

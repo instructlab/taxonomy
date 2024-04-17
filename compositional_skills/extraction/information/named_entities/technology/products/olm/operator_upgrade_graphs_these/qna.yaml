@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Operator Upgrade Graphs are graphical representations of the progression of upgrades for a specific operator. 1
+  context: |
+    Operator Upgrade Graphs: These are graphical representations of the progression of upgrades for a specific
+    operator.
+  question: |
+    What are Operator Upgrade Graphs?
+- answer: |
+    Operator Upgrade Graphs are graphical representations of the progression of upgrades for a specific operator. 2
+  context: |
+    Operator Upgrade Graphs: These are graphical representations of the progression of upgrades for a specific
+    operator.
+  question: |
+    What are Operator Upgrade Graphs?
+- answer: |
+    Operator Upgrade Graphs are graphical representations of the progression of upgrades for a specific operator. 3
+  context: |
+    Operator Upgrade Graphs: These are graphical representations of the progression of upgrades for a specific
+    operator.
+  question: |
+    What are Operator Upgrade Graphs?
+- answer: |
+    Operator Upgrade Graphs are graphical representations of the progression of upgrades for a specific operator. 4
+  context: |
+    Operator Upgrade Graphs: These are graphical representations of the progression of upgrades for a specific
+    operator.
+  question: |
+    What are Operator Upgrade Graphs?
+- answer: |
+    Operator Upgrade Graphs are graphical representations of the progression of upgrades for a specific operator. 5
+  context: |
+    Operator Upgrade Graphs: These are graphical representations of the progression of upgrades for a specific
+    operator.
+  question: |
+    What are Operator Upgrade Graphs?
+task_description: |
+  This skill helps in understanding the concept: Operator Upgrade Graphs: These are graphical representations of the
+  progression of upgrades for a specific operator.

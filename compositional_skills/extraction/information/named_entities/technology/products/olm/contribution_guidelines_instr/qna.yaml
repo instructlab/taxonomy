@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Contribution guidelines are instructions provided for individuals who wish to contribute to a documentation
+    project. They typically outline the project’s standards and expectations, the process for submitting changes, and
+    steps for creating an issue or pull request. These guidelines ensure uniformity and continuity in the project. 1
+  context: |
+    Contribution Guidelines: Instructions on how to contribute to a documentation project.
+  question: |
+    What are contribution guidelines in the context of a documentation project?
+- answer: |
+    Contribution guidelines are instructions provided for individuals who wish to contribute to a documentation
+    project. They typically outline the project’s standards and expectations, the process for submitting changes, and
+    steps for creating an issue or pull request. These guidelines ensure uniformity and continuity in the project. 2
+  context: |
+    Contribution Guidelines: Instructions on how to contribute to a documentation project.
+  question: |
+    What are contribution guidelines in the context of a documentation project?
+- answer: |
+    Contribution guidelines are instructions provided for individuals who wish to contribute to a documentation
+    project. They typically outline the project’s standards and expectations, the process for submitting changes, and
+    steps for creating an issue or pull request. These guidelines ensure uniformity and continuity in the project. 3
+  context: |
+    Contribution Guidelines: Instructions on how to contribute to a documentation project.
+  question: |
+    What are contribution guidelines in the context of a documentation project?
+- answer: |
+    Contribution guidelines are instructions provided for individuals who wish to contribute to a documentation
+    project. They typically outline the project’s standards and expectations, the process for submitting changes, and
+    steps for creating an issue or pull request. These guidelines ensure uniformity and continuity in the project. 4
+  context: |
+    Contribution Guidelines: Instructions on how to contribute to a documentation project.
+  question: |
+    What are contribution guidelines in the context of a documentation project?
+- answer: |
+    Contribution guidelines are instructions provided for individuals who wish to contribute to a documentation
+    project. They typically outline the project’s standards and expectations, the process for submitting changes, and
+    steps for creating an issue or pull request. These guidelines ensure uniformity and continuity in the project. 5
+  context: |
+    Contribution Guidelines: Instructions on how to contribute to a documentation project.
+  question: |
+    What are contribution guidelines in the context of a documentation project?
+task_description: |
+  This skill helps in understanding the concept: Contribution Guidelines: Instructions on how to contribute to a
+  documentation project.

@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    OLMConfig CustomResourceDefinition is used to configure the OLM (Operator Lifecycle Manager) controller,
+    specifically targeting settings within its named cluster. 1
+  context: |
+    OLMConfig CustomResourceDefinition: This is a method to configure the OLM controller, targeting settings within
+    its named cluster.
+  question: |
+    What is the function of OLMConfig CustomResourceDefinition?
+- answer: |
+    OLMConfig CustomResourceDefinition is used to configure the OLM (Operator Lifecycle Manager) controller,
+    specifically targeting settings within its named cluster. 2
+  context: |
+    OLMConfig CustomResourceDefinition: This is a method to configure the OLM controller, targeting settings within
+    its named cluster.
+  question: |
+    What is the function of OLMConfig CustomResourceDefinition?
+- answer: |
+    OLMConfig CustomResourceDefinition is used to configure the OLM (Operator Lifecycle Manager) controller,
+    specifically targeting settings within its named cluster. 3
+  context: |
+    OLMConfig CustomResourceDefinition: This is a method to configure the OLM controller, targeting settings within
+    its named cluster.
+  question: |
+    What is the function of OLMConfig CustomResourceDefinition?
+- answer: |
+    OLMConfig CustomResourceDefinition is used to configure the OLM (Operator Lifecycle Manager) controller,
+    specifically targeting settings within its named cluster. 4
+  context: |
+    OLMConfig CustomResourceDefinition: This is a method to configure the OLM controller, targeting settings within
+    its named cluster.
+  question: |
+    What is the function of OLMConfig CustomResourceDefinition?
+- answer: |
+    OLMConfig CustomResourceDefinition is used to configure the OLM (Operator Lifecycle Manager) controller,
+    specifically targeting settings within its named cluster. 5
+  context: |
+    OLMConfig CustomResourceDefinition: This is a method to configure the OLM controller, targeting settings within
+    its named cluster.
+  question: |
+    What is the function of OLMConfig CustomResourceDefinition?
+task_description: |
+  This skill helps in understanding the concept: OLMConfig CustomResourceDefinition: This is a method to configure
+  the OLM controller, targeting settings within its named cluster.

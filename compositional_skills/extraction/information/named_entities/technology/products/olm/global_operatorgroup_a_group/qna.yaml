@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    A Global OperatorGroup is a group that targets all namespaces in a cluster. 1
+  context: |
+    Global OperatorGroup: A group that targets all namespaces in a cluster.
+  question: |
+    What is a Global OperatorGroup in the context of a cluster?
+- answer: |
+    A Global OperatorGroup is a group that targets all namespaces in a cluster. 2
+  context: |
+    Global OperatorGroup: A group that targets all namespaces in a cluster.
+  question: |
+    What is a Global OperatorGroup in the context of a cluster?
+- answer: |
+    A Global OperatorGroup is a group that targets all namespaces in a cluster. 3
+  context: |
+    Global OperatorGroup: A group that targets all namespaces in a cluster.
+  question: |
+    What is a Global OperatorGroup in the context of a cluster?
+- answer: |
+    A Global OperatorGroup is a group that targets all namespaces in a cluster. 4
+  context: |
+    Global OperatorGroup: A group that targets all namespaces in a cluster.
+  question: |
+    What is a Global OperatorGroup in the context of a cluster?
+- answer: |
+    A Global OperatorGroup is a group that targets all namespaces in a cluster. 5
+  context: |
+    Global OperatorGroup: A group that targets all namespaces in a cluster.
+  question: |
+    What is a Global OperatorGroup in the context of a cluster?
+task_description: |
+  This skill helps in understanding the concept: Global OperatorGroup: A group that targets all namespaces in a
+  cluster.

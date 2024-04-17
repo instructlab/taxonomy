@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Schema manipulation refers to changes being made to the data structure (schema) of the database. The text mentions
+    that these manipulations are modeled using YAML and yq. 1
+  context: |
+    Schema Manipulations: Changes made to the data structure (schema) of the database. In the text, these are modeled
+    using YAML and yq.
+  question: |
+    What is schema manipulation and what tools are mentioned in the text for modelling these changes?
+- answer: |
+    Schema manipulation refers to changes being made to the data structure (schema) of the database. The text mentions
+    that these manipulations are modeled using YAML and yq. 2
+  context: |
+    Schema Manipulations: Changes made to the data structure (schema) of the database. In the text, these are modeled
+    using YAML and yq.
+  question: |
+    What is schema manipulation and what tools are mentioned in the text for modelling these changes?
+- answer: |
+    Schema manipulation refers to changes being made to the data structure (schema) of the database. The text mentions
+    that these manipulations are modeled using YAML and yq. 3
+  context: |
+    Schema Manipulations: Changes made to the data structure (schema) of the database. In the text, these are modeled
+    using YAML and yq.
+  question: |
+    What is schema manipulation and what tools are mentioned in the text for modelling these changes?
+- answer: |
+    Schema manipulation refers to changes being made to the data structure (schema) of the database. The text mentions
+    that these manipulations are modeled using YAML and yq. 4
+  context: |
+    Schema Manipulations: Changes made to the data structure (schema) of the database. In the text, these are modeled
+    using YAML and yq.
+  question: |
+    What is schema manipulation and what tools are mentioned in the text for modelling these changes?
+- answer: |
+    Schema manipulation refers to changes being made to the data structure (schema) of the database. The text mentions
+    that these manipulations are modeled using YAML and yq. 5
+  context: |
+    Schema Manipulations: Changes made to the data structure (schema) of the database. In the text, these are modeled
+    using YAML and yq.
+  question: |
+    What is schema manipulation and what tools are mentioned in the text for modelling these changes?
+task_description: |
+  This skill helps in understanding the concept: Schema Manipulations: Changes made to the data structure (schema)
+  of the database. In the text, these are modeled using YAML and yq.

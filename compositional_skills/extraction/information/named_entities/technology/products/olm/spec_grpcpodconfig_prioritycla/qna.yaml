@@ -1,0 +1,44 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    In a Kubernetes configuration, spec.grpcPodConfig.priorityClassName is used to specify the priority class name for
+    the gRPC pod. This influences the scheduling and eviction decisions for the pod. PriorityClass is a non-namespaced
+    object that defines a mapping from a priority class name to the integer value of the priority. 1
+  context: |
+    spec.grpcPodConfig.priorityClassName
+  question: |
+    What is the function of spec.grpcPodConfig.priorityClassName in a Kubernetes configuration?
+- answer: |
+    In a Kubernetes configuration, spec.grpcPodConfig.priorityClassName is used to specify the priority class name for
+    the gRPC pod. This influences the scheduling and eviction decisions for the pod. PriorityClass is a non-namespaced
+    object that defines a mapping from a priority class name to the integer value of the priority. 2
+  context: |
+    spec.grpcPodConfig.priorityClassName
+  question: |
+    What is the function of spec.grpcPodConfig.priorityClassName in a Kubernetes configuration?
+- answer: |
+    In a Kubernetes configuration, spec.grpcPodConfig.priorityClassName is used to specify the priority class name for
+    the gRPC pod. This influences the scheduling and eviction decisions for the pod. PriorityClass is a non-namespaced
+    object that defines a mapping from a priority class name to the integer value of the priority. 3
+  context: |
+    spec.grpcPodConfig.priorityClassName
+  question: |
+    What is the function of spec.grpcPodConfig.priorityClassName in a Kubernetes configuration?
+- answer: |
+    In a Kubernetes configuration, spec.grpcPodConfig.priorityClassName is used to specify the priority class name for
+    the gRPC pod. This influences the scheduling and eviction decisions for the pod. PriorityClass is a non-namespaced
+    object that defines a mapping from a priority class name to the integer value of the priority. 4
+  context: |
+    spec.grpcPodConfig.priorityClassName
+  question: |
+    What is the function of spec.grpcPodConfig.priorityClassName in a Kubernetes configuration?
+- answer: |
+    In a Kubernetes configuration, spec.grpcPodConfig.priorityClassName is used to specify the priority class name for
+    the gRPC pod. This influences the scheduling and eviction decisions for the pod. PriorityClass is a non-namespaced
+    object that defines a mapping from a priority class name to the integer value of the priority. 5
+  context: |
+    spec.grpcPodConfig.priorityClassName
+  question: |
+    What is the function of spec.grpcPodConfig.priorityClassName in a Kubernetes configuration?
+task_description: |
+  This skill helps in understanding the concept: spec.grpcPodConfig.priorityClassName

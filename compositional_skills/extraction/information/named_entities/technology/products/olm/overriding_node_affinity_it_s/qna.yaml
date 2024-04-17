@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Yes, it's possible to override operator nodeAffinity configuration in Subscription.config.affinity. 1
+  context: |
+    Overriding Node Affinity: It's possible to override operator nodeAffinity configuration in
+    Subscription.config.affinity.
+  question: |
+    Is it possible to override operator nodeAffinity configuration and where can this be done?
+- answer: |
+    Yes, it's possible to override operator nodeAffinity configuration in Subscription.config.affinity. 2
+  context: |
+    Overriding Node Affinity: It's possible to override operator nodeAffinity configuration in
+    Subscription.config.affinity.
+  question: |
+    Is it possible to override operator nodeAffinity configuration and where can this be done?
+- answer: |
+    Yes, it's possible to override operator nodeAffinity configuration in Subscription.config.affinity. 3
+  context: |
+    Overriding Node Affinity: It's possible to override operator nodeAffinity configuration in
+    Subscription.config.affinity.
+  question: |
+    Is it possible to override operator nodeAffinity configuration and where can this be done?
+- answer: |
+    Yes, it's possible to override operator nodeAffinity configuration in Subscription.config.affinity. 4
+  context: |
+    Overriding Node Affinity: It's possible to override operator nodeAffinity configuration in
+    Subscription.config.affinity.
+  question: |
+    Is it possible to override operator nodeAffinity configuration and where can this be done?
+- answer: |
+    Yes, it's possible to override operator nodeAffinity configuration in Subscription.config.affinity. 5
+  context: |
+    Overriding Node Affinity: It's possible to override operator nodeAffinity configuration in
+    Subscription.config.affinity.
+  question: |
+    Is it possible to override operator nodeAffinity configuration and where can this be done?
+task_description: |
+  This skill helps in understanding the concept: Overriding Node Affinity: It's possible to override operator
+  nodeAffinity configuration in Subscription.config.affinity.

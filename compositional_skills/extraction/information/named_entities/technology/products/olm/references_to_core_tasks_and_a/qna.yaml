@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The Core Tasks and Advanced Tasks sections contain more information about packaging and handling operators. 1
+  context: |
+    References to Core Tasks and Advanced Tasks sections for more information about packaging and handling operators.
+  question: |
+    What sections contain more information about packaging and handling operators?
+- answer: |
+    The Core Tasks and Advanced Tasks sections contain more information about packaging and handling operators. 2
+  context: |
+    References to Core Tasks and Advanced Tasks sections for more information about packaging and handling operators.
+  question: |
+    What sections contain more information about packaging and handling operators?
+- answer: |
+    The Core Tasks and Advanced Tasks sections contain more information about packaging and handling operators. 3
+  context: |
+    References to Core Tasks and Advanced Tasks sections for more information about packaging and handling operators.
+  question: |
+    What sections contain more information about packaging and handling operators?
+- answer: |
+    The Core Tasks and Advanced Tasks sections contain more information about packaging and handling operators. 4
+  context: |
+    References to Core Tasks and Advanced Tasks sections for more information about packaging and handling operators.
+  question: |
+    What sections contain more information about packaging and handling operators?
+- answer: |
+    The Core Tasks and Advanced Tasks sections contain more information about packaging and handling operators. 5
+  context: |
+    References to Core Tasks and Advanced Tasks sections for more information about packaging and handling operators.
+  question: |
+    What sections contain more information about packaging and handling operators?
+task_description: |
+  This skill helps in understanding the concept: References to Core Tasks and Advanced Tasks sections for more
+  information about packaging and handling operators.

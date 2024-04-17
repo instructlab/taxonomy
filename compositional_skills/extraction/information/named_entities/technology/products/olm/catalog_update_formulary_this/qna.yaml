@@ -1,0 +1,56 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The Catalog Update Formulary is a document established to outline common operations for operator authors using
+    standard schemas like File-based catalogs (FBC) and catalog templates. Its purpose is to make these operations
+    capable of being automated. 1
+  context: |
+    Catalog Update Formulary: This is a document established to outline common operations for operator authors using
+    standard schemas such as File-based catalogs (FBC) and catalog templates. The goal is for these operations to be
+    automatable.
+  question: |
+    What is the purpose of a Catalog Update Formulary in data management?
+- answer: |
+    The Catalog Update Formulary is a document established to outline common operations for operator authors using
+    standard schemas like File-based catalogs (FBC) and catalog templates. Its purpose is to make these operations
+    capable of being automated. 2
+  context: |
+    Catalog Update Formulary: This is a document established to outline common operations for operator authors using
+    standard schemas such as File-based catalogs (FBC) and catalog templates. The goal is for these operations to be
+    automatable.
+  question: |
+    What is the purpose of a Catalog Update Formulary in data management?
+- answer: |
+    The Catalog Update Formulary is a document established to outline common operations for operator authors using
+    standard schemas like File-based catalogs (FBC) and catalog templates. Its purpose is to make these operations
+    capable of being automated. 3
+  context: |
+    Catalog Update Formulary: This is a document established to outline common operations for operator authors using
+    standard schemas such as File-based catalogs (FBC) and catalog templates. The goal is for these operations to be
+    automatable.
+  question: |
+    What is the purpose of a Catalog Update Formulary in data management?
+- answer: |
+    The Catalog Update Formulary is a document established to outline common operations for operator authors using
+    standard schemas like File-based catalogs (FBC) and catalog templates. Its purpose is to make these operations
+    capable of being automated. 4
+  context: |
+    Catalog Update Formulary: This is a document established to outline common operations for operator authors using
+    standard schemas such as File-based catalogs (FBC) and catalog templates. The goal is for these operations to be
+    automatable.
+  question: |
+    What is the purpose of a Catalog Update Formulary in data management?
+- answer: |
+    The Catalog Update Formulary is a document established to outline common operations for operator authors using
+    standard schemas like File-based catalogs (FBC) and catalog templates. Its purpose is to make these operations
+    capable of being automated. 5
+  context: |
+    Catalog Update Formulary: This is a document established to outline common operations for operator authors using
+    standard schemas such as File-based catalogs (FBC) and catalog templates. The goal is for these operations to be
+    automatable.
+  question: |
+    What is the purpose of a Catalog Update Formulary in data management?
+task_description: |
+  This skill helps in understanding the concept: Catalog Update Formulary: This is a document established to outline
+  common operations for operator authors using standard schemas such as File-based catalogs (FBC) and catalog
+  templates. The goal is for these operations to be automatable.

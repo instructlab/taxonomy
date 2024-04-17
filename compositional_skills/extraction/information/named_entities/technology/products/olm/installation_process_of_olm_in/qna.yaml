@@ -1,0 +1,34 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    You can install Operator Lifecycle Manager (OLM) on your cluster by following these detailed steps: 1
+  context: |
+    Installation process of OLM in a cluster using operator-sdk binary
+  question: |
+    How can you install OLM in a cluster using operator-sdk binary?
+- answer: |
+    You can install Operator Lifecycle Manager (OLM) on your cluster by following these detailed steps: 2
+  context: |
+    Installation process of OLM in a cluster using operator-sdk binary
+  question: |
+    How can you install OLM in a cluster using operator-sdk binary?
+- answer: |
+    You can install Operator Lifecycle Manager (OLM) on your cluster by following these detailed steps: 3
+  context: |
+    Installation process of OLM in a cluster using operator-sdk binary
+  question: |
+    How can you install OLM in a cluster using operator-sdk binary?
+- answer: |
+    You can install Operator Lifecycle Manager (OLM) on your cluster by following these detailed steps: 4
+  context: |
+    Installation process of OLM in a cluster using operator-sdk binary
+  question: |
+    How can you install OLM in a cluster using operator-sdk binary?
+- answer: |
+    You can install Operator Lifecycle Manager (OLM) on your cluster by following these detailed steps: 5
+  context: |
+    Installation process of OLM in a cluster using operator-sdk binary
+  question: |
+    How can you install OLM in a cluster using operator-sdk binary?
+task_description: |
+  This skill helps in understanding the concept: Installation process of OLM in a cluster using operator-sdk binary

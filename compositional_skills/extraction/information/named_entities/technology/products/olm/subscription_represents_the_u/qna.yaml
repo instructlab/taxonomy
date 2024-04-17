@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    A subscription represents the user's intention to keep track of system modifications and updates. 1
+  context: |
+    Subscription: Represents the user's intention to keep track of system modifications and updates.
+  question: |
+    What does a subscription represent in a system?
+- answer: |
+    A subscription represents the user's intention to keep track of system modifications and updates. 2
+  context: |
+    Subscription: Represents the user's intention to keep track of system modifications and updates.
+  question: |
+    What does a subscription represent in a system?
+- answer: |
+    A subscription represents the user's intention to keep track of system modifications and updates. 3
+  context: |
+    Subscription: Represents the user's intention to keep track of system modifications and updates.
+  question: |
+    What does a subscription represent in a system?
+- answer: |
+    A subscription represents the user's intention to keep track of system modifications and updates. 4
+  context: |
+    Subscription: Represents the user's intention to keep track of system modifications and updates.
+  question: |
+    What does a subscription represent in a system?
+- answer: |
+    A subscription represents the user's intention to keep track of system modifications and updates. 5
+  context: |
+    Subscription: Represents the user's intention to keep track of system modifications and updates.
+  question: |
+    What does a subscription represent in a system?
+task_description: |
+  This skill helps in understanding the concept: Subscription: Represents the user's intention to keep track of
+  system modifications and updates.

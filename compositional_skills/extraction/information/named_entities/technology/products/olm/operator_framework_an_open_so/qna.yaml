@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The Operator Framework is an open-source toolkit used for managing Kubernetes Native Applications. It is often
+    referred to as Operators. 1
+  context: |
+    Operator Framework: An open-source toolkit used for managing Kubernetes Native Applications, referred to as
+    Operators.
+  question: |
+    What is the Operator Framework in relation to managing Kubernetes Native Applications?
+- answer: |
+    The Operator Framework is an open-source toolkit used for managing Kubernetes Native Applications. It is often
+    referred to as Operators. 2
+  context: |
+    Operator Framework: An open-source toolkit used for managing Kubernetes Native Applications, referred to as
+    Operators.
+  question: |
+    What is the Operator Framework in relation to managing Kubernetes Native Applications?
+- answer: |
+    The Operator Framework is an open-source toolkit used for managing Kubernetes Native Applications. It is often
+    referred to as Operators. 3
+  context: |
+    Operator Framework: An open-source toolkit used for managing Kubernetes Native Applications, referred to as
+    Operators.
+  question: |
+    What is the Operator Framework in relation to managing Kubernetes Native Applications?
+- answer: |
+    The Operator Framework is an open-source toolkit used for managing Kubernetes Native Applications. It is often
+    referred to as Operators. 4
+  context: |
+    Operator Framework: An open-source toolkit used for managing Kubernetes Native Applications, referred to as
+    Operators.
+  question: |
+    What is the Operator Framework in relation to managing Kubernetes Native Applications?
+- answer: |
+    The Operator Framework is an open-source toolkit used for managing Kubernetes Native Applications. It is often
+    referred to as Operators. 5
+  context: |
+    Operator Framework: An open-source toolkit used for managing Kubernetes Native Applications, referred to as
+    Operators.
+  question: |
+    What is the Operator Framework in relation to managing Kubernetes Native Applications?
+task_description: |
+  This skill helps in understanding the concept: Operator Framework: An open-source toolkit used for managing
+  Kubernetes Native Applications, referred to as Operators.

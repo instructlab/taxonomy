@@ -1,0 +1,61 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Storing catalog metadata in a version control system like git and rebuilding catalog images from source during
+    updates are suggested to ensure that all changes to the catalog are auditable. This practice allows for better
+    tracking, accuracy, and understanding of the progressive changes made to the catalog. 1
+  context: |
+    Note on Catalog Metadata: It is suggested that the catalog metadata should be stored in a version control system
+    (like git) and that catalog images should be rebuilt from source whenever updates are made to ensure all changes
+    to the catalog are auditable.
+  question: |
+    Why is it suggested to store catalog metadata in a version control system and rebuild catalog images from source
+    whenever updates are made?
+- answer: |
+    Storing catalog metadata in a version control system like git and rebuilding catalog images from source during
+    updates are suggested to ensure that all changes to the catalog are auditable. This practice allows for better
+    tracking, accuracy, and understanding of the progressive changes made to the catalog. 2
+  context: |
+    Note on Catalog Metadata: It is suggested that the catalog metadata should be stored in a version control system
+    (like git) and that catalog images should be rebuilt from source whenever updates are made to ensure all changes
+    to the catalog are auditable.
+  question: |
+    Why is it suggested to store catalog metadata in a version control system and rebuild catalog images from source
+    whenever updates are made?
+- answer: |
+    Storing catalog metadata in a version control system like git and rebuilding catalog images from source during
+    updates are suggested to ensure that all changes to the catalog are auditable. This practice allows for better
+    tracking, accuracy, and understanding of the progressive changes made to the catalog. 3
+  context: |
+    Note on Catalog Metadata: It is suggested that the catalog metadata should be stored in a version control system
+    (like git) and that catalog images should be rebuilt from source whenever updates are made to ensure all changes
+    to the catalog are auditable.
+  question: |
+    Why is it suggested to store catalog metadata in a version control system and rebuild catalog images from source
+    whenever updates are made?
+- answer: |
+    Storing catalog metadata in a version control system like git and rebuilding catalog images from source during
+    updates are suggested to ensure that all changes to the catalog are auditable. This practice allows for better
+    tracking, accuracy, and understanding of the progressive changes made to the catalog. 4
+  context: |
+    Note on Catalog Metadata: It is suggested that the catalog metadata should be stored in a version control system
+    (like git) and that catalog images should be rebuilt from source whenever updates are made to ensure all changes
+    to the catalog are auditable.
+  question: |
+    Why is it suggested to store catalog metadata in a version control system and rebuild catalog images from source
+    whenever updates are made?
+- answer: |
+    Storing catalog metadata in a version control system like git and rebuilding catalog images from source during
+    updates are suggested to ensure that all changes to the catalog are auditable. This practice allows for better
+    tracking, accuracy, and understanding of the progressive changes made to the catalog. 5
+  context: |
+    Note on Catalog Metadata: It is suggested that the catalog metadata should be stored in a version control system
+    (like git) and that catalog images should be rebuilt from source whenever updates are made to ensure all changes
+    to the catalog are auditable.
+  question: |
+    Why is it suggested to store catalog metadata in a version control system and rebuild catalog images from source
+    whenever updates are made?
+task_description: |
+  This skill helps in understanding the concept: Note on Catalog Metadata: It is suggested that the catalog metadata
+  should be stored in a version control system (like git) and that catalog images should be rebuilt from source
+  whenever updates are made to ensure all changes to the catalog are auditable.

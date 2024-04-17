@@ -1,0 +1,51 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    If a ClusterServiceVersion does not include an os label, the target OS is assumed to be Linux. If it does not
+    include an arch label, the target arch is assumed to be amd. 1
+  context: |
+    Concept: Defaults    - If a ClusterServiceVersion does not include an os label, a target OS is assumed to be
+    linux. If it does not include an arch label, a target architecture is assumed to be amd
+  question: |
+    What are the assumed target OS and architecture if a ClusterServiceVersion does not include an os label or an arch
+    label?
+- answer: |
+    If a ClusterServiceVersion does not include an os label, the target OS is assumed to be Linux. If it does not
+    include an arch label, the target arch is assumed to be amd. 2
+  context: |
+    Concept: Defaults    - If a ClusterServiceVersion does not include an os label, a target OS is assumed to be
+    linux. If it does not include an arch label, a target architecture is assumed to be amd
+  question: |
+    What are the assumed target OS and architecture if a ClusterServiceVersion does not include an os label or an arch
+    label?
+- answer: |
+    If a ClusterServiceVersion does not include an os label, the target OS is assumed to be Linux. If it does not
+    include an arch label, the target arch is assumed to be amd. 3
+  context: |
+    Concept: Defaults    - If a ClusterServiceVersion does not include an os label, a target OS is assumed to be
+    linux. If it does not include an arch label, a target architecture is assumed to be amd
+  question: |
+    What are the assumed target OS and architecture if a ClusterServiceVersion does not include an os label or an arch
+    label?
+- answer: |
+    If a ClusterServiceVersion does not include an os label, the target OS is assumed to be Linux. If it does not
+    include an arch label, the target arch is assumed to be amd. 4
+  context: |
+    Concept: Defaults    - If a ClusterServiceVersion does not include an os label, a target OS is assumed to be
+    linux. If it does not include an arch label, a target architecture is assumed to be amd
+  question: |
+    What are the assumed target OS and architecture if a ClusterServiceVersion does not include an os label or an arch
+    label?
+- answer: |
+    If a ClusterServiceVersion does not include an os label, the target OS is assumed to be Linux. If it does not
+    include an arch label, the target arch is assumed to be amd. 5
+  context: |
+    Concept: Defaults    - If a ClusterServiceVersion does not include an os label, a target OS is assumed to be
+    linux. If it does not include an arch label, a target architecture is assumed to be amd
+  question: |
+    What are the assumed target OS and architecture if a ClusterServiceVersion does not include an os label or an arch
+    label?
+task_description: |
+  This skill helps in understanding the concept: Concept: Defaults    - If a ClusterServiceVersion does not include
+  an os label, a target OS is assumed to be linux. If it does not include an arch label, a target architecture is
+  assumed to be amd

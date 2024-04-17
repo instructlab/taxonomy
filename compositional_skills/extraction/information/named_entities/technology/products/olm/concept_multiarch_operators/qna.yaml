@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    An operator's target OS and architecture can be specified by labeling its respective ClusterServiceVersion. 1
+  context: |
+    Concept: Multiarch Operators    - An operator's target OS and architecture can be specified by labeling its
+    respective ClusterServiceVersion.
+  question: |
+    How can an operator's target OS and architecture be specified?
+- answer: |
+    An operator's target OS and architecture can be specified by labeling its respective ClusterServiceVersion. 2
+  context: |
+    Concept: Multiarch Operators    - An operator's target OS and architecture can be specified by labeling its
+    respective ClusterServiceVersion.
+  question: |
+    How can an operator's target OS and architecture be specified?
+- answer: |
+    An operator's target OS and architecture can be specified by labeling its respective ClusterServiceVersion. 3
+  context: |
+    Concept: Multiarch Operators    - An operator's target OS and architecture can be specified by labeling its
+    respective ClusterServiceVersion.
+  question: |
+    How can an operator's target OS and architecture be specified?
+- answer: |
+    An operator's target OS and architecture can be specified by labeling its respective ClusterServiceVersion. 4
+  context: |
+    Concept: Multiarch Operators    - An operator's target OS and architecture can be specified by labeling its
+    respective ClusterServiceVersion.
+  question: |
+    How can an operator's target OS and architecture be specified?
+- answer: |
+    An operator's target OS and architecture can be specified by labeling its respective ClusterServiceVersion. 5
+  context: |
+    Concept: Multiarch Operators    - An operator's target OS and architecture can be specified by labeling its
+    respective ClusterServiceVersion.
+  question: |
+    How can an operator's target OS and architecture be specified?
+task_description: |
+  This skill helps in understanding the concept: Concept: Multiarch Operators    - An operator's target OS and
+  architecture can be specified by labeling its respective ClusterServiceVersion.

@@ -1,0 +1,44 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Verbose logging on OLM (Operator Lifecycle Manager) and Catalog operators can be enabled by changing the log
+    level. This would require updating the deployment corresponding to the operator and changing the command args to
+    increase the log level as follows: 1
+  context: |
+    Enable verbose logging on OLM and Catalog operators
+  question: |
+    How can one enable verbose logging on the OLM and Catalog operators?
+- answer: |
+    Verbose logging on OLM (Operator Lifecycle Manager) and Catalog operators can be enabled by changing the log
+    level. This would require updating the deployment corresponding to the operator and changing the command args to
+    increase the log level as follows: 2
+  context: |
+    Enable verbose logging on OLM and Catalog operators
+  question: |
+    How can one enable verbose logging on the OLM and Catalog operators?
+- answer: |
+    Verbose logging on OLM (Operator Lifecycle Manager) and Catalog operators can be enabled by changing the log
+    level. This would require updating the deployment corresponding to the operator and changing the command args to
+    increase the log level as follows: 3
+  context: |
+    Enable verbose logging on OLM and Catalog operators
+  question: |
+    How can one enable verbose logging on the OLM and Catalog operators?
+- answer: |
+    Verbose logging on OLM (Operator Lifecycle Manager) and Catalog operators can be enabled by changing the log
+    level. This would require updating the deployment corresponding to the operator and changing the command args to
+    increase the log level as follows: 4
+  context: |
+    Enable verbose logging on OLM and Catalog operators
+  question: |
+    How can one enable verbose logging on the OLM and Catalog operators?
+- answer: |
+    Verbose logging on OLM (Operator Lifecycle Manager) and Catalog operators can be enabled by changing the log
+    level. This would require updating the deployment corresponding to the operator and changing the command args to
+    increase the log level as follows: 5
+  context: |
+    Enable verbose logging on OLM and Catalog operators
+  question: |
+    How can one enable verbose logging on the OLM and Catalog operators?
+task_description: |
+  This skill helps in understanding the concept: Enable verbose logging on OLM and Catalog operators

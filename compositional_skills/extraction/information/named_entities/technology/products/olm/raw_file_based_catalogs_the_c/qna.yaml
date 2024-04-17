@@ -1,0 +1,62 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The steps involved in creating a raw file-based catalog include initializing the Catalog, generating a Dockerfile,
+    and populating the catalog with the operator. Afterwards, add a bundle to the catalog by rendering it into the
+    catalog, then adding it to the desired channels. The final step is to validate the catalog to ensure there are no
+    errors. 1
+  context: |
+    Raw File-Based Catalogs: The catalog creation process involves initialize the Catalog, generate a Dockerfile, and
+    populating the catalog with the operator. To add a bundle to the catalog, render the bundle into the catalog, then
+    add it to the desired channels. The final step is to validate the catalog to ensure there's no errors.
+  question: |
+    What are the steps involved in creating a raw file-based catalog?
+- answer: |
+    The steps involved in creating a raw file-based catalog include initializing the Catalog, generating a Dockerfile,
+    and populating the catalog with the operator. Afterwards, add a bundle to the catalog by rendering it into the
+    catalog, then adding it to the desired channels. The final step is to validate the catalog to ensure there are no
+    errors. 2
+  context: |
+    Raw File-Based Catalogs: The catalog creation process involves initialize the Catalog, generate a Dockerfile, and
+    populating the catalog with the operator. To add a bundle to the catalog, render the bundle into the catalog, then
+    add it to the desired channels. The final step is to validate the catalog to ensure there's no errors.
+  question: |
+    What are the steps involved in creating a raw file-based catalog?
+- answer: |
+    The steps involved in creating a raw file-based catalog include initializing the Catalog, generating a Dockerfile,
+    and populating the catalog with the operator. Afterwards, add a bundle to the catalog by rendering it into the
+    catalog, then adding it to the desired channels. The final step is to validate the catalog to ensure there are no
+    errors. 3
+  context: |
+    Raw File-Based Catalogs: The catalog creation process involves initialize the Catalog, generate a Dockerfile, and
+    populating the catalog with the operator. To add a bundle to the catalog, render the bundle into the catalog, then
+    add it to the desired channels. The final step is to validate the catalog to ensure there's no errors.
+  question: |
+    What are the steps involved in creating a raw file-based catalog?
+- answer: |
+    The steps involved in creating a raw file-based catalog include initializing the Catalog, generating a Dockerfile,
+    and populating the catalog with the operator. Afterwards, add a bundle to the catalog by rendering it into the
+    catalog, then adding it to the desired channels. The final step is to validate the catalog to ensure there are no
+    errors. 4
+  context: |
+    Raw File-Based Catalogs: The catalog creation process involves initialize the Catalog, generate a Dockerfile, and
+    populating the catalog with the operator. To add a bundle to the catalog, render the bundle into the catalog, then
+    add it to the desired channels. The final step is to validate the catalog to ensure there's no errors.
+  question: |
+    What are the steps involved in creating a raw file-based catalog?
+- answer: |
+    The steps involved in creating a raw file-based catalog include initializing the Catalog, generating a Dockerfile,
+    and populating the catalog with the operator. Afterwards, add a bundle to the catalog by rendering it into the
+    catalog, then adding it to the desired channels. The final step is to validate the catalog to ensure there are no
+    errors. 5
+  context: |
+    Raw File-Based Catalogs: The catalog creation process involves initialize the Catalog, generate a Dockerfile, and
+    populating the catalog with the operator. To add a bundle to the catalog, render the bundle into the catalog, then
+    add it to the desired channels. The final step is to validate the catalog to ensure there's no errors.
+  question: |
+    What are the steps involved in creating a raw file-based catalog?
+task_description: |
+  This skill helps in understanding the concept: Raw File-Based Catalogs: The catalog creation process involves
+  initialize the Catalog, generate a Dockerfile, and populating the catalog with the operator. To add a bundle to
+  the catalog, render the bundle into the catalog, then add it to the desired channels. The final step is to
+  validate the catalog to ensure there's no errors.

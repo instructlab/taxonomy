@@ -1,0 +1,49 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Depending on the specific software or system in use, generally the procedure involves specifying the image
+    property with the catalog image location and applying it within the CatalogSource manifest. Make sure to properly
+    configure it and review it before proceeding. Proper knowledge and understanding of YAML manifests,
+    CatalogSources, and Operator Lifecycle Manager could be necessary for successfully completing this task. 1
+  context: |
+    Creation of CatalogSource with a catalog image.
+  question: |
+    What is the procedure for creating a CatalogSource with a catalog image?
+- answer: |
+    Depending on the specific software or system in use, generally the procedure involves specifying the image
+    property with the catalog image location and applying it within the CatalogSource manifest. Make sure to properly
+    configure it and review it before proceeding. Proper knowledge and understanding of YAML manifests,
+    CatalogSources, and Operator Lifecycle Manager could be necessary for successfully completing this task. 2
+  context: |
+    Creation of CatalogSource with a catalog image.
+  question: |
+    What is the procedure for creating a CatalogSource with a catalog image?
+- answer: |
+    Depending on the specific software or system in use, generally the procedure involves specifying the image
+    property with the catalog image location and applying it within the CatalogSource manifest. Make sure to properly
+    configure it and review it before proceeding. Proper knowledge and understanding of YAML manifests,
+    CatalogSources, and Operator Lifecycle Manager could be necessary for successfully completing this task. 3
+  context: |
+    Creation of CatalogSource with a catalog image.
+  question: |
+    What is the procedure for creating a CatalogSource with a catalog image?
+- answer: |
+    Depending on the specific software or system in use, generally the procedure involves specifying the image
+    property with the catalog image location and applying it within the CatalogSource manifest. Make sure to properly
+    configure it and review it before proceeding. Proper knowledge and understanding of YAML manifests,
+    CatalogSources, and Operator Lifecycle Manager could be necessary for successfully completing this task. 4
+  context: |
+    Creation of CatalogSource with a catalog image.
+  question: |
+    What is the procedure for creating a CatalogSource with a catalog image?
+- answer: |
+    Depending on the specific software or system in use, generally the procedure involves specifying the image
+    property with the catalog image location and applying it within the CatalogSource manifest. Make sure to properly
+    configure it and review it before proceeding. Proper knowledge and understanding of YAML manifests,
+    CatalogSources, and Operator Lifecycle Manager could be necessary for successfully completing this task. 5
+  context: |
+    Creation of CatalogSource with a catalog image.
+  question: |
+    What is the procedure for creating a CatalogSource with a catalog image?
+task_description: |
+  This skill helps in understanding the concept: Creation of CatalogSource with a catalog image.

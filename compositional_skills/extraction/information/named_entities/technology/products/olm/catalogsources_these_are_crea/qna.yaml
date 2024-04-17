@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    CatalogSources are created and synced by the OLM package servers every 12 hours, or according to a modified
+    interval. 1
+  context: |
+    CatalogSources: These are created and then synced by the OLM package servers every 12 hours, or according to a
+    modified interval.
+  question: |
+    How often are CatalogSources created and synced by the OLM package servers?
+- answer: |
+    CatalogSources are created and synced by the OLM package servers every 12 hours, or according to a modified
+    interval. 2
+  context: |
+    CatalogSources: These are created and then synced by the OLM package servers every 12 hours, or according to a
+    modified interval.
+  question: |
+    How often are CatalogSources created and synced by the OLM package servers?
+- answer: |
+    CatalogSources are created and synced by the OLM package servers every 12 hours, or according to a modified
+    interval. 3
+  context: |
+    CatalogSources: These are created and then synced by the OLM package servers every 12 hours, or according to a
+    modified interval.
+  question: |
+    How often are CatalogSources created and synced by the OLM package servers?
+- answer: |
+    CatalogSources are created and synced by the OLM package servers every 12 hours, or according to a modified
+    interval. 4
+  context: |
+    CatalogSources: These are created and then synced by the OLM package servers every 12 hours, or according to a
+    modified interval.
+  question: |
+    How often are CatalogSources created and synced by the OLM package servers?
+- answer: |
+    CatalogSources are created and synced by the OLM package servers every 12 hours, or according to a modified
+    interval. 5
+  context: |
+    CatalogSources: These are created and then synced by the OLM package servers every 12 hours, or according to a
+    modified interval.
+  question: |
+    How often are CatalogSources created and synced by the OLM package servers?
+task_description: |
+  This skill helps in understanding the concept: CatalogSources: These are created and then synced by the OLM
+  package servers every 12 hours, or according to a modified interval.

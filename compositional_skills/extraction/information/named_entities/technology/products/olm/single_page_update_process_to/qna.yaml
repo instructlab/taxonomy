@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    To edit a single page using Docsy shortcut, locate the "Edit this page" link at the top of the content, which will
+    guide you to the GitHub edit page for the specific content file. Once there, you can make your changes and propose
+    the file change, which creates a pull request for review. 1
+  context: |
+    Single Page Update: Process to edit a single page using Docsy shortcut.
+  question: |
+    What is the process to edit a single page using the Docsy shortcut?
+- answer: |
+    To edit a single page using Docsy shortcut, locate the "Edit this page" link at the top of the content, which will
+    guide you to the GitHub edit page for the specific content file. Once there, you can make your changes and propose
+    the file change, which creates a pull request for review. 2
+  context: |
+    Single Page Update: Process to edit a single page using Docsy shortcut.
+  question: |
+    What is the process to edit a single page using the Docsy shortcut?
+- answer: |
+    To edit a single page using Docsy shortcut, locate the "Edit this page" link at the top of the content, which will
+    guide you to the GitHub edit page for the specific content file. Once there, you can make your changes and propose
+    the file change, which creates a pull request for review. 3
+  context: |
+    Single Page Update: Process to edit a single page using Docsy shortcut.
+  question: |
+    What is the process to edit a single page using the Docsy shortcut?
+- answer: |
+    To edit a single page using Docsy shortcut, locate the "Edit this page" link at the top of the content, which will
+    guide you to the GitHub edit page for the specific content file. Once there, you can make your changes and propose
+    the file change, which creates a pull request for review. 4
+  context: |
+    Single Page Update: Process to edit a single page using Docsy shortcut.
+  question: |
+    What is the process to edit a single page using the Docsy shortcut?
+- answer: |
+    To edit a single page using Docsy shortcut, locate the "Edit this page" link at the top of the content, which will
+    guide you to the GitHub edit page for the specific content file. Once there, you can make your changes and propose
+    the file change, which creates a pull request for review. 5
+  context: |
+    Single Page Update: Process to edit a single page using Docsy shortcut.
+  question: |
+    What is the process to edit a single page using the Docsy shortcut?
+task_description: |
+  This skill helps in understanding the concept: Single Page Update: Process to edit a single page using Docsy
+  shortcut.

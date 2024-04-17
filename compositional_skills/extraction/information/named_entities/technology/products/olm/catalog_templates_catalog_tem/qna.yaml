@@ -1,0 +1,51 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The catalog creation process involves creating the Catalog hierarchy and Dockerfile, organizing the bundles into
+    channels, generating the catalog, and validating the catalog. 1
+  context: |
+    Catalog Templates: Catalog Templates simplifies File-Based Catalogs to ease catalog operations. The catalog
+    creation process involves creating the Catalog hierarchy and Dockerfile, organizing the bundles into channels,
+    generating the catalog, and validating the catalog.
+  question: |
+    What process does the creation of a Catalog Template involve?
+- answer: |
+    The catalog creation process involves creating the Catalog hierarchy and Dockerfile, organizing the bundles into
+    channels, generating the catalog, and validating the catalog. 2
+  context: |
+    Catalog Templates: Catalog Templates simplifies File-Based Catalogs to ease catalog operations. The catalog
+    creation process involves creating the Catalog hierarchy and Dockerfile, organizing the bundles into channels,
+    generating the catalog, and validating the catalog.
+  question: |
+    What process does the creation of a Catalog Template involve?
+- answer: |
+    The catalog creation process involves creating the Catalog hierarchy and Dockerfile, organizing the bundles into
+    channels, generating the catalog, and validating the catalog. 3
+  context: |
+    Catalog Templates: Catalog Templates simplifies File-Based Catalogs to ease catalog operations. The catalog
+    creation process involves creating the Catalog hierarchy and Dockerfile, organizing the bundles into channels,
+    generating the catalog, and validating the catalog.
+  question: |
+    What process does the creation of a Catalog Template involve?
+- answer: |
+    The catalog creation process involves creating the Catalog hierarchy and Dockerfile, organizing the bundles into
+    channels, generating the catalog, and validating the catalog. 4
+  context: |
+    Catalog Templates: Catalog Templates simplifies File-Based Catalogs to ease catalog operations. The catalog
+    creation process involves creating the Catalog hierarchy and Dockerfile, organizing the bundles into channels,
+    generating the catalog, and validating the catalog.
+  question: |
+    What process does the creation of a Catalog Template involve?
+- answer: |
+    The catalog creation process involves creating the Catalog hierarchy and Dockerfile, organizing the bundles into
+    channels, generating the catalog, and validating the catalog. 5
+  context: |
+    Catalog Templates: Catalog Templates simplifies File-Based Catalogs to ease catalog operations. The catalog
+    creation process involves creating the Catalog hierarchy and Dockerfile, organizing the bundles into channels,
+    generating the catalog, and validating the catalog.
+  question: |
+    What process does the creation of a Catalog Template involve?
+task_description: |
+  This skill helps in understanding the concept: Catalog Templates: Catalog Templates simplifies File-Based Catalogs
+  to ease catalog operations. The catalog creation process involves creating the Catalog hierarchy and Dockerfile,
+  organizing the bundles into channels, generating the catalog, and validating the catalog.

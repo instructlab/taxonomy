@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The imagePullSecret must be present in the same namespace where the controller is deployed for the pod to start. 1
+  context: |
+    Requirement for the imagePullSecret to be present in the same namespace where the controller is deployed for the
+    pod to start.
+  question: |
+    Where should the imagePullSecret be present for the pod to start?
+- answer: |
+    The imagePullSecret must be present in the same namespace where the controller is deployed for the pod to start. 2
+  context: |
+    Requirement for the imagePullSecret to be present in the same namespace where the controller is deployed for the
+    pod to start.
+  question: |
+    Where should the imagePullSecret be present for the pod to start?
+- answer: |
+    The imagePullSecret must be present in the same namespace where the controller is deployed for the pod to start. 3
+  context: |
+    Requirement for the imagePullSecret to be present in the same namespace where the controller is deployed for the
+    pod to start.
+  question: |
+    Where should the imagePullSecret be present for the pod to start?
+- answer: |
+    The imagePullSecret must be present in the same namespace where the controller is deployed for the pod to start. 4
+  context: |
+    Requirement for the imagePullSecret to be present in the same namespace where the controller is deployed for the
+    pod to start.
+  question: |
+    Where should the imagePullSecret be present for the pod to start?
+- answer: |
+    The imagePullSecret must be present in the same namespace where the controller is deployed for the pod to start. 5
+  context: |
+    Requirement for the imagePullSecret to be present in the same namespace where the controller is deployed for the
+    pod to start.
+  question: |
+    Where should the imagePullSecret be present for the pod to start?
+task_description: |
+  This skill helps in understanding the concept: Requirement for the imagePullSecret to be present in the same
+  namespace where the controller is deployed for the pod to start.

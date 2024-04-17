@@ -1,0 +1,67 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    In the context of operator bundles, a catalog is a collection of operators that are made available for
+    installation in a cluster. An operator bundle can be made available for installation by following three steps.
+    First, the operator bundle is added to this catalog. second, the catalog is packaged in a container image. The
+    final step is utilizing the image reference in the CatalogSource. 1
+  context: |
+    Creating a Catalog of Operators: A Catalog is a collection of operators that can be made available for
+    installation in a cluster. An operator bundle can be made available for installation by adding it to a catalog,
+    packaging the catalog in a container image, and then using that image reference in the CatalogSource.
+  question: |
+    What is a catalog in the context of operator bundles and how can an operator bundle be made available for
+    installation?
+- answer: |
+    In the context of operator bundles, a catalog is a collection of operators that are made available for
+    installation in a cluster. An operator bundle can be made available for installation by following three steps.
+    First, the operator bundle is added to this catalog. second, the catalog is packaged in a container image. The
+    final step is utilizing the image reference in the CatalogSource. 2
+  context: |
+    Creating a Catalog of Operators: A Catalog is a collection of operators that can be made available for
+    installation in a cluster. An operator bundle can be made available for installation by adding it to a catalog,
+    packaging the catalog in a container image, and then using that image reference in the CatalogSource.
+  question: |
+    What is a catalog in the context of operator bundles and how can an operator bundle be made available for
+    installation?
+- answer: |
+    In the context of operator bundles, a catalog is a collection of operators that are made available for
+    installation in a cluster. An operator bundle can be made available for installation by following three steps.
+    First, the operator bundle is added to this catalog. second, the catalog is packaged in a container image. The
+    final step is utilizing the image reference in the CatalogSource. 3
+  context: |
+    Creating a Catalog of Operators: A Catalog is a collection of operators that can be made available for
+    installation in a cluster. An operator bundle can be made available for installation by adding it to a catalog,
+    packaging the catalog in a container image, and then using that image reference in the CatalogSource.
+  question: |
+    What is a catalog in the context of operator bundles and how can an operator bundle be made available for
+    installation?
+- answer: |
+    In the context of operator bundles, a catalog is a collection of operators that are made available for
+    installation in a cluster. An operator bundle can be made available for installation by following three steps.
+    First, the operator bundle is added to this catalog. second, the catalog is packaged in a container image. The
+    final step is utilizing the image reference in the CatalogSource. 4
+  context: |
+    Creating a Catalog of Operators: A Catalog is a collection of operators that can be made available for
+    installation in a cluster. An operator bundle can be made available for installation by adding it to a catalog,
+    packaging the catalog in a container image, and then using that image reference in the CatalogSource.
+  question: |
+    What is a catalog in the context of operator bundles and how can an operator bundle be made available for
+    installation?
+- answer: |
+    In the context of operator bundles, a catalog is a collection of operators that are made available for
+    installation in a cluster. An operator bundle can be made available for installation by following three steps.
+    First, the operator bundle is added to this catalog. second, the catalog is packaged in a container image. The
+    final step is utilizing the image reference in the CatalogSource. 5
+  context: |
+    Creating a Catalog of Operators: A Catalog is a collection of operators that can be made available for
+    installation in a cluster. An operator bundle can be made available for installation by adding it to a catalog,
+    packaging the catalog in a container image, and then using that image reference in the CatalogSource.
+  question: |
+    What is a catalog in the context of operator bundles and how can an operator bundle be made available for
+    installation?
+task_description: |
+  This skill helps in understanding the concept: Creating a Catalog of Operators: A Catalog is a collection of
+  operators that can be made available for installation in a cluster. An operator bundle can be made available for
+  installation by adding it to a catalog, packaging the catalog in a container image, and then using that image
+  reference in the CatalogSource.

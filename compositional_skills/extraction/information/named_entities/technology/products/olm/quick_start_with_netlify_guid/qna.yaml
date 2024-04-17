@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Netlify provides an automated process to preview updates to docs. First, ensure you have an existing GitHub
+    repository linked to your Netlify account. Changes made to the repository trigger an automated preview in Netlify.
+    Here are the steps: 1
+  context: |
+    Quick Start with Netlify: Guide to update docs using automated preview and GitHub.
+  question: |
+    How can one update docs using automated preview and GitHub in Netlify?
+- answer: |
+    Netlify provides an automated process to preview updates to docs. First, ensure you have an existing GitHub
+    repository linked to your Netlify account. Changes made to the repository trigger an automated preview in Netlify.
+    Here are the steps: 2
+  context: |
+    Quick Start with Netlify: Guide to update docs using automated preview and GitHub.
+  question: |
+    How can one update docs using automated preview and GitHub in Netlify?
+- answer: |
+    Netlify provides an automated process to preview updates to docs. First, ensure you have an existing GitHub
+    repository linked to your Netlify account. Changes made to the repository trigger an automated preview in Netlify.
+    Here are the steps: 3
+  context: |
+    Quick Start with Netlify: Guide to update docs using automated preview and GitHub.
+  question: |
+    How can one update docs using automated preview and GitHub in Netlify?
+- answer: |
+    Netlify provides an automated process to preview updates to docs. First, ensure you have an existing GitHub
+    repository linked to your Netlify account. Changes made to the repository trigger an automated preview in Netlify.
+    Here are the steps: 4
+  context: |
+    Quick Start with Netlify: Guide to update docs using automated preview and GitHub.
+  question: |
+    How can one update docs using automated preview and GitHub in Netlify?
+- answer: |
+    Netlify provides an automated process to preview updates to docs. First, ensure you have an existing GitHub
+    repository linked to your Netlify account. Changes made to the repository trigger an automated preview in Netlify.
+    Here are the steps: 5
+  context: |
+    Quick Start with Netlify: Guide to update docs using automated preview and GitHub.
+  question: |
+    How can one update docs using automated preview and GitHub in Netlify?
+task_description: |
+  This skill helps in understanding the concept: Quick Start with Netlify: Guide to update docs using automated
+  preview and GitHub.

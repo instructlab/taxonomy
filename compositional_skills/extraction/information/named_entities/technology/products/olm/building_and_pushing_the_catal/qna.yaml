@@ -1,0 +1,46 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The catalog image is made available to clusters through being created and pushed to a repository using Docker.
+    Once this process is done, CatalogSources on their cluster can use and reference it. 1
+  context: |
+    Building and pushing the Catalog Image: The catalog image is created and pushed to a repository using Docker. This
+    catalog image is now available for clusters to use and reference with CatalogSources on their cluster.
+  question: |
+    How is the catalog image made available to clusters?
+- answer: |
+    The catalog image is made available to clusters through being created and pushed to a repository using Docker.
+    Once this process is done, CatalogSources on their cluster can use and reference it. 2
+  context: |
+    Building and pushing the Catalog Image: The catalog image is created and pushed to a repository using Docker. This
+    catalog image is now available for clusters to use and reference with CatalogSources on their cluster.
+  question: |
+    How is the catalog image made available to clusters?
+- answer: |
+    The catalog image is made available to clusters through being created and pushed to a repository using Docker.
+    Once this process is done, CatalogSources on their cluster can use and reference it. 3
+  context: |
+    Building and pushing the Catalog Image: The catalog image is created and pushed to a repository using Docker. This
+    catalog image is now available for clusters to use and reference with CatalogSources on their cluster.
+  question: |
+    How is the catalog image made available to clusters?
+- answer: |
+    The catalog image is made available to clusters through being created and pushed to a repository using Docker.
+    Once this process is done, CatalogSources on their cluster can use and reference it. 4
+  context: |
+    Building and pushing the Catalog Image: The catalog image is created and pushed to a repository using Docker. This
+    catalog image is now available for clusters to use and reference with CatalogSources on their cluster.
+  question: |
+    How is the catalog image made available to clusters?
+- answer: |
+    The catalog image is made available to clusters through being created and pushed to a repository using Docker.
+    Once this process is done, CatalogSources on their cluster can use and reference it. 5
+  context: |
+    Building and pushing the Catalog Image: The catalog image is created and pushed to a repository using Docker. This
+    catalog image is now available for clusters to use and reference with CatalogSources on their cluster.
+  question: |
+    How is the catalog image made available to clusters?
+task_description: |
+  This skill helps in understanding the concept: Building and pushing the Catalog Image: The catalog image is
+  created and pushed to a repository using Docker. This catalog image is now available for clusters to use and
+  reference with CatalogSources on their cluster.

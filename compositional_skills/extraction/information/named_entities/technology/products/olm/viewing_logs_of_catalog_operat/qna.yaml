@@ -1,0 +1,39 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Viewing logs in a Catalog operator allows users to track and monitor activities, troubleshoot issues, and gain
+    insights on operation status. 1
+  context: |
+    Viewing logs of Catalog operator
+  question: |
+    What is the purpose of viewing logs in a Catalog operator?
+- answer: |
+    Viewing logs in a Catalog operator allows users to track and monitor activities, troubleshoot issues, and gain
+    insights on operation status. 2
+  context: |
+    Viewing logs of Catalog operator
+  question: |
+    What is the purpose of viewing logs in a Catalog operator?
+- answer: |
+    Viewing logs in a Catalog operator allows users to track and monitor activities, troubleshoot issues, and gain
+    insights on operation status. 3
+  context: |
+    Viewing logs of Catalog operator
+  question: |
+    What is the purpose of viewing logs in a Catalog operator?
+- answer: |
+    Viewing logs in a Catalog operator allows users to track and monitor activities, troubleshoot issues, and gain
+    insights on operation status. 4
+  context: |
+    Viewing logs of Catalog operator
+  question: |
+    What is the purpose of viewing logs in a Catalog operator?
+- answer: |
+    Viewing logs in a Catalog operator allows users to track and monitor activities, troubleshoot issues, and gain
+    insights on operation status. 5
+  context: |
+    Viewing logs of Catalog operator
+  question: |
+    What is the purpose of viewing logs in a Catalog operator?
+task_description: |
+  This skill helps in understanding the concept: Viewing logs of Catalog operator

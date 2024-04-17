@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Yes, some operators indeed support multiple node architectures or operating systems. This is indicated by adding
+    multiple labels. 1
+  context: |
+    Concept: Multiple Architectures    - Some operators may support multiple node architectures or OSes. Therefore,
+    multiple labels can be added.
+  question: |
+    Can some operators support multiple node architectures or operating systems? If so, how is this indicated?
+- answer: |
+    Yes, some operators indeed support multiple node architectures or operating systems. This is indicated by adding
+    multiple labels. 2
+  context: |
+    Concept: Multiple Architectures    - Some operators may support multiple node architectures or OSes. Therefore,
+    multiple labels can be added.
+  question: |
+    Can some operators support multiple node architectures or operating systems? If so, how is this indicated?
+- answer: |
+    Yes, some operators indeed support multiple node architectures or operating systems. This is indicated by adding
+    multiple labels. 3
+  context: |
+    Concept: Multiple Architectures    - Some operators may support multiple node architectures or OSes. Therefore,
+    multiple labels can be added.
+  question: |
+    Can some operators support multiple node architectures or operating systems? If so, how is this indicated?
+- answer: |
+    Yes, some operators indeed support multiple node architectures or operating systems. This is indicated by adding
+    multiple labels. 4
+  context: |
+    Concept: Multiple Architectures    - Some operators may support multiple node architectures or OSes. Therefore,
+    multiple labels can be added.
+  question: |
+    Can some operators support multiple node architectures or operating systems? If so, how is this indicated?
+- answer: |
+    Yes, some operators indeed support multiple node architectures or operating systems. This is indicated by adding
+    multiple labels. 5
+  context: |
+    Concept: Multiple Architectures    - Some operators may support multiple node architectures or OSes. Therefore,
+    multiple labels can be added.
+  question: |
+    Can some operators support multiple node architectures or operating systems? If so, how is this indicated?
+task_description: |
+  This skill helps in understanding the concept: Concept: Multiple Architectures    - Some operators may support
+  multiple node architectures or OSes. Therefore, multiple labels can be added.

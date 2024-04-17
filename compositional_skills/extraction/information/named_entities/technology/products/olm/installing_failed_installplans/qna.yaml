@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    A recovery from a failed InstallPlan can be done by generating a new InstallPlan. This can be achieved if the
+    CatalogSource is updated to include a new upgrade. 1
+  context: |
+    Installing Failed InstallPlans: To recover from a failed InstallPlan, a new InstallPlan can be generated if the
+    CatalogSource is updated to include a new upgrade.
+  question: |
+    How can you recover from a failed InstallPlan?
+- answer: |
+    A recovery from a failed InstallPlan can be done by generating a new InstallPlan. This can be achieved if the
+    CatalogSource is updated to include a new upgrade. 2
+  context: |
+    Installing Failed InstallPlans: To recover from a failed InstallPlan, a new InstallPlan can be generated if the
+    CatalogSource is updated to include a new upgrade.
+  question: |
+    How can you recover from a failed InstallPlan?
+- answer: |
+    A recovery from a failed InstallPlan can be done by generating a new InstallPlan. This can be achieved if the
+    CatalogSource is updated to include a new upgrade. 3
+  context: |
+    Installing Failed InstallPlans: To recover from a failed InstallPlan, a new InstallPlan can be generated if the
+    CatalogSource is updated to include a new upgrade.
+  question: |
+    How can you recover from a failed InstallPlan?
+- answer: |
+    A recovery from a failed InstallPlan can be done by generating a new InstallPlan. This can be achieved if the
+    CatalogSource is updated to include a new upgrade. 4
+  context: |
+    Installing Failed InstallPlans: To recover from a failed InstallPlan, a new InstallPlan can be generated if the
+    CatalogSource is updated to include a new upgrade.
+  question: |
+    How can you recover from a failed InstallPlan?
+- answer: |
+    A recovery from a failed InstallPlan can be done by generating a new InstallPlan. This can be achieved if the
+    CatalogSource is updated to include a new upgrade. 5
+  context: |
+    Installing Failed InstallPlans: To recover from a failed InstallPlan, a new InstallPlan can be generated if the
+    CatalogSource is updated to include a new upgrade.
+  question: |
+    How can you recover from a failed InstallPlan?
+task_description: |
+  This skill helps in understanding the concept: Installing Failed InstallPlans: To recover from a failed
+  InstallPlan, a new InstallPlan can be generated if the CatalogSource is updated to include a new upgrade.

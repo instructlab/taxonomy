@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Optional validation in a system are some validators that are not immediately necessary thus disabled by default.
+    They can be enabled as required, providing flexibility and customization according to the specific needs of the
+    user. 1
+  context: |
+    Optional Validation: Some validators are disabled by default and can be optionally enabled as required.
+  question: |
+    What is the purpose of optional validation in a system?
+- answer: |
+    Optional validation in a system are some validators that are not immediately necessary thus disabled by default.
+    They can be enabled as required, providing flexibility and customization according to the specific needs of the
+    user. 2
+  context: |
+    Optional Validation: Some validators are disabled by default and can be optionally enabled as required.
+  question: |
+    What is the purpose of optional validation in a system?
+- answer: |
+    Optional validation in a system are some validators that are not immediately necessary thus disabled by default.
+    They can be enabled as required, providing flexibility and customization according to the specific needs of the
+    user. 3
+  context: |
+    Optional Validation: Some validators are disabled by default and can be optionally enabled as required.
+  question: |
+    What is the purpose of optional validation in a system?
+- answer: |
+    Optional validation in a system are some validators that are not immediately necessary thus disabled by default.
+    They can be enabled as required, providing flexibility and customization according to the specific needs of the
+    user. 4
+  context: |
+    Optional Validation: Some validators are disabled by default and can be optionally enabled as required.
+  question: |
+    What is the purpose of optional validation in a system?
+- answer: |
+    Optional validation in a system are some validators that are not immediately necessary thus disabled by default.
+    They can be enabled as required, providing flexibility and customization according to the specific needs of the
+    user. 5
+  context: |
+    Optional Validation: Some validators are disabled by default and can be optionally enabled as required.
+  question: |
+    What is the purpose of optional validation in a system?
+task_description: |
+  This skill helps in understanding the concept: Optional Validation: Some validators are disabled by default and
+  can be optionally enabled as required.

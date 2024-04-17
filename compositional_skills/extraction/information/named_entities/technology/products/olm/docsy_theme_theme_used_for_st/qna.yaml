@@ -1,0 +1,34 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The Docsy Theme is used for styling and structuring the site. 1
+  context: |
+    Docsy Theme: Theme used for styling and structuring the site.
+  question: |
+    What is the Docsy Theme used for?
+- answer: |
+    The Docsy Theme is used for styling and structuring the site. 2
+  context: |
+    Docsy Theme: Theme used for styling and structuring the site.
+  question: |
+    What is the Docsy Theme used for?
+- answer: |
+    The Docsy Theme is used for styling and structuring the site. 3
+  context: |
+    Docsy Theme: Theme used for styling and structuring the site.
+  question: |
+    What is the Docsy Theme used for?
+- answer: |
+    The Docsy Theme is used for styling and structuring the site. 4
+  context: |
+    Docsy Theme: Theme used for styling and structuring the site.
+  question: |
+    What is the Docsy Theme used for?
+- answer: |
+    The Docsy Theme is used for styling and structuring the site. 5
+  context: |
+    Docsy Theme: Theme used for styling and structuring the site.
+  question: |
+    What is the Docsy Theme used for?
+task_description: |
+  This skill helps in understanding the concept: Docsy Theme: Theme used for styling and structuring the site.

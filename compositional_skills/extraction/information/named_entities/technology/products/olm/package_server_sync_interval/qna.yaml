@@ -1,0 +1,51 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The package server sync interval is the frequency in which CatalogSources are synced by the OLM package servers.
+    It's usually set at 12 hours but can be modified in order to save CPU usage or improve update response times. 1
+  context: |
+    Package server sync interval: The frequency in which CatalogSources are synced by the OLM package servers. It is
+    set at 12 hours but can be modified to save CPU usage or improve update response times.
+  question: |
+    What is the package server sync interval in relation to CatalogSources with OLM package servers and how can it be
+    adjusted?
+- answer: |
+    The package server sync interval is the frequency in which CatalogSources are synced by the OLM package servers.
+    It's usually set at 12 hours but can be modified in order to save CPU usage or improve update response times. 2
+  context: |
+    Package server sync interval: The frequency in which CatalogSources are synced by the OLM package servers. It is
+    set at 12 hours but can be modified to save CPU usage or improve update response times.
+  question: |
+    What is the package server sync interval in relation to CatalogSources with OLM package servers and how can it be
+    adjusted?
+- answer: |
+    The package server sync interval is the frequency in which CatalogSources are synced by the OLM package servers.
+    It's usually set at 12 hours but can be modified in order to save CPU usage or improve update response times. 3
+  context: |
+    Package server sync interval: The frequency in which CatalogSources are synced by the OLM package servers. It is
+    set at 12 hours but can be modified to save CPU usage or improve update response times.
+  question: |
+    What is the package server sync interval in relation to CatalogSources with OLM package servers and how can it be
+    adjusted?
+- answer: |
+    The package server sync interval is the frequency in which CatalogSources are synced by the OLM package servers.
+    It's usually set at 12 hours but can be modified in order to save CPU usage or improve update response times. 4
+  context: |
+    Package server sync interval: The frequency in which CatalogSources are synced by the OLM package servers. It is
+    set at 12 hours but can be modified to save CPU usage or improve update response times.
+  question: |
+    What is the package server sync interval in relation to CatalogSources with OLM package servers and how can it be
+    adjusted?
+- answer: |
+    The package server sync interval is the frequency in which CatalogSources are synced by the OLM package servers.
+    It's usually set at 12 hours but can be modified in order to save CPU usage or improve update response times. 5
+  context: |
+    Package server sync interval: The frequency in which CatalogSources are synced by the OLM package servers. It is
+    set at 12 hours but can be modified to save CPU usage or improve update response times.
+  question: |
+    What is the package server sync interval in relation to CatalogSources with OLM package servers and how can it be
+    adjusted?
+task_description: |
+  This skill helps in understanding the concept: Package server sync interval: The frequency in which CatalogSources
+  are synced by the OLM package servers. It is set at 12 hours but can be modified to save CPU usage or improve
+  update response times.

@@ -1,0 +1,56 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    An affinity definition can be removed from the operator deployment pod specification by using an empty object {}.
+    This explicit removal can be effective for the original nodeAffinity while removing the original podAffinity and
+    podAnitAffinity configurations. 1
+  context: |
+    Removing Affinity Definitions: The use of an empty object {} can remove any affinity definition set in the
+    operator deployment pod specification. Users can also keep the original nodeAffinity while removing the original
+    podAffinity and podAnitAffinity configurations.
+  question: |
+    How can an affinity definition be removed from the operator deployment pod specification?
+- answer: |
+    An affinity definition can be removed from the operator deployment pod specification by using an empty object {}.
+    This explicit removal can be effective for the original nodeAffinity while removing the original podAffinity and
+    podAnitAffinity configurations. 2
+  context: |
+    Removing Affinity Definitions: The use of an empty object {} can remove any affinity definition set in the
+    operator deployment pod specification. Users can also keep the original nodeAffinity while removing the original
+    podAffinity and podAnitAffinity configurations.
+  question: |
+    How can an affinity definition be removed from the operator deployment pod specification?
+- answer: |
+    An affinity definition can be removed from the operator deployment pod specification by using an empty object {}.
+    This explicit removal can be effective for the original nodeAffinity while removing the original podAffinity and
+    podAnitAffinity configurations. 3
+  context: |
+    Removing Affinity Definitions: The use of an empty object {} can remove any affinity definition set in the
+    operator deployment pod specification. Users can also keep the original nodeAffinity while removing the original
+    podAffinity and podAnitAffinity configurations.
+  question: |
+    How can an affinity definition be removed from the operator deployment pod specification?
+- answer: |
+    An affinity definition can be removed from the operator deployment pod specification by using an empty object {}.
+    This explicit removal can be effective for the original nodeAffinity while removing the original podAffinity and
+    podAnitAffinity configurations. 4
+  context: |
+    Removing Affinity Definitions: The use of an empty object {} can remove any affinity definition set in the
+    operator deployment pod specification. Users can also keep the original nodeAffinity while removing the original
+    podAffinity and podAnitAffinity configurations.
+  question: |
+    How can an affinity definition be removed from the operator deployment pod specification?
+- answer: |
+    An affinity definition can be removed from the operator deployment pod specification by using an empty object {}.
+    This explicit removal can be effective for the original nodeAffinity while removing the original podAffinity and
+    podAnitAffinity configurations. 5
+  context: |
+    Removing Affinity Definitions: The use of an empty object {} can remove any affinity definition set in the
+    operator deployment pod specification. Users can also keep the original nodeAffinity while removing the original
+    podAffinity and podAnitAffinity configurations.
+  question: |
+    How can an affinity definition be removed from the operator deployment pod specification?
+task_description: |
+  This skill helps in understanding the concept: Removing Affinity Definitions: The use of an empty object {} can
+  remove any affinity definition set in the operator deployment pod specification. Users can also keep the original
+  nodeAffinity while removing the original podAffinity and podAnitAffinity configurations.

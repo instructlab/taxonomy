@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    An InstallPlan is a detailed plan that specifies the exact resources to be created for the automatic or manual
+    installation or upgrade of a cluster service version. 1
+  context: |
+    InstallPlan: The plan detailing the exact resources to be created in order to automatically or manually install or
+    upgrade a cluster service version.
+  question: |
+    What is an InstallPlan in the context of a cluster service version?
+- answer: |
+    An InstallPlan is a detailed plan that specifies the exact resources to be created for the automatic or manual
+    installation or upgrade of a cluster service version. 2
+  context: |
+    InstallPlan: The plan detailing the exact resources to be created in order to automatically or manually install or
+    upgrade a cluster service version.
+  question: |
+    What is an InstallPlan in the context of a cluster service version?
+- answer: |
+    An InstallPlan is a detailed plan that specifies the exact resources to be created for the automatic or manual
+    installation or upgrade of a cluster service version. 3
+  context: |
+    InstallPlan: The plan detailing the exact resources to be created in order to automatically or manually install or
+    upgrade a cluster service version.
+  question: |
+    What is an InstallPlan in the context of a cluster service version?
+- answer: |
+    An InstallPlan is a detailed plan that specifies the exact resources to be created for the automatic or manual
+    installation or upgrade of a cluster service version. 4
+  context: |
+    InstallPlan: The plan detailing the exact resources to be created in order to automatically or manually install or
+    upgrade a cluster service version.
+  question: |
+    What is an InstallPlan in the context of a cluster service version?
+- answer: |
+    An InstallPlan is a detailed plan that specifies the exact resources to be created for the automatic or manual
+    installation or upgrade of a cluster service version. 5
+  context: |
+    InstallPlan: The plan detailing the exact resources to be created in order to automatically or manually install or
+    upgrade a cluster service version.
+  question: |
+    What is an InstallPlan in the context of a cluster service version?
+task_description: |
+  This skill helps in understanding the concept: InstallPlan: The plan detailing the exact resources to be created
+  in order to automatically or manually install or upgrade a cluster service version.

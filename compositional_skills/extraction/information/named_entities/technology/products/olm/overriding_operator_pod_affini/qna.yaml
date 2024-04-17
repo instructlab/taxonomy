@@ -1,0 +1,46 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The purpose of Overriding Operator Pod Affinity Configuration is to schedule pods to specific nodes using affinity
+    and anti-affinity constraints such as node affinity, pod affinity, and pod anti-affinity. 1
+  context: |
+    Overriding Operator Pod Affinity Configuration: Ability to schedule pods to particular nodes using affinity and
+    anti-affinity constraints such as node affinity, pod affinity, and pod anti-affinity.
+  question: |
+    What is the purpose of Overriding Operator Pod Affinity Configuration?
+- answer: |
+    The purpose of Overriding Operator Pod Affinity Configuration is to schedule pods to specific nodes using affinity
+    and anti-affinity constraints such as node affinity, pod affinity, and pod anti-affinity. 2
+  context: |
+    Overriding Operator Pod Affinity Configuration: Ability to schedule pods to particular nodes using affinity and
+    anti-affinity constraints such as node affinity, pod affinity, and pod anti-affinity.
+  question: |
+    What is the purpose of Overriding Operator Pod Affinity Configuration?
+- answer: |
+    The purpose of Overriding Operator Pod Affinity Configuration is to schedule pods to specific nodes using affinity
+    and anti-affinity constraints such as node affinity, pod affinity, and pod anti-affinity. 3
+  context: |
+    Overriding Operator Pod Affinity Configuration: Ability to schedule pods to particular nodes using affinity and
+    anti-affinity constraints such as node affinity, pod affinity, and pod anti-affinity.
+  question: |
+    What is the purpose of Overriding Operator Pod Affinity Configuration?
+- answer: |
+    The purpose of Overriding Operator Pod Affinity Configuration is to schedule pods to specific nodes using affinity
+    and anti-affinity constraints such as node affinity, pod affinity, and pod anti-affinity. 4
+  context: |
+    Overriding Operator Pod Affinity Configuration: Ability to schedule pods to particular nodes using affinity and
+    anti-affinity constraints such as node affinity, pod affinity, and pod anti-affinity.
+  question: |
+    What is the purpose of Overriding Operator Pod Affinity Configuration?
+- answer: |
+    The purpose of Overriding Operator Pod Affinity Configuration is to schedule pods to specific nodes using affinity
+    and anti-affinity constraints such as node affinity, pod affinity, and pod anti-affinity. 5
+  context: |
+    Overriding Operator Pod Affinity Configuration: Ability to schedule pods to particular nodes using affinity and
+    anti-affinity constraints such as node affinity, pod affinity, and pod anti-affinity.
+  question: |
+    What is the purpose of Overriding Operator Pod Affinity Configuration?
+task_description: |
+  This skill helps in understanding the concept: Overriding Operator Pod Affinity Configuration: Ability to schedule
+  pods to particular nodes using affinity and anti-affinity constraints such as node affinity, pod affinity, and pod
+  anti-affinity.

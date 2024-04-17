@@ -1,0 +1,34 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Operator manifests refers to the metadata associated with an operator in computing. 1
+  context: |
+    Operator manifests: Metadata associated with an operator.
+  question: |
+    What is operator manifests in regards to computing?
+- answer: |
+    Operator manifests refers to the metadata associated with an operator in computing. 2
+  context: |
+    Operator manifests: Metadata associated with an operator.
+  question: |
+    What is operator manifests in regards to computing?
+- answer: |
+    Operator manifests refers to the metadata associated with an operator in computing. 3
+  context: |
+    Operator manifests: Metadata associated with an operator.
+  question: |
+    What is operator manifests in regards to computing?
+- answer: |
+    Operator manifests refers to the metadata associated with an operator in computing. 4
+  context: |
+    Operator manifests: Metadata associated with an operator.
+  question: |
+    What is operator manifests in regards to computing?
+- answer: |
+    Operator manifests refers to the metadata associated with an operator in computing. 5
+  context: |
+    Operator manifests: Metadata associated with an operator.
+  question: |
+    What is operator manifests in regards to computing?
+task_description: |
+  This skill helps in understanding the concept: Operator manifests: Metadata associated with an operator.

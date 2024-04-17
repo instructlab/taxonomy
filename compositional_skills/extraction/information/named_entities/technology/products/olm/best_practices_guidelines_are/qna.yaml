@@ -1,0 +1,56 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Some of the guidelines include making sure all the previously published bundles in a catalog have a path to the
+    current/new channel head and keeping the semantics of the upgrade edges in mind to maintain a sane upgrade graph.
+    1
+  context: |
+    Best Practices: Guidelines are provided to the operator authors like making sure all the previously published
+    bundles in a catalog have a path to the current/new channel head and keeping the semantics of the upgrade edges in
+    mind to maintain a sane upgrade graph.
+  question: |
+    What are some of the guidelines provided to operator authors in best practices?
+- answer: |
+    Some of the guidelines include making sure all the previously published bundles in a catalog have a path to the
+    current/new channel head and keeping the semantics of the upgrade edges in mind to maintain a sane upgrade graph.
+    2
+  context: |
+    Best Practices: Guidelines are provided to the operator authors like making sure all the previously published
+    bundles in a catalog have a path to the current/new channel head and keeping the semantics of the upgrade edges in
+    mind to maintain a sane upgrade graph.
+  question: |
+    What are some of the guidelines provided to operator authors in best practices?
+- answer: |
+    Some of the guidelines include making sure all the previously published bundles in a catalog have a path to the
+    current/new channel head and keeping the semantics of the upgrade edges in mind to maintain a sane upgrade graph.
+    3
+  context: |
+    Best Practices: Guidelines are provided to the operator authors like making sure all the previously published
+    bundles in a catalog have a path to the current/new channel head and keeping the semantics of the upgrade edges in
+    mind to maintain a sane upgrade graph.
+  question: |
+    What are some of the guidelines provided to operator authors in best practices?
+- answer: |
+    Some of the guidelines include making sure all the previously published bundles in a catalog have a path to the
+    current/new channel head and keeping the semantics of the upgrade edges in mind to maintain a sane upgrade graph.
+    4
+  context: |
+    Best Practices: Guidelines are provided to the operator authors like making sure all the previously published
+    bundles in a catalog have a path to the current/new channel head and keeping the semantics of the upgrade edges in
+    mind to maintain a sane upgrade graph.
+  question: |
+    What are some of the guidelines provided to operator authors in best practices?
+- answer: |
+    Some of the guidelines include making sure all the previously published bundles in a catalog have a path to the
+    current/new channel head and keeping the semantics of the upgrade edges in mind to maintain a sane upgrade graph.
+    5
+  context: |
+    Best Practices: Guidelines are provided to the operator authors like making sure all the previously published
+    bundles in a catalog have a path to the current/new channel head and keeping the semantics of the upgrade edges in
+    mind to maintain a sane upgrade graph.
+  question: |
+    What are some of the guidelines provided to operator authors in best practices?
+task_description: |
+  This skill helps in understanding the concept: Best Practices: Guidelines are provided to the operator authors
+  like making sure all the previously published bundles in a catalog have a path to the current/new channel head and
+  keeping the semantics of the upgrade edges in mind to maintain a sane upgrade graph.

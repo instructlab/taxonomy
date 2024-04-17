@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The Operator-library is a collection of operators deployed by Operator Lifecycle Manager (OLM). Operators can use
+    this library to set conditions on their operator. 1
+  context: |
+    Concept: Operator-library  - Definition: A collection of operators deployed by OLM.  - Usage: Operators may use
+    this library to set conditions on their operator.
+  question: |
+    What is the Operator-library and what is its usage in OLM?
+- answer: |
+    The Operator-library is a collection of operators deployed by Operator Lifecycle Manager (OLM). Operators can use
+    this library to set conditions on their operator. 2
+  context: |
+    Concept: Operator-library  - Definition: A collection of operators deployed by OLM.  - Usage: Operators may use
+    this library to set conditions on their operator.
+  question: |
+    What is the Operator-library and what is its usage in OLM?
+- answer: |
+    The Operator-library is a collection of operators deployed by Operator Lifecycle Manager (OLM). Operators can use
+    this library to set conditions on their operator. 3
+  context: |
+    Concept: Operator-library  - Definition: A collection of operators deployed by OLM.  - Usage: Operators may use
+    this library to set conditions on their operator.
+  question: |
+    What is the Operator-library and what is its usage in OLM?
+- answer: |
+    The Operator-library is a collection of operators deployed by Operator Lifecycle Manager (OLM). Operators can use
+    this library to set conditions on their operator. 4
+  context: |
+    Concept: Operator-library  - Definition: A collection of operators deployed by OLM.  - Usage: Operators may use
+    this library to set conditions on their operator.
+  question: |
+    What is the Operator-library and what is its usage in OLM?
+- answer: |
+    The Operator-library is a collection of operators deployed by Operator Lifecycle Manager (OLM). Operators can use
+    this library to set conditions on their operator. 5
+  context: |
+    Concept: Operator-library  - Definition: A collection of operators deployed by OLM.  - Usage: Operators may use
+    this library to set conditions on their operator.
+  question: |
+    What is the Operator-library and what is its usage in OLM?
+task_description: |
+  This skill helps in understanding the concept: Concept: Operator-library  - Definition: A collection of operators
+  deployed by OLM.  - Usage: Operators may use this library to set conditions on their operator.

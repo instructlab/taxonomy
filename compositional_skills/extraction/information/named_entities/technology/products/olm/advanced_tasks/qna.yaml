@@ -1,0 +1,44 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Advanced tasks refer to those activities or operations that require a higher level of skill, knowledge, or
+    capability. They often involve complex processes or problem-solving and might need specialized training or
+    experience to be performed effectively. 1
+  context: |
+    Advanced Tasks
+  question: |
+    What are advanced tasks?
+- answer: |
+    Advanced tasks refer to those activities or operations that require a higher level of skill, knowledge, or
+    capability. They often involve complex processes or problem-solving and might need specialized training or
+    experience to be performed effectively. 2
+  context: |
+    Advanced Tasks
+  question: |
+    What are advanced tasks?
+- answer: |
+    Advanced tasks refer to those activities or operations that require a higher level of skill, knowledge, or
+    capability. They often involve complex processes or problem-solving and might need specialized training or
+    experience to be performed effectively. 3
+  context: |
+    Advanced Tasks
+  question: |
+    What are advanced tasks?
+- answer: |
+    Advanced tasks refer to those activities or operations that require a higher level of skill, knowledge, or
+    capability. They often involve complex processes or problem-solving and might need specialized training or
+    experience to be performed effectively. 4
+  context: |
+    Advanced Tasks
+  question: |
+    What are advanced tasks?
+- answer: |
+    Advanced tasks refer to those activities or operations that require a higher level of skill, knowledge, or
+    capability. They often involve complex processes or problem-solving and might need specialized training or
+    experience to be performed effectively. 5
+  context: |
+    Advanced Tasks
+  question: |
+    What are advanced tasks?
+task_description: |
+  This skill helps in understanding the concept: Advanced Tasks

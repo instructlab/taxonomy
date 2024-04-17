@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    A Cluster Scoped Operator is an operator that is installed across the entire Kubernetes cluster. 1
+  context: |
+    Cluster Scoped Operator: An operator that is installed across the entire Kubernetes cluster.
+  question: |
+    What is a Cluster Scoped Operator in terms of Kubernetes?
+- answer: |
+    A Cluster Scoped Operator is an operator that is installed across the entire Kubernetes cluster. 2
+  context: |
+    Cluster Scoped Operator: An operator that is installed across the entire Kubernetes cluster.
+  question: |
+    What is a Cluster Scoped Operator in terms of Kubernetes?
+- answer: |
+    A Cluster Scoped Operator is an operator that is installed across the entire Kubernetes cluster. 3
+  context: |
+    Cluster Scoped Operator: An operator that is installed across the entire Kubernetes cluster.
+  question: |
+    What is a Cluster Scoped Operator in terms of Kubernetes?
+- answer: |
+    A Cluster Scoped Operator is an operator that is installed across the entire Kubernetes cluster. 4
+  context: |
+    Cluster Scoped Operator: An operator that is installed across the entire Kubernetes cluster.
+  question: |
+    What is a Cluster Scoped Operator in terms of Kubernetes?
+- answer: |
+    A Cluster Scoped Operator is an operator that is installed across the entire Kubernetes cluster. 5
+  context: |
+    Cluster Scoped Operator: An operator that is installed across the entire Kubernetes cluster.
+  question: |
+    What is a Cluster Scoped Operator in terms of Kubernetes?
+task_description: |
+  This skill helps in understanding the concept: Cluster Scoped Operator: An operator that is installed across the
+  entire Kubernetes cluster.

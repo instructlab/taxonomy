@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    In Tier 2 support for operators, it is recommended to avoid naming the channel as 'stable'. Instead, the use of a
+    file-based catalog, specifically the 'semver template', is suggested. 1
+  context: |
+    Tier 2 support for operators: Avoid naming the channel as stable and use file-based catalog ""semver template""
+    instead.
+  question: |
+    What is the recommended practice for operators in regards to channel naming and catalog usage in Tier 2 support?
+- answer: |
+    In Tier 2 support for operators, it is recommended to avoid naming the channel as 'stable'. Instead, the use of a
+    file-based catalog, specifically the 'semver template', is suggested. 2
+  context: |
+    Tier 2 support for operators: Avoid naming the channel as stable and use file-based catalog ""semver template""
+    instead.
+  question: |
+    What is the recommended practice for operators in regards to channel naming and catalog usage in Tier 2 support?
+- answer: |
+    In Tier 2 support for operators, it is recommended to avoid naming the channel as 'stable'. Instead, the use of a
+    file-based catalog, specifically the 'semver template', is suggested. 3
+  context: |
+    Tier 2 support for operators: Avoid naming the channel as stable and use file-based catalog ""semver template""
+    instead.
+  question: |
+    What is the recommended practice for operators in regards to channel naming and catalog usage in Tier 2 support?
+- answer: |
+    In Tier 2 support for operators, it is recommended to avoid naming the channel as 'stable'. Instead, the use of a
+    file-based catalog, specifically the 'semver template', is suggested. 4
+  context: |
+    Tier 2 support for operators: Avoid naming the channel as stable and use file-based catalog ""semver template""
+    instead.
+  question: |
+    What is the recommended practice for operators in regards to channel naming and catalog usage in Tier 2 support?
+- answer: |
+    In Tier 2 support for operators, it is recommended to avoid naming the channel as 'stable'. Instead, the use of a
+    file-based catalog, specifically the 'semver template', is suggested. 5
+  context: |
+    Tier 2 support for operators: Avoid naming the channel as stable and use file-based catalog ""semver template""
+    instead.
+  question: |
+    What is the recommended practice for operators in regards to channel naming and catalog usage in Tier 2 support?
+task_description: |
+  This skill helps in understanding the concept: Tier 2 support for operators: Avoid naming the channel as stable
+  and use file-based catalog ""semver template"" instead.

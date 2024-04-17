@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The Cluster olmConfig can be altered to disable Copied CSVs for operators installed in the AllNamespace mode. 1
+  context: |
+    Cluster olmConfig's: This can be altered to disable Copied CSVs for operators installed in the AllNamespace mode.
+  question: |
+    What can be altered in the Cluster olmConfig to disable Copied CSVs for operators installed in the AllNamespace
+    mode?
+- answer: |
+    The Cluster olmConfig can be altered to disable Copied CSVs for operators installed in the AllNamespace mode. 2
+  context: |
+    Cluster olmConfig's: This can be altered to disable Copied CSVs for operators installed in the AllNamespace mode.
+  question: |
+    What can be altered in the Cluster olmConfig to disable Copied CSVs for operators installed in the AllNamespace
+    mode?
+- answer: |
+    The Cluster olmConfig can be altered to disable Copied CSVs for operators installed in the AllNamespace mode. 3
+  context: |
+    Cluster olmConfig's: This can be altered to disable Copied CSVs for operators installed in the AllNamespace mode.
+  question: |
+    What can be altered in the Cluster olmConfig to disable Copied CSVs for operators installed in the AllNamespace
+    mode?
+- answer: |
+    The Cluster olmConfig can be altered to disable Copied CSVs for operators installed in the AllNamespace mode. 4
+  context: |
+    Cluster olmConfig's: This can be altered to disable Copied CSVs for operators installed in the AllNamespace mode.
+  question: |
+    What can be altered in the Cluster olmConfig to disable Copied CSVs for operators installed in the AllNamespace
+    mode?
+- answer: |
+    The Cluster olmConfig can be altered to disable Copied CSVs for operators installed in the AllNamespace mode. 5
+  context: |
+    Cluster olmConfig's: This can be altered to disable Copied CSVs for operators installed in the AllNamespace mode.
+  question: |
+    What can be altered in the Cluster olmConfig to disable Copied CSVs for operators installed in the AllNamespace
+    mode?
+task_description: |
+  This skill helps in understanding the concept: Cluster olmConfig's: This can be altered to disable Copied CSVs for
+  operators installed in the AllNamespace mode.

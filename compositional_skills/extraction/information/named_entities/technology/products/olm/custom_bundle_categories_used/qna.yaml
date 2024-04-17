@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Custom bundle categories are used to customize the validation against the bundle categories. 1
+  context: |
+    Custom bundle categories: Used to customize the validation against the bundle categories.
+  question: |
+    What is the purpose of custom bundle categories?
+- answer: |
+    Custom bundle categories are used to customize the validation against the bundle categories. 2
+  context: |
+    Custom bundle categories: Used to customize the validation against the bundle categories.
+  question: |
+    What is the purpose of custom bundle categories?
+- answer: |
+    Custom bundle categories are used to customize the validation against the bundle categories. 3
+  context: |
+    Custom bundle categories: Used to customize the validation against the bundle categories.
+  question: |
+    What is the purpose of custom bundle categories?
+- answer: |
+    Custom bundle categories are used to customize the validation against the bundle categories. 4
+  context: |
+    Custom bundle categories: Used to customize the validation against the bundle categories.
+  question: |
+    What is the purpose of custom bundle categories?
+- answer: |
+    Custom bundle categories are used to customize the validation against the bundle categories. 5
+  context: |
+    Custom bundle categories: Used to customize the validation against the bundle categories.
+  question: |
+    What is the purpose of custom bundle categories?
+task_description: |
+  This skill helps in understanding the concept: Custom bundle categories: Used to customize the validation against
+  the bundle categories.

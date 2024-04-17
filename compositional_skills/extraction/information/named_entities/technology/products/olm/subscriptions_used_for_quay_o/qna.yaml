@@ -1,0 +1,44 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Subscriptions are used for quay operator installation to manage the automatic updates and installation of the
+    operator in a specific namespace in an OpenShift cluster. It helps to keep the operator updated with its latest
+    versions. 1
+  context: |
+    Subscriptions: Used for quay operator installation.
+  question: |
+    What is a purpose of subscriptions in the context of quay operator installation?
+- answer: |
+    Subscriptions are used for quay operator installation to manage the automatic updates and installation of the
+    operator in a specific namespace in an OpenShift cluster. It helps to keep the operator updated with its latest
+    versions. 2
+  context: |
+    Subscriptions: Used for quay operator installation.
+  question: |
+    What is a purpose of subscriptions in the context of quay operator installation?
+- answer: |
+    Subscriptions are used for quay operator installation to manage the automatic updates and installation of the
+    operator in a specific namespace in an OpenShift cluster. It helps to keep the operator updated with its latest
+    versions. 3
+  context: |
+    Subscriptions: Used for quay operator installation.
+  question: |
+    What is a purpose of subscriptions in the context of quay operator installation?
+- answer: |
+    Subscriptions are used for quay operator installation to manage the automatic updates and installation of the
+    operator in a specific namespace in an OpenShift cluster. It helps to keep the operator updated with its latest
+    versions. 4
+  context: |
+    Subscriptions: Used for quay operator installation.
+  question: |
+    What is a purpose of subscriptions in the context of quay operator installation?
+- answer: |
+    Subscriptions are used for quay operator installation to manage the automatic updates and installation of the
+    operator in a specific namespace in an OpenShift cluster. It helps to keep the operator updated with its latest
+    versions. 5
+  context: |
+    Subscriptions: Used for quay operator installation.
+  question: |
+    What is a purpose of subscriptions in the context of quay operator installation?
+task_description: |
+  This skill helps in understanding the concept: Subscriptions: Used for quay operator installation.

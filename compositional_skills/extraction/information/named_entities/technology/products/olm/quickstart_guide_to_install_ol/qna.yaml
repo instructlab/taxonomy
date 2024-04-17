@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Sure, here are the steps: 1
+  context: |
+    Quickstart guide to install OLM in a Kubernetes cluster and install an operator using OLM
+  question: |
+    Can you explain the steps to install OLM in a Kubernetes Cluster and install an operator using OLM?
+- answer: |
+    Sure, here are the steps: 2
+  context: |
+    Quickstart guide to install OLM in a Kubernetes cluster and install an operator using OLM
+  question: |
+    Can you explain the steps to install OLM in a Kubernetes Cluster and install an operator using OLM?
+- answer: |
+    Sure, here are the steps: 3
+  context: |
+    Quickstart guide to install OLM in a Kubernetes cluster and install an operator using OLM
+  question: |
+    Can you explain the steps to install OLM in a Kubernetes Cluster and install an operator using OLM?
+- answer: |
+    Sure, here are the steps: 4
+  context: |
+    Quickstart guide to install OLM in a Kubernetes cluster and install an operator using OLM
+  question: |
+    Can you explain the steps to install OLM in a Kubernetes Cluster and install an operator using OLM?
+- answer: |
+    Sure, here are the steps: 5
+  context: |
+    Quickstart guide to install OLM in a Kubernetes cluster and install an operator using OLM
+  question: |
+    Can you explain the steps to install OLM in a Kubernetes Cluster and install an operator using OLM?
+task_description: |
+  This skill helps in understanding the concept: Quickstart guide to install OLM in a Kubernetes cluster and install
+  an operator using OLM

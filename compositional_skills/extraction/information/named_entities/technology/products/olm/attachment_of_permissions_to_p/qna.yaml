@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The image can be made accessible for the operator Deployment's manifest by attaching permissions to pull the image
+    directly. 1
+  context: |
+    Attachment of permissions to pull the image directly to the operator Deployment's manifest.
+  question: |
+    What is the procedure involved in making the image accessible for the operator Deployment's manifest?
+- answer: |
+    The image can be made accessible for the operator Deployment's manifest by attaching permissions to pull the image
+    directly. 2
+  context: |
+    Attachment of permissions to pull the image directly to the operator Deployment's manifest.
+  question: |
+    What is the procedure involved in making the image accessible for the operator Deployment's manifest?
+- answer: |
+    The image can be made accessible for the operator Deployment's manifest by attaching permissions to pull the image
+    directly. 3
+  context: |
+    Attachment of permissions to pull the image directly to the operator Deployment's manifest.
+  question: |
+    What is the procedure involved in making the image accessible for the operator Deployment's manifest?
+- answer: |
+    The image can be made accessible for the operator Deployment's manifest by attaching permissions to pull the image
+    directly. 4
+  context: |
+    Attachment of permissions to pull the image directly to the operator Deployment's manifest.
+  question: |
+    What is the procedure involved in making the image accessible for the operator Deployment's manifest?
+- answer: |
+    The image can be made accessible for the operator Deployment's manifest by attaching permissions to pull the image
+    directly. 5
+  context: |
+    Attachment of permissions to pull the image directly to the operator Deployment's manifest.
+  question: |
+    What is the procedure involved in making the image accessible for the operator Deployment's manifest?
+task_description: |
+  This skill helps in understanding the concept: Attachment of permissions to pull the image directly to the
+  operator Deployment's manifest.

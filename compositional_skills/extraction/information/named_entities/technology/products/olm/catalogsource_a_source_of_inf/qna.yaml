@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    A CatalogSource in Kubernetes is a source of information through which applications can be installed. 1
+  context: |
+    CatalogSource: A source of information in Kubernetes through which applications can be installed.
+  question: |
+    What is a CatalogSource in Kubernetes?
+- answer: |
+    A CatalogSource in Kubernetes is a source of information through which applications can be installed. 2
+  context: |
+    CatalogSource: A source of information in Kubernetes through which applications can be installed.
+  question: |
+    What is a CatalogSource in Kubernetes?
+- answer: |
+    A CatalogSource in Kubernetes is a source of information through which applications can be installed. 3
+  context: |
+    CatalogSource: A source of information in Kubernetes through which applications can be installed.
+  question: |
+    What is a CatalogSource in Kubernetes?
+- answer: |
+    A CatalogSource in Kubernetes is a source of information through which applications can be installed. 4
+  context: |
+    CatalogSource: A source of information in Kubernetes through which applications can be installed.
+  question: |
+    What is a CatalogSource in Kubernetes?
+- answer: |
+    A CatalogSource in Kubernetes is a source of information through which applications can be installed. 5
+  context: |
+    CatalogSource: A source of information in Kubernetes through which applications can be installed.
+  question: |
+    What is a CatalogSource in Kubernetes?
+task_description: |
+  This skill helps in understanding the concept: CatalogSource: A source of information in Kubernetes through which
+  applications can be installed.

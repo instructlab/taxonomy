@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The method to create a catalog of operators available on a cluster involves referencing it from a CatalogSource. 1
+  context: |
+    Making a Catalog of operators available on cluster by referencing it from a CatalogSource.
+  question: |
+    What is the method to create a catalog of operators available on a cluster?
+- answer: |
+    The method to create a catalog of operators available on a cluster involves referencing it from a CatalogSource. 2
+  context: |
+    Making a Catalog of operators available on cluster by referencing it from a CatalogSource.
+  question: |
+    What is the method to create a catalog of operators available on a cluster?
+- answer: |
+    The method to create a catalog of operators available on a cluster involves referencing it from a CatalogSource. 3
+  context: |
+    Making a Catalog of operators available on cluster by referencing it from a CatalogSource.
+  question: |
+    What is the method to create a catalog of operators available on a cluster?
+- answer: |
+    The method to create a catalog of operators available on a cluster involves referencing it from a CatalogSource. 4
+  context: |
+    Making a Catalog of operators available on cluster by referencing it from a CatalogSource.
+  question: |
+    What is the method to create a catalog of operators available on a cluster?
+- answer: |
+    The method to create a catalog of operators available on a cluster involves referencing it from a CatalogSource. 5
+  context: |
+    Making a Catalog of operators available on cluster by referencing it from a CatalogSource.
+  question: |
+    What is the method to create a catalog of operators available on a cluster?
+task_description: |
+  This skill helps in understanding the concept: Making a Catalog of operators available on cluster by referencing
+  it from a CatalogSource.

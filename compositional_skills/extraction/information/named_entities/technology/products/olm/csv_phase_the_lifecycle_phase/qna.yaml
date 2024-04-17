@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    CSV Phase refers to the lifecycle phase of the ClusterServiceVersion in the cluster. 1
+  context: |
+    CSV Phase: The lifecycle phase of the ClusterServiceVersion in the cluster.
+  question: |
+    What is CSV Phase in a cluster?
+- answer: |
+    CSV Phase refers to the lifecycle phase of the ClusterServiceVersion in the cluster. 2
+  context: |
+    CSV Phase: The lifecycle phase of the ClusterServiceVersion in the cluster.
+  question: |
+    What is CSV Phase in a cluster?
+- answer: |
+    CSV Phase refers to the lifecycle phase of the ClusterServiceVersion in the cluster. 3
+  context: |
+    CSV Phase: The lifecycle phase of the ClusterServiceVersion in the cluster.
+  question: |
+    What is CSV Phase in a cluster?
+- answer: |
+    CSV Phase refers to the lifecycle phase of the ClusterServiceVersion in the cluster. 4
+  context: |
+    CSV Phase: The lifecycle phase of the ClusterServiceVersion in the cluster.
+  question: |
+    What is CSV Phase in a cluster?
+- answer: |
+    CSV Phase refers to the lifecycle phase of the ClusterServiceVersion in the cluster. 5
+  context: |
+    CSV Phase: The lifecycle phase of the ClusterServiceVersion in the cluster.
+  question: |
+    What is CSV Phase in a cluster?
+task_description: |
+  This skill helps in understanding the concept: CSV Phase: The lifecycle phase of the ClusterServiceVersion in the
+  cluster.

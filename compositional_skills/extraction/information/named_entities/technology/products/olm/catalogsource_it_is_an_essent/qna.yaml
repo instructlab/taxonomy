@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    A CatalogSource is a critical requirement for the Subscription. Configuration complications might arise, which may
+    necessitate troubleshooting to ensure it functions correctly. 1
+  context: |
+    CatalogSource: It is an essential requirement for the Subscription, and there could be some complications while
+    configuring a CatalogSource, which might require troubleshooting.
+  question: |
+    What is a CatalogSource and what complications might require troubleshooting in its configuration?
+- answer: |
+    A CatalogSource is a critical requirement for the Subscription. Configuration complications might arise, which may
+    necessitate troubleshooting to ensure it functions correctly. 2
+  context: |
+    CatalogSource: It is an essential requirement for the Subscription, and there could be some complications while
+    configuring a CatalogSource, which might require troubleshooting.
+  question: |
+    What is a CatalogSource and what complications might require troubleshooting in its configuration?
+- answer: |
+    A CatalogSource is a critical requirement for the Subscription. Configuration complications might arise, which may
+    necessitate troubleshooting to ensure it functions correctly. 3
+  context: |
+    CatalogSource: It is an essential requirement for the Subscription, and there could be some complications while
+    configuring a CatalogSource, which might require troubleshooting.
+  question: |
+    What is a CatalogSource and what complications might require troubleshooting in its configuration?
+- answer: |
+    A CatalogSource is a critical requirement for the Subscription. Configuration complications might arise, which may
+    necessitate troubleshooting to ensure it functions correctly. 4
+  context: |
+    CatalogSource: It is an essential requirement for the Subscription, and there could be some complications while
+    configuring a CatalogSource, which might require troubleshooting.
+  question: |
+    What is a CatalogSource and what complications might require troubleshooting in its configuration?
+- answer: |
+    A CatalogSource is a critical requirement for the Subscription. Configuration complications might arise, which may
+    necessitate troubleshooting to ensure it functions correctly. 5
+  context: |
+    CatalogSource: It is an essential requirement for the Subscription, and there could be some complications while
+    configuring a CatalogSource, which might require troubleshooting.
+  question: |
+    What is a CatalogSource and what complications might require troubleshooting in its configuration?
+task_description: |
+  This skill helps in understanding the concept: CatalogSource: It is an essential requirement for the Subscription,
+  and there could be some complications while configuring a CatalogSource, which might require troubleshooting.

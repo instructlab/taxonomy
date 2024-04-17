@@ -1,0 +1,34 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The annotations.yaml file contains information about the operator bundle. 1
+  context: |
+    annotations.yaml: Contains information about the operator bundle.
+  question: |
+    What does the annotations.yaml file contain in the context of an operator bundle?
+- answer: |
+    The annotations.yaml file contains information about the operator bundle. 2
+  context: |
+    annotations.yaml: Contains information about the operator bundle.
+  question: |
+    What does the annotations.yaml file contain in the context of an operator bundle?
+- answer: |
+    The annotations.yaml file contains information about the operator bundle. 3
+  context: |
+    annotations.yaml: Contains information about the operator bundle.
+  question: |
+    What does the annotations.yaml file contain in the context of an operator bundle?
+- answer: |
+    The annotations.yaml file contains information about the operator bundle. 4
+  context: |
+    annotations.yaml: Contains information about the operator bundle.
+  question: |
+    What does the annotations.yaml file contain in the context of an operator bundle?
+- answer: |
+    The annotations.yaml file contains information about the operator bundle. 5
+  context: |
+    annotations.yaml: Contains information about the operator bundle.
+  question: |
+    What does the annotations.yaml file contain in the context of an operator bundle?
+task_description: |
+  This skill helps in understanding the concept: annotations.yaml: Contains information about the operator bundle.

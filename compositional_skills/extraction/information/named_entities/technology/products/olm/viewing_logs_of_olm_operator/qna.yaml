@@ -1,0 +1,44 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Viewing logs of OLM (Operator Lifecycle Manager) operator can help in debugging issues, understanding the
+    operator's workflow and ensuring that it is functioning as expected. This can be particularly beneficial in
+    managing and overseeing the life cycle of on-cluster applications. 1
+  context: |
+    Viewing logs of OLM operator
+  question: |
+    What is the purpose of viewing logs of OLM operator?
+- answer: |
+    Viewing logs of OLM (Operator Lifecycle Manager) operator can help in debugging issues, understanding the
+    operator's workflow and ensuring that it is functioning as expected. This can be particularly beneficial in
+    managing and overseeing the life cycle of on-cluster applications. 2
+  context: |
+    Viewing logs of OLM operator
+  question: |
+    What is the purpose of viewing logs of OLM operator?
+- answer: |
+    Viewing logs of OLM (Operator Lifecycle Manager) operator can help in debugging issues, understanding the
+    operator's workflow and ensuring that it is functioning as expected. This can be particularly beneficial in
+    managing and overseeing the life cycle of on-cluster applications. 3
+  context: |
+    Viewing logs of OLM operator
+  question: |
+    What is the purpose of viewing logs of OLM operator?
+- answer: |
+    Viewing logs of OLM (Operator Lifecycle Manager) operator can help in debugging issues, understanding the
+    operator's workflow and ensuring that it is functioning as expected. This can be particularly beneficial in
+    managing and overseeing the life cycle of on-cluster applications. 4
+  context: |
+    Viewing logs of OLM operator
+  question: |
+    What is the purpose of viewing logs of OLM operator?
+- answer: |
+    Viewing logs of OLM (Operator Lifecycle Manager) operator can help in debugging issues, understanding the
+    operator's workflow and ensuring that it is functioning as expected. This can be particularly beneficial in
+    managing and overseeing the life cycle of on-cluster applications. 5
+  context: |
+    Viewing logs of OLM operator
+  question: |
+    What is the purpose of viewing logs of OLM operator?
+task_description: |
+  This skill helps in understanding the concept: Viewing logs of OLM operator

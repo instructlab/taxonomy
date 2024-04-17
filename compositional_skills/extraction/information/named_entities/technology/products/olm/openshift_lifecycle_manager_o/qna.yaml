@@ -1,0 +1,56 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The OpenShift Lifecycle Manager (OLM) assists with the operator installation by providing metadata to ensure safe
+    operation on a cluster and applying updates when new versions appear. A ClusterServiceVersion (CSV) represents the
+    operator version on the cluster. 1
+  context: |
+    OpenShift Lifecycle Manager (OLM): OLM assist with operator installation, providing metadata to ensure it runs
+    safely on a cluster and applying updates when new versions appear. A ClusterServiceVersion (CSV) represents the
+    operator version on the cluster.
+  question: |
+    What is the function of OpenShift Lifecycle Manager (OLM) and what is a ClusterServiceVersion (CSV)?
+- answer: |
+    The OpenShift Lifecycle Manager (OLM) assists with the operator installation by providing metadata to ensure safe
+    operation on a cluster and applying updates when new versions appear. A ClusterServiceVersion (CSV) represents the
+    operator version on the cluster. 2
+  context: |
+    OpenShift Lifecycle Manager (OLM): OLM assist with operator installation, providing metadata to ensure it runs
+    safely on a cluster and applying updates when new versions appear. A ClusterServiceVersion (CSV) represents the
+    operator version on the cluster.
+  question: |
+    What is the function of OpenShift Lifecycle Manager (OLM) and what is a ClusterServiceVersion (CSV)?
+- answer: |
+    The OpenShift Lifecycle Manager (OLM) assists with the operator installation by providing metadata to ensure safe
+    operation on a cluster and applying updates when new versions appear. A ClusterServiceVersion (CSV) represents the
+    operator version on the cluster. 3
+  context: |
+    OpenShift Lifecycle Manager (OLM): OLM assist with operator installation, providing metadata to ensure it runs
+    safely on a cluster and applying updates when new versions appear. A ClusterServiceVersion (CSV) represents the
+    operator version on the cluster.
+  question: |
+    What is the function of OpenShift Lifecycle Manager (OLM) and what is a ClusterServiceVersion (CSV)?
+- answer: |
+    The OpenShift Lifecycle Manager (OLM) assists with the operator installation by providing metadata to ensure safe
+    operation on a cluster and applying updates when new versions appear. A ClusterServiceVersion (CSV) represents the
+    operator version on the cluster. 4
+  context: |
+    OpenShift Lifecycle Manager (OLM): OLM assist with operator installation, providing metadata to ensure it runs
+    safely on a cluster and applying updates when new versions appear. A ClusterServiceVersion (CSV) represents the
+    operator version on the cluster.
+  question: |
+    What is the function of OpenShift Lifecycle Manager (OLM) and what is a ClusterServiceVersion (CSV)?
+- answer: |
+    The OpenShift Lifecycle Manager (OLM) assists with the operator installation by providing metadata to ensure safe
+    operation on a cluster and applying updates when new versions appear. A ClusterServiceVersion (CSV) represents the
+    operator version on the cluster. 5
+  context: |
+    OpenShift Lifecycle Manager (OLM): OLM assist with operator installation, providing metadata to ensure it runs
+    safely on a cluster and applying updates when new versions appear. A ClusterServiceVersion (CSV) represents the
+    operator version on the cluster.
+  question: |
+    What is the function of OpenShift Lifecycle Manager (OLM) and what is a ClusterServiceVersion (CSV)?
+task_description: |
+  This skill helps in understanding the concept: OpenShift Lifecycle Manager (OLM): OLM assist with operator
+  installation, providing metadata to ensure it runs safely on a cluster and applying updates when new versions
+  appear. A ClusterServiceVersion (CSV) represents the operator version on the cluster.

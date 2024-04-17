@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The hack/ci/link-check.sh script is responsible for running html-proofer that validates the generated HTML output.
+    1
+  context: |
+    Behind the script:     - The hack/ci/link-check.sh script is responsible for running html-proofer that validates
+    the generated HTML output.
+  question: |
+    What is the function of the hack/ci/link-check.sh script?
+- answer: |
+    The hack/ci/link-check.sh script is responsible for running html-proofer that validates the generated HTML output.
+    2
+  context: |
+    Behind the script:     - The hack/ci/link-check.sh script is responsible for running html-proofer that validates
+    the generated HTML output.
+  question: |
+    What is the function of the hack/ci/link-check.sh script?
+- answer: |
+    The hack/ci/link-check.sh script is responsible for running html-proofer that validates the generated HTML output.
+    3
+  context: |
+    Behind the script:     - The hack/ci/link-check.sh script is responsible for running html-proofer that validates
+    the generated HTML output.
+  question: |
+    What is the function of the hack/ci/link-check.sh script?
+- answer: |
+    The hack/ci/link-check.sh script is responsible for running html-proofer that validates the generated HTML output.
+    4
+  context: |
+    Behind the script:     - The hack/ci/link-check.sh script is responsible for running html-proofer that validates
+    the generated HTML output.
+  question: |
+    What is the function of the hack/ci/link-check.sh script?
+- answer: |
+    The hack/ci/link-check.sh script is responsible for running html-proofer that validates the generated HTML output.
+    5
+  context: |
+    Behind the script:     - The hack/ci/link-check.sh script is responsible for running html-proofer that validates
+    the generated HTML output.
+  question: |
+    What is the function of the hack/ci/link-check.sh script?
+task_description: |
+  This skill helps in understanding the concept: Behind the script:     - The hack/ci/link-check.sh script is
+  responsible for running html-proofer that validates the generated HTML output.

@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    You can install OLM in a cluster using the operator-sdk binary for installation and uninstallation on a Kubernetes
+    cluster. 1
+  context: |
+    Installing OLM in a cluster: Use operator-sdk binary for installation and uninstallation on a Kubernetes cluster.
+  question: |
+    How do you install OLM in a cluster?
+- answer: |
+    You can install OLM in a cluster using the operator-sdk binary for installation and uninstallation on a Kubernetes
+    cluster. 2
+  context: |
+    Installing OLM in a cluster: Use operator-sdk binary for installation and uninstallation on a Kubernetes cluster.
+  question: |
+    How do you install OLM in a cluster?
+- answer: |
+    You can install OLM in a cluster using the operator-sdk binary for installation and uninstallation on a Kubernetes
+    cluster. 3
+  context: |
+    Installing OLM in a cluster: Use operator-sdk binary for installation and uninstallation on a Kubernetes cluster.
+  question: |
+    How do you install OLM in a cluster?
+- answer: |
+    You can install OLM in a cluster using the operator-sdk binary for installation and uninstallation on a Kubernetes
+    cluster. 4
+  context: |
+    Installing OLM in a cluster: Use operator-sdk binary for installation and uninstallation on a Kubernetes cluster.
+  question: |
+    How do you install OLM in a cluster?
+- answer: |
+    You can install OLM in a cluster using the operator-sdk binary for installation and uninstallation on a Kubernetes
+    cluster. 5
+  context: |
+    Installing OLM in a cluster: Use operator-sdk binary for installation and uninstallation on a Kubernetes cluster.
+  question: |
+    How do you install OLM in a cluster?
+task_description: |
+  This skill helps in understanding the concept: Installing OLM in a cluster: Use operator-sdk binary for
+  installation and uninstallation on a Kubernetes cluster.

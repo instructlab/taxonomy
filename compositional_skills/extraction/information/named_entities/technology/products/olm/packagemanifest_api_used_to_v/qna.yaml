@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The Packagemanifest API is used to view the operators available for installation in the cluster. 1
+  context: |
+    Packagemanifest API: Used to view the operators available for installation in the cluster.
+  question: |
+    What is the function of the Packagemanifest API in a cluster?
+- answer: |
+    The Packagemanifest API is used to view the operators available for installation in the cluster. 2
+  context: |
+    Packagemanifest API: Used to view the operators available for installation in the cluster.
+  question: |
+    What is the function of the Packagemanifest API in a cluster?
+- answer: |
+    The Packagemanifest API is used to view the operators available for installation in the cluster. 3
+  context: |
+    Packagemanifest API: Used to view the operators available for installation in the cluster.
+  question: |
+    What is the function of the Packagemanifest API in a cluster?
+- answer: |
+    The Packagemanifest API is used to view the operators available for installation in the cluster. 4
+  context: |
+    Packagemanifest API: Used to view the operators available for installation in the cluster.
+  question: |
+    What is the function of the Packagemanifest API in a cluster?
+- answer: |
+    The Packagemanifest API is used to view the operators available for installation in the cluster. 5
+  context: |
+    Packagemanifest API: Used to view the operators available for installation in the cluster.
+  question: |
+    What is the function of the Packagemanifest API in a cluster?
+task_description: |
+  This skill helps in understanding the concept: Packagemanifest API: Used to view the operators available for
+  installation in the cluster.

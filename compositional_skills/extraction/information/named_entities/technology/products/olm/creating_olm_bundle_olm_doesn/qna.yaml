@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    No, OLM does not support including a role and rolebinding in different namespaces in the bundle. 1
+  context: |
+    Creating OLM bundle: OLM doesn't support including role and rolebinding in different namespace in bundle.
+  question: |
+    Does the Operator Lifecycle Manager (OLM) support including a role and rolebinding in different namespaces in the
+    bundle?
+- answer: |
+    No, OLM does not support including a role and rolebinding in different namespaces in the bundle. 2
+  context: |
+    Creating OLM bundle: OLM doesn't support including role and rolebinding in different namespace in bundle.
+  question: |
+    Does the Operator Lifecycle Manager (OLM) support including a role and rolebinding in different namespaces in the
+    bundle?
+- answer: |
+    No, OLM does not support including a role and rolebinding in different namespaces in the bundle. 3
+  context: |
+    Creating OLM bundle: OLM doesn't support including role and rolebinding in different namespace in bundle.
+  question: |
+    Does the Operator Lifecycle Manager (OLM) support including a role and rolebinding in different namespaces in the
+    bundle?
+- answer: |
+    No, OLM does not support including a role and rolebinding in different namespaces in the bundle. 4
+  context: |
+    Creating OLM bundle: OLM doesn't support including role and rolebinding in different namespace in bundle.
+  question: |
+    Does the Operator Lifecycle Manager (OLM) support including a role and rolebinding in different namespaces in the
+    bundle?
+- answer: |
+    No, OLM does not support including a role and rolebinding in different namespaces in the bundle. 5
+  context: |
+    Creating OLM bundle: OLM doesn't support including role and rolebinding in different namespace in bundle.
+  question: |
+    Does the Operator Lifecycle Manager (OLM) support including a role and rolebinding in different namespaces in the
+    bundle?
+task_description: |
+  This skill helps in understanding the concept: Creating OLM bundle: OLM doesn't support including role and
+  rolebinding in different namespace in bundle.

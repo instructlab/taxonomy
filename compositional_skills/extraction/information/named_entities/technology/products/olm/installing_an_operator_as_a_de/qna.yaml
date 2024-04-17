@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    No, the Operator Lifecycle Manager (OLM) can only resolve dependencies in the same namespace. 1
+  context: |
+    Installing an operator as a dependency in a different namespace: OLM can only resolve dependencies in the same
+    namespace.
+  question: |
+    Can the Operator Lifecycle Manager (OLM) resolve dependencies in a different namespace?
+- answer: |
+    No, the Operator Lifecycle Manager (OLM) can only resolve dependencies in the same namespace. 2
+  context: |
+    Installing an operator as a dependency in a different namespace: OLM can only resolve dependencies in the same
+    namespace.
+  question: |
+    Can the Operator Lifecycle Manager (OLM) resolve dependencies in a different namespace?
+- answer: |
+    No, the Operator Lifecycle Manager (OLM) can only resolve dependencies in the same namespace. 3
+  context: |
+    Installing an operator as a dependency in a different namespace: OLM can only resolve dependencies in the same
+    namespace.
+  question: |
+    Can the Operator Lifecycle Manager (OLM) resolve dependencies in a different namespace?
+- answer: |
+    No, the Operator Lifecycle Manager (OLM) can only resolve dependencies in the same namespace. 4
+  context: |
+    Installing an operator as a dependency in a different namespace: OLM can only resolve dependencies in the same
+    namespace.
+  question: |
+    Can the Operator Lifecycle Manager (OLM) resolve dependencies in a different namespace?
+- answer: |
+    No, the Operator Lifecycle Manager (OLM) can only resolve dependencies in the same namespace. 5
+  context: |
+    Installing an operator as a dependency in a different namespace: OLM can only resolve dependencies in the same
+    namespace.
+  question: |
+    Can the Operator Lifecycle Manager (OLM) resolve dependencies in a different namespace?
+task_description: |
+  This skill helps in understanding the concept: Installing an operator as a dependency in a different namespace:
+  OLM can only resolve dependencies in the same namespace.

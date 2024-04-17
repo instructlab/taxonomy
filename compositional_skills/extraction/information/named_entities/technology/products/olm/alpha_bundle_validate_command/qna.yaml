@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The alpha bundle validate command is used to validate a bundle image from a remote registry. 1
+  context: |
+    alpha bundle validate command: Used to validate a bundle image from a remote registry.
+  question: |
+    What is the function of the alpha bundle validate command?
+- answer: |
+    The alpha bundle validate command is used to validate a bundle image from a remote registry. 2
+  context: |
+    alpha bundle validate command: Used to validate a bundle image from a remote registry.
+  question: |
+    What is the function of the alpha bundle validate command?
+- answer: |
+    The alpha bundle validate command is used to validate a bundle image from a remote registry. 3
+  context: |
+    alpha bundle validate command: Used to validate a bundle image from a remote registry.
+  question: |
+    What is the function of the alpha bundle validate command?
+- answer: |
+    The alpha bundle validate command is used to validate a bundle image from a remote registry. 4
+  context: |
+    alpha bundle validate command: Used to validate a bundle image from a remote registry.
+  question: |
+    What is the function of the alpha bundle validate command?
+- answer: |
+    The alpha bundle validate command is used to validate a bundle image from a remote registry. 5
+  context: |
+    alpha bundle validate command: Used to validate a bundle image from a remote registry.
+  question: |
+    What is the function of the alpha bundle validate command?
+task_description: |
+  This skill helps in understanding the concept: alpha bundle validate command: Used to validate a bundle image from
+  a remote registry.

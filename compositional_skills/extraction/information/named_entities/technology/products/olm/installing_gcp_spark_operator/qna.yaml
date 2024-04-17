@@ -1,0 +1,40 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The GCP spark operator cannot be found due to the lack of maintenance and the use of a deprecated CRD version. 1
+  context: |
+    Installing GCP spark operator: The operator cannot be found due to lack of maintenance and the use of deprecated
+    CRD version.
+  question: |
+    Why can't the GCP spark operator be found during installation?
+- answer: |
+    The GCP spark operator cannot be found due to the lack of maintenance and the use of a deprecated CRD version. 2
+  context: |
+    Installing GCP spark operator: The operator cannot be found due to lack of maintenance and the use of deprecated
+    CRD version.
+  question: |
+    Why can't the GCP spark operator be found during installation?
+- answer: |
+    The GCP spark operator cannot be found due to the lack of maintenance and the use of a deprecated CRD version. 3
+  context: |
+    Installing GCP spark operator: The operator cannot be found due to lack of maintenance and the use of deprecated
+    CRD version.
+  question: |
+    Why can't the GCP spark operator be found during installation?
+- answer: |
+    The GCP spark operator cannot be found due to the lack of maintenance and the use of a deprecated CRD version. 4
+  context: |
+    Installing GCP spark operator: The operator cannot be found due to lack of maintenance and the use of deprecated
+    CRD version.
+  question: |
+    Why can't the GCP spark operator be found during installation?
+- answer: |
+    The GCP spark operator cannot be found due to the lack of maintenance and the use of a deprecated CRD version. 5
+  context: |
+    Installing GCP spark operator: The operator cannot be found due to lack of maintenance and the use of deprecated
+    CRD version.
+  question: |
+    Why can't the GCP spark operator be found during installation?
+task_description: |
+  This skill helps in understanding the concept: Installing GCP spark operator: The operator cannot be found due to
+  lack of maintenance and the use of deprecated CRD version.

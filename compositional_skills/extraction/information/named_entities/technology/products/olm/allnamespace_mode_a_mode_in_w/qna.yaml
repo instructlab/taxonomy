@@ -1,0 +1,46 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The AllNamespace mode is a mode in which an operator is installed in every namespace on a cluster. When an
+    operator is installed in this mode, a Copied CSV is created in every namespace. 1
+  context: |
+    AllNamespace mode: A mode in which an operator is installed in every namespace on a cluster. When an operator is
+    installed in this mode, a Copied CSV is created in every namespace.
+  question: |
+    What is AllNamespace mode in terms of operator installation on a cluster?
+- answer: |
+    The AllNamespace mode is a mode in which an operator is installed in every namespace on a cluster. When an
+    operator is installed in this mode, a Copied CSV is created in every namespace. 2
+  context: |
+    AllNamespace mode: A mode in which an operator is installed in every namespace on a cluster. When an operator is
+    installed in this mode, a Copied CSV is created in every namespace.
+  question: |
+    What is AllNamespace mode in terms of operator installation on a cluster?
+- answer: |
+    The AllNamespace mode is a mode in which an operator is installed in every namespace on a cluster. When an
+    operator is installed in this mode, a Copied CSV is created in every namespace. 3
+  context: |
+    AllNamespace mode: A mode in which an operator is installed in every namespace on a cluster. When an operator is
+    installed in this mode, a Copied CSV is created in every namespace.
+  question: |
+    What is AllNamespace mode in terms of operator installation on a cluster?
+- answer: |
+    The AllNamespace mode is a mode in which an operator is installed in every namespace on a cluster. When an
+    operator is installed in this mode, a Copied CSV is created in every namespace. 4
+  context: |
+    AllNamespace mode: A mode in which an operator is installed in every namespace on a cluster. When an operator is
+    installed in this mode, a Copied CSV is created in every namespace.
+  question: |
+    What is AllNamespace mode in terms of operator installation on a cluster?
+- answer: |
+    The AllNamespace mode is a mode in which an operator is installed in every namespace on a cluster. When an
+    operator is installed in this mode, a Copied CSV is created in every namespace. 5
+  context: |
+    AllNamespace mode: A mode in which an operator is installed in every namespace on a cluster. When an operator is
+    installed in this mode, a Copied CSV is created in every namespace.
+  question: |
+    What is AllNamespace mode in terms of operator installation on a cluster?
+task_description: |
+  This skill helps in understanding the concept: AllNamespace mode: A mode in which an operator is installed in
+  every namespace on a cluster. When an operator is installed in this mode, a Copied CSV is created in every
+  namespace.

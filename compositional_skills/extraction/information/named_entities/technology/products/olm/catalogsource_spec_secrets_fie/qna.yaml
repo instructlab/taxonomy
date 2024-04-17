@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The CatalogSource.Spec.Secrets field is a location within the CatalogSource where a secret key must be specified
+    in order to pull images from a private registry. 1
+  context: |
+    CatalogSource.Spec.Secrets field: A place in the CatalogSource where a secret key needs to be specified for
+    pulling images from a private registry.
+  question: |
+    What is the function of the CatalogSource.Spec.Secrets field in a CatalogSource?
+- answer: |
+    The CatalogSource.Spec.Secrets field is a location within the CatalogSource where a secret key must be specified
+    in order to pull images from a private registry. 2
+  context: |
+    CatalogSource.Spec.Secrets field: A place in the CatalogSource where a secret key needs to be specified for
+    pulling images from a private registry.
+  question: |
+    What is the function of the CatalogSource.Spec.Secrets field in a CatalogSource?
+- answer: |
+    The CatalogSource.Spec.Secrets field is a location within the CatalogSource where a secret key must be specified
+    in order to pull images from a private registry. 3
+  context: |
+    CatalogSource.Spec.Secrets field: A place in the CatalogSource where a secret key needs to be specified for
+    pulling images from a private registry.
+  question: |
+    What is the function of the CatalogSource.Spec.Secrets field in a CatalogSource?
+- answer: |
+    The CatalogSource.Spec.Secrets field is a location within the CatalogSource where a secret key must be specified
+    in order to pull images from a private registry. 4
+  context: |
+    CatalogSource.Spec.Secrets field: A place in the CatalogSource where a secret key needs to be specified for
+    pulling images from a private registry.
+  question: |
+    What is the function of the CatalogSource.Spec.Secrets field in a CatalogSource?
+- answer: |
+    The CatalogSource.Spec.Secrets field is a location within the CatalogSource where a secret key must be specified
+    in order to pull images from a private registry. 5
+  context: |
+    CatalogSource.Spec.Secrets field: A place in the CatalogSource where a secret key needs to be specified for
+    pulling images from a private registry.
+  question: |
+    What is the function of the CatalogSource.Spec.Secrets field in a CatalogSource?
+task_description: |
+  This skill helps in understanding the concept: CatalogSource.Spec.Secrets field: A place in the CatalogSource
+  where a secret key needs to be specified for pulling images from a private registry.

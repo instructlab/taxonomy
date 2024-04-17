@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The process is called Catalog updates. 1
+  context: |
+    Catalog updates: The process of checking for and applying updates to an operator from the catalog.
+  question: |
+    What is the process of checking for and applying updates to an operator from the catalog called?
+- answer: |
+    The process is called Catalog updates. 2
+  context: |
+    Catalog updates: The process of checking for and applying updates to an operator from the catalog.
+  question: |
+    What is the process of checking for and applying updates to an operator from the catalog called?
+- answer: |
+    The process is called Catalog updates. 3
+  context: |
+    Catalog updates: The process of checking for and applying updates to an operator from the catalog.
+  question: |
+    What is the process of checking for and applying updates to an operator from the catalog called?
+- answer: |
+    The process is called Catalog updates. 4
+  context: |
+    Catalog updates: The process of checking for and applying updates to an operator from the catalog.
+  question: |
+    What is the process of checking for and applying updates to an operator from the catalog called?
+- answer: |
+    The process is called Catalog updates. 5
+  context: |
+    Catalog updates: The process of checking for and applying updates to an operator from the catalog.
+  question: |
+    What is the process of checking for and applying updates to an operator from the catalog called?
+task_description: |
+  This skill helps in understanding the concept: Catalog updates: The process of checking for and applying updates
+  to an operator from the catalog.

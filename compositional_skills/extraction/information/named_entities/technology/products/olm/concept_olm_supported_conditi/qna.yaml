@@ -1,0 +1,56 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    OLM Supported Conditions refers to certain conditions that, upon appearing in the OperatorCondition's
+    Status.Conditions array, affect how OLM (Operator Lifecycle Manager) manages the operator. An example of this is
+    the Upgradeable Condition. 1
+  context: |
+    Concept: OLM Supported Conditions - Definition: These are conditions which, when present in the
+    OperatorCondition's Status.Conditions array, influence how OLM manages the operator. - Examples: Upgradeable
+    Condition.
+  question: |
+    What is the meaning of OLM Supported Conditions and can you give an example?
+- answer: |
+    OLM Supported Conditions refers to certain conditions that, upon appearing in the OperatorCondition's
+    Status.Conditions array, affect how OLM (Operator Lifecycle Manager) manages the operator. An example of this is
+    the Upgradeable Condition. 2
+  context: |
+    Concept: OLM Supported Conditions - Definition: These are conditions which, when present in the
+    OperatorCondition's Status.Conditions array, influence how OLM manages the operator. - Examples: Upgradeable
+    Condition.
+  question: |
+    What is the meaning of OLM Supported Conditions and can you give an example?
+- answer: |
+    OLM Supported Conditions refers to certain conditions that, upon appearing in the OperatorCondition's
+    Status.Conditions array, affect how OLM (Operator Lifecycle Manager) manages the operator. An example of this is
+    the Upgradeable Condition. 3
+  context: |
+    Concept: OLM Supported Conditions - Definition: These are conditions which, when present in the
+    OperatorCondition's Status.Conditions array, influence how OLM manages the operator. - Examples: Upgradeable
+    Condition.
+  question: |
+    What is the meaning of OLM Supported Conditions and can you give an example?
+- answer: |
+    OLM Supported Conditions refers to certain conditions that, upon appearing in the OperatorCondition's
+    Status.Conditions array, affect how OLM (Operator Lifecycle Manager) manages the operator. An example of this is
+    the Upgradeable Condition. 4
+  context: |
+    Concept: OLM Supported Conditions - Definition: These are conditions which, when present in the
+    OperatorCondition's Status.Conditions array, influence how OLM manages the operator. - Examples: Upgradeable
+    Condition.
+  question: |
+    What is the meaning of OLM Supported Conditions and can you give an example?
+- answer: |
+    OLM Supported Conditions refers to certain conditions that, upon appearing in the OperatorCondition's
+    Status.Conditions array, affect how OLM (Operator Lifecycle Manager) manages the operator. An example of this is
+    the Upgradeable Condition. 5
+  context: |
+    Concept: OLM Supported Conditions - Definition: These are conditions which, when present in the
+    OperatorCondition's Status.Conditions array, influence how OLM manages the operator. - Examples: Upgradeable
+    Condition.
+  question: |
+    What is the meaning of OLM Supported Conditions and can you give an example?
+task_description: |
+  This skill helps in understanding the concept: Concept: OLM Supported Conditions - Definition: These are
+  conditions which, when present in the OperatorCondition's Status.Conditions array, influence how OLM manages the
+  operator. - Examples: Upgradeable Condition.

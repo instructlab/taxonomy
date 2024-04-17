@@ -1,0 +1,35 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Instead of using opm render, you should use the olm.csv.metadata property or extract bundle images directly. 1
+  context: |
+    opm render can't be used. Instead, use the olm.csv.metadata property or extract bundle images directly.
+  question: |
+    What should be used in place of opm render in extracting bundle images?
+- answer: |
+    Instead of using opm render, you should use the olm.csv.metadata property or extract bundle images directly. 2
+  context: |
+    opm render can't be used. Instead, use the olm.csv.metadata property or extract bundle images directly.
+  question: |
+    What should be used in place of opm render in extracting bundle images?
+- answer: |
+    Instead of using opm render, you should use the olm.csv.metadata property or extract bundle images directly. 3
+  context: |
+    opm render can't be used. Instead, use the olm.csv.metadata property or extract bundle images directly.
+  question: |
+    What should be used in place of opm render in extracting bundle images?
+- answer: |
+    Instead of using opm render, you should use the olm.csv.metadata property or extract bundle images directly. 4
+  context: |
+    opm render can't be used. Instead, use the olm.csv.metadata property or extract bundle images directly.
+  question: |
+    What should be used in place of opm render in extracting bundle images?
+- answer: |
+    Instead of using opm render, you should use the olm.csv.metadata property or extract bundle images directly. 5
+  context: |
+    opm render can't be used. Instead, use the olm.csv.metadata property or extract bundle images directly.
+  question: |
+    What should be used in place of opm render in extracting bundle images?
+task_description: |
+  This skill helps in understanding the concept: opm render cannot be used. Instead, use the olm.csv.metadata
+  property or extract bundle images directly.

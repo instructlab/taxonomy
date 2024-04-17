@@ -1,0 +1,67 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    Overriding OperatorConditions refers to the ability of Cluster Admins to ignore an "OLM Supported Condition"
+    reported by an Operator by adding the condition's type and status to the spec.overrides array in the
+    OperatorCondition Custom Resource. It is used to manage situations where an operator might be incorrectly
+    reporting a state to OLM. 1
+  context: |
+    Concept: Overriding OperatorConditions - Definition: This refers to the ability of Cluster Admins to ignore an
+    "OLM Supported Condition" reported by an Operator by adding the condition's type and status to the spec.overrides
+    array in the OperatorCondition Custom Resource. - Usage: It enables Cluster Admins to manage situations where an
+    operator might be incorrectly reporting a state to OLM.
+  question: |
+    What is the purpose of Overriding OperatorConditions in relation to Cluster Admins managing Operator Conditions?
+- answer: |
+    Overriding OperatorConditions refers to the ability of Cluster Admins to ignore an "OLM Supported Condition"
+    reported by an Operator by adding the condition's type and status to the spec.overrides array in the
+    OperatorCondition Custom Resource. It is used to manage situations where an operator might be incorrectly
+    reporting a state to OLM. 2
+  context: |
+    Concept: Overriding OperatorConditions - Definition: This refers to the ability of Cluster Admins to ignore an
+    "OLM Supported Condition" reported by an Operator by adding the condition's type and status to the spec.overrides
+    array in the OperatorCondition Custom Resource. - Usage: It enables Cluster Admins to manage situations where an
+    operator might be incorrectly reporting a state to OLM.
+  question: |
+    What is the purpose of Overriding OperatorConditions in relation to Cluster Admins managing Operator Conditions?
+- answer: |
+    Overriding OperatorConditions refers to the ability of Cluster Admins to ignore an "OLM Supported Condition"
+    reported by an Operator by adding the condition's type and status to the spec.overrides array in the
+    OperatorCondition Custom Resource. It is used to manage situations where an operator might be incorrectly
+    reporting a state to OLM. 3
+  context: |
+    Concept: Overriding OperatorConditions - Definition: This refers to the ability of Cluster Admins to ignore an
+    "OLM Supported Condition" reported by an Operator by adding the condition's type and status to the spec.overrides
+    array in the OperatorCondition Custom Resource. - Usage: It enables Cluster Admins to manage situations where an
+    operator might be incorrectly reporting a state to OLM.
+  question: |
+    What is the purpose of Overriding OperatorConditions in relation to Cluster Admins managing Operator Conditions?
+- answer: |
+    Overriding OperatorConditions refers to the ability of Cluster Admins to ignore an "OLM Supported Condition"
+    reported by an Operator by adding the condition's type and status to the spec.overrides array in the
+    OperatorCondition Custom Resource. It is used to manage situations where an operator might be incorrectly
+    reporting a state to OLM. 4
+  context: |
+    Concept: Overriding OperatorConditions - Definition: This refers to the ability of Cluster Admins to ignore an
+    "OLM Supported Condition" reported by an Operator by adding the condition's type and status to the spec.overrides
+    array in the OperatorCondition Custom Resource. - Usage: It enables Cluster Admins to manage situations where an
+    operator might be incorrectly reporting a state to OLM.
+  question: |
+    What is the purpose of Overriding OperatorConditions in relation to Cluster Admins managing Operator Conditions?
+- answer: |
+    Overriding OperatorConditions refers to the ability of Cluster Admins to ignore an "OLM Supported Condition"
+    reported by an Operator by adding the condition's type and status to the spec.overrides array in the
+    OperatorCondition Custom Resource. It is used to manage situations where an operator might be incorrectly
+    reporting a state to OLM. 5
+  context: |
+    Concept: Overriding OperatorConditions - Definition: This refers to the ability of Cluster Admins to ignore an
+    "OLM Supported Condition" reported by an Operator by adding the condition's type and status to the spec.overrides
+    array in the OperatorCondition Custom Resource. - Usage: It enables Cluster Admins to manage situations where an
+    operator might be incorrectly reporting a state to OLM.
+  question: |
+    What is the purpose of Overriding OperatorConditions in relation to Cluster Admins managing Operator Conditions?
+task_description: |
+  This skill helps in understanding the concept: Concept: Overriding OperatorConditions - Definition: This refers to
+  the ability of Cluster Admins to ignore an "OLM Supported Condition" reported by an Operator by adding the
+  condition's type and status to the spec.overrides array in the OperatorCondition Custom Resource. - Usage: It
+  enables Cluster Admins to manage situations where an operator might be incorrectly reporting a state to OLM.

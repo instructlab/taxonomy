@@ -1,0 +1,57 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The Operator Lifecycle Manager (OLM) is a component of the Operator Framework. It manages Kubernetes native
+    applications, also called Operators, in a automated, effective, and scalable manner. OLM provides a declarative
+    way to install, manage, and upgrade Operators and their dependencies within a cluster. 1
+  context: |
+    Operator Lifecycle Manager(OLM): A component of the Operator Framework that manages Kubernetes native
+    applications, called Operators, automatically, effectively, and in a scalable manner. OLM provides a declarative
+    way to install, manage, and upgrade Operators and their dependencies in a cluster.
+  question: |
+    What is the Operator Lifecycle Manager (OLM) and what is its function in the Operator Framework?
+- answer: |
+    The Operator Lifecycle Manager (OLM) is a component of the Operator Framework. It manages Kubernetes native
+    applications, also called Operators, in a automated, effective, and scalable manner. OLM provides a declarative
+    way to install, manage, and upgrade Operators and their dependencies within a cluster. 2
+  context: |
+    Operator Lifecycle Manager(OLM): A component of the Operator Framework that manages Kubernetes native
+    applications, called Operators, automatically, effectively, and in a scalable manner. OLM provides a declarative
+    way to install, manage, and upgrade Operators and their dependencies in a cluster.
+  question: |
+    What is the Operator Lifecycle Manager (OLM) and what is its function in the Operator Framework?
+- answer: |
+    The Operator Lifecycle Manager (OLM) is a component of the Operator Framework. It manages Kubernetes native
+    applications, also called Operators, in a automated, effective, and scalable manner. OLM provides a declarative
+    way to install, manage, and upgrade Operators and their dependencies within a cluster. 3
+  context: |
+    Operator Lifecycle Manager(OLM): A component of the Operator Framework that manages Kubernetes native
+    applications, called Operators, automatically, effectively, and in a scalable manner. OLM provides a declarative
+    way to install, manage, and upgrade Operators and their dependencies in a cluster.
+  question: |
+    What is the Operator Lifecycle Manager (OLM) and what is its function in the Operator Framework?
+- answer: |
+    The Operator Lifecycle Manager (OLM) is a component of the Operator Framework. It manages Kubernetes native
+    applications, also called Operators, in a automated, effective, and scalable manner. OLM provides a declarative
+    way to install, manage, and upgrade Operators and their dependencies within a cluster. 4
+  context: |
+    Operator Lifecycle Manager(OLM): A component of the Operator Framework that manages Kubernetes native
+    applications, called Operators, automatically, effectively, and in a scalable manner. OLM provides a declarative
+    way to install, manage, and upgrade Operators and their dependencies in a cluster.
+  question: |
+    What is the Operator Lifecycle Manager (OLM) and what is its function in the Operator Framework?
+- answer: |
+    The Operator Lifecycle Manager (OLM) is a component of the Operator Framework. It manages Kubernetes native
+    applications, also called Operators, in a automated, effective, and scalable manner. OLM provides a declarative
+    way to install, manage, and upgrade Operators and their dependencies within a cluster. 5
+  context: |
+    Operator Lifecycle Manager(OLM): A component of the Operator Framework that manages Kubernetes native
+    applications, called Operators, automatically, effectively, and in a scalable manner. OLM provides a declarative
+    way to install, manage, and upgrade Operators and their dependencies in a cluster.
+  question: |
+    What is the Operator Lifecycle Manager (OLM) and what is its function in the Operator Framework?
+task_description: |
+  This skill helps in understanding the concept: Operator Lifecycle Manager(OLM): A component of the Operator
+  Framework that manages Kubernetes native applications, called Operators, automatically, effectively, and in a
+  scalable manner. OLM provides a declarative way to install, manage, and upgrade Operators and their dependencies
+  in a cluster.

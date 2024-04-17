@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    You can provide selective access to the cluster by adding pull secrets to the default service accounts of target
+    tenant namespaces. 1
+  context: |
+    Addition of pull secret to default service accounts of target tenant namespaces if providing access to the entire
+    cluster is not permissible.
+  question: |
+    How can you provide selective access to the cluster if providing access to the entire cluster is not permissible?
+- answer: |
+    You can provide selective access to the cluster by adding pull secrets to the default service accounts of target
+    tenant namespaces. 2
+  context: |
+    Addition of pull secret to default service accounts of target tenant namespaces if providing access to the entire
+    cluster is not permissible.
+  question: |
+    How can you provide selective access to the cluster if providing access to the entire cluster is not permissible?
+- answer: |
+    You can provide selective access to the cluster by adding pull secrets to the default service accounts of target
+    tenant namespaces. 3
+  context: |
+    Addition of pull secret to default service accounts of target tenant namespaces if providing access to the entire
+    cluster is not permissible.
+  question: |
+    How can you provide selective access to the cluster if providing access to the entire cluster is not permissible?
+- answer: |
+    You can provide selective access to the cluster by adding pull secrets to the default service accounts of target
+    tenant namespaces. 4
+  context: |
+    Addition of pull secret to default service accounts of target tenant namespaces if providing access to the entire
+    cluster is not permissible.
+  question: |
+    How can you provide selective access to the cluster if providing access to the entire cluster is not permissible?
+- answer: |
+    You can provide selective access to the cluster by adding pull secrets to the default service accounts of target
+    tenant namespaces. 5
+  context: |
+    Addition of pull secret to default service accounts of target tenant namespaces if providing access to the entire
+    cluster is not permissible.
+  question: |
+    How can you provide selective access to the cluster if providing access to the entire cluster is not permissible?
+task_description: |
+  This skill helps in understanding the concept: Addition of pull secret to default service accounts of target
+  tenant namespaces if providing access to the entire cluster is not permissible.

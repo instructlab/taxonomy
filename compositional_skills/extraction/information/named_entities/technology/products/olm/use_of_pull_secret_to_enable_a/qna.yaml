@@ -1,0 +1,45 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The pull secret is used to enable access to images hosted in private registries by storing the authentication
+    information. It allows the system to pull images and apply them to projects or tasks, thus facilitating the use of
+    private images in the creation or maintenance of a project. 1
+  context: |
+    Use of pull secret to enable access to images hosted in private registries.
+  question: |
+    What is the purpose of using pull secret in accessing images hosted in private registries?
+- answer: |
+    The pull secret is used to enable access to images hosted in private registries by storing the authentication
+    information. It allows the system to pull images and apply them to projects or tasks, thus facilitating the use of
+    private images in the creation or maintenance of a project. 2
+  context: |
+    Use of pull secret to enable access to images hosted in private registries.
+  question: |
+    What is the purpose of using pull secret in accessing images hosted in private registries?
+- answer: |
+    The pull secret is used to enable access to images hosted in private registries by storing the authentication
+    information. It allows the system to pull images and apply them to projects or tasks, thus facilitating the use of
+    private images in the creation or maintenance of a project. 3
+  context: |
+    Use of pull secret to enable access to images hosted in private registries.
+  question: |
+    What is the purpose of using pull secret in accessing images hosted in private registries?
+- answer: |
+    The pull secret is used to enable access to images hosted in private registries by storing the authentication
+    information. It allows the system to pull images and apply them to projects or tasks, thus facilitating the use of
+    private images in the creation or maintenance of a project. 4
+  context: |
+    Use of pull secret to enable access to images hosted in private registries.
+  question: |
+    What is the purpose of using pull secret in accessing images hosted in private registries?
+- answer: |
+    The pull secret is used to enable access to images hosted in private registries by storing the authentication
+    information. It allows the system to pull images and apply them to projects or tasks, thus facilitating the use of
+    private images in the creation or maintenance of a project. 5
+  context: |
+    Use of pull secret to enable access to images hosted in private registries.
+  question: |
+    What is the purpose of using pull secret in accessing images hosted in private registries?
+task_description: |
+  This skill helps in understanding the concept: Use of pull secret to enable access to images hosted in private
+  registries.

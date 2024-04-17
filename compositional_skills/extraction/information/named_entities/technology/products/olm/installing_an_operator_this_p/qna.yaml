@@ -1,0 +1,47 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    The steps involved in installing an operator are: 1
+  context: |
+    Installing an Operator: This process involves creating an OperatorGroup targeting the namespaces the operator is
+    to watch. If installing a cluster scoped operator, a global OperatorGroup is created. The next step is creating a
+    subscription for the operator, followed by manually approving the InstallPlan.
+  question: |
+    What are the steps involved in installing an operator?
+- answer: |
+    The steps involved in installing an operator are: 2
+  context: |
+    Installing an Operator: This process involves creating an OperatorGroup targeting the namespaces the operator is
+    to watch. If installing a cluster scoped operator, a global OperatorGroup is created. The next step is creating a
+    subscription for the operator, followed by manually approving the InstallPlan.
+  question: |
+    What are the steps involved in installing an operator?
+- answer: |
+    The steps involved in installing an operator are: 3
+  context: |
+    Installing an Operator: This process involves creating an OperatorGroup targeting the namespaces the operator is
+    to watch. If installing a cluster scoped operator, a global OperatorGroup is created. The next step is creating a
+    subscription for the operator, followed by manually approving the InstallPlan.
+  question: |
+    What are the steps involved in installing an operator?
+- answer: |
+    The steps involved in installing an operator are: 4
+  context: |
+    Installing an Operator: This process involves creating an OperatorGroup targeting the namespaces the operator is
+    to watch. If installing a cluster scoped operator, a global OperatorGroup is created. The next step is creating a
+    subscription for the operator, followed by manually approving the InstallPlan.
+  question: |
+    What are the steps involved in installing an operator?
+- answer: |
+    The steps involved in installing an operator are: 5
+  context: |
+    Installing an Operator: This process involves creating an OperatorGroup targeting the namespaces the operator is
+    to watch. If installing a cluster scoped operator, a global OperatorGroup is created. The next step is creating a
+    subscription for the operator, followed by manually approving the InstallPlan.
+  question: |
+    What are the steps involved in installing an operator?
+task_description: |
+  This skill helps in understanding the concept: Installing an Operator: This process involves creating an
+  OperatorGroup targeting the namespaces the operator is to watch. If installing a cluster scoped operator, a global
+  OperatorGroup is created. The next step is creating a subscription for the operator, followed by manually
+  approving the InstallPlan.

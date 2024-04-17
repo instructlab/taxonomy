@@ -1,0 +1,49 @@
+created_by: bentito
+seed_examples:
+- answer: |
+    To use OPM (Open Policy Agent), it's necessary to have a basic understanding of how to write policies, ideally in
+    Rego language. As for Docker, you must have the Docker software installed on your computer. The specific version
+    required may depend on the particular application or system you are running. It's important to regularly update
+    Docker to make sure you are using the latest version with all its features and security updates. 1
+  context: |
+    Prerequisites: opm, docker version
+  question: |
+    What are the prerequisites for using OPM and Docker?
+- answer: |
+    To use OPM (Open Policy Agent), it's necessary to have a basic understanding of how to write policies, ideally in
+    Rego language. As for Docker, you must have the Docker software installed on your computer. The specific version
+    required may depend on the particular application or system you are running. It's important to regularly update
+    Docker to make sure you are using the latest version with all its features and security updates. 2
+  context: |
+    Prerequisites: opm, docker version
+  question: |
+    What are the prerequisites for using OPM and Docker?
+- answer: |
+    To use OPM (Open Policy Agent), it's necessary to have a basic understanding of how to write policies, ideally in
+    Rego language. As for Docker, you must have the Docker software installed on your computer. The specific version
+    required may depend on the particular application or system you are running. It's important to regularly update
+    Docker to make sure you are using the latest version with all its features and security updates. 3
+  context: |
+    Prerequisites: opm, docker version
+  question: |
+    What are the prerequisites for using OPM and Docker?
+- answer: |
+    To use OPM (Open Policy Agent), it's necessary to have a basic understanding of how to write policies, ideally in
+    Rego language. As for Docker, you must have the Docker software installed on your computer. The specific version
+    required may depend on the particular application or system you are running. It's important to regularly update
+    Docker to make sure you are using the latest version with all its features and security updates. 4
+  context: |
+    Prerequisites: opm, docker version
+  question: |
+    What are the prerequisites for using OPM and Docker?
+- answer: |
+    To use OPM (Open Policy Agent), it's necessary to have a basic understanding of how to write policies, ideally in
+    Rego language. As for Docker, you must have the Docker software installed on your computer. The specific version
+    required may depend on the particular application or system you are running. It's important to regularly update
+    Docker to make sure you are using the latest version with all its features and security updates. 5
+  context: |
+    Prerequisites: opm, docker version
+  question: |
+    What are the prerequisites for using OPM and Docker?
+task_description: |
+  This skill helps in understanding the concept: Prerequisites: opm, docker version
