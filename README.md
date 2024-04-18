@@ -1,4 +1,4 @@
-# InstructLab 🥼 Taxonomy
+# InstructLab 🐶 Taxonomy
 
 ## Contents 📖 
 
@@ -14,7 +14,7 @@
   - [How to contribute skills and knowledge](#how-to-contribute-skills-and-knowledge)
 ## Welcome to the InstructLab Taxonomy
 
-InstructLab 🥼 uses a novel synthetic data-based alignment tuning method for
+InstructLab 🐶 uses a novel synthetic data-based alignment tuning method for
 Large Language Models (LLMs.) The "**lab**" in Instruct**Lab** 🥼 stands for
 [**L**arge-Scale **A**lignment for Chat**B**ots](https://arxiv.org/abs/2403.01081) [1].
 
@@ -46,10 +46,9 @@ Your skills contribution pull requests must include the following:
 >    2. To determine the interpretability by human contributors and maintainers.
 >    3. As part of the prompt to the GPT model used to generate synthetic samples.
 
-> [!NOTE]
-> To get the best use of this structure, make sure the names of directories match the intent of the
-> taxonomy files. You can also verify that a person's contribution is in the most logical location in the
-> taxonomy structure before signing off.
+> [!IMPORTANT]
+> There is a limit to how much content can exist in the question/answer pairs for the model to process. Due to this, only add a maximum
+> of around 2300 words to your question and answer seed example pairs in the `qna.yaml` file.
 
 Taxonomy skill files must be a valid [YAML](https://yaml.org/) file named `qna.yaml`. Each `qna.yaml` files contains a set of key/value entries with the following keys:
 
@@ -85,13 +84,14 @@ seed_examples:
   ...  
 ```
 
-Then, you create an `attribution.txt` file that includes the sources of your information.
+Then, you create an `attribution.txt` file that includes the sources of your information. These can also be self authored. 
 
 *Example `attribution.txt`*
 ```
-1. [Link to source]
-2. [Link to source 1], [Link to source 2] 
-3. Self-authored
+[Link to source] 
+[Link to work]
+[Licence of the work]
+[Creater name]
 ```
 For more information on what to include in your `attribution.txt` file, see [For your attribution.txt file](https://github.com/instructlab/taxonomy/blob/main/CONTRIBUTING.md#for-your-attributiontxt-file) in CONTRIBUTING.md.
 
@@ -114,36 +114,20 @@ It is recommended that you **lint**, or verify your YAML using a tool. One linte
 #### Freeform compositional skill: YAML example
 
 ```yaml
-task_description: 'Write Haikus.'
+task_description: 'Teach the model how to rhyme.'
 created_by: juliadenham
 seed_examples:
- -  question: Write me a 5-7-5 Haiku.
-    answer: |
-     The wind of Fuji
-     I've brought on my fan
-     a gift from Edo.
- - question: Write me a 5-7-5 Haiku.
-   answer: |
-     A blanket of fog
-     Engulfs the world around me
-     A dreary springtime.
- - question: Write me a 5-7-5 Haiku.
-   answer: |
-     Bright, the near-full Moon
-     Craters look like gray flowers
-     Listen, Crickets call.
- - question: Write me a 5-7-5 Haiku.
-   answer: |
-     The west wind whispered,
-     And touched the eyelids of spring,
-     Her eyes, Primroses.
- - question: Write me a 5-7-5 Haiku.
-   answer: |
-     Introverts at home
-     Are plagued by hyper children
-     When will school start next?
+  - question: What are 5 words that rhyme with horn?
+    answer: warn, torn, born, thorn, and corn.
+  - question: What are 5 words that rhyme with cat?
+    answer: bat, gnat, rat, vat, and mat.
+  - question: What are 5 words that rhyme with poor?
+    answer: door, shore, core, bore, and tore. 
+  - question: What are 5 words that rhyme with bank?
+    answer: tank, rank, prank, sank, and drank.
+  - question: What are 5 words that rhyme with bake?
+    answer: wake, lake, steak, make, and quake.
 ```
-
 Seriously, that's it.
 
 Here is the location of this YAML in the taxonomy tree. Note that the YAML file
@@ -247,14 +231,18 @@ data, or references.
 Knowledge in the taxonomy tree consists of a few more elements than skills:
 
 - Each knowledge node in the tree has a `qna.yaml`, similar to the format of the `qna.yaml` for skills. 
-- ⭐ Knowledge submissions require you to create a repository, can be with GitHub, that contains the markdown files of your knowledge contributions. These contributions in your repository must use the markdown (.md) format.
+- ⭐ Knowledge submissions require you to create a git repository, can be with GitHub, that contains the markdown files of your knowledge contributions. These contributions in your repository must use the markdown (.md) format.
 - The `qna.yaml` includes parameters that contain information from your repository. 
 
 > [!TIP] 
 > Guidelines for Knowledge contributions
 > - Submit the most up-to-date version of the document
 > - All submissions must be text, images will be ignored
-> - Tables can be added 
+> - Do not use tables in your markdown freeform contribution 
+
+> [!IMPORTANT]
+> There is a limit to how much content can exist in the question/answer pairs for the model to process. Due to this, only add a maximum
+> of around 2300 words to your question and answer seed example pairs in the `qna.yaml` file.
 
 Each `qna.yaml` file requires a minimum of five question-answer pairs. The `qna.yaml` format must include the following fields:
 ˇ
@@ -302,6 +290,15 @@ document:
  patterns:
    - oscars2024_results.md
 ```
+
+*Example `attribution.txt` file*
+```
+Title of work: 96th Academy Awards
+Link to work: https://en.wikipedia.org/wiki/96th_Academy_Awards 
+License of the work: CC-BY-SA-4.0
+Creator names: Wikipedia Authors
+```
+
 This knowledge example references one markdown file: `oscars2024_results.md`. You can also add multiple files for knowledge contributions. 
 
 > [!NOTE]

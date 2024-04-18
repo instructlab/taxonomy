@@ -22,7 +22,7 @@ For more information on the review process, see [Pull request review in CONTRIBU
 For more information on triaging contributions pull requests, see:
 
 - [Safe responses for common PR mistakes](triaging/safe-responses.md)
-- [Skills and knowledge triaging](triaging/skills-triage.md)
+- [Triaging guide](triaging/triaging-contributions.md)
 ## Contributing documentation
 
 For documentation contribution processes, see:
