@@ -236,7 +236,11 @@ def cli() -> int:
         action="append",
         metavar="TAXONOMY_FOLDER",
         dest="taxonomy_folders",
-        help="A taxonomy folder. This argument can be specified multiple times.",
+        help="""
+            A taxonomy folder. This argument can be specified multiple times.
+            Alternately, the TAXONOMY_FOLDERS environment variable can be used
+            to specify a space-separated list of folders.
+            """,
         default=os.environ.get(
             "TAXONOMY_FOLDERS", "compositional_skills knowledge"
         ).split(),
@@ -244,7 +248,11 @@ def cli() -> int:
     parser.add_argument(
         "-s",
         "--schema-base",
-        help="The base directory of the Taxonomy schema files.",
+        help="""
+            The base directory of the Taxonomy schema files.
+            Alternately, the SCHEMA_BASE environment variable can be used
+            to specify the base directory.
+            """,
         default=os.environ.get("SCHEMA_BASE", _find_schema_base()),
         type=Path,
     )
@@ -252,7 +260,11 @@ def cli() -> int:
         "-l",
         "--lint-config",
         dest="yamllint_config",
-        help="The yamllint configuration.",
+        help="""
+            The yamllint configuration data.
+            Alternately, the YAMLLINT_CONFIG environment variable can be used
+            to specify the configuration data.
+            """,
         default=os.environ.get(
             "YAMLLINT_CONFIG", "{extends: relaxed, rules: {line-length: {max: 120}}}"
         ),
