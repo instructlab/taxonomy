@@ -1,2 +1,0 @@
-1. https://olm.operatorframework.io/docs/
-2. Self-authored
