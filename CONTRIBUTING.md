@@ -125,6 +125,10 @@ You can include this automatically when you commit a change to your local git re
 ```shell
 git commit -s
 ```
+
+> [!TIP]
+> If you created a commit message that did not include the `-s` option, you can edit your original commit message by using the `git commit -s --amend` command. Ensure you force push the amended commit to your pull request (PR).
+
 ### License
 Unless specifically stated this project is
 distributed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
