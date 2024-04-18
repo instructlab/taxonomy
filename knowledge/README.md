@@ -1,13 +1,13 @@
 # Instructlab (LAB) Knowledge 
 
-Knowledge consists of data and facts and is backed by documents. When you create knowledge for a model, you're giving it additional data to more accurately answer questions. The knowledge document format currently supports only markdown (.md) files.
+Knowledge consists of data and facts and is backed by documents. When you create knowledge for a model, you're giving it additional data to more accurately answer questions. The knowledge document format currently supports only markdown (`.md`) files.
 
-Each qna.yaml file is required to contain a minimum of five question-answer pairs. The qna.yaml format should include the following fields:
+Each `qna.yaml` file is required to contain a minimum of five question-answer pairs. The `qna.yaml` format should include the following fields:
 
-* seed_examples (five or more examples sourced from the provided knowledge documents)
-* created_by (your GitHub username)
-* task_description (description of the knowledge) - optional
-* document (source (git) of your knowledge contribution)
+* `seed_examples` (five or more examples sourced from the provided knowledge documents)
+* `created_by` (your GitHub username)
+* `task_description` (description of the knowledge) - optional
+* `document` (source (git) of your knowledge contribution)
 
 [See taxonomy readme.md for example](https://github.com/instructlab/taxonomy?tab=readme-ov-file#knowledge)
 
