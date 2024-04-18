@@ -69,7 +69,7 @@ jobs:
       - name: "Check YAML file contents"
         if: steps.changed-files.outputs.any_changed == 'true'
         run: |
-          .github/scripts/check-yaml.py "${{ steps.changed-files.outputs.all_changed_files }}"
+          .github/scripts/check-yaml.py ${{ steps.changed-files.outputs.all_changed_files }}
         env:
           SCHEMA_BASE: .github/schemas
           YAMLLINT_CONFIG: "{extends: relaxed, rules: {line-length: {max: 120}}}"
