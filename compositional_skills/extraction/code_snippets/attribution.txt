@@ -1,0 +1,419 @@
+created_by: ae2015
+task_description: >
+    Given a document that contains a code snippet or a worksheet, answer a user's
+    question that relates to this code snippet or worksheet by copying the snippet
+    or the worksheet in its entirety. Note that any significant modification to
+    the code snippet or the worksheet in the response is likely to introduce errors
+    and is therefore discouraged.
+seed_examples:
+- context: >
+    Document:
+
+    Here is a Python program that student John Smith submitted.
+
+    ```
+    def is_prime(n):
+        if n == 2:
+            return False
+        for i in range(2, int(n ** 0.5) + 1):
+            if n % i == 1:
+                return False
+        return True
+    ```
+  question: >
+    Based on the document, what exactly is the Python program that John Smith submitted?
+  answer: >
+    John Smith submitted the following Python program:
+
+    ```
+    def is_prime(n):
+        if n == 2:
+            return False
+        for i in range(2, int(n ** 0.5) + 1):
+            if n % i == 1:
+                return False
+        return True
+    ```
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+
+- context: >
+    Document:
+
+    Capital Loss Carryover Worksheet
+
+    1. Enter the amount from your 2022 Form 1040 or 1040-SR, line 15; or your 2022 Form
+    1040-NR, line 15. If the amount would have been a loss if you could enter a negative
+    number on that line, enclose the amount in parentheses
+
+    2. Enter the loss from your 2022 Schedule D, line 21, as a positive amount
+
+    3. Combine lines 1 and 2. If zero or less, enter -0-
+
+    4. Enter the smaller of line 2 or line 3
+
+    If line 7 of your 2022 Schedule D is a loss, go to line 5; otherwise, enter -0- on
+    line 5 and go to line 9.
+
+    5. Enter the loss from your 2022 Schedule D, line 7, as a positive amount
+
+    6. Enter any gain from your 2022 Schedule D, line 15. If a loss, enter -0-
+
+    7. Add lines 4 and 6
+
+    8. Short-term capital loss carryover for 2023. Subtract line 7 from line 5. If zero or
+    less, enter -0-. If more than zero, also enter this amount on Schedule D, line 6
+
+    If line 15 of your 2022 Schedule D is a loss, go to line 9; otherwise, skip lines 9
+    through 13.
+
+    9. Enter the loss from your 2022 Schedule D, line 15, as a positive amount
+
+    10. Enter any gain from your 2022 Schedule D, line 7. If a loss, enter -0-
+
+    11. Subtract line 5 from line 4. If zero or less, enter -0-
+
+    12. Add lines 10 and 11
+
+    13. Long-term capital loss carryover for 2023. Subtract line 12 from line 9. If zero or
+    less, enter -0-. If more than zero, also enter this amount on Schedule D, line 14
+  question: >
+    Based on the provided document, how to compute short-term capital loss carryover for 2023?
+  answer: >
+    In order to compute short-term capital loss carryover for 2023, please complete the
+    following worksheet and find the result on line 8 of the completed worksheet:
+
+    Capital Loss Carryover Worksheet
+
+    1. Enter the amount from your 2022 Form 1040 or 1040-SR, line 15; or your 2022 Form
+    1040-NR, line 15. If the amount would have been a loss if you could enter a negative
+    number on that line, enclose the amount in parentheses
+
+    2. Enter the loss from your 2022 Schedule D, line 21, as a positive amount
+
+    3. Combine lines 1 and 2. If zero or less, enter -0-
+
+    4. Enter the smaller of line 2 or line 3
+
+    If line 7 of your 2022 Schedule D is a loss, go to line 5; otherwise, enter -0- on
+    line 5 and go to line 9.
+
+    5. Enter the loss from your 2022 Schedule D, line 7, as a positive amount
+
+    6. Enter any gain from your 2022 Schedule D, line 15. If a loss, enter -0-
+
+    7. Add lines 4 and 6
+
+    8. Short-term capital loss carryover for 2023. Subtract line 7 from line 5. If zero or
+    less, enter -0-. If more than zero, also enter this amount on Schedule D, line 6
+
+    If line 15 of your 2022 Schedule D is a loss, go to line 9; otherwise, skip lines 9
+    through 13.
+
+    9. Enter the loss from your 2022 Schedule D, line 15, as a positive amount
+
+    10. Enter any gain from your 2022 Schedule D, line 7. If a loss, enter -0-
+
+    11. Subtract line 5 from line 4. If zero or less, enter -0-
+
+    12. Add lines 10 and 11
+
+    13. Long-term capital loss carryover for 2023. Subtract line 12 from line 9. If zero or
+    less, enter -0-. If more than zero, also enter this amount on Schedule D, line 14
+  attribution:
+  - source: https://www.irs.gov/pub/irs-pdf/i1040sd.pdf
+    license: public domain
+
+- context: >
+    Document:
+
+    DML Recipe for group by aggregate using Linear Algebra
+
+    Given a matrix PCV as (Position, Category, Value), we sort PCV by category, and within
+    each category by value in descending order. Specifically, we create indicator vector
+    for category changes, create distinct categories, and perform linear algebra operations.
+    Below is the DML script, which we broke up into parts for easy understanding.
+
+    1. Given category and value data, create a matrix with PCV representation
+
+    ```
+    C = matrix ('50 40 20 10 30 20 40 20 30', rows = 9, cols = 1)
+
+    V = matrix ('20 11 49 33 94 29 48 74 57', rows = 9, cols = 1)
+
+    PCV = cbind (cbind (seq (1, nrow (C), 1), C), V)
+    ```
+
+    2. Sort PCV by category, and within each category by value
+
+    ```
+    PCV = order (target = PCV, by = 3, decreasing = TRUE,  index.return = FALSE)
+
+    PCV = order (target = PCV, by = 2, decreasing = FALSE, index.return = FALSE)
+    ```
+
+    3. Find all rows of PCV where the category has a new value, in comparison to
+    the previous row
+
+    ```
+    is_new_C = matrix (1, rows = 1, cols = 1);
+
+    if (nrow (C) > 1) {
+
+      is_new_C = rbind (is_new_C, (PCV [1:nrow(C) - 1, 2] < PCV [2:nrow(C), 2]));  }
+    ```
+
+    4. Associate each category with its index
+
+    ```
+    index_C = cumsum (is_new_C);
+    ```
+
+    5. For each category, compute:
+
+    * the list of distinct categories
+
+    * the maximum value for each category
+
+    * 0-1 aggregation matrix that adds records of the same category
+
+    ```
+    distinct_C  = removeEmpty (target = PCV [, 2], margin = "rows", select = is_new_C);
+
+    max_V_per_C = removeEmpty (target = PCV [, 3], margin = "rows", select = is_new_C);
+
+    C_indicator = table (index_C, PCV [, 1], max (index_C), nrow (C));
+    ```
+
+    6. Perform aggregation, here sum values per category
+
+    ```
+    sum_V_per_C = C_indicator %*% V
+    ```
+  question: >
+    Based on the provided document, can you write a DML script for group by aggregation?
+  answer: >
+    Yes, here is the DML script for group by aggregation, which has been broken
+    up into parts for easy understanding:
+
+    1. Given category and value data, create a matrix with PCV representation
+
+    ```
+    C = matrix ('50 40 20 10 30 20 40 20 30', rows = 9, cols = 1)
+
+    V = matrix ('20 11 49 33 94 29 48 74 57', rows = 9, cols = 1)
+
+    PCV = cbind (cbind (seq (1, nrow (C), 1), C), V)
+    ```
+
+    2. Sort PCV by category, and within each category by value
+
+    ```
+    PCV = order (target = PCV, by = 3, decreasing = TRUE,  index.return = FALSE)
+
+    PCV = order (target = PCV, by = 2, decreasing = FALSE, index.return = FALSE)
+    ```
+
+    3. Find all rows of PCV where the category has a new value, in comparison to
+    the previous row
+
+    ```
+    is_new_C = matrix (1, rows = 1, cols = 1);
+
+    if (nrow (C) > 1) {
+
+      is_new_C = rbind (is_new_C, (PCV [1:nrow(C) - 1, 2] < PCV [2:nrow(C), 2]));  }
+    ```
+
+    4. Associate each category with its index
+
+    ```
+    index_C = cumsum (is_new_C);
+    ```
+
+    5. For each category, compute:
+
+    * the list of distinct categories
+
+    * the maximum value for each category
+
+    * 0-1 aggregation matrix that adds records of the same category
+
+    ```
+    distinct_C  = removeEmpty (target = PCV [, 2], margin = "rows", select = is_new_C);
+
+    max_V_per_C = removeEmpty (target = PCV [, 3], margin = "rows", select = is_new_C);
+
+    C_indicator = table (index_C, PCV [, 1], max (index_C), nrow (C));
+    ```
+
+    6. Perform aggregation, here sum values per category
+
+    ```
+    sum_V_per_C = C_indicator %*% V
+    ```
+  attribution:
+  - source: https://apache.github.io/systemds/site/dml-vs-r-guide
+    license: Apache-2.0
+
+- context: >
+    Document:
+
+    Below is a diagnostic dichotomous key for deciduous trees on planet Eutopia based
+    on visual characteristics.
+
+    ```
+    1. Leaves usually blue with pink tinged edges: 2
+
+    1. Leaves usually brown or green: 5
+
+    2. Leaves have sharp teeth: 3
+
+    2. Leaves do not have sharp teeth: 4
+
+    3. Trees grow in dense groups - Eutopiforma ABC
+
+    3. Trees grow in isolation - Eutopiforma DEF
+
+    4. Leaves are at least five mm thick — Eutopiforma GHI
+
+    4. Leaves are less than five mm thick — Eutopiforma JKL
+
+    5. Leaves have ten or more lobes : 6
+
+    5. Leaves have few or no lobes: 7
+
+    6. Leaves have deep lobes - Eutopiforma OPQ
+
+    6. Leaves have shallow lobes - Eutopiforma RST
+
+    7. Leaves have soft bristles - Eutopiforma UVW
+
+    7. Leaves are smooth, no bristles - Eutopiforma XYZ
+    ```
+  question: >
+    What diagnostic dichotomous key can I use to identify Eutopiforma UVW trees based
+    on visual characteristics?
+  answer: >
+    Here is a diagnostic dichotomous key that you can use to identify Eutopiforma UVW
+    trees and differentiate them from several other Eutopiforma species:
+
+    ```
+    1. Leaves usually blue with pink tinged edges: 2
+
+    1. Leaves usually brown or green: 5
+
+    2. Leaves have sharp teeth: 3
+
+    2. Leaves do not have sharp teeth: 4
+
+    3. Trees grow in dense groups - Eutopiforma ABC
+
+    3. Trees grow in isolation - Eutopiforma DEF
+
+    4. Leaves are at least five mm thick — Eutopiforma GHI
+
+    4. Leaves are less than five mm thick — Eutopiforma JKL
+
+    5. Leaves have ten or more lobes : 6
+
+    5. Leaves have few or no lobes: 7
+
+    6. Leaves have deep lobes - Eutopiforma OPQ
+
+    6. Leaves have shallow lobes - Eutopiforma RST
+
+    7. Leaves have soft bristles - Eutopiforma UVW
+
+    7. Leaves are smooth, no bristles - Eutopiforma XYZ
+    ```
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+
+- context: >
+    Document:
+
+    Line 21 Student Loan Interest Deduction
+
+    California law conforms to federal law regarding student loan interest deduction
+    except for a spouse/RDP of a non-California domiciled military taxpayer residing
+    in a community property state. Use the Student Loan Interest Deduction Worksheet
+    to compute the amount to enter on line 21. For more information, get FTB Pub. 1032.
+
+    Student Loan Interest Deduction Worksheet
+
+    1. Enter the total amount from Schedule CA (540), line 21, column A. If the amount
+    on line 1 is zero, STOP. You are not allowed a deduction for California.
+
+    2. Enter the total interest you paid in 2023 on qualified student loans but not more
+    than $2,500 here.
+
+    3. Add federal Schedule 1 (Form 1040), line 21 (student loan interest deduction) to
+    federal Form 1040 or 1040-SR, line 11 (AGI). Enter the result here.
+
+    4. Enter the amount shown below for your filing status.
+
+    * Single, head of household, or qualifying surviving spouse/RDP - $60,000
+
+    * Married/RDP filing jointly - $120,000
+
+    5. Is the amount on line 3 more than the amount on line 4?
+
+    * No. Skip line 5 and line 6, enter -0- on line 7, and go to line 8.
+
+    * Yes. Subtract line 4 from line 3.
+
+    6. Divide line 5 by $15,000 ($30,000 if married/RDP filing jointly). Enter the result
+    as a decimal (rounded to at least three places). If the result is 1.000 or more,
+    enter 1.000.
+
+    7. Multiply line 2 by line 6.
+
+    8. Student loan interest deduction. Subtract line 7 from line 2.
+
+    9. Student loan interest adjustment. If line 1 is less than line 8, enter the
+    difference here and on Schedule CA (540), line 21, column C.
+  question: >
+    Based on the provided document, how to compute student loan interest deduction?
+  answer: >
+    In order to compute student loan interest deduction, please complete the
+    following worksheet and find the result on line 8 of the completed worksheet:
+
+    Student Loan Interest Deduction Worksheet
+
+    1. Enter the total amount from Schedule CA (540), line 21, column A. If the amount
+    on line 1 is zero, STOP. You are not allowed a deduction for California.
+
+    2. Enter the total interest you paid in 2023 on qualified student loans but not more
+    than $2,500 here.
+
+    3. Add federal Schedule 1 (Form 1040), line 21 (student loan interest deduction) to
+    federal Form 1040 or 1040-SR, line 11 (AGI). Enter the result here.
+
+    4. Enter the amount shown below for your filing status.
+
+    * Single, head of household, or qualifying surviving spouse/RDP - $60,000
+
+    * Married/RDP filing jointly - $120,000
+
+    5. Is the amount on line 3 more than the amount on line 4?
+
+    * No. Skip line 5 and line 6, enter -0- on line 7, and go to line 8.
+
+    * Yes. Subtract line 4 from line 3.
+
+    6. Divide line 5 by $15,000 ($30,000 if married/RDP filing jointly). Enter the result
+    as a decimal (rounded to at least three places). If the result is 1.000 or more,
+    enter 1.000.
+
+    7. Multiply line 2 by line 6.
+
+    8. Student loan interest deduction. Subtract line 7 from line 2.
+
+    9. Student loan interest adjustment. If line 1 is less than line 8, enter the
+    difference here and on Schedule CA (540), line 21, column C.
+  attribution:
+  - source: https://www.ftb.ca.gov/forms/2023/2023-540-ca-instructions.html
+    license: public domain
