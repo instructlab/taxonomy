@@ -1,0 +1,104 @@
+created_by: ae2015
+task_description: >
+    Given a passage and a claim, determine if the passage is sufficient
+    to conclude the claim. Pay attention to ambiguities in the passage,
+    such as unresolved pronouns, missing values, and phrases with many
+    possible interpretations.
+seed_examples:
+- context: >
+    Passage:
+
+    This model of XYZ is compatible with Product ABC and Product DEF.
+
+    Claim:
+
+    Model M1 of accessory XYZ only works with Product ABC and Product DEF.
+  question: >
+    Is Passage sufficient to conclude Claim?
+  answer: >
+    No, the passage is not sufficient to conclude the claim. The claim is
+    about model M1 of accessory XYZ, but the passage does not mention
+    model M1 of accessory XYZ. Phrase "This model of XYZ" in the passage
+    can refer to a different model of XYZ, not necessarily to model M1.
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+
+- context: >
+    Passage:
+
+    You can avoid the monthly service fee for ABC Checking Account if you
+    maintain at least $500 minimum daily balance.
+
+    Claim:
+
+    ABC Checking Account has a monthly service fee of $10.
+  question: >
+    Is Passage sufficient to conclude Claim?
+  answer: >
+    No, the passage is not sufficient to conclude the claim. The claim
+    states that ABC Checking Account's monthly service fee is $10, but
+    the passage does not mention the fee's amount in any way.
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+
+- context: >
+    Passage:
+
+    What I saw today was the most wonderful and magnificent thing I have ever witnessed.
+
+    Claim:
+
+    Today's solar eclipse has made a strong impression on me.
+  question: >
+    Is Passage sufficient to conclude Claim?
+  answer: >
+    No, the passage is not sufficient to conclude the claim. The claim
+    is about a solar eclipse, but the passage makes no mention of a
+    solar eclipse. Phrases "What I saw today" and "the most wonderful
+    and magnificent thing" in the passage could refer to many different
+    things or phenomena, for example to a rocket launch or a blooming
+    meadow; we cannot conclude that they must refer to a solar eclipse.
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+
+- context: >
+    Passage:
+
+    Many tech stocks have been doing really well last week, with XYZ Technologies
+    growing at breakneck pace.
+
+    Claim:
+
+    The shares of XYZ Technologies grew by more than 300% by the end of last week.
+  question: >
+    Is Passage sufficient to conclude Claim?
+  answer: >
+    No, the passage is not sufficient to conclude the claim. The claim states that
+    the shares of XYZ Technologies grew by more than 300%, but the passage makes
+    no mention of a growth rate above 300%. Phrase "growing at breakneck pace" in
+    the passage is subjective and does not represent any specific number or range.
+  attribution:
+  - source: self-authored
+    license: Apache-2.0
+
+- context: >
+    Passage:
+
+    One of its key features is the ability to easily work with multiple
+    projects at the same time.
+
+    Claim:
+
+    Maven is able to easily work with multiple projects at the same time.
+  question: >
+    Is Passage sufficient to conclude Claim?
+  answer: >
+    No, the passage is not sufficient to conclude the claim. The claim is
+    about Maven, but the passage does not mention Maven. Pronoun "its" in
+    the passage can refer to anything, not necessarily to Maven.
+  attribution:
+  - source: https://maven.apache.org/maven-features.html
+    license: Apache-2.0
