@@ -1,0 +1,96 @@
+created_by: ae2015
+task_description: >
+    Given two short text passages, determine if they contradict each other.
+seed_examples:
+- context: >
+    Passage 1:
+
+    All employees in Plan ABC are eligible for Service XYZ; however, employees
+    in HMOs, or who have opted out, are not eligible to use Service XYZ.
+
+    Passage 2:
+
+    All employees in Plan ABC are eligible for Service XYZ. This includes employees
+    in HMOs, but excludes those who have opted out.
+  question: >
+    Does Passage 1 contradict Passage 2?
+  answer: >
+    Yes, Passage 1 contradicts Passage 2. In Passage 1, employees in HMOs are
+    not eligible to use Service XYZ, while in Passage 2, employees in HMOs are
+    eligible to use Service XYZ, which is a contradiction.
+
+- context: >
+    Passage 1:
+
+    The rotating screen of Product XYZ can set its orientation to Portrait or
+    Landscape modes.
+
+    Passage 2:
+
+    Product XYZ is similar to ABC but, instead of having a rotating screen,
+    XYZ can set its orientation to Portrait or Landscape modes.
+  question: >
+    Does Passage 1 contradict Passage 2?
+  answer: >
+    Yes, Passage 1 contradicts Passage 2. In Passage 1, Product XYZ has a
+    rotating screen, while in Passage 2, the word "instead" implies that
+    Product XYZ does not have a rotating screen, which is a contradiction.
+
+- context: >
+    Passage 1:
+
+    Model ABC is available either with 128GB of storage and 8GB of RAM,
+    or with 256GB of storage and 12GB of RAM.
+    Model XYZ is available either with 256GB of storage and 8GB of RAM,
+    or with 512GB of storage and 12GB of RAM.
+
+    Passage 2:
+
+    Models ABC and XYZ are available with 128GB, 256GB, or 512GB of storage.
+  question: >
+    Does Passage 1 contradict Passage 2?
+  answer: >
+    Yes, Passage 1 contradicts Passage 2. Passage 1 implies that Model XYZ
+    is not available with 128GB of storage, while in Passage 2, Model XYZ
+    is available with 128GB of storage, which is a contradiction.
+
+- context: >
+    Passage 1:
+
+    Product XYZ offers some features that Product ABC does not. For example,
+    XYZ has a touchscreen, while ABC has a keyboard instead.
+
+    Passage 2:
+
+    Product XYZ offers more features to its users than Product ABC. For example,
+    only XYZ uses a touchscreen.
+  question: >
+    Does Passage 1 contradict Passage 2?
+  answer: >
+    Yes, Passage 1 contradicts Passage 2. In Passage 1, Product ABC has a feature
+    that Product XYZ does not have, namely a keyboard; the word "instead"
+    implies that Product XYZ does not have a keyboard. But in Passage 2, phrase
+    "offers more features" implies that all features of Product ABC are also
+    features of Product XYZ, hence Product XYZ must feature a keyboard too,
+    which is a contradiction with Passage 1.
+
+- context: >
+    Passage 1:
+
+    The product models compatible with Accessory ABC are: MX, MY, and MZ.
+    The product models compatible with Accessory DEF are: MZ and MT.
+
+    Passage 2:
+
+    Our more advanced accessory ABC is compatible with more product models
+    than our older accessory DEF.
+  question: >
+    Does Passage 1 contradict Passage 2?
+  answer: >
+    Yes, Passage 1 contradicts Passage 2. It follows from Passage 1 that
+    Accessory ABC is not compatible with product model MT and Accessory DEF is
+    compatible with MT. However, phrase "compatible with more product models"
+    in Passage 2 implies that Accessory ABC is compatible with all product models
+    compatible with DEF plus some more models. Since DEF is compatible with MT,
+    Passage 2 implies that ABC is also compatible with MT, which is a
+    contradiction with Passage 1.
