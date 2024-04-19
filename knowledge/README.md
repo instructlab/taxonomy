@@ -2,11 +2,13 @@
 
 Knowledge consists of data and facts and is backed by documents. When you create knowledge for a model, you're giving it additional data to more accurately answer questions. The knowledge document formats currently supported are markdown (.md) and text (.txt).
 
-Each qna.yaml file is required to contain a minimum of five question-answer pairs. The qna.yaml format should include the following fields:
+Each `qna.yaml` file is required to contain a minimum of five question-answer pairs. The `qna.yaml` format should include the following mandatory fields:
 
-* seed_examples (three or more examples sourced from the provided knowledge documents)
-* created_by (your GitHub username)
-* task_description (an optional description of the knowledge)
+* `seed_examples` (five or more examples sourced from the provided knowledge documents)
+* `created_by` (your GitHub username)
+* `task_description` (description of your knowledge)
+* `domain` (your knowledge category)
+* `document` (source of your knowledge contribution)
 
 [See taxonomy readme.md for example](https://github.com/instructlab/taxonomy?tab=readme-ov-file#knowledge)
 
