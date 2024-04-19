@@ -91,9 +91,9 @@ Then, you create an `attribution.txt` file that includes the sources of your inf
 [Link to source] 
 [Link to work]
 [Licence of the work]
-[Creater name]
+[Creator name]
 ```
-For more information on what to include in your `attribution.txt` file, see [For your attribution.txt file](https://github.com/instructlab/taxonomy/blob/main/CONTRIBUTING.md#for-your-attributiontxt-file) in CONTRIBUTING.md.
+For more information on what to include in your `attribution.txt` file, see [For your attribution.txt file](https://github.com/instructlab/taxonomy/blob/main/CONTRIBUTING.md#for-your-attributiontxt-file)) in CONTRIBUTING.md.
 
 If you have not written YAML before, don't be intimidated - it's just text.
 
