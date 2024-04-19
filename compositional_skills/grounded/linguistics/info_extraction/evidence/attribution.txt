@@ -1,0 +1,32 @@
+created_by: ae2015
+email: evfimi@us.ibm.com
+
+Title of work: Evidence extraction, context of example 1 (out of 5)
+Link to work: https://www.apache.org/foundation/how-it-works/
+Revision: as of March 29, 2024
+License of the work: Apache-2.0
+Creator names: The Apache Software Foundation Authors
+
+Title of work: Evidence extraction, context of example 2 (out of 5)
+Link to work: https://github.com/github/site-policy
+Revision: as of March 29, 2024
+License of the work: CC0-1.0
+Creator names: The GitHub Site Policy Authors
+
+Title of work: Evidence extraction, context of example 3 (out of 5)
+Link to work: https://www.library.ca.gov/wp-content/uploads/2021/09/Value-of-Libraries-Libraries-and-COVID-19.pdf
+Revision: as of March 29, 2024
+License of the work: public domain
+Creator names: California State Library Authors
+
+Title of work: Evidence extraction, context of example 4 (out of 5)
+Link to work: https://www.irs.gov/publications/p526
+Revision: as of March 29, 2024
+License of the work: public domain
+Creator names: Internal Revenue Service Authors
+
+Title of work: Evidence extraction, context of example 5 (out of 5)
+Link to work: https://maven.apache.org/maven-features.html
+Revision: as of March 29, 2024
+License of the work: Apache-2.0
+Creator names: Apache Maven Project Team
