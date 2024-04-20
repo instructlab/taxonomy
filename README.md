@@ -38,7 +38,7 @@ Skills require a much smaller volume of content than knowledge contributions. An
 Your skills contribution pull requests must include the following:
 - A `qna.yaml` that contains a set of key/value entries with the following keys
   - Each `qna.yaml` file requires a minimum of five question and answer pairs.
-- A `attribution.txt` that includes the sources for the information used in the `qna.yaml`
+- An `attribution.txt` that includes the sources for the information used in the `qna.yaml`
 
 > [!TIP]
 > The skill taxonomy structure is used in several ways:
@@ -93,7 +93,7 @@ Then, you create an `attribution.txt` file that includes the sources of your inf
 [Licence of the work]
 [Creator name]
 ```
-For more information on what to include in your `attribution.txt` file, see [For your attribution.txt file](https://github.com/instructlab/taxonomy/blob/main/CONTRIBUTING.md#for-your-attributiontxt-file)) in CONTRIBUTING.md.
+For more information on what to include in your `attribution.txt` file, see [For your attribution.txt file](https://github.com/instructlab/taxonomy/blob/main/CONTRIBUTING.md#for-your-attributiontxt-file) in CONTRIBUTING.md.
 
 If you have not written YAML before, don't be intimidated - it's just text.
 
@@ -220,7 +220,7 @@ seed_examples:
     │   │   │        attribution.txt
     │   │   ├── word_frequency
     │   │   │   └── qna.yaml
-    │   │   │        attribution.txt
+    │   │   │       attribution.txt
 [...]
 ```
 ## Getting Started with Knowledge Contributions
