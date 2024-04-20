@@ -24,9 +24,6 @@ seed_examples:
 
       This is just one example of how to achieve this task using AsciiDoc tables. There are many variations possible
       depending on the specific requirements or preferences of the user.
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
 
   - question: |
       Generate an Asciidoc table with a column for the colours pink, brown, and orange, and another column containing a
@@ -42,10 +39,6 @@ seed_examples:
       | Brown   | #A52A2A
       | Orange  | #FFA500
       |===
-
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
 
   - question: |
       Create an asciidoc table containing a numbered list of the first 10 elements in the periodic table, along with
@@ -69,10 +62,6 @@ seed_examples:
       | F       | 9             | 18.998      | gas
       | Ne      | 10            | 20.18       | gas
       |===
-
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
 
   - question: |
       Please recreate the following markdown table in Asciidoc format:
@@ -98,10 +87,6 @@ seed_examples:
       Note that where Markdown has a delimiting line between the column headers and the row cells, the AsciiDoc version
       instead uses the [%header] option before the rows to indicate that the first row contains the column headers. The
       table contents are contained between the "|===" lines.
-
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
 
   - question: |
       I've got this Markdown table that I'd like converted to AsciiDoc, is that something that you could help with?
@@ -136,7 +121,3 @@ seed_examples:
 
       This is one way to encode the table in AsciiDoc. There are other options that can be used to customize how the
       table is displayed when rendered.
-
-    attribution:
-      - source: self-authored
-        license: Apache-2.0
