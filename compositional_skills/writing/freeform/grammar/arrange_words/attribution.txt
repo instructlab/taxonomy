@@ -1,0 +1,4 @@
+Title of work: Find possible dictionary words by rearranging it.
+Link to work:
+License of work: Apache-2.0
+Creator Name: Amit Das
