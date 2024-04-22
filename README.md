@@ -15,7 +15,7 @@
 ## Welcome to the InstructLab Taxonomy
 
 InstructLab 🐶 uses a novel synthetic data-based alignment tuning method for
-Large Language Models (LLMs.) The "**lab**" in Instruct**Lab** 🥼 stands for
+Large Language Models (LLMs.) The "**lab**" in Instruct**Lab** 🐶 stands for
 [**L**arge-Scale **A**lignment for Chat**B**ots](https://arxiv.org/abs/2403.01081) [1].
 
 The LAB method is driven by taxonomies, which are largely created manually and
@@ -90,7 +90,7 @@ Then, you create an `attribution.txt` file that includes the sources of your inf
 ```
 [Link to source] 
 [Link to work]
-[Licence of the work]
+[License of the work]
 [Creator name]
 ```
 For more information on what to include in your `attribution.txt` file, see [For your attribution.txt file](https://github.com/instructlab/taxonomy/blob/main/CONTRIBUTING.md#for-your-attributiontxt-file) in CONTRIBUTING.md.
@@ -226,16 +226,16 @@ seed_examples:
 ## Getting Started with Knowledge Contributions
 
 > [!IMPORTANT]
-> Upon release, the taxonomy repository is only accepting contributions from Wikipedia and is capped at 50 contributions. If you want to add knowledge to the taxonomy repository, please fill out this [InstructLab Knowledge Submission Registration](https://docs.google.com/forms/d/1VWJ_XPwH3gBTIXCabpWc0I5pjWIlXETMSFKXc8fpgkA/viewform?edit_requested=true) form and await acceptance! Please do not add contributions if you do not recieve the confirmation email. Thank you! 
+> Upon release, the taxonomy repository is only accepting contributions from Wikipedia and is capped at 50 contributions. If you want to add knowledge to the taxonomy repository, please fill out this [InstructLab Knowledge Submission Registration](https://docs.google.com/forms/d/1VWJ_XPwH3gBTIXCabpWc0I5pjWIlXETMSFKXc8fpgkA/viewform?edit_requested=true) form and await acceptance! Please do not add contributions if you do not receive the confirmation email. Thank you!
 
 While skills are foundational or performative, knowledge is based more on answering questions that involve facts,
 data, or references.
 
 Knowledge in the taxonomy tree consists of a few more elements than skills:
 
-- Each knowledge node in the tree has a `qna.yaml`, similar to the format of the `qna.yaml` for skills. 
-- ⭐ Knowledge submissions require you to create a git repository, can be with GitHub, that contains the markdown files of your knowledge contributions. These contributions in your repository must use the markdown (.md) format.
-- The `qna.yaml` includes parameters that contain information from your repository. 
+- Each knowledge node in the tree has a `qna.yaml`, similar to the format of the `qna.yaml` for skills.
+- ⭐ Knowledge submissions require you to create a Git repository, can be with GitHub, that contains the markdown files of your knowledge contributions. These contributions in your repository must use the markdown (.md) format.
+- The `qna.yaml` includes parameters that contain information from your repository.
 
 > [!TIP] 
 > Guidelines for Knowledge contributions
@@ -310,7 +310,7 @@ This knowledge example references one markdown file: `oscars2024_results.md`. Yo
 > pull requests are simpler and require less time and effort to review.
 
 What might these markdown files look like? They can be freeform. Here's what a
-snippet of `oscars2024_results.md` might look like in your git repository.
+snippet of `oscars2024_results.md` might look like in your Git repository.
 
 #### Knowledge: Freeform example
 
