@@ -299,12 +299,12 @@ def cli() -> int:
 
 def _find_schema_base() -> Path:
     for parent in Path(sys.argv[0]).parents:
-        candidate = parent.joinpath("schemas")
+        candidate = parent.joinpath("schema")
         if os.path.isdir(candidate):
             return candidate
         if os.path.exists(parent.joinpath(".git")):
             break
-    return Path.cwd().joinpath("schemas")
+    return Path.cwd().joinpath("schema")
 
 
 if __name__ == "__main__":
