@@ -44,6 +44,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          submodules: true
 
       - name: "Find changed skills and knowledge files"
         id: changed-files
@@ -71,7 +72,7 @@ jobs:
         run: |
           .github/scripts/check-yaml.py ${{ steps.changed-files.outputs.all_changed_files }}
         env:
-          SCHEMA_BASE: .github/schemas
+          SCHEMA_BASE: schema
           YAMLLINT_CONFIG: "{extends: relaxed, rules: {line-length: {max: 120}}}"
           TAXONOMY_FOLDERS: >-
             compositional_skills
