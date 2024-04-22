@@ -60,7 +60,7 @@ To contribute to this repo, you'll use the _Fork and Pull_ model common in many 
 - For details on contributing using the GitHub webpage UI, see [Contributing using the GH UI](docs/contributing_via_GH_UI.md).
 
 > [!IMPORTANT]
-> For all contributions to InstructLab 🥼, you want to become familiar with the workflow described in the [InstructLab 🥼 CLI
+> For all contributions to InstructLab 🐶, you want to become familiar with the workflow described in the [InstructLab 🐶 CLI
 > `ilab`](https://github.com/instructlab/instructlab) documentation. It would be best to understand how to test
 > your changes, generating new data, training and downloading the new model, and testing it to check that it gives you the desired results.
 
@@ -120,7 +120,7 @@ Here is an example `Signed-off-by` line, which indicates that the submitter acce
 Signed-off-by: John Doe <john.doe@example.com>
 ```
 
-You can include this automatically when you commit a change to your local git repository using the following command:
+You can include this automatically when you commit a change to your local Git repository using the following command:
 
 ```shell
 git commit -s
