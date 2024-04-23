@@ -1,0 +1,9 @@
+Source:
+  * https://redhat-documentation.github.io/supplementary-style-guide/#_blacklist_and_whitelist
+  * https://redhat-documentation.github.io/supplementary-style-guide/#_master_and_slave
+
+Licence:
+  * Creative Commons Attribution-ShareAlike 4.0 International License (https://github.com/redhat-documentation/supplementary-style-guide?tab=CC-BY-SA-4.0-1-ov-file)
+
+Creator:
+  * Red Hat Documentation Team (https://github.com/redhat-documentation)

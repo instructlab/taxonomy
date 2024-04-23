@@ -1,0 +1,34 @@
+---
+task_description: Remove problematic language and sensitive terms
+created_by: gaurav-nelson
+seed_examples:
+  - context: >
+      The current configuration uses a whitelist to filter incoming traffic.
+      To add a new IP address, you need to update the list manually.
+    question: How can the language in this paragraph to use conscious Language?
+    answer: >
+      The current configuration uses an allowlist to filter incoming traffic.
+      To add a new IP address, you need to update the list manually.
+  - context: |
+      The system uses a blacklist to block malicious IP addresses.
+    question: Can you update the text to avoid using sensitive terms?
+    answer: |
+      The system uses a blocklist to block malicious IP addresses.
+  - context: >
+      The master database is replicated to the slave database for backup
+      purposes.
+    question: Please rewrite this to avoid using sensitive terms.
+    answer: >
+      The source database is replicated to the replica database for backup
+      purposes.
+  - context: >
+      The master node is responsible for managing the slave nodes in the cluster.
+    question: How can I rephrase this sentence to use more inclusive language?
+    answer: |
+      The lead node is responsible for managing the worker nodes in the cluster.
+  - context: |
+      The master is connected to the port interface to manage network traffic.
+    question: How can I rephrase this sentence to avoid using terms that imply hierarchy?
+    answer: >
+      The controller is connected to the port interface to manage network
+      traffic.
