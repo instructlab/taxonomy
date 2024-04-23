@@ -19,7 +19,7 @@ The specific steps are listed as follows:
 
 ## Convert your knowledge documentation to markdown 
 
-There are many online tools that can help you convert your documents to markdown. If you are using a wiki or .gov page for your contributions, you can use [pandocs](https://pandoc.org/try/) to convert the documents.
+There are many online tools that can help you convert your documents to markdown. If you are using a wiki page for your contributions, you can use [pandocs](https://pandoc.org/try/) to convert the documents.
 
 ## Add the markdown file to your repository 
 
