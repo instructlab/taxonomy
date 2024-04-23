@@ -60,7 +60,7 @@ To contribute to this repo, you'll use the _Fork and Pull_ model common in many 
 - For details on contributing using the GitHub webpage UI, see [Contributing using the GH UI](docs/contributing_via_GH_UI.md).
 
 This repository uses [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) to incorporate the [taxonomy schema](https://github.com/instructlab/schema.git).
-So, when using a local clone of this Git repository locally, be sure to use the [`--recurse-submodules`](https://git-scm.com/docs/git-clone#Documentation/git-clone.txt---recurse-submodulesltpathspecgt) option on the `git clone` command and the `git pull` command when pulling updates from the remote repository.
+So, when using a local clone of this Git repository, be sure to use the [`--recurse-submodules`](https://git-scm.com/docs/git-clone#Documentation/git-clone.txt---recurse-submodulesltpathspecgt) option on the `git clone` command and the `git pull` command when pulling updates from the remote repository.
 For example:
 
 ```shell
