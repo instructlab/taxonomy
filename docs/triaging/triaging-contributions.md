@@ -62,8 +62,8 @@ Triagers review open pull requests and use labels to manage their state and any 
 
 There are a few labels that the triager is responsible for when reviewing PRs:
 
-- https://github.com/instructlab/taxonomy/labels/skill - a skills contribution as opposed to documentation contribution or a knowledge contribution (not yet accepted)
-- https://github.com/instructlab/taxonomy/labels/unverified - skill has not been run through lmdk
+- https://github.com/instructlab/taxonomy/labels/skill - a skills contribution as opposed to documentation contribution or a knowledge contribution 
+- https://github.com/instructlab/taxonomy/labels/knowledge - the PR is a knowledge contribution
 - https://github.com/instructlab/taxonomy/labels/triage-needed - skill needs a triager to review it
   - triager assigns to themself when you beginning review
 - https://github.com/instructlab/taxonomy/labels/triage-requested-changes - skill has been reviewed; changes requested from contributor
@@ -75,13 +75,18 @@ There are a few labels that the triager is responsible for when reviewing PRs:
   - if still uncertain
     - then re-assign to @taxonomy-approvers
     - triager tags @taxonomy-approvers in informative comment asking for further review from that team
-- https://github.com/instructlab/taxonomy/labels/triage-approved - skill meets criteria
+- https://github.com/instructlab/taxonomy/labels/triage-approved - triage team has signed off
   - re-assign to @taxonomy-approvers
   - add comment and tag @taxonomy-approvers
 - https://github.com/instructlab/taxonomy/labels/triage-rejected - skill fails criteria
   - add informative comment while tagging @taxonomy-approvers
   - re-assign to @taxonomy-approvers
-- [triage-meta](https://github.com/instructlab/taxonomy/labels/triage-meta) - issues for discussion and clarification of edge cases and categories of examples
+- https://github.com/instructlab/taxonomy/labels/triage-follow-up - triager needs to follow up after requested changes have been made
+- https://github.com/instructlab/taxonomy/labels/topic-failure - a topic that we are not accepting (leave comment on specifics)
+- https://github.com/instructlab/taxonomy/labels/stale - the stale-bot has marked you as stale
+- https://github.com/instructlab/taxonomy/labels/sdg-unsuccessful - PR failed Synthetic Data Generation
+- https://github.com/instructlab/taxonomy/labels/question - further information is requested 
+- https://github.com/instructlab/taxonomy/labels/help%20wanted - extra attention is needed
 
 ### Label Workflow guide
 
