@@ -16,19 +16,19 @@ Each `qna.yaml` file is required to contain a minimum of five question-answer pa
 
 |  Dataset Name |  Knowledge Taxonomy Location | License  |
 | --------------|-------------|----------|
-| https://openstax.org/details/books/anatomy-and-physiology-2e  | anatomy | CC BY 4.0  |
-| https://openstax.org/details/books/astronomy-2e  | astronomy | CC BY 4.0  |
-| https://openstax.org/details/books/business-ethics  | business_ethics | CC BY 4.0  |
-| https://openstax.org/details/books/biology-2e  | college_biology | CC BY 4.0  |
-| https://openstax.org/details/books/biology-2e  | college_biology | CC BY 4.0  |
-| https://openstax.org/details/books/biology-ap-courses  | college_biology | CC BY 4.0  |
-| https://openstax.org/details/books/concepts-biology  | college_biology | CC BY 4.0  |
-| https://openstax.org/details/books/microbiology  | college_biology | CC BY 4.0  |
-| https://openstax.org/details/books/chemistry-2e  | college_chemistry | CC BY 4.0  |
-| https://openstax.org/details/books/chemistry-atoms-first-2e  | college_chemistry | CC BY 4.0  |
-| https://openstax.org/details/books/university-physics-volume-1  | college_physics | CC BY 4.0  |
-| https://openstax.org/details/books/university-physics-volume-2  | college_physics | CC BY 4.0  |
-| https://openstax.org/details/books/university-physics-volume-3  | college_physics | CC BY 4.0  |
+| https://openstax.org/details/books/anatomy-and-physiology-2e | anatomy | CC BY 4.0  |
+| https://openstax.org/details/books/astronomy-2e | astronomy | CC BY 4.0  |
+| https://openstax.org/details/books/business-ethics | business_ethics | CC BY 4.0  |
+| https://openstax.org/details/books/biology-2e | college_biology | CC BY 4.0  |
+| https://openstax.org/details/books/biology-2e | college_biology | CC BY 4.0  |
+| https://openstax.org/details/books/biology-ap-courses | college_biology | CC BY 4.0  |
+| https://openstax.org/details/books/concepts-biology | college_biology | CC BY 4.0  |
+| https://openstax.org/details/books/microbiology | college_biology | CC BY 4.0  |
+| https://openstax.org/details/books/chemistry-2e | college_chemistry | CC BY 4.0  |
+| https://openstax.org/details/books/chemistry-atoms-first-2e | college_chemistry | CC BY 4.0  |
+| https://openstax.org/details/books/university-physics-volume-1 | college_physics | CC BY 4.0  |
+| https://openstax.org/details/books/university-physics-volume-2 | college_physics | CC BY 4.0  |
+| https://openstax.org/details/books/university-physics-volume-3 | college_physics | CC BY 4.0  |
 | https://opentextbc.ca/introductorybusinessstatistics | business_statistics | CC BY 4.0 |
 | https://openstax.org/details/books/principles-macroeconomics-3e | econometrics | CC BY 4.0 |
 | https://openstax.org/details/books/algebra-and-trigonometry-2e | high_school_mathmatics | CC BY 4.0 |
