@@ -219,6 +219,18 @@ class CheckYaml:
                         message=f"Cannot load schema file {e.ref}. {e}",
                     )
 
+                attribution_path = full_path.with_name("attribution.txt")
+                if not os.path.isfile(attribution_path):
+                    self.error(
+                        file=taxonomy_path,
+                        message=f"The {attribution_path.name} file does not exist or is not a file",
+                    )
+                elif os.path.getsize(attribution_path) == 0:
+                    self.error(
+                        file=taxonomy_path.with_name(attribution_path.name),
+                        message="The file must be non-empty",
+                    )
+
             except Exception as e:
                 self.exit_code = 1
                 raise SystemExit(self.exit_code) from e
