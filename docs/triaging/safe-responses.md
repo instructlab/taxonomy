@@ -29,7 +29,7 @@ Closing this PR, but feel free to re submit as knowledge following those guideli
 Could you please make sure there are five examples with good diversity? We have recently updated the [readme](https://github.com/instructlab/taxonomy?tab=readme-ov-file#getting-started-with-skill-contributions) with the new requirement. Thank you for your contribution!
 
 ### Attribution
-Thanks for the submission! It looks interesting. Based on the [current guide](https://github.com/instructlab/taxonomy?tab=readme-ov-file#getting-started-with-skill-contributions), do you mind adding attribution to the examples?
+Thanks for the submission! It looks interesting. Based on the [current guide](https://github.com/instructlab/taxonomy/blob/main/README.md#getting-started-with-skill-contributions), do you mind adding attribution to the examples?
 
 ### Mentions of GPT, ChatGPT, Bard, or other proprietary LLMs
 Since this is a non-proprietary project, please remove all mentions of the names for commercial or proprietary LLM models; we are in favor of wordings like “LLMs”, or “Foundation Models”, etc. 
