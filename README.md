@@ -108,6 +108,9 @@ If you have not written YAML before, don't be intimidated - it's just text.
   of the lines for keys in the example YAML we provided have the '|' character.
   This character escapes all of the special characters in the value for the key.
   You might also want to use the '|' character for multi-line strings.
+> - Consider quoting all values with " to avoid surprising YAML parser behavior
+  (e.g. Yes answer can be interpreted by the parser as a boolean of `True`
+  value, unless "Yes" is quoted.)
 
 It is recommended that you **lint**, or verify your YAML using a tool. One linter option is [yamllint.com](https://yamllint.com). You can copy/paste your YAML into the box and click **Go** to have it analyze your YAML and make recommendations. Online tools like [prettified](https://onlineyamltools.com/prettify-yaml) and [yaml-validator](https://jsonformatter.org/yaml-validator) can automatically reformat your YAML to adhere to our `yamllint` PR checks, such as breaking lines longer than 120 characters.
 
