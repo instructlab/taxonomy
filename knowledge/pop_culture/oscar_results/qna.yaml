@@ -9,7 +9,7 @@ seed_examples:
     question: What film had the most oscar nominations in 2024?
   - answer: |
       Octavia Spencer presented the awards for Best Original Screenplay and Best Adapted Screenplay.
-    question: Who presented the awards for Best Original Screenplay and Best Adapted Screenplay?
+    question: Who presented the 2024 Oscar awards for Best Original Screenplay and Best Adapted Screenplay?
   - answer: |
       Jimmy Kimmel hosted the 96th Academy Awards ceremony.
     question: Who hosted the 2024 oscars?
