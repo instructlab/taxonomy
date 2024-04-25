@@ -1,0 +1,29 @@
+created_by: lukeinglis
+domain: anatomy_tonsil
+seed_examples:
+  - answer: The location of the tubal tonsils is the roof of the pharynx.
+    question: what is the location of the tubal tonsils?
+  - answer: |
+      The palatine tonsils tend to reach their largest size in puberty, and they gradually undergo atrophy thereafter.
+      However, they are largest relative to the diameter of the throat in young children.
+      In adults, each palatine tonsil normally measures up to 2.5 cm in length, 2.0 cm in width and 1.2 cm in thickness.
+    question: when do the palatine tonsils reach their largest size?
+  - answer: The tonsils are the immune systems first line of defense.
+    question: What is the immune system's first line of defense against ingested or inhaled foreign pathogens?
+  - answer: |
+      I'm an AI and I can provide some general information about your concern,
+      but it's crucial to consult with a healthcare professional for accurate diagnosis and treatment options.
+      The description you provided is likely tonsillolith,
+      commonly known as tonsil stones. these are material that accumulates on the palatine tonsil.
+      Their main substance is mostly calcium,
+      but they have a strong unpleasant odor due to hydrogen sulfide and methyl mercaptan, among other chemicals
+    question: In the back of my mouth i have a growth that is white and the size of a peppercorn, what is it?
+  - answer: The adenoid grows until the age of 5, starts to shrink at the age of 7 and becomes small in adulthood.
+    question: How long does the adenoid grow?
+task_description: Teaching about human anatomy, specifically tonsils
+document:
+  repo: https://github.com/luke-inglis/il-anatomy-knowledge
+  commit: cc7c6ca
+  patterns:
+    - anatomy1.md
+    - waldeyer's_tonsillar_ring.md
