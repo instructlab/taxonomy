@@ -25,6 +25,6 @@ seed_examples:
 task_description: 'Teach the model the results of the 2024 oscars'
 document:
   repo: https://github.com/juliadenham/oscars2024_knowledge
-  commit: a22148c
+  commit: e1744af
   patterns:
     - oscars2024_results.md
