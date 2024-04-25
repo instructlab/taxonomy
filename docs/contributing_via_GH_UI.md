@@ -61,4 +61,4 @@ You will get a copy of the taxonomy repo in your github account. This is your ow
 
     e. You can then click "commit changes" to your branch. The GitHub UI will prompt you to open a pull requestion. Select the "open pull request" button. 
 
-5. Verify that your YAML follows the proper structure. See [Knowledge: skills examples](https://github.com/instruct-lab/taxonomy/blob/main/README.md#knowledge-yaml-examples) and [Skills: YAML examples](https://github.com/instruct-lab/taxonomy/blob/main/README.md#skills-yaml-examples) to help with formatting. The [yamllint](https://www.yamllint.com/) tool is another great way to verify yaml. 
+5. Verify that your YAML follows the proper structure. See [Knowledge: skills examples](https://github.com/instructlab/taxonomy/blob/main/README.md#knowledge-yaml-examples) and [Skills: YAML examples](https://github.com/instructlab/taxonomy/blob/main/README.md#skills-yaml-examples) to help with formatting. The [yamllint](https://www.yamllint.com/) tool is another great way to verify yaml. 

@@ -52,6 +52,6 @@ Replace "..." with what you receive with the finetuned model. -->
 - [ ] All [commits are signed off](https://github.com/instructlab/taxonomy/blob/main/CONTRIBUTING.md#legal) (DCO)
 - [ ] The `qna.yaml` file contains at least 5 `seed_examples`
 - [ ] The `qna.yaml` file was [linted](https://yamllint.com) and [prettified](https://onlineyamltools.com/prettify-yaml) ([yaml-validator](https://jsonformatter.org/yaml-validator) can do both)
-- [ ] An `attribution.txt` file in the same folder as the `qna.yaml` file.
+- [ ] An `attribution.txt` file in the same folder as the `qna.yaml` file
 - [ ] Content does not include PII or otherwise sensitive or confidential information
-- [ ] Content does not include anything documented in the project's [Avoid these Topics](https://github.com/instruct-lab/community/blob/main/docs/README.md#avoid-these-topics) guidelines
+- [ ] Content does not include anything documented in the project's [Avoid these Topics](https://github.com/instructlab/community/blob/main/docs/SKILLS_GUIDE.md#avoid-these-topics) guidelines
