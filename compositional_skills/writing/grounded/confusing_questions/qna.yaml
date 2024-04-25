@@ -1,0 +1,156 @@
+created_by: ae2015
+task_description: >
+    Given a document and a user's question that either contains a critical misunderstanding
+    or depends on a confusing or contradictory premise, respond to the question by clarifying
+    the misunderstanding or by pointing out the confusing or contradictory premise contained
+    in the question.
+seed_examples:
+- context: >
+    Document:
+
+    Alice has 3 green balls, Bob has 4 red balls, Charles has 5 blue balls and 1 yellow ball.
+  question: >
+    Why do Alice and Bob have the same number of balls as Charles? Please explain.
+  answer: >
+    Alice and Bob do not have the same number of balls as Charles. According to the
+    document, Alice has 3 balls, Bob has 4 balls, and Charles has 5 + 1 = 6 balls.
+    Alice and Bob together have 3 + 4 = 7 balls. The premise of the question may have
+    two possible interpretations: (1) Alice and Bob together have the same number of
+    balls as Charles; or (2) Alice has the same number of balls as Charles, and Bob
+    has the same number of balls as Charles. Neither interpretation is true.
+
+- context: >
+    Document:
+
+    Here is a simple Python program that checks if an integer number is prime, followed by
+    an explanation of how it works, line by line.
+
+    ```
+    def is_prime(n):
+        if n <= 1:
+            return False
+        for i in range(2, int(math.sqrt(n)) + 1):
+            if n % i == 0:
+                return False
+        return True
+    ```
+
+    Line 1: A standard Python function definition header, with `n` as the input number.
+
+    Line 2: Check if `n` is less than or equal to 1, which is treated as a special case.
+
+    Line 3: If `n` is less than or equal to 1, then it is not a prime number, so we return `False`.
+
+    Line 4: Go over all integer potential divisors `i` from 2 up to the square root of `n` (inclusive)
+    and use Lines 5 and 6 to check if `n` is divisible by any `i` in this range.
+
+    Line 5: `n % i` computes the remainder when dividing `n` by a potential divisor `i`. The remainder
+    is 0 if and only if `n` is divisible by `i`.
+
+    Line 6: If `n` is divisible by `i`, then `n` is not prime, so we return `False`.
+
+    Line 7: Since we have reached this line, we know that `n` is not divisible by any integer between 2
+    and its square root. If `n` was not prime, it would have at least one factor in this range. Hence,
+    `n` is prime, so we return `True`.
+  question: >
+    Based on the provided document, why should we replace 0 with 1 in Line 5, that is, write `n % i == 1`
+    instead of `n % i == 0`?
+  answer: >
+    Based on the provided document, we should not replace 0 with 1 in Line 5, it would be incorrect
+    to write `n % i == 1` instead of `n % i == 0`. According to the document, in Line 5, `n % i`
+    computes the remainder when dividing `n` by a potential divisor `i`, and the remainder is 0
+    if and only if `n` is divisible by `i`. In other words, `n % i == 0` if and only if `n` is
+    divisible by `i`. Since `n % i == 0` and `n % i == 1` are mutually exclusive, testing for
+    `n % i == 1` in Line 5 would run Line 6 only if `n` is not divisible by `i`, opposite to what
+    the document says. Likewise, according to the explanation for Line 4, we use Lines 5 and 6 to
+    check if `n` is divisible by any `i` in the specified range, further implying that `n % i == 0`
+    in Line 5 is the correct choice given that `n % i == 0` if and only if `n` is divisible by `i`.
+    Finally, if we did replace `n % i == 0` with `n % i == 1` in Line 5, function `is_prime(n)`
+    would return `True` for `n = 4` even though 4 is not prime; hence, the program would be wrong.
+
+- context: >
+    Document:
+
+    Lucy is the first space mission to explore a diverse population of small bodies known
+    as the Jupiter Trojan asteroids. These remnants of our early solar system are trapped
+    on stable orbits associated with - but not close to - the giant planet Jupiter.
+    Trojan asteroids orbit in two "swarms" that lead and follow Jupiter in its orbit
+    around the Sun and are thought to be comparable in number to the objects in the main
+    asteroid belt between the orbits of Mars and Jupiter.
+
+    Over its 12-year mission, Lucy will explore a record-breaking number of asteroids:
+    it will fly by two (plus a newly discovered satellite) in the belt of asteroids that
+    circle the Sun between the orbits of Mars and Jupiter, and then eight Trojans, which
+    includes five asteroid targets and the satellites of three of those. Lucy also will
+    fly by Earth three times to get a push from its gravity, making it the first
+    spacecraft to return to the vicinity of Earth from the outer solar system.
+  question: >
+    Based on the provided document, where are the two asteroid belts in relation to Jupiter?
+  answer: >
+    The document mentions only one asteroid belt, the main asteroid belt between the orbits
+    of Mars and Jupiter. The document also talks about two "swarms" of Jupiter Trojan
+    asteroids that lead and follow Jupiter in its orbit around the Sun. They are trapped
+    on stable orbits associated with Jupiter, but not close to it.
+
+- context: >
+    Document:
+
+    Arnold Schwarzenegger
+
+    Governor of California from 2003 to 2011
+
+    Significant Facts
+
+    Born: July 30, 1947 in Thal, Austria
+
+    Married: Maria Shriver on April 26, 1986 (The couple filed for divorce in 2011.)
+
+    Political Party: Republican
+
+    Arnold Schwarzenegger was born in Thal, Austria, a small village bordering the
+    Styrian capital of Graz. He immigrated to the United States in 1968 and became
+    a U.S. citizen in 1983.
+
+    Schwarzenegger earned a BA in Business and International Economics at the University
+    of Wisconsin—Superior. He received an honorary Doctorate from the University of
+    Wisconsin—Superior in 1996 and an honorary Doctorate from Chapman University in 2002.
+
+    An increasingly politically active Republican during the 1990s, Schwarzenegger ran
+    for the California governorship and won when Gray Davis was recalled in 2003.
+    Schwarzenegger was sworn in as the 38th Governor of California on November 17, 2003,
+    following careers in body building, business and entertainment. Schwarzenegger was
+    the first foreign-born governor of California since Irish-born Governor John G. Downey
+    (Governor of California from 1860 to 1862). While governor, Schwarzenegger focused on
+    reducing California's greenhouse gas emissions, increasing the minimum wage, and
+    updating the workers' compensation system. He was also a proponent of physical
+    education and after-school programs, and supported the After-School Education & Safety
+    Act, which passed in 2002.
+  question: >
+    Based on the provided document, in what year did John G. Downey replace Arnold
+    Schwarzenegger as the first foreign-born Governor of California?
+  answer: >
+    John G. Downey never replaced Arnold Schwarzenegger as the first foreign-born governor
+    of California, because Arnold Schwarzenegger never was the first foreign-born governor
+    of California. According to the document, Schwarzenegger was the first foreign-born
+    governor of California since John G. Downey. In other words, there were no foreign-born
+    governors of California between John G. Downey and Schwarzenegger. But this also means
+    that there were other foreign-born governors of California before Schwarzenegger, for
+    example John G. Downey who was Irish-born. Hence, Schwarzenegger never was the first
+    foreign-born governor of California.
+
+- context: >
+    Document:
+
+    How Flu Spreads
+
+    Most experts believe that flu viruses spread mainly by tiny droplets made when people with
+    flu cough, sneeze, or talk. These droplets can land in the mouths or noses of people who
+    are nearby. Less often, a person might get flu by touching a surface or object that has flu
+    virus on it and then touching their own mouth, nose or possibly their eyes.
+  question: >
+    Based on the provided document, why does coughing spread more germs than sneezing or talking?
+  answer: >
+    The document does not provide information about why, or whether, coughing spreads more germs
+    than sneezing or talking. According to the document, people with flu who cough, sneeze, or
+    talk produce tiny droplets that spread flu viruses when they land in the mouths or noses of
+    nearby people. But the document makes no comparison between coughing and sneezing or talking.
