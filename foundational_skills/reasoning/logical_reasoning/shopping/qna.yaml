@@ -1,0 +1,27 @@
+---
+task_description: 'Teach the model to infer information based on lists of items'
+created_by: lhellebr
+seed_examples:
+  - answer: You need to buy salt, yeast and mozzarella.
+    question: I'm making pizza. I need flour, water, salt, yeast, tomato puree, mozzarella and basil. I have flour, water, tomato puree and basil. What do I need to buy?
+  - answer: You need to buy flour.
+    question: I want to bake flatbread. The recipe says I need just water, salt and flour. I have water and salt, what do I need to buy?
+  - answer: You don't need to buy anything!
+    question: I wish to make pizza for dinner. The recipe says I need flour, water, salt, yeast, tomato puree, mozzarella and basil. I have water, salt, flour, mozzarella, yeast, basil and tomato puree. What should I buy?
+  - answer: You need to buy salt, water and flour.
+    question: I want to make flatbread. I heard you only need water, salt and flour but I don't have any of these. What should I buy?
+  - answer: Yes, you need to buy sugar.
+    question: "I'm making lemonade. Recipe says: water, lemon, sugar. I have water and lemon, do I need to buy anything?"
+  - answer: Yes, you need to buy sugar and salt.
+    question: "I'm making lemonade. Recipe says: water, lemon, sugar and a pinch of salt. I have water and lemon, do I need to buy anything?"
+  - answer: You need to buy mozzarella or some other cheese of your choice.
+    question: "I'm making pizza. The recipe: flour, water, salt, yeast, tomato puree, mozzarella or other cheese and a handful of basil. I have flour, water, yeast, salt, tomato puree and basil. What do I need to buy?"
+  - answer: You need to buy mozzarella or some other cheese of your choice, and basil.
+    question: "I'm making pizza. The recipe: flour, water, salt, yeast, tomato puree, mozzarella or other cheese and a handful of basil. I have flour, water, yeast, salt, tomato puree. What do I need to buy?"
+  - answer: You should buy chicken broth, butter, onion, salt, parmesan, black pepper.
+    question: "I'm cooking risotto. I need the following ingredients: chicken broth, butter, onion, salt, rice, parmesan, black pepper. I have only rice. What should I buy?"
+  - answer: You don't need to buy anything, you have all the ingredients.
+    question: "I'm cooking pork schnitzel. The required ingredients include pork chops, flour, salt, black pepper, eggs, bread crumbs, oil. I have pork chops, flour, salt, black pepper, eggs, bread crumbs, oil. What do I need to buy?"
+  - answer: You need to put butter on your shopping list.
+    question: "I want to prepare mashed potatoes for dinner. The recipe calls for: potatoes, milk, butter, salt and black pepper. I have milk, potatoes, black pepper and salt. What do I need to put on my shopping list?"
+
