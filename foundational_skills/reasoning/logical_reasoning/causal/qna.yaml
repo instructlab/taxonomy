@@ -23,4 +23,12 @@ seed_examples:
     conclude that all squares have four sides?
 
     '
+- answer: 'No, a circle does not have sides. A "side" usually refers to the sides
+    of a polygon, such as a square or a triangle. Although a circle is a shape, it
+    is not a polygon, so it does not have sides.
+
+    '
+  question: 'Does a cirle have an infinite number of side?
+
+    '
 task_description: To teach a language model about Logical Reasoning - causal relationships
