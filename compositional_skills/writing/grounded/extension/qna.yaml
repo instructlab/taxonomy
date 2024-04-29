@@ -1,0 +1,237 @@
+created_by: ae2015
+task_description: >
+    Given a document and a user's question about a specific entity, feature, or concept,
+    respond only with the information that the document provides specifically about that
+    entity, feature, or concept. Do not assume that a feature applies to a given entity
+    simply because it applies to one or more similar entities mentioned in the document,
+    or because the feature often (but not always) applies to other similar entities.
+    If specific information is not provided in the document, respond that the document
+    does not include the requested information. If the information about similar entities
+    is judged highly relevant and useful, be sure to specify in the response which similar
+    entities it applies to, exactly as provided in the document.
+seed_examples:
+- context: >
+    Document:
+
+    Welcome to the Muddytown Bus Transit Service!
+
+    Our mission is to provide a convenient and affordable transportation solution for the residents of Muddytown,
+    connecting you to various destinations with ease. We offer a wide range of services tailored to meet your
+    needs, including:
+
+    * Regular Bus Services: Our extensive network of bus routes ensures that you can reach your desired location
+    with minimal effort. Hop on our buses and enjoy a comfortable commute to work, school, or any other place in town.
+
+    * Specialized Bus Services: We understand that some passengers require extra assistance. That's why we offer
+    specialized bus services for individuals with mobility issues or seniors. Our vehicles are equipped with
+    wheelchair ramps and priority seating areas, ensuring a safe and comfortable journey for all.
+
+    * Night Bus Services: We know that sometimes you need to travel after dark. That's why we operate night bus
+    services, providing a reliable transportation option when the sun goes down.
+
+    * Holiday Bus Services: During special occasions like festivals or public holidays, we offer extra bus trips
+    to accommodate the increased demand for transportation.
+
+    Pricing and Payment Options
+
+    We believe in making our service accessible to everyone. That's why we offer a variety of pricing options,
+    including:
+
+    * Regular Fares: Affordable tickets for standard commuting needs.
+
+    * Discounted Tickets: Reduced fares for students, seniors, and people with disabilities.
+
+    * Monthly/Annual Passes: Save more with our long-term passes, perfect for frequent travelers.
+
+    We accept various payment methods to make your journey hassle-free:
+
+    * Cash: Pay the driver using good old cash.
+
+    * Muddytown Smart Card: A reusable contactless smart card that can be loaded with credit for easy and
+    quick payments.
+
+    * Mobile App Payment: Make payments through our user-friendly mobile app, available on both Android and
+    iOS platforms.
+
+    Accessibility Options
+
+    We strive to create a welcoming environment for all passengers. Our buses are equipped with:
+
+    * Wheelchair ramps and priority seating areas for passengers with mobility issues.
+
+    * Low-floor buses for easier boarding and alighting.
+
+    * Clear audio and visual announcements to help visually impaired passengers.
+
+    * Braille signage on bus stops and inside buses to assist visually impaired passengers.
+
+    We're here to make your journey as smooth and enjoyable as possible. So, why wait? Hop on board the
+    Muddytown Bus Transit Service and let us take you where you need to go!
+  question: >
+    Is there any insurance coverage provided for the Muddytown Bus Transit Service? If so, what are the specifics?
+  answer: >
+    The available document does not include information about any insurance coverage that might be
+    provided for the Muddytown Bus Transit Service.
+
+- context: >
+    Document:
+
+    Solar storms can affect our lives in ways that you may not expect. Take for example, an event
+    that occurred on March 14th, 1989. At 2:45am, power was cut off to 6 million people living in
+    eastern Canada for 9 hours. This blackout caused millions of dollars of damage to power line
+    systems and electrical equipment.
+
+    So what happened?
+
+    The cause of this blackout lies some 150 million kilometers from Earth. Yes, the sun. This
+    blackout was caused by an explosive event on the sun called a coronal mass ejection. This
+    particular coronal mass ejection blasted billions of tons of electrically charged particles
+    directly at Earth inducing huge electrical currents. This electrical activity can damage our
+    power distribution systems.
+  question: >
+    Based on the provided document, what happens during a coronal mass ejection?
+  answer: >
+    A coronal mass ejection is an explosive event on the sun. One particular coronal mass
+    ejection blasted billions of tons of electrically charged particles directly at Earth
+    inducing huge electrical currents and causing a blackout.
+
+- context: >
+    Document:
+
+    Weywot Apartments is a luxury apartment community offering a unique living experience,
+    nestled in the heart of our thriving neighborhood. Our well-maintained properties come
+    equipped with modern amenities and a cozy atmosphere perfect for any lifestyle. We offer
+    spacious 1-bedroom and 2-bedroom apartment homes for rent at affordable prices. Our
+    apartments are designed with your comfort and convenience in mind, featuring spacious
+    living quarters, modern kitchens with solid wood cabinets and Corian countertops, as
+    well as private patios or decks for you to enjoy. Our 1-bedroom units feature 900 sq.ft.
+    living area and 1 full bath, offered for $2,000 per month. For those who need more
+    space, our 2-bedroom units offer 1200 sq.ft. living area and 1 full bath, available
+    for $3,000 per month. All of our apartments come equipped with in-home washers and dryers,
+    heating and air conditioning, as well as high-speed in-home and common area WiFi. A
+    covered parking spot is provided for each apartment. In addition to our individual
+    apartment amenities, Weywot Apartments offers a variety of community features including
+    a pool and a fitness center. Our apartments are located in a secure, gated community with
+    controlled access, ensuring your safety and peace of mind. Enjoy the convenience of being
+    just steps away from local shops, restaurants, and public transportation. Our team is
+    committed to providing top-notch customer service and addressing all your needs promptly.
+    Experience the tranquility of living in Weywot Apartments today!
+  question: >
+    Based on the provided document, are Weywot Apartments pet friendly?
+  answer: >
+    The provided document does not include information about the pet policy at Weywot Apartments.
+
+- context: >
+    Document:
+
+    Multiple Star Systems
+
+    Our solar system, with its eight planets orbiting a solitary Sun, feels familiar
+    because it's where we live. But in the galaxy at large, planetary systems like ours
+    are decidedly in the minority. More than half of all stars in the sky have one or
+    more partners. These multiple star systems come in a stunning variety of flavors:
+    large, hot stars orbited by smaller, cooler ones; double stars orbited by planets;
+    pairs pulsing with X-rays as one sheds material that is devoured by the other;
+    systems with as many as seven stars in a complex gravitational dance. Let's take
+    a short tour.
+
+    Binary Stars
+
+    The variety seen in double-star systems is nearly as rich as the galaxy's stellar
+    population as a whole. These pairs can differ significantly in mass, with, say, a
+    mid-sized yellow star like our Sun locked in an orbital embrace with a far smaller,
+    cooler red dwarf. Some binary partners evolve rapidly into red giant or supergiant
+    stars, while their small companions remain stable. Binary systems also can host
+    orbiting planets that have two stars in their skies, as on the fictional Tatooine
+    in the Star Wars movies. And from our viewpoint on Earth, some binary stars stage
+    their own eclipses. Eclipses are scientifically valuable because observing changes
+    in light as one star passes in front of the other can reveal their masses, diameters,
+    precise orbits, and even compositions. Pairs of neutron stars can spiral together
+    and collide, producing some of the universe's heavy elements, like gold, platinum,
+    and iodine.
+
+    X-ray Binaries
+
+    Bizarre pairs known as X-ray binaries can exchange material between stars. A larger,
+    more quickly evolving star can run out of nuclear fuel, explode in a supernova, and
+    leave behind a far denser white dwarf, neutron star, or black hole. The collapsed
+    star's more powerful gravity can begin to drain away material from the companion star
+    if it orbits closely enough. That process produces X-rays as the material falling
+    onto the collapsed star is heated to more than 1.8 million degrees Fahrenheit
+    (1 million degrees Celsius). X-ray binaries, including those that eclipse, can provide
+    valuable data that help scientists understand extreme physical phenomena including
+    the lighthouse-like pulses emitted by spinning neutron stars, thermonuclear blasts
+    ignited in the fallen gas, and dips in starlight that reveal the presence of
+    intervening material forming an accretion disk around the orbiting stars.
+
+    Other Multiples
+
+    Some multiple star systems include three stars or more, their orbits intricately
+    intertwined by gravity. As many as seven stars have been observed in a single system.
+
+    Like binaries, triple-star systems can host planets. For example, our nearest stellar
+    neighbor, the Alpha Centauri system, includes three stars. The outermost, Proxima
+    Centauri, is known to host at least one planet. Another three-star system, HD 131399,
+    includes a giant gas planet four times the mass of Jupiter in orbit around its central
+    star, while two more stars appear to orbit both at a much greater distance.
+
+    A recently discovered and spectacular six-star system, TYC 7037-89-1, possesses a
+    gravitational complexity worthy of Rube Goldberg. Three separate pairs of stars orbit
+    each other in typical binary fashion. But two of these pairs also orbit one another.
+    The third pair, at a greater distance, orbits the other two pairs - the stars in each
+    binary eclipse each other in turn from our point of view.
+  question: >
+    Based on the provided document, how many stars orbit the Crab Pulsar PSR B0531+21?
+  answer: >
+    The provided document does not include any information about the number of stars
+    orbiting the Crab Pulsar PSR B0531+21.
+
+- context: >
+    Document:
+
+    COVID-19, Influenza (Flu), and HIV: Similarities and Differences
+
+    If It's Not the Flu or COVID-19, Could It Be HIV?
+
+    COVID-19, flu and HIV may have similar symptoms such as fever, chills, night sweats,
+    muscle aches, or fatigue. The flu-like symptoms of acute HIV begin within a few weeks
+    of HIV exposure and then eventually go away.  Find a testing site near you by calling
+    1-800-CDC-INFO (232-4636) or visiting gettested.cdc.gov.
+
+    Flu
+
+    Flu and COVID-19 can cause respiratory disease, and symptoms can range from mild to
+    severe. Both viruses are easily transmitted by respiratory droplets and as a result,
+    the same public health measures, such as wearing a mask, coughing into your elbow or
+    into a tissue and immediately disposing of the tissue, are important actions that
+    can prevent infection.
+
+    COVID-19
+
+    Symptoms of COVID-19 usually occur within two weeks of exposure to the coronavirus.
+    Fever, chills, coughing, sore throat, shortness of breath, muscle aches, congestion,
+    loss of taste and/or smell are some of the symptoms associated with COVID-19. However,
+    some people may be infected and exhibit no symptoms at all!  Testing is the only way
+    to know whether you have COVID-19.
+
+    HIV
+
+    Early HIV symptoms can feel like a bad case of the flu or COVID-19 and usually occur
+    a few weeks after infection. In many people, early HIV signs and symptoms include
+    fever, headache, fatigue, swollen lymph glands, rash, sore joints or muscles, or a
+    sore throat. These symptoms of acute HIV are the body's natural response to HIV
+    infection. Symptoms usually disappear within one to four weeks; therefore, they are
+    often mistaken for a case of the flu.
+
+    If you might have been exposed to HIV, talk to your doctor about your testing options
+    and whether you should be tested more frequently.
+  question: >
+    Based on the provided document, how are Flu, HIV, and COVID-19 transmitted from person
+    to person?
+  answer: >
+    Flu and COVID-19 are easily transmitted from person to person through respiratory
+    droplets. To reduce the risk of their transmission, it is important to follow public
+    health measures, such as wearing a mask, coughing into your elbow or into a tissue
+    and immediately disposing of the tissue.
+
+    The provided document does not include information about the transmission of HIV.
