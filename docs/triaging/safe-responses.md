@@ -4,18 +4,18 @@
 ### Jokes and Poems
 Thank you for taking the time to submit to InstructLab! I know this wasn't easy and could have been quite time-consuming. Unfortunately, our team has decided that submissions for jokes or poems (skills and knowledge) are no longer supported or approved. We received so many at the beginning, and with jokes being "in the eye of the beholder" and puns requiring nuance for native English speakers, we realized we were possibly unconsciously biasing our model. We have discovered that working with both topics has its own challenges, and if we want something generalized, finding consensus was unsuccessful. 
 
-We have updated the [topics to avoid](https://github.com/instructlab/community/blob/main/docs/SKILLS_GUIDE.md#avoid-these-topics) to reflect this, and if you have more questions, don't hesitate to comment on this PR. We may revisit this in the future, but we are looking for unique skills or new knowledge for the model; poems and jokes, unfortunately, don't fit this plan. 
+We have updated the [topics to avoid](../SKILLS_GUIDE.md#avoid-these-topics) to reflect this, and if you have more questions, don't hesitate to comment on this PR. We may revisit this in the future, but we are looking for unique skills or new knowledge for the model; poems and jokes, unfortunately, don't fit this plan. 
 
 Thank you again for taking this time, and we are looking forward to your next PR to the InstructLab project!
 
 ### Math 
-LLMs aren't great at counting, math, or computation. Right now we're not seeking to improve the model's math and computation ability as this skill belongs to ["core skill"](https://github.com/instructlab/community/blob/main/docs/SKILLS_GUIDE.md#core-skills), which is not open to contribution.
+LLMs aren't great at counting, math, or computation. Right now we're not seeking to improve the model's math and computation ability as this skill belongs to ["core skill"](../SKILLS_GUIDE.md#core-skills), which is not open to contribution.
 
 This will be rejected for now and we can reconsider if we open a math / computation taxonomy.
 
 ### Coding
 
-Thanks for the submission! Coding belongs to ["core skill"](https://github.com/instructlab/community/blob/main/docs/SKILLS_GUIDE.md#core-skills), which is not open to contribution.
+Thanks for the submission! Coding belongs to ["core skill"](../SKILLS_GUIDE.md#core-skills), which is not open to contribution.
 
 This will be rejected for now and we can reconsider if we open a programming / coding taxonomy.
 
