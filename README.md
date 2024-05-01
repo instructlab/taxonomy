@@ -1,6 +1,6 @@
 # InstructLab 🐶 Taxonomy
 
-## Contents 📖 
+## Contents 📖
 
 - [Welcome to the InstructLab Taxonomy](#welcome-to-the-instructlab-taxonomy)
 - [Learning](#learning)
@@ -12,6 +12,7 @@
 - [Contribute knowledge and skills to the taxonomy!](#contribute-knowledge-and-skills-to-the-taxonomy)
   - [Ways to contribute](#ways-to-contribute)
   - [How to contribute skills and knowledge](#how-to-contribute-skills-and-knowledge)
+
 ## Welcome to the InstructLab Taxonomy
 
 InstructLab 🐶 uses a novel synthetic data-based alignment tuning method for
@@ -33,19 +34,21 @@ Learn about the concepts of "skills" and "knowledge" in our [InstructLab Communi
 
 ## Getting Started with Skill Contributions
 
-Skills require a much smaller volume of content than knowledge contributions. An entire skill contribution to the taxonomy tree can be just a few lines of YAML in the `qna.yaml` file ("qna" is short for "questions and answers") and an `attribution.txt` file for citing sources. 
+Skills require a much smaller volume of content than knowledge contributions. An entire skill contribution to the taxonomy tree can be just a few lines of YAML in the `qna.yaml` file ("qna" is short for "questions and answers") and an `attribution.txt` file for citing sources.
 
 Your skills contribution pull requests must include the following:
+
 - A `qna.yaml` that contains a set of key/value entries with the following keys
   - Each `qna.yaml` file requires a minimum of five question and answer pairs.
 - An `attribution.txt` that includes the sources for the information used in the `qna.yaml`
 
 > [!TIP]
 > The skill taxonomy structure is used in several ways:
->    1. To select the right subset of the taxonomy to use for data generation.
->    2. To determine the interpretability by human contributors and maintainers.
->    3. As part of the prompt to the GPT model used to generate synthetic samples.
-
+>
+> 1. To select the right subset of the taxonomy to use for data generation.
+> 2. To determine the interpretability by human contributors and maintainers.
+> 3. As part of the prompt to the LLM used to generate synthetic samples.
+<!-- -->
 > [!IMPORTANT]
 > There is a limit to how much content can exist in the question/answer pairs for the model to process. Due to this, only add a maximum
 > of around 2300 words to your question and answer seed example pairs in the `qna.yaml` file.
@@ -69,6 +72,7 @@ To make the `qna.yaml` files easier and faster for humans to read, it is recomme
 In `seed_examples`, it is recommended to specify `context` first (if applicable), followed by `question` and `answer`.
 
 *Example `qna.yaml`*
+
 ```yaml
 task_description: <string>
 created_by: <string>
@@ -81,23 +85,26 @@ seed_examples:
     question: <string>
     answer: |
       <multi-line string>
-  ...  
+  ...
 ```
 
-Then, you create an `attribution.txt` file that includes the sources of your information. These can also be self authored. 
+Then, you create an `attribution.txt` file that includes the sources of your information. These can also be self authored.
 
 *Example `attribution.txt`*
-```
-[Link to source] 
+
+```text
+[Link to source]
 [Link to work]
 [License of the work]
 [Creator name]
 ```
+
 For more information on what to include in your `attribution.txt` file, see [For your attribution.txt file](https://github.com/instructlab/taxonomy/blob/main/CONTRIBUTING.md#for-your-attributiontxt-file) in CONTRIBUTING.md.
 
 If you have not written YAML before, don't be intimidated - it's just text.
 
 > [!TIP]
+>
 > - Spaces and indentation matter in YAML. Two spaces to indent.
 > - Don't use tabs!
 > - Be careful to not have trailing spaces at the end of a line.
@@ -125,12 +132,13 @@ seed_examples:
   - question: What are 5 words that rhyme with cat?
     answer: bat, gnat, rat, vat, and mat.
   - question: What are 5 words that rhyme with poor?
-    answer: door, shore, core, bore, and tore. 
+    answer: door, shore, core, bore, and tore.
   - question: What are 5 words that rhyme with bank?
     answer: tank, rank, prank, sank, and drank.
   - question: What are 5 words that rhyme with bake?
     answer: wake, lake, steak, make, and quake.
 ```
+
 Seriously, that's it.
 
 Here is the location of this YAML in the taxonomy tree. Note that the YAML file
@@ -146,10 +154,10 @@ in terms of a taxonomy contribution:
     └── freeform
     |   └── haikus <=== here it is :)
     |   |   └── qna.yaml
-    |   |       attribution.txt 
+    |   |       attribution.txt
     │   ├── debate
     │   │   └── qna.yaml
-    |   |       attribution.txt   
+    |   |       attribution.txt
     │   ├── legal
     │   │   ├── agreement
     │   │   |    └── qna.yaml
@@ -159,12 +167,12 @@ in terms of a taxonomy contribution:
 
 #### Grounded compositional skill: YAML example
 
-Remember that [grounded compositional skills](docs/SKILLS_GUIDE.md) require additional context and include a `context` field. 
+Remember that [grounded compositional skills](docs/SKILLS_GUIDE.md) require additional context and include a `context` field.
 
 This example snippet assumes the GitHub username `mairin` and shows some of the question/answer pairs present in the actual file:
 
 ```yaml
-task_description: | 
+task_description: |
     This skill provides the ability to read a markdown-formatted table.
 created_by: mairin # Use your GitHub username; only one creator supported
 seed_examples:
@@ -213,7 +221,7 @@ seed_examples:
     |   └── qualitative
     |   |    ├── sentiment
     |   |    |    └── qna.yaml
-    |   |    |        attribution.txt 
+    |   |    |        attribution.txt
     |   |    └── tone_and_style
     |   |         └── qna.yaml
     |   |             attribution.txt
@@ -226,6 +234,7 @@ seed_examples:
     │   │   │       attribution.txt
 [...]
 ```
+
 ## Getting Started with Knowledge Contributions
 
 > [!IMPORTANT]
@@ -240,21 +249,23 @@ Knowledge in the taxonomy tree consists of a few more elements than skills:
 - ⭐ Knowledge submissions require you to create a Git repository, can be with GitHub, that contains the markdown files of your knowledge contributions. These contributions in your repository must use the markdown (.md) format.
 - The `qna.yaml` includes parameters that contain information from your repository.
 
-> [!TIP] 
+> [!TIP]
 > Guidelines for Knowledge contributions
+>
 > - Submit the most up-to-date version of the document
 > - All submissions must be text, images will be ignored
-> - Do not use tables in your markdown freeform contribution 
-
+> - Do not use tables in your markdown freeform contribution
+<!-- -->
 > [!IMPORTANT]
 > There is a limit to how much content can exist in the question/answer pairs for the model to process. Due to this, only add a maximum
 > of around 2300 words to your question and answer seed example pairs in the `qna.yaml` file.
 
 Each `qna.yaml` file requires a minimum of five question-answer pairs. The `qna.yaml` format must include the following fields:
 ˇ
+
 - `task_description`: An optional description of the knowledge.
 - `created_by`: Your GitHub username.
-- `domain`: Category of the knowledge. 
+- `domain`: Category of the knowledge.
 - `seed_examples`: Five or more examples sourced from the provided knowledge documents.
   - `question`: A question for the model. This key is required.
   - `answer`: The desired response from the model. This key is required.
@@ -264,6 +275,7 @@ Each `qna.yaml` file requires a minimum of five question-answer pairs. The `qna.
   - `patterns`: A list of glob patterns specifying the markdown files in your repository. Any glob pattern that starts with `*`, such as `*.md`, must be quoted due to YAML rules. For example, `"*.md"`.
 
 ### Knowledge: YAML examples
+
 ```yaml
 task_description: 'Teach the model the results of the 2024 Oscars'
 created_by: juliadenham
@@ -289,7 +301,7 @@ seed_examples:
      Christopher Nolan won best director for Oppenheimer.
  - question: Did Billie Eilish perform at the 2024 Oscars?
    answer: |
-     Yes Billie Eilish performed "What Was I Made For?" from Barbie at the 2024 Oscars. 
+     Yes Billie Eilish performed "What Was I Made For?" from Barbie at the 2024 Oscars.
 document:
  repo: https://github.com/juliadenham/oscars2024_knowledge.git
  commit: e1744af
@@ -298,14 +310,15 @@ document:
 ```
 
 *Example `attribution.txt` file*
-```
+
+```text
 Title of work: 96th Academy Awards
-Link to work: https://en.wikipedia.org/wiki/96th_Academy_Awards 
+Link to work: https://en.wikipedia.org/wiki/96th_Academy_Awards
 License of the work: CC-BY-SA-4.0
 Creator names: Wikipedia Authors
 ```
 
-This knowledge example references one markdown file: `oscars2024_results.md`. You can also add multiple files for knowledge contributions. 
+This knowledge example references one markdown file: `oscars2024_results.md`. You can also add multiple files for knowledge contributions.
 
 > [!NOTE]
 > Due to the higher volume, **it will naturally take longer to receive acceptance for
@@ -345,7 +358,7 @@ Director](Academy_Award_for_Best_Director "wikilink")
 
 In the taxonomy repository, here's what the previously referenced knowledge might look like in the tree:
 
-#### Knowledge: directory tree example 
+#### Knowledge: directory tree example
 
 ```ascii
 [...]
@@ -363,9 +376,10 @@ In the taxonomy repository, here's what the previously referenced knowledge migh
         |                 attribution.txt
 [...]
 ```
+
 For more information on what to include in your `attribution.txt` file, see [For your attribution.txt file](https://github.com/instructlab/taxonomy/blob/main/CONTRIBUTING.md#for-your-attributiontxt-file) in CONTRIBUTING.md.
 
-You can organize the knowledge markdown files in your repository however you want. You just need to ensure the YAML is pointing to the correct file. 
+You can organize the knowledge markdown files in your repository however you want. You just need to ensure the YAML is pointing to the correct file.
 
 ## Taxonomy tree Layout
 
@@ -373,8 +387,8 @@ The taxonomy tree is organized in a cascading directory structure. At the end of
 each branch, there is a YAML file (qna.yaml) that contains the examples for that
 domain. Maintainers can decide to change the names of the existing branches or to add new branches.
 
-> [!IMPORTANT] 
-> Folder names do not have spaces. 
+> [!IMPORTANT]
+> Folder names do not have spaces.
 
 Below is an illustrative directory structure to show this layout:
 
@@ -417,7 +431,7 @@ Below is an illustrative directory structure to show this layout:
 
 For an extensive example of this layout see, [taxonomy_tree_layout](https://github.com/instructlab/taxonomy/tree/main/docs/taxonomy_tree_layout.md) in the documentation folder.
 
-## Contribute knowledge and skills to the taxonomy!
+## Contribute knowledge and skills to the taxonomy
 
 The ability to contribute to a Large Language Model (LLM) has been difficult in no small part because it is difficult to get access to the necessary compute infrastructure.
 
@@ -434,10 +448,12 @@ You can contribute to the taxonomy in the following two ways:
 1. Adding new examples to **existing leaf nodes**:
 2. Adding **new branches/skills** corresponding to the existing domain:
 
-For more information, see the [Ways of contributing to the taxonomy repository](https://github.com/instructlab/taxonomy/blob/main/CONTRIBUTING.md#ways-of-contributing-to-the-taxonomy-repository) documentation. 
+For more information, see the [Ways of contributing to the taxonomy repository](https://github.com/instructlab/taxonomy/blob/main/CONTRIBUTING.md#ways-of-contributing-to-the-taxonomy-repository) documentation.
+
 ## How to contribute skills and knowledge
 
-To contribute to this repo, you'll use the _Fork and Pull_ model common in many open source repositories. You can add your skills and knowledge to the taxonomy in multiple ways; for additional information on how to make a contribution, see the [Documentation on contributing](CONTRIBUTING.md). You can also use the following guides to help with contributing: 
+To contribute to this repo, you'll use the *Fork and Pull* model common in many open source repositories. You can add your skills and knowledge to the taxonomy in multiple ways; for additional information on how to make a contribution, see the [Documentation on contributing](CONTRIBUTING.md). You can also use the following guides to help with contributing:
+
 - Contributing using the [GitHub webpage UI](docs/contributing_via_GH_UI.md).
 - Contributing knowledge to the taxonomy in the [Knowledge contribution guidelines](docs/knowledge-contribution-guide.md).
 
