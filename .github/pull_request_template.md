@@ -54,4 +54,4 @@ Replace "..." with what you receive with the finetuned model. -->
 - [ ] The `qna.yaml` file was [linted](https://yamllint.com) and [prettified](https://onlineyamltools.com/prettify-yaml) ([yaml-validator](https://jsonformatter.org/yaml-validator) can do both)
 - [ ] An `attribution.txt` file in the same folder as the `qna.yaml` file
 - [ ] Content does not include PII or otherwise sensitive or confidential information
-- [ ] Content does not include anything documented in the project's [Avoid these Topics](https://github.com/instructlab/community/blob/main/docs/SKILLS_GUIDE.md#avoid-these-topics) guidelines
+- [ ] Content does not include anything documented in the project's [Avoid these Topics](https://github.com/instructlab/taxonomy/blob/main/docs/SKILLS_GUIDE.md#avoid-these-topics) guidelines
