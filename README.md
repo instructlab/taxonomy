@@ -159,7 +159,7 @@ in terms of a taxonomy contribution:
 
 #### Grounded compositional skill: YAML example
 
-Remember that [grounded compositional skills](https://github.com/instructlab/community/blob/main/docs/SKILLS_GUIDE.md) require additional context and include a `context` field. 
+Remember that [grounded compositional skills](docs/SKILLS_GUIDE.md) require additional context and include a `context` field. 
 
 This example snippet assumes the GitHub username `mairin` and shows some of the question/answer pairs present in the actual file:
 
@@ -265,34 +265,34 @@ Each `qna.yaml` file requires a minimum of five question-answer pairs. The `qna.
 
 ### Knowledge: YAML examples
 ```yaml
-task_description: 'Teach the model the results of the 2024 oscars'
+task_description: 'Teach the model the results of the 2024 Oscars'
 created_by: juliadenham
 domain: pop_culture
 seed_examples:
- - question: When did the 2024 oscars happen?
+ - question: When did the 2024 Oscars happen?
    answer: |
-     The 2024 oscars were held on March 10, 2024.
- - question: What film had the most oscar nominations in 2024?
+     The 2024 Oscars were held on March 10, 2024.
+ - question: What film had the most Oscar nominations in 2024?
    answer: |
-     Oppenheimer had 13 oscar nominations.
- - question: Who presented the awards for Best Original Screenplay and Best Adapted Screenplay?
+     Oppenheimer had 13 Oscar nominations.
+ - question: Who presented the 2024 Oscar for Best Original Screenplay and Best Adapted Screenplay?
    answer: |
-     Octavia Spencer.
- - question: Who hosted the 2024 oscars?
+     Octavia Spencer presented the award for Best Original Screenplay and Best Adapted Screenplay at the 2024 Oscars.
+ - question: Who hosted the 2024 Oscars?
    answer: |
      Jimmy Kimmel hosted the 96th Academy Awards ceremony.
  - question: At the 2024 Oscars, who were the nominees for best director and who won?
    answer: |
-     The nominees for director at the 2024 oscars was Christopher Nolan for Oppenheimer,
+     The nominees for director at the 2024 Oscars was Christopher Nolan for Oppenheimer,
      Justine Triet for Anatomy of a Fall, Martin Scorsese for Killers of the Flower Moon,
      Yorgos Lanthimos for Poor Things, and Jonathan Glazer for The Zone of Interest.
      Christopher Nolan won best director for Oppenheimer.
- - question: Did Billie Eilish perform at the 2024 oscars?
+ - question: Did Billie Eilish perform at the 2024 Oscars?
    answer: |
-     Yes Billie Eilish performed "What Was I Made For?" from Barbie.
+     Yes Billie Eilish performed "What Was I Made For?" from Barbie at the 2024 Oscars. 
 document:
  repo: https://github.com/juliadenham/oscars2024_knowledge.git
- commit: a22148c
+ commit: e1744af
  patterns:
    - oscars2024_results.md
 ```
