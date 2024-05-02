@@ -10,6 +10,8 @@ on:
     paths:
       - compositional_skills/**/qna.yaml
       - knowledge/**/qna.yaml
+      - '.github/workflows/lint.yml' # This workflow
+      - '.github/scripts/**' # Scripts used by this workflow
 
   pull_request:
     branches:
@@ -19,6 +21,8 @@ on:
       - compositional_skills/**/*.yml
       - knowledge/**/*.yaml
       - knowledge/**/*.yml
+      - '.github/workflows/lint.yml' # This workflow
+      - '.github/scripts/**' # Scripts used by this workflow
 
 env:
   LC_ALL: en_US.UTF-8
@@ -45,6 +49,15 @@ jobs:
           fetch-depth: 0
           submodules: true
 
+      - name: "Setup Python"
+        uses: actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d # v5.1.0
+        with:
+          python-version: "3.11"
+
+      - name: "Install Python Packages"
+        run: |
+          pip install -r .github/scripts/requirements.txt
+
       - name: "Find changed skills and knowledge files"
         id: changed-files
         uses: tj-actions/changed-files@0874344d6ebbaa00a27da73276ae7162fadcaf69 # v44.3.0
@@ -55,18 +68,7 @@ jobs:
             knowledge/**/*.yaml
             knowledge/**/*.yml
 
-      - name: "Setup Python"
-        if: steps.changed-files.outputs.any_changed == 'true'
-        uses: actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d # v5.1.0
-        with:
-          python-version: "3.11"
-
-      - name: "Install Python Packages"
-        if: steps.changed-files.outputs.any_changed == 'true'
-        run: |
-          pip install -r .github/scripts/requirements.txt
-
-      - name: "Check YAML file contents"
+      - name: "Check changed YAML file contents"
         if: steps.changed-files.outputs.any_changed == 'true'
         run: |
           .github/scripts/check-yaml.py ${{ steps.changed-files.outputs.all_changed_files }}
