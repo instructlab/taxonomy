@@ -1,0 +1,45 @@
+# SPDX-License-Identifier: Apache-2.0
+
+name: Lint Markdown documents
+
+on:
+  push:
+    branches:
+      - "main"
+    paths:
+      - '**/*.md'
+      - '.markdownlint-cli2.yaml'
+  pull_request:
+    branches:
+      - "main"
+    paths:
+      - '**/*.md'
+      - '.markdownlint-cli2.yaml'
+
+env:
+  LC_ALL: en_US.UTF-8
+
+defaults:
+  run:
+    shell: bash
+
+permissions:
+  contents: read
+
+jobs:
+  markdown-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Harden Runner"
+        uses: step-security/harden-runner@a4aa98b93cab29d9b1101a6143fb8bce00e2eac4 # v2.7.1
+        with:
+          egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
+      - name: "Checkout"
+        uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
+        with:
+          fetch-depth: 0
+          submodules: true
+      - name: "Check Markdown documents"
+        uses: DavidAnson/markdownlint-cli2-action@b4c9feab76d8025d1e83c653fa3990936df0e6c8 # v16.0.0
+        with:
+          globs: '**/*.md'

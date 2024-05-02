@@ -1,4 +1,4 @@
-# Instructlab (LAB) Knowledge 
+# Instructlab (LAB) Knowledge
 
 Knowledge consists of data and facts and is backed by documents. When you create knowledge for a model, you're giving it additional data to more accurately answer questions. The knowledge document formats currently supported are markdown (.md) and text (.txt).
 
@@ -59,6 +59,3 @@ Each `qna.yaml` file is required to contain a minimum of five question-answer pa
 |  Dataset Name |  Knowledge Taxonomy Location | License  |
 | --------------|-------------|----------|
 | https://www.redbooks.ibm.com/ | ibm_redbooks | IBM Proprietary Data |
-
-
-
