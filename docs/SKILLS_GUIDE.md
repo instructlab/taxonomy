@@ -1,7 +1,9 @@
 # Skills Guide
+
 ## What is a "Skill"?
 
 There are various types of skills that you can contribute to the taxonomy.
+
 ### Compositional Skills
 
 Skills are performative. When you create a skill for the model, you're
@@ -9,11 +11,13 @@ teaching it how to do something: "write me a song," "rearrange words in a senten
 "summarize an email."
 
 There are two types of compositional skills:
+
 #### Freeform Compositional Skills
 
 Freeform compositional skills are performative and do **not** require additional context. An example of a freeform skill is teaching the model words that rhyme. You could provide examples of "words that rhyme with 'tool'". By providing those examples, you're essentially tickling the latent knowledge of the LLM. In our example, you're enabling the LLM to be able to identify words that rhyme in its latent knowledge.
 
 Freeform skills include things like:
+
 * Speak like Yoda
 * Convert to camel case
 * Write me a limerick
@@ -33,11 +37,13 @@ skill and not external to it.
 > or aligning the model; only the table layout format itself will be used.
 
 Grounded skills include things like:
+
 * Game creation like Sudoku or tic tac toe
 * Summarizing or extracting from a piece of text
 * Find unresolved items in a meeting transcript
 
 [Example Grounded compositional skill pull request](https://github.com/instructlab/taxonomy/pull/250)
+
 ### Core Skills
 
 Core skills are foundational skills like math, reasoning, and coding.
@@ -66,6 +72,7 @@ Skills to better format and reassemble information are helpful.
 ### Table Analysis and Processing
 
 Consider:
+
 * Drawing verbal inferences and conclusions about what's in a table
 * Sorting
 * Selecting
@@ -73,12 +80,14 @@ Consider:
 
 ### Qualitative Inference and Chain-of-Thought Reasoning
 
-*Example*
+Example:
+
 > Mary is taller than John.
 > John is taller than Anna.
 > Is Anna taller than Mary?
 
-*Example*
+Example:
+
 > An elephant, a mouse and a horse are in a room. How would they be ordered if they were standing in order by size?
 
 Great skills in this category should include the correct line of reasoning in the answer, not just what the answer is.
@@ -93,7 +102,6 @@ Please avoid HAP (hate, abuse and profanity) and PII (personal identifiable info
 
 Anything related to trust and safety will be flagged for higher-level review.
 
-
 ### Searching, Extraction and Summarization
 
 Skills to select odd information in a document, draw conclusions, pull out information, draw insights or generate TODOs from information provided in the "context" field are welcome.
@@ -101,11 +109,12 @@ Skills to select odd information in a document, draw conclusions, pull out infor
 ### Complex Rulesets and Games
 
 > [!NOTE]
-> This is a good example of the need for a _grounded skill_. Grounded skills require the user to provide context containing information that the model is expected to take into account during processing. This is different from _knowledge_, where the model is expected to gain facts and background knowledge from the tuning process.
+> This is a good example of the need for a *grounded skill*. Grounded skills require the user to provide context containing information that the model is expected to take into account during processing. This is different from *knowledge*, where the model is expected to gain facts and background knowledge from the tuning process.
 >
 > Context added when tuning a grounded skill would need to be again provided by the end user at inference time. The skill here is better adherence to the rule set.
 
 To add a skill for a structured game or other task with a complex rule set, use a grounded skill. Add the rules to the game as "context" in every example. Add the interpretation as a question.
+
 ### Writing Style and Personalities
 
 When adding a skill, expect that you're tuning a fairly general purpose LLM to behave better given particular circumstances.
@@ -166,6 +175,7 @@ While the tuning process may eventually benefit from being used to help the mode
 * Any contributions that engage in political campaigning or lobbying
 
 We are also not accepting submissions of the following content:
+
 * Jokes
 * Poems
 * Code
@@ -174,6 +184,7 @@ We are also not accepting submissions of the following content:
   * We expect our upstream engineering team to create these types of skills and safe guards. We appriciate our community wanting to help with this, but there are underlying engineering decisions and taking this from the community may conflict with these.
 
 We received so many at the beginning, and with jokes being "in the eye of the beholder" and puns requiring nuance for native English speakers, we realized we were possibly unconsciously biasing our model. We have discovered that working with both topics has its own challenges, and if we want something generalized, finding consensus was unsuccessful.
+
 ## Building Your LLM Intuition
 
 LLMs have inherent limitations that make certain tasks extremely difficult, like doing math problems. They're great at other tasks, like creative writing. And they could be better at things like logical reasoning.
