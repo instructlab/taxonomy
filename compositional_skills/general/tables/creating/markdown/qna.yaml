@@ -1,0 +1,80 @@
+task_description: |
+    This skill provides the ability to create a markdown-formatted table.
+created_by: r0llingclouds
+seed_examples:
+  - question: |
+      Build a table, in markdown format, with the following data:
+      The columns are name, age and city.
+
+      John, 28, New York
+      Lisa, 32, Chicago
+      Tirso, 35, Los Angeles
+    answer: |
+      | Name      | Age | City       |
+      |-----------|-----|------------|
+      | John      | 28  | New York   |
+      | Lisa      | 32  | Chicago    |
+      | Tirso     | 35  | Los Angeles|
+  - question: |
+      Build a table, in markdown format, with the following data:
+      The columns are Employee ID, First Name, Last Name, Position, Department, and Start Date.
+      Here are the details for each row:
+
+      Employee ID 001, Maria Gonzalez, holds the position of Project Manager in the Development department, and started on June 1, 2018.
+      Employee ID 002, Rajesh Kumar, is a Data Analyst in the Data Science department, starting on September 15, 2019.
+      Employee ID 003, Anne Smith, works as a Developer in the Development department, with a start date of January 10, 2020.
+      Employee ID 004, Lee Chang, serves as a UX Designer in the Design department, beginning on May 23, 2018.
+      Employee ID 005, John Doe, is the Marketing Lead in the Marketing department, and began on November 30, 2017.
+      Employee ID 006, Emily Turner, is an Administrator in the HR department, starting on March 22, 2021.
+      Employee ID 007, Carlos Martinez, is an Engineer in the Engineering department, with a start date of August 8, 2019.
+    answer: |
+      | Employee ID | First Name | Last Name | Position       | Department  | Start Date |
+      |-------------|------------|-----------|----------------|-------------|------------|
+      | 001         | Maria      | Gonzalez  | Project Manager| Development | 2018-06-01 |
+      | 002         | Rajesh     | Kumar     | Data Analyst   | Data Science| 2019-09-15 |
+      | 003         | Anne       | Smith     | Developer      | Development | 2020-01-10 |
+      | 004         | Lee        | Chang     | UX Designer    | Design      | 2018-05-23 |
+      | 005         | John       | Doe       | Marketing Lead | Marketing   | 2017-11-30 |
+      | 006         | Emily      | Turner    | Administrator  | HR          | 2021-03-22 |
+      | 007         | Carlos     | Martinez  | Engineer       | Engineering | 2019-08-08 |
+  - question: |
+      Write a to do table in markdown format with the following columns: task ID, description, due date, priority, and status.
+      Insert these tasks:
+      "Finalize project proposal" due May 10, high priority, currently working on it, id T001.
+      "Update team meeting notes" was due today, medium priority, done, id T002.
+      "Review client feedback" needs to be done by May 6, high priority, still on it, id T003.
+      "Prepare next quarter's budget" by May 15, high priority, haven't started yet, id T004.
+      "Set up team-building event" scheduled for May 20, low priority, not started yet, id T005.
+    answer: |
+      | Task ID | Description                     | Due Date   | Priority | Status     |
+      |---------|---------------------------------|------------|----------|------------|
+      | T001    | Finalize project proposal       | 2024-05-10 | High     | In Progress|
+      | T002    | Update team meeting notes       | 2024-05-04 | Medium   | Completed  |
+      | T003    | Review client feedback          | 2024-05-06 | High     | In Progress|
+      | T004    | Prepare budget for next quarter | 2024-05-15 | High     | Not Started|
+      | T005    | Organize team-building event    | 2024-05-20 | Low      | Not Started|
+  - question: |
+      Build a markdown table with these columns: workshop Id, workshop title, date, skill levels, preparation status and location.
+      Put these data into the table:
+      "Intro to Python Coding" set for June 5, beginner level, need to prepare materials, location TBD, id W001.
+      "Advanced Excel Techniques" on June 12, intermediate level, confirm speaker, at Conference Room B, id W002.
+      "Effective Communication Skills" planned for June 19, all levels, finalize the guest list, in the Main Hall, id W003.
+      "Social Media Marketing" scheduled for June 26, beginner to intermediate, line up panelists, online, id W004.
+      "Leadership Training" on July 3, advanced level, set agenda, at Retreat Center, id W005.
+    answer: |
+      | Workshop ID | Workshop Title           | Date       | Skill Level  | Preparation Status        | Location          |
+      |-------------|--------------------------|------------|--------------|---------------------------|-------------------|
+      | W001        | Intro to Python Coding   | 2024-06-05 | Beginner     | Need to prepare materials | Location TBD      |
+      | W002        | Advanced Excel Techniques| 2024-06-12 | Intermediate | Confirm speaker           | Conference Room B |
+      | W003        | Effective Communication  | 2024-06-19 | All levels   | Finalize guest list       | Main Hall         |
+      | W004        | Social Media Marketing   | 2024-06-26 | Intermediate | Line up panelists         | Online            |
+      | W005        | Leadership Training      | 2024-07-03 | Advanced     | Set agenda                | Retreat Center    |
+  - question: |
+      Build a markdown table with this information:
+      Columns: bug ID, description, reported on, priority, assigned to, due date, status.
+      Add this row:
+      B001, fix login issue - password reset fails, reported on 2024-04-04, high priority, assigned to Jay, due on 2024-04-10, status testing.
+    answer: |
+      | Bug ID | Description                      | Reported On | Priority | Assigned To | Due Date   | Status    |
+      |--------|----------------------------------|-------------|----------|-------------|------------|-----------|
+      | B001   | Password reset fails             | 2024-04-04  | High     | Jay         | 2024-04-10 | Testing   |
