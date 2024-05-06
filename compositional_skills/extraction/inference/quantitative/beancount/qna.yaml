@@ -2,92 +2,92 @@ created_by: andreasgerstmayr
 task_description: Record Beancount transactions from free-form text (https://github.com/beancount/beancount).
 seed_examples:
 
-- question: "Record the following in a Beancount ledger: I spent 80 EUR in cash on groceries."
+- question: "Record the following in a Beancount ledger: I spent 81.20 EUR in cash on groceries on 2024-02-05."
   answer: |
-    2024-01-01 * "Buying groceries"
-      Expenses:Food:Groceries   80.00 EUR
+    2024-02-05 * "Buying groceries"
+      Expenses:Food:Groceries   81.20 EUR
       Assets:Cash
 
-- question: "Record the following in a Beancount ledger: I spent 40.15 EUR in cash on groceries."
+- question: "Add the following in a Beancount ledger: I spent 40.15 EUR in cash on groceries on 2023-03-01."
   answer: |
-    2024-01-01 * "Buying groceries"
+    2023-03-01 * "Buying groceries"
       Expenses:Food:Groceries   40.15 EUR
       Assets:Cash
 
-- question: "Record the following in a Beancount ledger: I spent 120.56 EUR in cash on groceries."
+- question: "Please create a Beancount ledger entry with the following information: I spent 120.56 EUR in cash on groceries on 2024-02-18."
   answer: |
-    2024-01-01 * "Buying groceries"
+    2024-02-18 * "Buying groceries"
       Expenses:Food:Groceries   120.56 EUR
       Assets:Cash
 
-- question: "Record the following in a Beancount ledger: I paid 40 EUR in cash in the restaurant."
+- question: "Write the following data to a Beancount ledger entry: I paid 45.31 EUR in cash at a restaurant on 2024-04-11."
   answer: |
-    2024-01-01 * "Restaurant"
-      Expenses:Food:Restaurant  40.00 EUR
+    2024-04-11 * "Restaurant"
+      Expenses:Food:Restaurant  45.31 EUR
       Assets:Cash
 
-- question: "Record the following in a Beancount ledger: I paid 12.15 EUR at the bakery."
+- question: "Create a Beancount ledger entry showing I paid 12.15 EUR in cash at a bakery on 2023-06-10"
   answer: |
-    2024-01-01 * "Bakery"
+    2023-06-10 * "Bakery"
       Expenses:Food:Bakery      12.15 EUR
       Assets:Cash
 
-- question: "Write the following in a Beancount ledger: I paid 150 EUR for my car insurance bill."
+- question: "Create a Beancount entry about paying my car insurance bill worth 664.95 EUR from my bank account on 2023-07-11"
   answer: |
-    2024-01-01 * "Car Insurance"
-      Expenses:Car:Insurance    150.00 EUR
+    2023-07-11 * "Car Insurance"
+      Expenses:Car:Insurance    664.95 EUR
       Assets:Bank
 
-- question: "Write the following in a Beancount ledger: I paid 1000 EUR for my rent."
+- question: "I paid 980 EUR for my rent from my bank account on 2023-08-25. Please record it in a Beancount ledger."
   answer: |
-    2024-01-01 * "Rent"
-      Expenses:Housing:Rent     1000.00 EUR
+    2023-08-25 * "Rent"
+      Expenses:Housing:Rent     980.00 EUR
       Assets:Bank
 
-- question: "Record the following in a Beancount ledger: I paid 300.00 EUR in student fees."
+- question: "On 2023-12-29 I paid 345.00 EUR in student fees, using my bank account. Create a Beancount ledger entry for that."
   answer: |
-    2024-01-01 * "Student fees"
-      Expenses:Education:University  300.00 EUR
+    2023-12-29 * "Student fees"
+      Expenses:Education:University  345.00 EUR
       Assets:Bank
 
-- question: "Record the following in a Beancount ledger: I withdrew 123 EUR from my bank account."
+- question: "Create a Beancount entry showing that I withdrew 123 EUR from my bank account on 2023-09-03."
   answer: |
-    2024-01-01 * "Cash withdrawal"
+    2023-09-03 * "Cash withdrawal"
       Assets:Cash               123.00 EUR
       Assets:Bank
 
-- question: "Record the following in a Beancount ledger: I received 12 EUR for selling a book."
+- question: "Write Beancount ledger that I received 12 EUR in Cash for selling a book on my garage sale on 2023-09-14."
   answer: |
-    2024-01-01 * "Sell book"
+    2023-09-14 * "Sell book"
       Assets:Cash              12.00 EUR
       Income:GarageSale
 
-- question: "Record the following in a Beancount ledger: I paid off my credit card bill worth 250 GBP."
+- question: "On 2024-05-03, I paid off my credit card bill worth 250.85 GBP using my bank account. Record it to a beancount ledger."
   answer: |
-    2024-01-01 * "Credit card payment"
-      Liabilities:CreditCard    250.00 GBP
+    2024-05-03 * "Credit card payment"
+      Liabilities:CreditCard    250.85 GBP
       Assets:Bank
 
-- question: "Record in your Beancount ledger: I bought a new mobile phone for 350 EUR cash."
+- question: "Create a Beancount ledger entry with the following data: On 2023-04-28 I bought a new mobile phone for 850.99 EUR cash."
   answer: |
-    2024-01-01 * "New Mobile Phone"
-      Expenses:MobilePhone     350.00 EUR
+    2023-04-28 * "Mobile Phone"
+      Expenses:MobilePhone     850.99 EUR
       Assets:Cash
 
-- question: "Record the following in a Beancount ledger: I bought a pair of shoes for 70 EUR."
+- question: "Create a Beancount ledger entry about me buying a pair of shoes on 2023-11-11 for 77.11 EUR and paying in cash."
   answer: |
-    2024-01-01 * "Buying shoes"
-      Expenses:Clothing        70.00 EUR
+    2023-11-11 * "Buying shoes"
+      Expenses:Clothing        77.11 EUR
       Assets:Cash
 
-- question: "Record the following in a Beancount ledger: I gave 20 EUR to charity."
+- question: "Record a Beancount ledger showing that I donated 20 EUR in cash to a charity on 2023-12-04."
   answer: |
-    2024-01-01 * "Donating to charity"
+    2023-12-04 * "Donating to charity"
       Expenses:Charity         20.00 EUR
       Assets:Cash
 
-- question: "Record the following in a Beancount ledger: I bought a book for 18 EUR on Amazon."
+- question: "On 2023-09-19 I bought a book for 18.15 EUR on Amazon and paid with my credit card; record this in a Beancount ledger."
   answer: |
-    2024-01-01 * "Purchase on Amazon"
-      Expenses:Books     18.00 EUR
+    2023-09-19 * "Bought a book on Amazon"
+      Expenses:Books     18.15 EUR
       Assets:CreditCard
