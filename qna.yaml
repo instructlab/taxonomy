@@ -1,0 +1,19 @@
+created_by: 
+domain: sports
+seed_examples: Horse_surfing
+- answer: | The competition area requires a 300m stretch in horse surfing
+  question: How big would be the competition area in horse surfing
+- answer: | The main course area cannot exceed 250m in horse surfing
+  question: The main course area limi in horse surfing
+- answer: | Preparation zone should be 10m
+  question: What would be area for preparation zone for horse surfing
+- answer: | The Run off area should be  30M for horse surfing
+  question: What is the size of run off area of horse surfing sport
+- answer: | Horse  surfing sport's maximum length is 250m
+  question: What is the maximum lenth of the area for horse riding sport
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 764eb47546b2e616801ecbcfe74111fbe83ca04e
+ patterns:
+   - horse_surfing.md
