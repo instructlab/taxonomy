@@ -1,0 +1,21 @@
+created_by: 
+domain: geography
+seed_examples:
+- answer: |
+    True gap is part of a numbered highway that is not physically continuous. They might be
+    Connected by another number road in between.
+  question: What are true gaps?
+- answer: Yes it does
+  question: Does interstate 69 have several disconnected sections? 
+- answer: no
+  question: Were all segments of interstate 69 connected as of 2021?
+- answer: 5
+  question: How many sections did I-74 have as of 2024
+- answer: yes
+  question:  May interstates travel along surface roads?
+task_description: 'Gaps in interstate'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 799f1f0afd57ea4c684eeef71189e9c8ea45d539
+ patterns:
+   - gaps_in_interstate_highways.md
