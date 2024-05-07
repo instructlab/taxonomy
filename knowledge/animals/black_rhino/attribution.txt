@@ -1,0 +1,17 @@
+created_by: davidchase10
+domain: animals
+seed_examples:
+- question: What are some facts of the southern black rhinoceros?
+  answer: |
+    The southern black rhinocerous lived in South Africa and potentially into south Namibia. It was hunted to extinction around 1850.
+- question: How many subspecies of black rhinoceros were there?
+  answer: 8
+- question: How fast can a black rhinoceros run?
+  answer: |
+    Up to 34 mph or 55 km per hour.
+task_description: 'Facts about the black rhinoceros'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: e1d0385bc1762ab5658eaadeb3e603f1d10b672d
+ patterns:
+   - black_rhinos.md
