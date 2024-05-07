@@ -1,0 +1,19 @@
+created_by: nathan-owen
+domain: magazine
+seed_examples:
+- question: When did Game Informer start?
+  answer:
+   Game Informer debuted in August 1991 as an in-house newsletter.
+- question: What topics does Game Informer cover?
+  answer: Game informer provides news, strategy, articles and reviews for video games on PCs; as well as for all major consoles like Playstation and Xbox.
+- question: Who publishes Game Informer?
+  answer: GameStop
+- question: Is Game Informer available online?
+  answer: Yes, it has actually transitioned to be more online focused in the 2010s due to the reducing nature of Printed magazines.
+ 
+task_description: 'Teach the model about Game Informer'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 7f42159cfc644a97fe0b04545a8f797858200842
+ patterns:
+   - game_informer.md
