@@ -2,75 +2,104 @@ task_description: |
     This skill provides the extract named organizations from a text.
 created_by: maialenespi
 seed_examples:
-  - context: '''On December 14, 2017 The Walt Disney Company announced its intent 
-    to acquire the motion picture, cable entertainment, and direct broadcast satellite 
-    divisions of 21st Century Fox, including 20th Century Fox, for $52.4 billion. The 
-    remainder of the company would form a so-called "New Fox", maintaining control of 
-    assets such as Fox's television network and broadcast stations (which Disney, already 
-    owning ABC, would be legally unable to own due to an FCC policy known as the "dual 
-    network rule", which prohibits mergers between the top broadcast networks), Fox News, 
-    the national operations of Fox Sports, and the 20th Century Fox studio lot, which would 
-    be leased to Disney for seven years. Fox's regional sports networks were also included 
-    in the sale, but were later divested by order of the Department of Justice, on the
-    grounds that the Fox regional networks' combination with Disney's 80% ownership of 
-    ESPN would make Disney too dominant in the cable sports market.\n\nIn May 2018 it 
-    was confirmed that Lachlan Murdoch, rather than James Murdoch, would take charge of 
-    the New Fox company.\n\nIn mid-2018 NBCUniversal's parent company Comcast instigated 
-    bidding wars over both the Fox assets Disney planned to purchase, and the British 
-    broadcaster Sky plc (a company which 21st Century Fox held a stake in, and was planning 
-    to acquire the remainder). In July 2018, Fox agreed to an increase of Disney's offer 
-    to $71.3 billion to fend off Comcast's counter-bid. British regulators ordered that 
-    a blind auction be held for Sky's assets, which was won by Comcast.'''
+  - context: |
+      On December 14, 2017 The Walt Disney Company announced its intent 
+      to acquire the motion picture, cable entertainment, and direct broadcast satellite 
+      divisions of 21st Century Fox, including 20th Century Fox, for $52.4 billion. The 
+      remainder of the company would form a so-called "New Fox", maintaining control of 
+      assets such as Fox's television network and broadcast stations (which Disney, already 
+      owning ABC, would be legally unable to own due to an FCC policy known as the "dual 
+      network rule", which prohibits mergers between the top broadcast networks), Fox News, 
+      the national operations of Fox Sports, and the 20th Century Fox studio lot, which would 
+      be leased to Disney for seven years. Fox's regional sports networks were also included 
+      in the sale, but were later divested by order of the Department of Justice, on the
+      grounds that the Fox regional networks' combination with Disney's 80% ownership of 
+      ESPN would make Disney too dominant in the cable sports market.\n\nIn May 2018 it 
+      was confirmed that Lachlan Murdoch, rather than James Murdoch, would take charge of 
+      the New Fox company.\n\nIn mid-2018 NBCUniversal's parent company Comcast instigated 
+      bidding wars over both the Fox assets Disney planned to purchase, and the British 
+      broadcaster Sky plc (a company which 21st Century Fox held a stake in, and was planning 
+      to acquire the remainder). In July 2018, Fox agreed to an increase of Disney's offer 
+      to $71.3 billion to fend off Comcast's counter-bid. British regulators ordered that 
+      a blind auction be held for Sky's assets, which was won by Comcast.
     question: Extract the organizations mentioned in the given text.
-    answer: 'Here are the organizations mentioned:\n* The Walt Disney Company\n* 21st Century 
-    Fox\n* 20th Century Fox\n* ABC\n* FCC\n* Fox News\n* Fox Sports\n* Department of Justice\n
-    * ESPN\n* NBCUniversal\n* Comcast\n* Sky plc'
+    answer: |
+      Here are the organizations mentioned:
+      * The Walt Disney Company
+      * 21st Century Fox
+      * 20th Century Fox
+      * ABC
+      * FCC
+      * Fox News
+      * Fox Sports
+      * Department of Justice
+      * ESPN
+      * NBCUniversal
+      * Comcast
+      * Sky plc
 
-  - context: '''On October 10, 2018, it was reported that in preparation for the impending
-    completion of the sale, the new, post-merger organizational structure of "New Fox"
-    would be implemented by January 1, 2019. On November 14, 2018, it was revealed that
-    the new independent company will maintain the original Fox name. On January 7, 2019,
-    Fox Corporation's registration statement was filed by the U.S. Securities and Exchange 
-    Commission.\n\nOn January 11, 2019, Fox stated in a securities filing that it had no 
-    plans to bid on its former regional sports networks; they would instead go to a consortium 
-    led by Sinclair Broadcast Group, with Fox Corporation continuing to license the FSN name 
-    to those stations until Sinclair developed a new brand (the networks would eventually 
-    become Bally Sports). On March 12, 2019, Disney announced that the sale would be completed 
-    by March 20, 2019. On March 19, 2019, Fox Corporation officially began trading on the S&P 
-    500, replacing 21st Century Fox on the index. Republican politician and former Speaker 
-    of the House Paul Ryan also joined Fox Corporation's board at this time.'''
+  - context: |
+      On October 10, 2018, it was reported that in preparation for the impending
+      completion of the sale, the new, post-merger organizational structure of "New Fox"
+      would be implemented by January 1, 2019. On November 14, 2018, it was revealed that
+      the new independent company will maintain the original Fox name. On January 7, 2019,
+      Fox Corporation's registration statement was filed by the U.S. Securities and Exchange 
+      Commission.\n\nOn January 11, 2019, Fox stated in a securities filing that it had no 
+      plans to bid on its former regional sports networks; they would instead go to a consortium 
+      led by Sinclair Broadcast Group, with Fox Corporation continuing to license the FSN name 
+      to those stations until Sinclair developed a new brand (the networks would eventually 
+      become Bally Sports). On March 12, 2019, Disney announced that the sale would be completed 
+      by March 20, 2019. On March 19, 2019, Fox Corporation officially began trading on the S&P 
+      500, replacing 21st Century Fox on the index. Republican politician and former Speaker 
+      of the House Paul Ryan also joined Fox Corporation's board at this time.
     question: Please, provide a complete list of the organizations named in the given text.
-    answer: 'Here is a list of the organizations mentioned:\n- Fox Corporation\n- U.S. 
-    Securities and Exchange Commission\n- Sinclair Broadcast Group\n- Disney'
+    answer: |
+      Here is a list of the organizations mentioned:
+      - Fox Corporation
+      - U.S. Securities and Exchange Commission
+      - Sinclair Broadcast Group
+      - Disney
 
-  - context: '''In 1977, Cohen and Greenfield completed a correspondence course on ice cream 
-    making from Pennsylvania State University's creamery.(...)\n\nIn 1984, Häagen-Dazs wanted 
-    to limit distribution of Ben & Jerry's by its distributors in Boston, prompting Ben & Jerry's 
-    to file suit against the parent company, Pillsbury, in its "What's the Doughboy Afraid Of?" 
-    campaign.(...)\n\nIn 1992, Ben & Jerry's joined in a cooperative campaign with the national 
-    non-profit Children's Defense Fund; the campaign goal was to bring children's basic needs to 
-    the top of the national agenda. Over 70,000 postcards were sent to Congress concerning kids 
-    and other national issues.'''
+  - context: |
+      In 1977, Cohen and Greenfield completed a correspondence course on ice cream 
+      making from Pennsylvania State University's creamery.(...)\n\nIn 1984, Häagen-Dazs wanted 
+      to limit distribution of Ben & Jerry's by its distributors in Boston, prompting Ben & Jerry's 
+      to file suit against the parent company, Pillsbury, in its "What's the Doughboy Afraid Of?" 
+      campaign.(...)\n\nIn 1992, Ben & Jerry's joined in a cooperative campaign with the national 
+      non-profit Children's Defense Fund; the campaign goal was to bring children's basic needs to 
+      the top of the national agenda. Over 70,000 postcards were sent to Congress concerning kids 
+      and other national issues.
     question: Which are the organizations mentioned in this text?
-    answer: 'The mentioned organizations include: Pennsylvania State University, Häagen-Dazs, 
-    Ben & Jerry's, Pillsbury, Children's Defense Fund, and Congress.'
-    
-  - context: '''He taught at Universidad Carlos III de Madrid for 5 years, before taking up a 
-    counselor position at Iberdrola. For 20 years, he has held a part-time position as 
-    an Ayuntamiento de Alcobendas advisor on energetic matters.'''
-    question: 'List the organizations the provided biography extract mentions:'
-    answer: '* Universidad Carlos III de Madrid\n* Iberdrola\n*Ayuntamiento de Alcobendas'
+    answer: |
+      The mentioned organizations include: Pennsylvania State University, Häagen-Dazs, 
+      Ben & Jerry's, Pillsbury, Children's Defense Fund, and Congress.
 
-  - context: '''Columbia was established as a colonial college by royal charter under George 
-    II of Great Britain. It was renamed Columbia College in 1784 following the American Revolution, 
-    and in 1787 was placed under a private board of trustees headed by former students Alexander 
-    Hamilton and John Jay. In 1896, the campus was moved to its current location in Morningside 
-    Heights and renamed Columbia University.\n\nColumbia is organized into twenty schools, including 
-    four undergraduate schools and 16 graduate schools. The university's research efforts include 
-    the Lamont-Doherty Earth Observatory, the Goddard Institute for Space Studies, and accelerator 
-    laboratories with Big Tech firms such as Amazon and IBM. Columbia is a founding member of the 
-    Association of American Universities and was the first school in the United States to grant 
-    the MD degree. The university also administers and annually awards the Pulitzer Prize.'''
+  - context: |
+      He taught at Universidad Carlos III de Madrid for 5 years, before taking up a 
+      counselor position at Iberdrola. For 20 years, he has held a part-time position as 
+      an Ayuntamiento de Alcobendas advisor on energetic matters.
+    question: 'List the organizations the provided biography extract mentions:'
+    answer: |
+      * Universidad Carlos III de Madrid
+      * Iberdrola
+      * Ayuntamiento de Alcobendas'
+
+  - context: |
+      Columbia was established as a colonial college by royal charter under George 
+      II of Great Britain. It was renamed Columbia College in 1784 following the American Revolution, 
+      and in 1787 was placed under a private board of trustees headed by former students Alexander 
+      Hamilton and John Jay. In 1896, the campus was moved to its current location in Morningside 
+      Heights and renamed Columbia University.\n\nColumbia is organized into twenty schools, including 
+      four undergraduate schools and 16 graduate schools. The university's research efforts include 
+      the Lamont-Doherty Earth Observatory, the Goddard Institute for Space Studies, and accelerator 
+      laboratories with Big Tech firms such as Amazon and IBM. Columbia is a founding member of the 
+      Association of American Universities and was the first school in the United States to grant 
+      the MD degree. The university also administers and annually awards the Pulitzer Prize.
     question: Enumerate the organizations and companies detected in this text.
-    answer: '1. Columbia University\n2. Lamont-Doherty Earth Observatory\n3. Goddard Institute 
-    for Space Studies\n4. Amazon\n5. IBM\n6. Association of American Universities'
+    answer: |
+      1. Columbia University
+      2. Lamont-Doherty Earth Observatory
+      3. Goddard Institute for Space Studies
+      4. Amazon
+      5. IBM
+      6. Association of American Universities
