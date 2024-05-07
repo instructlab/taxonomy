@@ -1,0 +1,19 @@
+created_by: 
+domain: sports
+seed_examples:
+- answer: |
+  question: 
+- answer: |
+  question: 
+- answer: |
+  question: 
+- answer: |
+  question: 
+- answer: |
+  question: 
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 764eb47546b2e616801ecbcfe74111fbe83ca04e
+ patterns:
+   - horse_surfing.md
