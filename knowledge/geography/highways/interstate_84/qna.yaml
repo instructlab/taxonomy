@@ -1,0 +1,19 @@
+created_by: wikipedia
+domain: geography
+seed_examples:
+- answer: northeast united states
+  question: Where is 84 located?
+- answer: pennsylvania, new york, connecticut, massachussets
+  question: Which states does the interstate go through?
+- answer: I-86
+  question: Which other interstate is 84 related to? 
+- answer: one
+  question: How many tolls are there
+- answer:  1992
+  question:  When was the long-range transportation plan released?
+task_description: 'Stuff about the interstate'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: b64b448263e244f2083ea7b8cbfdb07b32bcb542
+ patterns:
+   - interstate_84.md
