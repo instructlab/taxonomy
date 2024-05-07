@@ -1,0 +1,20 @@
+created_by: awdotson@gmail.com
+domain: geology
+seed_examples:
+- answer: "is a deep-blue metamorphic rock used as a semi-precious stone that has been prized since antiquity for its intense color, lapis lazuli is a rock composed primarily of the minerals lazurite, pyrite and calcite."
+  question: "What is lapis lazuli?"
+- answer: "The word originates from the Persian word for the gem."
+  question: "What is the origin of the word 'lapis lazuli'?"
+- answer: "Mines in northeast Afghanistan continue to be a major source of lapis lazuli. Important amounts are also produced from mines west of Lake Baikal in Russia, and in the Andes mountains in Chile which is the source that the Inca used to carve artifacts and jewelry. Smaller quantities are mined in Pakistan, Italy, Mongolia, the United States, and Canada"
+  question: "Where is lapis lazuli sourced from?"
+- answer: "The most important mineral component of lapis lazuli is lazurite[13] (25% to 40%), a blue feldspathoid silicate mineral of the sodalite family, with the formula (Na,Ca)8(AlSiO 4) 6(S,SO 4,Cl) 1–2.[14] Most lapis lazuli also contains calcite (white), and pyrite (metallic yellow). Some samples of lapis lazuli contain augite, diopside, enstatite, mica, hauynite, hornblende, nosean, and sulfur-rich löllingite geyerite."
+  question: "What is the composition of lapis lazuli?"
+- answer: "Lapis takes an excellent polish and can be made into jewellery,carvings, boxes, mosaics, ornaments, small statues, and vases. Interior items and finishing buildings can be also made with lapis. Two of the columns framing the iconostasis in Saint Isaac's Cathedral in Saint Petersburg are built with lapis. During the Renaissance, lapis was ground and processed to make the pigment ultramarine for use in frescoes and oil painting. Its usage as a pigment in oil paint largely ended during the early 19th century, when a chemically identical synthetic variety became available.
+Lapis lazuli is commercially synthesized or simulated by the Gillson process, which is used to make artificial ultramarine and hydrous zinc phosphates.[20] Spinel or sodalite, or dyed jasper or howlite, can be substituted for lapis."
+  question: "What are the uses of lapis lazuli?"
+task_description: 'Providing engaging explanations for common questions about lapis lazuli'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 0575dbd1b2285917a2103802de952d0f6e385b0f
+ patterns:
+   - lapis_lazuli.md
