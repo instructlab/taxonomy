@@ -1,0 +1,19 @@
+created_by: Hashim Hassany
+domain: animals
+seed_examples:
+- answer: North America
+  question: Where does the Black-capped chickadee originate.
+- answer: Paridae family
+  question: This bird is the member of which family?
+- answer: 6-8 eggs on average
+  question: How many eggs does this bird lay on average?
+- answer: Once a year
+  question: How many times a year does this bird molt?
+- answer: Molt lasts two to three months
+  question: How long does a molt last?
+task_description: 'Create questions and answers based off the wikipedia page of the Black Capped Chickadee'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: c537b93dec7136d3ac53f96016e6d7a057966fb1
+ patterns:
+   - chickadee.md
