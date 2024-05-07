@@ -1,0 +1,24 @@
+created_by: Asier Cidon
+domain: animals
+seed_examples:
+- answer: |
+    The black-capped chickadee (Poecile atricapillus) is a small, nonmigratory, North American passerine bird 
+  question: What is a black-capped chickadee?
+- answer: |
+    No, the population of black-capped chickadees is thought to be increasing, and they are considered a species of least concern by the International Union for Conservation of Nature (IUCN)
+  question: Is the black-capped chickadees population decreasing?
+- answer: |
+    In 1760, French zoologist Mathurin Jacques Brisson included a description of the black-capped chickadee in his book Ornithologie based on a specimen collected in Canada
+  question: When was the black-capped chickadee registered?
+- answer: |
+    The black-capped chickadee is widely distributed throughout North America
+  question: Where are the most part of the black-capped chickadees?
+- answer: |
+    In his book Ornithologie based on a specimen collected in Canada
+  question: Where was the first black-capped chickadee collected found?
+task_description: 'Some qustions about black-capped chickadee'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: c537b93dec7136d3ac53f96016e6d7a057966fb1
+ patterns:
+   - chickadee.md
