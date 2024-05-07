@@ -1,0 +1,19 @@
+created_by: 
+domain: medical
+seed_examples:
+- answer: Not until 1939 a concept called internal mmammary ligation and following control study was done.|
+  question: Is a sham surgery as effective as actual surgery to improve blood flow?
+- answer: Sham controlled interventions involvinng drilling of skulls provded they were not effective.|
+  question: Is cell-transplant surgical intervention necessary for Parkinson disease?
+- answer: The tests done with control groups proved that they were not necesssary.|
+  question: Arthroscopic surgery for osteoarthritis of the knee establishing was necessary?
+- answer: Indded. They have been widely used in surgical animal models.|
+  question: Can sham interventins be added as controls for animal research?
+- answer: No, vnous balloon angioplasty procedure for multiple sclerosis showed the surgery was no better than placebo.|
+  question: Is angioplasty procedure for multiple sclerosis better than placebo?
+task_description: 'Questions for Sham Surgery is better than actual surgery.'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: bf398f8882946f83dbf4ef40a883e21949397b24
+ patterns:
+   - sham_surgery.md
