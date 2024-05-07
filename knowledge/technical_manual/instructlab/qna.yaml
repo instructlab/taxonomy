@@ -1,0 +1,48 @@
+---
+created_by: makelinux
+domain: AI
+seed_examples:
+  - question:
+      What is the main goal of the InstructLab project?
+    answer:
+      The main goal of the InstructLab project is to leverage innovative
+      techniques for overcoming challenges in LLM training, using
+      taxonomy-based curation and synthetic data generation to enable
+      contributions to existing LLMs.
+  - question:
+      How can users contribute to the InstructLab project?
+    answer:
+      Users can contribute to the InstructLab project by submitting new
+      features, resolving bugs and issues, and refining documentation through
+      pull requests. They can also contribute their own information and skills to
+      the project's taxonomy repository on GitHub.
+  - question:
+      What is the purpose of the ilab CLI tool?
+    answer:
+      The ilab CLI tool allows users to interact with LLMs, such as IBM
+      AI models Merlinite or Granite. It facilitates augmenting the capabilities
+      of these models by enabling users to contribute and train them locally.
+  - question:
+      How can users see the impact of their contributions on an AI model?
+    answer:
+      After contributing files to the main AI model through the taxonomy
+      repository and having their pull request merged, users can see the impact
+      of their contributions when the Merlinite or Granite models are updated.
+      They can observe locally that the model has improved with the skills or
+      knowledge they taught it.
+  - question:
+      What is the Developer Certificate of Origin (DCO) and why is it
+      important for contributors?
+    answer:
+      The Developer Certificate of Origin (DCO) is a lightweight way for
+      contributors to certify that they have the right to submit the code they
+      are contributing to the project. It ensures that contributions adhere to
+      the project's open source license and legal requirements. Contributors must
+      sign off on their commits by adding a "Signed-off-by" line to certify their
+      adherence to the DCO.
+task_description: Introduction to InstructLab
+document:
+  repo: https://github.com/instructlab/community
+  commit: bca726d57fcd01427dd4cfeaaf9cd7e290187fe3
+  patterns:
+    - "*.md"
