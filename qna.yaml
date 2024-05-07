@@ -1,0 +1,19 @@
+created_by: Tayyab Riaz
+domain: horse_surfing
+seed_examples: 
+- answer: The horse_surfing was invented in 2004 in England.
+  question: when horse_surfing was invented?
+- answer: horse_surfing require one or more people to ride.
+  question: How many people required to do horse_surfing?
+- answer: horse_surfingwas invented in England in 2006.
+  question: where was the first horse_surfing compeition held?
+- answer: some of the rules are for example: discretion of the team if they wish to complete the course right to left or left to right.
+  question: what are some of the rules for horse_surfing?
+- answer: there are few equipments required such as Horse, Board,and wake boards.
+  question: what are the equipments required for horse_surfing?
+task_description: ' Information on horse_surfing'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 764eb47546b2e616801ecbcfe74111fbe83ca04e
+ patterns:
+   - horse_surfing.md
