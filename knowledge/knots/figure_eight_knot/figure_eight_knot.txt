@@ -1,0 +1,19 @@
+created_by: connor-koehler
+domain: knot
+seed_examples:
+- answer: | Used in prussic climbing when in conjunction with a climbing harness.
+  question: What is a figure-eight loop used for?
+- answer: | To splice together two ropes that are not necessarily the same diameter
+  question: What is a figure-eight bend used for?
+- answer: | No. It has caused a few rock climber deaths
+  question: Should you use the offset figure-eight bend
+- answer: | To secure a rope that is already assed around a post or through a ring.
+  question: What is the Stein knot used for
+- answer: | In the United States Navy a figure-of-eight badge was worn by enlisted men when they complete an apprentice rating.
+  question: Any symbolic use?
+task_description: 'Teach model about Figure-Eight knots'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: bf3c885c1d2e22cf0708e886d2c49791685e0ded
+ patterns:
+   - figure_eight_knot.md
