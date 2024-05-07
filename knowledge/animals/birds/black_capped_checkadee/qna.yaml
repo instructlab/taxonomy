@@ -1,0 +1,19 @@
+created_by: John Harris
+domain: literature
+seed_examples:
+- answer: | Japan
+  question: Which Country is Shogun set?
+- answer: | 1975
+  question: What year was was the novel shogun written?
+- answer: | Edo Period
+  question: What Period is Shogun Set?
+- answer: | England
+  question:  Which Country is John Blackthorn from?
+- answer: | Who is the main translator?
+  question: Lady Toda Mariko
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 806671db620e58affddb0b221e1242c061ab4ead
+ patterns:
+   - Shogun_novel.md
