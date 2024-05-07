@@ -1,0 +1,19 @@
+created_by: 
+domain: geology
+seed_examples:
+- answer: Metamorphic
+  question: What kind of rock is lapis lazuli
+- answer: Modern-Day Afghanistan
+  question: Where was lapis Lazuli first mined?
+- answer: Yes
+  question: Was lapis lazuli used in Egyptian funeral masks?
+- answer: Ultramarine
+  question: What pigment can lapis lazuli be turned into?
+- answer: Semi-precious
+  question: Is lapis lazuli a precious gem, or a semi-precious gem?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 0575dbd1b2285917a2103802de952d0f6e385b0f
+ patterns:
+   - lapis_lazuli.md
