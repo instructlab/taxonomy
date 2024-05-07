@@ -1,0 +1,19 @@
+created_by: Pat Lee
+domain: magazine
+seed_examples:
+- answer: How many 'Sacred Cow Barbecues' had Game Informer included?
+  question: Four
+- answer: When Game Informer Online was launched?
+  question: In 1996
+- answer: What Game Informer Online featured at beginning?
+  question: It included daily news updates as well as articles.
+- answer: Does Game Informer has Australian edition?
+  question: Yes
+- answer: What platform does Game Informer cover?
+  question: PC and consoles including: PlayStation 5, PlayStation 4, PlayStation VR, Xbox Series X, Xbox One and Nintendo Switch.
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 7f42159cfc644a97fe0b04545a8f797858200842
+ patterns:
+   - game_informer.md
