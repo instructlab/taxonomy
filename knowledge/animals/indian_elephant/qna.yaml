@@ -1,0 +1,27 @@
+created_by: anishasthana
+domain: animals
+seed_examples:
+- answer: |
+  The Indian Elephant is a subspecies of Asian Elephant that can be found primarily in India
+  question: What is the Indian Elephant?
+- answer: | 
+  There are 3 subspecies of Asian Elephant
+  question: How many subspecies of Asian Elephant are there?
+- answer: |
+  The Indian elephant is native to mainland Asia with nearly three-fourth of the population found in India. 
+  The species is also found in other countries of the Indian subcontinent including Nepal, Bangladesh, Bhutan,
+  Myanmar and South East Asian countries inlcuding Thailand, Malaysia, Laos, Cambodia, and Vietnam with small populations in China.
+  It inhabits grasslands, dry deciduous, moist deciduous, evergreen and semi-evergreen forests across the range. 
+  question: Where can you find the Indian Elephant?
+- answer: |
+  Elephas indicus was proposed by Georges Cuvier in 1798, who described an elephant from India
+  question: Who named the Indian elephant?
+- answer: |
+  The total estimated wild population ranges from 23,000 to 41,000 individuals across the range.
+  question: How many Indian Elephants exist in the wild?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: c27198540420e4379310b308840969f4217d7707
+ patterns:
+   - indian_elephant.md
