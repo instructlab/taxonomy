@@ -1,0 +1,24 @@
+created_by: 
+domain: music
+seed_examples:
+- answer: |
+Aak, hyangak, dangak.
+  question: What are the three main genres?
+- answer: |
+Three Kingdoms Period (57 BCE–668), the Unified Silla (668–935), Goryeo (918–1392) and Joseon dynasties (1392–1910).
+  question: When did it originate?
+- answer: |
+The first historical noting of aak was during the Unified Silla period of 668–935
+  question: When was Aak first used? 
+- answer: |
+The tungga, honga, pyeonjong, pyongyong, kum, sul, saenghwang, and pak
+  question: What instruments does Aak use?
+- answer: |
+The geomungo, konghu, gayageum, koto, pipa, taegum chunggum, sogeum, pak, taego, piri, janggu, haegeum, junggeum, daegeum, tang-p’iri, tang-jok, and tang-pip’a.
+  question: What instruments does Hyangak use?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: a0a9b68b0884cffc683f414a8b6ad705b2223997
+ patterns:
+   - korean_court_music.md
