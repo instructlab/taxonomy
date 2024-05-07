@@ -1,0 +1,19 @@
+created_by: 
+domain: geography
+seed_examples:
+- answer: |
+  question: 
+- answer: |
+  question: 
+- answer: |
+  question: 
+- answer: |
+  question: 
+- answer: |
+  question: 
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: b64b448263e244f2083ea7b8cbfdb07b32bcb542
+ patterns:
+   - interstate_84.md

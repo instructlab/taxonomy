@@ -1,0 +1,22 @@
+Task_description: 'This is about Interstate 84
+created_by: vikassalvi1
+domain: geography
+seed_examples:
+
+- question: What is the I-84 Project?
+  answer: | I-84 Project is a Connecticut department of transportation initiative to reduce congestion and improve the mobility of people and goods.
+- question: why is this project needed?
+answer: | I-84 which was built in the 1960s, experiences increasing congestion. This aging highway carries approximately 20 times more traffic today than in the 1960s and is at capacity. Also, there is about one crash per day on I-84 through Danbury.
+- question: What are the project limits?
+answer: |he limits are on I-84 from the New York/Connecticut State line to Exit 8
+-  question: Are the interchanges of I-84 with Route 7 being considered?
+ answer: | Yes
+- question: Why I-84?
+ Answer: to commute.
+
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: b64b448263e244f2083ea7b8cbfdb07b32bcb542
+ patterns:
+   - interstate_84.md
