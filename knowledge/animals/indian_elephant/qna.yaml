@@ -1,0 +1,19 @@
+created_by: bharathi-tenneti
+domain: animals
+seed_examples:
+- answer: | The Indian elephant (Elephas maximus indicus) is one of three extant recognized subspecies of the Asian elephant, native to mainland Asia.
+  question: What species does Indian Elephant is classified under?
+- answer: | Indian Elephant has almost three fourth population in India. However, they can also be found at Thailand, Nepal, Bangladesh and other South Asian countries.
+  question: Is Indian Elephant only found in India?
+- answer: | Since 1986, the Asian elephant has been listed as Endangered on the IUCN Red List as the wild population has declined by at least 50% over the last three elephant generations
+  question: Is Indian Elephant an endangered species?
+- answer: | What are the feeding habits of Indian Elephant? 
+  question: Elephant is classified as a megaherbivore and can consume up to 150 kg (330 lb) of plant matter per day
+- answer: | Indian elephant has a lifespan between 40 and 65 years with some animals reported to have lived for more than 75 years.
+  question: What is the lifespan of Indian Elephant?
+task_description: 'Teach model about Indian Elephant.'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: c27198540420e4379310b308840969f4217d7707
+ patterns:
+   - indian_elephant.md
