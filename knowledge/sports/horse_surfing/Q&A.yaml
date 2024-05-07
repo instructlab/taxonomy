@@ -1,0 +1,19 @@
+created_by: 
+domain: sports
+seed_examples:
+- answer: | Horse surfing is an extreme sport invented in 2004
+  question: What is Horse surfing ?
+- answer: | It requires two people
+  question: How many peole you need to do this sport?
+- answer: | Its invented in 2004
+  question: When is invented?
+- answer: | Horse surfing competitions include multiple rides across four different horse surfing disciplines
+  question: Who many competitions include?
+- answer: | After originating in England the first official horse surfing competition was held in 2006 in La Baule, France
+  question: When was originary?
+task_description: ' teach for module to learn about horse surfing'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 764eb47546b2e616801ecbcfe74111fbe83ca04e
+ patterns:
+   - horse_surfing.md
