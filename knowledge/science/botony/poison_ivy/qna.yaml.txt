@@ -1,0 +1,26 @@
+
+created_by: kbyeddy
+domain: medical
+seed_examples:
+- question: What is poison ivy?
+      answer: |
+        Poison ivy is a plant species in the genus Toxicodendron native to North America. It contains urushiol, a clear liquid compound found within the sap of the plant that causes an itching rash in most people who touch it.
+- question: What does poison ivy look like?
+      answer: |
+        Poison ivy can take several forms, including a trailing vine, a shrub, or a climbing vine. It typically has three almond-shaped leaflets, but the appearance can vary depending on factors like age, environment, and season.
+- question: How does poison ivy cause a rash?
+      answer: |
+        Poison ivy releases urushiol oil when its leaves or stems are damaged. When this oil comes into contact with the skin, it can trigger an allergic reaction, resulting in redness, swelling, itching, and sometimes blisters.
+- question: How long does a poison ivy rash last?
+      answer: |
+        A poison ivy rash can last anywhere from a few days to several weeks, depending on the severity of the reaction and the individual's sensitivity to urushiol. It typically begins to appear within 12 to 48 hours after exposure.
+- question: How can poison ivy rash be treated?
+      answer: |
+        Treatment for poison ivy rash often involves relieving symptoms such as itching and inflammation. This may include using over-the-counter creams or ointments containing hydrocortisone or calamine lotion, taking oral antihistamines, applying cool compresses, and practicing good hygiene to prevent further spread of the rash.
+task_description: ' '
+document: 
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: b9c7c733c6874836efef62c473aea66ca82f67f0
+patterns:
+  - poison_ivy.md
+ 
