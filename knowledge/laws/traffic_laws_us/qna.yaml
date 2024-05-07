@@ -1,0 +1,24 @@
+created_by: 
+domain: traffic_laws
+seed_examples:
+- answer: | 
+  Federal Regulations
+  question: What regulation must road signs follow?  
+- answer: | 
+    left
+  question: On a two-lane road, what would you pass on the left or the right when overtaking another vehichle?
+- answer: | 
+    state
+  question: Does the federal or state government set speed limits?
+- answer: | 
+    New Hampshire
+  question: What state does not require adults to wear a seat belt?
+- answer: | 
+    1949
+  question: What year did the United States sign the "Geneva Convention of Road Traffic"
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 8bf3ecccba1623c6b4008bf254a40510cbc2fc23
+ patterns:
+   - traffic_laws_in_US.md
