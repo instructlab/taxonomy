@@ -1,0 +1,24 @@
+created_by: lindseyvolk
+domain: sports
+seed_examples:
+- answer: |
+    Yes
+  question: Is horse surfing a modification of horse boarding?
+- answer: |
+    The competition winner is determined by the total points accrued over the four events?
+  question: How is the competition winner determined in horse surfing?
+- answer: |
+    300m
+  question: How large is the competition area?
+- answer: |
+    4 humans and 1 horse
+  question: What is the size of a horse surfing team?
+- answer: |
+    A horse, a board, a modified saddle, and tow rope.
+  question: What are the four key pieces of equipment?
+task_description: 'Teach the model about horse surfing'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 764eb47546b2e616801ecbcfe74111fbe83ca04e
+ patterns:
+   - horse_surfing.md
