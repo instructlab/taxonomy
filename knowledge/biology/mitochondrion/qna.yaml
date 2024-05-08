@@ -1,0 +1,19 @@
+created_by: 
+domain: biology
+seed_examples:
+- answer: |Mitochondria are membrane-bound cell organelles (mitochondrion, singular) that generate most of the chemical energy needed to power the cell's biochemical reactions. Chemical energy produced by the mitochondria is stored in a small molecule called adenosine triphosphate (ATP).
+  question: whats the mitochondria
+- answer: |Known as the “powerhouses of the cell,” mitochondria produce the energy necessary for the cell's survival and functioning. Through a series of chemical reactions, mitochondria break down glucose into an energy molecule known as adenosine triphosphate (ATP), which is used to fuel various other cellular processes.
+  question: whats the mitochondria in more details
+- answer: |As the power plants in virtually every human cell (as well as animal, plant, and fungi cells), mitochondria play an essential role in creating energy to drive cellular function and basically all of our biological processes.
+  question:tell me more 
+- answer: |Mitochondria occupy a substantial portion of the cytoplasmic volume of eucaryotic cells, and they have been essential for the evolution of complex animals. Without mitochondria, present-day animal cells would be dependent on anaerobic glycolysis for all of their ATP.
+  question: Where is mitochondria in a cell?
+- answer: |Mitochondria are organelles, or cell parts, often referred to as the powerhouses of cells. Mitochondria break down food into usable energy for cells. This energy source is called adenosine triphosphate (ATP).
+  question: What is mitochondria easy definition for kids?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 4923356d1675cedf74364e79ab97c786f3ead030
+ patterns:
+   - mitochondrion.md
