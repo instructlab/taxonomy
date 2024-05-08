@@ -1,0 +1,19 @@
+created_by: ishaksyed2
+domain: insect
+seed_examples:
+- answer: | The working bee normally does not have reproductive capacity
+  question: What type of bee normally considered as worker bee
+- answer: | Workier bee keeps pollen in their legs during the travel
+  question: Where worker bee keeps pollen during it travel back to hives
+- answer: | Worker bee cannot be larger than queen becomer
+  question: Is it possible worker bee to becomer larger than queen bee
+- answer: | Worker bee typically lives during summer two to six weeks
+  question: How long worker bee lives during summer time
+- answer: | Worker bee lives upto 20 weeks during winter time
+  question: How long worker bee lives during winter time
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: a03ff5dab7b11cb705269482b6f84b0ef271d87c
+ patterns:
+   - worker_bee.md
