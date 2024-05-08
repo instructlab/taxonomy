@@ -1,0 +1,19 @@
+created_by: 
+domain: flowers
+seed_examples:
+- answer:  red
+  question: redhat color
+- answer: |The rose's botanical name is Rosa rubiginosa. There are roughly 360 species of roses in the genus Rosa and Rosaceae.
+  question: scientific name of rose
+- answer: It's estimated there are at least 32,000 kinds of flowering plants that grow wild in America north of the Rio Grande
+  question: number of species of wild flowers
+- answer: | USA
+  question:  2024 t20 world cup cricket venue
+- answer: |Mukesh Ambani
+  question:  India's richest perso
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: afe0558e6aaf5f548a56abb8f9c934951adaa78a
+ patterns:
+   - jasminum_sambac.md
