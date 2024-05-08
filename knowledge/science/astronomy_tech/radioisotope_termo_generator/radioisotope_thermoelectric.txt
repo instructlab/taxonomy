@@ -1,0 +1,24 @@
+created_by: 
+domain: astronomy_technology
+seed_examples:
+- answer: |
+NASA
+  question:who developed multi_mission_radioisotope_thermoelectric_generator?
+- answer: |
+Solid-state thermoelectric couple convert heat into electricity from Natural decay of radioisotope
+  question:what does Solid-state thermoelectric couples do? 
+- answer: |
+team lead by Aerojet Rocketedyne
+  question:To whom DOE awarded MMRTG contract in 2003? 
+- answer: |
+No, it does not
+  question: Does RTG depend on solar energy?
+- answer: |
+SNAP-19s
+  question:what powered Pioneer 10 and Pioneer 11 missions? 
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 95176e7e83e80dfaed8ff7e621071881c598884b
+ patterns:
+   - multi_mission_radioisotope_thermoelectric_generator.md
