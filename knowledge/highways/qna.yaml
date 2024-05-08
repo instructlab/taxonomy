@@ -1,0 +1,19 @@
+created_by: 
+domain: geography
+seed_examples:
+- answer: | The maximum speed limit is 75 mph. But most of the states have a maximum speed limit of 70 mph.
+  question: what is the maximum speed limits on interstate highways?
+- answer: | The slowest speed limit on most interstate highways in US is 40 mph.
+  question: what is the slowest speed limit allowed on interstate highways?
+- answer: | The longest interstate highway in US is Interstate I-90. It is an east-west transcontinental freeway at 3021 miles. It begins in Seattle Washinton and travels through the pacific northwest., mountain west, great plains, Midwest,and the northeast
+  question: what is the longest interstate highway in US?
+- answer: The average lanes in an interstate highway is 2 lanes each way.|
+  question: what is the average lanes in an interstate highway?
+- answer: Yes, the speed limit changes by state and sometimes within the state as well|
+  question: does the speed limit on same interstate highway change by state?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 799f1f0afd57ea4c684eeef71189e9c8ea45d539
+ patterns:
+   - gaps_in_interstate_highways.md
