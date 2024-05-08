@@ -1,0 +1,24 @@
+created_by: 
+domain: traffic_laws
+seed_examples:
+- answer: | 
+  It is a model act by the National Committee on Uniform Traffic Laws and Ordinances, a private non-profit organization. 
+  question: What is the Uniform Vehicle Code (UVC)?
+- answer: |
+  Road signs are, for the most part, standardized by federal regulations, most notably in the Manual on Uniform Traffic Control Devices (MUTCD) and its companion volume the Standard Highway Signs (SHS)
+  question: In the United States how are road signs used?
+- answer: |
+  49 states, the District of Columbia and the five inhabited territories have passed laws requiring seat belt use by at least all occupants of the front seat. 
+  question: What states require seat belt use?
+- answer: |
+  Overtaking, usually called "passing", is legal on all four or more lane roads and on most two-lane roads with sufficient sight distance.
+  question: Is overtaking legal?
+- answer: |
+  Speed limits are set by each state or territory, as well as counties or municipalities, on the roads within their jurisdiction. The maximum speed limit on rural two-lane roads ranges from 50 mph (80 km/h) in parts of the northeast to 75 mph (120 km/h) in parts of Texas. On rural Interstate Highways and other freeways, the speed limit ranges from 60 mph (96 km/h) in Hawaii to 85 mph (136 km/h) in parts of Texas. All roads in the United States have a speed limit, but it is not always posted (especially in rural areas).
+  question: What are the speed limits in the United States?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 8bf3ecccba1623c6b4008bf254a40510cbc2fc23
+ patterns:
+   - traffic_laws_in_US.md
