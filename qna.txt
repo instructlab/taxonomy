@@ -1,0 +1,19 @@
+created_by: 
+domain: flowers
+seed_examples:
+- answer: The English common name of "Arabian jasmine" is Jasminum sambac.
+  question: What is the English common name of "Arabian jasmine"? 
+- answer: The Jasminum sambac is a species of Jasmine native to tropical Asia.
+  question: What species of flower is Jasminum sambac? 
+- answer: Jasminum sambac is an evergreen vine or shrub reaching up to 0.5 to 3 m (1.6 to 9.8 ft) tall.
+  question: What is the Jasminum sambac?
+- answer: Systema Naturae.
+  question: In which book did Carl Linnaeus describe the plant as Nycantheus sambac?
+- answer: The flowers bloom all year.
+  question: When do the flowers bloom?
+task_description: 'Jasminum sambac is a species of jasmine native to tropical Asia, from the Indian subcontinent to Southeast Asia'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: afe0558e6aaf5f548a56abb8f9c934951adaa78a
+ patterns:
+   - jasminum_sambac.md
