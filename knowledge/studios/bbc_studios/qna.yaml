@@ -1,0 +1,25 @@
+created_by: 
+domain: television
+seed_examples:
+- answer: | BBC Studios Productions brings together the majority of BBC Television's former in-house production departments; Factual, Drama, Comedy (both combined as Scripted in the new division), Entertainment, and Music & Events.[4] BBC Children's production is set to move into BBC Studios Productions from April 2022 to increase the potential of taking British children's content to the wider global market, along with BBC Three's in-house production team, which is joining from April 2021.
+BBC News and BBC Radio remain separate internal production divisions in the BBC, and the rest of the former BBC Television division (channels and genre commissioning, including BBC Sport and BBC iPlayer) are part of the BBC Content division.
+The BBC Studios production division was formed in 2016 and launched as a commercial entity in 2017, enabling it to produce programming for other broadcasters and services to generate profit to return to the BBC to supplement licence fee income. In exchange, the BBC agreed to place production of much of its non-news programmes to tender, allowing third-party independents to compete with BBC Studios on bids to produce them.
+The merger of BBC Studios and BBC Worldwide in 2018, brought the company in line with other major multinational studio conglomerates.
+BBC Studios Productions was the UK's most commissioned creator of new content in 2019, with 77 new commissions from the BBC and third-parties. It achieved 73 awards and 202 nominations in 2019/2020.
+BBC Studios represents formats and programmes made by hundreds of independent producers, as well as its own production teams and returned £176m to the independent sector in 2018/2019.
+The company is on track to meet its five-year target of returning £1.2bn to the BBC by 2021/2022. BBC Studios has committed to growing this total by a further 30% to a new target of £1.5bn in the five years from 2022/2023.
+  question: What is BBC Studios? 
+- answer: | BBC Studios Ltd. as a production company was first registered on 27 February 2015.[11] In September 2015, the BBC's general director Tony Hall announced a proposal to split the BBC's in-house production units for non-news television programming into a separate BBC Studios division, which would eventually, with BBC Trust approval as part of the next revision to the BBC's charter, be spun-out as a for-profit subsidiary of the BBC. This proposal would allow the BBC's units to produce programmes for other broadcasters and digital outlets (which could be done in conjunction with its international distribution arm BBC Worldwide) in addition to the BBC's publicly funded properties. As a for-profit company, BBC Studios would be allowed to pay higher wages to its executives and talent, and no longer face scrutiny over them as it did as a public entity.
+  question: When BBC Studios was founded?
+- answer: | The channels are BBC America (United States),  BBC Brit (Poland), BBC Earth, BBC Earth (Canada; Under license), Sony BBC Earth (India; joint venture with Sony), BBC Entertainment, BBC First, BBC First (Australia), BBC First (Canada; Under license), BBC First (Netherlands), BBC HD, BBC Kids, BBC Lifestyle, BBC Nordic, BBC UKTV (Australia and New Zealand), in UKTV Alibi, Dave, Drama, Eden, Gold, W, Yesterday
+  question: How many channels make uo BBC Studios?
+- answer: | In October 2016, the BBC announced that it planned to lay off 300 employees from the division seen as redundant.
+  question: What happened at the BBC in October 2016?
+- answer: | BBC Studios Ltd. as a production company was first registered on 27 February 2015.
+  question: On what date was BBC Studios founded?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: ad185efec4dad89bf611d4b9aa8641155cb25d91
+ patterns:
+   - BBC_studios.md
