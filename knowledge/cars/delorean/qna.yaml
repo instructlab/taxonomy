@@ -1,0 +1,19 @@
+created_by: arxspecialist
+domain: automobile
+seed_examples: What engines were considered in the making of the DMC Delorean?
+- answer: | The Ford Cologne V6 engine was first considered. The 2.0 engine from a the Citroen CX2000 was then considerend and eventually dropped in favor of the fuel injected v6 PRV (Peugeot-Renault-Volvo) engine.
+  question: What are Delorean "black cars?"
+- answer: | "Black cars" are pre-production units made with fiberglass bodies in order to train the workforce. 
+  question: What dealer options were available for the Delorean?
+- answer: | Several dealer options were available, including a car cover, sheepskin seat covers, floor mats, car care cleaning kit, black textured accent stripes, grey scotch-cal accent stripes, a luggage rack and a ski-rack adapter.
+  question: Are there any Delorean prototypes still in existance?
+- answer: | Yes, there is only 1 of 2 prototypes still in existance. The remaining existing prototype has been restored and is displayed at the AACA Museum in Hershey, Pennsylvania. The 2nd prototype was sent to Lotus Cars for development and evaluation and has been reported destroyed.
+  question: Were there any turbo Deloreans produced?
+- answer: | Legend Industries converted four Deloreans, two twin-turbo cars (VIN 502 and VIN 530) and two single-turbo cars (VIN 528 and VIN 558) into turbo versions.
+  question: 
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: eb071f533d33aaee7b0af2d9fb9e4f3abc9fefec
+ patterns:
+   - DMC_DeLorean.md
