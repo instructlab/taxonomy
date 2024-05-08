@@ -1,0 +1,19 @@
+created_by: 
+domain: geography
+seed_examples:
+- answer: Lancaster Sound
+  question: What body of water is Prince Leopold Island found?
+- answer: Breeding ground for large populations of several arctic bird species
+  question: What is Prince Leopold Island significant as a summer habitat for?
+- answer: William Parry's 1819 expedition
+  question: Prince Leopold Island was first sighted during which expedition?
+- answer: "74°N 90°W"
+  question: What are the coordinates of Prince Leopold Island?
+- answer: "306 m (1004 ft)"
+  question: What's the highest elevation on Prince Leopold Island?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 6ba7991ccc0a8df412b3d5697f231225d5aa77df
+ patterns:
+   - prince_leopold_island.md
