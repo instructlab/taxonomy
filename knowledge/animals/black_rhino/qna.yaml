@@ -1,0 +1,24 @@
+created_by: juliaddenham
+domain: animals
+seed_examples:
+- answer: | 
+  The black rhinoceros, black rhino or hook-lipped rhinoceros (Diceros bicornis) is a species of    rhinoceros, native to eastern and southern Africa including Angola, Botswana, Kenya
+  question: Tell me something about Black rhino?
+- answer: |
+  Such a skull is known to have existed and Linnaeus even mentioned India as origin of this species.
+  question: What's the origination of this kind of species?
+- answer: |
+  fifty million years ago
+  question: Any specific time known about their existence?
+- answer: |
+  An adult typically weighs from 800 to 1,400 kg
+  question: What's the average weight of the Black Rhino?
+- answer: | 
+  An excellent sense of smell alerts rhinos to the presence of predators.
+  question: What's one unique quality that the black rhino has?
+task_description: 'Teach the model about Black Rhino, for example the unique abilities/their specialities'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: e1d0385bc1762ab5658eaadeb3e603f1d10b672d
+ patterns:
+   - black_rhinos.md
