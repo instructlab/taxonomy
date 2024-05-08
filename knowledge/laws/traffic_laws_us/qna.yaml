@@ -2,16 +2,22 @@ created_by:
 domain: traffic_laws
 seed_examples:
 - answer: |
-  question: 
+  Speed limits on road traffic, as used in most countries, set the legal maximum speed at which vehicles may travel on a given stretch of road.
+  The maximum speed limit on rural two-lane roads ranges from 50 mph (80 km/h) in parts of the northeast to 75 mph (120 km/h) in parts of Texas. On rural Interstate Highways and other freeways, the speed limit ranges from 60 mph (96 km/h) in Hawaii to 85 mph (136 km/h) in parts of Texas. All roads in the United States have a speed limit, but it is not always posted (especially in rural areas).
+  question: What is a speed limit?
 - answer: |
-  question: 
+  Overtaking, usually called "passing", is legal on all four or more lane roads and on most two-lane roads with sufficient sight distance. On two-lane roads, one must pass to the left of the overtaken vehicle unless that vehicle is preparing to make a left turn, in which case the vehicle must be passed on the right. Passing on the left means that the overtaking vehicle must enter the oncoming lane. This should only be done in a legal passing zone, designated by either a dashed yellow center-line (indicating that passing is legal in both directions) or a solid line paired with a dashed line (indicating that passing is only legal for traffic adjacent to the broken line). A solid double yellow line indicated that passing is illegal in both directions.
+  question: What is Overtaking?
 - answer: |
-  question: 
+  49 states, the District of Columbia and the five inhabited territories have passed laws requiring seat belt use by at least all occupants of the front seat. New Hampshire is the only state with no such requirement for adults (anyone under eighteen must use a seat belt). 
+  question: What is seat belt use?
 - answer: |
-  question: 
+  In the United States, road signs are, for the most part, standardized by federal regulations, most notably in the Manual on Uniform Traffic Control Devices (MUTCD) and its companion volume the Standard Highway Signs (SHS). 
+  question: What are road signs?
 - answer: |
-  question: 
-task_description: ' '
+  The Uniform Vehicle Code (UVC) is a model act by the National Committee on Uniform Traffic Laws and Ordinances, a private non-profit organization. Most of the members are state governments, in addition to some related organizations. The extent to which the code is used varies by each state, territory, and Native American tribe. It was last updated in 2000.
+  question: What is the Uniform Vehicle Code?
+task_description: 'Teach the model the United States Traffic Laws'
 document: 
  repo: https://github.com/juliadenham/Summit_knowledge
  commit: 8bf3ecccba1623c6b4008bf254a40510cbc2fc23
