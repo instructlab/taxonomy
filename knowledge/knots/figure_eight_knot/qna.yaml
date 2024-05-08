@@ -1,0 +1,19 @@
+created_by: karlowen
+domain: knot
+seed_examples:
+- answer: |A stopper knot
+  question: What kind of knot is a figure-eight knot?
+- answer: |A Flemish knot
+  question: What is another name for a figure-eight knot?
+- answer: |In sailing
+  question: Where was the figure-eight knot first used?
+- answer: |It is easier to untie
+  question: What is the advantage of a figure-eight knot over and overhand knot?
+- answer: |80%
+  question: What is the efficiency of a figure-eight knot?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: bf3c885c1d2e22cf0708e886d2c49791685e0ded
+ patterns:
+   - figure_eight_knot.md
