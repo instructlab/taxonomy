@@ -1,0 +1,19 @@
+created_by: Jeff Pacheco
+domain: medical
+seed_examples:
+- answer: | Toxicodendron orientale: found in East Asia. Toxicodendron radicans: found throughout eastern Canada and the United States, Mexico and Central America, Bermuda and the Bahamas. Toxicodendron rydbergii: found throughout Canada and much of the United States except the southeast.
+  question: Give me 3 species of poison ivy
+- answer: | Poison ivies can grow as small plants, shrubs, or climbing vines.[4] They are commonly characterized by clusters of leaves, each containing three leaflets,[4] hence the common expression "leaves of three, let it be".
+  question: Describe the characteristics of Poison Ivy
+- answer: | The oozing fluids released by scratching blisters do not spread the poison. The fluid in the blisters is produced by the body and it is not urushiol itself.
+  question: Are the blisters contagious 
+- answer: | Immediate washing with soap and cold water or rubbing alcohol may help prevent a reaction.
+  question: How can I best prevent a reaction from Poison Ivy if exposed.
+- answer: | Typically, the rash from the urushiol oil lasts about five to twelve days, but in extreme cases it can last a month or more. A urushiol rash usually develops within a week of exposure and can last 1–4 weeks, depending on severity and treatment. In rare cases, urushiol reactions may require hospitalization.
+  question: How long can a reaction with Poison Ivy last?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: b9c7c733c6874836efef62c473aea66ca82f67f0
+ patterns:
+   - poison_ivy.md
