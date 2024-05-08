@@ -1,0 +1,24 @@
+created_by: Harun Sai Kumar Gente   
+domain: constellation
+seed_examples:
+- answer: |
+  Phoenix
+  question: What is the minor constellation in the southern sky ?
+- answer: |
+  The constellation stretches from roughly −39° to −57° declination
+  question: What is the declination range for Phoenix ?
+- answer: |
+  Phoenix is most visible from locations such as Australia and South Africa during late Southern Hemisphere spring
+  question: When is the phoenix most visible ?
+- answer: |
+  The Phoenicids, also known as the December Phoenicids, were first observed on 3 December 1887
+  question: What is the other name for Phoenicids
+- answer: |
+  Ankaa is the brightest star in the constellation
+  question: Which is the brightest star in the constellation ? 
+task_description: 'Teach the model about the constellation named Phoenix '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: fb4a3b77201eb5087b225ddb09fd955ee59dc6ea
+ patterns:
+   - phoenix_constellation.md
