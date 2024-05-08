@@ -1,0 +1,19 @@
+created_by: 
+domain: geography
+seed_examples:
+- answer:True gaps are where multiple disjoint sections of road have the same Interstate highway number and can reasonably be considered part of "one highway" in theory, based on the directness of connections via other highways, or based on future plans to fill in the gap in the Interstate, or simply based on the shortness of the gap.  
+  question: What is a True Gap
+- answer: Interstate 70 
+  question: What highway enters approaches the Lewis and LCark Viaduct Bridge
+- answer:Thouse Islands Bridge 
+  question: What is the undivided two-lane road that goes over to Saint Lawrence River 
+- answer:super two
+  question: What is a two-lane divied parkway
+- answer:Some stretches of Interstate highway use a barrier transfer machine on some bridges to convert inner lanes from one direction to the other, where it would be too costly to upgrade/rebuild to a higher-capacity bridge. 
+  question: What do they call the to convert inner lanes from one direction to the other
+task_description: 'There are gaps in the Interstate Highway system, where the roadway carrying an Interstate shield does not conform to the standards set by the Federal Highway Administration (FHWA), the body that sets the regulations for the Interstate Highway System.'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 799f1f0afd57ea4c684eeef71189e9c8ea45d539
+ patterns:
+   - gaps_in_interstate_highways.md
