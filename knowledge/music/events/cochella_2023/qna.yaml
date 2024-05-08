@@ -1,0 +1,25 @@
+created_by: 5prings
+domain: music
+seed_examples:
+- answer: |
+
+  The acts that played the Outdoor Theater on Friday were The Chemical Brothers, Kaytranda, SG Lewis, Yungblug, Saba, The Comet Is Coming, Juicewon (weekend 1), Mimi (weekend 2)
+  question: What acts played the Coachella Outdoor Theater on Friday in 2023
+- answer: |
+  Foushee
+  question: What act to Steve Lacy join on stage at Coachella 2023
+- answer: |
+  Sahara Tent
+  question: What stage did Metro Boomin play at Coachella 2023
+- answer: |
+  Calvin Harris and Frank Ocean
+  question: Which acts went past curfew at Coachella 2023
+- answer: |
+  Frank Ocean
+  question: Who did Blink-182 replace as a headliner on Weekend 2 of Coachella 2023
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 7294fab8567ef650eec43c5fcfb59701fb9287ba
+ patterns:
+   - coachella_2023.md
