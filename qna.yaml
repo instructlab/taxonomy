@@ -1,0 +1,24 @@
+created_by: 
+domain: constellation
+seed_examples:
+- answer: |
+    telescopium constellation is only visible from southern hemisphere
+  question: can telescopium be seen from northern hemisphere? 
+- answer: |
+    Alpha Telescopii is the brightest star in telescopium constellation
+  question: which is the brightest start in telescopium constellation? 
+- answer: |
+    French astronomer Nicolas-Louis de Lacaille discovered telescopium constellation
+  question: who discovered telescopium constellation? 
+- answer: |
+    telescopium constellation was discovered in 1751-52
+  question: in which year was telescopium constellation discovered? 
+- answer: |
+    3.5
+  question: what is the magnitude of brightest star in telescopium constellation?  
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: a24fafe11eee9fbf81732e17086d2dc6ef659d3f
+ patterns:
+   - telescopium.md
