@@ -1,14 +1,34 @@
 created_by: Wolfgang Kulhanek
 domain: geology
 seed_examples:
-- answer: | Lapis lazuli or lapis for short, is a deep-blue metamorphic rock used as a semi-precious stone that has been prized since antiquity for its intense color. 
+- answer: | 
+    Lapis lazuli or lapis for short, is a deep-blue metamorphic rock used as a semi-precious stone
+    that has been prized since antiquity for its intense color.
   question: What color is Lapis Lazuli?
-- answer: | The most important mineral component of lapis lazuli is lazurite (25% to 40%), a blue feldspathoid silicate mineral of the sodalite family. Most lapis lazuli also contains calcite (white), and pyrite (metallic yellow). Some samples of lapis lazuli contain augite, diopside, enstatite, mica, hauynite, hornblende, nosean, and sulfur-rich löllingite geyerite.
+- answer: |
+    The most important mineral component of lapis lazuli is lazurite (25% to 40%), a blue
+    feldspathoid silicate mineral of the sodalite family. Most lapis lazuli also contains
+    calcite (white), and pyrite (metallic yellow). Some samples of lapis lazuli contain
+    augite, diopside, enstatite, mica, hauynite, hornblende, nosean, and sulfur-rich
+    löllingite geyerite.
 Lapis lazuli usually occurs in crystalline marble as a result of contact metamorphism.
   question: What is the mineralic composition of Lapis Lazuli?
-- answer: | The intense blue color is due to the presence of the trisulfur radical anion in the crystal. The presence of disulfur and tetrasulfur radicals can shift the color towards yellow or red, respectively. These radical anions substitute for the chloride anions within the sodalite structure. The radical anion exhibits a visible absorption band in the range 595–620 nm with high molar absorptivity, leading to its bright blue color.
+- answer: |
+    The intense blue color is due to the presence of the trisulfur radical anion
+    in the crystal. The presence of disulfur and tetrasulfur radicals can shift the
+    color towards yellow or red, respectively. These radical anions substitute for
+    the chloride anions within the sodalite structure. The radical anion exhibits
+    a visible absorption band in the range 595–620 nm with high molar absorptivity,
+    leading to its bright blue color.
   question: Why is Lapis Lazuli blue?
-- answer: | Lapis takes an excellent polish and can be made into jewellery,carvings, boxes, mosaics, ornaments, small statues, and vases. Interior items and finishing buildings can be also made with lapis. Two of the columns framing the iconostasis in Saint Isaac's Cathedral in Saint Petersburg are built with lapis. During the Renaissance, lapis was ground and processed to make the pigment ultramarine for use in frescoes and oil painting. Its usage as a pigment in oil paint largely ended during the early 19th century, when a chemically identical synthetic variety became available.
+- answer: |
+    Lapis takes an excellent polish and can be made into jewellery,carvings, boxes,
+    mosaics, ornaments, small statues, and vases. Interior items and finishing buildings
+    can be also made with lapis. Two of the columns framing the iconostasis in Saint
+    Isaac's Cathedral in Saint Petersburg are built with lapis. During the Renaissance,
+    lapis was ground and processed to make the pigment ultramarine for use in frescoes
+    and oil painting. Its usage as a pigment in oil paint largely ended during the early
+    19th century, when a chemically identical synthetic variety became available.
   question: What is Lapis Lazuli used for?
 - answer: | Johannes Vermeer used lapis lazuli paint, in the Girl with a Pearl Earring painting.
   question: What is a famous painting that used Lapis Lazuli based paint?
