@@ -1,0 +1,19 @@
+created_by: 
+domain: traffic_laws
+seed_examples:
+- answer: | Pedestrian crossings are strips of the road where pedestrians are expected to cross
+  question: What is a pedestrian crossing? 
+- answer: | A protected intersection is a road with a corner refuge island, a setback crossing of the pedestrians and cyclists, generally between 1.5–7 metres of setback, a forward stop bar, which allows cyclists to stop for a traffic light well ahead of motor traffic who must stop behind the crosswalk. Separate signal staging or at least an advance green for cyclists and pedestrians is used to give cyclists and pedestrians no conflicts or a head start over traffic.
+  question: What is a protected intersection?
+- answer: | The actual appearance of pedestrian crossings varies greatly, but the two most common appearances are: (1) a series of lateral white stripes or (2) two longitudinal white lines. The former is usually preferred, as it stands out more conspicuously against the dark pavement.
+  question: What does a pedestrian crossing look like? 
+- answer: | The traffic laws usually states that the pedestrian has the right of way when crossing, and that vehicles must stop when a pedestrian uses the crossing
+  question: Does the pedestrian or driver have the right of way at pedestrian crossings that do not have a traffic signal.
+- answer: | Jaywalking is the act of crossing or using the road anywhere other than at crossing. Some jurisdictions forbid this act.
+  question: 
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 8bf3ecccba1623c6b4008bf254a40510cbc2fc23
+ patterns:
+   - traffic_laws_in_US.md
