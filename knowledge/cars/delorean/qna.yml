@@ -1,0 +1,19 @@
+created_by: 
+domain: automobile
+seed_examples:
+- answer: The DMC DeLorean was designed by Giorgetto Giugiaro
+  question: Who designed the DMC DeLorean?
+- answer: The first production car completed on January 21, 1981.
+  question: When was the DMC DeLorean released?
+- answer: The body is paneled in brushed SS304 austenitic stainless steel.
+  question: What material comrpises the DMC DeLorean body panels?
+- answer: The DeLorean features heavy gull-wing doors supported by cryogenically preset torsion bars and nitrogen-charged struts.
+  question: What are unique about the DMC DeLorean doors?
+- answer: The DeLorean has a four-wheel independent suspension with coil springs, and telescopic shock absorbers. The front suspension uses double wishbones, while the rear is a multi-link setup.
+  question: How is the DMC DeLorean suspension configured?
+task_description: 'To teach a language model about the DMC DeLorean'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: eb071f533d33aaee7b0af2d9fb9e4f3abc9fefec
+ patterns:
+   - DMC_DeLorean.md
