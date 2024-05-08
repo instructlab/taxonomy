@@ -1,0 +1,19 @@
+created_by: kconger
+domain: music
+seed_examples:
+- answer: |June 14, 2022
+  question: When were the dates for Coachella were announced?
+- answer: |June 17, 2022
+  question: When did pre-sale tickets going live?
+- answer: |Music festival that took place over two weekends
+  question: What is Coachella 2023?
+- answer: |January 10, 2023
+  question: When was the lineup for Coachella was announced?
+- answer: |Bad Bunny, Blackpink, and Frank Ocean
+  question: Who were the headliners?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 7294fab8567ef650eec43c5fcfb59701fb9287ba
+ patterns:
+   - coachella_2023.md
