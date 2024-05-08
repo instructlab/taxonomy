@@ -1,0 +1,31 @@
+created_by: plimptm
+domain: musical_instruments
+seed_examples:
+- answer: >
+    Someone would buy a Gibson Les Paul Studio guitar if they want a guitar
+    with the tonal qualities of a Gibson Les Paul guitar but want to save money
+    and do not want the full cosmetic feature set of the Les Paul.
+  question: Why would someone buy a Gibson Les Paul Studio guitar?
+- answer: |
+    Some of the differences between the Gibson Les Paul and Les Paul Studio guitars are:
+    
+    1. The Les Paul Studio is a lower-cost model than the Les Paul
+    2. The Les Paul Studio lacks some of the cosmetic features of the Les Paul
+    3. The body of the Les Paul Studio is thinner than that of the Les Paul
+  question: What are the differences between the Les Paul and a Les Paul Studio guitars?
+- answer: |
+    The Gibson Les Paul Studio guitar uses mahogany for the body and neck.
+    The fretboard is made of either rosewood, maple, or ebony.
+    Select models use maple for the neck.
+  question: What type of wood is the Gibson Les Paul Studio guitar made from?
+- answer: >
+    The Gibson Les Paul Studio guitar comes in various sunbursts,
+    translucent red, transluscent blue, translucent amber, wine red, ebony,
+    alpine white, and possibly others.
+  question: What colors are available for the Gibson Les Paul Studio guitar?
+task_description: 'Teach the model about the Gibson Les Paul Studio'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 854ffa248c43d08472886ed18b3de2de9e9afbe4
+ patterns:
+   - gibson_les_paul_studio.md
