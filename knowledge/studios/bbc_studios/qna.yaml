@@ -1,0 +1,46 @@
+created_by: 
+domain: television
+seed_examples:
+- answer: |
+    The BBC Studios production division was formed in 2016 and launched as a commercial entity in 2017,[6] enabling it to produce programming for other broadcasters and services to generate profit to return to the BBC to supplement licence fee income. In exchange, the BBC agreed to place production of much of its non-news programmes to tender, allowing third-party independents to compete with BBC Studios on bids to produce them.
+  question: When was the company founded?
+- answer: |
+    BBC Studios Limited is a British content company. It is a commercial subsidiary of the BBC that was formed in April 2018 through the merger of the BBC's commercial production arm and the BBC's commercial international distribution arm, BBC Worldwide.
+  question: What are the BBC Studios?
+- answer: |
+    In April 2019, BBC Studios announced various agreements with Discovery, Inc.; the companies agreed to break apart their UKTV joint venture, with Discovery (which had acquired a stake in UKTV after its purchase of Scripps Networks Interactive) acquiring the BBC's stake in UKTV's lifestyle channels, and BBC Studios likewise acquiring Discovery's stakes in UKTV's entertainment channels and the video on-demand service UKTV Play. In addition, Discovery announced a 10-year agreement with the BBC's Natural History Unit to acquire exclusive subscription video-on-demand rights to its content worldwide (which would be incorporated into a forthcoming global streaming brand), and co-fund a development team. Discovery had previously served as the Natural History's Unit U.S. partner until 2013.
+  question: When did BBC Studios and Discovery inc split UKTV?
+- answer: |
+    BBC America (United States)
+    BBC Brit (Poland)
+    BBC Earth
+    BBC Earth (Canada; Under license)
+    Sony BBC Earth (India; joint venture with Sony)
+    BBC Entertainment
+    BBC First
+    BBC First (Australia)
+    BBC First (Canada; Under license)
+    BBC First (Netherlands)
+    BBC HD
+    BBC Kids
+    BBC Lifestyle
+    BBC Nordic
+    BBC UKTV (Australia and New Zealand)
+    UKTV
+    Alibi
+    Dave
+    Drama
+    Eden
+    Gold
+    W
+    Yesterday
+  question: What channels does BBC Studios own?
+- answer: |
+    Demon Music Group Limited (DMG; formerly Object Enterprises Limited from 1982–1991 and Music Collection International Limited from 1991–2000) is a record company owned by BBC Studios that is mainly concerned with back-catalogue rights and re-issuing recordings as compilations on physical media (CDs and vinyl) via supermarkets and specialist stores.
+  question: Who owns the Demon Music Group?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: ad185efec4dad89bf611d4b9aa8641155cb25d91
+ patterns:
+   - BBC_studios.md
