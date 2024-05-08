@@ -1,0 +1,19 @@
+created_by: Chris Denton
+domain: traffic_laws
+seed_examples:
+- answer: All states grant reciprocal driving privileges (and penalties) to each other's licensed drivers.
+  question: If you have a drivers license in one state, can you drive in other states?
+- answer: Each state and territory has its own traffic code or rules of the road.
+  question: Do all states use the same traffic laws?
+- answer: The maximum speed limit on rural two-lane roads ranges from 50 mph (80 km/h) in parts of the northeast to 75 mph (120 km/h) in parts of Texas.
+  question: What is the maximum speed limit range on rural two-lane roads?
+- answer: 49 states
+  question: How many states have passed laws requiring seat belt use by at least all occupants of the front seat?
+- answer:  For the most part, road signs in the United States are standardized by federal regulations, most notably in the Manual on Uniform Traffic Control Devices (MUTCD) and its companion volume the Standard Highway Signs (SHS).
+  question: How are road signs in the United States standardized?
+task_description: 'teach the model about traffic laws'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 8bf3ecccba1623c6b4008bf254a40510cbc2fc23
+ patterns:
+   - traffic_laws_in_US.md
