@@ -1,0 +1,24 @@
+created_by: 
+domain: flowers
+seed_examples:
+- answer: |
+  Trim back down to the ground late winter or early summer.
+  question: How do I prepare dianthus for Spring?
+- answer: |
+  They can spread up to 12" and stand 8" high.
+  question: What size do dianthus get?
+- answer: |
+  Carnations require well-drained, neutral to slightly alkaline soil, and full sun.
+  question: What type of soil do dianthus grow in?
+- answer: |
+  They are used for medical purposes, such as for upset stomach and fever.
+  question: Do dianthus have any health benefits?
+- answer: |
+  Their fragrance was historically used for vinegar, beer, wine, sauces and salads.
+  question: What were dianthus used for?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 195fc4d83a40d8a1b60062e66e06cfc0bc9c8d35
+ patterns:
+   - dianthus_caryophyllus.md
