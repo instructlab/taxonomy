@@ -5,16 +5,16 @@ seed_examples:
   The black rhinoceros, black rhino or hook-lipped rhinoceros (Diceros bicornis) is a species of    rhinoceros, native to eastern and southern Africa including Angola, Botswana, Kenya
   question: Tell me something about Black rhino?
 - answer: |
-  Such a skull is known to have existed and Linnaeus even mentioned India as origin of this species.
-  question: What's the origination of this kind of species?
+  Such a skull is known to have existed and Linnaeus even mentioned India as origin of this species. however unusually large male specimens have been reported at up to 2,896 kg (6,385 lb).[4][22] The cows are smaller than the bulls. Two horns on the skull are made of keratin with the larger front horn typically 50 cm (20 in) long
+  question: What's the origination of Black Rhino?
 - answer: |
-  fifty million years ago
-  question: Any specific time known about their existence?
+  It is estimated that the Black Rhino could have came into existence around fifty million years ago. This knowledge is taken from wikipedia.
+  question: Could you tell me the specific time known about the existence of Black Rhino?
 - answer: |
-  An adult typically weighs from 800 to 1,400 kg
-  question: What's the average weight of the Black Rhino?
+  Black rhinos are generally thought to be solitary, with the only strong bond between a mother and her calf. In addition, bulls and cows have a consort relationship during mating, also subadults and young adults frequently form loose associations with older individuals of either sex.[37] They are not very territorial and often intersect other rhino territories. Home ranges vary depending on season and the availability of food and water. Generally they have smaller home ranges and larger density in habitats that have plenty of food and water available, and vice versa if resources are not readily available
+  question: How does a Black Rhino behave or could you tell  me about its nature?
 - answer: | 
-  An excellent sense of smell alerts rhinos to the presence of predators.
+  It is commonly assumed that black rhinos have poor eyesight, relying more on hearing and smell. However, studies have shown that their eyesight is comparatively good, at about the level of a rabbit.[28] Their ears have a relatively wide rotational range to detect sounds. An excellent sense of smell alerts rhinos to the presence of predators.
   question: What's one unique quality that the black rhino has?
 task_description: 'Teach the model about Black Rhino, for example the unique abilities/their specialities'
 document: 
