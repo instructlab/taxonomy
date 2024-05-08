@@ -1,0 +1,19 @@
+created_by: Samir Sheth / Erwin V
+domain: astronomy_technology
+seed_examples:
+- answer: | multi-mission radioisotope thermoelectric generator 
+  question: what is MMRTG
+- answer: | Aerojet Rocketdyne
+  question: who did the department of energy award the MMRTG contract to in 2003 ? 
+- answer: | tellurium (Te), silver (Ag), germanium (Ge) and antimony (Sb)
+  question: TAGS is an acronym designating a material incorporating what elements ? 
+- answer: | radioisotope thermoelectric generator 
+  question: what is RTG short for ? 
+- answer: | National Aeronotics Space Administration
+  question: what is full form of NASA
+task_description: ' Most easy to crack answers'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 95176e7e83e80dfaed8ff7e621071881c598884b
+ patterns:
+   - multi_mission_radioisotope_thermoelectric_generator.md
