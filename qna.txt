@@ -1,0 +1,29 @@
+created_by: 
+domain: medical
+seed_examples:
+- answer: |
+    Asia and North America
+  question: |
+    Where is the poison ivy native?
+- answer: |
+    Toxicodendron orientale
+  question: |
+    What species of poison ivy are native to east asia? 
+- answer: |
+    Toxicodendron radicans
+  question: |
+    What species of poison iviy are native to Canada and the United States, Mexico and Central America, Bermuda and the Bahamas
+- answer: |
+    Toxicodendron rydbergii
+  question: |
+    What species of poison iviy are native to Canada and much of the United States except the southeast
+- answer: |
+    Anacardiaceae
+  question: |
+    What familiy does the poison ivy belong to?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: b9c7c733c6874836efef62c473aea66ca82f67f0
+ patterns:
+   - poison_ivy.md
