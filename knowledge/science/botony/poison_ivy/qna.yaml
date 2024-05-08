@@ -1,0 +1,37 @@
+created_by: brandonp42
+domain: medical
+seed_examples:
+- answer: |
+    Yes, poison ivy is a type of allergenic plant in the genus Toxicodendron
+  question: |
+    Is poison ivy allergenic?
+- answer: |
+    Poison ivies can grow as small plants, shrubs, or climbing vines.
+  question: |
+    What kind of plant is poison ivy? 
+- answer: |
+    Poison ivy leaves are commonly characterized by clusters of leaves, each containing three leaflets.
+    These leaves can vary between an elliptic to egg shape and will have either smooth, lobed, or toothed margins.
+    Additionally, the leaf clusters are alternate on the stem.
+  question: |
+    What shape are the leaves of the poison ivy plant?
+- answer: |
+    Immediate washing with soap and cold water or rubbing alcohol may help prevent a reaction.
+    During a reaction, calamine lotion or diphenhydramine may help mitigate symptoms. Corticosteroids,
+    either applied to the skin or taken by mouth, may be appropriate in extreme cases. An astringent
+    containing aluminum acetate (such as Burow's solution) may also provide relief and soothe the 
+    uncomfortable symptoms of the rash.
+  question: |
+    How do you treat contact with poison ivy?
+- answer: |
+    How long does it take to recover from contact with poison ivy?
+  question: |
+    Typically, the rash from the urushiol oil lasts about five to twelve days, but in extreme cases it can
+    last a month or more. A urushiol rash usually develops within a week of exposure and can last 1–4 weeks,
+    depending on severity and treatment. In rare cases, urushiol reactions may require hospitalization.
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: b9c7c733c6874836efef62c473aea66ca82f67f0
+ patterns:
+   - poison_ivy.md
