@@ -1,0 +1,24 @@
+created_by: 
+domain: sports
+seed_examples:
+- answer: |
+    Roller in-line hockey is a variant of hockey played on a hard, smooth surface, with players using inline skates to move and ice hockey sticks to shoot a hard, plastic puck into their opponent's goal to score points.[1] The sport is a very fast-paced and free-flowing game and is considered a contact sport, but body checking is prohibited. There are five players including the goalkeeper from each team on the rink at a time, while teams normally consist of 16 players.[2] There are professional leagues, one of which is the National Roller Hockey League (NRHL). While it is not a contact sport, there are exceptions, i.e. the NRHL involves fighting.
+  question: What is roller in-line hockey
+- answer: |
+    Some of the earliest video evidence of the sport is newsreel footage from the Giornale Luce taken in Vienna, Austria in 1938.[4] The video shows players using inline skates with five metal wheels and a front wheel brake. Each team has four skaters plus a netminder. They are using ice hockey sticks, with taped blades, and the goals closely resemble ice hockey goals of the wire-mesh type common in Europe around that time. The game is being played with a ball on a rectangular outdoor court, which appears to be asphalt.
+  question: What is the history behind roller in-line hockey?
+- answer: |
+    National Roller Hockey League is a professional league, founded in 2014. The NRHL began its inaugural season 20 February 2015. The NRHL games consist of 3 15-minute periods, with 10 minute intermissions. It differs from professional ice hockey with rules including no offsides, and no icing. The NRHL permits fighting, with a 5-minute major penalty assessed to the combatants. The players in the NRHL pay nothing to play, with compensation opportunities available in the inaugural season. Players were paid a per game basis in the second season of the NRHL, based on a win or loss. The players were paid double for a win than a loss. The Detroit Bordercats won the inaugural Commissioner's Cup. The Bordercats repeated as Commissioner's Cup champions for the second season. The NRHL is expanding its role as a professional league in the summer of 2020. The NRHL will have franchises located throughout the United States and/or Canada in arenas with a minimum stadium seating capacity of 3,000. The season will operate from May through August.
+  question: Is there a professional in-line hockey league?
+- answer: | 
+    For most penalties, the offending player is sent to the "penalty box" and his team has to play with one less skater for a short amount of time. Minor penalties last for two minutes, major penalties last for five minutes, and a double minor penalty is two consecutive penalties of two minutes duration. A single Minor penalty may be extended by a further two minutes for drawing blood from the victimized player. The team that has taken the penalty is said to be playing shorthanded while the other team is on a power play.
+  question: What happens to players who get penalties?
+- answer: |
+    Inline hockey is a contact sport. Although body checks are usually not allowed, injuries can still be a common occurrence. Protective equipment is highly recommended and is enforced in all competitive situations. This usually includes a helmet (cage worn if certain age), elbow pads, protective gloves, athletic cup, shin pads, and skates at the very least. In addition, goaltenders use different gear, (optionally) a neck guard, chest/arm protector, blocker, catch glove, and leg pads.
+  question: What equipment is used in in-line hockey?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 33847e24f270c0a36560b9b9525f9eab30a411e4
+ patterns:
+   - roller_in_line_hockey.md
