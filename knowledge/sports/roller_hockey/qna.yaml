@@ -1,0 +1,24 @@
+created_by: 
+domain: sports
+seed_examples:
+- answer: |
+  A hard smooth surface.
+  question: What kind of surface can roller hockey be played on?  
+- answer: |
+  No, unlike ice hockey there are no blue lines or defensive zones
+  question: Are there defensive zones in roller hockey?
+- answer: |
+  The USARS or USA Roller Sports association
+  question: What is the governing body for roller hockey?
+- answer: |
+  The first evidence of roller hockey is from 1938 in Vienna Austria
+  question: How old is the roller hockey sport?
+- answer: |
+  In 1962 at the Pershing Auditorium in Lincoln Nebraska
+  question: When and where was the first roller hockey championship?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 33847e24f270c0a36560b9b9525f9eab30a411e4
+ patterns:
+   - roller_in_line_hockey.md
