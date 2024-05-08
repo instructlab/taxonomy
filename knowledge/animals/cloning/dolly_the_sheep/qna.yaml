@@ -2,19 +2,19 @@ created_by:
 domain: genetics
 seed_examples:
 - answer: |
-  Female
+  Dolly, was a female Sheep.
   question: Was Dolly a Male or Female Sheep?
 - answer: |
-  Yes
+  Yes, Dolly the sheep was the first mammel to be cloned.
   question: Was Dolly the sheep the first mammel to be cloned?
 - answer: | 
-  Dolly died in 2003 due to progresive lung disease.
+  Dolly died in 2003 due to progresive lung disease and severe arthritis.
   question: When did Dolly the sheep die?
 - answer: |
-  3
+  There were a total of three sheep involved in the birth of Dolly the sheep.
   question: How many other sheeps were involved in the birth of dolly the sheep?
 - answer: |
-  The Roslin Institute in Midlothian
+  Dolly the sheep lived at the Roslin Institute in Midlothian
   question: Where did Dolly the Sheep live?
 task_description: ' '
 document: 
