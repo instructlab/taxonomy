@@ -1,0 +1,21 @@
+created_by: 
+domain: college_mascot
+seed_examples:
+- answer: | There have been ten Reveille's in the history of Texas A&M with the first Reveille I joining in 1931.  
+  question: How many Reveille Dogs have there been in history? 
+- answer: |Reveille is most commonly recognized as a purebred Rough Collie. However, Reveille I was a mixed-breed dog and Reveille II was Shetland Sheepdog.  
+  question: What type of dog is Reveille? 
+- answer: | Sticking with A&M tradition, during the summer of 1954, Reveille was taken home by a student after finding her wandering campus, she was taken care of all summer and returned to campus where another student assumed her responsibility, thus creating the standing tradition. 
+  question: Why do students take home Reveille in the summer?  
+- answer: | Reveille attended every Texas A&M Football game, with one exception due to a regulation rule which prevented live animals from entering the TCU stadium. 
+  question: How many football games did Reveille V attend? 
+- answer: | If Reveille barks during class, tradition is that class is dismissed. 
+  question: What happens if Reveille barks during class? 
+- answer: | As a member of the Texas A&M Corp of Cadets, Reveille is the highest-ranking member and this is represented with the five diamonds, similar to that of a five-star General. 
+  question: Why does Reveille wear diamonds on her blanket?     
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: dbe030ea084ff1c2fe29a2e906afd67caa468eac
+ patterns:
+   - Reveille.md
