@@ -1,0 +1,29 @@
+created_by: oconnerm123
+domain: medical
+seed_examples:
+- answer: |
+  No, Around 15 to 25 percent of people have no allergic reaction to poison ivy.
+  question:
+  Are all people allergic to poison ivy?
+- answer: |
+  Poison ivy is native to Asia and North America.
+  question: 
+  Where is poison ivy native to?
+- answer: |
+  They are commonly characterized by clusters of leaves, each containing three leaflets.
+  question: 
+  How can I recognize poison ivy?
+- answer: |
+  There are three species of poison ivy.
+  question:
+  How many species of posion ivy are there?
+- answer: |
+  The three species of poison ivy are Toxicodendron orientale, Toxicodendron radicans and Toxicodendron rydbergii.
+  question: 
+  What are the species of poison ivy?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: b9c7c733c6874836efef62c473aea66ca82f67f0
+ patterns:
+   - poison_ivy.md
