@@ -1,0 +1,19 @@
+created_by: 
+domain: traffic_laws
+seed_examples:
+- answer: Jay walking is no longer illegal in California as of January 1st 2023.|
+  question:Is it against the law to jay walk in California? 
+- answer: In Oregon you must stop at a yellow light unless it is unsafe to do so.|
+  question:What does a yellow traffic light mean in Oregon. 
+- answer: In California you must always stop before turning right at a stop sign.|
+  question:What are the rules for making right turns at a stop sign.
+- answer: |Lane splitting is when a motorcycle rides between cars.
+  question:What is lane splitting?
+- answer: In California lane splitting is leagal so long as the traffic is moving at 35mph or less.
+  question:Is lane splitting leagal in California?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 8bf3ecccba1623c6b4008bf254a40510cbc2fc23
+ patterns:
+   - traffic_laws_in_US.md
