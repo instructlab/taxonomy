@@ -1,0 +1,24 @@
+created_by: woodbb
+domain: constellation
+seed_examples:
+- answer: |
+  Phoenix
+  question: Which is the largest of the 12 constellations established by Petrus Plancius from the observations of Pieter Dirkszoon Keyser and Frederick de Houtman?
+- answer: |
+  Johann Bayer
+  question: Who first depicted Phoenix?
+- answer: |
+  Alpha Phoenicis
+  question: Which is the brightest star in the Phoenix constellation?
+- answer: |
+  Fornax and Sculptor to the north, Grus to the west, Tucana to the south, touching on the corner of Hydrus to the south, and Eridanus to the east and southeast
+  question: What borders the Phoenix constellation?
+- answer: |
+  Phoenix is the radiant of two annual meteor showers: the Phoenicids in December, and the July Phoenicids.
+  question: How mny radiant meteor showers annually?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: fb4a3b77201eb5087b225ddb09fd955ee59dc6ea
+ patterns:
+   - phoenix_constellation.md
