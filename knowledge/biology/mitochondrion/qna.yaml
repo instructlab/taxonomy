@@ -8,20 +8,20 @@ seed_examples:
 - answer: Some cells in some multicellular organisms lack mitochondria (for example, mature mammalian red blood cells).
   question: Do all cells have mitochondria?
 - answer: |
-    Mitochondria have a double membrane structure and use aerobic respiration to generate adenosine 
+    Mitochondria have a double membrane structure and use aerobic respiration to generate adenosine
     triphosphate (ATP), which is used throughout the cell as a source of chemical energy.
   question: What are the physical characteristics
 - answer: |
-    The mitochondrion is popularly nicknamed the "powerhouse of the cell", a phrase coined by Philip 
+    The mitochondrion is popularly nicknamed the "powerhouse of the cell", a phrase coined by Philip
     Siekevitz in a 1957 article of the same name.
   question: What is a good way to describe what mitochondria do?
 - answer: |
-    Although most of a eukaryotic cell's DNA is contained in the cell nucleus, the mitochondrion has 
+    Although most of a eukaryotic cell's DNA is contained in the cell nucleus, the mitochondrion has
     its own genome ("mitogenome") that is substantially similar to bacterial genomes.
   question: Does mtochondria share the host cell's DNA?
-task_description: 'This is a set of questions and ansswers to build the model's knowledge of mitochondria'
+task_description: 'This is a set of questions and ansswers to build the knowledge of mitochondria'
 document:
  repo: https://github.com/juliadenham/Summit_knowledge
  commit: 4923356d1675cedf74364e79ab97c786f3ead030
  patterns:
-   - mitochondrion.md
+ - mitochondrion.md
