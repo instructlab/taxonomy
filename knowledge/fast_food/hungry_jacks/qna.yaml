@@ -1,0 +1,24 @@
+created_by: brandon-newport
+domain: restaurant
+seed_examples:
+- answer: |
+  Burger King found that their brand was already trademarked by another local company.
+  question: When Burger King expanded there operation in Australia why could they not use their own name.
+- answer: |
+  Jack Cowin chose an existing American brand called Hungry Jacks but changed it to be possesive adding apostrophe s.
+  question: When Jack Cowin, the franchise owner, selected the name for burger king, what did he choose and why?
+- answer: |
+  In order to uphold the agreement Hungry Jack's had to open a certain amount of stored per year.
+  question: In 1991 when Hungry Jack's renewed their franchise agreement, what was one of the agreements? 
+- answer: |
+  Burger King claimed that Hungry Jack's didn't open enought stores based on the agreement. 
+  question: When the Burger King trademark lapsed what did BK do?
+- answer: |
+  Supreme court found in favor of Jack Cowin's company and awarded him a $41.6 Million in 2001.
+  question: Jack Cowin and his company files a suite againsted Burger King. Did they win and how much?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 0989bb94f654a2b8480409fc621f7a3f8835aef9
+ patterns:
+   - hungry_jacks.md
