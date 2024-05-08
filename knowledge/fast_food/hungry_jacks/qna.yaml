@@ -1,0 +1,24 @@
+created_by: dwhite
+domain: restaurant
+seed_examples:
+- answer: |
+  Jack Cowin selected the "Hungry Jack's" brand name.
+  question: Who selected the "Hungry Jack" brand name?
+- answer: |
+  "Hungry Jack's" was founded on 19 June 1971.
+  question: When was "Hungry Jack's" founded?
+- answer: |
+  "Hungry Jack's" makes Hamburgers, Chicken products, Salads, French fries, Onion rings, Breakfast and Hot and Cold Beverages, Kids' meals, Desserts.
+  question: What food does "Hungry Jack's" make?
+- answer: |
+  "Hungry Jack's" was origionally a franchise of Burger King.
+  question: What was "Hungry Jack's" origionally a franchise of?
+- answer: |
+  Chris Green is the current CEO of Hungry Jack's.
+  question: Who is the CEO of Hungry Jack's.
+task_description: 'Some basic known facts of "Hungry Jack's"'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 0989bb94f654a2b8480409fc621f7a3f8835aef9
+ patterns:
+   - hungry_jacks.md
