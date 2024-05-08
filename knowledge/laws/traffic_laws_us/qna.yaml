@@ -1,0 +1,24 @@
+created_by: sjdoi
+domain: traffic_laws
+seed_examples:
+- answer: |
+  Traffic is required to keep to the right, known as a right-hand traffic pattern
+  question: Which side of road is the traffic in USA?
+- answer: |
+  The exception is the US Virgin Islands, where people drive on the left.
+  question: Where do pople in S Virgin Islands drive?
+- answer: |
+  Speed limits are set by each state or territory, as well as counties or municipalities, on the roads within their jurisdiction. The maximum speed limit on rural two-lane roads ranges from 50 mph (80 km/h) in parts of the northeast to 75 mph (120 km/h) in parts of Texas.
+  question: What are the speed limits in USA?
+- answer: |
+  On rural Interstate Highways and other freeways, the speed limit ranges from 60 mph (96 km/h) in Hawaii to 85 mph (136 km/h) in parts of Texas
+  question: What is the speed limit on rural Interstate Highways and other freeways?
+- answer: |
+  States such as South Carolina have completely criminalised their traffic law, so, for example, one is guilty of a misdemeanor simply for travelling 5 miles over the speed limit.
+  question: What is the penalty for driving over 5 miles over speed limit?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 8bf3ecccba1623c6b4008bf254a40510cbc2fc23
+ patterns:
+   - traffic_laws_in_US.md
