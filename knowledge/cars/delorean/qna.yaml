@@ -1,0 +1,31 @@
+created_by: Nick Thompson
+domain: automobile
+seed_examples:
+- answer: |
+    The DeLorean has a four-wheel independent suspension with coil springs, and telescopic shock absorbers.
+    The front suspension uses double wishbones, while the rear is a multi-link setup.
+  question: What type of suspension did the DeLorean have?
+- answer: |
+    DMC's comparison literature noted that the DeLorean could achieve 0–60 miles per hour (0–97 km/h) in 8.8 seconds when equipped with a manual transmission,
+    but other sources indicate an acceleration time of 9.5 seconds.
+    When equipped with a manual transmission, the DeLorean accelerated from 0 to 60 miles per hour (0 to 97 km/h) in 10.5 seconds as tested by Road & Track magazine.
+    Top speed was claimed at 130 mph (209 km/h), but was tested to be a lacking 110 mph (177 km/h).
+    Car & Driver put the top speed of a 5-speed manual at 117 mph (188 km/h) (indicated).
+  question: How long did it take for the DeLorean to achieve 60 miles-per-hour?
+- answer: |
+    Upon release in 1981, a DeLorean had a base MSRP of $25,000, or equivalent to $84,000 in 2023.
+    MSRP increased in 1982 to $29,825, equivalent to $94,000 in 2023, and again in 1983 to $34,000,
+    equivalent to $104,000 in 2023.
+  question: What was the base price of the DeLorean?
+- answer: |
+    DMC stands for DeLorean Motor Company.
+  question: What does DMC stand for?
+- answer: |
+    The first production car was completed on January 21, 1981.
+  question: When was the first production DeLorean car completed?
+task_description: ' '
+document:
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: eb071f533d33aaee7b0af2d9fb9e4f3abc9fefec
+ patterns:
+   - DMC_DeLorean.md
