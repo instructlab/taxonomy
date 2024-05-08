@@ -1,0 +1,19 @@
+created_by: cpgill1
+domain: automobile
+seed_examples:
+- answer: |mid-1970s
+  question: When where details surrounding the DeLorean were first announced?
+- answer: |Wankel rotary engine
+  question: Originally what motor was the car was intended to have centrally-mounted? 
+- answer: |October 1976
+  question: when was the first protype delivered?
+- answer: |October 1981 was the highest month of sales for DMC with 720 
+  question: What was the highest sales month for Delorean?
+- answer: |he stainless-steel panels are fixed to a fiberglass underbody.
+  question: What was the Delorean body made from?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: eb071f533d33aaee7b0af2d9fb9e4f3abc9fefec
+ patterns:
+   - DMC_DeLorean.md
