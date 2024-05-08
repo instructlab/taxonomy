@@ -1,0 +1,21 @@
+created_by: 
+domain: anatomy
+seed_examples:
+- answer: | The third molar, commonly called wisdom tooth, is the most posterior of the three molars in each quadrant of the human dentition.
+  question: What is wisdom tooth?
+- answer: | Most adults have four wisdom teeth, one in each of the four quadrants, but it is possible to have none, fewer, or more, in which case the extras are called supernumerary teeth.
+  question: How many wisdom teeth humans have?
+- answer: | Wisdom teeth may become stuck (impacted) against other teeth if there is not enough space for them to come through normally. Impacted wisdom teeth are still sometimes removed for orthodontic treatment, believing that they move the other teeth and cause crowding, though this is not held anymore as true.
+Impacted wisdom teeth may suffer from tooth decay if oral hygiene becomes more difficult. Wisdom teeth which are partially erupted through the gum may also cause inflammation and infection in the surrounding gum tissues, termed pericoronitis. More conservative treatments, such as operculectomies, may be appropriate for some cases. However, impacted wisdom teeth are commonly extracted to treat or prevent these problems. Some sources oppose the prophylactic removal of disease-free impacted wisdom teeth, including the National Institute for Health and Care Excellence in the UK.
+  question: What issues can wisdom tooth have?
+- answer: | Maxillary (upper) third molars commonly have a triangular crown with a deep central fossa from which multiple irregular fissures originate. Their roots are commonly fused together and can be irregular in shape.
+Mandibular (lower) third molars are the smallest molar teeth in the permanent dentition. The crown usually takes on a rounded rectangular shape that features four or five cusps with an irregular fissure pattern. Roots are greatly reduced in size and can be fused together.
+  question: What is morphology of wisdom teeth?
+- answer: | Anthropologists believe wisdom teeth, or the third set of molars, serve to help chew food in the adult, in humans and in apes and monkeys, who all have wisdom teeth too, in their diet of harder to chew food – like fresh fruit, leaves, roots, nuts and meats. After the advent of agriculture over 10,000 years ago, and especially with the industrial revolution in recent centuries, soft human diets became more common, including the use of tools (cutting the food) and cooking to make food easier to chew. Such diets typically result in jaws growing less in certain parts than those of paleolithic humans and not enough room for the wisdom teeth.
+  question: What is the function of wisdom teeth?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 481b735225e2714c4e9d36da6d7b941d9a36bd86
+ patterns:
+   - wisdom_tooth.md
