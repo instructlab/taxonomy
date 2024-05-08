@@ -1,0 +1,24 @@
+created_by: 
+domain: anatomy
+seed_examples:
+- answer: |
+    Although formally known as third molars, the common name is wisdom teeth because they appear so late - much later than the other teeth, at an age where people are presumably "wiser" than as a child, when the other teeth erupt.
+  question: Where did the term wisdom tooth come from?
+- answer: |
+    The oldest known impacted wisdom tooth belonged to a European woman who lived between 13,000 and 11,000 BCE, in the Magdalenian period.
+  question: When was the first documented example of an impacted wisdom tooth?
+- answer: |
+    Anthropologists believe wisdom teeth, or the third set of molars, serve to help chew food in the adult, in humans and in apes and monkeys, who all have wisdom teeth too, in their diet of harder to chew food - like fresh fruit, leaves, roots, nuts and meats.
+  question: What is the function of the wisdom tooth?
+- answer: |
+    Practice and maintenance of good oral hygiene can help prevent and control some wisdom tooth pathologies. In addition to twice daily toothbrushing, interdental cleaning is recommended to ensure plaque build doesn't occur in interdental areas. There are various products available for this - dental floss and interdental brushes being the most common.
+  question: How does one care of their wisdom teeth?
+- answer: |
+    Wisdom teeth may become stuck (impacted) against other teeth if there is not enough space for them to come through normally.
+  question: What is one of the more common issues that can occur with wisdom teeth?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 481b735225e2714c4e9d36da6d7b941d9a36bd86
+ patterns:
+   - wisdom_tooth.md
