@@ -1,0 +1,28 @@
+created_by: Kevin Kim
+domain: Nature
+seed_examples:
+- answer: |
+    Worker bee will progress through different roles during its lifcycle.  Worker bee will start as 
+    Cell Cleaner, Nursing Bee, Queen Attendant, Wax Production, and finally Foraging Bee.
+  question: What are the progressions in worker bee's lifecycle?
+- answer: |
+  In most common bee species, worker bees are infertile due to enforced altruistic kin selection,[23] and thus never reproduce. Workers are nevertheless considered female for anatomical and genetic reasons. Genetically, a worker bee does not differ from a queen bee and can even become a laying worker bee, but in most species will produce only male (drone) offspring. Whether a larva becomes a worker or a queen depends on the kind of food it is given after the first three days of its larval form.
+  question:  What are the genetic characteristics of worker bee?
+- answer: |
+    The worker bee's stinger is a complex organ that allows a bee to defend itself and the hive from most mammals.[26] Bee stings against mammals and birds typically leave the stinger embedded in the victim due to the structure of flesh and the stinger's barbs. In this case, the venom bulb stays with the stinger and continues to pump. The bee will die after losing its stinger, as the removal of the stinger and the venom bulb damages or removes other internal organs as well.
+    The barbs on the stinger will not catch on most animals besides mammals and birds, which means that such animals can be stung repeatedly by the same bee.
+  question: What is makeup of worker bee's stinger?
+- answer: |
+    Honey production, drone feeding, honeycomb building, pollen packing propolizing, mortuary duties, fanning, water carrier, and guardian.
+  question: What does worker bee do in the hive?
+- answer: |
+    A worker bee is any female bee that lacks the reproductive capacity of the colony's queen bee and carries out the majority of tasks needed for the functioning of the hive. While worker bees are present in all eusocial bee species, the term is rarely used (outside of scientific literature) for bees other than honey bees, particularly the European honey bee (Apis mellifera). Worker bees of this variety are responsible for approximately 80% of the world's crop pollination services.
+    Worker bees are the caste of bee that perform most of the fundamental tasks of the hive, and they are by far the most numerous type of bee. They are much smaller than drones or queen bees, with bodies specialized for nectar and pollen collection. They perform different tasks around the hive progressively over their lifespans in a predictable order based on their age.
+    Worker bees gather pollen in the pollen baskets on their back legs and carry it back to the hive where it is used as food for the developing brood. Pollen carried on their bodies may be transferred to another flower, where a small portion can rub off on the pistil, resulting in cross pollination. Nectar is sucked up through the proboscis, mixed with enzymes in the stomach, and carried back to the hive, where it is stored in wax cells and evaporated into honey.
+  question: What is a worker bee?
+task_description: ' '
+document:
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: eb071f533d33aaee7b0af2d9fb9e4f3abc9fefec
+ patterns:
+   - DMC_DeLorean.md
