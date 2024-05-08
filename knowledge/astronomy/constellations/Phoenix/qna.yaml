@@ -1,0 +1,19 @@
+created_by: 
+domain: constellation
+seed_examples:
+- answer: Southern Sky
+  question: Where is phoenix constellation found?
+- answer: Phoenix, Grus, Pavo and Tucana
+  question: what comprises the southern birds? 
+- answer: yes
+  question:  is phoenix a small constellation?
+- answer: Ankaa
+  question: what is the brightest star in the constellation?
+- answer: al phe
+  question: what is the eclipsing binary star? 
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: fb4a3b77201eb5087b225ddb09fd955ee59dc6ea
+ patterns:
+   - phoenix_constellation.md
