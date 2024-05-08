@@ -1,0 +1,19 @@
+created_by: 
+domain: astronomy_technology
+seed_examples:
+- answer: | Space exploration missions require safe, reliable, long-lived power systems to provide electricity and heat to spacecraft and their science instruments
+  question: What does the space exploreation missions require?
+- answer: | In June 2003, the Department of Energy (DOE) awarded the MMRTG contract to a team led by Aerojet Rocketdyne
+  question: When did the department of energy award the contract and to whom?
+- answer: | The MMRTG cost an estimated US$109,000,000 to produce and deploy
+  question: How much did the it cost for MMRTG to produce and deploy?
+- answer: | The MMRTG cost an estimated US$109,000,000 to produce and deploy, and US$83,000,000 to research and develop
+  question: How much did it cost for MMRTG cost to research and development?
+- answer: | The upcoming NASA Dragonfly mission to Saturn's moon Titan will use one of the two MMRTGs for which the Aerojet Rocketdyne/Teledyne Energy Systems team has recently received a contract
+  question: Tell me about the upcoming mission?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 95176e7e83e80dfaed8ff7e621071881c598884b
+ patterns:
+   - multi_mission_radioisotope_thermoelectric_generator.md
