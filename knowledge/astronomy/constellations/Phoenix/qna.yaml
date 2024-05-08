@@ -1,0 +1,23 @@
+created_by: 
+domain: constellation
+seed_examples:
+- answer: |
+It's name is a Latinized form of the Greek word for telescope.
+  question: What is the brightest star in the constellation? 
+- answer: |
+Alpha Telescopi
+  question: What color is the second brightest star in the constellation?
+- answer: |
+Orange
+  question: Who introduced us to telescopiam
+- answer: | Nicolas-Louis de Lacaille
+  question: What is the name of the second brightest star in the constellation?
+- answer: |
+Zeta Telescopi
+  question: What is the magnitude of Zeta Telescopi
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: fb4a3b77201eb5087b225ddb09fd955ee59dc6ea
+ patterns:
+   - phoenix_constellation.md
