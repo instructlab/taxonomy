@@ -1,0 +1,19 @@
+created_by:
+domain: geography
+seed_examples:
+- answer: Qikiqtaaluk Region of Nunavut, Canada. It is located in Lancaster Sound at the junction of Prince Regent Inlet and Barrow Strait.
+  question: Where is Prince Leopold Island located?
+- answer: The majority of the island's area of 68 km2 (26 sq mi) is occupied by a plateau generally ranging in altitude between around 240 m (790 ft) and 300 m (980 ft). 
+  question: What is the land mass of Prince Leopold Island?
+- answer: The plateau is divided in the east by a gorge that runs north–south across the width of the island, while smaller steep canyons skirt the edge of the island and main gorge at various points. Four gravel spits, in the north, southwest, south, and southeast of the island, jut out from the coast. During the summer, surface water on the island is scarce. A few small shallow lakes exist on the plateau; the largest, Far Lake, is about 0.5 km (0.31 mi) long, and is located near the eastern cliffs
+  question: What is the terrain like?
+- answer: Vegetation consists of forbs, lichens, and mosses, though the top of the island is mostly devoid of plants. Denser concentrations of vegetation occur in seepage areas on the spits, including sedges and some dwarf willow
+  question: What is the flora consist of?
+- answer: Large numbers of arctic seabirds, thick-billed murres, northern fulmars, black-legged kittiwakes, and black guillemots breed on the cliff ledges, arriving in the vicinity in May or early June and departing by mid-September. 
+  question: What animals live there?
+task_description: 'Prince Leopold Island is an island in the Qikiqtaaluk Region of Nunavut, Canada. It is located in Lancaster Sound at the junction of Prince Regent Inlet and Barrow Strait. '
+document:
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 6ba7991ccc0a8df412b3d5697f231225d5aa77df
+ patterns:
+   - prince_leopold_island.md
