@@ -1,0 +1,24 @@
+created_by: Scania
+domain: sports
+seed_examples:
+- answer: |
+  Inline hockey is typically played at room temperature on a surface that, rather than being made from (frozen) water, is kept dry to protect the bearings in the skate wheels. Several surface materials are used, including plastic tiles (sometimes known as sport-court flooring), wood, and sealed concrete; in general, surfaces try to balance the ability of wheels to grip against the ability of the puck to slide freely. None of these surfaces, however, is as smooth as ice; as a result, the puck is made of a much lighter plastic material, and rests on small nylon or poly-plastic nubs to reduce friction with the rink surface.
+  question: What are the main differences from ice hockey?
+- answer: |
+  Protective gear is highly recommended and is enforced in all competitive situations. This usually includes a helmet (cage worn if certain age), elbow pads, protective gloves, athletic cup, shin pads, and skates at the very least. In addition, goaltenders use different gear, (optionally) a neck guard, chest/arm protector, blocker, catch glove, and leg pads.
+  question: What kind of gear is used in Inline Hockey?
+- answer: |
+  The recommended size of the rink can vary between 40m and 60m in length and 20m and 30m in width. In Germany the old standard was 40m x 20m which changed to 50m x 25m but also the ice hockey standard of 61m x 30.5m (200×100 ft) is used.
+  question: What size is the rink in Inline hockey?
+- answer: |
+  There are five players including the goalkeeper from each team on the rink at a time, while teams normally consist of 16 players.
+  question: How many players are there on the field in Inline hockey?
+- answer: |
+  Due to the 2022 Russian invasion of Ukraine, World Skate banned Russian and Belarusian athletes and officials from its competitions, and will not stage any events in Russia or Belarus in 2022.
+  question: Did russian athletes participate in Inline hockey championships 2022?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 33847e24f270c0a36560b9b9525f9eab30a411e4
+ patterns:
+   - roller_in_line_hockey.md
