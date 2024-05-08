@@ -1,0 +1,24 @@
+created_by: 
+domain: television
+seed_examples:
+- answer: |
+    BBC Select is a streaming brand launched in North America, dedicated to factual content.
+  question: What is BBC Select? 
+- answer: |
+    In 2018/2019 BBC Studios returned £176m to the independent sector
+  question: How much money does BBC Studios return to the independent sector?
+- answer: | 
+    BBC Studios has announced plans to launch an international newsletter business initially focussed on Canada and the USA.
+  question: Does BBC Studios have a newsletter business?
+- answer: |
+    In 2019 BBC Studios received 73 awards and 202 nominations.
+  question: How many awards has BBC Studios received?
+- answer: |
+    The company is on track to meet its five-year target of returning £1.2bn to the BBC by 2021/2022.
+  question: How much money does BBC Studios return to the BBC?
+task_description: ' BBC Studios Limited is a British content company. It is a commercial subsidiary of the BBC that was formed in April 2018 through the merger of the BBC's commercial production arm and the BBC's commercial international distribution'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: ad185efec4dad89bf611d4b9aa8641155cb25d91
+ patterns:
+   - BBC_studios.md
