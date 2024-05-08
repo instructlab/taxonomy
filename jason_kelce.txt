@@ -1,0 +1,20 @@
+created_by: 
+domain: athlete
+seed_examples:
+- answer: |193
+  question: how many games Jason Kelce played so far?
+- answer: | Center
+  question: What position does Jason kelce play?
+- answer: |16
+  question: How many games Jason Kelce played in the year 2015?
+- answer: | November 5, 1987
+  question: when did Jason Kelce was born?
+- answer: |Cleveland Heights 13263 Cedar Road
+Cleveland Heights, Cuyahoga County, Ohio
+  question: What school did Jason Kelce graduated from:
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 91e2f2d887a256c391ff36933f422c064524968c
+ patterns:
+   - jason_kelce.md
