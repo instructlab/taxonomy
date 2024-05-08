@@ -1,0 +1,24 @@
+created_by: 
+domain: insect
+seed_examples:
+- answer: |
+A worker bee is any female bee that lacks the reproductive capacity of the colony's queen bee and carries out the majority of tasks needed for the functioning of the hive.
+  question: What is a worker bee?
+- answer: |
+Worker bees are the caste of bee that perform most of the fundamental tasks of the hive, and they are by far the most numerous type of bee.
+  question: What does a worker bee do?
+- answer: |
+The life span of a worker bee fluctuates between the summer and winter months. In the summertime, worker bees typically only live two to six weeks compared to wintertime when workers can live up to 20 weeks. 
+  question: How long does a worker bee live?
+- answer: |
+Brood cells must be cleaned before the next use. Worker bees in the cleaning phase perform this cleaning. Cells are inspected by the queen and if unsatisfactory, they will not be used. If the cells are not clean, the worker bee must repeat the cleaning process.
+  question: What does Cell cleaning mean for bees?
+- answer: |
+The forager and scout bees travel up to 3 kilometres (1.9 mi) to a nectar source, pollen source, or to collect propolis or water. Worker bees journey away from the hive around 10 times each day, with each trip lasting an hour.
+  question: How far does a worker bee forage?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: a03ff5dab7b11cb705269482b6f84b0ef271d87c
+ patterns:
+   - worker_bee.md
