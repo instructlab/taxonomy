@@ -1,0 +1,19 @@
+created_by: 
+domain: music
+seed_examples:
+- answer: Coachella 2023 took place over two weekends in mid-April 2023.
+  question: In which month did Coachella 2023 occur?
+- answer: On the final night of Weekend 1 of Coachella, there was uncertainty over whether headliner Frank Ocean would show up to the event. Despite his exclusion from the official YouTube livestream, Ocean began performing at 10:55 p.m., an hour later than his initial booking. He performed for an hour and a half, performing a rock version of his debut single "Novacane" (2011) that references Coachella, as well as reworked versions of several of his songs, such as "Bad Religion" off of Channel Orange (2012) and "White Ferrari" off of Blonde (2016). He then explained that his appearance was in honor of Ryan Breaux, his younger brother who died in a car crash in 2020.[2] Ocean abruptly ended his performance with a cover of The Isley Brothers' "At Your Best (You Are Love)" (1976), once covered by Aaliyah, informing the audience that it was curfew.[3] The performance was done through large video screens; the screens obscured Ocean and his band and were poorly lit. During the middle of the set, a DJ—later revealed to be DJ Crystallmess began playing, leading many fans to believe the show had concluded, before Ocean introduced her 15 minutes later, teasing Ocean's radio show Homer Radio.
+  question: Did Frank Ocean perform at Coachella 2023?
+- answer: The lineup for Coachella was announced on January 10, 2023. For the first time since the festival began in 1999, all three headliners—Bad Bunny, Blackpink, and Frank Ocean—were not Caucasian, with Blackpink being the first Korean headliners.[8][a] Following Ocean's departure, Blink-182, as well as Skrillex, Four Tet, and Fred again.., headlined Weekend 2.[9] Coachella 2023 also featured acts fully sung in Arabic and Punjabi artist Diljit Dosanjh from India for the first time; these initiatives were part of a greater effort by Goldenvoice—the organizers of Coachella—to feature more diverse artists.
+  question: What was the lineup at Coachella 2023?
+- answer: During the first weekend set, he was joined by John Legend, Future, Don Toliver, 21 Savage, The Weeknd and Diddy.[44] During the second weekend set, he was joined by The Weeknd, Future, Don Toliver and Offset.
+  question: Who performed with Metro Boomin at Coachella 2023?
+- answer: Yes.
+  question: Did Calvin Harris perform at Coachella 2023?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 7294fab8567ef650eec43c5fcfb59701fb9287ba
+ patterns:
+   - coachella_2023.md
