@@ -1,0 +1,25 @@
+created_by: coderlite
+version: 2
+domain: ceo
+seed_examples:
+  - answer: |
+      Lisa Su is related to Nvidia CEO Jen Hsun Huang
+    question: what's fun fact about Lisa Su
+  - answer: |
+      She immigrated to the with her parents from Taiwan
+    question: how old was lisa su when she moved to US
+  - answer: |
+      Lisa Su worked at TI, IBM, and Freescale Semiconductor
+    question: what companies Lisa Su worked at besides AMD
+  - answer: |
+      Lisa Su attended Bronx High
+    question: which high school she attended
+  - answer: |
+      Lisa Su attended MIT for EE major
+    question: what college Lisa su attended and what major she studied for
+task_description: 'Train the model on who Lisa Su is.'
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 46c64d6a997a89fbbe14f07eea81b1750880fe07
+  patterns:
+    - Lisa_su.md
