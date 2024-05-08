@@ -11,7 +11,7 @@ seed_examples:
   answer: GameStop
 - question: Is Game Informer available online?
   answer: Yes, it has actually transitioned to be more online focused in the 2010s
-  due to the reducing nature of Printed magazines.
+    due to the reducing nature of Printed magazines.
 task_description: 'Teach the model about Game Informer'
 document:
  repo: https://github.com/juliadenham/Summit_knowledge
