@@ -1,0 +1,25 @@
+created_by: Antti Saarenmaa @assalute
+domain: genetics
+seed_examples:
+- answer: |
+ Dolly the sheep was a female Finn-Dorset sheep and the first mammal that was cloned from an adult somatic cell. She was cloned by associates of the Roslin Institute in Scotland, using the process of nuclear transfer from a cell taken from a mammary gland.
+  question: Who is Dolly the sheep?
+- answer: |
+The production of Dolly showed that genes in the nucleus of such a mature differentiated somatic cell are still capable of reverting to an embryonic totipotent state, creating a cell that can then go on to develop into any part of an animal.
+Scientific American concluded in 2016 that the main legacy of Dolly has not been cloning of animals but in advances into stem cell research. After Dolly, researchers realised that ordinary cells could be reprogrammed to induced pluripotent stem cells, which can be grown into any tissue.
+  question: What is the legacy of Dolly?
+- answer: |
+Dolly was born 5th of July 1996 and died on 14 February 2003 making her 6 years old at the date of death
+  question: How old was Dolly when she died?
+- answer: |
+She was euthanized at the age of six years due to a progressive lung disease. No cause which linked the disease to her cloning was found.
+  question: Did she die because of the cloning or from natural causes?
+- answer: |
+She was bred with a Welsh Mountain ram and produced six lambs in total. Her first lamb, named Bonnie, was born in April 1998.[5] The next year, Dolly produced twin lambs Sally and Rosie; further, she gave birth to triplets Lucy, Darcy and Cotton in 2000.
+  question: Did she have any offspring?
+task_description: 'Teach the model about Dolly the sheep'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 7b6b4129accea29a770468343b5a18170e59e882
+ patterns:
+   - Dolly_the_sheep.md
