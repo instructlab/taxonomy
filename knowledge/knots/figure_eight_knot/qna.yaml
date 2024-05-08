@@ -1,0 +1,19 @@
+created_by: 
+domain: knot
+seed_examples:
+- answer: |The figure-eight figure_eight_knot is a type of stopper knot.
+  question: What type  of knot is the figure-eight knot?
+- answer: |The figure-eight knot is used in both sailing and rock climbing as a method of stopping ropes from running out of retaining devices.
+  question: Where and how are figure-eight knots used?
+- answer: |The figure-eight knot is also called the figure-of-eight knot or Flemish knot.
+  question: What other names is the figure-eight knot known by?
+- answer: |The different types of figure-eight knots are the figure-eight loop, figure-eight bend, offset figure-eight bend, and stein knot.
+  question: What are the different types of figure-eight knots?
+- answer: |The figure-eight loop is used like an overhand loop knot. This type of knot can be used in prusik climbing when used in conjunction with a climbing harness, a climbing rope, and locking carabiner designed for climbing, to ascend or descend with minimal equipment and effort. 
+  question: How is the figure-eight loop used?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: bf3c885c1d2e22cf0708e886d2c49791685e0ded
+ patterns:
+   - figure_eight_knot.md
