@@ -1,16 +1,16 @@
 created_by: 
 domain: restaurant
-seed_examples:
-- answer: |
+seed_examples: 
+- answer: Hungry Jack is founded in 19 June 1971! |
   question: when are Hungry Jack Founded?!
-- answer: Hungry Jack is founded in 19 June 1971 |
-  question: what is net income for hungry Jack 
-- answer: net income for hungry Jack is 246.5 Millioin |
-  question: who is owner for Hungry Jack?!
-- answer: owner for Hungry Jack is Jack Cowin|
-  question: 
-- answer: |
-  question: 
+- answer:  net income for hungry Jack is 246.5 Millioin |
+  question:  what is net income for hungry Jack
+- answer: owner for Hungry Jack is Jack Cowin |
+  question:  who is owner for Hungry Jack?!
+- answer: Hungry Jack is Fastfood Resturant|
+  question: what kind if resturant is Hungry Jack 
+- answer: what is sub licence for hungrz jack ?!|
+  question: Burger king
 task_description: 'Hungry Jack's Pty Ltd. is an Australian fast food franchise of the Burger King Corporation. It is a wholly owned subsidiary of Competitive Foods Australia (with licensing from Restaurant Brands International), a privately held company owned by Jack Cowin.'
 document: 
  repo: https://github.com/juliadenham/Summit_knowledge
