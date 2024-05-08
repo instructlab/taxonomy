@@ -1,0 +1,19 @@
+created_by: Giovanna Miranda  
+domain: medical
+seed_examples:
+- answer: Poison ivy is a type of allergenic plant in the genus Toxicodendron native to Asia and North America. 
+  question: Where is Poison Ivy  native to?
+- answer: |They are well known for causing urushiol-induced contact dermatitis, an itchy, irritating, and sometimes painful rash, in most people who touch them. 
+  question: What is Poison Ivy known for  to cause?
+- answer: |The rash is caused by urushiol, a clear liquid compound in the plant's sap. 
+  question: What is the liquid compound that causes the rash?
+- answer: |Poison ivies can grow as small plants, shrubs, or climbing vines
+  question: How does Poison Ivies grow?
+- answer: |Over 350,000 people are affected by urushiol annually in the United States.
+  question: How many people are affected by urushiol annually in the United States?
+task_description: 'Teach the model about Poison Ivy'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: b9c7c733c6874836efef62c473aea66ca82f67f0
+ patterns:
+   - poison_ivy.md
