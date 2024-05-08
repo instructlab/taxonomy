@@ -23,6 +23,9 @@ seed_examples:
     translucent red, transluscent blue, translucent amber, wine red, ebony,
     alpine white, and possibly others.
   question: What colors are available for the Gibson Les Paul Studio guitar?
+- answer: |
+    The Gibson Les Paul Studio usually includes 2 humbucker pickups, which are either 498T and 490R, or P-90s
+  question: What pickups do the Gibson Les Paul Studio use?
 task_description: 'Teach the model about the Gibson Les Paul Studio'
 document: 
  repo: https://github.com/juliadenham/Summit_knowledge
