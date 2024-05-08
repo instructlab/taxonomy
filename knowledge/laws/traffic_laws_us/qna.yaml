@@ -1,0 +1,19 @@
+created_by: 
+domain: traffic_laws
+seed_examples:
+- answer: |
+  question: 
+- answer: |
+  question: 
+- answer: |
+  question: 
+- answer: |
+  question: 
+- answer: |
+  question: 
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 8bf3ecccba1623c6b4008bf254a40510cbc2fc23
+ patterns:
+   - traffic_laws_in_US.md
