@@ -1,0 +1,19 @@
+created_by: 
+domain: astronomy_technology
+seed_examples:
+- answer: | multi_mission_radioisotope_thermoelectric_generator is type of radioisotope
+  question: what is a radioisotope ?
+- answer: | requires safe, reliable long lived power systems
+  question: what does space exploration needed ?
+- answer: | General purpose heat source
+  question: What is GPHS means ?
+- answer: | Radioisotoe is used to be on eight earth orbiting 
+  question: where is radioisotope 
+- answer: | MMRTG costs 109,000,000 to produce and deploy
+  question: what is the cost of MMRTG 
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 95176e7e83e80dfaed8ff7e621071881c598884b
+ patterns:
+   - multi_mission_radioisotope_thermoelectric_generator.md
