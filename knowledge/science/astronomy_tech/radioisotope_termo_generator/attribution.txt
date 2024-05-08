@@ -1,0 +1,19 @@
+created_by: 
+domain: astronomy_technology
+seed_examples:
+- answer: |The multi-mission radioisotope thermoelectric generator (MMRTG) is a type of radioisotope thermoelectric generator (RTG) developed for NASA space missions[1] such as the Mars Science Laboratory (MSL), under the jurisdiction of the United States Department of Energy's Office of Space and Defense Power Systems within the Office of Nuclear Energy. The MMRTG was developed by an industry team of Aerojet Rocketdyne and Teledyne Energy Systems
+  question: What is the Multi-mission Radioisotope thermoelectric Generator?
+- answer: |Space exploration missions require safe, reliable, long-lived power systems to provide electricity and heat to spacecraft and their science instruments. A uniquely capable source of power is the radioisotope thermoelectric generator (RTG) – essentially a nuclear battery that reliably converts heat into electricity.[2] Radioisotope power has been used on eight Earth orbiting missions, eight missions to the outer planets, and the Apollo missions after Apollo 11 to the Moon. The outer Solar System missions are the Pioneer 10 and 11, Voyager 1 and 2, Ulysses, Galileo, Cassini and New Horizons missions. The RTGs on Voyager 1 and Voyager 2 have been operating since 1977.[3] In total, over the last four decades, 26 missions and 45 RTGs have been launched by the United States.
+  question: What is the background of the Multi-mission Radioisotope thermoelectric Generator?
+- answer: |Solid-state thermoelectric couples convert the heat produced by the natural decay of the radioisotope plutonium-238 to electricity.[4] The physical conversion principle is based on the Seebeck effect, obeying one of the Onsager reciprocal relations between flows and gradients in thermodynamic systems. A temperature gradient generates an electron flow in the system. Unlike photovoltaic solar arrays, RTGs are not dependent upon solar energy, so they can be used for deep space missions.
+  question: What is the function of the Multi-mission Radioisotope thermoelectric Generator?
+- answer: |In June 2003, the Department of Energy (DOE) awarded the MMRTG contract to a team led by Aerojet Rocketdyne. Aerojet Rocketdyne and Teledyne Energy Systems collaborated on an MMRTG design concept based on a previous thermoelectric converter design, SNAP-19, developed by Teledyne for previous space exploration missions.[5] SNAP-19s powered Pioneer 10 and Pioneer 11 missions[4] as well as the Viking 1 and Viking 2 landers.
+  question: What is the history of the Multi-mission Radioisotope thermoelectric Generator?
+- answer: | The MMRTG cost an estimated US$109,000,000 to produce and deploy, and US$83,000,000 to research and develop.[13] For comparison the production and deployment of the GPHS-RTG was approximately US$118,000,000.
+  question: What is the cost of the Multi-mission Radioisotope thermoelectric Generator?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 95176e7e83e80dfaed8ff7e621071881c598884b
+ patterns:
+   - multi_mission_radioisotope_thermoelectric_generator.md
