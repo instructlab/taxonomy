@@ -1,0 +1,21 @@
+created_by: 
+domain: crafts
+seed_examples:
+- answer: |
+    Needlepoint is a type of canvas work, a form of embroidery in which yarn is stitched through a stiff open weave canvas.
+  question: What is Needlepoint?
+- answer: |
+    The degree of detail in needlepoint depends on the thread count of the underlying mesh fabric.
+  question: What affects Needlepoint detail?
+- answer: Common uses include eyeglass cases, holiday ornaments, pillows, purses, upholstery, and wall hangings.
+  question: What are common uses of Needlepoint?
+- answer: The roots of needlepoint go back thousands of years to the ancient Egyptians, who used small slanted stitches to sew up their canvas tents. 
+  question: What are the roots of Needlepoint?
+- answer: Modern needlepoint descends from the canvas work in tent stitch, done on an evenly woven open ground fabric that was a popular domestic craft in the 16th century.
+  question: Where does modern needlepoint descend from?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 0ce1d04c22a11317b432034cede53c6428b8bd38
+ patterns:
+   - needlepoint.md
