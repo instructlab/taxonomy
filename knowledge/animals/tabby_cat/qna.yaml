@@ -1,0 +1,19 @@
+created_by: sborenst@redhat.com
+domain: animal
+seed_examples:
+- answer: domestic cat
+  question: what kind of cat are tabby 
+- answer:  distinctive M-shaped marking on their forehead, stripes by their eyes and across their cheeks, along their back, around their legs and tail, and characteristic striped, dotted, lined, flecked, banded, or swirled patterns on the body: neck, shoulders, sides, flanks, chest, and abdomen. The four known distinct patterns, each having a sound genetic explanation, are the mackerel, classic or blotched, ticked, and spotted tabby patterns.
+  question: how can you tell a cat is a tabby cat
+- answer:  The English term tabby originally referred to "striped silk taffeta", from the French word tabis, meaning "a rich watered silk".
+  question: what is the origin of the name "tabby"
+- answer:  The four known distinct patterns, each having a sound genetic explanation, are the mackerel, classic, ticked, and spotted tabby patterns
+  question: what are the patterns that tabby's have
+- answer:  Personality and aggression vary widely from cat to cat, and is multifactorial
+  question: do tabby cats have a specific personalitie 
+task_description: 'this is knowledge contributio about tabby cats'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: ec5b7082544fbf2224a74e9e8e7be8ca704c009b
+ patterns:
+   - tabby_cat.md
