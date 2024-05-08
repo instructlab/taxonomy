@@ -1,0 +1,24 @@
+created_by: 
+domain: movies
+seed_examples:
+- answer: | 
+  Warner Bros. Pictures' Barbie and Universal Pictures' Oppenheimer
+  question: What two movies both launched on July 21, 2023, triggering the phenomenon known as Barbenheimer?
+- answer: |
+  Both Barbie and Oppenheimer address the idea of the "Human Era" or Anthropocene Era along with the philosophical concept of existentialism.
+  question: What is a key similarity between the two very different movies?
+- answer: |
+  On the surface, there is more different about the movies than there is similar. Oppenheimer is a historical movie dealing with the creation of the first atomic bombs, while Barbie is a movie about plastic dolls that promoted an ideal of femininity that is physically impossible to attain.
+  question: How are the two movies different?
+- answer: |
+  Matt Neglia, editor-in-chief of the "Next Best Picture" website, made fun of both movies in a tweet on April 15, 2022, using the word "Barbenheimer" to reference them. Matt later claimed he did not remember posting the Tweet on Twitter.
+  question: What was the first known use of the term "Barbenheimer"?
+- answer: |
+  Tom Cruise, whose movie "Mission: Impossible - Dead Reckoning Part One" was released to theaters one week before Barbie and Oppenheimer.
+  question: What other big movie actor, with a movie released just before Barbie and Oppenheimer, helped fuel the "Barbenheimer" craze by posting a Tweet of himself holding tickets to both Barbie and Oppenheimer?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 886f517b983ec303fecdd0caf58ca206e3410f73
+ patterns:
+   - barbenheimer.md
