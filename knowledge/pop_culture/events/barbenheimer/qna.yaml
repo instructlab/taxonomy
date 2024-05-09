@@ -1,0 +1,28 @@
+created_by: 
+domain: movies
+seed_examples:
+- answer: |
+          Both films exceeded box-office expectations. Barbie became the highest-grossing domestic release in Warner Bros history, surpassing Nolan's The Dark Knight. In the United States and Canada, Barbie grossed $22.3 million in Thursday night previews, while Oppenheimer grossed $10.5 million. This was the first time two movies released in the same weekend have grossed more than $10 million each in their previews. Including previews, the films made $70.5 million and $33 million on their first days, respectively, which led to weekend projections being increased to $160 million and $77 million. The films went on to debut to $162 million and $82.4 million, respectively.
+  question: what is the Box office revenue of both the  Films?
+- answer: |
+          Barbenheimer was a cultural phenomenon which preceded and surrounded the simultaneous theatrical release of two films, Warner Bros. Pictures' Barbie and Universal Pictures' Oppenheimer, on July 21, 2023. The strong contrast between Barbie—a fantasy comedy by Greta Gerwig about the fashion doll Barbie—and Oppenheimer—an epic biographical thriller by Christopher Nolan about physicist J. Robert Oppenheimer, scientific director of the Manhattan Project—prompted a comedic response from Internet users, including memes, merchandise and memorabilia. Polygon described the two films as "extreme opposites", and Variety called the phenomenon "the movie event of the year".
+  question: What  is the  Cultural phenomenon called Barbenheimer
+- answer: |
+          Barbie stars Margot Robbie as the title character and Ryan Gosling as Ken. The supporting cast includes America Ferrera, Michael Cera, Kate McKinnon, Issa Rae, Rhea Perlman, and Will Ferrell.
+          Oppenheimer cast includes Cillian Murphy as Oppenheimer, alongside Robert Downey Jr. as the United States Atomic Energy Commission member Lewis Strauss. The ensemble supporting cast includes Emily Blunt, Matt Damon, Florence Pugh, Josh Hartnett, Casey Affleck, Rami Malek, and Kenneth Branagh.
+  question: Who are the cast of  both Barbie and Oppenheimer movies?
+- answer: |
+          The Barbenheimer phenomenon is an instance of counterprogramming, a marketing strategy in which a tonally different film is released on the same day as a major film to appeal to an underrepresented group. Universal successfully deployed counterprogramming as early as 2002, when it opened the dramedy About a Boy opposite the science-fiction blockbuster Star Wars: Episode II – Attack of the Clones. The former enjoyed the strongest opening for a British film that year, finishing with over $130 million.
+  question: what was the Counterprogramming associated with Barbenheimer?
+- answer: |
+          Both of them were released on July 21, 2023
+  question: What was the release date of  both  Barbie and Oppenheimer?
+- answer: |
+          Oppenheimer received the most nominations of any film that year with 13, ahead of Barbie's eight, overlapping in six categories: Best Picture, Best Supporting Actor, Best Supporting Actress, Best Adapted Screenplay, Best Costume Design and Best Production Design. Oppenheimer would go on to win the most Oscars of any film that year, with seven, while the lone win for Barbie was for Best Song.
+  question: What are the accolades won by both of these movies at oscars?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 886f517b983ec303fecdd0caf58ca206e3410f73
+ patterns:
+   - barbenheimer.md
