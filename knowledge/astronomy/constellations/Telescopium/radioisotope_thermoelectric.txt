@@ -1,0 +1,19 @@
+created_by: 
+domain: astronomy_technology
+seed_examples:
+- answer: 2003
+  question: What year DOE awarded MMRTG?
+- answer: safe, reliable, long-lived power systems to provide electricity and heat to spacecraft
+  question: What are the requirements for space exploration mission?
+- answer: multi_mission_radioisotope_thermoelectric_generator
+  question: What does MMRTG stands for?
+- answer: NASA
+  question: Who developed MMRTG?
+- answer: Seebeck effect
+  question: What does the physical conversion principle is based on?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 95176e7e83e80dfaed8ff7e621071881c598884b
+ patterns:
+   - multi_mission_radioisotope_thermoelectric_generator.md
