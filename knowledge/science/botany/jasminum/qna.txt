@@ -1,0 +1,19 @@
+created_by: Chandramohan Sadasivam
+domain: flowers
+seed_examples:
+- answer: | Jasminum sambac (Arabian jasmine or Sambac jasmine)[1][3] is a species of jasmine native to tropical Asia, from the Indian subcontinent to Southeast Asia
+  question: What is Jasmin Sambac?
+- answer: | Jasminum sambac is an evergreen vine or shrub reaching up to 0.5 to 3 m (1.6 to 9.8 ft) ta
+  question: How much height Jasminum Sambac will grow?
+- answer: |Jasminum sambac is classified under the genus Jasminum under the tribe Jasmineae.[14] It belongs to the olive family Oleaceae.[15]
+  question: What is the classification of Jasminum Sambac?
+- answer: | The sweet, heady fragrance of Jasminum sambac is its distinct feature. It is widely grown throughout the tropics from the Arabian peninsula to Southeast Asia and the Pacific Islands as an ornamental plant and for its strongly scented flowers.[20] Numerous cultivars currently exist.[13]
+  question: Where is it grown?
+- answer: |Jasminum sambac contains dotriacontanoic acid, dotriacontanol, oleanolic acid, daucosterol, hesperidin, and [+]-jasminoids A, B, C, D in its roots. Leaves contains flavonoids such as rutin, quercetin and isoquercetin, flavonoids rhamnoglycosides as well as α-amyrin and β-sitosterol. A novel plant cysteine-rich peptide family named jasmintides were isolated from this plant.
+  question: What is its composition? 
+task_description: ' '
+document: 
+ repo: https://github.com/chandramohansadasivam/Summit_knowledge
+ commit: afe0558e6aaf5f548a56abb8f9c934951adaa78a
+ patterns:
+   - jasminum_sambac.md
