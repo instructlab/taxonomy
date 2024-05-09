@@ -1,0 +1,27 @@
+created_by: 
+domain: television
+seed_examples:
+  question: What is BBC Studios?
+- answer: |
+    BBC Studios Limited is a British content company. It is a commercial subsidiary of the BBC.
+  question: What does BBC Studios do?
+- answer: |
+     BBC Studios creates, develops, produces, distributes, broadcasts, finances and sells content around the world, returning around £200 million to the BBC annually in dividends and content investment.
+  question: Who is the UK's most comissioned creator of new content in 2019?
+- answer: |
+    BBC Studios Productions was the UK's most commissioned creator of new content in 2019, with 77 new commissions from the BBC and third-parties. It achieved 73 awards and 202 nominations in 2019/2020.
+  question: What is BBC Studios Nordic Productions?
+- answer: |
+    n June 2023, BBC Studios announced the acquisition of Scandinavian production company STV (not to be confused with Scotland's STV Group). The Copenhagen-based company will be rebranded BBC Studios Nordic Productions.
+  question: Who handles international rights for Doctor Who?
+- answer: |
+    BBC Studios.  For example, in August 2019, BBC Studios announced a long-term deal with WarnerMedia's upcoming HBO Max for streaming rights to past seasons of top BBC programmes such as Doctor Who.
+  question: Who handles international distribution and advertising sales for BBC World News?
+- answer: |
+    BBC Studios.  In March 2021, it was announced that the BBC Children's Productions and BBC Global News units would also be transferred into BBC Studios. With the change, BBC Studios will handle international distribution and advertising sales for BBC World News  
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: ad185efec4dad89bf611d4b9aa8641155cb25d91
+ patterns:
+   - BBC_studios.md
