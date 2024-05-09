@@ -1,0 +1,28 @@
+created_by: Wikipedia Authors
+domain: flowers
+seed_examples:
+  - answer: 'The scent of a carnation is often described
+    as spicy, clove-like, or reminiscent of a combination
+    of cinnamon and nutmeg.'
+    question: 'What does a carnation smell like?'
+  - answer: 'Carnation have been mentioned in Greek literature
+    as far back as 2,000 years ago. The Greek name for Carnation
+    is a fusion of "dios" and "anthos".'
+    question: 'What was the earliest mention of a carnation
+    in literature?'
+  - answer: 'A carnation is a herbaceous perennial plant.'
+    question: 'What kind of plant is a carnation?'
+  - answer: 'Dianthus caryophyllus'
+    question: 'What is the scientific name for a carnation?'
+  - answer: 'Carnations are sometimes dyed blue for cut bouquets,
+    but there are no known carnation cultivars that produce a
+    true blue flower. Carnations do not naturally produce the
+    pigment delphinidin, so a blue carnation cannot occur by
+    natural selection or by traditional plant breeding.'
+    question: 'Is there such a thing as a blue carnation?'
+task_description: 'teach a language model about carnations'
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 195fc4d83a40d8a1b60062e66e06cfc0bc9c8d35
+  patterns:
+    - dianthus_caryophyllus.md
