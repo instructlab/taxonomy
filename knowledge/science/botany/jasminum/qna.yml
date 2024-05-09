@@ -1,0 +1,26 @@
+created_by: 
+domain: flowers
+seed_examples:
+- answer: | It is  is a species of jasmine native to tropical Asia, from the Indian subcontinent to Southeast Asia.
+
+  question: What is Jasminum sambac ?
+- answer: | 
+    The flowers bloom all throughout the year and are produced in clusters of 3 to 12 together at the ends of branches.
+  question: When does Jasmium sambac bloom ?
+- answer: |
+    Typically, the flowers are harvested as buds during early morning.
+  question: When is Jasmium sambac harvested?
+- answer: | 
+    Jasminum sambac contains dotriacontanoic acid, dotriacontanol, oleanolic acid, daucosterol, hesperidin.
+
+  question: What is chemical composition of Jasmine sambac?
+- answer: | 
+     It is cultivated in many places, especially West Asia, South Asia and Southeast Asia.
+
+  question: Where is Jasmine sambac cultivated?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: afe0558e6aaf5f548a56abb8f9c934951adaa78a
+ patterns:
+   - jasminum_sambac.md
