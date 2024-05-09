@@ -1,0 +1,53 @@
+created_by: Upendra Mikkilineni
+domain: television
+seed_examples:
+- answer: |
+    BBC Studios Ltd. as a production company was first registered on 27 February 2015.[11] In September 2015, the BBC's general director Tony Hall announced a proposal to split the BBC's in-house production units for non-news television programming into a separate BBC Studios division, which would eventually, with BBC Trust approval as part of the next revision to the BBC's charter, be spun-out as a for-profit subsidiary of the BBC.
+  question: When and Where BBC Studios Ltd. is registered?
+- answer: |
+    BBC America (United States), BBC Brit (Poland), BBC Earth, BBC Earth (Canada; Under license), Sony BBC Earth (India; joint venture with Sony), BBC Entertainment, BBC First, BBC First (Australia), BBC First (Canada; Under license), BBC First (Netherlands), BBC HD, BBC Kids, BBC Lifestyle, BBC Nordic, BBC UKTV (Australia and New Zealand), UKTV, Alibi, Dave, Drama, Eden, Gold, W, Yesterday
+  question: What are all TV Channels BBC own?
+- answer: |
+    BBC Shop - Online retailer operating in the US & Canada only, selling BBC products. UK physical store closed in 2016 & BBC Store closed in 2017, although Studios retain Doctor Who and Top Gear branded online shops.
+    BBC Motion Gallery - Licensing footage from the BBC Archives
+    BBC Studios Home Entertainment - Home video label. Formerly known as 2 | entertain.
+    Demon Music Group - Record label.
+    UKTV - UK digital TV broadcaster.
+    BBC Player (not to be confused with BBC iPlayer) - A video on demand subscription service in Singapore and Malaysia.
+    Rapid Blue - Division of BBC Studios responsible for production in South Africa.[37]
+    BBC Active (joint venture with Pearson PLC)[38] - The brand publishes educational material.
+    Licences the publishing of magazine titles to the Immediate Media Company. The titles were formerly published in-house by BBC Magazines.
+    Licences audio content to Penguin Random House UK for global sales and distribution.[39][40] Titles were previously published in-house by BBC Radio Collection and BBC Audiobooks and later by AudioGO, in which BBC Studios held a 15% stake.[41][42]
+    BBC Books (joint venture with Penguin Random House UK)[43]
+    BBC Children's Books (joint venture with Penguin Random House UK)[44]
+    BBC Select
+  question: What are all the BBC owned Brands?
+- answer: |
+    BritBox is an over-the-top subscription video on-demand brand, which includes original programming commissioned or acquired by the company, and third-party content licensed from other UK channels such as BBC, ITV, Channel 4 and Channel 5. The service was announced by BBC Worldwide and ITV plc as a joint venture in 2016 and launched in 2017 in North America;[65][66] the international service remains a joint venture of BBC Studios and ITV plc.
+  question: What is BBC BritBox?
+- answer: |
+    BBC Studios has built up a stake in a variety of different production companies. 
+    72 Films (with David Glover and Mark Raphael; 15%)
+    Amazing Productions (with George Clarke, 25%)
+    Baby Cow Productions (with Steve Coogan; 73%)
+    Brutal Media
+    Burning Bright Productions (25%)
+    Clerkenwell Films (100% as of 19 January 2021)
+    Cuba Pictures (10%, via Original Talent Ltd)
+    Curve Media (with Rob Carey and Camilla Lewis; 25%)
+    Expectation Entertainment (24.9%)
+    Firebird Pictures (100% as of 5 October 2022)
+    House Productions (100% as of 14 December 2021)
+    Lookout Point TV (100% as of 5 July 2018)
+    Mighty Productions (with Lynn Sutcliffe and Hugh Rycroft)
+    Moonage Pictures
+    Sid Gentle Films Ltd. (100% as of 17 October 2022)
+    VAL (Various Artists Limited) (with Sam Bain, Jesse Armstrong, Phil Clarke and Roberto Troni; 20%)
+    Werner Film Productions
+  question: What are BBCs Label Investments?
+task_description: 'BBC Studios Ltd company history'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: ad185efec4dad89bf611d4b9aa8641155cb25d91
+ patterns:
+   - BBC_studios.md
