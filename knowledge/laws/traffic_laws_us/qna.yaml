@@ -1,0 +1,19 @@
+created_by: 
+domain: traffic_laws
+seed_examples:
+- answer: | The maximum speed limit on rural two-lane roads ranges from 50 mph (80 km/h) in parts of the northeast to 75 mph (120 km/h) in parts of Texas.
+  question: The maximum speed limit on rural two-lane roads?
+- answer: | "passing"
+  question: What is Overtaking usually called?
+- answer: | 24 states
+  question:  In how many states the seat belt law is considered to be only a secondary offense?
+- answer: | Is a model act by the National Committee on Uniform Traffic Laws and Ordinances
+  question: What is The Uniform Vehicle Code (UVC)?
+- answer: | August 30, 1950
+  question: When did the Geneva Convention on Road Traffic came into effect in the United States?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 8bf3ecccba1623c6b4008bf254a40510cbc2fc23
+ patterns:
+   - traffic_laws_in_US.md
