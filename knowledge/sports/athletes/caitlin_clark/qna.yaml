@@ -7,8 +7,8 @@ seed_examples:
   question: What high school did Caitlin Clark attend?
 - answer: | two
   question: How many times was Caitlin Clark voted AP Player of the Year?
-- answer: | How many national championships did Caitlin Clark win?
-  question: zero
+- answer: | zero
+  question: How many national championships did Caitlin Clark win?
 - answer: | Indiana Fever
   question: What WNBA team drafted Caitlin Clark?
 task_description: ' '
