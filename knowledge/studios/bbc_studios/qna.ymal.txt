@@ -1,0 +1,19 @@
+created_by: 
+domain: television
+seed_examples:
+- answer: | 27th February 2015
+  question: When was BBC studios first registered as a production compmnay
+- answer: | April 2019 
+  question: When did the BBC announce their agreement with Discovery Inc.
+- answer: | Doctor Who, The Honourable Woman, Luther, and Top Gear
+  question: To what shows did BBC studios announce a long term deal with warner media for, to use on HBO Max for streaming.
+- answer: | Canada
+  question: Which areas did BBC studios initially plan to launch their international newsletter business?
+- answer: | Non news television
+  question: Which area did Tony Hall announce he would split in house producution units in between?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: ad185efec4dad89bf611d4b9aa8641155cb25d91
+ patterns:
+   - BBC_studios.md
