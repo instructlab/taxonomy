@@ -1,0 +1,19 @@
+created_by: cdkelley93
+domain: college_mascot
+seed_examples:
+- answer: Reveille, the official mascot of Texas A&M University, is the highest ranking member.
+  question: Who is the highest-ranking member of the Texas A&M Corps of Cadets?
+- answer: The scoreboard allowed the past Reveilles to still watch the Aggies play.
+  question: Why is their a scoreboard in the cemetery on campus at Texas A&M where past Reveilles are buried.
+- answer: When Reveille barks during class, the session is cancelled.
+  question: What happens if Reveille barks during class?
+- answer: As of 2024, there have been ten Reveilles,
+  question: How many Reveilles have there been?
+- answer: The original Reveille was a mix breed and there have been several types of breeds.  Reveille X is a Rough Collie.
+  question: What type of dog is Reveille?
+task_description: ' '
+document:
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: dbe030ea084ff1c2fe29a2e906afd67caa468eac
+ patterns:
+   - Reveille.md
