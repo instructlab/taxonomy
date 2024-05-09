@@ -1,0 +1,19 @@
+created_by: 
+domain: constellation
+seed_examples:
+- answer: | The constellation does not lie on the galactic plane of the Milky Way, and there are no prominent star clusters
+  question: Is there star clusters?
+- answer: | Who is the radiant of two annual meteor showers. 
+  question: Phoenix is the radiant of two annual meteor showers. 
+- answer: | A curved line of stars comprising Alpha, Kappa, Mu, Beta, Nu and Gamma Phoenicis was seen as a boat by the ancient Arabs.[6] French explorer and astronomer Nicolas Louis de Lacaille charted and designated 27 stars with the Bayer designations Alpha through to Omega in 1756. Of these, he labelled two stars close together Lambda, and assigned Omicron, Psi and Omega to three stars, which subsequent astronomers such as Benjamin Gould felt were too dim to warrant their letters. A different star was subsequently labelled Psi Phoenicis, while the other two designations fell out of use.[12]
+  question: A curved line of stars comprise of which stars ?
+- answer: | Which is brightest Star? 
+  question: Ankaa is the brightest star in the constellation.
+- answer: | Nu Phoenicis is a yellow-white main sequence star of spectral type F9V and magnitude 4.96
+  question: Which is yellow-white main sequence star of spectral type ?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: fb4a3b77201eb5087b225ddb09fd955ee59dc6ea
+ patterns:
+   - phoenix_constellation.md
