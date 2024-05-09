@@ -1,0 +1,19 @@
+created_by: 
+domain: restaurant
+seed_examples:
+- answer: Franchise of Burger King and owned by Competitive Food Australia|
+  question: Who owns Hungry Jack's Pty?
+- answer: Australia|
+  question: Where can I go to a hungry jack for burger?
+- answer: Whopper burgers and TenderCrisp chcken burgers|
+  question: Can I get Burger King meals at Hungy Jacks?
+- answer: Big Jack|
+  question: Does hungy jack's have a burger like the big mac that's even better?
+- answer: The burgers are far better than better than Burger Kings |
+  question: Is hungy jack better than Burger King?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 0989bb94f654a2b8480409fc621f7a3f8835aef9
+ patterns:
+   - hungry_jacks.md
