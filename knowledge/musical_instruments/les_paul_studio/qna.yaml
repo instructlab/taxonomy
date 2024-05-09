@@ -1,0 +1,19 @@
+created_by: 
+domain: musical_instruments
+seed_examples:
+- answer: |Solid Body Electric
+  question: What type of guitar is a LesPaul Studio
+- answer: |some features omitted to appeal to musicians looking for the tonal qualities of the guitar but with less of an emphasis on cosmetics and to reduce the price of the instrument.
+  question:Does the Studio version have all the features of the original LesPaul? 
+- answer: |1983-1987
+  question: What years were the Studion Standard Produced?
+- answer: |1983
+  question: What year did Les Paul Introduce the Studio?
+- answer: |1983-1985
+  question: What years were the Studio Customs produced?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 854ffa248c43d08472886ed18b3de2de9e9afbe4
+ patterns:
+   - gibson_les_paul_studio.md
