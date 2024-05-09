@@ -1,0 +1,19 @@
+created_by: 
+domain: anatomy
+seed_examples:
+- answer: | Where did Caitlin Clark go to college?
+  question: Iowa
+- answer: | What high school did Caitlin Clark attend?
+  question: Dowling Catholic High School
+- answer: | How many times was Caitlin Clark voted AP Player of the Year?
+  question: two
+- answer: | How many national championships did Caitlin Clark win?
+  question: zero
+- answer: | What WNBA team drafted Caitlin Clark?
+  question: Indiana Fever
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 481b735225e2714c4e9d36da6d7b941d9a36bd86
+ patterns:
+   - wisdom_tooth.md
