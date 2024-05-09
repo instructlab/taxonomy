@@ -1,0 +1,19 @@
+created_by: 
+domain: restaurant
+seed_examples:
+- answer: Hungry Jack's Pty Ltd. is an Australian fast food franchise of the Burger King Corporation.
+  question: What is Hungry Jack's?
+- answer: No, Hyngry Jack's does not have locations in the United States. It is an Australian fast food franchise.
+  question: Does Hungry Jack's have locations in the United States?
+- answer: When Burger King moved to expand its operations into Australia, it found that its business name was already trademarked by a takeaway food shop in Adelaide, South Australia.
+  question: Why isn't Hungry Jack's called Burger King?
+- answer: Yes, Hungry Jack's sells Whoppers. In addition to the Whopper, Hungry Jack's also sells the Burger King trademarked TenderCrisp.
+  question: Does Hungry Jack's sell Whoppers?
+- answer: Yes, Hungry Jack's introduced the "Rebel Whopper" in partnership with V2food in late 2019, which is a variation of the Whopper containing a meat-free patty made with protein extracted from legumes.
+  question: Does Hungry Jack's have any plant-based meat alternative menu items?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 0989bb94f654a2b8480409fc621f7a3f8835aef9
+ patterns:
+   - hungry_jacks.md
