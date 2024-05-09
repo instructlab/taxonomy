@@ -1,0 +1,19 @@
+created_by: 
+domain: automobile
+seed_examples:
+- answer: | the DMC DeLorean is designed by Giorgetto Giugiaro
+  question: Who designed the DMC DeLorean?
+- answer: | The DMC DeLorean was made popular by the movie Back to the Future
+  question: What made the DMC DeLorean popular?
+- answer: | The DMC DeLorean was produced from January 1981 to December 1982
+  question: When was the DMC DeLorean produced?
+- answer: | DMC's comparison literature noted that the DeLorean could achieve 0–60 miles per hour (0–97 km/h) in 8.8 seconds when equipped with a manual transmission, but other sources indicate an acceleration time of 9.5 seconds. When equipped with a manual transmission, the DeLorean accelerated from 0 to 60 miles per hour (0 to 97 km/h) in 10.5 seconds as tested by Road & Track magazine. Top speed was claimed at 130 mph (209 km/h), but was tested to be a lacking 110 mph (177 km/h). Car & Driver put the top speed of a 5-speed manual at 117 mph (188 km/h) (indicated). The car was described as "not quick for a sports/GT car in this price category" by Road & Track.
+  question: How is the performance of the DMC DeLorean?
+- answer: | Upon release in 1981, a DeLorean had a base MSRP of $25,000, or equivalent to $84,000 in 2023. MSRP increased in 1982 to $29,825, equivalent to $94,000 in 2023, and again in 1983 to $34,000,[58] equivalent to $104,000 in 2023.
+  question: How much did the DMC DeLorean cost?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: eb071f533d33aaee7b0af2d9fb9e4f3abc9fefec
+ patterns:
+   - DMC_DeLorean.md
