@@ -1,0 +1,19 @@
+created_by: Shuchi Sharma
+domain: british_history
+seed_examples:
+- question: What were the royal corgis of Queen Elizabeth fed?
+  answer: They royal corgis were fed a diet of dog buscuits, meat and gravy, and dog buscuits for celebrations and rewards.
+- question: What animal appears in the crown coin commemorating the Golden Jubilee of Elizabeth II?
+  answer:  a royal corgi
+- question: What animal was Queen Elizabeth II fond of?
+  answer: royal corgi
+- question: What was the name of the Queen Mother's corgi?
+  answer: Crackers 
+- question: 1n 1944, what was thef name of the dog of Queen Elizabeth was given?
+  answer: Susan
+task_description: ' The royal corgis are the Pembroke Welsh Corgi dogs formerly owned by Queen Elizabeth II and her parents, King George VI and Queen Elizabeth The Queen Mother.'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: e0cdbb7ed9e828d7f99300cb7ba5e21a1cee3052
+ patterns:
+   - royal_corgis.md
