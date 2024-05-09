@@ -1,0 +1,19 @@
+created_by: 
+domain: geography
+seed_examples:
+- answer: | 3
+  question: How many sections does Interstate 49 have?
+- answer: |2021
+  question: When was the Interstate 49 bypass south of Bella Vista completed?
+- answer: |5
+  question: How many sections does the Interstate 74 have?
+- answer: |Yes
+  question: Is the Interstate 93 a two-lane divided highway?
+- answer: |Do interstate bridges have to be fixed?
+  question: Yes
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 799f1f0afd57ea4c684eeef71189e9c8ea45d539
+ patterns:
+   - gaps_in_interstate_highways.md
