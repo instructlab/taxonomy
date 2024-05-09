@@ -1,0 +1,23 @@
+created_by: 
+domain: astronomy_technology
+seed_examples:
+- answer: |
+          Space exploration missions require safe, reliable, long-lived power systems to provide electricity and heat to spacecraft and their science instruments.
+  question: What space exploration missions require to survive in outer space ?
+- answer: | 
+          Solid-state thermoelectric couples convert the heat produced by the natural decay of the radioisotope plutonium-238 to electricity
+  question: How solid-state thermoelectric couples used for space exploration ?
+- answer: |
+          GPHS modules generate about 2 kW thermal power.
+  question: How much pwer is generated from GPHS modules ?
+- answer: |
+          MMRTG was successfully launched into space on July 30, 2020, aboard the Mars 2020 mission, and is now being used to supply the scientific equipment on the Perseverance rover with heat and power.
+  question: When did MMRTG launched into space ? 
+- answer: |
+  question: How muc h it cost for MMRTG to produce, deploy, research, and develop
+task_description: 'Space exploration to Mars'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 95176e7e83e80dfaed8ff7e621071881c598884b
+ patterns:
+   - multi_mission_radioisotope_thermoelectric_generator.md
