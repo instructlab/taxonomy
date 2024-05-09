@@ -9,7 +9,7 @@ seed_examples:
   answer: royal corgi
 - question: What was the name of the Queen Mother's corgi?
   answer: Crackers 
-- question: 1n 1944, what was thef name of the dog of Queen Elizabeth was given?
+- question: 1n 1944, what was the name of the dog of Queen Elizabeth was given?
   answer: Susan
 task_description: ' The royal corgis are the Pembroke Welsh Corgi dogs formerly owned by Queen Elizabeth II and her parents, King George VI and Queen Elizabeth The Queen Mother.'
 document: 
