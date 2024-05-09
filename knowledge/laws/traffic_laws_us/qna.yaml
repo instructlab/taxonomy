@@ -1,0 +1,22 @@
+created_by: UshaKant
+domain: traffic_laws
+seed_examples:
+- answer: |
+    Most of the rules of the road are similar for the purpose of uniformity, but each state has it's own traffic code.
+  question: Are the rules of the road the same in all American states?
+- answer: |
+    Bicycle and pedestrians have priority
+  question: Who has priority to use the road in the United States?
+- answer: |
+    You must stop if there is a collision.
+  question: What is the traffic law if a collision occurs?
+- answer: | Georgia's law was introduced to prohibit use of any devices and took effect from July 1, 2018
+  question: In which state was a law introduced that prohibits the use of mobile phones or devices whilst driving?
+- answer: | The speed limit varies state to state from 60mph to 85mph, except for Washington where it is 55mph
+  question: What is the speed limit for driving in the United States ?
+task_description: ' Teach the rules of the road in the United States'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 8bf3ecccba1623c6b4008bf254a40510cbc2fc23
+ patterns:
+   - traffic_laws_in_US.md
