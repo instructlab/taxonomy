@@ -1,0 +1,19 @@
+created_by: 
+domain: musical_instruments
+seed_examples:
+- answer: The Studio Custom was produced in 1983–1985 |
+  question: When was the Les Paul Studio Custom produced?
+- answer: The Studio Standard was produced from 1983–1987 |
+  question: When was the Les Paul Studio Standard produced?
+- answer: | In 2009, the Vintage Mahogany was renamed the Les Paul Studio Faded.
+  question: What was the former name of the Les Paul Studio Faded?
+- answer: | In the mid 1990s Gibson produced the Studio Lite and Studio Lite M-III. 
+  question: When was the Studio Lite produced?
+- answer: | The Gem Series was produced from 1996–1998.
+  question: When was the Les Paul Gen Series produced?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 854ffa248c43d08472886ed18b3de2de9e9afbe4
+ patterns:
+   - gibson_les_paul_studio.md
