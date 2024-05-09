@@ -1,0 +1,19 @@
+created_by: 
+domain: musical_instruments
+seed_examples:
+- answer: |Various sunbursts,Translucent Red,Translucent Blue, Translucent Amber, Wine Red, Ebony, Alpine White
+  question: What colors are available for the Gibson Les Paul Studio guitars
+- answer: |Studio Standard, Studio Custom,Vintage Mahogony, Studio Lite, Gem Series, Smartwood Series, Gothic, Voodoo, Pro Plus, Premium Plus, Robot Limited
+  question: What are the different models of the Gibson Less Paul Studio Guitars
+- answer: | 1996 to 2022
+  question: What years were the Smartwood Exotic produced
+- answer: | 1983 to present
+  question: How long has Gibson USA been manufacturing Gibson Les Paul Studio guitars
+- answer: |  Amethyst, Sapphire, Topaz, Emerald, and Ruby
+  question: What colors did the Gen Series come in
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 854ffa248c43d08472886ed18b3de2de9e9afbe4
+ patterns:
+   - gibson_les_paul_studio.md
