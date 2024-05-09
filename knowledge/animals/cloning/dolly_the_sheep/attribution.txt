@@ -1,0 +1,19 @@
+created_by: 
+domain: genetics
+seed_examples:
+- answer: |
+  question: 
+- answer: |
+  question: 
+- answer: |
+  question: 
+- answer: |
+  question: 
+- answer: |
+  question: 
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 7b6b4129accea29a770468343b5a18170e59e882
+ patterns:
+   - Dolly_the_sheep.md
