@@ -1,0 +1,25 @@
+created_by: 
+domain: knot
+seed_examples:
+- answer: | 
+  stopper knot
+
+  question: What type of knot is a figure eight?
+- answer: | 
+  sailing
+  question: What is one place it is used?
+- answer: | 
+  rock climbing
+  question: What is another place it is used?
+- answer: | 
+  overhand loop
+  question: How is it used?
+- answer: |  
+  splice
+  question: what is it used as?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: bf3c885c1d2e22cf0708e886d2c49791685e0ded
+ patterns:
+   - figure_eight_knot.md
