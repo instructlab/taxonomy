@@ -1,0 +1,19 @@
+created_by: 
+domain: television
+seed_examples:
+- answer: | bbcstudios.com
+  question: what is the web site of BBC studios?
+- answer: | "BBC Studios Home Entertainment, BBC Studios Productions Limited, BBC Studios ScriptWorks, BBC Studios TalentWorks, BBC News@
+  question: What are the division of BBC studios?
+- answer: | 2015
+  question: Which year was BBC studios created?
+- answer: | BBC Worldwide
+  question: What is the predecesor of BBC studios?
+- answer: | London
+  question: Where are the headquarters of BBC studios?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: ad185efec4dad89bf611d4b9aa8641155cb25d91
+ patterns:
+   - BBC_studios.md
