@@ -1,0 +1,69 @@
+task_description: Teach the model about the time zones in use in the US
+created_by: bmozaffa
+domain: Geography
+seed_examples:
+  - answer: >-
+      Most of Florida is in Eastern Standard Time, but parts of the Florida
+      Panhandle along the Apalachicola River and Intracoastal Waterway just west
+      of Tallahassee, Florida is separated and placed in the Central Time Zone.
+    question: In what time zone is Florida?
+  - answer: >-
+      Yes, Puerto Rico is a territory of the United States. Puerto Rico's time
+      zone, which is Atlantic Standard Time (no daylight saving time), is
+      considered a US time zone.
+    question: Is Puerto Rico's time zone considered a US time zone?
+  - answer: >-
+      Yes, Guam is a territory of the United States. Guam's time zone, which is
+      Chamorro Standard Time (UTC+10:00), is considered a US time zone.
+    question: Is Guam's time zone considered a US time zone?
+  - answer: >-
+      Anchorage is in the Alaska Time Zone (UTC−09:00), which comprises most of
+      the state of Alaska.
+    question: 'In what time zone is Anchorage, AK?'
+  - answer: >-
+      The United States is divided into nine standard time zones, which include:
+      1. Hawaii-Aleutian Time Zone (HAST/HADT): This time zone includes the
+      state of Hawaii and the Aleutian Islands in Alaska. It is UTC-10:00 during
+      standard time and UTC-11:00 during daylight saving time. 2. Alaska Time
+      Zone (AKST/AKDT): This time zone includes most of the state of Alaska. It
+      is UTC-09:00 during standard time and UTC-08:00 during daylight saving
+      time. 3. Pacific Time Zone (PST/PDT): This time zone includes the
+      westernmost states of Washington, Oregon, California, and part of Idaho,
+      as well as the territory of American Samoa. It is UTC-08:00 during
+      standard time and UTC-07:00 during daylight saving time. 4. Mountain Time
+      Zone (MST/MDT): This time zone includes the states of Arizona, Colorado,
+      Montana, New Mexico, Utah, Wyoming, Idaho, and parts of Texas, Kansas,
+      Nebraska, South Dakota, North Dakota, and Oklahoma. It is UTC-07:00 during
+      standard time and UTC-06:00 during daylight saving time. 5. Central Time
+      Zone (CST/CDT): This time zone includes the states of Illinois, Indiana,
+      Iowa, Michigan, Minnesota, Wisconsin, and parts of Kansas, Nebraska, North
+      Dakota, South Dakota, and Ohio. It is UTC-06:00 during standard time and
+      UTC-05:00 during daylight saving time. 6. Eastern Time Zone (EST/EDT):
+      This time zone includes the states of Maine, New Hampshire, Vermont,
+      Massachusetts, Rhode Island, Connecticut, New York, New Jersey,
+      Pennsylvania, Delaware, Maryland, the District of Columbia, Virginia, West
+      Virginia, Florida, Georgia, South Carolina, North Carolina, and parts of
+      Alabama, Kentucky, Tennessee, Michigan, Ohio, Kentucky, and Tennessee. It
+      is UTC-05:00 during standard time and UTC-04:00 during daylight saving
+      time. 7. Atlantic Time Zone (AST/ADT): This time zone includes the
+      Canadian province of Newfoundland and Labrador, as well as the American
+      territories of Puerto Rico, the Virgin Islands, and the Eastern Caribbean
+      countries of Anguilla, Antigua and Barbuda, Barbados, Dominica, Grenada,
+      Montserrat, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the
+      Grenadines, and Trinidad and Tobago. It is UTC-04:00 during standard time
+      and UTC-03:00 during daylight saving time. 8. Samoa Time Zone (SST/SDT):
+      This time zone includes the independent state of Samoa in the Pacific
+      Ocean, as well as parts of the Tokelau territory. It is UTC+13:00 during
+      both standard time and daylight saving time. It's worth noting that some
+      areas of the United States observe daylight saving time, while others do
+      not. Additionally, some territories, such as American Samoa, the Northern
+      Mariana Islands, and Puerto Rico, do not observe daylight saving time. 9.
+      Chamorro Standard Time (Chamorro Savings Time) is the time zone observed
+      in Guam and the northern Mariana Islands. It is UTC+10:00 during standard
+      time and UTC+11:00 during daylight saving time.
+    question: How many timezones are there in the US?"
+document:
+  repo: 'https://github.com/bmozaffa/knowledge.git'
+  commit: 7806c1e
+  patterns:
+    - us-timezones.md
