@@ -1,0 +1,24 @@
+created_by: 
+domain: television
+seed_examples:
+- answer: |
+	  BritBox is an over-the-top subscription video on-demand brand, which includes original programming commissioned or acquired by the company, and third-party content licensed from other UK channels such as BBC, ITV, Channel 4 and Channel 5. The service was announced by BBC Worldwide and ITV plc as a joint venture in 2016 and launched in 2017 in North America.
+  question: What is a BritBox?
+- answer: | 
+           BBC Studios Productions brings together the majority of BBC Television's former in-house production departments; Factual, Drama, Comedy, Entertainment, and Music & Events.
+  question: What are the different types of production offered by BBC Studios?
+- answer: |
+           BBC is the parent company of BBC Studios. BBC Studios is one the subsidiary of BBC since 2016 and launched as a commercial entity in 2017. 
+  question: How BBC and BBC Studios are related? 
+- answer: |
+           It achieved 73 awards and 202 nominations.
+  question: How many awards did BBC Studios receive in 2019/2020.
+- answer: |
+           BBC Studios launched its streaming brand in North America known as BBC Select in February 2021.
+  question: When did BBC launch its streaming brand?
+task_description: 'Factual Question Answering about BBC Studios'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: ad185efec4dad89bf611d4b9aa8641155cb25d91
+ patterns:
+   - BBC_studios.md
