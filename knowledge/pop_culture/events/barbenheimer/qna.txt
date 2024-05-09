@@ -1,0 +1,24 @@
+created_by: Jason Knott
+domain: movies
+seed_examples:
+- answer: |
+    The first known use of the term "Barbenheimer" was in a post on Twitter dated April 15, 2022, by Matt Neglia, editor-in-chief of the entertainment awards website Next Best Picture.
+  question: When was the first use of the term Barbenheimer?
+- answer: |
+    Warner Bros. had originally scheduled the Looney Tunes-related comedy Coyote vs. Acme to be released on the same date of July 21, but in April 2022, the studio announced that the film Barbie would be released on that date instead, having it directly compete against Nolan's film.
+  question: Were both films intended to be released at the same time?
+- answer: |
+    Many Hollywood personalities and Internet users have viewed the films as a double feature, with a debate on viewing order being part of the meme.
+  question: Were both films viewed together by audiences?
+- answer: |
+    Going into their opening weekends, Barbie was projected to gross $90–120 million in its opening weekend, and Oppenheimer was projected to gross $45–50 million.
+  question: What were the initial financial projections for each movie?
+- answer: |
+    Both films led the nominations at the 81st Golden Globe Awards, with Barbie gaining a leading nine nods and Oppenheimer trailing with eight.
+  question: How many nominations did each film receive?
+task_description: 'Teach the model information regarding the Barbenheimer phenomenon.'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 886f517b983ec303fecdd0caf58ca206e3410f73
+ patterns:
+   - barbenheimer.md
