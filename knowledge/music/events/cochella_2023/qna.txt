@@ -1,0 +1,19 @@
+created_by: 
+domain: music
+seed_examples:
+- answer: |  Empire Polo Club in Indio, California
+  question: Where did the Coachella 2023 was hold?
+- answer: | April 14, 2023–April 16, 2023 & April 21, 2023–April 23, 2023
+  question: On which dates Coachella 2023 happened?
+- answer: | The festival was headlined by Puerto Rican rapper Bad Bunny, South Korean girl group Blackpink, American singer Frank Ocean, and American rock band Blink-182.
+  question: Who was headlined the festivel?
+- answer: | April 15, 2022–April 17, 2022
+  question: On which dates Coachella 2022 happened?
+- answer: | April 12, 2024–April 14, 2024
+  question: On which dates Coachella 2024 happened?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 7294fab8567ef650eec43c5fcfb59701fb9287ba
+ patterns:
+   - coachella_2023.md
