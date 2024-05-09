@@ -1,0 +1,24 @@
+created_by: 
+domain: movies
+seed_examples:
+- answer: |
+  July 21, 2023
+  question: When did barbenheimer happen?
+- answer: |
+  A cultural phenomenon which preceded and surrounded the simultaneous theatrical release of two films, Warner Bros. Pictures' Barbie and Universal Pictures' Oppenheimer, on July 21, 2023. The strong contrast between Barbie—a fantasy comedy by Greta Gerwig about the fashion doll Barbie—and Oppenheimer—an epic biographical thriller by Christopher Nolan about physicist J. Robert Oppenheimer, scientific director of the Manhattan Project—prompted a comedic response from Internet users, including memes, merchandise and memorabilia.
+  question: What is barbenheimer?
+- answer: |
+  Yes, barbenheimer is an example of two films being released at the same time targeting two different demographics, also called counterprogramming. 
+  question: Is barbenheimer counterprogramming? 
+- answer: |
+  In the US and Canada, Barbie grossed $636,238,421 and Oppenheimer grossed $329,103,570. The combined gross was $965,341,991. 
+  question: How much money did barbenheimer make? 
+- answer: |
+  Oppenheimer received the most nominations of any film in 2023 with 13, ahead of Barbie's eight, overlapping in six categories: Best Picture, Best Supporting Actor, Best Supporting Actress, Best Adapted Screenplay, Best Costume Design and Best Production Design. Oppenheimer would go on to win the most Oscars of any film that year, with seven, while the lone win for Barbie was for Best Song "What Was I Made For?" (music and lyrics by Billie Eilish and Finneas O'Connell)
+  question: What awards did barbenheimer win? 
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 886f517b983ec303fecdd0caf58ca206e3410f73
+ patterns:
+   - barbenheimer.md
