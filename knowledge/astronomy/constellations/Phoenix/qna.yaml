@@ -1,0 +1,19 @@
+created_by: 
+domain: constellation
+seed_examples:
+- answer: |Phoenix is a minor constellation in the southern sky
+  question: What is the Phoenix constellation?
+- answer: |Alpha Phoenicis or Ankaa
+  question: What is the brightest star called?
+- answer: |Beta Phoenicis
+  question: What is the second brightest star called?
+- answer: |Phoenix is a small constellation bordered by Fornax and Sculptor to the north, Grus to the west, Tucana to the south, touching on the corner of Hydrus to the south, and Eridanus to the east and southeast. The bright star Achernar is nearby.[9] The three-letter abbreviation for the constellation, as adopted by the International Astronomical Union in 1922, is "Phe".[10] The official constellation boundaries, as set by Belgian astronomer Eugène Delporte in 1930, are defined by a polygon of 10 segments. In the equatorial coordinate system, the right ascension coordinates of these borders lie between 23h 26.5m and 02h 25.0m , while the declination coordinates are between −39.31° and −57.84°.[1] This means it remains below the horizon to anyone living north of the 40th parallel in the Northern Hemisphere, and remains low in the sky for anyone living north of the equator. It is most visible from locations such as Australia and South Africa during late Southern Hemisphere spring.[7] Most of the constellation lies within, and can be located by, forming a triangle of the bright stars Achernar, Fomalhaut and Beta Ceti—Ankaa lies roughly in the centre of this.
+  question: What are the characteristics of the Phoenix constellation
+- answer: |Richard Allen was a celestial historian.
+  question: Who was Richard Allen
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: fb4a3b77201eb5087b225ddb09fd955ee59dc6ea
+ patterns:
+   - phoenix_constellation.md
