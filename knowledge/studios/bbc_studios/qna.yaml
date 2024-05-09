@@ -1,0 +1,19 @@
+created_by: CrocusChido
+domain: television
+seed_examples:
+- answer: Canada and the US 
+  question: What is BBC's second largest non-UK news market behind India?
+- answer:  1 April 2018
+  question: When BBC Worldwide would be merged into BBC Studios effective?
+- answer: February 2021
+  question: when BBC Studios launched a new streaming brand in North America known as BBC Select?
+- answer: 300
+  question: How many employee planed to lay off in October 2016?
+- answer: 27 February 2015
+  question: When BBC Studios Ltd. as a production company was first registered?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: ad185efec4dad89bf611d4b9aa8641155cb25d91
+ patterns:
+   - BBC_studios.md
