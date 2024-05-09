@@ -1,0 +1,19 @@
+created_by: 
+domain: restaurant
+seed_examples:
+- answer: | Hungry Jack's introduced the "Rebel Whopper" in partnership with V2food in late 2019, which is a variation of the Whopper containing a meat-free patty made with protein extracted
+  question: when rebel whopper was introduced?
+- answer: | Hungry Jack's breakfast menu, introduced in late 2005 
+  question: when breakfast menu was introduced
+- answer: | 1996 to 2001: legal battle with Burger King
+  question: who did they have legal battle with?
+- answer: | the restaurant chain was founded 19 June 1971; 52 years ago
+  question: when was the restaurant founded?
+- answer: | restaurant chain is ogininated from australia
+  question: where is the restaurant chain from?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 0989bb94f654a2b8480409fc621f7a3f8835aef9
+ patterns:
+   - hungry_jacks.md
