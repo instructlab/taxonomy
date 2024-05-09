@@ -1,0 +1,19 @@
+created_by: 
+domain: traffic_laws
+seed_examples:
+- answer: Speed limits are set by each state or territory|  
+  question: Are speed limits set by the state or the federal government?
+- answer: Parts of Texas has a speed limit of 85mph|
+  question: What is the highest	speed limit in the U.S?
+- answer: Vermont|
+  question: In what state is passing across a double yellow line allowed when no traffic is present on the opposite side?
+- answer: New Hampshire|
+  question: What state does not have a requirement for wearing a seatbelt for adults?
+- answer: On roads with four or more lanes|
+  question: When can you pass on the left or to the right of slower vehicles on the highway?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 8bf3ecccba1623c6b4008bf254a40510cbc2fc23
+ patterns:
+   - traffic_laws_in_US.md
