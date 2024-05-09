@@ -1,0 +1,25 @@
+task_description: >-
+ This skill provides the ability to convert text into its Kebab case form.
+created_by: Matteo Pulcini
+seed_examples:
+  - answer: |
+      what-is-my-name
+    question: |
+      Convert this to Kebab Case: What is my name
+  - answer: |
+      what-do-you-have-planned-this-evening
+    question: |
+      Convert this to Kebab Case: What do you have planned this evening
+  - answer: |
+      what-is-the-status-on-the-project
+    question: |
+      Convert this to Kebab Case: What is the status on the project
+  - answer: >
+      the-kebab-case-converter-converts-text-to-lowercase-while-replacing-spaces-by-dashes
+    question: >
+      Convert this to Kebab Case: The kebab case converter converts text to
+      lowercase while replacing spaces by dashes
+  - answer: |
+      this-notation-is-also-called-hyphen-case
+    question: |
+      Convert this to Kebab Case: This notation is also called hyphen case
