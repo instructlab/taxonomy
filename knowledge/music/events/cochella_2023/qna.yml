@@ -1,19 +1,20 @@
 created_by: 
 domain: music
 seed_examples:
-- answer: |
-  question: 
-- answer: |
-  question: 
-- answer: |
-  question: 
-- answer: |
-  question: 
-- answer: |
-  question: 
+- answer: Frank Ocean|
+  question: Who wasn't sture to show up to this event? 
+- answer: Novacane|
+  question: What is Ocean's debue single?
+- answer: in 1999|
+  question: When did this festival begin?
+- answer: a car crash|
+  question: How was  Ryan Breaux's younger brother killed?
+- answer: Black pink|
+  question: What the k-pop group joined in this event?
 task_description: ' '
 document: 
  repo: https://github.com/juliadenham/Summit_knowledge
  commit: 7294fab8567ef650eec43c5fcfb59701fb9287ba
  patterns:
    - coachella_2023.md
+Í
