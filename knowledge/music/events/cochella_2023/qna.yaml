@@ -1,0 +1,19 @@
+created_by: 
+domain: music
+seed_examples:
+- answer: The lineup was announced on January 10, 2023. People were stoked!|
+  question: When was the lineup announced for Coachella 2023 
+- answer: Frank Ocean did perform his debut single "Novacane" and did a rousing and highly stimulating version of it!|
+  question: Did Frank Ocean perform his debut single "Novacane"
+- answer: Skrillex performed in replacement of Frank Ocean on weekend 2.|
+  question: Did Skrillex perform at Coachella 2023
+- answer: Blink 182 performed on weekend 3 of Coachella 2023|
+  question: Which weekend did Blink 182 perform at Coachella 2023
+- answer: They performed on Friday of Weekend 1 |
+  question: Which day of the week did the Gorillaz perform?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 7294fab8567ef650eec43c5fcfb59701fb9287ba
+ patterns:
+   - coachella_2023.md
