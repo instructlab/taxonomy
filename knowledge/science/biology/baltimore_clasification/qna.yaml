@@ -3,7 +3,7 @@ domain: virology
 seed_examples:
 - answer: | Group IV
   question: What is group type of single stranded RNA
-- answer: | Adnaviria, Duplodnaviria,Monodnaviria,Varidnaviria
+- answer: Adnaviria,Duplodnaviria,Monodnaviria,Varidnaviria
   question: What are assigned to four separate realms
 - answer: | four
   question: ssDNA viruses have how many realms 
