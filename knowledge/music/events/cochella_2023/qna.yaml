@@ -1,0 +1,19 @@
+created_by: Ana Foubert
+domain: music
+seed_examples:
+- answer: |SG Lewis
+  question: who was the special guest?
+- answer: |1999
+  question: when was the first festival? 
+- answer: |Skrillex, Four tet, Blink 182
+  question: who headlined week 2?
+- answer: |January 10 2023
+  question: when was the lineup announced?
+- answer: |Empire Polo Club inn California
+  question: where was it?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 7294fab8567ef650eec43c5fcfb59701fb9287ba
+ patterns:
+   - coachella_2023.md
