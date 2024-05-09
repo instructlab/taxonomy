@@ -1,0 +1,24 @@
+created_by: 
+domain: astronomy_technology
+seed_examples:
+- answer: |
+    It is a Multi-mission radioisotope thermoelectric generator.
+  question: What is an MMRTG? 
+- answer: |
+    The multi-mission radioisotope thermoelectric generator (MMRTG) is a type of radioisotope thermoelectric generator (RTG) developed for NASA space missions[1] such as the Mars Science Laboratory (MSL), under the jurisdiction of the United States Department of Energy's Office of Space and Defense Power Systems within the Office of Nuclear Energy. The MMRTG was developed by an industry team of Aerojet Rocketdyne and Teledyne Energy Systems.
+  question: What is a Multi-mission radioisotope thermoelectric generator? 
+- answer: |
+    June 2003.
+  question: When was the first grant awarded? 
+- answer: |
+    Solid-state thermoelectric couples convert the heat produced by the natural decay of the radioisotope plutonium-238 to electricity.[4] The physical conversion principle is based on the Seebeck effect, obeying one of the Onsager reciprocal relations between flows and gradients in thermodynamic systems. A temperature gradient generates an electron flow in the system. Unlike photovoltaic solar arrays, RTGs are not dependent upon solar energy, so they can be used for deep space missions.
+  question: What is the function of an MMRTG?
+- answer: |
+    Absolutely.
+  question: Does Joe like MMRTG?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 95176e7e83e80dfaed8ff7e621071881c598884b
+ patterns:
+   - multi_mission_radioisotope_thermoelectric_generator.md
