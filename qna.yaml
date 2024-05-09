@@ -1,0 +1,20 @@
+created_by: 
+domain: automobile
+seed_examples:
+- answer: |Giorgetto Giugiaro
+  question: who designed DeLorean
+- answer: |DMC DeLorean is a rear-engine two-passenger sports car
+  question: what is DeLorean
+- answer: | American automotive chief engineer
+  question: who is William T. Collins
+- answer: |The body design of the DeLorean was a product of Giorgetto Giugiaro of Italdesign
+  question: what is the design DeLorean  body is based on
+- answer: |DeLoreans, early-production models in particular, suffered from poor build quality as well as mechanical issues. Early-production cars needed as much as 200 hours of work at DMC Quality Assurance Centers prior to being shipped to dealerships for delivery.[54] DMC eventually sent 30 factory workers to the quality centers in the US to learn about the problems and how to fix them.[54] Quality did improve over time, and by 1982 many of the quality issues had been resolved.[54] A total of four recalls were issued by the factory to correct problems such as a sticking throttle, front-suspension issues and an inertia switch.[55]
+  question: Did DeLorean had quality problems
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: eb071f533d33aaee7b0af2d9fb9e4f3abc9fefec
+ patterns:
+   - DMC_DeLorean.md
+ 
