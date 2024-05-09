@@ -1,0 +1,41 @@
+task_description: 'Teach the model about the Zebu animal'
+version: 2
+created_by: grimsoftworks
+domain: animal
+seed_examples:
+  - question: What are some of the scientific classifications of the Zebu?
+    answer: |
+      The zebu has the scientific name of the Bos taurus indicus or Bos indicus. Scientific classification of the Zebu
+      has it in the Eukaryota domain, of the Animalia Kingdom. The phylum classification of the Chordata under the
+      class of animal called Mammalia. The order this animal belongs in is the Artiodactyla. The family/subfamily is
+      the Bovinae under the Box genus. The species scientific name is the Bos Taurus.
+  - question: When was the Zebu first domesticated?
+    answer: |
+      Zebu cattle were found to derive from the Indian form of aurochs and have first been domesticated
+      between 7,000 and 6,000 YBP at Mehrgarh, present-day Pakistan, by people linked to or coming from Mesopotamia.
+  - question: What kind of enviroments did the Zebu adapt?
+    answer: |
+      Compared to taurine cattle, zebus are well adapted to the hot savanna and steppe environments. These
+      adaptations result in higher tolerance for drought, heat and sunlight exposure. Unlike many Sanga cattle
+      however, zebu does not exhibit trypanotolerance, making it susceptible to nagana, as evidenced by the
+      pattern of zebu introgression into African cattle.
+  - question: How does the Zeby reproduce?
+    answer: |
+      Zebu are generally mature enough to give birth when they are 29 months old. This is based on the development
+      of their bodies to withstand the strain of carrying the calf and lactation. Early reproduction can place too
+      much stress on the body and possibly shorten lifespans. The gestation period averages 285 days, but varies
+      depending on the age and nutrition of the mother. The sex of the calf may also affect the carrying time, as
+      male calves are carried for a longer period than females. Location, breed, body weight, and season affect the
+      overall health of the animal and in return may also affect the gestation period.
+  - question: What are some uses for the Zebu?
+    answer: |
+      Zebu are used as draught and riding animals, beef cattle, dairy cattle, as well as for byproducts such as hides,
+      dung for fuel and manure, and horn for knife handles and the like. Zebu, mostly miniature zebu, are kept as
+      pets. In India, the number of draft cattle in 1998 was estimated at 65.7 million head. Zebu cows commonly have
+      low production of milk. They do not produce milk until maturation later in their lives and do not produce much.
+      When zebus are crossed with taurine cattle, milk production generally increases.
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: be0dc86cc3295986bbbcca1d55f79fed166b7021
+  patterns:
+    - zebu.md
