@@ -1,0 +1,19 @@
+created_by: ghloeffler
+domain: flowers
+seed_examples:
+- answer: Jasminum sambac is a species of jasmine native to tropical asia.
+  question: What is Jasminum sambac?
+- answer: | Jasminum sambac is an evergreen vine or shrub that grows up to 9.8 ft tall. The leaves are ovate 1.6 to 4.9 inches long and .79 to 2.95 inches wide. 
+  question: What does Jasminum sambac look like?
+- answer: Jasminum sambac is cultivated in many places especially West Asia, South Asia, and Southeast Asia.
+  question: Where can Jasminum sambac be found?
+- answer: | Yes! The flowers bloom all throughout the year and are produced in clusters of 3 to 12 together at the ends of the branches.
+  question: Does Jasminum sambac produce flowes?
+- answer: | Yes! Jasminum sambac has a distinct sweet and heady fragrance. It is widley used as an ornamental plan for its strongly scented flowers.
+  question: Does Jasminum sambac have a destinctive smell?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: afe0558e6aaf5f548a56abb8f9c934951adaa78a
+ patterns:
+   - jasminum_sambac.md
