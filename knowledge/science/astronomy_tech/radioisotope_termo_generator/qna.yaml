@@ -1,0 +1,19 @@
+created_by: 
+domain: astronomy_technology
+seed_examples:
+- answer: | June 2023
+  question:  When did the Department of Energy (DOE) awarded the MMRTG contract to a team led by Aerojet Rocketdyne
+- answer: | MMRTG
+  question: What is powered by eight Pu-238 dioxide general-purpose heat source (GPHS) modules, provided by the US Department of Energy (DOE). Initially, these eight GPHS modules generate about 2 kW thermal power.
+- answer: | Curiosity
+  question: What is the MSL rover that was successfully landed in Gale Crater on August 6, 2012
+- answer: |  US$109,000,000
+  question: How many million dollars did it cost to produce and deploy MMRTG
+- answer: | Nasa Dragonfly
+  question: Which mission to Saturn's moon Titan will use one of the two MMRTGs for which the Aerojet Rocketdyne/Teledyne Energy Systems team has recently received a contract
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 95176e7e83e80dfaed8ff7e621071881c598884b
+ patterns:
+   - multi_mission_radioisotope_thermoelectric_generator.md
