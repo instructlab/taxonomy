@@ -1,0 +1,52 @@
+task_description: |
+    This skill provides the ability to extract acronyms from texts.
+created_by: albaroca1503
+seed_examples:
+  - context: |
+      As I navigated through the intricate world of technology, I encountered a plethora of acronyms, each holding its own significance. 
+      From AI, which powers intelligent systems, to IoT, revolutionizing connectivity, and even SEO, optimizing online visibility, 
+      these abbreviations shape the modern landscape. Amidst discussions on topics like AR, VR, and ML, it's easy to get lost in the 
+      alphabet soup of IT jargon, yet understanding these terms is crucial for staying ahead in today's fast-paced digital realm.
+    question: |
+      Which are the acronyms found in the text?
+    answer: |
+      AI - Artificial Intelligence
+      IoT - Internet of Things
+      SEO - Search Engine Optimization
+      AR - Augmented Reality
+      VR - Virtual Reality
+      ML - Machine Learning
+  - context: |
+      Delving into the realm of finance unveils a labyrinth of acronyms, each serving as a cornerstone in the global economy. 
+      From GDP, the measure of a nation's economic health, to ETFs, facilitating diversified investments, and IPOs, marking the birth 
+      of new ventures in the market, these abbreviations wield significant influence. Navigating through discussions on ROIs, 
+      evaluating investment returns, and REITs, offering opportunities in real estate, requires a nuanced understanding of financial 
+      language. Amidst debates on fiscal policies like QE and ECB, it becomes evident that mastering these financial acronyms is 
+      indispensable for making informed decisions in the ever-evolving financial landscape.
+    question: |
+      Tell me the acronyms that you found in the text
+    answer: |
+      GDP - Gross Domestic Product
+      ETFs - Exchange-Traded Funds
+      IPOs - Initial Public Offerings
+      ROIs - Return on Investments
+      REITs - Real Estate Investment Trusts
+      QE - Quantitative Easing
+      ECB - European Central Bank
+  - context: |
+      Exploring the rich tapestry of Europe unveils a mosaic of cultures, histories, and institutions, each contributing to the continent's 
+      unique identity. From the EU, fostering unity and collaboration among nations, to NATO, ensuring collective defense and security, and 
+      UNESCO, safeguarding cultural heritage, these acronyms symbolize European cooperation and solidarity. Engaging in dialogues on issues 
+      like BREXIT, shaping the future of European integration, and discussing the ECB's monetary policies, steering the region's economic stability, 
+      requires a nuanced understanding of European affairs. Amidst debates on EU enlargement, climate targets like COP26, and trade agreements such as TTIP, 
+      it's evident that deciphering these acronyms is essential for comprehending Europe's multifaceted dynamics.
+    question: |
+      Provide me the list of acronyms found in the text
+    answer: |
+      EU - European Union
+      NATO - North Atlantic Treaty Organization
+      UNESCO - United Nations Educational, Scientific and Cultural Organization
+      BREXIT - British Exit (referring to the United Kingdom's exit from the European Union)
+      ECB - European Central Bank
+      COP26 - Conference of the Parties (referring to the United Nations Climate Change Conference)
+      TTIP - Transatlantic Trade and Investment Partnership
