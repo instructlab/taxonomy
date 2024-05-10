@@ -2,7 +2,7 @@
 
 name: CoC violation analysis
 
-run-name: Running CoC violation analysis
+run-name: Running CoC violation analysis (#${{ github.event.workflow_run.pull_requests[0].number }})
 
 on:
   workflow_run:
