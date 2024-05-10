@@ -24,7 +24,7 @@ permissions:
 jobs:
   annotator-insights:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ (github.event.workflow_run.conclusion == 'success') && (github.event.workflow_run.pull_requests[0].number != null) }}
     name: Run annotator insights
     steps:
       - name: "Harden Runner"
@@ -35,5 +35,5 @@ jobs:
       - name: "Invoke insight handler"
         id: run_insights
         run: |
-          curl -X 'POST' "https://pr-analysis-handler.1fuhf5gskmng.us-east.codeengine.appdomain.cloud/analyze-pr?pr_number=${{ github.event.workflow_run.pull_requests[0].number }}&owner=${{ github.event.organization }}&repo=${{ github.event.repository }}" -H 'accept: application/json' -H 'Authorization: Bearer ${{ secrets.COC_ANALYSIS_TOKEN }}' -d '' &
+          curl -X 'POST' "https://pr-analysis-handler.1fuhf5gskmng.us-east.codeengine.appdomain.cloud/analyze-pr?pr_number=${{ github.event.workflow_run.pull_requests[0].number }}&owner=${{ github.repository_owner }}&repo=${{ github.event.repository.name }}" -H 'accept: application/json' -H 'Authorization: Bearer ${{ secrets.COC_ANALYSIS_TOKEN }}' -d '' &
           echo "CoC violation analysis triggered"
