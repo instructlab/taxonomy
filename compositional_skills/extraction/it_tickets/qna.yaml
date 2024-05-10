@@ -1,0 +1,104 @@
+task_description: Metadata identification from an IT incidence ticket and generating and output in json format
+version: 2
+created_by: PaulaViguri
+seed_examples:
+  - context: |
+      Good morning
+      We request to register a new domain neo.joseph.com type cname with value neo.joseph.com.cdn.clouclouclouc.net
+      We would like to have it for the date 17 of march 2024
+      thank you
+
+
+      Joseph Lig
+      7463544656 josephlig@fds.net
+
+    question: |
+       Identify all the possible non PII metadata from the IT ticket in json format with keys and values:
+    answer: |
+      {"Request_type": "CREATION",
+      "Record_type": "CNAME",
+      "Domain_name": "neo.joseph.com",
+      "Record_value": "neo.joseph.com.cdn.clouclouclouc.net",
+      "Needed_date": "17-03-2024"
+      }
+  - context: |
+      Good morning,
+      We need to manage the following registration request for IYRH's public DNS, which advertises the subdomain
+      MKnf.rr.com
+
+      [TableDNS.png image is attached]
+
+      I attach the required entries to be published, please comment on the estimated times that will be required to
+      analyze with the business area.
+
+      [Entries_1 image attached]
+
+      All the best
+      ------------------
+      CYP Support Clients
+      Tel +34 93 194 43 55
+      Email cyp.sodeo@ufjd.com
+    question: |
+      Identify all the possible non PII metadata from the IT ticket in json format with keys and values:
+
+    answer: |
+      {"Request_type": "CREATION",
+      "Subdomain_name": "MKnf.rr.com"
+      }
+  - context: |
+      Center: Cchome
+
+      VU: PEIE789238
+
+      Ticket date and time: Thu 01/18/2024 10:54
+      Affected service: DNS [DNS]
+
+      Initial Impact: Service Degradation
+      Brief description and/or diagnosis: We need to create a DNS record of type TXT in the domain lalaldjn.eu with the
+      value sdfdfvf8capdwhfushdfgmby7yyb0qzl3day
+
+      We will keep you informed of the evolution
+    question: |
+      Identify all the possible non PII metadata from the IT ticket in json format with keys and values:
+    answer: |
+      {"Request_type": "CREATION",
+      "Record_type": "TXT",
+      "Ticket_date": "01/18/2024",
+      "Ticket_time": "10:54:00",
+      "Domain_name": "lalaldjn.eu",
+      "Record_value": "sdfdfvf8capdwhfushdfgmby7yyb0qzl3day"
+      }
+  - context: |
+      We need a TXT registration for the arabuybed.eus domain
+
+      TXT record: hdys-sito-verification=q6YHHydbdfnUHhnM888FND
+    question: |
+      Identify all the possible non PII metadata from the IT ticket in json format with keys and values:
+    answer: |
+      {"Request_type": "CREATION",
+      "Record_type": "TXT",
+      "Domain_name": "arabuybed.eus",
+      "Record_value": "hdys-sito-verification=q6YHHydbdfnUHhnM888FND"
+      }
+  - context: |
+      Good morning,
+      We need the following record A to be added in the HEISUSNd.es area for the date 21th of november 2024. Thanks
+
+      Type: A
+      Value: 195.223.453.9
+
+      Thank you.
+      Affected Person:
+      Full Name: Laure Itz
+      Affected User Location: SAINT GEORGE
+      Email: laureitz@dunjdi.es
+      Phone: ###
+    question: |
+      Identify all the possible non PII metadata from the IT ticket in json format with keys and values:
+    answer: |
+      {"Request_type": "CREATION",
+      "Record_type": "A",
+      "Domain_name": "HEISUSNd.es"
+      "IP_value":"195.223.453.9",
+      "Needed_date": "21-11-2024"
+      }
