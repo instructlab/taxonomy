@@ -1,0 +1,42 @@
+created_by: mainline-automation
+domain: astronomy_technology
+seed_examples:
+  - answer: >
+      There have been 8 earth orbiting missions that have used radioisotope
+      power, 8 missions to the outer planets, and the Apollo missions after Apollo 11
+      to the moon. The outer Solar System missions were Pioneer 10 and 11, Voyager 1 and 2, Ulysses, Galileo,
+      Cassini, and New Horizons. The RTGs on Voyager 1 and 2 have been operating since 1977. Over
+      the last four decades, 26 missions and 45 RTGs have been launched by the United States.
+    question: |
+      How many NASA missions have used radioisotope power?
+  - answer: >
+      The only Voyager missions were Voyager 1 and 2, to the best of my knowledge.
+      V'ger, from Star Trek':' The Motion Picture will develop from the Voyager 6 mission,
+      returning to find its Maker in the 2270s. It is unknown if it will use radioisotope power,
+      but it seems likely that it will use it as Voyager 6. However, this could very well change when it
+      encounters the living machines on the other side of the galaxy.
+    question: |
+      Did V'ger use radioisotope power?
+  - answer: |
+      The SNAP-19 design powered Pioneer 10 and 11, as well as Viking 1 and 2 landers.
+    question: |
+      What NASA missions did SNAP-19 power?
+  - answer: |
+      Systems Nuclear Auxiliary Power (SNAP) 19 was developed by Teledyne Energy Systems.
+    question: |
+      Who designed SNAP-19?
+  - answer: >
+      Multi-Mission Radioisotope Thermoelectric Generator (MMRTG) is powered
+      by either Pu-238 dioxide general-purpose heat source (GPHS) modules provided
+      by the US Department of energy.
+    question: |
+      What is the power source for MMRT systems?
+task_description: >
+  'The multi-mission radioisotope thermoelectric generator (MMRTG) is a type of
+  radioisotope thermoelectric generator (RTG) developed for NASA space missions
+  such as the Mars Science Laboratory (MSL)'
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 95176e7e83e80dfaed8ff7e621071881c598884b
+  patterns:
+    - multi_mission_radioisotope_thermoelectric_generator.md
