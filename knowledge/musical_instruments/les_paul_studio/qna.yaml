@@ -8,7 +8,7 @@ seed_examples:
   question: Why would someone buy a Gibson Les Paul Studio guitar?
 - answer: |
     Some of the differences between the Gibson Les Paul and Les Paul Studio guitars are:
-    
+
     1. The Les Paul Studio is a lower-cost model than the Les Paul
     2. The Les Paul Studio lacks some of the cosmetic features of the Les Paul
     3. The body of the Les Paul Studio is thinner than that of the Les Paul
@@ -27,7 +27,7 @@ seed_examples:
     The Gibson Les Paul Studio usually includes 2 humbucker pickups, which are either 498T and 490R, or P-90s
   question: What pickups do the Gibson Les Paul Studio use?
 task_description: 'Teach the model about the Gibson Les Paul Studio'
-document: 
+document:
  repo: https://github.com/juliadenham/Summit_knowledge
  commit: 854ffa248c43d08472886ed18b3de2de9e9afbe4
  patterns:
