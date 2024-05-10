@@ -50,3 +50,35 @@ seed_examples:
       ECB - European Central Bank
       COP26 - Conference of the Parties (referring to the United Nations Climate Change Conference)
       TTIP - Transatlantic Trade and Investment Partnership
+  - context: |
+      Working in the IT sector requires adeptness with various technologies and methodologies. From utilizing SDLC 
+      (Software Development Life Cycle) to manage projects efficiently, 
+      to implementing CI/CD (Continuous Integration/Continuous Deployment) pipelines for automated 
+      testing and deployment, these practices streamline development workflows. Engaging with APIs 
+      (Application Programming Interfaces) facilitates seamless integration between systems, while leveraging AWS 
+      (Amazon Web Services) or GCP (Google Cloud Platform) provides scalable infrastructure solutions. 
+      Employing DevOps principles, such as IaC (Infrastructure as Code) and Agile methodologies, fosters collaboration and 
+      innovation within cross-functional teams, ensuring the delivery of high-quality software products.
+    question: |
+      Which acronyms cold you find in the text?
+    answer: |
+      SDLC - Software Development Life Cycle
+      CI/CD - Continuous Integration/Continuous Deployment
+      APIs - Application Programming Interfaces
+      AWS - Amazon Web Services
+      GCP - Google Cloud Platform
+      IaC - Infrastructure as Code
+  - context: |
+      Black holes (BHs) are cosmic entities with gravitational fields so intense that not even light can escape. They form from the collapse of massive stars, resulting in a singularity a point of infinite density.
+      A defining feature of BHs is their event horizon (EH), marking the boundary beyond which nothing can return, known as the Schwarzschild radius (SR).
+      As matter spirals into a BH, it forms an accretion disk - a swirling mass of gas and dust emitting intense radiation.
+      BHs also generate jets of matter and energy from their ergosphere, a region where space and time are dragged along with the BH's rotation.
+      Understanding BHs involves navigating complex concepts like general relativity (GR) and quantum mechanics (QM), challenging physicists to unify these theories into a single framework of quantum gravity.
+    question: |
+      Provide me the list of acronyms that you found
+    answer: |
+      BHs - Black Holes
+      EH - Event Horizon
+      SR - Schwarzschild Radius
+      GR - General Relativity
+      QM - Quantum Mechanics
