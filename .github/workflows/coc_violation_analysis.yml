@@ -1,0 +1,21 @@
+name: CoC violation analysis
+run-name: Running CoC violation analysis
+on:
+  workflow_run:
+    workflows: [Lint]
+    types:
+      - completed
+jobs:
+  annotator-insights:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    name: Run annotator insights
+    steps:
+      - name: Invoke insight handler
+        id: run_insights
+        run: |
+          pull_request_number=$(jq --raw-output '.workflow_run.pull_requests[0].number' "$GITHUB_EVENT_PATH")
+          github_org=$(echo ${{ github.repository }} | cut -d "/" -f 1)
+          repo_name=$(echo ${{ github.repository }} | cut -d "/" -f 2)
+          curl -X 'POST' "https://pr-analysis-handler.1fuhf5gskmng.us-east.codeengine.appdomain.cloud/analyze-pr?pr_number=${pull_request_number}&owner=${github_org}&repo=${repo_name}" -H 'accept: application/json' -H 'Authorization: Bearer ${{ secrets.COC_ANALYSIS_TOKEN }}' -d '' &
+          echo "CoC violation analysis triggered"
