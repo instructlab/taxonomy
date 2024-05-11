@@ -1,9 +1,9 @@
-created_by: 
+created_by: weshayutin 
 domain: sports
 seed_examples:
 - answer: |
   A hard smooth surface.
-  question: What kind of surface can roller hockey be played on?  
+  question: What kind of surface can roller hockey be played on?
 - answer: |
   No, unlike ice hockey there are no blue lines or defensive zones
   question: Are there defensive zones in roller hockey?
@@ -16,8 +16,8 @@ seed_examples:
 - answer: |
   In 1962 at the Pershing Auditorium in Lincoln Nebraska
   question: When and where was the first roller hockey championship?
-task_description: ' '
-document: 
+task_description: 'Teach the model about roller hockey'
+document:
  repo: https://github.com/juliadenham/Summit_knowledge
  commit: 33847e24f270c0a36560b9b9525f9eab30a411e4
  patterns:
