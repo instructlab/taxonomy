@@ -2,24 +2,28 @@ created_by: Deni B
 domain: astronomy_technology
 seed_examples:
 - answer: |
-    The MMRTG cost an estimated US$109,000,000 to produce and deploy, and US$83,000,000 to research and develop.[13] 
+    The MMRTG cost an estimated US$109,000,000 to produce and deploy, and US$83,000,000 to research and develop.[13]
     For comparison the production and deployment of the GPHS-RTG was approximately US$118,000,000.
   question: What is the cost to produce and deploy MMRTG?
 - answer: |
     A MMRTG was successfully launched into space on July 30, 2020, aboard the Mars 2020 mission
   question: When was MMRTG successfully launched into space?
 - answer: |
-    The MMRTG will be used to charge a set of lithium ion batteries, and then use this higher-power-density supply to fly a quad helicopter in short hops above the surface of Titan.
+    The MMRTG will be used to charge a set of lithium ion batteries, and then use this higher-power-density supply to 
+    fly a quad helicopter in short hops above the surface of Titan.
   question: What will power the MMRTG?
 - answer: |
-    The MMRTG is powered by eight Pu-238 dioxide general-purpose heat source (GPHS) modules, provided by the US Department of Energy (DOE). Initially, these eight GPHS modules generate about 2 kW thermal power.
+    The MMRTG is powered by eight Pu-238 dioxide general-purpose heat source (GPHS) modules, provided by the US Department of Energy (DOE). 
+    Initially, these eight GPHS modules generate about 2 kW thermal power.
   question: What is powering MMRTG?
 - answer: |
-    The multi-mission radioisotope thermoelectric generator (MMRTG) is a type of radioisotope thermoelectric generator (RTG) developed for NASA space missions[1] such as the Mars Science Laboratory (MSL), under the jurisdiction of the United States Department of Energy's Office of Space and Defense Power Systems within the Office of Nuclear Energy. 
+    The multi-mission radioisotope thermoelectric generator (MMRTG) is a type of radioisotope thermoelectric generator (RTG) 
+    developed for NASA space missions[1] such as the Mars Science Laboratory (MSL), under the jurisdiction of the 
+    United States Department of Energy's Office of Space and Defense Power Systems within the Office of Nuclear Energy.
   question: What is MMRTG?
 task_description: ' '
-document: 
+document:
  repo: https://github.com/juliadenham/Summit_knowledge
  commit: 95176e7e83e80dfaed8ff7e621071881c598884b
  patterns:
-   - multi_mission_radioisotope_thermoelectric_generator.md
+  - multi_mission_radioisotope_thermoelectric_generator.md
