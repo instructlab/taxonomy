@@ -1,15 +1,15 @@
 created_by:
 domain: flowers
 seed_examples:
-- answer: | The English common name of "Arabian jasmine", Jasminum sambac is due to it being widely cultivated in Southwest of Saudi Arabia, Yemen and Oman
+- answer: The English common name of "Arabian jasmine", Jasminum sambac is due to it being widely cultivated in Southwest of Saudi Arabia, Yemen and Oman|
   question: Why is Jasminum sambac commonly referred to as "Arabian jasmine"?
-- answer: | The Medieval Arabic term "zanbaq" denoted jasmine flower-oil from the flowers of any species of jasmine
+- answer: The Medieval Arabic term "zanbaq" denoted jasmine flower-oil from the flowers of any species of jasmine|
   question: What did the Medieval Arabic term "zanbaq" specifically refer to in relation to jasmine flowers?
-- answer: | In 1753, Carl Linnaeus first described the plant as Nyctanthes sambac in the first edition of his famous book Systema Naturae
+- answer: In 1753, Carl Linnaeus first described the plant as Nyctanthes sambac in the first edition of his famous book Systema Naturae|
   question: How did Carl Linnaeus classify the plant in his 1753 publication "Systema Naturae"?
-- answer: | In 1789, William Aiton reclassified the plant to the genus Jasminum
+- answer: In 1789, William Aiton reclassified the plant to the genus Jasminum|
   question: Who was responsible for reclassifying the plant to the genus Jasminum in 1789?
-- answer: | Jasminum sambac contains dotriacontanoic acid, dotriacontanol, oleanolic acid, daucosterol, hesperidin, and [+]-jasminoids A, B, C, D in its roots
+- answer: Jasminum sambac contains dotriacontanoic acid, dotriacontanol, oleanolic acid, daucosterol, hesperidin, and [+]-jasminoids A, B, C, D in its roots|
   question: What are some of the chemical compounds found in the roots of Jasminum sambac?
 task_description: ' '
 document:
