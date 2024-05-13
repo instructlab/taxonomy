@@ -5,24 +5,24 @@ seed_examples:
     The Poison Ivy plant is in the Cashews and Pistachios family called Anacardiacea.
   question: What family is Poison Ivy a member of?
 - answer: |
-    The clear oil from Poison Ivy that can cause an allergic reaction is called urushiol. 
+    The clear oil from Poison Ivy that can cause an allergic reaction is called urushiol.
   question: What is the name of the clear oil from Poison Ivy that can lead to a allergic reaction?
 - answer: |
     Poison Ivy is most commonly considered a pest weed by humans?
   question: How is the Poison Ivy plan most commonly perceived by humans?
 - answer: |
-    Poison Ivy can grow as small plants, shrubs, or climbing vines. They are 
-    commonly characterized by clusters of leaves, each containing three leaflets, 
+    Poison Ivy can grow as small plants, shrubs, or climbing vines. They are
+    commonly characterized by clusters of leaves, each containing three leaflets,
     hence the common expression "leaves of three, let it be".
   question: How does Poison Ivy grow?
 - answer: |
-    Urushiol-induced contact dermatitis is the allergic reaction caused by poison ivy. 
-    In extreme cases, a reaction can progress to anaphylaxis. Around 15 to 25 percent of 
-    people have no allergic reaction to urushiol, but most people have a greater reaction 
+    Urushiol-induced contact dermatitis is the allergic reaction caused by poison ivy.
+    In extreme cases, a reaction can progress to anaphylaxis. Around 15 to 25 percent of
+    people have no allergic reaction to urushiol, but most people have a greater reaction
     with repeated or more concentrated exposure.
   question: How does Poison Ivy effect humans when they get it on their skin?
 task_description: ' '
-document: 
+document:
  repo: https://github.com/juliadenham/Summit_knowledge
  commit: b9c7c733c6874836efef62c473aea66ca82f67f0
  patterns:
