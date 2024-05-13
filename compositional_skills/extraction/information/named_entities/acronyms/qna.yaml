@@ -3,10 +3,14 @@ task_description: |
 created_by: albaroca1503
 seed_examples:
   - context: |
-      As I navigated through the intricate world of technology, I encountered a plethora of acronyms, each holding its own significance. 
-      From AI, which powers intelligent systems, to IoT, revolutionizing connectivity, and even SEO, optimizing online visibility, 
-      these abbreviations shape the modern landscape. Amidst discussions on topics like AR, VR, and ML, it's easy to get lost in the 
-      alphabet soup of IT jargon, yet understanding these terms is crucial for staying ahead in today's fast-paced digital realm.
+      As I navigated through the intricate world of technology, I encountered a plethora of acronyms, 
+      each holding its own significance. 
+      From AI, which powers intelligent systems, to IoT, revolutionizing connectivity, and even SEO, 
+      optimizing online visibility, 
+      these abbreviations shape the modern landscape. Amidst discussions on topics like AR, VR, and ML, 
+      it's easy to get lost in the 
+      alphabet soup of IT jargon, yet understanding these terms is crucial for staying ahead in today's 
+      fast-paced digital realm.
     question: |
       Which are the acronyms found in the text?
     answer: |
@@ -17,11 +21,16 @@ seed_examples:
       VR - Virtual Reality
       ML - Machine Learning
   - context: |
-      Delving into the realm of finance unveils a labyrinth of acronyms, each serving as a cornerstone in the global economy. 
-      From GDP, the measure of a nation's economic health, to ETFs, facilitating diversified investments, and IPOs, marking the birth 
-      of new ventures in the market, these abbreviations wield significant influence. Navigating through discussions on ROIs, 
-      evaluating investment returns, and REITs, offering opportunities in real estate, requires a nuanced understanding of financial 
-      language. Amidst debates on fiscal policies like QE and ECB, it becomes evident that mastering these financial acronyms is 
+      Delving into the realm of finance unveils a labyrinth of acronyms, each serving as a cornerstone 
+      in the global economy. 
+      From GDP, the measure of a nation's economic health, to ETFs, facilitating diversified investments, 
+      and IPOs, marking the birth 
+      of new ventures in the market, these abbreviations wield significant influence. Navigating through 
+      discussions on ROIs, 
+      evaluating investment returns, and REITs, offering opportunities in real estate, 
+      requires a nuanced understanding of financial 
+      language. Amidst debates on fiscal policies like QE and ECB, 
+      it becomes evident that mastering these financial acronyms is 
       indispensable for making informed decisions in the ever-evolving financial landscape.
     question: |
       Tell me the acronyms that you found in the text
@@ -34,12 +43,18 @@ seed_examples:
       QE - Quantitative Easing
       ECB - European Central Bank
   - context: |
-      Exploring the rich tapestry of Europe unveils a mosaic of cultures, histories, and institutions, each contributing to the continent's 
-      unique identity. From the EU, fostering unity and collaboration among nations, to NATO, ensuring collective defense and security, and 
-      UNESCO, safeguarding cultural heritage, these acronyms symbolize European cooperation and solidarity. Engaging in dialogues on issues 
-      like BREXIT, shaping the future of European integration, and discussing the ECB's monetary policies, steering the region's economic stability, 
-      requires a nuanced understanding of European affairs. Amidst debates on EU enlargement, climate targets like COP26, and trade agreements such as TTIP, 
-      it's evident that deciphering these acronyms is essential for comprehending Europe's multifaceted dynamics.
+      Exploring the rich tapestry of Europe unveils a mosaic of cultures, histories, 
+      and institutions, each contributing to the continent's 
+      unique identity. From the EU, fostering unity and collaboration among nations, 
+      to NATO, ensuring collective defense and security, and 
+      UNESCO, safeguarding cultural heritage, these acronyms symbolize European 
+      cooperation and solidarity. Engaging in dialogues on issues 
+      like BREXIT, shaping the future of European integration, and discussing 
+      the ECB's monetary policies, steering the region's economic stability, 
+      requires a nuanced understanding of European affairs. Amidst debates on 
+      EU enlargement, climate targets like COP26, and trade agreements such as TTIP, 
+      it's evident that deciphering these acronyms is essential 
+      for comprehending Europe's multifaceted dynamics.
     question: |
       Provide me the list of acronyms found in the text
     answer: |
@@ -51,13 +66,16 @@ seed_examples:
       COP26 - Conference of the Parties (referring to the United Nations Climate Change Conference)
       TTIP - Transatlantic Trade and Investment Partnership
   - context: |
-      Working in the IT sector requires adeptness with various technologies and methodologies. From utilizing SDLC 
+      Working in the IT sector requires adeptness with various technologies and methodologies. 
+      From utilizing SDLC 
       (Software Development Life Cycle) to manage projects efficiently, 
       to implementing CI/CD (Continuous Integration/Continuous Deployment) pipelines for automated 
       testing and deployment, these practices streamline development workflows. Engaging with APIs 
-      (Application Programming Interfaces) facilitates seamless integration between systems, while leveraging AWS 
+      (Application Programming Interfaces) facilitates seamless integration between systems, 
+      while leveraging AWS 
       (Amazon Web Services) or GCP (Google Cloud Platform) provides scalable infrastructure solutions. 
-      Employing DevOps principles, such as IaC (Infrastructure as Code) and Agile methodologies, fosters collaboration and 
+      Employing DevOps principles, such as IaC (Infrastructure as Code) and Agile methodologies, 
+      fosters collaboration and 
       innovation within cross-functional teams, ensuring the delivery of high-quality software products.
     question: |
       Which acronyms cold you find in the text?
@@ -69,11 +87,16 @@ seed_examples:
       GCP - Google Cloud Platform
       IaC - Infrastructure as Code
   - context: |
-      Black holes (BHs) are cosmic entities with gravitational fields so intense that not even light can escape. They form from the collapse of massive stars, resulting in a singularity a point of infinite density.
-      A defining feature of BHs is their event horizon (EH), marking the boundary beyond which nothing can return, known as the Schwarzschild radius (SR).
-      As matter spirals into a BH, it forms an accretion disk - a swirling mass of gas and dust emitting intense radiation.
-      BHs also generate jets of matter and energy from their ergosphere, a region where space and time are dragged along with the BH's rotation.
-      Understanding BHs involves navigating complex concepts like general relativity (GR) and quantum mechanics (QM), challenging physicists to unify these theories into a single framework of quantum gravity.
+      Black holes (BHs) are cosmic entities with gravitational fields so intense that not even light can escape. 
+      They form from the collapse of massive stars, resulting in a singularity a point of infinite density.
+      A defining feature of BHs is their event horizon (EH), marking the boundary beyond which nothing can return, 
+      known as the Schwarzschild radius (SR).
+      As matter spirals into a BH, it forms an accretion disk - a swirling mass of gas and dust emitting 
+      intense radiation.
+      BHs also generate jets of matter and energy from their ergosphere, a region where space and time are 
+      dragged along with the BH's rotation.
+      Understanding BHs involves navigating complex concepts like general relativity (GR) and quantum mechanics (QM), 
+      challenging physicists to unify these theories into a single framework of quantum gravity.
     question: |
       Provide me the list of acronyms that you found
     answer: |
