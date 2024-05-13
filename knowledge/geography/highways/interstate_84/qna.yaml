@@ -1,0 +1,54 @@
+created_by: makelinux
+domain: geography
+seed_examples:
+  - question:
+      What are some notable geographical features and landmarks
+      along Interstate 84's route?
+    answer:
+      Interstate 84 passes through the Pocono Mountains in Pennsylvania and
+      crosses the Delaware and Neversink rivers in New York. It also intersects
+      with major roads like the New York State Thruway (I-87) and the Taconic
+      State Parkway in New York. In Connecticut, it crosses the Housatonic River
+      on the Rochambeau Bridge and the Connecticut River on the Bulkeley Bridge.
+  - question:
+      How does Interstate 84 contribute to transportation between major
+      cities in the Northeast?
+    answer:
+      Interstate 84 serves as a crucial route between New York City and
+      Boston, passing through major cities like Hartford, Connecticut. It
+      provides a high-speed connection for both passenger and commercial
+      traffic, facilitating travel and commerce between these metropolitan
+      areas.
+  - question:
+      What historical and developmental challenges did Interstate 84 face in
+      its construction and expansion?
+    answer:
+      Interstate 84 faced challenges in its original proposed route,
+      particularly in Rhode Island due to environmental concerns about its
+      impact on the Scituate Reservoir. Additionally, widening projects in
+      Waterbury, Connecticut, experienced cost overruns, delays, and
+      construction defects, leading to investigations and legal actions.
+  - question:
+      How did Interstate 86 relate to Interstate 84 in Connecticut and
+      Massachusetts?
+    answer:
+      Interstate 86 was a designation used for a section of Interstate 84
+      between East Hartford, Connecticut, and Sturbridge, Massachusetts. It was
+      signed in the late 1970s and early 1980s but was later redesignated as
+      I-84 in 1984. The renumbering also affected adjacent roads like I-384 and
+      US 6.
+  - question:
+      Are there any tolls associated with Interstate 84?
+    answer:
+      Generally, Interstate 84 does not have tolls, except for the
+      Newburgh–Beacon Bridge crossing the Hudson River in New York, which
+      carries an eastbound-only toll for passenger vehicles. Additionally, there
+      were tolls on I-84 in New York from 1992 to 2006, managed by the New York
+      State Thruway Authority, before being transferred back to NYSDOT.
+task_description:
+  Interstate 84 (Pennsylvania–Massachusetts)
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: HEAD
+  patterns:
+    - interstate_84.md
