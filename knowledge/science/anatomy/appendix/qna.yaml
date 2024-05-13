@@ -1,0 +1,50 @@
+created_by: makelinux
+domain: medical
+seed_examples:
+  - question:
+      What is the appendix, and where is it located in the human body?
+    answer:
+      The appendix is a finger-like, blind-ended tube connected to the cecum,
+      a pouch-like structure in the large intestine. It typically resides in the
+      lower right quadrant of the abdomen near the right hip bone.
+  - question:
+      What is the proposed function of the appendix according to recent
+      research, contrary to its previous perception as a vestigial organ?
+    answer:
+      Recent research suggests that the appendix serves as a reservoir for
+      beneficial gut bacteria. During illness, when these bacteria are flushed
+      from the intestines, the appendix may harbor them, helping to repopulate
+      the gut flora after the illness subsides.
+  - question:
+      What are some variations in the position and structure of the appendix
+      within the human body?
+    answer:
+      Variations include mirror-imaged anatomy in identical twins,
+      displacement to the left side due to intestinal malrotation, and
+      variability in the position of the tip of the appendix. Additionally, in
+      very rare cases, the appendix may be absent altogether.
+  - question:
+      What are some clinical significances of the appendix?
+    answer:
+      Common diseases include appendicitis and carcinoid tumors. Appendicitis
+      is characterized by inflammation of the appendix and typically requires
+      surgical removal to prevent complications such as rupture and peritonitis.
+  - question:
+      How has the perception of the appendix evolved over time, and what
+      evolutionary explanations have been proposed for its existence?
+    answer:
+      Initially considered vestigial, recent research suggests its role in
+      maintaining gut flora. Evolutionary explanations propose that it was once
+      essential for digesting fibrous vegetation but degraded over time as
+      humans' dietary habits changed. Its recurring presence across mammalian
+      evolution suggests a selective advantage, particularly in environments
+      where diarrhea is prevalent due to its protective functions.
+task_description:
+  Appendix (anatomy)
+document:
+  repo:
+    https://github.com/juliadenham/Summit_knowledge
+  commit:
+    HEAD
+  patterns:
+    - appendix_anatomy.md
