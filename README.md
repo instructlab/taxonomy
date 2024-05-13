@@ -112,7 +112,7 @@ If you have not written YAML before, don't be intimidated - it's just text.
   front of the first field (`question` or `context`). The remaining keys in the
   example should not have this "-".
 > - Some special characters such as " and ' need to be escaped with backslash. This is why some
-  of the lines for keys in the example YAML we provided have the '|' character.
+  of the lines for keys in the example YAML start the value with the '|' character followed a new line and then an indented multi-line string.
   This character disables all of the special characters in the value for the key.
   You might also want to use the '|' character for multi-line strings.
 > - Consider quoting all values with " to avoid surprising YAML parser behavior
