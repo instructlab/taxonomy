@@ -1,30 +1,30 @@
 created_by: ae2015
 
-Title of work: confusing_questions, question 1 (out of 5)
+Title of work: confusing_questions, context of example 1 (out of 5)
 Link to work: N/A
 Revision: N/A
 License of the work: Apache-2.0
 Creator names: self-authored
 
-Title of work: confusing_questions, question 2 (out of 5)
+Title of work: confusing_questions, context of example 2 (out of 5)
 Link to work: N/A
 Revision: N/A
 License of the work: Apache-2.0
 Creator names: self-authored
 
-Title of work: confusing_questions, question 3 (out of 5)
+Title of work: confusing_questions, context of example 3 (out of 5)
 Link to work: https://science.nasa.gov/mission/lucy/
 Revision: as of April 24, 2024
 License of the work: public domain
 Creator names: NASA Authors
 
-Title of work: confusing_questions, question 4 (out of 5)
+Title of work: confusing_questions, context of example 4 (out of 5)
 Link to work: https://governors.library.ca.gov/38-Schwarzenegger.html
 Revision: as of April 24, 2024
 License of the work: public domain
 Creator names: California State Library Authors
 
-Title of work: confusing_questions, question 5 (out of 5)
+Title of work: confusing_questions, context of example 5 (out of 5)
 Link to work: https://www.cdc.gov/flu/about/keyfacts.htm
 Revision: as of April 24, 2024
 License of the work: public domain
