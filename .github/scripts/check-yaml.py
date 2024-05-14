@@ -127,7 +127,6 @@ class CheckYaml:
                 with open(full_path, "r", encoding="utf-8") as stream:
                     content = stream.read()
 
-                lint_error = False
                 for lint_problem in linter.run(
                     input=content, conf=self.yamllint_config
                 ):
@@ -144,7 +143,6 @@ class CheckYaml:
                                 line=lint_problem.line,
                                 col=lint_problem.column,
                             )
-                            lint_error = True
                         case _:
                             self.warning(
                                 file=taxonomy_path,
@@ -152,8 +150,6 @@ class CheckYaml:
                                 line=lint_problem.line,
                                 col=lint_problem.column,
                             )
-                if lint_error:
-                    continue
 
                 parsed = yaml.safe_load(content)
                 if not parsed:
