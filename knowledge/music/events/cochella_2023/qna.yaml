@@ -1,24 +1,24 @@
 created_by: canadiansean
 domain: music
 seed_examples:
-- answer: | 
+- answer: |
     June 14, 2022
   question: when were the dates for coachella 2023 announced?
-- answer: | 
+- answer: |
     Bad Bunny
   question: Who did Post Malone guest for on Weekend 1?
-- answer: | 
+- answer: |
     Ellie Goudling
   question: Who Joined Calvin Harris on stage on Weekend 1?
-- answer: | 
+- answer: |
     Weekend 2 Sunday
   question: What night did Blink 182 play at Coachella 2023?
-- answer: | 
+- answer: |
     January 10, 2023
   question: When was the lineup for Coachella 2023 announced?
 task_description: ' '
-document: 
+document:
  repo: https://github.com/juliadenham/Summit_knowledge
  commit: 7294fab8567ef650eec43c5fcfb59701fb9287ba
  patterns:
-   - coachella_2023.md
+- coachella_2023.md
