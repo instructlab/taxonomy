@@ -12,8 +12,8 @@ seed_examples:
 - answer: Molt lasts two to three months
   question: How long does a molt last?
 task_description: 'Create questions and answers based off the wikipedia page of the Black Capped Chickadee'
-document: 
+document:
  repo: https://github.com/juliadenham/Summit_knowledge
  commit: c537b93dec7136d3ac53f96016e6d7a057966fb1
  patterns:
-   - chickadee.md
+  - chickadee.md
