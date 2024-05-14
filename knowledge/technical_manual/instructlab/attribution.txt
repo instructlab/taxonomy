@@ -1,0 +1,6 @@
+Title of work: Welcome to the InstructLab Community repository
+Link to work: https://github.com/instructlab/community/blob/main/README.md
+Revision: d1e4c7f38a56e9e7bb780a4f1f7241848ce035cf
+License of the work: Apache License Version 2.0.
+SPDX-License-Identifier: Apache-2.0
+Creator names: skairali
