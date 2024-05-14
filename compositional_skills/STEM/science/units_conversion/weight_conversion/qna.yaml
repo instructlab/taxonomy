@@ -1,33 +1,64 @@
+---
 task_description: " To teach a model about converting between pounds and kilograms"
 created_by: luciaroldann
 seed_examples:
-  - question: 'Hoy many kilograms is one pound?'
+  - question: Hoy many kilograms is one pound?
     answer: |
-      'By definition 1 pound is 0.453592 kilograms'
-  - question: 'What is 50kg converted to pounds?'
-    answer: |
-    "Hello! To convert 50 kilograms into pounds, you can use the conversion\
-    \ factor 1 kg is 2,2 lbs . Therefore, 50 kilometers is equivalent to approximately\
-    \ 50 * 2.20462 = 110.231 lbs."
-   - question: 'What is heavier 30 lbs or 20 kg? '
-    answer: |
-    'To compare weights in pounds  and kilograms, you can convert one
-    to the other scale. The formula to convert pounds to kilograms is 1lbs = 0,453592 kg
+      "By definition 1 pound is 0.453592 kilograms"
+  - question: What is 50kg converted to pounds?
+    answer: >
+      "Hello! To convert 50 kilograms into pounds, you can use the conversion
 
-    Lets convert 30lbs to kg
+      factor 1 kg is 2,2 lbs . Therefore, 50 kilometers is equivalent to approximately
 
-    30 * 0,453592 = 13,60 kg
+      50 * 2.20462 = 110.231 lbs."
+  - question: "What is heavier 30 lbs or 20 kg? "
+    answer: >
+      "To compare weights in pounds  and kilograms, you can convert one
+
+      to the other scale. The formula to convert pounds to kilograms is 1lbs = 0,453592 kg
 
 
-    Therefore, 30 lbs  are 13,60 kg which is lighter than 20kg.
-    So we can conclude that 20kg are heavier than 30lbs
-   - question: 'Convert 72 kilograms into lbs?'
-    answer: |
-     "Hello! To convert 72 kilograms into pounds, you can use the conversion\
-    \ factor 1 kg is 2,2 lbs . Therefore, 72 kilometers is equivalent to approximately\
-    \ 72 * 2,2 = 158,4 lbs."
-   - question: 'Help me converting 32 pounds to kilograms '
-    answer: |
-      'The formula to convert Celsius to Fahrenheit is 1lbs = 0,453592 kg. When applying
-    this formula, you can see that 32 * 0,453592 = 14,515 kg . So 32 pounds is 14,515 kg.
-    
+      Lets convert 30lbs to kg
+
+
+      30 * 0,453592 = 13,60 kg
+
+
+
+      Therefore, 30 lbs  are 13,60 kg which is lighter than 20kg.
+
+      So we can conclude that 20kg are heavier than 30lbs"
+  - question: Convert 72 kilograms into lbs?
+    answer: >
+      "Hello! To convert 72 kilograms into pounds, you can use the conversion
+
+      factor 1 kg is 2,2 lbs . Therefore, 72 kilometers is equivalent to approximately
+
+      72 * 2,2 = 158,4 lbs."
+  - question: Help me converting 32 pounds to kilograms
+    answer: >
+      "The formula to convert Celsius to Fahrenheit is 1lbs = 0,453592 kg.
+      When applying
+
+      this formula, you can see that 32 * 0,453592 = 14,515 kg . So 32 pounds is 14,515 kg."
+
+
+
+
+      Therefore, 30 lbs  are 13,60 kg which is lighter than 20kg.
+
+      So we can conclude that 20kg are heavier than 30lbs
+  - question: Convert 72 kilograms into lbs?
+    answer: >
+      "Hello! To convert 72 kilograms into pounds, you can use the conversion
+
+      factor 1 kg is 2,2 lbs . Therefore, 72 kilometers is equivalent to approximately
+
+      72 * 2,2 = 158,4 lbs."
+  - question: "Help me converting 32 pounds to kilograms "
+    answer: >
+      'The formula to convert Celsius to Fahrenheit is 1lbs = 0,453592 kg.
+      When applying
+
+      this formula, you can see that 32 * 0,453592 = 14,515 kg . So 32 pounds is 14,515 kg.
