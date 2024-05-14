@@ -5,29 +5,16 @@ seed_examples:
       The constellation is named after the mythical phoenix.
     question: What is the Phoenix constellation named after?
   - answer: |
-      The brightest star, Alpha Phoenicis, is named Ankaa, 
-      an Arabic word meaning 'the Phoenix'. It is an orange 
-      giant of apparent visual magnitude 2.37 and spectral type K0.5IIIb, 
-      77 light years distant from Earth and orbited by a secondary object 
-      about which little is known.
+      The brightest star, Alpha Phoenicis, is named Ankaa, an Arabic word meaning 'the Phoenix'. It is an orange giant of apparent visual magnitude 2.37 and spectral type K0.5IIIb, 77 light years distant from Earth and orbited by a secondary object about which little is known.
     question: What is the brightest star in the Phoenix constellation?
   - answer: |
-      Phoenix is the radiant of two annual meteor showers. The Phoenicids, 
-      also known as the December Phoenicids, were first observed on 
-      3 December 1887. The shower was particularly intense in December 1956, 
-      and is thought related to the breakup of the short-period comet 
-      289P/Blanpain. It peaks around 4–5 December, though is not seen every 
-      year. A very minor meteor shower peaks around July 14 with around 
-      one meteor an hour, though meteors can be seen anytime from 
-      July 3 to 18; this shower is referred to as the July Phoenicids.
+      Phoenix is the radiant of two annual meteor showers. The Phoenicids, also known as the December Phoenicids, were first observed on 3 December 1887. The shower was particularly intense in December 1956, and is thought related to the breakup of the short-period comet 289P/Blanpain. It peaks around 4–5 December, though is not seen every year. A very minor meteor shower peaks around July 14 with around one meteor an hour, though meteors can be seen anytime from July 3 to 18; this shower is referred to as the July Phoenicids.
     question: Is the Phoenix constellation the radiant of any meteor showers?
   - answer: |
-      The first depiction of this constellation in a celestial atlas was 
-      in Johann Bayer's Uranometria of 1603.
+      The first depiction of this constellation in a celestial atlas was in Johann Bayer's Uranometria of 1603.
     question: Where was the Phoenix constellation first depicted in a celestial atlas?
   - answer: |
-      The constellations Phoenix, Grus, Pavo and Tucana, are known as the 
-      Southern Birds.
+      The constellations Phoenix, Grus, Pavo and Tucana, are known as the Southern Birds.
     question: Which constellations are known as the Southern Birds?
 task_description: " "
 document:
