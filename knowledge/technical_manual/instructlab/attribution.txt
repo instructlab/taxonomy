@@ -1,0 +1,6 @@
+Title of work: User manual for InstructLab CLI
+Link to work: https://github.com/instructlab/instructlab/commit/7658779b93d65ee93b846111df805bfacf11c630
+License: Apache-2.0
+SPDX-License-Identifier: Apache-2.0
+Creator names: InstructLab contributors https://github.com/instructlab/instructlab/graphs/contributors
+Copyright information

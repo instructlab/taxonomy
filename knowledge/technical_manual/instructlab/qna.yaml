@@ -1,0 +1,37 @@
+created_by: laurachiticariu
+domain: Command Line Tools
+seed_examples:
+  - question: How do you report a security vulnerability for InstructLab?
+    answer: Send an email with as many details as possible to security-reporting@instructlab.ai.
+  - question: What should I do when `ilab generate` is slow on MacOS ?
+    answer: |
+      If there is less than 8GM RAM available before serving a model, check to see if you can free up some memory.
+      The suggestion here is to tweak the GPU limit of the macOS. By default it's around 60%-70% of your total RAM available, which is expressed as 0:
+      ```
+      sudo sysctl iogpu.wired_limit_mb
+      iogpu.wired_limit_mb = 0
+      ```
+  - question: How do you train the model using InstructLab CLI ?
+    answer: run `ilab train`
+  - question: Can you run ilab in a container ?
+    answer: |
+      Yes. This guide shows you how to put the ilab CLI, all of its dependencies, and your GPU into a container for an isolated and easily reproducible experience.
+      Steps to build an image then run a container.
+      The Containerfile is based on Nvidia CUDA image, which lucky for us plugs directly into Podman via their nvidia-container-toolkit! The ubi9 base image does not have most packages installed. The bulk of the Containerfile is spent configuring your system so ilab can be installed and run properly. ubi9 as compared to ubuntu cannot install the entire nvidia-12-4 toolkit. This did not impact performance during testing.
+      ```
+      1. podman build -f <Containerfile_Path>
+      2. curl -s -L https://nvidia.github.io/libnvidia-container/stable/rpm/nvidia-container-toolkit.repo |   sudo tee /etc/yum.repos.d/nvidia-container-toolkit.repo
+      3. sudo yum-config-manager --enable nvidia-container-toolkit-experimental
+      4. sudo dnf install -y nvidia-container-toolkit
+      5. sudo nvidia-ctk cdi generate --output=/etc/cdi/nvidia.yaml
+      6. nvidia-ctk cdi list
+      7. podman run --device nvidia.com/gpu=0  --security-opt=label=disable -it <IMAGE_ID>
+      ```
+  - question: How do you generate synthetic data for training the model ?
+    answer: run `ilab generate`
+task_description: Using the InstructLab technique for infusing knowledge and skills in LLMs
+document:
+  repo: https://github.com/instructlab/instructlab
+  commit: "7658779"
+  patterns:
+    - "*.md"
