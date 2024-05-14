@@ -9,17 +9,19 @@ seed_examples:
     A MMRTG was successfully launched into space on July 30, 2020, aboard the Mars 2020 mission
   question: When was MMRTG successfully launched into space?
 - answer: |
-    The MMRTG will be used to charge a set of lithium ion batteries, and then use this higher-power-density supply to 
-    fly a quad helicopter in short hops above the surface of Titan.
+    The MMRTG will be used to charge a set of lithium ion batteries, and then use this higher-power-density supply to
+     fly a quad helicopter in short hops above the surface of Titan.
   question: What will power the MMRTG?
 - answer: |
-    The MMRTG is powered by eight Pu-238 dioxide general-purpose heat source (GPHS) modules, provided by the US Department of Energy (DOE). 
+    The MMRTG is powered by eight Pu-238 dioxide general-purpose heat source (GPHS) modules, provided by the US
+     Department of Energy (DOE).
     Initially, these eight GPHS modules generate about 2 kW thermal power.
   question: What is powering MMRTG?
 - answer: |
-    The multi-mission radioisotope thermoelectric generator (MMRTG) is a type of radioisotope thermoelectric generator (RTG) 
-    developed for NASA space missions[1] such as the Mars Science Laboratory (MSL), under the jurisdiction of the 
-    United States Department of Energy's Office of Space and Defense Power Systems within the Office of Nuclear Energy.
+    The multi-mission radioisotope thermoelectric generator (MMRTG) is a type of radioisotope thermoelectric generator
+     (RTG) developed for NASA space missions[1] such as the Mars Science Laboratory (MSL), under the jurisdiction of
+     the United States Department of Energy's Office of Space and Defense Power Systems within the Office of Nuclear
+     Energy.
   question: What is MMRTG?
 task_description: ' '
 document:
