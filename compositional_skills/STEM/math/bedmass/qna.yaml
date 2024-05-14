@@ -1,15 +1,27 @@
 created_by: Matt
 seed_examples:
-- answer: 'The expression evaluates to: ((40 / 5) + 7) * (12 - 8^2) = (8 + 7) * (12 - 64) = 15 * (-52) = -780.'
-  question: 'What is the value of: ((40 / 5) + 7) * (12 - 8^2)'
-- answer: 'The expression evaluates to: ((24 / 3) + 5) * (9 - 6^2) = (8 + 5) * (9 - 36) = 13 * (-27) = -351.'
-  question: 'What is the value of: ((24 / 3) + 5) * (9 - 6^2)'
-- answer: 'The calculation proceeds as: (18 * 2) / ((3 * 2) - 4) = 36 / (6 - 4) = 36 / 2 = 18.'
-  question: 'Determine the value of: (18 * 2) / ((3 * 2) - 4)'
-- answer: 'The expression simplifies as: ((25 - 5) * (6 + 3)) / (15 / 3) = (20 * 9) / 5 = 180 / 5 = 36.'
-  question: 'Find the result of: ((25 - 5) * (6 + 3)) / (15 / 3)'
-- answer: 'The calculation proceeds as: (6 * 2) + ((12 / 3) + 2^2) = 12 + (4 + 4) = 12 + 8 = 20.'
-  question: 'Calculate the value of: (6 * 2) + ((12 / 3) + 2^2)'
-- answer: 'The expression simplifies as: ((20 - 4) * (3 + 2)) / (10 / 2) = (16 * 5) / 5 = 80 / 5 = 16.'
-  question: 'Find the result of: ((20 - 4) * (3 + 2)) / (10 / 2)'
-task_description: "To teach a language model about the BEDMASS rule and arithmetic"
+  - answer: >-
+      The expression evaluates to: ((40 / 5) + 7) * (12 - 8^2) = (8 + 7) * (12 -
+      64) = 15 * (-52) = -780.
+    question: 'What is the value of: ((40 / 5) + 7) * (12 - 8^2)'
+  - answer: >-
+      The expression evaluates to: ((24 / 3) + 5) * (9 - 6^2) = (8 + 5) * (9 -
+      36) = 13 * (-27) = -351.
+    question: 'What is the value of: ((24 / 3) + 5) * (9 - 6^2)'
+  - answer: >-
+      The calculation proceeds as: (18 * 2) / ((3 * 2) - 4) = 36 / (6 - 4) = 36
+      / 2 = 18.
+    question: 'Determine the value of: (18 * 2) / ((3 * 2) - 4)'
+  - answer: >-
+      The expression simplifies as: ((25 - 5) * (6 + 3)) / (15 / 3) = (20 * 9) /
+      5 = 180 / 5 = 36.
+    question: 'Find the result of: ((25 - 5) * (6 + 3)) / (15 / 3)'
+  - answer: >-
+      The calculation proceeds as: (6 * 2) + ((12 / 3) + 2^2) = 12 + (4 + 4) =
+      12 + 8 = 20.
+    question: 'Calculate the value of: (6 * 2) + ((12 / 3) + 2^2)'
+  - answer: >-
+      The expression simplifies as: ((20 - 4) * (3 + 2)) / (10 / 2) = (16 * 5) /
+      5 = 80 / 5 = 16.
+    question: 'Find the result of: ((20 - 4) * (3 + 2)) / (10 / 2)'
+task_description: To teach a language model about the BEDMASS rule and arithmetic
