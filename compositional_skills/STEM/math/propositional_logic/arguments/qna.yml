@@ -1,0 +1,20 @@
+created_by: javigsg10
+seed_examples:
+- answer: 'Conclusion: There are moving air currents.'
+  question: 'Premise 1: If it is windy, then there are moving air currents. 
+             Premise 2: It is windy.'
+    
+- answer: 'Conclusion: It is not windy'
+  question: 'Premise 1: If it is windy, then there are moving air currents. 
+             Premise 2: The are not moving air currents.'
+
+- answer: "Conclusion: Objects fall towards the Earth"
+  question: "Premise 1: If there is gravity, then objects fall towards the Earth.
+            Premise 2: There is gravity."
+
+- answer: "Conclusion: There is no gravity."
+  question: "Premise 1: If there is gravity, then objects fall towards the Earth.
+            Premise 2: Objects don't fall towards the Earth."
+
+task_description: 'To teach a language model about arguments that are defined as a pair of things, the premises and the conclusion.
+  '
