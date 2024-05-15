@@ -1,7 +1,7 @@
 created_by: Wolfgang Kulhanek
 domain: geology
 seed_examples:
-- answer: | 
+- answer: |
     Lapis lazuli or lapis for short, is a deep-blue metamorphic rock used as a semi-precious stone
     that has been prized since antiquity for its intense color.
   question: What color is Lapis Lazuli?
@@ -11,7 +11,7 @@ seed_examples:
     calcite (white), and pyrite (metallic yellow). Some samples of lapis lazuli contain
     augite, diopside, enstatite, mica, hauynite, hornblende, nosean, and sulfur-rich
     löllingite geyerite.
-Lapis lazuli usually occurs in crystalline marble as a result of contact metamorphism.
+    Lapis lazuli usually occurs in crystalline marble as a result of contact metamorphism.
   question: What is the mineralic composition of Lapis Lazuli?
 - answer: |
     The intense blue color is due to the presence of the trisulfur radical anion
@@ -33,8 +33,8 @@ Lapis lazuli usually occurs in crystalline marble as a result of contact metamor
 - answer: | Johannes Vermeer used lapis lazuli paint, in the Girl with a Pearl Earring painting.
   question: What is a famous painting that used Lapis Lazuli based paint?
 task_description: ' '
-document: 
+document:
  repo: https://github.com/juliadenham/Summit_knowledge
  commit: 0575dbd1b2285917a2103802de952d0f6e385b0f
  patterns:
-   - lapis_lazuli.md
+ - lapis_lazuli.md
