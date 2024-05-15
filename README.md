@@ -55,7 +55,7 @@ Your skills contribution pull requests must include the following:
 
 Taxonomy skill files must be a valid [YAML](https://yaml.org/) file named `qna.yaml`. Each `qna.yaml` files contains a set of key/value entries with the following keys:
 
-- `task_description`: A description of the skill. **Required**
+- `task_description`: A description of the skill. This information is very critical and should be accurate. You should be able to mention `precise` to get precise generated data **Required**
 - `created_by`: The GitHub username of the contributor. **Required**
 - `seed_examples`: A collection of key/value entries. New
   submissions should have at least five entries, although
