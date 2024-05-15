@@ -9,11 +9,13 @@ seed_examples:
   question: What happens if Reveille barks during class?
 - answer: As of 2024, there have been ten Reveilles,
   question: How many Reveilles have there been?
-- answer: The original Reveille was a mix breed and there have been several types of breeds.  Reveille X is a Rough Collie.
+- answer: |
+    The original Reveille was a mix breed and there have been several types of breeds.
+    Reveille X is a Rough Collie.
   question: What type of dog is Reveille?
 task_description: ' '
 document:
  repo: https://github.com/juliadenham/Summit_knowledge
  commit: dbe030ea084ff1c2fe29a2e906afd67caa468eac
  patterns:
-   - Reveille.md
+ - Reveille.md
