@@ -1,0 +1,29 @@
+created_by: Harshit
+domain: AI
+seed_examples:
+- question: |
+    What is the mission of InstructLab project?
+  answer: |
+    The mission of the InstructLab (Large-scale Alignment for chatBots) project is to leverage innovative techniques that overcome challenges in Large Language Model (LLM) training. InstructLab uses a taxonomy based curation process, along with synthetic data generation, that allows the open source community to submit contributions to existing LLMs in an accessible way.
+- question: |
+    What are the community goals of the InstructLab project?
+  answer: |
+    The goals of this open source community includes the following: Drive adoption of the InstructLab tooling and model API standard, Grow an ecosystem of contribution driven open models, and Establish deployable patterns, practices, and evidence for sophisticated use cases.
+- question: |
+    What is the command to initialise ilab?
+  answer: |
+    The command to initialise ilab is 'ilab init'
+- question: |
+    What is the command to serve a model?
+  answer: |
+    The command to serve a model is 'ilab serve'
+- question: |
+    What is the command to generate synthetic dataset?
+  answer: |
+    The command to generate synthetic data is 'ilab generate'
+task_description: Introduction to InstructLab
+document:
+  repo: https://github.com/instructlab/community
+  commit: f7ffb206e485f40c6948c67538e9da071976f950
+  patterns:
+    - "*.md"
