@@ -10,7 +10,7 @@ import sys
 from functools import cache, partial
 from importlib.resources.abc import Traversable
 from pathlib import Path
-from typing import List, Optional, Union
+from typing import List, Mapping, Optional, Union
 
 # Third Party
 import yaml
@@ -154,6 +154,12 @@ class CheckYaml:
                 parsed = yaml.safe_load(content)
                 if not parsed:
                     self.error(file=taxonomy_path, message="The file is empty")
+                    continue
+                if not isinstance(parsed, Mapping):
+                    self.error(
+                        file=taxonomy_path,
+                        message="The file is not valid. The top-level element is not an object with key-value pairs.",
+                    )
                     continue
 
                 version = parsed.get("version", 1)
