@@ -2,8 +2,7 @@ created_by: flyingbarron
 domain: constellation
 seed_examples:
 - question: When was the constellation Phoenix defined? 
-  answer: |
-	  It first appeared on a 35-cm diameter celestial globe published in 1597 (or 1598) in Amsterdam by Petrus Plancius with Jodocus Hondius. It was first depicted on a celestial atlas by Johann Bayer in his 1603 Uranometria. The French explorer and astronomer Nicolas Louis de Lacaille charted the brighter stars and gave their Bayer designations in 1756. 
+  answer: | It first appeared on a 35-cm diameter celestial globe published in 1597 (or 1598) in Amsterdam by Petrus Plancius with Jodocus Hondius. It was first depicted on a celestial atlas by Johann Bayer in his 1603 Uranometria. The French explorer and astronomer Nicolas Louis de Lacaille charted the brighter stars and gave their Bayer designations in 1756. 
 - question: What notable Deep-sky objects are in the constellation?
   answer: | Lying within the bounds of the constellation is the gigantic Phoenix cluster, which is around 7.3 million light years wide and 5.7 billion light years away, making it one of the most massive galaxy clusters. It was first discovered in 2010, and the central galaxy is producing an estimated 740 new stars a year. Larger still is El Gordo, or officially ACT-CL J0102-4915, whose discovery was announced in 2012.[56] Located around 7.2 billion light years away, it is composed of two subclusters in the process of colliding, resulting in the spewing out of hot gas, seen in X-rays and infrared images.
 - question:  What notable black hole is in the constellation?
