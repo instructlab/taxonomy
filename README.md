@@ -120,7 +120,11 @@ If you have not written YAML before, don't be intimidated - it's just text.
   value, unless "Yes" is quoted.)
 > - See https://yaml-multiline.info/ for more info.
 
-It is recommended that you **lint**, or verify your YAML using a tool. One linter option is [yamllint.com](https://yamllint.com). You can copy/paste your YAML into the box and click **Go** to have it analyze your YAML and make recommendations. Online tools like [prettified](https://onlineyamltools.com/prettify-yaml) and [yaml-validator](https://jsonformatter.org/yaml-validator) can automatically reformat your YAML to adhere to our `yamllint` PR checks, such as breaking lines longer than 120 characters.
+It is recommended that you **lint**, or verify your YAML using a tool. One linter option is [yamllint.com](https://yamllint.com). You can copy/paste your YAML into the box and click **Go** to have it analyze your YAML and make recommendations. Online tools like [prettified](https://onlineyamltools.com/prettify-yaml) and [yaml-validator](https://jsonformatter.org/yaml-validator) can automatically reformat your YAML to adhere to our `yamllint` PR checks, such as breaking lines longer than 120 characters. You can run the following script and ensure there are no errors or warnings in your .yml file.
+
+```bash
+python .github/scripts/check-yaml.py path/to/your/qna.yaml 
+```
 
 #### Freeform compositional skill: YAML example
 
