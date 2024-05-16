@@ -30,7 +30,8 @@ seed_examples:
     and oil painting. Its usage as a pigment in oil paint largely ended during the early
     19th century, when a chemically identical synthetic variety became available.
   question: What is Lapis Lazuli used for?
-- answer: | Johannes Vermeer used lapis lazuli paint, in the Girl with a Pearl Earring painting.
+- answer: |
+    Johannes Vermeer used lapis lazuli paint, in the Girl with a Pearl Earring painting.
   question: What is a famous painting that used Lapis Lazuli based paint?
 task_description: ' '
 document:
