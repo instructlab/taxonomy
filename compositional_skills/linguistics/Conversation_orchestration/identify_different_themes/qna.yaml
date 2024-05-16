@@ -8,7 +8,7 @@ seed_examples:
   - question: >
       A user of an AI chatbot has entered the following queries during a
       multi-turn conversation so far, all of them being related to the same
-      topic: 
+      topic:
 
       1. What can I eat during my trip to Madrid?
 
@@ -87,12 +87,3 @@ seed_examples:
     answer: >
       No, even though the user is asking about recommendations in both cases,
       the user changes the topic to books in the new question.
-
-
-
-
-
-
-
-
-    
