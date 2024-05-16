@@ -3,7 +3,7 @@ domain: AI
 seed_examples:
   - question: |
       What is the mission of InstructLab project?
-    answer: >
+    answer: |
       The mission of the InstructLab (Large-scale Alignment for chatBots)
       project is to leverage innovative techniques that overcome challenges in
       Large Language Model (LLM) training. InstructLab uses a taxonomy based
@@ -12,7 +12,7 @@ seed_examples:
       accessible way.
   - question: |
       What are the community goals of the InstructLab project?
-    answer: >
+    answer: |
       The goals of this open source community includes the following: Drive
       adoption of the InstructLab tooling and model API standard, Grow an
       ecosystem of contribution driven open models, and Establish deployable
