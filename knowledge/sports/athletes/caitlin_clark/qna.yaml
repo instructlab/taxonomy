@@ -1,15 +1,15 @@
-created_by: 
+created_by: boblongmore
 domain: anatomy
 seed_examples:
-- answer: | Iowa
+- answer: Iowa
   question: Where did Caitlin Clark go to college?
-- answer: | Dowling Catholic High School
+- answer: Dowling Catholic High School
   question: What high school did Caitlin Clark attend?
-- answer: | two
+- answer: two
   question: How many times was Caitlin Clark voted AP Player of the Year?
-- answer: | zero
+- answer: zero
   question: How many national championships did Caitlin Clark win?
-- answer: | Indiana Fever
+- answer: Indiana Fever
   question: What WNBA team drafted Caitlin Clark?
 task_description: ' '
 document: 
