@@ -9,7 +9,7 @@ seed_examples:
   question: Who headlined Coachella 2023?
 - answer: |
   The lineup for Coachella was announced on January 10, 2023.
-  question: When was the lineup for Coachella 2023 announced?  
+  question: When was the lineup for Coachella 2023 announced?
 - answer: |
   Frank Ocean began performing at 10:55 p.m., an hour later than his initial booking.
   question: What time did Frank Ocean begin his performce at Coachella 2023?
@@ -17,7 +17,7 @@ seed_examples:
   Blink-182 replaced Frank Ocean as a headliner for Weekend 2 of Coachella 2023.
   question: Who replaced Frank Ocean as the headliner for Weekend 2 of Coachella 2023?
 task_description: 'Teach the model more information about Coachella 2023'
-document: 
+document:
  repo: https://github.com/juliadenham/Summit_knowledge
  commit: 7294fab8567ef650eec43c5fcfb59701fb9287ba
  patterns:
