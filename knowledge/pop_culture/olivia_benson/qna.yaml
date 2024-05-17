@@ -1,25 +1,25 @@
 created_by: grillo-delmal
 domain: pop-culture
 seed_examples:
-- answer: | 
-    Olivia Benson is a Scottish Fold cat owned by American singer-songwriter Taylor Swift.
-  question: Who was Olivia Benson?
-- answer: |
-    Comparethemarket.com ranked Olivia as the world's second-richest cat, with a net worth of $97 million.
-  question: How wealthy is Olivia Benson?
-- answer: |
-    Olivia Benson was adopted on June 2014.
-  question: When was Olivia Benson adopted?
-- answer: | 
-    Until 2023, Olivia has won 5 prices, between them the Nickelodeon UK Kids' Choice Awards, 
-    the iHeartRadio Music Awards, the Nickelodeon Kids' Choice Awards, and the MTV Millennial Awards Brazil twice 
-  question: How many awards have Olivia Benson won?
-- answer: |
-    Olivia Benson is owned by the American singer-songwriter Taylor Swift.
-  question: Who is the owner of Olivia Benson?
-task_description: ' '
-document: 
- repo: https://github.com/juliadenham/Summit_knowledge
- commit: 481b735225e2714c4e9d36da6d7b941d9a36bd86
- patterns:
-   - wisdom_tooth.md
+  - answer: |
+      Olivia Benson is a Scottish Fold cat owned by American singer-songwriter Taylor Swift.
+    question: Who was Olivia Benson?
+  - answer: |
+      Comparethemarket.com ranked Olivia as the world's second-richest cat, with a net worth of $97 million.
+    question: How wealthy is Olivia Benson?
+  - answer: |
+      Olivia Benson was adopted on June 2014.
+    question: When was Olivia Benson adopted?
+  - answer: >
+      Until 2023, Olivia has won 5 prices, between them the Nickelodeon UK Kids' Choice Awards, the iHeartRadio
+      Music Awards, the Nickelodeon Kids' Choice Awards, and the MTV Millennial Awards Brazil twice.
+    question: How many awards have Olivia Benson won?
+  - answer: |
+      Olivia Benson is owned by the American singer-songwriter Taylor Swift.
+    question: Who is the owner of Olivia Benson?
+task_description: " "
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 481b735225e2714c4e9d36da6d7b941d9a36bd86
+  patterns:
+    - wisdom_tooth.md
