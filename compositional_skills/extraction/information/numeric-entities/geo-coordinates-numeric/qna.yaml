@@ -1,0 +1,18 @@
+created_by: jeffmaury
+seed_examples:
+- answer: '48.85365, 2.34995'
+  context: 'Notre Dame de Paris is located at 48.85365, 2.34995'
+  question: Extract the geographic coordinates in the given text.
+- answer: '38.89787, -77.03653'
+  context: 'The White House is located at 38.89787, -77.03653'
+  question: Extract the geographic coordinates in the given text.
+- answer: '43.08185, -79.08155'
+  context: 'The Niagara Falls are located at 43.08185, -79.08155'
+  question: Extract the geographic coordinates in the given text.
+- answer: '-13.16296, -72.54529'
+  context: 'The Machu Picchu is located at -13.16296, -77.54529'
+  question: Extract the geographic coordinates in the given text.
+- answer: '41.90238, 12.45393'
+  context: "The St Peter's basilic is located at 41.90238, 12.45393"
+  question: Extract the geographic coordinates in the given text.
+task_description: ''
