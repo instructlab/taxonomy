@@ -1,0 +1,4 @@
+Title of work: To teach a language model about the BEDMASS rule and arithmetic
+Link to work: -
+License of the work: CC BY-NC-SA 4.0
+Creator names: Matteo Pulcini

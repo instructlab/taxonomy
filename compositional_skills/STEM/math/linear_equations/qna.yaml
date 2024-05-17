@@ -1,0 +1,104 @@
+created_by: Matt
+seed_examples:
+  - answer: |-
+      To solve the system of equations:
+      1) ( x + y = 10 )
+      2) ( 2x - y = 3 )
+      Step 1: Solve equation (1) for ( y ):
+      ( y = 10 - x )
+      Step 2: Substitute ( y ) in equation (2):
+      ( 2x - (10 - x) = 3 )
+      Simplify:
+      ( 2x - 10 + x = 3 )
+      ( 3x - 10 = 3 )
+      ( 3x = 13 )
+      ( x = 13/3 )
+      Step 3: Substitute ( x ) back into equation (1):
+      ( x + y = 10 )
+      ( 13/3 + y = 10 )
+      ( y = 10 - 13/3 )
+      ( y = 30/3 - 13/3 )
+      ( y = 17/3 )
+      The solution is ( x = 13/3 ) and ( y = 17/3 ).
+    question: 'Solve the system of equations: x + y = 10 and 2x - y = 3'
+  - answer: |-
+      To solve the system of equations:
+      1) ( 3x - 2y = 4 )
+      2) ( x + y = 5 )
+      Step 1: Solve equation (2) for ( y ):
+      ( y = 5 - x )
+      Step 2: Substitute ( y ) in equation (1):
+      ( 3x - 2(5 - x) = 4 )
+      Simplify:
+      ( 3x - 10 + 2x = 4 )
+      ( 5x - 10 = 4 )
+      ( 5x = 14 )
+      ( x = 14/5 )
+      Step 3: Substitute ( x ) back into equation (2):
+      ( x + y = 5 )
+      ( 14/5 + y = 5 )
+      ( y = 5 - 14/5 )
+      ( y = 25/5 - 14/5 )
+      ( y = 11/5 )
+      The solution is ( x = 14/5 ) and ( y = 11/5 ).
+    question: 'Solve the system of equations: 3x - 2y = 4 and x + y = 5'
+  - answer: |-
+      To solve the system of equations:
+      1) ( x - y = 2 )
+      2) ( 4x + 3y = 7 )
+      Step 1: Solve equation (1) for ( x ):
+      ( x = y + 2 )
+      Step 2: Substitute ( x ) in equation (2):
+      ( 4(y + 2) + 3y = 7 )
+      Simplify:
+      ( 4y + 8 + 3y = 7 )
+      ( 7y + 8 = 7 )
+      ( 7y = -1 )
+      ( y = -1/7 )
+      Step 3: Substitute ( y ) back into equation (1):
+      ( x - y = 2 )
+      ( x - (-1/7) = 2 )
+      ( x + 1/7 = 2 )
+      ( x = 2 - 1/7 )
+      ( x = 14/7 - 1/7 )
+      ( x = 13/7 )
+      The solution is ( x = 13/7 ) and ( y = -1/7 ).
+    question: 'Solve the system of equations: x - y = 2 and 4x + 3y = 7'
+  - answer: |-
+      To solve the system of equations:
+      1) ( 5x + 2y = 20 )
+      2) ( x - 3y = -6 )
+      Step 1: Solve equation (2) for ( x ):
+      ( x = 3y - 6 )
+      Step 2: Substitute ( x ) in equation (1):
+      ( 5(3y - 6) + 2y = 20 )
+      Simplify:
+      ( 15y - 30 + 2y = 20 )
+      ( 17y - 30 = 20 )
+      ( 17y = 50 )
+      ( y = 50/17 )
+      Step 3: Substitute ( y ) back into equation (2):
+      ( x - 3y = -6 )
+      ( x - 3(50/17) = -6 )
+      ( x - 150/17 = -6 )
+      ( x = -6 + 150/17 )
+      ( x = -102/17 + 150/17 )
+      ( x = 48/17 )
+      The solution is ( x = 48/17 ) and ( y = 50/17 ).
+    question: 'Solve the system of equations: 5x + 2y = 20 and x - 3y = -6'
+  - answer: >-
+      Solve the system of equations:
+      1) ( 2x + y = 7 )
+      2) ( 3x - 2y = 4 )
+      Step 1: Solve (1) for ( y ): ( y = 7 - 2x )
+      Step 2: Substitute ( y ) in (2): ( 3x - 2(7 - 2x) = 4 )
+      Simplify: ( 3x - 14 + 4x = 4 ) -> ( 7x - 14 = 4 ) -> ( 7x = 18 ) -> ( x =
+      18/7 )
+      Step 3: Substitute ( x ) in (1): ( 2(18/7) + y = 7 )
+      Simplify: ( 36/7 + y = 7 ) -> ( y = 7 - 36/7 ) -> ( y = 49/7 - 36/7 ) -> (
+      y = 13/7 )
+      Solution: ( x = 18/7, y = 13/7 )
+    question: 'Solve the system of equations: 2x + y = 7 and 3x - 2y = 4'
+task_description: >-
+  To teach a language model how to solve simple two-variable linear equations
+  using substitution and elimination.
