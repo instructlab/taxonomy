@@ -1,4 +1,4 @@
-Title of work: To teach a language model about the BEDMASS rule and arithmetic
+Title of work: To teach a language model how to solve simple two-variable linear equations using substitution and elimination.
 Link to work: -
 License of the work: CC BY-NC-SA 4.0
 Creator names: Matteo Pulcini
