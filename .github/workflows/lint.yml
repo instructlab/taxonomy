@@ -82,5 +82,7 @@ jobs:
       - name: "Invoke insight handler"
         if: ${{ (steps.changed-files.outputs.any_changed == 'true') && (github.event_name == 'pull_request') && (github.repository == 'instructlab/taxonomy') }}
         run: |
-          curl -X 'POST' "https://pr-analysis-handler.1fuhf5gskmng.us-east.codeengine.appdomain.cloud/analyze-pr?pr_number=${{ github.event.number }}&owner=${{ github.repository_owner }}&repo=${{ github.event.repository.name }}" -H 'accept: application/json' -H 'Authorization: Bearer ${{ secrets.COC_ANALYSIS_TOKEN }}' -d '' &
+          curl -X 'POST' "https://pr-analysis-handler.1fuhf5gskmng.us-east.codeengine.appdomain.cloud/analyze-pr?pr_number=${{ github.event.number }}&owner=${{ github.repository_owner }}&repo=${{ github.event.repository.name }}" -H 'accept: application/json' -H "Authorization: Bearer $COC_ANALYSIS_TOKEN" -d '' &
           echo "CoC violation analysis triggered"
+        env:
+            COC_ANALYSIS_TOKEN: ${{ secrets.COC_ANALYSIS_TOKEN }}
