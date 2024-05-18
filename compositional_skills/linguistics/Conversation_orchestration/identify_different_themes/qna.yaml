@@ -40,7 +40,7 @@ seed_examples:
   - question: >
       A user of an AI chatbot has entered the following queries during a
       multi-turn conversation so far, all of them being related to the same
-      topic: 
+      topic:
 
       1. What is the climate in New York city?
 
@@ -56,7 +56,7 @@ seed_examples:
   - question: >
       A user of an AI chatbot has entered the following queries during a
       multi-turn conversation so far, all of them being related to the same
-      topic: \
+      topic:
 
       1. Give me an idea for the title of a book about the romantic relationship
       between two life-long friends.
