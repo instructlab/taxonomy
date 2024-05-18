@@ -1,18 +1,18 @@
 created_by: flyingbarron
 domain: constellation
 seed_examples:
-- question: When was the constellation Phoenix defined? 
-  answer: | It first appeared on a 35-cm diameter celestial globe published in 1597 (or 1598) in Amsterdam by Petrus Plancius with Jodocus Hondius. It was first depicted on a celestial atlas by Johann Bayer in his 1603 Uranometria. The French explorer and astronomer Nicolas Louis de Lacaille charted the brighter stars and gave their Bayer designations in 1756. 
+- question: When was the constellation Phoenix defined?
+  answer: | It first appeared on a 35-cm diameter celestial globe published in 1597 (or 1598) in Amsterdam by Petrus Plancius with Jodocus Hondius. It was first depicted on a celestial atlas by Johann Bayer in his 1603 Uranometria. The French explorer and astronomer Nicolas Louis de Lacaille charted the brighter stars and gave their Bayer designations in 1756.
 - question: What notable Deep-sky objects are in the constellation?
   answer: | Lying within the bounds of the constellation is the gigantic Phoenix cluster, which is around 7.3 million light years wide and 5.7 billion light years away, making it one of the most massive galaxy clusters. It was first discovered in 2010, and the central galaxy is producing an estimated 740 new stars a year. Larger still is El Gordo, or officially ACT-CL J0102-4915, whose discovery was announced in 2012.[56] Located around 7.2 billion light years away, it is composed of two subclusters in the process of colliding, resulting in the spewing out of hot gas, seen in X-rays and infrared images.
 - question:  What notable black hole is in the constellation?
   answer: | The first intermediate-mass black hole HLX-1, is within the galaxy ESO 243-49, which is within the constellation
 - question: What is the brightest star in the constellation?
   answer: | Alpha Phi, called Ankaa, is the brightest star in the constellation. It is an orange giant of apparent visual magnitude 2.37 and spectral type K0.5IIIb,[13] 77 light years distant from Earth and orbited by a secondary object about which little is known.
-- question: What is the designation of the constellation? 
+- question: What is the designation of the constellation?
   answer: | The formal abbreviation of the constellation is Phe and it has the genitive form of Phoenicis
 task_description: ' '
-document: 
+document:
  repo: https://github.com/juliadenham/Summit_knowledge
  commit: fb4a3b77201eb5087b225ddb09fd955ee59dc6ea
  patterns:
