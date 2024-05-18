@@ -15,4 +15,4 @@ seed_examples:
 - answer: '41.90238, 12.45393'
   context: "The St Peter's basilic is located at 41.90238, 12.45393"
   question: Extract the geographic coordinates in the given text.
-task_description: ''
+task_description: 'Extract geographic coordinates'
