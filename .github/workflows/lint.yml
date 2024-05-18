@@ -1,16 +1,4 @@
-# Copyright The InstructLab Authors, 2024
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+# SPDX-License-Identifier: Apache-2.0
 
 name: Lint
 
@@ -22,6 +10,8 @@ on:
     paths:
       - compositional_skills/**/qna.yaml
       - knowledge/**/qna.yaml
+      - '.github/workflows/lint.yml' # This workflow
+      - '.github/scripts/**' # Scripts used by this workflow
 
   pull_request:
     branches:
@@ -31,23 +21,46 @@ on:
       - compositional_skills/**/*.yml
       - knowledge/**/*.yaml
       - knowledge/**/*.yml
+      - '.github/workflows/lint.yml' # This workflow
+      - '.github/scripts/**' # Scripts used by this workflow
+
+env:
+  LC_ALL: en_US.UTF-8
 
 defaults:
   run:
     shell: bash
 
+permissions:
+  contents: read
+
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
+      - name: "Harden Runner"
+        uses: step-security/harden-runner@a4aa98b93cab29d9b1101a6143fb8bce00e2eac4 # v2.7.1
+        with:
+          egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
+
       - name: "Checkout"
-        uses: actions/checkout@v4
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
         with:
           fetch-depth: 0
+          submodules: true
+
+      - name: "Setup Python"
+        uses: actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d # v5.1.0
+        with:
+          python-version: "3.11"
+
+      - name: "Install Python Packages"
+        run: |
+          pip install -r .github/scripts/requirements.txt
 
       - name: "Find changed skills and knowledge files"
         id: changed-files
-        uses: tj-actions/changed-files@v42
+        uses: tj-actions/changed-files@a29e8b565651ce417abb5db7164b4a2ad8b6155c # v44.4.0
         with:
           files: |
             compositional_skills/**/*.yaml
@@ -55,24 +68,21 @@ jobs:
             knowledge/**/*.yaml
             knowledge/**/*.yml
 
-      - name: "Setup Python"
-        if: steps.changed-files.outputs.any_changed == 'true'
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: "Install Python Packages"
-        if: steps.changed-files.outputs.any_changed == 'true'
-        run: |
-          pip install -r .github/scripts/requirements.txt
-
-      - name: "Check YAML file contents"
+      - name: "Check changed YAML file contents"
         if: steps.changed-files.outputs.any_changed == 'true'
         run: |
           .github/scripts/check-yaml.py ${{ steps.changed-files.outputs.all_changed_files }}
         env:
-          SCHEMA_BASE: .github/schemas
+          SCHEMA_BASE: schema
           YAMLLINT_CONFIG: "{extends: relaxed, rules: {line-length: {max: 120}}}"
           TAXONOMY_FOLDERS: >-
             compositional_skills
             knowledge
+
+      - name: "Invoke insight handler"
+        if: ${{ (steps.changed-files.outputs.any_changed == 'true') && (github.event_name == 'pull_request') && (github.repository == 'instructlab/taxonomy') }}
+        run: |
+          curl -X 'POST' "https://pr-analysis-handler.1fuhf5gskmng.us-east.codeengine.appdomain.cloud/analyze-pr?pr_number=${{ github.event.number }}&owner=${{ github.repository_owner }}&repo=${{ github.event.repository.name }}" -H 'accept: application/json' -H "Authorization: Bearer $COC_ANALYSIS_TOKEN" -d '' &
+          echo "CoC violation analysis triggered"
+        env:
+            COC_ANALYSIS_TOKEN: ${{ secrets.COC_ANALYSIS_TOKEN }}

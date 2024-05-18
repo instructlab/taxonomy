@@ -1,0 +1,49 @@
+# SPDX-License-Identifier: Apache-2.0
+
+name: Lint GitHub Actions workflows
+on:
+  push:
+    branches:
+      - "main"
+    paths:
+      - '.github/workflows/*.ya?ml'
+  pull_request:
+    branches:
+      - "main"
+    paths:
+      - '.github/workflows/*.ya?ml'
+
+env:
+  LC_ALL: en_US.UTF-8
+
+defaults:
+  run:
+    shell: bash
+
+permissions:
+  contents: read
+
+jobs:
+  actionlint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Harden Runner"
+        uses: step-security/harden-runner@a4aa98b93cab29d9b1101a6143fb8bce00e2eac4 # v2.7.1
+        with:
+          egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
+
+      - name: "Checkout"
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+        with:
+          fetch-depth: 0
+          submodules: true
+
+      - name: "Download actionlint"
+        id: get_actionlint
+        run: |
+          bash <(curl https://raw.githubusercontent.com/rhysd/actionlint/2d26fef7e97b8ab345791f5ade3252da47d083e3/scripts/download-actionlint.bash)
+
+      - name: "Check workflow files"
+        run: |
+          echo "::add-matcher::.github/workflows/matchers/actionlint.json"
+          ${{ steps.get_actionlint.outputs.executable }} -color

@@ -1,0 +1,19 @@
+created_by: reformanda
+domain: Literature
+seed_examples:
+- answer: Nicholas Sparks
+  question: What American author was born on December 31, 1965?
+- answer: This fictional work was written by the Polish writer and playwright, Witold Gombrowicz in 1965.
+  question: Which author wrote Kosmos?
+- answer: Ruth Manning-Sanders, an English poet author, wrote this book in 1965.
+  question: Who wrote the Children's book A Book of Dragons?
+- answer: The Green Berets
+  question: What book did American author Robin Moore write in 1965?
+- answer: The International Poetry Incarnation was an event at the Royal Albert Hall in London on 11 June 1965.
+  question: Were there any poetry events in 1965?
+task_description: ''
+document:
+ repo: https://github.com/reformanda/taxonomy.git
+ commit: e9d79e3470cdc3babc8d7473274b24e8c1dc0424
+ patterns:
+ - 1965_in_literature.md

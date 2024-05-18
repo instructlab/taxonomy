@@ -10,7 +10,7 @@ import sys
 from functools import cache, partial
 from importlib.resources.abc import Traversable
 from pathlib import Path
-from typing import List, Optional, Union
+from typing import List, Mapping, Optional, Union
 
 # Third Party
 import yaml
@@ -127,7 +127,6 @@ class CheckYaml:
                 with open(full_path, "r", encoding="utf-8") as stream:
                     content = stream.read()
 
-                lint_error = False
                 for lint_problem in linter.run(
                     input=content, conf=self.yamllint_config
                 ):
@@ -144,7 +143,6 @@ class CheckYaml:
                                 line=lint_problem.line,
                                 col=lint_problem.column,
                             )
-                            lint_error = True
                         case _:
                             self.warning(
                                 file=taxonomy_path,
@@ -152,12 +150,16 @@ class CheckYaml:
                                 line=lint_problem.line,
                                 col=lint_problem.column,
                             )
-                if lint_error:
-                    continue
 
                 parsed = yaml.safe_load(content)
                 if not parsed:
                     self.error(file=taxonomy_path, message="The file is empty")
+                    continue
+                if not isinstance(parsed, Mapping):
+                    self.error(
+                        file=taxonomy_path,
+                        message="The file is not valid. The top-level element is not an object with key-value pairs.",
+                    )
                     continue
 
                 version = parsed.get("version", 1)
@@ -217,6 +219,18 @@ class CheckYaml:
                     self.error(
                         file=taxonomy_path,
                         message=f"Cannot load schema file {e.ref}. {e}",
+                    )
+
+                attribution_path = full_path.with_name("attribution.txt")
+                if not os.path.isfile(attribution_path):
+                    self.error(
+                        file=taxonomy_path,
+                        message=f"The {attribution_path.name} file does not exist or is not a file",
+                    )
+                elif os.path.getsize(attribution_path) == 0:
+                    self.error(
+                        file=taxonomy_path.with_name(attribution_path.name),
+                        message="The file must be non-empty",
                     )
 
             except Exception as e:
@@ -299,12 +313,12 @@ def cli() -> int:
 
 def _find_schema_base() -> Path:
     for parent in Path(sys.argv[0]).parents:
-        candidate = parent.joinpath("schemas")
+        candidate = parent.joinpath("schema")
         if os.path.isdir(candidate):
             return candidate
         if os.path.exists(parent.joinpath(".git")):
             break
-    return Path.cwd().joinpath("schemas")
+    return Path.cwd().joinpath("schema")
 
 
 if __name__ == "__main__":

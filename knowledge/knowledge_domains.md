@@ -44,37 +44,10 @@
     * Food Engineering
     * Food Manufacturing
     * Food Distribution and Logistics 
-  * Mathematics & Statistics
-    * Algebra
-    * Analysis
-    * Logic 
-    * Geometry
-    * Topology
-    * Number Theory
-    * Discrete Mathematics 
-    * Mathematical Modeling
-    * Numerical Analysis
-    * Operations Research
-    * Statistics
-    * Probability Theory
-    * Computational Mathematics
-    * Others // TBD 
   * Information Technology
     * Computer science
       * Algorithms
       * Data Structures
-      * Programming Languages and frameworks
-        * Python
-        * R
-        * MATLAB
-        * SQL
-        * Go 
-        * Java
-        * Web developoment languages and frameworks
-          * Javascript
-          * HTML & CSS
-          * PHP
-        * C & C++
       * Theoretical Computer Science
     * Software Development & Engineering
       * Software Development
