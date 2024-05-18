@@ -11,7 +11,7 @@ seed_examples:
   question: What book did American author Robin Moore write in 1965?
 - answer: The International Poetry Incarnation was an event at the Royal Albert Hall in London on 11 June 1965.
   question: Were there any poetry events in 1965?
-task_description: ''
+task_description: 'Teach the model about 1965 literature.'
 document:
  repo: https://github.com/reformanda/taxonomy.git
  commit: e9d79e3470cdc3babc8d7473274b24e8c1dc0424
