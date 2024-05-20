@@ -1,5 +1,5 @@
-task_description: 'Update Wikipedia-based knowledge on Les Paul Studio guitars'
-created_by: apomponio, fsapir, dal0643
+task_description: 'Update the model's Wikipedia-based knowledge on Les Paul Studio guitars'
+created_by: apomponio, fsapir, dal0643, plimptm
 domain: musical_instruments
 seed_examples:
   # created_by: apomponio
@@ -64,6 +64,34 @@ seed_examples:
     answer: The Robot Les Paul Studio Limited was an upgraded studio with Powertune auto-tuning system.
   - question: When was the Gibson Gothic Produced
     answer: During 2000–2002, Gibson released a series of six guitars dubbed "Gothic" models.
+  # created_by: plimptm
+  # https://github.com/instructlab/taxonomy/pull/983
+  - answer: >
+      Someone would buy a Gibson Les Paul Studio guitar if they want a guitar
+      with the tonal qualities of a Gibson Les Paul guitar but want to save money
+      and do not want the full cosmetic feature set of the Les Paul.
+    question: Why would someone buy a Gibson Les Paul Studio guitar?
+  - answer: |
+      Some of the differences between the Gibson Les Paul and Les Paul Studio guitars are:
+
+      1. The Les Paul Studio is a lower-cost model than the Les Paul
+      2. The Les Paul Studio lacks some of the cosmetic features of the Les Paul
+      3. The body of the Les Paul Studio is thinner than that of the Les Paul
+    question: What are the differences between the Les Paul and a Les Paul Studio guitars?
+  - answer: |
+      The Gibson Les Paul Studio guitar uses mahogany for the body and neck.
+      The fretboard is made of either rosewood, maple, or ebony.
+      Select models use maple for the neck.
+    question: What type of wood is the Gibson Les Paul Studio guitar made from?
+  - answer: >
+      The Gibson Les Paul Studio guitar comes in various sunbursts,
+      translucent red, transluscent blue, translucent amber, wine red, ebony,
+      alpine white, and possibly others.
+    question: What colors are available for the Gibson Les Paul Studio guitar?
+  - answer: |
+      The Gibson Les Paul Studio usually includes 2 humbucker pickups, which are either
+      498T and 490R, or P-90s
+    question: What pickups do the Gibson Les Paul Studio use?
 
 document:
   repo: https://github.com/juliadenham/Summit_knowledge
