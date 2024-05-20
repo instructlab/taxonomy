@@ -69,7 +69,7 @@ jobs:
             knowledge/**/*.yml
 
       - name: "Check changed YAML file contents"
-        if: steps.changed-files.outputs.any_changed == 'true'
+        if: ${{ steps.changed-files.outputs.any_changed == 'true' }}
         run: |
           .github/scripts/check-yaml.py ${{ steps.changed-files.outputs.all_changed_files }}
         env:
@@ -79,10 +79,18 @@ jobs:
             compositional_skills
             knowledge
 
-      - name: "Invoke insight handler"
+      - name: "Save Pull Request number"
         if: ${{ (steps.changed-files.outputs.any_changed == 'true') && (github.event_name == 'pull_request') && (github.repository == 'instructlab/taxonomy') }}
         run: |
-          curl -X 'POST' "https://pr-analysis-handler.1fuhf5gskmng.us-east.codeengine.appdomain.cloud/analyze-pr?pr_number=${{ github.event.number }}&owner=${{ github.repository_owner }}&repo=${{ github.event.repository.name }}" -H 'accept: application/json' -H "Authorization: Bearer $COC_ANALYSIS_TOKEN" -d '' &
-          echo "CoC violation analysis triggered"
+          echo "${PULL_REQUEST_NUMBER}" > pull_request_number.txt
         env:
-            COC_ANALYSIS_TOKEN: ${{ secrets.COC_ANALYSIS_TOKEN }}
+          PULL_REQUEST_NUMBER: ${{ github.event.number }}
+
+      - name: "Upload Pull Request number"
+        if: ${{ (steps.changed-files.outputs.any_changed == 'true') && (github.event_name == 'pull_request') && (github.repository == 'instructlab/taxonomy') }}
+        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808 # v4.3.3
+        with:
+          name: pull_request_number
+          path: pull_request_number.txt
+          if-no-files-found: error
+          retention-days: 5
