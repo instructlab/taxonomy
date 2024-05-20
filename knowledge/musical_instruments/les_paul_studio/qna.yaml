@@ -1,33 +1,59 @@
 task_description: 'Update Wikipedia-based knowledge on Les Paul Studio guitars'
-created_by: apomponio
+created_by: apomponio, fsapir
 domain: musical_instruments
 seed_examples:
+  # created_by: apomponio
+  # https://github.com/instructlab/taxonomy/pull/948
   - question: What is a Gibson Les Paul Studio guitar?
     answer: |
-      The Gibson Les Paul Studio is a solid body electric guitar produced by the Gibson Guitar Corporation
-      since 1983. It is a model of Les Paul with some features omitted to appeal to musicians looking for
-      the tonal qualities of the guitar but with less of an emphasis on cosmetics and to reduce the price
-      of the instrument.
+      The Gibson Les Paul Studio is a solid body electric guitar produced by
+      the Gibson Guitar Corporation since 1983. It is a model of Les Paul with
+      some features omitted to appeal to musicians looking for the tonal
+      qualities of the guitar but with less of an emphasis on cosmetics and to
+      reduce the price of the instrument.
   - question: When did Gibson introduce the Les Paul Studio to their lineup?
     answer: |
-      Responding to a gap in their model lineup for a lower-priced Les Paul in 1983,
-      Gibson introduced the Studio model.
+      Responding to a gap in their model lineup for a lower-priced Les Paul in
+      1983, Gibson introduced the Studio model.
   - question: What is the difference between a Les Paul and a Les Paul Studio guitar?
     answer: |
-      In order to produce a lower-cost Les Paul, features such as body binding, neck binding,
-      and headstock inlays were not available. Additionally, the body was ⅛ to ¼ inch thinner than a
-      standard Les Paul.
+      In order to produce a lower-cost Les Paul, features such as body binding,
+      neck binding, and headstock inlays were not available. Additionally, the
+      body was ⅛ to ¼ inch thinner than a standard Les Paul.
   - question: What type of wood is the body of Les Paul Studio made from?
     answer: |
-      Initially made of alder from 1983–1985, Gibson moved back to maple top/mahogany body combination
-      after the alder body proved prone to lacquer problems.
+      Initially made of alder from 1983–1985, Gibson moved back to maple top/mahogany
+      body combination after the alder body proved prone to lacquer problems.
   - question: Where did the name Studio come from?
     answer: |
-      The name "Studio" comes from the idea that this model would be sonically indistinguishable from
-      a Les Paul Standard or Custom in the recording studio, and that the flashier guitars would be
-      reserved for stage use.
+      The name "Studio" comes from the idea that this model would be sonically
+      indistinguishable from a Les Paul Standard or Custom in the recording studio,
+      and that the flashier guitars would be reserved for stage use.
+  # created_by: fsapir
+  # https://github.com/instructlab/taxonomy/pull/956
+  - answer: >
+      The Studio was designed to attract guitar players who desired
+      traditional Les Paul sound without having to pay for cosmetic features of
+      upscale models
+    question: Why was the Les Paul Studio model introduced?
+  - answer: >
+      The name "Studio" comes from the idea that this model would be sonically
+      indistinguishable from a Les Paul Standard or Custom in the recording
+      studio, and that the flashier guitars would be reserved for stage use
+    question: Where does the name Studio come from?
+  - answer: |
+      In 2009, the Vintage Mahogany was renamed the Les Paul Studio Faded.
+    question: When was the Vintage Mahogany renamed?
+  - answer: >
+      The SmartWood series consists chronologically of three models; the
+      Exotic, the Studio and the Swamp Ash models.
+    question: Which guitar models are included in the Smartwood series?
+  - answer: >
+      During 2000–2002, Gibson released a series of six guitars dubbed
+      "Gothic" models.
+    question: When did Gibson release the Gothic models
 document:
- repo: https://github.com/juliadenham/Summit_knowledge
- commit: 854ffa248c43d08472886ed18b3de2de9e9afbe4
- patterns:
-   - gibson_les_paul_studio.md
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 854ffa248c43d08472886ed18b3de2de9e9afbe4
+  patterns:
+    - gibson_les_paul_studio.md
