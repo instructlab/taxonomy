@@ -98,7 +98,7 @@ When submitting your PR, give it a title which is as explicit as possible. Inclu
 Once you've [created a pull request](#how-can-i-contribute), maintainers will review your proposed addition and may make suggestions to fix before merging. It will be easier for your pull request to receive reviews if you consider the criteria the reviewers follow while working. Remember to:
 
 - Run tests locally and ensure that they pass
-- Ensure your contribution is in the proper format (`lab generate` shouldn't report any warnings or errors)
+- Ensure your contribution is in the proper format (`ilab generate` shouldn't report any warnings or errors)
 - Break large changes into a logical series of smaller patches, which are easy to understand individually and combine to solve a broader issue
 - Follow the project coding conventions
 - Include the DCO sign off, see [Legal](#legal)
