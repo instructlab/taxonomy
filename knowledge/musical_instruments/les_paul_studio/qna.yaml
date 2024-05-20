@@ -1,0 +1,29 @@
+created_by: apomponio
+domain: musical_instruments
+seed_examples:
+- question: What is a Gibson Les Paul Studio guitar?
+  answer: |
+  The Gibson Les Paul Studio is a solid body electric guitar produced by the Gibson Guitar Corporation since 1983. |
+  It is a model of Les Paul with some features omitted to appeal to musicians looking for the tonal qualities of |
+  the guitar   but with less of an emphasis on cosmetics and to reduce the price of the instrument.
+- question: When did Gibson introduce the Les Paul Studio to their lineup?
+  answer: |
+  Responding to a gap in their model lineup for a lower-priced Les Paul in 1983, Gibson introduced the Studio model.
+- question: What is the difference between a Les Paul and a Les Paul Studio guitar?
+  answer: |
+  In order to produce a lower-cost Les Paul, features such as body binding, neck binding, and headstock inlays were |
+  not available. Additionally, the body was ⅛ to ¼ inch thinner than a standard Les Paul.
+- question: What type of wood is the body of Les Paul Studio made from?
+  answer: |
+  Initially made of alder from 1983–1985, Gibson moved back to maple top/mahogany body combination after the alder |
+  body proved prone to lacquer problems.
+- question: Where did the name Studio come from?
+  answer: |
+  The name "Studio" comes from the idea that this model would be sonically indistinguishable from a Les Paul |
+  Standard or Custom in the recording studio, and that the flashier guitars would be reserved for stage use.
+task_description: 'Update Wikipedia-based knowledge on Les Paul Studio guitars'
+document:
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 854ffa248c43d08472886ed18b3de2de9e9afbe4
+ patterns:
+   - gibson_les_paul_studio.md
