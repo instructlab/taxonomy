@@ -3,13 +3,13 @@ domain: animals
 seed_examples:
 - answer: The Indian elephant is native to mainland Asia with nearly three-fourth of the population found in India.
   question: Where does the Indian elephant live?
-- answer: Since 1986, the Asian elephant has been listed as Endangered on the IUCN Red List as the wild population has declined by at least 50% over the last three elephant generations. 
+- answer: Since 1986, an Endangered on the IUCN Red List as the population has declined at least 50% over the last 3 generations 
   question: Is the Indian elephant Endangered?
-- answer: In general, Asian elephant is smaller than African elephant. Its back is convex or level with the highest body point on its head. The species exhibits significant sexual dimorphism with a male reaching an average shoulder height of about 3.2 m (10 ft) and weighing upto 5,400 kg (11,900 lb) whereas a female reaches an average shoulder height of about 2.54 m (8.3 ft) and weighs upto 4,160 kg (9,170 lb).[7] The largest Indian elephant was 3.43 m (11.3 ft) high at the shoulder.[8][9] On average, it measures 5.5–6.5 m (18–21 ft) in length including the trunk.[7]
+- answer: A male  shoulder height of about 3.2 m and  5,400 kg a female shoulder height of about 2.54 m and 4,160 kg
   question: How big is the Indian elephant
-- answer: Elephant is classified as a megaherbivore and can consume up to 150 kg (330 lb) of plant matter per day.[20] It can spend upto 19 hours a day foraging for food and can produce up to 220 pounds of dung per day.[12] It is a generalist feeder and both a grazer and a browser.
+- answer: It is a generalist feeder and both a grazer and a browser.
   question: What does the Indian Elephant eat?
-- answer: Indian elephants typically live in small herds consisting of related females, their female offspring and young immature males. The elephants are extremely social animals and form complex social relationships. They often work together as a group to raise their young and to protect the herd.
+- answer: The elephants are extremely social animals and form complex social relationships. 
   question: Is the Indian Elephant social?
 task_description: ' '
 document: 
