@@ -1,0 +1,24 @@
+task_description: 'Teach the model to talk about golden retrievers'
+created_by: flaviabeo
+domain: animals
+seed_examples:
+  - question: What is the Golden Retriever's appearance?
+    answer: The Golden Retriever is a powerfully built, medium-sized breed of dog.
+  - question: Can you describe the Golden Retriever's fur?
+    answer: |
+      The double coat is a recognisable and striking feature: the outer coat is long,
+      flat or wavy and has good feathering on the forelegs, while the undercoat is dense
+      and provides weather resistance. The coat can be any shade of cream, yellow or gold;
+      the coat typically becomes paler with age. The Kennel Club breed standard prohibits
+      red or mahogany-coloured coats, but a few white hairs on the chest are permitted.
+  - question: Where was the breed creted?
+    answer: Scottish estate Guisachan.
+  - question: What is the temperament of the Golden?
+    answer: The Golden Retriever is considered an intelligent, gentle natured and very affectionate breed of dog.
+  - question: What is the Golden's a life expectancy?
+    answer: 13.2 years for the breed compared to an average of 12.7 for purebreeds and 12 for crossbreeds.
+document:
+  repo: https://github.com/flaviabeo/instructlab_knowledge.git
+  commit: 6d3ce6f
+  patterns:
+    - animals/golden_retriever/golden_retriever.md
