@@ -1,5 +1,5 @@
 task_description: 'Update Wikipedia-based knowledge on Les Paul Studio guitars'
-created_by: apomponio, fsapir
+created_by: apomponio, fsapir, dal0643
 domain: musical_instruments
 seed_examples:
   # created_by: apomponio
@@ -52,6 +52,19 @@ seed_examples:
       During 2000–2002, Gibson released a series of six guitars dubbed
       "Gothic" models.
     question: When did Gibson release the Gothic models
+  # created_by: dal0643
+  # https://github.com/instructlab/taxonomy/pull/964
+  - question: What year was the Studio Custom produced
+    answer: The Studio Custom was produced in 1983–1985
+  - question: What is Vintage Mahogany/Faded
+    answer: In 2009, the Vintage Mahogany was renamed the Les Paul Studio Faded
+  - question: What is a Gibson Studio Pro Plus
+    answer: The Studio Pro Plus was an upgraded studio with a AA figured maple top and gold hardware.
+  - question: What is a Robot Les Paul Studio Limited
+    answer: The Robot Les Paul Studio Limited was an upgraded studio with Powertune auto-tuning system.
+  - question: When was the Gibson Gothic Produced
+    answer: During 2000–2002, Gibson released a series of six guitars dubbed "Gothic" models.
+
 document:
   repo: https://github.com/juliadenham/Summit_knowledge
   commit: 854ffa248c43d08472886ed18b3de2de9e9afbe4
