@@ -3,17 +3,17 @@ domain: animals
 seed_examples:
 - answer: The Indian elephant is native to mainland Asia with nearly three-fourth of the population found in India.
   question: Where does the Indian elephant live?
-- answer: Since 1986, an Endangered on the IUCN Red List as the population has declined at least 50% over the last 3 generations 
+- answer: Since 1986, Endangered on IUCN Red List the population has declined at least 50% over the last 3 generations
   question: Is the Indian elephant Endangered?
 - answer: A male  shoulder height of about 3.2 m and  5,400 kg a female shoulder height of about 2.54 m and 4,160 kg
   question: How big is the Indian elephant
 - answer: It is a generalist feeder and both a grazer and a browser.
   question: What does the Indian Elephant eat?
-- answer: The elephants are extremely social animals and form complex social relationships. 
+- answer: The elephants are extremely social animals and form complex social relationships.
   question: Is the Indian Elephant social?
 task_description: ' '
-document: 
+document:
  repo: https://github.com/juliadenham/Summit_knowledge
  commit: c27198540420e4379310b308840969f4217d7707
  patterns:
-   - indian_elephant.md
+ - indian_elephant.md
