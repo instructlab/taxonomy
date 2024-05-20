@@ -34,8 +34,8 @@ seed_examples:
     if there is not enough space for them to come through normally.
   question: What is one of the more common issues that can occur with wisdom teeth?
 task_description: ' '
-document: 
+document:
  repo: https://github.com/juliadenham/Summit_knowledge
  commit: 481b735225e2714c4e9d36da6d7b941d9a36bd86
  patterns:
-   - wisdom_tooth.md
+  - wisdom_tooth.md
