@@ -64,6 +64,18 @@ seed_examples:
     answer: The Robot Les Paul Studio Limited was an upgraded studio with Powertune auto-tuning system.
   - question: When was the Gibson Gothic Produced
     answer: During 2000–2002, Gibson released a series of six guitars dubbed "Gothic" models.
+  # created_by: dal0643
+  # https://github.com/instructlab/taxonomy/pull/1098
+  - answer: The Studio Custom was produced in 1983–1985
+    question: What year was the Studio Custom produced
+  - answer: In 2009, the Vintage Mahogany was renamed the Les Paul Studio Faded
+    question: What is Vintage Mahogany/Faded
+  - answer: The Studio Pro Plus was an upgraded studio with a AA figured maple top and gold hardware.
+    question: What is a Gibson Studio Pro Plus
+  - answer: The Robot Les Paul Studio Limited was an upgraded studio with Powertune auto-tuning system.
+    question: What is a Robot Les Paul Studio Limited
+  - answer: During 2000–2002, Gibson released a series of six guitars dubbed \"Gothic\" models.
+    question: When was the Gibson Gothic Produced
   # created_by: plimptm
   # https://github.com/instructlab/taxonomy/pull/983
   - answer: >
@@ -73,7 +85,6 @@ seed_examples:
     question: Why would someone buy a Gibson Les Paul Studio guitar?
   - answer: |
       Some of the differences between the Gibson Les Paul and Les Paul Studio guitars are:
-
       1. The Les Paul Studio is a lower-cost model than the Les Paul
       2. The Les Paul Studio lacks some of the cosmetic features of the Les Paul
       3. The body of the Les Paul Studio is thinner than that of the Les Paul
