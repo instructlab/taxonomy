@@ -46,6 +46,7 @@ jobs:
           echo "PULL_REQUEST_NUMBER=$(cat pull_request_number.txt)" >> "$GITHUB_ENV"
 
       - name: "Invoke insight analysis handler"
+        if: ${{ fromJSON(env.PULL_REQUEST_NUMBER) != 0 }}
         run: |
           curl -X "POST" "https://pr-analysis-handler.1fuhf5gskmng.us-east.codeengine.appdomain.cloud/analyze-pr?pr_number=${PULL_REQUEST_NUMBER}&owner=${REPOSITORY_OWNER}&repo=${REPOSITORY_NAME}" -H "accept: application/json" -H "Authorization: Bearer ${ANALYSIS_TOKEN}"
         env:
