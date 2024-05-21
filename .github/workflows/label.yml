@@ -31,3 +31,21 @@ jobs:
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         sync-labels: false
+
+  add-comment:
+      if: github.event.label.name == 'triage-uncertain'
+      runs-on: ubuntu-latest
+      permissions:
+        issues: write
+      steps:
+        - name: Add comment
+          run: gh issue comment "$NUMBER" --body "$BODY"
+          env:
+            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            GH_REPO: ${{ github.repository }}
+            NUMBER: ${{ github.event.issue.number }}
+            BODY: >
+              Hi! So you've been marked as `triage-uncertain`, don't fret!
+              This just means the triage team or member needs to discuss your PR during one of our [public meetings](https://github.com/instructlab/community/blob/main/Collaboration.md#triager-standup) before making a decision. (Yes! You are more then welcome to join us.)
+              You have either made something amazing, or maybe hit a corner case that we hadn't thought of, or something like that.
+              :star2: Thank you for your contribution! And you are pushing our :dog: :computer: project and we can't thank you enough. :sparkles:
