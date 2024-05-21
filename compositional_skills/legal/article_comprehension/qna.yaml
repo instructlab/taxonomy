@@ -1,0 +1,168 @@
+task_description: |
+  Simplify the complex legal language of the GDPR into plain English for easy comprehension.
+  Extract and translate specific legal provisions on demand, provide example to easily understand,
+  presenting them in a structured format for clarity.
+created_by: Nishith Sharma
+seed_examples:
+  - answer: |
+      Under GDPR, a person has the right to ask a company to delete their personal information if
+      certain conditions apply. These conditions include situations where the information is no
+      longer needed for the purpose it was collected, the person has withdrawn their consent for the
+      company to use their data (if that consent was the basis for the data processing), or the
+      person objects to the company using their data and there’s no significant legal reason for the
+      company to keep it. The company must comply and delete the data quickly if these conditions
+      are met.
+    question: |
+      Simplify the complex legal language of the following legal article into plain English for
+      easy understanding; Article 17 of the GDPR states; The data subject shall have the right to
+      obtain from the controller the erasure of personal data concerning him or her without undue
+      delay and the controller shall have the obligation to erase personal data without undue delay
+      where one of the following grounds applies; the personal data are no longer necessary in
+      relation to the purposes for which they were collected or otherwise processed; the data subject
+      withdraws consent on which the processing is based according to point (a) of Article 6(1), or
+      point (a) of Article 9(2), and where there is no other legal ground for the processing; the
+      data subject objects to the processing pursuant to Article 21(1) and there are no overriding
+      legitimate grounds for the processing, or the data subject objects to the processing pursuant
+      to Article 21(2).
+  - answer: |
+      Under GDPR, a company can only use personal information legally if one of these conditions
+      applies; the person has agreed to let the company use their data for specific reasons; the use
+      of data is essential to fulfill a contract with the person; the company needs to use the data
+      to meet a legal requirement; the data use is necessary to protect someone's crucial interests;
+      the data is used for a task that benefits the public or is part of an official duty; or the
+      data use is for the company’s legitimate business interests, but not if this would unfairly
+      go against the person’s rights, especially if the person is a child. This ensures that personal
+      data is processed fairly and with a valid reason.
+    question: |
+      Simplify the complex legal language of the following legal article into plain English for
+      easy understanding; Article 6(1) of the GDPR states; Processing shall be lawful only if and
+      to the extent that at least one of the following applies; the data subject has given consent
+      to the processing of his or her personal data for one or more specific purposes; the processing
+      is necessary for the performance of a contract to which the data subject is party or in order
+      to take steps at the request of the data subject prior to entering into a contract; the
+      processing is necessary for compliance with a legal obligation to which the controller is
+      subject; the processing is necessary in order to protect the vital interests of the data
+      subject or of another natural person; the processing is necessary for the performance of a
+      task carried out in the public interest or in the exercise of official authority vested in the
+      controller; the processing is necessary for the purposes of the legitimate interests pursued by
+      the controller or by a third party, except where such interests are overridden by the interests
+      or fundamental rights and freedoms of the data subject which require protection of personal
+      data, particularly when the data subject is a child.
+  - answer: |
+      Under GDPR, a person has the right to not be subject to important decisions made solely by
+      automated systems or software, such as algorithms or profiling tools, if these decisions have
+      a significant impact on their life. This includes decisions like being approved for a loan,
+      receiving healthcare services, or job eligibility without any human oversight. This rule helps
+      protect individuals from potentially harmful decisions that are made without human judgment and
+      understanding of context.
+    question: |
+      Simplify the complex legal language of the following legal article into plain English for
+      easy understanding; Article 22(1) of the GDPR states; The data subject shall have the right not
+      to be subject to a decision based solely on automated processing, including profiling, which
+      produces legal effects concerning him or her or similarly significantly affects him or her.
+  - answer: |
+      Data Security and Integrity; Personal information must be handled securely to prevent
+      unauthorized or illegal access, loss, destruction, or damage. This involves using proper safety
+      measures and organizational practices to protect the data.
+    question: |
+      Simplify the complex legal language of the following legal article into plain English for
+      easy understanding; Article 5(1)(f) of the GDPR ; Personal data shall be processed in a manner
+      that ensures appropriate security of the personal data, including protection against
+      unauthorized or unlawful processing and against accidental loss, destruction or damage, using
+      appropriate technical or organizational measures (integrity and confidentiality).
+  - answer: |
+      Right of Access; Individuals have the right to know if their personal data is being processed,
+      and if so, they can access their data. They are entitled to know why their data is being
+      processed, who has access to it, how long it will be kept, and their rights regarding the
+      modification, deletion, or restriction of their data. They can also find out about the source
+      of data not collected directly from them, and understand any automated decision-making that
+      affects them, including how these decisions are made.
+    question: |
+      Simplify the complex legal language of the following legal article into plain English for
+      easy understanding; Article 15 of the GDPR; The data subject shall have the right to obtain
+      from the controller confirmation as to whether or not personal data concerning him or her are
+      being processed, and, where that is the case, access to the personal data and the following
+      information; the purposes of the processing; the categories of personal data concerned; the
+      recipients or categories of recipients to whom the personal data have been or will be disclosed,
+      particularly recipients in third countries or international organisations; the envisaged period
+      for which the personal data will be stored, or, if not possible, the criteria used to determine
+      that period; the existence of the right to request from the controller rectification or erasure
+      of personal data or restriction of processing of personal data concerning the data subject or
+      to object to such processing; the right to lodge a complaint with a supervisory authority;
+      where the personal data are not collected from the data subject, any available information as
+      to their source; the existence of automated decision-making, including profiling, referred to
+      in Article 22(1) and (4) and, at least in those cases, meaningful information about the logic
+      involved, as well as the significance and the envisaged consequences of such processing for
+      the data subject.
+  - answer: |
+      Right to Data Portability; Individuals have the right to obtain and reuse their personal data
+      across different services. They can request their data from one service provider in a common
+      format and transfer it to another provider easily, provided the data was originally given with
+      consent or under a contract, and the processing is done using automated systems. This enhances
+      control over their own data by facilitating its movement between service providers.
+    question: |
+      Simplify the complex legal language of the following legal article into plain English for
+      easy understanding; Article 20 of the GDPR; The data subject shall have the right to receive
+      the personal data concerning him or her, which he or she has provided to a controller, in a
+      structured, commonly used and machine-readable format, and have the right to transmit those
+      data to another controller without hindrance from the controller to which the personal data
+      have been provided, insofar as the processing is based on consent pursuant to point (a) of
+      Article 6(1) or point (a) of Article 9(2), or on a contract pursuant to point (b) of Article
+      6(1), and the processing is carried out by automated means.
+  - answer: |
+      Data Security Requirements; GDPR mandates that organizations must adopt appropriate security
+      measures to protect personal data, considering current technology and the cost of
+      implementation. This includes encrypting personal data, ensuring systems are secure and
+      resilient, being able to restore data promptly after incidents, and regularly testing and
+      assessing the effectiveness of these security measures. These steps are crucial to safeguard
+      individuals data from unauthorized access or breaches.
+    question: |
+      Simplify the complex legal language of the following legal article into plain English for
+      easy understanding; Article 32 of the GDPR; Taking into account the state of the art, the costs
+      of implementation and the nature, scope, context and purposes of processing as well as the risk
+      of varying likelihood and severity for the rights and freedoms of natural persons, the
+      controller and the processor shall implement appropriate technical and organizational measures
+      to ensure a level of security appropriate to the risk, including inter alia as appropriate;
+      the pseudonymisation and encryption of personal data; the ability to ensure the ongoing
+      confidentiality, integrity, availability and resilience of processing systems and services;
+      the ability to restore the availability and access to personal data in a timely manner in the
+      event of a physical or technical incident; a process for regularly testing, assessing and
+      evaluating the effectiveness of technical and organizational measures for ensuring the security
+      of the processing.
+  - answer: |
+      Data Protection Impact Assessment; GDPR requires organizations to conduct a thorough risk
+      assessment known as a Data Protection Impact Assessment (DPIA) before starting any type of
+      data processing that might pose a high risk to individuals rights and freedoms. This is
+      particularly necessary when introducing new technologies. The DPIA should evaluate the impact
+      of the proposed data processing activities on the privacy and protection of personal data. If
+      several related processing activities carry similar risks, they can be assessed together under
+      a single DPIA. This assessment helps ensure that organizations understand and mitigate any
+      risks that data processing might pose to individual privacy and data security before they
+      proceed.
+    question: |
+      Simplify the complex legal language of the following legal article into plain English for
+      easy understanding; Article 35 of the GDPR; Where a type of processing in particular using new
+      technologies, and taking into account the nature, scope, context and purposes of the
+      processing, is likely to result in a high risk to the rights and freedoms of natural persons,
+      the controller shall, prior to the processing, carry out an assessment of the impact of the
+      envisaged processing operations on the protection of personal data. A single assessment may
+      address a set of similar processing operations that present similar high risks.
+  - answer: |
+      Right to Object to Processing; Under GDPR, individuals have the right to object to the
+      processing of their personal data at any time, especially if the processing is based on the
+      performance of a task carried out in the public interest or in the exercise of official
+      authority (point (e)), or for the purposes of legitimate interests pursued by the organization
+      or a third party (point (f)). This also applies to profiling based on these grounds. The
+      organization must stop processing personal data unless it can demonstrate strong legitimate
+      reasons for the processing that outweigh the individuals interests, rights, and freedoms, or if
+      the processing is necessary for legal claims. This right ensures that individuals have a say in
+      the use of their data, particularly in contexts where personal preferences and freedoms might
+      be significantly impacted.
+    question: |
+      Simplify the complex legal language of the following legal article into plain English for
+      easy understanding; Article 21 of the GDPR; The data subject shall have the right to object at
+      any time to processing of personal data concerning him or her which is based on point (e) or
+      (f) of Article 6(1), including profiling based on those provisions. The controller shall no
+      longer process the personal data unless the controller demonstrates compelling legitimate
+      grounds for the processing which override the interests, rights and freedoms of the data subject
+      or for the establishment, exercise or defence of legal claims.
