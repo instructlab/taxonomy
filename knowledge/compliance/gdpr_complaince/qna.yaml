@@ -1,0 +1,166 @@
+created_by: Nishith Sharma
+domain: compliance
+seed_examples:
+  - answer: |
+      No, this practice is not GDPR compliant. According to Article 7 of the GDPR, consent must be
+      "freely given, specific, informed, and unambiguous". The consent must be explicit for all the
+      purposes for which the data is being collected. In this scenario, if the data is used for
+      sending marketing emails without explicit consent for that purpose, it violates the GDPR.
+    question: |
+      A marketing firm uses an online form to collect personal data from European Union residents,
+      promising a free ebook in return. The form does not explicitly ask for consent to send marketing
+      emails besides the ebook. Is this practice GDPR compliant?
+  - answer: |
+      This is likely not GDPR compliant. The GDPR requires transparency regarding the collection and
+      use of personal data. According to Article 13 of the GDPR, individuals have the right to be
+      informed about the collection and use of their personal data. Not informing individuals that
+      they are being recorded by CCTV violates this principle.
+    question: |
+      A retail company uses CCTV systems around its stores for security purposes but does not notify
+      the customers or staff about being recorded. Is this GDPR compliant?
+  - answer: |
+      This scenario might violate the GDPR unless certain conditions are met. According to Article 44
+      of the GDPR, any transfer of personal data which are undergoing processing or are intended for
+      processing after transfer to a third country shall take place only if, subject to the other
+      provisions of the GDPR, the conditions laid down in the Chapter V of the GDPR are complied with
+      by the controller and processor, including ensuring an adequate level of data protection and the
+      implementation of appropriate safeguards.
+    question: |
+      A company stores personal data of its employees in a cloud storage service. The service provider
+      has data centers located outside the EU. Does this comply with the GDPR?
+  - answer: |
+      Sharing patient records without consent in this scenario is not GDPR compliant. Patient records
+      are considered sensitive data under the GDPR. According to Article 9 of the GDPR, processing of
+      personal data revealing racial or ethnic origin, political opinions, religious or philosophical
+      beliefs, or trade union membership, and the processing of genetic data, biometric data for the
+      purpose of uniquely identifying a natural person, data concerning health or data concerning a
+      natural person's sex life or sexual orientation shall be prohibited unless explicit consent is
+      given or another specific condition under Article 9(2) applies.
+    question: |
+      A health clinic shares patient records with an external consultant without patient consent. The
+      consultant is helping to improve clinic services. Is this sharing GDPR compliant?
+  - answer: |
+      This practice is not GDPR compliant. According to Article 5 of the GDPR, personal data shall be
+      collected for specified, explicit, and legitimate purposes and not further processed in a manner
+      that is incompatible with those purposes. Retaining credit card information without explicit
+      consent violates this principle, as consent must be clear and specific to the nature of the
+      processing.
+    question: |
+      An online bookstore retains credit card information of customers without their explicit consent
+      to make future purchases easier. Is this GDPR compliant?
+  - answer: |
+      The law firm should review Article 7 of the GDPR, which details the conditions for consent. It
+      emphasizes that consent should be freely given, specific, informed, and unambiguous, with
+      procedures for obtaining and withdrawing consent clearly outlined. The firm must update their
+      consent forms to meet these criteria to ensure compliance.
+    question: |
+      A law firm processes large amounts of personal data for legal cases and relies on consent as its
+      legal basis. However, they haven't updated their consent forms since GDPR was implemented. What
+      article should they review to ensure compliance?
+  - answer: |
+      Article 89 of the GDPR applies in this scenario. It pertains to the processing of personal data
+      for scientific research purposes. This article states that data should be processed in a manner
+      which respects the principle of data minimization and where possible, the data should be
+      anonymized. The university needs to either anonymize the data or ensure strict compliance with
+      GDPR principles for processing personal data for research purposes, including obtaining explicit
+      consent for the specific use of non-anonymized data.
+    question: |
+      A university's research department publishes academic papers that include data from EU citizens,
+      gathered from online surveys. The department did not anonymize the data because they plan to use
+      it for future studies. Which GDPR article applies?
+  - answer: |
+      The company should double-check Chapter V of the GDPR, which deals with the transfer of personal
+      data to third countries or international organizations. This chapter ensures that such transfers
+      do not undermine the level of protection of natural persons guaranteed by the GDPR and discusses
+      mechanisms like Standard Contractual Clauses (SCCs) as one method to ensure adequate safeguards
+      are in place.
+    question: |
+      A technology company transfers employee data between its various offices across the EU and the
+      US. The company relies on standard contractual clauses (SCCs) for data protection. What chapter
+      of GDPR should they double-check for compliance?
+  - answer: |
+      Article 6 of the GDPR, which covers the lawfulness of processing, is crucial here. For processing
+      to be lawful, consent must be obtained before any cookies that are not strictly necessary for
+      the operation of a website are placed on a user's device. The agency must ensure that clear,
+      affirmative consent is obtained from users before any non-essential cookies are used.
+    question: |
+      A digital marketing agency uses cookies to track users' activities on their client websites
+      without explicitly informing the users or obtaining their consent. Which GDPR article outlines
+      the rules they need to adhere to for compliant use of cookies?
+  - answer: |
+      Article 37 of the GDPR should be consulted to determine whether a Data Protection Officer (DPO)
+      needs to be appointed. This article specifies that a DPO must be appointed if the core
+      activities of the controller or the processor consist of processing operations which require
+      regular and systematic monitoring of data subjects on a large scale, or where the entity
+      processes special categories of data on a large scale. The small business should assess their
+      processing activities in light of these criteria to determine if a DPO is required.
+    question: |
+      A small business processes personal data but has not appointed a Data Protection Officer (DPO)
+      as they believe their data processing is not extensive enough to require one. Which article
+      should they consult to understand if a DPO is necessary?
+  - answer: |
+      The consultancy should be particularly aware of Article 9 of the GDPR, which provides special
+      provisions for processing sensitive personal data. This article prohibits the processing of
+      personal data revealing racial or ethnic origin, political opinions, religious or philosophical
+      beliefs, or trade union membership, and the processing of genetic data, biometric data for the
+      purpose of uniquely identifying a natural person, data concerning health or data concerning a
+      natural person's sex life or sexual orientation unless one of the specific exceptions applies.
+      The consultancy must ensure strict adherence to these conditions or obtain explicit consent for
+      such processing.
+    question: |
+      An HR consultancy frequently handles sensitive personal data such as health information and
+      racial or ethnic origin for its clients. What specific GDPR provisions should they be
+      particularly aware of to ensure compliance?
+  - answer: |
+      Article 22 of the GDPR, which deals with automated individual decision-making, including
+      profiling, is relevant in this scenario. This article states that individuals have the right
+      not to be subject to a decision based solely on automated processing, including profiling,
+      which produces legal effects concerning them or similarly significantly affects them. The
+      startup must ensure that individuals are informed about the automated decision-making and have
+      the right to obtain human intervention, to express their point of view, and to contest the
+      decision.
+    question: |
+      A fintech startup processes and stores large volumes of personal data for credit risk
+      assessments. They utilize automated decision-making systems for this purpose. Which GDPR
+      article outlines their obligations?
+  - answer: |
+      Article 4 of the GDPR would be relevant here, particularly in terms of defining what constitutes
+      personal data and anonymization. This article explains that personal data includes any
+      information relating to an identified or identifiable natural person. If the data has been
+      truly anonymized (and thus cannot be used to re-identify individuals), GDPR does not apply.
+      However, if there is any possibility of re-identifying individuals from the anonymized data,
+      GDPR protections would still apply.
+    question: |
+      A mobile app developer uses location data from users to provide personalized ads. They claim
+      that they have anonymized the data so GDPR does not apply. Which GDPR article can clarify their
+      obligations?
+  - answer: |
+      Article 28 of the GDPR, which concerns processor obligations, mandates the necessity of formal
+      contracts or legal acts under EU or Member State law that binds the processor to the controller
+      and sets out the subject matter and duration of the processing, the nature and purpose of
+      processing, the type of personal data and categories of data subjects, and the obligations and
+      rights of the controller. This ensures both parties understand their responsibilities under GDPR.
+    question: |
+      A legal firm advises clients on GDPR compliance and processes data on their behalf. The firm has
+      not established a formal contract with their clients that defines each party’s obligations under
+      GDPR. What GDPR article mandates the necessity of such agreements?
+  - answer: |
+      Article 3 of the GDPR, which pertains to the territorial scope of the regulation, addresses this.
+      This article specifies that GDPR applies to the processing of personal data of individuals who are
+      in the EU by a controller or processor not established in the EU, where the processing activities
+      are related to the offering of goods or services to such individuals in the EU or the monitoring of
+      their behavior as far as their behavior takes place within the EU. Therefore, the online retailer
+      must comply with the GDPR.
+    question: |
+      An online retailer based outside the EU sells goods to EU citizens and collects their personal
+      data for transactions. They are unsure if GDPR applies to them since they are not based in the EU.
+      Which GDPR article addresses this?
+task_description: |
+  The user will ask if a data element is PII tag yes or no. Answer that based on the GDPR compliance
+  guidelines, and assess if the element is personal identifiable information, and also provide the
+  reasoning.
+document:
+  repo: https://github.com/nishithsharma9/compliance_data
+  commit: 4b65c8e25a09a4d5b36708506736eef541b9bf7e
+  patterns:
+    - gdpr.md
