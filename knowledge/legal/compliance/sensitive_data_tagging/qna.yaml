@@ -1,0 +1,73 @@
+task_description: "To analyze and classify various data elements across different domains (e.g., mortgage, clinical
+trials, product domain) to determine if they are considered Personally Identifiable Information (PII). Each
+classification should be accompanied by a reasoning that explains why the data element is or is not
+considered PII."
+created_by: Nishith Sharma
+domain: legal
+seed_examples:
+  - answer: No, "LoanID" is not PII as it serves as a unique identifier for the loan, not directly personal.
+    question: Is "LoanID" considered PII in the mortgage domain?
+  - answer: Yes, "BorrowerName" is PII because it directly identifies an individual, which is personal data.
+    question: Is "BorrowerName" considered PII in the mortgage domain?
+  - answer: Yes, "PropertyAddress" is PII because it can identify an individual's residence, considered personal.
+    question: Is "PropertyAddress" considered PII in the mortgage domain?
+  - answer: No, "LoanAmount" is not PII as it refers to the amount of the loan, financial but not directly personal.
+    question: Is "LoanAmount" considered PII in the mortgage domain?
+  - answer: Yes, "CardNumber" is directly linked to an individual's financial identity.
+    question: Is "CardNumber" considered PII?
+  - answer: No, "TransactionID" is a generic identifier for a transaction, not personally identifying.
+    question: Is "TransactionID" considered PII?
+  - answer: Yes, "Email Address" can be used to contact or identify an individual directly.
+    question: Is "Email Address" considered PII?
+  - answer: No, "Job Title" describes employment position, not personally identifiable outside work context.
+    question: Is "Job Title" considered PII?
+  - answer: Yes, "Social Security Number" is sensitive PII, used for unique identification and tax purposes.
+    question: Is "Social Security Number" considered PII?
+  - answer: No, "ProdID" is not PII as it identifies a product, not linked to an individual in the product domain.
+    question: Is "ProdID" considered PII in the product domain?
+  - answer: No, "StudyDesign" is not PII as it describes the methodology of the trial, not personal.
+    question: Is "StudyDesign" considered PII in the clinical trial domain?
+  - answer: No, "Sponsor" is not PII as it names the organization sponsoring the trial, not an individual.
+    question: Is "Sponsor" considered PII in the clinical trial domain?
+  - answer: No, "OutcomeMeasures" consists of metrics to assess trial outcomes, not personal information.
+    question: Is "OutcomeMeasures" considered PII in the clinical trial domain?
+  - answer: No, "TrialID" is not PII as it is a unique identifier for a clinical trial, not personal data.
+    question: Is "TrialID" considered PII in the clinical trial domain?
+  - answer: Yes, "Salary" is personal financial information.
+    question: Is "Salary" considered PII?
+  - answer: No, "TherapeuticArea" refers to the field of medical research, not personal.
+    question: Is "TherapeuticArea" considered PII in the clinical trial domain?
+  - answer: No, "TransactionAmount" is the amount of the transaction, not personally identifying.
+    question: Is "TransactionAmount" considered PII?
+  - answer: Yes, "Payroll Details" contains sensitive financial information including bank details.
+    question: Is "Payroll Details" considered PII?
+  - answer: No, "CreditScore" indicates creditworthiness, it's considered sensitive but not direct PII.
+    question: Is "CreditScore" considered PII in the mortgage domain?
+  - answer: Yes, "Name" directly identifies an individual.
+    question: Is "Name" considered PII?
+  - answer: No, "RetailPrc" is not PII as it refers to the retail price of the product, not a PII.
+    question: Is "RetailPrc" considered PII in the product domain?
+  - answer: No, "Hire Date" is related to employment history, not personal outside context.
+    question: Is "Hire Date" considered PII?
+  - answer: No, "MerchantID" is an identifier for the merchant, not personal.
+    question: Is "MerchantID" considered PII?
+  - answer: No, "LoanType" describes the type of loan, general information, not personal.
+    question: Is "LoanType" considered PII in the mortgage domain?
+  - answer: Yes, "Photo" is a direct visual identifier of an individual.
+    question: Is "Photo" considered PII?
+  - answer: No, "CardPresentFlag" indicates if the card was present at the transaction, not personal.
+    question: Is "CardPresentFlag" considered PII?
+  - answer: No, "EligibilityCriteria" outlines criteria for participant inclusion, not individual data.
+    question: Is "EligibilityCriteria" considered PII in the clinical trial domain?
+  - answer: Yes, "Address" locates and identifies an individual's living place.
+    question: Is "Address" considered PII?
+  - answer: No, "CreditScore" is a measure of creditworthiness, considered sensitive but not directly personal.
+    question: Is "CreditScore" considered PII in the mortgage domain?
+  - answer: No, "OriginationDate" is the date the loan was originated, not personal.
+    question: Is "OriginationDate" considered PII in the mortgage domain?
+document:
+  repo: https://github.com/nishithsharma9/compliance_data
+  commit: 80b310e07926fe5cd8a3cf535eb9d51c1e6bc011
+  patterns:
+    - gdpr_wiki.md
+    - personal_data_wiki.md
