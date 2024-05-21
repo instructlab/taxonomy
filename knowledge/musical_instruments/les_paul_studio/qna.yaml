@@ -29,12 +29,12 @@ seed_examples:
       Standard models of guitars?
     answer: >
       The "Studio" name was used with Custom and Standard models which used
-      non-traditional woods for the neck, body,top, and fingerboard. For example,
-      Custom and Standard bodies were made from alder wood from 1983-1985,
-      but Gibson later moved to using maple top/mahogany after the alder body
+      non-traditional woods for the neck, body, top, and fingerboard. For example,
+      Custom and Standard model bodies were made from alder wood from 1983-1985,
+      but Gibson later moved back to using maple top/mahogany after the alder body
       proved prone to lacquer problems.
 
-  - question: Where did the name Studio come from?
+  - question: Where did the name \"Studio\" in Les Paul Studio come from?
     answer: >
       The name \"Studio\" comes from the idea that this model would be sonically
       indistinguishable from a Les Paul Standard or Custom in the recording studio,
@@ -82,13 +82,13 @@ seed_examples:
       with the tonal qualities of a Gibson Les Paul guitar but want to save money
       and do not want the full cosmetic feature set of the Les Paul.
     question: Why would someone buy a Gibson Les Paul Studio guitar?
-  - answer: |
+  - answer: >
       Some of the differences between the Gibson Les Paul and Les Paul Studio guitars are:
       1. The Les Paul Studio is a lower-cost model than the Les Paul
       2. The Les Paul Studio lacks some of the cosmetic features of the Les Paul
       3. The body of the Les Paul Studio is thinner than that of the Les Paul
     question: What are the differences between the Les Paul and a Les Paul Studio guitars?
-  - answer: |
+  - answer: >
       The Gibson Les Paul Studio guitar uses mahogany for the body and neck.
       The fretboard is made of either rosewood, maple, or ebony.
       Select models use maple for the neck.
@@ -98,7 +98,7 @@ seed_examples:
       translucent red, transluscent blue, translucent amber, wine red, ebony,
       alpine white, and possibly others.
     question: What colors are available for the Gibson Les Paul Studio guitar?
-  - answer: |
+  - answer: >
       The Gibson Les Paul Studio usually includes 2 humbucker pickups, which are either
       498T and 490R, or P-90s
     question: What pickups do the Gibson Les Paul Studio use?
@@ -106,7 +106,7 @@ seed_examples:
   # https://github.com/instructlab/taxonomy/pull/1024
   - answer: Solid Body Electric
     question: What type of guitar is a LesPaul Studio?
-  - answer: |
+  - answer: >
       Some features omitted to appeal to musicians looking for the tonal qualities of
       the guitar but with less of an emphasis on cosmetics and to reduce the price of
       the instrument.
@@ -119,11 +119,11 @@ seed_examples:
     question: What years were the Studio Customs produced?
   # created_by: peterclauterbach
   # https://github.com/instructlab/taxonomy/pull/1052
-  - answer: |
+  - answer: >
       Various sunbursts, Translucent Red, Translucent Blue, Translucent Amber, Wine Red,
       Ebony, Alpine White
     question: What colors are available for the Gibson Les Paul Studio guitars?
-  - answer: |
+  - answer: >
       Studio Standard, Studio Custom,Vintage Mahogony, Studio Lite, Gem Series, Smartwood
       Series, Gothic, Voodoo, Pro Plus, Premium Plus, Robot Limited
     question: What are the different models of the Gibson Less Paul Studio Guitars?
