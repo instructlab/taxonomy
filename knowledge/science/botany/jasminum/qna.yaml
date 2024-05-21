@@ -14,10 +14,10 @@ seed_examples:
   Jasminum sambac is classified under the genus Jasminum under the tribe Jasmineae.[14] It belongs to the olive family Oleaceae.
   question: How is Jasmineae sambac classified?
 - answer: |
-  In 1753, Carl Linnaeus first described the plant as Nyctanthes sambac in the first edition of his famous book Systema Naturae. In 1789, William Aiton reclassified the plant to the genus Jasminum. He also coined the common English name of "Arabian jasmine".
+  In 1753, Carl Linnaeus first described the plant as Nyctanthes sambac in the first edition of his famous book Systema Naturae.
   question: When was Jasmineae sambac first described?
 task_description: 'Training llm'
-document: 
+document:
  repo: https://github.com/juliadenham/Summit_knowledge
  commit: afe0558e6aaf5f548a56abb8f9c934951adaa78a
  patterns:
