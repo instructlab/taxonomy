@@ -80,14 +80,14 @@ jobs:
             knowledge
 
       - name: "Save Pull Request number"
-        if: ${{ (steps.changed-files.outputs.any_changed == 'true') && (github.event_name == 'pull_request') && (github.repository == 'instructlab/taxonomy') }}
+        if: ${{ (github.event_name == 'pull_request') && (github.repository == 'instructlab/taxonomy') }}
         run: |
           echo "${PULL_REQUEST_NUMBER}" > pull_request_number.txt
         env:
-          PULL_REQUEST_NUMBER: ${{ github.event.number }}
+          PULL_REQUEST_NUMBER: ${{ steps.changed-files.outputs.any_changed == 'true' && github.event.number || '0' }}
 
       - name: "Upload Pull Request number"
-        if: ${{ (steps.changed-files.outputs.any_changed == 'true') && (github.event_name == 'pull_request') && (github.repository == 'instructlab/taxonomy') }}
+        if: ${{ (github.event_name == 'pull_request') && (github.repository == 'instructlab/taxonomy') }}
         uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808 # v4.3.3
         with:
           name: pull_request_number
