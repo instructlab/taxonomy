@@ -41,7 +41,7 @@ jobs:
       - name: "Download actionlint"
         id: get_actionlint
         run: |
-          bash <(curl https://raw.githubusercontent.com/rhysd/actionlint/2d26fef7e97b8ab345791f5ade3252da47d083e3/scripts/download-actionlint.bash)
+          bash <(curl https://raw.githubusercontent.com/rhysd/actionlint/b6b7a2901eb4fa4bae2e6d8f9b6edd1a37b3cca7/scripts/download-actionlint.bash)
 
       - name: "Check workflow files"
         run: |
