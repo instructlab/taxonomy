@@ -12,56 +12,63 @@ seed_examples:
       qualities of the guitar but with less of an emphasis on cosmetics and to
       reduce the price of the instrument.
   # - question: When did Gibson introduce the Les Paul Studio to their lineup?
-  #   answer: |
+  #   answer: >
   #     Responding to a gap in their model lineup for a lower-priced Les Paul in
   #     1983, Gibson introduced the Studio model.
   # - question: What is the difference between a Les Paul and a Les Paul Studio guitar?
-  #   answer: |
+  #   answer: >
   #     In order to produce a lower-cost Les Paul, features such as body binding,
   #     neck binding, and headstock inlays were not available. Additionally, the
   #     body was ⅛ to ¼ inch thinner than a standard Les Paul.
   # - question: What type of wood is the body of Les Paul Studio made from?
-  #   answer: |
+  #   answer: >
   #     Initially made of alder from 1983–1985, Gibson moved back to maple top/mahogany
   #     body combination after the alder body proved prone to lacquer problems.
   - question: >
-      What woods were used for Les Paul Studio Custom or Les Paul Studio
+      What woods have been used to make Les Paul Studio Custom or Les Paul Studio
       Standard models of guitars?
     answer: >
       The "Studio" name was used with Custom and Standard models which used
       non-traditional woods for the neck, body, top, and fingerboard. For example,
-      Custom and Standard model bodies were made from alder wood from 1983-1985,
-      but Gibson later moved back to using maple top/mahogany after the alder body
-      proved prone to lacquer problems.
-
+      Standard model bodies were made entirely from alder wood between 1983-1985,
+      but Gibson later moved back to a mahogany body with a maple top after
+      the alder body proved prone to lacquer problems.
   - question: Where did the name \"Studio\" in Les Paul Studio come from?
     answer: >
-      The name \"Studio\" comes from the idea that this model would be sonically
+      The name Studio comes from the idea that this model would be sonically
       indistinguishable from a Les Paul Standard or Custom in the recording studio,
       and that the flashier guitars would be reserved for stage use.
   # created_by: fsapir
   # https://github.com/instructlab/taxonomy/pull/956
-  - answer: >
-      The Studio was designed to attract guitar players who desired
-      traditional Les Paul sound without having to pay for cosmetic features of
-      upscale models
-    question: Why was the Les Paul Studio model introduced?
-  - answer: >
-      The name "Studio" comes from the idea that this model would be sonically
-      indistinguishable from a Les Paul Standard or Custom in the recording
-      studio, and that the flashier guitars would be reserved for stage use
-    question: Where does the name Studio come from?
-  - answer: >
-      In 2009, the Vintage Mahogany was renamed the Les Paul Studio Faded.
-    question: When was the Vintage Mahogany renamed?
-  - answer: >
-      The SmartWood series consists chronologically of three models; the
-      Exotic, the Studio and the Swamp Ash models.
-    question: Which guitar models are included in the Smartwood series?
-  - answer: >
-      During 2000–2002, Gibson released a series of six guitars dubbed
-      "Gothic" models.
-    question: When did Gibson release the Gothic models?
+  # - question: Why was the Les Paul Studio model introduced?
+  #   answer: >
+  #     The Studio was designed to attract guitar players who desired
+  #     traditional Les Paul sound without having to pay for cosmetic features of
+  #     upscale models.
+  # - answer: >
+  #     The name "Studio" comes from the idea that this model would be sonically
+  #     indistinguishable from a Les Paul Standard or Custom in the recording
+  #     studio, and that the flashier guitars would be reserved for stage use
+  #   question: Where does the name Studio come from?
+  # - question: When was the Les Paul Studio Vintage Mahogany model renamed?
+  #   answer: >
+  #     In 2009, the Vintage Mahogany model was renamed the Les Paul Studio Faded
+  #     and added worn blue and worn ebony as color choices.
+  #     In 2013 model year, the Studio Faded was replaced with the "LPJ" model.
+  # - answer: >
+  #     The SmartWood series consists chronologically of three models; the
+  #     Exotic, the Studio and the Swamp Ash models.
+  #   question: Which guitar models are included in the Smartwood series?
+  - question: What is the chronological order models were released in the Les Paul Smartwood series?
+		answer: >
+      There were three models of Smartwood Les Pauls produced between 1996 and 2011, including:
+      1. Exotic (1996–2002),
+      2. Studio (2002-2008) and
+      3. Swamp Ash (2003-2011)
+  # - question: When did Gibson release the Gothic series?
+  #   answer: >
+  #     During 2000–2002, Gibson released a series of six guitars dubbed
+  #     "Gothic" models.
   # created_by: dal0643
   # https://github.com/instructlab/taxonomy/pull/964
   # https://github.com/instructlab/taxonomy/pull/1098
@@ -105,7 +112,7 @@ seed_examples:
   # created_by: beanprime
   # https://github.com/instructlab/taxonomy/pull/1024
   - answer: Solid Body Electric
-    question: What type of guitar is a LesPaul Studio?
+    question: What type of guitar is a Les Paul Studio?
   - answer: >
       Some features omitted to appeal to musicians looking for the tonal qualities of
       the guitar but with less of an emphasis on cosmetics and to reduce the price of
