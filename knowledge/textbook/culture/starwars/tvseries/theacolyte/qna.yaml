@@ -1,28 +1,34 @@
-task_description: 'Teach the model on starwars The Acolyte (TV series)'
+task_description: 'Teach the model on Star Wars The Acolyte (TV series)'
 created_by: markus.van.kempen
 domain: starwars
 seed_examples:
- - question: When did the 2024 Oscars happen?
+ - question: Who created star wars the acolyte?
    answer: |
-     The 2024 Oscars were held on March 10, 2024.
- - question: What film had the most Oscar nominations in 2024?
+     Leslye Headland.
+ - question: What Jedi will be in Acolyte?
+   answer: | 
+     Jedi Master Sol.
+ - question: Who is the villain in The Acolyte?
    answer: |
-     Oppenheimer had 13 Oscar nominations.
- - question: Who presented the 2024 Oscar for Best Original Screenplay and Best Adapted Screenplay?
+     The Acolyte reveals a new Sith Lord, sparking theories of their identity. 
+     The masked Sith may likely be Darth Tenebrous—Plagueis Master—reintroduced back into Canon in 2015. 
+     The Sith's respirator mask hints at similarities to Tenebrous.
+ - question: What is The Acolyte?
    answer: |
-     Octavia Spencer presented the award for Best Original Screenplay and Best Adapted Screenplay at the 2024 Oscars.
- - question: Who hosted the 2024 Oscars?
+     The Acolyte is a Star Wars television series developed by Leslye Headland for Disney+. 
+     Headland will write, executive produce, and serve as the series's showrunner. 
+     The show takes place a century before the events of Star Wars: Episode I The Phantom Menace, 
+     and will focus on the emergence of dark side powers in the final days of the High Republic Era. 
+     The Premiered June 4, 2024.
+ - question: Which Jedi are in The Acolyte?
    answer: |
-     Jimmy Kimmel hosted the 96th Academy Awards ceremony.
- - question: At the 2024 Oscars, who were the nominees for best director and who won?
+     Also that month, character details for most of the series' main cast were revealed, 
+     with Stenberg as former Padawan Mae, Lee as Jedi Master Sol, Jacinto as former smuggler Qimir,
+     Keen as Padawan Jecki Lon, Barnett as Jedi Knight Yord Fandar, 
+     Turner-Smith as coven-leader Mother Aniseya, and Moss as Jedi Master Indara.
+ - question: Will we see Yoda in Acolyte?
    answer: |
-     The nominees for director at the 2024 Oscars was Christopher Nolan for Oppenheimer,
-     Justine Triet for Anatomy of a Fall, Martin Scorsese for Killers of the Flower Moon,
-     Yorgos Lanthimos for Poor Things, and Jonathan Glazer for The Zone of Interest.
-     Christopher Nolan won best director for Oppenheimer.
- - question: Did Billie Eilish perform at the 2024 Oscars?
-   answer: |
-     Yes Billie Eilish performed "What Was I Made For?" from Barbie at the 2024 Oscars.
+     No Yoda will not appear in The Acolyte.
 document:
  repo: https://github.com/makusvankempen/starwars_acolyte_knowledge.git
  commit: 7badb12
