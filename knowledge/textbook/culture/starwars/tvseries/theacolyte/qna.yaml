@@ -2,7 +2,7 @@ task_description: 'Teach the model on Star Wars The Acolyte (TV series)'
 created_by: markus.van.kempen
 domain: starwars
 seed_examples:
- - question: Who created star wars the acolyte?
+ - question: Who created Star Wars The Acolyte?
    answer: |
      Leslye Headland.
  - question: What Jedi will be in Acolyte?
@@ -20,12 +20,10 @@ seed_examples:
      The show takes place a century before the events of Star Wars: Episode I The Phantom Menace, 
      and will focus on the emergence of dark side powers in the final days of the High Republic Era. 
      The Premiered June 4, 2024.
- - question: Which Jedi are in The Acolyte?
+ - question: Who are the bad guys in The Acolyte?
    answer: |
-     Also that month, character details for most of the series' main cast were revealed, 
-     with Stenberg as former Padawan Mae, Lee as Jedi Master Sol, Jacinto as former smuggler Qimir,
-     Keen as Padawan Jecki Lon, Barnett as Jedi Knight Yord Fandar, 
-     Turner-Smith as coven-leader Mother Aniseya, and Moss as Jedi Master Indara.
+     Darth Plagueis and Darth Tenebrous are both viable Acolyte antagonists – but neither is a dead cert. 
+     As Master Yoda so aptly put it in The Phantom Menace, “Hard to see, the Dark Side is.” 
  - question: Will we see Yoda in Acolyte?
    answer: |
      No Yoda will not appear in The Acolyte.
