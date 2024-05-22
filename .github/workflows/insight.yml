@@ -2,6 +2,8 @@
 
 name: CoC insight analysis
 
+run-name: ${{ github.event.workflow_run.display_title || github.workflow }}
+
 on:
   workflow_run:
     workflows:
