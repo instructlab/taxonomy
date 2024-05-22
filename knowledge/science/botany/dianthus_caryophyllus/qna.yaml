@@ -6,7 +6,8 @@ seed_examples:
 
 - question: "What can Dianthus Caryophyllus be used as a symbol for?"
   answer: "Along with the Red Rose the red carnation can be used as a symbol of socialism
-  and the labour movement, and historically has often been used in demonstrations on International Workers Day (May Day)."
+      and the labour movement, and historically has often been used in demonstrations on
+      International Workers Day (May Day)."
 
 - question: "how old are dianthus caryophyllus?"
   answer: "they were mentioned in greek literature 2,000 years ago"
@@ -18,19 +19,19 @@ seed_examples:
     The flowers are produced singly or up to five together in a cyme;
     they are around 3–5 cm (1 1/4 in - 2 in) in diameter, and sweetly scented;
     the original natural flower color is bright pinkish-purple, but cultivars of other colors,
-    including red, pink, yellow, white, and green have been developed. 
-    While sometimes dyed blue for cut bouquets, there are no known carnation 
-    cultivars that produce a true blue flower. 
-    The fragrant, hermaphrodite flowers have a radial symmetry. 
-    The four to six surrounding the calyx, egg-shaped, sting-pointed scales leaves 
+    including red, pink, yellow, white, and green have been developed.
+    While sometimes dyed blue for cut bouquets, there are no known carnation
+    cultivars that produce a true blue flower.
+    The fragrant, hermaphrodite flowers have a radial symmetry.
+    The four to six surrounding the calyx, egg-shaped, sting-pointed scales leaves
     are only ¼ as long as the calyx tube."
     
-- question: Where is dianthus caryophyllus found? 
+- question: Where is dianthus caryophyllus found?
   answer: The wild carnation is found in the Mediterranean countries of Spain, Italy, Croatio, Albania, Greece and Turkey.
 
 task_description: ' '
 document: 
  repo: https://github.com/juliadenham/Summit_knowledge
  commit: 195fc4d83a40d8a1b60062e66e06cfc0bc9c8d35
- patterns:
+patterns:
    - dianthus_caryophyllus.md
