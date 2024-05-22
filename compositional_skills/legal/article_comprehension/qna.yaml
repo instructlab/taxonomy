@@ -2,7 +2,7 @@ task_description: |
   Simplify the complex legal language of the GDPR into plain English for easy comprehension.
   Extract and translate specific legal provisions on demand, provide example to easily understand,
   presenting them in a structured format for clarity.
-created_by: nishithsharma9
+created_by: nishithsharma9, richlin, BalajiRamachandran
 seed_examples:
   - answer: |
       Under GDPR, a person has the right to ask a company to delete their personal information if
