@@ -5,7 +5,7 @@ You can create a Git repository to host your knowledge contributions anywhere (G
 ## Prerequisites
 
 - You have a GitHub account
-- You have a forked copy of the taxonomy repository
+- You have a forked copy of the [taxonomy](https://github.com/instructlab/taxonomy/tree/main) repository
 - Verify that the model does not already know the knowledge you want to submit
 
 ## Creating your own knowledge repository
