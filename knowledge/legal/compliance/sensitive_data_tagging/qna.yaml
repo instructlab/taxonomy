@@ -2,7 +2,7 @@ task_description: "To analyze and classify various data elements across differen
 trials, product domain) to determine if they are considered Sensitive Data Element (SDE). Each
 classification should be accompanied by a reasoning that explains why the data element is or is not
 considered SDE."
-created_by: nishithsharma9
+created_by: nishithsharma9, richlin, BalajiRamachandran
 domain: legal
 seed_examples:
   - answer: No, "LoanID" is not sensitive data element as it serves as a unique identifier for the loan, not directly sensitive.
