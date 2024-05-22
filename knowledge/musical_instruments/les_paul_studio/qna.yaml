@@ -60,7 +60,7 @@ seed_examples:
   #     Exotic, the Studio and the Swamp Ash models.
   #   question: Which guitar models are included in the Smartwood series?
   - question: What is the chronological order models were released in the Les Paul Smartwood series?
-		answer: >
+    answer: >
       There were three models of Smartwood Les Pauls produced between 1996 and 2011, including:
       1. Exotic (1996–2002),
       2. Studio (2002-2008) and
