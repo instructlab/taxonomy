@@ -467,4 +467,5 @@ To contribute to this repo, you'll use the *Fork and Pull* model common in many 
 
 This taxonomy repository will be used as the seed to synthesize the training
 data for InstructLab-trained models. We intend to retrain the model(s) using the main
-branch as often as possible (at least weekly). Fast iteration of the model(s) benefits the open source community and enables model developers who do not have access to the necessary compute infrastructure.
+branch as often as possible (at least weekly).
+Fast iteration of the model(s) benefits the open source community and enables model developers who do not have access to the necessary compute infrastructure.
