@@ -90,19 +90,6 @@ seed_examples:
     question: What pickups do the Gibson Les Paul Studio use?
   # created_by: beanprime
   # https://github.com/instructlab/taxonomy/pull/1024
-  - answer: Solid Body Electric
-    question: What type of guitar is a Les Paul Studio?
-  - answer: >
-      Some features omitted to appeal to musicians looking for the tonal qualities of
-      the guitar but with less of an emphasis on cosmetics and to reduce the price of
-      the instrument.
-    question: Does the Studio version have all the features of the original LesPaul?
-  - answer: 1983-1987
-    question: What years were the Studio Standard Produced?
-  - answer: '1983'
-    question: What year did Les Paul introduce the Studio model?
-  - answer: 1983-1985
-    question: What years were the Studio Customs produced?
   # created_by: peterclauterbach
   # https://github.com/instructlab/taxonomy/pull/1052
   - answer: >
