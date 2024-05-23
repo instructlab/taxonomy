@@ -3,7 +3,7 @@ domain: college_mascot
 seed_examples:
   - answer: |
       There have been ten Reveille's in the history of Texas A&M with the first Reveille I joining in 1931.
-    question: How many Reveille Dogs have there been in history?
+    question: How many Reveille Dogs have there been in the history of Texas A&M?
   - answer: |
       Reveille is most commonly recognized as a purebred Rough Collie. However, Reveille I was a mixed-breed dog and Reveille II was Shetland Sheepdog.
     question: What type of dog is Reveille?
