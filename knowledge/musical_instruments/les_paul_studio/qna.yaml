@@ -11,19 +11,6 @@ seed_examples:
       some features omitted to appeal to musicians looking for the tonal
       qualities of the guitar but with less of an emphasis on cosmetics and to
       reduce the price of the instrument.
-  # - question: When did Gibson introduce the Les Paul Studio to their lineup?
-  #   answer: >
-  #     Responding to a gap in their model lineup for a lower-priced Les Paul in
-  #     1983, Gibson introduced the Studio model.
-  # - question: What is the difference between a Les Paul and a Les Paul Studio guitar?
-  #   answer: >
-  #     In order to produce a lower-cost Les Paul, features such as body binding,
-  #     neck binding, and headstock inlays were not available. Additionally, the
-  #     body was ⅛ to ¼ inch thinner than a standard Les Paul.
-  # - question: What type of wood is the body of Les Paul Studio made from?
-  #   answer: >
-  #     Initially made of alder from 1983–1985, Gibson moved back to maple top/mahogany
-  #     body combination after the alder body proved prone to lacquer problems.
   - question: >
       What woods have been used to make Les Paul Studio Custom or Les Paul Studio
       Standard models of guitars?
@@ -38,50 +25,42 @@ seed_examples:
       The name Studio comes from the idea that this model would be sonically
       indistinguishable from a Les Paul Standard or Custom in the recording studio,
       and that the flashier guitars would be reserved for stage use.
-  # created_by: fsapir
-  # https://github.com/instructlab/taxonomy/pull/956
-  # - question: Why was the Les Paul Studio model introduced?
-  #   answer: >
-  #     The Studio was designed to attract guitar players who desired
-  #     traditional Les Paul sound without having to pay for cosmetic features of
-  #     upscale models.
-  # - answer: >
-  #     The name "Studio" comes from the idea that this model would be sonically
-  #     indistinguishable from a Les Paul Standard or Custom in the recording
-  #     studio, and that the flashier guitars would be reserved for stage use
-  #   question: Where does the name Studio come from?
-  # - question: When was the Les Paul Studio Vintage Mahogany model renamed?
-  #   answer: >
-  #     In 2009, the Vintage Mahogany model was renamed the Les Paul Studio Faded
-  #     and added worn blue and worn ebony as color choices.
-  #     In 2013 model year, the Studio Faded was replaced with the "LPJ" model.
-  # - answer: >
-  #     The SmartWood series consists chronologically of three models; the
-  #     Exotic, the Studio and the Swamp Ash models.
-  #   question: Which guitar models are included in the Smartwood series?
   - question: What is the chronological order models were released in the Les Paul Smartwood series?
     answer: >
       There were three models of Smartwood Les Pauls produced between 1996 and 2011, including:
       1. Exotic (1996–2002),
       2. Studio (2002-2008) and
       3. Swamp Ash (2003-2011)
-  # - question: When did Gibson release the Gothic series?
-  #   answer: >
-  #     During 2000–2002, Gibson released a series of six guitars dubbed
-  #     "Gothic" models.
   # created_by: dal0643
   # https://github.com/instructlab/taxonomy/pull/964
   # https://github.com/instructlab/taxonomy/pull/1098
-  - question: What year was the Studio Custom produced?
-    answer: The Studio Custom was produced in 1983–1985
-  - question: What is Vintage Mahogany/Faded?
-    answer: In 2009, the Vintage Mahogany was renamed the Les Paul Studio Faded
+  - question: What years were the Les Paul Studio Custom models produced?
+    answer: >
+      The Studio Custom was produced in 1983–1985. It was introduced before the
+      design of the Studio was finalized, and mostly had the features of a Standard
+      with a variety of features mixed in from other models.
   - question: What is a Gibson Studio Pro Plus?
-    answer: The Studio Pro Plus was an upgraded studio with a AA figured maple top and gold hardware.
+    answer: >
+      The Studio Pro Plus was an upgraded studio with a AA figured maple top and
+      gold hardware. Traditional mahogany body and set SlimTaper™ neck profile,
+      rosewood fingerboard with acrylic trapezoid inlays, 490R neck pickup and
+      BurstBucker Pro bridge pickup, TonePros® Tune-o-matic bridge and stopbar
+      tailpiece, Grover™ tuners with vintage style green keys.
   - question: What is a Robot Les Paul Studio Limited?
-    answer: The Robot Les Paul Studio Limited was an upgraded studio with Powertune auto-tuning system.
-  - question: When was the Gibson Gothic Produced?
-    answer: During 2000–2002, Gibson released a series of six guitars dubbed \"Gothic\" models.
+    answer: >
+      The Robot Les Paul Studio Limited was an upgraded Studio with Powertune
+      auto-tuning system. A Limited Edition finish Blue Silverburst was initially
+      released in late 2007 with chrome truss rod cover with "Robot Guitar"
+      engraved (late 2007 only). The production version (v2, 2008–2011) featured
+      a chambered mahogany body, maple top, set mahogany neck, 22-fret rosewood-bound
+      (standard finishes) or white-bound (metallic finishes) ebony fingerboard with
+      figured acrylic trapezoid inlays, white-bound headstock with MOP Gibson logo
+      and flowerpot inlay (metallic finishes) or unbound headstock with screened
+      logo (standard finishes), three-per-side robotic Powerhead Locking tuners,
+      tune-o-matic Powertune bridge, Powertune stop tailpiece, two chrome covered
+      Humbucker pickups (490R, 498T), four knobs (three normal, and one master
+      control knob that controls the robotic actions of the guitar), three-way
+      pickup switch, Neutrik jack on side of guitar, chrome hardware.
   # created_by: plimptm
   # https://github.com/instructlab/taxonomy/pull/983
   - answer: >
