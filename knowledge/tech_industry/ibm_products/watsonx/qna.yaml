@@ -1,0 +1,41 @@
+created_by: kwright15
+version: 2
+domain: IBM products
+seed_examples:
+ - answer: |
+      Watsonx.ai is a platform that allows AI developers to leverage a wide range of LLMs under
+      IBM's own Granite series and others such as Facebook's LLaMA-2 and models present in Hugging
+      Face community for a diverse set of AI development tasks. These models come pre-trained and
+      are designed to excel in various Natural Language Processing (NLP) applications, encompassing
+      question answering, content generation, summarization, text classification, and data
+      extraction. The platform allows fine-tuning with its Tuning Studio, allowing those models to
+      learn the data provided by customers.
+   question: what is watsonx.ai?
+ - answer: |
+      Watsonx.data is a platform designed to assist clients in addressing issues related to data
+      volume, complexity, cost, and governance as they scale their AI workloads. This platform
+      facilitates seamless data access, whether the data is stored in the cloud or on-premises,
+      through a single entry point, offering simple use for users who may not possess technical
+      expertise. This approach prioritizes data security and compliance.
+   question: what is watsonx.data
+ - answer: |
+      Watsonx.governance is a platform that utilizes IBM's AI governance capabilities to support
+      organizations in implementing comprehensive AI lifecycle governance. This helps them manage
+      risks and maintain compliance with evolving AI and industry regulations. The platform
+      allows organizations to reduce AI bias by overseeing their AI initiatives, leveraging
+      software automation to enhance risk mitigation, regulatory compliance, and ethical
+      considerations.
+   question: what is watsonx.governance?
+ - answer: |
+      Watsonx was revealed on May 9, 2023, at the annual Think conference of IBM as a platform
+      that includes multiple services. Just like Watson AI computer with the similar name, Watsonx
+      was named after Thomas J. Watson, IBM's founder and first CEO.
+   question: when was watsonx announced?
+ - answer: No, IBM does not collect client data to train its LLMs
+   question: does watsonx collect any of my data to train its models?
+task_description: 'this is knowledge contribution about IBM watsonx'
+document:
+ repo: https://github.com/kwright15/instructlab_knowledge.git
+ commit: c62a34e7416dbabc8580622ef77729fd56973b4d
+ patterns:
+  - watsonx.md
