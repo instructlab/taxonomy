@@ -7,7 +7,7 @@ seed_examples:
       Proposed IT solution will save logistics cost.
     question: We do not currently have budget allocated to purchase a new IT solution.
     answer: |
-      Justifying budget for IT is challenging. How much unnecessary logistics costs you incur due to poor IT performance?
+      Justify budget for IT is challenging. How much unnecessary logistics costs you incur due to poor IT?
   - context: |
       Proposed solution increases fraud detection by 20%.
     question: We already have a provider of fraud detection and we are not looking for a change.
@@ -17,14 +17,14 @@ seed_examples:
      Proposed solution supports fast business growth.
     question: Your solution is too complex for our current needs.
     answer: |
-      It is essential to have the right tools. How will your current solution scale with your growing business?
+      It is essential to have the right tools. How will your current solution support your business growth?
   - context: |
       Proposed solutions shortens the onboarding of new experts.
     question: We are overloaded and I cannot let my experts work on training.
     answer: |
-      I understand concerns about the workload of your SMEs. How would it help to get additonal experts faster?
+      I understand concerns about the workload of your SMEs. How can you get more experts faster?
   - context: |
       Proposed solution will future-proof customer's business.
-    question: We have a solid business model and such heavy investment would reduce our value to our investors.
+    question: We have a solid business model - heavy investment would reduce our value to our investors.
     answer: |
-      Maximization of shareholder value is crucial. How would the stock price change if you lose market leadership?
+      Maximization of shareholder value is crucial. How would the stock price change if you lose market share?
