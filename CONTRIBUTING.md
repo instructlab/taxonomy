@@ -98,10 +98,10 @@ When submitting your PR, give it a title which is as explicit as possible. Inclu
 Once you've [created a pull request](#how-can-i-contribute), maintainers will review your proposed addition and may make suggestions to fix before merging. It will be easier for your pull request to receive reviews if you consider the criteria the reviewers follow while working. Remember to:
 
 - Run tests locally and ensure that they pass
-- Ensure your contribution is in the proper format (`lab generate` shouldn't report any warnings or errors)
+- Ensure your contribution is in the proper format (`ilab generate` shouldn't report any warnings or errors)
 - Break large changes into a logical series of smaller patches, which are easy to understand individually and combine to solve a broader issue
 - Follow the project coding conventions
-- Include the DCO sign off, see [Legal](#legal)
+- Include the DCO sign off; see [Legal](#legal)
 
 The project maintainers use `LGTM` (Looks Good To Me) in comments on the code review to indicate acceptance. You can see more information on the triaging process in the [Triaging skills](https://github.com/instructlab/taxonomy/blob/main/docs/skills-triage.md) documentation.
 
@@ -117,7 +117,7 @@ Bugs are tracked as [GitHub issues using the Bug Report template](https://github
 
 We have tried to make it as easy as possible to make contributions.
 This applies to how we handle the legal aspects of contribution.
-We use the same approach - the [Developer's Certificate of Origin 1.1 (DCO)][DCO] - that [the Linux Kernel community uses][Linux-DCO] to manage code contributions. All contributions that leverage third party content should either come from the public domain or be licensed with an open data license that does not restrict commercial use or the creation of derivative works, including the following license types:
+We use the same approach - the [Developer's Certificate of Origin 1.1 (DCO)][DCO] - that [the Linux Kernel community uses][Linux-DCO] to manage code contributions. All contributions that leverage third-party content should either come from the public domain or be licensed with an open data license that does not restrict commercial use or the creation of derivative works, including the following license types:
 
 - CC0-1.0
 - CDLA-Permissive-2.0
@@ -126,7 +126,7 @@ We use the same approach - the [Developer's Certificate of Origin 1.1 (DCO)][DCO
 - Apache-2.0
 - MIT
 
-Any third party content contributed to this project undergoes modifications in order to formulate it in the templated format required for submission to this project.
+Any third-party content contributed to this project undergoes modifications in order to formulate it in the templated format required for submission to this project.
 
 We simply ask that when submitting a patch for review, the developer must include a sign-off statement in the commit message.
 
@@ -147,7 +147,7 @@ git commit -s
 
 ### License
 
-Unless specifically stated this project is
+Unless specifically stated, this project is
 distributed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
 SPDX-License-Identifier: [Apache-2.0](https://spdx.org/licenses/Apache-2.0)
@@ -172,7 +172,7 @@ You can also see this citation style in the [Data sources documentation](https:/
 
 ## Development
 
-Please consult the [CLI documentation](https://github.com/instructlab/instructlab) to set up your environment.
+Please consult the [`ilab` documentation](https://github.com/instructlab/instructlab) to set up your environment.
 
 [DCO]: https://developercertificate.org/
 [Linux-DCO]: https://docs.kernel.org/process/submitting-patches.html#sign-your-work-the-developer-s-certificate-of-origin

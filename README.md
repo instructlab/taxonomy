@@ -55,6 +55,7 @@ Your skills contribution pull requests must include the following:
 
 Taxonomy skill files must be a valid [YAML](https://yaml.org/) file named `qna.yaml`. Each `qna.yaml` files contains a set of key/value entries with the following keys:
 
+- `version`: The value must be the number 2. **Required**
 - `task_description`: A description of the skill. **Required**
 - `created_by`: The GitHub username of the contributor. **Required**
 - `seed_examples`: A collection of key/value entries. New
@@ -68,12 +69,13 @@ Other keys at any level are currently ignored.
 
 ### Skills: YAML examples
 
-To make the `qna.yaml` files easier and faster for humans to read, it is recommended to specify `task_description` first, followed by `created_by`, and finally `seed_examples`.
+To make the `qna.yaml` files easier and faster for humans to read, it is recommended to specify `version` first, followed by `task_description`, then `created_by`, and finally `seed_examples`.
 In `seed_examples`, it is recommended to specify `context` first (if applicable), followed by `question` and `answer`.
 
 *Example `qna.yaml`*
 
 ```yaml
+version: 2
 task_description: <string>
 created_by: <string>
 seed_examples:
@@ -125,6 +127,7 @@ It is recommended that you **lint**, or verify your YAML using a tool. One linte
 #### Freeform compositional skill: YAML example
 
 ```yaml
+version: 2
 task_description: 'Teach the model how to rhyme.'
 created_by: juliadenham
 seed_examples:
@@ -173,6 +176,7 @@ Remember that [grounded compositional skills](docs/SKILLS_GUIDE.md) require addi
 This example snippet assumes the GitHub username `mairin` and shows some of the question/answer pairs present in the actual file:
 
 ```yaml
+version: 2
 task_description: |
     This skill provides the ability to read a markdown-formatted table.
 created_by: mairin # Use your GitHub username; only one creator supported
@@ -262,8 +266,8 @@ Knowledge in the taxonomy tree consists of a few more elements than skills:
 > of around 2300 words to your question and answer seed example pairs in the `qna.yaml` file.
 
 Each `qna.yaml` file requires a minimum of five question-answer pairs. The `qna.yaml` format must include the following fields:
-ˇ
 
+- `version`: The value must be the number 2.
 - `task_description`: An optional description of the knowledge.
 - `created_by`: Your GitHub username.
 - `domain`: Category of the knowledge.
@@ -278,6 +282,7 @@ Each `qna.yaml` file requires a minimum of five question-answer pairs. The `qna.
 ### Knowledge: YAML examples
 
 ```yaml
+version: 2
 task_description: 'Teach the model the results of the 2024 Oscars'
 created_by: juliadenham
 domain: pop_culture
@@ -462,4 +467,5 @@ To contribute to this repo, you'll use the *Fork and Pull* model common in many 
 
 This taxonomy repository will be used as the seed to synthesize the training
 data for InstructLab-trained models. We intend to retrain the model(s) using the main
-branch as often as possible (at least weekly). Fast iteration of the model(s) benefits the open source community and enables model developers who do not have access to the necessary compute infrastructure.
+branch as often as possible (at least weekly).
+Fast iteration of the model(s) benefits the open source community and enables model developers who do not have access to the necessary compute infrastructure.

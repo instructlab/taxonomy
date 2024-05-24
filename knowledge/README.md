@@ -4,6 +4,7 @@ Knowledge consists of data and facts and is backed by documents. When you create
 
 Each `qna.yaml` file is required to contain a minimum of five question-answer pairs. The `qna.yaml` format should include the following mandatory fields:
 
+* `version` (The value must be the number 2)
 * `seed_examples` (five or more examples sourced from the provided knowledge documents)
 * `created_by` (your GitHub username)
 * `task_description` (description of your knowledge)
