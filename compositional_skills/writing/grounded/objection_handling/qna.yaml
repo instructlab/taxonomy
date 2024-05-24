@@ -27,8 +27,7 @@ seed_examples:
       10 days. CTO objects about lack of availability of his subject matter experts.Acknowledge the objection and ask an open-ended question.
     question: We are overloaded and I cannot let my experts work on training.
     answer: |
-      I understand that you are concerned about the workload and wellbeing of your subject matter experts - this is a very valid
-      problem. How would the situation improve if you could rapidly capacitate newbies to handle part of the expert's workload?
+      I understand your concerns about the workload of your SMEs - very valid problem! How would the situation improve if you could rapidly capacitate newbies to handle part of the expert's workload?
   - context: |
       You present to customer your project’s results recommending investment into automation to future-proof their business. They object that they rather pay a dividend. Acknowledge objection and ask an open-ended question.
     question: We have a solid business model and profits and such heavy investment would reduce our value to our investors.
