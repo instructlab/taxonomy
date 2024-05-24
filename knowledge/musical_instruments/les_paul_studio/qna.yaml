@@ -3,8 +3,6 @@ task_description: 'Update the model’s Wikipedia-based knowledge on Les Paul St
 created_by: apomponio, fsapir, dal0643, plimptm, beanprime, peterclauterbach, mrutkows
 domain: musical_instruments
 seed_examples:
-  # created_by: apomponio
-  # https://github.com/instructlab/taxonomy/pull/948
   - question: What is a Gibson Les Paul Studio guitar?
     answer: >
       The Gibson Les Paul Studio is a solid body electric guitar produced by
@@ -32,9 +30,6 @@ seed_examples:
       1. Exotic (1996–2002),
       2. Studio (2002-2008) and
       3. Swamp Ash (2003-2011)
-  # created_by: dal0643
-  # https://github.com/instructlab/taxonomy/pull/964
-  # https://github.com/instructlab/taxonomy/pull/1098
   - question: What years were the Les Paul Studio Custom models produced?
     answer: >
       The Studio Custom was produced in 1983–1985. It was introduced before the
@@ -62,8 +57,6 @@ seed_examples:
       Humbucker pickups (490R, 498T), four knobs (three normal, and one master
       control knob that controls the robotic actions of the guitar), three-way
       pickup switch, Neutrik jack on side of guitar, chrome hardware.
-  # created_by: plimptm
-  # https://github.com/instructlab/taxonomy/pull/983
   - answer: >
       Someone would buy a Gibson Les Paul Studio guitar if they want a guitar
       with the tonal qualities of a Gibson Les Paul guitar but want to save money
@@ -89,20 +82,6 @@ seed_examples:
       The Gibson Les Paul Studio usually includes 2 humbucker pickups, which are either
       498T and 490R, or P-90s
     question: What pickups do the Gibson Les Paul Studio use?
-  # created_by: beanprime
-  # https://github.com/instructlab/taxonomy/pull/1024
-  # created_by: peterclauterbach
-  # https://github.com/instructlab/taxonomy/pull/1052
-  # - answer: >
-  #     Various sunbursts, Translucent Red, Translucent Blue, Translucent Amber, Wine Red,
-  #     Ebony, Alpine White
-  #   question: What colors are available for the Gibson Les Paul Studio guitars?
-  # - answer: >
-  #     Studio Standard, Studio Custom,Vintage Mahogony, Studio Lite, Gem Series, Smartwood
-  #     Series, Gothic, Voodoo, Pro Plus, Premium Plus, Robot Limited
-  #   question: What are the different models of the Gibson Less Paul Studio Guitars?
-  # - answer: 1996-2022
-  #   question: What years were the Smartwood Exotic produced?
   - answer: >
       The Gibson Les Paul Studio is a solid body electric guitar produced by the
       Gibson Guitar Corporation since 1983 (1983-present). It is a model of Les Paul
