@@ -7,8 +7,7 @@ task_description: |
 created_by: JanaGK2
 seed_examples:
   - context: |
-      You present IT solution to CIO of a retail company.
-      You can improve forecasting and reduce costs of unused stock.
+      You present IT solution to CIO of a retail company.You can improve forecasting and reduce costs of unused stock.
       CIO objects about not having budget.
       Handle by acknowledging objection and asking open-ended question.
     question: We do not currently have budget allocated to purchase a new IT solution.
