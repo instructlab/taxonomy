@@ -1,36 +1,60 @@
 version: 2
 task_description: |
-  This skill is training the ability to handle objections by training the first 2 steps from the 4 steps objection handling model.
-  The 4 steps are Acknowledge, Question, Position, Check. This skill is focused on the Acknowledge and Question. 
+  This skill is training the ability to handle objections by training the first 2
+  steps from the 4 steps objection handling model.
+  The 4 steps are Acknowledge, Question, Position, Check.
+  This skill is focused on the Acknowledge and Question. 
 created_by: JanaGK2
 seed_examples:
   - context: |
-      You present IT solution to CIO of a retail company. You can improve forecasting and reduce costs of unused stock. CIO objects about not having budget. Handle by acknowledging objection and asking open-ended question.
+      You present IT solution to CIO of a retail company.
+      You can improve forecasting and reduce costs of unused stock.
+      CIO objects about not having budget.
+      Handle by acknowledging objection and asking open-ended question.
     question: We do not currently have budget allocated to purchase a new IT solution.
     answer: |
-      Justifying a request for an additional budget for an IT solution can be challenging. How much unnecessary costs is your
+      Justifying a request for an additional budget for an
+      IT solution can be challenging. How much unnecessary costs is your
       company incurring because of the unused stock provisioned to your stores?
   - context: |
-      You present IT solution to CRO of a bank. The solution detects fraud with high accuracy. The CRO objects about high price compared to their current provider. Acknowledge objection and ask an open-ended question.
-    question: We already have a provider of fraud detection and we are not looking for a change.
+      You present IT solution to CRO of a bank.
+      The solution detects fraud with high accuracy.
+      The CRO objects about high price compared to their current provider.
+      Acknowledge objection and ask an open-ended question.
+    question: We already have a provider of fraud detection
+    and we are not looking for a change.
     answer: |
-      It is great to hear that you are satisfied with your current provider. How much money would your company save if your
+      It is great to hear that you are satisfied with your current provider.
+      How much money would your company save if your
       fraud detection efficiency increased by 20%?
   - context: |
-      You present IT solution to Developer of fintech startup. Solution makes them faster in onboarding new developers. Developer objects platform's complexity. Acknowledge the objection and ask an open-ended question.
+      You present IT solution to Developer of fintech startup.
+      Solution makes them faster in onboarding new developers.
+      Developer objects platform's complexity.
+      Acknowledge the objection and ask an open-ended question.
     question: Your solution is too complex for our current needs.
     answer: |
-      Selecting tools that correspond to the maturity of an organization is essential. How will your current solution scale
+      Selecting tools that correspond to the maturity
+      of an organization is essential.
+      How will your current solution scale
       to support your growing business?
   - context: |
-      You pitch to CTO onboarding program improving time to full productivity by
-      10 days. CTO objects about lack of availability of his subject matter experts.Acknowledge the objection and ask an open-ended question.
+      You pitch to CTO onboarding program improving time to full productivity by 10 days.
+      CTO objects about lack of availability of his subject matter experts.
+      Acknowledge the objection and ask an open-ended question.
     question: We are overloaded and I cannot let my experts work on training.
     answer: |
-      I understand your concerns about the workload of your SMEs - very valid problem! How would the situation improve if you could rapidly capacitate newbies to handle part of the expert's workload?
+      I understand your concerns about the workload of your SMEs. A very valid problem!
+      How would the situation improve if you could rapidly capacitate newbies to handle part of the expert's workload?
   - context: |
-      You present to customer your project’s results recommending investment into automation to future-proof their business. They object that they rather pay a dividend. Acknowledge objection and ask an open-ended question.
-    question: We have a solid business model and profits and such heavy investment would reduce our value to our investors.
+      You present to customer your project’s results recommending investment
+      into automation to future-proof their business.
+      They object that they rather pay a dividend.
+      Acknowledge objection and ask an open-ended question.
+    question: We have a solid business model and profits
+    and such heavy investment would reduce our value to our investors.
     answer: |
-      Maximization of shareholder value is crucial for a publicly listed company. How would the stock price change if you were
+      Maximization of shareholder value is
+      crucial for a publicly listed company.
+      How would the stock price change if you were
       to lose the position of a market leader?
