@@ -1,30 +1,48 @@
 version: 2
 task_description: |
-      This skill is training the ability to handle objections by training the first 2 steps from the 4 steps objection handling model. The 4 steps are Acknowledge, Question, Position, Check. This skill is focused on the Acknowledge and Question. It is a grounded skill, because it requires the context of the objection handling methodology and the situation. This skill is very useful in sales, but it is pretty general and works in non-sales contexts too.
+  This skill is training the ability to handle objections by training the first 2 steps from the 4 steps objection handling model.
+  The 4 steps are Acknowledge, Question, Position, Check. This skill is focused on the Acknowledge and Question.
+  It is a grounded skill because it requires the context of the objection handling methodology and the situation.
+  This skill is very useful in sales, but it is pretty general and works in non-sales contexts too.
 created_by: JanaGK2
 seed_examples:
   - context: |
-      You are seller presenting an IT solution to CIO of retail company. You can help the company to improve accuracy of their forecasting in their stores and reduce the costs of having unused stock in stores. When you finish, the CIO objects about not having budget. Reply by acknowledging the objection and asking an open ended question. 
+      You are seller presenting an IT solution to CIO of retail company. You can help the company to improve accuracy of their
+      forecasting in their stores and reduce the costs of having unused stock in stores. When you finish, the CIO objects about
+      not having budget. Reply by acknowledging the objection and asking an open ended question. 
     question: We do not currently have budget allocated to purchase new IT solution.
     answer: |
-      Justifying a request for an additional budget for an IT solution can be challenging. How much unnecessary costs is your company incurring because of the unused stock provisioned to your stores?
+      Justifying a request for an additional budget for an IT solution can be challenging. How much unnecessary costs is your
+      company incurring because of the unused stock provisioned to your stores?
   - context: |
-      You are a seller and you presented an IT solution to Enterprise Architect of a bank. The solution helps detecting fradulent transactions with high accuracy. When you finish, the Enterprise Architect objects about high price compared to their current provider. Reply by acknowledging the objection and asking an open ended question. 
+      You are a seller and you presented an IT solution to Enterprise Architect of a bank. The solution helps detecting
+      fradulent transactions with high accuracy. When you finish, the Enterprise Architect objects about high price compared to
+      their current provider. Reply by acknowledging the objection and asking an open ended question.
     question: We already have a provider of fraud detection and we are not looking for a change.
     answer: |
-      It is great to hear that you are satisfied with your current provider. How much money would your company save if your fraud detection efficiency increased by 20%?
+      It is great to hear that you are satisfied with your current provider. How much money would your company save if your
+      fraud detection efficiency increased by 20%?
   - context: |
-      You are a seller and you presented an IT solution to the Head of Development of a fintech startup. The solution unifies their development platform making it faster and more efficient for onboarding of new developers. When you finish the Head of Development objects about platform's complexity. Reply by acknowledging the objection and asking an open ended question. 
-    question: Your solution is too complex for our current needs. 
+      You are a seller and you presented an IT solution to the Head of Development of a fintech startup. The solution unifies
+      their development platform making it faster and more efficient for onboarding of new developers. When you finish the Head
+      of Development objects about platform's complexity. Reply by acknowledging the objection and asking an open ended question.
+    question: Your solution is too complex for our current needs.
     answer: |
-      Selecting tools that correspond to the maturity of an organzation is essential. How will your current solution scale to support your growing business?
+      Selecting tools that correspond to the maturity of an organization is essential. How will your current solution scale to
+      support your growing business?
   - context: |
-      You are a training specialist pitching to a CTO a new onboarding program that improves the time to full productivity of by 10 days. The leader objects about lack of availability of his subject matter experts. 
-    question: We are overloaded and I cannot let my experts working on a training. 
+      You are a training specialist pitching to a CTO a new onboarding program that improves the time to full productivity of
+      by 10 days. The leader objects about lack of availability of his subject matter experts.
+    question: We are overloaded and I cannot let my experts working on a training.
     answer: |
-      I understand that you are concerned about workload and wellbeing of your subject matter experts - this is a very valid problem. How would the situation improve if you could rapidly capacitate newbies to be able to handle part of the expert's workload?
+      I understand that you are concerned about workload and wellbeing of your subject matter experts - this is a very valid
+      problem. How would the situation improve if you could rapidly capacitate newbies to be able to handle part of the expert's
+      workload?
   - context: |
-      You are a consultant presenting to the customer the recommendation resulting from your project. You are recommending investment into automation of their processes in order to future-proof their business. The director objects that they rather payout a dividend. 
+      You are a consultant presenting to the customer the recommendation resulting from your project. You are recommending
+      investment into automation of their processes in order to future-proof their business. The director objects that they
+      rather payout a dividend.
     question: We have a solid business model and profits and such heavy investment would reduce our value to our investors.
     answer: |
-      Maximization shareholder value is crucial for a publicly listed company. How would the stock price change in case you would lose the position of a market leader?
+      Maximization of shareholder value is crucial for a publicly listed company. How would the stock price change in case you
+      would lose the position of a market leader?
