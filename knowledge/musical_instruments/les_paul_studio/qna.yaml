@@ -1,3 +1,4 @@
+version: 2
 task_description: 'Update the model’s Wikipedia-based knowledge on Les Paul Studio guitars'
 created_by: apomponio, fsapir, dal0643, plimptm, beanprime, peterclauterbach, mrutkows
 domain: musical_instruments
