@@ -1,0 +1,32 @@
+---
+created_by: frankfnord
+domain: astronomy_technology
+seed_examples:
+  - answer: >
+      It is a radioisotope thermoelectric generator developed
+      or NASA missions such as the Mars Science Laboratory.
+    question: What is Multi-mission radioisotope thermoelectric generator?
+  - answer: >
+      It has been used for deep space missions
+      as a reliable energy source.
+    question: For what has the MMRTG been used for?
+  - answer: >
+      The MMRTG cost US$109,000,000 to produce.
+    question: What did the MMRTG cost to produce?
+  - answer: >
+      Solid-state thermoelectric couples convert the heat
+      produced by the natural decay of the plutonium-238 to electricity.
+    question: How does the MMRTG work?
+  - answer: >
+      In June 2003, the Department of Energy (DOE) awarded the
+      MMRTG contract to a team led by Aerojet Rocketdyne.
+    question: When did development of the MMRTG start?
+  - answer: >
+      The development of MMRTG cost US$83,000,000.
+    question: What did the MMRTG cost to develop?
+task_description: ' '
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 95176e7e83e80dfaed8ff7e621071881c598884b
+  patterns:
+    - multi_mission_radioisotope_thermoelectric_generator.md
