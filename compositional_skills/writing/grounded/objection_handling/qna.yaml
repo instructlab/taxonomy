@@ -1,0 +1,30 @@
+version: 2
+task_description: |
+      This skill is training the ability to handle objections by training the first 2 steps from the 4 steps objection handling model. The 4 steps are Acknowledge, Question, Position, Check. This skill is focused on the Acknowledge and Question. It is a grounded skill, because it requires the context of the objection handling methodology and the situation. This skill is very useful in sales, but it is pretty general and works in non-sales contexts too.
+created_by: JanaGK2
+seed_examples:
+  - context: |
+      You are a sales person and you just finished presenting an IT solution to the CIO of a large retail company. The solution can help to the company to improve the accuracy of their consumption forecasting in their stores and thus reduce the costs of having large unused stock in stores. When you finish talking about the value of your solution, the CIO states an objection that the company does not have budget allocated to purchase such solution. Reply by acknowledging the objection and asking an open ended clarifying question. 
+    question: We do not currently have budget allocated to purchase new IT solution.
+    answer: |
+      Justifying a request for an additional budget for an IT solution can be challenging. How much unnecessary costs is your company incurring because of the unused stock provisioned to your stores?
+  - context: |
+      You are a sales person and you just finished presenting an IT solution to the Enterprise Architect of a financial institutions. The solution can help to the company detect fradulent transactions with a very high accuracy. When you finish talking about the value of your solution, the Enterprise Architect states an objection that the proposed solution is more expensive than their current provider. Reply by acknowledging the objection and asking an open ended clarifying question. 
+    question: We already have a provider of fraud detection and we are not looking for a change.
+    answer: |
+      It is great to hear that you are satisfied with your current provider. How much money would your company save if your fraud detection efficiency increased by 20%?
+  - context: |
+      You are a sales person and you just finished presenting an IT solution to the Head of Development of a fintech startup. The solution can help to the startup unify their development platform and make it faster and more efficient for them to onboard new developers. When you finish talking about the value of your solution, the Head of Development states an objection that the platform seems to complex and heavy. Reply by acknowledging the objection and asking an open ended clarifying question. 
+    question: Your solution is too complex for our current needs. 
+    answer: |
+      Selecting tools that correspond to the maturity of an organzation is essential. How will your current solution scale to support your growing business?
+  - context: |
+      You are a training specialist pitching to a leader of a large engineering organization a new onboarding program that has the potential to improve the time to full productivity of their new hires by 10 days. The leader objects that he cannot currently spare any of his subject matter experts to provide inputs and feedback to the new oboarding solution. 
+    question: We are overloaded and I cannot let my experts working on a training. 
+    answer: |
+      I understand that you are concerned about workload and wellbeing of your subject matter experts - this is a very valid problem. How would the situation improve if you could rapidly capacitate newbies to be able to handle part of the expert's workload?
+  - context: |
+      You are a consultant and you just finished presenting to the board of directors of your customer the recommendation resulting from your project. You are recommending the customer to heavily invest into modernization and automation of their processes in order to future-proof their business model. The chairman of the board of directors objects that they are well as they are and they rather payout a dividend. 
+    question: We have a solid business model and profits and such heavy investment would reduce our value to our investors.
+    answer: |
+      Maximization shareholder value is crucial for a publicly listed company. How would the stock price change in case you would lose the position of a market leader?
