@@ -1,6 +1,6 @@
 version: 2
 task_description: |
-  This skill is training the ability to handle objections using 2 out of 4 steps objection handling model. 4 steps are Acknowledge, Question, Position, Check. This skill focuses on the Acknowledge and Question. 
+  Handling objections using 2 out of 4 steps of objection handling model: Acknowledging and Question. 
 created_by: JanaGK2
 seed_examples:
   - context: |
@@ -24,8 +24,7 @@ seed_examples:
     answer: |
       I understand concerns about the workload of your SMEs. How would it help to get additonal experts faster?
   - context: |
-      Proposed solution will future-proof customer's business. 
-      Acknowledge objection and ask an open-ended question.
+      Proposed solution will future-proof customer's business.
     question: We have a solid business model and such heavy investment would reduce our value to our investors.
     answer: |
       Maximization of shareholder value is crucial. How would the stock price change if you lose market leadership?
