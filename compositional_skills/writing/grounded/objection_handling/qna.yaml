@@ -1,9 +1,7 @@
 version: 2
 task_description: |
   This skill is training the ability to handle objections by training the first 2 steps from the 4 steps objection handling model.
-  The 4 steps are Acknowledge, Question, Position, Check. This skill is focused on the Acknowledge and Question.
-  It is a grounded skill because it requires the context of the objection handling methodology and the situation.
-  This skill is very useful in sales, but it is pretty general and works in non-sales contexts too.
+  The 4 steps are Acknowledge, Question, Position, Check. This skill is focused on the Acknowledge and Question. This skill is very useful in sales, but it is pretty general and works in non-sales contexts too.
 created_by: JanaGK2
 seed_examples:
   - context: |
