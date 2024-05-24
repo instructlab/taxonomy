@@ -1,29 +1,30 @@
+---
 created_by: philippfe
 domain: flowers
 seed_examples:
-- answer: |
-    Jasminum sambac is cultivated in many places, especially West Asia, 
-    South Asia and Southeast Asia.
-  question: In which places are Jasminum sambac cultivated?
-- answer: |
-    The leaves are ovate, 4 to 12.5 cm (1.6 to 4.9 in) long and 
-    2 to 7.5 cm (0.79 to 2.95 in) wide.
-  question: What do the leaves of Jasminum sambac look like?
-- answer: |
-    The flowers bloom all throughout the year and are produced in clusters 
-    of 3 to 12 together at the ends of branches.
-  question: When does Jasminum sambac bloom?
-- answer: |
-    Jasminum sambac is classified under the genus Jasminum under the tribe 
-    Jasmineae. It belongs to the olive family Oleaceae.
-  question: How is Jasmineae sambac classified?
-- answer: |
-    In 1753, Carl Linnaeus first described the plant as Nyctanthes sambac in 
-    the first edition of his famous book Systema Naturae.
-  question: When was Jasmineae sambac first described?
+  - answer: |
+      Jasminum sambac is cultivated in many places, especially West Asia,
+      South Asia and Southeast Asia.
+    question: In which places are Jasminum sambac cultivated?
+  - answer: |
+      The leaves are ovate, 4 to 12.5 cm (1.6 to 4.9 in) long and
+      2 to 7.5 cm (0.79 to 2.95 in) wide.
+    question: What do the leaves of Jasminum sambac look like?
+  - answer: |
+      The flowers bloom all throughout the year and are produced in clusters
+      of 3 to 12 together at the ends of branches.
+    question: When does Jasminum sambac bloom?
+  - answer: |
+      Jasminum sambac is classified under the genus Jasminum under the tribe
+      Jasmineae. It belongs to the olive family Oleaceae.
+    question: How is Jasmineae sambac classified?
+  - answer: |
+      In 1753, Carl Linnaeus first described the plant as Nyctanthes sambac in
+      the first edition of his famous book Systema Naturae.
+    question: When was Jasmineae sambac first described?
 task_description: 'Training llm'
 document:
- repo: https://github.com/juliadenham/Summit_knowledge
- commit: afe0558e6aaf5f548a56abb8f9c934951adaa78a
- patterns:
-   - jasminum_sambac.md
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: afe0558e6aaf5f548a56abb8f9c934951adaa78a
+  patterns:
+    - jasminum_sambac.md
