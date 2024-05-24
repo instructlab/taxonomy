@@ -1,30 +1,30 @@
 version: 2
 task_description: |
-  Handling objections using 2 out of 4 steps of objection handling model: Acknowledging and Question. 
+  Handling objections using 2 out of 4 steps of objection handling model: Acknowledging and Question.
 created_by: JanaGK2
 seed_examples:
   - context: |
       Proposed IT solution will save logistics cost.
     question: We do not currently have budget allocated to purchase a new IT solution.
     answer: |
-      Justify budget for IT is challenging. How much unnecessary logistics costs you incur due to poor IT?
+      Justifying budget for IT is challenging. How much unnecessary logistics costs you incur due to poor IT performance?
   - context: |
       Proposed solution increases fraud detection by 20%.
     question: We already have a provider of fraud detection and we are not looking for a change.
     answer: |
       Great you are satisfied. If fraud detection efficiency increased by 20%, how much would you save?
   - context: |
-     Proposed solution supports fast business growth.
+      Proposed solution supports fast business growth.
     question: Your solution is too complex for our current needs.
     answer: |
-      It is essential to have the right tools. How will your current solution support your business growth?
+      It is essential to have the right tools. How will your current solution scale with your growing business?
   - context: |
       Proposed solutions shortens the onboarding of new experts.
     question: We are overloaded and I cannot let my experts work on training.
     answer: |
-      I understand concerns about the workload of your SMEs. How can you get more experts faster?
+      I understand concerns about the workload of your SMEs. How would it help to get additional experts faster?
   - context: |
       Proposed solution will future-proof customer's business.
-    question: We have a solid business model - heavy investment would reduce our value to our investors.
+    question: We have a solid business model and such heavy investment would reduce our value to our investors.
     answer: |
-      Maximization of shareholder value is crucial. How would the stock price change if you lose market share?
+      Maximization of shareholder value is crucial. How would the stock price change if you lose market leadership.
