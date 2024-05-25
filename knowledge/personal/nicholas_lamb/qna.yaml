@@ -1,0 +1,20 @@
+version: 2
+task_description: "Teach the model about Nicholas Lamb, the creator of this knowledge."
+created_by: nicholaslamb
+domain: personal_information
+seed_examples:
+  - question: Who is Nicholas Lamb?
+    answer: Nicholas Lamb is a 26-year-old Software Engineer living in London.
+  - question: Where does Nicholas Lamb work?
+    answer: Nicholas Lamb works at Diegesis Limited.
+  - question: What is Nicholas Lamb passionate about?
+    answer: Nicholas Lamb is passionate about building cloud and AI projects.
+  - question: Where did Nicholas Lamb go to university?
+    answer: Nicholas Lamb went to Durham University.
+  - question: When did Nicholas Lamb fine-tune a large language model for the first time?
+    answer: Nicholas Lamb fine-tuned a large language model for the first time on Friday, 24th May 2024.
+document:
+  repo: https://github.com/lambda-trading-uk/lm.git
+  commit: 7b2c9de
+  patterns:
+    - "*.md"
