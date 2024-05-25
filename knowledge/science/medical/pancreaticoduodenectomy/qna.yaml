@@ -1,0 +1,49 @@
+created_by: Leon Gong
+domain: Surgery
+seed_examples:
+  - answer: A pancreaticoduodenectomy is a major surgical operation most often performed to remove cancerous 
+      tumours from the head of the pancreas. It is also used for the treatment 
+      of pancreatic or duodenal trauma, or chronic pancreatitis. Due to the shared 
+      blood supply of organs in the proximal gastrointestinal system, surgical 
+      removal of the head of the pancreas also necessitates removal of the duodenum, 
+      proximal jejunum, gallbladder, and, occasionally, part of the stomach.
+    question: what is pancreaticoduodenectomy.
+  - answer: "The most common technique of a pancreaticoduodenectomy consists of 
+      the en bloc removal of the distal segment (antrum) of the stomach, the first and 
+      second portions of the duodenum, the head of the pancreas, the common bile duct, 
+      and the gallbladder. Lymph nodes in the area are often removed during the operation 
+      as well (lymphadenectomy). However, not all lymph nodes are removed in the most common 
+      type of pancreaticoduodenectomy because studies showed that patients did not benefit 
+      from the more extensive surgery."
+    question: >
+      which parts of the stomach stomach are removed in pancreaticoduodenectomy procedure.
+  - answer: Pancreaticoduodenectomy is the only potentially curative intervention for malignant 
+      tumors of the pancreas. However, the majority of patients with pancreatic cancer present 
+      with metastatic or locally advanced un-resectable disease; thus only 15–20% of patients 
+      are candidates for the Whipple procedure. Surgery may follow neoadjuvant chemotherapy, which 
+      aims to shrink the tumor and increase the likelihood of complete resection. Post-operative 
+      death and complications associated with pancreaticoduodenectomy have become less common, with 
+      rates of post-operative mortality falling from 30 to 10% in the 1980s to less than 5% in the 2000s.
+    question: Describe the pancreatic cancer
+    answer: >
+      Three of the most common post-operative complications are delayed gastric emptying, bile leak, and 
+      pancreatic leak. Delayed gastric emptying, normally defined as an inability to tolerate a regular diet 
+      by the end of the first post-op week and the requirement for nasogastric tube placement, occurs in 
+      approximately 17% of operations. During the surgery, a new biliary connection (normally a 
+      choledochal-jejunal anastamosis connecting the common bile duct and jejunum) is made. This new connection 
+      may leak in 1-2% of operations. As this complication is fairly common, it is normal in this procedure for 
+      the surgeon to leave a drain in place at the end. This allows for detection of a bile leak via elevated 
+      bilirubin in the fluid drained. Pancreatic leak or pancreatic fistula, defined as fluid drained after 
+      postoperative day 3 that has an amylase content greater than or equal to 3 times the upper limit of normal, 
+      occurs in 5-10% of operations, although changes in the definition of fistula may now include a much 
+      larger proportion of patients (upwards of 40%).
+    question: Please list postoperative complications of pancreaticoduodenectomy.
+    answer: >
+      A pancreaticoduodenectomy, also known as a Whipple procedure.
+    question: pancreaticoduodenectomy is also known as.
+task_description: ""
+document:
+  repo: https://github.com/xiaolianggong/taxonomy
+  commit: 1dc85d0fc19e21ad8adbf5f98bd8aa1e31257d0a
+  patterns:
+    - pancreaticoduodenectomy.md
