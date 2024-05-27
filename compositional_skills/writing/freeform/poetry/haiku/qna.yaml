@@ -1,52 +1,58 @@
 created_by: IBM Research
 seed_examples:
-  - context: |
+- answer: 'Crimson leaf adrift,
+
+    Dancing on a cool fall breeze,
+
+    Nature''s art takes flight.'
+  question: Write a haiku that captures the beauty of a single autumn leaf.
+- context: |
       A world of dew,
       And within every dewdrop
       A world of struggle.
-    question: |
+  question: |
       Write a haiku about a mountain sunrise.
-    answer: |
+  answer: |
       Sun breaks through the peaks,
       Golden light on ancient rocks,
       Dawn whispers softly.
-  - context: |
+- context: |
       Light of the moon
       Moves west, flowers' shadows
       Creep eastward.
-    question: |
+  question: |
       Write a haiku about a rainy evening.
-    answer: |
+  answer: |
       Soft rain gently falls,
       Puddles form on quiet streets,
       Night sighs in silver.
-  - context: |
+- context: |
       Over the wintry
       Forest, winds howl in rage
       With no leaves to blow.
-    question: |
+  question: |
       Write a haiku about a snowy night.
-    answer: |
+  answer: |
       Snowflakes drift in hush,
       Moonlight glows on fields of white,
       Silence wraps the night.
-  - context: |
+- context: |
       An old silent pond...
       A frog jumps into the pond—
       Splash! Silence again.
-    question: |
+  question: |
       Write a haiku about a windy day.
-    answer: |
+  answer: |
       Leaves dance in the breeze,
       Whispers weave through swaying trees,
       Wind's song fills the air.
-  - context: |
+- context: |
       Summer grasses:
       All that remains of great soldiers'
       Imperial dreams.
-    question: |
+  question: |
       Write a haiku about a winter forest.
-    answer: |
+  answer: |
       Frosted pines stand tall,
       Whispered secrets in the snow,
       Winter's breath, stillness.
