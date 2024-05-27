@@ -1,9 +1,53 @@
 created_by: IBM Research
 seed_examples:
-- answer: 'Crimson leaf adrift,
-
-    Dancing on a cool fall breeze,
-
-    Nature''s art takes flight.'
-  question: Write a haiku that captures the beauty of a single autumn leaf.
-task_description: ''
+  - context: |
+      A world of dew,
+      And within every dewdrop
+      A world of struggle.
+    question: |
+      Write a haiku about a mountain sunrise.
+    answer: |
+      Sun breaks through the peaks,
+      Golden light on ancient rocks,
+      Dawn whispers softly.
+  - context: |
+      Light of the moon
+      Moves west, flowers' shadows
+      Creep eastward.
+    question: |
+      Write a haiku about a rainy evening.
+    answer: |
+      Soft rain gently falls,
+      Puddles form on quiet streets,
+      Night sighs in silver.
+  - context: |
+      Over the wintry
+      Forest, winds howl in rage
+      With no leaves to blow.
+    question: |
+      Write a haiku about a snowy night.
+    answer: |
+      Snowflakes drift in hush,
+      Moonlight glows on fields of white,
+      Silence wraps the night.
+  - context: |
+      An old silent pond...
+      A frog jumps into the pond—
+      Splash! Silence again.
+    question: |
+      Write a haiku about a windy day.
+    answer: |
+      Leaves dance in the breeze,
+      Whispers weave through swaying trees,
+      Wind's song fills the air.
+  - context: |
+      Summer grasses:
+      All that remains of great soldiers'
+      Imperial dreams.
+    question: |
+      Write a haiku about a winter forest.
+    answer: |
+      Frosted pines stand tall,
+      Whispered secrets in the snow,
+      Winter's breath, stillness.
+task_description: 'This skill provides the ability to write haikus, a form of Japanese poetry with a 5-7-5 syllable'
