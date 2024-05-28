@@ -1,5 +1,6 @@
+version: 2
 task_description: 'Teach the model on Star Wars The Acolyte (TV series)'
-created_by: markus.van.kempen
+created_by: makusvankempen
 domain: starwars
 seed_examples:
  - question: Who created Star Wars The Acolyte?
