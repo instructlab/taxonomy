@@ -96,7 +96,6 @@ There are a few labels that the triager is responsible for when reviewing PRs:
     - then re-assign to @taxonomy-approvers
     - triager tags @taxonomy-approvers in informative comment asking for further review from that team
 
-
 ### Label Workflow guide
 
 ![tax_label](../assets/tax_labels.png)
