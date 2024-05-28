@@ -1,0 +1,19 @@
+created_by: fatehks
+domain: geography
+seed_examples:
+- answer: | is an island in the Qikiqtaaluk Region of Nunavut, Canada. It is located in Lancaster Sound at the junction of Prince Regent Inlet and Barrow Strait.
+  question: Where is Prince Leopold Island located?
+- answer: | Somerset Island 
+  question: What is the name of the island to the south of Prince Leopold Island?
+- answer: | The majority of the island's area of 68 km2 (26 sq mi) is occupied by a plateau generally ranging in altitude between around 240 m (790 ft) and 300 m (980 ft).
+  question: What is the altitude of the plateau that the island is composed of?
+- answer: | Large numbers of arctic seabirds, thick-billed murres, northern fulmars, black-legged kittiwakes, and black guillemots breed on the cliff ledges, arriving in the vicinity in May or early June and departing by mid-September. 
+  question: What types of birds live on Prince Leopold Island?
+- answer: | The only resident land mammals are a small population of northern collared lemmings, though visits by larger mammals - caribou, hares, foxes, and bears - are recorded.
+  question: Does Prince Leopold Island have any resident mammals?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 6ba7991ccc0a8df412b3d5697f231225d5aa77df
+ patterns:
+   - prince_leopold_island.md
