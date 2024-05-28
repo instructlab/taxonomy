@@ -103,7 +103,7 @@ Once you've [created a pull request](#how-can-i-contribute), maintainers will re
 - Follow the project coding conventions
 - Include the DCO sign off; see [Legal](#legal)
 
-The project maintainers use `LGTM` (Looks Good To Me) in comments on the code review to indicate acceptance. You can see more information on the triaging process in the [Triaging skills](https://github.com/instructlab/taxonomy/blob/main/docs/skills-triage.md) documentation.
+The project maintainers use `LGTM` (Looks Good To Me) in comments on the code review to indicate acceptance. You can see more information on the triaging process in the [Triaging skills](https://github.com/instructlab/taxonomy/blob/main/docs/triaging/triaging-contributions.md) documentation.
 
 For a list of the maintainers and triagers, see the [MAINTAINERS.md](https://github.com/instructlab/community/blob/main/MAINTAINERS.md) page.
 
