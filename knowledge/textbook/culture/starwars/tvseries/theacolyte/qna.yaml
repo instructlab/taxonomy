@@ -1,4 +1,4 @@
-version: 2
+version: 3
 task_description: 'Teach the model on Star Wars The Acolyte (TV series)'
 created_by: makusvankempen
 domain: starwars
@@ -7,24 +7,24 @@ seed_examples:
    answer: |
      Leslye Headland.
  - question: What Jedi will be in Acolyte?
-   answer: | 
+   answer: |
      Jedi Master Sol.
  - question: Who is the villain in The Acolyte?
    answer: |
-     The Acolyte reveals a new Sith Lord, sparking theories of their identity. 
-     The masked Sith may likely be Darth Tenebrous—Plagueis Master—reintroduced back into Canon in 2015. 
+     The Acolyte reveals a new Sith Lord, sparking theories of their identity.
+     The masked Sith may likely be Darth Tenebrous—Plagueis Master—reintroduced back into Canon in 2015.
      The Sith's respirator mask hints at similarities to Tenebrous.
  - question: What is The Acolyte?
    answer: |
-     The Acolyte is a Star Wars television series developed by Leslye Headland for Disney+. 
-     Headland will write, executive produce, and serve as the series's showrunner. 
-     The show takes place a century before the events of Star Wars: Episode I The Phantom Menace, 
-     and will focus on the emergence of dark side powers in the final days of the High Republic Era. 
+     The Acolyte is a Star Wars television series developed by Leslye Headland for Disney+.
+     Headland will write, executive produce, and serve as the series's show runner.
+     The show takes place a century before the events of Star Wars: Episode I The Phantom Menace,
+     and will focus on the emergence of dark side powers in the final days of the High Republic Era.
      The Premiered June 4, 2024.
  - question: Who are the bad guys in The Acolyte?
    answer: |
-     Darth Plagueis and Darth Tenebrous are both viable Acolyte antagonists – but neither is a dead cert. 
-     As Master Yoda so aptly put it in The Phantom Menace, “Hard to see, the Dark Side is.” 
+     Darth Plagueis and Darth Tenebrous are both viable Acolyte antagonists – but neither is a dead cert.
+     As Master Yoda so aptly put it in The Phantom Menace, “Hard to see, the Dark Side is.”
  - question: Will we see Yoda in Acolyte?
    answer: |
      No Yoda will not appear in The Acolyte.
@@ -32,4 +32,4 @@ document:
  repo: https://github.com/makusvankempen/starwars_acolyte_knowledge.git
  commit: 7badb12
  patterns:
-   - starwars_acolyte_result.md
+  - starwars_acolyte_result.md
