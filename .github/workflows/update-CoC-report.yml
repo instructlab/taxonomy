@@ -2,10 +2,11 @@
 
 name: Update CoC report
 
-run-name: 'PR Closed: ${{ github.event.pull_request.number}} ${{ github.event.pull_request.title }}'
+run-name: "${{ github.event.pull_request.title }} (#${{ github.event.pull_request.number}})"
 on:
-  pull_request:
-    types: [ closed ]
+  pull_request_target:
+    types:
+      - closed
 
 env:
   LC_ALL: en_US.UTF-8
@@ -20,6 +21,7 @@ permissions:
 jobs:
   update-coc-insight-handler:
     runs-on: ubuntu-latest
+    if: ${{ github.repository == 'instructlab/taxonomy' }}
     name: Update CoC insights handler for PR Close event
     steps:
       - name: "Harden Runner"
