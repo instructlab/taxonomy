@@ -1,0 +1,68 @@
+created_by: jjasghar
+domain: music
+version: 2
+seed_examples:
+ - answer: Empire Polo Club in Indio, California
+   question: Where did the Coachella 2023 take place?
+ - answer: April 14, 2023–April 16, 2023 & April 21, 2023–April 23, 2023
+   question: On which dates Coachella 2023 happened?
+ - answer: Bad Bunny, South Korean girl group Blackpink, American singer Frank Ocean, and American rock band Blink-182.
+   question: Who was headlined the festivel?
+ - answer: April 15, 2022–April 17, 2022
+   question: On which dates Coachella 2022 happened?
+ - answer: April 12, 2024–April 14, 2024
+   question: On which dates Coachella 2024 happened?
+ - answer: Frank Ocean
+   question: Who wasn't sure they could to show up to Coachella 2023?
+ - answer: Novacane
+   question: What is Ocean's debue single played at Coachella 2023?
+ - answer: in 1999
+   question: When was the first Coachella festival?
+ - answer: Blackpink
+   question: What the Korean Pop Group joined in this event?
+ - answer: April
+   question: What month was Coachella 2023?
+ - answer: Empire Polo Club
+   question: Where was Coachella 2023?
+ - answer: June 14, 2022
+   question: When were the dates for Coachella 2023 announced?
+ - answer: The forst Cochella festival was in 1999
+   question: when was the first Cochella festival?
+ - answer: Skrillex, Four tet, Blink-182
+   question: who headlined week 2 for Cochella?
+ - answer: Empire Polo Club inn California
+   question: Where did Coachella 2023 take place?
+ - answer: January 10, 2023
+   question: When was the lineup for Coachella 2023 announced?
+ - answer: Frank Ocean
+   question: Which headliner sustainted an ankle injury during rehearsals?
+ - answer: April 14, 2023 - April 16, 2023
+   question: When was the dates for the first weekend of Coachella 2023?
+ - answer: Golden voice was fined $133,000
+   question: How much was Goldenvoice fined for breaking the event's curfew?
+ - answer: Frank Ocean did perform his debut single "Novacane" and did a rousing and highly stimulating version of it!
+   question: Did Frank Ocean perform his debut single "Novacane"?
+ - answer: Skrillex performed in replacement of Frank Ocean on weekend 2.
+   question: Did Skrillex perform at Coachella 2023?
+ - answer: Blink-182 performed on weekend 3 of Coachella 2023
+   question: Which weekend did Blink-182 perform at Coachella 2023?
+ - answer: They performed on Friday of Weekend 1
+   question: Which day of the week did the Gorillaz perform?
+ - answer: John Legend, Future, Don Toliver, 21 Savage, The Weeknd, Diddy, Future, Don Toliver and Offset.
+   question: Who performed with Metro Boomin at Coachella 2023?
+ - answer: Yes.
+   question: Did Calvin Harris perform at Coachella 2023?
+ - answer: Coachella 2023 took place over two weekends in mid-April 2023.
+   question: In which month did Coachella 2023 occur?
+ - answer: June 17, 2022
+   question: When did pre-sale tickets for Coachella 2023 going live?
+ - answer: Music festival in California that took place over two weekends in April 2023
+   question: What is Coachella 2023?
+ - answer: Bad Bunny, Blackpink, and Frank Ocean
+   question: Who were the headliners for Cochella 2023?
+task_description: 'Give the knowledge of Coachella 2023'
+document:
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 7294fab8567ef650eec43c5fcfb59701fb9287ba
+ patterns:
+  - coachella_2023.md
