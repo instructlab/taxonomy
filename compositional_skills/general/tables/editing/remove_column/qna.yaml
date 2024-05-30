@@ -1,0 +1,115 @@
+version: 2
+task_description: 'For a simple table in markdown format, remove
+any column from the table while keeping the rest of the content identical.
+  '
+created_by: spacew
+seed_examples:
+- question: 'Remove the second column please
+    | First Initial | Last Name  | Company |
+    | ------------- | ---------- | ------- |
+    | a             | smith      | xyz     |
+    | b             | jones      | xyz     |
+    | c             | george     | abc     |
+    | d             | hicks      | xyz     |
+    | e             | long       | abc     |
+    | f             | parker     | abc     |
+    | g             | burn       | xyz     |
+    | h             | talbot     | abc     |
+    | i             | washington | abc     |
+    '
+  answer: '
+    | First Initial | Company |
+    | ------------- | ------- |
+    | a             | xyz     |
+    | b             | xyz     |
+    | c             | abc     |
+    | d             | xyz     |
+    | e             | abc     |
+    | f             | abc     |
+    | g             | xyz     |
+    | h             | abc     |
+    | i             | abc     |
+    '
+- question: 'Remove the second column from the following table.
+    | First Initial | Last Name  | Company |
+    | ------------- | ---------- | ------- |
+    | a             | smith      | xyz     |
+    | b             | jones      | xyz     |
+    | c             | george     | abc     |
+    | d             | hicks      | xyz     |
+    | e             | long       | abc     |
+    | f             | parker     | abc     |
+    | g             | burn       | xyz     |
+    | h             | talbot     | abc     |
+    | i             | washington | abc     |
+    '
+  answer: '
+    | First Initial | Company |
+    | ------------- | ------- |
+    | a             | xyz     |
+    | b             | xyz     |
+    | c             | abc     |
+    | d             | xyz     |
+    | e             | abc     |
+    | f             | abc     |
+    | g             | xyz     |
+    | h             | abc     |
+    | i             | abc     |
+    The updated table only shows first initials and company names with the last name column removed.
+    '
+- question: 'Can you please give me an updated table with the first column removed?
+    | Column 1 | Column 2 | Column 3 |
+    |----------|----------|----------|
+    | A1       | B1       | C1       |
+    | A2       | B2       | C2       |
+    | A3       | B3       | C3       |
+    | A4       | B4       | C4       |
+    | A5       | B5       | C5       |
+    | A6       | B6       | C6       |
+    | A7       | B7       | C7       |
+    '
+  answer: 'Here is the updated table:
+    | Column 2 | Column 3 |
+    |----------|----------|
+    | B1       | C1       |
+    | B2       | C2       |
+    | B3       | C3       |
+    | B4       | C4       |
+    | B5       | C5       |
+    | B6       | C6       |
+    | B7       | C7       |
+    '
+- question: 'Remove the last column:
+    ```
+    | Column 1 | Column 2 | Column 3 | Column 4 | Column 5 |
+    |----------|----------|----------|----------|----------|
+    | A1       | B1       | C1       | D1       | E1       |
+    | A2       | B2       | C2       | D2       | E2       |
+    | A3       | B3       | C3       | D3       | E3       |
+    | A4       | B4       | C4       | D4       | E4       |
+    ```
+    '
+  answer: '
+    | Column 1 | Column 2 | Column 3 | Column 4 |
+    |----------|----------|----------|----------|
+    | A1       | B1       | C1       | D1       |
+    | A2       | B2       | C2       | D2       |
+    | A3       | B3       | C3       | D3       |
+    | A4       | B4       | C4       | D4       |
+    '
+- question: 'Remove the third column please.
+    | Column 1 | Column 2 | Column 3 | Column 4 | Column 5 |
+    |----------|----------|----------|----------|----------|
+    | A1       | B1       | C1       | D1       | E1       |
+    | A2       | B2       | C2       | D2       | E2       |
+    | A3       | B3       | C3       | D3       | E3       |
+    | A4       | B4       | C4       | D4       | E4       |
+    '
+  answer: '
+    | Column 1 | Column 2 | Column 4 | Column 5 |
+    |----------|----------|----------|----------|
+    | A1       | B1       | D1       | E1       |
+    | A2       | B2       | D2       | E2       |
+    | A3       | B3       | D3       | E3       |
+    | A4       | B4       | D4       | E4       |
+    '
