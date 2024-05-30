@@ -1,4 +1,4 @@
-version: 3
+version: 2
 task_description: 'Teach the model on Star Wars The Acolyte (TV series)'
 created_by: makusvankempen
 domain: starwars
