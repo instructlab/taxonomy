@@ -1,0 +1,28 @@
+created_by: jjasghar
+version: 2
+domain: athlete
+seed_examples:
+- answer: Clevelan Heights, Ohio
+  question: Where was Jason Kelce born?
+- answer: Philadelphia Eagles
+  question: Which NFL team drafted Jason Kelce?
+- answer: None
+  question: What other teams did Jason Kelce play for besides Philadelphia?
+- answer: The sixth round
+  question: What round was Jason Kelce drafted?
+- answer: Travis Kelce
+  question: What's Jason Kelce's brother's name?
+- answer: The total number of games Kelce has played is 193
+  question: how many games Jason Kelce played so far?
+- answer: Center
+  question: What position does Jason Kelce play?
+- answer: Kelce played 16 games in 2015
+  question: How many games Jason Kelce played in the year 2015?
+- answer: November 5, 1987
+  question: when did Jason Kelce was born?
+task_description: ' '
+document:
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 91e2f2d887a256c391ff36933f422c064524968c
+ patterns:
+    - jason_kelce.md
