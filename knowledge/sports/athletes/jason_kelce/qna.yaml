@@ -11,7 +11,7 @@ seed_examples:
 - answer: The sixth round
   question: What round of the NFL draft was Jason Kelce drafted?
 - answer: Travis Kelce
-  question: What's Jason Kelce's brother's name?
+  question: What is the name of Jason Kelce's brother?
 - answer: The total number of games Kelce has played is 193
   question: how many games Jason Kelce played so far?
 - answer: Center
