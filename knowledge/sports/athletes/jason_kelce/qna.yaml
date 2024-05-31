@@ -19,7 +19,7 @@ seed_examples:
 - answer: Kelce played 16 games in 2015
   question: How many NFL games did Jason Kelce play in the year 2015?
 - answer: November 5, 1987
-  question: when did Jason Kelce was born?
+  question: When was Jason Kelce born?
 task_description: 'To teach a language model about the person Jason Kelce'
 document:
  repo: https://github.com/juliadenham/Summit_knowledge
