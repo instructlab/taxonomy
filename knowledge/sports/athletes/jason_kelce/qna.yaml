@@ -17,7 +17,7 @@ seed_examples:
 - answer: Center
   question: What NFL position does Jason Kelce play?
 - answer: Kelce played 16 games in 2015
-  question: How many games Jason Kelce played in the year 2015?
+  question: How many NFL games did Jason Kelce play in the year 2015?
 - answer: November 5, 1987
   question: when did Jason Kelce was born?
 task_description: 'To teach a language model about the person Jason Kelce'
