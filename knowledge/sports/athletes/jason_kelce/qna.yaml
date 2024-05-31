@@ -13,7 +13,7 @@ seed_examples:
 - answer: Travis Kelce
   question: What is the name of Jason Kelce's brother?
 - answer: The total number of games Kelce has played is 193
-  question: how many games Jason Kelce played so far?
+  question: How many NFL games has Jason Kelce played?
 - answer: Center
   question: What position does Jason Kelce play?
 - answer: Kelce played 16 games in 2015
