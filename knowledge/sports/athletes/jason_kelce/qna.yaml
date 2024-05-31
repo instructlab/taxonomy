@@ -22,7 +22,7 @@ seed_examples:
   question: When was Jason Kelce born?
 task_description: 'To teach a language model about the person Jason Kelce'
 document:
- repo: https://github.com/juliadenham/Summit_knowledge
- commit: 91e2f2d887a256c391ff36933f422c064524968c
- patterns:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 91e2f2d887a256c391ff36933f422c064524968c
+  patterns:
     - jason_kelce.md
