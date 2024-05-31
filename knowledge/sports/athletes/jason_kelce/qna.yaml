@@ -2,7 +2,7 @@ created_by: jjasghar
 version: 2
 domain: athlete
 seed_examples:
-- answer: Clevelan Heights, Ohio
+- answer: Cleveland Heights, Ohio
   question: Where was Jason Kelce born?
 - answer: Philadelphia Eagles
   question: Which NFL team drafted Jason Kelce?
