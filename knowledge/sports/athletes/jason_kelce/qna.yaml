@@ -20,7 +20,7 @@ seed_examples:
   question: How many games Jason Kelce played in the year 2015?
 - answer: November 5, 1987
   question: when did Jason Kelce was born?
-task_description: ' '
+task_description: 'To teach a language model about the person Jason Kelce'
 document:
  repo: https://github.com/juliadenham/Summit_knowledge
  commit: 91e2f2d887a256c391ff36933f422c064524968c
