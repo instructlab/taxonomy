@@ -1,0 +1,82 @@
+created_by: jjasghar
+version: 2
+domain: geography
+seed_examples:
+  - answer: |
+      In 2025.
+    question: When was the improvements to the narrow bridge on I-55 announced?
+  - answer: |
+      The bridge carries I-75 over the Straits of Mackinac between St. Ignace and Mackinaw City, Michigan.
+    question: What interstate is the Mackinac Bridge apart of?
+  - answer: |
+      The Thousand Islands Bridge, which carries I-81 over part of the Saint Lawrence River,
+      is an undivided two-lane road.
+    question: What interstate is the Thousan Islands Bridge apart of.
+  - answer: |
+      I-93 is a two-lane divided parkway known as the "super two".
+    question: What is the nickname for interstate I-93?
+  - answer: |
+      Interstate 70 is one-lane only in these following locations:
+      Interstate 70 in Kansas has only one lane for eastbound through traffic for several hundred
+      feet in Kansas City where the highway approaches the Lewis and Clark Viaduct Bridge, which
+      carries the highway over the Kansas River toward Kansas City, Missouri. Interstate 670, just a few blocks
+      south provides an alternate route without this bottleneck.
+      Interstate 70 in West Virginia has only one lane for approximately one thousand feet in Wheeling,
+      where the highway enters the Wheeling Tunnel and crosses the Ohio River on the Fort Henry Bridge.
+      Nearby I-470 provides relief from this situation.
+    question: Where is Interstate 70 a one way highway?
+  - answer: three
+    question: How many sections does Interstate 49 have?
+  - answer: The interstate 49 was completed in 2021
+    question: When was the Interstate 49 bypass south of Bella Vista completed?
+  - answer: five
+    question: How many sections does the Interstate 74 have?
+  - answer: |
+      The true gaps are where multiple disjoint sections of road have the same
+      Interstate highway number and can reasonably be considered part of
+      one-highway in theory, based on the directness of connections via
+      other highways, or based on future plans to fill in the gap in the Interstate,
+      or simply based on the shortness of the gap
+    question: What are true gaps in interstate highways?
+  - answer: |
+      Facilities such as tollbooths,
+      toll plazas, agricultural inspection stations, or border stations.
+    question: What artifacts are not considered of freeway gaps?
+  - answer: The maximum speed limit is 75 mph. But most of the states have a maximum speed limit of 70 mph.
+    question: what is the maximum speed limits on interstate highways?
+  - answer: The slowest speed limit on most interstate highways in US is 40 mph.
+    question: what is the slowest speed limit allowed on interstate highways?
+  - answer: |
+      The longest interstate highway in US is Interstate I-90. It is an east-west transcontinental
+      freeway at 3021 miles. It begins in Seattle Washinton and travels through the pacific northwest
+      mountain west, great plains, Midwest,and the northeast
+    question: what is the longest interstate highway in US?
+  - answer: The average lanes in an interstate highway is 2 lanes each way.|
+    question: what is the average lanes in an interstate highway?
+  - answer: Yes, the speed limit changes by state and sometimes within the state as well|
+    question: does the speed limit on same interstate highway change by state?
+  - answer: Interstate 70
+    question: What highway enters approaches the Lewis and LCark Viaduct Bridge
+  - answer: Thouse Islands Bridge
+    question: What is the undivided two-lane road that goes over to Saint Lawrence River
+  - answer: super two
+    question: What is a two-lane divied parkway
+  - answer: |
+      Some stretches of Interstate highway use a barrier transfer machine on some bridges to convert
+      inner lanes from one direction to the other, where it would be too costly to
+      upgrade/rebuild to a higher-capacity bridge.
+    question: What do they call the to convert inner lanes from one direction to the other
+  - answer: |
+      A true gap is part of a numbered highway that is not physically continuous. They might be
+      Connected by another number road in between.
+    question: What are true gaps?
+  - answer: Yes it does
+    question: Does interstate 69 have several disconnected sections?
+  - answer: five
+    question: How many sections did I-74 have as of 2024
+task_description: 'Additional Information about Highways.'
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 8a73952a8cc0ca8443d254f8538df02e17b5be92
+  patterns:
+    - gaps_in_interstate_highways.md
