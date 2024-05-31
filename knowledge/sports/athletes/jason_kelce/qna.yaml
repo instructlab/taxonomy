@@ -9,7 +9,7 @@ seed_examples:
 - answer: None
   question: What other NFL teams did Jason Kelce play for besides Philadelphia?
 - answer: The sixth round
-  question: What round was Jason Kelce drafted?
+  question: What round of the NFL draft was Jason Kelce drafted?
 - answer: Travis Kelce
   question: What's Jason Kelce's brother's name?
 - answer: The total number of games Kelce has played is 193
