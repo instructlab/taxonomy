@@ -1,3 +1,4 @@
+version: 2
 task_description: >-
   To differentiate if a user question is related or not to the theme of his/her
   previous questions. This skill is useful in the context of AI assistants to
