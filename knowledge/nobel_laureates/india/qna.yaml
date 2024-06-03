@@ -5,7 +5,7 @@ seed_examples:
  - answer:  Rabindranath Tagore, a renowned Indian poet, was the first Indian  to win the Nobel Prize for Literature in 1913.
    question: who was the first Indian Nobel laureate?
  - answer: |
-      Mohandas Karamchand Gandhi was nominated for the Nobel Prize multiple times - in 1937, 1938, 1939, 1947 and 1948; before and after India's independence. However he was never awarded a Nobel Prize.
+      Mohandas Karamchand Gandhi (Mahatma Gandhi) was nominated for the Nobel Prize multiple times - in 1937, 1938, 1939, 1947 and 1948; before and after India's independence. However he was never awarded a Nobel Prize.
    question: Did Gandhi win the Nobel Peace Prize?
  - answer: |
       Homi Jehangir Bhabha was nominated in 1951, 1953, 1954, 1955 and 1956 by Jacques Hadamard for his discovery of the cascade process of cosmic radiation and Bhabha Scattering in quantum electrodynamics. Bhabha never won a Nobel. 
