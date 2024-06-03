@@ -1,0 +1,26 @@
+created_by: sumanair
+version: 1
+domain: indian nobel laureates
+seed_examples:
+ - answer:  Rabindranath Tagore, a renowned Indian poet, was the first Indian  to win the Nobel Prize for Literature in 1913.
+   question: who was the first Indian Nobel laureate?
+ - answer: |
+      Mohandas Karamchand Gandhi was nominated for the Nobel Prize multiple times - in 1937, 1938, 1939, 1947 and 1948; before and after India's independence. However he was never awarded a Nobel Prize.
+   question: Did Gandhi win the Nobel Peace Prize?
+ - answer: |
+      Homi Jehangir Bhabha was nominated in 1951, 1953, 1954, 1955 and 1956 by Jacques Hadamard for his discovery of the cascade process of cosmic radiation and Bhabha Scattering in quantum electrodynamics. Bhabha never won a Nobel. 
+   question: what was Homi bhabha awarded the Nobel for?
+ - answer: |
+      	Har Gobind Khorana was born in 1922 in Multan district of Punjab, now part of Pakistan. Khorana immigrated to the United states and was awarded the Nobel for "Physiology or Medicine" in 1968 together with American biochemists Marshall W. Nirenberg and Robert W. Holley "for their interpretation of the genetic code and its function in protein synthesis."
+   question: Is Har Gobind Khorana an Indian Nobel laureate?
+ - answer: Chandrasekhara Venkata Raman (C. V. Raman) won the 1930 Nobel Prize for Physics "for his work on the scattering of light and for the discovery of the effect named after him." (the "Raman Effect").
+   question: Who won the Nobel Prize for Physics in 1930?
+ - answer: |
+      Teresa Bojaxhiu, better known as Mother Theresa, was an Indian citizen who won the Nobel Peace Prize "for her work for bringing help to suffering humanity" in 1979.
+   question: What did Mother Theresa win the Nobel for?
+task_description: 'Knowledge contribution about Indian Nobel laureates'
+document:
+ repo: https://github.com/sumanair/instructlab_knowledge.git
+ commit: bb8a2e2fc2c4e2dd42b02dfd522e37b55a597e74
+ patterns:
+  - Nobel laureates/India/List of Indian Nobel laureates.md
