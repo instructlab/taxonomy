@@ -1,0 +1,93 @@
+created_by: jjasghar
+domain: restaurant
+version: 2
+seed_examples:
+  - answer: Franchise of Burger King and owned by Competitive Food Australia|
+    question: Who owns Hungry Jack's Pty?
+  - answer: Australia|
+    question: Where can I go to a hungry jack for burger?
+  - answer: Whopper burgers and TenderCrisp chcken burgers
+    question: Can I get Burger King meals at Hungy Jacks?
+  - answer: Big Jack|
+    question: Does hungy jack's have a burger like the big mac that's even better?
+  - answer: The burgers are far better than better than Burger Kings
+    question: Is hungy jack better than Burger King?
+  - answer: |
+      Hungry Jack's introduced the "Rebel Whopper" in partnership with V2food in late 2019, which is a variation of
+      the Whopper containing a meat-free patty made with protein extracted
+    question: when rebel whopper was introduced?
+  - answer: |
+      Hungry Jack's breakfast menu, introduced in late 2005
+    question: when breakfast menu was introduced
+  - answer: |
+      1996 to 2001: legal battle with Burger King
+    question: who did they have legal battle with?
+  - answer: |
+      the restaurant chain was founded 19 June 1971; 52 years ago
+    question: when was the restaurant founded?
+  - answer: |
+      restaurant chain is ogininated from australia
+    question: where is the restaurant chain from?
+  - answer: Hungry Jack's Pty Ltd. is an Australian fast food franchise of the Burger King Corporation.
+    question: What is Hungry Jack's?
+  - answer: No, Hyngry Jack's does not have locations in the United States. It is an Australian fast food franchise.
+    question: Does Hungry Jack's have locations in the United States?
+  - answer: |
+      When Burger King moved to expand its operations into Australia, it found that its business name was
+      already trademarked by a takeaway food shop in Adelaide, South Australia.
+    question: Why isn't Hungry Jack's called Burger King?
+  - answer: |
+      Yes, Hungry Jack's sells Whoppers. In addition to the Whopper, Hungry Jack's also sells the
+      Burger King trademarked TenderCrisp.
+    question: Does Hungry Jack's sell Whoppers?
+  - answer: |
+      Yes, Hungry Jack's introduced the "Rebel Whopper" in partnership with V2food in late 2019, which
+      is a variation of the Whopper containing a meat-free patty made with protein extracted from legumes.
+    question: Does Hungry Jack's have any plant-based meat alternative menu items?
+  - answer: |
+      Jack Cowin selected the "Hungry Jack's" brand name.
+    question: Who selected the "Hungry Jack" brand name?
+  - answer: |
+      "Hungry Jack's" was founded on 19 June 1971.
+    question: When was "Hungry Jack's" founded?
+  - answer: |
+      "Hungry Jack's" makes Hamburgers, Chicken products, Salads, French fries, Onion rings,
+      Breakfast and Hot and Cold Beverages, Kids' meals, Desserts.
+    question: What food does "Hungry Jack's" make?
+  - answer: |
+      "Hungry Jack's" was origionally a franchise of Burger King.
+    question: What was "Hungry Jack's" origionally a franchise of?
+  - answer: |
+      Chris Green is the current CEO of Hungry Jack's.
+    question: Who is the CEO of Hungry Jack's.
+  - answer: |
+      Burger King found that their brand was already trademarked by another local company.
+    question: When Burger King expanded there operation in Australia why could they not use their own name.
+  - answer: |
+      Jack Cowin chose an existing American brand called Hungry Jacks but changed it to be possesive adding apostrophe
+    question: When Jack Cowin, the franchise owner, selected the name for burger king, what did he choose and why?
+  - answer: |
+      In order to uphold the agreement Hungry Jack's had to open a certain amount of stored per year.
+    question: In 1991 when Hungry Jack's renewed their franchise agreement, what was one of the agreements?
+  - answer: |
+      Burger King claimed that Hungry Jack's didn't open enought stores based on the agreement.
+    question: When the Burger King trademark lapsed what did BK do?
+  - answer: |
+      Supreme court found in favor of Jack Cowin's company and awarded him a $41.6 Million in 2001.
+    question: Jack Cowin and his company files a suite againsted Burger King. Did they win and how much?
+  - answer: Hungry Jack is founded in 19 June 1971!
+    question: when are Hungry Jack Founded?!
+  - answer: net income for hungry Jack is 246.5 Millioin
+    question: what is net income for hungry Jack
+  - answer: owner for Hungry Jack is Jack Cowin
+    question: who is owner for Hungry Jack?!
+  - answer: Hungry Jack is Fastfood Resturant
+    question: what kind if resturant is Hungry Jack
+  - answer: what is sub licence for hungrz jack ?!
+    question: Burger king
+task_description: 'Some basic known facts of "Hungry Jacks"'
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 8a73952a8cc0ca8443d254f8538df02e17b5be92
+  patterns:
+    - hungry_jacks.md
