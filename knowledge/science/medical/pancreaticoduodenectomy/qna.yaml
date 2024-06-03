@@ -1,20 +1,35 @@
 created_by: savva-k
 domain: medical
 seed_examples:
-- answer: Pancreaticoduodenectomy is a major surgical operation most often performed to remove cancerous tumours from the head of the pancreas
+- answer: Pancreaticoduodenectomy is a major surgical operation most often performed to remove cancerous tumours from
+  the head of the pancreas
   question: What is a pancreaticoduodenectomy?
 - answer: This is another name for pancreaticoduodenectomy
-  question: What is a whipple procedure? 
-- answer: Due to the shared blood supply of organs in the proximal gastrointestinal system, surgical removal of the head of the pancreas also necessitates removal of the duodenum, proximal jejunum, gallbladder, and, occasionally, part of the stomach
+  question: What is a Whipple procedure?
+- answer: Due to the shared blood supply of organs in the proximal gastrointestinal system, surgical removal of the
+  head of the pancreas also necessitates removal of the duodenum, proximal jejunum, gallbladder, and, occasionally,
+  part of the stomach
   question: Can a head pancreas tumor be gently removed?
-- answer: Pancreaticoduodenectomy is most often performed as curative treatment for periampullary cancer, which include cancer of the bile duct, duodenum, ampulla or head of the pancreas. The shared blood supply of the pancreas, duodenum and common bile duct necessitates en bloc resection of these multiple structures. Other indications for pancreaticoduodenectomy include chronic pancreatitis, benign tumors of the pancreas, cancer metastatic to the pancreas, multiple endocrine neoplasia type and gastrointestinal stromal tumors
-  question: What are main indications for a whipple procedure 
-- answer: Pancreaticoduodenectomy is also used for the treatment of pancreatic or duodenal trauma, or chronic pancreatitis 
+- answer: Pancreaticoduodenectomy is most often performed as curative treatment for periampullary cancer, which
+  include cancer of the bile duct, duodenum, ampulla or head of the pancreas. The shared blood supply of the
+  pancreas, duodenum and common bile duct necessitates en bloc resection of these multiple structures. Other
+  indications for pancreaticoduodenectomy include chronic pancreatitis, benign tumors of the pancreas, cancer
+  metastatic to the pancreas, multiple endocrine neoplasia type and gastrointestinal stromal tumors
+  question: What are main indications for a whipple procedure
+- answer: Pancreaticoduodenectomy is also used for the treatment of pancreatic or duodenal trauma, or chronic
+  pancreatitis
   question: Are there any other indications for a whipple procedure?
-- answer: Absolute contraindications for the procedure are metastatic disease in the abdominal cavity or nearby organs. These are found most often on the peritoneum, in the liver, and in the omentum. In order to determine if there are metastases, surgeons will inspect the abdomen at the beginning of the procedure after gaining access. Alternatively, they may perform a separate procedure called a diagnostic laparoscopy which involves insertion of a small camera through a small incision to look inside the abdomen. This may spare the patient the large abdominal incision that would occur if they were to undergo the initial part of a pancreaticoduodenectomy that was cancelled due to metastatic disease. Further contraindications include encasement of major vessels (such as celiac artery, inferior vena cava, or superior mesenteric artery) as mentioned above. 
+- answer: Absolute contraindications for the procedure are metastatic disease in the abdominal cavity or nearby
+  organs. These are found most often on the peritoneum, in the liver, and in the omentum. In order to determine if
+  there are metastases, surgeons will inspect the abdomen at the beginning of the procedure after gaining access.
+  Alternatively, they may perform a separate procedure called a diagnostic laparoscopy which involves insertion of
+  a small camera through a small incision to look inside the abdomen. This may spare the patient the large abdominal
+  incision that would occur if they were to undergo the initial part of a pancreaticoduodenectomy that was cancelled
+  due to metastatic disease. Further contraindications include encasement of major vessels (such as celiac artery,
+  inferior vena cava, or superior mesenteric artery) as mentioned above.
   question: What are contradictions for a pancreaticoduodenectomy
 task_description: 'Short description for pancreaticoduodenectomy'
-document: 
+document:
  repo: https://github.com/juliadenham/Summit_knowledge
  commit: 476de3a0182e353c6d2d6e744a5af6565cab44a0
  patterns:
