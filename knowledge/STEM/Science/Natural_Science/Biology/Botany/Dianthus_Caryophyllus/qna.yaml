@@ -1,0 +1,82 @@
+created_by: mingxzhao
+version: 2
+domain: Knowledge on Carnations
+seed_examples:
+- answer: Trim back down to the ground late winter or early summer.
+  question: How do I prepare Dianthus Caryophyllus for Spring?
+- answer: They can spread up to 12" and stand 8" high.
+  question: What size do Dianthus Caryophyllus get?
+- answer: Carnations require well-drained, neutral to slightly alkaline soil, and full sun.
+  question: What type of soil do carnations grow in?
+- answer: Dianthus Caryophyllus are used for medical purposes, such as for upset stomach and fever.
+  question: Do Dianthus Caryophyllus have any health benefits?
+- answer: Dianthus Caryophyllus fragrance was historically used for vinegar, beer, wine, sauces and salads.
+  question: What were Dianthus Caryophyllus used for?
+- answer: carnation or clove pink
+  question: what is the common name for Dianthus Caryophyllus?
+- answer: Along with the Red Rose the red carnation can be used as a symbol of socialism
+      and the labour movement, and historically has often been used in demonstrations on
+      International Workers Day (May Day).
+  question: What can Dianthus Caryophyllus be used as a symbol for?
+- answer: "they were mentioned in greek literature 2,000 years ago"
+  question: "how old are dianthus caryophyllus?"
+- answer: "Dianthus caryophyllus is a herbaceous perennial plant growing up to
+    80 cm (31 + 1/2 in) tall.
+    The leaves are glaucous greyish green to blue-green, slender, up to 15 cm (6 in) long.
+    The flowers are produced singly or up to five together in a cyme;
+    they are around 3-5 cm (1 1/4 in - 2 in) in diameter, and sweetly scented;
+    the original natural flower color is bright pinkish-purple, but cultivars of other colors,
+    including red, pink, yellow, white, and green have been developed.
+    While sometimes dyed blue for cut bouquets, there are no known carnation
+    cultivars that produce a true blue flower.
+    The fragrant, hermaphrodite flowers have a radial symmetry.
+    The four to six surrounding the calyx, egg-shaped, sting-pointed scales leaves
+    are only ¼ as long as the calyx tube."
+  question: "describe dianthus caryophyllus"
+- answer: The wild carnation is found in the Mediterranean countries of Spain, Italy, Croatio, Albania, Greece and Turkey.
+  question: Where is dianthus caryophyllus found?
+- answer: Carnations were mentioned in Greek literature around 2,000 years ago
+  question: When were carnations mentioned for the first time?
+- answer: In 1907, Anna Jarvis chose a carnation as the emblem of mothers day.
+  question: Who chose the carnation as the symbol of mothers day?
+- answer: Green carnations are used on St. Patricks day.
+  question: On which occasion are green carnations worn?
+- answer: The scent of a carnation is often described
+    as spicy, clove-like, or reminiscent of a combination
+    of cinnamon and nutmeg.
+  question: What does a carnation smell like?
+- answer: Carnations have been mentioned in Greek literature
+    as far back as 2,000 years ago. The Greek name for Carnation
+    is a fusion of "dios" and "anthos".
+  question: What was the earliest mention of a carnation
+    in literature?
+- answer: A carnation is a herbaceous perennial plant.
+  question: What kind of plant is a carnation?
+- answer: Dianthus caryophyllus
+  question: What is the scientific name for a carnation?
+- answer: Carnations are sometimes dyed blue for cut bouquets,
+    but there are no known carnation cultivars that produce a
+    true blue flower. Carnations do not naturally produce the
+    pigment delphinidin, so a blue carnation cannot occur by
+    natural selection or by traditional plant breeding.
+  question: Is there such a thing as a blue carnation?
+- answer: The name "carnation" is believed to come
+    from the Latin corona-ae, a "wreath, garland,
+    chaplet, crown"
+  question: How did the carnation get it's name?
+- answer: Carnations require well-drained, neutral to
+    slightly alkaline soil, and full sun.
+  question: How to grow a carnation?
+- answer: White carnations represent
+    pure love and good luck
+  question: What do white carnations represent?
+- answer: Light red carnations represent admiration,
+    while dark red denote deep love and affection.
+  question: What do red carnations represent?
+
+task_description: 'To teach a language model about the flower Dianthus Caryophyllus'
+document:
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 8260f509f483138826f59b63386f52386d2fd8c0
+ patterns:
+   - dianthus_caryophyllus.md
