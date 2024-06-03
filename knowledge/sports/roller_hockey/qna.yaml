@@ -1,0 +1,124 @@
+created_by: jjasghar
+version: 2
+domain: sports
+seed_examples:
+  - answer: |
+      Roller in-line hockey is a variant of hockey played on a hard, smooth surface with players using inline skates to
+      move and ice hockey sticks to shoot a hard, plastic puck into their opponent's goal to score points. The sport
+      is a very fast-paced and free-flowing game and is considered a contact sport, but body checking is prohibited.
+      There are five players including the goalkeeper from each team on the rink at a time while teams normally consist
+      of 16 players. There are professional leagues, one of which is the National Roller Hockey League (NRHL). While it
+      is not a contact sport, there are exceptions, i.e. the NRHL involves fighting.
+    question: What is roller in-line hockey?
+  - answer: |
+      Some of the earliest video evidence of the sport is newsreel footage from the Giornale Luce taken in Vienna, AU
+      in 1938. The video shows players using inline skates with five metal wheels and a front wheel brake. Each team
+      has four skaters plus a netminder. They are using ice hockey sticks, with taped blades, and the goals closely
+      resemble ice hockey goals of the wire-mesh type common in Europe around that time. The game is being played with
+      a ball on a rectangular outdoor court, which appears to be asphalt.
+    question: What is the earliest recorded history roller in-line hockey?
+  - answer: |
+      Yes, there is a proffessional in-line hockey league. The National Roller Hockey League is a professional league,
+      founded in 2014. The NRHL began its inaugural season 20 February 2015. The NRHL games consist of 3 15-minute
+      periods, with 10 minute intermissions. It differs from professional ice hockey with rules including no offsides,
+      and no icing. The NRHL permits fighting, with a 5-minute major penalty assessed to the combatants.
+    question: Is there a professional in-line hockey league?
+  - answer: |
+      For most penalties, the offending player is sent to the penalty box and his team has to play with one less skater
+      for a short amount of time. Minor penalties last for two minutes, major penalties last for five minutes, and a
+      double minor penalty is two consecutive penalties of two minutes duration. A single Minor penalty may be extended
+      by a further two minutes for drawing blood from the victimized player.
+    question: What happens to players who get penalties?
+  - answer: There are five players including the goalkeeper from each team on the rink at a time.
+    question: How many players are on the ice at one time?
+  - answer: The recommended size of the rink can vary between 40m and 60m in length and 20m and 30m in width.
+    question: What is the size of the rink?
+  - answer: |
+      While converted roller rinks may use wooden floors, dedicated inline hockey facilities use Sport Court or
+      similar surface, which allows maximum traction to inline hockey wheels whilst providing a smooth, unbroken
+      gliding surface for the puck.
+    question: Can you describe the playing surface?
+  - answer: |
+      Inline hockey is typically played at room temperature on a surface that, rather than being made from
+      (frozen) water, is kept dry to protect the bearings in the skate wheels.  Inline hockey uses less
+      physical contact in comparison to ice hockey.
+    question: What are some differences between roller hockey and ice hockey?
+  - answer: |
+      A professional game consists of two halves of twenty minutes each.
+    question: How many periods are in a game?
+  - answer: |
+      Inline hockey is typically played at room temperature on a surface that, rather than being made from (frozen)
+      water, is kept dry to protect the bearings in the skate wheels. Several surface materials are used, including
+      plastic tiles (sometimes known as sport-court flooring), wood, and sealed concrete; in general, surfaces try to
+      balance the ability of wheels to grip against the ability of the puck to slide freely. None of these surfaces,
+      however, is as smooth as ice; as a result, the puck is made of a much lighter plastic material, and rests on
+      small nylon or poly-plastic nubs to reduce friction with the rink surface.
+    question: What are the main differences from ice hockey?
+  - answer: |
+      Protective gear is highly recommended and is enforced in all competitive situations. This usually includes a
+      helmet (cage worn if certain age), elbow pads, protective gloves, athletic cup, shin pads, and skates at the
+      very least. In addition, goaltenders use different gear, (optionally) a neck guard, chest/arm protector,
+      blocker, catch glove, and leg pads.
+    question: What kind of gear is used in Inline Hockey?
+  - answer: |
+      The recommended size of the rink can vary between 40m and 60m in length and 20m and 30m in width. In Germany
+      the old standard was 40m x 20m which changed to 50m x 25m but also the ice hockey standard of
+      61m x 30.5m (200×100 ft) is used.
+    question: What size is the rink in Inline hockey?
+  - answer: |
+      There are five players including the goalkeeper from each team on the rink at a time, while teams
+      normally consist of 16 players.
+    question: How many players are there on the field in Inline hockey?
+  - answer: |
+      Due to the 2022 Russian invasion of Ukraine, World Skate banned Russian and Belarusian athletes and
+      officials from its competitions, and will not stage any events in Russia or Belarus in 2022.
+    question: Did russian athletes participate in Inline hockey championships 2022?
+  - answer: |
+      Roller in-line hockey, American roller hockey or inline hockey, is a variant of hockey played on a hard,
+      smooth surface, with players using inline skates to move and ice hockey sticks to shoot a hard, plastic
+      puck into their opponent's goal to score points.|
+    question: What is Roll in-line hockey
+  - answer: |
+      The sport is a very fast-paced and free-flowing game and is considered a contact sport, but body
+      checking is prohibited.
+    question: Is the sport fast paced?
+  - answer: |
+      There are five players including the goalkeeper from each team on the rink at a time, while teams
+      normally consist of 16 players|
+    question: How many players are on each team?
+  - answer: There are professional leagues, one of which is the National Roller Hockey League (NRHL).
+    question: Are there any professional leagues?
+  - answer: |
+      In the United States, the highest governing body for the sport is USA Roller Sports (USARS). USARS is credited
+      with the development of the present-day rules and regulations that is used throughout multiple tournament
+      series. They organize tournaments across the United States but they are not the only tournament provider.
+    question: What is the highest governing body for Roller in-line hockey in the United States?
+  - answer: The year 2014
+    question: When was the NRHL established?
+  - answer: Bauer
+    question: What is the major boot manufacturer?
+  - answer: 4 to 5 Wheels
+    question: The skates have how many wheels?
+  - answer: inline hockey rink or skating rink
+    question: Where are the games played
+  - question: What kind of surface can roller hockey be played on?
+    answer: |
+      A hard smooth surface.
+  - question: Are there defensive zones in roller hockey?
+    answer: |
+      No, unlike ice hockey there are no blue lines or defensive zones
+  - question: What is the governing body for roller hockey?
+    answer: |
+      The USARS or USA Roller Sports association
+  - question: How old is the roller hockey sport?
+    answer: |
+      The first evidence of roller hockey is from 1938 in Vienna Austria
+  - question: When and where was the first roller hockey championship?
+    answer: |
+      In 1962 at the Pershing Auditorium in Lincoln Nebraska
+task_description: 'Teaching the model about roller in-line hockey'
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 8a73952a8cc0ca8443d254f8538df02e17b5be92
+  patterns:
+    - roller_in_line_hockey.md
