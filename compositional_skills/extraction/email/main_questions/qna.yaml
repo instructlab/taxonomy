@@ -1,0 +1,30 @@
+version: 1
+task_description: |
+    This skill provides the ability to extract the main questions from e-mails for later use in semantic searches or other actions.
+created_by: celestelgarrido
+seed_examples:
+  - context: |
+      I'm encountering a software bug in the Microsoft Surface?. Whenever I try to perform a specific action, the application crashes. Are there any updates or fixes available? On Windows Vista, this is not possible. If you are I've performed a factory reset on my Microsoft Surface?, hoping it would resolve the problem, but it didn't help.
+    question: |
+      could you extract a list of the main questions from the following email?
+    answer: |
+      - Are there any updates or fixes available for the software bug in the Microsoft Surface?
+      - Is it possible to perform a specific action on Windows Vista without the application crashing?
+      - Did performing a factory reset on the Microsoft Surface help resolve the issue?
+  - context: |
+      I've recently set up my GoPro Hero, but it fails to connect to any available networks. What steps should I take to troubleshoot this issue? If you know the answer, please let me know. Do I I've noticed a sudden decrease in battery life on my GoPro Hero. It used to last much longer.
+    question: |
+      could you extract a list of the main questions from the following email?
+    answer: |
+      - What steps should I take to troubleshoot the GoPro Hero's failure to connect to available networks?
+      - What could be causing the sudden decrease in battery life on my GoPro Hero?
+  - context: |
+      I'm encountering a software bug in the Sony Xperia. Whenever I try to perform a specific action, the application crashes. Are there any updates or fixes available? There are several packages that run in memory by default. These I'm experiencing this issue on multiple devices of the same model, so it seems to be a widespread problem.
+    question: |
+      could you extract a list of the main questions from the following email?
+    answer: |
+      - What is the specific software bug in the Sony Xperia?
+      - Is there any update or fix available for the bug?
+      - Are there any packages that run in memory by default causing the issue?
+      - Is the issue experienced on multiple devices of the same model?
+      - Is the problem widespread?
