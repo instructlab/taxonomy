@@ -63,7 +63,9 @@ seed_examples:
   question: Where is Prince Leopold Island located?
 - answer: 869 ft
   question: Where is prince prince leopold island located?
-- answer: 1950
+- answer: Most of Prince Leopold Island rises steeply from the surrounding sea,
+    with cliffs rising as high as 265 m (869 ft) above sea level surrounding 
+    most of the island
   question: how high are the cliffs in the leopold island?
 - answer: August 4, 1819
   question: where is the name leopold came from?
