@@ -27,7 +27,8 @@ seed_examples:
       Robert W. Holley.  The Nobel Prize was awarded "for their interpretation
       of the genetic code and  its function in protein synthesis."
     question: Is Har Gobind Khorana an Indian Nobel laureate?
-  - answer: Chandrasekhara Venkata Raman (C. V. Raman) won the 1930 Nobel Prize for
+  - answer: >
+      Chandrasekhara Venkata Raman (C. V. Raman) won the 1930 Nobel Prize for
       Physics "for his work on the scattering of light and for the discovery of
       the effect named after him." (the "Raman Effect").
     question: Who won the Nobel Prize for Physics in 1930?
@@ -39,6 +40,6 @@ seed_examples:
 task_description: Knowledge contribution about Indian Nobel laureates
 document:
   repo: https://github.com/sumanair/instructlab_knowledge.git
-  commit: bb8a2e2fc2c4e2dd42b02dfd522e37b55a597e74
+  commit: 11dc36a4948416e42394562d0d8bcea2b13b421b
   patterns:
-    - Nobel laureates/India/List of Indian Nobel laureates.md
+    - NobelLaureates/India/List_of_Indian_Nobel_laureates.md
