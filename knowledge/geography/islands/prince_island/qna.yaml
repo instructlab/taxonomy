@@ -10,18 +10,21 @@ seed_examples:
     lemmings, though visits by larger mammals - caribou, hares, foxes, and bears -
     are recorded.
   question: Does Prince Leopold Island have any resident mammals?
+- answer: 869 ft
+  question: How high are the cliffs surrounding Prince Leopold Island?
 - answer: William Parry's 1819 expedition
   question: Prince Leopold Island was first sighted during which expedition?
 - answer: Large numbers of arctic seabirds, thick-billed murres, northern fulmars,
     black-legged kittiwakes, and black guillemots breed on the cliff ledges, arriving
     in the vicinity in May or early June and departing by mid-September.
-  question: What animals live there?
+  question: What animals live on Prince Leopold Island?
 - answer: "74°N 90°W"
   question: What are the coordinates of Prince Leopold Island?
 - answer: Lancaster Sound
   question: What body of water is Prince Leopold Island found?
-- answer: Breeding ground for large populations of several arctic bird species
-  question: What is Prince Leopold Island significant as a summer habitat for?
+- answer: Prince Leopold Island is a significant breeding ground for large
+    populations of several arctic bird species
+  question: What is Prince Leopold Island a significant summer habitat for?
 - answer: The majority of the island's area of 68 km2 (26 sq mi) is occupied by a
     plateau generally ranging in altitude between around 240 m (790 ft) and 300 m
     (980 ft).
@@ -29,11 +32,11 @@ seed_examples:
 - answer: Vegetation consists of forbs, lichens, and mosses, though the top of the
     island is mostly devoid of plants. Denser concentrations of vegetation occur in
     seepage areas on the spits, including sedges and some dwarf willow
-  question: What is the flora consist of?
+  question: What does the flora consist of on Prince Leopold Island?
 - answer: The majority of the island's area of 68 km2 (26 sq mi) is occupied by a
     plateau generally ranging in altitude between around 240 m (790 ft) and 300 m
     (980 ft).
-  question: What is the land mass of Prince Leopold Island?
+  question: What is the topography of Prince Leopold Island?
 - answer: Somerset Island
   question: What is the name of the island to the south of Prince Leopold Island?
 - answer: The plateau is divided in the east by a gorge that runs north-south
@@ -43,32 +46,29 @@ seed_examples:
     During the summer, surface water on the island is scarce. A few small shallow
     lakes exist on the plateau; the largest, Far Lake, is about 0.5 km (0.31 mi)
     long, and is located near the eastern cliffs
-  question: What is the terrain like?
+  question: What is the terrain like on Prince Leopold Island?
 - answer: Large numbers of arctic seabirds, thick-billed murres, northern fulmars,
     black-legged kittiwakes, and black guillemots breed on the cliff ledges, arriving
     in the vicinity in May or early June and departing by mid-September.
   question: What types of birds live on Prince Leopold Island?
 - answer: 306 m (1004 ft)
   question: What's the highest elevation on Prince Leopold Island?
-- answer: The island is located in is an island in the Qikiqtaaluk Region of Nunavut,
-    Canada.
-  question: When the island was signed?
-- answer: William Parry named the island after the future King Leopold I of Belgium
-  question: When the research started in leopold island?
-- answer: Qikiqtaaluk Region of Nunavut, Canada. It is located in Lancaster Sound
-    at the junction of Prince Regent Inlet and Barrow Strait.
-  question: Where is Prince Leopold Island located?
-- answer: is an island in the Qikiqtaaluk Region of Nunavut, Canada. It is located
-    in Lancaster Sound at the junction of Prince Regent Inlet and Barrow Strait.
-  question: Where is Prince Leopold Island located?
-- answer: 869 ft
-  question: Where is prince prince leopold island located?
-- answer: Most of Prince Leopold Island rises steeply from the surrounding sea,
-    with cliffs rising as high as 265 m (869 ft) above sea level surrounding
-    most of the island
-  question: how high are the cliffs in the leopold island?
+- answer: '1950'
+  question: When did research start on Prince Leopold Island?
 - answer: August 4, 1819
-  question: where is the name leopold came from?
+  question: When was Prince Leopold Island first sighted?
+- answer: William Parry named the island after the future King Leopold I of Belgium
+  question: Where does the name Prince Leopold Island come from?
+- answer: Prince Leopold Island is located in the Qikiqtaaluk Region of Nunavut,
+    Canada. It is located in Lancaster Sound at the junction of Prince Regent
+    Inlet and Barrow Strait.
+  question: Where is Prince Leopold Island located?
+- answer: Prince Leopold Island is an island in the Qikiqtaaluk Region of
+    Nunavut, Canada. It is located in Lancaster Sound at the junction of
+    Prince Regent Inlet and Barrow Strait.
+  question: What is Prince Leopold Island?
+- answer: The island is located in the Qikiqtaaluk Region of Nunavut, Canada.
+  question: Where is Prince Leopold Island?
 document:
   repo: https://github.com/juliadenham/Summit_knowledge
   commit: 2cf9fbbdf25634200873977f81ec945b3cf488b2
