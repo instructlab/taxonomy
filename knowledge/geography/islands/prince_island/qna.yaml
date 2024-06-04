@@ -1,0 +1,73 @@
+created_by: amaa1981, fatehks, webdba, youeyoue
+domain: geography
+task_description: |
+  Prince Leopold Island is an island in the Qikiqtaaluk Region of Nunavut, Canada.
+  It is located in Lancaster Sound at the junction of Prince Regent Inlet and Barrow
+  Strait.
+seed_examples:
+- answer: The only resident land mammals are a small population of northern collared
+    lemmings, though visits by larger mammals - caribou, hares, foxes, and bears -
+    are recorded.
+  question: Does Prince Leopold Island have any resident mammals?
+- answer: William Parry's 1819 expedition
+  question: Prince Leopold Island was first sighted during which expedition?
+- answer: Large numbers of arctic seabirds, thick-billed murres, northern fulmars,
+    black-legged kittiwakes, and black guillemots breed on the cliff ledges, arriving
+    in the vicinity in May or early June and departing by mid-September.
+  question: What animals live there?
+- answer: "74°N 90°W"
+  question: What are the coordinates of Prince Leopold Island?
+- answer: Lancaster Sound
+  question: What body of water is Prince Leopold Island found?
+- answer: Breeding ground for large populations of several arctic bird species
+  question: What is Prince Leopold Island significant as a summer habitat for?
+- answer: The majority of the island's area of 68 km2 (26 sq mi) is occupied by a
+    plateau generally ranging in altitude between around 240 m (790 ft) and 300 m
+    (980 ft).
+  question: What is the altitude of the plateau that the island is composed of?
+- answer: Vegetation consists of forbs, lichens, and mosses, though the top of the
+    island is mostly devoid of plants. Denser concentrations of vegetation occur in
+    seepage areas on the spits, including sedges and some dwarf willow
+  question: What is the flora consist of?
+- answer: The majority of the island's area of 68 km2 (26 sq mi) is occupied by a
+    plateau generally ranging in altitude between around 240 m (790 ft) and 300 m
+    (980 ft).
+  question: What is the land mass of Prince Leopold Island?
+- answer: Somerset Island
+  question: What is the name of the island to the south of Prince Leopold Island?
+- answer: The plateau is divided in the east by a gorge that runs north-south
+    across the width of the island, while smaller steep canyons skirt the edge
+    of the island and main gorge at various points. Four gravel spits, in the
+    north, southwest, south, and southeast of the island, jut out from the coast.
+    During the summer, surface water on the island is scarce. A few small shallow
+    lakes exist on the plateau; the largest, Far Lake, is about 0.5 km (0.31 mi)
+    long, and is located near the eastern cliffs
+  question: What is the terrain like?
+- answer: Large numbers of arctic seabirds, thick-billed murres, northern fulmars,
+    black-legged kittiwakes, and black guillemots breed on the cliff ledges, arriving
+    in the vicinity in May or early June and departing by mid-September.
+  question: What types of birds live on Prince Leopold Island?
+- answer: 306 m (1004 ft)
+  question: What's the highest elevation on Prince Leopold Island?
+- answer: The island is located in is an island in the Qikiqtaaluk Region of Nunavut,
+    Canada.
+  question: When the island was signed?
+- answer: William Parry named the island after the future King Leopold I of Belgium
+  question: When the research started in leopold island?
+- answer: Qikiqtaaluk Region of Nunavut, Canada. It is located in Lancaster Sound
+    at the junction of Prince Regent Inlet and Barrow Strait.
+  question: Where is Prince Leopold Island located?
+- answer: is an island in the Qikiqtaaluk Region of Nunavut, Canada. It is located
+    in Lancaster Sound at the junction of Prince Regent Inlet and Barrow Strait.
+  question: Where is Prince Leopold Island located?
+- answer: 869 ft
+  question: Where is prince prince leopold island located?
+- answer: 1950
+  question: how high are the cliffs in the leopold island?
+- answer: August 4, 1819
+  question: where is the name leopold came from?
+document:
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 2cf9fbbdf25634200873977f81ec945b3cf488b2
+ patterns:
+   - prince_leopold_island.md
