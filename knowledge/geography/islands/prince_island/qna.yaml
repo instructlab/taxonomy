@@ -2,17 +2,20 @@ version: 2
 created_by: amaa1981, fatehks, webdba, youeyoue
 domain: geography
 task_description: |
-  Prince Leopold Island is an island in the Qikiqtaaluk Region of Nunavut, Canada.
-  It is located in Lancaster Sound at the junction of Prince Regent Inlet and Barrow
-  Strait.
+  Answer questions about Prince Leopold Island, located in Lancaster Sound at
+  the junction of Prince Regent Inlet and Barrow Strait in the Qikiqtaaluk Region
+  of Nunavut, Canada.
 seed_examples:
 - answer: The only resident land mammals are a small population of northern collared
     lemmings, though visits by larger mammals - caribou, hares, foxes, and bears -
     are recorded.
   question: Does Prince Leopold Island have any resident mammals?
-- answer: 869 ft
+- answer: Most of Prince Leopold Island rises steeply from the surrounding sea,
+    with cliffs rising as high as 265 m (869 ft) above sea level surrounding
+    most of the island.
   question: How high are the cliffs surrounding Prince Leopold Island?
-- answer: William Parry's 1819 expedition
+- answer: The island and Somerset Island to its south were first sighted by a
+    European on August 4, 1819, during William Parry's 1819 expedition.
   question: Prince Leopold Island was first sighted during which expedition?
 - answer: Large numbers of arctic seabirds, thick-billed murres, northern fulmars,
     black-legged kittiwakes, and black guillemots breed on the cliff ledges, arriving
@@ -20,15 +23,18 @@ seed_examples:
   question: What animals live on Prince Leopold Island?
 - answer: "74°N 90°W"
   question: What are the coordinates of Prince Leopold Island?
-- answer: Lancaster Sound
-  question: What body of water is Prince Leopold Island found?
+- answer: It is located in Lancaster Sound at the junction of Prince Regent
+    Inlet and Barrow Strait.
+  question: What body of water surrounds Prince Leopold Island?
 - answer: Prince Leopold Island is a significant breeding ground for large
-    populations of several arctic bird species
-  question: What is Prince Leopold Island a significant summer habitat for?
+    populations of several arctic bird species.
+  question: For what species of animals is Prince Leopold Island a significant
+    summer habitat for?
 - answer: The majority of the island's area of 68 km2 (26 sq mi) is occupied by a
     plateau generally ranging in altitude between around 240 m (790 ft) and 300 m
     (980 ft).
-  question: What is the altitude of the plateau that the island is composed of?
+  question: What is the altitude of the plateau that makes up most of Prince 
+    Leopold Island?
 - answer: Vegetation consists of forbs, lichens, and mosses, though the top of the
     island is mostly devoid of plants. Denser concentrations of vegetation occur in
     seepage areas on the spits, including sedges and some dwarf willow
@@ -53,7 +59,8 @@ seed_examples:
   question: What types of birds live on Prince Leopold Island?
 - answer: 306 m (1004 ft)
   question: What's the highest elevation on Prince Leopold Island?
-- answer: '1950'
+- answer: Ornithological field research began on the island in the 1950s, and an
+    Environment Canada research station was established on the island in 1975.
   question: When did research start on Prince Leopold Island?
 - answer: August 4, 1819
   question: When was Prince Leopold Island first sighted?
