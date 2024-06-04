@@ -1,0 +1,152 @@
+version: 2
+created_by: SEHANTA, arxspecialist, cpgill1, jessygluekler, joebelford, mattbrown1477,
+  mguginf, nsthompson, redhatconfuser1, zsplaingard
+domain: automobile
+task_description: |
+  Answer questions about the DMC DeLorean sports car
+seed_examples:
+- answer: Yes, there is only 1 of 2 prototypes still in existence. The remaining
+    existing prototype has been restored and is displayed at the AACA Museum in
+    Hershey, Pennsylvania. The 2nd prototype was sent to Lotus Cars for development
+    and evaluation and has been reported destroyed.
+  question: Are there any Delorean prototypes still in existence?
+- answer: DeLoreans, early-production models in particular, suffered from poor
+    build quality as well as mechanical issues. Early-production cars needed as
+    much as 200 hours of work at DMC Quality Assurance Centers prior to being
+    shipped to dealerships for delivery. DMC eventually sent 30 factory workers
+    to the quality centers in the US to learn about the problems and how to fix
+    them. Quality did improve over time, and by 1982 many of the quality issues
+    had been resolved. A total of four recalls were issued by the factory
+    to correct problems such as a sticking throttle, front-suspension issues and
+    an inertia switch.
+  question: Did DeLorean have quality problems?
+- answer: As much as 200 hours of work at DMC Quality Assurance Centers were required
+    prior to shipping cars to dealerships for delivery to customers.
+  question: Did DeLorean suffer from quality control issues?
+- answer: The top speed of the DeLoran DMC was tested to be 110 mph, not as fast
+    as the claimed value of 130 mph.
+  question: How fast was the DeLorean?
+- answer: The DeLorean has a four-wheel independent suspension with coil springs,
+    and telescopic shock absorbers. The front suspension uses double wishbones,
+    while the rear is a multi-link setup.
+  question: What is the suspension setup of the DMC DeLorean?
+- answer: "DMC's comparison literature noted that the DeLorean could achieve 0\u2013\
+    60 miles per hour (0\u201397 km/h) in 8.8 seconds when equipped with a manual\
+    \ transmission, but other sources indicate an acceleration time of 9.5 seconds.\
+    \ When equipped with a manual transmission, the DeLorean accelerated from\
+    \ 0 to 60 miles per hour (0 to 97 km/h) in 10.5 seconds as tested by Road\
+    \ & Track magazine. Top speed was claimed at 130 mph (209 km/h), but was tested\
+    \ to be a lacking 110 mph (177 km/h). Car & Driver put the top speed of a\
+    \ 5-speed manual at 117 mph (188 km/h) (indicated). The car was described\
+    \ as \"not quick for a sports/GT car in this price category\" by Road & Track."
+  question: What is the performance of the DMC DeLorean?
+- answer: "DMC's comparison literature noted that the DeLorean could achieve 0\u2013\
+    60 miles per hour (0\u201397 km/h) in 8.8 seconds when equipped with a manual\
+    \ transmission, but other sources indicate an acceleration time of 9.5 seconds.\
+    \ When equipped with a manual transmission, the DeLorean accelerated from\
+    \ 0 to 60 miles per hour (0 to 97 km/h) in 10.5 seconds as tested by Road\
+    \ & Track magazine."
+  question: How long did it take for the DeLorean to achieve 60 miles-per-hour?
+- answer: '6'
+  question: How many DeLoreans were used in the "Back to the Future movies?"
+- answer: '3'
+  question: How many golden DeLoreans were ever made?
+- answer: Upon release in 1981, a DeLorean had a base MSRP of $25,000, or equivalent
+    to $84,000 in 2023. MSRP increased in 1982 to $29,825, equivalent to $94,000
+    in 2023, and again in 1983 to $34,000, equivalent to $104,000 in 2023.
+  question: How much did the DMC DeLorean cost?
+- answer: Originally, the car was intended to have a centrally-mounted Wankel
+    rotary engine.
+  question: What kind of engine was the car intended to have originally?
+- answer: Legend Industries converted four Deloreans, two twin-turbo cars (VIN
+    502 and VIN 530) and two single-turbo cars (VIN 528 and VIN 558) into turbo
+    versions.
+  question: Were there any turbo DeLoreans produced?
+- answer: \"Black cars\" are pre-production units made with fiberglass bodies
+    in order to train the workforce.
+  question: What are Delorean "black cars"?
+- answer: The DeLorean featured gull-wing doors and was one of the first to do
+    so after the Mercedes 300SL.
+  question: What kind of doors did the DeLorean have?
+- answer: The DeLorean features heavy gull-wing doors supported by cryogenically
+    preset torsion bars and nitrogen-charged struts.
+  question: What is unique about the DMC DeLorean doors?
+- answer: Several dealer options were available, including a car cover, sheepskin
+    seat covers, floor mats, car care cleaning kit, black textured accent stripes,
+    grey scotch-cal accent stripes, a luggage rack and a ski-rack adapter.
+  question: What dealer options were available for the Delorean?
+- answer: DMC stands for DeLorean Motor Company.
+  question: What does DMC stand for?
+- answer: The Ford Cologne V6 engine.
+  question: Which engine was used in the DMC DeLorean?
+- answer: The Ford Cologne V6 engine was first considered. The 2.0 engine from
+    a the Citroen CX2000 was then considered and eventually dropped in favor
+    of the fuel injected v6 PRV (Peugeot-Renault-Volvo) engine.
+  question: What engines were considered in the making of the DMC Delorean?
+- answer: The DeLorean's body pannels are made of brushed SS304 austenitic
+    stainless steel.
+  question: What are the DeLorean's body panels made of?
+- answer: The DMC DeLorean was made popular by the movie Back to the Future
+  question: What made the DMC DeLorean so popular?
+- answer: The DMC DeLorean was made popular by the movie Back to the Future
+  question: How did the DMC DeLorean become so well known?
+- answer: The body is paneled in brushed SS304 austenitic stainless steel.
+  question: What materials are the DMC DeLorean body panels comprised of?
+- answer: The DeLorean has a four-wheel independent suspension with coil springs,
+    and telescopic shock absorbers. The front suspension uses double wishbones,
+    while the rear is a multi-link setup.
+  question: What kind of suspension did the DeLorean have?
+- answer: Stainless-steel panels were fixed to a fiberglass underbody. The
+    underbody was affixed to a steel backbone chassis with Y-frames at either
+    end, which was derived from the Lotus Esprit platform. The chassis was
+    coated with epoxy, a material to protect steel against corrosion.
+  question: What materials was the Delorean body made from?
+- answer: Upon release in 1981, a DeLorean had a base MSRP of $25,000, or equivalent
+    to $84,000 in 2023. MSRP increased in 1982 to $29,825, equivalent to $94,000
+    in 2023, and again in 1983 to $34,000, equivalent to $104,000 in 2023.
+  question: What was the base price of the DeLorean?
+- answer: October 1981 was the highest month of sales for DMC with 720
+  question: What was the highest sales month for Delorean?
+- answer: "720"
+  question: What were the maximum sales in a month for the DMC DeLorean?
+- answer: The DMC DeLorean was produced from January 1981 to December 1982
+  question: When was the DMC DeLorean produced?
+- answer: The first production car was completed on January 21, 1981.
+  question: When was the DMC DeLorean released?
+- answer: The first production DeLorean was completed on January 21, 1981.
+  question: When was the first DeLorean car produced?
+- answer: The first production car was completed on January 21, 1981.
+  question: When was the first DeLorean production car completed?
+- answer: Details surrounding the DeLorean were first announced in the mid-1970s
+  question: When where details surrounding the DeLorean were first announced?
+- answer: The DMC DeLorean was designed by Giorgetto Giugiaro
+  question: Who designed the DMC DeLorean?
+- answer: Giorgetto Giugiaro
+  question: Who was the DeLorean designed by?
+- answer: John DeLorean was arrested on October 19, 1982 on federal charges of
+    cocaine trafficking. The FBI set up a sting operation with nearly 60 pounds
+    of cocaine worth $6.5M in a hotel near Log Angeles International Airport,
+    designed to catch John DeLorean acting as the financier for a deal to help
+    his financially struggling car company.
+  question: Why was John DeLorean arrested?
+- answer: DMC DeLorean is a rear-engine two-passenger sports car
+  question: What is a DMC DeLorean?
+- answer: The body design of the DeLorean was a product of Giorgetto Giugiaro
+    of Italdesign. To create the car, Giugiaro drew on one of his previous
+    works, the Porsche Tapiro, a concept car from 1970.
+  question: What is the design of DMC DeLorean body based on?
+- answer: It was DMC-12
+  question: What was the internal DMC pre-production designation of the DMC 
+    DeLorean?
+- answer: The first prototype was completed in October 1976.
+  question: When was the first DeLorean prototype completed?
+- answer: Giorgetto Giugiaro
+  question: Who designed the DMC DeLorean?
+- answer: William T. Collins is an American automotive chief engineer, formerly
+    chief engineer at Pontiac.
+  question: Who is William T. Collins?
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: d72149c0f34dcd0d329341f4e019f503b9846f58
+  patterns:
+  - DMC_DeLorean.md
