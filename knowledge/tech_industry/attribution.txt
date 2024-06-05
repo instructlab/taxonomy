@@ -1,0 +1,5 @@
+Title of work: OpenShift Virtualization Reference Implementation Guide
+Link to work: https://access.redhat.com/sites/default/files/attachments/openshift_virtualization_reference_implementation_guide.pdf
+Revision: 1.0.0
+License of the work: CC-BY-SA-3.0
+Creator names: Red Hat

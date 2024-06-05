@@ -1,0 +1,85 @@
+---
+created_by: gbarros
+domain: ocp-v
+seed_examples:
+  - answer: |
+      OpenShift Virrtualization is included with your OpenShift license.
+    question: |
+      How do I buy OpenShift Virtualization?
+  - answer: >
+      OpenShift Virtualization is a feature of Red Hat OpenShift that lets
+      developers bring conventional VMs into workflows on OpenShift Container
+      Platform. OpenShift Virtualization represents a continuation of Red Hat’s
+      commitment to Kubernetes as the future of app orchestration and as a
+      common standard across the hybrid cloud.
+
+      OpenShift Virtualization is based on the upstream KubeVirt project, which is a sandbox project in the Cloud Native Computing Foundation (CNCF). While in tech preview, OpenShift Virtualization was known as container-native virtualization.
+    question: |
+      What is OpenShift Virtualizaion?
+  - answer: >
+      OpenShift Virtualization brings virtualized workloads directly into the
+      development, deployment, and management workflows within OpenShift
+      Container Platform. OpenShift Virtualization uses the Red Hat Enterprise
+      Linux KVM hypervisor technology deployed using containers, allowing
+      Kubernetes to deploy and manage VMs locally. This capability accelerates
+      app modernization by
+
+      Supporting development of new, microservices-based apps in containers that interact with traditional virtualized apps.
+
+      Combining virtualized workloads with container workloads on the same platform, making it easier to gradually refactor monolithic, virtualized applications into containers.
+
+      OpenShift Virtualization uses the KVM hypervisor, a core part of the Red Hat Enterprise Linux kernel used by Red Hat Virtualization for more than a decade.
+    question: |
+      What does OpenShift Virtualization do?
+  - answer: >
+      OpenShift Virtualization is a feature of Red Hat OpenShift Container
+      Platform and Red Hat OpenShift Kubernetes Engine. It is not an add-on or a
+      separate product. The OpenShift Virtualization operator must be installed
+      to access the feature. All current and future subscribers receive
+      OpenShift Virtualization as part of their Red Hat OpenShift subscription.
+      OpenShift Virtualization is a feature of Red Hat OpenShift Container
+      Platform and Red Hat OpenShift Kubernetes Engine. It is not an add-on or a
+      separate product. The OpenShift Virtualization operator must be installed
+      to access the feature. All current and future subscribers receive
+      OpenShift Virtualization as part of their Red Hat OpenShift subscription.
+    question: |
+      How will OpenShift Virtualization be made available?
+  - answer: >
+      New development is shifting to containers and serverless, but
+      organizations have a huge investment in apps that run as virtual
+      machines—many of which provide vital services to new and existing
+      containerized applications. OpenShift Virtualization brings virtual
+      machines to Red Hat OpenShift. This innovation allows developers and
+      operations to develop, manage, and deploy virtual machines, containers,
+      and serverless in one platform using the same tools and frameworks,
+      accelerating their ability to deliver differentiated applications and
+      services.
+
+      OpenShift Virtualization lets customers modernize existing apps and services to a single Kubernetesbased platform, Red Hat OpenShift. With this modernization, customers can develop and deliver new and existing apps with VMs, containers, and serverless functions managed together in a Kubernetes-native architecture. Teams can also develop containerized apps faster by hosting VM-based workloads on the same platform as container-based apps while continuing to use virtualized applications where there are app dependencies.
+    question: |
+      What are the key customer benefits of OpenShift Virtualization?
+  - answer: >
+      OpenShift Virtualization helps technology teams modernize app
+      development and optimize their IT infrastructure.
+
+      Modernizing app development: In this use case, developers incorporate existing apps and components into their workflows while simultaneously building new, complex applications. OpenShift Virtualization lets teams with conventional VM technology modernize, so they can develop containerized apps faster. It also provides a way to refactor complex virtualized apps gradually while continuing to run virtualized components. As developers modernize existing apps, OpenShift Virtualization helps them run VMs in Kubernetes pods alongside normal pods made up of app containers, all on OpenShift Container Platform. It supports connectivity between app containers and VMs, while also letting VMs share networking and storage infrastructure with app containers.
+
+
+      Optimize IT infrastructure: As development teams embrace new workload footprints, operations teams need efficient ways to manage them alongside existing investments. OpenShift Virtualization helps optimize IT by providing a unified way to deploy, run, and manage containerized and virtualized workloads on the same platform.
+    question: |
+      What are the key use cases for OpenShift Virtualization?
+  - answer: >
+      When OpenShift Virtualization operator is enabled for a Red Hat
+      OpenShift cluster, developers can create and add virtualized applications
+      to their projects using standard workflows, automation, and tools like
+      GitOps. The resulting VMs run in parallel on the same Red Hat OpenShift
+      nodes as standard application containers.
+    question: |
+      How does OpenShift Virtualization work?
+task_description: Overview Openshift Virtualization
+document:
+  repo: https://github.com/gmidha1/instructlabdemo
+  commit: 4ed5e9aa4508b4051b85d14152b32a4f3c6f7e18
+  patterns:
+    - file.md
+
