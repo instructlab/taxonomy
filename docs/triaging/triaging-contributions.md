@@ -66,31 +66,35 @@ Triagers review open pull requests and use labels to manage their state and any 
 
 There are a few labels that the triager is responsible for when reviewing PRs:
 
-- https://github.com/instructlab/taxonomy/labels/skill - a skills contribution as opposed to documentation contribution or a knowledge contribution
+- https://github.com/instructlab/taxonomy/labels/ci - the PR touches our CI system
+- https://github.com/instructlab/taxonomy/labels/enhancement - the PR has a new feature or request
 - https://github.com/instructlab/taxonomy/labels/knowledge - the PR is a knowledge contribution
+- https://github.com/instructlab/taxonomy/labels/github_actions - the PR touches our GitHub Actions configuration
+- https://github.com/instructlab/taxonomy/labels/help%20wanted - extra attention is needed
+- https://github.com/instructlab/taxonomy/labels/question - further information is requested
+- https://github.com/instructlab/taxonomy/labels/precheck-generate-ready - The PR has passed all the linting and "code" now is in the model enagegment loop
+- https://github.com/instructlab/taxonomy/labels/sdg-unsuccessful - PR failed Synthetic Data Generation
+- https://github.com/instructlab/taxonomy/labels/stale - the stale-bot has marked you as stale
+- https://github.com/instructlab/taxonomy/labels/skill - a skills contribution as opposed to documentation contribution or a knowledge contribution
+- https://github.com/instructlab/taxonomy/labels/topic-failure - a topic that we are not accepting (leave comment on specifics)
+- https://github.com/instructlab/taxonomy/labels/triage-approved - triage team has signed off
+  - re-assign to @taxonomy-approvers
+  - add comment and tag @taxonomy-approvers
+- https://github.com/instructlab/taxonomy/labels/triage-follow-up - triager needs to follow up after requested changes have been made
 - https://github.com/instructlab/taxonomy/labels/triage-needed - skill needs a triager to review it
   - triager assigns to themself when you beginning review
 - https://github.com/instructlab/taxonomy/labels/triage-requested-changes - skill has been reviewed; changes requested from contributor
   - triager provides comment in PR asking for additional changes or information
   - triager assigns to contributor
+- https://github.com/instructlab/taxonomy/labels/triage-rejected - skill fails criteria
+  - add informative comment while tagging @taxonomy-approvers
+  - re-assign to @taxonomy-approvers
 - https://github.com/instructlab/taxonomy/labels/triage-uncertain - triager is uncertain which can be for a variety of reasons
   - triager stays assigned
   - use comment to ask the rest of the triage team for input tagging @taxonomy-triagers
   - if still uncertain
     - then re-assign to @taxonomy-approvers
     - triager tags @taxonomy-approvers in informative comment asking for further review from that team
-- https://github.com/instructlab/taxonomy/labels/triage-approved - triage team has signed off
-  - re-assign to @taxonomy-approvers
-  - add comment and tag @taxonomy-approvers
-- https://github.com/instructlab/taxonomy/labels/triage-rejected - skill fails criteria
-  - add informative comment while tagging @taxonomy-approvers
-  - re-assign to @taxonomy-approvers
-- https://github.com/instructlab/taxonomy/labels/triage-follow-up - triager needs to follow up after requested changes have been made
-- https://github.com/instructlab/taxonomy/labels/topic-failure - a topic that we are not accepting (leave comment on specifics)
-- https://github.com/instructlab/taxonomy/labels/stale - the stale-bot has marked you as stale
-- https://github.com/instructlab/taxonomy/labels/sdg-unsuccessful - PR failed Synthetic Data Generation
-- https://github.com/instructlab/taxonomy/labels/question - further information is requested
-- https://github.com/instructlab/taxonomy/labels/help%20wanted - extra attention is needed
 
 ### Label Workflow guide
 
