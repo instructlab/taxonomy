@@ -16,6 +16,6 @@ updates:
 
   # Maintain dependencies for Python scripts
   - package-ecosystem: "pip"
-    directory: "/.github/scripts"
+    directory: "/scripts"
     schedule:
       interval: "daily"

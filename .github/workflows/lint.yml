@@ -11,7 +11,7 @@ on:
       - compositional_skills/**/qna.yaml
       - knowledge/**/qna.yaml
       - '.github/workflows/lint.yml' # This workflow
-      - '.github/scripts/**' # Scripts used by this workflow
+      - 'scripts/**' # Scripts used by this workflow
 
   pull_request:
     branches:
@@ -22,7 +22,7 @@ on:
       - knowledge/**/*.yaml
       - knowledge/**/*.yml
       - '.github/workflows/lint.yml' # This workflow
-      - '.github/scripts/**' # Scripts used by this workflow
+      - 'scripts/**' # Scripts used by this workflow
 
 env:
   LC_ALL: en_US.UTF-8
@@ -56,7 +56,7 @@ jobs:
 
       - name: "Install Python Packages"
         run: |
-          pip install -r .github/scripts/requirements.txt
+          pip install -r scripts/requirements.txt
 
       - name: "Find changed skills and knowledge files"
         id: changed-files
@@ -71,7 +71,7 @@ jobs:
       - name: "Check changed YAML file contents"
         if: ${{ steps.changed-files.outputs.any_changed == 'true' }}
         run: |
-          .github/scripts/check-yaml.py ${{ steps.changed-files.outputs.all_changed_files }}
+          scripts/check-yaml.py ${{ steps.changed-files.outputs.all_changed_files }}
         env:
           SCHEMA_BASE: schema
           YAMLLINT_CONFIG: "{extends: relaxed, rules: {line-length: {max: 120}}}"
