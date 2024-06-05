@@ -1,4 +1,6 @@
-created_by: Wikipedia Authors
+---
+version: 2
+created_by: notklaatu
 domain: flowers
 seed_examples:
   - answer: 'The scent of a carnation is often described
