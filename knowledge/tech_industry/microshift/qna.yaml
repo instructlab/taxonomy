@@ -1,0 +1,30 @@
+version: 1
+task_description: 'Teaching the model about Microshift'
+created_by: CFE-OW
+domain: Software
+seed_examples:
+  - answer: The Red Hat® build of MicroShift is a lightweight Kubernetes container orchestration solution built from the edge capabilities of Red Hat® OpenShift® and based on the open source community’s project by the same name. As part of Red Hat Device Edge, it has a purposefully built minimal footprint combining an enterprise-ready distribution of MicroShift – which runs atop an edge-optimized operating system built from Red Hat Enterprise Linux. MicroShift brings the power and scalability of Kubernetes to the edge, as a natural extension of an OpenShift environment, allowing applications to be written once and run right where they are needed — next to the data source or end user. Essentially, it’s Kubernetes but tiny.
+    question: What is MicroShift?
+  - answer: MicroShift’s greatest strength is its size, or lack thereof. While OpenShift itself can be small, MicroShift is even smaller and therefore can be placed in highly space-constrained spaces and run on extremely low-power hardware at the most remote locations - all while enjoying the benefits of Kubernetes and allowing teams to continue using their existing tools and processes. The consistency that MicroShift bring allows the focus to remain on innovation, rather than adopting new processes and architectures for various parts of a cloud environment. From core to cloud to edge — it’s all Kubernetes.
+    question: Who is MicroShift for?
+  - answer: Derived from OpenShift, MicroShift brings a new level of scalability and consistency to cloud-native environments. This allows applications to run where they are most useful - on-site. Edge computing itself comes in so many unique forms, shapes, sizes and locations - all with their own unique considerations. While traditional on-premises datacenters and centralized public clouds enjoy the benefits of standardization at scale (such a constant power, network connectivity, cooling and space) - all of this can vary with devices are placed outside of their “comfort zone”. Fortunately, MicroShift can help with all of the above! With the resilience of OpenShift, miniaturized - MicroShift can comfortably operate on small, efficient hardware from a vast ecosystem of partners while handling varying conditions. So whether your application needs to be attached to an assembly line, building products or in a store, whether it is onboard satellites or out at sea, or whether it’s in a very hot, cold, wet or sandy place - near or far, online or off-grid — it’s all Kubernetes.
+    question: Where does MicroShift live?
+  - answer: Edge computing is computing that takes place at or near the physical location of either the user or the source of the data. By placing computing services closer to these locations, users benefit from faster, more reliable services while companies benefit from the flexibility of hybrid cloud computing. Edge computing is one way that a company can use and distribute a common pool of resources across a large number of locations.
+    question: What is edge computing?
+document:
+  repo: https://github.com/dialvare/microshift_faq
+  commit: 39ee93b4c7697013b9b9fe780a13cce245c0cd0d
+  patterns:
+    - README.md
+
+
+
+
+
+
+
+
+
+
+
+
