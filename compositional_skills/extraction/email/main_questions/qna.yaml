@@ -1,4 +1,4 @@
-version: 1
+version: 2
 task_description: |
     This skill provides the ability to extract the main questions from e-mails for later use in semantic searches or other actions.
 created_by: celestelgarrido
