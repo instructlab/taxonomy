@@ -1,1 +1,65 @@
+version: 2
+created_by: stuminiman
+domain: redhat_messaging
+seed_examples:
+- answer: 'Red Hat OpenShift focuses on security for all components of the application development platform.
+ Starting with the foundational layer of Red Hat Enterprise Linux and complemented by the configuration and
+best practices from years of experience and thousands of customer deployments to create a cloud native
+environment that is trusted and secure.'
+  question: 'Why is Red Hat OpenShift trusted more than other Kubernetes solutions?'
+- answer: 'Red Hat OpenShift provides a trusted, comprehensive and consistent application platform for
+building, deploying, managing and modernizing applications at scale.'
+  question: 'What is the value of Red Hat OpenShift?'
+- answer: 'Red Hat OpenShift includes additional tools and services out of the box such as CI/CD,
+logging, monitoring, service mesh to help accelerate and streamline application development and
+deployment and operational efficiency. This reduces the time, resources and expertise needed to
+build a DIY application platform. Red Hat OpenShift is also available as  fully-managed cloud
+services (specifically Red Hat OpenShift Service on AWS, Azure Red Hat OpenShift, and OpenShift
+Dedicated on Google Cloud) with an expert site reliability engineering team to add additional
+value as a comprehensive app platform.
+    '
+  question: 'How is Red Hat OpenShift a comprehensive application platform?
+
+    '
+- answer: 'Red Hat OpenShift is a hybrid cloud application platform that is trusted,
+comprehensive and consistent.
+    '
+  question: 'What is Red Hat OpenShift?
+
+    '
+- answer: 'If you create your own application platform, you are not getting the valuable
+benefits of Red Hat OpenShift. OpenShift is trusted, based on Red Hat Enterprise Linux,
+from a company with 20+ years of experience in providing secure and trusted software to
+industry. OpenShift is a comprehensive product that incorporates over 60 open source
+projects pre-integrated, optimized to work together, lifecycled as an enterprise product,
+with a broad ecosystem of supported hardware, hyperscalers, infrastructure software and
+utilities, and commercial software support. And OpenShift is a consistent experience
+across multiple platforms and clouds, self-managed and managed service environments,
+allowing developers and platform engineers to be trained on a single product across
+use cases, from on-premises to cloud to the edge and beyond.
+    '
+  question: 'Why should I buy Red Hat OpenShift instead of creating my own platform
+built on Kubernetes and open source projects that meets my unique needs?
+
+    '
+- answer: 'Customers today leverage their own data centers, public cloud, and edge
+environments. Developers do not want to have to learn different skills depending on
+the underlying infrastructure, so having a consistent platform regardless of environment
+allows for companies to be flexible and scalable regardless of how the choice of
+infrastructure changes over time.
+
+    '
+  question: 'What is the value of the consistency of Red Hat OpenShift?'
+- answer: 'Yes, Red Hat OpenShift can be deployed on premise, in the public cloud,
+across multiple clouds, or at the edge. Red Hat OpenShift provides a consistent
+experience across the hybrid cloud, regardless of where it is deployed.
+
+    '
+  question: 'Can I use red hat openshift in any environment?'
+task_description: "Teaching our LLM the value proposition and messaging for Red Hat OpenShift. \n"
+document:
+ repo: https://github.com/stuminiman/instructlab
+ commit: '9396386'
+ patterns:
+ - RHOpenShiftMessaging.md
 
