@@ -5,7 +5,7 @@ You can create a Git repository to host your knowledge contributions anywhere (G
 ## Prerequisites
 
 - You have a GitHub account
-- You have a forked copy of the taxonomy repository
+- You have a forked copy of the [taxonomy](https://github.com/instructlab/taxonomy/tree/main) repository
 - Verify that the model does not already know the knowledge you want to submit
 
 ## Creating your own knowledge repository
@@ -20,7 +20,7 @@ The specific steps are listed as follows:
 
 ## Convert your knowledge documentation to markdown
 
-There are many online tools that can help you convert your documents to markdown. If you are using a wiki page for your contributions, you can use [pandocs](https://pandoc.org/try/) to convert the documents.
+There are many online tools that can help you convert your documents to markdown. If you are using a wiki page for your contributions, you can use [pandocs](https://pandoc.org/try/) to convert the documents. For wikipedia sources on pandoc, use `from: mediawiki` and convert `to: markdown_strict` to access the proper markdown format. 
 
 ## Add the markdown file to your repository
 

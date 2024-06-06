@@ -10,7 +10,7 @@ import sys
 from functools import cache, partial
 from importlib.resources.abc import Traversable
 from pathlib import Path
-from typing import List, Optional, Union
+from typing import List, Mapping, Optional, Union
 
 # Third Party
 import yaml
@@ -32,12 +32,22 @@ class CheckYaml:
         schema_base: Path,
         taxonomy_folders: List[str],
         yamllint_config: YamlLintConfig,
+        schema_version: Optional[int] = None,
         message_format: Optional[str] = None,
     ) -> None:
         self.yaml_files = yaml_files
         self.schema_base = schema_base
         self.taxonomy_folders = taxonomy_folders
         self.yamllint_config = yamllint_config
+        if schema_version is None:
+            schema_versions = sorted(
+                int(v.name[1:])
+                for v in self.schema_base.glob("v*")
+                if v.name[1:].isdigit()
+            )
+            if schema_versions:
+                schema_version = schema_versions[-1]
+        self.schema_version = schema_version
         if message_format is None or message_format == "auto":
             message_format = (
                 "github"
@@ -123,11 +133,18 @@ class CheckYaml:
                 )
                 continue
 
+            version = self.schema_version
+            if version is None:
+                self.error(
+                    file=taxonomy_path,
+                    message=f'Schema base "{self.schema_base}" does not contain any schema versions',
+                )
+                continue
+
             try:
                 with open(full_path, "r", encoding="utf-8") as stream:
                     content = stream.read()
 
-                lint_error = False
                 for lint_problem in linter.run(
                     input=content, conf=self.yamllint_config
                 ):
@@ -144,7 +161,6 @@ class CheckYaml:
                                 line=lint_problem.line,
                                 col=lint_problem.column,
                             )
-                            lint_error = True
                         case _:
                             self.warning(
                                 file=taxonomy_path,
@@ -152,21 +168,26 @@ class CheckYaml:
                                 line=lint_problem.line,
                                 col=lint_problem.column,
                             )
-                if lint_error:
-                    continue
 
                 parsed = yaml.safe_load(content)
                 if not parsed:
                     self.error(file=taxonomy_path, message="The file is empty")
                     continue
+                if not isinstance(parsed, Mapping):
+                    self.error(
+                        file=taxonomy_path,
+                        message="The file is not valid. The top-level element is not an object with key-value pairs.",
+                    )
+                    continue
 
-                version = parsed.get("version", 1)
-                if not isinstance(version, int):
-                    # schema validation will complain about the type
-                    try:
-                        version = int(version)
-                    except ValueError:
-                        version = 1  # fallback to version 1
+                if version < 1:  # Use version from YAML document
+                    version = parsed.get("version", 1)
+                    if not isinstance(version, int):
+                        # schema validation will complain about the type
+                        try:
+                            version = int(version)
+                        except ValueError:
+                            version = 1  # fallback to version 1
 
                 schemas_path = self.schema_base.joinpath(f"v{version}")
                 retrieve = partial(self._retrieve, schemas_path)
@@ -219,17 +240,18 @@ class CheckYaml:
                         message=f"Cannot load schema file {e.ref}. {e}",
                     )
 
-                attribution_path = full_path.with_name("attribution.txt")
-                if not os.path.isfile(attribution_path):
-                    self.error(
-                        file=taxonomy_path,
-                        message=f"The {attribution_path.name} file does not exist or is not a file",
-                    )
-                elif os.path.getsize(attribution_path) == 0:
-                    self.error(
-                        file=taxonomy_path.with_name(attribution_path.name),
-                        message="The file must be non-empty",
-                    )
+                if version > 1:
+                    attribution_path = full_path.with_name("attribution.txt")
+                    if not os.path.isfile(attribution_path):
+                        self.error(
+                            file=taxonomy_path,
+                            message=f"The {attribution_path.name} file does not exist or is not a file",
+                        )
+                    elif os.path.getsize(attribution_path) == 0:
+                        self.error(
+                            file=taxonomy_path.with_name(attribution_path.name),
+                            message="The file must be non-empty",
+                        )
 
             except Exception as e:
                 self.exit_code = 1
@@ -269,6 +291,19 @@ def cli() -> int:
         type=Path,
     )
     parser.add_argument(
+        "-v",
+        "--schema-version",
+        help="""
+            The version of the Taxonomy schema.
+            Alternately, the SCHEMA_VERSION environment variable can be used
+            to specify the version.
+            Specifying a version less than 1 will use the schema version specified by each YAML document's "version" key.
+            If not specified, the highest schema version at SCHEMA_BASE is used.
+            """,
+        default=os.environ.get("SCHEMA_VERSION"),
+        type=int,
+    )
+    parser.add_argument(
         "-l",
         "--lint-config",
         dest="yamllint_config",
@@ -303,6 +338,7 @@ def cli() -> int:
         taxonomy_folders=args.taxonomy_folders,
         yamllint_config=args.yamllint_config,
         schema_base=args.schema_base,
+        schema_version=args.schema_version,
         message_format=args.message_format,
     )
     exit_code = check_yaml.check()
