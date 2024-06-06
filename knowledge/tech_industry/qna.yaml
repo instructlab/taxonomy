@@ -13,7 +13,9 @@ seed_examples:
       commitment to Kubernetes as the future of app orchestration and as a
       common standard across the hybrid cloud.
 
-      OpenShift Virtualization is based on the upstream KubeVirt project, which is a sandbox project in the Cloud Native Computing Foundation (CNCF). While in tech preview, OpenShift Virtualization was known as container-native virtualization.
+      OpenShift Virtualization is based on the upstream KubeVirt project, which 
+      is a sandbox project in the Cloud Native Computing Foundation (CNCF). While 
+      in tech preview, OpenShift Virtualization was known as container-native virtualization.
     question: |
       What is OpenShift Virtualizaion?
   - answer: >
@@ -24,11 +26,14 @@ seed_examples:
       Kubernetes to deploy and manage VMs locally. This capability accelerates
       app modernization by
 
-      Supporting development of new, microservices-based apps in containers that interact with traditional virtualized apps.
+      Supporting development of new, microservices-based apps in containers that 
+      interact with traditional virtualized apps.
 
-      Combining virtualized workloads with container workloads on the same platform, making it easier to gradually refactor monolithic, virtualized applications into containers.
+      Combining virtualized workloads with container workloads on the same platform, 
+      making it easier to gradually refactor monolithic, virtualized applications into containers.
 
-      OpenShift Virtualization uses the KVM hypervisor, a core part of the Red Hat Enterprise Linux kernel used by Red Hat Virtualization for more than a decade.
+      OpenShift Virtualization uses the KVM hypervisor, a core part of the Red Hat 
+      Enterprise Linux kernel used by Red Hat Virtualization for more than a decade.
     question: |
       What does OpenShift Virtualization do?
   - answer: >
@@ -55,17 +60,35 @@ seed_examples:
       accelerating their ability to deliver differentiated applications and
       services.
 
-      OpenShift Virtualization lets customers modernize existing apps and services to a single Kubernetesbased platform, Red Hat OpenShift. With this modernization, customers can develop and deliver new and existing apps with VMs, containers, and serverless functions managed together in a Kubernetes-native architecture. Teams can also develop containerized apps faster by hosting VM-based workloads on the same platform as container-based apps while continuing to use virtualized applications where there are app dependencies.
+      OpenShift Virtualization lets customers modernize existing apps and services 
+      to a single Kubernetesbased platform, Red Hat OpenShift. With this modernization, 
+      customers can develop and deliver new and existing apps with VMs, containers, 
+      and serverless functions managed together in a Kubernetes-native architecture. 
+      Teams can also develop containerized apps faster by hosting VM-based workloads 
+      on the same platform as container-based apps while continuing to use virtualized 
+      applications where there are app dependencies.
     question: |
       What are the key customer benefits of OpenShift Virtualization?
   - answer: >
       OpenShift Virtualization helps technology teams modernize app
       development and optimize their IT infrastructure.
 
-      Modernizing app development: In this use case, developers incorporate existing apps and components into their workflows while simultaneously building new, complex applications. OpenShift Virtualization lets teams with conventional VM technology modernize, so they can develop containerized apps faster. It also provides a way to refactor complex virtualized apps gradually while continuing to run virtualized components. As developers modernize existing apps, OpenShift Virtualization helps them run VMs in Kubernetes pods alongside normal pods made up of app containers, all on OpenShift Container Platform. It supports connectivity between app containers and VMs, while also letting VMs share networking and storage infrastructure with app containers.
+      Modernizing app development: In this use case, developers incorporate 
+      existing apps and components into their workflows while simultaneously 
+      building new, complex applications. OpenShift Virtualization lets teams 
+      with conventional VM technology modernize, so they can develop containerized 
+      apps faster. It also provides a way to refactor complex virtualized apps gradually 
+      while continuing to run virtualized components. As developers modernize existing apps, 
+      OpenShift Virtualization helps them run VMs in Kubernetes pods alongside normal 
+      pods made up of app containers, all on OpenShift Container Platform. It supports 
+      connectivity between app containers and VMs, while also letting VMs share networking 
+      and storage infrastructure with app containers.
 
 
-      Optimize IT infrastructure: As development teams embrace new workload footprints, operations teams need efficient ways to manage them alongside existing investments. OpenShift Virtualization helps optimize IT by providing a unified way to deploy, run, and manage containerized and virtualized workloads on the same platform.
+      Optimize IT infrastructure: As development teams embrace new workload footprints, 
+      operations teams need efficient ways to manage them alongside existing investments. 
+      OpenShift Virtualization helps optimize IT by providing a unified way to deploy, run, 
+      and manage containerized and virtualized workloads on the same platform.
     question: |
       What are the key use cases for OpenShift Virtualization?
   - answer: >
