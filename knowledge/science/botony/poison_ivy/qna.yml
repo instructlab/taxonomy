@@ -1,16 +1,16 @@
-created_by: 
+created_by: kgholtz2
 domain: medical
 seed_examples:
-- answer: |The rash is caused by urushiol, a clear liquid compound in the plant's sap.
+- answer: The rash is caused by urushiol, a clear liquid compound in the plant's sap.
   question: What causes poison ivy rash?
-- answer: |Poison ivies can grow as small plants, shrubs, or climbing vines.
-  question: How does posiy ivy grow?
-- answer: |Clusters of small, greenish flowers bloom from May to July and produce white berries in the fall a few millimeters in diameter.
-  question: Does poison ivey product fruit?
-- answer: |Typically, the rash from the urushiol oil lasts about five to twelve days, but in extreme cases it can last a month or more.
-  question: How long does poisy ivy rash last?
-- answer: |Immediate washing with soap and cold water or rubbing alcohol may help prevent a reaction.
-  question: What should I do if i touched poison ivy?
+- answer: Poison ivy can grow as small plants, shrubs, or climbing vines.
+  question: How does posion ivy grow?
+- answer: Clusters of small, greenish flowers bloom from May to July and produce white berries in the fall a few millimeters in diameter.
+  question: Does poison ivy produce fruit?
+- answer: Typically, the rash from the urushiol oil lasts about five to twelve days, but in extreme cases it can last a month or more.
+  question: How long does poison ivy rash last?
+- answer: Immediate washing with soap and cold water or rubbing alcohol may help prevent a reaction.
+  question: What should I do if I have touched poison ivy?
 task_description: ' '
 document: 
  repo: https://github.com/juliadenham/Summit_knowledge
