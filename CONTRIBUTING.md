@@ -62,15 +62,6 @@ To contribute to this repo, you'll use the *Fork and Pull* model common in many 
 - For details on the local process, check out the [GitHub flow](https://docs.github.com/en/get-started/using-github/github-flow) documentation from GitHub and [The GitHub Workflow Guide](https://github.com/kubernetes/community/blob/master/contributors/guide/github-workflow.md) documentation from Kubernetes.
 - For details on contributing using the GitHub webpage UI, see [Contributing using the GH UI](docs/contributing_via_GH_UI.md).
 
-This repository uses [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) to incorporate the [taxonomy schema](https://github.com/instructlab/schema.git).
-So, when using a local clone of this Git repository, be sure to use the [`--recurse-submodules`](https://git-scm.com/docs/git-clone#Documentation/git-clone.txt---recurse-submodulesltpathspecgt) option on the `git clone` command and the `git pull` command when pulling updates from the remote repository.
-For example:
-
-```shell
-git clone --recurse-submodules https://github.com/instructlab/taxonomy.git
-git pull --recurse-submodules
-```
-
 > [!IMPORTANT]
 > For all contributions to InstructLab 🐶, you want to become familiar with the workflow described in the [InstructLab 🐶 CLI
 > `ilab`](https://github.com/instructlab/instructlab) documentation. It would be best to understand how to test

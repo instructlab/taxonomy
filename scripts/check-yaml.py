@@ -8,12 +8,14 @@ import os
 import subprocess
 import sys
 from functools import cache, partial
+from importlib import resources
 from importlib.resources.abc import Traversable
 from pathlib import Path
 from typing import List, Mapping, Optional, Union
 
 # Third Party
 import yaml
+from instructlab.schema import schema_versions
 from jsonschema.protocols import Validator
 from jsonschema.validators import validator_for
 from referencing import Registry, Resource
@@ -29,24 +31,19 @@ class CheckYaml:
         self,
         *,
         yaml_files: List[Path],
-        schema_base: Path,
         taxonomy_folders: List[str],
         yamllint_config: YamlLintConfig,
         schema_version: Optional[int] = None,
         message_format: Optional[str] = None,
     ) -> None:
         self.yaml_files = yaml_files
-        self.schema_base = schema_base
         self.taxonomy_folders = taxonomy_folders
         self.yamllint_config = yamllint_config
+        self.schema_base = resources.files("instructlab.schema")
         if schema_version is None:
-            schema_versions = sorted(
-                int(v.name[1:])
-                for v in self.schema_base.glob("v*")
-                if v.name[1:].isdigit()
-            )
-            if schema_versions:
-                schema_version = schema_versions[-1]
+            versions = schema_versions()
+            if versions:
+                schema_version = int(versions[-1].name[1:])
         self.schema_version = schema_version
         if message_format is None or message_format == "auto":
             message_format = (
@@ -58,7 +55,7 @@ class CheckYaml:
         self.exit_code: int = 0
 
     @cache
-    def _load_schema(self, path: Union[Path, Traversable]) -> Resource:
+    def _load_schema(self, path: Traversable) -> Resource:
         try:
             contents = json.loads(path.read_text(encoding="utf-8"))
             resource = Resource.from_contents(
@@ -68,7 +65,7 @@ class CheckYaml:
             raise NoSuchResource(ref=str(path)) from e
         return resource
 
-    def _retrieve(self, schemas_path: Union[Path, Traversable], uri: URI) -> Resource:
+    def _retrieve(self, schemas_path: Traversable, uri: URI) -> Resource:
         path = schemas_path.joinpath(uri)
         return self._load_schema(path)
 
@@ -280,17 +277,6 @@ def cli() -> int:
         ).split(),
     )
     parser.add_argument(
-        "-s",
-        "--schema-base",
-        help="""
-            The base directory of the Taxonomy schema files.
-            Alternately, the SCHEMA_BASE environment variable can be used
-            to specify the base directory.
-            """,
-        default=os.environ.get("SCHEMA_BASE", _find_schema_base()),
-        type=Path,
-    )
-    parser.add_argument(
         "-v",
         "--schema-version",
         help="""
@@ -337,22 +323,11 @@ def cli() -> int:
         yaml_files=args.yaml_file,
         taxonomy_folders=args.taxonomy_folders,
         yamllint_config=args.yamllint_config,
-        schema_base=args.schema_base,
         schema_version=args.schema_version,
         message_format=args.message_format,
     )
     exit_code = check_yaml.check()
     return exit_code
-
-
-def _find_schema_base() -> Path:
-    for parent in Path(sys.argv[0]).parents:
-        candidate = parent.joinpath("schema")
-        if os.path.isdir(candidate):
-            return candidate
-        if os.path.exists(parent.joinpath(".git")):
-            break
-    return Path.cwd().joinpath("schema")
 
 
 if __name__ == "__main__":

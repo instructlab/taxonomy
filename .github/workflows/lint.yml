@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: Apache-2.0
 
-name: Lint
+name: Lint compositional_skills and knowledge
 
 on:
   workflow_dispatch:
@@ -35,7 +35,7 @@ permissions:
   contents: read
 
 jobs:
-  lint:
+  yamllint:
     runs-on: ubuntu-latest
     steps:
       - name: "Harden Runner"
@@ -47,7 +47,6 @@ jobs:
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
           fetch-depth: 0
-          submodules: true
 
       - name: "Setup Python"
         uses: actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d # v5.1.0
@@ -69,12 +68,24 @@ jobs:
             knowledge/**/*.yml
 
       - name: "Check changed YAML file contents"
-        if: ${{ steps.changed-files.outputs.any_changed == 'true' }}
+        if: ${{ fromJSON(steps.changed-files.outputs.any_changed) }}
         run: |
           scripts/check-yaml.py ${{ steps.changed-files.outputs.all_changed_files }}
         env:
-          SCHEMA_BASE: schema
           YAMLLINT_CONFIG: "{extends: relaxed, rules: {line-length: {max: 120}}}"
+          TAXONOMY_FOLDERS: >-
+            compositional_skills
+            knowledge
+
+      - name: "Check all YAML file contents"
+        if: ${{ !fromJSON(steps.changed-files.outputs.any_changed) }}
+        run: |
+          read -ra folders <<< "${TAXONOMY_FOLDERS}"
+          # shellcheck disable=SC2046
+          scripts/check-yaml.py $(find "${folders[@]}" -name "qna.yaml" -print)
+        env:
+          YAMLLINT_CONFIG: "{}" # No lint rules
+          SCHEMA_VERSION: 0 # use the schema version specified in the "version" key
           TAXONOMY_FOLDERS: >-
             compositional_skills
             knowledge
@@ -84,7 +95,7 @@ jobs:
         run: |
           echo "${PULL_REQUEST_NUMBER}" > pull_request_number.txt
         env:
-          PULL_REQUEST_NUMBER: ${{ steps.changed-files.outputs.any_changed == 'true' && github.event.number || '0' }}
+          PULL_REQUEST_NUMBER: ${{ fromJSON(steps.changed-files.outputs.any_changed) && github.event.number || '0' }}
 
       - name: "Upload Pull Request number"
         if: ${{ (github.event_name == 'pull_request') && (github.repository == 'instructlab/taxonomy') }}
