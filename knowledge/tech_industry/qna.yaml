@@ -1,4 +1,4 @@
----
+version: 2
 created_by: gbarros
 domain: ocp-v
 seed_examples:
