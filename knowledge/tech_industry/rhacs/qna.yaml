@@ -1,0 +1,54 @@
+version: 2
+task_description: 'Teach the model about Red Hat Advanced Cluster Security'
+created_by: michaelfoster
+domain: tech_industry
+seed_examples:
+  - question: What is Red Hat Advanced Cluster Security for Kubernetes?
+    answer: |
+        Red Hat Advanced Cluster Security (ACS) for Kubernetes is a security platform
+        that helps organizations protect their Kubernetes environments by providing comprehensive visibility,
+        security, and compliance controls.
+  - question: How does Red Hat ACS enhance security in a Kubernetes environment?
+    answer: |
+        Red Hat ACS enhances security by offering features such as vulnerability management,
+        runtime security, compliance enforcement, network segmentation, and configuration management
+        , ensuring that Kubernetes clusters remain secure from development through deployment.
+  - question: What are the key components of Red Hat Advanced Cluster Security?
+    answer: |
+        The key components include= Central - The management interface for visibility and
+        policy enforcement. Sensor - Deployed on each Kubernetes cluster to collect
+        data and enforce policies. Collector - Gathers runtime data from nodes and containers.
+  - question: How does Red Hat ACS help with vulnerability management in Kubernetes?
+    answer: |
+        Red Hat ACS scans images and running containers for vulnerabilities, providing actionable
+        insights to prioritize and remediate vulnerabilities based on their severity and exploitability.
+  - question: What is the role of policy enforcement in Red Hat ACS?
+    answer: |
+        Policy enforcement in Red Hat ACS allows administrators to define and apply security
+        policies that ensure compliance with organizational and regulatory standards, preventing the
+        deployment of misconfigured or vulnerable containers.
+  - question: Can Red Hat ACS integrate with existing CI/CD pipelines?
+    answer: |
+        Yes, Red Hat ACS can integrate with existing CI/CD pipelines to
+        enforce security policies and perform vulnerability scanning at various stages of the
+        software development lifecycle, ensuring security is maintained from development to production.
+  - question: How does Red Hat ACS handle runtime security?
+    answer: |
+        Red Hat ACS provides runtime security by monitoring container activities, detecting anomalies
+        , and blocking malicious behavior in real-time, thereby protecting running
+        applications from threats.
+  - question: What is network segmentation and how does Red Hat ACS implement it?
+    answer: |
+        Network segmentation involves dividing a network into smaller, isolated segments to improve
+        security. Red Hat ACS implements network segmentation by defining and enforcing
+        network policies that control traffic between pods and services, reducing the attack surface.
+  - question: How does Red Hat ACS assist in achieving compliance?
+    answer: |
+        Red Hat ACS helps achieve compliance by providing continuous compliance checks, policy
+        enforcement, and detailed reporting, ensuring that Kubernetes clusters adhere to
+        industry standards and regulatory requirements.
+document:
+  repo: https://github.com/jalvarez-rh/instruct-acs-docs.git
+  commit: 0a53b60a8cf4711c3b9f558385a965239494b7ae
+  patterns:
+    - acs-4.4-docs.md
