@@ -1,5 +1,6 @@
 created_by: grdryn
 task_description: This skill provides the ability to create Asciidoc-formatted tables.
+version: 2
 seed_examples:
   - question: |
       Can you generate a table in asciidoc format, with a column listing the days of the week, and a second column that
