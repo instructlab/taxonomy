@@ -1,0 +1,185 @@
+created_by: jjasghar
+version: 2
+domain: science
+seed_examples:
+  - question: What is poison ivy?
+    answer: |
+      Poison ivy is a plant species in the genus Toxicodendron native to North America. It contains urushiol, a
+      clear liquid compound found within the sap of the plant that causes an itching rash in most people who touch it.
+  - question: What does poison ivy look like?
+    answer: |
+      Poison ivy can take several forms, including a trailing vine, a shrub, or a climbing vine. It typically has
+      three almond-shaped leaflets, but the appearance can vary depending on factors like age, environment, and season.
+  - question: How does poison ivy cause a rash?
+    answer: |
+      Poison ivy releases urushiol oil when its leaves or stems are damaged. When this oil comes into contact with
+      the skin, it can trigger an allergic reaction, resulting in redness, swelling, itching, and sometimes blisters.
+  - question: How long does a poison ivy rash last?
+    answer: |
+      A poison ivy rash can last anywhere from a few days to several weeks, depending on the severity of the
+      reaction and the individual's sensitivity to urushiol. It typically begins to appear within 12 to 48 hours
+      after exposure.
+  - question: How can poison ivy rash be treated?
+    answer: |
+      Treatment for poison ivy rash often involves relieving symptoms such as itching and inflammation. This may
+      include using over-the-counter creams or ointments containing hydrocortisone or calamine lotion, taking oral
+      antihistamines, applying cool compresses, and practicing good hygiene to prevent further spread of the rash.
+  - answer: |
+      Asia and North America
+    question: |
+      Where is the poison ivy native?
+  - answer: |
+      Toxicodendron orientale
+    question: |
+      What species of poison ivy are native to east asia?
+  - answer: |
+      Toxicodendron radicans
+    question: |
+      What species of poison iviy are native to Canada and the United States, Mexico and Central America,
+      Bermuda and the Bahamas
+  - answer: |
+      Toxicodendron rydbergii
+    question: |
+      What species of poison iviy are native to Canada and much of the United States except the southeast
+  - answer: |
+      Anacardiaceae
+    question: |
+      What familiy does the poison ivy belong to?
+  - answer: |
+      small plants, shrubs, or climbing vines
+    question: In what way can poison ivy grow?
+  - answer: |
+      The number is around 350,000
+    question: How many people are affected by urushiol annually in the United States?
+  - answer: |
+      East Asia and North America
+    question: Where is poison ivy a native species?
+  - answer: |
+      found throughout Canada and much of the United States except the southeast
+    question: Where is Toxicodendron rydbergii found?
+  - answer: |
+      Immediate washing with soap and cold water or rubbing alcohol may help prevent a reaction
+    question: How do you to treat a rash from poison ivy?
+  - answer: |
+      Yes, poison ivy is a type of allergenic plant in the genus Toxicodendron
+    question: |
+      Is poison ivy allergenic?
+  - answer: |
+      Poison ivies can grow as small plants, shrubs, or climbing vines.
+    question: |
+      What kind of plant is poison ivy?
+  - answer: |
+      Poison ivy leaves are commonly characterized by clusters of leaves, each containing three leaflets.
+      These leaves can vary between an elliptic to egg shape and will have either smooth, lobed, or toothed margins.
+      Additionally, the leaf clusters are alternate on the stem.
+    question: |
+      What shape are the leaves of the poison ivy plant?
+  - answer: |
+      Immediate washing with soap and cold water or rubbing alcohol may help prevent a reaction.
+      During a reaction, calamine lotion or diphenhydramine may help mitigate symptoms. Corticosteroids,
+      either applied to the skin or taken by mouth, may be appropriate in extreme cases. An astringent
+      containing aluminum acetate (such as Burow's solution) may also provide relief and soothe the
+      uncomfortable symptoms of the rash.
+    question: |
+      How do you treat contact with poison ivy?
+  - answer: |
+      How long does it take to recover from contact with poison ivy?
+    question: |
+      Typically, the rash from the urushiol oil lasts about five to twelve days, but in extreme cases it can
+      last a month or more. A urushiol rash usually develops within a week of exposure and can last 1–4 weeks,
+      depending on severity and treatment. In rare cases, urushiol reactions may require hospitalization.
+  - answer: |
+      Toxicodendron orientale found in East Asia. Toxicodendron radicans found throughout eastern Canada and the
+      United States, Mexico and Central America, Bermuda and the Bahamas. Toxicodendron rydbergii found throughout
+      Canada and much of the United States except the southeast.
+    question: What are 3 species of poison ivy?
+  - answer: |
+      Poison ivies can grow as small plants, shrubs, or climbing vines. They are commonly characterized by
+      clusters of leaves, each containing three leaflets, hence the common expression "leaves of three, let it be".
+    question: Please describe the characteristics of Poison Ivy.
+  - answer: |
+      The oozing fluids released by scratching blisters do not spread the poison. The fluid in the blisters is
+      produced by the body and it is not urushiol itself.
+    question: Are the blisters from poison ivy contagious?
+  - answer: |
+      Immediate washing with soap and cold water or rubbing alcohol may help prevent a reaction.
+    question: How can I best prevent a reaction from Poison Ivy if exposed.
+  - answer: |
+      Typically, the rash from the urushiol oil lasts about five to twelve days, but in extreme cases it can last
+      a month or more. A urushiol rash usually develops within a week of exposure and can last 1–4 weeks,
+      depending on severity and treatment. In rare cases, urushiol reactions may require hospitalization.
+    question: How long can a reaction with Poison Ivy last?
+  - answer: Poison ivy is a type of allergenic plant in the genus Toxicodendron native to Asia and North America.
+    question: Where is Poison Ivy native to?
+  - answer: |
+      They are well known for causing urushiol-induced contact dermatitis, an itchy, irritating, and sometimes
+      painful rash, in most people who touch them.
+    question: What is Poison Ivy known for  to cause?
+  - answer: |
+      The rash is caused by urushiol, a clear liquid compound in the plant's sap.
+    question: What is the liquid compound that causes the rash?
+  - answer: |
+      Poison ivies can grow as small plants, shrubs, or climbing vines
+    question: How does Poison Ivies grow?
+  - answer: |
+      Over 350,000 people are affected by urushiol annually in the United States.
+    question: How many people are affected by urushiol annually in the United States?
+  - answer: |
+      The rash is caused by urushiol, a clear liquid compound in the plant's sap.
+    question: What is poison ivy's rash caused by?
+  - answer: |
+      There are three species of poison ivy
+    question: How many species of poison ivy exist?
+  - answer: |
+      The allergic reaction caused by poison ivy is called Urushiol-induced contact dermatitis
+    question: What is the allergic reaction caused by poison ivy called?
+  - answer: |
+      Immediate washing with soap and cold water may help prevent a reaction.
+    question: How can you help prevent a reaction to poison ivy?
+  - answer: |
+      Typically, the rash from the urushiol oil lasts about five to twelve days, but could last a month or more
+      in extreme cases
+    question: How long does the rash caused by poison ivy last?
+  - answer: |
+      The rash is caused by urushiol, a clear liquid compound in the plant's sap.
+    question: What causes poison ivy rash?
+  - answer: |
+      Poison ivy can grow as small plants, shrubs, or climbing vines.
+    question: How does posion ivy grow?
+  - answer: |
+      Clusters of small, greenish flowers bloom from May to July and produce white berries in the fall a
+      few millimeters in diameter.
+    question: Does poison ivy produce fruit?
+  - answer: |
+      Typically, the rash from the urushiol oil lasts about five to twelve days, but in extreme cases it
+      can last a month or more.
+    question: How long does poison ivy rash last?
+  - answer: |
+      Immediate washing with soap and cold water or rubbing alcohol may help prevent a reaction.
+    question: What should I do if I have touched poison ivy?
+  - answer: |
+      The Poison Ivy plant is in the Cashews and Pistachios family called Anacardiacea.
+    question: What family is Poison Ivy a member of?
+  - answer: |
+      The clear oil from Poison Ivy that can cause an allergic reaction is called urushiol.
+    question: What is the name of the clear oil from Poison Ivy that can lead to a allergic reaction?
+  - answer: |
+      Poison Ivy is most commonly considered a pest weed by humans?
+    question: How is the Poison Ivy plan most commonly perceived by humans?
+  - answer: |
+      Poison Ivy can grow as small plants, shrubs, or climbing vines. They are
+      commonly characterized by clusters of leaves, each containing three leaflets,
+      hence the common expression "leaves of three, let it be".
+    question: How does Poison Ivy grow?
+  - answer: |
+      Urushiol-induced contact dermatitis is the allergic reaction caused by poison ivy.
+      In extreme cases, a reaction can progress to anaphylaxis. Around 15 to 25 percent of
+      people have no allergic reaction to urushiol, but most people have a greater reaction
+      with repeated or more concentrated exposure.
+    question: How does Poison Ivy effect humans when they get it on their skin?
+task_description: 'Added knowledge about poision ivy to the model'
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 8a73952a8cc0ca8443d254f8538df02e17b5be92
+  patterns:
+    - poison_ivy.md
