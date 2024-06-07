@@ -1,0 +1,33 @@
+created_by: orangeSweep
+version: 2
+domain: animals
+seed_examples:
+  - answer: |
+      The natural breeding habitats of the blue-footed booby are the tropical and subtropical
+      islands of the Pacific Ocean
+    question: Where are the breeding habitats of the blue-footed booby
+  - answer: |
+      The blue-footed booby usually lays one to three eggs at a time.
+    question: How many eggs does a blue-footed booby usually lay
+  - answer: |
+      The blue-footed booby is on average 81 cm (32 in) long and weighs 1.5 kg (3+1⁄4 lb)
+    question: What is the average dimension of the blue-footed booby
+  - answer: |
+      The courtship of the blue-footed booby consists of the male flaunting his blue feet and dancing
+      to impress the female.
+    question: What is the coutship ritual of a blue-footed booby
+  - answer: |
+      The blue-footed booby lays one to three eggs in one nest at a time, although 80% of nests only contain two eggs.
+      Eggs are laid five days apart. After the first egg is laid, it is immediately incubated, which results in a
+      difference in chick hatching times. The first chick hatches four days before the other, so it receives a
+      four-day head start in growth compared to its younger sibling. This asynchronous hatching serves many purposes.
+      First, it spaces out the difficult time period in rearing during which newborn chicks are too feeble to
+      accept regurgitated food. In addition, it reduces the chance that parents will suffer total brood loss to
+      predators such as the milk snake
+    question: What is the blue-footed booby birthing process
+task_description: 'Train the model on Blue-footed booby '
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 481b9fce4ae8f776fd6c924de21c27ec84d3b207
+  patterns:
+    - blue_footed_booby.md
