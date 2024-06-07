@@ -20,7 +20,7 @@ The specific steps are listed as follows:
 
 ## Convert your knowledge documentation to markdown
 
-There are many online tools that can help you convert your documents to markdown. If you are using a wiki page for your contributions, you can use [pandocs](https://pandoc.org/try/) to convert the documents. For wikipedia sources on pandoc, use `from: mediawiki` and convert `to: markdown_strict` to access the proper markdown format. 
+There are many online tools that can help you convert your documents to markdown. If you are using a wiki page for your contributions, you can use [pandocs](https://pandoc.org/try/) to convert the documents. For wikipedia sources on pandoc, use `from: mediawiki` and convert `to: markdown_strict` to access the proper markdown format.
 
 ## Add the markdown file to your repository
 
