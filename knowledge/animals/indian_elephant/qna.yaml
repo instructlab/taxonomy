@@ -1,0 +1,44 @@
+created_by: jjasghar
+version: 2
+domain: animals
+seed_examples:
+  - answer: The Indian elephant is native to mainland Asia with nearly three-fourth of the population found in India.
+    question: Where does the Indian elephant live?
+  - answer: |
+      Since 1986, Endangered on IUCN Red List the population has declined at least 50% over the last 3 generations
+    question: Is the Indian elephant Endangered?
+  - answer: A male  shoulder height of about 3.2 m and  5,400 kg a female shoulder height of about 2.54 m and 4,160 kg
+    question: How big is the Indian elephant
+  - answer: It is a generalist feeder and both a grazer and a browser.
+    question: What does the Indian Elephant eat?
+  - answer: The elephants are extremely social animals and form complex social relationships.
+    question: Is the Indian Elephant social?
+  - answer: |
+      Indian Elephant has almost three fourth population in India. However, they can also be found at Thailand,
+      Nepal, Bangladesh and other South Asian countries.
+    question: Is Indian Elephant only found in India?
+  - answer: |
+      Since 1986, the Asian elephant has been listed as Endangered on the IUCN Red List, wild population has
+      declined by at least 50% over the last three generations.
+    question: Is Indian Elephant an endangered species?
+  - answer: |
+      Indian elephant has a lifespan between 40 and 65 years with some animals reported to have
+      lived for more than 75 years.
+    question: What is the lifespan of Indian Elephant?
+  - answer: |
+      The Indian elephant (Elephas maximus indicus) is one of three extant recognized subspecies of the
+      Asian elephant, native to mainland Asia.
+    question: What species does Indian Elephant is classified under?
+  - answer: |
+      Since 1986, the Asian elephant has been listed as Endangered on the IUCN Red List as the wild population
+      has declined by at least 50% over the last three elephant generations
+    question: Is Indian Elephant an endangered species?
+  - answer: |
+      What are the feeding habits of Indian Elephant?
+    question: Elephant is classified as a megaherbivore and can consume up to 150 kg (330 lb) of plant matter per day
+task_description: 'Teach model about Indian Elephant.'
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 8a73952a8cc0ca8443d254f8538df02e17b5be92
+  patterns:
+    - indian_elephant.md
