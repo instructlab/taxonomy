@@ -1,0 +1,58 @@
+created_by: jjasghar
+version: 2
+domain: sports
+seed_examples:
+  - question: What is horse surfing?
+    answer: Horse surfing is an extreme sport invented in 2004
+  - question: How many peole you need to do the sport of horse surfing?
+    answer: It requires two people
+  - question: When was horse surfing invented?
+    answer: It was invented in 2004
+  - question: When was originary of horse surfing?
+    answer: |
+      After originating in England the first official horse surfing competition was held in 2006 in La Baule, France
+  - answer: The horse surfing was invented in 2004 in England.
+    question: when horse surfing was invented?
+  - answer: horse surfing require one or more people to ride.
+    question: How many people required to do horse surfing?
+  - answer: horse_surfing was invented in England in 2006.
+    question: Where was the first horse surfing compeition held?
+  - answer: |
+      some of the rules are for example discretion of the team if they wish to complete the course
+      right to left or left to right.
+    question: What are some of the rules for horse surfing?
+  - answer: there are few equipments required such as Horse, Board, and a wake board.
+    question: what are the equipments required for horse_surfing?
+  - answer: |
+      The competition area requires a 300m stretch in horse surfing
+    question: How big would be the competition area in horse surfing
+  - answer: |
+      The main course area cannot exceed 250m in horse surfing
+    question: The main course area limi in horse surfing
+  - answer: |
+      Preparation zone should be 10m
+    question: What would be area for preparation zone for horse surfing
+  - answer: |
+      The Run off area should be  30M for horse surfing
+    question: What is the size of run off area of horse surfing sport
+  - answer: |
+      Yes
+    question: Is horse surfing a modification of horse boarding?
+  - answer: |
+      The competition winner is determined by the total points accrued over the four events?
+    question: How is the competition winner determined in horse surfing?
+  - answer: |
+      300m
+    question: How large is the competition area in hourse surfing?
+  - answer: |
+      4 humans and 1 horse
+    question: What is the size of a horse surfing team?
+  - answer: |
+      A horse, a board, a modified saddle, and tow rope.
+    question: What are the four key pieces of equipment in horse surfing?
+task_description: 'teach for model to learn about horse surfing'
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 8a73952a8cc0ca8443d254f8538df02e17b5be92
+  patterns:
+    - horse_surfing.md
