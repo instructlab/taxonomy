@@ -69,6 +69,7 @@ There are a few labels that the triager is responsible for when reviewing PRs:
 - https://github.com/instructlab/taxonomy/labels/ci - the PR touches our CI system
 - https://github.com/instructlab/taxonomy/labels/enhancement - the PR has a new feature or request
 - https://github.com/instructlab/taxonomy/labels/knowledge - the PR is a knowledge contribution
+- https://github.com/instructlab/taxonomy/labels/legal-hold - the PR is a good suggestion but we need legal signoff, or review
 - https://github.com/instructlab/taxonomy/labels/github_actions - the PR touches our GitHub Actions configuration
 - https://github.com/instructlab/taxonomy/labels/help%20wanted - extra attention is needed
 - https://github.com/instructlab/taxonomy/labels/question - further information is requested
