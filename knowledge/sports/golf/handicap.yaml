@@ -35,7 +35,7 @@ seed_examples:
     Mid Handicapper (10-18): Average golfer, enjoys the game with room for improvement.
     High Handicapper (19+): Newer or less experienced golfer, still developing skills.
 document:
- repo: https://github.com/juliadenham/oscars2024_knowledge.git
- commit: e1744af
+ repo: https://github.com/makusvankempen/handicap_golf.git
+ commit: 81d56b1
  patterns:
    - handicap_golf.md
