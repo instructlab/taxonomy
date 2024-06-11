@@ -1,0 +1,41 @@
+version: 1
+task_description: 'Teach the model about golfers handicaps'
+created_by: makusvankempen
+domain: sports
+seed_examples:
+ - question: What is a golf handicap?
+   answer: |
+     A golf handicap is a numerical measure of an amateur golfer's ability. 
+     It represents their potential scoring ability relative to par (the expected number of strokes to complete a round or hole). 
+     A lower handicap indicates a more skilled golfer.
+ - question: Why are golf handicaps important?
+   answer: |
+     Handicaps allow golfers of different abilities to compete on a level playing field. 
+     By using handicaps, a less experienced golfer can play a competitive round against a more seasoned player, with each having a fair chance of winning. 
+     This makes the game more enjoyable and accessible for everyone.
+ - question: Do you need a handicap to play golf?
+   answer: |
+     No, you don't need a handicap to play golf casually. However, most clubs and organized competitions require a handicap for official events and tournaments. 
+     Obtaining a handicap usually involves joining a golf club or online service that tracks scores and calculates handicaps.
+ - question: What is the highest and lowest possible handicap?
+   answer: |
+     The highest handicap for men is typically 36.4 and for women it's 40.4. There is no official lowest handicap, but a "scratch golfer" (0 handicap) is considered highly skilled.
+ - question: What does a handicap actually tell you about a golfer's skill?
+   answer: |
+     It indicates the average number of strokes a golfer is expected to shoot over par on a course of standard difficulty. 
+     For example, a 10-handicap golfer would theoretically shoot 10 strokes over par on an average course.
+ - question: What does a handicap number mean in practice?
+   answer: |
+     A handicap number roughly represents the number of strokes over par a golfer typically shoots. 
+     For example, a 10-handicap golfer would likely shoot around 82 on a par-72 course.
+ - question: What are some examples of different handicap ranges and their corresponding skill levels?
+   answer: |
+    Scratch Golfer (0 handicap): Highly skilled, typically shoots par or better. 
+    Low Handicapper (1-9): Experienced player with consistent, above-average ability. 
+    Mid Handicapper (10-18): Average golfer, enjoys the game with room for improvement.
+    High Handicapper (19+): Newer or less experienced golfer, still developing skills.
+document:
+ repo: https://github.com/juliadenham/oscars2024_knowledge.git
+ commit: e1744af
+ patterns:
+   - handicap_golf.md
