@@ -1,0 +1,21 @@
+created_by: Sudharshun Ravichander
+domain: history
+seed_examples:
+  - answer: The Indian Army during World War II, a British force also referred to as the British Indian Army, began the war, in 1939, numbering just under 200,000 men.By the end of the war, it had become the largest volunteer army in history, rising to over 2.5 million men in August 1945
+    question: How many indians fought in WW2?
+  - answer: Serving in divisions of infantry, armour and a fledgling airborne force, they fought on three continents in Africa, Europe and Asia.
+    question: Where all did the indian army fight in WW2?
+  - answer: The Indian Army was an important part of the British Empire's forces, and played a crucial role in the eventual defeat of the Axis powers.
+    question: What role did the Indian Army play in WW2?
+  - answer: The Indian Army's contribution to the war effort was significant, with over 87,000 Indian soldiers killed or missing in action, and over 64,000 wounded.
+    question: How many Indian soldiers were killed in WW2?
+  - answer: The Indian Army's role in the war is often overshadowed by the contributions of other nations, but its impact on the outcome of the war was substantial.
+    question: How did the Indian Army's role in WW2 impact the outcome of the war?
+  - answer: In 1939, British officials had no plan for expansion and training of Indian forces, which comprised about 130,000 men (in addition, there were 44,000 men in British units in India in 1939). Their mission was internal security and defence against a possible Russian threat through Afghanistan. As the war progressed, the size and role of the Indian Army expanded dramatically, and troops were sent to battle fronts as soon as possible. The most serious problem was lack of equipment.
+    question: What were the challenges faced by the Indian Army during WW2?
+task_description: "History of the Indian Soldier during World War 2"
+document:
+  repo: https://github.com/Sudharshun/ww2indianarmy
+  commit: 82674123e6a1fbe72e67cf8eb07bd5912372397a
+  patterns:
+    - background.md
