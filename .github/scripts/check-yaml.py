@@ -257,34 +257,33 @@ class CheckYaml:
                         taxonomy_path=taxonomy_path,
                         yaml_path=".document")
 
-                    if "https://github.com/" in repo:
+                    if repo.startswith("https://github.com/"):
                         repo = repo.replace(
                             "https://github.com/",
                             "https://raw.githubusercontent.com/"
                         )
+                        for file_path in patterns:
+                            if "*" in file_path:
+                                continue
+                            url = f"{repo}/{commit}/{file_path}"
+                            try:
+                                req = Request(url, method="HEAD")
+                                resp = urlopen(req, timeout=1)
+                                status = resp.code
+                                resp.close()
+                            except HTTPError as e:
+                                status = e.code
+                            except URLError:
+                                status = 444  # custom code used script-internally
+                            except Exception:
+                                status = 555  # custom code used script-internally
 
-                    for file_path in patterns:
-                        if "*" in file_path:
-                            continue
-                        url = f"{repo}/{commit}/{file_path}"
-                        try:
-                            req = Request(url, method="HEAD")
-                            resp = urlopen(req, timeout=1)
-                            status = resp.code
-                            resp.close()
-                        except HTTPError as e:
-                            status = e.code
-                        except URLError:
-                            status = 444  # custom code used script-internally
-                        except Exception:
-                            status = 555  # custom code used script-internally
-
-                        if not status == 200:
-                            self.error(
-                                file=taxonomy_path,
-                                line=line,
-                                message=f"The document could not be found: "
-                                        f"{url} -> {status}")
+                            if not status == 200:
+                                self.error(
+                                    file=taxonomy_path,
+                                    line=line,
+                                    message=f"The document could not be found: "
+                                            f"{url} -> {status}")
 
             except Exception as e:
                 self.exit_code = 1
