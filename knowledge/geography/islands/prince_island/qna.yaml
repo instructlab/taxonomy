@@ -78,6 +78,6 @@ seed_examples:
   question: Where is Prince Leopold Island?
 document:
   repo: https://github.com/juliadenham/Summit_knowledge
-  commit: 2cf9fbbdf25634200873977f81ec945b3cf488b2
+  commit: 706f365a256950f408707e2f03fe76e380c734c6
   patterns:
   - prince_leopold_island.md
