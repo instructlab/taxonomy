@@ -20,6 +20,9 @@ from referencing import Registry, Resource
 from referencing.exceptions import NoSuchResource
 from referencing.jsonschema import DRAFT202012
 from referencing.typing import URI
+from urllib.request import Request, urlopen
+from urllib.parse import urlparse
+from urllib.error import URLError, HTTPError
 from yamllint import linter
 from yamllint.config import YamlLintConfig
 
@@ -210,18 +213,9 @@ class CheckYaml:
                         yaml_path = validation_error.json_path[1:]
                         if not yaml_path:
                             yaml_path = "."
-                        try:
-                            yq_expression = f"{yaml_path} | line"
-                            line = subprocess.check_output(
-                                ["yq", yq_expression], input=content, text=True
-                            )
-                            line = line.strip() if line else 1
-                        except (subprocess.SubprocessError, FileNotFoundError) as e:
-                            line = 1
-                            self.warning(
-                                file=taxonomy_path,
-                                message=f"could not run yq command: {e}",
-                            )
+                        line = self.get_yaml_line(content,
+                                                  taxonomy_path,
+                                                  yaml_path)
                         match validation_error.validator:
                             # Special handling for minItems which can have a long message for seed_examples
                             case "minItems":
@@ -253,11 +247,65 @@ class CheckYaml:
                             message="The file must be non-empty",
                         )
 
+                if "document" in parsed:
+                    repo = parsed["document"].get("repo")
+                    commit = parsed["document"].get("commit")
+                    patterns = parsed["document"].get("patterns")
+
+                    line = self.get_yaml_line(
+                        content=content,
+                        taxonomy_path=taxonomy_path,
+                        yaml_path=".document")
+
+                    if "https://github.com/" in repo:
+                        repo = repo.replace(
+                            "https://github.com/",
+                            "https://raw.githubusercontent.com/"
+                        )
+
+                    for file_path in patterns:
+                        if "*" in file_path:
+                            continue
+                        url = f"{repo}/{commit}/{file_path}"
+                        try:
+                            req = Request(url, method="HEAD")
+                            resp = urlopen(req, timeout=1)
+                            status = resp.code
+                            resp.close()
+                        except HTTPError as e:
+                            status = e.code
+                        except URLError:
+                            status = 444  # custom code used script-internally
+                        except Exception:
+                            status = 555  # custom code used script-internally
+
+                        if not status == 200:
+                            self.error(
+                                file=taxonomy_path,
+                                line=line,
+                                message=f"The document could not be found: "
+                                        f"{url} -> {status}")
+
             except Exception as e:
                 self.exit_code = 1
                 raise SystemExit(self.exit_code) from e
 
         return self.exit_code
+
+    def get_yaml_line(self, content, taxonomy_path, yaml_path):
+        try:
+            yq_expression = f"{yaml_path} | line"
+            line = subprocess.check_output(
+                ["yq", yq_expression], input=content, text=True
+            )
+            line = line.strip() if line else 1
+        except (subprocess.SubprocessError, FileNotFoundError) as e:
+            line = 1
+            self.warning(
+                file=taxonomy_path,
+                message=f"could not run yq command: {e}",
+            )
+        return line
 
 
 def cli() -> int:
