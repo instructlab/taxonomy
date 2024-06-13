@@ -213,9 +213,9 @@ class CheckYaml:
                         yaml_path = validation_error.json_path[1:]
                         if not yaml_path:
                             yaml_path = "."
-                        line = self.get_yaml_line(content,
-                                                  taxonomy_path,
-                                                  yaml_path)
+                        line = self.get_yaml_line(content=content,
+                                                  taxonomy_path=taxonomy_path,
+                                                  yaml_path=yaml_path)
                         match validation_error.validator:
                             # Special handling for minItems which can have a long message for seed_examples
                             case "minItems":
