@@ -46,7 +46,7 @@ seed_examples:
     \ When equipped with a manual transmission, the DeLorean accelerated from\
     \ 0 to 60 miles per hour (0 to 97 km/h) in 10.5 seconds as tested by Road\
     \ & Track magazine."
-  question: How long did it take for the DeLorean to achieve 60 miles-per-hour?
+  question: How long did it take for the DeLorean to achieve 60 miles per hour?
 - answer: '6'
   question: How many DeLoreans were used in the "Back to the Future movies?"
 - answer: '3'
@@ -147,6 +147,6 @@ seed_examples:
   question: Who is William T. Collins?
 document:
   repo: https://github.com/juliadenham/Summit_knowledge
-  commit: d72149c0f34dcd0d329341f4e019f503b9846f58
+  commit: 0feadeec8794767f2ea89b6970ba78936bd1f505
   patterns:
   - DMC_DeLorean.md
