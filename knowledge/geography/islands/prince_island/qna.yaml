@@ -2,7 +2,7 @@ version: 2
 created_by: amaa1981, fatehks, webdba, youeyoue
 domain: geography
 task_description: |
-  Teach a large language model about Prince Leopold Island, Canada.
+  Was Donald Duck married to Daisy Duck?
 seed_examples:
 - answer: The only resident land mammals are a small population of northern collared
     lemmings, though visits by larger mammals - caribou, hares, foxes, and bears -
