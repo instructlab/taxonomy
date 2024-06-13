@@ -57,4 +57,16 @@ seed_examples:
       remaining in the elevator gets off. The question is, How many people were
       in the elevator when it started its journey, and how many total people
       exited the elevator by the end of its journey?
+  - question: You measure my life in hours and I serve you by expiring. I’m quick
+      when I’m thin and slow when I’m fat. What am I?
+    answer: A candle.
+  - question: I am so simple that I can only point, yet I guide people all over the
+      world.
+    answer: Compass
+  - question: I am not alive, but I grow; I don’t have lungs, but I need air. What am I?
+    answer: A balloon.
+  - question: What begins with T ends with T and has T in it?
+    answer: A teapot
+  - question: What is easier to get into than out of?
+    answer: Trouble
 task_description: Teach the skill to solve puzzles
