@@ -7,11 +7,13 @@ on:
       - "main"
     paths:
       - '.github/workflows/*.ya?ml'
+      - '.github/workflows/actionlint.*' # This workflow
   pull_request:
     branches:
       - "main"
     paths:
       - '.github/workflows/*.ya?ml'
+      - '.github/workflows/actionlint.*' # This workflow
 
 env:
   LC_ALL: en_US.UTF-8
@@ -28,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Harden Runner"
-        uses: step-security/harden-runner@a4aa98b93cab29d9b1101a6143fb8bce00e2eac4 # v2.7.1
+        uses: step-security/harden-runner@17d0e2bd7d51742c71671bd19fa12bdc9d40a3d6 # v2.8.1
         with:
           egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
 
@@ -39,11 +41,10 @@ jobs:
           submodules: true
 
       - name: "Download actionlint"
-        id: get_actionlint
         run: |
-          bash <(curl https://raw.githubusercontent.com/rhysd/actionlint/b6b7a2901eb4fa4bae2e6d8f9b6edd1a37b3cca7/scripts/download-actionlint.bash)
+          docker build --tag actionlint - < .github/workflows/actionlint.dockerfile
 
       - name: "Check workflow files"
         run: |
           echo "::add-matcher::.github/workflows/matchers/actionlint.json"
-          ${{ steps.get_actionlint.outputs.executable }} -color
+          docker run --volume="${PWD}:/repo" --workdir=/repo actionlint -color
