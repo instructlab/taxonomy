@@ -2,9 +2,7 @@ version: 2
 created_by: amaa1981, fatehks, webdba, youeyoue
 domain: geography
 task_description: |
-  Answer questions about Prince Leopold Island, located in Lancaster Sound at
-  the junction of Prince Regent Inlet and Barrow Strait in the Qikiqtaaluk Region
-  of Nunavut, Canada.
+  Teach a large language model about Prince Leopold Island, Canada.
 seed_examples:
 - answer: The only resident land mammals are a small population of northern collared
     lemmings, though visits by larger mammals - caribou, hares, foxes, and bears -
