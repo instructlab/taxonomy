@@ -1,0 +1,67 @@
+created_by: sborenst,jregehr
+version: 2
+domain: tabby cat
+seed_examples:
+ - answer: domestic cat
+   question: What kind of cat is a tabby?
+ - answer: |
+      A tabby cat has a distinctive M-shaped marking on their forehead, stripes by their
+      eyes and across their cheeks, along their back, around their legs
+      and tail, and characteristic striped, dotted, lined, flecked,
+      banded, or swirled patterns on the body: neck, shoulders, sides,
+      flanks, chest, and abdomen. The four known distinct patterns,
+      each having a sound genetic explanation, are the mackerel, classic
+      or blotched, ticked, and spotted tabby patterns.
+   question: How can you tell if a cat is a tabby cat?
+ - answer: |
+      The English term tabby originally referred to "striped silk taffeta",
+      from the French word tabis, meaning "a rich watered silk".
+   question: What is the origin of the name tabby?
+ - answer: |
+      The four known distinct patterns, each having a sound genetic
+      explanation, are the mackerel, classic, ticked, and spotted tabby patterns
+   question: What are the patterns that a tabby cat may have?
+ - answer: Personality and aggression vary widely from cat to cat, and is multifactorial.
+   question: Do tabby cats have a specific personalities?
+ - answer: |
+      A tabby cat, or simply tabby, is any domestic cat (Felis catus)
+      with a distinctive M-shaped marking on their forehead, stripes
+      by their eyes and across their cheeks, along their back, around
+      their legs and tail, and characteristic striped, dotted, lined,
+      flecked, banded, or swirled patterns on the body:
+      neck, shoulders, sides, flanks, chest, and abdomen.
+      The four known distinct patterns, each having a sound genetic
+      explanation, are the mackerel, classic or blotched, ticked, and
+      spotted tabby patterns.
+   question: What is a Tabby Cat?
+ - answer: |
+      Tabby is not a breed of cat but a coat pattern found in many
+      official cat breeds. It is very common among the general
+      population of mixed-breed cats around the world.
+   question: Is Tabby a breed of cat?
+ - answer: |
+      The four known distinct patterns, each having a sound genetic
+      explanation, are the mackerel, classic, ticked, and spotted
+      tabby patterns.
+   question: What coat patterns do Tabby cats have?
+ - answer: |
+      The orange tabby, also commonly called red or ginger tabby,
+      is a color-variant of the above patterns, having pheomelanin
+      (O allele) instead of eumelanin (o allele). Though generally
+      a mix of orange and white, the ratio between fur color varies,
+      from a few orange spots on the back of a white cat to a
+      completely orange coloring with no white at all.
+      The orange areas can be darker or lighter spots or stripes,
+      but the white is nearly always solid and usually appears on
+      the underbelly, paws, chest, and muzzle.
+      Orange is a colloquial term used to describe an orange tabby cat.
+      Many orange tabby owners make jokes about the silliness of their
+      cats. They often say all orange tabby cats share a singular brain
+      cell.
+   question: What is an orange tabby?
+task_description: 'To teach a language model about tabby cats'
+document:
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 3536fa736512e3542ab59b6496ede5bd17884fd0
+ patterns:
+  - tabby_cat.md
