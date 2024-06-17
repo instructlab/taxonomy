@@ -430,7 +430,7 @@ Below is an illustrative directory structure to show this layout:
                         attribution.txt
 ```
 
-For an extensive example of this layout see, [taxonomy_tree_layout](https://github.com/instructlab/taxonomy/blob/main/docs/taxonomy_diagram.png) in the documentation folder.
+For an extensive example of this layout see, [taxonomy_tree_layout](docs/taxonomy_diagram.md) in the documentation folder.
 
 ## Contribute knowledge and skills to the taxonomy
 
