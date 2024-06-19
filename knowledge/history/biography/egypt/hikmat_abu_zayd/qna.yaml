@@ -1,0 +1,31 @@
+---
+created_by: ahmed-azraq
+version: 2
+domain: biography
+seed_examples:
+  - answer: >
+      Hikmat Abu Zayd died on 30 July 2011.
+    question: When did Hikmat Abu Zayd die?
+  - answer: >
+      Hikmat Abu Zayd became the first female cabinet minister in Egypt in 1962. 
+    question: Who is the first female cabinet minister in Egypt?
+  - answer: >
+      Born in the village of Shaykh Daud, located near the city of al-Qusiyya in Asyut Governorate.
+    question: Where was Hikmat Abu Zayd born?
+  - answer: >
+      The country's first two female parliamentarians, Rawya Ateya and Amina Shukri, were elected in 1957.
+    question: Who are Egypt's first two female parliamentarians?
+  - answer: >
+      One of the most sensitive tasks assigned to Abu Zayd was the relocation of thousands of Nubians,
+      displaced by the construction of the Aswan Dam, to newly built villages. Her management of the resettlement
+      process led to her being nicknamed the "Merciful Heart of the Revolution" by Nasser.
+    question: What is the nickname given by Nasser to Hikmat Abu Zayd?
+  - answer: >
+      Abu Zayd received the Lenin Peace Prize in December 1970.
+    question: What award has Hikmat Abu Zayd received?
+task_description: Knowledge contribution about the first female cabinet minister in Egypt
+document:
+  repo: https://github.com/ahmed-azraq/instructlab_knowledge.git
+  commit: c8883e384236968cb8da306b0b2198091701e791
+  patterns:
+    - hikmat-abu-zayd/hikmat.md
