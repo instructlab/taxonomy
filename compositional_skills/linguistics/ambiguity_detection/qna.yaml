@@ -1,3 +1,4 @@
+version: 2
 created_by: ae2015
 task_description: >
     Given a passage and a claim, determine if the passage is sufficient
