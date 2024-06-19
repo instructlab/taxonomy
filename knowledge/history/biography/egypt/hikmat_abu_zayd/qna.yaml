@@ -26,6 +26,6 @@ seed_examples:
 task_description: Knowledge contribution about the first female cabinet minister in Egypt
 document:
   repo: https://github.com/ahmed-azraq/instructlab_knowledge.git
-  commit: c8883e384236968cb8da306b0b2198091701e791
+  commit: d189bddec6847b949336d5497e9e19afdc314b6b
   patterns:
     - hikmat-abu-zayd/hikmat.md
