@@ -1,0 +1,4 @@
+Title of work: RHACS documentation
+Link to work: https://github.com/jalvarez-rh/instruct-acs-docs/blob/main/acs-4.4-docs.md
+License of the work: Apache 2.0
+Creator names: Foster & Alvarez
