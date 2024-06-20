@@ -1,0 +1,31 @@
+created_by: ae2015
+
+Title of work: Passage ambiguity, context of example 1 (out of 5)
+Link to work: N/A
+Revision: N/A
+License of the work: Apache-2.0
+Creator names: self-authored
+
+Title of work: Passage ambiguity, context of example 2 (out of 5)
+Link to work: N/A
+Revision: N/A
+License of the work: Apache-2.0
+Creator names: self-authored
+
+Title of work: Passage ambiguity, context of example 3 (out of 5)
+Link to work: N/A
+Revision: N/A
+License of the work: Apache-2.0
+Creator names: self-authored
+
+Title of work: Passage ambiguity, context of example 4 (out of 5)
+Link to work: N/A
+Revision: N/A
+License of the work: Apache-2.0
+Creator names: self-authored
+
+Title of work: Passage ambiguity, context of example 5 (out of 5)
+Link to work: https://maven.apache.org/maven-features.html
+Revision: as of April 8, 2024
+License of the work: Apache-2.0
+Creator names: Apache Maven Project Team
