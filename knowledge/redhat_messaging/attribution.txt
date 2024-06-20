@@ -1,0 +1,3 @@
+Title of work: Red Hat OpenShift messaging
+License of the work: CC-BY-SA-4.0
+Creator names: Stu Miniman, Chuck Dubuque, Alexa Overbay
