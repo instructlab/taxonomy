@@ -1,0 +1,42 @@
+created_by: jjasghar
+version: 2
+domain: animals
+seed_examples:
+  - question: What are some facts of the southern black rhinoceros?
+    answer: |
+      The southern black rhinocerous lived in South Africa and potentially into south Namibia.
+      It was hunted to extinction around 1850.
+  - question: How many subspecies of black rhinoceros were there?
+    answer: There are 8 subspecies of black rhinos.
+  - question: How fast can a black rhinoceros run?
+    answer: |
+      Up to 34 mph or 55 km per hour.
+  - answer: |
+      The black rhinoceros, black rhino or hook-lipped rhinoceros (Diceros bicornis) is a species of
+      rhinoceros, native to eastern and southern Africa including Angola, Botswana, Kenya
+    question: Tell me something about Black rhino?
+  - answer: |
+      Such a skull is known to have existed and Linnaeus even mentioned India as origin of this species. however
+      unusually large male specimens have been reported at up to 2,896 kg (6,385 lb). The cows are smaller
+      than the bulls. Two horns on the skull are made of keratin with the larger front horn typically 50 cm long
+    question: What's the origination of Black Rhino?
+  - answer: |
+      It is estimated that the Black Rhino could have came into existence around fifty million years ago.
+    question: Could you tell me the specific time known about the existence of Black Rhino?
+  - answer: |
+      Black rhinos are generally thought to be solitary, with the only strong bond between a mother and her calf.
+      In addition, bulls and cows have a consort relationship during mating, also subadults and young adults
+      frequently form loose associations with older individuals of either sex.
+    question: How does a Black Rhino behave or could you tell  me about its nature?
+  - answer: |
+      It is commonly assumed that black rhinos have poor eyesight, relying more on hearing and smell. However,
+      studies have shown that their eyesight is comparatively good, at about the level of a rabbit. Their ears have
+      a relatively wide rotational range to detect sounds. An excellent sense of smell alerts rhinos to the
+      presence of predators.
+    question: What's one unique quality that the black rhino has?
+task_description: 'Teach the model about Black Rhino, for example the unique abilities/their specialities'
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 8a73952a8cc0ca8443d254f8538df02e17b5be92
+  patterns:
+    - black_rhinos.md
