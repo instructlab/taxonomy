@@ -1,0 +1,74 @@
+version: 2
+created_by: Sudharshun
+seed_examples:
+- question: Write a Thirukkural on friendship.
+  answer: 'செய்யாமல் செய்வினை யார்மாட்டும் தாங்காது
+செய்யாமல் செய்வினை யார்மாட்டும் உறவு.
+
+Do not engage in actions that cause harm,
+For friendship is not sustained by such deeds.
+'
+- question: Write a Thirukkural on love.
+  answer: 'அன்பில் தோற்றினும் ஆயுதம் ஆகும்
+அன்பிலார் கேண்மை சினம்.
+
+Even if born in love, anger turns friendship into a weapon,
+For those without love are filled with wrath.
+'
+- question: Write a Thirukkural on wisdom.
+  answer: 'கற்க கசடறக் கற்பவை கற்றபின்
+நிற்க அதற்குத் தக.
+
+Learn thoroughly without flaws what should be learned,
+And stand by those principles.
+'
+- question: Write a Thirukkural on morality.
+  answer: 'அறம் செய விரும்பு அறமற்று இவறெனத்
+தீய செய விரும்பு அறம்.
+
+Desire to do good deeds, shunning evil,
+For virtue is the essence of life.
+'
+- question: Write a Thirukkural on patience.
+  answer: 'தற்றிசை நோக்கித் தவறுல கவ்வுள
+மற்றை நோக்கித் தவறு.
+
+Look to righteousness and avoid flaws in the world,
+For patience is the virtue that avoids errors.
+'
+- question: Write a Thirukkural on gratitude.
+  answer: 'கூற்றம் குரியாரால் கேண்மை பெறுதல்
+நீற்றல் குரியார் செயலே.
+
+Gratitude is found even among foes,
+But ingratitude is the mark of the unworthy.
+'
+- question: Write a Thirukkural on honesty.
+  answer: 'வாய்மை எனப்படுவது யாதெனின் யாதொன்றும்
+தீமை இலாத சொலல்.
+
+What is called honesty? Speaking words
+That are free from any trace of evil.
+'
+- question: Write a Thirukkural on humility.
+  answer: 'நல்லவை நன்கதற்கு மெய்ப்பொருள் நன்கு
+மல்லவை மாசற்றார் சொல்.
+
+Humility is the hallmark of the virtuous,
+For their words are free from pride.
+'
+- question: Write a Thirukkural on perseverance.
+  answer: 'உறுமுகத் துள்நீக்கி உள்ளம் வளம்படப்
+பொருதுயர் முன்னற் செயல்.
+
+Remove the fear from your heart, enrich your mind,
+And persevere through hardships.
+'
+- question: Write a Thirukkural on charity.
+  answer: 'உலகு எவனோ அறமும் அவனேநோக்கிப்
+புலகம் உலகு உய்த்து.
+
+Charity is the act of uplifting the world,
+By looking to those who are in need.
+'
+task_description: Generate Thirukkural verses on various topics such as friendship, love, wisdom, and morality.

@@ -1,0 +1,77 @@
+version: 2
+created_by: Sudharshun
+seed_examples:
+- question: Write a verse from the Bhagavad Gita on duty.
+  answer: 'कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।
+मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥
+
+Your right is to perform your duty only,
+But never to its fruits.
+Let not the fruits of action be your motive,
+Nor let your attachment be to inaction.
+'
+- question: Write a verse from the Bhagavad Gita on wisdom.
+  answer: 'विद्या विनयसम्पन्ने ब्राह्मणे गवि हस्तिनि।
+शुनि चैव श्वपाके च पण्डिताः समदर्शिनः॥
+
+The wise see no difference among a learned and humble Brahmin,
+A cow, an elephant, a dog, and a dog-eater.
+'
+- question: Write a verse from the Bhagavad Gita on devotion.
+  answer: 'पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति।
+तदहं भक्त्युपहृतमश्नामि प्रयतात्मनः॥
+
+Whoever offers Me with devotion a leaf, a flower, a fruit, or water,
+I accept that loving offering from the pure-hearted.
+'
+- question: Write a verse from the Bhagavad Gita on self-control.
+  answer: 'उद्धरेदात्मनात्मानं नात्मानमवसादयेत्।
+आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः॥
+
+One should uplift oneself by one’s own mind, and not degrade oneself,
+For the mind can be the friend and also the enemy of the self.
+'
+- question: Write a verse from the Bhagavad Gita on equanimity.
+  answer: 'सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ।
+ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि॥
+
+Having made pleasure and pain, gain and loss, victory and defeat the same,
+Engage in battle for the sake of duty; thus you shall not incur sin.
+'
+- question: Write a verse from the Bhagavad Gita on humility.
+  answer: 'अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम्।
+आचार्योपासनं शौचं स्थैर्यमात्मविनिग्रहः॥
+
+Humility, pridelessness, non-violence, forgiveness, uprightness,
+Service to the teacher, purity, steadfastness, and self-control.
+'
+- question: Write a verse from the Bhagavad Gita on knowledge.
+  answer: 'ज्ञेयं यत्तत्प्रवक्ष्यामि यज्ज्ञात्वामृतमश्नुते।
+अनादिमत्परं ब्रह्म न सत्तन्नासदुच्यते॥
+
+I shall now explain that which is to be known, knowing which one attains immortality.
+The beginningless supreme Brahman is said to be neither existent nor non-existent.
+'
+- question: Write a verse from the Bhagavad Gita on action.
+  answer: 'न हि कश्चित्क्षणमपि जातु तिष्ठत्यकर्मकृत्।
+कार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः॥
+
+No one can remain without engaging in action even for a moment,
+For everyone is driven to action by their own nature.
+'
+- question: Write a verse from the Bhagavad Gita on faith.
+  answer: 'श्रद्धावान्लभते ज्ञानं तत्परः संयतेन्द्रियः।
+ज्ञानं लब्ध्वा परां शान्तिमचिरेणाधिगच्छति॥
+
+The faithful, who are devoted, and who have subdued their senses,
+Attain knowledge; having obtained knowledge, they quickly attain supreme peace.
+'
+- question: Write a verse from the Bhagavad Gita on the self.
+  answer: 'न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः।
+अजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे॥
+
+The soul is never born, nor does it ever die; nor having once been, does it ever cease to be.
+The soul is unborn, eternal, ever-existing, undying, and primeval; it is not slain when the body is slain.
+'
+task_description: Generate verses from the Bhagavad Gita on various topics such as duty, wisdom, devotion, self-control, and equanimity.
+
