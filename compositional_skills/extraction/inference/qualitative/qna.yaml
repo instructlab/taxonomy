@@ -1,0 +1,205 @@
+created_by: pinikomarov
+seed_examples:
+  - context: |-
+      NameError: "name 'x' is not defined"
+    question: >-
+      In what coding lenguage is this error message, what does it mean
+    answer: |-
+      Python, this indicates that a variable named 'x' has not been declared or
+      assigned a value.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |-
+      IndentationError: "unexpected indent"
+    question: >-
+      In what coding lenguage is this error message, what does it mean
+    answer: |-
+      Python, python relies on indentation to define code blocks. This error
+      means there's an issue with the indentation.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |-
+      TypeError: "unsupported operand type(s) for +: 'int' and 'str'"
+    question: >-
+      In what coding lenguage is this error message, what does it mean
+    answer: |-
+      Python, this signals an attempt to perform an operation on incompatible
+      data types.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |-
+      IndexError: "list index out of range"
+    question: >-
+      In what coding lenguage is this error message, what does it mean
+    answer: |-
+      Python, accessing a list element with an invalid index results in this
+      error.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |-
+      SyntaxError: "invalid syntax"
+    question: >-
+      In what coding lenguage is this error message, what does it mean
+    answer: |-
+      Python, a general syntax error, often caused by typos or incorrect code
+      structure.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |-
+      SyntaxError: "invalid syntax"
+    question: >-
+      In what coding lenguage is this error message, what does it mean
+    answer: |-
+      Bash, attempting to execute a command that isn't available in the system
+      path.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |-
+      syntax error near unexpected token `newline'
+    question: >-
+      In what coding lenguage is this error message, what does it mean
+    answer: |-
+      Bash, a newline character is in an incorrect position.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |-
+      permission denied
+    question: >-
+      In what coding lenguage is this error message, what does it mean
+    answer: |-
+      Bash, lack of permissions to execute a command or access a file.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |-
+      file not found
+    question: >-
+      In what coding lenguage is this error message, what does it mean
+    answer: |-
+      Bash, the specified file does not exist.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |-
+      numeric argument required
+    question: >-
+      In what coding lenguage is this error message, what does it mean
+    answer: |-
+      Bash, a command expects a numeric argument, but a different type was
+      provided.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |-
+      FAILED! => {"msg": "Could not find or access '/path/to/file'" }
+    question: >-
+      In what coding lenguage is this error message, what does it mean
+    answer: |-
+      Ansible, indicates a file path issue.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |-
+      FAILED! => {"msg": "The conditional check '{{ condition }}' failed.
+      The error was: 'syntax error in conditional expression: unexpected
+        end of file'" }
+    question: >-
+      In what coding lenguage is this error message, what does it mean
+    answer: |-
+      Ansible, Error in conditional expression syntax.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |-
+      FAILED! => {"msg": "The task includes an option with an undefined
+      variable. The error was: 'dict object has no attribute 'var_name''" }
+    question: >-
+      In what coding lenguage is this error message, what does it mean
+    answer: |-
+      Ansible, use of an undefined variable.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |-
+      FAILED! => {"msg": "failed to create temporary directory: [Errno 13]
+      Permission denied: '/path/to/temp'" }
+    question: >-
+      In what coding lenguage is this error message, what does it mean
+    answer: |-
+      Ansible, permission issues for a temporary directory.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |-
+      FAILED! => {"msg": "The module failed to execute correctly, you can
+      investigate this with the   `-vvvv` flag"}
+    question: >-
+      In what coding lenguage is this error message, what does it mean
+    answer: |-
+      Ansible, unresolved module failure, often requiring deeper inspection.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |-
+      cannot assign to foo (type int)
+    question: >-
+      In what coding lenguage is this error message, what does it mean
+    answer: |-
+      Go, attempting to assign a value of a different type to a variable with
+      type int.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |-
+      undefined: foo
+    question: >-
+      In what coding lenguage is this error message, what does it mean
+    answer: |-
+      Go, using a variable that hasn't been declared.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |-
+      missing return at end of function
+    question: >-
+      In what coding lenguage is this error message, what does it mean
+    answer: |-
+      Ansible, a function declaration with a non-void return type is missing
+      a return statement.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |-
+      invalid character '{' in string literal
+    question: >-
+      In what coding lenguage is this error message, what does it mean
+    answer: |-
+      Go, A string literal contains an invalid character.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+  - context: |-
+      cannot use var bar (type string) as type string in assignment
+    question: >-
+      In what coding lenguage is this error message, what does it mean
+    answer: |-
+      Go, Type mismatch in an assignment.
+    attribution:
+      - source: self-authored
+        license: Apache-2.0
+task_description: >-
+    Can classify the error output message by code language, out of Python,
+    Ansible, Bash, and Go.
+    Languages seletion classification group selected from the most prominent
+    languages used in the Openstack & Openshift space.
+    Iput would be a raw string error message sentence, with a question "In what
+    coding lenguage is this error message, what does it mean ?"
+    Output will be the probable language used and a short explanation of the
+    error.
