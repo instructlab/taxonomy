@@ -1,0 +1,24 @@
+created_by: 
+domain: genetics
+seed_examples:
+- answer: |
+Dolly the sheep was born on 5 July 1996
+  question: when was Dolly the sheep born?
+- answer: |
+Dolly was cloned from a Finn-Dorset sheep
+  question: What type of sheep was Dolly cloned from?
+- answer: |
+Dolly was cloned by associates at the Roslin Institute in Scotland
+  question: Who created Dolly?
+- answer: |
+Dolly died on 14 February 2003 at the age of six
+  question: When did Dolly die?
+- answer: |
+No; Dolly was euthanized due to lung cancer.
+  question: Did Dolly die of natural causes?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 7b6b4129accea29a770468343b5a18170e59e882
+ patterns:
+   - Dolly_the_sheep.md
