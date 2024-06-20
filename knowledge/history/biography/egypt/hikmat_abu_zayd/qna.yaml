@@ -1,4 +1,5 @@
 created_by: ahmed-azraq
+version: 2
 domain: biography
 seed_examples:
   - answer: |
@@ -6,7 +7,7 @@ seed_examples:
     question: When did Hikmat Abu Zayd die?
   - answer: >
       Hikmat Abu Zayd became the first female cabinet minister in Egypt in
-      1962. 
+      1962.
     question: Who is the first female cabinet minister in Egypt?
   - answer: >
       Born in the village of Shaykh Daud, located near the city of al-Qusiyya in
