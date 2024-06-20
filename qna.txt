@@ -1,0 +1,29 @@
+created_by: 
+domain: automobile
+seed_examples:
+- answer: |
+    it was giorgetto giugiaro
+  question: |
+    who designed the dmc delorean
+- answer: |
+    on January 21, 1981
+  question: | 
+    when was the first production car completed
+- answer: |
+    the Ford Cologne V6 engine
+  question: |
+    which engine was used in the dmc delorean
+- answer: |
+    it was DMC-12
+  question: |
+    what was the internal DMC pre-production designation of the dmc delorean
+- answer: |
+    it was produced from 1981 until 1983
+  question: |
+    when was the dmc delorean produced
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: eb071f533d33aaee7b0af2d9fb9e4f3abc9fefec
+ patterns:
+   - DMC_DeLorean.md
