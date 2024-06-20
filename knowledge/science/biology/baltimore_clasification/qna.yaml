@@ -1,0 +1,19 @@
+created_by: 
+domain: virology
+seed_examples:
+- answer: | Group IV
+  question: What is group type of single stranded RNA
+- answer: Adnaviria,Duplodnaviria,Monodnaviria,Varidnaviria
+  question: What are assigned to four separate realms
+- answer: | four
+  question: ssDNA viruses have how many realms 
+- answer: | double-stranded
+  question: seventh Baltimore group contains viruses are they single-stranded or double-stranded
+- answer: | Translation
+  question: What is the process by which proteins are synthesized from mRNA by ribosomes
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: c1c3513719f419320c851cf1c8984dd1ecfbbeb6
+ patterns:
+   - Baltimore_classification.md
