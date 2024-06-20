@@ -1,0 +1,102 @@
+version: 2
+task_description: 'Update the model’s Wikipedia-based knowledge on Les Paul Studio guitars'
+created_by: apomponio, fsapir, dal0643, plimptm, beanprime, peterclauterbach, mrutkows
+domain: musical_instruments
+seed_examples:
+  - question: What is a Gibson Les Paul Studio guitar?
+    answer: >
+      The Gibson Les Paul Studio is a solid body electric guitar produced by
+      the Gibson Guitar Corporation since 1983. It is a model of Les Paul with
+      some features omitted to appeal to musicians looking for the tonal
+      qualities of the guitar but with less of an emphasis on cosmetics and to
+      reduce the price of the instrument.
+  - question: >
+      What woods have been used to make Les Paul Studio Custom or Les Paul Studio
+      Standard models of guitars?
+    answer: >
+      The "Studio" name was used with Custom and Standard models which used
+      non-traditional woods for the neck, body, top, and fingerboard. For example,
+      Standard model bodies were made entirely from alder wood between 1983-1985,
+      but Gibson later moved back to a mahogany body with a maple top after
+      the alder body proved prone to lacquer problems.
+  - question: Where did the name \"Studio\" in Les Paul Studio come from?
+    answer: >
+      The name Studio comes from the idea that this model would be sonically
+      indistinguishable from a Les Paul Standard or Custom in the recording studio,
+      and that the flashier guitars would be reserved for stage use.
+  - question: What is the chronological order models were released in the Les Paul Smartwood series?
+    answer: >
+      There were three models of Smartwood Les Pauls produced between 1996 and 2011, including:
+      1. Exotic (1996–2002),
+      2. Studio (2002-2008) and
+      3. Swamp Ash (2003-2011)
+  - question: What years were the Les Paul Studio Custom models produced?
+    answer: >
+      The Studio Custom was produced in 1983–1985. It was introduced before the
+      design of the Studio was finalized, and mostly had the features of a Standard
+      with a variety of features mixed in from other models.
+  - question: What is a Gibson Studio Pro Plus?
+    answer: >
+      The Studio Pro Plus was an upgraded studio with a AA figured maple top and
+      gold hardware. Traditional mahogany body and set SlimTaper™ neck profile,
+      rosewood fingerboard with acrylic trapezoid inlays, 490R neck pickup and
+      BurstBucker Pro bridge pickup, TonePros® Tune-o-matic bridge and stopbar
+      tailpiece, Grover™ tuners with vintage style green keys.
+  - question: What is a Robot Les Paul Studio Limited?
+    answer: >
+      The Robot Les Paul Studio Limited was an upgraded Studio with Powertune
+      auto-tuning system. A Limited Edition finish Blue Silverburst was initially
+      released in late 2007 with chrome truss rod cover with "Robot Guitar"
+      engraved (late 2007 only). The production version (v2, 2008–2011) featured
+      a chambered mahogany body, maple top, set mahogany neck, 22-fret rosewood-bound
+      (standard finishes) or white-bound (metallic finishes) ebony fingerboard with
+      figured acrylic trapezoid inlays, white-bound headstock with MOP Gibson logo
+      and flowerpot inlay (metallic finishes) or unbound headstock with screened
+      logo (standard finishes), three-per-side robotic Powerhead Locking tuners,
+      tune-o-matic Powertune bridge, Powertune stop tailpiece, two chrome covered
+      Humbucker pickups (490R, 498T), four knobs (three normal, and one master
+      control knob that controls the robotic actions of the guitar), three-way
+      pickup switch, Neutrik jack on side of guitar, chrome hardware.
+  - answer: >
+      Someone would buy a Gibson Les Paul Studio guitar if they want a guitar
+      with the tonal qualities of a Gibson Les Paul guitar but want to save money
+      and do not want the full cosmetic feature set of the Les Paul.
+    question: Why would someone buy a Gibson Les Paul Studio guitar?
+  - answer: >
+      Some of the differences between the Gibson Les Paul and Les Paul Studio guitars are:
+      1. The Les Paul Studio is a lower-cost model than the Les Paul
+      2. The Les Paul Studio lacks some of the cosmetic features of the Les Paul
+      3. The body of the Les Paul Studio is thinner than that of the Les Paul
+    question: What are the differences between the Les Paul and a Les Paul Studio guitars?
+  - answer: >
+      The Gibson Les Paul Studio guitar uses mahogany for the body and neck.
+      The fretboard is made of either rosewood, maple, or ebony.
+      Select models use maple for the neck.
+    question: What type of wood is the Gibson Les Paul Studio guitar made from?
+  - answer: >
+      The Gibson Les Paul Studio guitar comes in various sunbursts,
+      translucent red, transluscent blue, translucent amber, wine red, ebony,
+      alpine white, and possibly others.
+    question: What colors are available for the Gibson Les Paul Studio guitar?
+  - answer: >
+      The Gibson Les Paul Studio usually includes 2 humbucker pickups, which are either
+      498T and 490R, or P-90s
+    question: What pickups do the Gibson Les Paul Studio use?
+  - answer: >
+      The Gibson Les Paul Studio is a solid body electric guitar produced by the
+      Gibson Guitar Corporation since 1983 (1983-present). It is a model of Les Paul
+      with some features omitted to appeal to musicians looking for the tonal qualities
+      of the guitar but with less of an emphasis on cosmetics and to reduce the price
+      of the instrument.
+    question: How long has Gibson been manufacturing Gibson Les Paul Studio guitars?
+  - answer: >
+      Gibson produced a special run of Les Paul Studio guitars (1996–1998) which had P-90
+      pickups and special finishes in "gemstone" colors: Amethyst, Sapphire, Topaz,
+      Emerald, and Ruby.
+    question: What colors did the Gen Series come in?
+
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 854ffa248c43d08472886ed18b3de2de9e9afbe4
+  patterns:
+    - gibson_les_paul_studio.md
