@@ -7,7 +7,7 @@ run-name: ${{ github.event.workflow_run.display_title || github.workflow }}
 on:
   workflow_run:
     workflows:
-      - Lint
+      - "Lint compositional_skills and knowledge"
     types:
       - completed
 
