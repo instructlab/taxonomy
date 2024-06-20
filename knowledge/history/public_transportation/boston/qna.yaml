@@ -1,0 +1,34 @@
+version: 2
+task_description: 'To teach a language model the history of Boston public transportation'
+created_by: nathan-weinberg
+domain: history
+seed_examples:
+  - question: What agency immediately preceded the MBTA?
+    answer: |
+      The MBTA was immediately preceded by an agency known as the Metropolian Transit Authority, or MTA,
+      which was formed in 1947. The MTA purchased and took over subway, elevated, streetcar,
+      and bus operations from the Boston Elevated Railway.
+  - question: When did the Boston Elevated Railway start replacing rail vehicles with buses?
+    answer: |
+      The Boston Elevated Railway started replacing rail vehicles with buses in 1922,
+      a process later dubbed "bustitution". The last Middlesex and Boston Street Railway streetcars
+      ran in 1930. The BERy started replacing some rail vehicles with trackless trolleys in 1936.
+  - question: What happened to the Pleasant Street Portal?
+    answer: |
+      The last two streetcar lines running into the Pleasant Street Portal of the Tremont Street
+      subway were replaced with buses in 1953 and 1962, and the portal has since been covered over
+      by a public park.
+  - question: What portions of the MBTA system are still elevated railways?
+    answer: |
+      With the 2004 replacement of the Causeway Street Elevated by a subway tunnel connection,
+      the only remaining elevated railways are a short portion of the Red Line at Charles/MGH,
+      and a short portion of the Green Line between Science Park and Lechmere.
+  - question: When was the Charlestown Elevated replaced?
+    answer: |
+      The Charlestown Elevated, part of the Orange Line north of downtown Boston, was replaced by
+      the Haymarket North Extension in 1975.
+document:
+  repo: https://github.com/nathan-weinberg/taxonomy-knowledge.git
+  commit: bbea35
+  patterns:
+    - public_transportation_boston.md
