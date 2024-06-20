@@ -1,0 +1,24 @@
+created_by: 
+domain: knot
+seed_examples:
+- answer: |
+Figure_eight_knot is used often in rock climbing and sailing 
+  question: Where do you use figure_eight_knot?
+- answer: |
+Figure_eight_knot is used to secure the ship or body to the anchor.
+  question: What is the purpose of useing figure_eight_knot?
+- answer: |
+Because figure_eight_knot is very easy to tie the knot quickly and very reliable.
+  question: why you use figure_eight_knot?
+- answer: |
+Because the knot resembles a figure-eight.
+  question: Why figure_eight_knot calls figure_eight_knot?
+- answer: |
+figure_eight_knot is basic knowledge to secure your safety and prevent the loss of life or your ship.
+  question: How important figure_eight_knot is?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: bf3c885c1d2e22cf0708e886d2c49791685e0ded
+ patterns:
+   - figure_eight_knot.md
