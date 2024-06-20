@@ -1,0 +1,19 @@
+created_by: everythingeverywhere
+domain: astronomy_technology
+seed_examples:
+- answer: | a type of radioisotope thermoelectric generator (RTG) developed for NASA space missions[1] such as the Mars Science Laboratory (MSL), under the jurisdiction of the United States Department of Energy's Office of Space and Defense Power Systems within the Office of Nuclear Energy
+  question: What is the multi-mission radioisotope thermoelectric generator
+- answer: | Space exploration missions require safe, reliable, long-lived power systems to provide electricity and heat to spacecraft and their science instruments.
+  question: What do Space exploration missions and instruments require ?
+- answer: | Solid-state thermoelectric couples convert the heat produced by the natural decay of the radioisotope plutonium-238 to electricity.
+  question: What do solid-state thermoelectric couples use to convert heat?
+- answer: | The MMRTG is powered by eight Pu-238 dioxide general-purpose heat source (GPHS) modules, provided by the US Department of Energy (DOE). Initially, these eight GPHS modules generate about 2 kW thermal power.
+  question: What is the MMRTG is powered by ?
+- answer: | Curiosity, the MSL rover that was successfully landed in Gale Crater on August 6, 2012, uses one MMRTG to supply heat and electricity for its components and science instruments.
+  question: What MSL rover uses MMRTG
+task_description: 'Multi-mission radioisotope thermoelectric generator information'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 95176e7e83e80dfaed8ff7e621071881c598884b
+ patterns:
+   - multi_mission_radioisotope_thermoelectric_generator.md
