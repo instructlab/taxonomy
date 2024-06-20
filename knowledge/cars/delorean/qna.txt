@@ -1,0 +1,22 @@
+created_by:Matt Brown
+domain: automobile
+seed_examples:
+- answer: |
+    Giorgetto Giugiaro
+  question:Who was the DeLorean designed by?
+- answer: |
+    720
+  question:What was the maximun sales in a month?
+- answer: |
+    brushed SS304 austenitic stainless steel
+  question:What is the body pannels made of?
+- answer: 6
+  question:How many DeLorean were used in the "Back to the Future movies?"
+- answer: 3
+  question:How many gold DeLorean were ever made?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: eb071f533d33aaee7b0af2d9fb9e4f3abc9fefec
+ patterns:
+   - DMC_DeLorean.md
