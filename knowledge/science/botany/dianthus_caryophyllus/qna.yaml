@@ -1,0 +1,29 @@
+created_by: aashenfe
+domain: flowers
+seed_examples:
+- answer: |
+    The name "carnation" is believed to come 
+    from the Latin corona-ae, a "wreath, garland, 
+    chaplet, crown"
+  question: How did it get it's name
+- answer: |
+    Carnations require well-drained, neutral to 
+    slightly alkaline soil, and full sun. 
+  question: How to gow a carnation
+- answer: |
+    White carnations represent 
+    pure love and good luck
+  question: What do white carnations represent
+- answer: |
+    Light red carnations represent admiration, 
+    while dark red denote deep love and affection.
+  question: What do red carnations represent 
+- answer: |
+    Purple carnations indicate capriciousness
+  question:  What do Purple carnations represent
+task_description: 'Growing Carnations'
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 195fc4d83a40d8a1b60062e66e06cfc0bc9c8d35
+ patterns:
+   - dianthus_caryophyllus.md
