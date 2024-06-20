@@ -1,0 +1,24 @@
+created_by: kresss
+version: 2
+domain: musical_instrument
+seed_examples:
+  - answer: Woodwind
+    question: What family of musical instruments is the Alto Saxophone in?
+  - answer: Saxophones were invented by Belgian instrument designer Adolphe Sax in the
+      1840s and patented in 1846.
+    question: Who invented the Alto Saxophone and when?
+  - answer: Jazz
+    question: What type of music is the Alto Saxophone associated with?
+  - answer: Companies that currently produce saxophones include Buffet Crampon, KHS/Jupiter,
+      Conn-Selmer, Selmer Paris, Yamaha, Leblanc/Vito, Keilwerth, Cannonball, and Yanagisawa.
+    question: Who manufactures Alto Saxophones?
+  - answer: The alto saxophone has a large classical solo repertoire that includes solos with
+      orchestra, piano, and wind symphony. Two important solo compositions are Jacques
+      Ibert's "Concertino da Camera" and Alexander Glazunov's "Concerto in E Flat major".
+    question: What classical music is available for Alto Saxophone
+task_description: 'Teaching the model about the alto sax'
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 1d5b562d81d8c41f04e9989a772a52678293ed80
+  patterns:
+    - alto_saxophone.md
