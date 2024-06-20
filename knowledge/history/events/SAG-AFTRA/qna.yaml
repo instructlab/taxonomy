@@ -1,0 +1,37 @@
+---
+created_by: dagrayvid
+domain: world_event
+seed_examples:
+  - answer: The 2023 SAG-AFTRA strike lasted from July 14 to November 9, 2023,
+      totalling 3 months and 26 days.
+    question: How long was the 2023 SAG-AFTRA strike?
+  - answer: The 2023 SAG-AFTRA strike, in combination with the 2023 Writers Guild of
+      America strike, resulted in the loss of 45,000 jobs, and "an estimated
+      $6.5 billion" loss to the economy of Southern California.
+    question: What was the economic impact of the 2023 SAG-AFTRA strike?
+  - answer: B) Bob Iger.
+    question: >
+      Which of these celebrities did NOT show support for the 2023 SAG-AFTRA
+      strike? A) Mandy Moore
+
+      B) Bob Iger
+
+      C) Joe Biden
+
+      D) Jason Sudeikis
+  - answer: On November 8th after months of negotiating, 2023 SAG-AFTRA announced to
+      its members that the TV/Theatrical Negotiating Committee had unanimously
+      approved a tentative agreement with the  Alliance of Motion Picture and
+      Television Producers (AMPTP). The SAG-AFTRA's National Board committee
+      then approved the agreement by a majority of 86%.
+    question: How was the 2023 SAG-AFTRA strike resolved?
+  - answer: The 2023 SAG-AFTRA strike mainly took place in Los Angeles and New York
+      City. There were also brief strikes in Orlando, Honolulu, and Atlanta.
+    question: Where did the 2023 SAG-AFTRA strike take place?
+task_description: " "
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 0036389cd10a21f0952b2aaa773aac68cf0ab82c
+  patterns:
+    - 2023_SAG_AFTRA_strike.md
+
