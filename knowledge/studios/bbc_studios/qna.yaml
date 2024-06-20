@@ -1,0 +1,179 @@
+created_by: jjasghar
+version: 2
+domain: television
+seed_examples:
+  - answer: |
+      The BBC Studios production division was formed in 2016 and launched as a commercial entity in 2017 enabling it
+      to produce programming for other broadcasters and services to generate profit to return to the BBC to supplement
+      licence fee income.
+    question: When was the company founded?
+  - answer: |
+      BBC Studios Limited is a British content company. It is a commercial subsidiary of the BBC that was formed in
+      April 2018 through the merger of the BBC's commercial production arm and the BBC's commercial international
+      distribution arm, BBC Worldwide.
+    question: What are the BBC Studios?
+  - answer: |
+      In April 2019, BBC Studios announced various agreements with Discovery, Inc.; the companies agreed to break
+      apart their UKTV joint venture, with Discovery (which had acquired a stake in UKTV after its purchase of
+      Scripps Networks Interactive) acquiring the BBC's stake in UKTV's lifestyle channels, and BBC Studios likewise
+      acquiring Discovery's stakes in UKTV's entertainment channels and the video on-demand service UKTV Play.
+    question: When did BBC Studios and Discovery inc split UKTV?
+  - answer: |
+      BBC America (United States)
+      BBC Brit (Poland)
+      BBC Earth
+      BBC Earth (Canada; Under license)
+      Sony BBC Earth (India; joint venture with Sony)
+      BBC Entertainment
+      BBC First
+      BBC First (Australia)
+      BBC First (Canada; Under license)
+      BBC First (Netherlands)
+      BBC HD
+      BBC Kids
+      BBC Lifestyle
+      BBC Nordic
+      BBC UKTV (Australia and New Zealand)
+      UKTV
+      Alibi
+      Dave
+      Drama
+      Eden
+      Gold
+      W
+      Yesterday
+    question: What channels does BBC Studios own?
+  - answer: |
+      Demon Music Group Limited (DMG; formerly Object Enterprises Limited from 1982–1991 and Music Collection
+      International Limited from 1991–2000) is a record company owned by BBC Studios that is mainly concerned with
+      back-catalogue rights and re-issuing recordings as compilations on physical media (CDs and vinyl)
+      via supermarkets and specialist stores.
+    question: Who owns the Demon Music Group?
+  - answer: |
+      BBC Select is a streaming brand launched in North America, dedicated to factual content.
+    question: What is BBC Select?
+  - answer: |
+      In 2018/2019 BBC Studios returned £176m to the independent sector
+    question: How much money does BBC Studios return to the independent sector?
+  - answer: |
+      BBC Studios has announced plans to launch an international newsletter business initially focussed on
+      Canada and the USA.
+    question: Does BBC Studios have a newsletter business?
+  - answer: |
+      In 2019 BBC Studios received 73 awards and 202 nominations.
+    question: How many awards has BBC Studios received?
+  - answer: |
+      The company is on track to meet its five-year target of returning £1.2bn to the BBC by 2021/2022.
+    question: How much money does BBC Studios return to the BBC?
+  - answer: |
+      BBC Studios Productions brings together the majority of BBC Television's former in-house production departments;
+      Factual, Drama, Comedy (both combined as Scripted in the new division), Entertainment, and Music & Events.
+    question: What is BBC Studios?
+  - answer: |
+      BBC Studios Ltd. as a production company was first registered on 27 February 2015. In September 2015, the BBC's
+      general director Tony Hall announced a proposal to split the BBC's in-house production units for non-news
+      television programming into a separate BBC Studios division, which would eventually, with BBC Trust approval
+      as part of the next revision to the BBC's charter, be spun-out as a for-profit subsidiary of the BBC.
+    question: When BBC Studios was founded?
+  - answer: |
+      The channels are BBC America (United States),  BBC Brit (Poland), BBC Earth, BBC Earth (Canada; Under license),
+      Sony BBC Earth (India; joint venture with Sony), BBC Entertainment, BBC First, BBC First (Australia),
+      BBC First (Canada; Under license), BBC First (Netherlands), BBC HD, BBC Kids, BBC Lifestyle, BBC Nordic,
+      BBC UKTV (Australia and New Zealand), in UKTV Alibi, Dave, Drama, Eden, Gold, W, Yesterday
+    question: How many channels make uo BBC Studios?
+  - answer: |
+      In October 2016, the BBC announced that it planned to lay off 300 employees from the division seen as redundant.
+    question: What happened at the BBC in October 2016?
+  - answer: |
+      BBC Studios Ltd. as a production company was first registered on 27 February 2015.
+    question: On what date was BBC Studios founded?
+  - answer: |
+      BritBox is an over-the-top subscription video on-demand brand, which includes original programming commissioned
+      or acquired by the company, and third-party content licensed from other UK channels such as BBC, ITV, Channel 4
+      and Channel 5. The service was announced by BBC Worldwide and ITV plc as a joint venture in 2016 and launched in
+      2017 in North America; the international service remains a joint venture of BBC Studios and ITV plc.
+    question: What is BBC BritBox?
+  - answer: |
+      BBC Studios has built up a stake in a variety of different production companies.
+      72 Films (with David Glover and Mark Raphael; 15%)
+      Amazing Productions (with George Clarke, 25%)
+      Baby Cow Productions (with Steve Coogan; 73%)
+      Brutal Media
+      Burning Bright Productions (25%)
+      Clerkenwell Films (100% as of 19 January 2021)
+      Cuba Pictures (10%, via Original Talent Ltd)
+      Curve Media (with Rob Carey and Camilla Lewis; 25%)
+      Expectation Entertainment (24.9%)
+      Firebird Pictures (100% as of 5 October 2022)
+      House Productions (100% as of 14 December 2021)
+      Lookout Point TV (100% as of 5 July 2018)
+      Mighty Productions (with Lynn Sutcliffe and Hugh Rycroft)
+      Moonage Pictures
+      Sid Gentle Films Ltd. (100% as of 17 October 2022)
+      VAL (Various Artists Limited) (with Sam Bain, Jesse Armstrong, Phil Clarke and Roberto Troni; 20%)
+      Werner Film Productions
+    question: What are BBCs Label Investments?
+  - answer: Canada and the US
+    question: What is BBC's second largest non-UK news market behind India?
+  - answer: 1 April 2018
+    question: When BBC Worldwide would be merged into BBC Studios effective?
+  - answer: February 2021
+    question: when BBC Studios launched a new streaming brand in North America known as BBC Select?
+  - answer: three hundred
+    question: How many employee planed to lay off in October 2016?
+  - answer: 27 February 2015
+    question: When BBC Studios Ltd. as a production company was first registered?
+  - answer: |
+      bbcstudios.com
+    question: what is the web site of BBC studios?
+  - answer: |
+      BBC Studios Home Entertainment, BBC Studios Productions Limited, BBC Studios ScriptWorks,
+      BBC Studios TalentWorks, BBC News@
+    question: What are the division of BBC studios?
+  - answer: |
+      BBC Worldwide
+    question: What is the predecesor of BBC studios?
+  - answer: |
+      London
+    question: Where are the headquarters of BBC studios?
+  - answer: |
+      BBC Studios Limited is a British content company. It is a commercial subsidiary of the BBC.
+    question: What does BBC Studios do?
+  - answer: |
+       BBC Studios creates, develops, produces, distributes, broadcasts, finances and sells content around the world,
+       returning around £200 million to the BBC annually in dividends and content investment.
+    question: Who is the UK's most comissioned creator of new content in 2019?
+  - answer: |
+      BBC Studios Productions was the UK's most commissioned creator of new content in 2019, with 77 new commissions
+      from the BBC and third-parties. It achieved 73 awards and 202 nominations in 2019/2020.
+    question: What is BBC Studios Nordic Productions?
+  - answer: |
+      In June 2023, BBC Studios announced the acquisition of Scandinavian production company STV (not to be confused
+      with Scotland's STV Group). The Copenhagen-based company will be rebranded BBC Studios Nordic Productions.
+    question: Who handles international rights for Doctor Who?
+  - answer: |
+      BBC Studios.  For example, in August 2019, BBC Studios announced a long-term deal with WarnerMedia's upcoming
+      HBO Max for streaming rights to past seasons of top BBC programmes such as Doctor Who.
+    question: Who handles international distribution and advertising sales for BBC World News?
+  - answer: |
+      27th February 2015
+    question: When was BBC studios first registered as a production compmnay
+  - answer: |
+      April 2019
+    question: When did the BBC announce their agreement with Discovery Inc.
+  - answer: |
+      Doctor Who, The Honourable Woman, Luther, and Top Gear
+    question: To what shows did BBC studios announce a long term deal with warner media for,
+        to use on HBO Max for streaming.
+  - answer: |
+      Canada
+    question: Which areas did BBC studios initially plan to launch their international newsletter business?
+  - answer: |
+      Non news television
+    question: Which area did Tony Hall announce he would split in house producution units in between?
+task_description: 'BBC Studios Ltd company history'
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: ad185efec4dad89bf611d4b9aa8641155cb25d91
+  patterns:
+    - BBC_studios.md
