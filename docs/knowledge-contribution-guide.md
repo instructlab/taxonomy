@@ -54,3 +54,18 @@ A few things to check before seeking reviews for your contribution:
 - Your `qna.yaml` follows the proper formatting. See examples in [Knowledge: YAML examples](https://github.com/instructlab/taxonomy/blob/main/README.md#knowledge-yaml-examples)
 - Ensure all parameters are set. Especially the `document`, `repo`, `commit` and `pattern` keys; these parameters are specific to knowledge contributions and require more analysis.
 - Include a `attribution.txt` file for citing your sources. see [For your attribution.txt file](https://github.com/instructlab/taxonomy/blob/main/CONTRIBUTING.md#for-your-attributiontxt-file) for more information.
+
+## PR Upstream Workflow
+
+This following table outlines the expected timing for the PR(s) you have put in. The PRs go through a few steps, and checks, but you should be able to map your `label` to
+the place that it is in.
+
+| Label | Actor | Action | Duration |
+| --- | --- | --- | --- |
+| | Contributor | Submit PR | - |
+| | Contributor | Fix failed PR checks | - |
+| https://github.com/instructlab/taxonomy/labels/triage-needed | Triager | Review PR, ask for changes | Days |
+| https://github.com/instructlab/taxonomy/labels/triage-requested-changes | Contributor | Make requested changes | Days |
+| https://github.com/instructlab/taxonomy/labels/precheck-generate-ready | Triager | Run prechecks and generate  | Days |
+| https://github.com/instructlab/taxonomy/labels/e2e-ready | Backend | Model gets retrained | Weeks |
+| | Triager | Check the numbers and PR merged or closed | - |
