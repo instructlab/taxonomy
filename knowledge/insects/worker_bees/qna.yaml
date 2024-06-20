@@ -1,0 +1,24 @@
+created_by: 
+domain: insect
+seed_examples:
+- answer: |
+    Mortuary Bee
+  question: Which bee is responsible for removing dead bees from the hive?
+- answer: |
+    guard bees will hover at the entrance of the hive and defend it from dangers
+  question: What is the function of the guard bee?
+- answer: |
+    barbs on the stinger cause the bee to lose a stinger in the skin of another animal.
+  question: what causes a bee's stinger to get caught in another animal?
+- answer: |
+    worker bees store honey in their honey stomach.
+  question: where do worker bees store honey?
+- answer: |
+    queen attendants take care of the queen by feeding and cleaning her.
+  question: What do queen attendants do?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: a03ff5dab7b11cb705269482b6f84b0ef271d87c
+ patterns:
+   - worker_bee.md
