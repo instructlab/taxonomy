@@ -1,0 +1,67 @@
+version: 2
+task_description: "Teach the model about SNX27 in an endosomal biology context"
+created_by: ashevans
+domain: biology
+seed_examples:
+  - question: What is SNX27-Retromer?
+    answer: |
+      Sorting nexin-27 (SNX27)-Retromer is an endosomal sorting complex that orchestrates
+      endosome-to-plasma membrane recycling of hundreds of internalized receptors,
+      channels and transporters, enzymes and adhesion molecules
+  - question: What is the role of the endosomal-lysosomal network?
+    answer: |
+      A central role of the endosomal-lysosomal network is to determine the sorting of integral
+      proteins and their associated proteins and lipids, collectively termed ‘cargos’, between
+      two fates, either degradation within lysosomes or retrieval from this fate for the promotion
+      of recycling to a variety of organelles that include the cell surface (Cullen and Steinberg,
+      2018).
+  - question: What concepts are considered to account for the mechanism of endosomal cargo retrieval and recycling?
+    answer: |
+      Sequence-independent sorting posits that sorting can proceed
+      without the need for any sequence information within the intracellular cytoplasmic
+      domains of integral membrane cargos (Maxfield and McGraw, 2004). On the other hand,
+      sequence-dependent sorting is controlled by specific signals in the cytoplasmic domain
+      of cargos. These signals are typically short linear peptide motifs that direct the sorting
+      process through coupling to ancient and evolutionary conserved coat complexes (Cullen
+      and Steinberg, 2018; McNally and Cullen, 2018; Chen et al., 2019).
+  - question: Which protein complexes are involved in the sequence recognition of cargo?
+    answer: |
+      In mammals, these coats include sorting nexin-3 (SNX3)-Retromer (Strochlic
+      et al., 2007; Harterink et al., 2011; Lucas et al., 2016; Kendall et al., 2020; Leneva et al.,
+      2021), SNX27-Retromer (Lauffer et al., 2010; Temkin et al., 2011; Steinberg et al., 2013;
+      Gallon et al., 2014), SNX17-Retriever (McNally et al., 2017), the CCC
+      available under aCC-BY 4.0 International license.
+      (which was not certified by peer review) is the author/funder,
+      who has granted bioRxiv a license to display the preprint in perpetuity. It is made
+      bioRxiv preprint doi: https://doi.org/10.1101/2021.08.28.457928;
+      this version posted August 28, 2021. The copyright holder for this preprint
+      (CCDC22/CCDC93/COMMD) (Phillips-Krawczak et al., 2015; Bartuzi et al., 2016) and
+      ESCPE-1 (Endosomal SNX-BAR sorting complex for promoting exit 1) complexes
+      (Simonetti et al., 2019; Yong et al., 2020), and various accessory proteins including the
+      actin polymerizing WASH (Wiskott–Aldrich syndrome protein and SCAR homologue)
+      complex (Gomez and Billadeau, 2009; Derivery et al., 2009).
+  - question: What are the functional protein domains of SNX27?
+    answer: |
+      Sorting nexin-27 (SNX27) is an endosome-associated cargo adaptor composed of a
+      central PX (phox homology) domain flanked by an N-terminal PDZ (PSD95, discs large,
+      zona occludens) domain and a C-terminal FERM (4.1/ezrin/radixin/moesin) domain (Kajii
+      et al., 2003; Ghai et al., 2011). The PDZ domain recognizes a specific sorting motif,
+      termed the PDZ binding motif (PDZbm), present at the very C-termini of over 400 cargo
+      proteins including receptors, transporters, channels, enzymes and adhesion molecules
+      (Joubert et al., 2004; Lunn et al., 2007; Lauffer et al., 2010; Balana et al., 2011; Cai et al.,
+      2011; Ghai et al., 2011; Temkin et al., 2011; Steinberg et al., 2013; Hussain et al., 2014;
+      Clairfeuille et al., 2016; Sharma et al., 2020; McMillan et al., 2021)
+  - question: What is SNX27's role with Retromer?
+    answer: |
+      To facilitate the retrieval process, the SNX27 PDZ domain associates with Retromer, a
+      stable heterotrimer of VPS26 (A and B isoforms expressed in humans (Kerr et al., 2005)),
+      VPS35 and VPS29, to form the SNX27-Retromer (Temkin et al., 2011; Steinberg et al.,
+      2013; Gallon et al., 2014). Retromer itself assembles to form dimeric arches that may
+      cluster SNX27 captured cargos (Kovtun et al., 2018; Kendall et al., 2020; Leneva et al.,
+      2021) and associates with the WASH complex to allow the localized Arp2/3-dependent
+      polymerisation of branched filamentous actin (Harbour et al., 2012; Jia et al., 2012).
+document:
+  repo: https://github.com/aevo98765/instructlab-data.git
+  commit: 9eb30d6
+  patterns:
+    - snx27-retromer-escpe-1.md
