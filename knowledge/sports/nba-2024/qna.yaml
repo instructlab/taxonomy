@@ -1,1 +1,64 @@
-
+created_by: lgdeloss
+version: 2
+domain: 2024 nba finals
+seed_examples:
+ - answer: | 
+   boston celtics.Sixteen years to the date after they won their 17th title, the Celtics won their 18th 
+   title to break a tie with the Los Angeles Lakers for the most championships in NBA history. 
+   Jayson Tatum led the Celtics with 31 points, eight rebounds and 11 assists in a 106–88 blowout victory.
+   Jrue Holiday scored the first three buckets of the game for the Celtics. The Mavericks never 
+   recovered or led at any point during the game
+   question: Who won the nba finals in 2024?
+ - answer: |
+   The Celtics' Jaylen Brown was voted the NBA Finals Most Valuable Player (FMVP), 
+   after averaging 20.8 points, 5.4 rebounds, and 5.0 assists per game
+   question: Who won the finals mvp?
+ - answer: |
+   F 	12 	Brissett, Oshae 	6 ft 7 in (2.01 m) 	210 lb (95 kg) 	1998-06-20 	Syracuse
+   G/F 	7 	Brown, Jaylen 	6 ft 6 in (1.98 m) 	223 lb (101 kg) 	1996-10-24 	California
+   G 	20 	Davison, JD (TW) 	6 ft 1 in (1.85 m) 	195 lb (88 kg) 	2002-10-03 	Alabama
+   F 	30 	Hauser, Sam 	6 ft 7 in (2.01 m) 	217 lb (98 kg) 	1997-12-08 	Virginia
+   G 	4 	Holiday, Jrue 	6 ft 4 in (1.93 m) 	205 lb (93 kg) 	1990-06-12 	UCLA
+   F/C 	42 	Horford, Al 	6 ft 9 in (2.06 m) 	240 lb (109 kg) 	1986-06-03 	Florida
+   C 	40 	Kornet, Luke 	7 ft 1 in (2.16 m) 	250 lb (113 kg) 	1995-07-15 	Vanderbilt
+   G/F 	50 	Mykhailiuk, Sviatoslav 	6 ft 7 in (2.01 m) 	205 lb (93 kg) 	1997-06-10 	Kansas
+   F 	13 	Peterson, Drew (TW) 	6 ft 9 in (2.06 m) 	205 lb (93 kg) 	1999-11-09 	USC
+   F/C 	8 	Porziņģis, Kristaps 	7 ft 2 in (2.18 m) 	240 lb (109 kg) 	1995-08-02 	Latvia
+   G 	11 	Pritchard, Payton 	6 ft 1 in (1.85 m) 	195 lb (88 kg) 	1998-01-28 	Oregon
+   C 	88 	Queta, Neemias 	7 ft 0 in (2.13 m) 	248 lb (112 kg) 	1999-07-13 	Utah State
+   G 	44 	Springer, Jaden 	6 ft 4 in (1.93 m) 	202 lb (92 kg) 	2002-09-25 	Tennessee
+   F 	0 	Tatum, Jayson 	6 ft 8 in (2.03 m) 	210 lb (95 kg) 	1998-03-03 	Duke
+   F/C 	26 	Tillman, Xavier 	6 ft 7 in (2.01 m) 	245 lb (111 kg) 	1999-01-12 	Michigan State
+   G/F 	27 	Walsh, Jordan 	6 ft 6 in (1.98 m) 	205 lb (93 kg) 	2004-03-03 	Arkansas
+   G 	9 	White, Derrick 	6 ft 4 in (1.93 m) 	190 lb (86 kg) 	1994-07-02 	Colorado
+   question: Who was on the celtics roster?
+ - answer: |
+   F 	13 	Brown, Greg III (TW) 	6 ft 7 in (2.01 m) 	206 lb (93 kg) 	2001-09-01 	Texas 
+   G/F 	77 	Dončić, Luka 	6 ft 7 in (2.01 m) 	230 lb (104 kg) 	1999-02-28 	Slovenia
+   G 	0 	Exum, Dante 	6 ft 5 in (1.96 m) 	214 lb (97 kg) 	1995-07-13 	Australia
+   F 	3 	Fudge, Alex (TW) 	6 ft 8 in (2.03 m) 	200 lb (91 kg) 	2003-06-05 	Florida
+   F/C 	21 	Gafford, Daniel 	6 ft 10 in (2.08 m) 	234 lb (106 kg) 	1998-10-01 	Arkansas
+   G/F 	8 	Green, Josh 	6 ft 5 in (1.96 m) 	200 lb (91 kg) 	2000-11-16 	Arizona
+   G/F 	10 	Hardaway, Tim Jr. 	6 ft 5 in (1.96 m) 	205 lb (93 kg) 	1992-03-16 	Michigan
+   G 	1 	Hardy, Jaden 	6 ft 3 in (1.91 m) 	198 lb (90 kg) 	2002-07-05 	Coronado HS (NV)
+   G 	11 	Irving, Kyrie 	6 ft 2 in (1.88 m) 	195 lb (88 kg) 	1992-03-23 	Duke
+   F 	55 	Jones, Derrick Jr. 	6 ft 6 in (1.98 m) 	210 lb (95 kg) 	1997-02-15 	UNLV
+   F 	42 	Kleber, Maxi 	6 ft 10 in (2.08 m) 	240 lb (109 kg) 	1992-01-29 	Germany
+   G 	9 	Lawson, A. J. 	6 ft 6 in (1.98 m) 	179 lb (81 kg) 	2000-07-15 	South Carolina
+   C 	2 	Lively, Dereck II 	7 ft 1 in (2.16 m) 	230 lb (104 kg) 	2004-02-12 	Duke
+   F 	88 	Morris, Markieff 	6 ft 9 in (2.06 m) 	245 lb (111 kg) 	1989-09-02 	Kansas
+   F/C 	7 	Powell, Dwight 	6 ft 10 in (2.08 m) 	240 lb (109 kg) 	1991-07-20 	Stanford
+   F 	18 	Prosper, Olivier-Maxence 	6 ft 7 in (2.01 m) 	230 lb (104 kg) 	2002-07-03 	Marquette
+   F 	25 	Washington, P. J. 	6 ft 7 in (2.01 m) 	230 lb (104 kg) 	1998-08-23 	Kentucky
+   G 	00 	Williams, Brandon (TW)    
+   question: who was on mavericks roster?
+ - answer: Joe Mazulla
+   question: who is the celtics coach?
+ - answer: Jason Kidd
+ question: who is the mavericks coach?
+task_description: 'To teach a language model about the 2024 nba finals'
+document:
+ repo: https://github.com/lgdeloss/instructlab_knowledge
+ commit: 5c8766c0b0e15282f0476361ab7843563d286869
+ patterns:
+  - 2024_nba_finals.md
