@@ -2,15 +2,15 @@ created_by: lgdeloss
 version: 2
 domain: 2024 nba finals
 seed_examples:
- - answer: | 
-   boston celtics.Sixteen years to the date after they won their 17th title, the Celtics won their 18th 
+ - answer: |
+   boston celtics.Sixteen years to the date after they won their 17th title, the Celtics won their 18th
    title to break a tie with the Los Angeles Lakers for the most championships in NBA history. 
    Jayson Tatum led the Celtics with 31 points, eight rebounds and 11 assists in a 106–88 blowout victory.
-   Jrue Holiday scored the first three buckets of the game for the Celtics. The Mavericks never 
+   Jrue Holiday scored the first three buckets of the game for the Celtics. The Mavericks never
    recovered or led at any point during the game
    question: Who won the nba finals in 2024?
  - answer: |
-   The Celtics' Jaylen Brown was voted the NBA Finals Most Valuable Player (FMVP), 
+   The Celtics' Jaylen Brown was voted the NBA Finals Most Valuable Player (FMVP),
    after averaging 20.8 points, 5.4 rebounds, and 5.0 assists per game
    question: Who won the finals mvp?
  - answer: |
@@ -33,7 +33,7 @@ seed_examples:
    G 	9 	White, Derrick 	6 ft 4 in (1.93 m) 	190 lb (86 kg) 	1994-07-02 	Colorado
    question: Who was on the celtics roster?
  - answer: |
-   F 	13 	Brown, Greg III (TW) 	6 ft 7 in (2.01 m) 	206 lb (93 kg) 	2001-09-01 	Texas 
+   F 	13 	Brown, Greg III (TW) 	6 ft 7 in (2.01 m) 	206 lb (93 kg) 	2001-09-01 	Texas
    G/F 	77 	Dončić, Luka 	6 ft 7 in (2.01 m) 	230 lb (104 kg) 	1999-02-28 	Slovenia
    G 	0 	Exum, Dante 	6 ft 5 in (1.96 m) 	214 lb (97 kg) 	1995-07-13 	Australia
    F 	3 	Fudge, Alex (TW) 	6 ft 8 in (2.03 m) 	200 lb (91 kg) 	2003-06-05 	Florida
@@ -50,7 +50,7 @@ seed_examples:
    F/C 	7 	Powell, Dwight 	6 ft 10 in (2.08 m) 	240 lb (109 kg) 	1991-07-20 	Stanford
    F 	18 	Prosper, Olivier-Maxence 	6 ft 7 in (2.01 m) 	230 lb (104 kg) 	2002-07-03 	Marquette
    F 	25 	Washington, P. J. 	6 ft 7 in (2.01 m) 	230 lb (104 kg) 	1998-08-23 	Kentucky
-   G 	00 	Williams, Brandon (TW)    
+   G 	00 	Williams, Brandon (TW)
    question: who was on mavericks roster?
  - answer: Joe Mazulla
    question: who is the celtics coach?
