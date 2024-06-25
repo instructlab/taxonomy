@@ -12,7 +12,7 @@ seed_examples:
  - answer: |
     The Celtics' Jaylen Brown was voted the NBA Finals Most Valuable Player (FMVP),
     after averaging 20.8 points, 5.4 rebounds, and 5.0 assists per game
-    question: Who won the finals mvp?
+   question: Who won the finals mvp?
  - answer: |
     F 	12 	Brissett, Oshae 	6 ft 7 in (2.01 m) 	210 lb (95 kg) 	1998-06-20 	Syracuse
     G/F 	7 	Brown, Jaylen 	6 ft 6 in (1.98 m) 	223 lb (101 kg) 	1996-10-24 	California
