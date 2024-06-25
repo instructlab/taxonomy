@@ -15,7 +15,7 @@ You can learn more about the knowledge structure in [Getting Started with Knowle
 ## Accepted Knowledge
 
 > [!IMPORTANT]
-> We are currently only accepting knowledge contributions as a limited private beta and sources will be limited to articles from Wikipedia.
+> We are currently only accepting knowledge contributions as a limited private beta and sources will be limited to those domains listed as approved in our [Knowledge Submissions Review List](https://github.com/instructlab/dev-docs/blob/main/docs/knowledge-submissions-past-wikipedia.md), which includes (but is not necessarily limited to): [Project Gutenberg](https://www.gutenberg.org/), [Wikipedia](https://en.wikipedia.org/wiki/Main_Page), and [Wikisource](https://en.wikisource.org/). See the Knowledge Submissions Review List for further details before you get started with a Knowledge Submission, please and thank you. :D
 
 There are a few domains of knowledge that we are currently accepting. For a full list of knowledge fields, see [Knowledge domains](https://github.com/instructlab/taxonomy/blob/main/knowledge/knowledge_domains.md) in the taxonomy documentation
 
