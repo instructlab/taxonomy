@@ -1,4 +1,0 @@
-Title of work: Mechanistic basis for SNX27-Retromer coupling to ESCPE-1 in promoting endosomal cargo recycling
-Link to work: https://www.biorxiv.org/content/10.1101/2021.08.28.457928v1
-License of the work: CC-BY-SA-4.0
-Creator names: Boris Simonetti, Qian Guo, Manuel Gimenez-Andres, Kai-En Chen, Edmund R.R. Moody, Ashley J. Evans, Chris M. Danson, Tom A. Williams, Brett M. Collins, Peter J. Cullen
