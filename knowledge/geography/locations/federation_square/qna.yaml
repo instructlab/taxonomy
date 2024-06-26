@@ -1,0 +1,20 @@
+created_by: AndrewSquared
+version: 2
+domain: geography
+seed_examples:
+- answer: The Federation Square can be found in Melbourne, Australia.
+  question: What city can you find Federation Square in?
+- answer: The architects of record are Denton Corker Marshall, Ashton Raggat McDougal, and Chris Elliot.
+  question: Which architects designed Federation Square?
+- answer: The construction for Federation Square was finished on October 26, 2022.
+  question: When was Federation Square constructed?
+- answer: Federation Square covers an area in Melbourne, Australia of 7.9 acres.
+  question: How big of an area does Federation Square cover?
+- answer: The colloquial nickname of Federation Square is "Fed Square".
+  question: What is the colloquial nickname of Federation Square?
+task_description: 'To teach a language model about Federation Square in Melbourne, Australia'
+document:
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 31d87535af0473712ef64cebe98a898a5aa04d52
+ patterns:
+ - federation_square.md
