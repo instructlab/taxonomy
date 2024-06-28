@@ -23,10 +23,16 @@ The LAB method is driven by taxonomies, which are largely created manually and
 with care.
 
 This repository contains a taxonomy tree that allows you to create models
-tuned with your data (enhanced via synthetic data generation) using LAB 🐶
+tuned with your data (enhanced via synthetic data generation) using the LAB 🐶
 method.
 
 [1] Shivchander Sudalairaj*, Abhishek Bhandwaldar*, Aldo Pareja*, Kai Xu, David D. Cox, Akash Srivastava*. "LAB: Large-Scale Alignment for ChatBots", arXiv preprint arXiv: 2403.01081, 2024. (* denotes equal contributions)
+
+## Choosing domains for the taxonomy
+
+In general, we use the Dewey Decimal Classification (DDC) System to determine our domains (and subdomains) in the taxonomy. This [DDC SUMMARIES document](https://www.oclc.org/content/dam/oclc/dewey/resources/summaries/deweysummaries.pdf) is a great resource for determining where a topic might be classified.
+
+If you are unsure where to put your knowledge or compositional skill, create a folder in the `miscellaneous_unknown` folder under the `knowledge` or `compositional_skills` folders.
 
 ## Learning
 
@@ -53,7 +59,9 @@ Your skills contribution pull requests must include the following:
 > There is a limit to how much content can exist in the question/answer pairs for the model to process. Due to this, only add a maximum
 > of around 2300 words to your question and answer seed example pairs in the `qna.yaml` file.
 
-Taxonomy skill files must be a valid [YAML](https://yaml.org/) file named `qna.yaml`. Each `qna.yaml` files contains a set of key/value entries with the following keys:
+Compositional skills can either be grounded (includes a context) or ungrounded (does not include a context).  Grounded or ungrounded is declared in the taxonomy tree, for example: `linguistics/writing/poetry/haiku/` (ungrounded) or `grounded/linguistics/grammar` (grounded). The `qna.yaml` is in the final node.
+
+Taxonomy skill files must be a valid [YAML](https://yaml.org/) file named `qna.yaml`. Each `qna.yaml` file contains a set of key/value entries with the following keys:
 
 - `version`: The value must be the number 2. **Required**
 - `task_description`: A description of the skill. **Required**
@@ -61,7 +69,7 @@ Taxonomy skill files must be a valid [YAML](https://yaml.org/) file named `qna.y
 - `seed_examples`: A collection of key/value entries. New
   submissions should have at least five entries, although
   older files may have fewer. **Required**
-  - `context`: Grounded skills require the user to provide context containing information that the model is expected to take into account during processing. This is different from knowledge, where the model is expected to gain facts and background knowledge from the tuning process. The context key is optional for freeform skills.
+  - `context`: Grounded skills require the user to provide context containing information that the model is expected to take into account during processing. This is different from knowledge, where the model is expected to gain facts and background knowledge from the tuning process. The context key should not be used for ungrounded skills.
   - `question`: A question for the model. **Required**
   - `answer`: The desired response from the model. **Required**
 
@@ -90,7 +98,7 @@ seed_examples:
   ...
 ```
 
-Then, you create an `attribution.txt` file that includes the sources of your information. These can also be self authored.
+Then, you create an `attribution.txt` file that includes the sources of your information. These can also be self authored sources.
 
 *Example `attribution.txt`*
 
@@ -122,9 +130,9 @@ If you have not written YAML before, don't be intimidated - it's just text.
   value, unless "Yes" is quoted.)
 > - See https://yaml-multiline.info/ for more info.
 
-It is recommended that you **lint**, or verify your YAML using a tool. One linter option is [yamllint.com](https://yamllint.com). You can copy/paste your YAML into the box and click **Go** to have it analyze your YAML and make recommendations. Online tools like [prettified](https://onlineyamltools.com/prettify-yaml) and [yaml-validator](https://jsonformatter.org/yaml-validator) can automatically reformat your YAML to adhere to our `yamllint` PR checks, such as breaking lines longer than 120 characters.
+It is recommended that you **lint**, or verify, your YAML using a tool. One linter option is [yamllint.com](https://yamllint.com). You can copy/paste your YAML into the box and click **Go** to have it analyze your YAML and make recommendations. Online tools like [prettified](https://onlineyamltools.com/prettify-yaml) and [yaml-validator](https://jsonformatter.org/yaml-validator) can automatically reformat your YAML to adhere to our `yamllint` PR checks, such as breaking lines longer than 120 characters.
 
-#### Freeform compositional skill: YAML example
+#### Ungrounded compositional skill: YAML example
 
 ```yaml
 version: 2
@@ -149,23 +157,23 @@ Here is the location of this YAML in the taxonomy tree. Note that the YAML file
 itself, plus any added directories that contain the file, is the entirety of the skill
 in terms of a taxonomy contribution:
 
-#### Freeform compositional skill: Directory tree example
+#### Ungrounded compositional skill: Directory tree example
 
 ```ascii
 [...]
 
 └── writing
-    └── freeform
-    |   └── haikus <=== here it is :)
+    └── poetry
+    |   └── haiku <=== here it is :)
     |   |   └── qna.yaml
     |   |       attribution.txt
-    │   ├── debate
-    │   │   └── qna.yaml
+        [...]
+    └── prose
+    |   └── debate
+    |   |   └── qna.yaml
     |   |       attribution.txt
-    │   ├── legal
-    │   │   ├── agreement
-    │   │   |    └── qna.yaml
-    |   |   |        attribution.txt
+    [...]
+
 [...]
 ```
 
@@ -221,22 +229,21 @@ seed_examples:
 ```ascii
 [...]
 
-└── extraction
-    └── inference
-    |   └── qualitative
-    |   |    ├── sentiment
-    |   |    |    └── qna.yaml
-    |   |    |        attribution.txt
-    |   |    └── tone_and_style
-    |   |         └── qna.yaml
-    |   |             attribution.txt
-    │   ├── quantitative
-    │   │   ├── table_analysis <=== here it is :)
-    │   |   |    └── qna.yaml
-    │   │   │        attribution.txt
-    │   │   ├── word_frequency
-    │   │   │   └── qna.yaml
-    │   │   │       attribution.txt
+grounded
+└── technology
+    └── machine_learning
+        └── natural_language_processing
+    |   |     └── information_extraction
+    |            └── inference
+    |   |            └── qualitative
+    |   |               ├── sentiment
+    |   |               |     └── qna.yaml
+    |   |               |         attribution.txt
+    │                   ├── quantitative
+    │   │                   ├── table_analysis <=== here it is :)
+    │   |   |               |     └── qna.yaml
+    │   │   │               |         attribution.txt
+
 [...]
 ```
 
@@ -244,6 +251,8 @@ seed_examples:
 
 While skills are foundational or performative, knowledge is based more on answering questions that involve facts,
 data, or references.
+
+Knowledge is supported by documents, such as a textbook, technical manual, encyclopedia, journal, or magazine.
 
 Knowledge in the taxonomy tree consists of a few more elements than skills:
 
@@ -260,7 +269,7 @@ Knowledge in the taxonomy tree consists of a few more elements than skills:
 
 The `qna.yaml` format must include the following fields:
 
-- `version`: The chache verion of the qna.yaml file, this is the format of the file used for SDG. The value must be the number 3.
+- `version`: The version of the qna.yaml file, this is the format of the file used for SDG. The value must be the number 3.
 - `created_by`: Your GitHub username.
 - `domain`: Specify the category of the knowledge.
 - `seed_examples`: A collection of key/value entries.
@@ -512,48 +521,34 @@ each branch, there is a YAML file (qna.yaml) that contains the examples for that
 domain. Maintainers can decide to change the names of the existing branches or to add new branches.
 
 > [!IMPORTANT]
-> Folder names do not have spaces.
+> Folder names do not have spaces. Use underscores between words.
 
 Below is an illustrative directory structure to show this layout:
 
 ```ascii
 .
-└── writing
-    ├── freeform
+└── linguistics
+    ├── writing
     │   ├── brainstorming
     │   │   ├── idea_generation
-    │   │   │   └── qna.yaml
-    │   │   │       attribution.txt
+    |   │       └── qna.yaml
+    │   │           attribution.txt
     │   │   ├── refute_claim
-    │   │   │   └── qna.yaml
-    │   │   │       attribution.txt
+    |   │       └── qna.yaml
+    │   │           attribution.txt
     │   ├── prose
     │   │   ├── articles
-    │   │   │   └── qna.yaml
-    │   │   │       attribution.txt
-    │   │   ├── emails
-    │   │   │   ├── formal
-    │   │   │   │   └── qna.yaml
-    │   │   │   │       attribution.txt
-    │   │   │   └── informal
-    │   │   │       └── qna.yaml
-    │   │   │           attribution.txt
-    └── grounded
-        ├── editing
-        │   ├── grammar
-        │   │   └── qna.yaml
-        │   │       attribution.txt
-        │   └── spelling
-        │       └── qna.yaml
-        │           attribution.txt
-        └── summarization
-            └── wiki_insights
-                └── concise
-                    └── qna.yaml
-                        attribution.txt
+    │   │       └── qna.yaml
+    │   │           attribution.txt
+    └── grammar
+        └── qna.yaml
+        │   attribution.txt
+        └── spelling
+            └── qna.yaml
+                attribution.txt
 ```
 
-For an extensive example of this layout see, [taxonomy_tree_layout](https://github.com/instructlab/taxonomy/blob/main/docs/taxonomy_diagram.png) in the documentation folder.
+For an extensive example of the taxonomy layout see the [taxonomy_tree_layout](https://github.com/instructlab/taxonomy/blob/main/docs/taxonomy_diagram.png) image in the documentation folder.
 
 ## Contribute knowledge and skills to the taxonomy
 
