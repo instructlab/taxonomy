@@ -8,6 +8,8 @@ The analysis currently covers the following categories:
 - **Hap**: Hate, Abuse, Profanity
 - **Adult**: Sexual and erotic content
 
+**Note**: For knowledge contributions, analysis of referenced sources included in markdown files is out of scope for the current version but is planned for the future.
+
 ## Automation workflow
 
 The insights analysis is trigerred by a Github Action on every PR creation or update. The high level flow is described the the following diagram:
