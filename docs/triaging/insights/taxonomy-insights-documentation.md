@@ -1,8 +1,9 @@
 # InstructLab Contribution Insights
 
-This module automatically analyzes the taxonomy of pull request contribution files, checking for potential code of conduct violations. 
+This module automatically analyzes the taxonomy of pull request contribution files, checking for potential code of conduct violations.
 
 The analysis currently covers the following categories:
+
 - **PII**: Privacy (Personal Identifiable Information)
 - **Hap**: Hate, Abuse, Profanity
 - **Adult**: Sexual and erotic content
@@ -13,7 +14,7 @@ The insights analysis is trigerred by a Github Action on every PR creation or up
 
 ![Insight Analysis Automation using github workflow](images/gh-workflow.png)
 
-### Main workflow steps:
+### Main workflow steps
 
 1. **PR is Opened**: The Contributor opens a Pull Request (PR).
 2. **Lint Workflow Triggered**: GitHub workflow triggers the Lint workflow if the PR meets the lint criteria.
@@ -45,7 +46,7 @@ When potential violations to the code of conduct are identified, the following m
 
 ## Insights Report Page
 
-When potential violations of the code of conduct are identified, a separate report link is provided. 
+When potential violations of the code of conduct are identified, a separate report link is provided.
 
 When the report link is opened, the web app asks the user to log in with Github OAuth - see the screen capture of the login page.
 
@@ -54,4 +55,3 @@ When the report link is opened, the web app asks the user to log in with Github 
 After login, the user sees the report that lists all the potential violations found, with each violation category highlighted in a different color. Confidence scores are also provided. See the screen capture of the report below:
 
 ![Potential Violations to the CoC](images/InstructLab-Insights-report.png)
-
