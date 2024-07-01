@@ -49,7 +49,7 @@ seed_examples:
       towards success.
     question: Describe the challenges the Computing-Tabulating-Recording Company
       faced shortly after its formation and how these were overcome.
-task_description: ""
+task_description: "Train the model on IBM History"
 document:
   repo: https://github.com/abhi1092/ibm-history-documents
   commit: 1dc85d0fc19e21ad8adbf5f98bd8aa1e31257d0a
