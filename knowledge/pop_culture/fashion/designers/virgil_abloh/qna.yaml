@@ -1,0 +1,30 @@
+---
+version: 2
+created_by: stevenatkin
+task_description: 'Teach the model about the Nike Ten and Virgil Abloh'
+domain: fashion designers
+seed_examples:
+  - answer: >
+      Virgil Abloh, a renowned designer and owner of Off-White deconstructed
+      ten classic Nike silhouettes
+    question: Who designed the deconstucted nike sneakers know as the ten?
+  - answer: >
+      Air Force 1, Air Jordan 1, Air Presto, Air VaporMax, Blazer Mid, Air Max
+      97, Air Max 90, Zoom Vaporfly SP,
+
+      Converse Chuck Taylor All Star, React Hyperdunk.
+    question: What are the Ten sneakers Virgil Abloh designed for Nike?
+  - answer: |
+      The main release of the shoes was in 2017 and 2018.
+    question: When did Nike release the Ten sneakers from Virgil Abloh?
+  - answer: |
+      The Ten classic Nike sneakers were individually broken down by Abloh, and
+      then rebuilt with a different design and rearranged components.
+    question: How were the Nke ten sneakers designed?
+  - answer: >
+      The design process involved Abloh taking each individual shoe, breaking
+      it down with an X-ACTO knife,[4] removing and altering key elements of the
+      shoe. He maintained the foundational silhouette of each shoe, but added
+      small fabrics and panels and relocated parts. Abloh concentrated his
+      design towards editing the stitching and tongues of each of the shoes.
+    question: What was the design process that Virgil Abloh used in the Nike Ten.
