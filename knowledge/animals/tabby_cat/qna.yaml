@@ -22,7 +22,7 @@ seed_examples:
       explanation, are the mackerel, classic, ticked, and spotted tabby patterns
    question: What are the patterns that a tabby cat may have?
  - answer: Personality and aggression vary widely from cat to cat, and is multifactorial.
-   question: Do tabby cats have a specific personalities?
+   question: Do tabby cats have specific personalities?
  - answer: |
       A tabby cat, or simply tabby, is any domestic cat (Felis catus)
       with a distinctive M-shaped marking on their forehead, stripes
