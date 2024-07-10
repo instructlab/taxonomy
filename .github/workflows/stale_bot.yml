@@ -46,4 +46,4 @@ jobs:
             This pull request has been automatically closed due to inactivity.
           days-before-pr-stale: 15
           days-before-pr-close: 31
-          exempt-pr-labels: triage-approved
+          exempt-pr-labels: e2e-ready
