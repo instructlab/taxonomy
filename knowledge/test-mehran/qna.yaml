@@ -1,0 +1,22 @@
+---
+version: 2
+task_description: this a test
+created_by: Mehran
+seed_examples:
+ - answer: 'LIZ VALLETTI'
+   question: 'Who is the program manager of the SOSuccessful team?'
+ - answer: 'HENRIK BACK-HERKE'
+   question: 'Who is the architect of the SOSuccessful team?'
+ - answer: 'CHRISTOPHER HERMOSILLO'
+   question: 'Who is the lead architect of the SOSuccessful team?'
+ - answer: 'Jon Gullotti'
+   question: 'Who is the lead developer of the SOSuccessful team?'
+ - answer: 'Sukhinderpal Mann'
+   question: 'Who is the develop of the SOSuccessful team?'
+domain: SOSuccessful
+document:
+ commit: b6ff4ccf1052b80a63f639cc5326602ef9faac54
+ repo: https://github.ibm.com/watsonx-2024-sos-multicloud/taxonomy
+ patterns:
+  - SOSuccessful.md
+...
