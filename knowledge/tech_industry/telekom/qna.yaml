@@ -1,1 +1,138 @@
-
+version: 24
+task_description: <Teach a model about the Deutsche Telekom>
+created_by: <MagentaLabInstructors>
+seed_examples:
+  - question: <What is Deutsche Telekom's main business focus?>
+    answer: |
+      <Deutsche Telekom employs advanced encryption, multi-factor authentication, regular security audits, and compliance with GDPR and other data protection regulations to ensure customer data security.			>
+  - context: |
+      <business>
+    question: <What role does Deutsche Telekom play in the development of 5G technology?>
+    answer: |
+      <Deutsche Telekom is a leading player in the deployment of 5G networks across Europe, investing in infrastructure, spectrum acquisition, and collaboration with technology partners to enhance connectivity and enable new applications.			>
+  - context: |
+      <history>
+    question: < How does Deutsche Telekom support sustainability?>
+    answer: |
+      <Deutsche Telekom supports sustainability through initiatives like reducing carbon emissions, using renewable energy, recycling electronic waste, and promoting digital solutions that reduce environmental impact.			> 
+  - context: |
+      <business>
+    question: <What is the T-Systems division of Deutsche Telekom?>
+    answer: |
+      <T-Systems is a division of Deutsche Telekom that provides digital services and ICT solutions to business customers, including cloud services, cybersecurity, IoT solutions, and IT consulting.			> 
+  - context: |
+      <business>
+    question: <How does Deutsche Telekom address ethical concerns in AI development?>
+    answer: |
+      <Deutsche Telekom adheres to ethical guidelines in AI development, ensuring transparency, fairness, accountability, and the avoidance of bias in AI algorithms. They also engage in ethical reviews and stakeholder consultations> 
+  - context: |
+      <Technical>
+    question: <What is the Deutsche Telekom Global Carrier division?>
+    answer: |
+      <The Global Carrier division provides international wholesale telecommunications services, including voice, data, and internet transit services, to carriers and service providers worldwide> 
+  - context: |
+      <technical>
+    question: <How does MagentaTV differ from traditional TV services?>
+    answer: |
+      <MagentaTV offers IPTV services with features like on-demand content, cloud DVR, time-shifted viewing, and integration with streaming platforms, providing a more flexible and personalized viewing experience compared to traditional TV services.> 
+  - context: |
+      <Business>
+    question: <sWhat are Deutsche Telekom's key markets outside Germany?>
+    answer: |
+      <Key markets outside Germany include the United States (through T-Mobile US), various European countries (such as Hungary, Poland, Greece, and the Netherlands), and a presence in other regions through subsidiaries and partnerships.>
+  - context: |
+      <business>
+    question: <How does Deutsche Telekom support digital inclusion?>
+    answer: |
+      <Deutsche Telekom supports digital inclusion by investing in network infrastructure in underserved areas, offering affordable connectivity solutions, providing digital literacy programs, and partnering with organizations to bridge the digital divide.>  
+  - context: |
+      <business>
+    question: <What are the key components of Deutsche Telekom's digital transformation strategy?>
+    answer: |
+      <Key components include investing in 5G and fiber optic networks, enhancing digital services and platforms, leveraging AI and big data, and fostering innovation through partnerships and R&D.>  
+  - context: |
+      <business>
+    question: <How does Deutsche Telekom ensure customer satisfaction?>
+    answer: |
+      <Deutsche Telekom ensures customer satisfaction through high-quality service delivery, responsive customer support, regular feedback collection, and continuous improvement of products and services based on customer needs>  
+  - context: |
+      <business>
+    question: <What partnerships has Deutsche Telekom formed to advance its technological capabilities?>
+    answer: |
+      <Deutsche Telekom has formed partnerships with companies like Ericsson, Nokia, Huawei, and various tech startups to advance its technological capabilities, particularly in areas like 5G, IoT, and cloud computing.>
+  - context: |
+      <business>
+    question: <How does Deutsche Telekom's MagentaEINS benefit customers?>
+    answer: |
+      <MagentaEINS benefits customers by bundling mobile and fixed-line services, offering discounts, unified billing, and enhanced customer service, providing a more integrated and cost-effective telecommunications experience.>  
+  - context: |
+      <business>
+    question: <What measures does Deutsche Telekom take to foster innovation?>
+    answer: |
+      <Deutsche Telekom fosters innovation through its incubator hubraum, investing in startups, collaborating with academic institutions, hosting hackathons, and encouraging internal innovation projects across various business units.>  
+  - context: |
+      <business>
+    question: <How does Deutsche Telekom handle customer feedback?>
+    answer: |
+      <Deutsche Telekom collects customer feedback through surveys, social media, and direct interactions, using this data to improve services, address concerns, and enhance overall customer experience.>  
+  - context: |
+      <business>
+    question: <What are some notable innovations introduced by Deutsche Telekom?>
+    answer: |
+      <Notable innovations include the development of 5G infrastructure, the launch of smart home solutions, advancements in cloud computing, and the integration of AI in customer service through chatbots and virtual assistants.>  
+  - context: |
+      <business>
+    question: <How does Deutsche Telekom support employee development?>
+    answer: |
+      <Deutsche Telekom supports employee development through continuous learning programs, leadership training, career development workshops, and by fostering a culture of innovation and collaboration.>
+  - context: |
+      <business>
+    question: <What is Deutsche Telekom's approach to corporate governance?>
+    answer: |
+      <Deutsche Telekom's approach to corporate governance includes maintaining transparency, adhering to regulatory requirements, ensuring ethical conduct, and implementing robust internal controls and audit mechanisms.>  
+  - context: |
+      <business>
+    question: <What steps does Deutsche Telekom take to protect the environment?>
+    answer: |
+      <Deutsche Telekom takes steps such as reducing energy consumption, using renewable energy sources, minimizing waste through recycling programs, and promoting eco-friendly products and services.> 
+      
+  - context: |
+      <business>
+    question: <How does Deutsche Telekom handle network outages and disruptions?>
+    answer: |
+      <Deutsche Telekom handles network outages and disruptions by implementing robust incident management protocols, maintaining backup systems, conducting regular maintenance, and providing timely updates and support to affected customers.>  
+  - context: |
+      <business>
+    question: <What role does Deutsche Telekom play in advancing smart city technologies?>
+    answer: |
+      <Deutsche Telekom plays a role in advancing smart city technologies by providing IoT solutions, supporting infrastructure development, offering connectivity services, and collaborating with municipalities to implement smart city projects that enhance urban living.>  
+  - context: |
+      <business>
+    question: <Where can I seek help to fix my internet connection?>
+    answer: |
+      <You can contact Deutsche Telekom's customer service through their hotline, visit a local service center, or use the online support chat on their official website.>
+  - context: |
+       <customer service>
+    question: <How can I check my data usage and billing information?>
+    answer: |
+      <You can check your data usage and billing information through the Deutsche Telekom app, online customer portal, or by contacting customer service for assistance.>  
+  - context: |
+       <customer service>
+    question: <What should I do if I experience issues with my MagentaTV service?>
+    answer: |
+      <If you experience issues with your MagentaTV service, you can troubleshoot using the online help guides, contact customer support via phone or chat, or request a technician.>  
+  - context: |
+      <customer service>
+    question: <How can I upgrade my current MagentaEINS plan?>
+    answer: |
+      <You can upgrade your MagentaEINS plan by visiting the Deutsche Telekom website, using the customer portal, calling customer service, or visiting a local Telekom store.>
+  - context: |
+      <customer service>
+    question: <Where can I find information about the latest promotions and offers from Deutsche Telekom?>
+    answer: |
+      <Information about the latest promotions and offers can be found on the Deutsche Telekom website, in their app, through email newsletters, or by contacting customer service.>
+document:
+  repo: https://github.com/tbd
+  commit: tbd
+  patterns:
+    - tbd
