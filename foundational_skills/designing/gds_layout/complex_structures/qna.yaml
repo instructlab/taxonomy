@@ -1,0 +1,282 @@
+created_by: Bo Wen<bwen@us.ibm.com>, Kuan Yu Hsieh<kyhsieh@ibm.com>
+seed_examples:
+- answer: 'Here''s the Python code to generate a GDSII file for a microfluidic chip
+    with the given specifications:
+
+
+    ```python
+
+    import gdspy
+
+
+    # Initialize the GDSII library
+
+    lib = gdspy.GdsLibrary()
+
+
+    # Create a new cell
+
+    cell = lib.new_cell(''MICROFLUIDIC_CHIP'')
+
+
+    # Layer 0: Chip bulk
+
+    chip_bulk = gdspy.Rectangle((0, 0), (30, 20), layer=0)
+
+    cell.add(chip_bulk)
+
+
+    # Layer 2: Vias
+
+    via_radius = 2.0
+
+    via1_center = (5, 10)  # Center of the first via
+
+    via2_center = (25, 10)  # Center of the second via, 20 mm apart from the first
+
+    via1 = gdspy.Round(via1_center, via_radius, layer=2)
+
+    via2 = gdspy.Round(via2_center, via_radius, layer=2)
+
+    cell.add(via1)
+
+    cell.add(via2)
+
+
+    # Layer 3: Channel connecting the centers of the vias
+
+    channel_width = 1.0
+
+    channel_start = (via1_center[0], via1_center[1] - channel_width / 2)
+
+    channel_end = (via2_center[0], via2_center[1] + channel_width / 2)
+
+    channel = gdspy.Rectangle(channel_start, channel_end, layer=3)
+
+    cell.add(channel)
+
+
+    # Define the filename
+
+    filename = "MicrofluidicChip.gds"
+
+
+    # Save the GDSII file
+
+    lib.write_gds(filename)
+
+
+    print(f"GDSII file ''{filename}'' has been created successfully.")
+
+    ```
+
+
+    This code will create a GDSII file named "MicrofluidicChip.gds" containing a microfluidic
+    chip design with the specified layers and components.'
+  context: MicrofluidicChip.gds
+  question: Draw a design of a microfluidic chip. On layer 0, it is the bulk of the
+    chip. It is a 30 * 20 mm rectangle. On layer 2 (via level), draw two circular
+    vias, with 2 mm radius, and 20 mm apart horizontally. On layer 3 (channel level),
+    draw a rectangular shaped channel (width = 1 mm) that connects the two vias at
+    their center.
+- answer: "Here's the Python code to generate a GDSII file for the specified via connection\
+    \ design:\n\n```python\nimport gdspy\n\n# Create the GDSII library\nlib = gdspy.GdsLibrary()\n\
+    \n# Create a new cell in the library\ncell = lib.new_cell('VIA_CONNECTION')\n\n\
+    # Define the layers\nVIA_LAYER = 1\nMETAL_LAYER = 2\nPAD_LAYER = 3\n\n# Define\
+    \ the dimensions and positions\nvia_radius = 10\npad_radius = 30\nmetal_margin\
+    \ = 5\nmetal_width = 2 * via_radius + 2 * metal_margin\nmetal_length = 600\nvia_edge_margin\
+    \ = 50\npad_to_metal_gap = 10\n\n# Positions of the vias\nvia1_position = (pad_radius\
+    \ + pad_to_metal_gap, 150)\nvia2_position = (metal_length - pad_radius - pad_to_metal_gap,\
+    \ 150)\n\n# Create the vias\nvia1 = gdspy.Round(via1_position, via_radius, layer=VIA_LAYER)\n\
+    via2 = gdspy.Round(via2_position, via_radius, layer=VIA_LAYER)\n\n# Create the\
+    \ metal connection\nmetal_connection = gdspy.Rectangle(\n    (via1_position[0]\
+    \ - via_radius - metal_margin, via1_position[1] - metal_width / 2),\n    (via2_position[0]\
+    \ + via_radius + metal_margin, via2_position[1] + metal_width / 2),\n    layer=METAL_LAYER\n\
+    )\n\n# Create the pads\npad1 = gdspy.Round(via1_position, pad_radius, layer=PAD_LAYER)\n\
+    pad2 = gdspy.Round(via2_position, pad_radius, layer=PAD_LAYER)\n\n# Add the shapes\
+    \ to the cell\ncell.add(via1)\ncell.add(via2)\ncell.add(metal_connection)\ncell.add(pad1)\n\
+    cell.add(pad2)\n\n# Define the filename\nfilename = \"ViaConnection.gds\"\n\n\
+    # Save the GDSII file\nlib.write_gds(filename)\n\nprint(f\"GDSII file '{filename}'\
+    \ has been created successfully.\")\n```\n\nThis code will create a GDSII file\
+    \ named \"ViaConnection.gds\" containing the via connection design with the specified\
+    \ layers, dimensions, and positions."
+  context: ViaConnection.gds
+  question: 'Create a design with three layers: via layer (yellow), metal layer (blue),
+    and pad layer (red). The via radius is 10 units, pad radius is 30 units, and metal
+    connection width is 40 units with a total length of 600 units. Position the first
+    via at (50, 150) and the second via at (550, 150). Ensure the metal connection
+    fully covers the vias and leaves a margin of 10 units between the edge of the
+    metal and the pads. Leave a space of 50 units between the vias and the edges of
+    the metal connection.'
+- answer: 'Here''s the Python code to generate a GDSII file for the basic layout as
+    specified:
+
+
+    ```python
+
+    import gdspy
+
+
+    # Create a GDSII library
+
+    lib = gdspy.GdsLibrary()
+
+
+    # Create a new cell
+
+    cell = lib.new_cell(''BASIC_LAYOUT'')
+
+
+    # Define the layers
+
+    active_layer = 1
+
+    poly_layer = 2
+
+    contact_layer = 3
+
+
+    # Add the active region (rectangle)
+
+    active_region = gdspy.Rectangle((0, 0), (10, 5), layer=active_layer)
+
+    cell.add(active_region)
+
+
+    # Add the polysilicon gate (vertical rectangle)
+
+    poly_gate = gdspy.Rectangle((4.5, 0), (5.5, 5), layer=poly_layer)
+
+    cell.add(poly_gate)
+
+
+    # Add the contact holes (squares)
+
+    contact1 = gdspy.Rectangle((3.5, 2), (4.5, 3), layer=contact_layer)
+
+    contact2 = gdspy.Rectangle((5.5, 2), (6.5, 3), layer=contact_layer)
+
+    cell.add(contact1)
+
+    cell.add(contact2)
+
+
+    # Define the filename
+
+    filename = "BasicLayout.gds"
+
+
+    # Save the library in a file
+
+    lib.write_gds(filename)
+
+
+    print(f"GDSII file ''{filename}'' has been created successfully.")
+
+    ```
+
+
+    This code will create a GDSII file named "BasicLayout.gds" containing the basic
+    layout with an active region, polysilicon gate, and contact holes as specified.'
+  context: BasicLayout.gds
+  question: "1. Draw a rectangular active region with dimensions 10 \xB5m x 5 \xB5\
+    m.\n2. Place a polysilicon gate that crosses the active region vertically at its\
+    \ center, with a width of 1 \xB5m.\n3. Add two square contact holes, each 1 \xB5\
+    m x 1 \xB5m, positioned 1 \xB5m away from the gate on either side along the active\
+    \ region."
+- answer: "Here's the Python code to generate a GDSII file for the complex layout\
+    \ as specified:\n\n```python\nimport gdspy\n\n# Create a GDSII library\nlib =\
+    \ gdspy.GdsLibrary()\n\n# Create a new cell\ncell = lib.new_cell('COMPLEX_LAYOUT')\n\
+    \n# Define the layers\nactive_layer = 1\npoly_layer = 2\ncontact_layer = 3\n\n\
+    # Add the active regions (rectangles)\nfor i in range(3):\n    active_region =\
+    \ gdspy.Rectangle((0, i*10), (20, 5 + i*10), layer=active_layer)\n    cell.add(active_region)\n\
+    \n# Add the complex polysilicon gate pattern\nfor i in range(21):\n    poly_vertical\
+    \ = gdspy.Rectangle((i, 0), (i+0.5, 30), layer=poly_layer)\n    cell.add(poly_vertical)\n\
+    \nfor i in range(6):\n    poly_horizontal = gdspy.Rectangle((0, i*5), (20, i*5\
+    \ + 0.5), layer=poly_layer)\n    cell.add(poly_horizontal)\n\n# Add the contact\
+    \ holes (squares) at intersections\nfor i in range(21):\n    for j in range(6):\n\
+    \        if i % 2 == 0:\n            contact = gdspy.Rectangle((i, j*5), (i+1,\
+    \ j*5+1), layer=contact_layer)\n            cell.add(contact)\n\n# Define the\
+    \ filename\nfilename = \"ComplexLayout.gds\"\n\n# Save the library in a file\n\
+    lib.write_gds(filename)\n\nprint(f\"GDSII file '{filename}' has been created successfully.\"\
+    )\n```\n\nThis code will create a GDSII file named \"ComplexLayout.gds\" containing\
+    \ the complex layout with active regions, polysilicon gate pattern, and contact\
+    \ holes as specified."
+  context: ComplexLayout.gds
+  question: "1. Draw three rectangular active regions with dimensions 20 \xB5m x 5\
+    \ \xB5m, positioned horizontally with 5 \xB5m spacing between them.\n2. Create\
+    \ a complex polysilicon gate pattern consisting of multiple vertical and horizontal\
+    \ lines, with widths of 0.5 \xB5m, forming a grid-like structure.\n3. Add several\
+    \ contact holes (each 1 \xB5m x 1 \xB5m) positioned at the intersections of the\
+    \ polysilicon gate pattern and the active regions."
+- answer: "Here's the Python code to generate a GDSII file for a deterministic lateral\
+    \ displacement (DLD) chip as specified:\n\n```python\nimport gdspy\nimport numpy\
+    \ as np\n\n# Define parameters\npillar_diameter = 0.4  # Pillar diameter in micrometers\
+    \ (400 nm)\ngap_size = 0.225  # Gap size between pillars in micrometers (225 nm)\n\
+    num_pillars_width = 30  # Number of pillars in the width\nrow_shift_fraction =\
+    \ 0.1  # Row shift fraction\nchannel_length = 60  # Number of rows in the channel\n\
+    inlet_diameter = 40  # Inlet diameter in micrometers\noutlet_diameter = 40  #\
+    \ Outlet diameter in micrometers\nbus_width = 20  # Bus width in micrometers\n\
+    bus_extension = 50  # Bus extension length in micrometers\nlayer = 0  # GDSII\
+    \ layer number\n\n# Create a new GDSII library\ngdsii_lib = gdspy.GdsLibrary()\n\
+    \n# Create a cell to contain the DLD chip\ncell = gdsii_lib.new_cell('DLD_CHIP')\n\
+    \n# Create the DLD pillar array\nfor row in range(channel_length):\n    y_offset\
+    \ = row * (pillar_diameter + gap_size)\n    x_shift = (row % int(1 / row_shift_fraction))\
+    \ * row_shift_fraction * (pillar_diameter + gap_size)\n    for col in range(num_pillars_width):\n\
+    \        x_offset = col * (pillar_diameter + gap_size) + x_shift\n        pillar\
+    \ = gdspy.Round((x_offset, y_offset), pillar_diameter / 2, layer=layer)\n    \
+    \    cell.add(pillar)\n\n# Define the channel dimensions\nchannel_width = num_pillars_width\
+    \ * (pillar_diameter + gap_size)\nchannel_height = channel_length * (pillar_diameter\
+    \ + gap_size)\n\n# Create the inlet and outlet circles\ninlet_center = (channel_width\
+    \ / 2, channel_height + bus_extension - inlet_diameter / 4)\noutlet_center = (channel_width\
+    \ / 2, -bus_extension + outlet_diameter / 4)\ninlet = gdspy.Round(inlet_center,\
+    \ inlet_diameter / 2, layer=layer)\noutlet = gdspy.Round(outlet_center, outlet_diameter\
+    \ / 2, layer=layer)\ncell.add(inlet)\ncell.add(outlet)\n\n# Create the bus channels\
+    \ connecting inlet and outlet to the DLD array\ninlet_bus = gdspy.Rectangle(\n\
+    \    (channel_width / 2 - bus_width / 2, channel_height),\n    (channel_width\
+    \ / 2 + bus_width / 2, channel_height + bus_extension),\n    layer=layer\n)\n\
+    outlet_bus = gdspy.Rectangle(\n    (channel_width / 2 - bus_width / 2, -bus_extension),\n\
+    \    (channel_width / 2 + bus_width / 2, 0),\n    layer=layer\n)\ncell.add(inlet_bus)\n\
+    cell.add(outlet_bus)\n\n# Define the filename\nfilename = \"DLDChip.gds\"\n\n\
+    # Save the GDSII file\ngdsii_lib.write_gds(filename)\n\nprint(f\"GDSII file '{filename}'\
+    \ has been created successfully.\")\n```\n\nThis code will create a GDSII file\
+    \ named \"DLDChip.gds\" containing a deterministic lateral displacement chip design\
+    \ with the specified dimensions and components."
+  context: DLDChip.gds
+  question: "Draw a deterministic lateral displacement chip - include channel that\
+    \ can hold the array has gap size = 225 nm, circular pillar size = 400 nm, width\
+    \ = 30 pillars, row shift fraction = 0.1, add an inlet and outlet 40 \xB5m diameter\
+    \ before and after the channel, use a 20*50 \xB5m bus to connect the inlet and\
+    \ outlet to the channel."
+- answer: "Here's the Python code to generate a GDSII file for a FinFET with the given\
+    \ specifications:\n\n```python\nimport gdspy\n\n# Define parameters\nfin_width\
+    \ = 0.1  # Width of the fin in micrometers\nfin_height = 0.2  # Height of the\
+    \ fin in micrometers\nfin_length = 1.0  # Length of the fin in micrometers\ngate_length\
+    \ = 0.1  # Length of the gate in micrometers\nsource_drain_length = 0.4  # Length\
+    \ of the source and drain regions in micrometers\nsource_drain_extension = 0.2\
+    \  # Extension of the source and drain regions beyond the fin\nlayer_fin = 1 \
+    \ # GDSII layer number for the fin\nlayer_gate = 2  # GDSII layer number for the\
+    \ gate\nlayer_source_drain = 3  # GDSII layer number for the source and drain\n\
+    \n# Create a new GDSII library\ngdsii_lib = gdspy.GdsLibrary()\n\n# Create a cell\
+    \ to contain the FinFET\ncell = gdsii_lib.new_cell('FinFET')\n\n# Create the fin\n\
+    fin = gdspy.Rectangle(\n    (-fin_length / 2, -fin_width / 2),\n    (fin_length\
+    \ / 2, fin_width / 2),\n    layer=layer_fin\n)\ncell.add(fin)\n\n# Create the\
+    \ gate\ngate = gdspy.Rectangle(\n    (-gate_length / 2, -fin_height / 2),\n  \
+    \  (gate_length / 2, fin_height / 2),\n    layer=layer_gate\n)\ncell.add(gate)\n\
+    \n# Create the source region\nsource = gdspy.Rectangle(\n    (-fin_length / 2\
+    \ - source_drain_extension, -fin_width / 2 - source_drain_length),\n    (-fin_length\
+    \ / 2, fin_width / 2 + source_drain_length),\n    layer=layer_source_drain\n)\n\
+    cell.add(source)\n\n# Create the drain region\ndrain = gdspy.Rectangle(\n    (fin_length\
+    \ / 2, -fin_width / 2 - source_drain_length),\n    (fin_length / 2 + source_drain_extension,\
+    \ fin_width / 2 + source_drain_length),\n    layer=layer_source_drain\n)\ncell.add(drain)\n\
+    \n# Define the filename\nfilename = \"FinFET.gds\"\n\n# Save the GDSII file\n\
+    gdsii_lib.write_gds(filename)\n\nprint(f\"GDSII file '{filename}' has been created\
+    \ successfully.\")\n```\n\nThis code will create a GDSII file named \"FinFET.gds\"\
+    \ containing a FinFET design with the specified dimensions and layers."
+  context: FinFET.gds
+  question: "Draw a FinFET with the following specifications:\n- Fin width: 0.1 \xB5\
+    m\n- Fin height: 0.2 \xB5m\n- Fin length: 1.0 \xB5m\n- Gate length: 0.1 \xB5m\n\
+    - Source/drain length: 0.4 \xB5m\n- Source/drain extension beyond the fin: 0.2\
+    \ \xB5m\nUse separate layers for the fin, gate, and source/drain regions."
+task_description: Generate Python code for complex_structures
+version: 2
