@@ -1,0 +1,4 @@
+Title of work: Maximo application Authorization
+Link to work: https://www.ibm.com/docs/en/mas-cd/maximo-manage/continuous-delivery?topic=groups-application-templates
+License of the work: ABCD
+Creator names: IBM Documentation
