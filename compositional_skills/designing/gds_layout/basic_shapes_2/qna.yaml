@@ -1,0 +1,365 @@
+created_by: Bo Wen<bwen@us.ibm.com>, Kuan Yu Hsieh<kyhsieh@ibm.com>
+seed_examples:
+- answer: 'Here''s the Python code to generate a GDSII file for a regular hexagon
+    with the given specifications:
+
+
+    ```python
+
+    import gdspy
+
+    import numpy as np
+
+
+    # Define parameters
+
+    edge_length = 10.0  # Length of each edge of the hexagon in mm
+
+    layer = 0  # GDSII layer number
+
+
+    # Calculate the radius of the circumcircle of the hexagon
+
+    radius = edge_length
+
+
+    # Generate the vertices of the hexagon
+
+    angles = np.linspace(0, 2 * np.pi, 7)
+
+    vertices = [(radius * np.cos(angle), radius * np.sin(angle)) for angle in angles[:-1]]
+
+
+    # Create a new GDSII library
+
+    gdsii_lib = gdspy.GdsLibrary()
+
+
+    # Create a cell to contain the hexagon
+
+    cell = gdsii_lib.new_cell(''HEXAGON'')
+
+
+    # Create the hexagon polygon
+
+    hexagon = gdspy.Polygon(vertices, layer=layer)
+
+
+    # Add the hexagon to the cell
+
+    cell.add(hexagon)
+
+
+    # Define the filename
+
+    filename = "Hexagon.gds"
+
+
+    # Save the GDSII file
+
+    gdsii_lib.write_gds(filename)
+
+
+    print(f"GDSII file ''{filename}'' has been created successfully.")
+
+    ```
+
+
+    This code will create a GDSII file named "Hexagon.gds" containing a regular hexagon
+    with the specified dimensions.'
+  question: Generate a regular hexagon with each edge 10 mm, center at 0,0.
+- answer: 'Here''s the Python code to generate a GDSII file for a regular pentagon
+    with the given specifications:
+
+
+    ```python
+
+    import gdspy
+
+    import numpy as np
+
+
+    # Define parameters
+
+    edge_length = 10.0  # Length of each edge of the pentagon in mm
+
+    layer = 0  # GDSII layer number
+
+
+    # Calculate the radius of the circumcircle of the pentagon
+
+    radius = edge_length / (2 * np.sin(np.pi / 5))
+
+
+    # Generate the vertices of the pentagon
+
+    angles = np.linspace(0, 2 * np.pi, 6)
+
+    vertices = [(radius * np.cos(angle), radius * np.sin(angle)) for angle in angles[:-1]]
+
+
+    # Create a new GDSII library
+
+    gdsii_lib = gdspy.GdsLibrary()
+
+
+    # Create a cell to contain the pentagon
+
+    cell = gdsii_lib.new_cell(''PENTAGON'')
+
+
+    # Create the pentagon polygon
+
+    pentagon = gdspy.Polygon(vertices, layer=layer)
+
+
+    # Add the pentagon to the cell
+
+    cell.add(pentagon)
+
+
+    # Define the filename
+
+    filename = "Pentagon.gds"
+
+
+    # Save the GDSII file
+
+    gdsii_lib.write_gds(filename)
+
+
+    print(f"GDSII file ''{filename}'' has been created successfully.")
+
+    ```
+
+
+    This code will create a GDSII file named "Pentagon.gds" containing a regular pentagon
+    with the specified dimensions.'
+  question: Generate a regular pentagon with each edge 10 mm, center at 0,0.
+- answer: 'Here''s the Python code to generate a GDSII file for a heptagon with the
+    given specifications:
+
+
+    ```python
+
+    import gdspy
+
+    import numpy as np
+
+
+    # Define parameters
+
+    edge_length = 10.0  # Length of each edge of the heptagon in mm
+
+    layer = 0  # GDSII layer number
+
+
+    # Calculate the radius of the circumcircle of the heptagon
+
+    radius = edge_length / (2 * np.sin(np.pi / 7))
+
+
+    # Generate the vertices of the heptagon
+
+    angles = np.linspace(0, 2 * np.pi, 8)
+
+    vertices = [(radius * np.cos(angle), radius * np.sin(angle)) for angle in angles[:-1]]
+
+
+    # Create a new GDSII library
+
+    gdsii_lib = gdspy.GdsLibrary()
+
+
+    # Create a cell to contain the heptagon
+
+    cell = gdsii_lib.new_cell(''HEPTAGON'')
+
+
+    # Create the heptagon polygon
+
+    heptagon = gdspy.Polygon(vertices, layer=layer)
+
+
+    # Add the heptagon to the cell
+
+    cell.add(heptagon)
+
+
+    # Define the filename
+
+    filename = "Heptagon.gds"
+
+
+    # Save the GDSII file
+
+    gdsii_lib.write_gds(filename)
+
+
+    print(f"GDSII file ''{filename}'' has been created successfully.")
+
+    ```
+
+
+    This code will create a GDSII file named "Heptagon.gds" containing a heptagon
+    with the specified dimensions.'
+  question: Generate a Heptagon with each edge 10 mm, center at 0,0.
+- answer: 'Here''s the Python code to generate a GDSII file for an octagon with the
+    given specifications:
+
+
+    ```python
+
+    import gdspy
+
+    import numpy as np
+
+
+    # Define parameters
+
+    edge_length = 10.0  # Length of each edge of the octagon in mm
+
+    layer = 0  # GDSII layer number
+
+
+    # Calculate the radius of the circumcircle of the octagon
+
+    radius = edge_length / (2 * np.sin(np.pi / 8))
+
+
+    # Generate the vertices of the octagon
+
+    angles = np.linspace(0, 2 * np.pi, 9)
+
+    vertices = [(radius * np.cos(angle), radius * np.sin(angle)) for angle in angles[:-1]]
+
+
+    # Create a new GDSII library
+
+    gdsii_lib = gdspy.GdsLibrary()
+
+
+    # Create a cell to contain the octagon
+
+    cell = gdsii_lib.new_cell(''OCTAGON'')
+
+
+    # Create the octagon polygon
+
+    octagon = gdspy.Polygon(vertices, layer=layer)
+
+
+    # Add the octagon to the cell
+
+    cell.add(octagon)
+
+
+    # Define the filename
+
+    filename = "Octagon.gds"
+
+
+    # Save the GDSII file
+
+    gdsii_lib.write_gds(filename)
+
+
+    print(f"GDSII file ''{filename}'' has been created successfully.")
+
+    ```
+
+
+    This code will create a GDSII file named "Octagon.gds" containing an octagon with
+    the specified dimensions.'
+  question: Generate an Octagon with each edge 10 mm, center at 0,0.
+- answer: "Here's the Python code to generate a GDSII file for a trapezoid with the\
+    \ given specifications:\n\n```python\nimport gdspy\n\n# Define parameters\nupper_edge\
+    \ = 10.0  # Upper edge of the trapezoid in mm\nlower_edge = 20.0  # Lower edge\
+    \ of the trapezoid in mm\nheight = 8.0  # Height of the trapezoid in mm\nlayer\
+    \ = 0  # GDSII layer number\n\n# Calculate the half-widths of the upper and lower\
+    \ edges\nhalf_upper_edge = upper_edge / 2\nhalf_lower_edge = lower_edge / 2\n\n\
+    # Vertices of the trapezoid centered at (0,0)\nvertices = [\n    (-half_lower_edge,\
+    \ -height / 2),  # Lower left\n    (half_lower_edge, -height / 2),   # Lower right\n\
+    \    (half_upper_edge, height / 2),    # Upper right\n    (-half_upper_edge, height\
+    \ / 2)    # Upper left\n]\n\n# Create a new GDSII library\ngdsii_lib = gdspy.GdsLibrary()\n\
+    \n# Create a cell to contain the trapezoid\ncell = gdsii_lib.new_cell('TRAPEZOID')\n\
+    \n# Create the trapezoid polygon\ntrapezoid = gdspy.Polygon(vertices, layer=layer)\n\
+    \n# Add the trapezoid to the cell\ncell.add(trapezoid)\n\n# Define the filename\n\
+    filename = \"Trapezoid.gds\"\n\n# Save the GDSII file\ngdsii_lib.write_gds(filename)\n\
+    \nprint(f\"GDSII file '{filename}' has been created successfully.\")\n```\n\n\
+    This code will create a GDSII file named \"Trapezoid.gds\" containing a trapezoid\
+    \ with the specified dimensions."
+  question: Generate a Trapezoid with upper edge 10 mm, lower edge 20 mm, height 8
+    mm, center at 0,0.
+- answer: 'Here''s the Python code to generate a GDSII file with the specified text:
+
+
+    ```python
+
+    import gdspy
+
+
+    # Define parameters
+
+    text = "Hello, GDS!"
+
+    text_height = 5.0  # Height of the text in mm
+
+    layer = 1  # GDSII layer number
+
+
+    # Create a new GDSII library
+
+    gdsii_lib = gdspy.GdsLibrary()
+
+
+    # Create a cell to contain the text
+
+    cell = gdsii_lib.new_cell(''TEXT'')
+
+
+    # Create the text
+
+    text_obj = gdspy.Text(text, text_height, (0, 0), layer=layer)
+
+
+    # Get the text dimensions to center it
+
+    bbox = text_obj.get_bounding_box()
+
+    text_width = bbox[1][0] - bbox[0][0]
+
+    text_height_actual = bbox[1][1] - bbox[0][1]
+
+
+    # Move the text to center it at (0,0)
+
+    text_obj.translate(-text_width/2, -text_height_actual/2)
+
+
+    # Add the text to the cell
+
+    cell.add(text_obj)
+
+
+    # Define the filename
+
+    filename = "Text.gds"
+
+
+    # Save the GDSII file
+
+    gdsii_lib.write_gds(filename)
+
+
+    print(f"GDSII file ''{filename}'' has been created successfully.")
+
+    ```
+
+
+    This code will create a GDSII file named "Text.gds" containing the text "Hello,
+    GDS!" centered at (0,0) with a height of 5 mm on layer 1.'
+  question: Generate a GDS file with the text "Hello, GDS!" centered at (0,0), with
+    a height of 5 mm, on layer 1.
+task_description: Generate Python code for basic_shapes_2
+version: 2

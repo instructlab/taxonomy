@@ -1,0 +1,202 @@
+created_by: Bo Wen<bwen@us.ibm.com>, Kuan Yu Hsieh<kyhsieh@ibm.com>
+seed_examples:
+- answer: "Here's the Python code to generate a GDSII file for an arrow with the given\
+    \ specifications:\n\n```python\nimport gdspy\n\n# Define parameters\ntotal_length\
+    \ = 10.0  # Total length of the arrow in mm\nhead_length = total_length / 3  #\
+    \ Length of the arrow head in mm\nbody_length = total_length - head_length  #\
+    \ Length of the arrow body in mm\nhead_width = head_length  # Width of the arrow\
+    \ head in mm\nbody_width = head_width / 3  # Width of the arrow body in mm\nlayer\
+    \ = 0  # GDSII layer number\n\n# Vertices for the arrow\nvertices = [\n    (0,\
+    \ -body_width / 2),  # Start of body (bottom left)\n    (body_length, -body_width\
+    \ / 2),  # End of body (bottom right)\n    (body_length, -head_width / 2),  #\
+    \ Bottom of head\n    (total_length, 0),  # Tip of head\n    (body_length, head_width\
+    \ / 2),  # Top of head\n    (body_length, body_width / 2),  # End of body (top\
+    \ right)\n    (0, body_width / 2),  # Start of body (top left)\n    (0, -body_width\
+    \ / 2)  # Closing the polygon\n]\n\n# Create a new GDSII library\ngdsii_lib =\
+    \ gdspy.GdsLibrary()\n\n# Create a cell to contain the arrow\ncell = gdsii_lib.new_cell('ARROW')\n\
+    \n# Create the arrow polygon\narrow = gdspy.Polygon(vertices, layer=layer)\n\n\
+    # Add the arrow to the cell\ncell.add(arrow)\n\n# Define the filename\nfilename\
+    \ = \"Arrow.gds\"\n\n# Save the GDSII file\ngdsii_lib.write_gds(filename)\n\n\
+    print(f\"GDSII file '{filename}' has been created successfully.\")\n```\n\nThis\
+    \ code will create a GDSII file named \"Arrow.gds\" containing an arrow with the\
+    \ specified dimensions."
+  question: Generate an Arrow pointing to the right with length 10 mm, make the body
+    1/3 width of the head, start at 0,0.
+- answer: "Here's the Python code to generate a GDSII file for a square array with\
+    \ the given specifications:\n\n```python\nimport gdspy\n\n# Define parameters\n\
+    square_size = 5.0  # Size of each square in mm\nnum_columns = 10  # Number of\
+    \ columns\nnum_rows = 10  # Number of rows\nspacing = 20.0  # Spacing between\
+    \ squares in mm\nlayer = 0  # GDSII layer number\n\n# Calculate the position of\
+    \ the lower right square's upper right corner\nstart_x = -(square_size + spacing)\
+    \ * (num_columns - 1)\nstart_y = -(square_size + spacing) * (num_rows - 1)\n\n\
+    # Create a new GDSII library\ngdsii_lib = gdspy.GdsLibrary()\n\n# Create a cell\
+    \ to contain the array of squares\ncell = gdsii_lib.new_cell('SQUARE_ARRAY')\n\
+    \n# Loop to create the array of squares\nfor i in range(num_columns):\n    for\
+    \ j in range(num_rows):\n        lower_left_x = start_x + i * (square_size + spacing)\n\
+    \        lower_left_y = start_y + j * (square_size + spacing)\n        square\
+    \ = gdspy.Rectangle(\n            (lower_left_x, lower_left_y),\n            (lower_left_x\
+    \ + square_size, lower_left_y + square_size),\n            layer=layer\n     \
+    \   )\n        cell.add(square)\n\n# Define the filename\nfilename = \"SquareArray.gds\"\
+    \n\n# Save the GDSII file\ngdsii_lib.write_gds(filename)\n\nprint(f\"GDSII file\
+    \ '{filename}' has been created successfully.\")\n```\n\nThis code will create\
+    \ a GDSII file named \"SquareArray.gds\" containing a square array with the specified\
+    \ dimensions."
+  question: Generate a square array with 5*5 mm square, for 10 columns and 10 rows,
+    each 20 mm apart, the lower left corner of the upper right square is at 0,0.
+- answer: "Here's the Python code to generate a GDSII file for a serpentine pattern\
+    \ with the given specifications:\n\n```python\nimport gdspy\n\n# Constants for\
+    \ the design\npath_width = 1  # Width of the path in micrometers\nsegment_length\
+    \ = 50.0  # Length of the horizontal segments in micrometers\nsegment_height =\
+    \ 50.0  # Height of the vertical segments in micrometers\nnum_turns = 15  # Number\
+    \ of turns in the serpentine shape\nlayer = 2  # GDSII layer\ndatatype = 6  #\
+    \ GDSII datatype\n\n# Initialize the GDSII library\ngdsii = gdspy.GdsLibrary()\n\
+    \n# Create a new cell\ncell = gdsii.new_cell('SERPENTINE_PATTERN')\n\n# Starting\
+    \ point of the serpentine path\nx, y = 0, 0\n\n# Points for the serpentine path\n\
+    points = [(x, y)]\n\nfor i in range(num_turns):\n    # Move up or down depending\
+    \ on the turn index\n    y += segment_height if i % 2 == 0 else -segment_height\n\
+    \    points.append((x, y))\n\n    # Move to the right after each vertical move\
+    \ except after the last turn\n    if i < num_turns - 1:\n        x += segment_length\n\
+    \        points.append((x, y))\n\n# Create the serpentine path using gdspy.FlexPath\n\
+    serpentine_path = gdspy.FlexPath(\n    points, \n    path_width, \n    layer=layer,\
+    \ \n    datatype=datatype, \n    corners='natural'\n)\n\n# Add the path to the\
+    \ cell\ncell.add(serpentine_path)\n\n# Define the filename\nfilename = \"Serpentine.gds\"\
+    \n\n# Save the GDSII file\ngdsii.write_gds(filename)\n\nprint(f\"GDSII file '{filename}'\
+    \ has been created successfully.\")\n```\n\nThis code will create a GDSII file\
+    \ named \"Serpentine.gds\" containing a serpentine pattern with the specified\
+    \ dimensions and properties."
+  question: "Generate a serpentine pattern with a path width of 1 \xB5m, 15 turns,\
+    \ each segment being 50 \xB5m long and tall, starting at (0,0), on layer 2, datatype\
+    \ 6."
+- answer: "Here's the Python code to generate a GDSII file for a rounded square with\
+    \ the given specifications:\n\n```python\nimport gdspy\nimport numpy as np\n\n\
+    # Define parameters\nside_length = 10.0  # Side length of the square in mm\ncorner_radius\
+    \ = 1.0  # Radius of the rounded corners in mm\nlayer = 0  # GDSII layer number\n\
+    \n# Create a new GDSII library\ngdsii_lib = gdspy.GdsLibrary()\n\n# Create a cell\
+    \ to contain the rounded square\ncell = gdsii_lib.new_cell('ROUNDED_SQUARE')\n\
+    \n# Create the main body of the square excluding the rounded corners\nmain_body\
+    \ = gdspy.Rectangle(\n    (-side_length / 2 + corner_radius, -side_length / 2),\n\
+    \    (side_length / 2 - corner_radius, side_length / 2),\n    layer=layer\n)\n\
+    \n# Create the horizontal and vertical rectangles to fill in the sides\nhorizontal_rects\
+    \ = [\n    gdspy.Rectangle(\n        (-side_length / 2 + corner_radius, -side_length\
+    \ / 2),\n        (side_length / 2 - corner_radius, side_length / 2),\n       \
+    \ layer=layer\n    )\n]\n\nvertical_rects = [\n    gdspy.Rectangle(\n        (-side_length\
+    \ / 2, -side_length / 2 + corner_radius),\n        (-side_length / 2 + corner_radius,\
+    \ side_length / 2 - corner_radius),\n        layer=layer\n    ),\n    gdspy.Rectangle(\n\
+    \        (side_length / 2 - corner_radius, -side_length / 2 + corner_radius),\n\
+    \        (side_length / 2, side_length / 2 - corner_radius),\n        layer=layer\n\
+    \    )\n]\n\n# Create the arcs for the rounded corners with correct orientation\n\
+    rounded_corners = [\n    gdspy.Round(\n        (-side_length / 2 + corner_radius,\
+    \ -side_length / 2 + corner_radius),\n        corner_radius,\n        inner_radius=0,\n\
+    \        initial_angle=np.pi,\n        final_angle=1.5 * np.pi,\n        layer=layer\n\
+    \    ),\n    gdspy.Round(\n        (side_length / 2 - corner_radius, -side_length\
+    \ / 2 + corner_radius),\n        corner_radius,\n        inner_radius=0,\n   \
+    \     initial_angle=1.5 * np.pi,\n        final_angle=2 * np.pi,\n        layer=layer\n\
+    \    ),\n    gdspy.Round(\n        (side_length / 2 - corner_radius, side_length\
+    \ / 2 - corner_radius),\n        corner_radius,\n        inner_radius=0,\n   \
+    \     initial_angle=0,\n        final_angle=0.5 * np.pi,\n        layer=layer\n\
+    \    ),\n    gdspy.Round(\n        (-side_length / 2 + corner_radius, side_length\
+    \ / 2 - corner_radius),\n        corner_radius,\n        inner_radius=0,\n   \
+    \     initial_angle=0.5 * np.pi,\n        final_angle=np.pi,\n        layer=layer\n\
+    \    )\n]\n\n# Add the main body, horizontal rectangles, vertical rectangles,\
+    \ and rounded corners to the cell\ncell.add(main_body)\nfor rect in horizontal_rects:\n\
+    \    cell.add(rect)\nfor rect in vertical_rects:\n    cell.add(rect)\nfor corner\
+    \ in rounded_corners:\n    cell.add(corner)\n\n# Define the filename\nfilename\
+    \ = \"RoundedSquare.gds\"\n\n# Save the GDSII file\ngdsii_lib.write_gds(filename)\n\
+    \nprint(f\"GDSII file '{filename}' has been created successfully.\")\n```\n\n\
+    This code will create a GDSII file named \"RoundedSquare.gds\" containing a rounded\
+    \ square with the specified dimensions."
+  question: Draw a 10*10 mm square, and do corner rounding for each corner with r=1
+    mm.
+- answer: 'Here''s the Python code to generate a GDSII file for the basic layout as
+    specified:
+
+
+    ```python
+
+    import gdspy
+
+
+    # Create a GDSII library
+
+    lib = gdspy.GdsLibrary()
+
+
+    # Create a new cell
+
+    cell = lib.new_cell(''BASIC_LAYOUT'')
+
+
+    # Define the layers
+
+    active_layer = 1
+
+    poly_layer = 2
+
+    contact_layer = 3
+
+
+    # Add the active region (rectangle)
+
+    active_region = gdspy.Rectangle((0, 0), (10, 5), layer=active_layer)
+
+    cell.add(active_region)
+
+
+    # Add the polysilicon gate (vertical rectangle)
+
+    poly_gate = gdspy.Rectangle((4.5, 0), (5.5, 5), layer=poly_layer)
+
+    cell.add(poly_gate)
+
+
+    # Add the contact holes (squares)
+
+    contact1 = gdspy.Rectangle((3.5, 2), (4.5, 3), layer=contact_layer)
+
+    contact2 = gdspy.Rectangle((5.5, 2), (6.5, 3), layer=contact_layer)
+
+    cell.add(contact1)
+
+    cell.add(contact2)
+
+
+    # Define the filename
+
+    filename = "BasicLayout.gds"
+
+
+    # Save the library in a file
+
+    lib.write_gds(filename)
+
+
+    print(f"GDSII file ''{filename}'' has been created successfully.")
+
+    ```
+
+
+    This code will create a GDSII file named "BasicLayout.gds" containing the basic
+    layout with an active region, polysilicon gate, and contact holes as specified.'
+  question: "1. Draw a rectangular active region with dimensions 10 \xB5m x 5 \xB5\
+    m.\n2. Place a polysilicon gate that crosses the active region vertically at its\
+    \ center, with a width of 1 \xB5m.\n3. Add two square contact holes, each 1 \xB5\
+    m x 1 \xB5m, positioned 1 \xB5m away from the gate on either side along the active\
+    \ region."
+- answer: "Here's the Python code to generate a GDSII file for a parametric spiral\
+    \ with the given specifications:\n\n```python\nimport gdspy\nimport numpy as np\n\
+    \n# Define parameters\nt_values = np.linspace(0, 6 * np.pi, 1000)  # Parameter\
+    \ t from 0 to 6pi\nr_values = np.exp(-0.1 * t_values)  # r(t) = e^(-0.1t)\n\n\
+    # Calculate x and y coordinates of the spiral\nx_values = r_values * np.cos(t_values)\n\
+    y_values = r_values * np.sin(t_values)\n\n# Create a new GDSII library\ngdsii_lib\
+    \ = gdspy.GdsLibrary()\n\n# Create a cell to contain the spiral\ncell = gdsii_lib.new_cell('SPIRAL')\n\
+    \n# Create the spiral path\nspiral_path = gdspy.FlexPath(\n    points=list(zip(x_values,\
+    \ y_values)),\n    width=1,  # Path width in the desired units\n    layer=0\n\
+    )\n\n# Add the spiral path to the cell\ncell.add(spiral_path)\n\n# Define the\
+    \ filename\nfilename = \"Spiral.gds\"\n\n# Save the GDSII file\ngdsii_lib.write_gds(filename)\n\
+    \nprint(f\"GDSII file '{filename}' has been created successfully.\")\n```\n\n\
+    This code will create a GDSII file named \"Spiral.gds\" containing a parametric\
+    \ spiral with the specified equation and properties."
+  question: Generate a Parametric spiral with r(t) = e^(-0.1t), for 0 <= t <= 6pi,
+    line width 1.
+task_description: Generate Python code for advanced_shapes
+version: 2

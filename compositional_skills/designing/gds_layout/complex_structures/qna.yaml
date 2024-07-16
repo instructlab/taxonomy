@@ -73,7 +73,6 @@ seed_examples:
 
     This code will create a GDSII file named "MicrofluidicChip.gds" containing a microfluidic
     chip design with the specified layers and components.'
-  context: MicrofluidicChip.gds
   question: Draw a design of a microfluidic chip. On layer 0, it is the bulk of the
     chip. It is a 30 * 20 mm rectangle. On layer 2 (via level), draw two circular
     vias, with 2 mm radius, and 20 mm apart horizontally. On layer 3 (channel level),
@@ -100,7 +99,6 @@ seed_examples:
     \ has been created successfully.\")\n```\n\nThis code will create a GDSII file\
     \ named \"ViaConnection.gds\" containing the via connection design with the specified\
     \ layers, dimensions, and positions."
-  context: ViaConnection.gds
   question: 'Create a design with three layers: via layer (yellow), metal layer (blue),
     and pad layer (red). The via radius is 10 units, pad radius is 30 units, and metal
     connection width is 40 units with a total length of 600 units. Position the first
@@ -108,82 +106,40 @@ seed_examples:
     fully covers the vias and leaves a margin of 10 units between the edge of the
     metal and the pads. Leave a space of 50 units between the vias and the edges of
     the metal connection.'
-- answer: 'Here''s the Python code to generate a GDSII file for the basic layout as
-    specified:
-
-
-    ```python
-
-    import gdspy
-
-
-    # Create a GDSII library
-
-    lib = gdspy.GdsLibrary()
-
-
-    # Create a new cell
-
-    cell = lib.new_cell(''BASIC_LAYOUT'')
-
-
-    # Define the layers
-
-    active_layer = 1
-
-    poly_layer = 2
-
-    contact_layer = 3
-
-
-    # Add the active region (rectangle)
-
-    active_region = gdspy.Rectangle((0, 0), (10, 5), layer=active_layer)
-
-    cell.add(active_region)
-
-
-    # Add the polysilicon gate (vertical rectangle)
-
-    poly_gate = gdspy.Rectangle((4.5, 0), (5.5, 5), layer=poly_layer)
-
-    cell.add(poly_gate)
-
-
-    # Add the contact holes (squares)
-
-    contact1 = gdspy.Rectangle((3.5, 2), (4.5, 3), layer=contact_layer)
-
-    contact2 = gdspy.Rectangle((5.5, 2), (6.5, 3), layer=contact_layer)
-
-    cell.add(contact1)
-
-    cell.add(contact2)
-
-
-    # Define the filename
-
-    filename = "BasicLayout.gds"
-
-
-    # Save the library in a file
-
-    lib.write_gds(filename)
-
-
-    print(f"GDSII file ''{filename}'' has been created successfully.")
-
-    ```
-
-
-    This code will create a GDSII file named "BasicLayout.gds" containing the basic
-    layout with an active region, polysilicon gate, and contact holes as specified.'
-  context: BasicLayout.gds
-  question: "1. Draw a rectangular active region with dimensions 10 \xB5m x 5 \xB5\
-    m.\n2. Place a polysilicon gate that crosses the active region vertically at its\
-    \ center, with a width of 1 \xB5m.\n3. Add two square contact holes, each 1 \xB5\
-    m x 1 \xB5m, positioned 1 \xB5m away from the gate on either side along the active\
-    \ region."
+- answer: "Here's the Python code to generate a GDSII file for a circle with fiducial\
+    \ marks as specified:\n\n```python\nimport gdspy\n\n# Define parameters\ncircle_radius\
+    \ = 1.6e3  # radius in micrometers (1.6 mm = 1600 \xB5m)\nfiducial_spacing = 200\
+    \  # spacing in micrometers\nfiducial_size = 5  # size of fiducial mark in micrometers\n\
+    annotation_offset = 10  # offset for annotation text in micrometers\n\n# Create\
+    \ a new GDSII file and main cell\ngdsii_file = gdspy.GdsLibrary()\nmain_cell =\
+    \ gdsii_file.new_cell('MAIN')\n\n# Create the circle\ncircle = gdspy.Round((0,\
+    \ 0), circle_radius)\nmain_cell.add(circle)\n\n# Function to create a '+' shape\n\
+    def create_fiducial(center, size):\n    half_size = size / 2\n    # Vertical part\n\
+    \    vertical = gdspy.Rectangle(\n        (center[0] - half_size, center[1] -\
+    \ size),\n        (center[0] + half_size, center[1] + size)\n    )\n    # Horizontal\
+    \ part\n    horizontal = gdspy.Rectangle(\n        (center[0] - size, center[1]\
+    \ - half_size),\n        (center[0] + size, center[1] + half_size)\n    )\n  \
+    \  return [vertical, horizontal]\n\n# Function to create an annotation\ndef create_annotation(center,\
+    \ row, col):\n    label = f\"{row}{col}\"\n    text = gdspy.Text(label, 10, (center[0]\
+    \ + annotation_offset, center[1] + annotation_offset))\n    return text\n\n# Add\
+    \ fiducial marks ('+' shapes) and annotations inside the main circle\nnum_fiducials\
+    \ = int(circle_radius * 2 / fiducial_spacing)\nrows = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'\n\
+    \nfor x in range(-num_fiducials // 2, num_fiducials // 2 + 1):\n    for y in range(-num_fiducials\
+    \ // 2, num_fiducials // 2 + 1):\n        fiducial_center = (x * fiducial_spacing,\
+    \ y * fiducial_spacing)\n        if fiducial_center[0]**2 + fiducial_center[1]**2\
+    \ <= circle_radius**2:\n            fiducial = create_fiducial(fiducial_center,\
+    \ fiducial_size)\n            for part in fiducial:\n                main_cell.add(part)\n\
+    \            \n            row = rows[y + num_fiducials // 2]\n            col\
+    \ = x + num_fiducials // 2 + 1\n            annotation = create_annotation(fiducial_center,\
+    \ row, col)\n            main_cell.add(annotation)\n\n# Define the filename\n\
+    filename = \"FiducialCircle.gds\"\n\n# Save the GDSII file\ngdsii_file.write_gds(filename)\n\
+    \nprint(f\"GDSII file '{filename}' has been created successfully.\")\n```\n\n\
+    This code will create a GDSII file named \"FiducialCircle.gds\" containing a circle\
+    \ with fiducial marks and annotations as specified."
+  question: 'Draw a 3.2 mm circle, with fiducial marks inside. The fiducial marks
+    should be a "+" sign, with equal length and width. Each marker should be 200 um
+    apart. There will be annotations next to each marker. Row: A -> Z, column: start
+    from 1.'
 - answer: "Here's the Python code to generate a GDSII file for the complex layout\
     \ as specified:\n\n```python\nimport gdspy\n\n# Create a GDSII library\nlib =\
     \ gdspy.GdsLibrary()\n\n# Create a new cell\ncell = lib.new_cell('COMPLEX_LAYOUT')\n\
@@ -202,7 +158,6 @@ seed_examples:
     )\n```\n\nThis code will create a GDSII file named \"ComplexLayout.gds\" containing\
     \ the complex layout with active regions, polysilicon gate pattern, and contact\
     \ holes as specified."
-  context: ComplexLayout.gds
   question: "1. Draw three rectangular active regions with dimensions 20 \xB5m x 5\
     \ \xB5m, positioned horizontally with 5 \xB5m spacing between them.\n2. Create\
     \ a complex polysilicon gate pattern consisting of multiple vertical and horizontal\
@@ -242,7 +197,6 @@ seed_examples:
     \ has been created successfully.\")\n```\n\nThis code will create a GDSII file\
     \ named \"DLDChip.gds\" containing a deterministic lateral displacement chip design\
     \ with the specified dimensions and components."
-  context: DLDChip.gds
   question: "Draw a deterministic lateral displacement chip - include channel that\
     \ can hold the array has gap size = 225 nm, circular pillar size = 400 nm, width\
     \ = 30 pillars, row shift fraction = 0.1, add an inlet and outlet 40 \xB5m diameter\
@@ -273,10 +227,33 @@ seed_examples:
     gdsii_lib.write_gds(filename)\n\nprint(f\"GDSII file '{filename}' has been created\
     \ successfully.\")\n```\n\nThis code will create a GDSII file named \"FinFET.gds\"\
     \ containing a FinFET design with the specified dimensions and layers."
-  context: FinFET.gds
   question: "Draw a FinFET with the following specifications:\n- Fin width: 0.1 \xB5\
     m\n- Fin height: 0.2 \xB5m\n- Fin length: 1.0 \xB5m\n- Gate length: 0.1 \xB5m\n\
     - Source/drain length: 0.4 \xB5m\n- Source/drain extension beyond the fin: 0.2\
     \ \xB5m\nUse separate layers for the fin, gate, and source/drain regions."
+- answer: "Here's the Python code to generate a GDSII file for a rectangle with text\
+    \ as specified:\n\n```python\nimport gdspy\n\n# Define parameters\nrectangle_width\
+    \ = 30.0  # Width of the rectangle in mm\nrectangle_height = 10.0  # Height of\
+    \ the rectangle in mm\ntext = \"IBM Research\"  # Text to be added\ntext_size\
+    \ = 2.0  # Size of the text in mm\ntext_layer = 1  # GDSII layer number for the\
+    \ text\nrectangle_layer = 0  # GDSII layer number for the rectangle\n\n# Create\
+    \ a new GDSII library\ngdsii_lib = gdspy.GdsLibrary()\n\n# Create a cell to contain\
+    \ the rectangle and text\ncell = gdsii_lib.new_cell('RECTANGLE_WITH_TEXT')\n\n\
+    # Create the rectangle\nrectangle = gdspy.Rectangle(\n    (-rectangle_width /\
+    \ 2, -rectangle_height / 2),\n    (rectangle_width / 2, rectangle_height / 2),\n\
+    \    layer=rectangle_layer\n)\ncell.add(rectangle)\n\n# Create the text and calculate\
+    \ the bounding box\ntext_label = gdspy.Text(\n    text,\n    text_size,\n    position=(0,\
+    \ 0),\n    layer=text_layer\n)\n\n# Calculate the text width and height to center\
+    \ it properly\ntext_bounding_box = text_label.get_bounding_box()\ntext_width =\
+    \ text_bounding_box[1][0] - text_bounding_box[0][0]\ntext_height = text_bounding_box[1][1]\
+    \ - text_bounding_box[0][1]\n\n# Adjust the text position to center it within\
+    \ the rectangle\ntext_label.translate(-text_width / 2, -text_height / 2)\n\n#\
+    \ Add the text to the cell\ncell.add(text_label)\n\n# Define the filename\nfilename\
+    \ = \"RectangleWithText.gds\"\n\n# Save the GDSII file\ngdsii_lib.write_gds(filename)\n\
+    \nprint(f\"GDSII file '{filename}' has been created successfully.\")\n```\n\n\
+    This code will create a GDSII file named \"RectangleWithText.gds\" containing\
+    \ a rectangle with centered text as specified."
+  question: Generate a GDS with a 30*10 mm rectangle on layer 0 with a text "IBM Research"
+    at the center of the rectangle. Put the text on layer 1.
 task_description: Generate Python code for complex_structures
 version: 2

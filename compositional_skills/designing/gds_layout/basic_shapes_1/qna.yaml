@@ -1,0 +1,313 @@
+created_by: Bo Wen<bwen@us.ibm.com>, Kuan Yu Hsieh<kyhsieh@ibm.com>
+seed_examples:
+- answer: 'Here''s the Python code to generate a GDSII file for a circle with the
+    given specifications:
+
+
+    ```python
+
+    import gdspy
+
+
+    # Define parameters
+
+    radius = 10.0  # Radius of the circle in mm
+
+    center = (0, 0)  # Center of the circle
+
+    layer = 0  # GDSII layer number
+
+
+    # Create a new GDSII library
+
+    gdsii_lib = gdspy.GdsLibrary()
+
+
+    # Create a cell to contain the circle
+
+    cell = gdsii_lib.new_cell(''CIRCLE'')
+
+
+    # Create the circle
+
+    circle = gdspy.Round(center, radius, layer=layer)
+
+
+    # Add the circle to the cell
+
+    cell.add(circle)
+
+
+    # Define the filename
+
+    filename = "Circle.gds"
+
+
+    # Save the GDSII file
+
+    gdsii_lib.write_gds(filename)
+
+
+    print(f"GDSII file ''{filename}'' has been created successfully.")
+
+    ```
+
+
+    This code will create a GDSII file named "Circle.gds" containing a circle with
+    a radius of 10 mm, centered at (0,0), on layer 0.'
+  question: Write a Python code to generate GDSII for a circle on layer 0, radius
+    = 10 mm, center at 0,0.
+- answer: 'Here''s the Python code to generate a GDSII file for a donut shape with
+    the given specifications:
+
+
+    ```python
+
+    import gdspy
+
+
+    # Define parameters
+
+    outer_radius = 10.0  # Outer radius of the donut in mm
+
+    inner_radius = 5.0  # Inner radius of the donut in mm
+
+    center = (0, 0)  # Center of the donut
+
+    layer = 0  # GDSII layer number
+
+    max_points_distance = 0.01  # Maximum distance between points in mm
+
+
+    # Create a new GDSII library
+
+    gdsii_lib = gdspy.GdsLibrary()
+
+
+    # Create a cell to contain the donut
+
+    cell = gdsii_lib.new_cell(''DONUT'')
+
+
+    # Create the outer circle
+
+    outer_circle = gdspy.Round(center, outer_radius, tolerance=max_points_distance,
+    layer=layer)
+
+
+    # Create the inner circle (as a hole)
+
+    inner_circle = gdspy.Round(center, inner_radius, tolerance=max_points_distance,
+    layer=layer)
+
+
+    # Combine the outer and inner circles to form a donut (annulus)
+
+    donut = gdspy.boolean(outer_circle, inner_circle, ''not'', layer=layer)
+
+
+    # Add the donut to the cell
+
+    cell.add(donut)
+
+
+    # Define the filename
+
+    filename = "Donut.gds"
+
+
+    # Save the GDSII file
+
+    gdsii_lib.write_gds(filename)
+
+
+    print(f"GDSII file ''{filename}'' has been created successfully.")
+
+    ```
+
+
+    This code will create a GDSII file named "Donut.gds" containing a donut shape
+    with the specified dimensions.'
+  question: Generate a donut shape with 10 mm outer radius and 5 mm inner radius.
+    Make the circle smoother by setting max distance between point 0.01mm.
+- answer: 'Here''s the Python code to generate a GDSII file for an oval with the given
+    specifications:
+
+
+    ```python
+
+    import gdspy
+
+    import numpy as np
+
+
+    # Define parameters
+
+    major_axis = 20.0  # Major axis of the oval in mm
+
+    minor_axis = 13.0  # Minor axis of the oval in mm
+
+    center = (0, 0)  # Center of the oval
+
+    layer = 0  # GDSII layer number
+
+    num_points = 100  # Number of points to approximate the ellipse
+
+
+    # Create a new GDSII library
+
+    gdsii_lib = gdspy.GdsLibrary()
+
+
+    # Create a cell to contain the oval
+
+    cell = gdsii_lib.new_cell(''OVAL'')
+
+
+    # Generate points for the ellipse
+
+    t = np.linspace(0, 2 * np.pi, num_points)
+
+    x = (major_axis / 2) * np.cos(t) + center[0]
+
+    y = (minor_axis / 2) * np.sin(t) + center[1]
+
+    points = np.column_stack((x, y))
+
+
+    # Create the polygon for the oval
+
+    oval = gdspy.Polygon(points, layer=layer)
+
+
+    # Add the oval to the cell
+
+    cell.add(oval)
+
+
+    # Define the filename
+
+    filename = "Oval.gds"
+
+
+    # Save the GDSII file
+
+    gdsii_lib.write_gds(filename)
+
+
+    print(f"GDSII file ''{filename}'' has been created successfully.")
+
+    ```
+
+
+    This code will create a GDSII file named "Oval.gds" containing an oval with the
+    specified dimensions.'
+  question: Generate an oval with major axis of 20 mm, minor axis of 13 mm, on layer
+    0, center at 0,0.
+- answer: 'Here''s the Python code to generate a GDSII file for a square with the
+    given specifications:
+
+
+    ```python
+
+    import gdspy
+
+
+    # Define parameters
+
+    width = 10.0  # Width of the square in mm
+
+    layer = 0  # GDSII layer number
+
+
+    # Coordinates for the square
+
+    lower_right = (0, 0)
+
+    lower_left = (-width, 0)
+
+    upper_left = (-width, width)
+
+    upper_right = (0, width)
+
+    points = [lower_right, lower_left, upper_left, upper_right]
+
+
+    # Create a new GDSII library
+
+    gdsii_lib = gdspy.GdsLibrary()
+
+
+    # Create a cell to contain the square
+
+    cell = gdsii_lib.new_cell(''SQUARE'')
+
+
+    # Create the square polygon
+
+    square = gdspy.Polygon(points, layer=layer)
+
+
+    # Add the square to the cell
+
+    cell.add(square)
+
+
+    # Define the filename
+
+    filename = "Square.gds"
+
+
+    # Save the GDSII file
+
+    gdsii_lib.write_gds(filename)
+
+
+    print(f"GDSII file ''{filename}'' has been created successfully.")
+
+    ```
+
+
+    This code will create a GDSII file named "Square.gds" containing a square with
+    the specified dimensions.'
+  question: Generate a square with width 10 mm, put lower right corner of the square
+    at 0,0.
+- answer: "Here's the Python code to generate a GDSII file for an equilateral triangle\
+    \ with the given specifications:\n\n```python\nimport gdspy\nimport numpy as np\n\
+    \n# Define parameters\nedge_length = 10.0  # Length of each edge of the triangle\
+    \ in mm\nlayer = 0  # GDSII layer number\n\n# Calculate the height of the equilateral\
+    \ triangle\nheight = np.sqrt(3) / 2 * edge_length\n\n# Calculate the vertices\
+    \ of the triangle\nvertices = [\n    (0, 2 * height / 3),  # Top vertex\n    (-edge_length\
+    \ / 2, -height / 3),  # Bottom left vertex\n    (edge_length / 2, -height / 3)\
+    \  # Bottom right vertex\n]\n\n# Create a new GDSII library\ngdsii_lib = gdspy.GdsLibrary()\n\
+    \n# Create a cell to contain the triangle\ncell = gdsii_lib.new_cell('TRIANGLE')\n\
+    \n# Create the triangle polygon\ntriangle = gdspy.Polygon(vertices, layer=layer)\n\
+    \n# Add the triangle to the cell\ncell.add(triangle)\n\n# Define the filename\n\
+    filename = \"Triangle.gds\"\n\n# Save the GDSII file\ngdsii_lib.write_gds(filename)\n\
+    \nprint(f\"GDSII file '{filename}' has been created successfully.\")\n```\n\n\
+    This code will create a GDSII file named \"Triangle.gds\" containing an equilateral\
+    \ triangle with the specified dimensions."
+  question: Generate a triangle with each edge 10 mm, center at 0,0.
+- answer: "Here's the Python code to generate a GDSII file for a grid with the given\
+    \ specifications:\n\n```python\nimport gdspy\n\n# Define parameters\ngrid_spacing\
+    \ = 5.0  # Spacing of the grid in \xB5m\ntotal_width = 200.0  # Total width of\
+    \ the grid in \xB5m\ntotal_height = 400.0  # Total height of the grid in \xB5\
+    m\nlayer = 1  # GDSII layer number\ndatatype = 4  # GDSII datatype\nplacement_x\
+    \ = 0.1  # Placement x-coordinate in \xB5m (100 nm)\nplacement_y = 0.8  # Placement\
+    \ y-coordinate in \xB5m (800 nm)\n\n# Create a new GDSII library\ngdsii_lib =\
+    \ gdspy.GdsLibrary()\n\n# Create a cell to contain the grid\ncell = gdsii_lib.new_cell('GRID')\n\
+    \n# Create vertical lines\nx = placement_x\nwhile x <= placement_x + total_width:\n\
+    \    line = gdspy.Rectangle((x, placement_y), (x, placement_y + total_height),\
+    \ layer=layer, datatype=datatype)\n    cell.add(line)\n    x += grid_spacing\n\
+    \n# Create horizontal lines\ny = placement_y\nwhile y <= placement_y + total_height:\n\
+    \    line = gdspy.Rectangle((placement_x, y), (placement_x + total_width, y),\
+    \ layer=layer, datatype=datatype)\n    cell.add(line)\n    y += grid_spacing\n\
+    \n# Define the filename\nfilename = \"Grid.gds\"\n\n# Save the GDSII file\ngdsii_lib.write_gds(filename)\n\
+    \nprint(f\"GDSII file '{filename}' has been created successfully.\")\n```\n\n\
+    This code will create a GDSII file named \"Grid.gds\" containing a grid with the\
+    \ specified dimensions and properties."
+  question: "Draw the GDSII for a grid: Grid on Layer 1, DATATYPE 4, 5 \xB5m grid,\
+    \ and total width is 200 \xB5m and height is 400 \xB5m, placed at coordinates\
+    \ (100,800) nanometers."
+task_description: Generate Python code for basic_shapes_1
+version: 2
