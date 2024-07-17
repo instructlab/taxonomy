@@ -1,0 +1,28 @@
+version: 1
+task_description: 'Adding new knowledge to improve the accuracy of answers provided by granite'
+created_by: immanuelhazel
+domain: challenge
+seed_examples:
+ - question: What types of AI use cases should I use Granite 13b for?
+   answer: |
+     The Granite 13 Billion chat V2 (granite-13b-chat-v2) model is the chat-focused variant initialized from the pre-trained Granite Base 13 Billion Base V2 (granite-13b-base-v2) model. granite-13b-base-v2 has been trained using over 2.5T tokens. IBM Generative AI Large Language Foundation Models are Enterprise-level English-language models trained with large a volume of data that has been subjected to intensive pre-processing and careful analysis. Granite-13b-chat-v2 is a chat-focused model that was tuned to improve its ability to perform Retrieval Augmented Generation (RAG) use cases. In version 2.1.0, IBM has applied a novel alignment technique for LLMs using large-scale targeted alignment for a generalist LLM. This alignment technique significantly improves base model performance by knowledge infusion during the initial phase of alignment, and improves instruction following performance via skills and style infusion in the subsequent phase of alignment.
+ - question: How as Granite 13b trained?
+   answer: |
+     The Granite pre-training dataset was created as a proprietary alternative to commonly used open-source data compilations for LLM training, such as “The Pile” or “C4”. Some domains that are key for enterprise natural language processing are relatively under-represented in these compilations.Additionally, these data compilations have been criticised for containing toxic, harmful, or pirated content. By curating its own pre-training data corpus, IBM takes significant steps towards addressing these and other issues. The IBM curated pre-training dataset is continually growing and evolving, with additional data reviewed and considered to be added to the corpus at regular intervals. In addition to increasing the size and scope of pre-training data, new versions of these datasets are regularly generated and maintained to reflect enhanced filtering capabilities (e.g., de-duplication and hate and profanity detection) and improved tooling. Granite 13bs initial phase of pre-training involved IBM curating 48 TB of data before pre-processing and 2.07 TB after pre-processing. All datasets were filtered English-text and code unstructured data files. There are no pre-defined labels or targets. All non-text artifacts (e.g., images, HTML tags, etc.) were removed.
+ - question: How do I connect Granite 13b to IBM watsonx.data?
+   answer: |
+     You can connect watsonx.ai to watsonx.data programatically using a database connector.
+ - question: What is the size of the context window in Granite 13b?
+   answer: |
+     The context window length is 8192 bytes.  Which can support approximate 5 turns in a conversation
+ - question: How do I do multi-shot prompting using Granite 13b?
+   answer: |
+     You can develop generative AI solutions using multi-shot prompting with foundation models such as Granite 13b in IBM watsonx.ai. You can generate prompts for different AI use cases such as generate, classify, summarize, or extract content from your input text. Choose from IBM models or open source models from Hugging Face. You can use mult-shot prompts with multiple seeded examples to tune foundation models to customize your prompt output or optimize inferencing performance.
+ - question: How many parameters does Granite 13b use?
+   answer: |
+     As the names suggests, Granite is a 13 billion parameter model set.
+document:
+ repo: https://github.com/Manny7-hub/ilabrepository.git
+ commit: 87d7349
+ patterns:
+  - challenge.md
