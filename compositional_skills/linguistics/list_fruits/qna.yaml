@@ -1,0 +1,63 @@
+created_by: SinM
+seed_examples:
+- answer: 'Here are 5 fruits that start with the letter "a":
+
+    1. Apple
+    
+    2. Apricot
+    
+    3. Avocado
+    
+    4. Acai berry
+    
+    5. Asian pear
+
+    '
+  question: 'Give me 5 words starting with a
+
+    '
+- answer: 'Here are 5 fruits which are citrus:
+
+  1. Orange
+  
+  2. Lemon
+  
+  3. Lime
+  
+  4. Grapefruit
+  
+  5. Tangerine
+
+    '
+  question: 'Give me 5 fruits which are citrus
+
+    '
+- answer: 'Sure, I can help you with that! here are 10 fruits which are red in color
+
+  1. Apple
+  
+  2. Strawberry
+  
+  3. Cherry
+  
+  4. Raspberry
+  
+  5. Watermelon
+  
+  6. Red grape
+  
+  7. Pomegranate
+  
+  8. Red currant
+  
+  9. Cranberry
+  
+  10. Blood orange
+
+    '
+  question: 'list 10 fruits which are red in color
+
+    '
+task_description: 'To teach a language model about fruits
+
+  '
