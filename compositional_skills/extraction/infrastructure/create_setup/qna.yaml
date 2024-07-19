@@ -1,0 +1,87 @@
+task_description: Given a set of pip package requirements and a project name and version,
+  create a basic setup.py file
+created_by: JamesCE2001
+seed_examples:
+  - question: 'Create a simple setup.py file for a project named "exampleproject" version 0.1.0,
+      with the following requirements: pyyaml, pandas==0.23.3, numpy>=1.14.5,
+      matplotlib>=2.2.0, jupyter'
+    answer: >
+      Sure, here's the setup.py file for project "exampleproject" version 0.1.0:
+      ```
+      setup(
+        name='exampleproject',
+        version='0.1.0',
+        packages=find_packages(include=['exampleproject', 'exampleproject.*']),
+        install_requires=[
+          'PyYAML',
+          'pandas==0.23.3',
+          'numpy>=1.14.5',
+          'matplotlib>=2.2.0,,
+          'jupyter'
+        ]
+      )
+      ```
+  - question: 'Create a simple setup.py file for a project named "myproject" version 2.7.0,
+      with the following requirements: numpy>=1.20.2, torch==2.2.1, datasets'
+    answer: >
+      Sure, here's the setup.py file for project "myproject" version 2.7.0:
+      ```
+      setup(
+        name='myproject',
+        version='2.7.0',
+        packages=find_packages(include=['myproject', 'myproject.*']),
+        install_requires=[
+          'numpy>=1.20.2',
+          'torch==2.2.1',
+          'datasets'
+        ]
+      )
+      ```
+  - question: 'Create a simple setup.py file for a project named "dataframe" version 0.0.12,
+      with the following requirements: pandas==2.0, polars==1.0'
+    answer: >
+      Sure, here's the setup.py file for project "dataframe" version 0.0.12:
+      ```
+      setup(
+        name='dataframe',
+        version='0.0.12',
+        packages=find_packages(include=['dataframe', 'dataframe.*']),
+        install_requires=[
+          'numpy>=1.20.2',
+          'torch==2.2.1',
+          'datasets'
+        ]
+      )
+      ```
+  - question: 'Create a simple setup.py file for a project named "dataframe" version 0.0.12,
+      with the following requirements: numpy>=1.20.2, torch==2.2.1'
+    answer: >
+      Sure, here's the setup.py file for project "dataframe" version 0.0.12:
+      ```
+      setup(
+        name='dataframe',
+        version='0.0.12',
+        packages=find_packages(include=['dataframe', 'dataframe.*']),
+        install_requires=[
+          'numpy>=1.20.2',
+          'torch==2.2.1',
+          'datasets'
+        ]
+      )
+      ```
+  - question: 'Create a simple setup.py file for a project named "dataframe" version 0.0.12,
+      with the following requirements: pandas==2.0, polars==1.0'
+    answer: >
+      Sure, here's the setup.py file for project "dataframe" version 0.0.12:
+      ```
+      setup(
+        name='dataframe',
+        version='0.0.12',
+        packages=find_packages(include=['dataframe', 'dataframe.*']),
+        install_requires=[
+          'numpy>=1.20.2',
+          'torch==2.2.1',
+          'datasets'
+        ]
+      )
+      ```

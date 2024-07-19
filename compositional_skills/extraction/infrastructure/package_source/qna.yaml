@@ -1,0 +1,149 @@
+task_description: Read the list of package names and determine if their source is pip or conda.
+created_by: Daniel-Schenker
+seed_examples:
+  - answer: "The following packages were installed via pip: transformers,
+      typing-extensions, urllib3."
+    question: >
+      Please read the following conda environment information and determine which
+      packages were installed via pip:
+
+      name: sample-env-1
+
+      channels:
+        - conda-forge
+        - defaults
+      dependencies:
+        - typing_extensions=4.11.0=py311hca03da5_0
+        - tzdata=2024a=h04d1e81_0
+        - utf8proc=2.6.1=h80987f9_1
+        - wheel=0.43.0=py311hca03da5_0
+        - xz=5.4.6=h80987f9_1
+        - zlib=1.2.13=h18a0788_1
+        - zstd=1.5.5=hd90d995_2
+        - pip:
+            - transformers==4.42.4
+            - typing-extensions==4.12.2
+            - urllib3==2.2.2
+      prefix: /Users/dschenker/anaconda3/envs/sample-env-1
+  - answer: "The following packages were installed via pip: pyyaml, regex, requests,
+      safetensors, tokenizers."
+    question: >
+      Please read the following text and determine which packages were installed with pip:
+
+      name: sample-env-2
+
+      channels:
+        - defaults
+        - other-channel-name
+      dependencies:
+        - abseil-cpp=20211102.0=h6b3803e_1
+        - arrow-cpp=14.0.2=hc7aafb3_1
+        - aws-c-auth=0.6.19=h80987f9_0
+        - aws-c-cal=0.5.20=h80987f9_0
+        - aws-c-common=0.8.5=h80987f9_0
+        - aws-c-compression=0.2.16=h80987f9_0
+        - aws-c-event-stream=0.2.15=h313beb8_0
+        - aws-c-http=0.6.25=h80987f9_0
+        - aws-c-io=0.13.10=h80987f9_0
+        - aws-c-mqtt=0.7.13=h80987f9_0
+        - pip:
+            - pyyaml==6.0.1
+            - regex==2024.5.15
+            - requests==2.32.3
+            - safetensors==0.4.3
+            - tokenizers==0.19.1
+      prefix: /Users/dev/null/dev/../
+  - answer: "The following packages were installed via pip: certifi,
+      charset-normalizer, filelock, fsspec."
+    question: >
+      Please  determine which packages were installed with pip using the following yaml file:
+
+      name: sample-env-3
+
+      channels:
+        - defaults
+      dependencies:
+        - pyarrow=14.0.2=py311ha07b5f9_0
+        - python=3.11.9=hb885b13_0
+        - pytorch=2.3.0=gpu_mps_py311hc07fac7_100
+        - re2=2022.04.01=h6b3803e_0
+        - readline=8.2=h1a28f6b_0
+        - setuptools=69.5.1=py311hca03da5_0
+        - sleef=3.5.1=h80987f9_2
+        - snappy=1.1.10=h17c5cce_0
+        - sqlite=3.45.3=h80987f9_0
+        - sympy=1.12=py311hca03da5_0
+        - tk=8.6.14=h6ba3021_0
+        - typing_extensions=4.11.0=py311hca03da5_0
+        - tzdata=2024a=h04d1e81_0
+        - pip:
+            - certifi==2024.7.4
+            - charset-normalizer==3.3.2
+            - filelock==3.15.4
+            - fsspec==2024.6.1
+      prefix: /path/to/conda/prefix/
+  - answer: "The following packages were installed via pip: packaging, pyyaml."
+    question: >
+      Please read the following conda environment info and determine which
+      packages were installed via pip:
+
+      name: sample-env-4
+
+      channels:
+        - defaults
+        - channel-one
+        - channel-two
+        - conda-forge
+      dependencies:
+        - readline=8.2=h1a28f6b_0
+        - setuptools=69.5.1=py311hca03da5_0
+        - sleef=3.5.1=h80987f9_2
+        - snappy=1.1.10=h17c5cce_0
+        - sqlite=3.45.3=h80987f9_0
+        - sympy=1.12=py311hca03da5_0
+        - tk=8.6.14=h6ba3021_0
+        - typing_extensions=4.11.0=py311hca03da5_0
+        - tzdata=2024a=h04d1e81_0
+        - utf8proc=2.6.1=h80987f9_1
+        - wheel=0.43.0=py311hca03da5_0
+        - xz=5.4.6=h80987f9_1
+        - zlib=1.2.13=h18a0788_1
+        - zstd=1.5.5=hd90d995_2
+        - pip:
+            - packaging==24.1
+            - pyyaml==6.0.1
+      prefix: ~/p/a/t/h/
+  - answer: "The following packages were installed via pip: certifi,
+      charset-normalizer, filelock, fsspec, huggingface-hub, idna, packaging,
+      pyyaml, regex, requests, safetensors, tokenizers, tqdm, transformers,
+      typing-extensions, urllib3."
+    question: >
+      Please parse the following conda environment and determine which
+      packages were installed via pip:
+
+      name: sample-env-5
+
+      channels:
+        - defaults
+        - rocketce
+      dependencies:
+        - readline=8.2=h1a28f6b_0
+        - setuptools=69.5.1=py311hca03da5_0
+        - pip:
+            - certifi==2024.7.4
+            - charset-normalizer==3.3.2
+            - filelock==3.15.4
+            - fsspec==2024.6.1
+            - huggingface-hub==0.23.4
+            - idna==3.7
+            - packaging==24.1
+            - pyyaml==6.0.1
+            - regex==2024.5.15
+            - requests==2.32.3
+            - safetensors==0.4.3
+            - tokenizers==0.19.1
+            - tqdm==4.66.4
+            - transformers==4.42.4
+            - typing-extensions==4.12.2
+            - urllib3==2.2.2
+      prefix: /

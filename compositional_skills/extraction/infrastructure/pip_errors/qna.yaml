@@ -1,0 +1,134 @@
+task_description: Read the error output of a pip install and recommend a solution.
+created_by: Daniel-Schenker
+seed_examples:
+  - answer: "Run yum install python3-devel. If that doesn't work, try to update your GCC version."
+    question: >
+      Please read the following pip error output information and offer a solution:
+
+        Could not find <Python.h>. This could mean the following:
+        * You're on Ubuntu and haven't run `apt-get install python3-dev`.
+        * You're on RHEL/Fedora and haven't run `yum install python3-devel` or
+          `dnf install python3-devel` (make sure you also have redhat-rpm-config
+          installed)
+        * You're on Mac OS X and the usual Python framework was somehow corrupted
+          (check your environment variables or try re-installing?)
+        * You're on Windows and your Python installation was somehow corrupted
+          (check your environment variables or try re-installing?)
+      
+      [end of output]
+  
+      note: This error originates from a subprocess, and is likely not a problem with pip.
+      ERROR: Failed building wheel for grpcio
+      Running setup.py clean for grpcio
+      Failed to build grpcio
+      ERROR: Could not build wheels for grpcio, which is required to install pyproject.toml-based projects
+  - answer: "Based on the error message, it appears that cmake has not been installed.
+             please install cmake and re-try the install of pyarrow."
+    question: >
+      Please read the following error message and determine a solution:
+
+      -- Running cmake for PyArrow
+      cmake -DCMAKE_INSTALL_PREFIX=/tmp/pip-install-a6bpgcho/pyarrow_ad913d0087894c2a888a92c07088119a/build/lib.linux-ppc64le-cpython-311/pyarrow -DPYTHON_EXECUTABLE=/home/dschenker/anaconda3/envs/watsonx-challenge/bin/python -DPython3_EXECUTABLE=/home/dschenker/anaconda3/envs/watsonx-challenge/bin/python -DPYARROW_CXXFLAGS= -DPYARROW_BUILD_CUDA=off -DPYARROW_BUILD_SUBSTRAIT=off -DPYARROW_BUILD_FLIGHT=off -DPYARROW_BUILD_GANDIVA=off -DPYARROW_BUILD_ACERO=off -DPYARROW_BUILD_DATASET=off -DPYARROW_BUILD_ORC=off -DPYARROW_BUILD_PARQUET=off -DPYARROW_BUILD_PARQUET_ENCRYPTION=off -DPYARROW_BUILD_AZURE=off -DPYARROW_BUILD_GCS=off -DPYARROW_BUILD_S3=off -DPYARROW_BUILD_HDFS=off -DPYARROW_BUNDLE_ARROW_CPP=off -DPYARROW_BUNDLE_CYTHON_CPP=off -DPYARROW_GENERATE_COVERAGE=off -DCMAKE_BUILD_TYPE=release /tmp/pip-install-a6bpgcho/pyarrow_ad913d0087894c2a888a92c07088119a
+      error: command 'cmake' failed: No such file or directory
+      [end of output]
+  
+      note: This error originates from a subprocess, and is likely not a problem with pip.
+      ERROR: Failed building wheel for pyarrow
+      Failed to build pyarrow
+      ERROR: Could not build wheels for pyarrow, which is required to install pyproject.toml-based projects
+  - answer: "It appears cmake cannot find a pyarrow configuration file. Please point the install to this file,
+             if that doesn't work then try to build the package manually."
+    question: >
+      Please offer a solution to the error message in the following log:
+
+      CMake Error at CMakeLists.txt:271 (find_package):
+      By not providing "FindArrow.cmake" in CMAKE_MODULE_PATH this project has
+      asked CMake to find a package configuration file provided by "Arrow", but
+      CMake did not find one.
+      
+      Could not find a package configuration file provided by "Arrow" with any of
+      the following names:
+      
+        ArrowConfig.cmake
+        arrow-config.cmake
+      
+      Add the installation prefix of "Arrow" to CMAKE_PREFIX_PATH or set
+      "Arrow_DIR" to a directory containing one of the above files.  If "Arrow"
+      provides a separate development package or SDK, be sure it has been
+      installed.
+      
+      
+      -- Configuring incomplete, errors occurred!
+      error: command '/home/dschenker/anaconda3/envs/watsonx-challenge/bin/cmake' failed with exit code 1
+      [end of output]
+  
+      note: This error originates from a subprocess, and is likely not a problem with pip.
+      ERROR: Failed building wheel for pyarrow
+      Failed to build pyarrow
+      ERROR: Could not build wheels for pyarrow, which is required to install pyproject.toml-based projects
+  - answer: "A necessary compiler was not found. Please install a compatible compiler such as gfortran."
+    question: >
+      Please read the following pip error message and tell me how to fix it:
+
+      Preparing metadata (pyproject.toml) did not run successfully.
+      exit code 1
+      [43 lines of output]
+      + meson setup /tmp/pip-install-tpvlj07f/scipy_217e42a21748458581238a47173cfbbf /tmp/pip-install-tpvlj07f/scipy_217e42a21748458581238a47173cfbbf/.mesonpy-bylw6ot8 -Dbuildtype=release -Db_ndebug=if-release -Db_vscrt=md --native-file=/tmp/pip-install-tpvlj07f/scipy_217e42a21748458581238a47173cfbbf/.mesonpy-bylw6ot8/meson-python-native-file.ini
+      The Meson build system
+      Version: 1.5.0
+      Source dir: /tmp/pip-install-tpvlj07f/scipy_217e42a21748458581238a47173cfbbf
+      Build dir: /tmp/pip-install-tpvlj07f/scipy_217e42a21748458581238a47173cfbbf/.mesonpy-bylw6ot8
+      Build type: native build
+      Project name: scipy
+      Project version: 1.14.0
+      C compiler for the host machine: cc (gcc 11.4.1 "cc (GCC) 11.4.1 20231218 (Red Hat 11.4.1-3)")
+      C linker for the host machine: cc ld.bfd 2.35.2-43
+      C++ compiler for the host machine: c++ (gcc 11.4.1 "c++ (GCC) 11.4.1 20231218 (Red Hat 11.4.1-3)")
+      C++ linker for the host machine: c++ ld.bfd 2.35.2-43
+      Cython compiler for the host machine: cython (cython 3.0.10)
+      Host machine cpu family: ppc64
+      Host machine cpu: ppc64le
+      Program python found: YES (/home/dschenker/anaconda3/envs/watsonx-challenge/bin/python)
+      Found pkg-config: YES (/usr/bin/pkg-config) 1.7.3
+      Run-time dependency python found: YES 3.11
+      Program cython found: YES (/tmp/pip-build-env-in27mhhh/overlay/bin/cython)
+      Compiler for C supports arguments -Wno-unused-but-set-variable: YES
+      Compiler for C supports arguments -Wno-unused-function: YES
+      Compiler for C supports arguments -Wno-conversion: YES
+      Compiler for C supports arguments -Wno-misleading-indentation: YES
+      Library m found: YES
+      
+      ../meson.build:84:0: ERROR: Unknown compiler(s): [['gfortran'], ['flang'], ['nvfortran'], ['pgfortran'], ['ifort'], ['ifx'], ['g95']]
+      The following exception(s) were encountered:
+      Running `gfortran --version` gave "[Errno 2] No such file or directory: 'gfortran'"
+      Running `gfortran -V` gave "[Errno 2] No such file or directory: 'gfortran'"
+      Running `flang --version` gave "[Errno 2] No such file or directory: 'flang'"
+      Running `flang -V` gave "[Errno 2] No such file or directory: 'flang'"
+      Running `nvfortran --version` gave "[Errno 2] No such file or directory: 'nvfortran'"
+      Running `nvfortran -V` gave "[Errno 2] No such file or directory: 'nvfortran'"
+      Running `pgfortran --version` gave "[Errno 2] No such file or directory: 'pgfortran'"
+      Running `pgfortran -V` gave "[Errno 2] No such file or directory: 'pgfortran'"
+      Running `ifort --version` gave "[Errno 2] No such file or directory: 'ifort'"
+      Running `ifort -V` gave "[Errno 2] No such file or directory: 'ifort'"
+      Running `ifx --version` gave "[Errno 2] No such file or directory: 'ifx'"
+      Running `ifx -V` gave "[Errno 2] No such file or directory: 'ifx'"
+      Running `g95 --version` gave "[Errno 2] No such file or directory: 'g95'"
+      Running `g95 -V` gave "[Errno 2] No such file or directory: 'g95'"
+      
+      A full log can be found at /tmp/pip-install-tpvlj07f/scipy_217e42a21748458581238a47173cfbbf/.mesonpy-bylw6ot8/meson-logs/meson-log.txt
+      [end of output]
+  
+      note: This error originates from a subprocess, and is likely not a problem with pip.
+      error metadata-generation-failed
+
+      Encountered error while generating package metadata.
+      See above for output.
+
+      note: This is an issue with the package mentioned above, not pip.
+      hint: See above for details.
+  - answer: "No package with the provided name was found by pip."
+    question: >
+      Please parse the following error message and offer a possible solution:
+
+      ERROR: Could not find a version that satisfies the requirement onnxruntime-powerpc64le (from versions: none)
+      ERROR: No matching distribution found for onnxruntime-powerpc64le

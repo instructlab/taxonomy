@@ -1,0 +1,314 @@
+task_description: Read a setup.py and error message and provide a solution to the error.
+created_by: Daniel-Schenker
+seed_examples:
+  - answer: >
+      There is an unrecognized command-line option in the setup.py file. '-march=native' is not
+      a recognized option on Power systems. Use "-mcpu=native" instead.
+    question: >
+      Why is the provided setup.py file unable to build successfully on an IBM Power10 System?
+      setup.py:
+      from pybind11.setup_helpers import Pybind11Extension, build_ext
+      from setuptools import setup, find_packages
+
+      __version__ = "0.0.1"
+
+      extra_compile_args=['-Wall', '-pedantic', '-march=native', '-lm', '-O2']
+
+      ext_modules = [
+          Pybind11Extension(
+              "python_example",
+              ["custom_module/main.cpp"],
+              # Example: passing in the version to the compiled code
+              extra_compile_args=extra_compile_args,
+              define_macros=[("VERSION_INFO", __version__)],
+          ),
+      ]
+
+      setup(
+          name="custom_project",
+          version="0.1",
+          packages=find_packages(),
+          install_requires=[],
+          test_suite="tests",
+          author="Daniel Schenker",
+          author_email="daniel.schenker@ibm.com",
+          description="A simple greeter project",
+          long_description=open("README.md").read(),
+          long_description_content_type="text/markdown",
+          ext_modules=ext_modules,
+          url="https://github.com/yourusername/my_project",
+          classifiers=[
+              "Programming Language :: Python :: 3",
+              "License :: OSI Approved :: MIT License",
+              "Operating System :: OS Independent",
+          ],
+          python_requires='>=3.6',
+      )
+      Error Log:
+      gcc: error: unrecognized command-line option '-march=native'; did you mean '-mcpu=native'?
+  - answer: >
+      Wrap extra_compile_args in a conditional statement as such.
+      if platform.machine() == 'ppc64le':
+        extra_compile_args=['-Wall', '-pedantic', '-mcpu=native', '-lm', '-O2']
+      else:
+        extra_compile_args=['-Wall', '-pedantic', '-march=native', '-lm', '-O2']
+    question: >
+      How can I fix the setup.py file so that it builds on IBM Power10 systems?
+      setup.py:
+      from pybind11.setup_helpers import Pybind11Extension, build_ext
+      from setuptools import setup, find_packages
+
+      __version__ = "0.0.1"
+
+      extra_compile_args=['-Wall', '-pedantic', '-march=native', '-lm', '-O2']
+
+      ext_modules = [
+          Pybind11Extension(
+              "python_example",
+              ["custom_module/main.cpp"],
+              # Example: passing in the version to the compiled code
+              extra_compile_args=extra_compile_args,
+              define_macros=[("VERSION_INFO", __version__)],
+          ),
+      ]
+
+      setup(
+          name="custom_project",
+          version="0.1",
+          packages=find_packages(),
+          install_requires=[],
+          test_suite="tests",
+          author="Daniel Schenker",
+          author_email="daniel.schenker@ibm.com",
+          description="A simple greeter project",
+          long_description=open("README.md").read(),
+          long_description_content_type="text/markdown",
+          ext_modules=ext_modules,
+          url="https://github.com/yourusername/my_project",
+          classifiers=[
+              "Programming Language :: Python :: 3",
+              "License :: OSI Approved :: MIT License",
+              "Operating System :: OS Independent",
+          ],
+          python_requires='>=3.6',
+      )
+      Error Log:
+      gcc: error: unrecognized command-line option '-march=native'; did you mean '-mcpu=native'?
+  - answer: >
+      if platform.machine() == 'ppc64le':
+        extra_compile_args=['-Wall', '-pedantic', '-mcpu=native', '-lm', '-O2']
+      else:
+        extra_compile_args=['-Wall', '-pedantic', '-march=native', '-lm', '-O2']
+    question: >
+      Can you fix this setup.py file so that it builds on IBM Power10 systems?
+      setup.py:
+      from pybind11.setup_helpers import Pybind11Extension, build_ext
+      from setuptools import setup, find_packages
+
+      __version__ = "0.0.1"
+
+      extra_compile_args=['-Wall', '-pedantic', '-march=native', '-lm', '-O2']
+
+      ext_modules = [
+          Pybind11Extension(
+              "python_example",
+              ["custom_module/main.cpp"],
+              # Example: passing in the version to the compiled code
+              extra_compile_args=extra_compile_args,
+              define_macros=[("VERSION_INFO", __version__)],
+          ),
+      ]
+
+      setup(
+          name="custom_project",
+          version="0.1",
+          packages=find_packages(),
+          install_requires=[],
+          test_suite="tests",
+          author="Daniel Schenker",
+          author_email="daniel.schenker@ibm.com",
+          description="A simple greeter project",
+          long_description=open("README.md").read(),
+          long_description_content_type="text/markdown",
+          ext_modules=ext_modules,
+          url="https://github.com/yourusername/my_project",
+          classifiers=[
+              "Programming Language :: Python :: 3",
+              "License :: OSI Approved :: MIT License",
+              "Operating System :: OS Independent",
+          ],
+          python_requires='>=3.6',
+      )
+      Error Log:
+      gcc: error: unrecognized command-line option '-march=native'; did you mean '-mcpu=native'?
+  - answer: >
+      Yes, here is a fixed setup.py:
+      from pybind11.setup_helpers import Pybind11Extension, build_ext
+      from setuptools import setup, find_packages
+      import platform
+
+      __version__ = "0.0.1"
+
+      if platform.machine() == "ppc64le":
+          extra_compile_args=['-Wall', '-pedantic', '-mcpu=native', '-lm', '-O2']
+      else:
+          extra_compile_args=['-Wall', '-pedantic', '-march=native', '-lm', '-O2']
+
+      ext_modules = [
+          Pybind11Extension(
+              "python_example",
+              ["custom_module/main.cpp"],
+              # Example: passing in the version to the compiled code
+              extra_compile_args=extra_compile_args,
+              define_macros=[("VERSION_INFO", __version__)],
+          ),
+      ]
+
+      setup(
+          name="custom_project",
+          version="0.1",
+          packages=find_packages(),
+          install_requires=[],
+          test_suite="tests",
+          author="Daniel Schenker",
+          author_email="daniel.schenker@ibm.com",
+          description="A simple greeter project",
+          long_description=open("README.md").read(),
+          long_description_content_type="text/markdown",
+          ext_modules=ext_modules,
+          url="https://github.com/yourusername/my_project",
+          classifiers=[
+              "Programming Language :: Python :: 3",
+              "License :: OSI Approved :: MIT License",
+              "Operating System :: OS Independent",
+          ],
+          python_requires='>=3.6',
+        )
+    question: >
+      Can you fix this setup.py file so that it builds on IBM Power10 systems?
+      setup.py:
+      from pybind11.setup_helpers import Pybind11Extension, build_ext
+      from setuptools import setup, find_packages
+
+      __version__ = "0.0.1"
+
+      extra_compile_args=['-Wall', '-pedantic', '-march=native', '-lm', '-O2']
+
+      ext_modules = [
+          Pybind11Extension(
+              "python_example",
+              ["custom_module/main.cpp"],
+              # Example: passing in the version to the compiled code
+              extra_compile_args=extra_compile_args,
+              define_macros=[("VERSION_INFO", __version__)],
+          ),
+      ]
+
+      setup(
+          name="custom_project",
+          version="0.1",
+          packages=find_packages(),
+          install_requires=[],
+          test_suite="tests",
+          author="Daniel Schenker",
+          author_email="daniel.schenker@ibm.com",
+          description="A simple greeter project",
+          long_description=open("README.md").read(),
+          long_description_content_type="text/markdown",
+          ext_modules=ext_modules,
+          url="https://github.com/yourusername/my_project",
+          classifiers=[
+              "Programming Language :: Python :: 3",
+              "License :: OSI Approved :: MIT License",
+              "Operating System :: OS Independent",
+          ],
+          python_requires='>=3.6',
+      )
+      Error Log:
+      gcc: error: unrecognized command-line option '-march=native'; did you mean '-mcpu=native'?
+  - answer: >
+      There is an unrecognized command-line option in the setup.py file. "-march=native" is not
+      a recognized option on Power systems. Use '-mcpu=native' instead. Here is a corrected setup.py:
+      from pybind11.setup_helpers import Pybind11Extension, build_ext
+      from setuptools import setup, find_packages
+      import platform
+
+      __version__ = "0.0.1"
+
+      if platform.machine() == "ppc64le":
+          extra_compile_args=['-Wall', '-pedantic', '-mcpu=native', '-lm', '-O2']
+      else:
+          extra_compile_args=['-Wall', '-pedantic', '-march=native', '-lm', '-O2']
+
+      ext_modules = [
+          Pybind11Extension(
+              "python_example",
+              ["custom_module/main.cpp"],
+              # Example: passing in the version to the compiled code
+              extra_compile_args=extra_compile_args,
+              define_macros=[("VERSION_INFO", __version__)],
+          ),
+      ]
+
+      setup(
+          name="custom_project",
+          version="0.1",
+          packages=find_packages(),
+          install_requires=[],
+          test_suite="tests",
+          author="Daniel Schenker",
+          author_email="daniel.schenker@ibm.com",
+          description="A simple greeter project",
+          long_description=open("README.md").read(),
+          long_description_content_type="text/markdown",
+          ext_modules=ext_modules,
+          url="https://github.com/yourusername/my_project",
+          classifiers=[
+              "Programming Language :: Python :: 3",
+              "License :: OSI Approved :: MIT License",
+              "Operating System :: OS Independent",
+          ],
+          python_requires='>=3.6',
+      )
+    question: >
+      Why is the provided setup.py file unable to build successfully on an IBM Power10 System?
+      setup.py:
+      from pybind11.setup_helpers import Pybind11Extension, build_ext
+      from setuptools import setup, find_packages
+
+      __version__ = "0.0.1"
+
+      extra_compile_args=['-Wall', '-pedantic', '-march=native', '-lm', '-O2']
+
+      ext_modules = [
+          Pybind11Extension(
+              "python_example",
+              ["custom_module/main.cpp"],
+              # Example: passing in the version to the compiled code
+              extra_compile_args=extra_compile_args,
+              define_macros=[("VERSION_INFO", __version__)],
+          ),
+      ]
+
+      setup(
+          name="custom_project",
+          version="0.1",
+          packages=find_packages(),
+          install_requires=[],
+          test_suite="tests",
+          author="Daniel Schenker",
+          author_email="daniel.schenker@ibm.com",
+          description="A simple greeter project",
+          long_description=open("README.md").read(),
+          long_description_content_type="text/markdown",
+          ext_modules=ext_modules,
+          url="https://github.com/yourusername/my_project",
+          classifiers=[
+              "Programming Language :: Python :: 3",
+              "License :: OSI Approved :: MIT License",
+              "Operating System :: OS Independent",
+          ],
+          python_requires='>=3.6',
+      )
+      Error Log:
+      gcc: error: unrecognized command-line option '-march=native'; did you mean '-mcpu=native'?

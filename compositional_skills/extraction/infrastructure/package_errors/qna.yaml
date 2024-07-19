@@ -1,0 +1,172 @@
+task_description: Read an error message from a pip setup.py file and provide a solution to the error.
+created_by: Daniel-Schenker
+seed_examples:
+  - answer: >
+      grpcio is included in the 'install_requires' section and is not able to be built successfully,
+      causing the build failure.
+    question: >
+      Why is the provided setup.py file unable to build successfully?
+      setup.py:
+      from setuptools import setup, find_packages
+
+      setup(
+          name="custom_project",
+          version="0.1",
+          packages=find_packages(),
+          install_requires=['grpcio'],
+          test_suite="tests",
+          author="Daniel Schenker",
+          author_email="daniel.schenker@ibm.com",
+          description="A simple greeter project",
+          long_description=open("README.md").read(),
+          long_description_content_type="text/markdown",
+          url="https://github.com/yourusername/my_project",
+          classifiers=[
+              "Programming Language :: Python :: 3",
+              "License :: OSI Approved :: MIT License",
+              "Operating System :: OS Independent",
+          ],
+          python_requires='>=3.6',
+      )
+      Error Log:
+      ERROR: Could not build wheels for grpcio, which is required to install pyproject.toml-based projects
+  - answer: >
+      Since grpcio and pyarrow builds fail, they will need to be removed from the setup.py requirements.
+      These packages will need to be acquired manually or from another source.
+    question: >
+      How can I fix the provided setup.py so there is no errors when building?
+      setup.py:
+      from setuptools import setup, find_packages
+
+      setup(
+          name="custom_project",
+          version="0.1",
+          packages=find_packages(),
+          install_requires=['grpcio', 'pyarrow'],
+          test_suite="tests",
+          author="Daniel Schenker",
+          author_email="daniel.schenker@ibm.com",
+          description="A simple greeter project",
+          long_description=open("README.md").read(),
+          long_description_content_type="text/markdown",
+          url="https://github.com/yourusername/my_project",
+          classifiers=[
+              "Programming Language :: Python :: 3",
+              "License :: OSI Approved :: MIT License",
+              "Operating System :: OS Independent",
+          ],
+          python_requires='>=3.6',
+      )
+      Error Log:
+      ERROR: Could not build wheels for grpcio, pyarrow, which is required to install
+      pyproject.toml-based projects
+  - answer: >
+      Based on the conditional checks for the system archiecture, the current architecture you are building on
+      is unknown. Please build on a supported architecture or add conditional support for ppc64le.
+    question: >
+      How can I fix the provided setup.py so that the package builds successfully?
+      setup.py
+      import platform, sys
+      from setuptools import setup, find_packages
+
+      # Detect the system architecture
+      arch = platform.machine()
+
+      if arch == 'x86_64':
+          print(f'Architecture is {arch}, and is supported')
+      elif arch == 'arm64':
+          print(f'Architecture is {arch}, and is supported')
+      else:
+          print(f'Architecture is {arch}, and is unknown.')
+          sys.exit(1)
+
+      setup(
+          name="custom_project",
+          version="0.1",
+          packages=find_packages(),
+          install_requires=['grpcio', 'pyarrow'],
+          test_suite="tests",
+          author="Daniel Schenker",
+          author_email="daniel.schenker@ibm.com",
+          description="A simple greeter project",
+          long_description=open("README.md").read(),
+          long_description_content_type="text/markdown",
+          url="https://github.com/yourusername/my_project",
+          classifiers=[
+              "Programming Language :: Python :: 3",
+              "License :: OSI Approved :: MIT License",
+              "Operating System :: OS Independent",
+          ],
+          python_requires='>=3.6',
+      )
+      Error Log:
+      Architecture is ppc64le, and is unknown.
+  - answer: >
+      grpcio is not building correctly and it is causing the entire package to fail when building.
+    question: >
+      Why is the provided setup.py file crashing during the build?
+      setup.py:
+      from setuptools import setup, find_packages
+
+      setup(
+          name="custom_project",
+          version="0.1",
+          packages=find_packages(),
+          install_requires=['grpcio'],
+          test_suite="tests",
+          author="Daniel Schenker",
+          author_email="daniel.schenker@ibm.com",
+          description="A simple greeter project",
+          long_description=open("README.md").read(),
+          long_description_content_type="text/markdown",
+          url="https://github.com/yourusername/my_project",
+          classifiers=[
+              "Programming Language :: Python :: 3",
+              "License :: OSI Approved :: MIT License",
+              "Operating System :: OS Independent",
+          ],
+          python_requires='>=3.6',
+      )
+      Error Log:
+      ERROR: Could not build wheels for grpcio, which is required to install pyproject.toml-based projects
+  - answer: >
+      The only supported architectures are 'x86_64' and 'arm64'. You are building on 'ppc64le',
+      which is unknown. Add a conditional to support 'ppc64le'.
+    question: >
+      Why is this build failing?
+      setup.py
+      import platform, sys
+      from setuptools import setup, find_packages
+
+      # Detect the system architecture
+      arch = platform.machine()
+
+      if arch == 'x86_64':
+          print(f'Architecture is {arch}, and is supported')
+      elif arch == 'arm64':
+          print(f'Architecture is {arch}, and is supported')
+      else:
+          print(f'Architecture is {arch}, and is unknown.')
+          sys.exit(1)
+
+      setup(
+          name="custom_project",
+          version="0.1",
+          packages=find_packages(),
+          install_requires=['grpcio', 'pyarrow'],
+          test_suite="tests",
+          author="Daniel Schenker",
+          author_email="daniel.schenker@ibm.com",
+          description="A simple greeter project",
+          long_description=open("README.md").read(),
+          long_description_content_type="text/markdown",
+          url="https://github.com/yourusername/my_project",
+          classifiers=[
+              "Programming Language :: Python :: 3",
+              "License :: OSI Approved :: MIT License",
+              "Operating System :: OS Independent",
+          ],
+          python_requires='>=3.6',
+      )
+      Error Log:
+      Architecture is ppc64le, and is unknown.
