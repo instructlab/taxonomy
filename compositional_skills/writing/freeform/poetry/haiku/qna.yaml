@@ -1,9 +1,24 @@
-created_by: IBM Research
+---
+created_by: hms20112015
 seed_examples:
-- answer: 'Crimson leaf adrift,
-
-    Dancing on a cool fall breeze,
-
-    Nature''s art takes flight.'
-  question: Write a haiku that captures the beauty of a single autumn leaf.
-task_description: ''
+  - answer: |-
+      Unlimited data,
+      Algorithms show the path,
+      Knowledge blossoms in spring.
+    context: This haiku is about the power of data and algorithms to uncover new insights. 
+    question: Write a haiku about data science.
+  - answer: |-
+      Bytes flow like streams,
+      Machines learn, wisdom gathers,
+      New dawn of insight.
+    context: This haiku is about the flow of data and the potential for new insights.
+    question: Write a haiku about data science.
+  - answer: |-
+      Silent bytes shimmer,
+      Natures secrets coded best,
+      Insights shy voice.
+    context: This haiku is about the intersection of computing and data.
+    question: Write a haiku about data science.
+task_description: |-
+  Here are some examples of clever haikus related to data
+  science or computing.
