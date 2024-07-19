@@ -1,0 +1,2812 @@
+version: 2
+task_description: |
+    This skill provides the ability to collapse policies with same access and different subject.
+created_by: narinder-kaur1
+seed_examples:
+  - context: |
+      {
+      "description": "test policy ok to delete",
+      "type": "access",
+      "subject": {
+        "attributes": [
+          {
+            "value": "IBMid-123123",
+            "operator": "stringEquals",
+            "key": "iam_id"
+          }
+        ]
+      },
+      "resource": {
+        "attributes": [
+          {
+            "value": "iam-groups",
+            "operator": "stringEquals",
+            "key": "serviceName"
+          },
+          {
+            "value": "0eea91c14169e0a6a3bbafe034380f50",
+            "operator": "stringEquals",
+            "key": "accountId"
+          }
+        ]
+      },
+      "control": {
+        "grant": {
+          "roles": [
+            {
+              "role_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+            }
+          ]
+        }
+      },
+      "href": "https://iam.test.cloud.ibm.com/v1/policies/06c3bd75-f08e-463d-8515-ad2614369f85",
+      "state": "active",
+      "version": "v1.0"
+      }
+      and
+      {
+      "description": "test policy ok to delete",
+      "type": "access",
+      "subject": {
+        "attributes": [
+          {
+            "value": "IBMidPrePr-000710101",
+            "operator": "stringEquals",
+            "key": "iam_id"
+          }
+        ]
+      },
+      "resource": {
+        "attributes": [
+          {
+            "value": "iam-groups",
+            "operator": "stringEquals",
+            "key": "serviceName"
+          },
+          {
+            "value": "0eea91c14169e0a6a3bbafe034380f50",
+            "operator": "stringEquals",
+            "key": "accountId"
+          }
+        ]
+      },
+      "control": {
+        "grant": {
+          "roles": [
+            {
+              "role_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+            }
+          ]
+        }
+      },
+      "href": "https://iam.test.cloud.ibm.com/v1/policies/06c3bd75-f08e-463d-8515-ad2614369f85",
+      "state": "active",
+      "version": "v1.0"
+      }
+    question: |
+      Can an access group be created to replace these two access policies?
+    answer: |
+      Yes, an access group can be created to replace these two access policies.
+      Both of these policies contain same access with different subject from same account.
+      An access group which has these two subjects as members
+      and has a policy with same access permission with subject as access group id,
+      can be used as a best practise to collapse similar poicies.
+  - context: |
+      {
+        "description": "test policy ok to delete",
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "value": "IBMid-123123",
+              "operator": "stringEquals",
+              "key": "iam_id"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "value": "iam-groups",
+              "operator": "stringEquals",
+              "key": "serviceName"
+            },
+            {
+              "value": "0eea91c14169e0a6a3bbafe034380f50",
+              "operator": "stringEquals",
+              "key": "accountId"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "role_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+              }
+            ]
+          }
+        },
+        "href": "https://iam.test.cloud.ibm.com/v1/policies/06c3bd75-f08e-463d-8515-ad2614369f85",
+        "state": "active",
+        "version": "v1.0"
+      }
+      and
+      {
+        "description": "test policy ok to delete",
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "value": "IBMidPrePr-000710101",
+              "operator": "stringEquals",
+              "key": "iam_id"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "value": "iam-groups",
+              "operator": "stringEquals",
+              "key": "serviceName"
+            },
+            {
+              "value": "0eea91c14169e0a6a3bbafe034380f50",
+              "operator": "stringEquals",
+              "key": "accountId"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "role_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+              }
+            ]
+          }
+        },
+        "href": "https://iam.test.cloud.ibm.com/v1/policies/06c3bd75-f08e-463d-8515-ad2614369f85",
+        "state": "active",
+        "version": "v1.0"
+      }
+    question: |
+      Can an access group be created to replace these two access policies?
+      If so, can you show access group  policy json that could be created?
+    answer: |
+      an access group with name and description
+       {
+        "name": "access-group-test",
+        "description": "Access group for testing"
+       }
+       Add subjects of the policies as members of the access group as follow:
+       {
+        "id": "access-group-123",
+        "type": "access",
+        "members": [
+          {
+          "iam_id":"IBMid-123123",
+          "type":"user"
+          },
+          {
+          "iam_id":"IBMidPrePr-000710101",
+          "type":"user"
+          }
+        ]
+       }
+       and create a policy with the subject as the access group ID.
+       {
+        "description": "test policy ok to delete",
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "value": "access-group-123",
+              "operator": "stringEquals",
+              "key": "iam_id"
+            }
+          ]
+            },
+          "resources": [
+            {
+              "attributes": [
+                {
+                  "value": "iam-groups",
+                  "operator": "stringEquals",
+                  "key": "serviceName"
+                },
+                {
+                  "value": "0eea91c14169e0a6a3bbafe034380f50",
+                  "operator": "stringEquals",
+                  "key": "accountId"
+                }
+              ]
+            }
+          ],
+          "controls": [
+            {
+              "grant": {
+                "roles": [
+                  {
+                    "role_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+                  }
+                ]
+              }
+            }
+          ],
+          "href": "https://iam.test.cloud.ibm.com/v1/policies/06c3bd75-f08e-463d-8515-ad2614369f85",
+          "state": "active",
+          "version": "v1.0"
+        }
+        In this example, the new access group "access-group-123" has two members, one for "IBMid-123123"
+         and one for "IBMidPrePr-000710101".The collapsed policy subject will be access group id
+         access-group-123 and contains a single resource with the service name and account ID
+         "0eea91c14169e0a6a3bbafe034380f50".The controls section contains a single grant with the
+         role "Viewer". This access group can then be used to replace the two individual policies
+         in the previous examples.
+  - context: |
+      {
+        "description": "test policy ok to delete",
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "value": "IBMid-123123",
+              "operator": "stringEquals",
+              "key": "iam_id"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "value": "iam-groups",
+              "operator": "stringEquals",
+              "key": "serviceName"
+            },
+            {
+              "value": "0eea91c14169e0a6a3bbafe034380f50",
+              "operator": "stringEquals",
+              "key": "accountId"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "role_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+              }
+            ]
+          }
+        },
+        "href": "https://iam.test.cloud.ibm.com/v1/policies/06c3bd75-f08e-463d-8515-ad2614369f85",
+        "state": "active",
+        "version": "v1.0"
+      }
+      and
+      {
+        "description": "test policy ok to delete",
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "value": "IBMidPrePr-000710101",
+              "operator": "stringEquals",
+              "key": "iam_id"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "value": "iam-groups",
+              "operator": "stringEquals",
+              "key": "serviceName"
+            },
+            {
+              "value": "0eea91c14169e0a6a3bbafe034380f50",
+              "operator": "stringEquals",
+              "key": "accountId"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "role_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+              }
+            ]
+          }
+        },
+        "href": "https://iam.test.cloud.ibm.com/v1/policies/06c3bd75-f08e-463d-8515-ad2614369f85",
+        "state": "active",
+        "version": "v1.0"
+      }
+    question: |
+      Can multiple policies with same subject be collapsed? if yes, return the expected json.
+    answer: |
+      yes, multiple policies with same subject can be collapsed into a single policy
+       with subject of an access group. here is the json
+       ```
+       {
+        "name": "access-group-test",
+        "description": "Access group for testing"
+       }```
+       Add subjects of the policies as members of the access group as follow:
+       ```{
+        "id": "access-group-123",
+        "type": "access",
+        "members": [
+          {
+          "iam_id":"IBMid-123123",
+          "type":"user"
+          },
+          {
+          "iam_id":"IBMidPrePr-000710101",
+          "type":"user"
+          }
+        ]
+       }```
+       and create a policy with the subject as the access group ID.
+       ```{
+        "description": "test policy ok to delete",
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "value": "access-group-123",
+              "operator": "stringEquals",
+              "key": "iam_id"
+            }
+          ]
+            },
+          "resources": [
+            {
+              "attributes": [
+                {
+                  "value": "iam-groups",
+                  "operator": "stringEquals",
+                  "key": "serviceName"
+                },
+                {
+                  "value": "0eea91c14169e0a6a3bbafe034380f50",
+                  "operator": "stringEquals",
+                  "key": "accountId"
+                }
+              ]
+            }
+          ],
+          "controls": [
+            {
+              "grant": {
+                "roles": [
+                  {
+                    "role_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+                  }
+                ]
+              }
+            }
+          ],
+          "href": "https://iam.test.cloud.ibm.com/v1/policies/06c3bd75-f08e-463d-8515-ad2614369f85",
+          "state": "active",
+          "version": "v1.0"
+        }```
+        In this example, the new access group "access-group-123" has two members, one for "IBMid-123123"
+         and one for "IBMidPrePr-000710101".The collapsed policy subject will be access group id
+         access-group-123 and contains a single resource with the service name and account ID
+         "0eea91c14169e0a6a3bbafe034380f50".The controls section contains a single grant with the
+         role "Viewer". This access group can then be used to replace the two individual policies
+         in the previous examples.
+  - context: |
+      {
+        "description": "test policy ok to delete",
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "value": "IBMid-123123",
+              "operator": "stringEquals",
+              "key": "iam_id"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "value": "iam-groups",
+              "operator": "stringEquals",
+              "key": "serviceName"
+            },
+            {
+              "value": "0eea91c14169e0a6a3bbafe034380f50",
+              "operator": "stringEquals",
+              "key": "accountId"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "role_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+              }
+            ]
+          }
+        },
+        "href": "https://iam.test.cloud.ibm.com/v1/policies/06c3bd75-f08e-463d-8515-ad2614369f85",
+        "state": "active",
+        "version": "v1.0"
+      }
+      and
+      {
+        "description": "test policy ok to delete",
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "value": "IBMidPrePr-000710101",
+              "operator": "stringEquals",
+              "key": "iam_id"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "value": "iam-groups",
+              "operator": "stringEquals",
+              "key": "serviceName"
+            },
+            {
+              "value": "0eea91c14169e0a6a3bbafe034380f50",
+              "operator": "stringEquals",
+              "key": "accountId"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "role_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+              }
+            ]
+          }
+        },
+        "href": "https://iam.test.cloud.ibm.com/v1/policies/06c3bd75-f08e-463d-8515-ad2614369f85",
+        "state": "active",
+        "version": "v1.0"
+      }
+    question: |
+      Can multiple policies with same subject in same account be collapsed? if yes, return the expected json.
+    answer: |
+      yes, multiple policies with same subject can be collapsed into a single policy
+       with subject of an access group. here is the json
+       ```
+       {
+        "name": "access-group-test",
+        "description": "Access group for testing"
+       }```
+       Add subjects of the policies as members of the access group as follow:
+       ```{
+        "id": "access-group-123",
+        "type": "access",
+        "members": [
+          {
+          "iam_id":"IBMid-123123",
+          "type":"user"
+          },
+          {
+          "iam_id":"IBMidPrePr-000710101",
+          "type":"user"
+          }
+        ]
+       }```
+       and create a policy with the subject as the access group ID.
+       ```{
+        "description": "test policy ok to delete",
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "value": "access-group-123",
+              "operator": "stringEquals",
+              "key": "iam_id"
+            }
+          ]
+            },
+          "resources": [
+            {
+              "attributes": [
+                {
+                  "value": "iam-groups",
+                  "operator": "stringEquals",
+                  "key": "serviceName"
+                },
+                {
+                  "value": "0eea91c14169e0a6a3bbafe034380f50",
+                  "operator": "stringEquals",
+                  "key": "accountId"
+                }
+              ]
+            }
+          ],
+          "controls": [
+            {
+              "grant": {
+                "roles": [
+                  {
+                    "role_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+                  }
+                ]
+              }
+            }
+          ],
+          "href": "https://iam.test.cloud.ibm.com/v1/policies/06c3bd75-f08e-463d-8515-ad2614369f85",
+          "state": "active",
+          "version": "v1.0"
+        }```
+        In this example, the new access group "access-group-123" has two members, one for "IBMid-123123"
+         and one for "IBMidPrePr-000710101".The collapsed policy subject will be access group id
+         access-group-123 and contains a single resource with the service name and account ID
+         "0eea91c14169e0a6a3bbafe034380f50".The controls section contains a single grant with the
+         role "Viewer". This access group can then be used to replace the two individual policies
+         in the previous examples.
+  - context: |
+      {
+        "description": "test policy ok to delete",
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "value": "IBMid-123123",
+              "operator": "stringEquals",
+              "key": "iam_id"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "value": "iam-groups",
+              "operator": "stringEquals",
+              "key": "serviceName"
+            },
+            {
+              "value": "0eea91c14169e0a6a3bbafe034380f50",
+              "operator": "stringEquals",
+              "key": "accountId"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "role_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+              }
+            ]
+          }
+        },
+        "href": "https://iam.test.cloud.ibm.com/v1/policies/06c3bd75-f08e-463d-8515-ad2614369f85",
+        "state": "active",
+        "version": "v1.0"
+      }
+      and
+      {
+        "description": "test policy ok to delete",
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "value": "IBMidPrePr-000710101",
+              "operator": "stringEquals",
+              "key": "iam_id"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "value": "iam-groups",
+              "operator": "stringEquals",
+              "key": "serviceName"
+            },
+            {
+              "value": "0eea91c14169e0a6a3bbafe034380f50",
+              "operator": "stringEquals",
+              "key": "accountId"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "role_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+              }
+            ]
+          }
+        },
+        "href": "https://iam.test.cloud.ibm.com/v1/policies/06c3bd75-f08e-463d-8515-ad2614369f85",
+        "state": "active",
+        "version": "v1.0"
+      }
+    question: |
+      what is the best practise to create multiple users with same access in same account?
+    answer: |
+      yes, multiple policies with same subject can be collapsed into a single policy
+       with subject of an access group. here is the json
+       ```
+       {
+        "name": "access-group-test",
+        "description": "Access group for testing"
+       }```
+       Add subjects of the policies as members of the access group as follow:
+       ```{
+        "id": "access-group-123",
+        "type": "access",
+        "members": [
+          {
+          "iam_id":"IBMid-123123",
+          "type":"user"
+          },
+          {
+          "iam_id":"IBMidPrePr-000710101",
+          "type":"user"
+          }
+        ]
+       }```
+       and create a policy with the subject as the access group ID.
+       ```{
+        "description": "test policy ok to delete",
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "value": "access-group-123",
+              "operator": "stringEquals",
+              "key": "iam_id"
+            }
+          ]
+            },
+          "resources": [
+            {
+              "attributes": [
+                {
+                  "value": "iam-groups",
+                  "operator": "stringEquals",
+                  "key": "serviceName"
+                },
+                {
+                  "value": "0eea91c14169e0a6a3bbafe034380f50",
+                  "operator": "stringEquals",
+                  "key": "accountId"
+                }
+              ]
+            }
+          ],
+          "controls": [
+            {
+              "grant": {
+                "roles": [
+                  {
+                    "role_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+                  }
+                ]
+              }
+            }
+          ],
+          "href": "https://iam.test.cloud.ibm.com/v1/policies/06c3bd75-f08e-463d-8515-ad2614369f85",
+          "state": "active",
+          "version": "v1.0"
+        }```
+        In this example, the new access group "access-group-123" has two members, one for "IBMid-123123"
+         and one for "IBMidPrePr-000710101".The collapsed policy subject will be access group id
+         access-group-123 and contains a single resource with the service name and account ID
+         "0eea91c14169e0a6a3bbafe034380f50".The controls section contains a single grant with the
+         role "Viewer". This access group can then be used to replace the two individual policies
+         in the previous examples.
+  - context: |
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "iam-ServiceId-d4ffb254-04b3-4c44-bfeb-e276a8c7de8c"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "q95d91a6bb77488aba4d9c440c1efd42"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "kms"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "role_id": "crn:v1:bluemix:public:iam::::serviceRole:Manager"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "iam-ServiceId-4cff64fe-e5a7-4c95-a1e5-f1774275c6b0"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "q95d91a6bb77488aba4d9c440c1efd42"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "kms"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "role_id": "crn:v1:bluemix:public:iam::::serviceRole:Manager"
+              }
+            ]
+          }
+        }
+      }
+    question: Can we collapse the below two access policies to 1 policy
+    answer: |
+      Yes, we can combine these two policies using an access group.
+      First, create an access group following doc: https://cloud.ibm.com/docs/account?topic=account-groups&interface=api.
+      Add both service IDs to newly created access group, and assign the same access, for example:
+       an access group with same permissions as follows.
+      ```{
+          "type": "access",
+          "subject": {
+            "attributes": [
+              {
+                "key": "accessGroupId",
+                "operator": "stringEquals",
+                "value": "<accessGroupId>"
+              }
+            ]
+          },
+          "resource": {
+            "attributes": [
+              {
+                "key": "accountId",
+                "operator": "stringEquals",
+                "value": "q95d91a6bb77488aba4d9c440c1efd42"
+              },
+              {
+                "key": "serviceName",
+                "operator": "stringEquals",
+                "value": "kms"
+              }
+            ]
+          },
+          "control": {
+            "grant": {
+              "roles": [
+                {
+                  "role_id": "crn:v1:bluemix:public:iam::::serviceRole:Manager"
+                }
+              ]
+            }
+          }
+        }```
+  - question: |
+      Can we collapse the below two user access policies into 1 policy?
+          {
+          "type": "access",
+          "subject": {
+            "attributes": [
+              {
+                "key": "iam_id",
+                "operator": "stringEquals",
+                "value": "IBMid-5064C6593W"
+              }
+            ]
+          },
+          "resource": {
+            "attributes": [
+              {
+                "key": "accountId",
+                "operator": "stringEquals",
+                "value": "16fcb6a0da0340b18d22f8d08404c035"
+              },
+              {
+                "key": "serviceName",
+                "operator": "stringEquals",
+                "value": "cloudant"
+              }
+            ]
+          },
+          "control": {
+            "grant": {
+              "roles": [
+                {
+                  "role_id": "crn:v1:bluemix:public:iam::::role:Editor"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "type": "access",
+          "subject": {
+            "attributes": [
+              {
+                "key": "iam_id",
+                "operator": "stringEquals",
+                "value": "IBMid-1034D5142R"
+              }
+            ]
+          },
+          "resource": {
+            "attributes": [
+              {
+                "key": "accountId",
+                "operator": "stringEquals",
+                "value": "16fcb6a0da0340b18d22f8d08404c035"
+              },
+              {
+                "key": "serviceName",
+                "operator": "stringEquals",
+                "value": "cloudant"
+              }
+            ]
+          },
+          "control": {
+            "grant": {
+              "roles": [
+                {
+                  "role_id": "crn:v1:bluemix:public:iam::::role:Editor"
+                }
+              ]
+            }
+          }
+        }
+    answer: |
+      Yes, we can combine these two policies using an access group.
+      First, create an access group following doc: https://cloud.ibm.com/docs/account?topic=account-groups&interface=api.
+      Add both service IDs to newly created access group, and assign the same access, for example:
+       an access group with same permissions as follows.
+      ```{
+          "type": "access",
+          "subject": {
+            "attributes": [
+              {
+                "key": "accessGroupId",
+                "operator": "stringEquals",
+                "value": "<accessGroupId>"
+              }
+            ]
+          },
+          "resource": {
+            "attributes": [
+              {
+                "key": "accountId",
+                "operator": "stringEquals",
+                "value": "q95d91a6bb77488aba4d9c440c1efd42"
+              },
+              {
+                "key": "serviceName",
+                "operator": "stringEquals",
+                "value": "kms"
+              }
+            ]
+          },
+          "control": {
+            "grant": {
+              "roles": [
+                {
+                  "role_id": "crn:v1:bluemix:public:iam::::serviceRole:Manager"
+                }
+              ]
+            }
+          }
+        }```
+  - question: |
+     Can we collapse the below two trusted profile access policies into 1 policy?
+     ```
+     {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "iam-Profile-382503f2-3595-4aab-a099-9582a03540e2"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "2e447a1cd8624b028da5bf7380271c3c"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "cloud-object-storage"
+            },
+            {
+              "key": "serviceInstance",
+              "operator": "stringEquals",
+              "value": "4e5d14ff-8b30-498f-94e0-e5b4e882284f"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "role_id": "crn:v1:bluemix:public:iam::::role:Editor"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "iam-Profile-141434g2-1545-5sat-q414-5284e03560w4"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "2e447a1cd8624b028da5bf7380271c3c"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "cloud-object-storage"
+            },
+            {
+              "key": "serviceInstance",
+              "operator": "stringEquals",
+              "value": "4e5d14ff-8b30-498f-94e0-e5b4e882284f"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "role_id": "crn:v1:bluemix:public:iam::::role:Editor"
+              }
+            ]
+          }
+        }
+      }
+    answer: |
+      Yes, we can combine these two policies using an access group.
+      First, create an access group following doc:
+      https://cloud.ibm.com/docs/account?topic=account-groups&interface=api,
+      add both trusted profiles to the newly created access group, and assign the same access,
+      for example:
+      an access group with same permissions as follows.
+      ```{
+          "type": "access",
+          "subject": {
+            "attributes": [
+              {
+                "key": "accessGroupId",
+                "operator": "stringEquals",
+                "value": "<accessGroupId>"
+              }
+            ]
+          },
+          "resource": {
+            "attributes": [
+              {
+                "key": "accountId",
+                "operator": "stringEquals",
+                "value": "2e447a1cd8624b028da5bf7380271c3c"
+              },
+              {
+                "key": "serviceName",
+                "operator": "stringEquals",
+                "value": "cloud-object-storage"
+              },
+              {
+                "key": "serviceInstance",
+                "operator": "stringEquals",
+                "value": "4e5d14ff-8b30-498f-94e0-e5b4e882284f"
+              }
+            ]
+          },
+          "control": {
+            "grant": {
+              "roles": [
+                {
+                  "role_id": "crn:v1:bluemix:public:iam::::role:Editor"
+                }
+              ]
+            }
+          }
+        }```
+  - question: |
+     I have three service-based access policies, is there any better option available to reduce policy count?
+     {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "iam-ServiceId-1c41f374-4c96-4a4b-a8d2-1f8494c728b7"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "barea035ca1943c3919937f1ce6399c6"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "cloudant"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Manager"
+              },
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Reader"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "iam-ServiceId-0c714f74-4c96-4a4b-a8d2-7f8495c7a8b7"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "barea035ca1943c3919937f1ce6399c6"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "cloudant"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Manager"
+              },
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Reader"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "iam-ServiceId-e831e9cc-7bec-43b8-9f7f-d48ea6d80e64"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "barea035ca1943c3919937f1ce6399c6"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "cloudant"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Reader"
+              },
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Manager"
+              }
+            ]
+          }
+        }
+      }
+    answer: |
+      Yes, we can combine these three policies using an access group.
+      First, create an access group following doc: https://cloud.ibm.com/docs/account?topic=account-groups&interface=api.
+      add the above three service IDs to the newly created access group, and assign the same access, for example:
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "accessGroupId",
+              "operator": "stringEquals",
+              "value": "<accessGroupId>"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "barea035ca1943c3919937f1ce6399c6"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "cloudant"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Reader"
+              },
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Manager"
+              }
+            ]
+          }
+        }
+      }
+  - question: |
+      I have two user access policies(where subject is user), is there a policy to use an access group here?
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "IBMid-3356U8423W"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "aa5fe10fb31c4148a313051c5da9cfb5"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "kms"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Editor"
+              },
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Reader"
+              },
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Manager"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "IBMid-2336I8411O"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "aa5fe10fb31c4148a313051c5da9cfb5"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "kms"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Reader"
+              },
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Editor"
+              },
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Manager"
+              }
+            ]
+          }
+        }
+      }
+    answer: |
+     Yes, we can combine these two policies using an access group.
+     First, create an access group following doc:
+     https://cloud.ibm.com/docs/account?topic=account-groups&interface=api.
+     Add both users to the newly created access group, and assign the same access, for example:
+     {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "accessGroupId",
+              "operator": "stringEquals",
+              "value": "<accessGroupId>"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "aa5fe10fb31c4148a313051c5da9cfb5"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "kms"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Reader"
+              },
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Editor"
+              },
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Manager"
+              }
+            ]
+          }
+        }
+      }
+  - question: |
+     Can we collapse the below two trusted profile access policies(The subject represents a trusted profile),
+     into a single trusted profile access policy?
+     {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "iam-Profile-142d03w2-3595-4rab-a099-9582a03540e2"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "905d0e3b1c7e4f248aa33beee9d2b361"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "genesis"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Viewer"
+              },
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Reader"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "iam-Profile-332d03a2-53d5-4wrb-q091-35d2c0w54022"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "905d0e3b1c7e4f248aa33beee9d2b361"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "genesis"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Viewer"
+              },
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Reader"
+              }
+            ]
+          }
+        }
+      }
+    answer: |
+      Yes, we can combine these two policies using an access group.
+      First, create an access group following doc: https://cloud.ibm.com/docs/account?topic=account-groups&interface=api.
+      Add both trusted profiles to the newly created access group, and assign the same access, for example:
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "accessGroupId",
+              "operator": "stringEquals",
+              "value": "<accessGroupId>"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "905d0e3b1c7e4f248aa33beee9d2b361"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "genesis"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Viewer"
+              },
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Reader"
+              }
+            ]
+          }
+        }
+      }
+  - question: |
+      I have an access policy for a service ID and an access policy for a user,
+      is there a policy to use an access group here?
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "iam-ServiceId-388e85aa-f0ef-4710-ac9e-a266516874c5"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "1a8365a9340d408ba6fad232d37a823a"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "genesis"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Administrator"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "IBMid-6930006O3A"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "1a8365a9340d408ba6fad232d37a823a"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "genesis"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Administrator"
+              }
+            ]
+          }
+        }
+      }
+    answer: |
+     Yes, we can combine these two policies using an access group.
+     First, create an access group following doc: https://cloud.ibm.com/docs/account?topic=account-groups&interface=api.
+     Add the above serviceId and user to the newly created access group, and assign the same access, for example:
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "accessGroupId",
+              "operator": "stringEquals",
+              "value": "<accessGroupId>"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "1a8365a9340d408ba6fad232d37a823a"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "genesis"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Administrator"
+              }
+            ]
+          }
+        }
+      }
+  - question: |
+     I have an access policy for a trusted profile and an access policy for a user.
+     Both have access to the same resources for the same set of roles. Can we combine these two policies?
+     {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "IBMid-550003UGBN"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "99b81fe6215940379174e808fd74546e"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "cloud-object-storage"
+            },
+            {
+              "key": "serviceInstance",
+              "operator": "stringEquals",
+              "value": "1e3d24ff-8b60-498e-94w0-e5w4e882284d"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Editor"
+              },
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Writer"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "iam-Profile-ijhwcieuhcec-3595-4aab-a099-9582a03540e2"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "99b81fe6215940379174e808fd74546e"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "cloud-object-storage"
+            },
+            {
+              "key": "serviceInstance",
+              "operator": "stringEquals",
+              "value": "1e3d24ff-8b60-498e-94w0-e5w4e882284d"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Editor"
+              },
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Writer"
+              }
+            ]
+          }
+        }
+      }
+    answer: |
+     Yes, we can combine these two policies using an access group.
+     First, create an access group following doc: https://cloud.ibm.com/docs/account?topic=account-groups&interface=api.
+     add the above user and trusted profile to the newly created access group, and assign the same access, for example:
+     {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "accessGroupId",
+              "operator": "stringEquals",
+              "value": "<accessGroupId>"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "99b81fe6215940379174e808fd74546e"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "cloud-object-storage"
+            },
+            {
+              "key": "serviceInstance",
+              "operator": "stringEquals",
+              "value": "1e3d24ff-8b60-498e-94w0-e5w4e882284d"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Editor"
+              },
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Writer"
+              }
+            ]
+          }
+        }
+      }
+  - question: |
+      Can we collapse the below two granular access policies(the subject represents a service ID)?
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "iam-ServiceId-38ba0eba-3a7a-46f5-8d48-a46b2bff4a85"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "o95d91a6bb77488aba4d9c440c1efd42"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "cloud-object-storage"
+            },
+            {
+              "key": "serviceInstance",
+              "operator": "stringEquals",
+              "value": "228d0234-ff5a-477e-af53-41fae079a02e"
+            },
+            {
+              "key": "resourceType",
+              "operator": "stringEquals",
+              "value": "bucket"
+            },
+            {
+              "key": "resource",
+              "operator": "stringEquals",
+              "value": "qq5w24ef"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Manager"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "iam-ServiceId-e1d6a122-6ede-4794-b66b-cabb8cb1e21f"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "o95d91a6bb77488aba4d9c440c1efd42"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "cloud-object-storage"
+            },
+            {
+              "key": "serviceInstance",
+              "operator": "stringEquals",
+              "value": "228d0234-ff5a-477e-af53-41fae079a02e"
+            },
+            {
+              "key": "resourceType",
+              "operator": "stringEquals",
+              "value": "bucket"
+            },
+            {
+              "key": "resource",
+              "operator": "stringEquals",
+              "value": "qq5w24ef"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Manager"
+              }
+            ]
+          }
+        }
+      }
+    answer: |
+      Yes, we can combine these two policies using an access group.
+      First, create an access group following doc: https://cloud.ibm.com/docs/account?topic=account-groups&interface=api.
+      add both service IDs to the newly created access group, and assign the same access, for example:
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "accessGroupId",
+              "operator": "stringEquals",
+              "value": "<accessGroupId>"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "o95d91a6bb77488aba4d9c440c1efd42"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "cloud-object-storage"
+            },
+            {
+              "key": "serviceInstance",
+              "operator": "stringEquals",
+              "value": "228d0234-ff5a-477e-af53-41fae079a02e"
+            },
+            {
+              "key": "resourceType",
+              "operator": "stringEquals",
+              "value": "bucket"
+            },
+            {
+              "key": "resource",
+              "operator": "stringEquals",
+              "value": "qq5w24ef"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Manager"
+              }
+            ]
+          }
+        }
+      }
+  - question: |
+      I have a couple of user access policies, all have the same role on the same resource.
+      can we rewrite these policies following IAM's best practices?
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "IBMid-6620037M32"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "7de29651e1cb4d32992ecdd5828d99ff"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "messagehub"
+            },
+            {
+              "key": "serviceInstance",
+              "operator": "stringEquals",
+              "value": "13a457c2-95v2-4584-a223-z7a3e9e9x9cr"
+            },
+            {
+              "key": "resourceType",
+              "operator": "stringEquals",
+              "value": "topic"
+            },
+            {
+              "key": "resource",
+              "operator": "stringEquals",
+              "value": "9ca457c2"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Administrator"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "IBMid-550003UGBN"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "7de29651e1cb4d32992ecdd5828d99ff"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "messagehub"
+            },
+            {
+              "key": "serviceInstance",
+              "operator": "stringEquals",
+              "value": "13a457c2-95v2-4584-a223-z7a3e9e9x9cr"
+            },
+            {
+              "key": "resourceType",
+              "operator": "stringEquals",
+              "value": "topic"
+            },
+            {
+              "key": "resource",
+              "operator": "stringEquals",
+              "value": "9ca457c2"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Administrator"
+              }
+            ]
+          }
+        }
+      }
+    answer: |
+      Yes, we can combine these two policies using an access group. First, create an access group following doc:
+      https://cloud.ibm.com/docs/account?topic=account-groups&interface=api,
+      add both users to the newly created access group and assign the same access, for example:
+      {
+          "type": "access",
+          "subject": {
+            "attributes": [
+              {
+                "key": "accessGroupId",
+                "operator": "stringEquals",
+                "value": "<accessGroupId>"
+              }
+            ]
+          },
+          "resource": {
+            "attributes": [
+              {
+                "key": "accountId",
+                "operator": "stringEquals",
+                "value": "7de29651e1cb4d32992ecdd5828d99ff"
+              },
+              {
+                "key": "serviceName",
+                "operator": "stringEquals",
+                "value": "messagehub"
+              },
+              {
+                "key": "serviceInstance",
+                "operator": "stringEquals",
+                "value": "13a457c2-95v2-4584-a223-z7a3e9e9x9cr"
+              },
+              {
+                "key": "resourceType",
+                "operator": "stringEquals",
+                "value": "topic"
+              },
+              {
+                "key": "resource",
+                "operator": "stringEquals",
+                "value": "9ca457c2"
+              }
+            ]
+          },
+          "control": {
+            "grant": {
+              "roles": [
+                {
+                  "id": "crn:v1:bluemix:public:iam::::role:Administrator"
+                }
+              ]
+            }
+          }
+        }
+  - question: |
+      Can you merge the below two trusted profile access policies into
+      an access group access policy(The subject represents a trusted profile)?
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "iam-Profile-iu29d32d3-3595-4aab-a099-9582a03540e2"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "2e447a1cd8624b028da5bf7380271c3c"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "cloud-object-storage"
+            },
+            {
+              "key": "serviceInstance",
+              "operator": "stringEquals",
+              "value": "1b847ff5-ae8e-4c38-8e06-a56a54f8c8b9"
+            },
+            {
+              "key": "resourceType",
+              "operator": "stringEquals",
+              "value": "bucket"
+            },
+            {
+              "key": "resource",
+              "operator": "stringEquals",
+              "value": "88ddaa457c2"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Viewer"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "iam-Profile-2eoif3s-3595-4aab-a099-9582a03540e2"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "2e447a1cd8624b028da5bf7380271c3c"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "cloud-object-storage"
+            },
+            {
+              "key": "serviceInstance",
+              "operator": "stringEquals",
+              "value": "1b847ff5-ae8e-4c38-8e06-a56a54f8c8b9"
+            },
+            {
+              "key": "resourceType",
+              "operator": "stringEquals",
+              "value": "bucket"
+            },
+            {
+              "key": "resource",
+              "operator": "stringEquals",
+              "value": "88ddaa457c2"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Viewer"
+              }
+            ]
+          }
+        }
+      }
+    answer: |
+      Yes, we can combine these two policies using an access group.
+      First, create an access group following doc: https://cloud.ibm.com/docs/account?topic=account-groups&interface=api.
+      add both trusted profiles to the newly created access group, and assign the same access, for example:
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "accessGroupId",
+              "operator": "stringEquals",
+              "value": "<accessGroupId>"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "2e447a1cd8624b028da5bf7380271c3c"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "cloud-object-storage"
+            },
+            {
+              "key": "serviceInstance",
+              "operator": "stringEquals",
+              "value": "1b847ff5-ae8e-4c38-8e06-a56a54f8c8b9"
+            },
+            {
+              "key": "resourceType",
+              "operator": "stringEquals",
+              "value": "bucket"
+            },
+            {
+              "key": "resource",
+              "operator": "stringEquals",
+              "value": "88ddaa457c2"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Viewer"
+              }
+            ]
+          }
+        }
+      }
+  - question: |
+      Is there a better way to recreate these two access policies?
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "iam-ServiceId-z8bbd425-fa36-43fb-871f-46c92a71681a"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "760463d7a07846b7a49678e1c7068494"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "kms"
+            },
+            {
+              "key": "serviceInstance",
+              "operator": "stringEquals",
+              "value": "9ca457c2-95a2-4584-a223-e7a3e9a9c9c6"
+            },
+            {
+              "key": "resourceType",
+              "operator": "stringEquals",
+              "value": "key"
+            },
+            {
+              "key": "resource",
+              "operator": "stringEquals",
+              "value": "9ca457c2"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Editor"
+              },
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Viewer"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "iam-Profile-iu29d32d3-3595-4aab-a099-9582a03540e2"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "760463d7a07846b7a49678e1c7068494"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "kms"
+            },
+            {
+              "key": "serviceInstance",
+              "operator": "stringEquals",
+              "value": "9ca457c2-95a2-4584-a223-e7a3e9a9c9c6"
+            },
+            {
+              "key": "resourceType",
+              "operator": "stringEquals",
+              "value": "key"
+            },
+            {
+              "key": "resource",
+              "operator": "stringEquals",
+              "value": "9ca457c2"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Editor"
+              },
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Viewer"
+              }
+            ]
+          }
+        }
+      }
+    answer: |
+     Yes, we can combine these two policies using an access group.
+     First, create an access group following doc: https://cloud.ibm.com/docs/account?topic=account-groups&interface=api.
+     add the above service Id and trusted profile to the newly created access group,
+     and assign the same access, for example:
+     {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "accessGroupId",
+              "operator": "stringEquals",
+              "value": "<accessGroupId>"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "760463d7a07846b7a49678e1c7068494"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "kms"
+            },
+            {
+              "key": "serviceInstance",
+              "operator": "stringEquals",
+              "value": "9ca457c2-95a2-4584-a223-e7a3e9a9c9c6"
+            },
+            {
+              "key": "resourceType",
+              "operator": "stringEquals",
+              "value": "key"
+            },
+            {
+              "key": "resource",
+              "operator": "stringEquals",
+              "value": "9ca457c2"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Editor"
+              },
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Viewer"
+              }
+            ]
+          }
+        }
+      }
+  - question: |
+      Can we combine these access policies into a single policy?
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "IBMid-6930006O3A"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "1a8365a9340d408ba6fad232d37a823a"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "genesis"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Administrator"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "IBMid-7Y98Y233"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "760463d7a07846b7a49678e1c7068494"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "genesis"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Administrator"
+              }
+            ]
+          }
+        }
+      }
+    answer: We can not combine these two policies into a single one
+            as both policies contain different subject and resources.
+  - question: |
+     Can we combine these access policies into a single policy?
+     {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "iam-Profile-142d03w2-3595-4rab-a099-9582a03540e2"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "905d0e3b1c7e4f248aa33beee9d2b361"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "kms"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Viewer"
+              },
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Reader"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "iam-Profile-34fwdc3-3595-swqd-23d3-csdcecsdce32"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "905d0e3b1c7e4f248aa33beee9d2b361"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "cloudant"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "id": "crn:v1:bluemix:public:iam::::role:Viewer"
+              },
+              {
+                "id": "crn:v1:bluemix:public:iam::::serviceRole:Reader"
+              }
+            ]
+          }
+        }
+      }
+    answer: |
+      We can not combine these two policies into a single one
+      as they don't have common subject or common resources
+  - question: What is an IBM Cloud IAM access policy? Can you provide example JSON of the access policy?
+    answer: |
+      An IBM Cloud IAM policy enables a subject to access a resource. These policies are used in access decisions
+      when you call APIs for IAM-enabled services.
+      Here is the JSON body of an example policy
+      ```JSON
+      {
+        "policies": [
+          {
+            "id": "12345678-abcd-1a2b-a1b2-1234567890ab",
+            "type": "access",
+            "description": "Viewer role access for all instances of key protect in the account during business hours.",
+            "subject": {
+              "attributes": [
+                {
+                  "key": "iam_id",
+                  "operator": "stringEquals",
+                  "value": "IBMid-123453user"
+                }
+              ]
+            },
+            "control": {
+              "grant": {
+                "roles": [
+                  {
+                    "role_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+                  }
+                ]
+              }
+            },
+            "resource": {
+              "attributes": [
+                {
+                  "key": "accountId",
+                  "operator": "stringEquals",
+                  "value": "100abcde100a41abc100aza678abc0zz"
+                },
+                {
+                  "key": "serviceName",
+                  "operator": "stringEquals",
+                  "value": "kms"
+                }
+              ]
+            },
+            "state": "active"
+          }
+        ]
+      }
+      ```
+      In this policy the subject "IBMid-123453user" has "Viewer" access on the service "kms" in account
+      "100abcde100a41abc100aza678abc0zz".
+  - question: What IAM concepts can be the subject of an IBM Cloud IAM access policy?
+    answer: |
+      IBM Cloud IAM policies can have subjects that are identities (e.g. users, service ids, trusted profiles) or
+      access group identifiers.  When the subject is an identity the attribute name must be "iam_id", when the subject
+      is an access group the attribute name must be "access_group_id."
+  - question: What is an IBM Cloud IAM access group?
+    answer: |
+      An IBM Cloud IAM access group is an organization of users, service IDs, and trusted profiles in a grouping that
+      allows you to grant the same IAM access. All identities in a single access group have the same access. Access
+      groups can be used to replace individual policies that have the same access but different subjects. Utilizing
+      access groups can reduce to total number of access policies needed and can help streamline access management in
+      your account. If you add additional policies to the access group, all members of the access group inherit the
+      access from the additional policies.
+  - question: What is an IBM Cloud IAM role? Can you provide an example access policy JSON with the Administrator role?
+    answer: |
+      IBM Cloud IAM roles are a collection of actions. Roles are used in IBM Cloud IAM access policies to indicate which
+      grouping of actions are granted to the subject of the access policy on the resource in the policy. There are
+      platform management roles, for example "Viewer" and "Administrator", that group actions to be taken on IBM Cloud
+      platform services. There are service roles, for example "Reader", "Writer" and "Manager", that group actions to
+      be taken when using service's APIs. A customer can also create their own role and select the group of actions in
+      the customer defined role. Actions can be included in many different roles, and actions in some roles overlap with
+      actions in other roles. For example, both the "Administrator" and "Operator" roles contain the same action
+      "iam.policy.read".
+  - context: |
+      ```json
+      {
+        "description": "test policy ok to delete",
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "value": "IBMid-1234567",
+              "operator": "stringEquals",
+              "key": "iam_id"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "value": "cloud-object-storage",
+              "operator": "stringEquals",
+              "key": "serviceName"
+            },
+            {
+              "value": "0eea91c14169e0a6a3bbafe034380f50",
+              "operator": "stringEquals",
+              "key": "accountId"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+              "roles": [
+              {
+                "role_id": "crn:v1:bluemix:public:iam::::role:Administrator"
+              }
+            ]
+          }
+        }
+      }
+      ```
+      and
+
+      ```json
+      {
+        "description": "test policy ok to delete",
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "value": "IBMid-000456789",
+              "operator": "stringEquals",
+              "key": "iam_id"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "value": "cloud-object-storage",
+              "operator": "stringEquals",
+              "key": "serviceName"
+            },
+            {
+              "value": "0eea91c14169e0a6a3bbafe034380f50",
+              "operator": "stringEquals",
+              "key": "accountId"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "role_id": "crn:v1:bluemix:public:iam::::role:Administrator"
+              }
+            ]
+          }
+        }
+      }
+      ```
+    question:
+      Can an access group be created to replace these two access policies? If so, can you show access group policy JSON
+      that could be created for the policies above?
+    answer: |
+      Yes, it is possible to create an access group to replace the two access policies.
+      ```json
+      {
+        "description": "test policy ok to delete",
+        "type": "access",
+        "subject": {
+          "attributes": [
+            {
+              "value": "AccessGroupId-aaa3444324",
+              "operator": "stringEquals",
+              "key": "access_group_id"
+            }
+          ]
+        },
+        "resource": {
+          "attributes": [
+            {
+              "value": "cloud-object-storage",
+              "operator": "stringEquals",
+              "key": "serviceName"
+            },
+            {
+              "value": "0eea91c14169e0a6a3bbafe034380f50",
+              "operator": "stringEquals",
+              "key": "accountId"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "role_id": "crn:v1:bluemix:public:iam::::role:Administrator"
+              }
+            ]
+          }
+        }
+      }
+      ```
+  - question: What is the process of assigning access using an existing IBM Cloud IAM access group?
+    answer: |
+      Granting access by use of an access group, involves the following steps:\n\n1. Sign in to IBM Cloud
+      using your credentials.\n2. Navigate to the "Access(IAM)"" page. \n3. Select the identity type you
+      want to assign access to in the left navigation pane, this will take you to the page with a list of
+      identities in the account for the selected type.\n4. Next select the specific identity you want to
+      assign access to.\n5. Select the "Access" tab.\n6. Select the "Assign group" button to grant access
+      using an existing access group.\n6. Select the access group that has the access levels that you are
+      looking for and select "Add". This will add the access to the "Access Summary" on the right of the
+      screen.\n7. Select the "Assign" button to finish assigning access."}
+  - question: Can actions be added to an IBM Cloud IAM access policy?
+    answer: |
+     No, actions are not allowed in an IBM Cloud IAM access policy. Actions are contained within roles. Roles
+     are a collection of actions. Roles are used in access policies to indicate which grouping of actions the
+     subject of the access policy can take on the resource targets of the access policy.
+  - question: What are the steps to create an IBM Cloud IAM access policy for a user in the UI?
+    answer: |
+     IBM Cloud IAM access policies can be created for a user with the following steps.\n1. Sign in to IBM Cloud
+     using your credentials.\n2. Navigate to the IAM page by selecting the "Access(IAM)" in the header drop down
+     menu.\n3. Select the "Users" identity type in the left navigation pane.\n4. Select the specific user you
+     want to grant access to.\n5. Select the "Access" tab.\n6. Click on the "Assign Access" button and click on
+     the Access Policy option.\n7. Select the service and specific resources (depending on the resource
+     granularity needed) that you want to grant access to.\n8. Select the role or roles that group the actions
+     you want to grant.\n9. (Optional)Select the conditions you want to place that contrain the access granted in
+     the policy. For example, you can select a time based condition to contrain the access to a certain time of
+     day.\n10. Select "Add" to add the access to the "Access Summary".\n11. (Optional) You can repeat steps 7
+     through 10 to add more access policies to the same subject.\n12. Once complete, review the access in the
+     "Access Summary" and click on the "Assign" button to apply the newly created access policies.
+  - question: What is an IBM Cloud IAM access policy with conditions? Can you provide example JSON?
+    answer: |
+      An IBM Cloud IAM policy enables a subject to access a resource. These policies are used in access decisions
+      when you call APIs for IAM-enabled services. Conditions are an optional part of the policy that further
+      restricts when the policy is active. For example, time based conditions only allow access from the
+      policy if the time matches the time based condition in the policy.
+      Here is the JSON body of an example policy
+      ```JSON
+      {
+        "type": "access",
+        "description": "Viewer role access for all instances of key protect in the account during business hours.",
+        "subject": {
+          "attributes": [
+            {
+              "key": "iam_id",
+              "operator": "stringEquals",
+              "value": "IBMid-123453user"
+            }
+          ]
+        },
+        "control": {
+          "grant": {
+            "roles": [
+              {
+                "role_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+              }
+            ]
+          }
+        },
+        "resource": {
+          "attributes": [
+            {
+              "key": "accountId",
+              "operator": "stringEquals",
+              "value": "100abcde100a41abc100aza678abc0zz"
+            },
+            {
+              "key": "serviceName",
+              "operator": "stringEquals",
+              "value": "kms"
+            }
+          ]
+        },
+        "pattern": "time-based-conditions:weekly:custom-hours",
+        "rule": {
+          "operator": "and",
+          "conditions": [
+            {
+              "key": "{{environment.attributes.day_of_week}}",
+              "operator": "dayOfWeekAnyOf",
+              "value": [
+                "1+00:00",
+                "2+00:00",
+                "3+00:00",
+                "4+00:00",
+                "5+00:00"
+              ]
+            },
+            {
+              "key": "{{environment.attributes.current_time}}",
+              "operator": "timeGreaterThanOrEquals",
+              "value": "09:00:00+00:00"
+            },
+            {
+              "key": "{{environment.attributes.current_time}}",
+              "operator": "timeLessThanOrEquals",
+              "value": "17:00:00+00:00"
+            }
+          ]
+        }
+      }
+      ```
+      In this policy the subject "IBMid-123453user" has "Viewer" access on the service "kms" in account
+      "100abcde100a41abc100aza678abc0zz" during business hours, Monday to Friday 9AM to 5PM.
