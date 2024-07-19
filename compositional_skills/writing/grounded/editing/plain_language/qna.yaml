@@ -1,0 +1,161 @@
+version: 2
+task_description: |
+  This skill provides the ability to convert text into plain language
+created_by: mterry
+seed_examples:
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
+  - context: |
+      context
+    question: |
+      question
+    answer: |
+      answer
