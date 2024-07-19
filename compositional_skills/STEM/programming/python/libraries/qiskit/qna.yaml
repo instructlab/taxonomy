@@ -1,33 +1,38 @@
 created_by: Zachary.Kauffman@ibm.com
 seed_examples:
-- answer: QuantumCircuit.cswap
-  context: QuantumCircuit.fredkin
-  question: How can I upgrade this to qiskit 1.0?
-- answer: Circuit.unitary
-  context: Circuit.squ
-  question: How can I upgrade this to qiskit 1.0?
-- answer: QuantumCircuit.cx
-  context: QuantumCircuit.cnot
-  question: What's the equivalent Qiskit 1.0 code?
-- answer: Circuit.ccx
-  context: Circuit.toffoli
-  question: Update my outdated Qiskit code.
-- answer: QuantumCircuit.mcx
-  context: QuantumCircuit.mct
-  question: How can I upgrade this to qiskit 1.0?
-- answer: "from qiskit import QuantumCircuit
-    QuantumCircuit = QuantumCircuit(3,3)
-    QuantumCircuit.id(0)
-    QuantumCircuit.h(0)
-    QuantumCircuit.cx(0,1)
-    QuantumCircuit.cx(1,2)
-    QuantumCircuit.measure([0,1,2], [0,1,2])"
-  context: "from qiskit import *\nQuantumCircuit = QuantumCircuit(3,3)\n\nQuantumCircuit.i(0)\n\
-    QuantumCircuit.h(0)\nQuantumCircuit.cnot(0,1)\nQuantumCircuit.cnot(1,2) \n\nQuantumCircuit.measure([0,1,2],\
-    \ [0,1,2])"
-  question: What's the equivalent Qiskit 1.0 code?
-- answer: QuantumCircuit.id
-  context: QuantumCircuit.i
-  question: What's the equivalent Qiskit 1.0 code?
+  - answer: QuantumCircuit.cswap
+    context: QuantumCircuit.fredkin
+    question: How can I upgrade this to qiskit 1.0?
+  - answer: Circuit.unitary
+    context: Circuit.squ
+    question: How can I upgrade this to qiskit 1.0?
+  - answer: QuantumCircuit.cx
+    context: QuantumCircuit.cnot
+    question: What's the equivalent Qiskit 1.0 code?
+  - answer: Circuit.ccx
+    context: Circuit.toffoli
+    question: Update my outdated Qiskit code.
+  - answer: QuantumCircuit.mcx
+    context: QuantumCircuit.mct
+    question: How can I upgrade this to qiskit 1.0?
+  - answer: >-
+      from qiskit import QuantumCircuit QuantumCircuit = QuantumCircuit(3,3)
+      QuantumCircuit.id(0) QuantumCircuit.h(0) QuantumCircuit.cx(0,1)
+      QuantumCircuit.cx(1,2) QuantumCircuit.measure([0,1,2], [0,1,2])
+    context: |-
+      from qiskit import *
+      QuantumCircuit = QuantumCircuit(3,3)
+
+      QuantumCircuit.i(0)
+      QuantumCircuit.h(0)
+      QuantumCircuit.cnot(0,1)
+      QuantumCircuit.cnot(1,2) 
+
+      QuantumCircuit.measure([0,1,2], [0,1,2])
+    question: What's the equivalent Qiskit 1.0 code?
+  - answer: QuantumCircuit.id
+    context: QuantumCircuit.i
+    question: What's the equivalent Qiskit 1.0 code?
 task_description: Convert Qiskit 0.X programs to Qiskit 1.0.X syntax
 version: 2
+
