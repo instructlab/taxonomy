@@ -1,20 +1,36 @@
 version: 2
 task_description: What is Code Engine
+domain: IBM Cloud CodeEngine
+document:
+  repo: https://github.com/ssvaidehi/taxonomy
+  commit: 2d8598dfa192a2c306c302269e98572fec552395
+  patterns:
+    - R*.md
 created_by: IBM Code Engine Team
 seed_examples:
-  - question: 'What is Code Engine'
-    answer: "IBM Cloud Code Engine is a fully managed, serverless platform that runs your containerized workloads,\
-      \ including web apps, micro-services, event-driven functions, or batch jobs.\
+  - answer: "IBM Cloud Code Engine is a fully managed, serverless platform that runs\
+      \ your containerized workloads, including web apps, micro-services,\
+      \ event-driven functions, or batch jobs.\
       \ Code Engine even builds container images for you from your source code.\
-      \ All these workloads can seamlessly work together because they are all hosted within the same Kubernetes infrastructure.\ 
-      \ The Code Engine experience is designed so that you can focus on writing code and not on the infrastructure that is needed to host it."
-  - question: 'What are the key terms of Code Engine'
-    answer: "Some key terms are Projects, Applications, Jobs, and Functions"
-  - question: 'What is Code Engine Project?'
-    answer: "A project is a grouping of Code Engine entities such as applications, jobs, and builds. Projects are used to manage resources and provide access to its entities."
-  - question: 'What is Code Engine Application?'
-    answer: "An application, or app, runs your code to serve HTTP requests. An application has a URL for incoming requests. The number of running instances of an application are automatically scaled up or down (to zero) based on incoming workload."
-  - question: 'What is Code Engine Function?'
-    answer: "A Function is a stateless code snippet that performs tasks in response to an HTTP request."
-  - question: 'What is Code Engine Job?'
-    answer: "	A job runs one or more instances of your executable code in parallel. Unlike applications, which include an HTTP Server to handle incoming requests, jobs are designed to run one time and exit."
+      \ All these workloads can seamlessly work together because they are all hosted\
+      \ within the same Kubernetes infrastructure.\
+      \ The Code Engine experience is designed so that you can focus on writing code\
+      \ and not on the infrastructure that is needed to host it.\n"
+    question: 'What is Code Engine'
+  - answer: "Some key terms are Projects, Applications, Jobs, and Functions"
+    question: 'What are the key terms of Code Engine'
+  - answer: "A project is a grouping of Code Engine entities such as\
+    \ applications, jobs, and builds. Projects are used to manage resources\
+    \ and provide access to its entities.\n"
+    question: 'What is a Code Engine Project?'
+  - answer: "An application, or app, runs your code to serve HTTP requests.\
+    \ An application has a URL for incoming requests. \
+    \ The number of running instances of an application are automatically scaled\
+    \ up or down (to zero) based on incoming workload.\n"
+    question: 'What is a Code Engine Application?'
+  - answer: "A Function is a stateless code snippet that performs tasks in response to an HTTP request.\n"
+    question: 'What is a Code Engine Function?'
+  - answer: "A job runs one or more instances of your executable code in parallel.\
+    \ Unlike applications, which include an HTTP Server to handle incoming requests,\
+    \ jobs are designed to run one time and exit.\n"
+    question: 'What is a Code Engine Job?'
