@@ -130,7 +130,7 @@ seed_examples:
       You can't customize Ransomware conditions for your tenant. For changes,
       please raise an RFE request.
 document:
-  repo: git@github.ibm.com:rajmadhu/watsonx-si-knowledge.git
-  commit: 7c45344
+  repo: https://github.com/vikash010/si_data.git
+  commit: 140fc8a
   patterns:
     - RansomwareThreatDetection.md

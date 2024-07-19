@@ -194,7 +194,7 @@ seed_examples:
       selector dropdown menu located at the top of the interface. This menu
       allows users to select and view metrics for different storage systems.
 document:
-  repo: git@github.ibm.com:rajmadhu/watsonx-si-knowledge.git
-  commit: 6e89f0d
+  repo: https://github.com/vikash010/si_data.git
+  commit: 140fc8a
   patterns:
     - gaininginsights.md

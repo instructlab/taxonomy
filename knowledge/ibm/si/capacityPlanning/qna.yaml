@@ -204,7 +204,7 @@ seed_examples:
       comprehensive data.| * Increased agility in responding to market changes.|
       * Optimized resource allocation and cost savings.
 document:
-  repo: git@github.ibm.com:rajmadhu/watsonx-si-knowledge.git
-  commit: 425af69
+  repo: https://github.com/vikash010/si_data.git
+  commit: 140fc8a
   patterns:
     - CapacityPlanningInSI.md

@@ -128,7 +128,7 @@ seed_examples:
       health and status of all monitored storage systems, highlighting any
       issues that require attention.
 document:
-  repo: git@github.ibm.com:rajmadhu/watsonx-si-knowledge.git
-  commit: f6c3838
+  repo: https://github.com/vikash010/si_data.git
+  commit: 140fc8a
   patterns:
     - StorageInsights.md

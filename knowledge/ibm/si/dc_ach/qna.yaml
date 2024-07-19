@@ -151,7 +151,7 @@ seed_examples:
       permissions, enabling administrators to assign roles and permissions based
       on user responsibilities.
 document:
-  repo: git@github.ibm.com:rajmadhu/watsonx-si-knowledge.git
-  commit: 0870b92
+  repo: https://github.com/vikash010/si_data.git
+  commit: 140fc8a
   patterns:
     - data_collection_methods.md

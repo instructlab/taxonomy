@@ -207,7 +207,7 @@ seed_examples:
       storage system using IP addresses or hostnames, facilitating comprehensive
       monitoring of asset, capacity, and performance metrics.
 document:
-  repo: git@github.ibm.com:rajmadhu/watsonx-si-knowledge.git
-  commit: c4e1eb4
+  repo: https://github.com/vikash010/si_data.git
+  commit: 140fc8a
   patterns:
     - AddingDeviceInSI.md
