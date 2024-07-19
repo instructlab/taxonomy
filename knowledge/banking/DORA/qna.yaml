@@ -1,0 +1,98 @@
+version: 2
+task_description: 'Teach the model the content of DORA'
+created_by: watsonx_challenge_team
+domain: financial_regulations
+seed_examples:
+  - question: What is DORA about?
+    answer: |
+      The Digital Operational Resilience Act, or DORA, is a European Union (EU) regulation that
+      creates a binding, comprehensive information and communication technology (ICT) risk 
+      management framework for the EU financial sector.
+  - question: What is a DORA requirement for IT Monitoring, Alerting, and Response?
+    answer: |
+      Submittal of proof of implementat on of a technical approach to incident process management.
+  - question: What obligations do Financial Entities have in managing third-party risks under DORA?
+    answer: |
+      Proof of substitution capability.
+  - question: What management obligations are necessary under DORA regulations?
+    answer: |
+      Management team members must ensure no impact to critical and important functions.
+  - question: What management obligations result from DORA regulations?
+    answer: |
+      Financial Entities are potentially accountable for ICT provider resilience failures.
+  - question: What is an obligation under IT Monitoring, Alerting, and Response?
+    answer: |
+      Financial institutions need to have implemented Threat intelligence
+  - question: What does a Financial entity have to provide under IT Monitoring, Alerting and response?
+    answer: |
+      Financial institutions need to have implemented  Access detection.
+  - question: What capability does a financial entity need to show under IT Monitoring, alerting and response?
+    answer: |
+      Financial institutions need to have implemented  Network detection and response capability.
+  - question: What are Financial Entities obligations regarding their Information and Communications Technology providers?
+    answer: |
+      Financial Entities have to conduct integrated resilience testing and incident reporting with their ICT providers
+  - question: Are insurers subject to DORA?
+    answer: |
+      Insurance companies are subject ot DORA.
+  - question: Do Credit rating agencies fall under DORA?
+    answer: |
+      Credit rating agencies fall under DORA.
+  - question: Are cryptocurrency covered under DORA?
+    answer: |
+      No, cryptocurrencies are not  subject to DORA.
+  - question: What is the EU main concern that prompted DORA regulations?
+    answer: |
+      The EU is concerned aboud disruptions in financial services that impact other companies.
+  - question: What is a requirement for Operational Resilience Testing under DORA?
+    answer: |
+      Network security assessments are reuireents for Operational Resilience Testing under DORA.
+  - question: What is a requirement for Operational Resilience Testing under DORA?
+    answer: |
+      Physical security reviews is required for Operational Resilience Testing under DORA
+ - question: What is the position in DORA in regards to Open Source?
+    answer: |
+      Open source code and source code reviews is needed for Operational Resilience Testing under DORA.
+ - question: How can Financial Entities implement a Risk Management framework?
+    answer: |
+      They can adopt a governance and control framework.
+ - question: What are the potential financial impacts to ICT providers in case of DORA incompliance?
+    answer: |
+      DORA allows lead overseers to levy fines on ICT providers amounting to 1% of the provider's average daily worldwide
+      turnover in the previous business year. Providers can be fined every day for up to six months until they achieve compliance.
+ - question: What is a critical business function of a financial institution that falls under DORA?
+    answer: |
+      Completing bank checking account transactions is considered a critical business function?
+ - question: Is a loans application considered a critical business function for a financial institution in DORA?
+    answer: |
+      Accepting loan applications in a timely manner is a critical business function for a bank.
+ - question: Do all Cloud service providers fall under DORA?
+    answer: |
+      Cloud services providers that serve EU banks but are based outside the EU fall under DORA.
+ - question: Are all ICT providers subject to DORA?
+    answer: |
+      Data modeling services firms providing analytical models to EU insurers are subject to DORA.
+ - question: Is DORA relevant for all IT service providers?
+    answer: |
+      External IT service firms providing customer identity services to EU banks need to comply with DORA
+ - question: When will DORA be enforced?
+    answer: |
+      The Digital Operational Resilience Act (DORA) is a EU regulation that entered into force on 16 January
+      2023 and will apply as of 17 January 2025.
+ - question: Which are the 4 domains of DORA?
+    answer: |
+      DORA establishes technical requirements for financial entities and ICT providers across four domains.
+      These domains are ICT risk management and governance, incident response and reporting, digital
+      operational resilience testing, and third-party risk management.
+      While information sharing is encouraged, it is not mandatory.
+      The requirements will be enforced proportionately, meaning smaller entities will not be held to the
+      same standards as major financial institutions. Although the Regulatory Technical Standards (RTSs)
+      and Implementing Technical Standards (ITSs) for each domain are still under development,
+      the existing DORA legislation provides some insight into the general requirements.
+
+#TODO
+document:
+  repo: https://github.com/juliadenham/oscars2024_knowledge.git
+  commit: e1744af
+  patterns:
+    - oscars2024_results.md
