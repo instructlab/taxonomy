@@ -1,0 +1,200 @@
+version: 1
+task_description: Gaining Insights
+created_by: rajashekar
+domain: storage
+seed_examples:
+  - question: What is the purpose of the Insight Charts in IBM Storage Insights Pro?
+    answer: >-
+      The Insight Charts in IBM Storage Insights Pro display recommended
+      actions, performance metrics, and reclaimable volumes, helping users
+      improve their storage environment by providing actionable insights.
+  - question: How does IBM Storage Insights Pro assist with capacity planning?
+    answer: >-
+      IBM Storage Insights Pro helps with capacity planning by forecasting
+      future capacity needs based on historical data for block storage systems,
+      file storage systems, and pools. This assists in making informed
+      purchasing decisions and avoiding capacity shortages.
+  - question: What performance metrics are available in IBM Storage Insights Pro?
+    answer: >-
+      IBM Storage Insights Pro provides performance metrics for storage systems,
+      including insights into the performance of volumes, disks, and ports,
+      helping to identify bottlenecks and performance issues.
+  - question: How can IBM Storage Insights Pro help with storage reclamation?
+    answer: >-
+      IBM Storage Insights Pro provides recommendations for reclaiming capacity
+      by identifying volumes that can be reclaimed, thereby optimizing storage
+      usage before planning new capacity purchases.
+  - question: What is the function of the Advisor page in IBM Storage Insights Pro?
+    answer: >-
+      The Advisor page in IBM Storage Insights Pro allows users to view,
+      evaluate, and manage events that include recommended actions, helping to
+      understand and address potential problems in the storage environment.
+  - question: How does IBM Storage Insights Pro contribute to cost reduction?
+    answer: >-
+      IBM Storage Insights Pro contributes to cost reduction by providing
+      advanced insights into performance, capacity, and health views, enabling
+      better storage utilization, intelligent capacity planning, and effective
+      storage reclamation.
+  - question: >-
+      What types of storage systems can be monitored with IBM Storage Insights
+      Pro?
+    answer: >-
+      IBM Storage Insights Pro can monitor a variety of storage systems,
+      including both IBM and non-IBM storage systems, providing comprehensive
+      performance, capacity, and health views.
+  - question: How can users access the insights provided by IBM Storage Insights Pro?
+    answer: >-
+      Users can access the insights provided by IBM Storage Insights Pro through
+      various sections of the interface, including the Advisor, Capacity
+      Planning, Performance, and Reclamation views.
+  - question: >-
+      What benefits does IBM Storage Insights Pro offer over the standard
+      version?
+    answer: >-
+      IBM Storage Insights Pro offers benefits over the standard version,
+      including more comprehensive performance, capacity, and health views,
+      monitoring for a wider variety of storage systems, and advanced features
+      for capacity planning and storage reclamation.
+  - question: >-
+      What role do historical data and advanced formulas play in IBM Storage
+      Insights Pro?
+    answer: >-
+      Historical data and advanced formulas in IBM Storage Insights Pro are used
+      to analyze past usage metrics and project future capacity needs, aiding in
+      capacity planning and ensuring that storage environments are prepared for
+      future demands.
+  - question: How does IBM Storage Insights Pro help with performance troubleshooting?
+    answer: >-
+      IBM Storage Insights Pro helps with performance troubleshooting by
+      providing detailed performance metrics for volumes, disks, and ports,
+      allowing users to measure and identify bottlenecks and performance issues
+      in storage systems.
+  - question: >-
+      What insights can users gain from the Performance Views in IBM Storage
+      Insights Pro?
+    answer: >-
+      Users can gain insights into the overall performance of their storage
+      resources, including I/O rates, response times, and throughput, which help
+      in identifying and resolving performance bottlenecks.
+  - question: How does IBM Storage Insights Pro forecast future capacity needs?
+    answer: >-
+      IBM Storage Insights Pro uses historical data and advanced analytics to
+      forecast future capacity needs, helping users plan for storage expansion
+      and avoid potential capacity shortages.
+  - question: What are Reclamation Views in IBM Storage Insights Pro?
+    answer: >-
+      Reclamation Views in IBM Storage Insights Pro provide recommendations for
+      reclaiming unused or underutilized storage capacity, helping optimize
+      storage utilization and delay the need for new capacity purchases.
+  - question: How can IBM Storage Insights Pro improve storage efficiency?
+    answer: >-
+      IBM Storage Insights Pro improves storage efficiency by providing
+      actionable insights into reclaiming unused storage, optimizing
+      performance, and planning future capacity needs, thus ensuring that
+      storage resources are used effectively.
+  - question: >-
+      What types of data are analyzed by IBM Storage Insights Pro to provide
+      insights?
+    answer: >-
+      IBM Storage Insights Pro analyzes a variety of data, including capacity
+      usage, performance metrics, historical data, and system health
+      information, to provide comprehensive insights into the storage
+      environment.
+  - question: >-
+      How can IBM Storage Insights Pro help in detecting storage availability
+      issues?
+    answer: >-
+      IBM Storage Insights Pro helps in detecting storage availability issues by
+      continuously monitoring storage systems and providing alerts and
+      recommended actions when potential issues are detected, ensuring high
+      availability and reliability.
+  - question: >-
+      What are the benefits of using the Capacity Planning feature in IBM
+      Storage Insights Pro?
+    answer: >-
+      The Capacity Planning feature in IBM Storage Insights Pro benefits users
+      by providing accurate forecasts of future capacity needs, enabling better
+      budget planning, preventing capacity shortages, and ensuring optimal
+      storage utilization.
+  - question: >-
+      How does IBM Storage Insights Pro handle the analysis of large numbers of
+      storage devices?
+    answer: >-
+      IBM Storage Insights Pro handles the analysis of large numbers of storage
+      devices by using advanced analytics and efficient data processing
+      techniques, although the analysis may take more time as the number of
+      devices grows.
+  - question: What is the role of the Advisor page in maintaining storage health?
+    answer: >-
+      The Advisor page in IBM Storage Insights Pro plays a critical role in
+      maintaining storage health by providing a centralized location for
+      viewing, evaluating, and managing recommended actions and events that help
+      address potential storage problems.
+  - question: How can users access the dashboard in IBM Storage Insights Pro?
+    answer: >-
+      Users can access the dashboard in IBM Storage Insights Pro by logging into
+      the application and selecting the "Dashboard" tab from the main navigation
+      menu. The dashboard provides an overview of key metrics and insights.
+  - question: >-
+      Where can users find the performance metrics for storage systems in IBM
+      Storage Insights Pro?
+    answer: >-
+      Users can find the performance metrics for storage systems by navigating
+      to the "Performance" section in the main menu. This section provides
+      detailed performance views for volumes, disks, and ports.
+  - question: >-
+      How do users navigate to the Capacity Planning feature in IBM Storage
+      Insights Pro?
+    answer: >-
+      Users can navigate to the Capacity Planning feature by selecting the
+      "Capacity" tab from the main navigation menu. This section helps users
+      forecast future capacity needs based on historical data.
+  - question: Where can users access the Reclamation Views in IBM Storage Insights Pro?
+    answer: >-
+      Users can access the Reclamation Views by navigating to the "Reclamation"
+      section in the main menu. This section provides recommendations for
+      reclaiming unused or underutilized storage capacity.
+  - question: How can users view and manage events in IBM Storage Insights Pro?
+    answer: >-
+      Users can view and manage events by navigating to the "Advisor" page from
+      the main menu. The Advisor page displays recommended actions and events
+      that help address potential storage problems.
+  - question: >-
+      How do users access detailed health information about their storage
+      systems in IBM Storage Insights Pro?
+    answer: >-
+      Users can access detailed health information by selecting the "Health" tab
+      in the main navigation menu. This section provides comprehensive insights
+      into the health status of storage systems.
+  - question: >-
+      Where can users find the support resources and documentation in IBM
+      Storage Insights Pro?
+    answer: >-
+      Users can find support resources and documentation by clicking on the
+      "Help" icon or tab in the main navigation menu. This section provides
+      access to user guides, tutorials, and support contacts.
+  - question: How can users customize their dashboard in IBM Storage Insights Pro?
+    answer: >-
+      Users can customize their dashboard by selecting the "Customize Dashboard"
+      option within the Dashboard tab. This feature allows users to add, remove,
+      and rearrange widgets according to their preferences.
+  - question: >-
+      Where can users configure alerts and notifications in IBM Storage Insights
+      Pro?
+    answer: >-
+      Users can configure alerts and notifications by navigating to the
+      "Settings" tab in the main menu and selecting "Alerts and Notifications."
+      This section allows users to set up custom alerts for various storage
+      metrics.
+  - question: >-
+      How do users switch between different storage systems in IBM Storage
+      Insights Pro?
+    answer: >-
+      Users can switch between different storage systems by using the system
+      selector dropdown menu located at the top of the interface. This menu
+      allows users to select and view metrics for different storage systems.
+document:
+  repo: git@github.ibm.com:rajmadhu/watsonx-si-knowledge.git
+  commit: 6e89f0d
+  patterns:
+    - gaininginsights.md

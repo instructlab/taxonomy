@@ -1,0 +1,157 @@
+version: 2
+task_description: Teach the model about Data Collection Methods in SI
+created_by: Archana
+domain: StorageInsights
+seed_examples:
+  - question: What is the primary purpose of IBM Storage Insights security measures?
+    answer: >
+      The primary purpose of IBM Storage Insights security is to protect the
+      confidentiality, integrity, and availability of collected data.
+  - question: How does IBM Storage Insights ensure the confidentiality of the data?
+    answer: >
+      IBM Storage Insights ensures data confidentiality with encryption for data
+      at rest and in transit, plus strict access controls.
+  - question: >-
+      What encryption protocols are used by IBM Storage Insights to secure data
+      in transit?
+    answer: >
+      IBM Storage Insights uses HTTPS with TLS encryption protocols to secure
+      data in transit.
+  - question: How does IBM Storage Insights manage access controls?
+    answer: >
+      IBM Storage Insights uses role-based access control (RBAC) to assign
+      permissions based on users' roles and responsibilities.
+  - question: >-
+      What measures are in place to ensure data integrity in IBM Storage
+      Insights?
+    answer: >
+      Data integrity in IBM Storage Insights is ensured through checksums,
+      validation processes, and secure logging to prevent unauthorized
+      modifications.
+  - question: >-
+      What is the primary function of the Data Collector in IBM Storage
+      Insights?
+    answer: >
+      The Data Collector in IBM Storage Insights gathers performance and
+      configuration metadata from storage devices for analysis.
+  - question: How often does the Data Collector collect data from the storage devices?
+    answer: >
+      The Data Collector in IBM Storage Insights defaults to collecting data
+      from storage devices every 15 minutes, customizable as needed.
+  - question: What are the system requirements for installing the Data Collector?
+    answer: >
+      The Data Collector for IBM Storage Insights requires at least 2 GB RAM, 2
+      CPU cores, and 500 MB disk space, compatible with Windows, Linux, or AIX.
+  - question: What security protocols does the Data Collector use to transmit data?
+    answer: >
+      The Data Collector uses HTTPS with TLS encryption to securely transmit
+      data to IBM Storage Insights.
+  - question: Can the Data Collector be configured to work with a proxy server?
+    answer: >
+      Yes, the Data Collector can be configured to use a proxy server for
+      transmitting data to IBM Storage Insights.
+  - question: >-
+      What types of data are collected by IBM Storage Insights from storage
+      environments?
+    answer: >
+      IBM Storage Insights collects performance metrics, configuration details,
+      capacity usage data, and event logs.
+  - question: How does IBM Storage Insights ensure the accuracy of the data collected?
+    answer: >
+      IBM Storage Insights ensures data accuracy with validation processes,
+      error checking, and secure transmission protocols.
+  - question: How does the "Call Home" feature benefit storage system administrators?
+    answer: >
+      The Call Home feature benefits administrators with proactive monitoring,
+      support for faster issue resolution, and minimized downtime.
+  - question: >-
+      What types of data are sent to IBM support through the "Call Home"
+      feature?
+    answer: >
+      The Call Home feature sends diagnostic info, error logs, performance
+      metrics, and configuration details to IBM support.
+  - question: >-
+      Is the data transmitted by the Call Home feature encrypted, and if so,
+      how?
+    answer: >
+      The data transmitted by Call Home is encrypted using HTTPS with TLS for
+      secure communication.
+  - question: >-
+      Can administrators control which data is sent through the "Call Home"
+      feature in IBM Storage Insights?
+    answer: >
+      Yes, administrators can configure data types and amounts sent via Call
+      Home in IBM Storage Insights.
+  - question: How does IBM Storage Insights use performance metrics metadata?
+    answer: >
+      IBM Storage Insights uses performance metrics to analyze system
+      performance, identify bottlenecks, and optimize resource use.
+  - question: What kind of configuration details are collected by IBM Storage Insights?
+    answer: >
+      IBM Storage Insights gathers configuration details including hardware
+      specs, firmware versions, network settings, and storage configurations.
+  - question: Why does IBM Storage Insights collect capacity usage metadata?
+    answer: >
+      IBM Storage Insights monitors storage utilization, forecasts needs, and
+      ensures efficient resource use with capacity usage metadata.
+  - question: What role do event logs play in IBM Storage Insights' metadata collection?
+    answer: >
+      Event logs in storage systems offer insights into operational status and
+      health, aiding issue detection, alerts, and troubleshooting.
+  - question: How long does IBM Storage Insights retain collected metadata?
+    answer: >
+      IBM Storage Insights retains metadata for up to two years to support trend
+      analysis and historical reporting.
+  - question: Can the metadata retention period be customized in IBM Storage Insights?
+    answer: >
+      The metadata retention period in IBM Storage Insights is predefined and
+      not customizable by users.
+  - question: >-
+      What is the purpose of retaining metadata for up to two years in IBM
+      Storage Insights?
+    answer: >
+      Retaining metadata for up to two years enables IBM Storage Insights to
+      offer comprehensive trend analysis, historical reporting, and long-term
+      performance insights.
+  - question: >-
+      How is metadata managed and archived after the retention period in IBM
+      Storage Insights?
+    answer: >
+      After the retention period, metadata in IBM Storage Insights is securely
+      archived or deleted based on IBM's data management policies.
+  - question: >-
+      Does IBM Storage Insights offer any data export options for retained
+      metadata?
+    answer: >
+      Yes, IBM Storage Insights allows exporting retained metadata for analysis
+      or integration with other tools and systems.
+  - question: Who has access to the metadata collected by IBM Storage Insights?
+    answer: >
+      Access to IBM Storage Insights metadata is restricted to authorized users,
+      including administrators, IT personnel, and IBM support, based on roles.
+  - question: >-
+      How does IBM Storage Insights ensure that only authorized users can access
+      metadata?
+    answer: >
+      IBM Storage Insights restricts metadata access to authorized users through
+      RBAC and stringent authentication mechanisms.
+  - question: "Can IBM support staff access metadata, and if so, under what conditions?"
+    answer: >
+      Yes, IBM support can access metadata for troubleshooting and support,
+      usually with customer consent and only as necessary."
+  - question: >-
+      Are there any audit logs available to track who accesses metadata in IBM
+      Storage Insights?
+    answer: >
+      Yes, IBM Storage Insights logs access to metadata, recording who accessed
+      it, when, and actions taken.
+  - question: How are permissions managed and assigned to users in IBM Storage Insights?
+    answer: >
+      IBM Storage Insights uses role-based access control (RBAC) to manage
+      permissions, enabling administrators to assign roles and permissions based
+      on user responsibilities.
+document:
+  repo: git@github.ibm.com:rajmadhu/watsonx-si-knowledge.git
+  commit: 0870b92
+  patterns:
+    - data_collection_methods.md

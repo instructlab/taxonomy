@@ -1,0 +1,134 @@
+version: 2
+task_description: Teach the model about storage insights
+created_by: aparnachinnaiah
+domain: StorageInsights
+seed_examples:
+  - question: What is IBM Storage Insights?
+    answer: >-
+      IBM Storage Insights is a cloud-based service that provides a unified view
+      of storage across environments. It helps organizations monitor, analyze,
+      and optimize their storage infrastructure.
+  - question: >-
+      How does IBM Storage Insights differ from traditional storage management
+      tools?
+    answer: >-
+      IBM Storage Insights is cloud-based and offers predictive analytics,
+      proactive support, and real-time insights, which are often lacking in
+      traditional, on-premises storage management tools.
+  - question: What types of storage systems does IBM Storage Insights support?
+    answer: >-
+      IBM Storage Insights supports block storage, file storage, and object
+      storage systems.
+  - question: Which block storage systems are compatible with IBM Storage Insights?
+    answer: >-
+      IBM Storage Insights is compatible with block storage systems such as IBM
+      FlashSystem, IBM DS8000, IBM Storwize, and IBM SAN Volume Controller
+      (SVC).
+  - question: What file storage systems are supported by IBM Storage Insights?
+    answer: >-
+      IBM Storage Insights supports file storage systems like IBM Spectrum Scale
+      and IBM Elastic Storage System (ESS).
+  - question: Which object storage systems can be monitored by IBM Storage Insights?
+    answer: IBM Storage Insights can monitor IBM Cloud Object Storage.
+  - question: What are the key benefits of using IBM Storage Insights?
+    answer: >-
+      Key benefits include improved visibility, predictive analytics, proactive
+      support, and optimization of storage resources.
+  - question: How does IBM Storage Insights offer proactive support?
+    answer: >-
+      IBM Storage Insights uses predictive analytics to detect potential issues
+      early and automatically generates support tickets to resolve them before
+      they impact operations.
+  - question: Can IBM Storage Insights integrate with other IT management tools?
+    answer: >-
+      Yes, IBM Storage Insights can integrate with other IT management tools to
+      provide a comprehensive view of the storage environment within the broader
+      IT infrastructure.
+  - question: What kind of analytics are provided by IBM Storage Insights?
+    answer: >-
+      IBM Storage Insights provides predictive analytics, capacity planning,
+      performance monitoring, and anomaly detection.
+  - question: How does IBM Storage Insights help with capacity planning?
+    answer: >-
+      IBM Storage Insights provides detailed capacity reports and forecasts,
+      helping organizations plan for future storage needs and avoid capacity
+      shortages.
+  - question: Is IBM Storage Insights suitable for managing cloud storage?
+    answer: >-
+      Yes, IBM Storage Insights is designed to manage both on-premises and cloud
+      storage environments, providing a unified view and management
+      capabilities.
+  - question: How can IBM Storage Insights improve storage performance?
+    answer: >-
+      By offering real-time performance monitoring and analytics, IBM Storage
+      Insights helps identify and resolve performance bottlenecks, ensuring
+      optimal storage performance.
+  - question: Does IBM Storage Insights support multi-vendor storage environments?
+    answer: >-
+      Yes, IBM Storage Insights supports multi-vendor storage environments,
+      allowing organizations to manage heterogeneous storage systems from a
+      single platform.
+  - question: What is the deployment model for IBM Storage Insights?
+    answer: >-
+      IBM Storage Insights is a cloud-based service, eliminating the need for
+      on-premises hardware and software installations.
+  - question: How does IBM Storage Insights ensure data security?
+    answer: >-
+      IBM Storage Insights employs robust security measures, including data
+      encryption, secure access controls, and compliance with industry standards
+      to protect customer data.
+  - question: What role does AI play in IBM Storage Insights?
+    answer: >-
+      AI in IBM Storage Insights is used for predictive analytics, anomaly
+      detection, and automating routine tasks to enhance storage management
+      efficiency.
+  - question: Can IBM Storage Insights help with regulatory compliance?
+    answer: >-
+      Yes, IBM Storage Insights provides audit trails, compliance reporting, and
+      data protection features to help organizations meet regulatory
+      requirements.
+  - question: What types of reports can IBM Storage Insights generate?
+    answer: >-
+      IBM Storage Insights can generate various reports, including capacity
+      utilization, performance metrics, health summaries, and inventory reports.
+  - question: How does IBM Storage Insights assist in troubleshooting storage issues?
+    answer: >-
+      IBM Storage Insights provides detailed insights into storage health,
+      performance, and utilization, helping identify and troubleshoot issues
+      quickly and efficiently.
+  - question: Is there a mobile app for IBM Storage Insights?
+    answer: >-
+      As of the latest information, IBM Storage Insights is accessible through a
+      web-based interface, which is mobile-friendly, but there is no dedicated
+      mobile app.
+  - question: How does IBM Storage Insights help optimize storage costs?
+    answer: >-
+      By providing detailed insights into storage usage and performance, IBM
+      Storage Insights helps identify inefficiencies and optimize storage
+      resources, leading to cost savings.
+  - question: What is the pricing model for IBM Storage Insights?
+    answer: >-
+      IBM Storage Insights typically follows a subscription-based pricing model,
+      with costs based on the number of storage systems monitored and the level
+      of service required.
+  - question: Can IBM Storage Insights be used for disaster recovery planning?
+    answer: >-
+      Yes, IBM Storage Insights provides tools for monitoring and managing data
+      protection, which can be integral to disaster recovery planning.
+  - question: >-
+      What is the primary advantage of using IBM Storage Insights for storage
+      management?
+    answer: >-
+      The primary advantage is its ability to provide a comprehensive, real-time
+      view of storage environments, combined with predictive analytics and
+      proactive support to optimize storage management and prevent issues.
+  - question: What is the purpose of the health dashboard in IBM Storage Insights?
+    answer: >-
+      The health dashboard in IBM Storage Insights provides an overview of the
+      health and status of all monitored storage systems, highlighting any
+      issues that require attention.
+document:
+  repo: git@github.ibm.com:rajmadhu/watsonx-si-knowledge.git
+  commit: f6c3838
+  patterns:
+    - StorageInsights.md
