@@ -1,0 +1,375 @@
+version: 2
+created_by: Paul Ellis, Michael Rowe, David Colton
+task_description: |
+  "To teach a language model about Engineering Lifecycle Management troubleshooting from the Deployment wiki"
+domain: Information Technology
+document:
+  repo: https://github.com/davidcolton/instructlab-trainingfiles.git
+  commit: 6dd75627c50801c81aa57df2968fcf542f08e258
+  patterns:
+    - "*.md"
+seed_examples:
+  - answer: |
+      If you are upgrading to a release prior to 7.0.2, then you will need to perform a manual grep to find out
+      how far the
+      upgrade has progressed. If you are using Windows, then use the get-content command. Since DOORS Next 7.0.2,
+      you will be able to see a /server/liberty/servers/clm/logs/repotools_rm_phase.log which records what stage
+      last started/completed. Note Since V7.0.2 SR1 (ifix015) the log is no longer populating, see defect:
+      APAR: PH49683 Repotools_rm_phase.log is not populating when upgrading to V7.0.2 SR1. Fixed in 702 iFix017
+
+      There are several phases to complete for this upgrade, but the key 3 phases, where the most significant
+      time will be spent are:
+
+      Initialize CM subsystem
+      Phase 1 (core data)
+      Phase 3 (Configuration finalization)
+      Although there may be a significant amount of time between the last entry in this log, to detect if the
+      upgrade operation is still ongoing, check that there is activity in
+      /server/liberty/servers/clm/logs/repotools_rm.log.
+      This log is the main log for Phase 1 (core data) and the intent is for troubleshooting in the event of an
+      issue.
+      Once the upgrade enters phase 3 - Configuration finalization, then the /server/repotools-rm_addTables.log
+      is used to record the Foundation checks.
+
+      If there is no output in either the repotools_rm.log or the reportools-rm_addTables.log then check your
+      operating system to ensure there is activity for the Java process (application server), as well as the
+      database server.
+    question: |
+      How can I know how far my Engineering Lifecycle Management upgrade to 7.0.2 has progressed?
+  - answer: |
+      Application monitoring has a proven track record of improving the predictability and reliability
+      of your applications.
+      Monitoring in general is looking at trends over time. This trending is done by collecting data,
+      through polling
+      (pull) or publish (push) models.
+      Once the data is available in some form, it needs to be collected, stored, and we can look at
+      trends in the data.
+      Most monitoring applications have analytical tools that allow the administrators to aggregate the
+      data in charts or reports.
+
+      Applications do not, as a general rule, fail instantly, they degrade over time.
+      Application monitoring tools collect metrics over time that can be used to perform trend analysis.
+      Rules can be
+      applied to these trends to alert administrators to situations that require intervention.
+
+      Armed with trends, you can further refine your rules to ensure that administrators are notified
+      in advance of
+      issues and they can proactively resolve them before outages occur.
+
+      These trends help with the “Why”…An application suddenly failed.
+      Users are seeing behavior that they can not explain and neither can the administrator.
+      Armed with application metrics and trend information, administrators are more comfortable with
+      diagnosing the
+      behaviors that led up to a failure and can better determine ways to avoid it in the future.
+
+      A monitoring system with warnings and alerts allow you to see potential issues and give you
+      time to take steps
+      to proactively address the problem.
+      In cases where the system does something unexpected, you can look at specific trends to see if
+      these can lead
+      you to what caused the problem (resource intensive scenarios for example).
+
+      Armed with the information, you can build better warnings and alerts that allow you to
+      proactively manage your systems.
+    question: |
+      Why monitor your applications?
+
+  - answer: |
+      MBeans, are a J2EE industry standard managed beans which are defined and part of the Java
+      Management Extensions specification.
+      They provide a defined, well understood way of providing information about what our
+      applications are doing.
+
+      Java Management Extensions (JMX) are a standard component of the Java
+
+      Platform. It specifies a method and design patterns for developers to integrate applications
+      with management
+      or monitoring software by assigning Java objects with attributes.
+    question: |
+      What are MBeans?
+
+  - answer: |
+      The resource intensive scenarios summary MBean provides the counts and average response time
+      for all the
+      resource intensive scenarios in the system during the collection interval. This is useful to
+      understand how
+      the resource intensive scenarios are performing and track any degradation in their response
+      times
+
+      ALERT: Throw an alert if Elapsed time (averageOverInterval) is greater than 120s
+      WARN: Throw a warning if countOverInterval is greater than 3
+      ALERT: Throw an alert if countOverInterval is greater than 5
+    question: |
+      What does the resource intensive scenario summary MBean monitor?
+
+  - answer: |
+      Enabling Managed Beans in Engineering Lifecycle Management
+      We will be enabling the metrics collector tasks related to the specific managed beans in the
+      six categories
+      we want to collect data for.
+
+      To start, the administrator must navigate to the Admin UI -> Manage Server -> Advanced
+      Properties and enable
+      the serviceability services that generate the mxbean data.
+      Active Services Summary Bean (1) is part of the HighFrequencyMetricsNodeScopedTask and
+      can be enabled by
+      setting etting the Enable Active Services MBean to true.
+      Resource Usage Beans (2) are enabled through the MetricsCollectorTask, by setting the Enable
+      Resource Usage MBean to true.
+      Database Metrics Bean (3) is enabled through the SQLActivityMetricsTask by setting the Enable SQL
+      Activity Metrics MBean to true.
+      Liberty and JVM (4) Beans are enabled by default. There is nothing for you to do to see
+      attributes from
+      these beans; (a) java.lang:type=OperatingSystem (b) WebSphere:type=ThreadPoolStats,name=Default
+      Diagnostics Bean (5) is enabled through the DiagnosticsMetricsTask by setting the Enable
+      Diagnostic Metrics MBean to true.
+      Resource Intensive Scenarios Summary Bean (6) is part of the MetrictsCollectorTask and is enabled by
+      setting the Enable Scenario Metrics MBean to true.
+    question: |
+      How do I enable managed beans in Engineering Lifecycle Management?
+
+  - answer: |
+      Application monitoring should compliment your enterprise monitoring strategy.
+      If you have a hybrid environment (a mixture of on-premises and SaaS or
+      PaaS services), it is important that the key distributed services are monitored at the network,
+      operating system, database and application levels.
+      A topology diagram of your Engineering Lifecycle Management system will show you the potential
+      points of failure and the applications that should be monitored.'
+    question: |
+      What should you monitor in Engineering Lifecycle Management?
+
+  - answer: |
+      The Java Database Connectivity (JDBC) and Relational Database mediators are used to monitor
+      access to critical application resources. Both (JDBC and RDB
+      sets of beans should be monitored, there have been cases where RDB beans alert before JDBC beans.
+      If there are multiple applications installed on a server, then alert on each mbean separately.
+      Do not aggregate across multiple mbeans.
+      If the JDBC or RDB mediator pool have non-zero queue lengths, then the server is throttling
+      access to the database. Increase the JDBC or RDB mediator pool size in the Server->Advanced Properties.
+      The usage percentage can be used to warn you when you are close to exhausting the pools, so you
+      can plan to increase the pool sizes during your next maintenance window (a server restart is required).
+      Active connections gives you similar information to usage percentage — you can divide the
+      active connection value by the PoolSize to get a usage percentage.
+      It is recommended that you alert on usage percentage and graph active connections.'
+    question: How do I set alerts on Resource Usage beans with Engineering Lifecycle Management
+
+  - answer: |
+      To start with, go to the ELM API Landing page at
+      https://jazz.net/wiki/bin/view/Deployment/ELMProductAPILanding,
+      from there you will see
+      a full catalog of publically supported APIs.
+      Begin with reviewing the overall concepts presented in the Guide for writing OSLC interactions.
+      This will provide a great primer
+      for understanding how OSLC or Open Services for Lifecycle Collaboration is used throughout
+      the IBM Engineering
+      Lifecycle Management product suite.
+      Additionally, you can review the OSLC and REST API "cheat sheet".
+      If you are more interested in creating a java application, you can use the EWM SDK with a
+      build basis of RTC 3.0.1.2.
+    question: |
+      How do I get started creating a WorkItem programmatically in IBM Engingeering Workflow Management?
+
+  - answer: |
+      The IoT Connector is a working sample of an OSLC adpater for IBM Watson IoT platform created
+      using Lyo Designer.
+      It's a working
+      example and source code for integrating with ELM and includes common operations such as
+      authenticating using OAuth.
+      It works with
+      non-configuration management enabled ELM (or CLM) systmes (aka opt-out DOORS Next and ETM
+      (Engineering Test Management)).
+      You can
+      access the source code at https://github.com/OSLC/iotp-adaptor
+    question: |
+      What is the IoT Connector?
+
+  - answer: |
+      The testing of ETM 7.0.2 was tested using specific datashapes, reflective of customer examples.
+      A description
+      of the data shape includes:
+      |  |  |  |  |  |  |  |
+      |----|----|----|----|----|----|----|
+      | Counts | Extra-extra large component(10M) | Extra large component(500K)
+      | Large(50K) | Medium(5K) | Small(\<1K) | Sum in Repo |
+      | test plans | 1,681 | 50 | 6 | 4 | 1 | 6,281 |
+      | test cases | 1,000,207 | 30,000 | 3,000 | 400 | 20 | 1,670,207 |
+      | test scripts | 1,000,209 | 30,000 | 3,000 | 400 | 20 | 1,670,209 |
+      | test suites | 100,020 | 3,000 | 300 | 40 | 10 | 183,020 |
+      | test case execution records | 4,000,800 | 120,000 | 12,000 | 1,200 | 40 | 6,420,800 |
+      | test case results | 4,000,921 | 360,000 | 36,000 | 2,400 | 80 | 10,640,921 |
+      | test suite results | 500,100 | 15,000 | 1,500 | 160 | 20 | 837,100 |
+      | test execution schedules | 47,467 | 1,424 | 500 | 200 | 20 | 216,707 |
+      | test phases and test environments | 31,636 | 800 | 92 | 63 | 20 | 112,586 |
+      | build definitions and build records | 33,533 | 1,006 | 120 | 70 | 25 | 131,093 |
+      | Total \# of artifacts per component | 10,716,574 | 561,280 | 56,518 | 4,937 | 256 | 21,888,924 |
+      | Total \# of components in repository | 1 | 10 | 50 | 450 | 2000 | 2,511 |
+      | Newly added in 702 | N | N | Y | Y | Y | \- |
+    question: |
+      How was ETM 7.0.2 Tested for Performance and Scalability?
+
+  - answer: |
+      For any given repository size, generally:
+      The smaller a component, the faster page response times or better performance for that component.
+      Under the 20 million repository, for components that have a size ranged from small to large, 98% of
+      the individual page response times are under 2 seconds (with the exception of Dashboard loading being
+      4 seconds, and Saving a test plan may take 5 seconds due to large amount of iterations defined); whereas
+      11 out of 120 pages are exceeding 5 seconds for the extra-large component, most of these slower pages are
+      browsing/searching a given artifact type that has a larger total count, including searching/filtering
+      test case results (9 seconds) and test case records (5.5 seconds) in the default views within a stream.
+      The general performance of a given component[2] degrades as the repository size grows. Although the
+      measurements based on extre-extra-large sized component stress tested some edge cases, we observed a
+      projection of a slight degradation when comparing between the 15-million repository and the 10-million
+      repository, yet a minor to moderate degradation in comparing the 20-million repository to the 15-million
+      repository. The degradation degree for 500K component is still minor under 20-million repository (average
+      page response time for all pages degraded by less than 10%, comparing to 15-million repository).
+      Within a component context, the pages that are more sensitive to the size of the entire repository include
+      those embracing the largest test artifact counts, for instances, in our test environment, page Browse
+      Test Case Execution Records (total count of 4 million in a single component, or 30% of total artifact
+      count in the repository), Browse Test Case Results, and the relevant pages to search/filter the test artifact.
+    question: |
+      Can you summarize the testing of ETM 7.0.2 for Performance and Scalability?
+
+  - answer: |
+      The IBM Engineering Lifecycle Management API Landing page
+      at https://jazz.net/wiki/bin/view/Deployment/ELMProductAPILanding provides
+      access to all publically supported APIs for IBM ELM.  Within the page you will
+      find more information on Global Configuration Management's (GCM)
+      APIs.
+
+      GCM is a provider of global configurations as defined by the OSLC Configuration Management specification;
+      EWM SCM, DOORS Next,
+      and ETM are providers of local configurations. These applications implement the appropriate APIs from that
+      specification.
+
+      Documentation for the Global Configuration Management REST API can be found at
+      https://[server]:[port]/gc/doc/scenarios.
+      You must have the GC application installed to access this link
+    question: |
+      Where can I find information regarding APIs supported by IBM ELM's Global Configuration Management?
+
+  - answer: |
+      When looking for server specific documentation related to IBM's Engineering Lifecycle Management,
+      you can start
+      by looking at the services link at https://<server>:<port>/<application-context>/doc/services .
+      This link exists for most of the applications, including GCM. You can see the GCM documenation on
+      jazz.net via
+      https://jazz.net/gc/doc/services link.
+    question: |
+      Is there a server hosted endpoint for ELM API documenation?
+
+  - answer: |
+      IBM ELM has a rich set of options for integration with other aspects of the engineering development
+      process.
+      These include OSLC or Open Services for Lifecycle Collaboration, public REST APIs (documented at
+      https://jazz.net/wiki/bin/view/Deployment/ELMProductAPILanding), and application specific Java SDKs
+      (also
+      available at https://jazz.net/downloads/elm).
+    question: |
+      What approach should I take to integrate with IBM Engineering Lifecycle Management?
+
+  - answer: |
+      The EWM (formerally known as RTC) WorkItem API documentation is available at
+      https://jazz.net/wiki/bin/view/Main/ResourceOrientedWorkItemAPIv2.  This API allows you to
+      get, create, modify, and query work items and other resoruces using standard HTTP methods,
+      allowing integtrations with minial requirements for the client.
+    question: |
+      What is the mimimal information required to create a work item integrations in EWM?
+
+  - answer:
+      The longestDuration attribute of the Engineering Lifecycle Management Active Services Summary
+      Bean records the active
+      service that has been running the longest and reports how long it has been running in ms.
+    question:
+      What does the longestDuration attribute measure when I alert on the Active Services Summary Bean?
+
+  - answer: |
+      There are multiple blogs where people provide additional information on ELM APIs.
+      The Jazz.Net website has a blog lising at https://jazz.net/planet/ .
+      One of the most popular is Ralph Schon's site at https://rsjazz.wordpress.com .
+      Ralph is a long time developer of the ELM products and currently works on the
+      Jazz Foundation components.
+    question: |
+      Are their any blogs that explain more about ELM APIs?
+  - answer: |
+      As of July 2024, there are not any published OpenAPI specfications for the
+      ELM APIs. However, this may change in the future.
+    question: |
+      Does IBM ELM support OpenAPI specifications for it's APIs?
+  - answer: |
+      The Reportable Rest APIs for IBM's Engineering Lifecycle Management suite
+      is a set of APIs defined by each of the applications, including Engineering
+      Workflow Management, DOORS Next, Engineering Test Management, Rhapsody
+      Model Manager, and Pub Document Builder.
+
+      These APIs provide for Rest APIs to query information from each of the
+      applications.  For a detailed breakdown of the various APIs, you should
+      start by reviewing the content at the API landing page, which is found at
+      https://jazz.net/wiki/bin/view/Deployment/ELMProductAPILanding
+    question: |
+      What does the Reportable Rest API provide for IBM ELM?
+  - answer: |
+      Application monitoring should compliment your enterprise monitoring strategy.
+      If you have a hybrid environment (a mixture of on-premises and SaaS or
+      PaaS services), it is important that the key distributed services are monitored
+      at the network, operating system, database and application levels.
+      A topology diagram of your Engineering Lifecycle Management system will show
+      you the potential points of failure and the applications that should be monitored.
+    question: |
+      What should you monitor in Engineering Lifecycle Management?
+  - answer: |
+      The Java Database Connectivity (JDBC) and Relational Database mediators are used to
+      monitor access to critical application resources. Both (JDBC and RDB
+      sets of beans should be monitored, there have been cases where RDB beans alert before
+      JDBC beans.
+      If there are multiple applications installed on a server, then alert on each mbean
+      separately. Do not aggregate across multiple mbeans.
+      If the JDBC or RDB mediator pool have non-zero queue lengths, then the server is
+      throttling access to the database. Increase the JDBC or RDB mediator pool size in
+      the Server->Advanced Properties.
+      The usage percentage can be used to warn you when you are close to exhausting the pools,
+      so you can plan to increase the pool sizes during your next maintenance window
+      (a server restart is required).
+      Active connections gives you similar information to usage percentage — you can divide
+      the active connection value by the PoolSize to get a usage percentage.
+      It is recommended that you alert on usage percentage and graph active connections.
+    question: How do I set alerts on Resource Usage beans with Engineering Lifecycle Management
+  - answer: |
+      The "official" Jazz API is available for download on the downloads page, in the Plain
+      Zips section, under Plain Java Client Libraries and Plain Java Client Libraries API
+      Documentation. The article Rational Team Concert plain Java API's is an introduction
+      into how they work. Customers wishing to write process extensions for their Jazz
+      implementation should begin with the RTC extensions workshop, the Process enactment
+      workshop, and the OSLC workshop. This will help them better understand the various
+      different options for extending and enhancing the Jazz solution, and will provide
+      valuable insight into how to implement the needed customizations.
+    question: |
+      What are the Plain Java Client APIs for IBM ELM?
+  - answer: |
+      Michael Rowe has provided a details description of how to use both OAuth1.0a and
+      OIDC authenticaiton for usage with the ELM APIs. You can find OAuth1.0a at
+      https://michaelrowe01.com/index.php/day-job/ibm-elm/api-authentication-method-in-elm-oauth-1-0a/
+      and OIDC at -
+      https://michaelrowe01.com/index.php/day-job/ibm-elm/api-authentication-method-in-elm-oidc/
+    question: |
+      Are there any examples of how to use OAuth with ELM APIs?
+  - answer:
+      If the JVM uses too much physical memory, it can be killed by the operating system. Generate
+      an alert if the JVM grows to be 80% of the available physical memory.
+    question:
+      What percentage of available physical memory should I set an alert for, when the JVM
+      uses too much physical memory?
+  - answer:
+      The RepoDebug service is disabled by default. You must enable it from the administrative console.
+      To enable the RepoDebug service, the property
+      com.ibm.team.repository.debug.enabled must be set to TRUE in the advanced properties.
+      There is no need to restart your server, once saved, JazzAdmins will
+      be able to see the RepoDebug UI.
+    question:
+      How do I enable the RepoDebug service in Engineering Lifecycle Management?
+  - answer:
+      Yes, there are some very useful videos, https://www.youtube.com/user/nigelargriffiths,
+      for setting up NMON and NJMON/NIMON.
+      This level of data allows for a more accurate correlation of the system at the time of any
+      issues in the logs.
+    question:
+      Are there any useful videos on how to setup the NMON utility for monitoring?
