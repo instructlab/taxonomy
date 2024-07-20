@@ -1,4 +1,3 @@
----
 version: 2
 task_description: |
   This skill provides the ability to convert text into plain language
@@ -18,28 +17,28 @@ seed_examples:
     question: |
       Can you rewrite this statement in plain language?
     answer: >
-      If the person making the claim gives false information about the
-      incident, the insurance company can refuse the claim.
+      If the person making the claim gives false information about the incident,
+      the insurance company can refuse the claim.
   - context: >
-      To apply for the Canada Child Benefit, you must complete and submit
-      Form RC66 along with the necessary supporting documents.
+      To apply for the Canada Child Benefit, you must complete and submit Form
+      RC66 along with the necessary supporting documents.
     question: |
       Can you rewrite this statement in plain language?
     answer: >
       To get the Canada Child Benefit, you need to fill out and send Form RC66
       with the required documents.
   - context: >
-      The eligibility criteria for receiving Old Age Security benefits
-      include being a Canadian citizen or legal resident and being at least 65
-      years old.
+      The eligibility criteria for receiving Old Age Security benefits include
+      being a Canadian citizen or legal resident and being at least 65 years
+      old.
     question: |
       Can you rewrite this statement in plain language?
     answer: >
       To qualify for Old Age Security benefits, you must be a Canadian citizen
       or legal resident and at least 65 years old.
   - context: >
-      For the purposes of determining eligibility for disability benefits,
-      the applicant must provide medical documentation proving the extent and
+      For the purposes of determining eligibility for disability benefits, the
+      applicant must provide medical documentation proving the extent and
       duration of their impairment.
     question: |
       Can you rewrite this statement in plain language?
@@ -47,9 +46,9 @@ seed_examples:
       To qualify for disability benefits, you need to provide medical records
       showing the severity and duration of your impairment.
   - context: >
-      The Employment Insurance program provides temporary financial
-      assistance to unemployed individuals who have lost their job through no
-      fault of their own.
+      The Employment Insurance program provides temporary financial assistance
+      to unemployed individuals who have lost their job through no fault of
+      their own.
     question: |
       Can you rewrite this statement in plain language?
     answer: >
@@ -61,11 +60,11 @@ seed_examples:
     question: |
       Can you rewrite this statement in plain language?
     answer: >
-      To renew your driver's license, go to a Service Ontario office with
-      proof of your identity and address.
+      To renew your driver's license, go to a Service Ontario office with proof
+      of your identity and address.
   - context: >
-      For more detailed information about the Canada Pension Plan, you can
-      visit the official Government of Canada website and review the relevant
+      For more detailed information about the Canada Pension Plan, you can visit
+      the official Government of Canada website and review the relevant
       sections.
     question: |
       Can you rewrite this statement in plain language?
@@ -90,38 +89,37 @@ seed_examples:
       Your health insurance policy explains the coverage limits, what's not
       covered, and how to file claims."
   - context: >
-      You are required to notify your provincial health plan if you change
-      your address or other personal information.
+      You are required to notify your provincial health plan if you change your
+      address or other personal information.
     question: |
       Can you rewrite this statement in plain language?
     answer: >
-      You must inform your provincial health plan if you change your address
-      or other personal details.
+      You must inform your provincial health plan if you change your address or
+      other personal details.
   - context: >
-      In order to qualify for the GST/HST credit, you must file a tax return
-      and meet the income and residency requirements.
-    question: |
-      Can you rewrite this statement in plain language?
-    answer: >
-      To qualify for the GST/HST credit, you need to file a tax return and
+      In order to qualify for the GST/HST credit, you must file a tax return and
       meet the income and residency requirements.
+    question: |
+      Can you rewrite this statement in plain language?
+    answer: >
+      To qualify for the GST/HST credit, you need to file a tax return and meet
+      the income and residency requirements.
   - context: >
-      To apply for a Canadian passport, you must complete the application
-      form and provide proof of citizenship, identity, and residency.
+      To apply for a Canadian passport, you must complete the application form
+      and provide proof of citizenship, identity, and residency.
     question: |
       Can you rewrite this statement in plain language?
     answer: >
       To get a Canadian passport, fill out the application from and provide
       proof of citizenship, identity, and where you live.
   - context: >
-      If you are a veteran seeking benefits, you should contact Veterans
-      Affairs Canada to understand the eligibility criteria and application
-      process.
+      If you are a veteran seeking benefits, you should contact Veterans Affairs
+      Canada to understand the eligibility criteria and application process.
     question: |
       Can you rewrite this statement in plain language?
     answer: >
-      If you're a veteran looking for benefits, contact Veterans Affairs
-      Canada to learn about eligibility and how to apply.
+      If you're a veteran looking for benefits, contact Veterans Affairs Canada
+      to learn about eligibility and how to apply.
   - context: >
       For detailed information on provincial income tax rates and deductions,
       visit the official website of the Ministry of Finance of your province.
@@ -139,24 +137,24 @@ seed_examples:
       The Canadian Pension Plan (CPP) gives financial support to retirees,
       disabled people, and survivors of deceased contributors.
   - context: >
-      To receive unemployment benefits, you must demonstrate that you have
-      been actively seeking employment and are available for work.
+      To receive unemployment benefits, you must demonstrate that you have been
+      actively seeking employment and are available for work.
     question: |
       Can you rewrite this statement in plain language?
     answer: >
-      To get unemployment benefits, you must show that you are actively
-      looking for a job and are available to work.
+      To get unemployment benefits, you must show that you are actively looking
+      for a job and are available to work.
   - context: >
-      The annual tax return filing deadline for individuals is April 30th of
-      the following year.
+      The annual tax return filing deadline for individuals is April 30th of the
+      following year.
     question: |
       Can you rewrite this statement in plain language?
     answer: |
       You must file your annual tax return by April 30th of the next year.
   - context: >
-      Canadian students can apply for student loans through the Canada
-      Student Loans Program, which requires submitting proof of enrollment and
-      financial need.
+      Canadian students can apply for student loans through the Canada Student
+      Loans Program, which requires submitting proof of enrollment and financial
+      need.
     question: |
       Can you rewrite this statement in plain language?
     answer: >
