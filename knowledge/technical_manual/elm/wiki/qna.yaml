@@ -203,9 +203,7 @@ seed_examples:
       We will be enabling the metrics collector tasks related to the specific
       managed beans in the
 
-      six categories
-
-      we want to collect data for.
+      six categories we want to collect data for.
 
 
       To start, the administrator must navigate to the Admin UI -> Manage Server
