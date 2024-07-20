@@ -1,125 +1,173 @@
+---
 version: 2
 task_description: |
   This skill provides the ability to convert text into plain language
 created_by: roopam100
 seed_examples:
-  - context: |
-      The policy holder is required to notify the insurer of any material changes to the risk profile within 30 days of the change occurring.
+  - context: >
+      The policy holder is required to notify the insurer of any material
+      changes to the risk profile within 30 days of the change occurring.
     question: |
       Can you rewrite this statement in plain language?
-    answer: |
-      The person with the insurance must inform the insurer of any significant changes to their risk within 30 days.
-  - context: |
-      In the event that the claimant provides false information regarding the incident, the insurance company reserves the right to deny the claim.
+    answer: >
+      The person with the insurance must inform the insurer of any significant
+      changes to their risk within 30 days.
+  - context: >
+      In the event that the claimant provides false information regarding the
+      incident, the insurance company reserves the right to deny the claim.
     question: |
       Can you rewrite this statement in plain language?
-    answer: |
-      If the person making the claim gives false information about the incident, the insurance company can refuse the claim.
-  - context: |
-      To apply for the Canada Child Benefit, you must complete and submit Form RC66 along with the necessary supporting documents.
+    answer: >
+      If the person making the claim gives false information about the
+      incident, the insurance company can refuse the claim.
+  - context: >
+      To apply for the Canada Child Benefit, you must complete and submit
+      Form RC66 along with the necessary supporting documents.
     question: |
       Can you rewrite this statement in plain language?
-    answer: |
-      To get the Canada Child Benefit, you need to fill out and send Form RC66 with the required documents.
-  - context: |
-      The eligibility criteria for receiving Old Age Security benefits include being a Canadian citizen or legal resident and being at least 65 years old.
+    answer: >
+      To get the Canada Child Benefit, you need to fill out and send Form RC66
+      with the required documents.
+  - context: >
+      The eligibility criteria for receiving Old Age Security benefits
+      include being a Canadian citizen or legal resident and being at least 65
+      years old.
     question: |
       Can you rewrite this statement in plain language?
-    answer: |
-      To qualify for Old Age Security benefits, you must be a Canadian citizen or legal resident and at least 65 years old.
-  - context: |
-      For the purposes of determining eligibility for disability benefits, the applicant must provide medical documentation proving the extent and duration of their impairment.
+    answer: >
+      To qualify for Old Age Security benefits, you must be a Canadian citizen
+      or legal resident and at least 65 years old.
+  - context: >
+      For the purposes of determining eligibility for disability benefits,
+      the applicant must provide medical documentation proving the extent and
+      duration of their impairment.
     question: |
       Can you rewrite this statement in plain language?
-    answer: |
-      To qualify for disability benefits, you need to provide medical records showing the severity and duration of your impairment.
-  - context: |
-      The Employment Insurance program provides temporary financial assistance to unemployed individuals who have lost their job through no fault of their own.
+    answer: >
+      To qualify for disability benefits, you need to provide medical records
+      showing the severity and duration of your impairment.
+  - context: >
+      The Employment Insurance program provides temporary financial
+      assistance to unemployed individuals who have lost their job through no
+      fault of their own.
     question: |
       Can you rewrite this statement in plain language?
-    answer: |
-      Employment Insurance offers temporary financial help to people who are unemployed through no fault of their own.
-  - context: |
-      To renew your driver's license, you must visit a Service Ontario office and provide proof of identity and residence.
+    answer: >
+      Employment Insurance offers temporary financial help to people who are
+      unemployed through no fault of their own.
+  - context: >
+      To renew your driver's license, you must visit a Service Ontario office
+      and provide proof of identity and residence.
     question: |
       Can you rewrite this statement in plain language?
-    answer: |
-      To renew your driver's license, go to a Service Ontario office with proof of your identity and address.
-  - context: |
-      For more detailed information about the Canada Pension Plan, you can visit the official Government of Canada website and review the relevant sections.
+    answer: >
+      To renew your driver's license, go to a Service Ontario office with
+      proof of your identity and address.
+  - context: >
+      For more detailed information about the Canada Pension Plan, you can
+      visit the official Government of Canada website and review the relevant
+      sections.
     question: |
       Can you rewrite this statement in plain language?
-    answer: |
-      For more details about the Canada Pension Plan, visit the Government of Canada website and check the relevant sections.
-  - context: |
-      If you wish to appeal a decision made by the Canada Revenue Agency, you must file a notice of objection within 90 days from the date of the decision.
+    answer: >
+      For more details about the Canada Pension Plan, visit the Government of
+      Canada website and check the relevant sections.
+  - context: >
+      If you wish to appeal a decision made by the Canada Revenue Agency, you
+      must file a notice of objection within 90 days from the date of the
+      decision.
     question: |
       Can you rewrite this statement in plain language?
-    answer: |
-      To appeal a decision by the Canada Revenue Agency, file a notice of objection within 90 days of the decision.
-  - context: |
-      The terms and conditions of your health insurance policy outline the coverage limits, exclusions, and procedures for filing claims.
+    answer: >
+      To appeal a decision by the Canada Revenue Agency, file a notice of
+      objection within 90 days of the decision.
+  - context: >
+      The terms and conditions of your health insurance policy outline the
+      coverage limits, exclusions, and procedures for filing claims.
     question: |
       Can you rewrite this statement in plain language?
-    answer: |
-      Your health insurance policy explains the coverage limits, what's not covered, and how to file claims."
-  - context: |
-      You are required to notify your provincial health plan if you change your address or other personal information.
+    answer: >
+      Your health insurance policy explains the coverage limits, what's not
+      covered, and how to file claims."
+  - context: >
+      You are required to notify your provincial health plan if you change
+      your address or other personal information.
     question: |
       Can you rewrite this statement in plain language?
-    answer: |
-      You must inform your provincial health plan if you change your address or other personal details.
-  - context: |
-      In order to qualify for the GST/HST credit, you must file a tax return and meet the income and residency requirements.
+    answer: >
+      You must inform your provincial health plan if you change your address
+      or other personal details.
+  - context: >
+      In order to qualify for the GST/HST credit, you must file a tax return
+      and meet the income and residency requirements.
     question: |
       Can you rewrite this statement in plain language?
-    answer: |
-      To qualify for the GST/HST credit, you need to file a tax return and meet the income and residency requirements.
-  - context: |
-      To apply for a Canadian passport, you must complete the application form and provide proof of citizenship, identity, and residency.
+    answer: >
+      To qualify for the GST/HST credit, you need to file a tax return and
+      meet the income and residency requirements.
+  - context: >
+      To apply for a Canadian passport, you must complete the application
+      form and provide proof of citizenship, identity, and residency.
     question: |
       Can you rewrite this statement in plain language?
-    answer: |
-      To get a Canadian passport, fill out the application from and provide proof of citizenship, identity, and where you live.
-  - context: |
-      If you are a veteran seeking benefits, you should contact Veterans Affairs Canada to understand the eligibility criteria and application process.
+    answer: >
+      To get a Canadian passport, fill out the application from and provide
+      proof of citizenship, identity, and where you live.
+  - context: >
+      If you are a veteran seeking benefits, you should contact Veterans
+      Affairs Canada to understand the eligibility criteria and application
+      process.
     question: |
       Can you rewrite this statement in plain language?
-    answer: |
-      If you're a veteran looking for benefits, contact Veterans Affairs Canada to learn about eligibility and how to apply.
-  - context: |
-      For detailed information on provincial income tax rates and deductions, visit the official website of the Ministry of Finance of your province.
+    answer: >
+      If you're a veteran looking for benefits, contact Veterans Affairs
+      Canada to learn about eligibility and how to apply.
+  - context: >
+      For detailed information on provincial income tax rates and deductions,
+      visit the official website of the Ministry of Finance of your province.
     question: |
       Can you rewrite this statement in plain language?
-    answer: |
-      For details on provincial income tax rates and deductions, visit your province’s Ministry of Finance website.
-  - context: |
-      The Canadian Pension Plan (CPP) provides financial support to retirees, disabled individuals, and survivors of deceased contributors.
+    answer: >
+      For details on provincial income tax rates and deductions, visit your
+      province’s Ministry of Finance website.
+  - context: >
+      The Canadian Pension Plan (CPP) provides financial support to retirees,
+      disabled individuals, and survivors of deceased contributors.
     question: |
       Can you rewrite this statement in plain language?
-    answer: |
-      The Canadian Pension Plan (CPP) gives financial support to retirees, disabled people, and survivors of deceased contributors.
-  - context: |
-      To receive unemployment benefits, you must demonstrate that you have been actively seeking employment and are available for work.
+    answer: >
+      The Canadian Pension Plan (CPP) gives financial support to retirees,
+      disabled people, and survivors of deceased contributors.
+  - context: >
+      To receive unemployment benefits, you must demonstrate that you have
+      been actively seeking employment and are available for work.
     question: |
       Can you rewrite this statement in plain language?
-    answer: |
-      To get unemployment benefits, you must show that you are actively looking for a job and are available to work.
-  - context: |
-      The annual tax return filing deadline for individuals is April 30th of the following year.
+    answer: >
+      To get unemployment benefits, you must show that you are actively
+      looking for a job and are available to work.
+  - context: >
+      The annual tax return filing deadline for individuals is April 30th of
+      the following year.
     question: |
       Can you rewrite this statement in plain language?
     answer: |
       You must file your annual tax return by April 30th of the next year.
-  - context: |
-      Canadian students can apply for student loans through the Canada Student Loans Program, which requires submitting proof of enrollment and financial need.
+  - context: >
+      Canadian students can apply for student loans through the Canada
+      Student Loans Program, which requires submitting proof of enrollment and
+      financial need.
     question: |
       Can you rewrite this statement in plain language?
-    answer: |
-      Canadian students can apply for student loans through the Canada Student Loans Program by providing proof of enrollment and financial need.
-  - context: |
-      To request a correction to your credit report, you need to contact the credit reporting agency and provide supporting documentation for the correction.
+    answer: >
+      Canadian students can apply for student loans through the Canada Student
+      Loans Program by providing proof of enrollment and financial need.
+  - context: >
+      To request a correction to your credit report, you need to contact the
+      credit reporting agency and provide supporting documentation for the
+      correction.
     question: |
       Can you rewrite this statement in plain language?
-    answer: |
-      To correct your credit report, contact the credit reporting agency and provide supporting documents for the change.
+    answer: >
+      To correct your credit report, contact the credit reporting agency and
+      provide supporting documents for the change.
