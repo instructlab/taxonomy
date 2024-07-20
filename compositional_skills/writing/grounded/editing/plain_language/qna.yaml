@@ -145,13 +145,6 @@ seed_examples:
       To get unemployment benefits, you must show that you are actively looking
       for a job and are available to work.
   - context: >
-      The annual tax return filing deadline for individuals is April 30th of the
-      following year.
-    question: |
-      Can you rewrite this statement in plain language?
-    answer: |
-      You must file your annual tax return by April 30th of the next year.
-  - context: >
       Canadian students can apply for student loans through the Canada Student
       Loans Program, which requires submitting proof of enrollment and financial
       need.
