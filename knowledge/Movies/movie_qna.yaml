@@ -1,0 +1,29 @@
+version: 2
+task_description: Information about malayalam actors
+created_by: Jijo
+seed_examples:
+  - question: Who is the brother of Prithviraj Sukumaran
+    answer: |
+      Indrajith Sukumaran is the brother of Prithviraj. They are sons of late actor Sukumaran and Mallika Sukumaran.
+  - context: |
+      Malayalam Movie Actors
+    question: Who is the wife of Suriya Sivakumar
+    answer: |
+      Jyotika. She is also a famous actress in South Indian film industry.
+       - context: |
+      Movie Actors
+      - question: Who is the brother of Suriya Sivakumar
+    answer: |
+      Karthi is the brother of Suriya. They are famous actors in Tamil Film Industry.
+  - context: |
+      Movie Actors
+    question: Who is the wife of Fahad Fassil
+    answer: |
+      Nasriya Fahad. She is also a famous actress in South Indian film industry.
+       - context: |
+      Malayalam Movie Actors
+      - question: Who is the father of Fahad Fassil
+    answer: |
+      Fassil is the father of Fahad. He is famous for his directorial works in Malayalam Film Industry.
+  - context: |
+      Malayalam Movie Actors
