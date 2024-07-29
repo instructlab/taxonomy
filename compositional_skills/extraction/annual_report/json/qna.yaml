@@ -1,0 +1,596 @@
+version: 2
+task_description: Teach the model how to find and extract given entities values in JSON format
+  from financial reports table data
+created_by: sinny777
+seed_examples:
+
+- answer: |
+    [
+    {
+        "entity name": "Total Revenue",
+        "entity value": {
+            "2022": 587.4,
+            "2021": 810.5
+        }
+    },
+    {
+        "entity name": "Total operating expenses",
+        "entity value": {
+            "2022": 997.6,
+            "2021": 840.6
+        }
+    },
+    {
+        "entity name": "Total Loss from operations",
+        "entity value": {
+            "2022": -269.7,
+            "2021": -28.6
+        }
+    }
+    ]
+
+  context: |
+    [Document]
+    COMPARISON OF 5 YEAR CUMULATIVE TOTAL RETURN > Results of Operations
+    |  | Year Ended December 31,
+    | --- | ---
+    |  | 2022 | 2021
+    | --- | --- | ---
+    | Total revenue | $ 587.4 | $ 810.5
+    | Total operating expenses | $ 997.6 | $ 840.6
+    | Loss from operations. | $ (410.2) | $ (30.2)
+    | Net loss | $ (269.7) | $ (28.6)
+    | Cash, cash equivalents and short-term investments | $1,986.9 | $2,115.0
+    [End]
+
+  question: |
+    Generate a JSON output that extracts the entities given below surrounded by triple equals sign
+    from above given tables for each year. Return the output in JSON format array if exact match of entity name
+    is found in given tables. If you do not find certain entity in the given tables then show its
+    extracted entity value as "null". Make sure you extract entities values for each year.  Do not provide
+    any text or explanation along with JSON output.\n
+    ===
+    ["Total Revenue", "Total operating expenses", "Total Loss from operations"]
+    ===
+
+- answer: |
+    [
+    {
+        "entity_name": "Total operating expenses",
+        "entity_value": {
+            "2022": 997.6,
+            "2021": 840.6
+        }
+    }
+    ]
+
+    '
+  context: |
+    [Document]
+    COMPARISON OF 5 YEAR CUMULATIVE TOTAL RETURN > Operating Expenses
+    |  | Year Ended December 31,
+    | --- | ---
+    |  | 2022 | 2021
+    | --- | --- | ---
+    | Operating expenses, excluding non-cash compensation expense related to equity awards | $897.3 | $696.0
+    | Restructuring expenses | — | 23.9
+    | Total operating expenses, excluding non-cash compensation expense related to equity awards | 897.3 | 719.9
+    | Non-cash compensation expense related to equity awards | 100.3 | 120.7
+    | Total operating expenses | $997.6 | $840.6
+    [End]
+
+  question: |
+    Generate a JSON output that extracts the entities given below surrounded by triple equals sign
+    from above given tables for each year. Return the output in JSON format array if exact match of entity name
+    is found in given tables. If you do not find certain entity in the given tables then show its
+    extracted entity value as "null". Make sure you extract entities values for each year.  Do not provide
+    any text or explanation along with JSON output.\n
+    ===
+    ["Total operating expenses"]
+    ===
+
+- answer: |
+    [
+    {
+        "entity_name": "Total operating expenses",
+        "entity_value": "null"
+    },
+    {
+        "entity_name": "Total cost of sales",
+        "entity_value": {
+            "2022": 14.1,
+            "2021": 10.8
+        }
+    }
+    ]
+
+  context: |
+    [Document]
+    COMPARISON OF 5 YEAR CUMULATIVE TOTAL RETURN > Operating Expenses > Cost of Sales
+    |  | Year Ended December 31,
+    | --- | ---
+    |  | 2022 | 2021
+    | --- | --- | ---
+    | Cost of sales, excluding non-cash compensation expense related to equity awards | $13.4 | $10.4
+    | Non-cash compensation expense related to equity awards | 0.7 | 0.4
+    | Total cost of sales | $14.1 | $10.8
+    [End]
+
+  question: |
+    Generate a JSON output that extracts the entities given below surrounded by triple equals sign
+    from above given tables for each year. Return the output in JSON format array if exact match of entity name
+    is found in given tables. If you do not find certain entity in the given tables then show its
+    extracted entity value as "null". Make sure you extract entities values for each year.  Do not provide
+    any text or explanation along with JSON output.\n
+    ===
+    ["Total operating expenses", "Total cost of sales"]
+    ===
+
+- answer: |
+    [
+      {
+        "entity_name": "Other expenses",
+        "entity_value": "null"
+      },
+      {
+        "entity_name": "Total current assets",
+        "entity_value": {
+          "2022": 2202694,
+          "2021": 2345049
+        }
+      },
+      {
+        "entity_name": "Total current liabilities",
+        "entity_value": {
+          "2022": 311561,
+          "2021": 240550
+        }
+      },
+      {
+        "entity_name": "Total liabilities",
+        "entity_value": {
+          "2022": 1960989,
+          "2021": 1839953
+        }
+      },
+      {
+        "entity_name": "Shares issued and outstanding",
+        "entity_value": {
+          "2022": 142057736,
+          "2021": 141210015
+        }
+      },
+      {
+        "entity_name": "Total long-term mortgage debt",
+        "entity_value": {
+          "2022": 8847,
+          "2021": 59713
+        }
+      }
+    ]
+
+  context: |
+    [Document]
+    INDEX TO CONSOLIDATED FINANCIAL STATEMENTS > REPORT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM
+    > Critical Audit Matter > Estimated Liability for Clinical Development Costs
+    |  | December 31,
+    | --- | ---
+    |  | 2022 | 2021
+    | --- | --- | ---
+    | ASSETS
+    | Current assets: Cash and cash equivalents | $ 276,472 | $ 869,191
+    | Other current assets | 168,254 | 143,374
+    | Total current assets | 2,202,694 | 2,345,049
+    | Total assets. | $ 2,533,876 | $ 2,611,690
+    | LIABILITIES AND STOCKHOLDERS’ EQUITY
+    | Current liabilities: Accounts payable. | $ 17,921 | $ 11,904
+    | Accrued liabilities | 140,101 | 88,560
+    | Income taxes payable | 6,249 | 36
+    | Current portion of deferred contract revenue. | 90,577 | 97,714
+    | Other current liabilities | 7,535 | 3,526
+    | Total current liabilities | 311,561 | 240,550
+    | Long-term lease liabilities. | 178,941 | 19,432
+    | Long-term mortgage debt | 8,847 | 59,713
+    | Long-term obligations | 7,126 | 6,946
+    | Total liabilities | 1,960,989 | 1,839,953
+    | Stockholders’ equity: Common stock, $0.001 par value; 300,000,000 shares authorized,
+    142,057,736 and 141,210,015 shares issued and outstanding at December 31, 2022 and
+    December 31, 2021, respectively | 142 | 141
+    | Total liabilities and stockholders’ equity | $ 2,533,876 | $ 2,611,690
+    [End]
+
+  question: |
+    Generate a JSON output that extracts the entities given below surrounded by triple equals sign
+    from above given tables for each year. Return the output in JSON format array if exact match of entity name
+    is found in given tables. If you do not find certain entity in the given tables then show its
+    extracted entity value as "null". Make sure you extract entities values for each year.  Do not provide
+    any text or explanation along with JSON output.\n
+    ===
+    ["Other expenses", "Total current assets", "Total current liabilities", "Total liabilities",
+    "Shares issued and outstanding", "Total long-term mortgage debt"]
+    ===
+
+- answer: |
+    [
+      {
+        "entity_name": "Other expenses",
+        "entity_value": {
+          "2022": -7274,
+          "2021": -9760,
+          "2020": -62
+        }
+      },
+      {
+        "entity_name": "Total Revenue",
+        "entity_value": {
+          "2022": 587367,
+          "2021": 810456,
+          "2020": 729264
+        }
+      },
+      {
+        "entity_name": "Total operating expenses",
+        "entity_value": {
+          "2022": 997558,
+          "2021": 840642,
+          "2020": 901346
+        }
+      },
+      {
+        "entity_name": "Total Loss from operations",
+        "entity_value": {
+          "2022": -410191,
+          "2021": -30186,
+          "2020": -172082
+        }
+      },
+      {
+        "entity_name": "Total current income tax expense (benefit)",
+        "entity_value": {
+          "2022": -11737,
+          "2021": 551,
+          "2020": -345191
+        }
+      }
+    ]
+
+  context: |
+    [Document]
+    INDEX TO CONSOLIDATED FINANCIAL STATEMENTS >
+    REPORT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM >
+    Critical Audit Matter > Estimated Liability for Clinical Development Costs
+    |  | Year Ended December 31,
+    | --- | ---
+    |  | 2022 | 2021 | 2020
+    | --- | --- | --- | ---
+    | Revenue: Commercial revenue: SPINRAZA royalties | $ 242,314 | $267,776 | $ 286,583
+    | Total commercial revenue | 303,358 | 342,395 | 364,699
+    | Eplontersen joint development revenue | 76,787 | — | —
+    | Total research and development revenue | 284,009 | 468,061 | 364,565
+    | Total revenue | 587,367 | 810,456 | 729,264
+    | Expenses: Cost of sales | 14,116 | 10,842 | 11,947
+    | Research, development and patent | 833,147 | 643,453 | 535,077
+    | Total operating expenses | 997,558 | 840,642 | 901,346
+    | Loss from operations. | (410,191) | (30,186) | (172,082)
+    | Other income (expense): Investment income. | 25,331 | 10,044 | 30,562
+    | Gain on sale of real estate assets | 149,604 | — | —
+    | Other expenses. | (7,274) | (9,760) | (62)
+    | Loss before income tax benefit (expense) | (257,985) | (29,148) | (134,552)
+    | Income tax benefit (expense) | (11,737) | 551 | (345,191)
+    | Net loss | (269,722) | (28,597) | (479,743)
+    | Net loss attributable to Ionis Pharmaceuticals, Inc. common
+    | Shares used in computing basic and diluted net loss per share | 141,848 | 141,021 | 139,612
+    [End]
+
+  question: |
+    Generate a JSON output that extracts the entities given below surrounded by triple equals sign
+    from above given tables for each year. Return the output in JSON format array if exact match of entity name
+    is found in given tables. If you do not find certain entity in the given tables then show its
+    extracted entity value as "null". Make sure you extract entities values for each year.  Do not provide
+    any text or explanation along with JSON output.\n
+    ===
+    ["Other expenses", "Total Revenue", "Total operating expenses", "Total Loss from operations",
+    "Total current income tax expense (benefit)"]
+    ===
+
+- answer: |
+    [
+    {
+        "entity_name": "Cash and cash equivalents",
+        "entity_value": {
+            "2022": 416,
+            "2021": 1944
+        }
+    },
+    {
+        "entity_name": "Total current liabilities",
+        "entity_value": {
+            "2022": 42138,
+            "2021": 42671
+        }
+    },
+    {
+        "entity_name": "Total liabilities",
+        "entity_value": {
+            "2022": 101288,
+            "2021": 104013
+        }
+    },
+    {
+        "entity_name": "Total equity",
+        "entity_value": {
+            "2022": 95916,
+            "2021": 77462
+        }
+    }
+    ]
+
+  context: |
+    [Document]
+    Consolidated Balance Sheets > Pfizer Inc. and Subsidiary Companies
+    | (MILLIONS, EXCEPT PER SHARE DATA) | 2022 | 2021
+    | --- | --- | ---
+    | Assets
+    | Cash and cash equivalents | $ 416 | $ 1,944
+    | Short-term investments | 22,316 | 29,125
+    | Inventories | 8,981 | 9,059
+    | Current tax assets | 3,577 | 4,266
+    | Other current assets | 5,017 | 3,820
+    | Total current assets | 51,259 | 59,693
+    | Other noncurrent assets | 13,163 | 7,679
+    | Total assets | $ 197,205 | $ 181,476
+    | Liabilities and Equity
+    | Income taxes payable | 1,587 | 1,266
+    | Deferred revenues | 2,520 | 3,067
+    | Total current liabilities | 42,138 | 42,671
+    | Long-term debt | 32,884 | 36,195
+    | Other noncurrent liabilities | 13,180 | 9,743
+    | Total liabilities | 101,288 | 104,013
+    | Commitments and Contingencies
+    | Total equity | 95,916 | 77,462
+    | Total liabilities and equity | $ 197,205 | $ 181,476
+    [End]
+
+  question: |
+    Generate a JSON output that extracts the entities given below surrounded by triple equals sign
+    from above given tables for each year. Return the output in JSON format array if exact match of entity name
+    is found in given tables. If you do not find certain entity in the given tables then show its
+    extracted entity value as "null". Make sure you extract entities values for each year.  Do not provide
+    any text or explanation along with JSON output.\n
+    ===
+    ["Cash and cash equivalents", "Total current liabilities", "Total liabilities", "Total equity"]
+    ===
+
+- answer: |
+    [
+    {
+        "entity name": "Total current assets",
+        "entity value": {
+            "2022": 7057,
+            "2021": 6171
+        }
+    },
+    {
+        "entity name": "Total current liabilities",
+        "entity value": {
+            "2022": 3780,
+            "2021": 3497
+        }
+    },
+    {
+        "entity name": "Total liabilities",
+        "entity value": {
+            "2022": 9777,
+            "2021": 10033
+        }
+    },
+    {
+        "entity_name": "Total revenue",
+        "entity_value": "null"
+    }
+    ]
+
+  context: |
+    [Document]
+    Consolidated Statements of Cash Flows > Note 1. Basis of Presentation and Significant
+    Accounting Policies > C. Equity-Method Investments
+    |  | As of December 31,
+    | --- | ---
+    | (MILLIONS) | 2022 | 2021
+    | --- | --- | ---
+    | Current assets | $ 4,043 | $ 3,608
+    | Noncurrent assets | 3,014 | 3,563
+    | Total assets | $ 7,057 | $ 7,171
+    | Current liabilities | $ 3,780 | $ 3,497
+    | Noncurrent liabilities | 5,996 | 6,536
+    | Total liabilities | $ 9,777 | $ 10,033
+    | Total net equity/(deficit) attributable to shareholders | $ (2,720) | $ (2,862)
+    [End]
+
+  question: |
+    Generate a JSON output that extracts the entities given below surrounded by triple equals sign
+    from above given tables for each year. Return the output in JSON format array if exact match of entity name
+    is found in given tables. If you do not find certain entity in the given tables then show its
+    extracted entity value as "null". Make sure you extract entities values for each year.  Do not provide
+    any text or explanation along with JSON output.\n
+    ===
+    ["Total current assets", "Total current liabilities", "Total liabilities", "Total revenue"]
+    ===
+
+- answer: |
+      [
+      {
+        "entity_name": "Total current assets",
+        "entity_value": {
+            "2022": 4043,
+            "2021": 3608
+        }
+      },
+      {
+          "entity_name": "Total current liabilities",
+          "entity_value": {
+              "2022": 3780,
+              "2021": 3497
+          }
+      },
+      {
+          "entity_name": "Total liabilities",
+          "entity_value": {
+              "2022": 9777,
+              "2021": 10033
+          }
+      }
+      ]
+
+  context: |
+    [Document]
+    Consolidated Statements of Cash Flows > Note 1. Basis of Presentation
+    and Significant Accounting Policies > C. Equity-Method Investments
+    |  | As of December 31,
+    | --- | ---
+    | (MILLIONS) | 2022 | 2021
+    | --- | --- | ---
+    | Current assets | $ 4,043 | $ 3,608
+    | Noncurrent assets | 3,014 | 3,563
+    | Total assets | $ 7,057 | $ 7,171
+    | Current liabilities | $ 3,780 | $ 3,497
+    | Noncurrent liabilities | 5,996 | 6,536
+    | Total liabilities | $ 9,777 | $ 10,033
+    | Total net equity/(deficit) attributable to shareholders | $ (2,720) | $ (2,862)
+    [End]
+
+  question: |
+    Generate a JSON output that extracts the entities given below surrounded by triple equals sign
+    from above given tables for each year. Return the output in JSON format array if exact match of entity name
+    is found in given tables. If you do not find certain entity in the given tables then show its
+    extracted entity value as "null". Make sure you extract entities values for each year.  Do not provide
+    any text or explanation along with JSON output.\n
+    ===
+    ["Total current assets", "Total current liabilities", "Total liabilities"]
+    ===
+
+- answer: |
+    [
+    {
+        "entity_name": "Cost of sales",
+        "entity_value": {
+            "2022": -819,
+            "2021": -682,
+            "2020": -574
+        }
+    },
+    {
+        "entity_name": "Gross profit",
+        "entity_value": {
+            "2022": 6135,
+            "2021": 5698,
+            "2020": 5650
+        }
+    }
+    ]
+
+  context: |
+    [Document]
+    Consolidated Statements of Cash Flows > Note 1. Basis of Presentation and
+    Significant Accounting Policies > C. Equity-Method Investments
+    |  | Year Ended December 31,
+    | --- | ---
+    | (MILLIONS) | 2022 | 2021 | 2020
+    | --- | --- | --- | ---
+    | Net sales | $ 6,955 | $ 6,380 | $ 6,224
+    | Cost of sales | (819) | (682) | (574)
+    | Gross profit | $ 6,135 | $ 5,698 | $ 5,650
+    | Income from continuing operations | 3,108 | 2,040 | 2,012
+    | Net income | 3,108 | 2,040 | 2,012
+    | Income attributable to shareholders | 3,108 | 2,040 | 2,012
+    [End]
+
+  question: |
+    Generate a JSON output that extracts the entities given below surrounded by triple equals sign
+    from above given tables for each year. Return the output in JSON format array if exact match of entity name
+    is found in given tables. If you do not find certain entity in the given tables then show its
+    extracted entity value as "null". Make sure you extract entities values for each year.  Do not provide
+    any text or explanation along with JSON output.\n
+    ===
+    ["Cost of sales", "Gross profit"]
+    ===
+
+- answer: |
+    [
+      {
+        "entity_name": "Total commercial revenue",
+        "entity_value": {
+          "2022": 303358,
+          "2021": 342395,
+          "2020": 364699
+        }
+      },
+      {
+        "entity_name": "Total Revenue",
+        "entity_value": {
+          "2022": 587367,
+          "2021": 810456,
+          "2020": 729264
+        }
+      },
+      {
+        "entity_name": "Total operating expenses",
+        "entity_value": {
+          "2022": 997558,
+          "2021": 840642,
+          "2020": 901346
+        }
+      },
+      {
+        "entity_name": "Gain on sale of real estate assets",
+        "entity_value": {
+          "2022": 149604,
+          "2021": "-",
+          "2020": "-"
+        }
+      },
+      {
+        "entity_name": "Net loss",
+        "entity_value": {
+          "2022": -269722,
+          "2021": -2859,
+          "2020": -479743
+        }
+      }
+    ]
+
+  context: |
+    [Document]
+    INDEX TO CONSOLIDATED FINANCIAL STATEMENTS >
+    REPORT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM >
+    Critical Audit Matter > Estimated Liability for Clinical Development Costs
+    |  | Year Ended December 31,
+    | --- | ---
+    |  | 2022 | 2021 | 2020
+    | --- | --- | --- | ---
+    | Revenue: Commercial revenue: SPINRAZA royalties | $ 242,314 | $267,776 | $ 286,583
+    | Total commercial revenue | 303,358 | 342,395 | 364,699
+    | Eplontersen joint development revenue | 76,787 | — | —
+    | Total revenue | 587,367 | 810,456 | 729,264
+    | Expenses: Cost of sales | 14,116 | 10,842 | 11,947
+    | Research, development and patent | 833,147 | 643,453 | 535,077
+    | Total operating expenses | 997,558 | 840,642 | 901,346
+    | Loss from operations. | (410,191) | (30,186) | (172,082)
+    | Other income (expense): Investment income. | 25,331 | 10,044 | 30,562
+    | Gain on sale of real estate assets | 149,604 | — | —
+    | Other expenses. | (7,274) | (9,760) | (62)
+    | Loss before income tax benefit (expense) | (257,985) | (29,148) | (134,552)
+    | Income tax benefit (expense) | (11,737) | 551 | (345,191)
+    | Net loss | (269,722) | (28,597) | (479,743)
+    [End]
+
+  question: |
+    Generate a JSON output that extracts the entities given below surrounded by triple equals sign
+    from above given tables for each year. Return the output in JSON format array if exact match of entity name
+    is found in given tables. If you do not find certain entity in the given tables then show its
+    extracted entity value as "null". Make sure you extract entities values for each year.  Do not provide
+    any text or explanation along with JSON output.\n
+    ===
+    ["Total commercial revenue", "Total Revenue", "Total operating expenses", "Gain on sale of real estate assets",
+    "Net loss"]
+    ===
