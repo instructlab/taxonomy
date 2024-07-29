@@ -1,0 +1,3 @@
+Title of work: Entities Extraction in JSON Format
+License of the work: Apache-2.0
+Creator names: Gurvinder Singh
