@@ -243,7 +243,7 @@ seed_examples:
 ## Getting Started with Knowledge Contributions
 
 > [!IMPORTANT]
-> Upon release, the taxonomy repository is only accepting contributions from Wikipedia and is capped at 50 contributions. If you want to add knowledge to the taxonomy repository, please fill out this [InstructLab Knowledge Submission Registration](https://docs.google.com/forms/d/1VWJ_XPwH3gBTIXCabpWc0I5pjWIlXETMSFKXc8fpgkA/viewform?edit_requested=true) form and await acceptance! Please do not add contributions if you do not receive the confirmation email. Thank you!
+> Upon release, the taxonomy repository is only accepting contributions from Wikipedia, Project Gutenberg, Wikisource (library), OpenStax textbooks family of publications, The Open Organization publications, and The Scrum Guide. and is capped at 50 contributions. If you want to add knowledge to the taxonomy repository, please fill out this [InstructLab Knowledge Submission Registration](https://docs.google.com/forms/d/1VWJ_XPwH3gBTIXCabpWc0I5pjWIlXETMSFKXc8fpgkA/viewform?edit_requested=true) form and await acceptance! Please do not add contributions if you do not receive the confirmation email. Thank you!
 
 While skills are foundational or performative, knowledge is based more on answering questions that involve facts,
 data, or references.
@@ -260,20 +260,18 @@ Knowledge in the taxonomy tree consists of a few more elements than skills:
 > - Submit the most up-to-date version of the document
 > - All submissions must be text, images will be ignored
 > - Do not use tables in your markdown freeform contribution
-<!-- -->
-> [!IMPORTANT]
-> There is a limit to how much content can exist in the question/answer pairs for the model to process. Due to this, only add a maximum
-> of around 2300 words to your question and answer seed example pairs in the `qna.yaml` file.
 
-Each `qna.yaml` file requires a minimum of five question-answer pairs. The `qna.yaml` format must include the following fields:
+The `qna.yaml` format must include the following fields:
 
-- `version`: The value must be the number 2.
-- `task_description`: An optional description of the knowledge.
+- `version`: The chache verion of the qna.yaml file, this is the format of the file used for SDG. The value must be the number 3.
 - `created_by`: Your GitHub username.
-- `domain`: Category of the knowledge.
-- `seed_examples`: Five or more examples sourced from the provided knowledge documents.
-  - `question`: A question for the model. This key is required.
-  - `answer`: The desired response from the model. This key is required.
+- `domain`: Specify the category of the knowledge.
+- `seed_examples`: A collection of key/value entries.
+  - `context`: A chunk of information from the knowledge document. Each `qna.yaml` needs five `context` blocks and has a maximum word count of 500 words.
+  - `questions_and_answers`: The parameter that holds your questions and answers
+    - `question`: Specify a question for the model. Each `qna.yaml` file needs at least three question and answer pairs per `context` chunk with a maximum word count of 250 words.
+    - `answer`: Specify the desired answer from the model. Each `qna.yaml` file needs at least three question and answer pairs per `context` chunk with a maximum word count of 250 words.
+- `document_outline`: Describe an overview of the document your submitting.
 - `document`: The source of your knowledge contribution.
   - `repo`: The URL to your repository that holds your knowledge markdown files.
   - `commit`: The SHA of the commit in your repository with your knowledge markdown files.
@@ -282,49 +280,217 @@ Each `qna.yaml` file requires a minimum of five question-answer pairs. The `qna.
 ### Knowledge: YAML examples
 
 ```yaml
-version: 2
-task_description: 'Teach the model the results of the 2024 Oscars'
+version: 3
+domain: astronomy
 created_by: juliadenham
-domain: pop_culture
 seed_examples:
-  - question: When did the 2024 Oscars happen?
-    answer: |
-      The 2024 Oscars were held on March 10, 2024.
-  - question: What film had the most Oscar nominations in 2024?
-    answer: |
-      Oppenheimer had 13 Oscar nominations.
-  - question: Who presented the 2024 Oscar for Best Original Screenplay and Best Adapted Screenplay?
-    answer: |
-      Octavia Spencer presented the award for Best Original Screenplay and Best Adapted Screenplay at the 2024 Oscars.
-  - question: Who hosted the 2024 Oscars?
-    answer: |
-      Jimmy Kimmel hosted the 96th Academy Awards ceremony.
-  - question: At the 2024 Oscars, who were the nominees for best director and who won?
-    answer: |
-      The nominees for director at the 2024 Oscars was Christopher Nolan for Oppenheimer,
-      Justine Triet for Anatomy of a Fall, Martin Scorsese for Killers of the Flower Moon,
-      Yorgos Lanthimos for Poor Things, and Jonathan Glazer for The Zone of Interest.
-      Christopher Nolan won best director for Oppenheimer.
-  - question: Did Billie Eilish perform at the 2024 Oscars?
-    answer: |
-      Yes Billie Eilish performed "What Was I Made For?" from Barbie at the 2024 Oscars.
+  - context: |
+      **Phoenix** is a minor [constellation](constellation "wikilink") in the
+      [southern sky](southern_sky "wikilink"). Named after the mythical
+      [phoenix](Phoenix_(mythology) "wikilink"), it was first depicted on a
+      celestial atlas by [Johann Bayer](Johann_Bayer "wikilink") in his 1603
+      *[Uranometria](Uranometria "wikilink")*. The French explorer and
+      astronomer [Nicolas Louis de
+      Lacaille](Nicolas_Louis_de_Lacaille "wikilink") charted the brighter
+      stars and gave their [Bayer designations](Bayer_designation "wikilink")
+      in 1756. The constellation stretches from roughly −39 degrees to −57 degrees
+      [declination](declination "wikilink"), and from 23.5h to 2.5h of [right
+      ascension](right_ascension "wikilink"). The constellations Phoenix,
+      [Grus](Grus_(constellation) "wikilink"),
+      [Pavo](Pavo_(constellation) "wikilink") and [Tucana](Tucana "wikilink"),
+      are known as the Southern Birds.
+    questions_and_answers:
+      - question: |
+          What is the Phoenix constellation?
+        answer: |
+          Phoenix is a minor constellation in the southern sky.
+      - question: |
+          Who charted the Phoenix constellation?
+        answer: |
+          The Phoenix constellation was charted by french explorer and
+          astronomer Nicolas Louis de Lacaille.
+      - question: |
+          How far does the Phoenix constellation stretch?
+        answer: |
+          The phoenix constellation stretches from roughly −39° to −57°
+          declination, and from 23.5h to 2.5h of right ascension.
+  - context: |
+      Phoenix was the largest of the 12 constellations established by [Petrus
+      Plancius](Petrus_Plancius "wikilink") from the observations of [Pieter
+      Dirkszoon Keyser](Pieter_Dirkszoon_Keyser "wikilink") and [Frederick de
+      Houtman](Frederick_de_Houtman "wikilink"). It first appeared on a 35cm
+      diameter celestial globe published in 1597 (or 1598) in Amsterdam by
+      Plancius with [Jodocus Hondius](Jodocus_Hondius "wikilink"). The first
+      depiction of this constellation in a celestial atlas was in [Johann
+      Bayer](Johann_Bayer "wikilink")'s
+      *[Uranometria](Uranometria "wikilink")* of 1603. De Houtman included
+      it in his southern star catalog the same year under the Dutch name *Den
+      voghel Fenicx*, "The Bird Phoenix", symbolising the
+      [phoenix](Phoenix_(mythology) "wikilink") of classical mythology. One
+      name of the brightest star [Alpha
+      Phoenicis](Alpha_Phoenicis "wikilink")—Ankaa—is derived from the Arabic:
+      العنقاء, romanized: al-‘anqā’, lit. 'the phoenix', and
+      was coined sometime after 1800 in relation to the constellation.
+    questions_and_answers:
+      - question: |
+          What is the brightest star in the Phoenix constellation
+          called?
+        answer: |
+          Alpha Phoenicis or Ankaa is the brightest star in the Phoenix
+          Constellation.
+      - question: Where did the Phoenix constellation first appear?
+        answer: |
+          The Phoenix constellation first appeared on a 35-cm diameter
+          celestial globe published in 1597 (or 1598) in Amsterdam by
+          Plancius with Jodocus Hondius.
+      - question: |
+          What does "The Bird Phoenix" symbolize?
+        answer: |
+          "The Bird Phoenix" symbolizes the phoenix of classical mythology.
+  - context: |
+      Phoenix is a small constellation bordered by [Fornax](Fornax "wikilink")
+      and Sculptor to the north, Grus to the west, Tucana to the south,
+      touching on the corner of [Hydrus](Hydrus "wikilink") to the south, and
+      [Eridanus](Eridanus_(constellation) "wikilink") to the east and
+      southeast. The bright star [Achernar](Achernar "wikilink") is
+      nearby. The three-letter abbreviation for the constellation, as
+      adopted by the [International Astronomical
+      Union](International_Astronomical_Union "wikilink") in 1922, is
+      "Phe". The official constellation boundaries, as set by Belgian
+      astronomer [Eugène Delporte](Eugène_Joseph_Delporte "wikilink") in 1930,
+      are defined by a polygon of 10 segments. In the [equatorial coordinate
+      system](equatorial_coordinate_system "wikilink"), the [right
+      ascension](right_ascension "wikilink") coordinates of these borders lie
+      between 23<sup>h</sup> 26.5<sup>m</sup> and 02<sup>h</sup> 25.0<sup>m</sup>,
+      while the [declination](declination "wikilink")
+      coordinates are between −39.31° and −57.84°. This means it remains
+      below the horizon to anyone living north of the [40th
+      parallel](40th_parallel_north "wikilink") in the [Northern
+      Hemisphere](Northern_Hemisphere "wikilink"), and remains low in the sky
+      for anyone living north of the [equator](equator "wikilink"). It is most
+      visible from locations such as Australia and South Africa during late
+      [Southern Hemisphere](Southern_Hemisphere "wikilink") spring. Most
+      of the constellation lies within, and can be located by, forming a
+      triangle of the bright stars Achernar, [Fomalhaut](Fomalhaut "wikilink")
+      and [Beta Ceti](Beta_Ceti "wikilink")—Ankaa lies roughly in the centre
+      of this.
+    questions_and_answers:
+      - question: What are the characteristics of the Phoenix constellation?
+        answer: |
+          Phoenix is a small constellation bordered by Fornax and Sculptor to
+          the north, Grus to the west, Tucana to the south, touching on the
+          corner of Hydrus to the south, and Eridanus to the east and southeast.
+          The bright star Achernar is nearby.
+      - question: |
+          When is the phoenix constellation most visible?
+        answer: |
+          Phoenix is most visible from locations such as Australia and
+          South Africa during late Southern Hemisphere spring.
+      - question: |
+          What are the Phoenix Constellation boundaries?
+        answer: |
+          The official constellation boundaries for Phoenix, as set by Belgian
+          astronomer Eugène Delporte in 1930, are defined by a polygon of 10
+          segments.
+  - context: |
+      Ten stars have been found to have planets to date, and four planetary
+      systems have been discovered with the [SuperWASP](SuperWASP "wikilink")
+      project. [HD 142](HD_142 "wikilink") is a yellow giant that has an
+      apparent magnitude of 5.7, and has a planet ([HD 142b](HD_142_b
+      "wikilink")) 1.36 times the mass of Jupiter which orbits every 328 days.
+      [HD 2039](HD_2039 "wikilink") is a yellow subgiant with an apparent
+      magnitude of 9.0 around 330 light years away which has a planet ([HD 2039
+      b](HD_2039_b "wikilink")) six times the mass of Jupiter. [WASP-18](WASP-18
+      "wikilink") is a star of magnitude 9.29 which was discovered to have a hot
+      Jupiter-like planet ([WASP-18b](WASP-18b "wikilink")) taking less than a
+      day to orbit the star. The planet is suspected to be causing WASP-18 to
+      appear older than it really is. [WASP-4](WASP-4 "wikilink") and
+      [WASP-5](WASP-5 "wikilink") are solar-type yellow stars around 1000
+      light years distant and of 13th magnitude, each with a single planet
+      larger than Jupiter. [WASP-29](WASP-29 "wikilink") is an orange
+      dwarf of spectral type K4V and visual magnitude 11.3, which has a
+      planetary companion of similar size and mass to Saturn. The planet
+      completes an orbit every 3.9 days.
+    questions_and_answers:
+      - question: In the Phoenix constellation, how many stars have planets?
+        answer: |
+          In the Phoenix constellation, ten stars have been found to have
+          planets to date, and four planetary systems have been discovered
+          with the SuperWASP project.
+      - question: |
+          What is HD 142?
+        answer: |
+          HD 142 is a yellow giant that has an apparent magnitude of 5.7, and
+          has a planet (HD 142 b) 1.36 times the mass of Jupiter which
+          orbits every 328 days.
+      - question: |
+          Are WASP-4 and WASP-5 solar-type yellow stars?
+        answer: |
+          Yes, WASP-4 and WASP-5 are solar-type yellow stars around 1000 light
+          years distant and of 13th magnitude, each with a single planet
+          larger than Jupiter.
+  - context: |
+      The constellation does not lie on the
+      [galactic plane](galactic_plane "wikilink") of the Milky Way, and there
+      are no prominent star clusters. [NGC 625](NGC_625 "wikilink") is a dwarf
+      [irregular galaxy](irregular_galaxy "wikilink") of apparent magnitude 11.0
+      and lying some 12.7 million light years distant. Only 24000 light years in
+      diameter, it is an outlying member of the [Sculptor Group](Sculptor_Group
+      "wikilink"). NGC 625 is thought to have been involved in a collision and
+      is experiencing a burst of [active star formation](Active_galactic_nucleus
+      "wikilink"). [NGC 37](NGC_37 "wikilink") is a
+      [lenticular galaxy](lenticular_galaxy "wikilink") of apparent magnitude
+      14.66. It is approximately 42 [kiloparsecs](kiloparsecs "wikilink")
+      (137,000 [light-years](light-years "wikilink")) in diameter and about
+      12.9 billion years old. [Robert's Quartet](Robert's_Quartet "wikilink")
+      (composed of the irregular galaxy [NGC 87](NGC_87 "wikilink"), and three
+      spiral galaxies [NGC 88](NGC_88 "wikilink"), [NGC 89](NGC_89 "wikilink")
+      and [NGC 92](NGC_92 "wikilink")) is a group of four galaxies located
+      around 160 million light-years away which are in the process of colliding
+      and merging. They are within a circle of radius of 1.6 arcmin,
+      corresponding to about 75,000 light-years. Located in the galaxy ESO
+      243-49 is [HLX-1](HLX-1 "wikilink"), an
+      [intermediate-mass black hole](intermediate-mass_black_hole
+      "wikilink")—the first one of its kind identified. It is thought to be a
+      remnant of a dwarf galaxy that was absorbed in a
+      [collision](Interacting_galaxy "wikilink") with ESO 243-49. Before its
+      discovery, this class of black hole was only hypothesized.
+    questions_and_answers:
+      - question: |
+          Is the Phoenix Constellation part of the Milky Way?
+        answer: |
+          The Phoenix constellation does not lie on the galactic plane of
+          the Milky Way, and there are no prominent star clusters.
+      - question: |
+          How many light years away is NGC 625?
+        answer: |
+          NGC 625 is 24000 light years in diameter and is an outlying
+          member of the Sculptor Group.
+      - question: |
+          What is Robert's Quartet composed of?
+        answer: |
+          Robert's Quartet is composed of the irregular galaxy NGC 87,
+          and three spiral galaxies NGC 88, NGC 89 and NGC 92.
+document_outline: |
+  Information about the Phoenix Constellation including the
+  history, characteristics, and features of the stars in the constellation.
 document:
-  repo: https://github.com/juliadenham/oscars2024_knowledge.git
-  commit: e1744af
-  patterns:
-    - oscars2024_results.md
+    repo: https://github.com/juliadenham/Summit_knowledge
+    commit: 0a1f2672b9b90582e6115333e3ed62fd628f1c0f
+    patterns: phoenix_constellation.md
 ```
 
 *Example `attribution.txt` file*
 
 ```text
-Title of work: 96th Academy Awards
-Link to work: https://en.wikipedia.org/wiki/96th_Academy_Awards
+Title of work: Phoenix (constellation)
+Link to work: https://en.wikipedia.org/wiki/Phoenix_(constellation)
+Revision: https://en.wikipedia.org/w/index.php?title=Phoenix_(constellation)&oldid=1237187773
 License of the work: CC-BY-SA-4.0
 Creator names: Wikipedia Authors
 ```
 
-This knowledge example references one markdown file: `oscars2024_results.md`. You can also add multiple files for knowledge contributions.
+This knowledge example references one markdown file: `phoenix_constellation.md`. You can also add multiple files for knowledge contributions.
 
 > [!NOTE]
 > Due to the higher volume, **it will naturally take longer to receive acceptance for
@@ -332,34 +498,45 @@ This knowledge example references one markdown file: `oscars2024_results.md`. Yo
 > pull requests are simpler and require less time and effort to review.
 
 What might these markdown files look like? They can be freeform. Here's what a
-snippet of `oscars2024_results.md` might look like in your Git repository.
+snippet of `phoenix_constellation.md` might look like in your Git repository.
 
-#### Knowledge: Freeform example
+#### Knowledge: Markdown file example
 
 ```markdown
-# 96th Academy awards
+# Phoenix (constellation)
 
-The **96th Academy Awards** ceremony, which was presented by the
-[Academy of Motion Picture Arts and
-Sciences](Academy_of_Motion_Picture_Arts_and_Sciences "wikilink")
-(AMPAS), took place on March 10, 2024, at the [Dolby
-Theatre](Dolby_Theatre "wikilink") in
-[Hollywood](Hollywood,_Los_Angeles "wikilink"), Los Angeles.[1] During
-the gala, the AMPAS presented [Academy
-Awards](Academy_Awards "wikilink") (commonly referred to as Oscars) in
-23 categories honoring [films released in
-2023](2023_in_film "wikilink"). Comedian [Jimmy
-Kimmel](Jimmy_Kimmel "wikilink") hosted the show for the fourth time.
+**Phoenix** is a minor [constellation](constellation "wikilink") in the
+[southern sky](southern_sky "wikilink"). Named after the mythical
+[phoenix](Phoenix_(mythology) "wikilink"), it was first depicted on a
+celestial atlas by [Johann Bayer](Johann_Bayer "wikilink") in his 1603
+*[Uranometria](Uranometria "wikilink")*. The French explorer and
+astronomer [Nicolas Louis de
+Lacaille](Nicolas_Louis_de_Lacaille "wikilink") charted the brighter
+stars and gave their [Bayer designations](Bayer_designation "wikilink")
+in 1756. The constellation stretches from roughly −39 degrees to −57 degrees
+[declination](declination "wikilink"), and from 23.5h to 2.5h of [right
+ascension](right_ascension "wikilink"). The constellations Phoenix,
+[Grus](Grus_(constellation) "wikilink"),
+[Pavo](Pavo_(constellation) "wikilink") and [Tucana](Tucana "wikilink"),
+are known as the Southern Birds.
 
-The nominations were announced on January 23, 2024.
-*[Oppenheimer](Oppenheimer_(film) "wikilink")* led with 13 nominations,
-followed by *[Poor Things](Poor_Things_(film) "wikilink")* and *[Killers
-of the Flower Moon](Killers_of_the_Flower_Moon_(film) "wikilink")* with
-11 and 10, respectively.[2][3][4] *Oppenheimer* won a leading seven
-awards, including [Best
-Picture](Academy_Award_for_Best_Picture "wikilink") and [Best
-Director](Academy_Award_for_Best_Director "wikilink")
-[..]
+The brightest star, [Alpha Phoenicis](Alpha_Phoenicis "wikilink"), is
+named Ankaa, an [Arabic](Arabic "wikilink") word meaning 'the Phoenix'.
+It is an orange giant of apparent magnitude 2.4. Next is [Beta
+Phoenicis](Beta_Phoenicis "wikilink"), actually a
+[binary](Binary_star "wikilink") system composed of two yellow giants
+with a combined apparent magnitude of 3.3. [Nu
+Phoenicis](Nu_Phoenicis "wikilink") has a dust disk, while the
+constellation has ten star systems with known planets and the recently
+discovered [galaxy clusters](galaxy_cluster "wikilink") [El
+Gordo](El_Gordo_(galaxy_cluster) "wikilink") and the [Phoenix
+Cluster](Phoenix_Cluster "wikilink")—located 7.2 and 5.7 billion light
+years away respectively, two of the largest objects in the [visible
+universe](visible_universe "wikilink"). Phoenix is the
+[radiant](radiant_(meteor_shower) "wikilink") of two annual [meteor
+showers](meteor_shower "wikilink"): the
+[Phoenicids](Phoenicids "wikilink") in December, and the July
+Phoenicids.
 ```
 
 In the taxonomy repository, here's what the previously referenced knowledge might look like in the tree:
@@ -370,16 +547,15 @@ In the taxonomy repository, here's what the previously referenced knowledge migh
 [...]
 
 └── knowledge
-    └── textbooks
-        ├── culture
-        │ └── movies
-        │     └── awards
-        │         ├── oscars  <=== here it is :)
-        │         │   └── qna.yaml
-        |         |       attribution.txt
-        │         └── golden_globes_movies
-        │             └── qna.yaml
-        |                 attribution.txt
+    └── science
+        ├── astronomy
+        │ └── constellations
+        │     └── Phoenix <=== here it is :)
+        │     |    └── qna.yaml
+        |     |        attribution.txt
+        │     └── Orion 
+        │          └── qna.yaml
+        |              attribution.txt
 [...]
 ```
 
