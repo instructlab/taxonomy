@@ -1,0 +1,19 @@
+created_by: zsplaingard
+domain: automobile
+seed_examples:
+- answer: | The first production DeLorean was completed on January 21, 1981.
+  question: When was the first DeLorean car produced?
+- answer: | As much as 200 hours of work at DMC Quality Assurance Centers were required prior to shipping cars to dealerships for delivery to customers.
+  question: Did DeLorean suffer from quality control issues?
+- answer: | The top speed of the DeLoran DMC was tested to be 110mph, not as fast as the claimed value of 130mph.
+  question: How fast was the DeLorean?
+- answer: | The DeLorean featured Gullwing doors and was one of the first to do so after the Mercedes 300SL.
+  question: What are the doors on the DeLorean called?
+- answer: | John DeLorean was arrested on October 19, 1982 on federal charges of cocaine trafficking. The FBI set up a sting operation with nearly 60 pounds of cocaine worth $6.5M in a hotel near Log Angeles International Airport, designed to catch John DeLorean acting as the financier for a deal to help his financially struggling car company. 
+  question: Why was John DeLorean arrested?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: eb071f533d33aaee7b0af2d9fb9e4f3abc9fefec
+ patterns:
+   - DMC_DeLorean.md
