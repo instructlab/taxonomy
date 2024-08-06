@@ -1,0 +1,30 @@
+version: 2
+task_description: 'Teach the model about InstructLab'
+created_by: actisdato
+domain: technology
+seed_examples:
+  - question: What is InstructLab?
+    answer: |
+      InstructLab is a mathodology that aims to provide a model-agnostic space from which anyone can learn
+      and contribute to the evolution of LLM infrastructure.
+  - question: How does InstructLab work?
+    answer: |
+      InstructLab uses a novel synthetic data-based alignment tuning method for Large Language Models.
+  - question: What does the lab in InstructLab mean?
+    answer: |
+      The lab in InstructLab stands for Large-Scale Alignment for ChatBots.
+  - question: What is ilab?
+    answer: |
+      ilab is a Command-Line Interface (CLI) tool that allows you to perfirm the following actions:
+      1) Download a pre-trained Large Language Model (LLM),
+      2) Chat with the LLM.
+  - question: What is InstructLab Taxonomy?
+    answer: |
+      InstructLab Taxonomy is a tree that allows you to create models tuned with
+      your data (enhanced via synthetic data generation),
+      using Large-Scale Alignment for ChatBots (LAB) method.
+document:
+  repo: https://github.com/actisdato/instructlab
+  commit: 8d1d1bb
+  patterns:
+    - instructlab.md
