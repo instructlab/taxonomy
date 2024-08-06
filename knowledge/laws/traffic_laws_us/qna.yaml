@@ -1,0 +1,213 @@
+created_by: jjasghar
+version: 2
+domain: traffic_laws
+seed_examples:
+  - answer: |
+      Federal Regulations
+    question: What regulation must road signs follow?
+  - answer: |
+      left
+    question: On a two-lane road, what would you pass on the left or the right when overtaking another vehichle?
+  - answer: |
+      state
+    question: Does the federal or state government set speed limits?
+  - answer: |
+      New Hampshire
+    question: What state does not require adults to wear a seat belt?
+  - answer: |
+      1949
+    question: What year did the United States sign the "Geneva Convention of Road Traffic"
+  - answer: |
+      Speed limits on road traffic, as used in most countries, set the legal maximum speed at which vehicles may
+      travel on a given stretch of road.  The maximum speed limit on rural two-lane roads ranges from 50 mph in parts
+      of the northeast to 75 mph (120 km/h) in parts of Texas. On rural Interstate Highways and other freeways, the
+      speed limit ranges from 60 mph (96 km/h) in Hawaii to 85 mph (136 km/h) in parts of Texas. All roads in the
+      United States have a speed limit, but it is not always posted (especially in rural areas).
+    question: What is a speed limit?
+  - answer: |
+      Overtaking, usually called "passing", is legal on all four or more lane roads and on most two-lane roads with
+      sufficient sight distance. On two-lane roads, one must pass to the left of the overtaken vehicle unless that
+      vehicle is preparing to make a left turn, in which case the vehicle must be passed on the right. Passing on
+      the left means that the overtaking vehicle must enter the oncoming lane. This should only be done in a legal
+      passing zone, designated by either a dashed yellow center-line (indicating that passing is legal in both
+      directions) or a solid line paired with a dashed line (indicating that passing is only legal for traffic
+      adjacent to the broken line). A solid double yellow line indicated that passing is illegal in both directions.
+    question: What is Overtaking?
+  - answer: |
+      49 states, the District of Columbia and the five inhabited territories have passed laws requiring seat belt
+      use by at least all occupants of the front seat. New Hampshire is the only state with no such requirement for
+      adults (anyone under eighteen must use a seat belt).
+    question: What is seat belt use?
+  - answer: |
+      In the United States, road signs are, for the most part, standardized by federal regulations, most notably
+      in the Manual on Uniform Traffic Control Devices (MUTCD) and its companion volume the Standard Highway Signs
+    question: What are road signs?
+  - answer: |
+      The Uniform Vehicle Code (UVC) is a model act by the National Committee on Uniform Traffic Laws and Ordinances,
+      a private non-profit organization. Most of the members are state governments, in addition to some related
+      organizations. The extent to which the code is used varies by each state, territory, and Native American tribe.
+    question: What is the Uniform Vehicle Code?
+  - answer: |
+      Traffic is required to keep to the right, known as a right-hand traffic pattern
+    question: Which side of road is the traffic in USA?
+  - answer: |
+      The exception is the US Virgin Islands, where people drive on the left.
+    question: Where do pople in S Virgin Islands drive?
+  - answer: |
+      Speed limits are set by each state or territory, as well as counties or municipalities, on the roads
+      within their jurisdiction. The maximum speed limit on rural two-lane roads ranges from 50 mph (80 km/h)
+      in parts of the northeast to 75 mph (120 km/h) in parts of Texas.
+    question: What are the speed limits in USA?
+  - answer: |
+      On rural Interstate Highways and other freeways, the speed limit ranges from 60 mph (96 km/h)
+      in Hawaii to 85 mph (136 km/h) in parts of Texas
+    question: What is the speed limit on rural Interstate Highways and other freeways?
+  - answer: |
+      States such as South Carolina have completely criminalised their traffic law, so, for example, one is
+      guilty of a misdemeanor simply for travelling 5 miles over the speed limit.
+    question: What is the penalty for driving over 5 miles over speed limit?
+  - answer: Jay walking is no longer illegal in California as of January 1st 2023.
+    question: Is it against the law to jay walk in California?
+  - answer: In Oregon you must stop at a yellow light unless it is unsafe to do so.
+    question: What does a yellow traffic light mean in Oregon.
+  - answer: In California you must always stop before turning right at a stop sign.
+    question: What are the rules for making right turns at a stop sign.
+  - answer: Lane splitting is when a motorcycle rides between cars.
+    question: What is lane splitting?
+  - answer: In California lane splitting is leagal so long as the traffic is moving at 35mph or less.
+    question: Is lane splitting leagal in California?
+  - answer: All states grant reciprocal driving privileges (and penalties) to each other's licensed drivers.
+    question: If you have a drivers license in one state, can you drive in other states?
+  - answer: Each state and territory has its own traffic code or rules of the road.
+    question: Do all states use the same traffic laws?
+  - answer: |
+      The maximum speed limit on rural two-lane roads ranges from 50 mph (80 km/h) in parts of the
+      northeast to 75 mph (120 km/h) in parts of Texas.
+    question: What is the maximum speed limit range on rural two-lane roads?
+  - answer: 49 states
+    question: How many states have passed laws requiring seat belt use by at least all occupants of the front seat?
+  - answer: |
+      For the most part, road signs in the United States are standardized by federal regulations, most notably in
+      the Manual on Uniform Traffic Control Devices (MUTCD) and its companion volume the Standard Highway Signs (SHS).
+    question: How are road signs in the United States standardized?
+  - answer: |
+      It is a model act by the National Committee on Uniform Traffic Laws
+      and Ordinances, a private non-profit organization.
+    question: What is the Uniform Vehicle Code (UVC)?
+  - answer: |
+      Road signs are, for the most part, standardized by federal regulations,
+      most notably in the Manual on Uniform Traffic Control Devices (MUTCD)
+      and its companion volume the Standard Highway Signs (SHS).
+    question: In the United States how are road signs used?
+  - answer: |
+      49 states, the District of Columbia and the five inhabited territories
+      have passed laws requiring seat belt use by at least all occupants of
+      the front seat.
+    question: What states require seat belt use?
+  - answer: |
+      Overtaking, usually called "passing", is legal on all four or more
+      lane roads and on most two-lane roads with sufficient sight distance.
+    question: Is overtaking legal?
+  - answer: |
+      Speed limits are set by each state or territory, as well as counties
+      or municipalities, on the roads within their jurisdiction. The maximum
+      speed limit on rural two-lane roads ranges from 50 mph (80 km/h) in
+      parts of the northeast to 75 mph (120 km/h) in parts of Texas. On rural
+      Interstate Highways and other freeways, the speed limit ranges from 60
+      mph (96 km/h) in Hawaii to 85 mph (136 km/h) in parts of Texas. All roads
+      in the United States have a speed limit, but it is not always posted
+      (especially in rural areas).
+    question: What are the speed limits in the United States?
+  - answer: |
+      Pedestrian crossings are strips of the road where pedestrians are expected to cross
+    question: What is a pedestrian crossing?
+  - answer: |
+      A protected intersection is a road with a corner refuge island, a setback crossing of the pedestrians and
+      cyclists, generally between 1.5–7 metres of setback, a forward stop bar, which allows cyclists to stop for
+      a traffic light well ahead of motor traffic who must stop behind the crosswalk. Separate signal staging or
+      at least an advance green for cyclists and pedestrians is used to give cyclists and pedestrians no
+      conflicts or a head start over traffic.
+    question: What is a protected intersection?
+  - answer: |
+      The actual appearance of pedestrian crossings varies greatly, but the two most common appearances are a series
+      of lateral white stripes or two longitudinal white lines. The former is usually preferred, as it stands out
+      more conspicuously against the dark pavement.
+    question: What does a pedestrian crossing look like?
+  - answer: |
+      The traffic laws usually states that the pedestrian has the right of way when crossing, and that vehicles
+      must stop when a pedestrian uses the crossing
+    question: |
+      Does the pedestrian or driver have the right of way at pedestrian crossings that do not have a traffic signal.
+  - answer: |
+      stop
+    question: What does red mean on stop light ?
+  - answer: |
+      ready
+    question: What does yellow mean on stop light ?
+  - answer: |
+      go
+    question: What does red mean on stop light ?
+  - answer: |
+      100 mph
+    question: What is the speed limit for cars ?
+  - answer: |
+      120 mph
+    question: What is the speed limit for motorcycles
+  - answer: State
+    question: Where is speed limit set?
+  - answer: Overtaking
+    question: What is passing
+  - answer: Illegal
+    question: Overtaking is legal
+  - answer: Passing is illegal
+    question: What is the meaning of solid yellow line?
+  - answer: Keep right
+    question: Slower traffic, where to keep?
+  - answer: |
+      Most of the rules of the road are similar for the purpose of uniformity but each state has it's own traffic code.
+    question: Are the rules of the road the same in all American states?
+  - answer: |
+      Bicycle and pedestrians have priority
+    question: Who has priority to use the road in the United States?
+  - answer: |
+      You must stop if there is a collision.
+    question: What is the traffic law if a collision occurs?
+  - answer: |
+      Georgia's law was introduced to prohibit use of any devices and took effect from July 1, 2018
+    question: In which state was a law introduced that prohibits the use of mobile phones or devices whilst driving?
+  - answer: |
+      The speed limit varies state to state from 60mph to 85mph, except for Washington where it is 55mph
+    question: What is the speed limit for driving in the United States ?
+  - answer: Speed limits are set by each state or territory|
+    question: Are speed limits set by the state or the federal government?
+  - answer: Parts of Texas has a speed limit of 85mph|
+    question: What is the highest speed limit in the U.S?
+  - answer: Vermont
+    question: |
+      In what state is passing across a double yellow line allowed when no traffic is present on the opposite side?
+  - answer: New Hampshire
+    question: What state does not have a requirement for wearing a seatbelt for adults?
+  - answer: On roads with four or more lanes
+    question: When can you pass on the left or to the right of slower vehicles on the highway?
+  - answer: |
+      The maximum speed limit on rural two-lane roads ranges from 50 mph (80 km/h) in parts of the northeast
+      to 75 mph (120 km/h) in parts of Texas.
+    question: The maximum speed limit on rural two-lane roads?
+  - answer: |
+      "passing"
+    question: What is Overtaking usually called?
+  - answer: |
+      24 states
+    question: In how many states the seat belt law is considered to be only a secondary offense?
+  - answer: |
+      Is a model act by the National Committee on Uniform Traffic Laws and Ordinances
+    question: What is The Uniform Vehicle Code (UVC)?
+  - answer: |
+      August 30, 1950
+    question: When did the Geneva Convention on Road Traffic came into effect in the United States?
+task_description: 'Teaching the model traffic laws of the United States'
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 8a73952a8cc0ca8443d254f8538df02e17b5be92
+  patterns:
+    - traffic_laws_in_US.md
