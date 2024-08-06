@@ -88,7 +88,6 @@ jobs:
           SCHEMA_VERSION: 0 # use the schema version specified in the "version" key
           TAXONOMY_FOLDERS: >-
             compositional_skills
-            knowledge
 
       - name: "Save Pull Request number"
         if: ${{ (github.event_name == 'pull_request') && (github.repository == 'instructlab/taxonomy') }}
