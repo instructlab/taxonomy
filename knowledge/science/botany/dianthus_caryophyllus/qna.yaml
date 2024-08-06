@@ -1,0 +1,19 @@
+created_by: Sander Van Vugt
+domain: flowers
+seed_examples:
+- answer: | Carnations were mentioned in Greek literature around 2,000 years ago
+  question: When were carnations mentioned for the first time?
+- answer: | Wilde carnation is found in Spain, Italy, Croatia, Albania, Greece and Turkey
+  question: In which countries is wild carnation found?
+- answer: | Carnation is often used as a symbol of socialism and the labour movement
+  question: What does carnation represent?
+- answer: | In 1907, Anna Jarvis chose a carnation as the emblem of mothers day.
+  question: Who chose the carnation as the symbol of mothers day? 
+- answer: | Green carnations are used on St. Patricks day.
+  question: On which occasion are green carnations worn? 
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 195fc4d83a40d8a1b60062e66e06cfc0bc9c8d35
+ patterns:
+   - dianthus_caryophyllus.md
