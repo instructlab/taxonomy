@@ -1,0 +1,57 @@
+task_description: 'List of missions to the moon'
+version: 2
+created_by: tpardeshi
+domain: space
+seed_examples:
+ - question: Which was the first spacecraft to reach the surface successfully?
+   answer: |
+     Luna 2 of the Soviet Union was the first spacecraft to reach its surface successfully.
+ - question: Which was the first spacecraft to achieve a controlled soft landing?
+   answer: |
+     Luna 9 became the first spacecraft to achieve a controlled soft landing.
+ - question: Which was the first mission to enter orbit?
+   answer: |
+     Luna 10 became the first mission to enter orbit.
+ - question: Which was the first mission to carry lifeforms (tortoises) to close proximity of the Moon?
+   answer: |
+     In 1968 Zond 5 became the first mission to carry lifeforms (tortoises) to close proximity of the Moon.
+ - question: Total missions to land humans on moon?
+   answer: |
+     Six missions landed humans on the Moon.
+ - question: Who was the first person to walk on the Moon?
+   answer: |
+     Neil Armstrong was the first person to walk on the Moon.
+ - question: Nations and organizations involved in conducting missions to moon?
+   answer: |
+     Missions involved Soviet Union, the United States, Japan, the European Space Agency, China,
+     India, Luxembourg, Israel, Italy, South Korea, the United Arab Emirates, Russia, Mexico, and Pakistan.
+ - question: Which was the first mission to the moon?
+   answer: |
+     Pioneer 0 was a failed United States space probe that was designed to go into orbit around the Moon,
+     launched on 17 August 1958 by the Air Force Ballistic Missile Division.
+ - question: How the First mission to the moon Pioneer 0 got destroyed?
+   answer: |
+     It was destroyed by an explosion of the first stage of the Thor booster, 73.6 seconds
+     after lift-off at 5.2 km altitude, 16 km (10 mi) downrange over the Atlantic Ocean.
+ - question: When was Chandrayaan-1 launched?
+   answer: |
+     Chandrayaan-1 was the first Indian lunar probe under the Chandrayaan programme,
+     launched by the ISRO in October 2008.
+     With this mission, India became the first to impact the Lunar south pole.
+ - question: When was Chandrayaan-2 launched?
+   answer: |
+     Chandrayaan-2 is the second lunar exploration mission developed by the ISRO after Chandrayaan-1.
+     It consists of a lunar orbiter, the Vikram lunar lander, and the Pragyan rover.
+ - question: When was Chandrayaan-3 launched?
+   answer: |
+     Launched on 14 July 2023, Orbit insertion on 5 August 2023, Lander separated from
+     propulsion module on 17 August 2023,landed on 23 August 2023, 12:32 UTC and deployed the Pragyan rover.
+ - question: What is chandrayan program?
+   answer: |
+     The Chandrayaan programme also known as the Indian Lunar Exploration Programme is an ongoing series of
+     outer space missions by the ISRO for the exploration of the Moon.
+document:
+ repo: https://github.com/tpardeshi/missions_to_moon_knowledge.git
+ commit: 9f7a157
+ patterns:
+  - missions_to_moon.md
