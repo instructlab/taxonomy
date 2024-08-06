@@ -1,0 +1,4 @@
+Title of work: Adding Device in IBM Storage Insights
+Link to work: https://www.ibm.com/docs/en/storage-insights?topic=started-adding-storage-systems
+License of the work: IBM
+Creator names: IBM Storage Insights
