@@ -1,0 +1,36 @@
+---
+created_by: sumanair
+version: 2
+domain: indian nobel laureates
+seed_examples:
+  - answer: >
+     The first Booker Prize was awarded in 1969 to P. H. Newby
+      for his novel Something to Answer.
+    question: Who won the first booker prize?
+  - answer: >
+      Bernice Rubens was the first woman to win the Booker prize. She won the
+       Booker prize in 1970 for her work titled The Elected Member.
+    question: Did Bernice Rubens win the booker?
+  - answer: >
+      The 2023 Booker prize was won by Paul Lynch for his novel Prophet Song.
+      The book was published by Oneworld Publications.
+    question: Who won the 2023 booker prize?
+  - answer: >
+      C.P.Snow was nominated and shortlisted in 1974 for the Booker prize
+      for his work In Their Wisdom from Macmillan publications.
+    question: Why was C.P.Snow nominated for the booker prize?
+  - answer: >
+      Amsterdam is a 1998 novel by British writer Ian McEwan, for which
+       he was awarded the 1998 Booker Prize.
+    question: Who wrote the Booker winner titled Amsterdam?
+  - answer: >
+      Peter Carey emerged as the winner of the 2001 Booker Prize for his novel
+       True History of the Kelly Gang, outshining five other finalists
+       and a long list of 18 authors.
+    question: Who won the Booker prize in 2001?
+task_description: Knowledge contribution about Indian Nobel laureates
+document:
+  repo: https://github.com/sumanair/instructlab_knowledge.git
+  commit: 4f9b25daad966e77bf4ba5d30ea8c30cdf3f3092
+  patterns:
+    - BookerPrize/Booker_Winners_And_Nominees.md
