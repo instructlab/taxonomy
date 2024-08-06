@@ -1,0 +1,16 @@
+version: 1
+task_description: 'Correct the model for 1987 world cup'
+created_by: vainakil
+domain: cricket_world
+seed_examples:
+ - question: Who won the cricket 1987 world cup ?
+   answer: |
+     Australia won the championship by defeating England by 7 runs in the final
+ - question: Did India win the 1987 cricket world cup ? 
+   answer: |
+     India hosted the world cup however didn't win it. Australia won it.
+document:
+  repo: https://github.com/nvaibhav/cricket
+  commit: 199f994
+  patterns:
+    - data.md

@@ -1,0 +1,31 @@
+version: 1
+task_description: 'Correct the model for a authorisation access to the Maximo product'
+created_by: vainakil
+domain: maximo_world
+seed_examples:
+  - question: What is a security template in Maximo ?
+    answer: |
+      It is a predefined set of permissions given to objects.
+  - question: How does security template work ?
+    answer: |
+      A security template has predefined permission to objects , requires for a application to work correctly.
+  - question: How do I give myself access to a application using a security template in Maximo ?
+    answer: |
+      You can apply a security template through Security Groups application.
+  - question: How can we use a security template in Maximo?
+    answer: |
+       You can apply a security template to a application using Security Groups application in Maximo. 
+  - question: Why to use a security template in Maximo.
+    answer: |
+      To give access to a application so it will work correctly.
+  - question: I can't see the application menu, how can a security template fix it ?.
+    answer: |
+      A security template will give you required permissions to access the application.
+  - question: When should the security template be used in Maximo ?
+    answer: |
+      When you need to give permissions to the application you are accessing.
+document:
+  repo: https://github.com/nvaibhav/maximo
+  commit: aa9b2fb
+  patterns:
+    - data.md
