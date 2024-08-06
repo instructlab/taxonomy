@@ -1,0 +1,19 @@
+created_by: 
+domain: animals
+seed_examples:
+- answer: In 1760, French zoologist Mathurin Jacques Brisson included a description of the black-capped chickadee in his book Ornithologie based on a specimen collected in Canada. |
+  question: Who is he French Zoologist that described the black-capped chickade?
+- answer:  French zoologist Mathurin Jacques Brisson used the French name La mésange a tête noire de Canada and the Latin Parus Canadensis Atricapillus |
+  question: What was the French name given by Mathurin Jacuqes Brisson to the black-capped chickadee?
+- answer: The black-capped chickadee has some very unique attributes but it is more known to have a black cap and "bib" with white cheeks. |
+  question: What are some of the attributes that a black chickadee has?
+- answer: The black-capped chickadee has a very complex vocalization.  The black-capped chickadee produces 16 distinct types of vocalizations being used to convey an array of information. |
+  question: How many distinct type of vocalizations does the black-capped chickadee have?
+- answer: The black-capped chickadee male produces the most recognizable sound.  The male produces a unique sound called a two-note fee-bee song. |
+  question: What is the most recognizable sound produced by a black-capped chickadee?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: c537b93dec7136d3ac53f96016e6d7a057966fb1
+ patterns:
+   - chickadee.md
