@@ -1,0 +1,57 @@
+created_by: lukeinglis
+domain: gdp_by_country_by_year
+version: 2
+seed_examples:
+  - answer: |
+      Australia. According to IMF (International Monetary Fund) estimates, Australia's 1989 GDP per capita
+      was 18,206 and Belgium's 1989 GDP per capita was 16,098.
+    question: Who had a higher GDP per capita in 1989, Australia or Belgium?
+  - answer: According to IMF (International Monetary Fund) estimates, Venezuela's GDP per capita in 1993 was 2,876
+    question: What was Venezuela's GDP per capita in 1993
+  - answer: According to UN estimates, Germany's GDP per capita fell from 12,113 in 1980 to 10,225 in 1981.
+    question: Did Germany's GDP per capita grow between 1980 and 1981.
+  - answer: |
+      No it did not. According to UN estimates, Latvia's GDP per capita actually grew
+      from 3,347 in 2000 to 5,137 in 2003.
+    question: Did Latvia's GDP per capita fall between 2000 and 2003.
+  - answer: 16,200, per CIA estimated provided by the CIA World Factbook.
+    question: According to CIA estimates in 1990, what was Iceland's GDP per capita
+task_description: Teaching GDP per capita data by year.
+document:
+  repo: https://github.com/luke-inglis/li-GDP-by_country
+  commit: 0c59da7
+  patterns:
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_1.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_2.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_3.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_4.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_5.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_6.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_7.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_8.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_9.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_10.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_11.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_12.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_13.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_14.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_15.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_16.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_17.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_18.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_19.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_20.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_21.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_22.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_23.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_24.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_25.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_26.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_27.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_28.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_29.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_30.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_31.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_32.md
+    - List_of_countries_by_past_and_projected_GDP_(nominal)_per_capita_33.md
