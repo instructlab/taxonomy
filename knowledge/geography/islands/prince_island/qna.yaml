@@ -1,0 +1,19 @@
+created_by: 
+domain: geography
+seed_examples:
+- answer: | 869 ft
+  question: Where is prince prince leopold island located?
+- answer: | The island is located in is an island in the Qikiqtaaluk Region of Nunavut, Canada.
+  question: When the island was signted?
+- answer: | August 4, 1819
+  question: where is the name leopold came from?
+- answer: |  William Parry named the island after the future King Leopold I of Belgium
+  question: When the research started in leopold island?
+- answer: | 1950
+  question: how high are the cliffs in the leopold island?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 6ba7991ccc0a8df412b3d5697f231225d5aa77df
+ patterns:
+   - prince_leopold_island.md
