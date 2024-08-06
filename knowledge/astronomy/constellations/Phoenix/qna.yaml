@@ -1,0 +1,139 @@
+created_by: jjasghar
+version: 2
+domain: constellation
+seed_examples:
+  - answer: Phoenix is a minor constellation in the southern sky
+    question: What is the Phoenix constellation?
+  - answer: Alpha Phoenicis or Ankaa
+    question: What is the brightest star called?
+  - answer: Beta Phoenicis
+    question: What is the second brightest star called?
+  - answer: |
+      Phoenix is a small constellation bordered by Fornax and Sculptor to the north, Grus to the west, Tucana to
+      the south, touching on the corner of Hydrus to the south, and Eridanus to the east and southeast. The bright
+      star Achernar is nearby.
+    question: What are the characteristics of the Phoenix constellation
+  - answer: Richard Allen was a celestial historian.
+    question: Who was Richard Allen?
+  - answer: |
+      Phoenix is a minor constellation in the southern sky. Named after the mythical phoenix, it was first depicted
+      on a celestial atlas by Johann Bayer in his 1603 Uranometria.
+    question: What is the phoenix constellation?
+  - answer: |
+      The brightest star, Alpha Phoenicis, is named Ankaa, an Arabic word meaning 'the Phoenix'.
+      It is an orange giant of apparent magnitude 2.4.
+    question: What is the brightest start in the phoenix constellation?
+  - answer: |
+      The constellation does not lie on the galactic plane of the Milky Way, and there are no prominent star clusters.
+    question: Does the constellation exist on the galactic plane?
+  - answer: |
+      The constellation is named after the mythical bird that can burn and resurrect itself from its ashes.
+    question: How was the phoenix constellation named?
+  - answer: |
+      This constellation was invented by Pieter Dircksz Keyser, a navigator who joined the first Dutch expedition to
+      the East Indies in 1595 and who added 12 new constellations in the southern skies.
+    question: What is the brightest start in the constellation?
+  - answer: |
+      Phoenix is the radiant of two annual meteor showers, the Phoenicids in December, and the July Phoenicids.
+      The Phoenicids, also known as the December Phoenicids, were first observed on 3 December 1887.
+    question: Is there anything interesting happening in the are around the Phoenix constellation?
+  - answer: |
+      The constellation does not lie on the galactic plane of the Milky Way, and there are no prominent star clusters.
+      NGC 625 is a dwarf irregular galaxy of apparent magnitude 11.0 and lying some 12.7 million light years distant.
+      Only 24000 light years in diameter, it is an outlying member of the Sculptor Group.
+      Lying within the bounds of the constellation is the gigantic Phoenix cluster, which is around 7.3 million
+      light years wide and 5.7 billion light years away, making it one of the most massive galaxy clusters. It
+      was first discovered in 2010, and the central galaxy is producing an estimated 740 new stars a year. Larger
+    question: Are there any deep sky objets arround the Phoenix Constellation?
+  - answer: |
+      Ten stars have been found to have planets to date, and four planetary systems have been discovered with the
+      SuperWASP project. HD 142 is a yellow giant that has an apparent magnitude of 5.7, and has a planet
+      1.36 times the mass of Jupiter which orbits every 328 days. HD 2039 is a yellow subgiant with an apparent
+      magnitude of 9.0 around 330 light years away which has a planet (HD 2039 b) six times the mass of Jupiter.
+    question: Are there any planets surrounding the stars in the Phoenix constellation?
+  - answer: |
+      The constellation stretches from roughly −39 to −57 declination
+    question: What is the declination range for Phoenix ?
+  - answer: |
+      Phoenix is most visible from locations such as Australia and South Africa during late Southern Hemisphere spring
+    question: When is the phoenix most visible ?
+  - answer: |
+      The Phoenicids, also known as the December Phoenicids, were first observed on 3 December 1887
+    question: What is the other name for Phoenicids
+  - answer: |
+      Ankaa is the brightest star in the constellation
+    question: |
+        Which is the largest of the 12 constellations established by Petrus Plancius from the observations of
+        Pieter Dirkszoon Keyser and Frederick de Houtman?
+  - answer: |
+      Johann Bayer
+    question: Who first depicted Phoenix?
+  - answer: |
+      Alpha Phoenicis
+    question: Which is the brightest star in the Phoenix constellation?
+  - answer: |
+      Fornax and Sculptor to the north, Grus to the west, Tucana to the south, touching on the corner of Hydrus to
+      the south, and Eridanus to the east and southeast
+    question: What borders the Phoenix constellation?
+  - answer: |
+      Phoenix is the radiant of two annual meteor showers, the Phoenicids in December, and the July Phoenicids.
+    question: How mny radiant meteor showers annually?
+  - answer: Southern Sky
+    question: Where is phoenix constellation found?
+  - answer: Phoenix, Grus, Pavo and Tucana
+    question: what comprises the southern birds?
+  - answer: Ankaa
+    question: what is the brightest star in the constellation?
+  - answer: al phe
+    question: what is the eclipsing binary star?
+  - question: When was the constellation Phoenix defined?
+    answer: |
+      It first appeared on a 35-cm diameter celestial globe published in 1597 (or 1598) in Amsterdam by Petrus
+      Plancius with Jodocus Hondius. It was first depicted on a celestial atlas by Johann Bayer in his 1603
+      Uranometria. The French explorer and astronomer Nicolas Louis de Lacaille charted the brighter stars and gave
+      their Bayer designations in 1756.
+  - question: What notable Deep-sky objects are in the constellation?
+    answer: |
+      Lying within the bounds of the constellation is the gigantic Phoenix cluster, which is around 7.3 million
+      light years wide and 5.7 billion light years away, making it one of the most massive galaxy clusters.
+  - question: What notable black hole is in the constellation?
+    answer: |
+      The first intermediate-mass black hole HLX-1, is within the galaxy ESO 243-49, which is within the constellation
+  - question: What is the brightest star in the constellation?
+    answer: |
+      Alpha Phi, called Ankaa, is the brightest star in the constellation. It is an orange giant of apparent
+      visual magnitude 2.37 and spectral type K0.5IIIb, 77 light years distant from Earth and orbited by a
+      secondary object about which little is known.
+  - question: What is the designation of the constellation?
+    answer: |
+      The formal abbreviation of the constellation is Phe and it has the genitive form of Phoenicis
+  - answer: |
+      A curved line of stars comprising Alpha, Kappa, Mu, Beta, Nu and Gamma Phoenicis was seen as a boat by the
+      ancient Arabs. French explorer and astronomer Nicolas Louis de Lacaille charted and designated 27 stars
+      with the Bayer designations Alpha through to Omega in 1756.
+    question: What is the Phoenix constellation named after?
+  - answer: |
+      The brightest star, Alpha Phoenicis, is named Ankaa, an Arabic word meaning 'the Phoenix'. It is an orange
+      giant of apparent visual magnitude 2.37 and spectral type K0.5IIIb, 77 light years distant from Earth and
+      orbited by a secondary object about which little is known.
+    question: What is the brightest star in the Phoenix constellation?
+  - answer: |
+      Phoenix is the radiant of two annual meteor showers. The Phoenicids, also known as the December Phoenicids,
+      were first observed on 3 December 1887. The shower was particularly intense in December 1956, and is thought
+      related to the breakup of the short-period comet 289P/Blanpain.
+    question: Is the Phoenix constellation the radiant of any meteor showers?
+  - answer: |
+      The first depiction of this constellation in a celestial atlas was in Johann Bayer's Uranometria of 1603.
+    question: Where was the Phoenix constellation first depicted in a celestial atlas?
+  - answer: |
+      The constellations Phoenix, Grus, Pavo and Tucana, are known as the Southern Birds.
+    question: Which constellations are known as the Southern Birds?
+  - answer: |
+      Who is the radiant of two annual meteor showers.
+    question: Phoenix is the radiant of two annual meteor showers.
+task_description: 'Some facts about the Southern Phoenix Constellation'
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 8a73952a8cc0ca8443d254f8538df02e17b5be92
+  patterns:
+    - phoenix_constellation.md
