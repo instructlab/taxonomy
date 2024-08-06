@@ -1,0 +1,33 @@
+version: 2
+task_description: |
+    Teaching the model to correctly edit given text based on the rules given in the following style guide:
+    1. Do not use abbreviations or acronyms that the reader would not quickly recognize, instead expand the acronym.
+    2. Do not follow an organization's full name with an abbreviation or acronym in parentheses.
+created_by: Raymondli9112
+seed_examples:
+- context: |
+    With level 2 and fast charging stations across the state of Florida, FPL EVolution makes it easy to drive electric.
+  question: Rewrite the sentence in the context, expanding all acronyms. If there are no acronyms to expand, respond with "The document looks great! :)"
+  answer: With level 2 and fast charging stations across the state of Florida. Florida, Power, and Light EVolution makes it easy to drive electric.
+- context: Electric Vehicles EV have revolutionized the automotive industry
+  question: Rewrite the sentence in the context, expanding all acronyms. If there are no acronyms to expand, respond with "The document looks great! :)"
+  answer: Electric Vehicles have revolutionized the automotive industry.
+- context: |
+    The Chief Technology Officer revealed plans to enhance the company's IT infrastructure at the Q3 meeting.
+    This upgrade will include implementing a new Enterprise Resource Planning system to streamline operations
+    and improve efficiency.
+  question: Rewrite the sentence in the context, expanding all acronyms. If there are no acronyms to expand, respond with "The document looks great! :)"
+  answer: The document looks great! :)
+- context: |
+    Use the fan. Don't use AC. With level 2 and fast charging stations across the state of Florida,
+    FPL EVolution makes it easy to drive electric.
+  question: Rewrite the sentence in the context, expanding all acronyms. If there are no acronyms to expand, respond with "The document looks great! :)"
+  answer: Use the fan. Don't use air conditioning. With level 2 and fast charging stations across the state of Florida,
+    Florida Power & Light EVolution makes it easy to drive electric.
+- context: |
+    The CTO revealed plans to enhance the company's IT infrastructure at the meeting. This upgrade will include
+    implementing a new ERP system to streamline operations and improve efficiency.
+  question: Rewrite the sentence in the context, expanding all acronyms. If there are no acronyms to expand, respond with "The document looks great! :)"
+  answer: The Chief Technology Officer revealed plans to enhance the company's information technology
+    infrastructure at the meeting. This upgrade will include implementing a new enterprise resource planning system
+    to streamline operations and improve efficiency
