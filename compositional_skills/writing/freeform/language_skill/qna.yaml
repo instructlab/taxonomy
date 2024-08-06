@@ -1,0 +1,39 @@
+---
+task_description: Avoid using prejudicial language
+created_by: zhongchanghui
+seed_examples:
+  - context: >
+      This company is looking to hire fresh, young graduates.
+    question: What potential bias exists in this statement? How can it be rephrased?
+    answer: >
+      This company is looking to hire passionate and innovative recent graduates.
+      (Removes the age-related description of "young")
+
+  - context: >
+      We need to retain these seasoned employees, even though they are getting on in years
+      their experience is invaluable.
+    question: Which words in this statement may carry ageist undertones? Please rephrase.
+    answer: >
+      We need to retain these highly experienced employees, as they are a valuable asset to
+      the company. (Avoids the age-related description of "getting on in years")
+
+  - context: >
+      This modern tech startup primarily hires young people because they are better at grasping new technologies.
+    question: How can this be rephrased to avoid stereotyping based on age?
+    answer: >
+      This tech company welcomes passionate and innovative talent, regardless of age.
+      (Removes the positive stereotype about young people)
+
+  - context: >
+      Our company is implementing an innovation strategy and needs to bring in some young blood.
+    question: How can this statement avoid language with potential ageist connotations?
+    answer: >
+      Our company is seeking new talent with fresh perspectives to invigorate the organization.
+      (Avoids using the age-related phrase "young blood")
+
+  - context: >
+      This job requires agility and quick reflexes, so it is more suitable for the younger generation.
+    question: Please rephrase this statement to remove age-related bias.
+    answer: >
+      This job requires good physical fitness and responsiveness, and we welcome applicants with these abilities.
+      (Does not mention age)
