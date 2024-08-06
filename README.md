@@ -243,7 +243,7 @@ seed_examples:
 ## Getting Started with Knowledge Contributions
 
 > [!IMPORTANT]
-> Upon release, the taxonomy repository is only accepting contributions from Wikipedia, Project Gutenberg, Wikisource (library), OpenStax textbooks family of publications, The Open Organization publications, and The Scrum Guide. and is capped at 50 contributions. If you want to add knowledge to the taxonomy repository, please fill out this [InstructLab Knowledge Submission Registration](https://docs.google.com/forms/d/1VWJ_XPwH3gBTIXCabpWc0I5pjWIlXETMSFKXc8fpgkA/viewform?edit_requested=true) form and await acceptance! Please do not add contributions if you do not receive the confirmation email. Thank you!
+> Upon release, the taxonomy repository is only accepting contributions from Wikipedia, Project Gutenberg, Wikisource (library), OpenStax textbooks family of publications, The Open Organization publications, and The Scrum Guide and is capped at 50 contributions. If you want to add knowledge to the taxonomy repository, please fill out this [InstructLab Knowledge Submission Registration](https://docs.google.com/forms/d/1VWJ_XPwH3gBTIXCabpWc0I5pjWIlXETMSFKXc8fpgkA/viewform?edit_requested=true) form and await acceptance! Please do not add contributions if you do not receive the confirmation email. Thank you!
 
 While skills are foundational or performative, knowledge is based more on answering questions that involve facts,
 data, or references.
