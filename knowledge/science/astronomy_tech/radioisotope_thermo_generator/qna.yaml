@@ -1,0 +1,225 @@
+created_by: jjasghar
+version: 2
+domain: astronomy_technology
+seed_examples:
+  - answer: |
+      a type of radioisotope thermoelectric generator (RTG) developed for NASA space missions
+      such as the Mars Science Laboratory (MSL)
+    question: What is the multi-mission radioisotope thermoelectric generator?
+  - answer: |
+      Space exploration missions require safe, reliable, long-lived power systems to provide electricity and
+      heat to spacecraft and their science instruments.
+    question: What do Space exploration missions and instruments require ?
+  - answer: |
+      Solid-state thermoelectric couples convert the heat produced by the natural decay of the radioisotope
+      plutonium-238 to electricity.
+    question: What do solid-state thermoelectric couples use to convert heat?
+  - answer: |
+      The MMRTG is powered by eight Pu-238 dioxide general-purpose heat source (GPHS) modules, provided by
+      the US Department of Energy (DOE). Initially, these eight GPHS modules generate about 2 kW thermal power.
+    question: What is the MMRTG is powered by ?
+  - answer: |
+      Curiosity, the MSL rover that was successfully landed in Gale Crater on August 6, 2012,
+      uses one MMRTG to supply heat and electricity for its components and science instruments.
+    question: What MSL rover uses MMRTG
+  - answer: |
+      Space exploration missions require safe, reliable, long-lived power systems to provide electricity and heat
+      to spacecraft and their science instruments
+    question: What does the space exploreation missions require?
+  - answer: |
+      In June 2003, the Department of Energy (DOE) awarded the MMRTG contract to a team led by Aerojet Rocketdyne
+    question: When did the department of energy award the contract and to whom?
+  - answer: The MMRTG cost an estimated US$109,000,000 to produce and deploy
+    question: How much did the it cost for MMRTG to produce and deploy?
+  - answer: The MMRTG cost an estimated US$109,000,000 to produce and deploy, and US$83,000,000 to research and develop
+    question: How much did it cost for MMRTG cost to research and development?
+  - answer: |
+      The upcoming NASA Dragonfly mission to Saturn's moon Titan will use one of the two MMRTGs
+      for which the Aerojet Rocketdyne/Teledyne Energy Systems team has recently received a contract
+    question: Tell me about the upcoming NASA Dragonfly mission?
+  - answer: |
+      The MMRTG cost an estimated US$109,000,000 to produce and deploy, and US$83,000,000 to research and develop.
+      For comparison the production and deployment of the GPHS-RTG was approximately US$118,000,000.
+    question: What is the cost of the Multi-mission Radioisotope thermoelectric Generator?
+  - answer: Space exploration missions require safe
+    question: |
+      what requires require safe, reliable, long-lived power systems to provide electricity and heat to
+      spacecraft and their science instruments?
+  - answer: Solid-state thermoelectric
+    question: couples convert the heat produced by the natural decay of the radioisotope plutonium-238 to electricity?
+  - answer: Aerojet Rocketdyne. Aerojet Rocketdyne and Teledyne Energy Systems
+    question: In June 2003, the Department of Energy (DOE) awarded the MMRTG contract to a team led by?
+  - answer: US$109,000,000
+    question: The MMRTG cost an estimated?
+  - answer: multi-mission radioisotope thermoelectric generator
+    question: what is MMRTG
+  - answer: Aerojet Rocketdyne
+    question: who did the department of energy award the MMRTG contract to in 2003 ?
+  - answer: tellurium (Te), silver (Ag), germanium (Ge) and antimony (Sb)
+    question: TAGS is an acronym designating a material incorporating what elements ?
+  - answer: radioisotope thermoelectric generator
+    question: what is RTG short for ?
+  - answer: National Aeronotics Space Administration
+    question: what is full form of NASA
+  - answer: NASA Dragonfly Mission
+    question: What is the next mission to Saturn that will use the MMRTGs
+  - answer: Curiosity
+    question: What rover successfully landed in the Gale Crater
+  - answer: Aerojet Rocketdyne
+    question: Who let the team that was awarded a contract by the Department of Energy in June 2003?
+  - answer: SNAO-192
+    question: What was the previous thermoelectric converter that was used by the Pioneer 10 and Pioneer 11?
+  - answer: >
+      It is a radioisotope thermoelectric generator developed
+      or NASA missions such as the Mars Science Laboratory.
+    question: What is Multi-mission radioisotope thermoelectric generator?
+  - answer: >
+      It has been used for deep space missions
+      as a reliable energy source.
+    question: For what has the MMRTG been used for?
+  - answer: >
+      The MMRTG cost US$109,000,000 to produce.
+    question: What did the MMRTG cost to produce?
+  - answer: >
+      Solid-state thermoelectric couples convert the heat
+      produced by the natural decay of the plutonium-238 to electricity.
+    question: How does the MMRTG work?
+  - answer: >
+      In June 2003, the Department of Energy (DOE) awarded the
+      MMRTG contract to a team led by Aerojet Rocketdyne.
+    question: When did development of the MMRTG start?
+  - answer: >
+      The development of MMRTG cost US$83,000,000.
+    question: What did the MMRTG cost to develop?
+  - answer: multi_mission_radioisotope_thermoelectric_generator is type of radioisotope
+    question: what is a radioisotope ?
+  - answer: requires safe, reliable long lived power systems
+    question: what does space exploration needed ?
+  - answer: General purpose heat source
+    question: What is GPHS means ?
+  - answer: Radioisotoe is used to be on eight earth orbiting
+    question: where is radioisotope
+  - answer: MMRTG costs 109,000,000 to produce and deploy
+    question: what is the cost of MMRTG
+  - answer: NASA
+    question: Who developed multi_mission_radioisotope_thermoelectric_generator?
+  - answer: Solid-state thermoelectric couple convert heat into electricity from Natural decay of radioisotope
+    question: what does Solid-state thermoelectric couples do?
+  - answer: team lead by Aerojet Rocketedyne
+    question: To whom DOE awarded MMRTG contract in 2003?
+  - answer: No, it does not
+    question: Does RTG depend on solar energy?
+  - answer: SNAP-19s
+    question: what powered Pioneer 10 and Pioneer 11 missions?
+  - answer: |
+      Space exploration missions require safe, reliable, long-lived power systems
+      to provide electricity and heat to spacecraft and their science instruments
+    question: What space exploration requires?
+  - answer: |
+      In June 2003, the Department of Energy (DOE) awarded the MMRTG contract to a team led by Aerojet Rocketdyne.
+    question: Was there any reward for MMRTG.
+  - answer: |
+      A temperature gradient generates an electron flow in the system. Unlike photovoltaic solar arrays,
+      RTGs are not dependent upon solar energy, so they can be used for deep space missions.
+    question: What does temperature gradient do with electron in the system
+  - answer: The MMRTG was developed by an industry team of Aerojet Rocketdyne and Teledyne Energy Systems.
+    question: Who developed MMRTG project?
+  - answer: |
+      A MMRTG was successfully launched into space on July 30, 2020, aboard the Mars 2020 mission,
+      and is now being used to supply the scientific equipment on the Perseverance rover with heat and power.
+    question: When was MMRTG launched?
+  - answer: |
+      The SNAP-19 design powered Pioneer 10 and 11, as well as Viking 1 and 2 landers.
+    question: |
+      What NASA missions did SNAP-19 power?
+  - answer: |
+      Systems Nuclear Auxiliary Power (SNAP) 19 was developed by Teledyne Energy Systems.
+    question: |
+      Who designed SNAP-19?
+  - answer: >
+      Multi-Mission Radioisotope Thermoelectric Generator (MMRTG) is powered
+      by either Pu-238 dioxide general-purpose heat source (GPHS) modules provided
+      by the US Department of energy.
+    question: |
+      What is the power source for MMRT systems?
+  - answer: |
+      The MMRTG cost an estimated US$109,000,000 to produce and deploy, and US$83,000,000 to research and develop.
+      For comparison the production and deployment of the GPHS-RTG was approximately US$118,000,000.
+    question: What is the cost to produce and deploy MMRTG?
+  - answer: |
+      A MMRTG was successfully launched into space on July 30, 2020, aboard the Mars 2020 mission
+    question: When was MMRTG successfully launched into space?
+  - answer: |
+      The MMRTG will be used to charge a set of lithium ion batteries, and then use this higher-power-density supply to
+       fly a quad helicopter in short hops above the surface of Titan.
+    question: What will power the MMRTG?
+  - answer: |
+      The MMRTG is powered by eight Pu-238 dioxide general-purpose heat source (GPHS) modules, provided by the US
+       Department of Energy (DOE).
+      Initially, these eight GPHS modules generate about 2 kW thermal power.
+    question: What is powering MMRTG?
+  - answer: |
+      The multi-mission radioisotope thermoelectric generator (MMRTG) is a type of radioisotope thermoelectric
+      generator (RTG) developed for NASA space missions such as the Mars Science Laboratory (MSL),
+      under the jurisdiction of the United States Department of Energy's Office of Space and Defense
+      Power Systems within the Office of Nuclear Energy.
+    question: What is MMRTG?
+  - answer: safe, reliable, long-lived power systems to provide electricity and heat to spacecraft
+    question: What are the requirements for space exploration mission?
+  - answer: multi_mission_radioisotope_thermoelectric_generator
+    question: What does MMRTG stands for?
+  - answer: NASA
+    question: Who developed MMRTG?
+  - answer: Seebeck effect
+    question: What does the physical conversion principle is based on?
+  - answer: |
+      Space exploration missions require safe, reliable, long-lived power systems to provide electricity
+      and heat to spacecraft and their science instruments.
+    question: What space exploration missions require to survive in outer space ?
+  - answer: |
+      Solid-state thermoelectric couples convert the heat produced by the natural decay of
+      the radioisotope plutonium-238 to electricity
+    question: How solid-state thermoelectric couples used for space exploration ?
+  - answer: GPHS modules generate about 2 kW thermal power.
+    question: How much pwer is generated from GPHS modules ?
+  - answer: |
+      MMRTG was successfully launched into space on July 30, 2020, aboard the Mars 2020 mission,
+      and is now being used to supply the scientific equipment on the Perseverance rover with heat and power.
+    question: When did MMRTG launched into space ?
+  - answer: June 2023
+    question: When did the Department of Energy (DOE) awarded the MMRTG contract to a team led by Aerojet Rocketdyne
+  - answer: MMRTG
+    question: |
+      What is powered by eight Pu-238 dioxide general-purpose heat source (GPHS) modules, provided by
+      the US Department of Energy (DOE). Initially, these eight GPHS modules generate about 2 kW thermal power.
+  - answer: Curiosity
+    question: What is the MSL rover that was successfully landed in Gale Crater on August 6, 2012
+  - answer: US$109,000,000
+    question: How many million dollars did it cost to produce and deploy MMRTG
+  - answer: Nasa Dragonfly
+    question: |
+      Which mission to Saturn's moon Titan will use one of the two MMRTGs for which the Aerojet
+      Rocketdyne/Teledyne Energy Systems team has recently received a contract
+  - answer: In June 2003
+    question: When did the Department of Energy (DOE) award the MMRTG contract to a team led by Aerojet Rocketdyne?
+  - answer: On February 20, 2015
+    question: |
+      When did a NASA official report that there is enough plutonium available to NASA to fuel three
+      more MMRTGs like the one used by the Curiosity rover?
+  - answer: July 30, 2020
+    question: When was A MMRTG successfully launched into space?
+  - answer: US$109,000,000
+    question: How many cost The MMRTG estimated to produce and deploy?
+  - answer: on August 6, 2012
+    question: When was the MSL rover that was successfully landed in Gale Crater?
+  - answer: It is a Multi-mission radioisotope thermoelectric generator.
+    question: What is an MMRTG?
+  - answer: |
+      June 2003.
+    question: When was the first grant awarded?
+task_description: 'Multi-mission radioisotope thermoelectric generator information'
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 8a73952a8cc0ca8443d254f8538df02e17b5be92
+  patterns:
+    - multi_mission_radioisotope_thermoelectric_generator.md
