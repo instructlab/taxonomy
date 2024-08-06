@@ -1,0 +1,102 @@
+created_by: jjasghar
+domain: flowers
+version: 2
+seed_examples:
+  - answer: |
+      The English common name of "Arabian jasmine", is due to it being widely
+      cultivated in Southwest of Saudi Arabia, Yemen and Oman
+    question: Why is Jasminum sambac commonly referred to as "Arabian jasmine"?
+  - answer: The Medieval Arabic term "zanbaq" denoted jasmine flower-oil from the flowers of any species of jasmine
+    question: What did the Medieval Arabic term "zanbaq" specifically refer to in relation to jasmine flowers?
+  - answer: |
+      In 1753, Carl Linnaeus first described the plant as Nyctanthes sambac in the first edition of his
+      famous book Systema Naturae|
+    question: How did Carl Linnaeus classify the plant in his 1753 publication "Systema Naturae"?
+  - answer: In 1789, William Aiton reclassified the plant to the genus Jasminum
+    question: Who was responsible for reclassifying the plant to the genus Jasminum in 1789?
+  - answer: |
+      Jasminum sambac contains dotriacontanoic acid, dotriacontanol, oleanolic acid, daucosterol,
+      hesperidin, and jasminoids A, B, C, D in its roots|
+    question: What are some of the chemical compounds found in the roots of Jasminum sambac?
+  - answer: It is  is a species of jasmine native to tropical Asia, from the Indian subcontinent to Southeast Asia.
+    question: What is Jasminum sambac ?
+  - answer: |
+      The flowers bloom all throughout the year and are produced in clusters of 3 to 12 together at
+      the ends of branches.
+    question: When does Jasmium sambac bloom ?
+  - answer: |
+      Typically, the Jasmium sambac are harvested as buds during early morning.
+    question: When is Jasmium sambac harvested?
+  - answer: |
+      Jasminum sambac contains dotriacontanoic acid, dotriacontanol, oleanolic acid, daucosterol, hesperidin.
+    question: What is chemical composition of Jasmine sambac?
+  - answer: |
+       It is cultivated in many places, especially West Asia, South Asia and Southeast Asia.
+    question: Where is Jasmine sambac cultivated?
+  - answer: |
+      Jasminum sambac is an evergreen vine or shrub that grows up to 9.8 ft tall.
+      The leaves are ovate 1.6 to 4.9 inches long and .79 to 2.95 inches wide.
+    question: What does Jasminum sambac look like?
+  - answer: Jasminum sambac is cultivated in many places especially West Asia, South Asia, and Southeast Asia.
+    question: Where can Jasminum sambac be found?
+  - answer: |
+      The flowers bloom all throughout the year and are produced in clusters of 3 to 12
+      together at the ends of the branches.
+    question: Does Jasminum sambac produce flowes?
+  - answer: |
+      Jasminum sambac has a distinct sweet and heady fragrance. It is widley used as an ornamental
+      plan for its strongly scented flowers.
+    question: Does Jasminum sambac have a destinctive smell?
+  - answer: |
+      Jasminum sambac is an evergreen vine or shrub reaching up to 0.5 to 3 m (1.6 to 9.8 ft) ta
+    question: How much height Jasminum Sambac will grow?
+  - answer: |
+      Jasminum sambac is classified under the genus Jasminum under the tribe Jasmineae.
+    question: What is the classification of Jasminum Sambac?
+  - answer: |
+      The sweet, heady fragrance of Jasminum sambac is its distinct feature. It is widely grown throughout the
+      tropics from the Arabian peninsula to Southeast Asia and the Pacific Islands as an ornamental plant and
+      for its strongly scented flowers.
+    question: Where is it grown?
+  - answer: |
+      Jasminum sambac contains dotriacontanoic acid, dotriacontanol, oleanolic acid, daucosterol, hesperidin,
+      and [+]-jasminoids A, B, C, D in its roots. Leaves contains flavonoids such as rutin, quercetin and
+      isoquercetin, flavonoids rhamnoglycosides as well as α-amyrin and β-sitosterol. A novel plant
+      cysteine-rich peptide family named jasmintides were isolated from this plant.
+    question: What is its composition?
+  - answer: |
+      Jasminum sambac is cultivated in many places, especially West Asia,
+      South Asia and Southeast Asia.
+    question: In which places are Jasminum sambac cultivated?
+  - answer: |
+      The leaves are ovate, 4 to 12.5 cm (1.6 to 4.9 in) long and
+      2 to 7.5 cm (0.79 to 2.95 in) wide.
+    question: What do the leaves of Jasminum sambac look like?
+  - answer: |
+      The flowers bloom all throughout the year and are produced in clusters
+      of 3 to 12 together at the ends of branches.
+    question: When does Jasminum sambac bloom?
+  - answer: |
+      Jasminum sambac is classified under the genus Jasminum under the tribe
+      Jasmineae. It belongs to the olive family Oleaceae.
+    question: How is Jasmineae sambac classified?
+  - answer: |
+      In 1753, Carl Linnaeus first described the plant as Nyctanthes sambac in
+      the first edition of his famous book Systema Naturae.
+    question: When was Jasmineae sambac first described?
+  - answer: The English common name of "Arabian jasmine" is Jasminum sambac.
+    question: What is the English common name of "Arabian jasmine"?
+  - answer: The Jasminum sambac is a species of Jasmine native to tropical Asia.
+    question: What species of flower is Jasminum sambac?
+  - answer: Jasminum sambac is an evergreen vine or shrub reaching up to 0.5 to 3 m (1.6 to 9.8 ft) tall.
+    question: What is the Jasminum sambac?
+  - answer: Systema Naturae.
+    question: In which book did Carl Linnaeus describe the plant as Nycantheus sambac?
+  - answer: The flowers bloom all year.
+    question: When do the flowers bloom?
+task_description: 'Jasminum sambac is a jasmine native to tropical Asia, from the Indian subcontinent to Southeast Asia'
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 8a73952a8cc0ca8443d254f8538df02e17b5be92
+  patterns:
+    - jasminum_sambac.md
