@@ -1,0 +1,25 @@
+version: 2
+task_description: "Teach the model to identify the largest animals in various categories."
+created_by: Vip2155
+seed_examples:
+  - question: "What is the largest land animal?"
+    answer: |
+      The largest land animal is the African elephant.
+
+  - question: "What is the largest marine animal?"
+    answer: |
+      The largest marine animal is the blue whale.
+
+  - question: "What is the largest bird?"
+    answer: |
+      The largest bird is the ostrich.
+
+  - question: "What is the largest reptile?"
+    answer: |
+      The largest reptile is the saltwater crocodile.
+
+  - context: |
+      The largest living fish is the whale shark, which can grow to a length of over 40 feet.
+    question: "What is the largest fish?"
+    answer: |
+      The largest fish is the whale shark.
