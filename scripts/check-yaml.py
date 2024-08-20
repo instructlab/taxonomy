@@ -51,6 +51,8 @@ class CheckYaml:
                     )
             if taxonomy.errors > 0:
                 exit_code = 1
+        if not self.yaml_files:
+            print("No yaml files specified.")
         return exit_code
 
 
@@ -109,7 +111,7 @@ def cli() -> int:
     parser.add_argument(
         "yaml_file",
         help="A qna.yaml file.",
-        nargs="+",
+        nargs="*",
         type=pathlib.Path,
     )
     args = parser.parse_args()
