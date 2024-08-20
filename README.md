@@ -477,7 +477,8 @@ document_outline: |
 document:
     repo: https://github.com/juliadenham/Summit_knowledge
     commit: 0a1f2672b9b90582e6115333e3ed62fd628f1c0f
-    patterns: phoenix_constellation.md
+    patterns:
+      - phoenix_constellation.md
 ```
 
 *Example `attribution.txt` file*
