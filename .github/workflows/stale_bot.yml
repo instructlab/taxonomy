@@ -38,6 +38,7 @@ jobs:
             This issue has been automatically closed due to inactivity.
           days-before-issue-stale: 30
           days-before-issue-close: 31
+          exempt-issue-labels: good-first-issue
           stale-pr-label: 'stale'
           stale-pr-message: >
             This pull request has been automatically marked as stale because it has not had activity within 15 days.
