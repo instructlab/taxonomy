@@ -1,6 +1,7 @@
 ## Taxonomy diagram
 
-**Note**: This is a cut-down version of the taxonomy. This is not complete.
+> [!Note]
+> This diagram shows a subset of the taxonomy. It is not a complete representation.
 
 ```mermaid
  flowchart TD;
