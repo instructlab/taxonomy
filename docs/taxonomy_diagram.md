@@ -1,5 +1,8 @@
 ## Taxonomy diagram
 
+> [!Note]
+> This diagram shows a subset of the taxonomy. It is not a complete representation.
+
 ```mermaid
  flowchart TD;
    na[not accepting contributions\n at this time]:::na
