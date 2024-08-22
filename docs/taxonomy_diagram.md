@@ -1,5 +1,7 @@
 ## Taxonomy diagram
 
+**Note**: This is a cut-down version of the taxonomy. This is not complete.
+
 ```mermaid
  flowchart TD;
    na[not accepting contributions\n at this time]:::na
