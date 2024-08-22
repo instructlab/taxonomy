@@ -72,7 +72,6 @@ jobs:
         run: |
           scripts/check-yaml.py ${{ steps.changed-files.outputs.all_changed_files }}
         env:
-          YAMLLINT_CONFIG: "{extends: relaxed, rules: {line-length: {max: 120}}}"
           TAXONOMY_FOLDERS: >-
             compositional_skills
             knowledge
@@ -84,10 +83,10 @@ jobs:
           # shellcheck disable=SC2046
           scripts/check-yaml.py $(find "${folders[@]}" -name "qna.yaml" -print)
         env:
-          YAMLLINT_CONFIG: "{}" # No lint rules
           SCHEMA_VERSION: 0 # use the schema version specified in the "version" key
           TAXONOMY_FOLDERS: >-
             compositional_skills
+            knowledge
 
       - name: "Save Pull Request number"
         if: ${{ (github.event_name == 'pull_request') && (github.repository == 'instructlab/taxonomy') }}
