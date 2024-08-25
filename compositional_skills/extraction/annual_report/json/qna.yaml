@@ -1,4 +1,4 @@
-version: 2
+version: 3
 task_description: Teach the model how to find and extract given entities values in JSON format
   from financial reports table data
 created_by: sinny777
