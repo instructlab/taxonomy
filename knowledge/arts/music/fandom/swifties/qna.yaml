@@ -1,6 +1,5 @@
----
 version: 3
-domain: pop_culture
+domain: Fandom
 created_by: mairin
 seed_examples:
   - context: |
@@ -168,7 +167,7 @@ document_outline: |
   they came to be, and their relationship with Taylor Swift.
 
 document:
-  repo: https://github.com/juliadenham/Summit_knowledge
-  commit: 481b735225e2714c4e9d36da6d7b941d9a36bd86
+  repo: https://github.com/juliadenham/Summit_knowledge.git
+  commit: 5f7158a5ce83c4ff493bfe341fe31ecad64ff697
   patterns:
     - swifties.md
