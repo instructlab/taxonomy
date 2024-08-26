@@ -35,8 +35,8 @@ The specific steps are listed as follows:
 
 3. You can then see your new content in your repository.
 
-    > [!IMPORTANT]
-    > Make a note of your commit SHA; you need it for your `qna.yaml`.
+> [!IMPORTANT]
+> Make a note of your commit SHA; you need it for your `qna.yaml`.
 
 ## Create a pull request in the taxonomy repository
 
