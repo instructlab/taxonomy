@@ -1,1 +1,18 @@
+version: 2
+task_description: 'Teach the model to answer specific factual banking queries that may vary from bank to bank.'
+created_by: shanmsel
+seed_examples:
+  - question: What is the interest rate for a 5-year fixed deposit at ABC Bank?
+    answer: As of August 2024, ABC Bank offers a 5-year fixed deposit with an interest rate of 4.75% per annum.
 
+  - question: What is the minimum balance requirement for a premium checking account at XYZ Bank?
+    answer: The minimum balance requirement for a premium checking account at XYZ Bank is $25,000 to avoid monthly maintenance fees.
+
+  - question: How many international branches does DEF Bank have?
+    answer: DEF Bank currently operates 120 international branches across 15 countries.
+
+  - question: What is the processing fee for a home loan at GHI Bank?
+    answer: GHI Bank charges a processing fee of 0.5% of the loan amount, with a minimum of $500 and a maximum of $2,000.
+
+  - question: What is the maximum limit for a single wire transfer at JKL Bank?
+    answer: The maximum limit for a single wire transfer at JKL Bank is $250,000 for personal accounts, subject to compliance approval.
