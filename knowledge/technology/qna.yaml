@@ -1,0 +1,21 @@
+created_by: watsonxai-team
+domain: crm
+seed_examples:
+- answer: Unless otherwise set forth in the applicable Purchasing Document,
+    Supplier warrants that for a period of three (3) months following Acceptance
+    Goods and Deliverables will conform to the specifications in the Purchasing Document and,
+    to the extent there are no directly relevant specifications, to high industry standards.
+    During the applicable warranty period, Supplier will test, remedy and/or replace, without charge to SFDC, any and all portions of any Deliverables or Goods which SFDC finds to be defective or non-conforming.
+  question: What is the warranty that the Salesforce supplier needs to offer?
+- answer: Supplier shall not subcontract any Services without the prior written consent of SFDC, which SFDC
+    may grant or withhold in its sole discretion. If SFDC provides such written consent, then Supplier shall have the primary obligation to
+    perform the Services, and shall be fully responsible for the performance of any subcontractor and the compliance with all of its
+    obligations by any subcontractor. Supplier shall, in its contracts with all permitted subcontractors and agents in the provision of
+    Services, flow down all of its obligations.
+  question: What are subcontracting rules a Salesforce supplier should follow?
+task_description: 'Salesforce supplier rules'
+document:
+  repo: https://github.com/instructlab/.github
+  commit: 83d9852ad97c6b27d4b24508f7cfe7ff5dd04d0d
+  patterns:
+    - README.md
