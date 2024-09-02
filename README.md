@@ -441,10 +441,11 @@ document_outline: |
   Information about the Phoenix Constellation including the
   history, characteristics, and features of the stars in the constellation.
 document:
-    repo: https://github.com/juliadenham/Summit_knowledge
-    commit: 0a1f2672b9b90582e6115333e3ed62fd628f1c0f
-    patterns:
-      - phoenix_constellation.md
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 0a1f2672b9b90582e6115333e3ed62fd628f1c0f
+  patterns:
+    - phoenix_constellation.md
+
 ```
 
 *Example `attribution.txt` file*
