@@ -1,0 +1,48 @@
+version: 3
+domain: <top_level_directory>
+created_by: <USERNAME>
+seed_examples:
+  - context: |
+    questions_and_answers:
+      - question: |
+        answer: |
+      - question: |
+        answer: |
+      - question: |
+        answer: |
+  - context: |
+    questions_and_answers:
+      - question: |
+        answer: |
+      - question: |
+        answer: |
+      - question: |
+        answer: |
+  - context: |
+    questions_and_answers:
+      - question:
+        answer: |
+      - question: |
+        answer: |
+      - question: |
+        answer: |
+  - context: |
+      - question: |
+        answer: |
+      - question: |
+        answer: |
+  - context: |
+    questions_and_answers:
+      - question: |
+        answer: |
+      - question: |
+        answer: |
+      - question: |
+        answer: |
+document_outline: |
+document:
+  repo: https://github.com/<username>/<repo>
+  commit: <full commit SHA>
+  patterns:
+    - <FILENAME>.md
+
