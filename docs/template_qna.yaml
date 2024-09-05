@@ -3,6 +3,7 @@ domain: <The knowledge domain which is used in prompts to the teacher model duri
 created_by: <The GitHub username of the contributor.>
 seed_examples:
   - context: |
+    <Context from the document associated with this set of sample q&a pairs.>
     questions_and_answers:
       - question: |
         answer: |
