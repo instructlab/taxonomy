@@ -1,6 +1,6 @@
 version: 3
 domain: <The knowledge domain which is used in prompts to the teacher model during synthetic data generation. The domain should be brief such as the title to a textbook chapter or section.>
-created_by: <USERNAME>
+created_by: <The GitHub username of the contributor.>
 seed_examples:
   - context: |
     questions_and_answers:
