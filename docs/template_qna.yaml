@@ -8,6 +8,7 @@ seed_examples:
       - question: |
         <A question used for synthetic data generation.>
         answer: |
+          <The desired response for the question.>
       - question: |
         answer: |
       - question: |
