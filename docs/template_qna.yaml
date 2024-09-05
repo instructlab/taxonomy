@@ -41,7 +41,7 @@ seed_examples:
         answer: |
 document_outline: |
 document:
-  repo: https://github.com/<username>/<repo>
+  repo: https://github.com/<username>/<repo>.git
   commit: <full commit SHA>
   patterns:
     - <FILENAME>.md
