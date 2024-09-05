@@ -40,6 +40,7 @@ seed_examples:
       - question: |
         answer: |
 document_outline: |
+  <A brief summary of the document.>
 document:
   repo: https://github.com/<username>/<repo>.git
   commit: <full commit SHA>
