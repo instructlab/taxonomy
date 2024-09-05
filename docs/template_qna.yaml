@@ -1,5 +1,5 @@
 version: 3
-domain: <top_level_directory>
+domain: <The knowledge domain which is used in prompts to the teacher model during synthetic data generation. The domain should be brief such as the title to a textbook chapter or section.>
 created_by: <USERNAME>
 seed_examples:
   - context: |
