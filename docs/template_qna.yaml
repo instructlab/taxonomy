@@ -6,7 +6,7 @@ seed_examples:
     <Context from the document associated with this set of sample q&a pairs.>
     questions_and_answers:
       - question: |
-        <A question used for synthetic data generation based in previous context.>
+        <A question used for synthetic data generation. Based upon the previous context.>
         answer: |
           <The desired response for the question based in previous context.>
       - question: |
