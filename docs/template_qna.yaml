@@ -8,7 +8,7 @@ seed_examples:
       - question: |
         <A question used for synthetic data generation based in previous context.>
         answer: |
-          <The desired response for the question.>
+          <The desired response for the question based in previous context.>
       - question: |
         answer: |
       - question: |
