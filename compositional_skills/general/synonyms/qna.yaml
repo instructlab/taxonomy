@@ -1,4 +1,4 @@
-version: 2
+version: 3
 created_by: yanpliu
 seed_examples:
   - answer: 'Synonym for Attend is take part in
@@ -49,17 +49,17 @@ seed_examples:
 
       '
     question: List five synonyms for the word beautiful and separate with newline.
-  - answer: 'Five antonyms for Beautiful are
+  - answer: 'Five antonyms for attend are
 
-      ugly
-
-      unattractive
-
-      disgusting
-
-      bad
-
-      awful
+     absent
+     
+     neglect
+     
+     disregard
+     
+     disown
+     
+     ignore  
 
       '
     question: List five antonyms for the word attend and separate with newline.
