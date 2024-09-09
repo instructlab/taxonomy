@@ -52,14 +52,14 @@ seed_examples:
   - answer: 'Five antonyms for attend are
 
      absent
-     
+
      neglect
-     
+
      disregard
-     
+
      disown
-     
-     ignore  
+
+     ignore
 
       '
     question: List five antonyms for the word attend and separate with newline.
