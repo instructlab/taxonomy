@@ -129,7 +129,7 @@ seed_examples:
         answer: |
           Public transport by tram, bus, troleybus or ship
       - question: |
-          Wen is possible to travel by ship?
+          When is possible to travel by ship on Bystrc lake?
         answer: |
           Main season is from spring to autum
 document_outline: |
