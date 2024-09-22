@@ -1,0 +1,142 @@
+version: 3
+domain: city_districts
+created_by: pepadelic
+seed_examples:
+  - context: |
+      Brno-Bystrc is a city district in the northwestern part of Brno, Czech Republic.
+      Initially an independent village, it was incorporated into Brno in 1960.
+      Covering 27.24 km², Bystrc is the largest district of Brno in terms of area and
+      is home to over 24,000 residents. It includes various recreational landmarks
+      like the Brno Dam, Brno Zoo on Mniší Hill, and Veveří Castle.
+    questions_and_answers:
+      - question: |
+          When was Bystrc incorporated into Brno?
+        answer: |
+          1960
+      - question: |
+          How large is the area of Bystrc?
+        answer: |
+          27.24 km²
+      - question: |
+          How many people live in Bystrc?
+        answer: |
+          Over 24,000
+      - question: |
+          Is Bystrc a city?
+        answer: |
+          No, Bystrc is not a city, it is district withing city Brno in Czech Republic
+      - question: |
+          Which Brno district is largest?
+        answer: |
+          Bystrc is largest Brno district
+  - context: |
+      Bystrc is known for several recreational sites such as Brno Dam, the Zoo Brno
+      located on Mniší Hill, and the expansive Podkomorské Forests, which include
+      the Pohádky Máje nature reserve. Annually, the international fireworks competition,
+      Ignis Brunensis, is held on the waters of Brno Dam, attracting tens of thousands of visitors.
+    questions_and_answers:
+      - question: |
+          What is the name of the international fireworks competition held in Bystrc?
+        answer: |
+          Ignis Brunensis
+      - question: |
+          Where is the Zoo Brno located within Bystrc?
+        answer: |
+          Mniší Hill
+      - question: |
+          What natural area is part of Bystrc's recreational sites?
+        answer: |
+          Podkomorské Forests
+      - question: |
+          Where the Ignis Brunensis happens?
+        answer: |
+          The fireworks festival happens typically in Brno Dam located in Bystrc
+      - question: |
+          How often the Ignist Brunensis in Bystrc happen?
+        answer: |
+          Anually
+  - context: |
+      Bystrc is divided into three main parts. The oldest part, Bystrc I, includes the historic
+      village near the Church of St. John the Baptist and St. John the Evangelist.
+      Bystrc II is a more modern residential area west of the old highway,
+      and the Kamechy area is a newly developed housing estate.
+    questions_and_answers:
+      - question: |
+          What is the oldest part of Bystrc called?
+        answer: |
+          Bystrc I
+      - question: |
+          What church is located in the historic Bystrc I area?
+        answer: |
+          The Church of St. John the Baptist and St. John the Evangelist
+      - question: |
+          What is the name of the new housing estate in Bystrc?
+        answer: |
+          Kamechy
+      - question: |
+          How many parts Bystrc has?
+        answer: |
+          Three
+      - question: |
+          Where is the old part of Bystrc located?
+        answer: |
+          Next to church
+  - context: |
+      Bystrc is also home to various sports clubs, and cultural events.
+      The district boasts 17 sports fields, climbing walls, and an active cultural
+      scene with events at Veveří Castle and the local community center. River
+      Svratka passes through Bystrc. There is sailing marine on the shore of Dam.
+    questions_and_answers:
+      - question: |
+          How many sports fields are available in Bystrc?
+        answer: |
+          17 sports fields
+      - question: |
+          Where are cultural events held in Bystrc?
+        answer: |
+          Veveří Castle, Dam and the local community center on Odbojářská street
+      - question: |
+          What kind of outdoor sports facilities exist in Bystrc?
+        answer: |
+          Climbing walls and a dirt park
+      - question: |
+          What river passes Bystrc?
+        answer: |
+          Svratka
+      - question: |
+          What kind water sports are popular in Bystrc?
+        answer: |
+          Sailing
+  - context: |
+      Oldest tree in Brno is in Bystrc. It is linden older than 400 years.
+      Bystrc is hub of public transport incluting buses, trams and troleybuses.
+      From spring till autum there are electric ships serving as public transport.
+    questions_and_answers:
+      - question: |
+          Where is oldest tree in Brno located?
+        answer: |
+          In Bystrc
+      - question: |
+          How old is the oldest tree in Brno?
+        answer: |
+          More than 400 years
+      - question: |
+          What kind of tree is the oldest tree in Brno?
+        answer: |
+          Linden
+      - question: |
+          What transport options are in Bystrc?
+        answer: |
+          Public transport by tram, bus, troleybus or ship
+      - question: |
+          Wen is possible to travel by ship?
+        answer: |
+          Main season is from spring to autum
+document_outline: |
+    Information about the Brno city district of Bystrc, including its history,
+    landmarks, and recreational facilities.
+document:
+  repo: https://github.com/pepadelic/instructlab-knowledge-docs
+  commit: 323c72efd3b43556c2660afb4f97c0ee9d67b3e0
+  patterns:
+    - brno_bystrc.md
