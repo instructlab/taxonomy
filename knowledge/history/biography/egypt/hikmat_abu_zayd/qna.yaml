@@ -1,0 +1,75 @@
+created_by: ahmed-azraq
+version: 3
+domain: biography
+document_outline: Knowledge contribution about the first female cabinet minister in Egypt
+seed_examples:
+  - context: >-
+      Hikmat Abu Zayd was an Egyptian politician and academic. She became the
+      first female cabinet minister in Egypt in 1962. Her tenure as minister of
+      social affairs set a precedent.
+    questions_and_answers:
+      - question: Who is the first female cabinet minister in Egypt?
+        answer: Hikmat Abu Zayd is the first female minister in Egypt
+      - question: Who is the first female minister in Egypt?
+        answer: Hikmat Abu Zayd
+      - question: What is the name of the first female minister in Egypt?
+        answer: Hikmat Abu Zayd
+  - context: >-
+      Born in the village of Shaykh Daud, located near the city of al-Qusiyya in
+      Asyut Governorate, Abu Zayd grew up in a nationalist household. Abu Zayd
+      received an advanced education. After completing her secondary education
+      at the Helwan Girls School, she obtained a licence in history from Cairo
+      University in 1940. She had a doctorate in educational psychology from the
+      University of London in 1957.
+    questions_and_answers:
+      - question: Where was Hikmat Abu Zayd born?
+        answer: Born in the village of Shaykh Daud
+      - question: When has Hikmat Abu Zayd receive doctorate degree?
+        answer: '1957'
+      - question: What is Hikmat Abu Zayd education background?
+        answer: She completed her secondary education at the Helwan Girls School
+  - context: >-
+      Abu Zayd worked on several different social issues. She strongly supported
+      a law that prohibited Islamic oral repudiation. In addition to registering
+      NGOs, she launched projects aimed at improving the status of rural women.
+      Abu Zayd was responsible for the relocation of thousands of Nubians to
+      newly built villages that led to her being nicknamed the "Merciful Heart
+      of the Revolution" by Nasser.
+    questions_and_answers:
+      - question: What is the impact of Abu Zayd?
+        answer: Supported a law that prohibited oral repudiation
+      - question: How Abu Zayd supported the NGOs?
+        answer: By improving the status of rural women
+      - question: Why Abu Zayd was nicknamed the Merciful Heart of the Revolution?
+        answer: For the relocation of Nubians
+  - context: >-
+      Abu Zayd spent nearly two decades in Libya, during which time she taught
+      political science at Al Fateh University in Tripoli. She also penned
+      articles and made speeches denouncing the Egyptian government. Abu Zayd
+      began criticizing President Sadat in the mid-1970s. She became a leader of
+      the Egyptian National Front, which was set up in Damascus in 1980 by
+      General Saad El Shazly.
+    questions_and_answers:
+      - question: How many years Abu Zayd spent in Libya?
+        answer: Around 20 years.
+      - question: What did Abu Zayd teach in Tripoli?
+        answer: She taught political science at Al Fateh University in Tripoli.
+      - question: When was the Egyptian National Front set?
+        answer: '1980'
+  - context: >-
+      In late 2010, she was hospitalized at the Anglo-American Hospital in Cairo
+      to receive treatment for her bone fractures. Abu Zayd died in Cairo on 30
+      July 2011. Awards Abu Zayd received the Lenin Peace Prize in December
+      1970.
+    questions_and_answers:
+      - question: What award did Abu Zayd receive?
+        answer: Lenin Peace Prize
+      - question: When did Abu Zayd receive the Lenin Peace Prize?
+        answer: December 1970
+      - question: Why was Hikmat Abu Zayd hospitalized in 2010?
+        answer: To receive treatment for her bone fractures.
+document:
+  repo: https://github.com/ahmed-azraq/instructlab_knowledge.git
+  commit: f8c9621f2c80449093a790a8c7713bfbc1447bcb
+  patterns:
+    - hikmat-abu-zayd/hikmat.md
