@@ -1,0 +1,21 @@
+created_by: vishnoianil
+version: 3
+task_description: >-
+  This is test skill for ui.instructlab.ai testing. Please skip it from your
+  review list and do-not-merge.
+seed_examples:
+  - context: '1'
+    question: '1'
+    answer: '1'
+  - context: '2'
+    question: '2'
+    answer: '2'
+  - context: '3'
+    question: '3'
+    answer: '3'
+  - context: '4'
+    question: '4'
+    answer: '4'
+  - context: '5'
+    question: '5'
+    answer: '5'
