@@ -1,0 +1,4 @@
+title_of_work: Terminal Value Step by Step to Understanding Terminal Value (DCF)
+link_to_work: https://www.wallstreetprep.com/knowledge/terminal-value/
+license_of_the_work: free public content
+creator_names: Wall Street Prep authors
