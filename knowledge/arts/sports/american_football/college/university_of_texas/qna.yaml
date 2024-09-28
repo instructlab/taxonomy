@@ -1,0 +1,226 @@
+created_by: jjasghar
+version: 3
+domain: sports
+document_outline: >
+  Information about the University of Texas Longhorn Football team. This
+  includes players, coaches, and history
+
+  of this collegiate American Football team.
+seed_examples:
+  - context: >
+      The Texas Longhorns football program is the intercollegiate team
+      representing the University of Texas at Austin
+
+      (variously Texas or UT) in the sport of American football. The Longhorns
+      compete in the NCAA Division I Football
+
+      Bowl Subdivision (formerly Division I-A) as a member of the Southeastern
+      Conference (SEC). Their home games are
+
+      played at Darrell K Royal–Texas Memorial Stadium in Austin, Texas. With
+      over 900 wins, and an all-time win–loss
+
+      percentage of .703, the Longhorns rank 4th and 7th on the all-time wins
+      and win–loss records lists,
+
+      respectively. Additionally, the program claims 4 national championships,
+      33 conference championships, 100
+
+      First Team All-Americans (62 consensus and 25 unanimous), and 2 Heisman
+      Trophy winners.
+    questions_and_answers:
+      - question: |
+          What conference is the Texas Longhorn Football team part of?
+        answer: |
+          Southeastern Conference (SEC)
+      - question: |
+          Where does the Texas Longhorn Football team play it's home games?
+        answer: |
+          Darrell K Royal-Texas Memorial Stadium in Austin, Texas.
+      - question: >
+          How many Heisman Trophy winners does the Texas Longhorn Football team
+          have?
+        answer: |
+          2 Heisman Trophy winners
+  - context: >
+      In July 2021, after 25 seasons as members of the Big 12, Texas and rival
+      Oklahoma accepted invitations to join
+
+      the Southeastern Conference (SEC) no later than the 2025 season. In
+      February 2023, the Big 12 announced that the
+
+      two schools had negotiated a combined $100 million early termination fee
+      in order to leave for the SEC a year
+
+      before the schools' media rights deal with the Big 12 was set to expire.
+      The Longhorns football team will
+
+      continue competing in the Big 12 through the 2023 season before moving to
+      the SEC in 2024.
+    questions_and_answers:
+      - question: >
+          In what month and year did the Texas Longhorn's accept an invitation
+          to the SEC?
+        answer: |
+          July 2021
+      - question: >
+          What team other then Texan Longhorn accept an invitation to the SEC in
+          July 2021?
+        answer: |
+          Oklahoma
+      - question: >
+          How much was the termination fee for the University of Texas and
+          Oklahoma University to leave the Big
+
+          12 conference?
+        answer: |
+          $100 million
+  - context: >
+      There have been 31 head coaches since the inaugural team in 1893, with
+      Steve Sarkisian being the current head
+
+      coach of the Longhorns.
+    questions_and_answers:
+      - question: >
+          How many head coaches have there been for the Texas Longhorns since
+          1893?
+        answer: |
+          31
+      - question: |
+          Who is the current head coach for the Texas Longhorns?
+        answer: |
+          Steve Sarkisian
+      - question: |
+          What is the Texas Longhorn's head coach Steve Sarkisian's nickname?
+        answer: |
+          Sark
+  - context: >
+      Texas has a long-standing rivalry with the University of Oklahoma. The
+      football game between the University of
+
+      Texas and Oklahoma is commonly known as the "Red River Rivalry" and is
+      held annually in Dallas at the Cotton
+
+      Bowl. Dallas is used as a "neutral site" since it is approximately midway
+      between the two campuses.  The stadium
+
+      is split, with each team having an equal number of supporters on each side
+      of the 50 yard line.  Texas state
+
+      flags fly around the Longhorn end of the stadium and Oklahoma state flags
+      fly around the Sooner end.  This
+
+      border rivalry is often considered to be one of the top five current
+      rivalries in the NCAA.  The Red River
+
+      Shootout originated in 1900, while Oklahoma was still a territory of the
+      United States, and it is the
+
+      longest-running college-football rivalry played on a neutral field. Since
+      2005, the football game has received
+
+      sponsorship dollars in return for being referred to as the "SBC Red River
+      Rivalry" (changed to AT&T Red River
+
+      Rivalry in 2006 after SBC merged with AT&T), a move which has been
+      criticized both for its commercialism and its
+
+      political correctness.  The University of Texas holds its annual
+      Torchlight Parade during the week of the Red
+
+      River Rivalry. In 2005, the Dallas Morning News did an opinion poll of the
+      119 Division 1A football coaches as
+
+      to the nations top rivalry game in college football.  The Texas-OU game
+      was ranked third. The game typically has
+
+      conference or even national significance. Since 1945, one or both of the
+      two teams has been ranked among the top
+
+      25 teams in the nation coming into 60 out of 65 games. Twice Texas has
+      defeated the
+
+      Sooners a record eight straight times from 1940 to 1947 and 1958–1965.
+      One of the most significant meetings was
+
+      in 1963 with Oklahoma ranked No. 1 and Texas ranked No. 2, the game won by
+      Texas 28–7 en route to their first
+
+      officially recognized national championship.  The series has also had its
+      share of games that came down to the
+
+      wire and comebacks most recently in 2021 which saw sixth-ranked Sooners
+      rallying from a 21-point first-quarter
+
+      deficit to edge the 21st-ranked Longhorns 55–48 in the highest-scoring
+      game in the rivalry.
+    questions_and_answers:
+      - question: >
+          What is the football game between the University of Texas and Oklahoma
+          known as?
+        answer: |
+          The "Red River Rivalry".
+      - question: |
+          What city is the Red River Rivalry takes place in?
+        answer: |
+          Dallas, Texas.
+      - question: >
+          How many times did Texas beat Oklahoma between 1940 to 1947 and
+          1958-1965?
+        answer: |
+          Eight straght times.
+  - context: >
+      Texas Football's recruiting department is led by Billy Glasscock.
+      Glasscock came from NC State in 2021 as
+
+      director of player  personnel, leading a team of staffers and interns in a
+      combination of duties between
+
+      recruiting and player personnel.  On the recruiting side, Taylor Searels
+      directs everything from an events
+
+      standpoint to accommodate recruiting visits.  In player personnel, JM
+      Jones and Austin Shelton are assistant
+
+      directors of player personnel, handling offense and defense respectively.
+
+      They manage a team of recruiting assistants that all manage a position and
+      report to their position coach.
+
+      This recruiting assistant program has been a robust program that has seen
+      the likes of Daniel Bernstein - EDGE,
+
+      Julian Rowe-Cohen - TEs, Maxwell Solman - OL, Jacob De Santos - DB, Jake
+      Warren - WR, and Tanner Martin - QBs
+
+      come through.  Their jobs were to identify recruits, evaluate them, and
+      bring them to their position coaches if
+
+      they are deemed worth watching and offering. These are the individuals
+      that found most of the players on the
+
+      team before anyone else.
+    questions_and_answers:
+      - question: >
+          Who leads the University of Texas Longhorn Football Recruiting
+          Department?
+        answer: |
+          Billy Glasscock
+      - question: >
+          Who are the assistant directors of personal at the Texas Longhorn
+          Football team?
+        answer: |
+          JM Jones, handles offense, while Austin Shelton handles the defence.
+      - question: >
+          What is the core purpose of the recruiting department for the Texas
+          Longhorn's Football team?
+        answer: >
+          They identify recruits, evaluate them, and bring possible candidates
+          to their position coaches if they are
+
+          deemed worth watching and offering.
+document:
+  repo: https://github.com/jjasghar/instructlab-knowledge-docs
+  commit: 171c799cf987c4f8153ce9adaa890ad5641de8c3
+  patterns:
+    - Texas_Longhorns_football.md
