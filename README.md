@@ -3,7 +3,7 @@
 ## Contents 📖
 
 - [Welcome to the InstructLab Taxonomy](#welcome-to-the-instructlab-taxonomy)
-- [Learning](#learning)
+- [Knowledge and Skills](#knowledge-and-skills)
   - [Getting Started with Knowledge Contributions](#getting-started-with-knowledge-contributions)
     - [Knowledge: YAML examples](#knowledge-yaml-examples)
   - [Getting Started with Skill Contributions](#getting-started-with-skill-contributions)
@@ -63,9 +63,9 @@ The `qna.yaml` format must include the following fields:
 - `created_by`: Your GitHub username.
 - `domain`: Specify the category of the knowledge.
 - `seed_examples`: A collection of key/value entries.
-  - `context`: A chunk of information from the knowledge document. Each `qna.yaml` **needs five `context` blocks** and has a maximum word count of 500 words.
+  - `context`: A chunk of information from the knowledge document. Each `qna.yaml` **needs exactly five `context` blocks** and has a maximum word count of 500 words.
   - `questions_and_answers`: The parameter that holds your questions and answers
-    - `question`: Specify a question for the model. Each `qna.yaml` file **needs at least three question and answer pairs per `context` chunk** with a maximum word count of 250 words.
+    - `question`: Specify a question for the model. Each `qna.yaml` file **needs exactly three question and answer pairs per `context` chunk** with a maximum word count of 250 words.
     - `answer`: Specify the desired answer from the model. Each `qna.yaml` file needs at least three question and answer pairs per `context` chunk with a maximum word count of 250 words.
 - `document_outline`: Describe an overview of the document your submitting.
 - `document`: The source of your knowledge contribution.
