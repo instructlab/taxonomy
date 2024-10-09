@@ -1,0 +1,128 @@
+created_by: vmojzis
+seed_examples:
+  - answer: >-
+      # Technical Guide: Dealing with AVC messages recorded on my system
+
+      ## Executive Summary
+
+      This guide outlines basic steps for identifying a root cause of recorded
+      AVC messages and their possible resolutions.
+
+      ## 1. Introduction
+
+      ### 1.1 Background
+
+      A denial is the event generated anytime that a service, application, file,
+      etc. is denied access by the SELinux system. When this happens, the denial
+      is cached in the Access Vector Cache (AVC). Hence such messages are
+      commonly referred to as AVCs.
+
+      ### 1.2 Objectives
+
+      The primary objectives of this guide are:
+
+      - Identify the cause of the AVC
+
+      - Evaluate if the access should be allowed
+
+      - Choose an appropriate way to mitigate the issue in the future
+
+      ## 2. Identifying the cause of an AVC
+
+      Raw AVC messages can be difficult to read which is why it is best to use a
+      tool like "sealert" (part of setroubleshoot package). When given a file
+      containing AVC messages, "sealert" will analyze them and try to interpret
+      them in a human readable form including suggestions for resolution.
+      "sealert" will give you summaries like "SELinux is preventing
+      /usr/sbin/httpd from name_connect access on the tcp_socket port 25".
+
+      ## 3. Evaluating the access denial
+
+      If the denial was not triggered by your action (running a new piece of
+      software, changing configuration, moving files, ...) and is not blocking a
+      functionality you need it can be a sign of a nefarious activity on your
+      system. However depending on the access it may be safe to ignore. In case
+      the AVC is triggered repeatedly and you want to hide any future
+      occurrences use "audit2allow -D" to generate corresponding "dontaudit"
+      rules.
+
+      ## 4 Mitigating the issue
+
+      Provided the blocked access does not seem nefarious and we want to allow
+      it in the future, there are several ways this can be achieved depending on
+      the AVC.
+
+      ### 4.1 Fixing labels
+
+      A situation where the file/directory being accessed has a wrong label
+      (i.e. it does not correspond to the security policy) can be caused by
+      moving as opposed to copying (a file moved using "mv" retains its label),
+      or mounting a new drive. The label can be fixed using "restorecon -R -v
+      <path_to_file>".
+
+      Some domains have accessory labels dedicated for their resources which are
+      listed in SELinux man pages (e.g. container_selinux, httpd_selinux, ...).
+      You can use the "semanage fcontext" command followed by "restorecon" to
+      change the label of your resources.
+
+      ### 4.2 Switching booleans
+
+      Some use-cases covered by SELinux security policy can be enabled or
+      disabled using booleans "setsebool <boolean_name> 1". Both "sealert" and
+      "audit2allow" will point out any booleans related to given AVCs.
+
+      ### 4.3 Adding a policy rule
+
+      If you believe the resource is labeled correctly and the process should
+      have access to it you can use "audit2allow" to generate a policy rule
+      allowing the access in the future. "sealert" will give you detailed
+      instructions on how to use the tool. Please bear in mind that adding new
+      rules should be the last resort as it can introduce vulnerabilities into
+      the security policy.
+    question: What can I do about SELinux AVC logs?
+  - answer: >
+      We can use "sesearch" tool, which is part of "setools-console" package.
+
+      Each AVC lists source context (SELinux domain in which the offending
+      process runs), target context (label of the resouce being accessed),
+      target class (type of resource being accessed, e.g. file, directory, or
+      port) and the permission being denied. For example, given the following
+      AVC:
+
+      type=AVC msg=audit(1226874073.147:96): avc:  denied  { getattr } for
+      pid=2465 comm="httpd" path="/var/www/html/file1" dev=dm-0 ino=284133
+      scontext=unconfined_u:system_r:httpd_t:s0
+      tcontext=unconfined_u:object_r:samba_share_t:s0 tclass=file
+
+      the "sesearch" query would look as follows:
+
+      # sesearch -A -s httpd_t -t samba_share_t -c file -p getattr
+
+      Since the AVC says that the access was denied, "sesearch" will only return
+      any rules when we drop one or more parameters. Dropping the target context
+      will reveal to which file lables httpd has "getattr" access.
+
+      # sudo sesearch -A -s httpd_t -c file -p getattr
+      ---
+        allow httpd_t httpd_content_type:file { getattr ioctl lock map open read };
+      ---
+
+      Note that any label that is part of an allow rule and does not end in _t
+      is probably an attribute. We can list all types assigned to the attribute
+      using "seinfo":
+      #seinfo -a httpd_content_type -x
+
+      Type Attributes: 1
+        attribute httpd_content_type;
+      ---
+          httpd_sys_content_t
+          httpd_sys_htaccess_t
+          httpd_sys_ra_content_t
+          httpd_sys_rw_content_t
+          httpd_sys_script_exec_t
+          httpd_user_htaccess_t
+          httpd_user_ra_content_t
+      ---
+
+    question: How do I find SELinux policy rules related to a given AVC?
+task_description: ''
