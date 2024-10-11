@@ -1,0 +1,74 @@
+created_by: ahmed-azraq
+version: 3
+domain: large-language-model
+document_outline: Knowledge contribution about the IBM Granite model
+seed_examples:
+  - context: >-
+      IBM Granite is a series of decoder-only AI foundation models created by
+      IBM. It was announced on September 7, 2023, and an initial paper was
+      published 4 days later.
+    questions_and_answers:
+      - question: What is IBM Granite?
+        answer: >-
+          IBM Granite is a series of decoder-only AI foundation models created
+          by IBM.
+      - question: When was IBM Granite announced?
+        answer: September 7, 2023
+      - question: What's a series of IBM decoder-only AI foundation models?
+        answer: IBM Granite
+  - context: >-
+      Initially intended for use in the IBM's cloud-based data and generative AI
+      platform Watsonx along with other models, IBM opened the source code of
+      some code models. Granite models are trained on datasets curated from
+      Internet, academic publishings, code datasets, legal and finance
+      documents.
+    questions_and_answers:
+      - question: What was the original intention for IBM Granite?
+        answer: >-
+          Initially intended for use in the IBM's cloud-based data and
+          generative AI platform Watsonx.
+      - question: What are granite models trained on?
+        answer: >-
+          Datasets curated from Internet, academic publishings, code datasets,
+          legal and finance documents.
+      - question: Is Granite models open-source?
+        answer: 'Yes'
+  - context: >-
+      IBM Granite is a series of decoder-only AI foundation models created by
+      IBM. A foundation model is an AI model trained on broad data at scale.
+    questions_and_answers:
+      - question: What is a foundation model?
+        answer: AI model trained on broad data at scale
+      - question: What is an example of foundation model from IBM?
+        answer: IBM Granite
+      - question: What is an AI model trained on broad data at scale from IBM?
+        answer: IBM Granite
+  - context: >-
+      Granite's first foundation models were Granite.13b.instruct and
+      Granite.13b.chat. The "13b" in their name comes from 13 billion, the
+      amount of parameters they have as models, lesser than most of the larger
+      models of the time. Later models vary from 3 to 34 billion parameters.
+    questions_and_answers:
+      - question: What are Granite's first foundation models?
+        answer: Granite.13b.instruct and Granite.13b.chat
+      - question: What does 13b in Granite.13b indicate?
+        answer: The "13b" in their name comes from 13 billion parameters.
+      - question: What are the latest models variations from Granite?
+        answer: Later models vary from 3 to 34 billion parameters.
+  - context: >-
+      On May 6, 2024, IBM released the source code of four variations of Granite
+      Code Models under Apache 2, an open source permissive license.
+    questions_and_answers:
+      - question: When has IBM released Granite Models as open source?
+        answer: May 6, 2024
+      - question: What are the open source license for IBM Granite models?
+        answer: Apache 2
+      - question: >-
+          How many variations has IBM released as open source for Granite on
+          6-May?
+        answer: Four
+document:
+  repo: https://github.com/ahmed-azraq/taxonomy-knowledge-docs
+  commit: f82016ee5187852adac9e917f83c24861801db64
+  patterns:
+    - IBM-Granite-20241011T123439034.md
