@@ -59,7 +59,7 @@ Knowledge in the taxonomy tree consists of a few more elements than skills:
 
 The `qna.yaml` format must include the following fields:
 
-- `version`: The version of the qna.yaml file, this is the format of the file used for SDG. The value must be the number 3.
+- `version`: The version of the qna.yaml file, this is the format of the file used for the synthetic data generation (SDG) phase. The value must be the number 3.
 - `created_by`: Your GitHub username.
 - `domain`: Specify the category of the knowledge.
 - `seed_examples`: A collection of key/value entries.
@@ -71,7 +71,7 @@ The `qna.yaml` format must include the following fields:
 - `document`: The source of your knowledge contribution.
   - `repo`: The URL to your repository that holds your knowledge markdown files.
   - `commit`: The SHA of the commit in your repository with your knowledge markdown files.
-  - `patterns`: A list of glob patterns specifying the markdown files in your repository. Any glob pattern that starts with `*`, such as `*.md`, must be quoted due to YAML rules. For example, `"*.md"`.
+  - `patterns`: A list of **Markdown** files in your repository. Specify a file or use glob patterns. For example: `folder/knowledge_doc.md`, `"*.md"` or `"folder/*.md"`. If you are specifying a wildcard (`*`), it must be quoted due to YAML syntax requirements.
 
 #### Knowledge: YAML examples
 
@@ -386,7 +386,7 @@ Compositional skills can either be grounded (includes a context) or ungrounded (
 
 Taxonomy skill files must be a valid [YAML](https://yaml.org/) file named `qna.yaml`. Each `qna.yaml` file contains a set of key/value entries with the following keys:
 
-- `version`: The value must be the number 2. **Required**
+- `version`: The value must be the number 3. **Required**
 - `task_description`: A description of the skill. **Required**
 - `created_by`: The GitHub username of the contributor. **Required**
 - `seed_examples`: A collection of key/value entries. New
@@ -406,7 +406,7 @@ In `seed_examples`, it is recommended to specify `context` first (if applicable)
 *Example `qna.yaml`*
 
 ```yaml
-version: 2
+version: 3
 task_description: <string>
 created_by: <string>
 seed_examples:
@@ -458,7 +458,7 @@ It is recommended that you **lint**, or verify, your YAML using a tool. One lint
 #### Ungrounded compositional skill: YAML example
 
 ```yaml
-version: 2
+version: 3
 task_description: 'Teach the model how to rhyme.'
 created_by: juliadenham
 seed_examples:
@@ -507,7 +507,7 @@ Remember that [grounded compositional skills](docs/SKILLS_GUIDE.md) require addi
 This example snippet assumes the GitHub username `mairin` and shows some of the question/answer pairs present in the actual file:
 
 ```yaml
-version: 2
+version: 3
 task_description: |
     This skill provides the ability to read a markdown-formatted table.
 created_by: mairin # Use your GitHub username; only one creator supported
