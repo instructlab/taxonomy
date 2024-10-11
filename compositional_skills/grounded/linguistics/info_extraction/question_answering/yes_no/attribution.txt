@@ -1,0 +1,37 @@
+created_by: ae2015
+
+Title of work: Yes-or-no question answerability, context of example 1 (out of 6)
+Link to work: N/A
+Revision: N/A
+License of the work: Apache-2.0
+Creator names: self-authored
+
+Title of work: Yes-or-no question answerability, context of example 2 (out of 6)
+Link to work: N/A
+Revision: N/A
+License of the work: Apache-2.0
+Creator names: self-authored
+
+Title of work: Yes-or-no question answerability, context of example 3 (out of 6)
+Link to work: N/A
+Revision: N/A
+License of the work: Apache-2.0
+Creator names: self-authored
+
+Title of work: Yes-or-no question answerability, context of example 4 (out of 6)
+Link to work: https://www.dmv.ca.gov/portal/uploads/2020/06/List_of_Docs_REALID.pdf
+Revision: as of April 13, 2024
+License of the work: public domain
+Creator names: California Department of Motor Vehicles Authors
+
+Title of work: Yes-or-no question answerability, context of example 5 (out of 6)
+Link to work: N/A
+Revision: N/A
+License of the work: Apache-2.0
+Creator names: self-authored
+
+Title of work: Yes-or-no question answerability, context of example 6 (out of 6)
+Link to work: https://science.nasa.gov/solar-system/
+Revision: as of April 13, 2024
+License of the work: public domain
+Creator names: NASA Authors
