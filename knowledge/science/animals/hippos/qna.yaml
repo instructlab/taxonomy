@@ -1,0 +1,106 @@
+created_by: cdoern
+version: 3
+domain: animals
+seed_examples:
+  - context: |
+      Moo Deng (bouncy pig) is a pygmy hippopotamus, living in Khao Kheow Open Zoo in Si Racha, Chonburi, Thailand. She gained notability at two months of age in September 2024 as a popular Internet meme after images of her went viral online.
+      Moo Deng was born on 10 July 2024. Her name was chosen through a public poll, with over 20,000 people voting for "Moo Deng", translating to "bouncy pork" or "bouncy pig".
+    questions_and_answers:
+      - question: |
+          Who is Moo Deng?
+        answer:
+          Moo Deng is a pygmy hippopotamus living in Khao Kheow Open Zoo, Thailand, who became an Internet sensation in 2024.
+      - question: |
+          When was Moo Deng born?
+        answer:
+          Moo Deng was born on 10 July 2024.
+      - question: |
+          How was Moo Deng's name chosen?
+        answer:
+          Moo Deng's name was chosen through a public poll with over 20,000 votes, translating to "bouncy pork" or "bouncy pig".
+  - context: |
+      Moo Deng's father is Tony, and her mother is Jonah. She has two full siblings: Nadet, born in 2010, male, and Moo Tun, born on 27 October 2019, male.
+
+      She also has three half-siblings through her mother's relationship with Rambo: Ko, Kanya, and Phalo. Additionally, Moo Deng has one half-sibling through her father's relationship with Kanya: Moo Wan, female.
+    questions_and_answers:
+      - question: |
+          Who are Moo Deng's parents?
+        answer:
+          Moo Deng's father is Tony, and her mother is Jonah.
+      - question: |
+          How many full siblings does Moo Deng have?
+        answer:
+          Moo Deng has two full siblings, Nadet and Moo Tun.
+      - question: |
+          How many half-siblings does Moo Deng have?
+        answer:
+          Moo Deng has four half-siblings, Ko, Kanya, Phalo (from her mother's side) and Moo Wan (from her father's side).
+  - context: |
+      Khao Kheow Open Zoo posted images of its pygmy hippopotamuses on its official Facebook page, and Moo Deng quickly became a favorite among fans. She is noted for being more playful and energetic than other hippopotamuses.
+
+      The zoo responded to her popularity by selling merchandise featuring designs based on Moo Deng. Other companies joined in by producing merchandise, including Vetmon Cafe, which created a realistic cake shaped like Moo Deng. Additionally, Sephora posted a makeup tutorial inspired by her, and she became the subject of many fan artworks.
+    questions_and_answers:
+      - question: |
+          How did Moo Deng become popular?
+        answer:
+          Moo Deng became popular after Khao Kheow Open Zoo posted images of her on Facebook, where she quickly became a fan favorite.
+      - question: |
+          What merchandise was created based on Moo Deng?
+        answer:
+          The zoo sold merchandise featuring designs based on Moo Deng, and Vetmon Cafe created a realistic cake shaped like her.
+      - question: |
+          Which company posted a makeup tutorial inspired by Moo Deng?
+        answer:
+          Sephora posted a makeup tutorial inspired by Moo Deng.
+  - context: |
+      Due to Moo Deng's viral online popularity, the number of daily visitors to the zoo doubled in early September 2024. Some visitors harassed the baby hippo by splashing water at her or throwing objects to wake her up. In response, the zoo installed security cameras around her enclosure, and the zoo's director threatened legal action against visitors who harassed her.
+      The zoo also implemented a five-minute time limit for visitors to accommodate the high volume of guests.
+    questions_and_answers:
+      - question: |
+          How did Moo Deng's popularity affect the number of visitors at Khao Kheow Open Zoo?
+        answer:
+          The number of daily visitors to Khao Kheow Open Zoo doubled in early September 2024 due to Moo Deng's popularity.
+      - question: |
+          What actions did the zoo take to protect Moo Deng from harassment?
+        answer:
+          The zoo installed security cameras around Moo Deng's enclosure and threatened legal action against visitors who harassed her.
+      - question: |
+          How long can visitors spend with Moo Deng at the zoo?
+        answer:
+          The zoo implemented a five-minute time limit for visitors to see Moo Deng due to the high volume of guests.
+  - context: |
+      In September 2024, zoo director Narongwit Chodchoi announced that the zoo had begun the process of copyrighting and trademarking "Moo Deng the hippo" to raise funds for the zoo. The zoo also plans to launch a continuous livestream to allow fans to watch Moo Deng live over the Internet.
+    questions_and_answers:
+      - question: |
+          What did the zoo do to protect Moo Deng's brand?
+        answer:
+          The zoo began the process of copyrighting and trademarking "Moo Deng the hippo" in September 2024.
+      - question: |
+          How does the zoo plan to keep fans engaged with Moo Deng online?
+        answer:
+          The zoo plans to launch a continuous livestream for fans to watch Moo Deng live over the Internet.
+      - question: |
+          Why is the zoo copyrighting Moo Deng's name?
+        answer:
+          The zoo is copyrighting and trademarking "Moo Deng the hippo" to raise funds for its operations.
+  - context: |
+      On September 28, Moo Deng was the subject of a Saturday Night Live sketch. She was parodied by Bowen Yang on Weekend Update, where the character was used to satirize American pop-artist Chappell Roan's commentary on fame and political endorsements. Yang later extended his support to Roan.
+    questions_and_answers:
+      - question: |
+          How was Moo Deng featured on Saturday Night Live?
+        answer:
+          Moo Deng was parodied by Bowen Yang on Weekend Update on September 28, 2024.
+      - question: |
+          What was Moo Deng's parody on SNL used to satirize?
+        answer:
+          Moo Deng's parody on SNL was used to satirize American pop-artist Chappell Roan's commentary on fame and political endorsements.
+      - question: |
+          Who portrayed Moo Deng on Saturday Night Live?
+        answer:
+          Bowen Yang portrayed Moo Deng on Saturday Night Live.
+document_outline: Verbatim information about Moo Deng, covering her rise to internet fame, her background, online popularity, merchandise, and how the zoo responded to her viral fame.
+document:
+  repo: https://github.com/cdoern/knowledge
+  commit: 142a62438f227e4bcadd8aac55ef4a9fa625ce0f
+  patterns:
+    - pop_culture/moodeng.md
