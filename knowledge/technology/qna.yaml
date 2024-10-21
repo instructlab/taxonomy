@@ -1,0 +1,130 @@
+created_by: naimzieraupro
+version: 3
+domain: IBM Website on InstructLab
+document_outline: >-
+  We finetune a model to have advanced knowledge on how to set up and run
+  instruct lab.
+seed_examples:
+  - context: >-
+      InstructLab is an open-source project that focuses on improving Large
+      Language Models (LLMs) by enabling community contributions. It addresses
+      challenges like the need for specialized skills and extensive computing
+      resources by offering a user-friendly interface. The project facilitates
+      collaborative fine-tuning of LLMs, allowing developers and non-developers
+      alike to contribute new knowledge or skills without dealing with the
+      complexities of YAML structures or GitHub processes.
+    questions_and_answers:
+      - question: What is the primary goal of InstructLab?
+        answer: >-
+          The primary goal of InstructLab is to improve Large Language Models
+          (LLMs) through community contributions, making the process of
+          fine-tuning and knowledge addition more accessible and collaborative.
+      - question: How does InstructLab reduce complexity in fine-tuning LLMs?
+        answer: >
+          InstructLab reduces complexity by providing a user-friendly interface
+          that eliminates the need for manually handling YAML structures or
+          navigating GitHub pull requests, making it easier for a broader range
+          of users to contribute.
+      - question: What type of contributors can benefit from using InstructLab?
+        answer: >-
+          Both developers and non-developers can benefit from using InstructLab,
+          as it allows them to contribute to LLMs without requiring extensive
+          technical expertise in YAML or GitHub.
+  - context: >-
+      The "lab" in InstructLab stands for Large-Scale Alignment for ChatBots, a
+      method used to ensure that LLMs are fine-tuned effectively with
+      user-contributed knowledge and skills. This alignment is achieved through
+      a process of generating synthetic data and creating taxonomies that help
+      the models understand and categorize information better. LAB is designed
+      to make models more efficient and accurate in handling specific tasks.
+    questions_and_answers:
+      - question: What does LAB stand for in InstructLab?
+        answer: >-
+          LAB stands for Large-Scale Alignment for ChatBots, which is the method
+          used to align LLMs with user-contributed knowledge and skills.
+      - question: How does the LAB method enhance the training of LLMs?
+        answer: >-
+          The LAB method enhances LLM training by using synthetic data
+          generation and taxonomies to fine-tune models, ensuring they better
+          understand and perform specific tasks.
+      - question: What role do taxonomies play in the LAB method?
+        answer: >-
+          Taxonomies play a crucial role in the LAB method by organizing
+          knowledge and skills into structured categories, making it easier for
+          LLMs to align with the intended contributions and tasks.
+  - context: >-
+      The InstructLab User Interface (UI) simplifies the process of contributing
+      to LLMs by providing an intuitive platform for adding knowledge or skills.
+      Users can focus on the content of their contributions without worrying
+      about technical aspects like YAML formatting or validation rules. This
+      feature is particularly beneficial for users who are unfamiliar with
+      GitHub processes or complex coding tasks.
+    questions_and_answers:
+      - question: ' How does the InstructLab UI simplify the contribution process?'
+        answer: >-
+          The InstructLab UI simplifies the contribution process by providing an
+          intuitive interface, allowing users to focus on their knowledge or
+          skill contributions without handling technical tasks like YAML
+          formatting or validation rules.
+      - question: What type of users does the InstructLab UI cater to?
+        answer: >-
+          The InstructLab UI caters to a wide range of users, including those
+          who may not be familiar with tools like GitHub or YAML, as well as
+          more technically skilled developers.
+      - question: What is one of the main benefits of using InstructLab UI?
+        answer: >-
+          One of the main benefits of using InstructLab UI is that it removes
+          the complexity of manually managing YAML structures, making it easier
+          for users to contribute knowledge and skills to the taxonomy
+          repository.
+  - context: >-
+      InstructLab allows users to fine-tune open-source models like the IBM
+      Granite and Merlinite models by contributing new knowledge. The process
+      involves creating a markdown file with new information, adding it to the
+      taxonomy, and generating synthetic data for training. Once the model is
+      fine-tuned, users can verify its performance by asking questions based on
+      the new knowledge contributed.
+    questions_and_answers:
+      - question: Which models can be fine-tuned using InstructLab?
+        answer: >-
+          InstructLab allows users to fine-tune open-source models such as the
+          IBM Granite model and the Merlinite model, which is a derivative of
+          Mistral-7b.
+      - question: What is required to fine-tune a model in InstructLab?
+        answer: >-
+          To fine-tune a model in InstructLab, users need to create a markdown
+          file with new knowledge, add it to the taxonomy, generate synthetic
+          data, and train the model with the updated information.
+      - question: How can users verify that the model has been successfully fine-tuned?
+        answer: >-
+          Users can verify that the model has been successfully fine-tuned by
+          chatting with it and asking questions related to the new knowledge.
+          The improved responses indicate successful training.
+  - context: >-
+      InstructLab operates as a community-based project where contributors can
+      share their knowledge or skills to enhance open-source LLMs. The
+      contributions are reviewed and periodically released on Hugging Face. By
+      fostering a collaborative environment, InstructLab ensures that LLMs are
+      continuously evolving with new, relevant information contributed by a
+      diverse set of users.
+    questions_and_answers:
+      - question: How does InstructLab ensure continuous improvement of LLMs?
+        answer: >-
+          InstructLab ensures continuous improvement of LLMs by leveraging
+          community contributions, which are periodically reviewed and released
+          on platforms like Hugging Face.
+      - question: Where are the updated models from InstructLab shared?
+        answer: >-
+          The updated models from InstructLab are shared on Hugging Face as part
+          of a regular release cycle, ensuring that the latest improvements are
+          made accessible to the public.
+      - question: What is the significance of community contributions in InstructLab?
+        answer: >-
+          Community contributions are vital to InstructLab as they allow a
+          diverse range of users to provide new knowledge and skills, ensuring
+          that LLMs are updated with relevant, high-quality information.
+document:
+  repo: https://github.com/naimzieraupro/taxonomy-knowledge-docs
+  commit: 09806c17232de70888f508e8a80466afe2269f90
+  patterns:
+    - ilab-20241021T124347506.md
