@@ -1,0 +1,3 @@
+Title of work: Basic quantum gates - Bell and Deutsch oracles
+License of the work: MIT
+Creator names: Sasha Lazarevic
