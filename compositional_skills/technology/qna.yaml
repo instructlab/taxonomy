@@ -1,0 +1,130 @@
+created_by: Sieglinde-IBM
+version: 3
+task_description: >-
+  This skill will create qiskit code in python language for the correct bell
+  state requested
+seed_examples:
+  - context: >-
+      The first Bell state is (|00⟩ + |11⟩)/√2.
+
+      The 1st Bell state is (|00⟩ + |11⟩)/√2.
+
+      1. Bell state Φ+: (|00⟩ + |11⟩)/√2
+
+      This is a way of creating entangled qubit pairs.
+
+
+      1. Bell state |Φ⁺⟩: This state is a superposition of two qubits, where the
+      first qubit is in the state |0⟩ and the second qubit is in the state |0⟩
+      or |1⟩. Mathematically, it can be represented as |Φ⁺⟩ = (|00⟩ + |11⟩)/√2.
+
+
+      Qiskit is a quantum computing framework based on the python coding
+      language.
+    question: Write a circuit in python to create the first Bell state using qiskit
+    answer: |-
+      qc.h(q[0])
+      qc.cx(q[0],q[1])
+  - context: >-
+      The second Bell state is (|00⟩ – |11⟩)/√2
+
+      The 2nd Bell state is (|00⟩ – |11⟩)/√2
+
+      2. Bell state |Φ⁻⟩ = (|00⟩ – |11⟩)/√2
+
+      This is a way of creating entangled qubit pairs.
+
+      2. Bell state |Φ⁻⟩: Similar to the |Φ⁺⟩ state, the |Φ⁻⟩ state is also a
+      superposition of two qubits, but with a phase difference. The first qubit
+      is in the state |0⟩, and the second qubit is in the state |0⟩ or |1⟩.
+      Mathematically, it can be represented as |Φ⁻⟩ = (|00⟩ – |11⟩)/√2.
+
+
+      Qiskit is a quantum computing framework based on the python coding
+      language.
+    question: Write a circuit in python to create the second Bell state using qiskit
+    answer: |
+      qc.h(q[0])
+      qc.cx(q[0],q[1])
+      qc.z(q[0])
+  - context: >-
+      The third Bell state is (|01⟩ + |10⟩)/√2
+
+      The 3rd Bell state is (|01⟩ + |10⟩)/√2
+
+      3. Bell state |Φ⁻⟩ = |Ψ⁺⟩ = (|01⟩ + |10⟩)/√2
+
+      This is a way of creating entangled qubit pairs.
+
+      3. Bell state |Ψ⁺⟩: In this state, the first qubit is in the state |1⟩,
+      and the second qubit is in the state |0⟩ or |1⟩. Mathematically, it can be
+      represented as |Ψ⁺⟩ = (|01⟩ + |10⟩)/√2.
+
+      Qiskit is a quantum computing framework based on the python coding
+      language.
+    question: Write a circuit in python to create the third Bell state using qiskit
+    answer: |-
+      qc.h(q[0])
+      qc.cx(q[0],q[1])
+      qc.x(q[1])
+  - context: >-
+      The fourth Bell state is (|01⟩ – |10⟩)/√2
+
+      The 4th Bell state is (|01⟩ – |10⟩)/√2
+
+      4. Bell state |Ψ⁻⟩ = (|01⟩ – |10⟩)/√2
+
+      This is a way of creating entangled qubit pairs.
+
+      4. Bell state |Ψ⁻⟩: Similar to the |Ψ⁺⟩ state, the |Ψ⁻⟩ state has a phase
+      difference. The first qubit is in the state |1⟩, and the second qubit is
+      in the state |0⟩ or |1⟩. Mathematically, it can be represented as |Ψ⁻⟩ =
+      (|01⟩ – |10⟩)/√2.
+
+      Qiskit is a quantum computing framework based on the python coding
+      language.
+    question: Write a circuit in python to create the fourth Bell state using qiskit
+    answer: |-
+      qc.h(q[0])
+      qc.cx(q[0],q[1])
+      qc.z(q[0])
+      qc.x(q[1])
+  - context: >-
+      The following code cell creates a circuit that produces a Bell state,
+      which is a state wherein two qubits are fully entangled with each other.
+
+
+      This solution was created in 2024.
+
+
+      It is for Qiskit version 1.0
+    question: Write code to create a Bell state
+    answer: >-
+      from qiskit import QuantumCircuit
+
+      from qiskit.quantum_info import SparsePauliOp
+
+      from qiskit.transpiler.preset_passmanagers import
+      generate_preset_pass_manager
+
+      from qiskit_ibm_runtime import EstimatorV2 as Estimator
+
+      # Create a new circuit with two qubits
+
+      qc = QuantumCircuit(2)
+
+      # Add a Hadamard gate to qubit 0
+
+      qc.h(0)
+
+      # Perform a controlled-X gate on qubit 1, controlled by qubit 0
+
+      qc.cx(0, 1)
+
+      # Return a drawing of the circuit using MatPlotLib ("mpl"). This is the
+
+      # last line of the cell, so the drawing appears in the cell output.
+
+      # Remove the "mpl" argument to get a text drawing.
+
+      qc.draw("mpl")

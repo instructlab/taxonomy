@@ -1,0 +1,3 @@
+Title of work: Coding a Bell State for Qiskit
+License of the work: MIT
+Creator names: Sieglinde Pfaendler
