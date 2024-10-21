@@ -1,0 +1,96 @@
+created_by: perlitz
+version: 3
+domain: Language
+document_outline: >-
+  Swiss German refers to the Alemannic German dialects spoken in German-speaking
+  Switzerland and some areas of Italy, Liechtenstein, and Austria. Used in daily
+  life, it's distinct from Swiss Standard German, which is taught in schools.
+  While mutually intelligible with other Alemannic dialects, Swiss German is
+  largely unintelligible to Standard German speakers.
+seed_examples:
+  - context: >-
+      Linguistically, Alemannic is divided into Low, High and Highest Alemannic,
+      varieties all of which are spoken both inside and outside Switzerland. The
+      only exception within German-speaking Switzerland is the municipality of
+      Samnaun, where a Bavarian dialect is spoken.
+    questions_and_answers:
+      - question: What are the three main linguistic divisions of Alemannic German?
+        answer: Low, High, and Highest Alemannic.
+      - question: Where are these Alemannic varieties spoken?
+        answer: Both inside and outside Switzerland.
+      - question: >-
+          Which municipality in German-speaking Switzerland is a linguistic
+          exception, and what dialect is spoken there?
+        answer: Samnaun, where a Bavarian dialect is spoken.
+  - context: >-
+      Although Swiss German is the native language in the German-speaking part
+      of Switzerland, Swiss school students are taught Swiss Standard German
+      from the age of six. They are thus capable of understanding, writing and
+      speaking Standard German, with varying abilities.
+    questions_and_answers:
+      - question: What is the native language of German-speaking Swiss people?
+        answer: Swiss German.
+      - question: From what age are Swiss students taught Standard German?
+        answer: Six.
+      - question: What language skills in Standard German do Swiss students acquire?
+        answer: Understanding, writing, and speaking, with varying abilities.
+  - context: >-
+      Unlike most regional languages in modern Europe, Swiss German is the
+      everyday spoken language for the majority of the population, in all social
+      strata, from urban centers to the countryside. Using Swiss German conveys
+      neither social nor educational inferiority and is done with pride.
+    questions_and_answers:
+      - question: >-
+          How is Swiss German used differently compared to most other regional
+          languages in Europe?
+        answer: >-
+          It's the everyday spoken language for the majority of the population
+          across all social strata.
+      - question: >-
+          Does speaking Swiss German carry any negative social or educational
+          connotations?
+        answer: |
+          No, it's spoken with pride.
+      - question: Where in Switzerland is Swiss German used?
+        answer: Everywhere from urban centers to the countryside.
+  - context: >-
+      Swiss German keeps the fortis-lenis opposition at the end of words. There
+      can be minimal pairs such as graad [ɡ̊raːd̥] 'straight' and Graat [ɡ̊raːt]
+      'arête' or bis [b̥ɪz̥] 'be (imp.)' and Biss [b̥ɪs] 'bite'.
+    questions_and_answers:
+      - question: >-
+          What phonetic distinction does Swiss German maintain that Standard
+          German doesn't?
+        answer: The fortis-lenis opposition at the end of words.
+      - question: >-
+          Give an example of a minimal pair in Swiss German demonstrating this
+          distinction.
+        answer: graad (straight) and Graat (arête) or bis (be) and Biss (bite).
+      - question: What does fortis-lenis refer to?
+        answer: >-
+          A distinction in consonant pronunciation relating to articulatory
+          strength or tenseness, sometimes analyzed as a difference in length.
+  - context: >-
+      The vocabulary is varied, especially in rural areas: many specialized
+      terms have been retained, e.g., regarding cattle or weather. In the
+      cities, much of the rural vocabulary has been lost. A Swiss German
+      greeting is Grüezi, from Gott grüez-i (Standard German Gott grüsse Euch),
+      loosely meaning 'God bless you'.
+    questions_and_answers:
+      - question: Where is Swiss German vocabulary particularly varied?
+        answer: In rural areas.
+      - question: >-
+          What types of specialized terms are often preserved in rural Swiss
+          German?
+        answer: Terms related to cattle or weather.
+      - question: >-
+          What is a common Swiss German greeting, and what is its origin and
+          approximate meaning?
+        answer: >-
+          Grüezi, from Gott grüez-i (Standard German Gott grüsse Euch), meaning
+          "God bless you."
+document:
+  repo: https://github.com/perlitz/taxonomy-knowledge-docs
+  commit: 7fad09f6e66bd2985ab80a14616ecb30a8987d27
+  patterns:
+    - Swiss_German-20241021T123603597.md
