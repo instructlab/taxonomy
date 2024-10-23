@@ -1,0 +1,15 @@
+created_by: 
+domain: anatomy
+seed_examples:
+- answer: A Swiftie will defend Taylor Swift or her music without question.
+  question: What is an attirubte for someone to be considered a swiftie?
+- answer: Swifties are notoriously emotional, especially when Taylor Swift is brought up.
+  question: What is an attirubte for someone to be considered a swiftie?
+- answer: Potentially, but not usually.
+  question: Are swifties dangrous?
+task_description: ' '
+document: 
+ repo: https://github.com/juliadenham/Summit_knowledge
+ commit: 481b735225e2714c4e9d36da6d7b941d9a36bd86
+ patterns:
+   - wisdom_tooth.md
