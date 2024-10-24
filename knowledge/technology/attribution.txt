@@ -1,0 +1,5 @@
+Title of work: Contributing knowledge to the open source Granite models and LLMs using the InstructLab UI
+Link to work: https://developer-stage.dc4.usva.ibm.com/tutorials/awb-contributing-llm-granite-instructlab-ui/
+Revision: Feeding information about instructionlab into an LLM
+License of the work: A hands-on guide 
+Creator names: IBM
