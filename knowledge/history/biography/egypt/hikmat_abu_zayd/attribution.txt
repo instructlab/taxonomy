@@ -1,0 +1,5 @@
+title_of_work: Hikmat Abu Zayd
+link_to_work: https://en.wikipedia.org/wiki/Hikmat_Abu_Zayd
+revision: https://en.wikipedia.org/w/index.php?title=Hikmat_Abu_Zayd&oldid=1244262067
+license_of_the_work: CC-BY-SA-4.0
+creator_names: Wikipedia Authors
