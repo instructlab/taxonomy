@@ -1,0 +1,4 @@
+Title of work: Challenges and Opportunities for Responsible Prompting
+Link to work: https://ibm.github.io/responsible-prompting-course/
+License of the work: Apache 2.0
+Creator names: Vagner Figueredo de Santana, PhD., Research Scientist
