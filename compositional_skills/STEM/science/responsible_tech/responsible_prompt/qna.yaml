@@ -400,5 +400,5 @@ seed_examples:
     "
 
 task_description: "To recommend better ways of prompting by recommending more responsible
-    prompts and preventing known 
+    prompts and preventing known harms
   "
