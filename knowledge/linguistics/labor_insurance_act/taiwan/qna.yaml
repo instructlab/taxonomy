@@ -1,0 +1,54 @@
+created_by: juipingH
+version: 3
+domain: Law
+document_outline: >-
+  This Act is enacted to protect workers' livelihood and promote social
+  security. Matters not provided herein shall be governed by other relevant laws
+  or regulations. All labor insurance books and accounts, documents and
+  operational receipts and payments shall be exempt from taxation.
+seed_examples:
+  - context: 勞工保險法第 1 章的總則主要規範勞工保險的目的、保險分類及給付種類，並規定主管機關的角色。
+    questions_and_answers:
+      - question: 勞工保險法的制定目的是什麼？
+        answer: 勞工保險法的制定目的是為了保障勞工生活，促進社會安全。（第 1 條）
+      - question: 勞工保險包含哪些分類及給付種類？
+        answer: 勞工保險分為普通事故保險（生育、傷病、失能、老年及死亡五種給付）和職業災害保險（傷病、醫療、失能及死亡四種給付）。（第 2 條）
+      - question: 勞工保險的主管機關是什麼？
+        answer: 勞工保險的主管機關在中央是勞動部，在直轄市是直轄市政府。（第 4 條）
+  - context: 第 2 章針對勞工保險中的保險人、投保單位及被保險人的相關規定，包括投保的條件與範圍。
+    questions_and_answers:
+      - question: 誰是勞工保險的保險人？
+        answer: 勞工保險的保險人是由勞工保險局負責辦理。（第 5 條）
+      - question: 哪些年齡範圍內的勞工必須參加勞工保險？
+        answer: 年滿十五歲以上，六十五歲以下的勞工必須參加勞工保險。（第 6 條）
+      - question: 當投保單位僱用的勞工數減少至四人以下時，是否需要繼續參加勞工保險？
+        answer: 是的，即使勞工數減至四人以下，仍需繼續參加勞工保險。（第 7 條）
+  - context: 勞工保險的保費計算依據投保薪資及費率進行，並且對於不同類型的保險費用分擔比例有詳細規範。
+    questions_and_answers:
+      - question: 普通事故保險的費率是如何計算的？
+        answer: 普通事故保險的費率依被保險人當月投保薪資的百分之七點五至百分之十三計算。（第 13 條）
+      - question: 職業災害保險費率每幾年會調整一次？
+        answer: 職業災害保險費率每三年調整一次。（第 13 條）
+      - question: 投保單位申報的投保薪資不實時，保險人可以如何處理？
+        answer: 保險人可以依同一行業相當等級的投保薪資額逕行調整。（第 14-1 條）
+  - context: 本章節規範了投保單位的責任，包括投保手續的辦理、名冊的保管、薪資申報等事項。
+    questions_and_answers:
+      - question: 投保單位需要保管勞工的投保名冊多久？
+        answer: 投保單位應自被保險人離職或退會之日起保存五年。（第 10 條）
+      - question: 投保單位何時需要通知保險人勞工的保險效力開始或停止？
+        answer: 各投保單位應於勞工到職或離職當日通知保險人，保險效力的開始或停止自通知當日起算。（第 11 條）
+      - question: 被保險人退保後再次參加保險，之前的保險年資是否併計？
+        answer: 是的，原有保險年資應予併計。（第 12 條）
+  - context: 勞工保險法第 9 條至第 9-1 條詳細說明了被保險人在特殊情況下繼續參加勞工保險的權利，例如服兵役、出國考察、停職等情況。
+    questions_and_answers:
+      - question: 被保險人服兵役期間是否可以繼續參加勞工保險？
+        answer: 是的，被保險人服兵役期間可以繼續參加勞工保險。（第 9 條）
+      - question: 因傷病請假停薪的勞工，普通傷病的保險期間最長為多久？
+        answer: 普通傷病的保險期間最長為一年。（第 9 條）
+      - question: 被保險人年資滿十五年且被裁減資遣後，是否可以繼續參加普通事故保險？
+        answer: 是的，年資滿十五年且被裁減資遣後的被保險人可繼續參加普通事故保險，直至符合請領老年給付之日。（第 9-1 條）
+document:
+  repo: https://github.com/juipingH/taxonomy-knowledge-docs
+  commit: d95980c5b9058f7a00bb62901cb624434b8209d3
+  patterns:
+    - law-20241031T063813485.md
