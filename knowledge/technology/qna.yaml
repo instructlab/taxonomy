@@ -1,0 +1,127 @@
+created_by: klawrenc
+version: 3
+domain: LLM
+document_outline: >+
+  Compute-intensive work is moving from CPUs to GPUs, TPUs  plus other
+  accelerator hardware
+
+seed_examples:
+  - context: changes to pricing on accelerators
+    questions_and_answers:
+      - question: >-
+          Can I mix and match product subscriptions on the same cluster, such as
+          OpenShift Platform Plus for the CPUs, and OpenShift Container Platform
+          for the accelerators?
+        answer: >-
+          No. This was never an option with x86 subscriptions, and it is not an
+          option with AI accelerator subscriptions. OpenShift subscriptions must
+          be for the same product and support level at the cluster level.
+      - question: ' Doesn’t RHEL AI also charge based on AI Accelerators?'
+        answer: >-
+          Yes. RHEL AI’s subscription unit of measure is based on AI
+          accelerators. In general, it is easier for people to understand why
+          and its use cases because the sole purpose of the RHEL AI offering is
+          to offer better experiences for people explicitly using accelerators
+          with large language models (LLMs) . Also, RHEL AI is included in
+          OpenShift AI. So this document is focused more on OpenShift and
+          OpenShift AI where more clarity might be needed.
+      - question: What is an accelerator? Why are they important?
+        answer: >-
+          In recent years, specific hardware technologies have come onto the
+          market that enable certain compute workloads to perform much faster.
+          These types of hardware devices are collectively referred to as
+          accelerators or “AI accelerators” in some Red Hat content.
+  - context: |
+      Red Hat changes
+    questions_and_answers:
+      - question: Why is Red Hat making this change?
+        answer: ' Red Hat is updating its subscription model to continue to align with how it has always charged customers based on computational power. Red Hat has developed, innovated, and continued to support these new computing paradigms and accelerated computing devices. This is a significant investment for Red Hat.'
+      - question: Is this a price increase? Who is affected by this change?
+        answer: >-
+          Yes. Existing OpenShift self-managed and OpenShift AI customers who
+          are already using accelerators for computational-type workloads will
+          be affected by this change when they add new subscriptions or renew
+          existing subscriptions.
+      - question: What OpenShift platforms and footprints are impacted by this change?
+        answer: >-
+          All OpenShift self-managed subscriptions (OpenShift Kubernetes Engine,
+          OpenShift
+
+          Container Platform, and OpenShift Platform Plus) on all supported
+          platforms must now include AI
+  - context: what is Openshift
+    questions_and_answers:
+      - question: What is OpenShift
+        answer: >-
+          OpenShift is a family of containerization software products developed
+          by Red Hat. Its flagship product is the OpenShift Container Platform —
+          a hybrid cloud platform as a service built around Linux containers
+          orchestrated and managed by Kubernetes on a foundation of Red Hat
+          Enterprise Linux.
+      - question: What discount is available in Q4 CY24?
+        answer: >-
+          Red Hat sellers can offer a one-time discount of up to 100% of the
+          cost of the subscriptions specifically for the AI accelerators during
+          one year deals.
+      - question: >
+          Can I mix and match product subscriptions on the same cluster, such as
+          OpenShift Platform Plus for the CPUs, and OpenShift Container Platform
+          for the accelerators?
+        answer: ' No. This was never an option with x86 subscriptions, and it is not an option with AI accelerator subscriptions. OpenShift subscriptions must be for the same product and support level at the cluster level.'
+  - context: accelerator FAQ
+    questions_and_answers:
+      - question: Are all accelerators counted?
+        answer: >-
+          Accelerators are only counted when they are used to execute a compute
+          workload.
+      - question: Who should I ask for further information
+        answer: email the EMEA ai team
+      - question: |
+          What do I tell my customer?
+        answer: >
+          Compute-intensive work is moving from CPUs to GPUs, TPUs and other
+          accelerator hardware
+
+          Red Hat invests continually to provide support and feature enablement
+          in Kubernetes for this hardware
+
+          OpenShift, OpenShift AI and RHEL AI let you get the most out of your
+          investment in accelerator hardware
+
+          Red Hat has always charged for compute and this change aligns our
+          business model to the changing market
+  - context: NVIDIA
+    questions_and_answers:
+      - question: what is an A100
+        answer: >-
+          The NVIDIA A100 Tensor Core GPU is the flagship product of the NVIDIA
+          data center platform for deep learning, HPC, and data analytics. The
+          platform accelerates over 2,000 applications, including every major
+          deep learning framework.
+      - question: |
+          What is “compute”?
+        answer: >-
+          A workload is considered a “compute” workload when the primary purpose
+          of the workload is NOT actively drawing pixels on a user’s screen in
+          near real-time or moving data across a network.
+      - question: |
+          Why is the subscription requirement changing?
+        answer: >
+          Previously, we had no defined business rules for how subscriptions
+          apply to accelerators (eg. GPUs) in OpenShift and OpenShift AI.
+
+          Accelerators provide significant additional compute capability in the
+          cluster.
+
+          Today, we have capabilities in OpenShift and OpenShift AI to take
+          advantage of accelerators, thus enhancing efficiency and delivering
+          greater value to our customers.
+
+          We continue to invest in ensuring compatibility across partners,
+          including shared support for the latest drivers and hardware to meet
+          customer demands for efficiency.
+document:
+  repo: https://github.com/klawrenc/taxonomy-knowledge-docs
+  commit: 3ead3718b44f3b711f9da78d11ee9dbcf8c3f1b0
+  patterns:
+    - accelerator pricing change-20241103T112656499.md

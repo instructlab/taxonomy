@@ -1,0 +1,5 @@
+Title of work: Accelerator
+Link to work: https://github.com/klawrenc/taxonomy-knowledge-docs
+Revision: 1.0
+License of the work: 123-88
+Creator names: Ksl00
