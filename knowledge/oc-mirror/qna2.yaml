@@ -1,0 +1,400 @@
+---
+version: 3
+created_by: CID
+domain: OpenShift
+seed_examples:
+  - context: |
+      **oc-mirrorv2** This section mostly talks about what is oc-mirrorv2, where to download the bits and how to invoke it.
+      to start with oc-mirror v2.
+    questions_and_answers:
+      - question: |
+          why oc-mirror v2 ?
+        answer: |
+          oc-mirror v2 has been developed to address challenges faced in v1,
+          ensure seamless experience for end users while using oc-mirror and
+          also one of the use cases that we are trying to address here is
+          enclave support. Currently this is in TechPreview for `4.16` and
+          current plans of today is to GA in a later version
+      - question: |
+          Where can I download oc-mirror v2 bits ?
+        answer: |
+          There is no separate binary for oc-mirror v2, it is the same as v1 and
+          you could follow the same process to download like v1
+      - question: |
+          How do I invoke oc-mirror v2 ?
+        answer: |
+          users/customers trying/wanting to work with oc-mirror v2 will need to
+          download the latest oc-mirror bits the same way they would do for
+          v1  and when running the command add `--v2` which will invoke
+          oc-mirror v2 for you.
+  - context: |
+      **oc-mirrorv2** List all commands, options available with v2, generate a sample ISC and --dry-run
+    questions_and_answers:
+      - question: |
+          List all commands and options available for oc-mirror v2
+        answer: >
+          To list all commands and options that are available for oc-mirror v2 use
+
+          command `oc-mirror --v2 -h`
+      - question: >
+          Is there a command to generate sample ImageSetConfig for oc-mirror v2 ?
+        answer: >
+          Currently we do not have a way to generate ImageSetConfig like we have
+
+          for v1 which is `oc-mirror --init`. However the plan is to have this
+
+          feature included by v4.17. In the meanwhile you could use the
+
+          following ImageSetConfig as a sample one
+            kind: ImageSetConfiguration
+            apiVersion: mirror.openshift.io/v2alpha1
+            mirror:
+              platform:
+                channels:
+                  - name: stable-4.15
+                    type: ocp
+                    graph: true
+              operators:
+                - catalog: oci:///home/knarra/ocmirrortest/ibm-catalog
+                  targetTag: v14
+                  targetCatalog: knarra/catalog
+                - catalog: registry.redhat.io/redhat/redhat-operator-index:v4.15
+                  packages:
+                    - name: advanced-cluster-management
+              additionalImages:
+                - name: registry.redhat.io/ubi8/ubi:latest
+                - name: quay.io/openshifttest/hello-openshift@sha256:4200f438cf2e9446f6bcff9d67ceea1f69ed07a2f83363b7fb52529f7ddd8a83
+      - question: |
+          Can we do a --dry-run before doing the actual mirror ?
+        answer: >
+          Yes, --dry-run option is available for v2 as well and command to perform
+
+          the same is `oc-mirror --config <imageSetConfig.yaml> file://dryrun
+
+          --dry-run`. When running dry-run on a mirror to disk workflow,
+
+          oc-mirror v2 also checks if all the images within the image set are
+
+          available in its cache. Any missing images are added to the
+
+          missing.txt file.
+
+
+          When a dry-run is performed before mirroring both missing.txt and mapping.txt will contain the same list of images.. Adding the sample output here
+
+
+          [knarra@knarra-thinkpadx1carbon7th ocmirrortest]$ oc-mirror --config /tmp/isc_dryrun.yaml file://CLID-19 --dry-run --v2
+
+
+          2024/04/25 15:28:21  [INFO]   : :warning:  --v2 flag identified, flow redirected to the oc-mirror v2 version. This is Tech Preview, it is still under development and it is not production ready.
+
+
+          2024/04/25 15:28:21  [INFO]   : :wave: Hello, welcome to oc-mirror
+
+
+          2024/04/25 15:28:21  [INFO]   : :gear:  setting up the environment for you...
+
+
+          2024/04/25 15:28:21  [INFO]   : :twisted_rightwards_arrows: workflow mode: mirrorToDisk
+
+
+          2024/04/25 15:28:21  [INFO]   : :sleuth_or_spy:  going to discover the necessary images...
+
+
+          2024/04/25 15:28:21  [INFO]   : :mag: collecting release images...
+
+
+          2024/04/25 15:28:21  [INFO]   : :mag: collecting operator images...
+
+
+          2024/04/25 15:28:31  [INFO]   : :mag: collecting additional images...
+
+
+          2024/04/25 15:28:31  [WARN]   : :warning:  54/54 images necessary for mirroring are not available in the cache.
+
+
+          2024/04/25 15:28:31  [WARN]   : List of missing images in : CLID-19/working-dir/dry-run/missing.txt.
+
+
+          please re-run the mirror to disk process
+
+
+          2024/04/25 15:28:31  [INFO]   : :page_facing_up: list of all images for mirroring in : CLID-19/working-dir/dry-run/mapping.txt
+
+
+          2024/04/25 15:28:31  [INFO]   : mirror time     : 9.641091076s
+
+
+          2024/04/25 15:28:31  [INFO]   : :wave: Goodbye, thank you for using oc-mirror
+  - context: |
+      **oc-mirrorv2** oc-mirror v2 capabilities, new changes that customers would see while using v2 and content discovery, changes in ISC
+    questions_and_answers:
+      - question: |
+          What can be mirrored with --v2 ?
+        answer: >
+          ocp platform release images(only stable ones), operator catalogs(again
+
+          only stable ones), oci based catalogs, additionalImages
+
+
+          BlockedImages functionality is only available for images with manifest unknown errors which means if an image mirroring is failing due to `manifestUnknown` that image could be added to blockedImages and image will be ignored for mirroring. Helm charts cannot be mirrored and are not available for now.
+      - question: >
+          What is new with oc-mirror v2 that customers will experience when
+          working with it ?
+        answer: >
+          Discovery of content is not possible
+
+
+          * Unlike v1, v2 cannot do content discovery, however users could still do the content discovery using v1 commands and it is still valid for v2, Command like oc-mirror list releases; oc-mirror list operators
+
+
+          No oc-mirror-workspace
+
+
+          * In oc-mirror v1 when custom resources like `idms/catalogsource/updateService` files are generated they are generated under oc-mirror-workspace whereas in v2 we have a new folder called `working-dir/cluster-resources` and all resources are generated under this.
+
+
+          No rebuild of catalogs
+
+
+          * Catalogs will not be rebuilt in v2 unlike v1 which means when a user/customer tries to mirror an operator and its specific version he/she will see all the operators from that catalog in the Openshift console irrespective of what was mirrored. Only metadata of other operators that are not mentioned in the imageSetConfig will be mirrored so user/customer does not need to worry about the mirroring time nor about the registry disk space
+
+
+          IDMS & ITMS Generation
+
+
+          * IDMS, ITMS, catalog source & UpdateService will be generated under the workspace provided.
+
+
+          * All images by tag are added to ITMS while all images by digest are added to IDMS.
+
+
+          * One ITMS and IDMS is generated, each file will contain several custom resources one per category of images mirrored.
+
+
+          * Unlike v1 user/customer does not need to merge the IDMS files generated and these could be applied cumulatively, just make sure to update the metadata.name so that it does not throw `Already exists error`
+
+
+          * Introduces catalogSourceTemplate to imageSetConfig in order to allow the user customization of the catalogSource, if provided will add updateStrategy to the generated catalogSource. Below blocks how to set this option in the ImageSetConfig file and also how catalogSource gets generated when it is set.
+
+
+          kind: ImageSetConfiguration
+
+
+          apiVersion: mirror.openshift.io/v2alpha1
+
+
+          archiveSize: 1
+
+
+          mirror:
+            operators:
+            - catalog: registry.redhat.io/redhat/redhat-operator-index:v4.14
+              packages:
+            - name: aws-load-balancer-operator
+             targetCatalogSourceTemplate: "/home/skhoury/go/src/github.com/openshift/oc-mirror/v2/tests/catalog-source_template.yaml"
+
+          kind: ImagesetConfiguration
+
+
+          apiVersion: operators.coreos.com/v1alpha1
+
+           kind: CatalogSource
+
+           metadata:
+            name: totalRubbish
+            namespace: openshift-marketplace
+          spec:
+            image: totalRubbish
+            sourceType: grpc
+            updateStrategy:
+              registryPoll:
+              interval: 30m0s
+          Filter specific bundles of catalog images
+
+
+          * Using min and max versions requires lots of disk space as it mirrors all intermediate versions as well, so with v2 users/customers can now specify the exact bundles of an operator that they would like to mirror.
+
+
+          * Currently there is no official tool that supports how to filter the bundles of an operator, however one could use the opm tool to discover the content as shown below
+
+
+          * opm alpha list bundles registry.redhat.io/redhat/community-operator-index:v4.12 etcd
+
+
+          PACKAGE  CHANNEL                BUNDLE                           REPLACES                         SKIPS  SKIP RANGE  IMAGE
+
+          etcd     alpha                  etcdoperator.v0.6.1                                                                  quay.io/openshift-community-operators/etcd@sha256:e42581eacbc8349f40c6a4ed6d7d82d6168518e15b1a24cba36817205bd8688f
+          etcd     clusterwide-alpha      etcdoperator.v0.9.0                                                                  quay.io/openshift-community-operators/etcd@sha256:07157e50458e879c10975e580445f2b378947edc6c918ea873223ef3ba480218
+          etcd     clusterwide-alpha      etcdoperator.v0.9.2-clusterwide  etcdoperator.v0.9.0                                 quay.io/openshift-community-operators/etcd@sha256:23d47faa666e614bd4f2c1fd4f04a5ce69cd61e0dde58843ffd9f8cf642601f6
+          etcd     clusterwide-alpha      etcdoperator.v0.9.4-clusterwide  etcdoperator.v0.9.2-clusterwide
+          * Example below shows imageSetConfig  of mirroring using specific bundles of an operator
+            kind: ImagesetConfiguration
+            apiVersion: mirror.openshift.io/v2alpha1
+            mirror:
+             operators:
+             - catalog: registry.redhat.io/redhat/redhat-operator-index:v4.14
+               packages:
+               - name: aws-load-balancer-operator
+               bundles:
+               - name: aws-load-balancer-operator.v1.1.0
+               - name: aws-load-balancer-operator.v1.1.1
+               - name: 3scale-operator
+               bundles:
+               - name: 3scale-operator.v0.10.0-mas
+             - catalog: registry.redhat.io/redhat/redhat-operator-index:v4.15
+               packages:
+               - name: aws-load-balancer-operator
+                 bundles:
+                 - name: aws-load-balancer-operator.v0.0.1
+                 - name: aws-load-balancer-operator.v0.2.0
+               - name: 3scale-operator
+                 bundles:
+                 - name: 3scale-operator.v0.10.5
+                 - name: 3scale-operator.v0.11.11
+           * If the operator could not be found for some reason oc-mirror will skip and continue and does not end up failing
+           * Mixing both filtering by bundles and filtering by channels or minVersion/maxVersion is not allowed
+           Support Incremental Mirroring using date
+           * If --since 2024-03-28 is specified oc-mirror v2 will mirror content from this date, if not will mirror everything new from the previously mirrored content.
+           * `oc-mirror --v2 -c clid-9.yaml file:///home/ocmirroruser/usertest/ --since 2024-01-01`
+           TargetTag And TargetCatalog
+           * There is a slight change in targetCatalog and targetTag works in v2. These are not mutually exclusive
+           * Listing valid & invalid examples below
+           * Invalid Example
+             kind: ImageSetConfiguration
+             apiVersion: mirror.openshift.io/v2alpha1
+             mirror:
+               operators:
+               - catalog: registry.redhat.io/redhat/redhat-operator-index:v4.14
+                 targetCatalog: abc/def:v5.5
+               packages:
+               - name: aws-load-balancer-operator
+           * Valid Example
+             kind: ImageSetConfiguration
+             apiVersion: mirror.openshift.io/v2alpha1
+             mirror:
+              operators:
+              - catalog: registry.redhat.io/redhat/redhat-operator-index:v4.14
+                targetCatalog: abc/def
+                targetTag: v4.4
+                packages:
+                - name: aws-load-balancer-operator
+           No Auto-pruning of images
+           * If a customer/user would like to delete some operator/images from the registry they will need to generate a delete-images.yaml file and use that yaml file to delete images from the registry. When a user deletes the images only manifests will be deleted from the registry and user/admin needs to run garbage collect on the registry to completely remove it from the registry. Manifests that are common across the releases or operators will not be deleted and only images that are untagged will be removed from the registry when garbage collect is run on the registry.
+           * User will need to create a ImageSetConfig.yaml file with kind DeleteImageSetConfiguration with all the images he would like to delete. Example as shown below
+           apiVersion: mirror.openshift.io/v2alpha1
+           kind: DeleteImageSetConfiguration
+           delete:
+             platform:
+               channels:
+               - name: stable-4.13
+                 minVersion: 4.13.3
+                 maxVersion: 4.13.3
+             operators:
+               - catalog: registry.redhat.io/redhat/redhat-operator-index:v4.13
+                 packages:
+                 - name: 3scale-operator
+             additionalImages:
+               - name: registry.redhat.io/ubi8/ubi-minimal:latest
+             * oc-mirror delete --config delete-isc.yaml --workspace file://clid-20 --v2 --generate -> Generates working-dir/delete/delete-images.yaml but does not delete anything.
+             * oc-mirror delete  --destination docker://localhost:5000/clid-20 --v2  --delete-yaml-file working-dir/delete/delete-images.yaml  -> Delete images (Untagging)
+             * Run garbage collection at the registry end to completely remove the images.
+             * When `--force-cache-delete=true` is set and also you have done the full MirrorToDisk and DiskToMirror that is the only time it will delete the cache as well along with the images in registry
+             * In the mirrorTomirror workflows there is no cache so even if you use `--force-cache-delete=true` it will ignore it
+             * Note: should try avoid deleting the cache", only as a last resort if disk space is a premium, and before doing so making a backup of all tar.gz as well as the current cache
+      - question: |
+          what changes do we see in the ImageSetConfig from v1 to v2
+        answer: |
+          Yes, the storageConfig option is completely removed and we do not use
+          that any more. If added it will be ignored, instead it uses local
+          cache to serve images more efficiently. Also, the api version is
+          v2alpha1
+  - context: |
+      **oc-mirrorv2** IDMS, ITMS, errors during mirroring & how to troubleshoot
+    questions_and_answers:
+      - question: |
+          Do we generate ICSP and CatalogSource after mirroring ?
+        answer: >
+          ISCP is no longer supported . so IDMS, ITMS & catalog source is
+          generated.
+      - question: |
+          How to review errors that happened during mirroring ?
+        answer: |
+          If mirroring fails, all the errors are displayed on the stdout and at
+          the end oc-mirror v2 generates a text file under working-dir with name
+          `mirroring_errors_<date>_<time>.txt`  which has list of images that
+          failed to mirror and why
+      - question: |
+          What should be the immediate action I should take if mirroring fails ?
+        answer: >
+          Review the mirroring_errors.txt file and see for the reasons on why it
+
+          is failing (from my personal experience i have only seen mirroring
+
+          failing issues mostly for catalogs other than redhat-operator-index
+
+          catalog) if http errors, gateway errors (do more retries), if
+
+          unauthorized issues (try adding right credentials) if manifest unknown
+
+          errors, add those images to blockedImages list in the imageSetConfig
+
+          so that they could be skipped. if nothing works try to reduce the
+
+          scope of mirroring and mirror only operators that are really required
+
+          to avoid unwanted mirroring issues.
+
+
+          * Example for adding manifestUnknown error images to blocked list
+
+            apiVersion: mirror.openshift.io/v2alpha1
+
+            kind: ImageSetConfiguration
+
+            archiveSize: 4
+
+            mirror:
+              platform:
+                channels:
+                - name: stable-4.15
+                  type: ocp
+                graph: true
+              operators:
+              - catalog: registry.redhat.io/redhat/redhat-operator-index:v4.15
+                full: false
+              additionalImages:
+              - name: registry.redhat.io/ubi8/ubi:latest
+              blockedImages:
+              - name: quay.io/noiro/aci-containers-operator@sha256:0b2acfa10d5d1994b29a068b83f09b927891baf4810bef3a0baa7d53171b2314
+              - name: quay.io/noiro/acc-provision-operator@sha256:6c6c9831030570139da6b0939ce62facb6b81d6e7958eee6ca578ef334e435c2
+              - name: quay.io/mongodb/mongodb-atlas-kubernetes-operator@sha256:1cbe10f1d934dc5c537d0cff39361d2373afe87d0153869b9dec81ef5c4b4fbe
+              - name: quay.io/silicom/gpsd@sha256:e479c542e061b5422865f2617ed0563794f265c6e6660e5a9d204c9e1cb2f346
+              - name: ghcr.io/mellanox/network-operator-init-container@sha256:eab20c1439fc0ff438ef84db9f289bf344db5584f4238cf7384e1d8f1b4982c8
+              helm: {}
+  - context: |
+      **oc-mirrorv2** Further deug things better, helm charts support & some upstream documentation
+    questions_and_answers:
+      - question: |
+            If I see a weird error during mirroring of images, what would be the best way to further debug ?
+        answer: |
+            First run the command using --loglevel debug which should mostly tell you what the issue is, if you still cannot find a solution, reach out to folks in forum-oc-mirror mentioning the issue and helping them to understand if you are using v1 or v2.
+      - question: |
+            Help point me to some upstream docs for oc-mirror v2?
+        answer: |
+            Upstream docs links https://github.com/openshift/oc-mirror/tree/main/v2/docs
+      - question: |
+            Are mirroring helm charts supported with oc-mirror v2?
+        answer: |
+            yes, mirroring helm charts is supported from oc-mirror
+document_outline: |
+  Information about oc-mirror v2, differences between v1 and v2
+document:
+  repo: https://github.com/openshift/oc-mirror
+  commit: 95f0611c1dc9584a4a9e857912b9eaa539234bbc
+  patterns:
+    - v2/docs/delete-functionality.md
+    - v2/docs/enclave_support.md
+    - v2/docs/operator-filtering-investigation.md
+    - v2/docs/progress-bar-and-concurrencty-investigation.md
+    - v2/docs/signature-verification.md
