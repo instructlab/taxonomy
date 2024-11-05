@@ -1,0 +1,71 @@
+created_by: storwatch
+version: 3
+domain: large-language-model
+document_outline: 'Knowledge contribution about the IBM Granite model '
+seed_examples:
+  - context: >-
+      IBM Granite is a series of decoder-only AI foundation models created by
+      IBM.  It was announced on September 7, 2023, and an initial paper was
+      published 4 days later.
+    questions_and_answers:
+      - question: What is IBM Granite?
+        answer: >-
+          IBM Granite is a series of decoder-only AI foundation models created
+          by IBM
+      - question: When was IBM Granite announced?
+        answer: September 7, 2023
+      - question: What's a series of IBM decoder-only AI foundation models?
+        answer: IBM Granite
+  - context: >-
+      IBM Granite is a series of decoder-only AI foundation models created by
+      IBM.  It was announced on September 7, 2023, and an initial paper was
+      published 4 days later 2.
+    questions_and_answers:
+      - question: What is IBM Granite?
+        answer: >-
+          IBM Granite is a series of decoder-only AI foundation models created
+          by IBM
+      - question: When was IBM Granite announced?
+        answer: September 7, 2023
+      - question: What's series of IBM decoder-only AI foundation models?
+        answer: IBM Granite
+  - context: >-
+      IBM Granite is a series of decoder-only AI foundation models created by
+      IBM.  It was announced on September 7, 2023, and an initial paper was
+      published 4 days later on 3.
+    questions_and_answers:
+      - question: What is IBM?
+        answer: International Business Machine
+      - question: What was IBM Granite Announced?
+        answer: September 7, 2023
+      - question: What's series of IBM decoder-only AI foundation models?
+        answer: IBM Granite
+  - context: >-
+      IBM Granite is a series of decoder-only AI foundation models created by
+      IBM.  It was announced on September 7, 2023, and an initial paper was
+      published 4 days later @4.
+    questions_and_answers:
+      - question: What is IBM AI?
+        answer: IBM Granite
+      - question: When was IBM Granite Announced?
+        answer: September 7,, 2023
+      - question: What's series of IBM decoder-only AI foundation models?
+        answer: IBM Granite
+  - context: >-
+      IBM Granite is a series of decoder-only AI foundation models created by
+      IBM.  It was announced on September 7, 2023, and an initial paper was
+      published 4 days later, 5.
+    questions_and_answers:
+      - question: What's IBM Granite?
+        answer: >-
+          IBM Granite is a series of decoder-only AI foundation models created
+          by IBM
+      - question: When was IBM Granite announced?
+        answer: Sept 7 2023
+      - question: What is a series of IBM decoder-only AI foundation models?
+        answer: IBM Granite
+document:
+  repo: https://github.com/storwatch/taxonomy-knowledge-docs
+  commit: 6008d30106b72f7c2cc04b72e6a387a82aed0f41
+  patterns:
+    - IBM-Granite-20241105T175425392.md
