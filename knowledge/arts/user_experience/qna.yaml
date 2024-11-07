@@ -1,0 +1,78 @@
+created_by: Misjohns
+version: 3
+domain: user_experience
+document_outline: >-
+  UX principles are the fundamentals that build a strong foundation for open
+  design to thrive. We use these principles to keep products aligned on a shared
+  vision.
+seed_examples:
+  - context: >-
+      Start intentionally. Identify the problem well before you start to solve
+      it. Know why you're designing. If you don't, ask questions to gain
+      insights. Those answers will lead to better questions or new directions.
+    questions_and_answers:
+      - question: How should I start a design project?
+        answer: Identify the problem well before you start to solve it
+      - question: Why is it important to ask questions?
+        answer: To gain insights and understand why you're designing.
+      - question: How will asking questions help?
+        answer: They will lead to better questions or new directions
+  - context: >-
+      Lean on research. Know who you’re designing for and what they need; talk
+      to them if you can. When you understand their motivations, you’re able to
+      demonstrate real empathy for the user, and the most impactful choices
+      become clear.
+    questions_and_answers:
+      - question: Why is it important to have empathy for the user?
+        answer: To understand their motivations and needs.
+      - question: How do you learn about the user?
+        answer: Through research.
+      - question: What's a good way to gain knowledge about the user?
+        answer: To know who you’re designing for it's important to talk to the users.
+  - context: >-
+      Design with bravery. Take risks, even when it’s scary or difficult.
+      Suggest something unexpected, remove something unnecessary, or even know
+      when to try again — facing the challenge results in the best work
+      possible.
+    questions_and_answers:
+      - question: What can be scary in design?
+        answer: Taking risks.
+      - question: What are some brave design moves?
+        answer: Suggest something unexpected, remove something unnecessary.
+      - question: Can design be scary?
+        answer: Yes, design can be difficult and takes bravery.
+  - context: >-
+      Red Hatters believe in transparency, collaboration, and inclusion. These
+      principles aren’t just for creating technology — they shape how we design,
+      too.
+    questions_and_answers:
+      - question: What do Ret Hatters believe in?
+        answer: They believe in believe in transparency, collaboration, and inclusion.
+      - question: What are the principles Ret Hatters use in their design process?
+        answer: >-
+          Red Hatters use the principles of transparency, collaboration, and
+          inclusion to shape how they design.
+      - question: What shapes the way they design?
+        answer: >-
+          Their principles for creating technology - transparency,
+          collaboration, and inclusion.
+  - context: >-
+      How we work. Open design is built on collaboration. It's a conversation
+      between diverse voices. It's about listening to what our community needs,
+      taking that feedback, and creating systems that work together, across
+      teams and contexts. Open design creates helpful and accessible experiences
+      for real people.
+    questions_and_answers:
+      - question: What is open design built on?
+        answer: Collaboration.
+      - question: What is collaboration?
+        answer: >-
+          It's having conversations to listen to the needs of a community and
+          using that feedback to create a design.
+      - question: What does open design create?
+        answer: Open design creates helpful and accessible experiences.
+document:
+  repo: https://github.com/Misjohns/taxonomy-knowledge-docs
+  commit: 0022286dba7226d79efebb424ddb7cf2696eb2a6
+  patterns:
+    - Design_at_Red_Hat-20241107T210400607.md
