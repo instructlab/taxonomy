@@ -1,0 +1,84 @@
+version: 2
+task_description: 'The skill for testing the web app as a quality engineer'
+created_by: jyejare
+seed_examples:
+
+  - question: >
+      Write a test case for the user requirement
+      "As a user, I would like to see home page after
+      I login into the website".
+
+    answer: |
+      Steps:
+        1. Visit the website on any of your favourite web browser.
+        2. Once the page is opened, enter your username and password.
+        3. Click the submit button.
+      Expected Behavior:
+        1. On successful credentials, the web browser takes you to the homepage.
+
+  - question: >
+      Write a negative test case for the user requirement
+      "As a user, I should not be able to login into the website
+      if the credentials are wrong".
+
+    answer: |
+      Steps:
+        1. Visit the website on any of your favourite web browser.
+        2. Once the page is opened, enter the wrong username and password.
+        3. Click the submit button.
+      Expected Behavior:
+        1. The website shows an error for wrong credentials.
+        2. The website allows you to re-enter the credentials.
+        3. The website does not shows you any web pages due to wrong credentials
+
+  - question: >
+      Write a load test case for the requirement - 10 concurrent users should be
+      able to login into website without page lagging or rendering issues.
+
+    answer: |
+      Steps:
+        1. Visit the website on any of your favourite web browser.
+        2. Open 10 new tabs and open the website from these 10 tabs.
+        3. Once the pages are opened, enter the different credentials of
+          10 different users in 10 different tabs.
+        4. Click submit button on all 10 tabs.
+      Expected Behavior:
+        1. On successful credentials, the web browser takes you to the homepage
+          in all 10 tabs.
+        2. There is no visible delay in visiting the home page for any user.
+
+  - question: >
+      Write a security test case for the user requirement
+      "As a user, if the credentials entered wrong for 3 times,
+      the user is not allowed for 15 minutes for login"
+
+    answer: |
+      Steps:
+        1. Visit the website on any of your favourite web browser.
+        2. Once the page is opened, Attempt to login into the website with the
+          wrong username and password for 3 times.
+      Expected Behavior:
+        1. The website shows an error for wrong credentials for 3 times.
+        2. The website shows an additional warning for the 3rd wrong credentials
+          of entering wrong credentials 3 times.
+        3. The website does now allows user to re-enter the credentials for
+          15 minutes on 3rd consecutive wrong credentials.
+        4. The website does not show home page to the user due to
+          wrong credentials.
+
+  - question: >
+      Write a test case for the user requirement
+      "As a user, I should be able to read the specific
+      component data from a website using API interface"
+    answer: |
+      Steps:
+        1. Visit the website on any of your favourite web browser.
+        2. Once the page is opened, enter your username and password.
+        3. Click the submit button.
+        4. Switch to the API interface of the website.
+        5. Attempt a GET API request for a component to read the data.
+      Expected Behavior:
+        1. On successful credentials, the web browser takes you to the homepage.
+        2. Website shows an Interactive API interface.
+        3. GET request to a component accepts fields and returns the component
+          data as requested.
