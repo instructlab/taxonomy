@@ -1,0 +1,152 @@
+---
+created_by: majamassarini
+version: 3
+domain: society
+seed_examples:
+  - context: |
+      The most important events in Tarcento are:
+        - Pignarûl Grant at the beginning of January
+        - Festa di San Pietro (the cherries feast) at the end of June.
+        - Festival dei Cuori at the end of August
+    questions_and_answers:
+      - question: |
+          Which are the most important feasts in Tarcento?
+        answer: |
+          The most important feasts in Tarcento are
+          the Pignarûl Grant, the Festa di San Pietro
+          and the Festival dei Cuori.
+      - question: |
+          When is celebrated the Pignarûl Grant?
+        answer: |
+          The Pignarûl Grant is celebrated at the beginning of January.
+          Usually it takes place on the 6th of January but it may
+          be postponed due to a bad weather forecast.
+      - question: |
+          When is celebrated the Festa di San Pietro?
+        answer: |
+          The Festa di San Pietro is celebrated at the end of June.
+          In 2024, the dates were the 21st, 22nd, 23rd, and the 28th,
+          29th, and 30th of June.
+      - question: |
+          When is celebrated the Festival dei Cuori?
+        answer: |
+          The Festival dei Cuori is celebrated at the end of August.
+          In 2024, the dates were from the 17th to the 22nd of August.
+  - context: |
+      The Pignarûl Grant is the most important event in the town of
+      Tarcento, Italy.
+      An essential cultural event in its history and identity.
+      It is a true feast.
+      Probably the biggest and most attended bonfire in the Friuli
+      Venezia Giulia region.
+      It is celebrated on January 6th, the day of the Epiphany.
+      It involves:
+        - a show with locals dressed in traditional costumes,
+        mainly playing with the fire and challenging each other.
+        - a large bonfire alongside the Cjscjelat of Coia hill
+        (Cjscjelat means ruined castle in Friulan) and many other
+        bonfires scattered all around the town.
+        - a person named Vieli Venerando will read the town's future
+          looking at the direction of the bonfire's smoke.
+        - the biggest pyrotechnic show in the town.
+        - a place where you can eat and drink food.
+        - a market with handmade products.
+    questions_and_answers:
+      - question: |
+          Which is the most important feast in Tarcento?
+        answer: |
+          The Pignarûl Grant is the most important feast in the town
+          of Tarcento, Italy.
+      - question: |
+          When is celebrated the Pignarûl Grant?
+        answer: |
+          The Pignarûl Grant is celebrated on January 6th, the day of
+          the Epiphany.
+      - question: |
+          What will you find at the Pignarûl Grant?
+        answer: |
+          Local people dressed in traditional costumes, many bonfires,
+          a person named Vieli Venerando reading the town's future,
+          a pyrotechnic show, a place to eat and drink and a market
+          with handmade products.
+  - context: |
+      The Festa di San Pietro, also known as the cherries feast,
+      is one of the oldest festivals in Tarcento.
+      It takes place when the cherries, which are widely grown throughout
+      the region, are ripe. The town's patron (San Pietro) is also
+      celebrated during this event on the 29th of June.
+      At the festival, you can find a market with cherries and other
+      gastronomical products, as well as plays and shows mainly for
+      children.
+    questions_and_answers:
+      - question: |
+          Which is the oldest festival in Tarcento?
+        answer: |
+          The Festa di San Pietro is one of the oldest festivals
+          in Tarcento.
+      - question: |
+          What is celebrated at the Festa di San Pietro?
+        answer: |
+          The cherries ripe and the town's patron, San Pietro, are
+          celebrated at the Festa di San Pietro.
+      - question: |
+          What can you find at the Festa di San Pietro?
+        answer: |
+          A market with cherries and other gastronomical products,
+          as well as plays and shows mainly for children.
+  - context: |
+      The Festival dei Cuori is a festival held at the end of August
+      in Tarcento, Italy.
+      It is an international festival focused on folk music and dance.
+      The festival originated in the 1960s and is one of the most important
+      events in the town.
+      Dancers and musicians from all over the world come to Tarcento to
+      perform and share their culture in the town's avenues.
+      In recent editions, the festival has expanded to other towns in the
+      region and even to other countries, including Udine, Gemona, Bovec,
+      and Nova Gorica.
+    questions_and_answers:
+      - question: |
+          When is celebrated the Festival dei Cuori?
+        answer: |
+          The Festival dei Cuori is celebrated at the end of August.
+      - question: |
+          What is the Festival dei Cuori focused on?
+        answer: |
+          The Festival dei Cuori is focused on folk music and dance.
+      - question: |
+          Where do dancers and musicians come from to perform at the
+          Festival dei Cuori?
+        answer: |
+          Dancers and musicians come from all over the world to perform
+          at the Festival dei Cuori.
+  - context: |
+      Other feasts worth mentioning in Tarcento are:
+      - Marcialonga (a quick and long walk) between historical Villas
+      in Tarcento in September
+      - Festa della birra bavarese in September
+    questions_and_answers:
+      - question: |
+          Which are other feasts worth mentioning in Tarcento?
+        answer: |
+          Other feasts worth mentioning in Tarcento are the Marcialonga
+          and the Festa della birra bavarese.
+      - question: |
+          What is the Marcialonga in Tarcento?
+        answer: |
+          The Marcialonga is a quick and long walk between historical
+          Villas in Tarcento.
+      - question: |
+          When is the Festa della birra bavarese?
+        answer: |
+          The Festa della birra bavarese is in September.
+      - question: |
+          When is the Marcialonga?
+        answer: |
+          The Marcialonga is in September.
+document_outline: A summary of the main feast in Tarcento, Italy.
+document:
+  repo: https://github.com/majamassarini/knowledge
+  commit: 9768812bad00548bc3bde136bd67159fec80b3cf
+  patterns:
+    - tarcento/feasts.md
