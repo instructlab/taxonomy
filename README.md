@@ -256,8 +256,11 @@ Knowledge is supported by documents, such as a textbook, technical manual, encyc
 
 Knowledge in the taxonomy tree consists of a few more elements than skills:
 
+> [!IMPORTANT]
+> If you are using InstructLab version `0.21.0` or above, you can specify PDF files in your knowledge `qna.yaml` file as a valid document type. Any previous version of InstructLab still only consumes knowledge documents in markdown format.
+
 - Each knowledge node in the tree has a `qna.yaml`, similar to the format of the `qna.yaml` for skills.
-- ⭐ Knowledge submissions require you to create a Git repository, can be with GitHub, that contains the markdown files of your knowledge contributions. These contributions in your repository must use the markdown (.md) format.
+- ⭐ Knowledge submissions require you to create a Git repository, can be with GitHub, that contains the files of your knowledge contributions.
 - The `qna.yaml` includes parameters that contain information from your repository.
 
 > [!TIP]
@@ -279,9 +282,9 @@ The `qna.yaml` format must include the following fields:
     - `answer`: Specify the desired answer from the model. Each `qna.yaml` file needs at least three question and answer pairs per `context` chunk with a maximum word count of 250 words.
 - `document_outline`: Describe an overview of the document your submitting.
 - `document`: The source of your knowledge contribution.
-  - `repo`: The URL to your repository that holds your knowledge markdown files.
-  - `commit`: The SHA of the commit in your repository with your knowledge markdown files.
-  - `patterns`: A list of glob patterns specifying the markdown files in your repository. Any glob pattern that starts with `*`, such as `*.md`, must be quoted due to YAML rules. For example, `"*.md"`.
+  - `repo`: The URL to your repository that holds your knowledge files.
+  - `commit`: The SHA of the commit in your repository with your knowledge files.
+  - `patterns`: A list of glob patterns specifying the files in your repository. Any glob pattern that starts with `*`, such as `*.md`, must be quoted due to YAML rules. For example, `"*.md"`.
 
 ### Knowledge: YAML examples
 
