@@ -22,7 +22,7 @@ seed_examples:
           The subsystem acts as a logical representation for NVMe-oF services, enabling communication with initiators.
   - context: |
         Configuring VMware ESXi for NVMe/TCP involves enabling NVMe/TCP on a NIC and tagging a VMKernel NIC to permit
-        NVMe/TCP traffic. This setup is critical to ensure the ESXi host can communicate with NVMe-oF gateways. 
+        NVMe/TCP traffic. This setup is critical to ensure the ESXi host can communicate with NVMe-oF gateways.
         Enabling NVMe/TCP enhances storage performance by reducing latency and increasing bandwidth.
     questions_and_answers:
       - question: How do you enable NVMe/TCP on a NIC in VMware ESXi?
