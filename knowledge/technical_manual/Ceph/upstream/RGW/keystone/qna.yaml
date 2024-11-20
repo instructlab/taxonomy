@@ -1,0 +1,90 @@
+---
+version: 1
+created_by: Pragadeeswaran Sathyanarayanan
+domain: opensource_storage
+document_outline: Teach the Large Language Model about integrating Ceph with OpenStack Keystone service.
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/radosgw/keystone*.md]
+seed_examples:
+  - context: |
+      It is possible to integrate the Ceph Object Gateway with Keystone, the OpenStack identity service. This sets up
+      the gateway to accept Keystone as the users' authority. A user that Keystone authorizes to access the gateway
+      will also be automatically created on the Ceph Object Gateway if they didn't exist beforehand. A token that
+      Keystone validates will be considered valid by the gateway.
+    questions_and_answers:
+      - question: |
+          What is the purpose of integrating Keystone with the Ceph Object Gateway?
+        answer: |
+          Integrating Keystone allows the Ceph Object Gateway to accept Keystone as the user authority and validates
+          tokens authorized by Keystone.
+      - question: |
+          What happens when Keystone authorizes a user for the Ceph Object Gateway?
+        answer: |
+          The user is automatically created on the Ceph Object Gateway if they didn’t exist beforehand.
+  
+  - context: |
+      The following configuration options are available for Keystone integration:
+      - rgw keystone api version: Specifies the Keystone API version.
+      - rgw keystone url: Keystone server URL and admin port.
+      - rgw keystone admin token: Token for admin operations (use token path for security).
+      - rgw keystone accepted roles: Defines the user roles accepted.
+      - rgw keystone token cache size: Determines the number of tokens to cache.
+      - rgw keystone implicit tenants: Creates private tenants for new users when set to true.
+    questions_and_answers:
+      - question: |
+          What is the purpose of the `rgw keystone api version` option?
+        answer: |
+          It specifies the version of the Keystone API to be used for integration.
+      - question: |
+          How can you securely configure the Keystone admin token?
+        answer: |
+          Use the `rgw keystone admin token path` option to securely provide the admin token.
+  
+  - context: |
+      For Keystone v2.0 API, you can configure a service tenant, user, and password to avoid using the shared
+      `rgw keystone admin token`. These credentials must have admin privileges. For v3 API, replace
+      `rgw keystone admin tenant` with `rgw keystone admin domain` and `rgw keystone admin project`. This setup
+      avoids the need for the shared secret token in production.
+    questions_and_answers:
+      - question: |
+          How can you avoid using the shared Keystone admin token in production environments?
+        answer: |
+          By configuring service tenant credentials (user and password) with admin privileges instead of the shared
+          admin token.
+      - question: |
+          What should be configured for Keystone v3 API instead of `rgw keystone admin tenant`?
+        answer: |
+          Use `rgw keystone admin domain` and `rgw keystone admin project` for Keystone v3 API.
+  
+  - context: |
+      Keystone must be configured to point to the Ceph Object Gateway as an object-storage endpoint. Use the `openstack
+      service create` and `openstack endpoint create` commands to define the Swift service and endpoint URLs. If the
+      `rgw swift account in url` is set to true, include the `/v1/AUTH_%(tenant_id)s` suffix in endpoint URLs.
+    questions_and_answers:
+      - question: |
+          What does the `rgw swift account in url` configuration option do?
+        answer: |
+          It requires object-store endpoint URLs to include the suffix `/v1/AUTH_%(tenant_id)s` for tenant access.
+      - question: |
+          How do you configure Keystone to recognize the Ceph Object Gateway?
+        answer: |
+          Use the `openstack service create` and `openstack endpoint create` commands to configure the Swift service
+          and endpoints.
+  
+  - context: |
+      Additional features of Keystone integration include S3 API support and service token handling. Enable the S3 API
+      integration by setting `rgw s3 auth use keystone`. Service tokens allow expired user tokens in requests when
+      paired with valid service tokens. The expiration cache can be tuned with `rgw keystone expired token cache
+      expiration`.
+    questions_and_answers:
+      - question: |
+          How can Keystone support authentication for S3 API in Ceph Object Gateway?
+        answer: |
+          By setting the `rgw s3 auth use keystone` option in the configuration.
+      - question: |
+          What configuration enables service token support in Keystone integration?
+        answer: |
+          Enable `rgw keystone service token enabled` and specify accepted roles with `rgw keystone service token
+          accepted roles`.

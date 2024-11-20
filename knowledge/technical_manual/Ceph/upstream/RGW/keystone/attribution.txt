@@ -1,0 +1,4 @@
+Title of work: Ceph integration with OpenStack Keystone
+Link to work: https://docs.ceph.com/en/latest/radosgw/keystone/
+License of the work: Apache 2.0
+Creators name: Pragadeeswaran Sathyanarayanan
