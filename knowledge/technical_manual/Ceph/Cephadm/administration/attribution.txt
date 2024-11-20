@@ -1,0 +1,4 @@
+Title of work: Ceph administration knowledge
+Link to work: https://www.ibm.com/docs/en/storage-ceph/7.1
+License of the work: Apache 2.0
+Creators name: IBM Corporation

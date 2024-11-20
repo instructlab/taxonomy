@@ -1,0 +1,197 @@
+version: 3
+created_by: Pavan Govindraj
+domain: opensource_storage
+seed_examples:
+  - context: |
+      ## Administration
+
+      Learn how to manage processes, monitor cluster states, manage users, and add and remove daemons for
+      IBM Storage Ceph.
+
+      ### Key Administrative Tasks
+      - Manage processes: Start, stop, and restart Ceph daemons as needed.
+      - Monitor cluster health: Keep track of overall and component health within IBM Storage Ceph clusters.
+      - Stretch clusters: Configure stretch clusters for 2-site setups.
+      - Override Ceph behavior: Use runtime overrides to change cluster options.
+      - Manage Ceph users: Handle authentication and access control for Ceph users.
+      - Use ceph-volume: Manage OSDs with operations like prepare, list, create, activate, zap, and migrate.
+      - Performance benchmarking: Run benchmarks to assess cluster performance.
+      - Performance counters: Gather internal performance metrics and visualize them with various tools.
+      - mClock OSD scheduler: Implement quality of service (QoS) via the mClock queueing scheduler.
+      - BlueStore: The backend object store for OSD daemons, placing objects directly on the block device.
+      - Crimson (Technology Preview): A replacement for ceph-osd suited to modern low-latency, high-throughput
+      storage tech.
+
+    questions_and_answers:
+      - question: |
+          How can a storage administrator manage Ceph daemons in IBM Storage Ceph?
+        answer: |
+          A storage administrator can start, stop, and restart Ceph daemons by type or instance using process
+          management tools.
+      - question: |
+          What is BlueStore in IBM Storage Ceph?
+        answer: |
+          BlueStore is the backend object store for OSD daemons, enabling direct object placement on the block device.
+      - question: |
+          What is the role of the mClock OSD scheduler in IBM Storage Ceph?
+        answer: |
+          The mClock OSD scheduler helps implement quality of service (QoS) in IBM Storage Ceph, ensuring better
+          resource management.
+  - context: |
+      ## High-level monitoring
+
+      As a storage administrator, you can monitor the health of the Ceph daemons to ensure that they are up and running.
+
+      High-level monitoring involves checking the storage cluster capacity to prevent exceeding its full ratio.
+      The IBM Storage Ceph Dashboard is commonly used for this, but command-line interfaces, Ceph admin sockets,
+      or Ceph APIs can also be used to monitor the cluster.
+
+      ### Key Monitoring Tasks
+      - Check storage cluster health: Verify the cluster's health before reading or writing data.
+      - Watch cluster events: Use the CLI to watch events in real-time.
+      - Data usage calculation: The used value represents the actual amount of raw storage used.
+      - Check usage stats: Use the df command to see data usage and distribution.
+      - Check cluster status: Use the CLI to check the status of IBM Storage Ceph clusters.
+      - Monitor OSD utilization: Use the ceph osd df command to view OSD stats.
+      - Monitor Ceph Monitor status: Check the Ceph Monitor quorum status after starting the cluster.
+
+    questions_and_answers:
+      - question: |
+          What tools can you use for high-level monitoring in IBM Storage Ceph?
+        answer: |
+          You can use the IBM Storage Ceph Dashboard, command-line interfaces, admin socket, or Ceph API
+          for high-level monitoring.
+      - question: |
+          How do you check the health of the storage cluster in IBM Storage Ceph?
+        answer: |
+          You can check the health of the storage cluster by using the IBM Storage Ceph Dashboard or
+          command-line interface tools.
+      - question: |
+          What does the used value represent in Ceph storage monitoring?
+        answer: |
+          The used value reflects the actual amount of raw storage consumed in the Ceph storage cluster.
+  - context: |
+      ## Using cephadm-ansible modules
+
+      Use cephadm-ansible modules in Ansible playbooks to administer your IBM Storage Ceph cluster.
+      These modules wrap cephadm calls,
+      letting you write unique playbooks for managing your cluster.
+
+      Note: cephadm-ansible modules support only the most critical tasks. For unsupported operations,
+      use the command or shell Ansible modules in your playbooks.
+
+      ### Available cephadm-ansible modules
+      - cephadm_bootstrap: Bootstraps a storage cluster using Ansible.
+      - ceph_orch_host: Adds or removes hosts from the storage cluster.
+      - ceph_config: Sets or retrieves configuration options for IBM Storage Ceph.
+      - ceph_orch_apply: Applies service specifications to deploy Ceph services (mon, crash, mds, mgr, osd, etc.).
+      - ceph_orch_daemon: Manages Ceph daemon states (start, stop, restart).
+      - cephadm_registry_login: Logs into the Ceph registry.
+
+    questions_and_answers:
+      - question: |
+          What is the purpose of cephadm-ansible modules in IBM Storage Ceph?
+        answer: |
+          The cephadm-ansible modules simplify writing Ansible playbooks by wrapping cephadm calls to administer
+          IBM Storage Ceph clusters.
+      - question: |
+          Which cephadm-ansible module allows bootstrapping a storage cluster?
+        answer: |
+          The cephadm_bootstrap module is used to bootstrap a storage cluster with Ansible.
+      - question: |
+          How can you manage Ceph daemon states using cephadm-ansible modules?
+        answer: |
+          You can manage Ceph daemon states (start, stop, restart) using the ceph_orch_daemon module in your
+          Ansible playbooks.
+  - context: |
+      ## Difference between Crimson and Classic Ceph OSD architecture
+
+      The Crimson and Ceph OSD architectures differ, particularly with the use of the Seastar reactor in Crimson.
+
+      ### Classic Ceph OSD architecture
+      In classic ceph-osd, a messenger thread reads a client message, places it in the OP queue, and an osd-op
+      thread-pool processes the message. The transaction is passed to BlueStore’s kv_queue, which waits for
+      rocksdb to commit. After committing, the finisher thread queues the message for the messenger thread to send.
+
+      This architecture involves significant inter-thread coordination, with locks and queues that add latency,
+      especially as processor usage and the number of tasks scale.
+
+      ### Crimson architecture
+      Unlike classic ceph-osd, Crimson avoids inter-thread coordination by completing I/O operations on a
+      single core without context switches when possible. It uses the Seastar framework, which pre-allocates one
+      thread per core, allowing operations to run on a single core without blocking.
+
+      Seastar eliminates the need for locks and context-switches by ensuring nonblocking tasks own the CPU until
+      completion. This design fits Ceph OSD well, where PG shards handle I/Os.
+
+      Note: Crimson-osd does not daemonize itself. Systemd handles daemonization on supported Linux
+      distributions.
+
+    questions_and_answers:
+      - question: |
+          What is the main difference between Crimson and Classic Ceph OSD architecture?
+        answer: |
+          Crimson uses the Seastar reactor to avoid inter-thread coordination and context switches,
+          unlike Classic Ceph OSD.
+      - question: |
+          How does Crimson handle I/O operations compared to Classic Ceph OSD?
+        answer: |
+          Crimson completes I/O operations on a single core without blocking or context switches,
+          improving efficiency.
+      - question: |
+          What framework does Crimson use to handle I/O operations?
+        answer: |
+          Crimson uses the Seastar framework, an asynchronous engine that allocates one thread per core for I/O
+          operations.
+      - question: |
+          Why does Crimson-osd not daemonize itself?
+        answer: |
+          Crimson-osd doesn't daemonize as systemd handles this on supported Linux distributions.
+  - context: |
+      ## BlueStore fragmentation tool
+
+      As a storage administrator, you can periodically check the fragmentation level of your BlueStore OSDs
+      with a simple command, whether the OSD is online or offline.
+
+      Over time, free space on BlueStore OSDs becomes fragmented. Some fragmentation is normal, but excessive
+      fragmentation can degrade performance.
+
+      The BlueStore fragmentation tool generates a fragmentation score ranging from 0 to 1. A score of 0 indicates no
+      fragmentation, while a score of 1 indicates severe fragmentation.
+
+      ### Table 1. Fragmentation score range
+
+      - 0.0 - 0.4: None to tiny fragmentation
+      - 0.4 - 0.7: Small, acceptable fragmentation
+      - 0.7 - 0.9: Considerable, but safe fragmentation
+      - 0.9 - 1.0: Severe fragmentation, leading to performance issues
+
+      **Note**: If severe fragmentation is detected, contact IBM Support for assistance.
+
+      You can check for fragmentation while the BlueStore OSD process is online or offline.
+
+    questions_and_answers:
+      - question: |
+          What does a BlueStore fragmentation score of 1 indicate?
+        answer: |
+          A score of 1 indicates severe fragmentation, which can cause performance issues.
+      - question: |
+          How often should fragmentation checks be performed for BlueStore OSDs?
+        answer: |
+          As a storage administrator, you should periodically check fragmentation levels for both online and offline
+          BlueStore OSDs.
+      - question: |
+          What is considered an acceptable fragmentation score for BlueStore OSDs?
+        answer: |
+          A score between 0.0 and 0.7 is considered acceptable, with small to moderate levels of fragmentation.
+      - question: |
+          What should you do if a BlueStore OSD has severe fragmentation?
+        answer: |
+          If severe fragmentation is detected, contact IBM Support for assistance.
+
+document_outline: "Teach the Large Language Model about the Ceph administration"
+document:
+  repo: git@github.ibm.com:Pavan-Govindraj/IBM-Ceph-data-Instructlab-taxanomy.git
+  commit: 7446af5
+  patterns:
+    - IBM_Ceph_7.1/administration*.md

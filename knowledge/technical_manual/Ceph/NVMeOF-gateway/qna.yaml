@@ -1,0 +1,169 @@
+version: 3
+created_by: Pavan Govindraj
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Storage administrators can install and configure an NVMe over Fabrics (NVMe-oF) gateway for an IBM Storage
+      Ceph cluster. With the Ceph NVMe-oF gateway, you can effectively run a fully integrated block storage
+      infrastructure with all features and benefits of a conventional Storage Area Network (SAN).
+      The NVMe-oF gateway integrates IBM Storage Ceph with the NVMe over TCP (NVMe/TCP) protocol to provide an
+      NVMe/TCP target that exports RADOS Block Device (RBD) images. The NVMe/TCP protocol allows clients, which
+      are known as initiators, to send NVMe-oF commands to storage devices, which are known as targets , over an
+      Internet Protocol network. Initiators can be Linux clients, VMWare clients, or both. For VMWare clients, the
+      NVMe/TCP volumes are shown as VMFS Datastore and for Linux clients, the NVMe/TCP volumes are shown as
+      block devices
+    questions_and_answers:
+      - question: What is the role of the NVMe-oF gateway in an IBM Storage Ceph cluster?
+        answer: |
+          The NVMe-oF gateway enables storage administrators to install and configure a fully integrated block storage
+          infrastructure for an IBM Storage Ceph cluster, providing features similar to a
+          conventional Storage Area Network (SAN).
+      - question: Which protocol does the Ceph NVMe-oF gateway use to provide block-level access?
+        answer: |
+          The Ceph NVMe-oF gateway uses the NVMe over TCP (NVMe/TCP) protocol to provide block-level access by
+          exporting RADOS Block Device (RBD) images.
+      - question: What types of clients are supported by the NVMe-oF gateway?
+        answer: |
+          The NVMe-oF gateway supports both Linux clients and VMware clients, where NVMe/TCP volumes appear as VMFS
+          Datastore for VMware clients and as block devices for Linux clients.
+  - context: |
+      The IBM Storage Ceph NVMe-oF gateway also supports NVMe Discovery. Each NVMe-oF gateway that runs in the Ceph
+      cluster also runs a Discovery Controller. The Discovery Controller reports all IP addresses of each of the
+      gateways in the group that are defined with listeners. For configuring information, see Configuring the
+      NVMe-oF gateway initiator.
+      Networking requirements: NVMe over Fabrics with the TCP protocol requires proper sizing of network bandwidth
+      and latency.NVMe-oF gateway performance best practices: Use best practices to ensure optimal gateway
+      performance.
+      Installing the NVMe-oF gateway: Before utilizing the Ceph NVMe-oF gateway, install the required software
+      packages via the command-line interface.
+      Configuring the NVMe-oF gateway target: Configure targets, LUNs, and clients by using the Ceph gateway
+      nvmeof-cli command.
+      Configuring the NVMe-oF gateway initiator: Configure the initiator to allow the NVMe/TCP protocol to
+      send NVMe-oF commands to targets over an Internet Protocol network.
+      Managing NVMe-oF gateways: Use these instructions to manage your NVMe-oF gateways.
+    questions_and_answers:
+      - question: |
+          What is the function of the Discovery Controller in the NVMe-oF gateway?
+        answer: |
+          The Discovery Controller reports the IP addresses of each gateway in the Ceph cluster defined with
+          listeners.
+      - question: |
+          What are the networking requirements for NVMe over Fabrics with the TCP protocol?
+        answer: |
+          The NVMe over Fabrics TCP protocol requires proper sizing of network bandwidth and low latency
+          to perform optimally.
+      - question: |
+          How do you configure the NVMe-oF gateway target?
+        answer: |
+          You configure the NVMe-oF gateway target, LUNs, and clients using the nvmeof-cli command-line utility.
+  - context: |
+      Installing the NVMe-oF gateway: Before you can utilize the benefits of the Ceph NVMe-oF gateway,
+      you must install the required software packages. You can install the Ceph NVMe-oF gateway by using the
+      command-line interface.
+      Each NVMe-oF gateway runs the Storage Performance Development Kit (SPDK) to provide NVMe-oF protocol support.
+      SPDK uses a
+      user-space implementation of the NVMe-oF protocol to interact with the Ceph librbd library, exposing RBD
+      images to NVMe-oF clients. This allows running a fully integrated block storage infrastructure with features
+      of a conventional SAN.
+      Deploying the NVMe-oF gateway: The Ceph NVMe-oF gateway is the NVMe-oF target node and also a Ceph client node.
+      It can either be a stand-alone node or collocated on a Ceph Object Storage Daemon (OSD) node.
+      Configuring mTLS authentication: Configure mutual TLS (mTLS) to secure connections between the command-line
+      interface gRPC client and the Ceph NVMe-oF gateway gRPC server.
+    questions_and_answers:
+      - question: |
+          What software is required to install the NVMe-oF gateway?
+        answer: |
+          You need to install the required software packages via the command-line interface to use the NVMe-oF gateway.
+      - question: |
+          What is the function of SPDK in the Ceph NVMe-oF gateway?
+        answer: |
+          SPDK provides NVMe-oF protocol support and interacts with the Ceph librbd library to expose RBD images to
+          NVMe-oF clients.
+      - question: |
+          Where can the Ceph NVMe-oF gateway be deployed?
+        answer: |
+          The Ceph NVMe-oF gateway can be deployed as a stand-alone node or collocated on a
+          Ceph Object Storage Daemon (OSD) node.
+  - context: |
+      Managing load balancing with scale-up and scale-down: Conduct load balancing after adding and before
+      removing gateways.
+      It is important to run load balancing commands after certain events:
+      1. After adding new gateway nodes (scale-up): Rearrange the load balancing groups of the namespaces
+      to ensure they are
+      equally distributed across all existing gateways.
+      2. Before removing a gateway node (scale-down): Change the namespace load balancing group IDs of the
+      gateways that are planned to be removed to avoid inaccessible namespaces.
+      Use the change_load_balancing_group command to update the namespaces affected by the scaling changes.
+      Example command:
+      ```
+      nvmeof-cli --server-address GATEWAY_IP --server-port SERVER_PORT namespace change_load_balancing_group
+      --subsystem SUBSYSTEM [--nsid NAMESPACE_NSID | --uuid NAMESPACE_UUID] -l LOAD_BALANCING_GROUP
+      ```
+      Use either --NSID or --UUID parameters to specify the namespace.
+    questions_and_answers:
+      - question: |
+          When should load balancing be performed in NVMe-oF gateway management?
+        answer: |
+          Load balancing should be done after adding new gateway nodes (scale-up) and before removing gateways
+          (scale-down).
+      - question: |
+          What command is used to change the load balancing group in NVMe-oF gateways?
+        answer: |
+          The command `change_load_balancing_group` is used to change the load balancing group of affected
+          namespaces.
+      - question: |
+          Why is it necessary to update load balancing groups before scaling down gateways?
+        answer: |
+          To prevent namespaces from becoming inaccessible by reassigning their load balancing group IDs before
+          removing gateways.
+  - context: |
+      Use the commands listed here to manage your SPDK logs.
+
+      ### Before you begin
+      Managing NVMe-oF subsystems with the CLI requires the nvmeof-cli alias setup. For more details,
+      see step 1 of Defining an NVMe-oF subsystem.
+
+      ### Getting the SPDK log level
+      Use the `spdk_log_level get` command to retrieve the SPDK version in JSON format.
+      Example:
+      ```
+      nvmeof-cli --server-address NODE_IP --server-port SERVER_PORT spdk_log_level get --format json --output stdio
+      ```
+
+      ### Setting the SPDK log level
+      Use the `spdk_log_level set` command to set the log level for the SPDK output and NVMe over Fabrics
+      target (nvmf) log flags. Available log levels are DEBUG, INFO, NOTICE, WARNING, and ERROR.
+      Example:
+      ```
+      nvmeof-cli --server-address NODE_IP --server-port SERVER_PORT spdk_log_level set --level ERROR --print
+      ERROR --format json --output stdio
+      ```
+
+      ### Disabling SPDK log flags
+      Use the `spdk_log_level disable` command to remove the log level for the SPDK output and NVMe over Fabrics
+      target (nvmf) log flags.
+      Example:
+      ```
+      nvmeof-cli --server-address NODE_IP --server-port SERVER_PORT spdk_log_level disable --format json --output
+      stdio
+      ```
+    questions_and_answers:
+      - question: |
+          How can you retrieve the SPDK log level in JSON format?
+        answer: |
+          Use the command `spdk_log_level get` with `nvmeof-cli`, specifying the server address and port,
+          and the format as JSON.
+      - question: |
+          What are the available log levels for the SPDK NVMe over Fabrics target (nvmf)?
+        answer: |
+          The available SPDK nvmf log levels are DEBUG, INFO, NOTICE, WARNING, and ERROR.
+      - question: |
+          How do you disable the SPDK log flags for NVMe over Fabrics target (nvmf)?
+        answer: |
+          Use the command `spdk_log_level disable` with `nvmeof-cli`, specifying the server address and
+          port in JSON format.
+document_outline: Teach the Large Language Model about the NVMEoF feature of Ceph
+document:
+  repo: git@github.ibm.com:Pavan-Govindraj/IBM-Ceph-data-Instructlab-taxanomy.git
+  commit: 7446af5
+  patterns: [IBM_Ceph_7.1/nvmeof*.md]
