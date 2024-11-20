@@ -1,0 +1,102 @@
+version: 1
+created_by: Krishna Ramaswamy
+domain: opensource_storage
+seed_examples:
+  - context: |
+      The Ceph NVMe-oF gateway acts as both the NVMe-oF target node and a Ceph client node. It can be deployed as a 
+      stand-alone node or collocated with a Ceph Object Storage Daemon (OSD) node. The installation of the Ceph NVMe-oF 
+      gateway requires an IBM Storage Ceph 8.0 or later cluster. You can install and configure the gateway using the 
+      command-line interface. For managing the Ceph NVMe-oF gateway, the Ceph Dashboard provides an alternative method. 
+      In case of deploying multiple NVMe-oF gateway groups, repeat the deployment steps to configure additional NVMe-oF services.
+    questions_and_answers:
+      - question: What is the role of the Ceph NVMe-oF gateway?
+        answer: |
+          The Ceph NVMe-oF gateway acts as both an NVMe-oF target node and a Ceph client node.
+      - question: Where can the Ceph NVMe-oF gateway be deployed?
+        answer: |
+          The gateway can be deployed as a stand-alone node or collocated with a Ceph OSD node.
+      - question: What is required for installing the Ceph NVMe-oF gateway?
+        answer: |
+          You need an IBM Storage Ceph 8.0 or later cluster for installing the Ceph NVMe-oF gateway.
+  - context: |
+      To deploy the Ceph NVMe-oF gateway, use the command-line interface for installation and configuration. 
+      The Ceph Dashboard can also be used for managing the gateway, offering a more user-friendly alternative. 
+      In environments with multiple NVMe-oF gateway groups, follow the same deployment steps for each new group to 
+      configure the additional NVMe-oF services, ensuring that the setup remains consistent across all groups.
+    questions_and_answers:
+      - question: How can the Ceph NVMe-oF gateway be managed?
+        answer: |
+          The Ceph NVMe-oF gateway can be managed via the Ceph Dashboard.
+      - question: What method is used to deploy the Ceph NVMe-oF gateway?
+        answer: |
+          The Ceph NVMe-oF gateway is deployed using the command-line interface.
+      - question: What should be done for multi-gateway group deployment?
+        answer: |
+          Repeat the deployment steps to configure each new NVMe-oF gateway group.
+  - context: |
+      In virtualized environments, storage performance is vital to ensure application responsiveness and system efficiency. 
+      NVMe-oF (NVMe over Fabrics) provides a significant advantage over traditional storage protocols, offering lower 
+      latency and higher bandwidth. By configuring a VMware ESXi host (version 7.0U3 or later) as an NVMe-oF initiator, 
+      administrators can utilize the Ceph NVMe-oF gateway for improved storage performance in VMware environments. 
+      Following the prerequisites and setup ensures optimal results and unlocks NVMe-oF's potential for virtualized storage.
+      Prerequisites:
+      - An ESXi host running VMware vSphere Hypervisor (ESXi) 7.0U3 or later.
+      - A deployed Ceph NVMe-oF gateway.
+      - A functional IBM Storage Ceph cluster with properly configured ceph-nvmeof settings.
+      - A defined subsystem within the gateway (refer to documentation for "Defining an NVMe-oF subsystem").
+      - A configured NVMe/TCP adapter with NVMe/TCP enabled on a physical NIC.
+      - A VMkernel NIC tagged for NVMe/TCP traffic.
+    questions_and_answers:
+      - question: What advantage does NVMe-oF offer over traditional storage protocols?
+        answer: |
+          NVMe-oF provides significantly lower latency and higher bandwidth, enhancing performance
+          in virtualized storage environments.
+      - question: Which VMware ESXi versions support NVMe-oF configuration?
+        answer: |
+          NVMe-oF is supported on VMware ESXi 7.0U3 and later versions.
+      - question: What command enables NVMe/TCP on an ESXi host's physical NIC?
+        answer: |
+          Use `esxcli nvme fabrics enable --protocol TCP --device vmnicN`, replacing `N` with the NIC number.
+      - question: How is NVMe/TCP traffic enabled on a VMkernel NIC?
+        answer: |
+          Use `esxcli network ip interface tag add --interface-name vmkN --tagname NVMeTCP`, replacing
+          `N` with the VMkernel ID.
+  - context: |
+      Configuring NVMe-oF on VMware involves several critical steps. Start by listing available NVMe-oF adapters with `esxcli nvme adapter list`, 
+      which provides essential details such as the adapter name, transport type, and devices. Next, discover available NVMe-oF subsystems using the 
+      command `esxcli nvme fabrics discover -a NVME_TCP_ADAPTER -i GATEWAY_IP -p 8009`. After that, connect to the NVMe-oF gateway by using 
+      `esxcli nvme fabrics discover -a NVME_TCP_ADAPTER -i GATEWAY_IP -p 8009 -c`. Verify the connection with the `esxcli nvme controller list` 
+      command to ensure the "Connected" column shows "true". Once the connection is verified, list the discovered controllers and namespaces 
+      using `esxcli nvme controller list` and `esxcli nvme namespace list` respectively. Finally, confirm the proper configuration in the vSphere 
+      Client under the "Storage" page and "Devices" tab.
+    questions_and_answers:
+      - question: What command is used to list available NVMe-oF adapters in VMware?
+        answer: |
+          Use the `esxcli nvme adapter list` command to list available NVMe-oF adapters in VMware.
+      - question: How can you verify the connection to the NVMe-oF gateway?
+        answer: |
+          Run `esxcli nvme controller list` and check the "Connected" column for "true" to verify the connection.
+      - question: Where can you confirm the NVMe/TCP disk configuration in VMware?
+        answer: |
+          You can confirm the configuration in the vSphere Client under the "Storage" page and "Devices" tab.
+  - context: |
+      After establishing the connection to the NVMe-oF gateway in VMware, the next steps involve listing the discovered NVMe/TCP controllers. 
+      Use `esxcli nvme controller list` to view details like controller name, transport type, and online status. To check the available 
+      NVMe-oF namespaces within the connected subsystem, run `esxcli nvme namespace list`. Finally, after completing the configuration, 
+      use the vSphere Client to verify the NVMe/TCP disks by navigating to the "Storage" page and the "Devices" tab. If correctly configured, 
+      the NVMe/TCP disks will be displayed and ready for use in VMware environments.
+    questions_and_answers:
+      - question: What command shows details about NVMe/TCP controllers in VMware?
+        answer: |
+          Run `esxcli nvme controller list` to view details about NVMe/TCP controllers in VMware.
+      - question: How do you verify available NVMe-oF namespaces in VMware?
+        answer: |
+          Use `esxcli nvme namespace list` to verify available NVMe-oF namespaces in the subsystem.
+      - question: Where do you verify the availability of NVMe/TCP disks in VMware?
+        answer: |
+          Navigate to the "Storage" page and "Devices" tab in the vSphere Client to verify NVMe/TCP disks.
+document_outline: Teach the Large Language Model about the Deploying MDS of CephFS
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d1
+  patterns: [upstream/doc/NVMeOF-gateway/nvmeof*.md]
