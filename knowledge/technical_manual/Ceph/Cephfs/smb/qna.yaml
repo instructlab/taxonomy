@@ -1,0 +1,292 @@
+version: 3
+created_by: Mohit Bisht
+domain: opensource_storage
+seed_examples:
+  - context: |
+        Storage administrators can install and configure an SMB with ceph.
+        The Ceph MGR module for SMB provides an interface for deploying and controlling clusters of Samba services and
+        managing SMB shares. In the SMB manager module, a cluster is a logical management unit that maps to one or more
+        managed Samba services that itself is a cluster and may or may not use any high-availability mechanisms.
+        Enabling the SMB services:
+        Before communicating with the Ceph MGR module for SMB, it must be enabled first:
+        ```bash
+        $ ceph mgr module enable smb
+        ```
+        Usually, SMB is layered on CephFS subvolumes or subvolume groups. Do not create any SMB shares on top of CephFS
+        root volumes. You can share a subvolume once or more within a single SMB cluster context. However, defining only
+        one SMB share per CephFS subvolume is recommended to keep complexity low.
+    questions_and_answers:
+      - question: |
+          What is Samba and how does it integrate with Ceph?
+        answer: |
+          Samba is an open-source implementation of the Server Message Block (SMB) protocol that provides file and
+          print services across different operating systems, such as Windows, Mac OS (X), and Linux. The Ceph MGR
+          module for SMB integrates Samba with Ceph, providing an interface for deploying and managing clusters of
+          Samba services and SMB shares.
+      - question: |
+          How do you enable the SMB services for Ceph, and what restrictions apply to SMB shares?
+        answer: |
+          To enable SMB services for Ceph, you run the command: `$ ceph mgr module enable smb`. SMB should only be
+          layered on CephFS subvolumes or subvolume groups. It is not recommended to create SMB shares on CephFS
+          root volumes, and each CephFS subvolume should have only one SMB share to keep complexity low.
+      - question: |
+          What are the protocol support limitations for Ceph managed SMB services?
+        answer: |
+          Ceph managed SMB services only support SMB2 and SMB3. The older SMB1 protocol, also known as CIFS, is not
+          supported. Additionally, mixed protocol support for NFS and SMB on the same subvolume is not allowed as it
+          may cause data corruption.
+  - context: |
+        The Ceph MGR module for SMB offers a way to deploy and manage clusters of Samba services and configure SMB
+        shares.A cluster in the SMB manager module refers to a logical management unit that can map to one or more
+        managed Samba services, possibly with high-availability features.
+        Managing SMB clusters involves creating, listing, and removing clusters using imperative commands.
+        To create a new cluster, the `ceph smb cluster create` command is used, specifying the cluster ID and
+        authentication mode, either as user or active-directory. Listing clusters ensures efficient management
+        and uses the `ceph smb cluster ls`command. Clusters can be removed using `ceph smb cluster rm`.
+        SMB shares can be created and managed by mapping CephFS volumes and paths to specific clusters. The `ceph smb
+        share create` command is used to establish shares, specifying parameters like cluster ID, share ID, and CephFS
+        volume. Shares can be removed with the `ceph smb share rm` command, and shares can be listed using
+        `ceph smb share ls`.
+    questions_and_answers:
+      - question: |
+          How can you create an SMB cluster using Ceph?
+        answer: |
+          To create an SMB cluster, use `ceph smb cluster create`, specifying the cluster ID and authentication mode.
+          For example, specify 'user' or 'active-directory' authentication and provide necessary credentials.
+      - question: |
+          What are the commands to manage SMB shares in Ceph?
+        answer: |
+          To create a share, use `ceph smb share create` with details like cluster ID, share ID, and CephFS volume. Use
+          `ceph smb share rm` to remove a share and `ceph smb share ls` to list shares.
+      - question: |
+          What is the purpose of listing SMB clusters in Ceph?
+        answer: |
+          Listing SMB clusters ensures efficient management and robust data protection. Use `ceph smb cluster ls` to
+          view the clusters, with the option to format the output in JSON or YAML.
+      - question: |
+          What parameters are required to create an SMB cluster in Ceph?
+        answer: |
+          Parameters include cluster ID (a unique identifier), authentication mode (user or active-directory), and
+          options like domain realm, user credentials, custom DNS, placement, and clustering preferences.
+      - question: |
+          How can you remove an SMB share from a Ceph cluster?
+        answer: |
+          To remove an SMB share, use the command `ceph smb share rm`, specifying the cluster ID and share ID. This
+          removes the specified share from the cluster.
+      - question: |
+          How do you ensure Ceph's SMB shares are read-only?
+        answer: |
+          To create a read-only SMB share, use the `--readonly` flag with the `ceph smb share create` command. This
+          prevents clients from modifying the shared data.
+      - question: |
+          Can you mix NFS and SMB file services on the same CephFS subvolume?
+        answer: |
+          No, mixing NFS and SMB file services on the same CephFS subvolume is not supported. Doing so can potentially
+          cause data corruption.
+  - context: |
+        Integrating Active Directory with SMB using the imperative method requires setting the `auth_mode` parameter to
+        active-directory and specifying the cluster ID for the AD setup. The `ceph smb cluster create` command creates a
+        new logical cluster identified by the cluster ID and configures it to use Active Directory authentication.
+        Parameters like domain realm, AD join user credentials, custom DNS, placement, and clustering options need to be
+        specified to complete the setup.
+    questions_and_answers:
+      - question: |
+          How do you set up an SMB cluster with Active Directory integration using Ceph?
+        answer: |
+          Use `ceph smb cluster create` with parameters like cluster ID, `auth_mode: active-directory`, domain realm,
+          AD join credentials, custom DNS, placement, and clustering.
+      - question: |
+          What command is used to create an SMB cluster with Active Directory in Ceph?
+        answer: |
+          Command `ceph smb cluster create smb1 active-directory --domain_realm DOMAIN_REALM --domain_join_user_pass
+          <username>%<password> --custom_dns <DNS_IP> --placement <placement_label> --clustering <clustering_option>`.
+      - question: |
+          What parameters are necessary for integrating Active Directory with SMB in Ceph?
+        answer: |
+          Necessary parameters include the cluster ID, `auth_mode: active-directory`, domain realm, domain join user
+          credentials, custom DNS, placement details, and clustering options.
+  - context: |
+        Composing resource spec for the declarative method involves learning how to create SMB clusters and shares
+        using resource spec files in either YAML or JSON format.This method is an alternative to the imperative
+        approach and is supported by the SMB manager module. You use the `ceph smb apply` command to process these
+        specifications, similar to how service specifications are handled with Ceph orchestration using cephadm.
+        To create SMB clusters and shares declaratively:
+        - Compose a resource specification file in YAML or JSON.
+        - Apply the resource file using `ceph smb apply`.
+        Example YAML list of resources:
+        ```yaml
+        - resource_type: ceph.smb.cluster
+          cluster_id: rhumba
+          # ... other fields skipped for brevity ...
+        - resource_type: ceph.smb.cluster
+          cluster_id: salsa
+          # ... other fields skipped for brevity ...
+        - resource_type: ceph.smb.share
+          cluster_id: salsa
+          share_id: foo
+        ```
+        YAML format supporting multiple documents:
+        ```yaml
+        ---
+        resource_type: ceph.smb.cluster
+        cluster_id: rhumba
+        # ... other fields skipped for brevity ...
+        ---
+        resource_type: ceph.smb.cluster
+        cluster_id: salsa
+        # ... other fields skipped for brevity ...
+        ---
+        resource_type: ceph.smb.share
+        cluster_id: salsa
+        share_id: foo
+        ```
+    questions_and_answers:
+      - question: |
+          What is the purpose of composing resource specifications for SMB clusters?
+        answer: |
+          Resource specifications provide a declarative way to configure SMB clusters and shares, as an alternative
+          to the imperative method.
+      - question: |
+          How can you create an SMB cluster using the declarative method?
+        answer: |
+          Use a resource specification file with `resource_type: ceph.smb.cluster` and apply it using `ceph smb apply`.
+      - question: |
+          What are the formats supported for resource specifications in the declarative method?
+        answer: |
+          The formats supported are YAML and JSON.
+      - question: |
+          How do you view SMB cluster details using the declarative method?
+        answer: |
+          Use the `ceph smb show` command to display the resources applied to the Ceph cluster configuration.
+      - question: |
+          How can you remove an SMB share using the declarative method?
+        answer: |
+          Set `intent: removed` in the resource specification for the SMB share and apply it to remove the share.
+  - context: |
+        Integrating Active Directory with SMB using the declarative method involves specifying `auth_mode` as
+        active-directory in the resource specification file. Here's an example:
+        ```yaml
+        resource_type: ceph.smb.cluster
+        cluster_id: tango
+        auth_mode: active-directory
+        domain_settings:
+          realm: DOMAIN1.SINK.TEST
+          join_sources:
+            - source_type: resource
+              ref: join1-admin
+        custom_dns:
+          - "192.168.76.204"
+        placement:
+          count: 1
+        ```
+        Declarative method configuration example: Setting up an SMB cluster and share involves writing a YAML file
+        with the required configurations and applying it.
+        Example YAML:
+        ```yaml
+        resources:
+          - resource_type: ceph.smb.cluster
+            cluster_id: tango
+            auth_mode: active-directory
+            domain_settings:
+              realm: DOMAIN1.SINK.TEST
+              join_sources:
+                - source_type: resource
+                  ref: join1-admin
+            custom_dns:
+              - "192.168.76.204"
+            placement:
+              count: 1
+              label: ilovesmb
+          - resource_type: ceph.smb.join.auth
+            auth_id: join1-admin
+            auth:
+              username: Administrator
+              password: Passw0rd
+          - resource_type: ceph.smb.share
+            cluster_id: tango
+            share_id: cache
+            cephfs:
+              volume: cephfs
+              subvolumegroup: smb1
+              subvolume: cache
+              path: /
+          - resource_type: ceph.smb.share
+            cluster_id: tango
+            share_id: sp1
+            name: "Staff Pics"
+            cephfs:
+              volume: cephfs
+              path: /pics
+              subvolumegroup: smb1
+              subvolume: staff
+        ```
+        Save this to `resources.yaml` and run:
+        ```bash
+        $ ceph smb apply -i resources.yaml
+        ```
+        To remove resources, use `removed.yaml`:
+        ```yaml
+        resources:
+          - resource_type: ceph.smb.cluster
+            cluster_id: tango
+            intent: removed
+          - resource_type: ceph.smb.join.auth
+            auth_id: join1-admin
+            intent: removed
+          - resource_type: ceph.smb.share
+            cluster_id: tango
+            share_id: cache
+            intent: removed
+          - resource_type: ceph.smb.share
+            cluster_id: tango
+            share_id: sp1
+            intent: removed
+        ```
+        Remove resources with:
+        ```bash
+        $ ceph smb apply -i removed.yaml
+        ```
+        SMB File System share access and control: Clients can access shares using SMB support in Windows, MacOS X,
+        or Linux. Use the format `\\<hostname>\<sharename>`, ensuring IP addresses are added in the DNS. If the
+        cluster and client are in the same AD Domain, single sign-on occurs; otherwise, enter a username and password.
+    questions_and_answers:
+      - question: |
+          How do you specify Active Directory authentication for an SMB cluster?
+        answer: |
+          Set `auth_mode: active-directory` in the resource specification file for the SMB cluster.
+      - question: |
+          What is an example configuration for setting up an SMB cluster using Active Directory?
+        answer: |
+          ```yaml
+          resource_type: ceph.smb.cluster
+          cluster_id: tango
+          auth_mode: active-directory
+          domain_settings:
+            realm: DOMAIN1.SINK.TEST
+            join_sources:
+              - source_type: resource
+                ref: join1-admin
+          custom_dns:
+            - "192.168.76.204"
+          placement:
+            count: 1
+          ```
+      - question: |
+          How do you apply the resource specification file to create an SMB cluster and shares?
+        answer: |
+          Use the command `ceph smb apply -i resources.yaml` to apply the resource file.
+      - question: |
+          How can you remove SMB resources using the declarative method?
+        answer: |
+          Create a `removed.yaml` file specifying the intent as `removed` for each resource and use
+          `ceph smb apply -i removed.yaml`.
+      - question: |
+          How can clients connect to an SMB share?
+        answer: |
+          Use `\\<hostname>\<sharename>` in Windows, MacOS X, or Linux. Ensure IP addresses are added in the DNS,
+          and enter credentials if needed.
+document_outline: Teach the Large Language Model about the SMB feature of Ceph
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephadm/services/smb*.md]
