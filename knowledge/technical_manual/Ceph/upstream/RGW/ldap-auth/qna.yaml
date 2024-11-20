@@ -1,0 +1,111 @@
+---
+version: 3
+created_by: Pragadeeswaran Sathyanarayanan
+document_outline: Teach the Large Language Model about LDAP authentication with Ceph Object Gateway
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/radosgw/ldap-auth*.md]
+domain: opensource_storage
+seed_examples:
+  - context: |
+      LDAP Authentication enables the Ceph Object Gateway to delegate user authentication to an LDAP server. This
+      allows the gateway to centralize user management and enhance access control. It extracts user credentials
+      from an access token, constructs a search filter with the username, and verifies the credentials against
+      the LDAP directory using a service account. Proper configuration and adherence to best practices ensure
+      secure and effective integration with LDAP. Custom filters and tokens further refine access control.
+    questions_and_answers:
+      - question: |
+          What is LDAP Authentication in the context of Ceph?
+        answer: |
+          LDAP Authentication delegates user authentication to an LDAP server for centralized management and
+          enhanced security.
+      - question: |
+          How does the Ceph Object Gateway authenticate users using LDAP?
+        answer: |
+          It extracts credentials from a token, constructs a search filter, and verifies them against the LDAP
+          directory
+      - question: |
+          What happens if user credentials do not match any LDAP entries?
+        answer: |
+          If the credentials are invalid or no matching entry is found, the Ceph Object Gateway denies access.
+
+  - context: |
+      The Ceph Object Gateway requires an LDAP server, a service account with search permissions, and user accounts
+      in the LDAP directory for authentication. Administrators must avoid conflicts by ensuring local and LDAP users
+      have unique usernames. LDAP credentials must be secured on the server to prevent unauthorized access. The
+      `ldapsearch` utility can validate service account credentials and verify LDAP connections before configuring
+      the gateway
+    questions_and_answers:
+      - question: |
+          What are the prerequisites for LDAP authentication in Ceph?
+        answer: |
+          A running LDAP server, service account with search permissions, and unique usernames for LDAP and local
+          users are required
+      - question: |
+          Why is securing LDAP credentials important?
+        answer: |
+          Securing credentials prevents unauthorized access by safeguarding sensitive information like passwords.
+      - question: |
+          How can you verify an LDAP service account and connection?
+        answer: |
+          Use the `ldapsearch` utility to test the service account and confirm LDAP connectivity.
+
+  - context: |
+      Configuring the Ceph Object Gateway for LDAP authentication involves setting several parameters in the Ceph
+      configuration file. These include enabling LDAP authentication, specifying the LDAP URI, defining the service
+      account credentials, and setting search base and filters. Administrators can use custom search filters to
+      narrow the list of valid users and enhance access control.
+    questions_and_answers:
+      - question: |
+          How do you enable LDAP authentication in the Ceph Object Gateway?
+        answer: |
+          Set the `rgw_s3_auth_use_ldap` parameter to `true` in the Ceph configuration file.
+      - question: |
+          What is the purpose of the `rgw_ldap_uri` parameter?
+        answer: |
+          It specifies the LDAP server and ensures secure communication by using the `ldaps://` protocol.
+      - question: |
+          How can you restrict user access with custom search filters?
+        answer: |
+          Define filters using attributes like group membership or object class in the `rgw_ldap_searchfilter`
+          parameter.
+
+  - context: |
+      LDAP custom search filters can refine access control by specifying additional conditions for user validation.
+      Partial filters add conditions to the default filter, while complete filters replace the default with custom
+      logic. For example, a filter can limit access to users who are members of specific LDAP groups. The flexibility
+      of filters depends on LDAP server schema and attributes.
+    questions_and_answers:
+      - question: |
+          What is a partial filter in LDAP authentication?
+        answer: |
+          A partial filter adds conditions to the default search filter constructed by the Ceph Object Gateway.
+      - question: |
+          How does a complete filter differ from a partial filter?
+        answer: |
+          A complete filter replaces the default search filter and requires a `@USERNAME@` token for substitution.
+      - question: |
+          Can you restrict access based on group membership using a custom filter?
+        answer: |
+          Yes, by defining filters like
+          `(&(uid=@USERNAME@)(memberOf=cn=ceph-users,ou=groups,dc=example,dc=com))`.
+
+  - context: |
+      LDAP authentication in Ceph requires generating access tokens, which are base-64 encoded JSON structures
+      containing credentials. Tokens can be created using the `radosgw-token` utility or manually by encoding a JSON
+      snippet. Tokens should be used as the `AWS_ACCESS_KEY_ID` in S3 clients and kept secure to avoid exposing
+      credentials.
+    questions_and_answers:
+      - question: |
+          How do you generate an access token for LDAP authentication?
+        answer: |
+          Use the `radosgw-token` utility or manually base-64 encode a JSON structure with user credentials.
+      - question: |
+          How should access tokens be used with S3 clients?
+        answer: |
+          Specify the token as `AWS_ACCESS_KEY_ID` and leave `AWS_SECRET_ACCESS_KEY` empty in the client configuration.
+      - question: |
+          Why is it important to secure LDAP access tokens?
+        answer: |
+          Access tokens contain credentials in clear text, exposing sensitive information if shared or compromised.
