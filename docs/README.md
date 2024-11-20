@@ -2,7 +2,7 @@
 
 The purpose of these documents is to inform users and maintainers on the review/triaging process and different ways to contribute to the taxonomy repository. You can view the following:
 
-- Full layout of taxonomy repository - [Taxonomy diagram](taxonomy_diagram.png)
+- Full layout of taxonomy repository - [Taxonomy diagram](taxonomy_diagram.md)
 - Flowchart of the pull request review process - [Review process](assets/review-process.png)
 - Flowchart of how the backend works with reviewing PRS - [Backend process](assets/backend.png)
 

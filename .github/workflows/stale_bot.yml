@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Harden Runner"
-        uses: step-security/harden-runner@0d381219ddf674d61a7572ddd19d7941e271515c # v2.9.0
+        uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
         with:
           egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
 
@@ -32,18 +32,19 @@ jobs:
         with:
           stale-issue-label: 'stale'
           stale-issue-message: >
-            This issue has been automatically marked as stale because it has not had activity within 60 days.
-            It will be automatically closed if no further activity occurs within 31 days.
+            This issue has been automatically marked as stale because it has not had activity within 30 days.
+            It will be automatically closed if no further activity occurs within the next 31 days.
           close-issue-message: >
             This issue has been automatically closed due to inactivity.
-          days-before-issue-stale: 60
+          days-before-issue-stale: 30
           days-before-issue-close: 31
+          exempt-issue-labels: good-first-issue
           stale-pr-label: 'stale'
           stale-pr-message: >
             This pull request has been automatically marked as stale because it has not had activity within 15 days.
-            It will be automatically closed if no further activity occurs within 31 days.
+            It will be automatically closed if no further activity occurs within the next 31 days.
           close-pr-message: >
             This pull request has been automatically closed due to inactivity.
           days-before-pr-stale: 15
           days-before-pr-close: 31
-          exempt-pr-labels: e2e-ready
+          exempt-pr-labels: community-build-ready

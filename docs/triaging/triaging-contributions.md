@@ -3,7 +3,7 @@
 - [Triaging guide](#triaging-guide)
   - [Basic review questions](#basic-review-questions)
   - [Subjective review questions](#subjective-review-questions)
-- [Triager responsibilities](#triager-reposibilites)
+- [Triager responsibilities](#triager-responsibilities)
   - [Labels](#labels)
   - [Label workflow guide](#label-workflow-guide)
 - [Triaging schedule](#triaging-schedule)
@@ -60,7 +60,7 @@ Triagers review open pull requests and use labels to manage their state and any 
 - sanity check: is this a skill that you can even teach an LLM?
 - generation check: do the teacher-model-generated instructions actually make sense with the skill being added?
 
-## Triager Reposibilites
+## Triager Responsibilities
 
 ### Labels
 
