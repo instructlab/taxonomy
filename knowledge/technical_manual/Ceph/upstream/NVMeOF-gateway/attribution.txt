@@ -1,4 +1,4 @@
-Title of work: Configuring NVMe-oF Initiator for Blazing-Fast Storage on VMware ESXi
+Title of work: NVMe/TCP Initiator for VMware ESX
 Link to work: https://docs.ceph.com/en/squid/rbd/nvmeof-initiator-esx/
 License of the work: Apache 2.0
 Creators name: Krishna Ramaswamy
