@@ -1,0 +1,85 @@
+version: 3
+created_by: Krishna Ramaswamy
+domain: opensource_storage
+seed_examples:
+  - context: |
+        To configure an ESXi host to use the Ceph NVMe-oF gateway, ensure the prerequisites are met. These include an
+        ESXi host running VMware vSphere Hypervisor (version 7.0U3 or later), a deployed Ceph NVMe-oF gateway, a Ceph
+        cluster configured for NVMe-oF, and a defined subsystem within the gateway. Proper setup enables the ESXi host
+        to achieve high-performance storage with reduced latency and increased bandwidth.
+    questions_and_answers:
+      - question: What version of VMware ESXi is required for configuring NVMe-oF?
+        answer: |
+          VMware vSphere Hypervisor (ESXi) 7.0U3 or later is required.
+      - question: What is needed within the Ceph cluster for NVMe-oF functionality?
+        answer: |
+          The Ceph cluster must be configured for NVMe-oF.
+      - question: What does the Ceph NVMe-oF gateway provide?
+        answer: |
+          The Ceph NVMe-oF gateway enables ESXi hosts to use high-performance NVMe-oF storage.
+      - question: What is the purpose of defining a subsystem in the Ceph NVMe-oF gateway?
+        answer: |
+          The subsystem acts as a logical representation for NVMe-oF services, enabling communication with initiators.
+  - context: |
+        Configuring VMware ESXi for NVMe/TCP involves enabling NVMe/TCP on a NIC and tagging a VMKernel NIC to permit
+        NVMe/TCP traffic. This setup is critical to ensure the ESXi host can communicate with NVMe-oF gateways.
+        Enabling NVMe/TCP enhances storage performance by reducing latency and increasing bandwidth.
+    questions_and_answers:
+      - question: How do you enable NVMe/TCP on a NIC in VMware ESXi?
+        answer: |
+          Use the command: `esxcli nvme fabric enable --protocol TCP --device vmnicN`, replacing `N` with the NIC number.
+      - question: How can you tag a VMKernel NIC for NVMe/TCP traffic?
+        answer: |
+          Use the command: `esxcli network ip interface tag add --interface-name vmkN --tagname NVMeTCP`, replacing `N`
+          with the VMkernel ID.
+      - question: Why is enabling NVMe/TCP important for VMware ESXi hosts?
+        answer: |
+          Enabling NVMe/TCP reduces latency and improves bandwidth, enabling high-performance storage access.
+  - context: |
+        Listing and discovering NVMe-oF adapters and subsystems are the initial steps in configuring an ESXi host for
+        NVMe-oF. These steps provide details about available adapters and subsystems, which are essential for connecting
+        the host to the storage infrastructure.
+    questions_and_answers:
+      - question: Which command lists the available NVMe-oF adapters on the ESXi host?
+        answer: |
+          Use the command: `esxcli nvme adapter list`.
+      - question: How do you discover NVMe-oF subsystems from an NVMe/TCP adapter?
+        answer: |
+          Use the command: `esxcli nvme fabric discover -a NVME_TCP_ADAPTER -i GATEWAY_IP -p 4420`.
+      - question: What information is needed to discover an NVMe-oF subsystem?
+        answer: |
+          You need the NVMe/TCP adapter name, the gateway IP address, and the port number (default is 4420).
+  - context: |
+        Connecting to an NVMe-oF gateway subsystem allows VMware ESXi hosts to access storage resources. The connection
+        is established using the subsystem's NQN and gateway details. Properly connecting ensures the storage can be
+        utilized by the host.
+    questions_and_answers:
+      - question: What command connects to the NVMe-oF gateway subsystem?
+        answer: |
+          Use the command: `esxcli nvme connect -a NVME_TCP_ADAPTER -i GATEWAY_IP -p 4420 -s SUBSYSTEM_NQN`.
+      - question: What is the role of the NQN in connecting to an NVMe-oF gateway?
+        answer: |
+          The NQN uniquely identifies the subsystem, enabling the host to establish a connection to the correct resource.
+      - question: How can you verify if the connection to the NVMe-oF gateway is established?
+        answer: |
+          Run the command: `esxcli nvme controller list` and check if the "Connected" column shows "true".
+  - context: |
+        After connecting to an NVMe-oF gateway, listing the controllers and namespaces verifies the setup. It also
+        provides details about available storage resources. The vSphere client can then confirm the proper configuration
+        and readiness of NVMe/TCP disks.
+    questions_and_answers:
+      - question: How do you list NVMe/TCP controllers in VMware ESXi?
+        answer: |
+          Use the command: `esxcli nvme controller list`.
+      - question: Which command lists the namespaces available in an NVMe-oF subsystem?
+        answer: |
+          Use the command: `esxcli nvme namespace list`.
+      - question: How can you verify NVMe/TCP disks in the vSphere client?
+        answer: |
+          Navigate to the ESXi host, go to the "Storage" page under the "Devices" tab, and check if the NVMe/TCP disks
+          are listed.
+document_outline: NVMe/TCP Initiator for VMware ESX
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/rbd/nvmeof-initiator-esx.md]
