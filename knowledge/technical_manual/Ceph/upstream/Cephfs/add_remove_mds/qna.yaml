@@ -1,0 +1,142 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Deploying Metadata Servers (MDS) is essential for each CephFS file system. The cluster operator generally uses
+      automated tools like Rook or Ansible (via ceph-ansible playbooks) to deploy MDS servers. Systemd commands may
+      also be used for deployment on bare-metal systems. Refer to the MDS Configuration Reference for details on
+      configuring metadata servers.
+    questions_and_answers:
+      - question: |
+          What tools are recommended for deploying MDS in CephFS?
+        answer: |
+          Rook and Ansible (via ceph-ansible playbooks) are recommended for deploying MDS in CephFS.
+      - question: |
+          Can systemd commands be used for deploying MDS?
+        answer: |
+          Yes, systemd commands can be used, especially for bare-metal deployments.
+      - question: |
+          Why is the MDS Configuration Reference important?
+        answer: |
+          The MDS Configuration Reference provides details on how to configure metadata servers effectively.
+  - context: |
+      Provisioning hardware for an MDS requires careful consideration of CPU and RAM. MDS is single-threaded and
+      CPU-bound, typically requiring 2-3 CPU cores under heavy loads. High-performance CPUs are recommended for
+      optimal performance, as future versions may utilize multiple cores. RAM is critical for managing a distributed
+      metadata cache. The default cache size is 4GB, but 8GB of RAM is recommended, and 64GB or more may be necessary
+      for large clusters with over 1000 clients. Over-provisioning hardware is a best practice for flexibility and
+      scalability in bare-metal deployments.
+    questions_and_answers:
+      - question: |
+          How many CPU cores are typically required by an MDS under heavy loads?
+        answer: |
+          An MDS typically requires 2-3 CPU cores under heavy loads.
+      - question: |
+          Why is high-performance CPU important for MDS?
+        answer: |
+          High-performance CPUs ensure optimal MDS performance and are necessary for handling client requests \
+            efficiently.
+      - question: |
+          What is the recommended amount of RAM for an MDS?
+        answer: |
+          At least 8GB of RAM is recommended, with 64GB or more for large clusters.
+      - question: |
+          What is the default cache size for MDS?
+        answer: |
+          The default cache size for MDS is 4GB.
+      - question: |
+          Why is over-provisioning hardware recommended for MDS?
+        answer: |
+          Over-provisioning allows flexibility to scale and handle future performance demands.
+
+  - context: |
+      Adding an MDS to a CephFS cluster involves the following steps:
+      1. Create the directory `/var/lib/ceph/mds/ceph-${id}` to store the MDS keyring.
+      2. Generate the authentication key using the command:
+         ```
+         sudo ceph auth get-or-create mds.${id} mon 'profile mds' mgr 'profile mds' mds 'allow *' osd 'allow *' \
+          /var/lib/ceph/mds/ceph-${id}/keyring
+         ```
+      3. Start the MDS service using:
+         ```
+         sudo systemctl start ceph-mds@${id}
+         ```
+      4. Optionally, configure the file system the MDS should join:
+         ```
+         ceph config set mds.${id} mds_join_fs ${fs}
+         ```
+    questions_and_answers:
+      - question: |
+          What is the first step in adding an MDS to a CephFS cluster?
+        answer: |
+          Create the directory `/var/lib/ceph/mds/ceph-${id}` to store the MDS keyring.
+      - question: |
+          How is the authentication key for MDS generated?
+        answer: |
+          Use the command `sudo ceph auth get-or-create mds.${id}` to generate the authentication key.
+      - question: |
+          How do you start the MDS service after adding it?
+        answer: |
+          Start the service with the command `sudo systemctl start ceph-mds@${id}`.
+      - question: |
+          What command is used to configure the file system an MDS should join?
+        answer: |
+          Use `ceph config set mds.${id} mds_join_fs ${fs}` to configure the file system.
+
+  - context: |
+      Removing an MDS from a CephFS cluster involves:
+      1. Optionally, add a replacement MDS to avoid downtime.
+      2. Stop the MDS to be removed using:
+         ```
+         sudo systemctl stop ceph-mds@${id}
+         ```
+      3. Remove the MDS directory:
+         ```
+         sudo rm -rf /var/lib/ceph/mds/ceph-${id}
+         ```
+      The MDS notifies the Ceph monitors of its shutdown, enabling failover to a standby MDS if available.
+    questions_and_answers:
+      - question: |
+          What is the first step in removing an MDS from a CephFS cluster?
+        answer: |
+          Optionally, add a replacement MDS to avoid downtime.
+      - question: |
+          How do you stop the MDS to be removed?
+        answer: |
+          Use the command `sudo systemctl stop ceph-mds@${id}` to stop the MDS.
+      - question: |
+          How do you remove the MDS directory after stopping the service?
+        answer: |
+          Use the command `sudo rm -rf /var/lib/ceph/mds/ceph-${id}` to remove the directory.
+      - question: |
+          What happens when the MDS is stopped?
+        answer: |
+          The MDS notifies the Ceph monitors, enabling failover to a standby MDS if available.
+
+  - context: |
+      CephFS is designed for high availability, supporting standby MDS for rapid failover. To maximize this benefit,
+      deploy MDS daemons across multiple nodes. Co-locating MDS with other Ceph daemons is effective if configured
+      within hardware limits. Proper provisioning of CPU and RAM is necessary for ensuring optimal performance.
+    questions_and_answers:
+      - question: |
+          What is the role of standby MDS in CephFS?
+        answer: |
+          Standby MDS provides rapid failover and ensures high availability.
+      - question: |
+          Why should MDS daemons be distributed across multiple nodes?
+        answer: |
+          Distributing MDS daemons prevents single-node failures and ensures high availability.
+      - question: |
+          Can MDS be co-located with other Ceph daemons?
+        answer: |
+          Yes, MDS can be co-located with other Ceph daemons if hardware limits are respected.
+      - question: |
+          Why is high availability important for CephFS?
+        answer: |
+          High availability ensures that the file system remains accessible even in case of hardware failures.
+document_outline: Teach the Large Language Model about the Deploying MDS of CephFS
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/add-remove-mds*.md]
