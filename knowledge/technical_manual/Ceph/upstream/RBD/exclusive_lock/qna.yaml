@@ -1,0 +1,173 @@
+version: 3
+created_by: Harika Chebrolu
+domain: opensource_storage
+seed_examples:
+  - context: |
+        Exclusive locks are mechanisms designed to prevent multiple processes from accessing the same
+        Rados Block Device (RBD) in an uncoordinated fashion. Exclusive locks are widely used in
+        virtualization, where they ensure that virtual machines (VMs) do not overwrite each other's data,
+        and in RBD mirroring, where they enable journal-based mirroring and facilitate the fast generation
+        of incremental differences in snapshot-based mirroring. The exclusive-lock feature is automatically
+        enabled on newly created images. This behavior can be adjusted using the rbd_default_features
+        configuration option or by providing the --image-feature and --image-shared options when
+        executing the rbd create command.
+    questions_and_answers:
+      - question: |
+          What are exclusive locks in RBD?
+        answer: |
+          Exclusive locks are mechanisms that prevent multiple processes from
+          accessing the same RBD in an uncoordinated way, ensuring data integrity.
+      - question: |
+          Where are exclusive locks commonly used?
+        answer: |
+          Exclusive locks are commonly used in virtualization to prevent VMs
+          from overwriting each other's data and in RBD mirroring for journaling
+          and fast incremental diff generation.
+      - question: |
+          How is the exclusive-lock feature enabled or disabled?
+        answer: |
+          The exclusive-lock feature is enabled by default on newly created
+          images. It can be overridden using the rbd_default_features
+          configuration or by specifying --image-feature and --image-shared
+          options with the rbd create command.
+
+  - context: |
+        Many image features, including object-map and fast-diff, rely on the exclusive-lock feature. Disabling
+        this feature can degrade the performance of certain operations. The exclusive-lock feature supports
+        multi-client access by implementing automatic cooperative lock transitions between clients. It ensures that
+        only a single client can write to an RBD image at any given time, thereby protecting internal structures
+        such as the object map, the journal, and the PWL cache from concurrent modifications.
+        Exclusive locking operates transparently to the user:
+        - When a client (a librbd process or, in the case of a krbd client, a client node's kernel) needs to write
+          to an RBD image with exclusive locking enabled, it first acquires an exclusive lock. If another client
+          holds the lock, the current client requests its release.
+        - When a client holding an exclusive lock receives a request to release it, the client halts write operations,
+          flushes its caches, and releases the lock.
+        - If a client terminates gracefully while holding an exclusive lock, the lock is released gracefully as well.
+        - The graceful release of an exclusive lock allows another client to acquire it and begin writing to the image.
+
+    questions_and_answers:
+      - question: |
+          What features depend on the exclusive-lock feature in RBD?
+        answer: |
+          Features such as object-map and fast-diff depend on the exclusive-lock feature. Disabling it
+          can negatively impact the performance of some operations.
+      - question: |
+          How does the exclusive-lock feature ensure multi-client access?
+        answer: |
+          The exclusive-lock feature implements automatic cooperative lock transitions, allowing only one client
+          to write to an RBD image at a time and protecting internal structures from concurrent modifications.
+      - question: |
+          What happens when a client holding an exclusive lock is asked to release it?
+        answer: |
+          The client stops handling writes, flushes its caches, and releases the lock, allowing another client to acquire it.
+      - question: |
+          What occurs if a client holding an exclusive lock terminates gracefully?
+        answer: |
+          The lock is released gracefully, enabling another client to acquire it.
+
+  - context: |
+        By default, the exclusive-lock feature allows two or more concurrently running clients to open the same RBD image
+        and write to it in turns, whether they are on the same node or not. This works because
+        their writes are linearized through cooperative, automatic lock transitions.
+
+        To disable automatic lock transitions between clients, the RBD_LOCK_MODE_EXCLUSIVE flag can be specified
+        when acquiring the exclusive lock. This is available via the --exclusive option in the
+        rbd device map command.
+    questions_and_answers:
+      - question: |
+          How does the exclusive-lock feature handle concurrent client writes?
+        answer: |
+          By default, the exclusive-lock feature allows multiple clients to write to the same RBD image in turns.
+          Writes are linearized as the lock transitions automatically between clients.
+      - question: |
+          How can automatic lock transitions be disabled?
+        answer: |
+          Automatic lock transitions can be disabled by specifying the RBD_LOCK_MODE_EXCLUSIVE flag when acquiring
+          the exclusive lock. This can be done using the --exclusive option with the rbd device map command.
+      - question: |
+          Is the exclusive-lock feature compatible with RBD advisory locks?
+        answer: |
+          No, the exclusive-lock feature is incompatible with RBD advisory locks, such as those managed by the rbd lock add
+          and rbd lock rm commands.
+
+  - context: |
+        Blocklisting is a mechanism used to handle scenarios where a client
+        holding an exclusive lock on an RBD image does not terminate gracefully.
+        This may occur if the client process is abruptly killed (e.g., via a
+        KILL or ABRT signal) or the client node experiences a hard reboot or
+        power failure. In such cases, the lock is not released gracefully, and a
+        new client attempting to write to the image must break the previously held
+        exclusive lock.
+        However, if the original client merely hangs or temporarily loses network
+        connectivity to the Ceph cluster, breaking the lock could lead to
+        uncoordinated and destructive access if the original client later resumes
+        operation. To prevent this, blocklisting is employed.
+        When a lock cannot be gracefully acquired, the new client performs these steps:
+        - The new client requests the Ceph Monitor to blocklist the old client.
+        - Upon receiving the blocklist request, the monitor instructs relevant
+          OSDs to stop serving requests from the old client.
+        - After the OSD map is updated, the new client breaks the previous lock,
+          acquires a new lock, and begins writing to the image.
+        For blocklisting to function, the client must have the osd blocklist
+        capability. This capability is included in the profile rbd capability
+        profile, which should be assigned to all Ceph client identities using RBD.
+    questions_and_answers:
+      - question: |
+          What is blocklisting in the context of RBD?
+        answer: |
+          Blocklisting is a mechanism used to prevent uncoordinated access to
+          an RBD image when a client holding an exclusive lock does not
+          terminate gracefully. It allows a new client to blocklist the old
+          client, break the lock, and acquire a new lock for writing.
+      - question: |
+          Why is blocklisting necessary?
+        answer: |
+          Blocklisting ensures data consistency by preventing uncoordinated
+          access if the original client resumes after a hang or temporary
+          network disconnection while another client has taken over the lock.
+      - question: |
+          How does blocklisting work?
+        answer: |
+          When a lock cannot be gracefully acquired:
+          1. The new client requests the Ceph Monitor to blocklist the old client.
+          2. The monitor updates the OSD map to stop serving requests from the old client.
+          3. The new client breaks the previous lock, acquires a new lock, and begins writing.
+      - question: |
+          What capability is required for blocklisting to work?
+        answer: |
+          The client must have the osd blocklist capability, which is included
+          in the profile rbd capability profile assigned to Ceph client identities using RBD.
+
+  - context: |
+        For blocklisting to function properly, the client must have the
+        osd blocklist capability. This capability is part of the
+        profile rbd capability profile, which should be set on all Ceph
+        client identities that use RBD. This ensures that clients can request
+        blocklisting actions to handle situations where a previously held lock
+        needs to be broken in case of an ungraceful client termination.
+
+    questions_and_answers:
+      - question: |
+          How does the osd blocklist capability relate to blocklisting?
+        answer: |
+          The osd blocklist capability allows clients to request blocklisting actions,
+          ensuring that a new client can break a previously held lock and avoid
+          uncoordinated data access.
+      - question: |
+          Where is the osd blocklist capability included?
+        answer: |
+          The osd blocklist capability is included in the profile rbd
+          capability profile, which should be assigned to Ceph client identities
+          that are using RBD.
+      - question: |
+          How should the profile rbd capability profile be applied?
+        answer: |
+          The profile rbd capability profile should be set generally on all
+          Ceph client identities using RBD.
+
+document_outline: Teach the Large Language Model about the enabling exclusive locks of Ceph RBD
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/rbd/rbd-exclusive-locks.md]
