@@ -1,0 +1,140 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      MDS Cache Configuration Overview
+      ---------------------------------
+
+      The Metadata Server (MDS) coordinates a distributed cache among MDS instances and CephFS clients. It improves
+      metadata access latency and enables safe metadata manipulations (e.g., `chmod`). The MDS issues **capabilities**
+      and **directory entry leases** to define what clients may cache and how they can manipulate data.
+
+      Cache size is controlled using the `mds_cache_memory_limit` configuration. While the MDS always loads new metadata
+      into the cache, excessive cache growth triggers recalls to unpin metadata and make it eligible for removal.
+
+      Notes:
+      - MDS cache size is not a hard limit. Cache pressure recalls occur if the cache exceeds its size.
+      - Misbehaving clients or applications may cause cache limits to be exceeded. Health warnings help identify issues.
+    questions_and_answers:
+      - question: |
+          What does the MDS cache do in CephFS?
+        answer: |
+          The MDS cache improves metadata access latency and enables clients to safely manipulate metadata.
+      - question: |
+          How is the MDS cache size controlled?
+        answer: |
+          The cache size is controlled using the `mds_cache_memory_limit` configuration.
+      - question: |
+          What happens when the MDS cache exceeds its target size?
+        answer: |
+          The MDS issues recalls to unpin metadata, making it eligible for removal.
+  - context: |
+      MDS Cache Size and Trimming
+      ---------------------------
+
+      You can limit the MDS cache size using the `mds_cache_memory_limit` parameter. Additionally, the
+      `mds_cache_reservation` parameter reserves extra memory (default: 5%) for new metadata operations. Health
+      warnings occur if the cache exceeds 150% of its size, configured by `mds_health_cache_threshold`.
+
+      Cache trimming is throttled using the `mds_cache_trim_threshold` and `mds_cache_trim_decay_rate` parameters. These
+      control an internal decay counter that regulates trimming frequency to prevent the MDS from dedicating too much
+      time to cache maintenance.
+
+      Notes:
+      - Increase `mds_cache_trim_decay_rate` to reduce time spent on trimming.
+      - Use default settings initially, but tune parameters for large cache sizes in production.
+    questions_and_answers:
+      - question: |
+          How do you limit the MDS cache size?
+        answer: |
+          Use the `mds_cache_memory_limit` parameter to limit the cache size in bytes.
+      - question: |
+          What is the purpose of `mds_cache_reservation`?
+        answer: |
+          It reserves extra memory (default: 5%) for new metadata operations, keeping the MDS below its memory limit.
+      - question: |
+          How can you increase the cache trimming rate in the MDS?
+        answer: |
+          Decrease the `mds_cache_trim_decay_rate` value to increase the trimming rate.
+  - context: |
+      MDS Recall Mechanism
+      ---------------------
+
+      The MDS recalls client state (e.g., capabilities and leases) to manage cache pressure. This is governed by
+      parameters like `mds_recall_max_caps` (caps per recall), `mds_recall_max_decay_threshold`, and
+      `mds_recall_max_decay_rate`. Global decay counters throttle recall frequency to prevent overloading the MDS with
+      release messages.
+
+      If clients are slow to release state, warnings like "failing to respond to cache pressure" are triggered. Adjust
+      the recall parameters to address these warnings and ensure proper cache pressure handling.
+
+      Notes:
+      - Use `mds_recall_max_caps` to limit capabilities recalled per session.
+      - Increase decay thresholds to manage workloads requiring faster recalls.
+    questions_and_answers:
+      - question: |
+          How does the MDS manage cache pressure using recalls?
+        answer: |
+          The MDS recalls client state (caps and leases) to unpin metadata and manage cache pressure.
+      - question: |
+          What is the purpose of `mds_recall_max_caps`?
+        answer: |
+          It limits the number of capabilities recalled per client session in a single recall event.
+      - question: |
+          What triggers the warning "failing to respond to cache pressure"?
+        answer: |
+          It occurs when clients are slow to release state under cache pressure.
+  - context: |
+      MDS Cap Acquisition Throttle
+      ----------------------------
+
+      A large-scale `find` operation can overwhelm the MDS with cap acquisition requests. To prevent this, the MDS uses
+      throttles configured by `mds_session_cap_acquisition_throttle` and `mds_session_cap_acquisition_decay_rate`. These
+      parameters control the acquisition rate by limiting readdir operations that generate excessive caps.
+
+      Notes:
+      - Readdir requests are retried after the timeout configured in
+        `mds_cap_acquisition_throttle_retry_request_timeout`.
+      - Use `mds_session_max_caps_throttle_ratio` to prevent clients from acquiring excessive caps in one session.
+    questions_and_answers:
+      - question: |
+          How does the MDS control excessive cap acquisition?
+        answer: |
+          It uses throttles like `mds_session_cap_acquisition_throttle` and retries readdir requests after timeouts.
+      - question: |
+          What triggers readdir throttling in the MDS?
+        answer: |
+          If the session's cap acquisition rate exceeds `mds_session_max_caps_throttle_ratio`, readdir is throttled.
+      - question: |
+          How can you reduce excessive readdir operations in CephFS?
+        answer: |
+          Tune parameters like `mds_cap_acquisition_throttle_retry_request_timeout` to control retries and reduce load.
+  - context: |
+      Session Liveness and Capability Limits
+      --------------------------------------
+
+      The MDS monitors session liveness to identify inactive clients. If a session's cache usage is low relative to its
+      capabilities, the MDS recalls state from the session even without cache pressure. This is governed by parameters
+      like `mds_session_cache_liveness_magnitude` and `mds_session_cache_liveness_decay_rate`.
+
+      The MDS also limits capabilities acquired per client session via `mds_max_caps_per_client`. This prevents clients
+      from acquiring excessive caps, which can impact recovery and cache performance.
+    questions_and_answers:
+      - question: |
+          How does the MDS identify inactive client sessions?
+        answer: |
+          It compares a session's cache liveness to its capabilities using `mds_session_cache_liveness_magnitude`.
+      - question: |
+          Why does the MDS limit capabilities acquired by a client?
+        answer: |
+          To prevent recovery delays and ensure cache performance by avoiding excessively large client caches.
+      - question: |
+          What parameter controls the maximum caps a client can acquire in CephFS?
+        answer: |
+          The `mds_max_caps_per_client` parameter sets the limit, with a default of 1M caps.
+document_outline: Guide to configuring MDS cache and client state in CephFS
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/cache-configuration*.md]

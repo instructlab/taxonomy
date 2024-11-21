@@ -1,0 +1,151 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Overview of `cephfs-top` Utility
+      --------------------------------
+
+      The `cephfs-top` utility is a curses-based Python script that provides a `top(1)`-like interface for real-time
+      monitoring of Ceph Filesystem metrics. It relies on the `stats` plugin in the Ceph Manager module to fetch
+      performance metrics.
+
+      Key Features:
+      - Displays global CephFS metrics in real-time.
+      - Aggregates metrics from MDS rank zero and Ceph Manager.
+      - Requires the `stats` plugin, which must be enabled using `ceph mgr module enable stats`.
+
+    questions_and_answers:
+      - question: |
+          What is the `cephfs-top` utility used for?
+        answer: |
+          It provides a `top(1)`-like interface for real-time monitoring of CephFS performance metrics.
+      - question: |
+          Which plugin does `cephfs-top` rely on for metrics?
+        answer: |
+          It relies on the `stats` plugin in the Ceph Manager module to fetch performance metrics.
+      - question: |
+          How do you enable the `stats` plugin for CephFS monitoring?
+        answer: |
+          Use the command `ceph mgr module enable stats` to enable the `stats` plugin.
+  - context: |
+      Fetching Metrics with `cephfs-top`
+      ----------------------------------
+
+      Metrics for CephFS performance can be fetched using `ceph fs perf stats`. The JSON output includes fields for
+      global counters, per-MDS counters, client metadata, and delayed ranks. Metrics can be fetched for specific
+      clients or MDS ranks.
+
+      Commands:
+      - Fetch metrics for client ID 1234:
+        ```
+        ceph fs perf stats --client_id=1234
+        ```
+      - Fetch metrics for MDS ranks 1 and 2:
+        ```
+        ceph fs perf stats --mds_rank=1,2
+        ```
+
+    questions_and_answers:
+      - question: |
+          How can you fetch CephFS performance metrics in JSON format?
+        answer: |
+          Use the `ceph fs perf stats` command to fetch CephFS performance metrics in JSON format.
+      - question: |
+          How do you fetch metrics for a specific client using `ceph fs perf stats`?
+        answer: |
+          Use the `--client_id=<id>` option, for example, `ceph fs perf stats --client_id=1234`.
+      - question: |
+          How can you fetch metrics for specific MDS ranks?
+        answer: |
+          Use the `--mds_rank=<ranks>` option, for example, `ceph fs perf stats --mds_rank=1,2`.
+  - context: |
+      Description of Metrics in `cephfs-top`
+      --------------------------------------
+
+      `cephfs-top` displays various metrics for Ceph Filesystem performance:
+
+      - `chit`: Capability hit percentage.
+      - `ofiles`: Number of opened files.
+      - `rtio`: Total size of read IOs.
+      - `rlatavg`: Average read latency.
+      - `mlatavg`: Average metadata latency.
+
+      Notes:
+      - `chit` measures file capability hits over total caps.
+      - Latency metrics include average and standard deviation for read, write, and metadata operations.
+
+    questions_and_answers:
+      - question: |
+          What does the `chit` metric in `cephfs-top` represent?
+        answer: |
+          The `chit` metric represents the percentage of file capability hits over the total number of caps.
+      - question: |
+          What does the `rlatavg` metric in `cephfs-top` measure?
+        answer: |
+          The `rlatavg` metric measures the average latency of read IO operations.
+      - question: |
+          Which metrics measure latency in `cephfs-top`?
+        answer: |
+          Metrics include `rlatavg` (read latency), `wlatavg` (write latency), and `mlatavg` (metadata latency).
+  - context: |
+      Command-Line Options in `cephfs-top`
+      ------------------------------------
+
+      The `cephfs-top` utility supports several command-line options for customization:
+
+      - Use `--id <name>` to specify a user other than `client.fstop`.
+      - Use `--cluster <cluster>` to connect to a non-default cluster name.
+      - Use `-d <seconds>` to change the refresh interval (default: 1 second).
+
+      Notes:
+      - The refresh interval must be a positive integer.
+      - The `--dump` option outputs metrics to stdout instead of a curses display.
+
+    questions_and_answers:
+      - question: |
+          How can you specify a non-default user for `cephfs-top`?
+        answer: |
+          Use the `--id <name>` option to specify a non-default user.
+      - question: |
+          What is the default refresh interval for `cephfs-top`?
+        answer: |
+          The default refresh interval is 1 second, configurable using the `-d <seconds>` option.
+      - question: |
+          How can you dump metrics to stdout in `cephfs-top`?
+        answer: |
+          Use the `--dump` option to output metrics to stdout without a curses display.
+  - context: |
+      Interactive Commands in `cephfs-top`
+      ------------------------------------
+
+      `cephfs-top` supports interactive commands for dynamic control:
+
+      - `m`: Displays a menu for filesystem selection.
+      - `s`: Sets the sort field (default: `cap_hit`).
+      - `l`: Limits the number of displayed clients.
+      - `r`: Resets sort field and client limit to defaults.
+      - `q`: Quits the utility or returns to the home screen.
+
+      Notes:
+      - Use arrow keys or mouse for scrolling metrics.
+      - Minimum Python version for `cephfs-top` is 3.6.0.
+
+    questions_and_answers:
+      - question: |
+          How can you change the sort field in `cephfs-top`?
+        answer: |
+          Press `s` to select a new sort field, with `cap_hit` as the default.
+      - question: |
+          Which key limits the number of displayed clients in `cephfs-top`?
+        answer: |
+          Press `l` to set a limit on the number of clients displayed.
+      - question: |
+          What is the minimum Python version required for `cephfs-top`?
+        answer: |
+          The minimum compatible Python version for `cephfs-top` is 3.6.0.
+document_outline: Guide to using `cephfs-top` for Ceph Filesystem monitoring
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/cephfs-top*.md]

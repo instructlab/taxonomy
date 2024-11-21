@@ -1,0 +1,162 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      File Systems
+      ------------
+
+      The names of the file systems, metadata pools, and data pools can only contain characters in the set
+      [a-zA-Z0-9\_-.].To enable creation of multiple file systems, use `ceph fs flag set enable_multiple true`.
+
+      Commands:
+
+      - `ceph fs new <file system name> <metadata pool name> <data pool name>`: Creates a new file system.
+      - `ceph fs ls`: Lists all file systems by name.
+      - `ceph fs lsflags <file system name>`: Lists all flags set on a file system.
+      - `ceph fs dump [epoch]`: Dumps FSMap for the given epoch or current by default.
+      - `ceph fs rm <file system name> [--yes-i-really-mean-it]`: Deletes a CephFS file system.
+
+      Notes:
+      Each file system has its own set of MDS daemons assigned to ranks. Ensure sufficient standby daemons are
+      available.
+    questions_and_answers:
+      - question: |
+          How can you enable multiple file systems in CephFS?
+        answer: |
+          Use `ceph fs flag set enable_multiple true` to enable multiple file systems.
+      - question: |
+          What command is used to create a new file system?
+        answer: |
+          Use `ceph fs new <file system name> <metadata pool name> <data pool name>` to create a new file system.
+      - question: |
+          How do you list all file systems in a Ceph cluster?
+        answer: |
+          Use the command `ceph fs ls` to list all file systems.
+  - context: |
+      File System Operations
+      -----------------------
+
+      Commands:
+
+      - `ceph fs get <file system name>`: Retrieves information about a file system, including settings and ranks.
+      - `ceph fs set <file system name> <var> <val>`: Changes specific settings of a file system.
+      - `ceph fs add_data_pool <file system name> <pool name/id>`: Adds a data pool for file layouts.
+      - `ceph fs rm_data_pool <file system name> <pool name/id>`: Removes a data pool. \
+          Data pools for layouts cannot be removed.
+      - `ceph fs rename <file system name> <new file system name> [--yes-i-really-mean-it]`: \
+          Renames a CephFS file system.
+      - `fs swap <fs1-name> <fs1_id> <fs2-name> <fs2_id> [--swap-fscids=yes|no]`: Swaps names of two file systems.
+
+      Notes:
+      - Before swapping file systems, disable mirroring and set the `refuse_client_sessions` flag for both systems.
+      - Use swap operations for disaster recovery where reconstructed file systems replace damaged ones.
+    questions_and_answers:
+      - question: |
+          How can you retrieve information about a file system in CephFS?
+        answer: |
+          Use the command `ceph fs get <file system name>` to retrieve information about a file system.
+      - question: |
+          What is the purpose of the `fs swap` command?
+        answer: |
+          The `fs swap` command swaps names of two file systems and updates associated application tags for recovery.
+      - question: |
+          How can you rename a CephFS file system?
+        answer: |
+          Use `ceph fs rename <file system name> <new file system name> [--yes-i-really-mean-it]` \
+          to rename a file system.
+  - context: |
+      Settings
+      --------
+
+      Commands:
+
+      - `ceph fs set <fs_name> max_file_size <size in bytes>`: Configures the maximum file size. Default is 1TB.
+
+      Notes:
+      - Setting `max_file_size` to 0 limits clients to only creating empty files.
+      - Large file sizes can impact MDS operations like deletes or stats, causing performance issues.
+
+      Cluster Management
+      ------------------
+
+      Commands:
+
+      - `ceph fs set <fs_name> down true`: Takes the CephFS cluster offline.
+      - `ceph fs set <fs_name> down false`: Brings the CephFS cluster back online.
+
+      Notes:
+      - When taking the cluster offline, MDS daemons flush journals to the metadata pool, and all client I/O is stopped.
+    questions_and_answers:
+      - question: |
+          How can you configure the maximum file size in CephFS?
+        answer: |
+          Use `ceph fs set <fs_name> max_file_size <size in bytes>` to configure the maximum file size.
+      - question: |
+          What is the default maximum file size in CephFS?
+        answer: |
+          The default maximum file size is 1TB.
+      - question: |
+          How do you take a CephFS cluster offline?
+        answer: |
+          Use `ceph fs set <fs_name> down true` to take the cluster offline.
+  - context: |
+      Disaster Recovery and Rapid Operations
+      --------------------------------------
+
+      Commands:
+
+      - `ceph fs fail <fs_name> {--yes-i-really-mean-it}`: \
+          Rapidly deletes a file system or brings it offline for recovery.
+      - `ceph fs set <fs_name> joinable false`: Prevents standbys from activating on the file system.
+      - `ceph mds fail <fs_name>:<n> {--yes-i-really-mean-it}`: Fails all ranks of the MDS.
+
+      Notes:
+      - For all ranks, 0-N, ensure to fail each rank before deleting a file system.
+      - After failure operations, re-enable the joinable flag to bring the cluster back online.
+    questions_and_answers:
+      - question: |
+          What is the purpose of the `ceph fs fail` command?
+        answer: |
+          The `ceph fs fail` command is used to rapidly delete a file system or bring it offline for disaster recovery.
+      - question: |
+          How do you prevent standby daemons from activating on a file system?
+        answer: |
+          Use `ceph fs set <fs_name> joinable false` to prevent standby daemons from activating.
+      - question: |
+          What steps should you take after failing all ranks during disaster recovery?
+        answer: |
+          Re-enable the joinable flag using `ceph fs set <fs_name> joinable true` to bring the cluster back online.
+  - context: |
+      MDS Daemon Management
+      ---------------------
+
+      Commands:
+
+      - `ceph mds fail <gid/name/role>`: Marks an MDS daemon as failed.
+      - `ceph tell mds.<daemon name> command ...`: Sends commands to MDS daemons.
+      - `ceph mds metadata <gid/name/role>`: Retrieves metadata about the specified MDS daemon.
+      - `ceph mds repaired <role>`: Marks a file system rank as repaired.
+      - `ceph mds last-seen <name>`: Retrieves the last-seen information about an MDS daemon.
+
+      Notes:
+      - Commands to manipulate MDS daemons help maintain cluster stability and address potential failures.
+    questions_and_answers:
+      - question: |
+          How can you mark an MDS daemon as failed?
+        answer: |
+          Use the command `ceph mds fail <gid/name/role>` to mark an MDS daemon as failed.
+      - question: |
+          How can you send a command to all MDS daemons?
+        answer: |
+          Use `ceph tell mds.* command ...` to send a command to all MDS daemons.
+      - question: |
+          What does the `ceph mds repaired` command do?
+        answer: |
+          The `ceph mds repaired` command marks a file system rank as repaired.
+
+document_outline: Teach the Large Language Model about the CephFS Administrative commands
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/administration*.md]

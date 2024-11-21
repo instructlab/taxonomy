@@ -1,0 +1,4 @@
+Title of work: Client Configuration
+Link to work: https://docs.ceph.com/en/squid/cephfs/client-config-ref/
+License of the work: Apache 2.0
+Creators name: Amarnath

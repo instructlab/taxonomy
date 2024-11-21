@@ -1,0 +1,149 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Capabilities in CephFS Overview
+      -------------------------------
+
+      In CephFS, clients are granted **capabilities** by the Metadata Server (MDS) to operate on inodes. These
+      capabilities define permissions for various operations on metadata and data. Unlike other network file systems
+      like NFS or SMB, CephFS grants granular capabilities, allowing multiple clients to hold different capabilities
+      on the same inode.
+
+      Notes:
+      - Capabilities are essential for metadata manipulation (e.g., `chmod`) and file operations.
+      - Granular permissions enable efficient multi-client access to the same inode.
+    questions_and_answers:
+      - question: |
+          What are capabilities in CephFS?
+        answer: |
+          Capabilities define permissions granted by the MDS to clients for inode operations on metadata and data.
+      - question: |
+          How are CephFS capabilities different from NFS or SMB?
+        answer: |
+          CephFS grants granular capabilities,allowing multiple clients to hold different permissions on the same inode.
+      - question: |
+          Why are capabilities important in CephFS?
+        answer: |
+          They enable safe and efficient manipulation of metadata and data by clients.
+  - context: |
+      Types of Capabilities
+      ----------------------
+
+      CephFS capabilities include various generic bits that denote permissions:
+
+      - `CEPH_CAP_GSHARED (s)`: Read metadata.
+      - `CEPH_CAP_GEXCL (x)`: Read and update metadata.
+      - `CEPH_CAP_GCACHE (c)`: Cache reads.
+      - `CEPH_CAP_GRD (r)`: Read file data.
+      - `CEPH_CAP_GWR (w)`: Write file data.
+      - `CEPH_CAP_GBUFFER (b)`: Buffer writes.
+      - `CEPH_CAP_GWREXTEND (a)`: Extend end-of-file.
+      - `CEPH_CAP_GLAZYIO (l)`: Perform lazy I/O.
+
+      Shifts are used to denote the part of the inode affected by the capability, such as AUTH, LINK, XATTR, or FILE.
+
+      Notes:
+      - A "pin" capability (`CEPH_CAP_PIN`) simply pins an inode in memory without granting additional permissions.
+    questions_and_answers:
+      - question: |
+          What does the capability `CEPH_CAP_GSHARED` allow?
+        answer: |
+          It allows the client to read metadata.
+      - question: |
+          What is the purpose of the "pin" capability in CephFS?
+        answer: |
+          It pins an inode in memory without granting any additional permissions.
+      - question: |
+          Which capability allows clients to perform lazy I/O in CephFS?
+        answer: |
+          `CEPH_CAP_GLAZYIO` enables lazy I/O operations.
+  - context: |
+      Abilities Granted by Capabilities
+      ----------------------------------
+
+      The specific abilities granted by capabilities include:
+
+      - **PIN**: Pins the inode in memory,enabling access to immutable metadata like inode numbers and symlink contents.
+      - **AUTH**: Access to authentication metadata (e.g., owner, group, mode).
+      - **LINK**: Ability to manipulate the link count of the inode.
+      - **XATTR**: Access or manipulation of extended attributes (e.g., ACLs).
+      - **FILE**: Full access to file data and related metadata (e.g., size, mtime, atime, ctime).
+
+      Notes:
+      - ACLs are stored in xattrs, and accessing them may require the XATTR capability.
+      - The FILE capability covers both data and associated metadata operations.
+    questions_and_answers:
+      - question: |
+          What does the PIN capability enable in CephFS?
+        answer: |
+          It pins the inode in memory, allowing access to immutable metadata like inode numbers and symlink contents.
+      - question: |
+          Which capability is required to access ACLs in CephFS?
+        answer: |
+          The XATTR capability is needed to access or manipulate ACLs, as they are stored in extended attributes.
+      - question: |
+          What does the FILE capability allow in CephFS?
+        answer: |
+          It enables access to file data and associated metadata, such as size, mtime, and atime.
+  - context: |
+      Relationship Between Locks and Capabilities
+      -------------------------------------------
+
+      In CephFS, the MDS uses locks to manage inode access. \
+      Locks include simplelock, scatterlock, filelock, and locallock.
+      Capabilities are granted based on the state of these locks. For example:
+
+      - **Fs**: Once granted, other clients cannot obtain Fw capabilities.
+      - **Fx**: Assigned to the loner client when the lock transitions to LOCK_EXCL state.
+      - **Fr**: Allows read access and prevents other clients from obtaining Fb capabilities.
+      - **Fw**: Grants write access and prevents other clients from obtaining Fsxcb capabilities.
+
+      Notes:
+      - The MDS pre-issues capabilities to reduce latency for clients.
+      - Lock states dictate the type and scope of capabilities issued.
+    questions_and_answers:
+      - question: |
+          What is the role of locks in issuing capabilities in CephFS?
+        answer: |
+          Locks manage inode access, and capabilities are granted based on the state of these locks.
+      - question: |
+          Which capability prevents other clients from obtaining Fw in CephFS?
+        answer: |
+          The Fs capability prevents other clients from obtaining Fw.
+      - question: |
+          What is the purpose of pre-issuing capabilities in CephFS?
+        answer: |
+          Pre-issuing capabilities reduces latency for client operations.
+  - context: |
+      Capabilities for File Operations
+      --------------------------------
+
+      Capabilities related to file operations include:
+
+      - **Fc**: Allows caching of file reads. Typically granted with Fr.
+      - **Fb**: Enables buffering of file writes. Typically granted with Fw.
+      - **Fl**: Permits lazy I/O, relaxing POSIX semantics. Clients manage cache coherency.
+
+      Notes:
+      - Lazy I/O with Fl enables buffered reads/writes even with multiple applications accessing the same file.
+      - Capabilities like Fc and Fb are transitional in some states to avoid forcing cache or buffer drops.
+    questions_and_answers:
+      - question: |
+          What does the Fc capability allow in CephFS?
+        answer: |
+          It allows caching of file reads and is typically granted with the Fr capability.
+      - question: |
+          When is the Fl capability used in CephFS?
+        answer: |
+          Fl enables lazy I/O, allowing buffered reads/writes with relaxed POSIX semantics.
+      - question: |
+          Why are transitional capabilities like Fc and Fb sometimes retained in CephFS?
+        answer: |
+          Retaining them avoids forcing clients to drop caches or buffers during file operations.
+document_outline: Detailed explanation of capabilities and their role in CephFS
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/capabilities*.md]

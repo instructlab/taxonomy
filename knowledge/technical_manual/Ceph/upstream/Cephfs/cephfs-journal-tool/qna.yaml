@@ -1,0 +1,183 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Purpose of `cephfs-journal-tool`
+      --------------------------------
+
+      The `cephfs-journal-tool` is used to inspect, modify, and extract data from CephFS journals. This tool is designed
+      for expert intervention when a CephFS journal becomes damaged and requires restoration.
+
+      Modes:
+      - `journal`: Examines the entire journal (e.g., inspect, import/export, reset operations).
+      - `header`: Examines or modifies the journal header (e.g., get or set attributes).
+      - `event`: Examines or manipulates individual events in the journal.
+
+      Warnings:
+      - This tool is **dangerous** as it directly modifies internal data structures.
+      - Do not use it on an active filesystem. Always create backups before running the tool.
+
+    questions_and_answers:
+      - question: |
+          What is the purpose of the `cephfs-journal-tool`?
+        answer: |
+          The `cephfs-journal-tool` is used to inspect, modify, and extract data from CephFS journals to aid in \
+          restoring
+          a damaged journal.
+      - question: |
+          What are the three modes of operation for `cephfs-journal-tool`?
+        answer: |
+          The three modes are `journal` (entire journal operations), `header` (examining/modifying the journal header),
+          and `event` (manipulating individual journal events).
+      - question: |
+          Why is the `cephfs-journal-tool` considered dangerous?
+        answer: |
+          It directly modifies internal data structures of the file system, which can lead to data loss if used \
+          improperly.
+  - context: |
+      Journal Mode Operations
+      ------------------------
+
+      The `journal` mode is used for operations involving the entire journal:
+
+      - `inspect`: Reports the health of the journal, identifying missing objects or corruption.
+      - `import`/`export`: Reads or writes binary dumps of the journal in a sparse file format.
+      - `reset`: Truncates the journal, discarding its contents.
+
+      Example:
+      ```
+      # cephfs-journal-tool journal inspect
+      Overall journal integrity: DAMAGED
+      Objects missing: 0x1
+      Corrupt regions: 0x400000-ffffffffffffffff
+      ```
+
+      Notes:
+      - Always use `journal export` to create backups before making changes.
+      - Exported files are sparse; use compression tools like `tar` to preserve sparseness.
+
+    questions_and_answers:
+      - question: |
+          What does the `inspect` command in `journal` mode do?
+        answer: |
+          It reports the health of the journal, identifying missing objects or corrupt regions.
+      - question: |
+          How can you create a binary dump of a journal?
+        answer: |
+          Use the `journal export <filename>` command to create a binary dump of the journal.
+      - question: |
+          What happens when you use the `reset` command in `journal` mode?
+        answer: |
+          The `reset` command truncates the journal, discarding all its contents.
+  - context: |
+      Header Mode Operations
+      ----------------------
+
+      The `header` mode allows you to examine or modify attributes of the journal header.
+
+      Commands:
+      - `get`: Outputs the current content of the journal header.
+      - `set`: Modifies attributes such as `trimmed_pos`, `expire_pos`, and `write_pos`.
+
+      Example:
+      ```
+      # cephfs-journal-tool header get
+      { "magic": "ceph fs volume v011",
+        "write_pos": 4274947,
+        "expire_pos": 4194304,
+        "trimmed_pos": 4194303 }
+      ```
+
+      Notes:
+      - Use the `header get` command to inspect the current header state.
+      - The `header set` command is useful for correcting attributes like `trimmed_pos` after recovery.
+
+    questions_and_answers:
+      - question: |
+          What does the `header get` command do?
+        answer: |
+          It outputs the current content of the journal header, including attributes like `write_pos` and `trimmed_pos`.
+      - question: |
+          How can you modify the `trimmed_pos` attribute in the journal header?
+        answer: |
+          Use the `header set trimmed_pos <value>` command to modify the `trimmed_pos` attribute.
+      - question: |
+          Why might you need to use the `header set` command?
+        answer: |
+          To correct attributes like `trimmed_pos`, `expire_pos`, or `write_pos` after journal recovery.
+  - context: |
+      Event Mode Operations
+      ---------------------
+
+      The `event` mode is used to examine or manipulate specific events in the journal.
+
+      Actions:
+      - `get`: Reads events from the journal.
+      - `splice`: Erases events or regions in the journal.
+      - `apply`: Extracts file system metadata from events and applies it to the metadata store.
+
+      Filters:
+      - `--range <start>..<end>`: Includes events within a specific range.
+      - `--path <substring>`: Includes events referring to metadata containing the specified string.
+      - `--inode <inode>`: Includes events referring to a specific inode.
+
+      Example:
+      ```
+      # cephfs-journal-tool event get json --path output.json
+      Wrote output to JSON file 'output.json'
+      ```
+
+    questions_and_answers:
+      - question: |
+          What is the purpose of the `event get` command?
+        answer: |
+          It reads events from the journal and outputs them in formats like JSON, summary, or binary.
+      - question: |
+          How can you filter events by inode using `cephfs-journal-tool`?
+        answer: |
+          Use the `--inode <inode>` filter to include events referring to the specified inode.
+      - question: |
+          What does the `apply` action in `event` mode do?
+        answer: |
+          It extracts file system metadata from events and applies it to the metadata store.
+  - context: |
+      Using Filters and Output Modes
+      ------------------------------
+
+      The `event` mode allows combining filters and output modes for precise event examination:
+
+      Filters:
+      - `--range <start>..<end>`: Includes events within a specific range.
+      - `--path <substring>`: Includes events referring to metadata containing the specified string.
+      - `--client <ID>`: Includes events from a specific client session.
+
+      Output Modes:
+      - `binary`: Writes each event as a binary file.
+      - `json`: Writes all events as a JSON serialized list.
+      - `summary`: Provides a human-readable summary of events.
+
+      Example:
+      ```
+      # cephfs-journal-tool event get --path filebravo1 list
+      0x40785a UPDATE: (openc) dirbravo/filebravo1
+      ```
+
+    questions_and_answers:
+      - question: |
+          How can you filter events by client ID using `cephfs-journal-tool`?
+        answer: |
+          Use the `--client <ID>` filter to include events from a specific client session.
+      - question: |
+          What are the available output modes in `event` mode?
+        answer: |
+          The output modes include `binary`, `json`, `summary`, and `list`.
+      - question: |
+          How can you list events affecting a specific file path?
+        answer: |
+          Use the `--path <substring>` filter with the `event get` command to list relevant events.
+document_outline: Guide to using `cephfs-journal-tool` for managing CephFS journals
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/cephfs-journal-tool*.md]

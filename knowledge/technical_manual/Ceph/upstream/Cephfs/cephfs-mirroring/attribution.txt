@@ -1,0 +1,4 @@
+Title of work: CephFS Snapshot Mirroring
+Link to work: https://docs.ceph.com/en/squid/cephfs/cephfs-mirroring/
+License of the work: Apache 2.0
+Creators name: Amarnath

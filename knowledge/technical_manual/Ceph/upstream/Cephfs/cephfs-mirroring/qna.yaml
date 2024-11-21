@@ -1,0 +1,180 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Overview of CephFS Snapshot Mirroring
+      -------------------------------------
+
+      CephFS supports asynchronous replication of snapshots to a remote CephFS filesystem using the \
+      `cephfs-mirror` tool.
+      Snapshots are mirrored by synchronizing snapshot data and creating a remote snapshot with \
+      the same name as the source.
+
+      Requirements:
+      - Primary and secondary Ceph clusters must be Pacific or later versions.
+      - Both clusters must support snapshot mirroring.
+
+      Notes:
+      - Ensure snapshots are enabled for both clusters.
+      - `cephfs-mirror` ensures consistency by mirroring only supported file types.
+
+    questions_and_answers:
+      - question: |
+          What does CephFS snapshot mirroring do?
+        answer: |
+          It replicates snapshots from a primary CephFS filesystem to a remote CephFS filesystem asynchronously.
+      - question: |
+          Which Ceph versions support snapshot mirroring?
+        answer: |
+          CephFS snapshot mirroring is supported in Pacific or later versions of Ceph clusters.
+      - question: |
+          How does the `cephfs-mirror` tool handle snapshot mirroring?
+        answer: |
+          It mirrors snapshot data and creates a remote snapshot with the same name as the source snapshot.
+  - context: |
+      Configuring Users for CephFS Mirroring
+      --------------------------------------
+
+      To use `cephfs-mirror`, users must be created on both primary and remote clusters with appropriate permissions.
+
+      Commands:
+      - On the primary cluster:
+        ```
+        ceph auth get-or-create client.mirror mon 'profile cephfs-mirror' mds 'allow r' \
+        osd 'allow rw tag cephfs metadata=*, allow r tag cephfs data=*'
+        ```
+      - On the remote cluster:
+        ```
+        ceph fs authorize <fs_name> client.mirror_remote / rwps
+        ```
+
+      Notes:
+      - Users must have write access to metadata pools on the primary cluster.
+      - Users must have full MDS and OSD capabilities on the remote cluster.
+
+    questions_and_answers:
+      - question: |
+          What permissions are required for a user on the primary cluster for mirroring?
+        answer: |
+          The user must have write access to metadata pools and read access to data pools.
+      - question: |
+          How do you authorize a user for mirroring on the remote cluster?
+        answer: |
+          Use the `ceph fs authorize <fs_name> client.mirror_remote / rwps` command.
+      - question: |
+          Why is user creation necessary for CephFS mirroring?
+        answer: |
+          Users with appropriate permissions are required to perform mirroring operations on both clusters.
+  - context: |
+      Deploying and Managing Mirror Daemons
+      -------------------------------------
+
+      Mirror daemons handle the synchronization of snapshots. They can be deployed using `systemctl` or `cephadm`.
+
+      Commands:
+      - Start a mirror daemon using `systemctl`:
+        ```
+        systemctl enable cephfs-mirror@mirror
+        systemctl start cephfs-mirror@mirror
+        ```
+      - Deploy daemons using `cephadm`:
+        ```
+        ceph orch apply cephfs-mirror
+        ceph orch apply cephfs-mirror --placement="3 host1,host2,host3"
+        ```
+
+      Notes:
+      - Multiple daemons can be deployed for high availability.
+      - Daemons share the synchronization load using a distributed policy.
+
+    questions_and_answers:
+      - question: |
+          How can you start a CephFS mirror daemon using `systemctl`?
+        answer: |
+          Use `systemctl enable cephfs-mirror@mirror` and `systemctl start cephfs-mirror@mirror`.
+      - question: |
+          How do you deploy multiple mirror daemons using `cephadm`?
+        answer: |
+          Use the `ceph orch apply cephfs-mirror --placement="<placement-spec>"` command.
+      - question: |
+          Why deploy multiple mirror daemons?
+        answer: |
+          To achieve high availability and share the synchronization load across daemons.
+  - context: |
+      Enabling and Controlling Mirroring
+      ----------------------------------
+
+      Mirroring is managed using the Mirroring module in Ceph, which assigns directories for synchronization.
+
+      Commands:
+      - Enable mirroring for a filesystem:
+        ```
+        ceph mgr module enable mirroring
+        ceph fs snapshot mirror enable <fs_name>
+        ```
+      - Add a directory for mirroring:
+        ```
+        ceph fs snapshot mirror add <fs_name> <path>
+        ```
+      - Remove a directory from mirroring:
+        ```
+        ceph fs snapshot mirror remove <fs_name> <path>
+        ```
+
+      Notes:
+      - Only absolute paths starting from the CephFS root are allowed.
+      - Mirroring for ancestor or descendant directories of already mirrored paths is disallowed.
+
+    questions_and_answers:
+      - question: |
+          How do you enable mirroring for a CephFS filesystem?
+        answer: |
+          Run `ceph mgr module enable mirroring` followed by `ceph fs snapshot mirror enable <fs_name>`.
+      - question: |
+          How can you add a directory for mirroring?
+        answer: |
+          Use the `ceph fs snapshot mirror add <fs_name> <path>` command with an absolute directory path.
+      - question: |
+          Why are ancestor or descendant directories disallowed in mirroring?
+        answer: |
+          To prevent overlapping mirroring configurations and maintain synchronization consistency.
+  - context: |
+      Monitoring and Troubleshooting Mirroring
+      ----------------------------------------
+
+      The mirroring status and metrics can be checked using commands and admin socket interfaces.
+
+      Commands:
+      - Check mirror daemon status:
+        ```
+        ceph fs snapshot mirror daemon status
+        ```
+      - Check peer synchronization status:
+        ```
+        ceph --admin-daemon <socket> fs mirror peer status <fs_name>@<id> <peer_uuid>
+        ```
+
+      Notes:
+      - States include `idle`, `syncing`, and `failed`.
+      - Default failure and retry configurations can be adjusted via \
+      `cephfs_mirror_max_consecutive_failures_per_directory`.
+
+    questions_and_answers:
+      - question: |
+          How do you check the status of a mirror daemon?
+        answer: |
+          Use the `ceph fs snapshot mirror daemon status` command.
+      - question: |
+          What are the possible states of a mirrored directory?
+        answer: |
+          The states are `idle` (not syncing), `syncing` (currently syncing), and `failed` (sync failures occurred).
+      - question: |
+          How can you monitor peer synchronization for a specific directory?
+        answer: |
+          Use the `ceph --admin-daemon <socket> fs mirror peer status <fs_name>@<id> <peer_uuid>` command.
+document_outline: Guide to using CephFS Snapshot Mirroring
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/cephfs-mirroring*.md]

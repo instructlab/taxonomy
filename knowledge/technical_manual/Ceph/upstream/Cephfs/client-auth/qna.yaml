@@ -1,0 +1,149 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Overview of CephFS Client Capabilities
+      --------------------------------------
+
+      CephFS authentication capabilities are designed to restrict clients to the minimum authority necessary for access.
+      Features include:
+      - Path restriction: Restricts client operations within a specified directory.
+      - Layout and quota restriction: Adds control over layout and quota modifications.
+      - Snapshot restriction: Allows snapshot creation/deletion based on specific flags.
+
+      Notes:
+      - Path restriction and layout-modification restriction were introduced in the Jewel release.
+      - Erasure-coded pools are supported only with BlueStore and cannot be used as metadata pools.
+
+    questions_and_answers:
+      - question: |
+          What is the purpose of CephFS client capabilities?
+        answer: |
+          They restrict clients to the minimum authority necessary for access, including path, layout, and snapshot \
+          restrictions.
+      - question: |
+          Which Ceph release introduced path restriction for clients?
+        answer: |
+          Path restriction was introduced in the Jewel release of Ceph.
+      - question: |
+          Can erasure-coded pools be used as metadata pools in CephFS?
+        answer: |
+          No, erasure-coded pools cannot be used as metadata pools in CephFS.
+  - context: |
+      Path Restriction in CephFS
+      --------------------------
+
+      Path restriction ensures that clients can only access and operate within specific directories. The restriction
+      applies to the filesystem hierarchy managed by the MDS but not to the underlying RADOS data. Use the following
+      command to authorize a client for a specific path:
+
+      ```
+      ceph fs authorize <fs_name> client.<client_id> <path> rw
+      ```
+
+      Example:
+      ```
+      ceph fs authorize cephfs client.foo /bar rw
+      ```
+
+    questions_and_answers:
+      - question: |
+          How does path restriction in CephFS work?
+        answer: |
+          It restricts clients to specific directories in the filesystem hierarchy managed by the MDS.
+      - question: |
+          What command is used to restrict a client to a specific directory?
+        answer: |
+          Use `ceph fs authorize <fs_name> client.<client_id> <path> rw` to restrict a client to a specific directory.
+      - question: |
+          Does path restriction apply to RADOS data access?
+        answer: |
+          No, path restriction applies only to the filesystem hierarchy, not to RADOS data access.
+  - context: |
+      Layout and Quota Restrictions
+      -----------------------------
+
+      Clients need the `p` flag in addition to `rw` to modify layouts and quotas. The `p` flag controls special
+      attributes such as those set using `ceph.` extended attributes. Example capabilities:
+
+      - `client.0`: Can modify layouts and quotas with `allow rwp`.
+      - `client.1`: Cannot modify layouts and quotas with `allow rw`.
+
+      Command to authorize layout modification:
+      ```
+      ceph fs authorize <fs_name> client.<client_id> <path> rwp
+      ```
+
+    questions_and_answers:
+      - question: |
+          What additional flag is required to modify layouts and quotas in CephFS?
+        answer: |
+          The `p` flag is required in addition to `rw` to modify layouts and quotas.
+      - question: |
+          How do you authorize a client to modify layouts in a directory?
+        answer: |
+          Use `ceph fs authorize <fs_name> client.<client_id> <path> rwp` to authorize layout modification.
+      - question: |
+          Can a client with `rw` permissions modify layouts or quotas?
+        answer: |
+          No, a client with only `rw` permissions cannot modify layouts or quotas.
+  - context: |
+      Snapshot Restrictions
+      ---------------------
+
+      To create or delete snapshots, clients require the `s` flag in addition to `rw`. When combined with the `p` flag,
+      all flags must appear in alphabetical order in the capability string. Example:
+
+      ```
+      caps: [mds] allow rw, allow rws path=/bar
+      ```
+
+      The `s` flag permits snapshot creation and deletion within the specified path.
+
+    questions_and_answers:
+      - question: |
+          What flag is required to allow snapshot creation or deletion in CephFS?
+        answer: |
+          The `s` flag is required in addition to `rw` to allow snapshot creation or deletion.
+      - question: |
+          How should flags be ordered when specifying client capabilities?
+        answer: |
+          All flags except `rw` must appear in alphabetical order in the capability string.
+      - question: |
+          Can a client create snapshots without the `s` flag?
+        answer: |
+          No, the `s` flag is required for snapshot creation or deletion.
+  - context: |
+      Root Squash and Updating Capabilities
+      -------------------------------------
+
+      Root squash prevents clients with `uid=0` or `gid=0` from performing write operations like `rm` or `mkdir`.
+      To enable root squash, use:
+
+      ```
+      ceph fs authorize <fs_name> client.<client_id> <path> rw root_squash
+      ```
+
+      Notes:
+      - Root squash allows read operations for root clients.
+      - Updating capabilities with `fs authorize` does not remove existing permissions but allows adding new paths.
+
+    questions_and_answers:
+      - question: |
+          What is the purpose of the root squash feature in CephFS?
+        answer: |
+          It prevents clients with `uid=0` or `gid=0` from performing write operations while allowing read access.
+      - question: |
+          How do you enable root squash for a client?
+        answer: |
+          Use `ceph fs authorize <fs_name> client.<client_id> <path> rw root_squash` to enable root squash.
+      - question: |
+          Can `fs authorize` be used to remove existing capabilities?
+        answer: |
+          No, `fs authorize` cannot remove existing capabilities; it only allows adding new capabilities.
+document_outline: Guide to CephFS Client Capabilities
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/client-auth*.md]

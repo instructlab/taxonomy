@@ -1,0 +1,4 @@
+Title of work: CephFS Client Capabilities
+Link to work: https://docs.ceph.com/en/squid/cephfs/client-auth/
+License of the work: Apache 2.0
+Creators name: Amarnath

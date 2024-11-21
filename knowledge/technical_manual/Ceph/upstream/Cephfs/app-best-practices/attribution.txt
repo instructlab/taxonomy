@@ -1,0 +1,4 @@
+Title of work: Application best practices for distributed file systems
+Link to work: https://docs.ceph.com/en/squid/cephfs/app-best-practices/
+License of the work: Apache 2.0
+Creators name: Amarnath

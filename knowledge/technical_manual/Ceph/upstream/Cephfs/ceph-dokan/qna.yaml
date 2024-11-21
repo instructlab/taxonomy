@@ -1,0 +1,158 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Mounting CephFS on Windows
+      --------------------------
+
+      `ceph-dokan` is a tool for mounting CephFS filesystems on Windows. It uses Dokany, a Windows driver for
+      implementing filesystems in userspace, similar to FUSE. The default `ceph.conf` location is
+      `%ProgramData%\ceph\ceph.conf`, and this file is required for configuring mounts.
+
+      To mount a Ceph filesystem, use the command:
+
+      ```
+      ceph-dokan.exe -c c:\ceph.conf -l x
+      ```
+
+      Here, `x` is the drive letter used for the mount. Subdirectories can be mounted using the `--root-path` parameter.
+
+      Notes:
+      - If `ceph.conf` is in the default location, the `-c` argument is optional.
+      - The `-l` argument allows using a drive letter or an empty folder as the mount point.
+    questions_and_answers:
+      - question: |
+          What is `ceph-dokan` used for?
+        answer: |
+          `ceph-dokan` is a tool for mounting CephFS filesystems on Windows using the Dokany driver.
+      - question: |
+          How can you mount a CephFS filesystem on Windows using a drive letter?
+        answer: |
+          Use the command `ceph-dokan.exe -c c:\ceph.conf -l x`, where `x` is the drive letter for the mount.
+      - question: |
+          Is the `-c` argument always required for mounting with `ceph-dokan`?
+        answer: |
+          No, if `ceph.conf` is in the default location `%ProgramData%\ceph\ceph.conf`, the `-c` argument is optional.
+  - context: |
+      Advanced Mounting Options
+      -------------------------
+
+      Additional options are available for customizing CephFS mounts:
+
+      - Use `--client_fs` to specify a non-default filesystem in a multi-FS Ceph cluster.
+      - The `--root-path` parameter allows mounting specific subdirectories.
+      - Flags like `-o --removable` ensure mounts are visible in `Get-Volume` results.
+
+      Example commands:
+
+      ```
+      ceph-dokan --mountpoint C:\mnt\mycephfs2 --client_fs mycephfs2
+      ceph-dokan -l y --root-path /a
+      ```
+
+      Notes:
+      - Specify `uid` and `gid` in `ceph.conf` to customize ownership of the mounted filesystem.
+      - Use `Get-Volume` in PowerShell to view mounted volumes with friendly names.
+    questions_and_answers:
+      - question: |
+          How do you mount a non-default filesystem in a multi-FS Ceph cluster?
+        answer: |
+          Use the `--client_fs` option to specify the filesystem, for example, `--client_fs mycephfs2`.
+      - question: |
+          How can you mount a specific subdirectory of a CephFS filesystem?
+        answer: |
+          Use the `--root-path` parameter, for example, `ceph-dokan -l y --root-path /a`.
+      - question: |
+          How can you make CephFS mounts visible in `Get-Volume` results?
+        answer: |
+          Use the `-o --removable` flags during the mount command.
+  - context: |
+      Credentials for Mounting
+      ------------------------
+
+      Mounting CephFS requires a CephX user. Specify the user with the `--id` or `--name` options.The following commands
+      are equivalent:
+
+      ```
+      ceph-dokan --id foo -l x
+      ceph-dokan --name client.foo -l x
+      ```
+
+      Notes:
+      - Ensure the CephX user's keyring is accessible for authentication.
+      - Use appropriate CephX user credentials to control access to the filesystem.
+    questions_and_answers:
+      - question: |
+          How do you specify a CephX user for mounting CephFS using `ceph-dokan`?
+        answer: |
+          Use the `--id` or `--name` options, for example, \
+          `ceph-dokan --id foo -l x` or `ceph-dokan --name client.foo -l x`.
+      - question: |
+          What is the purpose of the `--id` option in `ceph-dokan`?
+        answer: |
+          The `--id` option specifies the CephX user whose keyring is used for mounting CephFS.
+      - question: |
+          Can you use `client.foo` as a CephX username directly in `ceph-dokan`?
+        answer: |
+          Yes, use the `--name client.foo` option to specify the CephX username.
+  - context: |
+      Unmounting Filesystems
+      ----------------------
+
+      CephFS mounts can be unmounted using `ctrl-c` or the `unmap` command. The exact mount point must be specified:
+
+      ```
+      ceph-dokan.exe unmap -l x
+      ```
+
+      Notes:
+      - Ensure the correct mount point argument is used when unmapping.
+      - The `unmap` command provides a clean way to remove CephFS mounts.
+    questions_and_answers:
+      - question: |
+          How do you unmount a CephFS filesystem mounted with `ceph-dokan`?
+        answer: |
+          Use the `ceph-dokan.exe unmap -l x` command, specifying the exact mount point used during the mapping.
+      - question: |
+          What are the two ways to unmount CephFS filesystems in `ceph-dokan`?
+        answer: |
+          CephFS filesystems can be unmounted using `ctrl-c` or the `unmap` command.
+      - question: |
+          Why is it important to specify the exact mount point when unmapping?
+        answer: |
+          The `unmap` command requires the exact mount point argument to ensure proper unmounting of the filesystem.
+  - context: |
+      Limitations and Troubleshooting
+      -------------------------------
+
+      Current limitations of `ceph-dokan` include:
+
+      - Windows ACLs are ignored, although POSIX ACLs are supported but cannot be modified via the CLI.
+      - CephFS does not support mandatory file locks; Dokany handles locks locally but without cluster-wide enforcement.
+      - Persistent mounting requires external tools like `NSSM` since `ceph-dokan` lacks a `service` command.
+
+      For troubleshooting, consult the `Windows troubleshooting` page.
+
+      Notes:
+      - Dokany's lock handling is limited to local enforcement.
+      - Future enhancements may add commands for modifying file ownership and permissions.
+    questions_and_answers:
+      - question: |
+          What are the current limitations of `ceph-dokan` regarding file locks?
+        answer: |
+          CephFS does not support mandatory file locks;\
+          Dokany handles locks locally but without cluster-wide enforcement.
+      - question: |
+          How can you ensure persistent CephFS mounts on Windows?
+        answer: |
+          Use external tools like `NSSM` since `ceph-dokan` does not currently provide a `service` command.
+      - question: |
+          What should you do if you encounter issues with `ceph-dokan`?
+        answer: |
+          Consult the `Windows troubleshooting` page for guidance on resolving issues.
+document_outline: Guide to using `ceph-dokan` for mounting CephFS on Windows
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/ceph-dokan*.md]

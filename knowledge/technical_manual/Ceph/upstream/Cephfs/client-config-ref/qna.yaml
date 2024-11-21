@@ -1,0 +1,161 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Overview of Client Configuration in CephFS
+      ------------------------------------------
+
+      CephFS clients can dynamically update certain configuration options at runtime. These settings allow \
+      administrators
+      to fine-tune client behavior without requiring a restart. To verify if a configuration is runtime-applicable, use
+      the `config help` command:
+
+      ```
+      ceph config help <option_name>
+      ```
+
+      Example:
+      ```
+      ceph config help debug_client
+      ```
+
+      The command provides details about the option, its default value, and whether it supports runtime updates.
+
+    questions_and_answers:
+      - question: |
+          How can you check if a CephFS client configuration is runtime-applicable?
+        answer: |
+          Use the `ceph config help <option_name>` command to check if a configuration supports runtime updates.
+      - question: |
+          What does the `ceph config help` command provide?
+        answer: |
+          It provides details about the option, its default value, and whether it can be updated at runtime.
+      - question: |
+          Is restarting required for runtime-applicable client configurations in CephFS?
+        answer: |
+          No, runtime-applicable configurations can be updated without restarting the client.
+  - context: |
+      Updating Client Configuration at Runtime
+      ----------------------------------------
+
+      CephFS allows updating client configurations dynamically using the `config set` command. To apply a configuration
+      at runtime:
+
+      ```
+      ceph config set client <option_name> <value>
+      ```
+
+      Example:
+      ```
+      ceph config set client debug_client 20/20
+      ```
+
+      To view currently configured options, use the `config get` command:
+      ```
+      ceph config get client
+      ```
+
+      This updates settings globally for all clients connected to the cluster.
+
+    questions_and_answers:
+      - question: |
+          How can you update a client configuration at runtime in CephFS?
+        answer: |
+          Use the `ceph config set client <option_name> <value>` command to update a configuration at runtime.
+      - question: |
+          What command displays the current client configuration in CephFS?
+        answer: |
+          Use the `ceph config get client` command to view current client configurations.
+      - question: |
+          Does updating a configuration with `config set` affect all clients?
+        answer: |
+          Yes, changes made with `config set` apply globally to all clients connected to the cluster.
+  - context: |
+      Key Client Configuration Options
+      --------------------------------
+
+      CephFS provides a variety of client configuration options to manage caching, permissions, and performance. Common
+      options include:
+
+      - `client_cache_size`: Controls the client-side cache size.
+      - `client_mount_timeout`: Specifies the timeout for mounting the filesystem.
+      - `client_readahead_max_bytes`: Sets the maximum number of bytes for readahead.
+
+      These options can be tuned to optimize client performance based on workload requirements.
+
+    questions_and_answers:
+      - question: |
+          What does the `client_cache_size` option control in CephFS?
+        answer: |
+          It controls the size of the client-side cache in CephFS.
+      - question: |
+          Which option sets the timeout for mounting the filesystem in CephFS?
+        answer: |
+          The `client_mount_timeout` option sets the timeout for mounting the filesystem.
+      - question: |
+          How can you configure the maximum readahead bytes for a CephFS client?
+        answer: |
+          Use the `client_readahead_max_bytes` option to set the maximum readahead bytes.
+  - context: |
+      Developer-Specific Client Configuration Options
+      -----------------------------------------------
+
+      CephFS includes internal developer options for debugging and testing. These are not recommended for general use.
+      Examples include:
+
+      - `client_debug_getattr_caps`: Used for debugging attribute capabilities.
+      - `client_debug_inject_tick_delay`: Simulates delays in the client tick process.
+      - `client_inject_release_failure`: Tests failure scenarios in capability release.
+
+      These options should be used cautiously and are intended for development purposes only.
+
+    questions_and_answers:
+      - question: |
+          What is the purpose of `client_debug_getattr_caps` in CephFS?
+        answer: |
+          It is a developer option used for debugging attribute capabilities in CephFS.
+      - question: |
+          Can `client_debug_inject_tick_delay` be used in production environments?
+        answer: |
+          No, it is an internal developer option meant for testing and debugging.
+      - question: |
+          What does the `client_inject_release_failure` option simulate?
+        answer: |
+          It simulates failure scenarios in capability release for debugging purposes.
+  - context: |
+      Viewing and Managing Client Configurations
+      ------------------------------------------
+
+      CephFS provides a centralized way to view and manage client configurations. Administrators can list all available
+      client configuration options using:
+
+      ```
+      ceph config get client
+      ```
+
+      To apply specific settings for debugging or performance tuning, use the `config set` command. For example:
+      ```
+      ceph config set client debug_client 10/10
+      ```
+
+      Changes are reflected across all clients, ensuring consistency in the cluster.
+
+    questions_and_answers:
+      - question: |
+          How can you list all client configuration options in CephFS?
+        answer: |
+          Use the `ceph config get client` command to list all client configuration options.
+      - question: |
+          Which command is used to set specific client configurations in CephFS?
+        answer: |
+          The `ceph config set client <option_name> <value>` command is used to set client configurations.
+      - question: |
+          Are configuration changes made with `config set` consistent across all clients?
+        answer: |
+          Yes, changes made with `config set` are applied globally and ensure consistency across all clients.
+document_outline: Guide to Configuring CephFS Clients
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/client-config-ref*.md]

@@ -1,0 +1,133 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Application Best Practices for Distributed File Systems
+      -------------------------------------------------------
+
+      CephFS is POSIX compatible and works with applications expecting a POSIX file system. However, as a network file
+      system, CephFS has unique performance characteristics. Application authors can benefit from understanding these
+      differences compared to local file systems.
+
+      ls -l
+      -----
+
+      Running `ls -l` first lists the directory and then calls `stat` on every file, which can be slow for large
+      directories. If detailed metadata for each file isn't necessary, use a plain `ls` for better performance.
+
+    questions_and_answers:
+      - question: |
+          How is CephFS different from a traditional local file system?
+        answer: |
+          CephFS is a network file system and highly consistent, making it unique compared to local file systems like \
+          XFS.
+      - question: |
+          How can you improve performance when using `ls` on a directory?
+        answer: |
+          Use a plain `ls` instead of `ls -l` to avoid unnecessary metadata retrieval for each file.
+      - question: |
+          Why is `ls -l` slower than `ls` for large directories in CephFS?
+        answer: |
+          `ls -l` retrieves additional metadata for each file, which increases execution time for large directories.
+  - context: |
+      Performance Considerations for ls/stat Commands
+      -----------------------------------------------
+
+      ls/stat on Files Being Extended
+      -------------------------------
+
+      If another client is extending files in a directory, `ls -l` may take a long time as the lister waits for the
+      writer to flush data. Avoid running `ls -l` if exact file sizes aren't required.
+
+      Very Large Directories
+      -----------------------
+
+      Directories with millions of files are less efficient than splitting files into smaller directories. Even tools
+      like `ls` can slow down because `readdir` calls don't return ordered results, requiring in-memory sorting.
+
+    questions_and_answers:
+      - question: |
+          Why is `ls -l` slow when files in a directory are being extended?
+        answer: |
+          `ls -l` waits for the writer to flush data to read valid file sizes, causing delays.
+      - question: |
+          What is a drawback of having directories with millions of files in CephFS?
+        answer: |
+          It is less efficient, and tools like `ls` slow down due to sorting overhead.
+      - question: |
+          How can you manage large directories efficiently in CephFS?
+        answer: |
+          Split files into smaller directories to improve efficiency and avoid tool slowdowns.
+  - context: |
+      Hard Links in CephFS
+      --------------------
+
+      Hard links impose a performance cost in CephFS due to the additional housekeeping required. Normal files have
+      inodes embedded in directories, avoiding extra fetches, but hard links require additional lookups.
+
+    questions_and_answers:
+      - question: |
+          Why are hard links slower in CephFS compared to normal files?
+        answer: |
+          Hard links require additional housekeeping and inode lookups, increasing performance overhead.
+      - question: |
+          What makes hard links less efficient in distributed file systems like CephFS?
+        answer: |
+          The intrinsic cost of maintaining multiple references to the same data increases overhead.
+      - question: |
+          What is a key difference between normal files and hard links in CephFS?
+        answer: |
+          Normal files have embedded inodes, while hard links need additional lookups for inode information.
+  - context: |
+      Managing Workload Size in CephFS
+      --------------------------------
+
+      Working Set Size
+      ----------------
+
+      The MDS acts as a metadata cache. Performance decreases if the workload exceeds the cache size set by
+      `mds_cache_memory_limit`. Test workloads with realistic file counts to avoid performance surprises.
+
+    questions_and_answers:
+      - question: |
+          How does workload size affect CephFS performance?
+        answer: |
+          Performance decreases if the workload exceeds the MDS cache size configured by `mds_cache_memory_limit`.
+      - question: |
+          How can you ensure accurate performance testing in CephFS?
+        answer: |
+          Test workloads with realistic file counts to simulate actual usage and prevent performance surprises.
+      - question: |
+          What is the role of the MDS in CephFS?
+        answer: |
+          The MDS acts as a cache for metadata, improving performance when workloads fit within the cache size.
+  - context: |
+      Choosing Between CephFS and Object Gateway
+      ------------------------------------------
+
+      Do You Need a File System?
+      --------------------------
+
+      Ceph includes an object storage interface. For applications requiring flat file collections with simple read/write
+      operations, consider using the Object Gateway instead of CephFS.
+
+    questions_and_answers:
+      - question: |
+          When should you use the Object Gateway instead of CephFS?
+        answer: |
+          Use the Object Gateway for applications needing flat collections of files with simple read/write operations.
+      - question: |
+          What type of workloads is CephFS less suited for?
+        answer: |
+          Workloads requiring flat, large collections of files that are accessed with whole-file read/write operations.
+      - question: |
+          Why might Object Gateway be better for some applications than CephFS?
+        answer: |
+          Object Gateway is optimized for simple read/write operations on flat collections, avoiding file system \
+          overhead.
+document_outline: Best practices for application developers using CephFS
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/app-best-practices*.md]
