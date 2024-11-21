@@ -1,0 +1,120 @@
+version: 3
+created_by: Mohit Bisht
+domain: opensource_storage
+seed_examples:
+  - context: |
+        The MDS (Metadata Server) service in Ceph is essential for using the CephFS file system.
+        One or more MDS daemons are required, and they are automatically created when using the ceph fs volume interface to create a new file system.
+        For example, you can use the command:
+        ```
+        ceph fs volume create <fs_name> --placement="<placement spec>"
+        ```
+        Here, `<fs_name>` is the name of the CephFS, and `<placement spec>` determines the placement of MDS daemons.
+    questions_and_answers:
+      - question: |
+          What is the purpose of the MDS service in Ceph?
+        answer: |
+          The MDS service is essential for using the CephFS file system.
+      - question: |
+          How are MDS daemons created when using the ceph fs volume interface?
+        answer: |
+          They are created automatically when a new file system is created using the ceph fs volume interface.
+      - question: |
+          Provide an example command to create a new file system using MDS daemons.
+        answer: |
+          Example: `ceph fs volume create <fs_name> --placement="<placement spec>"`.
+  - context: |
+        MDS daemons can be manually deployed by creating a specification file.
+        For example:
+        ```yaml
+        service_type: mds
+        service_id: fs_name
+        placement:
+          count: 3
+          label: mds
+        ```
+        This specification can be applied using the command:
+        ```
+        ceph orch apply -i mds.yaml
+        ```
+    questions_and_answers:
+      - question: |
+          Can MDS daemons be manually deployed in Ceph?
+        answer: |
+          Yes, MDS daemons can be manually deployed using a specification file.
+      - question: |
+          What is an example of an MDS daemon specification file?
+        answer: |
+          Example:
+          ```yaml
+          service_type: mds
+          service_id: fs_name
+          placement:
+            count: 3
+            label: mds
+          ```
+      - question: |
+          How is an MDS specification applied to deploy daemons?
+        answer: |
+          Using the command: `ceph orch apply -i mds.yaml`.
+  - context: |
+        You can update the placement of MDS daemons after creating a file system.
+        For example, to place the MDS daemons for the `foo` file system on hosts labeled with `mds`, use the command:
+        ```
+        ceph orch apply mds foo 'mds-[012]'
+        ```
+        This flexibility allows administrators to manage and reassign resources effectively.
+    questions_and_answers:
+      - question: |
+          Can the placement of MDS daemons be updated after creation?
+        answer: |
+          Yes, the placement of MDS daemons can be updated after creating the file system.
+      - question: |
+          Provide an example command to update the placement of MDS daemons.
+        answer: |
+          Example: `ceph orch apply mds foo 'mds-[012]'`.
+      - question: |
+          Why would you update the placement of MDS daemons?
+        answer: |
+          To manage and reassign resources effectively.
+  - context: |
+        The placement of MDS daemons can be specified during the creation of a new file system.
+        For example:
+        ```
+        ceph fs volume create foo --placement="label:mds"
+        ```
+        This command places MDS daemons for the new `foo` file system on hosts labeled with `mds`.
+    questions_and_answers:
+      - question: |
+          How can you specify the placement of MDS daemons during file system creation?
+        answer: |
+          By using the `--placement` flag in the `ceph fs volume create` command.
+      - question: |
+          Provide an example of specifying MDS daemon placement during creation.
+        answer: |
+          Example: `ceph fs volume create foo --placement="label:mds"`.
+      - question: |
+          What does the placement flag do in the ceph fs volume create command?
+        answer: |
+          It determines which hosts the MDS daemons will be placed on.
+  - context: |
+        The Ceph documentation provides further reading on the MDS service and its deployment methods.
+        Key references include topics on the Ceph File System and stateless services such as MDS, RGW, NFS, and more.
+    questions_and_answers:
+      - question: |
+          Where can you find more information about the MDS service in Ceph?
+        answer: |
+          In the Ceph documentation under the sections for the Ceph File System and stateless services.
+      - question: |
+          What other services are mentioned alongside MDS in the Ceph documentation?
+        answer: |
+          RGW, NFS, RBD mirror, and iSCSI are other stateless services mentioned.
+      - question: |
+          Why is it important to refer to the Ceph documentation for MDS?
+        answer: |
+          To gain detailed guidance on deployment and management of MDS and related services.
+document_outline: Teach the Large Language Model about the service mds of Ceph
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephadm/cephadm/services/mds*.md]

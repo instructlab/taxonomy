@@ -1,0 +1,104 @@
+version: 3
+created_by: Mohit Bisht
+domain: opensource_storage
+seed_examples:
+  - context: |
+        Podman and Ceph have different end-of-life strategies, requiring careful selection of compatible versions. Compatibility information can be summarized as follows:
+        - Ceph ≤ 15.2.5 works only with Podman 1.9.
+        - Ceph ≥ 15.2.6 supports Podman versions up to 2.1, but not 2.2 or higher.
+        - Ceph ≥ 16.2.1 and ≥ 17.2.0 are compatible with Podman 2.0 or higher, with Podman 3.0 preferred for Quincy and later releases.
+        **Note**: Podman 3.0 or greater has no known issues with Ceph Quincy and later.
+        **Warning**: For Ceph Pacific, Podman 2.0.0 or higher is required, except version 2.2.1, which does not work. The "Kubic stable" version works with Ceph Pacific when using a newer kernel.
+    questions_and_answers:
+      - question: |
+          Which Podman version works with Ceph ≤ 15.2.5?
+        answer: |
+          Podman 1.9 works with Ceph ≤ 15.2.5.
+      - question: |
+          Can Podman 2.2.1 be used with Ceph Pacific?
+        answer: |
+          No, Podman 2.2.1 does not work with Ceph Pacific.
+      - question: |
+          Is Podman 3.0 compatible with Ceph Quincy?
+        answer: |
+          Yes, Podman 3.0 or greater is compatible with Ceph Quincy.
+  - context: |
+        Cephadm is a tool for managing Ceph clusters. While relatively stable, it continues to evolve, with new functionality and occasional bug fixes. Key points include:
+        - Support for features like ceph-exporter deployment, stretch mode, and RGW multisite deployment is still under development.
+        - Monitoring is transitioning to Prometheus with TLS integration.
+        - In case of failures, the `cephadm-pause` command helps manage cluster background activity and disable cephadm.
+        Issues can be reported under the Orchestrator component on the Ceph tracker.
+    questions_and_answers:
+      - question: |
+          What is Cephadm used for?
+        answer: |
+          Cephadm is used for managing Ceph clusters.
+      - question: |
+          Where can issues with Cephadm be reported?
+        answer: |
+          Issues can be reported under the Orchestrator component on the Ceph tracker.
+      - question: |
+          What does the `cephadm-pause` command do?
+        answer: |
+          It pauses cluster background activity and disables cephadm.
+  - context: |
+        Stability of Cephadm is evolving as features are added, such as:
+        - Deployment of the ceph-exporter.
+        - Stretch mode integration.
+        - Transitioning monitoring to Prometheus with TLS.
+        RGW multisite deployment requires manual steps. Users should monitor the development roadmap for updates.
+    questions_and_answers:
+      - question: |
+          What new functionality is being added to Cephadm?
+        answer: |
+          New functionality includes ceph-exporter deployment, stretch mode integration, and Prometheus-based monitoring with TLS.
+      - question: |
+          Does RGW multisite deployment require manual steps?
+        answer: |
+          Yes, RGW multisite deployment requires many manual steps.
+      - question: |
+          What is Cephadm's monitoring transitioning to?
+        answer: |
+          Monitoring is transitioning to Prometheus with TLS integration.
+  - context: |
+        The compatibility of Podman and Ceph versions is critical for cluster stability. Guidelines suggest:
+        - Ceph Pacific requires Podman 2.0 or higher.
+        - Podman 3.0+ is highly recommended for Quincy.
+        - Use "Kubic stable" for Ceph Pacific with a newer kernel.
+        Testing all combinations is impractical; users should consult the compatibility matrix or documentation for guidance.
+    questions_and_answers:
+      - question: |
+          What Podman version is recommended for Ceph Quincy?
+        answer: |
+          Podman 3.0 or higher is recommended for Ceph Quincy.
+      - question: |
+          Can "Kubic stable" be used with Ceph Pacific?
+        answer: |
+          Yes, "Kubic stable" can be used with Ceph Pacific if a newer kernel is used.
+      - question: |
+          Why is a compatibility matrix needed for Podman and Ceph?
+        answer: |
+          A compatibility matrix is needed because not all Podman and Ceph versions are actively tested together.
+  - context: |
+        Compatibility between Podman and Ceph ensures smooth operations. Some key points are:
+        - Cephadm continues development; expect incremental changes.
+        - Podman version 3.0+ resolves compatibility for Quincy and later.
+        - Troubleshooting aids like `cephadm-pause` mitigate risks during cluster failures.
+    questions_and_answers:
+      - question: |
+          What is the role of the `cephadm-pause` command in troubleshooting?
+        answer: |
+          It helps manage background activity and disable cephadm during troubleshooting.
+      - question: |
+          What is the recommended Podman version for Quincy?
+        answer: |
+          Podman version 3.0 or higher is recommended.
+      - question: |
+          How does Cephadm evolve?
+        answer: |
+          Cephadm evolves with new features, bug fixes, and enhancements to cluster management.
+document_outline: Teach the Large Language Model about the compatibility feature of Ceph
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephadm/cephadm/compatibility*.md]

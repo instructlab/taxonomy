@@ -1,0 +1,84 @@
+version: 3
+created_by: Mohit Bisht
+domain: opensource_storage
+seed_examples:
+  - context: |
+        **api_secure** is a configuration parameter defined in the `iscsi-gateway.cfg` file. It defines the security settings used for API access within the iSCSI gateway configuration.
+    questions_and_answers:
+      - question: |
+          What is `api_secure` used for in the iSCSI configuration?
+        answer: |
+          `api_secure` defines the security settings for API access within the iSCSI gateway configuration.
+      - question: |
+          Where is the `api_secure` parameter defined?
+        answer: |
+          The `api_secure` parameter is defined in the `iscsi-gateway.cfg` file.
+      - question: |
+          Why is `api_secure` important in the iSCSI gateway?
+        answer: |
+          It ensures secure communication and access control for API services in the iSCSI gateway.
+  - context: |
+        **api_user** is a configuration parameter in the `iscsi-gateway.cfg` file. It specifies the user for API authentication in the iSCSI gateway service.
+    questions_and_answers:
+      - question: |
+          What does the `api_user` parameter define?
+        answer: |
+          The `api_user` parameter defines the user for API authentication in the iSCSI gateway.
+      - question: |
+          Where is `api_user` configured?
+        answer: |
+          The `api_user` parameter is configured in the `iscsi-gateway.cfg` file.
+      - question: |
+          Why is `api_user` important in the iSCSI configuration?
+        answer: |
+          It is necessary for authenticating API requests to the iSCSI gateway service.
+  - context: |
+        **Networks** is a list of network identities used in iSCSI configuration to specify the networks on which daemons should bind. If the cluster spans multiple networks, multiple entries can be added to ensure proper binding.
+    questions_and_answers:
+      - question: |
+          What is the purpose of the `networks` parameter in iSCSI configuration?
+        answer: |
+          The `networks` parameter specifies the networks where daemons should bind, ensuring proper network communication.
+      - question: |
+          Can multiple networks be specified in the `networks` list?
+        answer: |
+          Yes, multiple networks can be specified if the cluster is distributed across them.
+      - question: |
+          Where is the `networks` parameter typically used?
+        answer: |
+          It is used in iSCSI configuration to bind daemons to specific network identities.
+  - context: |
+        **placement** refers to the specification of where the daemon should be placed in the cluster. It is used in the iSCSI configuration to define the location of the service.
+    questions_and_answers:
+      - question: |
+          What does `placement` define in the iSCSI configuration?
+        answer: |
+          `Placement` defines where the iSCSI service or daemon should be placed within the cluster.
+      - question: |
+          Where can you find more information about `placement` in iSCSI configuration?
+        answer: |
+          More details about `placement` can be found under Daemon Placement in the documentation.
+      - question: |
+          How does `placement` impact the iSCSI service deployment?
+        answer: |
+          It determines the physical or virtual hosts where the service will run, affecting performance and availability.
+  - context: |
+        **Configuring iSCSI Client** involves setting up the containerized iSCSI service from any host, which allows the initiators to communicate with the iSCSI gateway using TCP/IP to send SCSI commands.
+    questions_and_answers:
+      - question: |
+          What is required to configure an iSCSI client?
+        answer: |
+          The iSCSI client is configured by setting up the iSCSI Initiators to send SCSI commands over TCP/IP to the gateway.
+      - question: |
+          What protocol is used by the iSCSI client to communicate with the gateway?
+        answer: |
+          The iSCSI client uses TCP/IP to send SCSI commands to the iSCSI gateway.
+      - question: |
+          Can the containerized iSCSI service be used from multiple hosts?
+        answer: |
+          Yes, the containerized iSCSI service can be used from any host in the network.
+document_outline: Teach the Large Language Model about the service iscsi of Ceph
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephadm/cephadm/services/iscsi*.md]

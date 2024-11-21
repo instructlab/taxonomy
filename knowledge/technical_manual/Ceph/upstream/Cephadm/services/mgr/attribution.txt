@@ -1,0 +1,4 @@
+Title of work: Cephadm Mgr Service Ceph knowledge
+Link to work: https://docs.ceph.com/en/reef/cephadm/services/mgr/
+License of the work: Apache 2.0
+Creators name: Mohit Bisht

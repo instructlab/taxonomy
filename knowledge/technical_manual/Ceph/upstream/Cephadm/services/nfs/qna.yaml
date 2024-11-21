@@ -1,0 +1,84 @@
+version: 3
+created_by: Mohit Bisht
+domain: opensource_storage
+seed_examples:
+  - context: |
+        **NFS Service in Ceph** only supports the NFSv4 protocol. The easiest way to manage NFS in Ceph is by using the `ceph nfs cluster ...` commands, though for unusual configurations, direct management of Cephadm services might be required.
+    questions_and_answers:
+      - question: |
+          Which version of NFS is supported in Ceph?
+        answer: |
+          Only the NFSv4 protocol is supported in Ceph.
+      - question: |
+          How is NFS typically managed in Ceph?
+        answer: |
+          NFS is typically managed using `ceph nfs cluster ...` commands.
+      - question: |
+          What is required for managing unusual NFS configurations?
+        answer: |
+          For unusual configurations, you need to manage the Cephadm services directly.
+  - context: |
+        **Deploying NFS Ganesha** in Ceph requires deploying the NFS Ganesha daemon(s) through Cephadm. NFS exports are stored in the `.nfs` pool and managed via `ceph nfs export ...` commands and the dashboard.
+    questions_and_answers:
+      - question: |
+          What is the purpose of the NFS Ganesha daemon in Ceph?
+        answer: |
+          The NFS Ganesha daemon is used to handle NFS services in Ceph.
+      - question: |
+          Where are NFS exports stored in Ceph?
+        answer: |
+          NFS exports are stored in the `.nfs` pool.
+      - question: |
+          How do you deploy an NFS Ganesha gateway in Ceph?
+        answer: |
+          You deploy it by running `ceph orch apply nfs <svc_id>`.
+  - context: |
+        **NFS Service Specification** can be applied using a YAML file, which includes service details such as service type, service ID, placement, and specific ports. An example YAML configuration for deploying NFS service with a custom port and multiple hosts is provided.
+    questions_and_answers:
+      - question: |
+          How can NFS service be specified in Ceph?
+        answer: |
+          NFS service can be specified using a YAML configuration file.
+      - question: |
+          What parameters are included in an NFS service YAML specification?
+        answer: |
+          The YAML specification includes service type, service ID, placement, and ports.
+      - question: |
+          How do you apply the NFS service using a YAML file?
+        answer: |
+          You apply it by running `ceph orch apply -i nfs.yaml`.
+  - context: |
+        **High-Availability NFS** deployment in Ceph can be achieved by setting up an ingress service, providing features like a stable virtual IP, fail-over between hosts, and load distribution across multiple NFS gateways.
+    questions_and_answers:
+      - question: |
+          What does the ingress service provide in High-Availability NFS?
+        answer: |
+          The ingress service provides a stable virtual IP, fail-over between hosts, and load distribution.
+      - question: |
+          How do you deploy ingress for an existing NFS service?
+        answer: |
+          You deploy it by using the service specification for ingress with attributes like `virtual_ip` and `frontend_port`.
+      - question: |
+          What is required for the virtual IP in an ingress service?
+        answer: |
+          The virtual IP must include a CIDR prefix length and be configured on the identified network interface.
+  - context: |
+        **NFS with Virtual IP and No HAProxy** can be deployed using Cephadm with keepalived, without needing HAProxy. This setup binds the NFS daemon directly to the virtual IP provided by keepalived.
+    questions_and_answers:
+      - question: |
+          How does NFS with a virtual IP work without HAProxy in Ceph?
+        answer: |
+          It works by using keepalived to provide a virtual IP directly bound to the NFS daemon.
+      - question: |
+          What attribute should be set to true for using keepalived without HAProxy?
+        answer: |
+          The `keepalive_only` attribute should be set to true.
+      - question: |
+          How should the NFS service be configured for using the virtual IP?
+        answer: |
+          The NFS service should include a `virtual_ip` attribute pointing to the specified IP.
+document_outline: Teach the Large Language Model about the service NFS of Ceph
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephadm/cephadm/services/nfs*.md]

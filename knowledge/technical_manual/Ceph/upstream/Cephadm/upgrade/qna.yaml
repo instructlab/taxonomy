@@ -1,0 +1,128 @@
+version: 3
+created_by: Mohit Bisht
+domain: opensource_storage
+seed_examples:
+  - context: |
+        Cephadm allows upgrading Ceph safely from one point release to the next.
+        The automated process adheres to best practices, starting with managers and
+        monitors before other daemons. Each daemon is restarted only if the cluster
+        remains available. During upgrades, the cluster health may show
+        HEALTH_WARNING. Offline hosts pause the upgrade.
+        To upgrade, verify all hosts are online and the cluster is healthy using
+        `ceph -s`. Then, initiate the upgrade with `ceph orch upgrade start --ceph-version <version>`.
+        For example, to upgrade to v16.2.6, use:
+        ```
+        ceph orch upgrade start --ceph-version 16.2.6
+        ```
+    questions_and_answers:
+      - question: |
+          What is the starting point for a Ceph upgrade process?
+        answer: |
+          Ceph upgrades begin with managers and monitors, then proceed to other daemons.
+      - question: |
+          What happens if a host is offline during an upgrade?
+        answer: |
+          If a host is offline, the upgrade process is paused.
+      - question: |
+          How can you verify the cluster’s readiness for an upgrade?
+        answer: |
+          Run the command `ceph -s` to ensure all hosts are online and the cluster is healthy.
+  - context: |
+        Cephadm includes monitoring tools for upgrades. To check if an upgrade is in progress
+        and the target version, use:
+        ```
+        ceph orch upgrade status
+        ```
+        During upgrades, progress bars are visible in the `ceph -s` output. Logs can be viewed
+        with `ceph -W cephadm`. If issues arise, the upgrade can be stopped using:
+        ```
+        ceph orch upgrade stop
+        ```
+    questions_and_answers:
+      - question: |
+          How can you check if a Ceph upgrade is in progress?
+        answer: |
+          Use the command `ceph orch upgrade status` to check upgrade progress.
+      - question: |
+          How can you view logs during a Ceph upgrade?
+        answer: |
+          Run the command `ceph -W cephadm` to view logs.
+      - question: |
+          How do you stop an ongoing Ceph upgrade?
+        answer: |
+          Use the command `ceph orch upgrade stop` to stop the upgrade.
+  - context: |
+        Cephadm supports staggered upgrades, allowing phased upgrades by limiting daemon types,
+        services, or hosts. For instance:
+        ```
+        ceph orch upgrade start --image <image-name> --daemon-types mgr,mon --hosts host1,host2
+        ```
+        Upgrades follow a strict order: mgr -> mon -> crash -> osd -> mds -> rgw -> rbd-mirror ->
+        cephfs-mirror -> iscsi -> nfs. Parameters are validated before upgrades begin.
+    questions_and_answers:
+      - question: |
+          What is a staggered upgrade in Cephadm?
+        answer: |
+          A staggered upgrade involves upgrading components in phases, such as by daemon types, services, or hosts.
+      - question: |
+          What is the default upgrade order in Cephadm?
+        answer: |
+          The order is mgr -> mon -> crash -> osd -> mds -> rgw -> rbd-mirror -> cephfs-mirror -> iscsi -> nfs.
+      - question: |
+          How do you limit an upgrade to specific daemon types?
+        answer: |
+          Use the `--daemon-types` parameter, e.g., `--daemon-types mgr,mon`.
+  - context: |
+        Upgrading to Ceph v16.2.6 or later requires using images from the `quay.io` registry.
+        For Docker-based clusters:
+        ```
+        ceph orch upgrade start --image quay.io/ceph/ceph:v16.2.6
+        ```
+        If container pulling fails (`UPGRADE_FAILED_PULL`), check the registry availability or
+        specify a valid image. Use:
+        ```
+        ceph orch upgrade stop
+        ceph orch upgrade start --ceph-version <version>
+        ```
+    questions_and_answers:
+      - question: |
+          Where are Ceph images hosted from version v16.2.6 onward?
+        answer: |
+          Images are hosted on the `quay.io` registry.
+      - question: |
+          What does the `UPGRADE_FAILED_PULL` alert indicate?
+        answer: |
+          It means Ceph was unable to pull the container image for the target version.
+      - question: |
+          How do you resolve an image pull failure during an upgrade?
+        answer: |
+          Stop the upgrade with `ceph orch upgrade stop` and restart with a valid image.
+  - context: |
+        Cephadm supports custom container images for upgrades. Specify the container image using:
+        ```
+        ceph orch upgrade start --image <custom-image>
+        ```
+        Staggered upgrades require manual steps when upgrading from versions without support.
+        First, manually upgrade manager daemons:
+        ```
+        ceph orch daemon redeploy mgr.example --image <new-image>
+        ```
+        Afterward, use the usual upgrade command with limiting parameters.
+    questions_and_answers:
+      - question: |
+          How do you use custom container images for Ceph upgrades?
+        answer: |
+          Specify the image using the `--image` parameter during the upgrade command.
+      - question: |
+          What is required for staggered upgrades from unsupported versions?
+        answer: |
+          Manually upgrade manager daemons before applying limiting parameters.
+      - question: |
+          How do you redeploy a manager daemon with a custom image?
+        answer: |
+          Use the command `ceph orch daemon redeploy mgr.example --image <new-image>`.
+document_outline: Teach the Large Language Model about the upgrade of Ceph
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephadm/cephadm/upgrade*.md]

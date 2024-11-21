@@ -1,0 +1,4 @@
+Title of work: Cephadm Host-Management Ceph knowledge
+Link to work: https://docs.ceph.com/en/reef/cephadm/host-management/
+License of the work: Apache 2.0
+Creators name: Mohit Bisht

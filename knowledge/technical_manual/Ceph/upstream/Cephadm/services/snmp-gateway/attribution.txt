@@ -1,0 +1,4 @@
+Title of work: Cephadm Snmp-Gateway Service Ceph knowledge
+Link to work: https://docs.ceph.com/en/reef/cephadm/services/snmp-gateway/
+License of the work: Apache 2.0
+Creators name: Mohit Bisht

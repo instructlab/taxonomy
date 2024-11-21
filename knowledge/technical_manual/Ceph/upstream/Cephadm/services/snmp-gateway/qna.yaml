@@ -1,0 +1,124 @@
+version: 3
+created_by: Mohit Bisht
+domain: opensource_storage
+seed_examples:
+  - context: |
+        **SNMP Gateway Service** in Ceph integrates with Prometheus Alertmanager to forward alerts as SNMP notifications.
+        The gateway daemon, from the `snmp_notifier` project, supports SNMP V2c and V3, with V1 not supported.
+        SNMP V3 provides options for authentication only (authNoPriv) or authentication with encryption (authPriv).
+    questions_and_answers:
+      - question: |
+          What is the purpose of the SNMP Gateway Service in Ceph?
+        answer: |
+          It forwards Prometheus Alertmanager alerts as SNMP notifications to a designated SNMP management platform.
+      - question: |
+          Which SNMP versions are supported by the SNMP Gateway Service?
+        answer: |
+          It supports SNMP V2c and V3, but not V1.
+      - question: |
+          What are the SNMP V3 options available in the gateway service?
+        answer: |
+          It offers `authNoPriv` (authentication only) and `authPriv` (authentication with encryption).
+  - context: |
+        SNMP Gateway Service in Ceph deploys one instance by default.
+        You can increase the number of gateway daemons using placement information, but deploying multiple daemons will result in duplicate notifications for the same event.
+    questions_and_answers:
+      - question: |
+          How many SNMP Gateway daemons are deployed by default?
+        answer: |
+          One instance is deployed by default.
+      - question: |
+          What happens if multiple SNMP Gateway daemons are deployed?
+        answer: |
+          The SNMP management platform receives duplicate notifications for the same event.
+      - question: |
+          How can the number of gateway daemons be increased?
+        answer: |
+          By specifying placement information during deployment.
+  - context: |
+        To deploy an SNMP Gateway Service for SNMP V2c, use the following command:
+        ```
+        ceph orch apply snmp-gateway --port 9464 --snmp_version=V2c --destination=192.168.122.73:162 -i ./snmp_creds.yaml
+        ```
+        The credentials file should include:
+        ```yaml
+        snmp_community: public
+        ```
+    questions_and_answers:
+      - question: |
+          How do you deploy an SNMP Gateway Service for SNMP V2c?
+        answer: |
+          By using the command `ceph orch apply snmp-gateway` with the necessary parameters and a credentials file.
+      - question: |
+          What must the credentials file contain for SNMP V2c?
+        answer: |
+          The `snmp_community` value, such as:
+          ```yaml
+          snmp_community: public
+          ```
+      - question: |
+          What is the default port for the SNMP Gateway Service?
+        answer: |
+          The default port is 9464.
+  - context: |
+        For SNMP V3 with authentication only (authNoPriv), use the following command:
+        ```
+        ceph orch apply snmp-gateway --snmp-version=V3 --engine-id=800C53F000000 --destination=192.168.122.1:162 -i ./snmpv3_creds.yml
+        ```
+        The credentials file should include:
+        ```yaml
+        snmp_v3_auth_username: myuser
+        snmp_v3_auth_password: mypassword
+        ```
+    questions_and_answers:
+      - question: |
+          How do you deploy an SNMP Gateway Service for SNMP V3 with authentication only?
+        answer: |
+          By using the command `ceph orch apply snmp-gateway` with `--snmp-version=V3` and a credentials file.
+      - question: |
+          What must the credentials file contain for SNMP V3 with authentication only?
+        answer: |
+          The username and password, such as:
+          ```yaml
+          snmp_v3_auth_username: myuser
+          snmp_v3_auth_password: mypassword
+          ```
+      - question: |
+          What is the purpose of the engine ID in SNMP V3 deployment?
+        answer: |
+          The engine ID is a unique identifier for the device, required for SNMP V3.
+  - context: |
+        SNMP V3 with authentication and encryption (authPriv) requires additional credentials.
+        Example command:
+        ```
+        ceph orch apply snmp-gateway --snmp-version=V3 --engine-id=800C53F000000 --destination=192.168.122.1:162 --privacy-protocol=AES -i ./snmpv3_creds.yml
+        ```
+        Credentials file should include:
+        ```yaml
+        snmp_v3_auth_username: myuser
+        snmp_v3_auth_password: mypassword
+        snmp_v3_priv_password: mysecret
+        ```
+    questions_and_answers:
+      - question: |
+          How do you deploy an SNMP Gateway Service for SNMP V3 with encryption?
+        answer: |
+          By using the command `ceph orch apply snmp-gateway` with `--privacy-protocol` and a credentials file.
+      - question: |
+          What must the credentials file include for SNMP V3 with encryption?
+        answer: |
+          The username, authentication password, and privacy password, such as:
+          ```yaml
+          snmp_v3_auth_username: myuser
+          snmp_v3_auth_password: mypassword
+          snmp_v3_priv_password: mysecret
+          ```
+      - question: |
+          What is the role of the privacy protocol in SNMP V3 deployment?
+        answer: |
+          It enables encryption for secure communication with the SNMP management platform.
+document_outline: Teach the Large Language Model about the service snmp-gateway of Ceph
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephadm/cephadm/services/snmp-gateway*.md]

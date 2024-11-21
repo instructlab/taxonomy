@@ -1,0 +1,90 @@
+version: 3
+created_by: Mohit Bisht
+domain: opensource_storage
+seed_examples:
+  - context: |
+        A typical Ceph cluster has three or five monitor daemons spread across different hosts. Deploying five monitors is recommended if there are five or more nodes in the cluster.
+        Ceph deploys monitor daemons automatically as the cluster grows and scales back as it shrinks. Proper subnet configuration ensures smooth execution of this automatic scaling.
+        The cephadm bootstrap procedure assigns the first monitor to a default subnet. Additional monitors are also assigned to this subnet unless otherwise specified. Manual intervention is unnecessary if all monitors reside in the same subnet.
+    questions_and_answers:
+      - question: |
+          How many monitor daemons are typically in a Ceph cluster?
+        answer: |
+          A Ceph cluster typically has three or five monitor daemons.
+      - question: |
+          What ensures smooth execution of automatic monitor scaling?
+        answer: |
+          Proper subnet configuration ensures smooth automatic scaling.
+      - question: |
+          Where are new monitors assigned by default in Ceph?
+        answer: |
+          New monitors are assigned by default to the subnet designated during cephadm bootstrap.
+  - context: |
+        To designate a specific subnet for Ceph monitor daemons, use the `ceph config set mon public_network` command followed by the subnet in CIDR format.
+        Multiple subnets can be specified as a comma-separated list. Only hosts in the specified subnet(s) can have monitor daemons deployed.
+    questions_and_answers:
+      - question: |
+          How do you designate a subnet for Ceph monitor daemons?
+        answer: |
+          Use the command `ceph config set mon public_network <subnet-in-CIDR-format>`.
+      - question: |
+          Can multiple subnets be designated for Ceph monitors?
+        answer: |
+          Yes, multiple subnets can be specified as a comma-separated list.
+      - question: |
+          What happens if a host is not in the designated subnet?
+        answer: |
+          Monitor daemons cannot be deployed on hosts outside the designated subnet.
+  - context: |
+        Automated monitor deployment can be disabled in Ceph using the command `ceph orch apply mon --unmanaged`.
+        Additional monitors can then be manually deployed by specifying the host and IP address or network. For example, `ceph orch daemon add mon <host:IP-or-network>` places a monitor on a specific host or network.
+    questions_and_answers:
+      - question: |
+          How do you disable automated monitor deployment in Ceph?
+        answer: |
+          Use the command `ceph orch apply mon --unmanaged`.
+      - question: |
+          How are additional monitors manually deployed?
+        answer: |
+          Use the command `ceph orch daemon add mon <host:IP-or-network>`.
+      - question: |
+          Can you specify a network for monitor placement manually?
+        answer: |
+          Yes, you can specify a network manually using its CIDR format.
+  - context: |
+        To move Ceph monitors to a different network, new monitors are deployed on the new network while old monitors are removed from the old network.
+        Use `ceph orch apply mon --unmanaged` to disable automation, then deploy and remove monitors as needed. Update the public network configuration using `ceph config set mon public_network`.
+    questions_and_answers:
+      - question: |
+          How do you move Ceph monitors to a new network?
+        answer: |
+          Deploy new monitors on the new network and remove monitors from the old network.
+      - question: |
+          What command updates the public network configuration?
+        answer: |
+          Use `ceph config set mon public_network <new-network>`.
+      - question: |
+          Should manual intervention be used for moving monitors?
+        answer: |
+          Yes, manual intervention is required to deploy and remove monitors.
+  - context: |
+        CRUSH locations for Ceph monitor daemons can be set using the `mon` service spec. This configuration ensures monitors are assigned specific data center or rack locations.
+        If multiple CRUSH locations are specified, reapplying the spec might be necessary to set the locations properly. Redeployment may also be required for existing monitors to adopt changes.
+    questions_and_answers:
+      - question: |
+          How are CRUSH locations for monitors set in Ceph?
+        answer: |
+          CRUSH locations are set using the `mon` service spec.
+      - question: |
+          What should be done if CRUSH locations fail to apply?
+        answer: |
+          Reapply the service spec or redeploy the affected monitor daemons.
+      - question: |
+          When are CRUSH location flags set for monitors?
+        answer: |
+          Flags are set when cephadm deploys or redeploys the monitors.
+document_outline: Teach the Large Language Model about the service mon of Ceph
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephadm/cephadm/services/mon*.md]

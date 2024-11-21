@@ -1,0 +1,4 @@
+Title of work: Cephadm Compatibility Ceph knowledge
+Link to work: https://docs.ceph.com/en/reef/cephadm/compatibility/
+License of the work: Apache 2.0
+Creators name: Mohit Bisht

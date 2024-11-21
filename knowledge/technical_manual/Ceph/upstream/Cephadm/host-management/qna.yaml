@@ -1,0 +1,96 @@
+version: 3
+created_by: Mohit Bisht
+domain: opensource_storage
+seed_examples:
+  - context: |
+        **HOST MANAGEMENT** deals with managing hosts in a Ceph cluster.
+        Commands are available to list, add, remove, and configure hosts.
+        Filtering options like host-pattern, label, and host-status can be used for customized operations.
+        Cephadm uses SSH for remote connections, with options for custom keys, users, and configurations.
+        Labels and tuning profiles offer fine-grained control of resource usage and placement.
+    questions_and_answers:
+      - question: |
+          What filtering options are available for listing hosts in Ceph?
+        answer: |
+          Filtering options include host-pattern (regex for hostname), label (specific host label), and host-status (e.g., offline, maintenance).
+      - question: |
+          How are hosts added to a Ceph cluster?
+        answer: |
+          Hosts are added by installing the cluster's SSH key on the host and running `ceph orch host add <hostname>`.
+      - question: |
+          What does the _admin label do in Ceph host management?
+        answer: |
+          The _admin label ensures the distribution of client.admin keyrings and ceph.conf files to the host.
+  - context: |
+        **ADDING HOSTS** involves steps to integrate a new host into a Ceph cluster.
+        This includes copying the cluster's public SSH key to the host and informing Ceph of the new host.
+        Labels can be applied during this process to categorize or configure the host's role.
+    questions_and_answers:
+      - question: |
+          What is the purpose of copying the cluster's SSH key when adding hosts?
+        answer: |
+          Copying the cluster's SSH key enables secure communication between Ceph and the host.
+      - question: |
+          How can labels be added to a new host in Ceph?
+        answer: |
+          Labels can be specified during host addition using the `--labels` flag, e.g., `_admin`.
+      - question: |
+          What happens if a host is added without specifying an IP address?
+        answer: |
+          Ceph resolves the hostname via DNS to determine the IP address.
+  - context: |
+        **REMOVING HOSTS** from a Ceph cluster requires draining all daemons before removal.
+        Commands like `ceph orch host drain` help ensure no daemons or OSDs remain active.
+        Special flags allow forced removal of offline hosts with potential data loss warnings.
+    questions_and_answers:
+      - question: |
+          What does the `ceph orch host drain` command do?
+        answer: |
+          It schedules removal of all daemons and OSDs from a host, applying special labels to prevent further deployment.
+      - question: |
+          How are offline hosts removed from a Ceph cluster?
+        answer: |
+          Use `ceph orch host rm <host> --offline --force`, but it may cause data loss.
+      - question: |
+          What additional step is needed to remove a host from the CRUSH map?
+        answer: |
+          Add the `--rm-crush-entry` flag to remove the associated CRUSH bucket.
+  - context: |
+        **SSH CONFIGURATION** in Cephadm manages secure communication with cluster nodes.
+        SSH keys are generated automatically, but custom keys or configurations can be imported.
+        Different users or CA-signed keys can be set up for advanced configurations.
+    questions_and_answers:
+      - question: |
+          How can a custom SSH key be imported into Cephadm?
+        answer: |
+          Use `ceph config-key set mgr/cephadm/ssh_identity_key -i <key>` to import the private key.
+      - question: |
+          Can non-root users be used for Cephadm operations?
+        answer: |
+          Yes, but they must have passwordless sudo access and the cluster SSH key in their authorized_keys file.
+      - question: |
+          What command generates a new SSH key for Cephadm?
+        answer: |
+          Use `ceph cephadm generate-key` to generate a new SSH key.
+  - context: |
+        **OS TUNING PROFILES** allow Cephadm to manage sysctl settings for host performance.
+        YAML specs define profiles, which are applied to hosts and stored in `/etc/sysctl.d/`.
+        Profiles can be modified, viewed, or removed via Cephadm commands.
+    questions_and_answers:
+      - question: |
+          What is the purpose of OS tuning profiles in Ceph?
+        answer: |
+          OS tuning profiles manage sysctl settings to optimize host performance for Ceph operations.
+      - question: |
+          How are tuning profiles applied to hosts?
+        answer: |
+          Use `ceph orch tuned-profile apply -i <profile-file>` to apply profiles defined in YAML format.
+      - question: |
+          How can you view all tuning profiles managed by Cephadm?
+        answer: |
+          Run `ceph orch tuned-profile ls` to list all profiles.
+document_outline: Teach the Large Language Model about the host management feature of Ceph
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephadm/cephadm/host-management*.md]

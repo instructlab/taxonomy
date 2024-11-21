@@ -1,0 +1,94 @@
+version: 3
+created_by: Mohit Bisht
+domain: opensource_storage
+seed_examples:
+  - context: |
+        The cephadm MGR service hosts multiple modules, including the Ceph Dashboard and the cephadm manager module.
+        This service is critical for managing and monitoring the Ceph cluster effectively.
+    questions_and_answers:
+      - question: |
+          What does the cephadm MGR service host?
+        answer: |
+          It hosts multiple modules, including the Ceph Dashboard and the cephadm manager module.
+      - question: |
+          Why is the MGR service important?
+        answer: |
+          The MGR service is important for managing and monitoring the Ceph cluster.
+      - question: |
+          Which dashboard is hosted by the MGR service?
+        answer: |
+            The MGR service hosts the Ceph Dashboard.
+  - context: |
+        The MGR service supports binding to specific IP addresses within a network. This ensures that the service can be configured for use in specified network ranges.
+        For example, the following spec file binds the MGR service to a specific network:
+        ```yaml
+        service_type: mgr
+        networks:
+        - 192.169.142.0/24
+        ```
+    questions_and_answers:
+      - question: |
+          Can the MGR service bind to a specific network?
+        answer: |
+          Yes, the MGR service supports binding to specific IP addresses within a network.
+      - question: |
+          What is an example of binding the MGR service to a network?
+        answer: |
+          Example: `service_type: mgr, networks: - 192.169.142.0/24`.
+      - question: |
+          Why would you bind the MGR service to a specific network?
+        answer: |
+          To ensure the service is restricted to a specified network range.
+  - context: |
+        In scenarios with a single host, cephadm requires at least two MGR daemons to allow for automated upgrades of the cluster.
+        This ensures redundancy and cluster stability during updates.
+    questions_and_answers:
+      - question: |
+          How many MGR daemons are required on a single host?
+        answer: |
+          At least two MGR daemons are required on a single host.
+      - question: |
+          Why are two MGR daemons required in single-host scenarios?
+        answer: |
+          To enable automated upgrades of the cluster.
+      - question: |
+          What does having multiple MGR daemons ensure during updates?
+        answer: |
+          It ensures redundancy and cluster stability.
+  - context: |
+        The cephadm MGR service allows co-location of MGR daemons with other daemons in specific scenarios.
+        This approach optimizes resource utilization, especially in small-scale deployments.
+    questions_and_answers:
+      - question: |
+          What does co-location of MGR daemons mean?
+        answer: |
+          Co-location means deploying MGR daemons alongside other daemons on the same host.
+      - question: |
+          When is co-location of MGR daemons useful?
+        answer: |
+          It is useful in small-scale deployments to optimize resource utilization.
+      - question: |
+          Does cephadm support co-location of MGR daemons?
+        answer: |
+          Yes, cephadm supports co-location of MGR daemons.
+  - context: |
+        The Ceph Manager Daemon supports several advanced features, including standby modules for redundancy.
+        These modules ensure high availability and smooth functioning of the cluster in the event of a failure.
+    questions_and_answers:
+      - question: |
+          What are standby modules in the Ceph Manager Daemon?
+        answer: |
+          Standby modules provide redundancy for high availability.
+      - question: |
+          Why are standby modules important in the MGR service?
+        answer: |
+          They ensure high availability and smooth functioning during failures.
+      - question: |
+          Where can you learn more about standby modules?
+        answer: |
+          Refer to the `mgr_standby_modules` section in the ceph-mgr administrator’s guide.
+document_outline: Teach the Large Language Model about the service mgr of Ceph
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephadm/cephadm/services/mgr*.md]
