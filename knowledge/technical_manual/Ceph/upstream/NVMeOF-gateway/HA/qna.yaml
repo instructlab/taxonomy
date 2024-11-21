@@ -1,0 +1,113 @@
+version: 3
+created_by: Sunil Kumar Nagaraju
+domain: Teach LLM model about NVMeoF Gateway HA
+seed_examples:
+  - context: |
+        High Availability (HA) in NVMeoF provides I/O and control path redundancies for host initiators.
+        HA is also referred to as failover and failback support. The redundancy HA creates is critical
+        to protect against one or more gateway failures. With HA,
+        the host can continue the I/O with only the possibility of performance latency until the failed
+        gateways are back and functioning correctly.
+    questions_and_answers:
+      - question: how to configure HA using NVMeoF gateways?
+        answer: |
+          HA is enabled by default in a gateway group. To utilize HA capabilites, there should be more than
+          one gateways and listeners must be defined against all gateways in NVMeoF subsystems.
+      - question: what is HA failover in NVMeoF?
+        answer: |
+          In HA environment, whenever gateway service fails then IO and control path failover to next available gateway
+          in a gateway group. The next available gateway becomes Active path connection for the failed gateway namespaces.
+      - question: what is HA failback in NVMeoF?
+        answer: |
+          HA failback mechanism refers to a failed gateway service is back to Active state and taking back IO &
+          control path of namespaces served by other gateway in a group.
+      - question: How does failover and failback mechanism work?
+        answer: |
+          In NVMeoF HA environment, there is automatic failover and failback whenever a gateway goes down and comes
+          back respectively. there is no manual procedure to follow.
+  - context: |
+        NVMe-oF gateways are virtually grouped into gateway groups and the HA domain sits within the gateway group.
+        An NVMe-oF gateway group supports four gateways. Each NVMe-oF gateway in the gateway group can be used
+        as a path to any of the subsystems or namespaces that are defined in that gateway group.
+        HA is effective with two or more gateways in a gateway group.
+    questions_and_answers:
+      - question: what is NVMeoF gateway group?
+        answer: |
+          All gateways in a nvmeof service virtually consitutes a gateway group from the time of nvmeof deployment.
+          A gateway group consists of one more gateways deployed in one particular nvmeof service offers capabilities
+          like HA failover and failback support within gateway group.
+      - question: How to use NVMeoF HA effectively?
+        answer: |
+          Defining listener from all gateways under a subsystem create multiple paths to the namespaces at the Initiator,
+          and an active gateway standby path connection would be used by initiator whenever active path fails due
+          to service unavailability.
+      - question: How many gateways can be deployed under one gateway group?
+        answer: |
+          There is no actual limit, But recommendation is to have more than one gateway to support HA and as per testing limits
+          could be scaled to 4 gateways.
+      - question: How many gateway group could be created.
+        answer: |
+          In reef release, user can create only one gateway group with four gateways. But multiple gateway groups
+          are supported in future releases.
+  - context: |
+        The HA feature uses the Active/Standby approach for each namespace. Using Active/Standby means that at any point in time,
+        only one of the NVMe-oF gateways serve I/O from the host to a specific namespace. To properly use all NVMe-oF gateways,
+        each namespace is assigned to a different load-balancing group. The number of load-balancing groups is equal
+        to the number of NVMe-oF gateways in the gateway group.
+    questions_and_answers:
+      - question: How to ensure there are multiple paths to namespace?
+        answer: |
+          By defining listeners from all available gateways under a subsystem would enable multipath to a namespace,
+          which could be used under failover condition. And at initiator, user must enure namespace is connected to all paths
+          using `nvme connect-all` command.
+      - question: what is active/standby connection in a namespace from iniator perspective?
+        answer: |
+          At any point of time, NVMe target would have one active path from the initiator to serve IO. In case of gateway server
+          failure, a standby path will become active for that particular namespace.
+      - question: How are namespaces are associated to gateways initially?
+        answer: |
+          A load balancing group is also referred as a single NVMeoF gateway will be assinged to namespace at the time of creation.
+          To use particular gateway for a namespace forcefully, load-balancing-group must be defined at namespace creation.
+  - context: |
+        The core idea is to provide an Active-Standby access from the initiator to namespace(s). It means that at any point in time,
+        there is only one (and only one) active path from the initiator to a namespace, but there are also standby path(s).
+        The management of the Active-Standby states is being done in a new component that is called NVMeofGwMon.
+        Namespaces in nvme belong to a subsystem. That’s why the management of the entire Active-Standby states is done at a
+        subsystem level. The implementation is using the nvme ANA protocol, which allows to define a state for each path.
+        The state can be Optimized, Inaccessible, or Non-optimized. In our implementation,
+        we set the state to either Optimized (i.e. Active), or Inaccessible (i.e. Standby).
+        The ANA protocol is using ANA groups to define the path states. So per path, we can see different ANA groups,
+        and per ANA group, we can know if the path is Optimized or Inaccessible. ANA group is a collection of namespaces.
+    questions_and_answers:
+      - question: Does all multipath connections would be active all the time?
+        answer: |
+          No. At any single point of time, Only path would be active and other path would be in standby state.
+      - question: who manages Active/standby connections across gateways?
+        answer: |
+          NVMeofGwMon component in cluster is responsible for managing Active-standby connections which would be used for failover
+          and failback based gateway service availability.
+      - question: How does user get to know about active path connection?
+        answer: |
+          There are two important states called Optimized (Active) and Inaccessible (Standby) would provide
+          the current connection states of namespace to gateway.
+  - context: |
+        The NVMeofGwMon should manage the ANA groups in a way that a particular group is alway optimized on at only one path
+        (i.e. GW), and it is Inaccessible on all the other paths (i.e. GWs). The NVMeofGwMon needs to track the liveliness of all the GWs,
+        and handle the gateway availability.
+    questions_and_answers:
+      - question: How Failover is triggered?
+        answer: |
+          A gateway service unavailability noticed by NVMeofGwMon assign new gateway as optimized path for namespaces, and
+          updates all other gateways to change their state accordingly.
+      - question: How Faiback is triggered?
+        answer: |
+          NVMeofGwMon component notices gateway service back to available state and re-assign the optimized path back, and updates
+          all other gateways to change their state accordingly.
+      - question: what are the failure conditions triggers failover?
+        answer: |
+          Gateway service is dead or Gateway node failure or Gateway removal from cephadm.
+document_outline: NVMeoF gateway High availability
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/nvmeof/ha.md]
