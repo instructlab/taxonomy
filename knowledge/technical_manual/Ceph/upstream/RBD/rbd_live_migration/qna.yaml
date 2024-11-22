@@ -1,0 +1,122 @@
+version: 3
+created_by: Sunil Angadi
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Image live-migration in Ceph enables RBD images to be moved between pools, image formats, and layouts within a
+      Ceph cluster, across clusters, or from external data sources. During the process, the source image is deep-copied
+      to the destination, including snapshot history, while preserving sparse allocations. By default, for migrations
+      within the same cluster, the source image is marked read-only, and clients redirect IOs to the target image.
+      The migration can flatten the image to remove dependency on the source's parent or retain sparseness by keeping
+      the link to the source's parent. Live-migration can also operate in an import-only mode, where the source remains
+      unchanged, and the target can link to external sources like S3 objects or HTTP files.
+    questions_and_answers:
+      - question: |
+          What is the purpose of live-migration in Ceph?
+        answer: |
+          Live-migration allows RBD images to move between pools, formats, and layouts within a cluster,
+          across clusters or from external data sources while preserving snapshot history and sparse allocation.
+      - question: |
+          What happens to the source image during live-migration within the same cluster?
+        answer: |
+          The source image is marked read-only, and all client IOs are redirected to the new target image. Optionally,
+          the source's parent link can be preserved or flattened.
+      - question: |
+          What is import-only mode in live-migration?
+        answer: |
+          In import-only mode, the source image remains unmodified, and the target image can link to external data
+          sources such as S3 objects, HTTP files, or NBD exports.
+  - context: |
+      Live-migration consists of three main steps:
+      1. **Prepare Migration:** Creates a target image linked to the source. The source is marked read-only unless in
+         import-only mode. Reads to uninitialized extents in the target redirect to the source, and writes deep-copy
+         the data from the source.
+      2. **Execute Migration:** Background operation that deep-copies all initialized blocks from the source to the
+         target. This step can run while clients use the target.
+      3. **Finish Migration:** Finalizes migration by either committing or aborting. Committing removes cross-links
+         and optionally deletes the source image. Aborting removes the target image.
+    questions_and_answers:
+      - question: |
+          What are the three steps of live-migration?
+        answer: |
+          1. **Prepare Migration:** Creates and links the target to the source.
+          2. **Execute Migration:** Deep-copies initialized blocks to the target.
+          3. **Finish Migration:** Commits or aborts the migration process.
+      - question: |
+          What happens during the "Prepare Migration" step?
+        answer: |
+          The target image is created and linked to the source. Reads to uninitialized extents redirect to the source,
+          and writes deep-copy data from the source. The source is marked read-only unless in import-only mode.
+      - question: |
+          Can clients use the target image during the "Execute Migration" step?
+        answer: |
+          Yes, clients can actively use the target image while the deep-copy operation runs in the background.
+  - context: |
+      The live-migration process is initiated using the `rbd migration prepare` command, which accepts layout options
+      similar to the `rbd create` command. Clients using the source image must be stopped before preparing migration,
+      as the prepare step fails if clients have the source image open in read/write mode. After preparation, the source
+      image moves to the RBD trash, and clients can restart using the target image. The migration status can be checked
+      with `rbd status`, showing the source, destination, and migration state.
+    questions_and_answers:
+      - question: |
+          How is live-migration initiated in Ceph?
+        answer: |
+          Live-migration is initiated using the `rbd migration prepare` command, which creates and links the target
+          image to the source image, marking the source read-only.
+      - question: |
+          Why must clients stop using the source image before preparing migration?
+        answer: |
+          The prepare step fails if the source image is open in read/write mode. Stopping clients ensures the source
+          image can be marked read-only for migration.
+      - question: |
+          How can the migration status be checked?
+        answer: |
+          The migration status can be checked with the `rbd status` command, which shows the source, destination,
+          and current migration state.
+  - context: |
+      Live-migration requires the Ceph Nautilus release or later. Support for external data sources, such as S3 objects
+      or HTTP files, requires the Ceph Pacific release. The `krbd` kernel module does not currently
+      support live-migration.
+      There is also a temporary requirement to stop using the source image before preparing migration, except in
+      import-only mode, to ensure that clients update to use the target image.
+    questions_and_answers:
+      - question: |
+          Which Ceph release introduced live-migration?
+        answer: |
+          Live-migration was introduced in the Ceph Nautilus release.
+      - question: |
+          What is required to support external data sources in live-migration?
+        answer: |
+          Support for external data sources, such as S3 objects or HTTP files, requires the Ceph Pacific release.
+      - question: |
+          Does the `krbd` kernel module support live-migration?
+        answer: |
+          No, the `krbd` kernel module does not currently support live-migration.
+  - context: |
+      During live-migration, the source image moves to the RBD trash to prevent unintended usage.
+      If migration is aborted,the target image is removed.
+      If committed, the source is deleted unless in import-only mode.
+      Errors during migration can be addressed by manually aborting or restarting the process.
+      It is important to monitor migration progress
+      using `rbd status` and resolve issues like insufficient permissions
+      or storage space to avoid failures.
+    questions_and_answers:
+      - question: |
+          What happens to the source image during live-migration?
+        answer: |
+          The source image moves to the RBD trash to avoid unintended usage during migration. It is deleted upon
+          committing the migration unless in import-only mode.
+      - question: |
+          How are errors during live-migration handled?
+        answer: |
+          Errors can be addressed by aborting or restarting the process. It is essential to monitor progress and resolve
+          issues like permissions or storage space problems.
+      - question: |
+          What happens if the migration is aborted?
+        answer: |
+          If the migration is aborted, the target image is removed, and the source image is unlinked from the target.
+document_outline: Teach the Large Language Model about the RBD live migration feature of Ceph
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/rbd/rbd-live-migration*.md]

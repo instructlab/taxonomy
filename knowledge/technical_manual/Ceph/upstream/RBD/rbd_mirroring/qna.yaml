@@ -1,0 +1,122 @@
+version: 3
+created_by: Sunil Angadi
+domain: opensource_storage
+seed_examples:
+  - context: |
+      RBD images can be asynchronously mirrored between two Ceph clusters in two modes:
+      journal-based and snapshot-based. These modes enable crash-consistent replication
+      of RBD images between clusters. Journal-based mirroring uses an RBD journaling
+      feature to replicate every write, ensuring point-in-time consistency. Snapshot-based
+      mirroring relies on periodically scheduled or manually created mirror-snapshots
+      to replicate the delta between images. Both modes ensure crash-consistent replication,
+      but journal-based mirroring offers finer granularity compared to snapshot-based mirroring.
+    questions_and_answers:
+      - question: |
+          What are the two modes of RBD mirroring in Ceph?
+        answer: |
+          RBD mirroring in Ceph can be performed in two modes:
+          1. **Journal-based:** Uses the RBD journaling feature for point-in-time replication.
+          2. **Snapshot-based:** Relies on mirror-snapshots to replicate deltas between images.
+      - question: |
+          How does journal-based RBD mirroring work?
+        answer: |
+          Journal-based RBD mirroring uses an RBD journaling feature to replicate every write to an image.
+          The write is first recorded to a journal before being applied to the image. The remote cluster
+          reads the journal and replays the updates on its local copy, ensuring crash consistency.
+      - question: |
+          How does snapshot-based RBD mirroring work?
+        answer: |
+          Snapshot-based RBD mirroring uses periodically scheduled or manually created mirror-snapshots
+          to replicate crash-consistent RBD images. The remote cluster copies deltas between snapshots
+          using the RBD `fast-diff` feature to quickly determine updated data blocks.
+  - context: |
+      RBD mirroring can be configured for one-way or two-way replication using the `rbd` command.
+      One-way replication mirrors data from a primary cluster to a secondary cluster, with the
+      `rbd-mirror` daemon running on the secondary cluster. In two-way replication, data is mirrored
+      between primary and non-primary images across clusters, with the `rbd-mirror` daemon running on
+      both clusters. The daemon must be able to connect to both clusters, and sufficient network
+      bandwidth is required for the mirroring workload.
+    questions_and_answers:
+      - question: |
+          What are the replication configurations available in RBD mirroring?
+        answer: |
+          RBD mirroring supports:
+          1. **One-way replication:** Data is mirrored from a primary cluster to a secondary cluster.
+          2. **Two-way replication:** Data is mirrored between primary and non-primary images across clusters.
+      - question: |
+          Where does the `rbd-mirror` daemon run in one-way and two-way replication?
+        answer: |
+          - In **one-way replication**, the `rbd-mirror` daemon runs only on the secondary cluster.
+          - In **two-way replication**, the `rbd-mirror` daemon runs on both clusters.
+      - question: |
+          What are the network requirements for RBD mirroring?
+        answer: |
+          The network must allow the `rbd-mirror` daemon to connect to both local and remote clusters simultaneously,
+          and sufficient bandwidth is required to handle the mirroring workload.
+  - context: |
+      Pool-level configuration is required to enable RBD mirroring. This includes enabling mirroring for
+      a specific pool or subset of images within the pool using the `rbd` command. Both peer clusters,
+      such as "site-a" and "site-b," must be configured for mirroring. Configuration requires the
+      `rbd-mirror` daemon to access Ceph configuration files for both clusters, which can be managed
+      outside the `/etc/ceph` directory to avoid confusion when containerizing the daemon.
+    questions_and_answers:
+      - question: |
+          How is RBD mirroring configured in Ceph?
+        answer: |
+          RBD mirroring is configured at the pool level using the `rbd` command. It can be enabled for a specific
+          pool or subset of images within the pool on both peer clusters.
+      - question: |
+          What is the role of the `rbd-mirror` daemon in RBD mirroring?
+        answer: |
+          The `rbd-mirror` daemon is responsible for pulling updates from the remote cluster and applying them to
+          images in the local cluster. It requires access to Ceph configuration files for both clusters.
+      - question: |
+          How can `rbd-mirror` configuration files be managed to avoid confusion?
+        answer: |
+          Configuration files for `rbd-mirror` can be managed outside the `/etc/ceph` directory, especially when
+          containerizing the daemon. This avoids confusion and allows arbitrary naming for configuration files.
+  - context: |
+      Journal-based mirroring requires Ceph Jewel release or later, while snapshot-based mirroring requires Ceph
+      Octopus release or later. Pool-level mirroring configuration can enable mirroring for all images within a
+      pool (journal-based) or a subset of images (both modes).
+    questions_and_answers:
+      - question: |
+          Which Ceph releases support journal-based and snapshot-based mirroring?
+        answer: |
+          - **Journal-based mirroring:** Requires Ceph Jewel release or later.
+          - **Snapshot-based mirroring:** Requires Ceph Octopus release or later.
+      - question: |
+          Can you enable mirroring for all images in a pool using journal-based mirroring?
+        answer: |
+          Yes, mirroring can be enabled for all images in a pool using journal-based mirroring.
+      - question: |
+          What is the difference in pool-level mirroring configuration between journal-based
+          and snapshot-based mirroring?
+        answer: |
+          - **Journal-based mirroring:** Enables mirroring for all images within a pool.
+          - **Snapshot-based mirroring:** Allows mirroring for a subset of images within a pool.
+  - context: |
+      RBD mirroring can be monitored using the `rbd mirror status` command, which provides information about
+      the mirroring status, including the number of images being mirrored, the number of snapshots, and the
+      replication mode. The `rbd mirror info` command displays detailed information about the mirroring configuration
+      and status.
+    questions_and_answers:
+      - question: |
+          How can you monitor RBD mirroring in Ceph?
+        answer: |
+          RBD mirroring can be monitored using the `rbd mirror status` command, which provides information about
+          the mirroring status, including the number of images being mirrored, snapshots, and the replication mode.
+      - question: |
+          What information does the `rbd mirror info` command display?
+        answer: |
+          The `rbd mirror info` command displays detailed information about the mirroring configuration and status.
+      - question: |
+          What are the key metrics provided by the `rbd mirror status` command?
+        answer: |
+          The `rbd mirror status` command provides information on the number of images being mirrored, the number
+          of snapshots, and the replication mode being used.
+document_outline: Teach the Large Language Model about the RBD Mirroring feature of Ceph
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/rbd/rbd-mirroring*.md]

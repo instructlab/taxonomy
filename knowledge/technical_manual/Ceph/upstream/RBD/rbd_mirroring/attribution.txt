@@ -1,0 +1,4 @@
+Title of work: Ceph Block Device RBD Mirroring knowledge
+Link to work: https://docs.ceph.com/en/squid/rbd/rbd-mirroring/
+License of the work: Apache 2.0
+Creators name: Sunil Angadi

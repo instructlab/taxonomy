@@ -1,0 +1,103 @@
+version: 3
+created_by: Sunil Angadi
+domain: opensource_storage
+seed_examples:
+  - context: |
+      A snapshot is a read-only logical copy of an image at a specific point in time,
+      serving as a checkpoint. One of the advanced features of Ceph block devices is the
+      ability to create snapshots to retain point-in-time state history.
+      Ceph supports snapshot layering, enabling quick cloning of images,
+      such as virtual machine (VM) images.
+      Snapshots are managed using the rbd command and higher-level interfaces
+      like QEMU, libvirt, OpenStack, OpenNebula, and CloudStack.
+    questions_and_answers:
+      - question: |
+          What is a snapshot in Ceph?
+        answer: |
+          A snapshot is a read-only logical copy of an image at a specific point in time,
+          serving as a checkpoint. Snapshots are used to retain point-in-time state history.
+      - question: |
+          What is the purpose of snapshot layering in Ceph?
+        answer: |
+          Snapshot layering in Ceph enables quick cloning of images, such as virtual machine (VM) images.
+      - question: |
+          How are snapshots managed in Ceph?
+        answer: |
+          Snapshots are managed using the rbd command and higher-level interfaces like QEMU, libvirt,
+          OpenStack, OpenNebula, and CloudStack.
+  - context:
+      To create a snapshot, use `rbd snap create` with the pool name, image name, and snapshot name.
+      Snapshots can be listed using `rbd snap ls`.
+      Snapshots are crash-consistent unless file systems within the image are properly coordinated.
+      Tools like `fsfreeze` or `qemu-guest-agent` can ensure consistency before creating snapshots.
+    questions_and_answers:
+      - question: |
+          How do you create a snapshot in Ceph?
+        answer: |
+          To create a snapshot in Ceph, use the `rbd snap create` command with the pool name, image name,
+          and snapshot name.
+      - question: |
+          How can you list snapshots in Ceph?
+        answer: |
+          Snapshots can be listed using the `rbd snap ls` command.
+      - question: |
+          Are snapshots in Ceph crash-consistent?
+        answer: |
+          Snapshots in Ceph are crash-consistent unless file systems within the image are properly coordinated.
+  - context:
+      Before cloning, snapshots must be protected using `rbd snap protect`.
+      This prevents accidental deletion of the snapshot.
+      Clones can then be created using `rbd clone`.
+      Cloning is faster and more storage-efficient than rolling back an image.
+    questions_and_answers:
+      - question: |
+          How do you protect snapshots before cloning in Ceph?
+        answer: |
+          Before cloning, snapshots must be protected using `rbd snap protect` to prevent accidental deletion.
+      - question: |
+          How do you create clones in Ceph?
+        answer: |
+          Clones can be created using the `rbd clone` command.
+      - question: |
+          Why is cloning faster and more storage-efficient than rolling back an image in Ceph?
+        answer: |
+          Cloning is faster and more storage-efficient than rolling back an image in Ceph.
+  - context:
+      Rolling back a snapshot restores an image to the snapshot's state but overwrites the current image.
+      Snapshots can be deleted using `rbd snap rm`.
+      However, snapshot deletion does not immediately free up storage due to asynchronous "snaptrim" processing.
+    questions_and_answers:
+      - question: |
+          How do you roll back a snapshot in Ceph?
+        answer: |
+          Rolling back a snapshot restores an image to the snapshot's state but overwrites the current image.
+      - question: |
+          How do you delete a snapshot in Ceph?
+        answer: |
+          Snapshots can be deleted using the `rbd snap rm` command.
+      - question: |
+          Does deleting a snapshot in Ceph immediately free up storage?
+        answer: |
+          No, deleting a snapshot does not immediately free up storage due to asynchronous "snaptrim" processing.
+  - context:
+      Layering enables creating copy-on-write (COW) clones from snapshots.
+      Flattening a cloned image removes its reference to the parent snapshot, making it independent.
+      Flattened images use more storage but allow the parent snapshot to be deleted.
+    questions_and_answers:
+      - question: |
+          What does layering enable in Ceph?
+        answer: |
+          Layering enables creating copy-on-write (COW) clones from snapshots.
+      - question: |
+          What does flattening a cloned image do in Ceph?
+        answer: |
+          Flattening a cloned image removes its reference to the parent snapshot, making it independent.
+      - question: |
+          What is the trade-off of flattening a cloned image in Ceph?
+        answer: |
+          Flattened images use more storage but allow the parent snapshot to be deleted.
+document_outline: Teach the Large Language Model about the RBD Snapshot feature of Ceph
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/rbd/rbd-snapshot*.md]
