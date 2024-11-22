@@ -1,0 +1,151 @@
+version: 3
+created_by: Pentakota Divya Gowri
+domain: opensource_storage
+seed_examples:
+  - context: |
+      The balancer can optimize the allocation of placement groups (PGs) across OSDs in order to achieve a
+      balanced distribution. The balancer can operate either automatically or in a supervised fashion.
+      To check the current status of the balancer, run the following command:
+        ceph balancer status
+    questions_and_answers:
+      - question: |
+          What does the balancer optimize?
+        answer: |
+          The balancer optimizes the allocation of placement groups (PGs) across OSDs to achieve balance.
+      - question: |
+          How can the balancer operate?
+        answer: |
+          The balancer can operate either automatically or in a supervised fashion.
+      - question: |
+          How can you check the status of the balancer?
+        answer: |
+          To check the status, run the command: ceph balancer status.
+  - context: |
+      When the balancer is in upmap mode, which is the default, the automatic upmap balancing feature is
+      enabled. For more details, see upmap{.interpreted-text role="ref"}. To disable the balancer, run the
+      following command:
+        ceph balancer off
+      The balancer mode can be changed from upmap mode to crush-compat mode. crush-compat mode is backward
+      compatible with older clients. In crush-compat mode, the balancer automatically makes small changes to
+      the data distribution to ensure that OSDs are utilized equally.
+      Additional modes include upmap-read and read. upmap-read mode combines the upmap balancer with the read
+      balancer so that both writes and reads are optimized. read mode can be used when only read optimization is
+      desired. For more details, see read_balancer{.interpreted-text role="ref"}.
+    questions_and_answers:
+      - question: |
+          What is the default mode for the balancer?
+        answer: |
+          The default mode for the balancer is upmap mode.
+      - question: |
+          How can you disable the balancer?
+        answer: |
+          To disable the balancer, run the command: ceph balancer off.
+      - question: |
+          What is the purpose of upmap-read mode?
+        answer: |
+          Upmap-read mode combines the upmap balancer with the read balancer to optimize both writes and reads.
+  - context: |
+      If the cluster is degraded (i.e., an OSD has failed and the system hasn’t healed yet), the balancer
+      will not make any adjustments to the PG distribution.
+      When the cluster is healthy, the balancer will incrementally move a small fraction of unbalanced PGs to
+      improve distribution. This fraction will not exceed a threshold, which defaults to 5%. To adjust this
+      target_max_misplaced_ratio setting, run:
+        ceph config set mgr target_max_misplaced_ratio .07 # 7%
+      The balancer sleeps between runs. To set the sleep interval, run:
+        ceph config set mgr mgr/balancer/sleep_interval 60
+      You can set the time of day at which automatic balancing begins and ends:
+        ceph config set mgr mgr/balancer/begin_time 0000
+        ceph config set mgr mgr/balancer/end_time 2359
+      Automatic balancing can also be restricted to certain days of the week. To restrict it to a specific
+      day or later, run:
+        ceph config set mgr mgr/balancer/begin_weekday 0
+      To restrict automatic balancing to a specific day or earlier, run:
+        ceph config set mgr mgr/balancer/end_weekday 6
+      You can restrict automatic balancing to specific pools. To do so, set the pool IDs:
+        ceph config set mgr mgr/balancer/pool_ids 1,2,3
+    questions_and_answers:
+      - question: |
+          What happens when the cluster is degraded?
+        answer: |
+          The balancer will not make any adjustments to the PG distribution when the cluster is degraded.
+      - question: |
+          How can you adjust the target_max_misplaced_ratio threshold?
+        answer: |
+          To adjust it, run: ceph config set mgr target_max_misplaced_ratio .07 # for 7%.
+      - question: |
+          How can you restrict automatic balancing to specific pools?
+        answer: |
+          Run: ceph config set mgr mgr/balancer/pool_ids 1,2,3 to restrict balancing to pools 1, 2, and 3.
+  - context: |
+      There are four supported balancer modes:
+      1. **crush-compat**: Uses the compat weight-set feature to manage an alternative set of weights in the
+        CRUSH hierarchy. The balancer adjusts these weights in small increments to achieve a balanced
+        distribution. This mode is backward compatible with older clients and does not handle multiple CRUSH
+        hierarchies with shared OSDs.
+      2. **upmap**: Available in Luminous and later, this mode optimizes PG placement to achieve a balanced
+        distribution, with nearly equal numbers of PGs on each OSD. All clients must be Luminous or newer.
+      3. **read**: Available in Reef and later, this mode optimizes the placement of primary PGs for balanced
+        reads, without affecting the upmap behavior. All clients must be Reef or newer.
+      4. **upmap-read**: Combines both upmap and read modes, optimizing for both balanced PG distribution and
+        balanced reads. Compatible only with Reef and later clients.
+      The default mode is upmap. To change modes, use the following commands:
+        ceph balancer mode crush-compat
+        ceph balancer mode read
+        ceph balancer mode upmap-read
+    questions_and_answers:
+      - question: |
+          What is the default balancer mode?
+        answer: |
+          The default balancer mode is upmap.
+      - question: |
+          What is the purpose of the crush-compat mode?
+        answer: |
+          Crush-compat mode adjusts weights in the CRUSH hierarchy to balance the distribution and is backward
+          compatible with older clients.
+      - question: |
+          How can you change the balancer mode to upmap-read?
+        answer: |
+          To change the balancer mode to upmap-read, run: ceph balancer mode upmap-read.
+  - context: |
+      Supervised use of the balancer can be understood in terms of three distinct phases:
+      1. **Building a plan**
+      2. **Evaluating the quality of the data distribution**: This can be done for the current PG distribution
+        or for a potential distribution after executing a plan.
+      3. **Executing the plan**
+
+      To evaluate the current distribution, run:
+        ceph balancer eval
+      To evaluate the distribution for a specific pool, run:
+        ceph balancer eval <pool-name>
+      To see a detailed evaluation, run:
+        ceph balancer eval-verbose ...
+      To generate a plan based on the current configuration, create a name for the plan and run:
+        ceph balancer optimize <plan-name>
+      To view the contents of a specific plan, run:
+        ceph balancer show <plan-name>
+      To list all available plans, run:
+        ceph balancer ls
+      To discard an old plan, run:
+        ceph balancer rm <plan-name>
+      To see the status of the balancer, run:
+        ceph balancer status
+      For more detailed status, run:
+        ceph balancer status detail
+    questions_and_answers:
+      - question: |
+          How can you evaluate the current PG distribution?
+        answer: |
+          To evaluate the current PG distribution, run: ceph balancer eval.
+      - question: |
+          How can you generate a balancing plan?
+        answer: |
+          To generate a plan, run: ceph balancer optimize <plan-name>.
+      - question: |
+          How can you see the status of the balancer?
+        answer: |
+          To see the status, run: ceph balancer status. For more details, run: ceph balancer status detail.
+document_outline: Teach the Large Language Model about the balancer Module
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [/upstream/doc/rados/operations/balancer.md]
