@@ -1,0 +1,150 @@
+version: 3
+created_by: Yuva Teja Sree
+domain: opensource_storage
+seed_examples:
+  - context: |
+      To enable the RGW module, the following command is used:
+      ceph mgr module enable rgw
+      This command ensures that the module is active and ready to use for further operations,
+      such as configuring and managing RGW realms and zones.
+    questions_and_answers:
+      - question: |
+          How do you enable the RGW module in Ceph?
+        answer: |
+          You can enable the RGW module using the command `ceph mgr module enable rgw`.
+      - question: |
+          What does enabling the RGW module do?
+        answer: |
+          Enabling the RGW module activates it and makes it ready for configuring and managing RGW realms and zones.
+      - question: |
+          What is the role of the RGW module in Ceph?
+        answer: |
+          The RGW module is used to configure and manage RGW realms, zonegroups, zones, and multisite setups.
+  - context: |
+      Bootstrapping RGW realm creates a new RGW realm entity, a new zonegroup, and a new zone. It configures
+      a new system user that can be used for multisite sync operations. Under the hood, this module instructs
+      the orchestrator to create and deploy the corresponding RGW daemons. The module supports both passing the
+      arguments through the cmd line or as a spec file:
+      ceph rgw realm bootstrap [--realm-name] [--zonegroup-name] [--zone-name] [--port] [--placement]
+      [--start-radosgw]
+      The command supports providing the configuration through a spec file:
+      ceph rgw realm bootstrap -i myrgw.yaml
+      Example of RGW multisite spec file:
+      rgw_realm: myrealm
+      rgw_zonegroup: myzonegroup
+      rgw_zone: myzone
+      placement:
+        hosts:
+          - ceph-node-1
+          - ceph-node-2
+      spec:
+        rgw_frontend_port: 5500
+      Users can also specify custom zone endpoints in the spec (or through the cmd line). In this case, no
+      cephadm daemons will be launched. Example of RGW spec file with zone endpoints:
+      rgw_realm: myrealm
+      rgw_zonegroup: myzonegroup
+      rgw_zone: myzone
+      zone_endpoints: http://<rgw_host1>:<rgw_port1>, http://<rgw_host2>:<rgw_port2>
+    questions_and_answers:
+      - question: |
+          What does bootstrapping an RGW realm create?
+        answer: |
+          Bootstrapping an RGW realm creates a new RGW realm entity, zonegroup, zone,
+          and a system user for multisite sync operations.
+      - question: |
+          How can you provide the configuration for bootstrapping an RGW realm?
+        answer: |
+          The configuration can be provided through the command line or a spec file using
+          `ceph rgw realm bootstrap -i myrgw.yaml`.
+      - question: |
+          Can custom zone endpoints be specified during the RGW realm bootstrap?
+        answer: |
+          Yes, custom zone endpoints can be specified in the spec file or through the command line,
+          bypassing cephadm daemons.
+  - context: |
+      Users can list the available tokens for the created (or already existing) realms. The token is a base64
+      string that encapsulates the realm information and its master zone endpoint authentication data. Example
+      of the `ceph rgw realm tokens` output:
+      ceph rgw realm tokens | jq
+      [
+      {
+      "realm": "myrealm1",
+      "token": "ewogICAgInJlYWxtX25hbWUiOiAibXlyZWFs....NHlBTFhoIgp9"
+      },
+      {
+          "realm": "myrealm2",
+          "token": "ewogICAgInJlYWxtX25hbWUiOiAibXlyZWFs....RUU12ZDB0Igp9"
+      }
+      ]
+      Users can use the token to pull a realm to create a secondary zone on a different cluster that syncs with
+      the master zone on the primary cluster by using the `ceph rgw zone create` command and providing the
+      corresponding token.
+    questions_and_answers:
+      - question: |
+          What is the purpose of the realm credentials token in RGW?
+        answer: |
+          The realm credentials token is a base64 string that encapsulates realm information and master zone
+          endpoint authentication data.
+      - question: |
+          How can users list the available tokens for RGW realms?
+        answer: |
+          Users can list the available tokens by running `ceph rgw realm tokens | jq`.
+      - question: |
+          How can a realm token be used to create a secondary zone?
+        answer: |
+          The realm token can be used with the `ceph rgw zone create` command to create a secondary zone that
+          syncs with the master zone on another cluster.
+  - context: |
+      To add a secondary zone in another cluster that syncs with the primary zone, the realm token is needed.
+      To create a secondary zone, you can use the following spec file:
+      rgw_zone: my-secondary-zone
+      rgw_realm_token: <token>
+      placement:
+        hosts:
+          - ceph-node-1
+          - ceph-node-2
+      spec:
+        rgw_frontend_port: 5500
+      And then, the zone can be created with the following command:
+      ceph rgw zone create -i zone-spec.yaml
+      This command will join an existing realm by creating a secondary zone and associating it with the realm token.
+    questions_and_answers:
+      - question: |
+          What is required to create a secondary zone in another cluster?
+        answer: |
+          The realm token is required to create a secondary zone that syncs with the primary zone.
+      - question: |
+          What does the `ceph rgw zone create` command do?
+        answer: |
+          It creates a secondary zone in an existing realm by associating it with the provided realm token.
+      - question: |
+          What information should be included in the spec file for creating a secondary zone?
+        answer: |
+          The spec file should include the zone name, realm token, placement hosts, and frontend port configuration.
+  - context: |
+      RGW Admin Commands
+      Commands:
+      - Create Realm, Zonegroup, and Zone:
+        ceph rgw realm bootstrap -i spec.yaml
+      - List Realm Tokens:
+        ceph rgw realm tokens
+      - Create Secondary Zone:
+        ceph rgw zone create -i zone-spec.yaml
+    questions_and_answers:
+      - question: |
+          What is the command to create a realm, zonegroup, and zone?
+        answer: |
+          The command to create a realm, zonegroup, and zone is `ceph rgw realm bootstrap -i spec.yaml`.
+      - question: |
+          How can you list the available realm tokens?
+        answer: |
+          You can list the available realm tokens using the command `ceph rgw realm tokens`.
+      - question: |
+          What command is used to create a secondary zone?
+        answer: |
+          The command to create a secondary zone is `ceph rgw zone create -i zone-spec.yaml`.
+document_outline: Teach the Large Language Model about the RGW Module
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/mgr/rgw*.md]
