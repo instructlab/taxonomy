@@ -1,0 +1,265 @@
+version: 3
+created_by: Harika Chebrolu
+domain: opensource_storage
+seed_examples:
+  - context: |
+        By default, RBD images are not encrypted. To enable encryption, the image
+        must be formatted to a supported encryption format. This format operation
+        persists encryption metadata to the image, including details like the
+        encryption format and version, cipher algorithm and mode specification,
+        and information for securing the encryption key. The encryption key itself
+        is protected by a user-kept secret, such as a passphrase, which is never
+        persisted. The encryption process requires specifying the encryption
+        format and a secret.
+
+        Some encryption metadata may be stored within the image data, such as an
+        encryption header written at the beginning of the raw data. Consequently,
+        the effective size of the encrypted image may be slightly reduced compared
+        to the raw image size. See the [Supported Formats](#supported-formats) for
+        more details.
+
+        **Key Notes:**
+        - Clones of an encrypted image inherit the same encryption format and secret,
+          unless explicitly re-formatted.
+        - Clones of encrypted images cannot be re-formatted to plaintext.
+        - Data written to an image before encryption formatting may become unreadable
+          but will still occupy storage space.
+    questions_and_answers:
+      - question: |
+          Are RBD images encrypted by default?
+        answer: |
+          No, RBD images are not encrypted by default. Encryption must be enabled
+          by formatting the image to a supported encryption format.
+      - question: |
+          What metadata is stored when encrypting an RBD image?
+        answer: |
+          Encryption metadata includes details such as the encryption format and
+          version, cipher algorithm and mode specification, and information used
+          to secure the encryption key. Some metadata, like an encryption header,
+          may be stored within the image data.
+      - question: |
+          What happens to clones of an encrypted image?
+        answer: |
+          Clones of an encrypted image are always encrypted with the same format
+          and secret as the original image. Re-formatting to plaintext is not
+          supported.
+      - question: |
+          What happens to data written to an image before encryption formatting?
+        answer: |
+          Data written to an image before encryption formatting may become unreadable,
+          although it may still occupy storage resources.
+  - context: |
+        Formatting an image is a necessary prerequisite for enabling encryption
+        on an RBD image. However, even after formatting, the image will still be
+        treated as a raw, unencrypted image by all RBD APIs. As a result, an encrypted
+        RBD image can be opened by the same APIs as any other image, and raw, unencrypted
+        data can be read and written. This can pose a risk to the integrity of the encryption
+        format, such as by accidentally overwriting encryption metadata at the start of the image.
+
+        To safely perform encrypted I/O on a formatted image, an additional operation called
+        *encryption load* must be applied after opening the image. The encryption load operation
+        requires specifying the encryption format and a secret to unlock the encryption key for
+        the image itself and its explicitly formatted ancestor images. Once the encryption load
+        operation is successful, all I/Os for the opened image will be encrypted and decrypted as needed.
+        For a cloned image, this includes I/Os for any ancestor images as well. The encryption keys are
+        stored in-memory by the RBD client until the image is closed.
+
+    questions_and_answers:
+      - question: |
+          Is an image automatically encrypted after formatting?
+        answer: |
+          No, formatting an image is a prerequisite for enabling encryption, but the image is still treated as raw and unencrypted by RBD APIs.
+      - question: |
+          What risks are associated with raw I/O on a formatted encrypted image?
+        answer: |
+          Raw I/O may risk the integrity of the encryption format, such as overwriting encryption metadata at the beginning of the image.
+      - question: |
+          What is required to safely perform encrypted I/O on a formatted image?
+        answer: |
+          An encryption load operation must be applied after opening the image. This operation requires the encryption format and a secret to unlock the encryption key.
+      - question: |
+          Where are the encryption keys stored during I/O operations?
+        answer: |
+          The encryption keys are stored in-memory by the RBD client until the image is closed.
+
+  - context: |
+        If a clone of an encrypted image is explicitly formatted, the flattening
+        operation of the cloned image is no longer transparent. This is because
+        the parent data must be re-encrypted to match the format of the cloned
+        image as it is copied from the parent snapshot. If encryption is not
+        loaded before initiating the flatten operation, any parent data that was
+        previously accessible in the cloned image may become unreadable.
+
+    questions_and_answers:
+      - question: |
+          What happens when an encrypted image clone is explicitly formatted?
+        answer: |
+          When a clone of an encrypted image is explicitly formatted, flattening
+          the image is no longer transparent, as the parent data must be re-encrypted
+          according to the clone’s format.
+      - question: |
+          What could happen if encryption is not loaded before flattening a clone?
+        answer: |
+          If encryption is not loaded before the flatten operation, parent data
+          previously accessible in the cloned image may become unreadable.
+      - question: |
+          Why does flattening a formatted clone require re-encrypting parent data?
+        answer: |
+          Flattening a formatted clone requires re-encrypting parent data because
+          it must be aligned with the cloned image’s encryption format as it is copied
+          from the parent snapshot.
+
+  - context: |
+        If a clone of an encrypted image is explicitly formatted, the operation
+        of shrinking the cloned image is no longer transparent. In some cases,
+        such as when the cloned image has snapshots or is being shrunk to a size
+        that is not aligned with the object size, it may involve copying data
+        from the parent snapshot, similar to the flattening operation. If encryption
+        is not loaded before initiating the shrink operation, any parent data
+        previously accessible in the cloned image may become unreadable.
+
+    questions_and_answers:
+      - question: |
+          What happens when an encrypted image clone is explicitly formatted and shrunk?
+        answer: |
+          The shrink operation is no longer transparent and may involve copying data
+          from the parent snapshot, which requires encryption to be loaded to ensure
+          the data remains accessible.
+      - question: |
+          What could happen if encryption is not loaded before shrinking a clone?
+        answer: |
+          If encryption is not loaded before the shrink operation, parent data that was
+          previously accessible in the cloned image may become unreadable.
+      - question: |
+          Why does shrinking a clone sometimes involve copying parent data?
+        answer: |
+          Shrinking may involve copying parent data if the cloned image has snapshots
+          or if it is being shrunk to a size that isn't aligned with the object size.
+
+  - context: |
+        Both LUKS1 and LUKS2 encryption formats are supported by RBD. The data layout
+        for encrypted images is fully compliant with the LUKS specification. This means
+        that images formatted by RBD can be loaded using external tools that support LUKS,
+        such as dm-crypt or QEMU. Additionally, existing LUKS data, created outside of RBD,
+        can be imported into RBD by copying the raw LUKS data into the image, which can then
+        be loaded and used with RBD encryption.
+
+    questions_and_answers:
+      - question: |
+          Which LUKS formats are supported by RBD?
+        answer: |
+          RBD supports both LUKS1 and LUKS2 formats for encryption.
+      - question: |
+          Can images formatted by RBD be loaded using external tools?
+        answer: |
+          Yes, images formatted by RBD are fully compliant with the LUKS specification
+          and can be loaded using external tools like dm-crypt or QEMU.
+      - question: |
+          Can existing LUKS data be used with RBD encryption?
+        answer: |
+          Yes, existing LUKS data created outside of RBD can be imported by copying
+          the raw LUKS data into the RBD image and then loaded using RBD encryption.
+
+  - context: |
+        By default, RBD uses AES-256 in xts-plain64 mode for encryption, which is the current
+        recommended mode and the usual default for other tools. AES-128 can also be selected
+        during the format operation. However, adding or removing passphrases is not supported
+        by RBD, but can be done on the raw RBD data using compatible tools such as cryptsetup.
+
+        The LUKS header size can vary depending on the version of libcryptsetup installed, typically
+        up to 16MiB for LUKS2, with a usual size of 16MiB or less. To ensure optimal performance,
+        the encryption format sets the data offset to align with the image stripe period size.
+        For example, there will be a minimum overhead of 8MiB if using an image with an 8MiB object
+        size, or a minimum overhead of 12MiB if the image is configured with a 4MiB object size and
+        a stripe count of 3.
+
+        In LUKS1, sectors (the minimal encryption units) are fixed at 512 bytes, while LUKS2 allows
+        for larger sector sizes, with the default sector size set to 4KiB for better performance.
+        Writes that are smaller than a sector or not aligned to a sector start will incur a significant
+        performance penalty due to the need for a guarded read-modify-write chain. Misaligned writes
+        can also lead to IO races, further worsening performance. Therefore, it is advisable to avoid
+        using RBD encryption when writes cannot be guaranteed to be sector-aligned.
+
+    questions_and_answers:
+      - question: |
+          What encryption mode is used by default in RBD?
+        answer: |
+          By default, RBD uses AES-256 in xts-plain64 mode, which is the recommended and usual default.
+      - question: |
+          Can the encryption mode be changed in RBD?
+        answer: |
+          Yes, during the format operation, you can select AES-128 as an alternative encryption mode.
+      - question: |
+          What happens if writes are not aligned to the sector size in RBD encryption?
+        answer: |
+          If writes are smaller than the sector size or not aligned, it triggers a read-modify-write chain,
+          leading to latency penalties and potentially IO races that can degrade performance.
+      - question: |
+          What is the recommended sector size for LUKS2 in RBD?
+        answer: |
+          LUKS2 supports larger sectors, with the default sector size set to 4KiB for better performance.
+      - question: |
+          Is it possible to add or remove passphrases from RBD-encrypted images?
+        answer: |
+          No, adding or removing passphrases is not supported by RBD, but it can be done on the raw RBD data using tools like cryptsetup.
+  - context: |
+        RBD encryption operations, including encryption format and encryption load, are CPU-intensive and may take a few seconds to complete. For image I/O encryption operations, assuming AES-NI is enabled, a small microsecond latency is added along with a slight increase in CPU utilization.
+
+        **Examples:**
+
+        - **Create a LUKS2-formatted image with an effective size of 50GiB:**
+          bash
+          rbd create --size 50G mypool/myimage rbd encryption format mypool/myimage luks2 passphrase.bin
+          rbd resize --size 50G --encryption-passphrase-file passphrase.bin mypool/myimage
+          The rbd resize command at the end grows the image to compensate for the overhead associated with the LUKS2 header.
+        - **Create a LUKS2-formatted clone with the same effective size as a LUKS2-formatted image:**
+          bash
+          rbd snap create <mypool/myimage@snap>
+          rbd snap protect <mypool/myimage@snap>
+          rbd clone <mypool/myimage@snap> mypool/myclone
+          rbd encryption format mypool/myclone luks2 clone-passphrase.bin
+        - **Create a LUKS1-formatted clone from a LUKS2-formatted image:**
+          bash
+          rbd snap create <mypool/myimage@snap>
+          rbd snap protect <mypool/myimage@snap>
+          rbd clone <mypool/myimage@snap> mypool/myclone
+          rbd encryption format mypool/myclone luks1 clone-passphrase.bin
+          rbd resize --size 50G --allow-shrink --encryption-passphrase-file clone-passphrase.bin --encryption-passphrase-file passphrase.bin mypool/myclone
+        - **Create a LUKS2-formatted clone from a LUKS1-formatted image:**
+          bash
+          rbd resize --size 51G mypool/myimage
+          rbd snap create <mypool/myimage@snap>
+          rbd snap protect <mypool/myimage@snap>
+          rbd clone <mypool/myimage@snap> mypool/myclone
+          rbd encryption format mypool/myclone luks2 clone-passphrase.bin
+          rbd resize --size 50G --allow-shrink --encryption-passphrase-file passphrase.bin mypool/myimage
+          rbd resize --size 50G --allow-shrink --encryption-passphrase-file clone-passphrase.bin --encryption-passphrase-file passphrase.bin mypool/myclone
+        - **Map a formatted clone:**
+          bash
+          rbd device map -t nbd -o encryption-passphrase-file=clone-passphrase.bin,encryption-passphrase-file=passphrase.bin mypool/myclone
+        These examples highlight how to manage encryption formats, resizing, and cloning of RBD images with different encryption schemes (LUKS1 or LUKS2) while ensuring that the image hierarchy and encryption passphrase files are correctly applied.
+    questions_and_answers:
+      - question: |
+          What is the CPU impact of encryption operations in RBD?
+        answer: |
+          Encryption operations in RBD are CPU-intensive, with slight microsecond latency and increased CPU utilization for image I/O operations if AES-NI is enabled.
+
+      - question: |
+          How do you create a LUKS2-formatted image in RBD?
+        answer: |
+          Use rbd create to create the image and then rbd encryption format followed by rbd resize to handle the LUKS2 encryption and adjust the size for the encryption header.
+
+      - question: |
+          How does creating a clone of a LUKS1-formatted image differ from creating a LUKS2 clone?
+        answer: |
+          A LUKS1-formatted clone requires resizing to compensate for the smaller LUKS1 header, whereas a LUKS2 clone may require extra space due to the larger header size and might require additional resizing.
+
+      - question: |
+          How do you map a formatted clone in RBD?
+        answer: |
+          To map a formatted clone, use the rbd device map command and provide the necessary encryption passphrases for both the clone and its parent images.
+document_outline: Teach the Large Language Model about the enabling encryption of Ceph RBD
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/rbd/rbd-encryption.md]

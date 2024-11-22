@@ -1,0 +1,145 @@
+version: 3
+created_by: Harika Chebrolu
+domain: opensource_storage
+seed_examples:
+  - context: |
+      The **`rbd device map`** command is used to map an RBD image to a kernel module. This command allows you to associate an RBD image with a device on the host system, enabling access to the image as if it were a regular block device.
+
+      - **Syntax:**
+      ```bash
+      sudo rbd device map {pool-name}/{image-name} --id {user-name}
+      ```
+
+      - **{pool-name}**: The name of the pool where the image is located.
+      - **{image-name}**: The name of the RBD image to be mapped.
+      - **{user-name}**: The user who is executing the command (usually an authenticated user like `admin`).
+
+      If the RBD kernel module is not already loaded, `rbd` will automatically load it on your behalf.
+
+      **Example Command:**
+      ```bash
+      sudo rbd device map rbd/myimage --id admin
+      ```
+
+    questions_and_answers:
+      - question: |
+          How do you map an RBD image to a kernel module?
+        answer: |
+          Use the `rbd device map` command with the pool name, image name, and user name. If the kernel module is not loaded, it will be loaded automatically.
+
+      - question: |
+          What do you need to specify when using the `rbd device map` command?
+        answer: |
+          You need to specify the pool name, image name, and user name when running the `rbd device map` command.
+
+      - question: |
+          Can the `rbd device map` command be used without manually loading the RBD kernel module?
+        answer: |
+          Yes, if the kernel module is not already loaded, the `rbd` command will load it automatically.
+  - context: |
+      The **`rbd device list`** command is used to show the block device images that are currently mapped to kernel modules. This command provides a list of RBD images that are available as block devices in the system.
+
+      **Syntax:**
+      ```bash
+      rbd device list
+      ```
+
+      This command will display a list of RBD images that are mapped to kernel devices. These images are accessible as block devices and can be used just like any other storage device on the system.
+
+    questions_and_answers:
+      - question: |
+          How can you view block device images mapped to kernel modules?
+        answer: |
+          Use the `rbd device list` command to display the RBD images mapped to kernel modules.
+
+      - question: |
+          What does the `rbd device list` command show?
+        answer: |
+          It shows a list of RBD images that are mapped to block devices in the system, allowing you to see the images available for use as kernel devices.
+
+      - question: |
+          What command would you use to list all RBD images mapped to kernel devices?
+        answer: |
+          You would use the rbd device list command to list all RBD images that are mapped to kernel devices on your system.
+  - context: |
+      The **`rbd device unmap`** command is used to unmap a previously mapped block device image. This will detach the RBD image from the kernel, effectively making it unavailable as a block device.
+
+      **Syntax:**
+      ```bash
+      sudo rbd device unmap /dev/rbd/{pool-name}/{image-name}
+      ```
+
+      By convention, the device name is the same as the RBD image name. When this command is executed, the specified block device is unmapped and the RBD image is no longer accessible as a block device on the system.
+
+    questions_and_answers:
+      - question: |
+          How can you unmap a block device image using `rbd`?
+        answer: |
+          Use the `rbd device unmap` command followed by the device path, such as `/dev/rbd/{pool-name}/{image-name}` to unmap the block device image.
+
+      - question: |
+          What happens when you run `rbd device unmap`?
+        answer: |
+          The specified RBD block device is unmapped, making it unavailable as a kernel device.
+      - question: |
+          What does the device name refer to when using the rbd device unmap command?
+        answer: |
+          By convention, the device name in the rbd device unmap command is the same as the RBD image name.
+  - context: |
+      The **`rbd list`** command is used to display a list of available RBD (Rados Block Device) images in a specified pool. This command helps identify which images are available for mapping or mounting.
+
+      **Syntax:**
+      ```bash
+      rbd list
+      ```
+
+      This will output the names of all the RBD images in the pool. Once you know the image you want to work with, you can proceed to map or mount it as needed.
+
+    questions_and_answers:
+      - question: |
+          How can you view the available RBD images in a pool?
+        answer: |
+          Use the `rbd list` command to view all the available RBD images in the pool.
+
+      - question: |
+          What is the purpose of the `rbd list` command?
+        answer: |
+          The `rbd list` command helps you list all the RBD images available in the specified pool, allowing you to identify which images are ready for further actions like mapping or mounting.
+      - question: |
+          What command is used to list the available block device images before mounting them?
+        answer: |
+          To list the available block device images before mounting them, you can use the rbd list command.
+  - context: |
+      When using **`cephx`** authentication with the `rbd` command, a secret is required for authentication. This secret can be sourced from a **keyring** or a **file** containing the secret. If you're performing operations like mapping an RBD image, you need to include the `--keyring` or `--keyfile` option along with the path to the keyring or secret file to authenticate successfully.
+
+      **Examples:**
+      - To map an RBD image using a keyring for authentication:
+      ```bash
+      sudo rbd device map rbd/myimage --id admin --keyring /path/to/keyring
+      ```
+
+      - To map an RBD image using a keyfile for authentication:
+      ```bash
+      sudo rbd device map rbd/myimage --id admin --keyfile /path/to/file
+      ```
+
+    questions_and_answers:
+      - question: |
+          What is required when using `cephx` authentication for `rbd` operations?
+        answer: |
+          When using `cephx` authentication, a secret is required, which can be provided either via a **keyring** or a **keyfile**.
+
+      - question: |
+          How can you specify a secret for `rbd` commands when using `cephx` authentication?
+        answer: |
+          Use the `--keyring` option with the path to the keyring file, or use the `--keyfile` option with the path to the secret file when issuing the `rbd` command.
+
+      - question: |
+          Can you use a keyring or keyfile for authentication in `rbd` commands?
+        answer: |
+          Yes, both a keyring and a keyfile can be used to provide the secret for authentication when performing `rbd` operations with `cephx`.
+document_outline: Teach the Large Language Model about the installing kernel modules of Ceph RBD
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/rbd/rbd-ko.md]

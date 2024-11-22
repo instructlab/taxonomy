@@ -1,0 +1,147 @@
+version: 3
+created_by: Harika Chebrolu
+domain: opensource_storage
+seed_examples:
+  - context: |
+      It is recommended to provision two to four iSCSI gateway nodes to achieve a highly available Ceph iSCSI gateway solution.
+      For hardware recommendations, refer to the **hardware recommendations** section for guidance on optimal configurations.
+    questions_and_answers:
+      - question: |
+          How many iSCSI gateway nodes are recommended for a highly available Ceph iSCSI gateway solution?
+        answer: |
+          It is recommended to provision two to four iSCSI gateway nodes for a highly available Ceph iSCSI gateway solution.
+      - question: |
+          Where can you find guidance on hardware recommendations for iSCSI gateways?
+        answer: |
+          Guidance on hardware recommendations for iSCSI gateways can be found in the **hardware recommendations** section.
+      - question: |
+          Why is it recommended to provision multiple iSCSI gateway nodes?
+        answer: |
+          Provisioning multiple iSCSI gateway nodes ensures high availability for the Ceph iSCSI gateway solution.
+  - context: |
+      On iSCSI gateway nodes, the memory footprint is influenced by the number of RBD images mapped, and it can grow significantly. It is important to plan memory requirements accordingly based on the number of RBD images to be mapped.
+
+      While there are no specific iSCSI gateway options for Ceph Monitors or OSDs, reducing the default heartbeat interval is recommended to detect down OSDs more quickly and minimize the risk of initiator timeouts.
+
+    questions_and_answers:
+      - question: |
+          How does the memory footprint on iSCSI gateway nodes scale?
+        answer: |
+          The memory footprint on iSCSI gateway nodes grows based on the number of RBD images mapped.
+
+      - question: |
+          Why is it recommended to lower the default heartbeat interval for Ceph OSDs in an iSCSI gateway setup?
+        answer: |
+          Lowering the default heartbeat interval helps detect down OSDs quickly and reduces the possibility of initiator timeouts.
+
+      - question: |
+          What should you consider when planning memory requirements for iSCSI gateway nodes?
+        answer: |
+          Memory requirements should be planned based on the number of RBD images to be mapped on the iSCSI gateway nodes.
+  - context: |
+      To optimize an iSCSI gateway setup and reduce the risk of initiator timeouts, it is recommended to configure heartbeat settings for Ceph OSDs. The following parameters are suggested:
+
+      ```
+      [osd]
+      osd heartbeat grace = 20
+      osd heartbeat interval = 5
+      ```
+
+      You can update the running configuration dynamically from a Ceph monitor node using the `ceph tell` command. For example:
+      ```bash
+      ceph tell osd.* config set osd_heartbeat_grace 20
+      ceph tell osd.* config set osd_heartbeat_interval 5
+      ```
+
+      These settings ensure faster detection of down OSDs and improve the reliability of the iSCSI gateway.
+    questions_and_answers:
+      - question: |
+          What are the recommended `osd heartbeat` settings for an iSCSI gateway setup?
+        answer: |
+          The recommended settings are `osd heartbeat grace = 20` and `osd heartbeat interval = 5`.
+      - question: |
+          How can you dynamically update Ceph OSD heartbeat settings from a monitor node?
+        answer: |
+          Use the `ceph tell` command, for example:
+          ```bash
+          ceph tell osd.* config set osd_heartbeat_grace 20
+          ceph tell osd.* config set osd_heartbeat_interval 5
+          ```
+      - question: |
+          Why is it important to configure heartbeat settings in an iSCSI gateway environment?
+        answer: |
+          Configuring heartbeat settings ensures faster detection of down OSDs and reduces the likelihood of initiator timeouts, improving the gateway's reliability.
+  - context: |
+      To update the running state for each Ceph OSD node, you can use the `ceph daemon` command to configure specific parameters dynamically. For example:
+      ```bash
+      ceph daemon <daemon_type>.<id> config set osd_client_watch_timeout 15
+      ceph daemon osd.0 config set osd_heartbeat_grace 20
+      ceph daemon osd.0 config set osd_heartbeat_interval 5
+      ```
+      These settings adjust the client watch timeout and OSD heartbeat parameters. To ensure the changes persist across reboots, you should add them to `/etc/ceph/ceph.conf` or, for Ceph Mimic and later releases, store them in the centralized configuration store.
+      For additional details, refer to the Ceph documentation on configuration management.
+    questions_and_answers:
+      - question: |
+          How can you dynamically update the `osd_client_watch_timeout` on an OSD node?
+        answer: |
+          Use the `ceph daemon` command, specifying the daemon type and ID, such as:
+          ```bash
+          ceph daemon <daemon_type>.<id> config set osd_client_watch_timeout 15
+          ```
+      - question: |
+          What commands can you use to configure heartbeat settings on a specific OSD node?
+        answer: |
+          To configure heartbeat settings, use:
+          ```bash
+          ceph daemon osd.0 config set osd_heartbeat_grace 20
+          ceph daemon osd.0 config set osd_heartbeat_interval 5
+          ```
+      - question: |
+          Where should you persist configuration changes to ensure they survive a reboot?
+        answer: |
+          Persist changes in `/etc/ceph/ceph.conf` or, for Ceph Mimic and later releases, store them in the centralized configuration store.
+  - context: |
+      Ceph configurations can be updated dynamically for OSD nodes or from a Ceph monitor node.
+      - **Updating From a Monitor Node**:
+        Use the `ceph tell` command to apply configurations across all OSDs:
+        ```bash
+        ceph tell <daemon_type>.<id> config set <parameter_name> <new_value>
+        ```
+        Examples:
+        ```bash
+        ceph tell osd.* config set osd_heartbeat_grace 20
+        ceph tell osd.* config set osd_heartbeat_interval 5
+        ```
+      - **Updating on Each OSD Node**:
+        Use the `ceph daemon` command to configure individual OSD nodes dynamically:
+        ```bash
+        ceph daemon <daemon_type>.<id> config set osd_client_watch_timeout 15
+        ceph daemon osd.0 config set osd_heartbeat_grace 20
+        ceph daemon osd.0 config set osd_heartbeat_interval 5
+        ```
+
+      To persist these changes, save them in `/etc/ceph/ceph.conf` or use the centralized configuration store available in Ceph Mimic and later releases.
+    questions_and_answers:
+      - question: |
+          How can you update the heartbeat grace period for all OSDs from a Ceph monitor node?
+        answer: |
+          Use the `ceph tell` command:
+          ```bash
+          ceph tell osd.* config set osd_heartbeat_grace 20
+          ```
+      - question: |
+          What command updates the `osd_client_watch_timeout` on a specific OSD node?
+        answer: |
+          Use the `ceph daemon` command with the following syntax:
+          ```bash
+          ceph daemon <daemon_type>.<id> config set osd_client_watch_timeout 15
+          ```
+      - question: |
+          How can you ensure dynamically updated configurations persist across reboots?
+        answer: |
+          Persist the changes in `/etc/ceph/ceph.conf` or store them in the centralized configuration store (available in Ceph Mimic and later releases).
+document_outline: Teach the Large Language Model about the enabling exclusive locks of Ceph RBD
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/rbd/iscsi-requirements.md]

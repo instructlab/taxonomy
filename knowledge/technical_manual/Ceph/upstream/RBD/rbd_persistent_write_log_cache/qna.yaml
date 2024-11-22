@@ -1,0 +1,234 @@
+version: 3
+created_by: Harika Chebrolu
+domain: opensource_storage
+seed_examples:
+  - context: |
+      The Persistent Write Log Cache (PWL) provides a fault-tolerant, persistent write-back cache for librbd-based RBD clients. It uses a log-ordered write-back design and maintains internal checkpoints to ensure crash consistency. Even if the client cache is lost entirely, the disk image remains consistent, although the data may appear stale.
+
+      The PWL cache can be used with **PMEM (Persistent Memory)** or **SSD** as a cache device:
+      - **PMEM**: The cache operates in `replica write log (rwl)` mode, but currently only supports local caching with the replica function under development.
+      - **SSD**: The cache operates in `ssd` mode.
+
+      **Usage:**
+      - The PWL cache stores data in a persistent device, looking for and creating cache files in a configured directory. It caches data within these files.
+      - The cache depends on the **exclusive-lock** feature. It can only be loaded after the exclusive lock is acquired on the image.
+      - The cache provides two persistence modes:
+          1. **persistent-on-write mode**: Writes are completed when they are persisted to the cache device, ensuring the data is readable after a crash.
+          2. **persistent-on-flush mode**: Writes are completed as soon as the caller's data buffer is no longer needed, but they are not guaranteed to be readable after a crash. Data is persisted to the cache device when a flush request is received.
+      - The cache defaults to **persistent-on-write mode** and switches to **persistent-on-flush mode** after the first flush request.
+
+    questions_and_answers:
+      - question: |
+          What is the role of the Persistent Write Log Cache in RBD?
+        answer: |
+          The PWL cache provides a fault-tolerant write-back cache that ensures crash consistency for librbd-based RBD clients. It allows data to be written to persistent storage devices like PMEM or SSD.
+
+      - question: |
+          What persistence modes does the PWL cache support?
+        answer: |
+          The PWL cache supports two persistence modes: **persistent-on-write** mode, where writes are only completed once persisted to the cache device, and **persistent-on-flush** mode, where writes are completed once the caller's buffer is no longer needed, with no guarantee of data readability after a crash.
+
+      - question: |
+          What is required for loading the PWL cache?
+        answer: |
+          The cache can only be loaded after the **exclusive-lock** feature has been acquired for the image.
+
+      - question: |
+          Can the PWL cache be used with both PMEM and SSD devices?
+        answer: |
+          Yes, the PWL cache can use **PMEM** in `replica write log (rwl)` mode or **SSD** in `ssd` mode, with local caching currently supported for both.
+  - context: |
+      To enable the Persistent Write Log (PWL) cache in RBD, specific configuration settings need to be applied. The cache can be configured with different modes, including `rwl` (for PMEM), `ssd`, or `disabled` (which is the default setting).
+
+      **Configuration Settings:**
+      - **rbd_persistent_cache_mode**: This setting controls the cache mode and can be set to:
+          - `rwl`: For PMEM (Persistent Memory) usage, depends on the **libpmem** library, which is part of **PMDK**.
+          - `ssd`: For SSD usage.
+          - `disabled`: To disable the cache (default).
+
+      - **rbd_plugins**: Set this to `pwl_cache` to enable the PWL cache.
+
+      Additional settings related to the cache are:
+      - **rbd_persistent_cache_path**: Specifies the file path where cache data will be stored. When using `rwl` mode, this folder must have **DAX** (Direct Access) enabled to prevent performance degradation.
+      - **rbd_persistent_cache_size**: Defines the size of the cache per image. The minimum cache size is 1 GB.
+
+      These configurations can be set at various levels, including:
+      - **Per-host**: To apply settings specific to a host, add overrides in the host's `ceph.conf` file.
+      - **Per-pool**, **Per-image**: To configure cache settings for specific pools or images, use `rbd config` commands.
+
+      **Note on Architecture Compatibility:**
+      - The `rwl` cache mode depends on **libpmem**, which is available by default on **x86_64** architecture. It may also be available on **ppc64le** and **aarch64** architectures on some distributions, but it is **not available** on **s390x** architecture.
+
+    questions_and_answers:
+      - question: |
+          How can you enable the Persistent Write Log (PWL) cache in RBD?
+        answer: |
+          To enable the PWL cache, set `rbd_persistent_cache_mode` to either `rwl`, `ssd`, or `disabled` (default). Additionally, ensure that `rbd_plugins` is set to `pwl_cache`.
+
+      - question: |
+          What are the valid values for the `rbd_persistent_cache_mode` setting?
+        answer: |
+          The valid values for `rbd_persistent_cache_mode` are `rwl` (for PMEM), `ssd`, or `disabled`.
+
+      - question: |
+          What is required for using the `rwl` cache mode?
+        answer: |
+          The `rwl` cache mode requires the **libpmem** library (part of PMDK), and the cache folder must have **DAX** enabled to prevent performance issues.
+
+      - question: |
+          What is the minimum cache size when using the PWL cache?
+        answer: |
+          The minimum cache size for each image is 1 GB.
+
+      - question: |
+          Can the PWL cache configuration be set per-image or per-pool?
+        answer: |
+          Yes, PWL cache configurations can be set per-host, per-pool, or per-image, and can be configured using the `ceph.conf` file or `rbd config` commands.
+
+      - question: |
+          On which architecture is the `rwl` cache mode not available?
+        answer: |
+          The `rwl` cache mode is not available on the **s390x** architecture.
+  - context: |
+      To manually flush the persistent cache to the OSDs in **RBD**, use the `rbd persistent-cache flush` command. This ensures that any cached data is written back to the cluster.
+
+      The syntax for the command is:
+
+      ```
+      rbd persistent-cache flush {pool-name}/{image-name}
+      ```
+
+      - **pool-name**: The name of the RBD pool where the image is stored.
+      - **image-name**: The name of the RBD image whose cache needs to be flushed.
+
+      This operation is useful when an application crashes or dies unexpectedly. In such cases, you can use this command to ensure that the cache is safely flushed to the OSDs.
+
+      **Example Command:**
+
+      ```bash
+      $ rbd persistent-cache flush rbd/foo
+      ```
+
+      In this example, the cache for the `foo` image in the `rbd` pool is flushed to the OSDs.
+
+    questions_and_answers:
+      - question: |
+          What is the command to flush the persistent cache in RBD?
+        answer: |
+          The command to flush the persistent cache is:
+          ```
+          rbd persistent-cache flush {pool-name}/{image-name}
+          ```
+
+      - question: |
+          What does the `rbd persistent-cache flush` command do?
+        answer: |
+          The `rbd persistent-cache flush` command writes any cached data back to the OSDs, ensuring that the cache is flushed to the cluster.
+
+      - question: |
+          When would you use the `rbd persistent-cache flush` command?
+        answer: |
+          You would use this command when an application dies unexpectedly, to flush the cache back to OSDs and prevent data loss.
+
+      - question: |
+          Can the `rbd persistent-cache flush` command be used to flush the cache of any image?
+        answer: |
+          Yes, it can be used to flush the cache of any image by specifying the pool and image name.
+  - context: |
+      To invalidate (discard) a persistent cache file in **RBD**, use the `rbd persistent-cache invalidate` command. This operation removes the cache metadata for the specified image, disables the cache feature, and deletes any local cache file associated with the image if it exists.
+
+      The syntax for the command is:
+
+      ```
+      rbd persistent-cache invalidate {pool-name}/{image-name}
+      ```
+
+      - **pool-name**: The name of the RBD pool where the image is stored.
+      - **image-name**: The name of the RBD image whose cache you wish to invalidate.
+
+      **Example Command:**
+
+      ```bash
+      $ rbd persistent-cache invalidate rbd/foo
+      ```
+
+      In this example, the cache for the `foo` image in the `rbd` pool is invalidated, removing the cache metadata and disabling the cache feature.
+
+    questions_and_answers:
+      - question: |
+          What is the command to invalidate a persistent cache in RBD?
+        answer: |
+          The command to invalidate a persistent cache is:
+          ```
+          rbd persistent-cache invalidate {pool-name}/{image-name}
+          ```
+
+      - question: |
+          What does the `rbd persistent-cache invalidate` command do?
+        answer: |
+          The `rbd persistent-cache invalidate` command removes the cache metadata, disables the cache feature, and deletes the local cache file if it exists.
+
+      - question: |
+          When would you use the `rbd persistent-cache invalidate` command?
+        answer: |
+          You would use this command when you need to discard the cache and remove its metadata, effectively disabling caching for the image.
+
+      - question: |
+          Can the `rbd persistent-cache invalidate` command be used for any image?
+        answer: |
+          Yes, it can be used to invalidate the cache of any image by specifying the pool and image name.
+  - context: |
+      The **Persistent Write Log (PWL) cache** is enabled when the **exclusive lock** on an RBD image is acquired and is closed when the exclusive lock is released. To check the current status of the PWL cache, users can use the `rbd status` command.
+
+      The syntax for the command is:
+
+      ```
+      rbd status {pool-name}/{image-name}
+      ```
+
+      - **pool-name**: The name of the RBD pool where the image is stored.
+      - **image-name**: The name of the RBD image whose cache status you want to check.
+
+      The output will display various cache status details, including:
+      - Cache presence (whether the cache is enabled or not)
+      - Cache cleanliness (whether the cache is in a clean state)
+      - Cache size
+      - Location of the cache
+      - Basic cache metrics
+
+      **Example Command:**
+
+      ```bash
+      $ rbd status rbd/foo
+      ```
+
+      This command will show the status of the PWL cache for the `foo` image in the `rbd` pool.
+
+    questions_and_answers:
+      - question: |
+          How do you check the status of the PWL cache in RBD?
+        answer: |
+          You can check the PWL cache status by running the command:
+          ```
+          rbd status {pool-name}/{image-name}
+          ```
+
+      - question: |
+          What information is provided by the `rbd status` command for the cache?
+        answer: |
+          The `rbd status` command shows details about the cache, including its presence, cleanliness, size, location, and some basic cache metrics.
+
+      - question: |
+          When is the PWL cache enabled and closed?
+        answer: |
+          The PWL cache is enabled when the exclusive lock is acquired on an RBD image and is closed when the exclusive lock is released.
+
+      - question: |
+          Can the `rbd status` command be used for any RBD image?
+        answer: |
+          Yes, the `rbd status` command can be used for any RBD image to check its cache status by specifying the pool and image name.
+document_outline: Teach the Large Language Model about the enabling persistent write cache of Ceph RBD
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/rbd/rbd-persistent-write-log-cache.md]
