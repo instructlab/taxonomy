@@ -1,0 +1,134 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Recovering a File System After Monitor Store Loss
+      -------------------------------------------------
+
+      If all monitor stores in a Ceph cluster are lost, they can be rebuilt using OSDs. However, the rebuilt monitor
+      stores don't include file system maps (FSMap). For a single active MDS file system, recovery involves recreating
+      the FSMap with basic defaults and allowing MDS daemons to recover from existing journal/metadata stored in pools.
+
+      To recreate the file system with the recovered pools, use:
+      ```
+      ceph fs new <fs_name> <metadata_pool> <data_pool> --force --recover
+      ```
+
+    questions_and_answers:
+      - question: |
+          What happens to FSMap during monitor store loss recovery?
+        answer: |
+          The FSMap is not restored during monitor store recovery and must be recreated separately.
+      - question: |
+          How can you recreate a file system after rebuilding monitor stores?
+        answer: |
+          Use the command `ceph fs new <fs_name> <metadata_pool> <data_pool> --force --recover` \
+          to recreate the file system.
+      - question: |
+          What does the `--recover` flag do during FSMap recreation?
+        answer: |
+          It ensures rank 0 uses existing in-RADOS metadata and prevents standby MDS daemons \
+          from activating the file system.
+  - context: |
+      Allowing Standby MDS Daemons to Join the File System
+      ----------------------------------------------------
+
+      After recreating the FSMap, standby MDS daemons can be allowed to join the file system by setting it to joinable:
+      ```
+      ceph fs set <fs_name> joinable true
+      ```
+
+      This step allows MDS daemons to activate and manage the file system metadata.
+
+    questions_and_answers:
+      - question: |
+          How can standby MDS daemons be allowed to join a recovered file system?
+        answer: |
+          Use the command `ceph fs set <fs_name> joinable true` to allow standby MDS daemons to join the file system.
+      - question: |
+          What does the `joinable` setting do for the file system?
+        answer: |
+          It enables standby MDS daemons to activate and manage the file system metadata.
+      - question: |
+          Why is it necessary to set the file system to joinable after FSMap recreation?
+        answer: |
+          To allow standby MDS daemons to join and activate the file system.
+  - context: |
+      Verifying File System Recovery
+      ------------------------------
+
+      Once the FSMap is recreated and standby MDS daemons are allowed to join, check the file system's state to ensure \
+      it is no longer degraded and has an active MDS:
+      ```
+      ceph fs status
+      ```
+
+      This command provides information about the file system, including its MDS status.
+
+    questions_and_answers:
+      - question: |
+          How can you verify the state of a recovered file system?
+        answer: |
+          Use the `ceph fs status` command to check the file system's state and ensure it has an active MDS.
+      - question: |
+          What does the `ceph fs status` command display?
+        answer: |
+          It displays information about the file system, including its MDS status and overall health.
+      - question: |
+          Why is it important to verify the file system state after recovery?
+        answer: |
+          To ensure the file system is no longer in a degraded state and has an active MDS managing metadata.
+  - context: |
+      Restoring Custom File System Settings
+      -------------------------------------
+
+      After recovering the file system, reapply custom settings such as `standby_count_wanted`, \
+      `required_client_features`,
+      and extra data pools. These settings were lost during FSMap recreation and need to be manually configured.
+
+      Use the `ceph fs set` command to reapply these configurations.
+
+    questions_and_answers:
+      - question: |
+          What happens to custom file system settings during FSMap recreation?
+        answer: |
+          Custom settings such as `standby_count_wanted` and `required_client_features` are lost and must be reapplied.
+      - question: |
+          How can you reapply custom settings to a recovered file system?
+        answer: |
+          Use the `ceph fs set` command to reconfigure custom settings for the file system.
+      - question: |
+          Why is it necessary to restore custom settings after FSMap recreation?
+        answer: |
+          To ensure the file system operates with the desired configuration and performance parameters.
+  - context: |
+      Managing File System Cluster ID (fscid)
+      ---------------------------------------
+
+      The file system cluster ID (fscid) is not preserved during FSMap recreation. This may affect applications like \
+      Ceph CSI, which expect the file system to remain unchanged across recovery.
+
+      To retain the same fscid, specify it during FSMap recreation:
+      ```
+      ceph fs new <fs_name> <metadata_pool> <data_pool> --force --recover --fscid <id>
+      ```
+
+    questions_and_answers:
+      - question: |
+          What happens to the file system cluster ID (fscid) during FSMap recreation?
+        answer: |
+          The fscid is not preserved and may change unless explicitly specified during FSMap recreation.
+      - question: |
+          How can you retain the same fscid during FSMap recreation?
+        answer: |
+          Use the `--fscid <id>` option with the `ceph fs new` command during FSMap recreation.
+      - question: |
+          Why might retaining the same fscid be important?
+        answer: |
+          Some applications, such as Ceph CSI, rely on the file system ID remaining unchanged across recovery.
+document_outline: Guide to Recovering CephFS After Monitor Store Loss
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/recover-fs-after-mon-store-loss*.md]

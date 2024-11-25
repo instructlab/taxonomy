@@ -1,0 +1,142 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Overview of NFS-Ganesha and CephFS Integration
+      ---------------------------------------------
+
+      NFS-Ganesha is a protocol server that allows CephFS namespaces to be exported over NFS. Key points include:
+
+      - NFS-Ganesha supports the integration of CephFS using the FSAL_CEPH plugin.
+      - The preferred way to manage NFS-Ganesha clusters and CephFS exports is using `ceph nfs` commands with \
+      cephadm or rook.
+      - Recommended NFS-Ganesha version is 3.5+ with Ceph Pacific (16.2.x) or later.
+    questions_and_answers:
+      - question: |
+          What is NFS-Ganesha used for in relation to CephFS?
+        answer: |
+          NFS-Ganesha allows CephFS namespaces to be exported over NFS using the FSAL_CEPH plugin.
+      - question: |
+          What is the recommended version of NFS-Ganesha for use with Ceph Pacific?
+        answer: |
+          The recommended version is NFS-Ganesha 3.5 or later with Ceph Pacific (16.2.x) or later.
+      - question: |
+          Which plugin in NFS-Ganesha is used to integrate with CephFS?
+        answer: |
+          The FSAL_CEPH plugin is used to integrate NFS-Ganesha with CephFS.
+
+  - context: |
+      Configuring NFS-Ganesha for CephFS
+      ----------------------------------
+
+      To set up NFS-Ganesha for CephFS:
+
+      - Use the `ganesha.conf` configuration file with FSAL_CEPH.
+      - Minimize Ganesha caching to optimize performance with libcephfs clients.
+      - Store client recovery data in RADOS OMAP key-value interface.
+      - Mandate NFSv4.1+ protocol for access.
+      - Ensure CephFS metadata and data pools are correctly set using:
+        ```
+        ceph osd pool application set <cephfs_metadata_pool> cephfs <cephfs_data_pool> cephfs
+        ```
+    questions_and_answers:
+      - question: |
+          Which configuration file is used to set up NFS-Ganesha for CephFS?
+        answer: |
+          The `ganesha.conf` configuration file is used to set up NFS-Ganesha for CephFS.
+      - question: |
+          Why is it recommended to minimize Ganesha caching when using FSAL_CEPH?
+        answer: |
+          Minimizing Ganesha caching is recommended because libcephfs clients also cache aggressively.
+      - question: |
+          How can you set the CephFS metadata and data pools for NFS-Ganesha?
+        answer: |
+          Use the command: `ceph osd pool application set <cephfs_metadata_pool> cephfs <cephfs_data_pool> cephfs`.
+
+  - context: |
+      Requirements for NFS-Ganesha with CephFS
+      ----------------------------------------
+
+      Setting up NFS-Ganesha for CephFS requires:
+
+      - A Ceph file system configured in the cluster.
+      - NFS-Ganesha-related packages such as `libcephfs2`, `nfs-ganesha`, and `nfs-ganesha-ceph` installed on the \
+      NFS server host.
+      - The NFS-Ganesha server host must be connected to the Ceph public network.
+    questions_and_answers:
+      - question: |
+          What packages are required to set up NFS-Ganesha for CephFS?
+        answer: |
+          The required packages are `libcephfs2`, `nfs-ganesha`, and `nfs-ganesha-ceph`.
+      - question: |
+          What network should the NFS-Ganesha server host be connected to?
+        answer: |
+          The NFS-Ganesha server host must be connected to the Ceph public network.
+      - question: |
+          What is the primary requirement for setting up NFS-Ganesha for CephFS?
+        answer: |
+          A Ceph file system must be configured in the cluster.
+
+  - context: |
+      Using NFSv4 Clients with NFS-Ganesha
+      ------------------------------------
+
+      NFS-Ganesha exports are best accessed using NFSv4.1+ protocols to leverage session benefits. Mount commands:
+
+      ```
+      mount -t nfs -o nfsvers=4.1,proto=tcp <ganesha-host-name>:<ganesha-pseudo-path> <mount-point>
+      ```
+
+      - Replace `<ganesha-host-name>` with the NFS-Ganesha server's hostname.
+      - Replace `<ganesha-pseudo-path>` with the export path.
+      - Replace `<mount-point>` with the local mount directory path.
+    questions_and_answers:
+      - question: |
+          Which NFS protocol version is recommended for mounting NFS-Ganesha exports?
+        answer: |
+          The NFSv4.1+ protocol is recommended for mounting NFS-Ganesha exports.
+      - question: |
+          What does `<ganesha-host-name>` represent in the mount command?
+        answer: |
+          `<ganesha-host-name>` represents the hostname of the NFS-Ganesha server.
+      - question: |
+          Why is NFSv4.1+ preferred for mounting NFS-Ganesha exports?
+        answer: |
+          NFSv4.1+ is preferred for its session benefits.
+
+  - context: |
+      Configuring libcephfs Clients for NFS-Ganesha
+      --------------------------------------------
+
+      Configure `ceph.conf` for libcephfs clients:
+
+      - Use the `[client]` section with the `mon_host` option to connect to Ceph monitors.
+      - Generate minimal configuration using:
+        ```
+        ceph config generate-minimal-conf
+        ```
+      Example configuration:
+      ```
+      [client]
+          mon host = [v2:192.168.1.7:3300,v1:192.168.1.7:6789], [v2:192.168.1.8:3300,v1:192.168.1.8:6789], \
+      [v2:192.168.1.9:3300,v1:192.168.1.9:6789]
+      ```
+    questions_and_answers:
+      - question: |
+          How do you specify monitor hosts for libcephfs clients in `ceph.conf`?
+        answer: |
+          Use the `[client]` section with the `mon_host` option to specify monitor hosts.
+      - question: |
+          Which command generates a minimal configuration file for libcephfs clients?
+        answer: |
+          The command `ceph config generate-minimal-conf` generates a minimal configuration file for libcephfs clients.
+      - question: |
+          What is the purpose of the `[client]` section in `ceph.conf` for libcephfs clients?
+        answer: |
+          The `[client]` section is used to configure options like `mon_host` to connect to Ceph monitors.
+document_outline: Guide to Configuring NFS-Ganesha with CephFS
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/nfs*.md]

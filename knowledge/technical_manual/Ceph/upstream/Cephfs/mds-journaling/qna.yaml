@@ -1,0 +1,147 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Overview of CephFS MDS Journaling
+      ---------------------------------
+
+      CephFS Metadata Servers (MDS) use journaling to ensure consistency and improve performance. Journals record
+      metadata events into the metadata pool before executing file system operations. Each active MDS maintains its
+      own journal in the metadata pool, which is striped over multiple objects. Old entries are trimmed periodically.
+
+      Journaling provides:
+      - **Consistency**: Ensures file system state consistency during MDS failover by replaying journal events.
+      - **Performance**: Sequential journal updates improve speed, and large journals warm cache for standby MDS.
+
+      Journals are essential for metadata updates, client sessions, and directory operations.
+    questions_and_answers:
+      - question: |
+          What is the purpose of journaling in CephFS MDS?
+        answer: |
+          Journaling ensures file system consistency during MDS failover and improves performance by enabling
+          sequential updates and caching.
+      - question: |
+          How does CephFS MDS manage its journals?
+        answer: |
+          Each active MDS maintains its own journal in the metadata pool, striped over multiple objects and trimmed
+          periodically.
+      - question: |
+          What types of information are recorded in CephFS journals?
+        answer: |
+          Journals record metadata updates, client sessions, directory operations, and more.
+
+  - context: |
+      Journal Event Types in CephFS
+      -----------------------------
+
+      CephFS journals various types of events, including:
+      - `EVENT_COMMITTED`: Marks a request as committed.
+      - `EVENT_FRAGMENT`: Tracks directory fragmentation stages.
+      - `EVENT_OPEN`: Tracks inodes with open file handles.
+      - `EVENT_RESETJOURNAL`: Marks a journal as reset post-truncation.
+      - `EVENT_SESSION`: Tracks open client sessions.
+      - `EVENT_UPDATE`: Logs file operations on an inode.
+      - `EVENT_SEGMENT`: Logs a new journal segment boundary.
+
+      These events help MDS maintain state consistency and manage client sessions. Tools like `cephfs-journal-tool`
+      can be used to view and manage these events.
+    questions_and_answers:
+      - question: |
+          What is the purpose of `EVENT_FRAGMENT` in CephFS journals?
+        answer: |
+          `EVENT_FRAGMENT` tracks various stages of directory fragmentation, such as split and merge.
+      - question: |
+          How can you view journal events in CephFS?
+        answer: |
+          Use the `cephfs-journal-tool --rank=<fs>:<rank> event get list` command to view journal events.
+      - question: |
+          What does the `EVENT_UPDATE` event type log in CephFS journals?
+        answer: |
+          `EVENT_UPDATE` logs file operations performed on an inode.
+
+  - context: |
+      CephFS Journal Segments
+      -----------------------
+
+      CephFS MDS journals are divided into logical segments (LogSegments) that group metadata updates for trimming
+      and replay purposes. Segments allow MDS to batch updates for performance and replay consistency. Expired segments
+      are eligible for deletion once their updates are flushed to RADOS objects.
+
+      Types of segment boundaries:
+      - **ESegment**: Lightweight segment boundary.
+      - **ESubtreeMap**: Marks the beginning of a major segment and includes subtree map details.
+      - **EResetJournal**: Marks the journal as reset.
+      - **ELid**: Indicates a new journal sequence number or initial state.
+
+      Major segments ensure consistent replay by including a subtree map.
+    questions_and_answers:
+      - question: |
+          What are journal segments in CephFS?
+        answer: |
+          Journal segments (LogSegments) group metadata updates for replay and trimming purposes.
+      - question: |
+          What is the purpose of `ESubtreeMap` in CephFS journals?
+        answer: |
+          `ESubtreeMap` marks the beginning of a major segment and ensures consistent replay by including a subtree map.
+      - question: |
+          When is a journal segment considered expired in CephFS?
+        answer: |
+          A journal segment is expired when all its updates are flushed to RADOS objects and it is no longer needed.
+
+  - context: |
+      Managing Journal Configuration in CephFS
+      ----------------------------------------
+
+      Several configurations control the behavior of MDS journaling:
+      - `mds_log_events_per_segment`: Target size of a log segment in terms of the number of events.
+      - `mds_log_major_segment_event_ratio`: Determines frequency of major segments by setting a ratio of non-\
+      `ESubtreeMap`
+        events per major segment.
+      - `mds_log_max_segments`: Maximum number of journal segments allowed.
+
+      These settings optimize journal size and trimming frequency for performance and reliability.
+    questions_and_answers:
+      - question: |
+          What does the `mds_log_events_per_segment` configuration control?
+        answer: |
+          It controls the target size of a log segment in terms of the number of events.
+      - question: |
+          How does `mds_log_major_segment_event_ratio` impact journaling?
+        answer: |
+          It determines the frequency of major segments by setting a ratio of non-`ESubtreeMap` events per major \
+          segment.
+      - question: |
+          What happens if the number of journal segments exceeds `mds_log_max_segments`?
+        answer: |
+          The MDS trims expired segments to reduce the number of journal segments to below the maximum limit.
+
+  - context: |
+      Tools for Managing CephFS Journals
+      ----------------------------------
+
+      The `cephfs-journal-tool` utility allows administrators to examine, repair, and manage CephFS journals.
+      Common commands include:
+      - `event get list`: Lists all journal events.
+      - `event splice`: Erases or repairs specific journal events.
+      - `event apply`: Reapplies metadata updates from journal events.
+
+      These tools are essential for troubleshooting and ensuring metadata consistency in CephFS.
+    questions_and_answers:
+      - question: |
+          What is the purpose of `cephfs-journal-tool`?
+        answer: |
+          `cephfs-journal-tool` is used to examine, repair, and manage CephFS journals for metadata consistency.
+      - question: |
+          How can you list all journal events using `cephfs-journal-tool`?
+        answer: |
+          Use the command `cephfs-journal-tool --rank=<fs>:<rank> event get list`.
+      - question: |
+          What does the `event apply` command do in `cephfs-journal-tool`?
+        answer: |
+          The `event apply` command reapplies metadata updates from journal events to the file system.
+document_outline: Guide to managing and understanding MDS Journaling in CephFS
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/mds-journaling.*.md]

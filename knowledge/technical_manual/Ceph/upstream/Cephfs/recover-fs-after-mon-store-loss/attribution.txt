@@ -1,0 +1,4 @@
+Title of work: Recovering the file system after catastrophic Monitor store loss
+Link to work: https://docs.ceph.com/en/squid/cephfs/recover-fs-after-mon-store-loss/
+License of the work: Apache 2.0
+Creators name: Amarnath

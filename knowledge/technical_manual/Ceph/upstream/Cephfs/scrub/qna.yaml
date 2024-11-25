@@ -1,0 +1,165 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Overview of CephFS Scrub
+      ------------------------
+
+      CephFS provides administrators with tools to check and maintain filesystem consistency via scrub commands.
+      Scrubs are categorized into two types:
+      - **Forward Scrub**: Checks consistency from the root (or a subdirectory) and evaluates the filesystem hierarchy.
+      - **Backward Scrub**: Analyzes RADOS objects and maps them back to the filesystem structure.
+
+      All forward scrub commands must be directed to rank 0 of the MDS. Administrators can initiate scrubs for specific
+      paths or the entire filesystem hierarchy.
+    questions_and_answers:
+      - question: |
+          What are the two types of CephFS scrubs?
+        answer: |
+          - Forward Scrub: Ensures consistency by traversing the filesystem hierarchy.
+          - Backward Scrub: Maps RADOS objects back to the filesystem structure.
+      - question: |
+          Where must CephFS forward scrub commands be directed?
+        answer: |
+          Forward scrub commands must be directed to rank 0 of the MDS.
+      - question: |
+          What is the main purpose of CephFS scrubs?
+        answer: |
+          CephFS scrubs ensure the consistency of the filesystem by verifying and repairing metadata and RADOS objects.
+
+  - context: |
+      Initiating File System Scrub
+      ----------------------------
+
+      To start a scrub operation for a directory tree, use the following command:
+
+      ```
+      ceph tell mds.<fsname>:0 scrub start <path> [scrubopts] [tag]
+      ```
+
+      Options for `scrubopts` include `recursive`, `force`, and `repair`. Tags can be custom strings or generated
+      UUIDs. For example:
+
+      ```
+      ceph tell mds.cephfs:0 scrub start / recursive
+      ```
+
+      Scrub operations are asynchronous and tagged for tracking. Use `scrub status` to monitor progress and verify
+      inode scrubbing using extended attributes.
+    questions_and_answers:
+      - question: |
+          What command is used to start a CephFS scrub operation?
+        answer: |
+          Use `ceph tell mds.<fsname>:0 scrub start <path> [scrubopts] [tag]` to start a scrub operation.
+      - question: |
+          What are some options available for `scrubopts` in CephFS scrubs?
+        answer: |
+          Options include `recursive`, `force`, and `repair`.
+      - question: |
+          How can you track the progress of an ongoing scrub operation?
+        answer: |
+          Use the `scrub status` command to monitor the progress of a scrub operation.
+
+  - context: |
+      Monitoring and Controlling Scrubs
+      ---------------------------------
+
+      The status of ongoing scrubs can be monitored using the `scrub status` command. For example:
+
+      ```
+      ceph tell mds.cephfs:0 scrub status
+      ```
+
+      This provides details about active scrubs, including the path and options. Scrubs can also be controlled with
+      the following commands:
+      - `scrub pause`: Pauses ongoing scrubs.
+      - `scrub resume`: Resumes paused scrubs.
+      - `scrub abort`: Aborts ongoing scrubs, removing pending inodes from the queue.
+
+      Example to pause a scrub:
+
+      ```
+      ceph tell mds.cephfs:0 scrub pause
+      ```
+    questions_and_answers:
+      - question: |
+          What command provides the status of ongoing CephFS scrubs?
+        answer: |
+          Use `ceph tell mds.cephfs:0 scrub status` to check the status of ongoing scrubs.
+      - question: |
+          How can you pause an ongoing CephFS scrub operation?
+        answer: |
+          Use the `scrub pause` command to pause an ongoing scrub.
+      - question: |
+          What happens when you abort a CephFS scrub operation?
+        answer: |
+          Aborting removes pending inodes from the scrub queue and stops further operations.
+
+  - context: |
+      Types of Damage Detected by Scrubs
+      ----------------------------------
+
+      CephFS scrubs can identify and repair the following types of damages:
+      - **DENTRY**: Missing inode's directory entry.
+      - **DIR_FRAG**: Missing directory fragments.
+      - **BACKTRACE**: Corrupted backtrace in the data pool.
+
+      To repair damage during a scrub, use:
+
+      ```
+      ceph tell mds.<fsname>:0 scrub start /path recursive, repair, force
+      ```
+
+      Successfully repaired damages are removed from the damage table automatically.
+    questions_and_answers:
+      - question: |
+          What are the three types of damage that CephFS scrubs can detect?
+        answer: |
+          - DENTRY: Missing inode's directory entry.
+          - DIR_FRAG: Missing directory fragments.
+          - BACKTRACE: Corrupted backtrace in the data pool.
+      - question: |
+          How can you initiate a repair during a CephFS scrub?
+        answer: |
+          Use the command `ceph tell mds.<fsname>:0 scrub start /path recursive, repair, force`.
+      - question: |
+          What happens to damages repaired by CephFS scrubs?
+        answer: |
+          Repaired damages are automatically removed from the damage table.
+
+  - context: |
+      Evaluating Strays During Scrubs
+      -------------------------------
+
+      To evaluate and purge stray directories, use:
+
+      ```
+      ceph tell mds.<fsname>:0 scrub start ~mdsdir recursive
+      ```
+
+      By default, stray directories (`~mdsdir`) are not scrubbed during root scrubs. To include them, use:
+
+      ```
+      ceph tell mds.<fsname>:0 scrub start / recursive,scrub_mdsdir
+      ```
+
+      Stray directories are typically used for managing orphaned inodes.
+    questions_and_answers:
+      - question: |
+          How can you evaluate stray directories during a CephFS scrub?
+        answer: |
+          Use the command `ceph tell mds.<fsname>:0 scrub start ~mdsdir recursive`.
+      - question: |
+          Are stray directories included by default in root scrubs?
+        answer: |
+          No, stray directories are not included by default in root scrubs.
+      - question: |
+          What is the purpose of stray directories (`~mdsdir`) in CephFS?
+        answer: |
+          Stray directories are used for managing orphaned inodes.
+document_outline: Guide to managing Ceph File System Scrubs
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/scrub*.md]

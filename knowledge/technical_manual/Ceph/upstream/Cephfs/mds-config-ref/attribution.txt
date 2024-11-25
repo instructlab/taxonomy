@@ -1,0 +1,4 @@
+Title of work: MDS Config Reference
+Link to work: https://docs.ceph.com/en/squid/cephfs/mds-config-ref/
+License of the work: Apache 2.0
+Creators name: Amarnath

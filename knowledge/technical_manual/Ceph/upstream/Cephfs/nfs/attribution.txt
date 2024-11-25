@@ -1,0 +1,4 @@
+Title of work: NFS
+Link to work: https://docs.ceph.com/en/squid/cephfs/nfs/
+License of the work: Apache 2.0
+Creators name: Amarnath

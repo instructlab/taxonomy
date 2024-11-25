@@ -1,0 +1,130 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Common MDS States in CephFS
+      ---------------------------
+
+      Metadata Servers (MDS) in CephFS operate in various states. Key common states include:
+
+      - **up:active**: Indicates the MDS is operational and managing metadata for its rank.
+      - **up:standby**: The MDS is ready to take over for a failed active MDS.
+      - **up:standby_replay**: The MDS is following the live journal of an active MDS for quicker failover, but it \
+      cannot
+        take over for other ranks.
+    questions_and_answers:
+      - question: |
+          What does the MDS state `up:active` signify in CephFS?
+        answer: |
+          It signifies that the MDS is operational and managing metadata for its assigned rank.
+      - question: |
+          What is the purpose of the `up:standby` state for an MDS?
+        answer: |
+          The `up:standby` state indicates the MDS is ready to take over if an active MDS fails.
+      - question: |
+          Why might an MDS be in the `up:standby_replay` state?
+        answer: |
+          An MDS in the `up:standby_replay` state is following the live journal of an active MDS for quicker failover,
+          but it cannot take over for other ranks.
+
+  - context: |
+      Transitory MDS States
+      ---------------------
+
+      MDS states during transitions include:
+
+      - **up:creating**: The MDS is creating a new rank by constructing required metadata.
+      - **up:replay**: The MDS is recovering its journal after a failure to ensure a consistent state.
+      - **up:reconnect**: The MDS solicits reconnections from clients to restore sessions.
+    questions_and_answers:
+      - question: |
+          What happens during the `up:creating` state of an MDS?
+        answer: |
+          The MDS is creating a new rank by constructing necessary metadata like journals.
+      - question: |
+          What does the `up:replay` state indicate for an MDS?
+        answer: |
+          The `up:replay` state indicates the MDS is recovering its journal to ensure a consistent file system state.
+      - question: |
+          Why does an MDS enter the `up:reconnect` state?
+        answer: |
+          An MDS enters the `up:reconnect` state to solicit reconnections from clients to restore their sessions.
+
+  - context: |
+      Failed MDS States
+      -----------------
+
+      When issues occur, MDS ranks may be marked with failed states:
+
+      - **down:failed**: Indicates no MDS is available to manage the rank. This state occurs if there are no suitable
+        standby MDS daemons.
+      - **down:damaged**: Indicates metadata damage that requires operator intervention for recovery.
+      - **down:stopped**: Indicates the rank has been manually stopped by reducing the `max_mds` parameter.
+    questions_and_answers:
+      - question: |
+          What does the `down:failed` state indicate in CephFS?
+        answer: |
+          The `down:failed` state indicates no MDS is available to manage the rank, possibly due to a lack of suitable
+          standby MDS daemons.
+      - question: |
+          What action is required if a rank is in the `down:damaged` state?
+        answer: |
+          Operator intervention is required to recover the metadata damage for the rank in the `down:damaged` state.
+      - question: |
+          Why might a rank be marked as `down:stopped` in CephFS?
+        answer: |
+          A rank is marked as `down:stopped` when it is manually stopped by reducing the `max_mds` parameter.
+
+  - context: |
+      Transitioning to Active States
+      ------------------------------
+
+      The MDS undergoes several transitional states before becoming active:
+
+      - **up:resolve**: The MDS resolves inter-MDS operations when multiple ranks exist.
+      - **up:rejoin**: The MDS re-establishes inter-MDS locks and joins the cluster cache.
+      - **up:clientreplay**: The MDS replays client requests that were not journaled before becoming active.
+    questions_and_answers:
+      - question: |
+          What does the `up:resolve` state indicate in CephFS?
+        answer: |
+          The `up:resolve` state indicates the MDS is resolving inter-MDS operations in a multi-rank file system.
+      - question: |
+          What happens during the `up:rejoin` state of an MDS?
+        answer: |
+          During the `up:rejoin` state, the MDS re-establishes inter-MDS locks and joins the cluster cache.
+      - question: |
+          Why does an MDS enter the `up:clientreplay` state?
+        answer: |
+          An MDS enters the `up:clientreplay` state to replay client requests that were not journaled before becoming \
+          active.
+
+  - context: |
+      MDS State Transitions in CephFS
+      -------------------------------
+
+      CephFS MDS state transitions follow a defined flow:
+
+      - MDS starts in the **up:boot** state and is assigned a role (e.g., standby or active).
+      - When an active MDS fails, a standby MDS transitions through states like **up:replay** and **up:resolve** to \
+      recover.
+      - If recovery is successful, the MDS becomes **up:active**; otherwise, the rank may be marked **down:failed**.
+    questions_and_answers:
+      - question: |
+          What is the starting state of an MDS during initialization?
+        answer: |
+          The starting state of an MDS during initialization is `up:boot`.
+      - question: |
+          What sequence of states does a standby MDS follow to take over an active rank?
+        answer: |
+          A standby MDS transitions through states like `up:replay` and `up:resolve` to take over an active rank.
+      - question: |
+          What happens if an MDS fails to recover a rank?
+        answer: |
+          If an MDS fails to recover a rank, the rank may be marked as `down:failed`.
+document_outline: Guide to MDS States and Transitions in CephFS
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/mds-states*.md]

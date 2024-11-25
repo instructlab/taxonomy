@@ -1,0 +1,136 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Overview of CephFS Kernel Driver
+      --------------------------------
+
+      The CephFS kernel driver is part of the Linux kernel, allowing CephFS to be mounted as a regular file
+      system with native kernel performance. It supports backward compatibility with the old mount syntax
+      but recommends the new device string syntax for better functionality. The kernel driver requires
+      monitor addresses and user credentials to mount CephFS securely.
+    questions_and_answers:
+      - question: |
+          What is the CephFS kernel driver?
+        answer: |
+          The CephFS kernel driver is part of the Linux kernel, allowing CephFS to be mounted as a regular
+          file system with native kernel performance.
+      - question: |
+          Why is the new device string syntax recommended for mounting CephFS?
+        answer: |
+          The new syntax improves functionality and compatibility with modern systems, although the old
+          syntax is still supported for backward compatibility.
+      - question: |
+          What details are required to mount CephFS using the kernel driver?
+        answer: |
+          Monitor addresses and user credentials are required to mount CephFS securely.
+
+  - context: |
+      Prerequisites for Mounting CephFS
+      ---------------------------------
+
+      Before mounting CephFS using the kernel driver, ensure the following:
+      - The `mount.ceph` helper is installed to simplify mounting.
+      - Use a kernel version that supports CephFS features; a 4.x kernel or later is recommended for Ceph
+        10.x (Jewel) and above.
+      - For distributions with CephFS support, verify backported fixes with your vendor.
+    questions_and_answers:
+      - question: |
+          What is the role of the `mount.ceph` helper in mounting CephFS?
+        answer: |
+          The `mount.ceph` helper simplifies the mounting process by automatically providing monitor
+          addresses and user credentials.
+      - question: |
+          Which kernel version is recommended for Ceph 10.x (Jewel) and later?
+        answer: |
+          A 4.x kernel or later is recommended for Ceph 10.x (Jewel) and above.
+      - question: |
+          Why should you check with your vendor for CephFS support in distributions?
+        answer: |
+          Vendors are responsible for backporting CephFS fixes to their stable kernels.
+
+  - context: |
+      Mounting CephFS Using Kernel Driver
+      -----------------------------------
+
+      Use the `mount` command with the `-t ceph` option to mount CephFS. The command requires:
+      - A device string specifying the CephX user, cluster FSID, and file system name.
+      - Options for monitor addresses (`mon_addr`) and secret keys (`secret` or `secretfile`).
+      Example:
+      ```
+      mount -t ceph cephuser@<fsid>.cephfs=/ /mnt/mycephfs -o mon_addr=192.168.0.1:6789,secretfile=/path/to/secret
+      ```
+    questions_and_answers:
+      - question: |
+          How do you specify the CephX user and file system name when mounting CephFS?
+        answer: |
+          Include the CephX user and file system name in the device string, e.g., `cephuser@<fsid>.cephfs=/`.
+      - question: |
+          What option can you use to pass a secret key without exposing it in the shell command history?
+        answer: |
+          Use the `secretfile` option to specify the path to a file containing the secret key.
+      - question: |
+          How can you mount a subtree of the CephFS root?
+        answer: |
+          Append the desired path to the device string, e.g., `cephuser@<fsid>.cephfs=/subvolume/dir`.
+
+  - context: |
+      Backward Compatibility and Mount Helper
+      ---------------------------------------
+
+      The old CephFS mount syntax is still supported for backward compatibility. For example:
+      ```
+      mount -t ceph :/ /mnt/mycephfs -o name=admin
+      ```
+      The `mount.ceph` helper can automatically retrieve monitor addresses and user credentials, simplifying
+      the process. For non-default file systems, use the `fs=` option:
+      ```
+      mount -t ceph :/ /mnt/mycephfs -o name=admin,fs=cephfs2
+      ```
+    questions_and_answers:
+      - question: |
+          What is the purpose of the `mount.ceph` helper?
+        answer: |
+          The `mount.ceph` helper simplifies mounting by automatically retrieving monitor addresses and
+          user credentials.
+      - question: |
+          How do you mount a non-default file system using the old syntax?
+        answer: |
+          Use the `fs=` option, e.g., `mount -t ceph :/ /mnt/mycephfs -o name=admin,fs=cephfs2`.
+      - question: |
+          Is the old CephFS mount syntax still supported?
+        answer: |
+          Yes, the old syntax is supported for backward compatibility.
+
+  - context: |
+      Persistent Mounts and Unmounting
+      --------------------------------
+
+      To mount CephFS persistently, add an entry to `/etc/fstab`:
+      ```
+      cephuser@.cephfs=/ /mnt/ceph ceph mon_addr=192.168.0.1:6789,secretfile=/path/to/secretfile,noatime,_netdev 0 0
+      ```
+      To unmount CephFS, use the `umount` command:
+      ```
+      umount /mnt/cephfs
+      ```
+      Ensure that no processes are using the file system before unmounting.
+    questions_and_answers:
+      - question: |
+          How do you persistently mount CephFS using `/etc/fstab`?
+        answer: |
+          Add an entry specifying the CephX user, file system, and options like `mon_addr` and `secretfile`.
+      - question: |
+          How do you unmount CephFS?
+        answer: |
+          Use the `umount` command, e.g., `umount /mnt/cephfs`.
+      - question: |
+          What should you ensure before unmounting CephFS?
+        answer: |
+          Ensure that no processes are using the file system directories before unmounting.
+document_outline: Guide to Mounting CephFS Using Kernel Driver
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/mount-using-kernel-driver*.md]

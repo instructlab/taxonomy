@@ -1,0 +1,128 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Cache and Directory Settings in MDS Configuration
+      -------------------------------------------------
+
+      Key configuration options for managing cache and directories in MDS:
+
+      - `mds_cache_mid`: Midpoint of the MDS cache size.
+      - `mds_dir_max_commit_size`: Maximum size for directory commits.
+      - `mds_dir_max_entries`: Maximum number of entries allowed in a directory.
+      - `mds_decay_halflife`: Halflife for cache decay.
+    questions_and_answers:
+      - question: |
+          What does the `mds_cache_mid` configuration option control?
+        answer: |
+          The `mds_cache_mid` option controls the midpoint of the MDS cache size.
+      - question: |
+          How can you set the maximum number of entries allowed in a directory?
+        answer: |
+          Use the `mds_dir_max_entries` configuration option to set the maximum number of entries allowed in a directory.
+      - question: |
+          What is the purpose of the `mds_decay_halflife` configuration?
+        answer: |
+          The `mds_decay_halflife` configuration controls the halflife for cache decay in MDS.
+
+  - context: |
+      Beacon and Client Configuration Options
+      ---------------------------------------
+
+      Configuration options related to MDS beaconing and client handling:
+
+      - `mds_beacon_interval`: Interval at which the MDS sends beacons to monitors.
+      - `mds_beacon_grace`: Grace period for missed MDS beacons before it is marked down.
+      - `mds_client_prealloc_inos`: Number of preallocated inodes for clients.
+      - `mds_reconnect_timeout`: Timeout for clients to reconnect during failover.
+    questions_and_answers:
+      - question: |
+          What does the `mds_beacon_interval` configuration control?
+        answer: |
+          The `mds_beacon_interval` configuration controls the interval at which MDS sends beacons to monitors.
+      - question: |
+          How can you configure the grace period for missed MDS beacons?
+        answer: |
+          Use the `mds_beacon_grace` configuration option to set the grace period for missed MDS beacons.
+      - question: |
+          What is the purpose of the `mds_client_prealloc_inos` setting?
+        answer: |
+          The `mds_client_prealloc_inos` setting specifies the number of preallocated inodes for clients.
+
+  - context: |
+      Load Balancing and Fragmentation in MDS
+      ---------------------------------------
+
+      Key options for managing MDS load balancing and fragmentation:
+
+      - `mds_bal_sample_interval`: Sampling interval for load balancing decisions.
+      - `mds_bal_split_size`: Minimum size of directories for splitting.
+      - `mds_bal_merge_size`: Maximum size of directories for merging.
+      - `mds_bal_fragment_fast_factor`: Factor controlling fast fragmentation for load balancing.
+    questions_and_answers:
+      - question: |
+          How is the sampling interval for load balancing controlled in MDS?
+        answer: |
+          The sampling interval for load balancing is controlled by the `mds_bal_sample_interval` configuration option.
+      - question: |
+          What does the `mds_bal_split_size` option define?
+        answer: |
+          The `mds_bal_split_size` option defines the minimum size of directories for splitting during load balancing.
+      - question: |
+          How can you configure the maximum size for directory merging in MDS?
+        answer: |
+          Use the `mds_bal_merge_size` configuration option to set the maximum size for directory merging.
+
+  - context: |
+      Debugging and Logging in MDS
+      ----------------------------
+
+      Options for enabling debugging and logging in MDS:
+
+      - `mds_log_skip_corrupt_events`: Skips over corrupt log events during playback.
+      - `mds_dump_cache_on_map`: Dumps the MDS cache when the MDS map changes.
+      - `mds_verify_scatter`: Verifies scatter distribution in MDS.
+      - `mds_debug_frag`: Enables debugging for fragment-related issues.
+    questions_and_answers:
+      - question: |
+          What does the `mds_log_skip_corrupt_events` configuration do?
+        answer: |
+          The `mds_log_skip_corrupt_events` configuration skips over corrupt log events during playback.
+      - question: |
+          How can you enable the dumping of the MDS cache when the MDS map changes?
+        answer: |
+          Use the `mds_dump_cache_on_map` configuration option to enable cache dumping on MDS map changes.
+      - question: |
+          What is the purpose of the `mds_verify_scatter` setting?
+        answer: |
+          The `mds_verify_scatter` setting verifies scatter distribution in MDS.
+
+  - context: |
+      Advanced and Testing Configurations
+      -----------------------------------
+
+      Configuration options for advanced and testing scenarios:
+
+      - `mds_kill_export_at`: Simulates MDS failure during export.
+      - `mds_inject_skip_replaying_inotable`: Skips replaying the inode table during recovery.
+      - `mds_min_caps_per_client`: Sets the minimum number of caps per client.
+      - `mds_symlink_recovery`: Controls recovery of broken symbolic links.
+    questions_and_answers:
+      - question: |
+          What does the `mds_kill_export_at` configuration simulate?
+        answer: |
+          The `mds_kill_export_at` configuration simulates MDS failure during an export operation.
+      - question: |
+          How can you set the minimum number of caps per client in MDS?
+        answer: |
+          Use the `mds_min_caps_per_client` configuration option to set the minimum number of caps per client.
+      - question: |
+          What is the purpose of the `mds_symlink_recovery` setting?
+        answer: |
+          The `mds_symlink_recovery` setting controls the recovery of broken symbolic links in MDS.
+document_outline: Guide to MDS Configuration Options
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/mds-config-ref*.md]

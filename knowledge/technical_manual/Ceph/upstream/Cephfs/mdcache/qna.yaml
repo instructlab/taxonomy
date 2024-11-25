@@ -1,0 +1,117 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Overview of CephFS Metadata Cache
+      ---------------------------------
+
+      In a Ceph file system, inode metadata and directory information are managed by the Ceph metadata server \
+      (MDS) and stored in a separate RADOS pool from file data. The MDS grants clients **capabilities** (caps) to \
+      cache or manipulate metadata. When another client requires access, the MDS revokes the caps, ensuring \
+      consistency and cache coherence across the cluster.
+    questions_and_answers:
+      - question: |
+          What role does the Ceph metadata server (MDS) play in managing inode metadata?
+        answer: |
+          The MDS manages inode metadata and directory information, storing it in a separate RADOS pool from file data.
+      - question: |
+          What are capabilities (caps) in CephFS?
+        answer: |
+          Caps grant clients the ability to cache and manipulate metadata or data associated with an inode.
+      - question: |
+          What happens when another client needs access to metadata held by a cap?
+        answer: |
+          The MDS revokes the cap and retrieves the updated metadata from the client if changes were made.
+
+  - context: |
+      Handling Capabilities in CephFS
+      -------------------------------
+
+      Clients with capabilities (caps) can cache metadata and make changes locally. \
+      If a capability conflicts with another client's operation or the MDS's actions, \
+      it is revoked. Clients must return revoked caps promptly, failing which they risk being blocklisted and \
+      unable to communicate with the cluster.
+    questions_and_answers:
+      - question: |
+          What can a client do with a capability in CephFS?
+        answer: |
+          A client can cache metadata and make changes locally when it holds the relevant capability.
+      - question: |
+          What happens if a client fails to return a revoked capability promptly?
+        answer: |
+          The client may be blocklisted and unable to communicate with the cluster.
+      - question: |
+          Why does the MDS revoke capabilities?
+        answer: |
+          To prevent conflicts between clients and ensure consistency when operations require metadata access.
+
+  - context: |
+      Client Metadata Requests in CephFS
+      ----------------------------------
+
+      Clients can query or request changes to inode metadata by either making requests to the MDS or serving \
+      information from their cache. Cached data can only be used if the client has the required caps. Requests to \
+      the MDS may also grant caps for subsequent operations.
+    questions_and_answers:
+      - question: |
+          How do clients query or change inode metadata in CephFS?
+        answer: |
+          Clients can either make requests to the MDS or use cached data if they have the necessary caps.
+      - question: |
+          What does the MDS provide when replying to client requests?
+        answer: |
+          The MDS may grant capabilities (caps) to the client for subsequent operations.
+      - question: |
+          When is it necessary for clients to request caps directly from the MDS?
+        answer: |
+          Clients must request caps directly to read or write file data.
+
+  - context: |
+      Distributed Locks in an MDS Cluster
+      -----------------------------------
+
+      In an MDS cluster, locks are used to manage inode operations. The authoritative MDS for an inode handles all \
+      change requests, while non-authoritative MDSs can obtain read locks to serve inode information. Locks ensure \
+      consistency by preventing conflicting operations during metadata updates.
+    questions_and_answers:
+      - question: |
+          What is the role of locks in an MDS cluster?
+        answer: |
+          Locks manage inode operations and prevent conflicting updates during metadata changes.
+      - question: |
+          What is the authoritative MDS in a CephFS cluster?
+        answer: |
+          It is the MDS responsible for managing all change requests for a specific inode.
+      - question: |
+          Can non-authoritative MDSs handle inode requests?
+        answer: |
+          Yes, they can obtain read locks to serve inode information but cannot make changes.
+
+  - context: |
+      Metadata Balancing and Pinning in CephFS
+      ----------------------------------------
+
+      Inode responsibilities are dynamically balanced among MDSs, with each MDS acting as the authoritative \
+      server for certain inodes. Subtrees can also be explicitly pinned to a single MDS to override dynamic balancing \
+      and ensure consistent handling for specific workloads.
+    questions_and_answers:
+      - question: |
+          How are inode responsibilities distributed in an MDS cluster?
+        answer: |
+          Inode responsibilities are dynamically balanced among MDSs, with each MDS becoming the authoritative server \
+          for certain inodes.
+      - question: |
+          What is subtree pinning in CephFS?
+        answer: |
+          Subtree pinning explicitly assigns a directory and its contents to a specific MDS, overriding dynamic \
+          balancing.
+      - question: |
+          Why might subtree pinning be useful in CephFS?
+        answer: |
+          It ensures consistent handling of specific workloads by assigning metadata management to a particular MDS.
+document_outline: Guide to CephFS Distributed Metadata Cache
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/mdcache*.md]

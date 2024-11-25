@@ -1,0 +1,148 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Overview of Multiple Active MDS Daemons in CephFS
+      -------------------------------------------------
+
+      By default, CephFS is configured with a single active MDS daemon. For large-scale systems needing higher metadata
+      performance, multiple active MDS daemons can be configured. This setup allows sharing of the metadata workload
+      across MDS daemons, enhancing performance for workloads with many clients or parallel operations.
+
+      To enable this, set the `max_mds` parameter to the desired number of active MDS daemons. Standby daemons are
+      recommended for high availability to ensure failover in case of MDS failures.
+    questions_and_answers:
+      - question: |
+          Why would you configure multiple active MDS daemons in CephFS?
+        answer: |
+          To enhance metadata performance for workloads with many clients or parallel operations by sharing the
+          workload across multiple MDS daemons.
+      - question: |
+          What parameter controls the number of active MDS daemons in CephFS?
+        answer: |
+          The `max_mds` parameter controls the number of active MDS daemons.
+      - question: |
+          Why are standby MDS daemons recommended in a multi-MDS configuration?
+        answer: |
+          Standby MDS daemons ensure high availability by taking over in case of failures of active MDS daemons.
+
+  - context: |
+      Manual Directory Pinning in CephFS
+      ----------------------------------
+
+      In multi-MDS configurations, directory trees can be explicitly pinned to specific MDS ranks using the \
+      `ceph.dir.pin`
+      extended attribute. This allows administrators to control the distribution of metadata for performance \
+      optimization.
+
+      Example:
+      ```
+      setfattr -n ceph.dir.pin -v <rank> <directory>
+      ```
+
+      A value of `-1` indicates no pinning. Pins can be inherited by child directories or overridden by setting a \
+      new pin
+      on a child directory.
+    questions_and_answers:
+      - question: |
+          What is the purpose of manual directory pinning in CephFS?
+        answer: |
+          Manual directory pinning allows administrators to control the distribution of metadata by assigning specific
+          directories to particular MDS ranks.
+      - question: |
+          How do you set a directory pin in CephFS?
+        answer: |
+          Use the `setfattr` command with the `ceph.dir.pin` extended attribute, e.g., \
+          `setfattr -n ceph.dir.pin -v <rank> <directory>`.
+      - question: |
+          What happens if a parent directory is pinned but a child directory is not explicitly pinned?
+        answer: |
+          The child directory inherits the pin from its closest parent with a set pin.
+
+  - context: |
+      Ephemeral Pinning Policies in CephFS
+      ------------------------------------
+
+      Ephemeral pinning automatically assigns directories to MDS ranks based on their inode numbers and \
+      consistent hashing.
+      Policies:
+      - **Distributed Ephemeral Pins**: Fragments and distributes subtrees across ranks.
+      - **Random Ephemeral Pins**: Pins a percentage of directories under a path.
+
+      Use `ceph.dir.pin.distributed` or `ceph.dir.pin.random` attributes to enable these policies.
+    questions_and_answers:
+      - question: |
+          What is the purpose of ephemeral pinning in CephFS?
+        answer: |
+          Ephemeral pinning automatically distributes directories across MDS ranks based on inode numbers and \
+          consistent hashing.
+      - question: |
+          How do distributed ephemeral pins work?
+        answer: |
+          Distributed ephemeral pins fragment and distribute subtrees across MDS ranks, spreading metadata load.
+      - question: |
+          What attribute enables random ephemeral pinning in CephFS?
+        answer: |
+          The `ceph.dir.pin.random` attribute enables random ephemeral pinning.
+
+  - context: |
+      Dynamic Subtree Partitioning in CephFS
+      --------------------------------------
+
+      CephFS uses a dynamic balancer to optimize metadata distribution by splitting or merging subtrees and placing
+      them on underutilized MDS ranks. This feature is controlled by the `balance_automate` option.
+
+      Example:
+      ```
+      ceph fs set <fs_name> balance_automate true
+      ```
+
+      Use `bal_rank_mask` to limit the balancer to specific ranks for mixed static and dynamic partitioning setups.
+    questions_and_answers:
+      - question: |
+          What is the purpose of dynamic subtree partitioning in CephFS?
+        answer: |
+          Dynamic subtree partitioning improves file system throughput by splitting or merging subtrees and placing
+          them on underutilized MDS ranks.
+      - question: |
+          How do you enable the dynamic balancer in CephFS?
+        answer: |
+          Use the command `ceph fs set <fs_name> balance_automate true` to enable the dynamic balancer.
+      - question: |
+          What does the `bal_rank_mask` option do in CephFS?
+        answer: |
+          The `bal_rank_mask` option limits the dynamic balancer to specific active MDS ranks.
+
+  - context: |
+      Reducing the Number of Active MDS Daemons in CephFS
+      ---------------------------------------------------
+
+      To reduce the number of active MDS daemons, lower the `max_mds` parameter. The cluster will incrementally stop
+      extra ranks by transferring metadata to the remaining active daemons.
+
+      Example:
+      ```
+      ceph fs set <fs_name> max_mds <new_value>
+      ```
+
+      The stopping process may take seconds to minutes as metadata is handed off. If issues arise, \
+      investigate potential bugs.
+    questions_and_answers:
+      - question: |
+          How do you reduce the number of active MDS daemons in CephFS?
+        answer: |
+          Lower the `max_mds` parameter using the command `ceph fs set <fs_name> max_mds <new_value>`.
+      - question: |
+          What happens to metadata when reducing the number of active MDS daemons?
+        answer: |
+          Metadata from stopped ranks is incrementally transferred to the remaining active daemons.
+      - question: |
+          Why might an MDS daemon appear stuck in the stopping state?
+        answer: |
+          This could indicate a bug and should be investigated.
+document_outline: Guide to configuring multiple active MDS daemons and metadata partitioning in CephFS
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/multimds*.md]

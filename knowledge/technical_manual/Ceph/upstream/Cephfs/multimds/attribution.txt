@@ -1,0 +1,4 @@
+Title of work: Configuring multiple active MDS daemons
+Link to work: https://docs.ceph.com/en/squid/cephfs/multimds/
+License of the work: Apache 2.0
+Creators name: Amarnath

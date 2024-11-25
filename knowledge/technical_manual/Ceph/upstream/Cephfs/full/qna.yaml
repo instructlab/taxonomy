@@ -1,0 +1,129 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Overview of Handling a Full Ceph File System
+      --------------------------------------------
+
+      When a RADOS cluster reaches its ``mon_osd_full_ratio`` (default 95%) capacity, it is marked with the OSD full \
+      flag.
+      This flag pauses most normal RADOS client operations until the issue is resolved (e.g., by adding more capacity).
+      The Ceph file system has special handling mechanisms for this scenario, ensuring data safety and operational \
+      integrity.
+    questions_and_answers:
+      - question: |
+          What happens when a RADOS cluster reaches the ``mon_osd_full_ratio``?
+        answer: |
+          The cluster is marked with the OSD full flag, pausing most RADOS client operations until the issue is \
+          resolved.
+      - question: |
+          What is the default value for ``mon_osd_full_ratio``?
+        answer: |
+          The default value for ``mon_osd_full_ratio`` is 95%.
+      - question: |
+          How can the OSD full flag issue be resolved?
+        answer: |
+          The issue can be resolved by adding more capacity to the cluster.
+
+  - context: |
+      File System Behavior in Hammer and Later Releases
+      -------------------------------------------------
+
+      In Ceph Hammer and later releases, a full file system results in ENOSPC errors for:
+
+      - Data writes on the client.
+      - Metadata operations other than deletes and truncates.
+
+      Applications may not encounter the error until a ``fsync`` or ``fclose`` call.
+      ``fsync`` guarantees error reporting if data fails to persist, but ``fclose`` only reports errors if buffered \
+      data was flushed and failed to persist since the last write.
+    questions_and_answers:
+      - question: |
+          What error is returned for data writes on a full Ceph file system in Hammer and later releases?
+        answer: |
+          The ENOSPC error is returned for data writes.
+      - question: |
+          When is the ENOSPC error encountered by applications?
+        answer: |
+          It may be encountered during a ``fsync`` or ``fclose`` call.
+      - question: |
+          How does ``fsync`` differ from ``fclose`` in error reporting for full file systems?
+        answer: |
+          ``fsync`` guarantees error reporting if data fails to persist, while ``fclose`` only reports errors if \
+          buffered
+          data was flushed and failed to persist.
+
+  - context: |
+      Warnings and Recommendations for Full File Systems
+      --------------------------------------------------
+
+      Applications misbehaving on a full file system should ensure proper ``fsync()`` calls to verify data persistence.
+      Data writes in flight during the OSD full flag may be canceled. Clients update the ``osd_epoch_barrier`` to \
+      prevent \
+      interference with subsequent operations on affected files.
+    questions_and_answers:
+      - question: |
+          What should you check if an application misbehaves on a full file system?
+        answer: |
+          Ensure the application performs ``fsync()`` calls to verify data persistence before proceeding.
+      - question: |
+          What happens to data writes in flight during the OSD full flag?
+        answer: |
+          Data writes in flight may be canceled.
+      - question: |
+          What mechanism prevents interference with subsequent operations after canceled writes?
+        answer: |
+          Clients update the ``osd_epoch_barrier`` to ensure canceled operations do not interfere with subsequent \
+          access.
+
+  - context: |
+      Legacy Behavior in Pre-Hammer Releases
+      --------------------------------------
+
+      In pre-Hammer releases, MDS ignored the full status of the RADOS cluster. Data writes stalled until the \
+      cluster was no longer full, which led to two potential issues:
+
+      - Pending writes prevented clients from releasing files for deletion.
+      - Excessive metadata writes from creating empty files could completely exhaust OSD space, blocking further \
+      deletions.
+    questions_and_answers:
+      - question: |
+          How did MDS handle the full status of the RADOS cluster in pre-Hammer releases?
+        answer: |
+          MDS ignored the full status, causing data writes to stall until the cluster was no longer full.
+      - question: |
+          What problem occurred when clients had pending writes in pre-Hammer releases?
+        answer: |
+          Clients could not release files to the MDS for deletion, making it difficult to clear space.
+      - question: |
+          What was the risk of creating too many empty files in pre-Hammer releases?
+        answer: |
+          Metadata writes from creating empty files could exhaust OSD space, blocking further deletions.
+
+  - context: |
+      Summary of Full File System Handling
+      ------------------------------------
+
+      Ceph file systems handle full conditions by pausing most operations, returning ENOSPC errors for writes and \
+      metadata changes (except deletes and truncates), and leveraging ``fsync`` \
+      for reliable error detection. Legacy behaviors caused stalling and space exhaustion, but modern mechanisms \
+      ensure safe operations and client coordination.
+    questions_and_answers:
+      - question: |
+          Which operations return ENOSPC errors on a full file system in modern Ceph releases?
+        answer: |
+          Data writes and metadata changes (except deletes and truncates) return ENOSPC errors.
+      - question: |
+          What command ensures reliable error detection for writes on a full file system?
+        answer: |
+          The ``fsync`` command ensures reliable error detection for writes.
+      - question: |
+          What issues did legacy Ceph releases face with full file systems?
+        answer: |
+          Legacy releases faced stalling and space exhaustion due to ignored full status and excessive metadata writes.
+document_outline: Guide to Handling Full Ceph File Systems
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/full*.md]
