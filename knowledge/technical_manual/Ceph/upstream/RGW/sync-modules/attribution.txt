@@ -1,0 +1,4 @@
+Title of work: Ceph Object Gateway Sync Modules
+Link to work: https://docs.ceph.com/en/squid/radosgw/sync-modules/
+License of the work: Apache 2.0
+Creators name: Vidushi Mishra

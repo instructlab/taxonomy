@@ -1,0 +1,4 @@
+Title of work: Ceph Object Gateway Cloud Transition
+Link to work: https://docs.ceph.com/en/squid/radosgw/cloud-transition/
+License of the work: Apache 2.0
+Creators name: Vidushi Mishra

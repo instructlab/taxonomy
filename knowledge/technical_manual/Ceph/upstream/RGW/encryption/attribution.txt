@@ -1,0 +1,4 @@
+Title of work: Ceph Object Gateway Server Side Encryption
+Link to work: https://docs.ceph.com/en/squid/radosgw/encryption/
+License of the work: Apache 2.0
+Creators name: Vidushi Mishra

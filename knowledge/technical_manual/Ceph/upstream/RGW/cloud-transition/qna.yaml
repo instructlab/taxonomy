@@ -1,0 +1,163 @@
+version: 3
+created_by: Vidushi Mishra
+domain: opensource_storage
+seed_examples:
+  - context: |
+      This feature enables data transition to a remote cloud service as part of Lifecycle Configuration via
+      storage_classes{.interpreted-text role="ref"}. The transition is unidirectional; data cannot be transitioned back
+      from the remote zone. The goal of this feature is to enable data transition to multiple cloud providers. The
+      currently supported cloud providers are those that are compatible with AWS (S3).
+
+      A special storage class of tier type cloud-s3 is used to configure the remote cloud S3 object store service to
+      which the data needs to be transitioned. These are defined in terms of zonegroup placement targets and, unlike
+      regular storage classes, do not need a data pool.
+
+      User credentials for the remote cloud object store service need to be configured. Note that source ACLs will not
+      be preserved. It is possible to map permissions of specific source users to specific destination users.
+    questions_and_answers:
+      - question: |
+          What is the purpose of this feature in Lifecycle Configuration?
+        answer: |
+          The feature enables unidirectional data transition to a remote cloud service as part of Lifecycle
+          Configuration.
+      - question: |
+          Which cloud providers are supported for data transition?
+        answer: |
+          The feature supports cloud providers compatible with AWS (S3).
+      - question: |
+          What is the role of the cloud-s3 storage class in this feature?
+        answer: |
+          The cloud-s3 storage class configures the remote cloud S3 object store service for data transition.
+      - question: |
+          Do source ACLs get preserved during data transition?
+        answer: |
+          No, source ACLs are not preserved during data transition.
+  - context: |
+      The Cloud Storage Class Configuration is used to configure how data transitions to a remote cloud S3 object store.
+      It specifies connection credentials, endpoint details, access control mappings, and other transition-specific
+      settings. The configuration supports flexibility with ACL mappings, target storage paths, and storage classes.
+      Retaining or deleting metadata of transitioned objects can also be controlled.
+
+      Key fields include access_key and secret for authentication, endpoint and region for the S3 service, host_style
+      to determine access style, and acls for mapping source user permissions to destination users. The target_path
+      determines the prefix for transitioned objects, and target_storage_class specifies the class the object moves to.
+      The retain_head_object flag controls whether metadata is retained after the object transitions.
+
+      These configurations enable robust customization for transitioning data while ensuring compatibility with AWS S3
+      standards.
+    questions_and_answers:
+      - question: |
+          What is the purpose of the Cloud Storage Class Configuration?
+        answer: |
+          It configures data transitions to a remote cloud S3 object store, including credentials, endpoints, ACL
+          mappings, and target storage details.
+      - question: |
+          What is the role of the `target_path` in the configuration?
+        answer: |
+          The `target_path` defines the prefix for transitioned objects. By default, it uses
+          "rgwx-${zonegroup}-${storage-class}-cloud-bucket".
+      - question: |
+          How does the `retain_head_object` option affect the transition?
+        answer: |
+          If true, it retains metadata of transitioned objects. If false (default), the object is deleted post
+          transition.
+      - question: |
+          What does the `acls` field in the configuration do?
+        answer: |
+          The `acls` field contains a list of mappings to convert source user permissions (source_id) to destination
+          users (dest_id).
+  - context: |
+      S3-specific configurables enable tuning the behavior of cloud transitions with AWS S3-compatible backends. Key
+      options include `multipart_sync_threshold` for deciding object size for multipart uploads and
+      `multipart_min_part_size` for defining the minimum part size during multipart uploads.
+
+      Storage classes with tier type `cloud-s3` are essential for enabling cloud transitions. They are configured at the
+      zonegroup level using the `radosgw-admin` commands. Once created, a `cloud-s3` tier cannot be modified to another
+      type. Adjustments to storage class configurations, such as endpoints or ACLs, are done using the
+      `zonegroup placement modify` command.
+
+      Example configurations and commands include defining endpoints, access keys, ACL mappings, and enabling metadata
+      retention. Removing or modifying specific entries is possible, but deleting a storage class will leave only the
+      remaining classes, such as `STANDARD`.
+    questions_and_answers:
+      - question: |
+          What does the `multipart_sync_threshold` configurable define?
+        answer: |
+          It defines the object size threshold above which multipart uploads will be used for transitioning objects.
+      - question: |
+          How is a storage class with tier type `cloud-s3` created?
+        answer: |
+          Using the `radosgw-admin zonegroup placement add` command with `--tier-type=cloud-s3` and a specified
+          storage class name.
+      - question: |
+          Can a `cloud-s3` storage class be changed to another tier type after creation?
+        answer: |
+          No, once created, a `cloud-s3` storage class cannot be modified to any other tier type.
+      - question: |
+          How can a specific ACL mapping be removed from a storage class?
+        answer: |
+          Use the `radosgw-admin zonegroup placement modify` command with `--tier-config-rm` and specify the ACL
+          entry to remove.
+  - context: |
+      The cloud storage class integrates seamlessly into bucket lifecycle rules, enabling unidirectional object
+      transitions to the cloud. When defining lifecycle rules, ensure the cloud storage class appears last as
+      subsequent rules are inapplicable post-transition. Due to API limitations, original object metadata such as
+      modification time and ETag cannot be preserved. Instead, these are stored as metadata attributes on the
+      destination object, along with new attributes `x-rgw-cloud` and `x-rgw-cloud-keep-attrs`.
+
+      By default, transitioned objects are deleted from the source. However, metadata retention is possible using the
+      `retain_head_object` configuration, though accessing these retained objects results in an
+      'InvalidObjectState' error. To prevent object name collisions, the source bucket name is prepended to the target
+      object name, and version IDs are appended for versioned objects.
+
+      For versioned objects, transitions adhere to lifecycle expiration semantics:
+      - Current objects are made noncurrent after transitioning, with a delete marker created.
+      - Locked noncurrent objects are skipped during transitions.
+    questions_and_answers:
+      - question: |
+          How should the cloud storage class be positioned in bucket lifecycle rules?
+        answer: |
+          The cloud storage class must be specified last as subsequent rules do not apply after the transition.
+      - question: |
+          What happens to the source object post-transition?
+        answer: |
+          By default, the source object is deleted. Its metadata can be retained with updated values if
+          `retain_head_object` is set to true.
+      - question: |
+          How are object name collisions avoided in the cloud target?
+        answer: |
+          The source bucket name is prepended, and the source object version ID is appended to the target object name.
+      - question: |
+          What happens to versioned objects during cloud transition?
+        answer: |
+          Current objects are made noncurrent with a delete marker. Locked noncurrent objects are skipped.
+  - context: |
+      Future work includes several key enhancements to improve cloud transition handling:
+      - Implementing presigned redirects or read-through mechanisms for objects transitioned to the cloud, enabling
+        seamless access.
+      - Supporting the `s3:RestoreObject` operation on cloud-transitioned objects to allow retrieval of archived objects.
+      - Enabling federation between RGW and cloud services for better interoperability and unified management.
+      - Expanding support to additional cloud providers, such as Azure, to offer more flexibility in cloud storage options.
+    questions_and_answers:
+      - question: |
+          What is a presigned redirect for cloud transitioned objects?
+        answer: |
+          A presigned redirect will allow seamless access to cloud-transitioned objects through a secure URL.
+      - question: |
+          What does the `s3:RestoreObject` operation do?
+        answer: |
+          It enables the restoration of archived objects from cloud storage back to a usable state.
+      - question: |
+          What does federation between RGW and cloud services mean?
+        answer: |
+          It allows RGW to work across multiple cloud platforms, enhancing integration and management.
+      - question: |
+          Will support be added for other cloud providers like Azure?
+        answer: |
+          Yes, there are plans to extend support to additional cloud providers like Azure in the future.
+
+document_outline: Teach the Large Language Model about cloud transition of objects in Radosgw
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/radosgw/cloud-transition.md]

@@ -1,0 +1,114 @@
+version: 3
+created_by: Vidushi Mishra
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Sync Modules in RGW are built atop the multisite framework, introduced in the Jewel release. They enable
+      data and metadata forwarding to external tiers whenever a data change occurs. This includes metadata operations
+      like bucket or user creation. Sync modules provide an asynchronous propagation of changes between remote sites,
+      unlocking use cases such as backing up object storage to external cloud clusters or custom backup solutions.
+      The configuration of a sync module is local to a zone and defines whether the zone exports data or consumes
+      modified data from another zone. Supported sync plugins include Elasticsearch, RGW (default for zone-to-zone data sync),
+      and log (for logging metadata operations). Examples in the documentation use the Elasticsearch sync module, but the
+      process is similar for any sync plugin.
+    questions_and_answers:
+      - question: |
+          What do sync modules in RGW do?
+        answer: |
+          Sync modules forward data and metadata to an external tier upon data changes in RGW.
+      - question: |
+          What is the default sync plugin for RGW?
+        answer: |
+          The default sync plugin is RGW, which synchronizes data between zones.
+      - question: |
+          Can sync modules be used for backup purposes?
+        answer: |
+          Yes, sync modules can be used to back up object storage to external cloud clusters or custom backup solutions.
+      - question: |
+          What are the supported sync plugins in RGW?
+        answer: |
+          Supported plugins include Elasticsearch, RGW, and log for syncing data or logging metadata operations.
+  - context: |
+      In a simple multisite configuration with two zones (us-east and us-west), a third zone, us-east-es, is added.
+      This new zone processes only metadata from the other zones and does not serve end user requests directly.
+      The us-east-es zone can be in the same or a different Ceph cluster as the us-east zone. It functions solely
+      for metadata consumption, meaning it does not export or serve data but plays a key role in managing metadata
+      for the other zones.
+    questions_and_answers:
+      - question: |
+          What is the purpose of the us-east-es zone in this multisite configuration?
+        answer: |
+          The us-east-es zone processes metadata from other zones and does not serve end user requests.
+      - question: |
+          Can the us-east-es zone be in the same Ceph cluster as us-east?
+        answer: |
+          Yes, the us-east-es zone can be in the same or a different Ceph cluster as the us-east zone.
+      - question: |
+          Does the us-east-es zone export data?
+        answer: |
+          No, the us-east-es zone only consumes metadata and does not export or serve data.
+      - question: |
+          Will RGWs in the us-east-es zone serve end user requests?
+        answer: |
+          No, RGWs in the us-east-es zone will not serve end user requests directly.
+  - context: |
+      To configure a sync module, create a third zone similar to the multisite documentation. For example:
+      `radosgw-admin zone create --rgw-zonegroup=us --rgw-zone=us-east-es --access-key={system-key} --secret={secret} --endpoints=http://rgw-es:80`.
+    questions_and_answers:
+      - question: |
+          How do you create a third zone for the sync module?
+        answer: |
+          Use the command `radosgw-admin zone create --rgw-zonegroup=us --rgw-zone=us-east-es --access-key={system-key} --secret={secret} --endpoints=http://rgw-es:80`.
+      - question: |
+          What is the purpose of creating the third zone in this configuration?
+        answer: |
+          The third zone, `us-east-es`, is set up to only process metadata from other zones, not handle end-user requests.
+      - question: |
+          What is the role of `--access-key` and `--secret` in the zone creation command?
+        answer: |
+          The `--access-key` and `--secret` are used to authenticate the request and allow access to the RGW endpoints.
+  - context: |
+      To configure a sync module for the created zone, use the following command:
+      `radosgw-admin zone modify --rgw-zone={zone-name} --tier-type={tier-type} --tier-config={set of key=value pairs}`.
+    questions_and_answers:
+      - question: |
+          How do you configure a sync module for a zone?
+        answer: |
+          Use the command `radosgw-admin zone modify --rgw-zone={zone-name} --tier-type={tier-type} --tier-config={set of key=value pairs}`.
+      - question: |
+          What is the purpose of `--tier-type` in the command?
+        answer: |
+          The `--tier-type` specifies the type of sync module, such as `elasticsearch`, to use for the zone.
+      - question: |
+          What kind of parameters are included in `--tier-config`?
+        answer: |
+          The `--tier-config` includes a set of key-value pairs that define specific settings for the sync module, like endpoint URL and number of shards.
+  - context: |
+      For example, to configure the elasticsearch sync module, use the following command:
+      `radosgw-admin zone modify --rgw-zone={zone-name} --tier-type=elasticsearch --tier-config=endpoint=http://localhost:9200,num_shards=10,num_replicas=1`.
+      For the various supported `tier-config` options, refer to the elasticsearch sync module docs.
+      Finally, update the period with the command `radosgw-admin period update --commit`, and start the radosgw service with:
+      `systemctl start ceph-radosgw@rgw.hostname -s` and `systemctl enable ceph-radosgw@rgw.hostname -s`.
+    questions_and_answers:
+      - question: |
+          How do you configure the elasticsearch sync module for a zone?
+        answer: |
+          Use the command `radosgw-admin zone modify --rgw-zone={zone-name} --tier-type=elasticsearch --tier-config=endpoint=http://localhost:9200,num_shards=10,num_replicas=1`.
+      - question: |
+          What is the purpose of `--tier-config` in the elasticsearch sync module configuration?
+        answer: |
+          The `--tier-config` option specifies settings like the endpoint URL, number of shards, and number of replicas for the elasticsearch sync module.
+      - question: |
+          What is the purpose of updating the period using `radosgw-admin period update --commit`?
+        answer: |
+          The `radosgw-admin period update --commit` command commits changes to the period, ensuring that the configuration is applied across the system.
+      - question: |
+          How do you start the radosgw service for the zone after configuring the sync module?
+        answer: |
+          Start the radosgw service with `systemctl start ceph-radosgw@rgw.hostname -s` and enable it with `systemctl enable ceph-radosgw@rgw.hostname -s`.
+
+document_outline: Teach the Large Language Model about sync modules in Radosgw
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/radosgw/sync-modules.md]

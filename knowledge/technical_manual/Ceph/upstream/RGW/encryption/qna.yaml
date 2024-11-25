@@ -1,0 +1,160 @@
+version: 3
+created_by: Vidushi Mishra
+domain: opensource_storage
+seed_examples:
+  - context: |
+      The Ceph Object Gateway supports server-side encryption for uploaded objects, offering three options for managing
+      encryption keys. With server-side encryption, data is transmitted over HTTP in its unencrypted form, while the
+      Ceph Object Gateway stores the data in the Ceph Storage Cluster in encrypted form.
+
+      Requests for server-side encryption must use a secure HTTPS connection to avoid transmitting secrets in plaintext.
+      If a proxy performs SSL termination, the setting `rgw trust forwarded https` must be enabled for forwarded
+      requests to be trusted as secure.
+
+      Server-side encryption keys are required to be 256-bit long and base64 encoded.
+    questions_and_answers:
+      - question: |
+          What does server-side encryption in the Ceph Object Gateway do?
+        answer: |
+          Server-side encryption ensures that data is stored in encrypted form in the Ceph Storage Cluster, even
+          though it is sent unencrypted over HTTP.
+      - question: |
+          What is required for server-side encryption requests to be secure?
+        answer: |
+          Server-side encryption requests must use a secure HTTPS connection to avoid transmitting secrets in plaintext.
+          If SSL termination occurs at a proxy, `rgw trust forwarded https` must be enabled.
+      - question: |
+          What are the requirements for server-side encryption keys?
+        answer: |
+          Server-side encryption keys must be 256-bit long and base64 encoded.
+  - context: |
+      **Customer-Provided Keys** allow the client to pass an encryption key with each request to read or write encrypted
+      data. The client is responsible for managing these keys and keeping track of which key was used to encrypt each
+      object.
+
+      This encryption mode is implemented in S3 according to the Amazon SSE-C specification.
+
+      Since key management is entirely handled by the client, no special Ceph configuration is required to support
+      this encryption mode.
+    questions_and_answers:
+      - question: |
+          What are Customer-Provided Keys in Ceph?
+        answer: |
+          Customer-Provided Keys let the client pass an encryption key with each request to read or write encrypted
+          data.
+      - question: |
+          Who manages the encryption keys in the Customer-Provided Keys mode?
+        answer: |
+          In the Customer-Provided Keys mode, the client is responsible for managing encryption keys and tracking
+          which key was used for each object.
+      - question: |
+          How is Customer-Provided Keys encryption implemented in S3?
+        answer: |
+          Customer-Provided Keys encryption is implemented in S3 according to the Amazon SSE-C specification.
+      - question: |
+          Is special Ceph configuration required for Customer-Provided Keys mode?
+        answer: |
+          No, special Ceph configuration is not required as key management is entirely handled by the client.
+
+  - context: |
+      **Key Management Service (KMS)** allows an administrator to store encryption keys in a secure key management
+      service. The Ceph Object Gateway retrieves these keys on demand to handle requests for encrypting or decrypting
+      data.
+
+      This encryption mode is implemented in S3 according to the Amazon SSE-KMS specification.
+
+      In principle, any key management service can be used. Currently, integration with Barbican, Vault, and KMIP is
+      implemented.
+
+      For more details, see OpenStack Barbican Integration, HashiCorp Vault Integration, and KMIP Integration.
+    questions_and_answers:
+      - question: |
+          What is the Key Management Service mode in Ceph?
+        answer: |
+          In Key Management Service mode, an administrator stores encryption keys in a secure key management service,
+          and the Ceph Object Gateway retrieves them as needed.
+      - question: |
+          How is Key Management Service encryption implemented in S3?
+        answer: |
+          Key Management Service encryption is implemented in S3 according to the Amazon SSE-KMS specification.
+      - question: |
+          Which key management services are currently supported for integration with Ceph?
+        answer: |
+          Ceph currently supports integration with Barbican, HashiCorp Vault, and KMIP for key management.
+      - question: |
+          Is it possible to use any key management service with Ceph's KMS mode?
+        answer: |
+          Yes, in principle, any key management service can be used with Ceph's KMS mode.
+  - context: |
+      **SSE-S3** makes key management invisible to the user. Keys are stored in Vault but are automatically created,
+      deleted, and retrieved by Ceph as needed to handle requests for encrypting or decrypting data.
+
+      This encryption mode is implemented in S3 according to the Amazon SSE-S3 specification.
+
+      In principle, any key management service could be used, but currently, only integration with Vault is implemented.
+
+      For more details, see HashiCorp Vault Integration.
+    questions_and_answers:
+      - question: |
+          What is SSE-S3 in Ceph?
+        answer: |
+          SSE-S3 makes key management invisible to the user by automatically creating, deleting, and retrieving keys
+          stored in Vault.
+      - question: |
+          How is SSE-S3 encryption implemented in S3?
+        answer: |
+          SSE-S3 encryption is implemented in S3 according to the Amazon SSE-S3 specification.
+      - question: |
+          Which key management service is supported for SSE-S3 in Ceph?
+        answer: |
+          Currently, only integration with Vault is supported for SSE-S3 in Ceph.
+      - question: |
+          Does the user need to manage keys in SSE-S3?
+        answer: |
+          No, key management is invisible to the user in SSE-S3, as Ceph handles all key operations automatically.
+  - context: |
+      **Bucket Encryption APIs** allow support for server-side encryption with Amazon S3-managed keys (SSE-S3) or AWS
+      KMS customer master keys (SSE-KMS). These APIs include the following:
+
+      - `PutBucketEncryption`
+      - `GetBucketEncryption`
+      - `DeleteBucketEncryption`
+
+      **Automatic Encryption (for testing only)** enables setting a default encryption key using the configuration
+      option `rgw crypt default encryption key` in `ceph.conf`. This forces encryption for all objects that do not
+      specify an encryption mode. The key must be a base64-encoded 256-bit value. For example:
+
+      `rgw crypt default encryption key = 4YSmvJtBv0aZ7geVgAsdpRnLBEwWSWlMIGnRS8a9TSA=`
+
+      **Important Note:** This mode is for diagnostic purposes only. The Ceph configuration file is not a secure
+      method for storing encryption keys. Keys exposed through this method should be treated as compromised.
+    questions_and_answers:
+      - question: |
+          What are Bucket Encryption APIs used for in Ceph?
+        answer: |
+          Bucket Encryption APIs support server-side encryption with Amazon S3-managed keys (SSE-S3) or AWS KMS
+          customer master keys (SSE-KMS).
+      - question: |
+          Which Bucket Encryption APIs are supported?
+        answer: |
+          The supported Bucket Encryption APIs are `PutBucketEncryption`, `GetBucketEncryption`, and
+          `DeleteBucketEncryption`.
+      - question: |
+          What does the `rgw crypt default encryption key` option do?
+        answer: |
+          The `rgw crypt default encryption key` option forces encryption for all objects that do not specify an
+          encryption mode.
+      - question: |
+          What format is required for the default encryption key?
+        answer: |
+          The default encryption key must be a base64-encoded 256-bit value.
+      - question: |
+          Is using the `rgw crypt default encryption key` option secure for production?
+        answer: |
+          No, this mode is for diagnostic purposes only, as the Ceph configuration file is not a secure way to store
+          encryption keys.
+document_outline: Teach the Large Language Model about Server Side Encryption at rest in Radosgw
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/radosgw/encryption.md]
