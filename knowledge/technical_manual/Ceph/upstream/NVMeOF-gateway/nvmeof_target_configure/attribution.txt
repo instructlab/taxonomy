@@ -1,0 +1,4 @@
+Title of work: Installing and Configuring NVMe-oF Targets
+Link to work: https://docs.ceph.com/en/squid/rbd/nvmeof-target-configure/
+License of the work: Apache 2.0
+Creators name: Krishna Ramaswamy

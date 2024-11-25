@@ -1,0 +1,4 @@
+Title of work: NVME-oF Gateway Requirements
+Link to work: https://docs.ceph.com/en/squid/rbd/nvmeof-requirements/
+License of the work: Apache 2.0
+Creators name: Krishna Ramaswamy
