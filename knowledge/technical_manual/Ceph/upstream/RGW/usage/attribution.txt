@@ -1,0 +1,4 @@
+Title of work: Usage logging
+Link to work: https://docs.ceph.com/en/latest/man/8/radosgw/#usage-loggingusage/
+License of the work: Apache 2.0
+Creators name: Yuva Teja Sree

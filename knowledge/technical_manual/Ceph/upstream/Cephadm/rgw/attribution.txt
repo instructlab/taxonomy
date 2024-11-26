@@ -1,0 +1,4 @@
+Title of work: RGW SERVICE
+Link to work: hhttps://docs.ceph.com/en/latest/cephadm/services/rgw/
+License of the work: Apache 2.0
+Creators name: Yuva Teja Sree

@@ -1,0 +1,158 @@
+version: 3
+created_by: Yuva Teja Sree
+domain: opensource_storage
+seed_examples:
+  - context: |
+      ## Testing
+
+      The current usage testing does the following:
+
+      Following these operations:
+
+      > -   Create a few buckets
+      > -   Remove buckets
+      > -   Create a bucket
+      > -   Put object
+      > -   Remove object
+
+    questions_and_answers:
+      - question: |
+          What operations are tested in the usage testing?
+        answer: |
+          The operations include creating/removing buckets and objects.
+      - question: |
+          What is verified during the usage testing process?
+        answer: |
+          The tests verify that usage show commands and entries are correct.
+      - question: |
+          How many operations are mentioned in the testing procedure?
+        answer: |
+          Five operations: create/remove buckets, create/remove objects.
+
+  - context: |
+      Test:
+
+      1.  Verify that 'usage show' with delete_obj category isn't empty after no more than 45 seconds (wait to flush).
+      2.  Check the following
+
+      > -   'usage show'
+      >     -   does not error out
+      >     -   num of entries > 0
+      >     -   num of summary entries > 0
+      >     -   for every entry in categories check successful_ops > 0
+      >     -   check that correct uid in the user summary
+      > -   'usage show' with specified uid (--uid=<uid>)
+      >     -   num of entries > 0
+      >     -   num of summary entries > 0
+      >     -   for every entry in categories check successful_ops > 0
+      >     -   check that correct uid in the user summary
+      > -   'usage show' with specified uid and specified categories (create_bucket, put_obj, delete_obj, delete_bucket)
+      >     -   for each category:
+      >         -   does not error out
+      >         -   num of entries > 0
+      >         -   user in user summary is correct user
+      >         -   length of categories entries under user summary is exactly 1
+      >         -   name of category under user summary is correct name
+      >         -   successful ops for the category > 0
+      > -   'usage trim' with specified uid
+      >     -   does not error
+      >     -   check following 'usage show' shows complete usage info cleared for user
+
+    questions_and_answers:
+      - question: |
+          What should be verified for the 'usage show' with delete_obj category?
+        answer: |
+          It should not be empty after 45 seconds and flush.
+      - question: |
+          What should be checked for each 'usage show'?
+        answer: |
+          Ensure no errors, non-zero entries, successful operations, and correct uid.
+      - question: |
+          What happens during 'usage show' for a specific uid and category?
+        answer: |
+          Ensure no errors, valid entries, correct user in summary, and successful ops.
+
+  - context: |
+      Additional required testing:
+
+      > -   test multiple users
+      >     Do the same as in (2), with multiple users being set up.
+      > -   test with multiple buckets (> 1000 * factor, e.g., 2000)
+      >     Create multiple buckets, put objects in each. Account the number
+      >     written data and verify that usage reports show the expected number (up to a certain delta).
+      > -   verify usage show with a date/time range
+      >     Take timestamp of the beginning of the test, and the end of the
+      >     test. Round timestamps to the nearest hour (downward from start of
+      >     test, upward from the end of test). List data starting at
+      >     end-time, make sure that no data is being shown. List data
+      >     ending at start-time, make sure that no data is shown. List data
+      >     beginning at start-time, make sure that correct data is displayed.
+      >     List data ending end end-time, make sure that correct data is
+      >     displayed. List data beginning in begin-time, ending in end-time,
+      >     make sure that correct data is displayed.
+
+    questions_and_answers:
+      - question: |
+          What is tested with multiple users?
+        answer: |
+          The same checks from the previous section are done with multiple users.
+      - question: |
+          How is the test done with multiple buckets?
+        answer: |
+          Create more buckets, put objects, and verify data matches usage reports.
+      - question: |
+          What is verified during usage show with date/time range?
+        answer: |
+          Ensure no data outside the range and correct data within the range.
+
+  - context: |
+      > -   verify usage trim with a date/time range
+      >     Take timestamp of the beginning of the test, and the end of the
+      >     test. Round timestamps to the nearest hour (downward from start of
+      >     test, upward from the end of test). Trim data starting at
+      >     end-time, make sure that no data has been trimmed. Trim data
+      >     ending at start-time, make sure that no data has been trimmed.
+      >     Trim data beginning in begin-time, ending in end-time, make sure
+      >     that all data has been trimmed.
+
+    questions_and_answers:
+      - question: |
+          What should be checked when verifying usage trim with a date/time range?
+        answer: |
+          Ensure no data is trimmed outside the range and all data within is trimmed.
+      - question: |
+          What should happen when trimming data starting at the end-time?
+        answer: |
+          No data should be trimmed if it starts at the end-time.
+      - question: |
+          What happens when trimming data in the specified date/time range?
+        answer: |
+          All data within the range should be correctly trimmed.
+
+  - context: |
+      ## Summary
+
+      Testing includes verifying basic usage operations, such as creating/removing buckets and objects.
+      Additional checks include verifying usage shows no errors and correctly counting successful operations.
+      Further testing involves verifying functionality with multiple users, large numbers of buckets,
+      and specific date/time ranges.
+      The system should accurately reflect usage and handle trimming operations within specified time ranges.
+
+    questions_and_answers:
+      - question: |
+          What is the main purpose of the usage testing?
+        answer: |
+          To verify correct operation of usage reporting for various scenarios.
+      - question: |
+          How is usage verified for multiple users?
+        answer: |
+          The same checks are performed for each user with the correct summary.
+      - question: |
+          What is tested regarding usage with date/time ranges?
+        answer: |
+          The correct data is displayed based on start and end time ranges.
+document_outline: Teach the Large Language Model about the RGW services
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/dev/radosgw/usage*.md]

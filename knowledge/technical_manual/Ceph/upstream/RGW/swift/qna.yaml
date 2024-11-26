@@ -1,0 +1,157 @@
+version: 3
+created_by: Yuva Teja Sree
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Ceph supports a RESTful API that is compatible with the basic data access model of the Swift API.
+
+      API
+
+      ::: {.toctree maxdepth="1"}
+      Authentication <swift/auth>
+      Service Ops <swift/serviceops>
+      Container Ops <swift/containerops>
+      Object Ops <swift/objectops>
+      Temp URL Ops <swift/tempurl>
+      Tutorial <swift/tutorial>
+      Java <swift/java>
+      Python <swift/python>
+      Ruby <swift/ruby>
+      :::
+
+    questions_and_answers:
+      - question: |
+          What type of API does Ceph support for Swift?
+        answer: |
+          Ceph supports a RESTful API that is compatible with the basic data access model of the Swift API.
+      - question: |
+          Does Ceph support the Swift API completely?
+        answer: |
+          Ceph supports a subset of the Swift API, including various features like authentication and object operations.
+      - question: |
+          Where can you find details about the Swift API operations in Ceph?
+        answer: |
+          Details can be found in the links provided in the API section,such as Authentication, Service Ops, and others.
+
+  - context: |
+      Features Support
+
+      The following table describes the support status for current Swift functional features:
+
+      Feature Status Remarks
+
+      Authentication Supported
+
+      Get Account Metadata Supported
+
+      Swift ACLs Supported Supports a subset of Swift ACLs
+
+      List Containers Supported
+
+      Delete Container Supported
+
+      Create Container Supported
+
+      Get Container Supported
+      Metadata
+
+    questions_and_answers:
+      - question: |
+          What features does Ceph support in the Swift API?
+        answer: |
+          Ceph supports authentication, account metadata, ACLs, container operations, and metadata management.
+      - question: |
+          Does Ceph support Swift ACLs fully?
+        answer: |
+          Ceph supports a subset of Swift ACLs but not all of the features available in the full Swift API.
+      - question: |
+          Can Ceph handle container operations like listing and deleting?
+        answer: |
+          Yes, Ceph supports operations like listing containers, creating, deleting, and getting container metadata.
+
+  - context: |
+      Update Container Supported
+      Metadata
+
+      Delete Container Supported
+      Metadata
+
+      List Objects Supported
+
+      Static Website Supported
+
+      Create Object Supported
+
+      Create Large Object Supported
+
+      Delete Object Supported
+
+      Get Object Supported
+
+      Copy Object Supported
+
+    questions_and_answers:
+      - question: |
+          What object operations does Ceph support in Swift?
+        answer: |
+          Ceph supports creating, deleting, getting, copying objects, and listing objects.
+      - question: |
+          Does Ceph support static websites for Swift API?
+        answer: |
+          Yes, Ceph supports static website functionality in the Swift API.
+      - question: |
+          Can you create large objects in Ceph using Swift API?
+        answer: |
+          Yes, Ceph supports the creation of large objects through the Swift API.
+
+  - context: |
+      Get Object Metadata Supported
+
+      Update Object Supported
+      Metadata
+
+      Expiring Objects Supported
+
+      Temporary URLs Partial No support for container-level Support keys
+
+      Object Versioning Partial No support for Support X-History-Location
+
+      CORS Not Supported
+
+    questions_and_answers:
+      - question: |
+          Does Ceph support object metadata in Swift?
+        answer: |
+          Yes, Ceph supports getting and updating object metadata in the Swift API.
+      - question: |
+          Does Ceph support expiring objects in Swift?
+        answer: |
+          Yes, Ceph supports expiring objects functionality in the Swift API.
+      - question: |
+          Does Ceph support container-level temporary URLs or CORS in Swift?
+        answer: |
+          No, Ceph does not support container-level temporary URLs or CORS in the Swift API.
+
+  - context: |
+      Ceph's Swift API has partial support for some advanced features such as object versioning and temporary URLs.
+      The support for object versioning is limited, and there is no support for container-level support keys
+      or full CORS functionality.
+
+    questions_and_answers:
+      - question: |
+          How complete is Ceph's support for Swift's object versioning?
+        answer: |
+          Ceph provides partial support for object versioning, but it does not support the `X-History-Location` header.
+      - question: |
+          What limitations exist for temporary URLs in Ceph's Swift API?
+        answer: |
+          Ceph provides partial support for temporary URLs, with no support for container-level keys.
+      - question: |
+          Is CORS supported in Ceph's Swift API?
+        answer: |
+          No, Ceph does not support CORS in the Swift API.
+document_outline: Teach the Large Language Model about the SWIFT api in ceph
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/radosgw/swift*.md]

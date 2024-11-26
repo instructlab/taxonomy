@@ -1,0 +1,189 @@
+version: 3
+created_by: Yuva Teja Sree
+domain: opensource_storage
+seed_examples:
+  - context: |
+      **Ceph Object Gateway S3 API {#radosgw s3}**
+
+      Ceph supports a RESTful API that is compatible with the basic data access model of the
+      [Amazon S3 API](http://docs.aws.amazon.com/AmazonS3/latest/API/APIRest.html).
+
+      ## API
+
+      ::: {.toctree maxdepth="1"}
+      Common \<s3/commons\> Authentication \<s3/authentication\> Service Ops \<s3/serviceops\>
+      Bucket Ops \<s3/bucketops\> Object Ops \<s3/objectops\> C++ \<s3/cpp\> C# \<s3/csharp\> Java
+      \<s3/java\> Perl \<s3/perl\> PHP \<s3/php\> Python \<s3/python\> Ruby \<s3/ruby\>
+      :::
+
+    questions_and_answers:
+      - question: |
+          What API does Ceph Object Gateway support?
+        answer: |
+          Ceph Object Gateway supports a RESTful API compatible with the Amazon S3 API.
+      - question: |
+          What is the purpose of the `toctree` in the API section?
+        answer: |
+          It organizes documentation topics like authentication, bucket ops, and object ops.
+      - question: |
+          Where can you find more information on the Amazon S3 API supported by Ceph?
+        answer: |
+          More details are available at the Amazon S3 API documentation link provided.
+  - context: |
+      ## Features Support
+
+      The following table describes the support status for current Amazon S3 functional features:
+
+        ------------------------------------------------------------------------------------------
+        Feature                   Status        Remarks
+        ------------------------- ------------- --------------------------------------------------
+        **List Buckets**          Supported
+        **Delete Bucket**         Supported
+        **Create Bucket**         Supported     Different set of canned ACLs
+        **Bucket Lifecycle**      Supported
+        **Bucket Replication**    Partial       Permitted only across zones
+        **Policy (Buckets,        Supported     ACLs & bucket policies are supported
+        Objects)**
+        **Bucket Website**        Supported
+        **Bucket ACLs (Get,       Supported     Different set of canned ACLs
+        Put)**
+        **Bucket Location**       Supported
+        **Bucket Notification**   Supported     See [S3 Notification Compatibility](../s3-notification-compatibility)
+        **Bucket Object           Supported
+        Versions**
+        **Get Bucket Info         Supported
+        (HEAD)**
+        **Bucket Request          Supported
+        Payment**
+        **Put Object**            Supported
+        **Delete Object**         Supported
+        **Get Object**            Supported
+        **Object ACLs (Get,       Supported
+        Put)**
+        **Get Object Info         Supported
+        (HEAD)**
+        **POST Object**           Supported
+        **Copy Object**           Supported
+        **Multipart Uploads**     Supported
+        **Object Tagging**        Supported     See `tag_policy`{.interpreted-text role="ref"} for
+                                              Policy verbs
+        **Bucket Tagging**        Supported
+        **Storage Class**         Supported     See `storage_classes`{.interpreted-text role="ref"}
+        ------------------------------------------------------------------------------------------
+
+    questions_and_answers:
+      - question: |
+          Which feature is supported for object versioning?
+        answer: |
+          Bucket Object Versions are fully supported for tracking object versions.
+      - question: |
+          Which feature is marked as "Partial" in terms of replication?
+        answer: |
+          Bucket Replication is partial and allowed only across zones.
+      - question: |
+          What is supported for both buckets and objects in Ceph?
+        answer: |
+          Policies, ACLs, tagging, and lifecycle features are supported for both.
+  - context: |
+      ## Unsupported Header Fields
+
+      The following common request header fields are not supported:
+
+        -----------------------------------------
+        Name                         Type
+        ---------------------------- ------------
+        **x-amz-id-2**               Response
+        -----------------------------------------
+
+    questions_and_answers:
+      - question: |
+          What unsupported header field is listed in the document?
+        answer: |
+          **x-amz-id-2** is the unsupported header field mentioned.
+      - question: |
+          What type of header is **x-amz-id-2**?
+        answer: |
+          **x-amz-id-2** is a response type header.
+      - question: |
+          Are there any other unsupported headers mentioned?
+        answer: |
+          No, only **x-amz-id-2** is listed as unsupported.
+  - context: |
+      ## Features Support
+
+      **List Buckets**          Supported
+      **Delete Bucket**         Supported
+      **Create Bucket**         Supported     Different set of canned ACLs
+      **Bucket Lifecycle**      Supported
+      **Bucket Replication**    Partial       Permitted only across zones
+      **Policy (Buckets,        Supported     ACLs & bucket policies are supported
+      Objects)**
+      **Bucket Website**        Supported
+      **Bucket ACLs (Get,       Supported     Different set of canned ACLs
+      Put)**
+      **Bucket Location**       Supported
+      **Bucket Notification**   Supported     See [S3 Notification Compatibility](../s3-notification-compatibility)
+      **Bucket Object           Supported
+      Versions**
+      **Get Bucket Info         Supported
+      (HEAD)**
+      **Bucket Request          Supported
+      Payment**
+      **Put Object**            Supported
+      **Delete Object**         Supported
+      **Get Object**            Supported
+      **Object ACLs (Get,       Supported
+      Put)**
+      **Get Object Info         Supported
+      (HEAD)**
+      **POST Object**           Supported
+      **Copy Object**           Supported
+      **Multipart Uploads**     Supported
+      **Object Tagging**        Supported     See `tag_policy`{.interpreted-text role="ref"} for
+                                              Policy verbs
+      **Bucket Tagging**        Supported
+      **Storage Class**         Supported     See `storage_classes`{.interpreted-text role="ref"}
+
+    questions_and_answers:
+      - question: |
+          What feature allows access control for both buckets and objects?
+        answer: |
+          Policies and ACLs control access for both buckets and objects.
+      - question: |
+          What feature does Ceph support for object tagging?
+        answer: |
+          Ceph supports Object Tagging, governed by the tag policy.
+      - question: |
+          What feature allows uploading large objects in parts?
+        answer: |
+          Multipart Uploads are supported for handling large objects.
+  - context: |
+      ## Features Support Summary
+
+      The Ceph Object Gateway supports a broad range of features that mirror Amazon S3's capabilities.
+      Features include support for list, create, delete, and modify operations on both buckets and objects.
+      Additionally, Ceph supports advanced features like multipart uploads, object tagging,
+      bucket notification, and storage classes.
+
+      The system supports setting policies and ACLs for both buckets and objects, ensuring secure access control.
+      However, certain Amazon S3 features, such as bucket replication, may have limitations.
+      The full list of supported and unsupported features is provided in the table above.
+
+    questions_and_answers:
+      - question: |
+          What advanced features are supported by Ceph Object Gateway?
+        answer: |
+          Multipart uploads, object tagging, bucket notification, and storage classes are supported.
+      - question: |
+          Is bucket replication fully supported by Ceph?
+        answer: |
+          Bucket replication is partially supported, only across zones.
+      - question: |
+          What does the "Storage Class" feature support in Ceph?
+        answer: |
+          It supports specifying different storage classes for objects.
+document_outline: Teach the Large Language Model about the s3 Api
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/radosgw/s3*.md]

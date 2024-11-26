@@ -1,0 +1,4 @@
+Title of work: S3 API
+Link to work: https://docs.ceph.com/en/latest/radosgw/s3/
+License of the work: Apache 2.0
+Creators name: Yuva Teja Sree

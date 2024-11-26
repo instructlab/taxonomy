@@ -1,0 +1,217 @@
+version: 3
+created_by: Yuva Teja Sree
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Cephadm deploys radosgw as a collection of daemons that manage a single-cluster deployment or a
+      particular realm and zone in a multisite deployment. (For more information about realms and
+      zones, see multisite{.interpreted-text role="ref"}.)
+
+      Note that with cephadm, radosgw daemons are configured via the monitor configuration database
+      instead of via a [ceph.conf]{.title-ref} or the command line. If that configuration isn't already
+      in place (usually in the client.rgw.<something> section), then the radosgw daemons will start up
+      with default settings (e.g., binding to port 80).
+
+      To deploy a set of radosgw daemons, with an arbitrary service name name, run the following command:
+
+      ```bash
+      ceph orch apply rgw <name>[--realm=*<realm-name>*][--zone=*<zone-name>*]--placement="*<num-daemons>*[<host1> ...]"
+      ```
+
+    questions_and_answers:
+      - question: |
+          How does Cephadm deploy radosgw daemons?
+        answer: |
+          Cephadm deploys radosgw daemons as a collection of daemons managing a single-cluster or
+          multisite deployment, configured via the monitor database rather than ceph.conf.
+      - question: |
+          What is the default behavior for radosgw daemons if no specific configuration is provided?
+        answer: |
+          If no configuration is provided, radosgw daemons start with default settings, such as binding
+          to port 80.
+      - question: |
+          What is the command to deploy radosgw daemons using Cephadm?
+        answer: |
+          The command to deploy radosgw daemons is: `ceph orch apply rgw <name> [--realm=<realm-name>]
+          [--zone=<zone-name>] --placement="<num-daemons> [<host1> ...]"`.
+  - context: |
+      Cephadm deploys radosgw as a collection of daemons that manage a single-cluster deployment or a
+      particular realm and zone in a multisite deployment. (For more information about realms and
+      zones, see multisite{.interpreted-text role="ref"}.)
+
+      Note that with cephadm, radosgw daemons are configured via the monitor configuration database
+      instead of via a [ceph.conf]{.title-ref} or the command line. If that configuration isn't already
+      in place (usually in the client.rgw.<something> section), then the radosgw daemons will start up
+      with default settings (e.g., binding to port 80).
+
+      To deploy a set of radosgw daemons, with an arbitrary service name name, run the following command:
+
+      ceph orch apply rgw <name>[--realm=*<realm-name>*][--zone=*<zone-name>*]--placement="*<num-daemons>*[<host1> ...]"
+
+      A common scenario is to have a labeled set of hosts that will act as gateways, with multiple
+      instances of radosgw running on consecutive ports 8000 and 8001:
+
+      ceph orch host label add gwhost1 rgw  # the 'rgw' label can be anything
+      ceph orch host label add gwhost2 rgw
+      ceph orch apply rgw foo '--placement=label:rgw count-per-host:2' --port=8000
+
+      See also: cephadm_co_location{.interpreted-text role="ref"}.
+    questions_and_answers:
+      - question: |
+          How does Cephadm deploy radosgw daemons?
+        answer: |
+          Cephadm deploys radosgw daemons as a collection of daemons managing a single-cluster or
+          multisite deployment, configured via the monitor database rather than ceph.conf.
+      - question: |
+          How can you label hosts to act as radosgw gateways?
+        answer: |
+          You can label hosts to act as gateways by using the command: `ceph orch host label add <hostname> rgw`.
+      - question: |
+          How do you deploy multiple radosgw instances on labeled hosts?
+        answer: |
+          Use the command `ceph orch apply rgw <name> --placement=label:rgw count-per-host:2 --port=8000`
+          to deploy multiple radosgw instances on labeled hosts.
+  - context: |
+      The RGW service can have the network they bind to configured with a yaml service specification.
+
+      Example spec file:
+
+
+      service_type: rgw
+      service_id: foo
+      placement:
+        label: rgw
+        count_per_host: 2
+      networks:
+      - 192.169.142.0/24
+      spec:
+        rgw_frontend_port: 8080
+
+
+      The RGW service specification can be used to pass extra arguments to the rgw frontend by using the
+      [rgw_frontend_extra_args]{.title-ref} arguments list.
+
+      Example spec file with extra arguments:
+
+
+      service_type: rgw
+      service_id: foo
+      placement:
+        label: rgw
+        count_per_host: 2
+      spec:
+        rgw_realm: myrealm
+        rgw_zone: myzone
+        rgw_frontend_type: "beast"
+        rgw_frontend_port: 5000
+        rgw_frontend_extra_args:
+        - "tcp_nodelay=1"
+        - "max_header_size=65536"
+
+
+      cephadm combines the arguments from the [spec]{.title-ref} section and the ones from the
+      [rgw_frontend_extra_args]{.title-ref} into a single space-separated arguments list which is used to
+      set the value of [rgw_frontends]{.title-ref} configuration parameter.
+
+    questions_and_answers:
+      - question: |
+          How can you configure the network for the RGW service?
+        answer: |
+          The network for the RGW service can be configured using a YAML service specification with the
+          `networks` field, specifying the desired network CIDR.
+      - question: |
+          How do you pass extra arguments to the RGW frontend?
+        answer: |
+         Extra arguments to the RGW frontend can be passed using the `rgw_frontend_extra_args` list in the RGW spec.
+      - question: |
+          What does cephadm do with the arguments from the spec and frontend extra arguments?
+        answer: |
+          Cephadm combines the arguments from the `spec` section and `rgw_frontend_extra_args` into a single
+          space-separated list, which is then used to configure the `rgw_frontends` parameter.
+  - context: |
+      To deploy RGWs serving the multisite myorg realm and the us-east-1 zone on myhost1 and myhost2:
+      ceph orch apply rgw east --realm=myorg --zonegroup=us-east-zg-1 --zone=us-east-1 --placement="2 myhost1 myhost2"
+
+
+      Note that in a multisite situation, cephadm only deploys the daemons. It does not create or update the
+      realm or zone configurations. To create a new realms, zones and zonegroups you can use mgr-rgw-module
+      or manually using commands like:
+
+      radosgw-admin realm create --rgw-realm=<realm-name>
+      radosgw-admin zonegroup create --rgw-zonegroup=<zonegroup-name> --master
+      radosgw-admin zone create --rgw-zonegroup=<zonegroup-name> --rgw-zone=<zone-name> --master
+      radosgw-admin period update --rgw-realm=<realm-name> --commit
+
+
+      See orchestrator-cli-placement-spec{.interpreted-text role="ref"} for details of the placement specification.
+      See multisite{.interpreted-text role="ref"} for more information on setting up multisite RGW.
+
+    questions_and_answers:
+      - question: |
+          How do you deploy RGWs for a multisite realm and zone?
+        answer: |
+          Use the command:
+          ceph orch apply rgw east --realm=myorg --zonegroup=us-east-zg1 --zone=us-east1 --placement="2 myhost1 myhost2"
+      - question: |
+          What does Cephadm do in a multisite situation for RGWs?
+        answer: |
+          In a multisite situation, cephadm deploys the RGW daemons but does not create or update the
+          realm or zone configurations.
+      - question: |
+          How can you manually create realms and zones in Ceph?
+        answer: |
+          Use the commands like `radosgw-admin realm create`, `radosgw-admin zonegroup create`,
+          and `radosgw-admin zone create` to manually create realms, zonegroups, and zones.
+  - context: |
+      In order to enable HTTPS for RGW services, apply a spec file following this scheme:
+
+
+      service_type: rgw
+      service_id: myrgw
+      spec:
+        rgw_frontend_ssl_certificate: |
+          -----BEGIN PRIVATE KEY-----
+          V2VyIGRhcyBsaWVzdCBpc3QgZG9vZi4gTG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFt
+          ZXQsIGNvbnNldGV0dXIgc2FkaXBzY2luZyBlbGl0ciwgc2VkIGRpYW0gbm9udW15
+          IGVpcm1vZCB0ZW1wb3IgaW52aWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu
+          YSBhbGlxdXlhbSBlcmF0LCBzZWQgZGlhbSB2b2x1cHR1YS4gQXQgdmVybyBlb3Mg
+          ZXQgYWNjdXNhbSBldCBqdXN0byBkdW8=
+          -----END PRIVATE KEY-----
+          -----BEGIN CERTIFICATE-----
+          V2VyIGRhcyBsaWVzdCBpc3QgZG9vZi4gTG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFt
+          ZXQsIGNvbnNldGV0dXIgc2FkaXBzY2luZyBlbGl0ciwgc2VkIGRpYW0gbm9udW15
+          IGVpcm1vZCB0ZW1wb3IgaW52aWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu
+          YSBhbGlxdXlhbSBlcmF0LCBzZWQgZGlhbSB2b2x1cHR1YS4gQXQgdmVybyBlb3Mg
+          ZXQgYWNjdXNhbSBldCBqdXN0byBkdW8=
+          -----END CERTIFICATE-----
+        ssl: true
+
+      Then apply this yaml document:
+
+
+      ceph orch apply -i myrgw.yaml
+
+
+      Note the value of `rgw_frontend_ssl_certificate` is a literal string as indicated by a `|`
+      character preserving newline characters.
+
+    questions_and_answers:
+      - question: |
+          How do you enable HTTPS for RGW services?
+        answer: |
+          To enable HTTPS, use a YAML spec file with the `rgw_frontend_ssl_certificate` field and set `ssl: true`,
+          then apply the YAML document.
+      - question: |
+          What format should the SSL certificate have in the RGW spec file?
+        answer: |
+          The SSL certificate should be provided in PEM format, with the certificate and private key enclosed in
+          `-----BEGIN CERTIFICATE-----` and `-----END CERTIFICATE-----` blocks.
+      - question: |
+          How do you apply the RGW service specification with SSL enabled?
+        answer: |
+          Apply the YAML specification using the command: `ceph orch apply -i myrgw.yaml`.
+document_outline: Teach the Large Language Model about the RGW services
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephadm/services/rgw*.md]

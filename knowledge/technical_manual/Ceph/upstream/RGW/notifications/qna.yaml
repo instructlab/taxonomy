@@ -1,0 +1,272 @@
+version: 3
+created_by: Yuva Teja Sree
+domain: opensource_storage
+seed_examples:
+  - context: |
+      **Part 1: Introduction to Bucket Notifications**
+
+      Bucket notifications provide a mechanism for sending information out of radosgw when certain events
+      happen on the bucket. Notifications can be sent to HTTP endpoints, AMQP0.9.1 endpoints, and Kafka
+      endpoints.
+
+      A user can create topics. A topic entity is defined by its name and is "per tenant". A user can associate
+      its topics (via notification configuration) only with buckets it owns.
+
+      A notification entity must be created in order to send event notifications for a specific bucket. A notification
+      entity can be created either for a subset of event types or for all "Removed" and "Created" event types
+      (which is the default).
+      The notification may also filter out events based on matches of the prefixes and suffixes of (1) the keys,
+      (2) the metadata
+      attributes attached to the object, or (3) the object tags. Regular-expression matching can also be used
+      on these to create filters. There can be multiple notifications for any specific topic, and the same topic can
+      be used for multiple notifications.
+
+      REST API has been defined to provide configuration and control interfaces for the bucket notification mechanism.
+
+      To enable bucket notifications API, the [rgw_enable_apis]{.title-ref} configuration parameter should contain: "notifications".
+
+    questions_and_answers:
+      - question: |
+          What are bucket notifications used for?
+        answer: |
+          Bucket notifications allow sending information out of radosgw when certain events happen on the bucket.
+      - question: |
+          Can a user associate topics with any bucket?
+        answer: |
+          A user can only associate topics with buckets that they own.
+      - question: |
+          How can events be filtered in bucket notifications?
+        answer: |
+          Events can be filtered based on key prefixes, metadata attributes, object tags, or using regular expressions.
+  - context: |
+      **Notification Reliability**
+
+      **Synchronous Notifications**
+
+      Notifications can be sent synchronously, as part of the operation that triggered them. In this mode, the operation
+      is acknowledged (acked) only after the notification is sent to the topic's configured endpoint.
+      This means that the round trip time of the notification (the time it takes to send the notification to the topic's
+      endpoint plus the time it takes to receive the acknowledgment) is added to the latency of the operation itself.
+
+      Note: The original triggering operation is considered successful even if the notification fails with an error,
+      cannot be delivered, or times out.
+
+      **Asynchronous Notifications**
+
+      Notifications can be sent asynchronously. They are committed into persistent storage and then asynchronously
+      sent to the topic's configured endpoint. The notification will be committed to persistent storage only if the
+      triggering operation was successful. In this case,the only latency added to the original operation is the latency
+      added when the notification is committed to persistent storage. If the endpoint of the topic to which the
+      notification is sent is not available for a long period of time, the persistent storage allocated for this
+      topic will eventually fill up. When this happens the triggering operations will fail with
+       503 Service Unavailable, which tells the client that it may retry later.
+
+      Note: If the notification fails with an error, cannot be delivered, or times out, it is retried until it is
+      successfully acknowledged. You can control its retry with time_to_live/max_retries to have a time/retry limit
+      and control the retryfrequency with retry_sleep_duration.
+
+      Tip: To minimize the latency added by asynchronous notification, we recommend placing the "log" pool on
+      fast media.
+
+    questions_and_answers:
+      - question: |
+          What is the key difference between synchronous and asynchronous notifications?
+        answer: |
+          Synchronous notifications are sent as part of the triggering operation, adding latency, while asynchronous
+          notifications are stored and sent later, minimizing the latency added to the operation.
+      - question: |
+          What happens if a notification fails in asynchronous mode?
+        answer: |
+          If a notification fails, it is retried until successfully acknowledged, with retry behavior controlled by
+          time_to_live/max_retries and retry_sleep_duration.
+      - question: |
+          How can you minimize latency in asynchronous notifications?
+        answer: |
+          To minimize latency, it is recommended to place the "log" pool on fast media to improve notification speed.
+  - context: |
+      **Topic Management via CLI**
+
+      - **Fetch the configuration of all topics associated with tenants**:
+        `radosgw-admin topic list [--tenant={tenant}] [--uid={user}]`
+
+      - **Fetch the configuration of a specific topic**:
+        `radosgw-admin topic get --topic={topic-name} [--tenant={tenant}]`
+
+      - **Remove a topic**:
+        `radosgw-admin topic rm --topic={topic-name} [--tenant={tenant}]`
+
+      **Notification Performance Statistics**:
+
+      - **pubsub_event_triggered**: A running counter of events that have at least one topic associated with them.
+      - **pubsub_event_lost**: A running counter of events that had topics associated with them, but that were not
+        pushed to any of the endpoints.
+      - **pubsub_push_ok**: A running counter of events successfully pushed to their endpoints.
+      - **pubsub_push_fail**: A running counter of events that failed to be pushed to their endpoints.
+      - **pubsub_push_pending**: The gauge value of events pushed to an endpoint but not acked or nacked yet.
+
+      Note: pubsub_event_triggered and pubsub_event_lost are incremented per event on each notification,
+      but pubsub_push_ok and pubsub_push_fail are incremented per push action on each notification.
+
+    questions_and_answers:
+      - question: |
+          How do you fetch the configuration of all topics associated with tenants via CLI?
+        answer: |
+          You can use the command `radosgw-admin topic list [--tenant={tenant}] [--uid={user}]`
+          to fetch the configuration.
+      - question: |
+          What does the `pubsub_event_triggered` counter represent?
+        answer: |
+          It represents a running counter of events that have at least one topic associated with them.
+      - question: |
+          What happens if a notification fails to be pushed to its endpoint?
+        answer: |
+          If a notification fails to be pushed, the `pubsub_push_fail` counter is incremented.
+  - context: |
+      **Bucket Notification REST API**
+
+      **Create a Topic**
+
+      To create a new topic, provide the topic with push endpoint parameters, which will be used later
+      when a notification is created. A response is generated with the topic's ARN (Amazon Resource Name).
+
+      **POST Request Example**:
+
+      `Action=CreateTopic
+      &Name=<topic-name>
+      [&Attributes.entry.1.key=amqp-exchange&Attributes.entry.1.value=<exchange>]
+      [...]`
+
+      **Request parameters**:
+
+      - **push-endpoint**: The URI of an endpoint to send push notifications to.
+      - **OpaqueData**: Opaque data that is set in the topic configuration and added to
+      all notifications triggered by the topic.
+      - **persistent**: Indicates whether notifications to this endpoint are persistent (asynchronous) or
+      not persistent (default is false).
+      - **time_to_live**: Limits the time (in seconds) to retain the notifications.
+      Default value is global configuration.
+      - **max_retries**: Limits the max retries before expiring notifications.
+      - **retry_sleep_duration**: Controls the frequency of retrying the notifications.
+      - **Policy**: Controls who can access the topic, in addition to the owner. Policy is provided in JSON format.
+
+      **Tip**: Any notification already associated with the topic must be re-created in order for the topic to update.
+
+    questions_and_answers:
+      - question: |
+          How do you create a topic with the REST API?
+        answer: |
+          You create a topic by sending a `POST` request with the `Action=CreateTopic` and
+          other topic-specific parameters.
+      - question: |
+          What is the `push-endpoint` in the request parameters?
+        answer: |
+          The `push-endpoint` is the URI of an endpoint to which push notifications will be sent.
+      - question: |
+          What happens if a notification is already associated with the topic?
+        answer: |
+          If a notification is already associated with the topic, it must be re-created for the topic to update.
+  - context: |
+      **Topic Management and Events**
+
+      **Get Topic Attributes**
+
+      This API returns the attributes of a specific topic, such as the push-endpoint, topic ARN, and other metadata.
+
+      **POST Request Example**:
+
+      `Action=GetTopicAttributes
+      &TopicArn=<topic-arn>`
+
+      **Delete Topic**
+
+      To delete a specific topic:
+
+      **POST Request Example**:
+
+      `Action=DeleteTopic
+      &TopicArn=<topic-arn>`
+
+      **Note**: Deleting a topic does not automatically delete all notifications associated with it.
+
+      **List Topics**
+
+      This action lists all topics associated with a tenant.
+
+      **POST Request Example**:
+
+      `Action=ListTopics`
+
+      **Set Topic Attributes**
+
+      This allows modifying existing attributes on a specific topic, such as the push endpoint, opaque data,
+      or notification retry parameters.
+
+      **POST Request Example**:
+
+      `Action=SetTopicAttributes
+      &TopicArn=<topic-arn>&AttributeName=<attribute-name>&AttributeValue=<attribute-value>`
+
+      **Valid attributes include**:
+      - push-endpoint
+      - opaqueData
+      - persistent
+      - time_to_live
+      - max_retries
+      - retry_sleep_duration
+      - Policy
+
+      **Notifications and Events**
+
+      The event payloads are S3-compatible JSON objects that contain information about the bucket and object involved
+      in the event, as well as additional metadata such as the event time, event name, user identity,and object details.
+
+      **Example event format**:
+
+      ```
+      {
+        "Records": [
+          {
+            "eventVersion": "2.1",
+            "eventSource": "ceph:s3",
+            "eventTime": "2019-11-22T13:47:35.124724Z",
+            "eventName": "ObjectCreated:Put",
+            "s3": {
+              "bucket": {
+                "name": "mybucket1",
+                "arn": "arn:aws:s3:zonegroup1::mybucket1"
+              },
+              "object": {
+                "key": "myimage1.jpg",
+                "size": "1024"
+              }
+            }
+          }
+        ]
+      }
+      ```
+
+      Events may contain specific details like the event time, object metadata, tags, and opaque data.
+
+      **Note**: The "Abort Multipart Upload" request does not emit a notification, but both "Initiate Multipart Upload"
+      and "POST Object" requests will trigger a `s3:ObjectCreated:Post` notification.
+
+    questions_and_answers:
+      - question: |
+          What does the `GetTopicAttributes` API do?
+        answer: |
+          The `GetTopicAttributes` API returns the attributes of a specific topic, including its push-endpoint,
+          ARN, and metadata.
+      - question: |
+          Does deleting a topic remove all associated notifications?
+        answer: |
+          No, deleting a topic does not automatically delete all notifications associated with it.
+      - question: |
+          What kind of events trigger notifications?
+        answer: |
+          Events like "Initiate Multipart Upload" and "POST Object" will trigger a `s3:ObjectCreated:Post`
+          notification,but "Abort Multipart Upload" will not.
+document_outline: Teach the Large Language Model about the bucket notifications
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/radosgw/notifications.md]

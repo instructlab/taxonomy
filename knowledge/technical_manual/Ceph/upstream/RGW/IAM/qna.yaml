@@ -1,0 +1,222 @@
+version: 3
+created_by: Yuva Teja Sree
+domain: opensource_storage
+seed_examples:
+  - context: |
+      The Ceph Object Gateway supports a subset of the [Amazon IAM
+      API](https://docs.aws.amazon.com/IAM/latest/APIReference/welcome.html)
+      for the RESTful management of account users, roles, and associated
+      policies.
+
+      This REST API is served by the same HTTP endpoint as the [Ceph Object
+      Gateway S3 API](../s3/).
+    questions_and_answers:
+      - question: |
+          What does the Ceph Object Gateway IAM API support?
+        answer: |
+          The Ceph Object Gateway IAM API supports a subset of the Amazon IAM API for managing users,roles,and policies.
+      - question: |
+          Where is the Ceph Object Gateway IAM API served from?
+        answer: |
+          The Ceph Object Gateway IAM API is served by the same HTTP endpoint as the Ceph Object Gateway S3 API.
+      - question: |
+          Does the Ceph Object Gateway IAM API cover the full Amazon IAM API?
+        answer: |
+          No, it supports a subset of the Amazon IAM API.
+
+  - context: |
+      ## Authorization
+
+      By default, only `Account Root Users <radosgw-account-root-user>` are authorized to use the IAM API,
+      and can only see the resources under their own account.
+      The account root user can use policies to delegate these permissions to other users or roles in the account.
+    questions_and_answers:
+      - question: |
+          Who is authorized to use the IAM API by default?
+        answer: |
+          By default, only Account Root Users are authorized to use the IAM API.
+      - question: |
+          Can the account root user delegate permissions to other users?
+        answer: |
+          Yes, the account root user can use policies to delegate permissions to other users or roles in the account.
+      - question: |
+          What is the scope of access for Account Root Users in the IAM API?
+        answer: |
+          Account Root Users can only see resources under their own account.
+
+  - context: |
+      ## Feature Support
+
+      The following tables describe the currently supported IAM actions.
+
+      ### Users
+
+        -------------------------------------------------------------------------
+        Action                         Remarks
+        ------------------------------ ------------------------------------------
+        **CreateUser**
+        **GetUser**
+        **UpdateUser**
+        **DeleteUser**
+        **ListUsers**
+        **CreateAccessKey**
+        **UpdateAccessKey**
+        **DeleteAccessKey**
+        **ListAccessKeys**
+        **PutUserPolicy**
+        **GetUserPolicy**
+        **DeleteUserPolicy**
+        **ListUserPolicies**
+        **AttachUserPolicies**
+        **DetachUserPolicy**
+        **ListAttachedUserPolicies**
+        -------------------------------------------------------------------------
+
+      ### Groups
+
+        -------------------------------------------------------------------------
+        Action                          Remarks
+        ------------------------------- -----------------------------------------
+        **CreateGroup**
+        **GetGroup**
+        **UpdateGroup**
+        **DeleteGroup**
+        **ListGroups**
+        **AddUserToGroup**
+        **RemoveUserFromGroup**
+        **ListGroupsForUser**
+        **PutGroupPolicy**
+        **GetGroupPolicy**
+        **DeleteGroupPolicy**
+        **ListGroupPolicies**
+        **AttachGroupPolicies**
+        **DetachGroupPolicy**
+        **ListAttachedGroupPolicies**
+        -------------------------------------------------------------------------
+
+      ### Roles
+
+        -------------------------------------------------------------------------
+        Action                         Remarks
+        ------------------------------ ------------------------------------------
+        **CreateRole**
+        **GetRole**
+        **UpdateRole**
+        **UpdateAssumeRolePolicy**
+        **DeleteRole**
+        **ListRoles**
+        **TagRole**
+        **UntagRole**
+        **ListRoleTags**
+        **PutRolePolicy**
+        **GetRolePolicy**
+        **DeleteRolePolicy**
+        **ListRolePolicies**
+        **AttachRolePolicies**
+        **DetachRolePolicy**
+        **ListAttachedRolePolicies**
+        -------------------------------------------------------------------------
+
+      ### OpenIDConnectProvider
+
+        -------------------------------------------------------------------------
+        Action                            Remarks
+        --------------------------------- ---------------------------------------
+        **CreateOpenIDConnectProvider**
+        **GetOpenIDConnectProvider**
+        **DeleteOpenIDConnectProvider**
+        **ListOpenIDConnectProviders**
+        -------------------------------------------------------------------------
+    questions_and_answers:
+      - question: |
+          What IAM actions are supported for Users?
+        answer: |
+          Actions like CreateUser, GetUser, UpdateUser, DeleteUser, ListUsers, and others are supported.
+      - question: |
+          What actions can be performed on Groups in IAM?
+        answer: |
+          Actions like CreateGroup, GetGroup, UpdateGroup, DeleteGroup, and adding/removing users are supported.
+      - question: |
+          What roles can be managed via the IAM API?
+        answer: |
+          Roles such as CreateRole, GetRole, UpdateRole, DeleteRole, and TagRole are supported.
+
+  - context: |
+      ### Managed Policies
+
+      The following managed policies are available for use with
+      `AttachGroupPolicy`, `AttachRolePolicy` and `AttachUserPolicy`:
+
+      IAMFullAccess
+      :   Arn: `arn:aws:iam::aws:policy/IAMFullAccess`
+          Version: v2 (default)
+
+      IAMReadOnlyAccess
+      :   Arn: `arn:aws:iam::aws:policy/IAMReadOnlyAccess`
+          Version: v4 (default)
+
+      AmazonSNSFullAccess
+      :   Arn: `arn:aws:iam::aws:policy/AmazonSNSFullAccess`
+          Version: v1 (default)
+
+      AmazonSNSReadOnlyAccess
+      :   Arn: `arn:aws:iam::aws:policy/AmazonSNSReadOnlyAccess`
+          Version: v1 (default)
+
+      AmazonS3FullAccess
+      :   Arn: `arn:aws:iam::aws:policy/AmazonS3FullAccess`
+          Version: v2 (default)
+
+      AmazonS3ReadOnlyAccess
+      :   Arn: `arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess`
+          Version: v3 (default)
+    questions_and_answers:
+      - question: |
+          What is the ARN for the IAMFullAccess policy?
+        answer: |
+          The ARN for IAMFullAccess is `arn:aws:iam::aws:policy/IAMFullAccess`.
+      - question: |
+          What is the default version of the AmazonSNSFullAccess policy?
+        answer: |
+          The default version of the AmazonSNSFullAccess policy is v1.
+      - question: |
+          Which policy allows read-only access to Amazon S3?
+        answer: |
+          The AmazonS3ReadOnlyAccess policy allows read-only access to Amazon S3.
+
+  - context: |
+      ## Footnotes
+
+      [1] Omap is a key-value store, associated with an object, in a way
+      similar to how Extended Attributes associate with a POSIX file. An
+      object's omap is not physically located in the object's storage, but
+      its precise implementation is invisible and immaterial to RADOS Gateway.
+
+      [2] Before the Dumpling release, the 'bucket.instance' metadata did
+      not exist and the 'bucket' metadata contained its information. It is
+      possible to encounter such buckets in old installations.
+
+      [3] Pool names changed with the Infernalis release. If you are looking
+      at an older setup, some details may be different. In particular there
+      was a different pool for each of the namespaces that are now being used
+      inside the `default.root.meta` pool.
+    questions_and_answers:
+      - question: |
+          What is an Omap in the context of RADOS Gateway?
+        answer: |
+          Omap is a key-value store associated with an object, similar to Extended Attributes in POSIX files.
+      - question: |
+          What changed in the metadata structure after the Dumpling release?
+        answer: |
+          After the Dumpling release, the 'bucket.instance' metadata was introduced,
+          separating it from the 'bucket' metadata.
+      - question: |
+          How did pool names change with the Infernalis release?
+        answer: |
+          With the Infernalis release, pool names changed,
+          and the namespaces are now used inside the `default.root.meta` pool.
+document_outline: Teach the Large Language Model about Ceph Object Gateway IAM API
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/radosgw/iam*.md]

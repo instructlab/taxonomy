@@ -1,0 +1,4 @@
+Title of work: Bucket notifications
+Link to work: https://docs.ceph.com/en/latest/radosgw/notifications/?highlight=notifications
+License of the work: Apache 2.0
+Creators name: Yuva Teja Sree

@@ -1,0 +1,152 @@
+version: 3
+created_by: Yuva Teja Sree
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Although the source code is the ultimate guide, this document helps new
+      developers to get up to speed with the implementation details.
+
+      Swift offers something called a *container*, which we use
+      interchangeably with the term *bucket*, so we say that RGW's buckets
+      implement Swift containers.
+
+      This document does not consider how RGW operates on these structures,
+      e.g. the use of encode() and decode() methods for serialization and so
+      on.
+    questions_and_answers:
+      - question: |
+          What is the purpose of this document?
+        answer: |
+          This document helps new developers get up to speed with RGW's implementation details.
+      - question: |
+          What does Swift's "container" correspond to in RGW?
+        answer: |
+          In RGW, Swift's "container" is equivalent to the term "bucket".
+      - question: |
+          Does the document cover RGW's internal operations like encoding and decoding?
+        answer: |
+          No, the document does not cover how RGW operates on these structures, like encoding and decoding.
+  - context: |
+      Although RADOS only knows about pools and objects with their xattrs and
+      omap, conceptually RGW organizes its data into three different kinds: metadata, bucket index, and data.
+    questions_and_answers:
+      - question: |
+          What are the three types of data RGW organizes?
+        answer: |
+          RGW organizes data into three types: metadata, bucket index, and data.
+      - question: |
+          Does RADOS recognize these three types of data?
+        answer: |
+          No, RADOS only knows about pools and objects with their xattrs and omap.
+      - question: |
+          What is the purpose of organizing data into these three categories?
+        answer: |
+          The organization helps RGW manage its data in a structured way, separating different kinds of information.
+  - context: |
+      We have 3 'sections' of metadata: 'user', 'bucket', and 'bucket.instance'.
+      You can use the following commands to introspect metadata entries:
+
+          $ radosgw-admin metadata list
+          $ radosgw-admin metadata list bucket
+          $ radosgw-admin metadata list bucket.instance
+          $ radosgw-admin metadata list user
+
+          $ radosgw-admin metadata get bucket:<bucket>
+          $ radosgw-admin metadata get bucket.instance:<bucket>:<bucket_id>
+          $ radosgw-admin metadata get user:<user>   # get or set
+
+      Some variables have been used in above commands, they are:
+      - user: Holds user information
+      - bucket: Holds a mapping between bucket name and bucket instance id
+      - bucket.instance: Holds bucket instance information
+
+      Every metadata entry is kept on a single RADOS object. See below for implementation details.
+
+      Note that the metadata is not indexed. When listing a metadata section we do a RADOS `pgls`
+      operation on the containing pool.
+    questions_and_answers:
+      - question: |
+          What are the three sections of metadata in RGW?
+        answer: |
+          The three sections of metadata in RGW are 'user', 'bucket', and 'bucket.instance'.
+      - question: |
+          How can metadata be introspected in RGW?
+        answer: |
+          Metadata can be introspected using `radosgw-admin metadata` commands, such as `list` and `get`.
+      - question: |
+          Is the metadata in RGW indexed?
+        answer: |
+          No, the metadata is not indexed, and listing it requires a RADOS `pgls` operation.
+  - context: |
+      It's a different kind of metadata, and kept separately. The bucket
+      index holds a key-value map in RADOS objects. By default it is a single
+      RADOS object per bucket, but it is possible since Hammer to shard that
+      map over multiple RADOS objects. The map itself is kept in omap,
+      associated with each RADOS object. The key of each omap is the name of
+      the objects, and the value holds some basic metadata of that object --
+      metadata that shows up when listing the bucket. Also, each omap holds a
+      header, and we keep some bucket accounting metadata in that header
+      (number of objects, total size, etc.).
+
+      Note that we also hold other information in the bucket index, and it's
+      kept in other key namespaces. We can hold the bucket index log there,
+      and for versioned objects there is more information that we keep on
+      other keys.
+    questions_and_answers:
+      - question: |
+          What kind of data does the bucket index store?
+        answer: |
+          The bucket index stores a key-value map with basic metadata about objects in a bucket.
+      - question: |
+          How is the bucket index map stored in RGW?
+        answer: |
+          The bucket index map is stored in omap, associated with each RADOS object.
+      - question: |
+          Does the bucket index store any other information besides object metadata?
+        answer: |
+          Yes, it stores a bucket index log and additional information for versioned objects.
+  - context: |
+      Objects data is kept in one or more RADOS objects for each rgw object.
+
+      When accessing objects, REST APIs come to RGW with three parameters:
+      account information (access key in S3 or account name in Swift), bucket
+      or container name, and object name (or key). At present, RGW only uses
+      account information to find out the user ID and for access control. Only
+      the bucket name and object key are used to address the object in a pool.
+
+      The user ID in RGW is a string, typically the actual user name from the
+      user credentials and not a hashed or mapped identifier.
+
+      When accessing a user's data, the user record is loaded from an object
+      "<user_id>" in pool "default.rgw.meta" with namespace "users.uid".
+
+      Bucket names are represented in the pool "default.rgw.meta" with
+      namespace "root". Bucket record is loaded in order to obtain so-called
+      marker, which serves as a bucket ID.
+
+      The object is located in pool "default.rgw.buckets.data". Object name
+      is "<marker>_<key>", for example "default.7593.4_image.png",
+      where the marker is "default.7593.4" and the key is "image.png".
+      Since these concatenated names are not parsed, only passed down to
+      RADOS, the choice of the separator is not important and causes no
+      ambiguity. For the same reason, slashes are permitted in object names
+      (keys).
+    questions_and_answers:
+      - question: |
+          Where is the data of an RGW object stored?
+        answer: |
+          Object data is stored in one or more RADOS objects for each RGW object.
+      - question: |
+          What three parameters are used to access an object in RGW?
+        answer: |
+          The three parameters are account information, bucket or container name, and object name or key.
+      - question: |
+          What is the format for an object's name in RGW?
+        answer: |
+          An object's name is "<marker>_<key>", such as "default.7593.4_image.png",
+          where the marker and key are concatenated.
+document_outline: Teach the Large Language Model about Rados Gateway Data Layout
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [/upstream/doc/radosgw/layout*.md]
