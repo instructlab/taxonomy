@@ -1,0 +1,79 @@
+version: 3
+created_by: Krishna Ramaswamy
+domain: NVME-oF Gateway Requirements
+seed_examples:
+    - context: |
+            To implement a highly-available Ceph NVMe/TCP solution, provision at least two NVMe/TCP gateways on different
+            nodes. This ensures fault tolerance and seamless operation by eliminating single points of failure. Proper
+            node distribution and redundancy planning are critical for reliability and high availability.
+      questions_and_answers:
+          - question: Why are two NVMe/TCP gateways recommended?
+            answer: |
+              Two gateways ensure high availability by providing fault tolerance and eliminating single points of failure.
+          - question: What does deploying gateways on different nodes achieve?
+            answer: |
+              It enhances fault tolerance and ensures seamless operation in case one node fails.
+          - question: What is critical for achieving high availability in a Ceph NVMe/TCP solution?
+            answer: |
+              Proper node distribution and redundancy planning are critical for reliability and high availability.
+    - context: |
+            NVMe/TCP gateways require a minimum of a single 10Gb Ethernet link in the Ceph public network to operate
+            efficiently. A high-speed network ensures optimal data transmission and minimal latency, critical for storage
+            performance. Network provisioning directly impacts the efficiency of the NVMe/TCP solution.
+      questions_and_answers:
+          - question: What is the minimum network requirement for an NVMe/TCP gateway?
+            answer: |
+              A single 10Gb Ethernet link in the Ceph public network is the minimum requirement.
+          - question: Why is a 10Gb Ethernet link recommended?
+            answer: |
+              It ensures sufficient bandwidth for optimal performance and efficient data transmission.
+          - question: How does network provisioning affect the NVMe/TCP solution?
+            answer: |
+              Proper network provisioning minimizes latency and enhances the solution's overall efficiency.
+    - context: |
+            The memory usage on NVMe-oF gateways grows with the number of mapped RBD images. A higher number of mapped
+            images requires more memory, so it is essential to plan memory allocation accordingly. Adequate memory ensures
+            reliable gateway performance even under heavy workloads.
+      questions_and_answers:
+          - question: What impacts the memory usage of an NVMe-oF gateway?
+            answer: |
+              The memory usage scales with the number of mapped RBD images.
+          - question: How should memory be planned for NVMe-oF gateways?
+            answer: |
+              Memory should be allocated based on the expected number of RBD images to be mapped.
+          - question: Why is sufficient memory important for NVMe-oF gateways?
+            answer: |
+              It ensures reliable operation and prevents performance issues under high workloads.
+    - context: |
+            Proper hardware selection is vital for NVMe-oF gateways to meet performance and scalability needs. This includes
+            sufficient memory and network capacity to handle workloads efficiently. Refer to hardware recommendation guides
+            for detailed specifications to ensure optimal hardware configuration.
+      questions_and_answers:
+          - question: What factors should be considered for NVMe-oF gateway hardware?
+            answer: |
+              Memory and network capacity should be considered to meet performance and scalability requirements.
+          - question: How does hardware affect gateway efficiency?
+            answer: |
+              Proper hardware ensures that the gateway can handle workloads and data traffic efficiently.
+          - question: Where can detailed hardware recommendations be found?
+            answer: |
+              Detailed specifications can be found in the hardware recommendation guide.
+    - context: |
+            Deploying NVMe-oF gateways successfully involves adhering to best practices. These include distributing gateways
+            across nodes for fault tolerance, ensuring sufficient memory and network bandwidth, and regularly monitoring
+            performance. Following these practices ensures reliable and high-performance operation.
+      questions_and_answers:
+          - question: Why should gateways be distributed across different nodes?
+            answer: |
+              Distributing gateways across nodes ensures fault tolerance and high availability.
+          - question: What are two key requirements for optimal gateway performance?
+            answer: |
+              Sufficient memory and high-speed network bandwidth are critical for optimal performance.
+          - question: How can NVMe-oF gateway performance be maintained over time?
+            answer: |
+              Performance can be maintained through regular monitoring and updates.
+document_outline: NVME-oF Gateway Requirements
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/rbd/nvmeof-requirements.md]

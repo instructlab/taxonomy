@@ -1,0 +1,75 @@
+version: 3
+created_by: Krishna Ramaswamy
+domain: NVMe/TCP Initiator for Linux
+seed_examples:
+- context: |
+      The NVMe/TCP initiator for Linux requires Kernel 5.0 or later and supported distributions such as RHEL 9.2,
+      Ubuntu 24.04, or SLES 15 SP3. These prerequisites ensure compatibility with the NVMe-oF protocol for block
+      storage access.
+  questions_and_answers:
+    - question: What is the minimum required kernel version for NVMe/TCP initiator?
+      answer: |
+          Kernel version 5.0 or later is required.
+    - question: Which Linux distributions are supported for NVMe/TCP initiator?
+      answer: |
+          RHEL 9.2 or later, Ubuntu 24.04 or later, and SLES 15 SP3 or later.
+    - question: Why are prerequisites important for the NVMe/TCP initiator?
+      answer: |
+          They ensure compatibility with the NVMe-oF protocol for accessing block storage.
+- context: |
+      To set up the NVMe/TCP initiator on Linux, you need to install the `nvme-cli` package, load the NVMe-oF kernel
+      module, and verify the target's reachability using the `nvme discover` command.
+  questions_and_answers:
+    - question: How do you install the NVMe command-line utility on Linux?
+      answer: |
+          Use the command `yum install nvme-cli`.
+    - question: Which kernel module needs to be loaded for NVMe-oF?
+      answer: |
+          The `nvme-fabrics` module must be loaded using the `modprobe` command.
+    - question: How can you verify if the NVMe/TCP target is reachable?
+      answer: |
+          Use the `nvme discover -t tcp -a GATEWAY_IP -s 4420` command.
+- context: |
+      After verifying the NVMe/TCP target, you can connect to it using the `nvme connect` command with the target
+      gateway IP and subsystem NQN. This establishes the initiator-target link.
+  questions_and_answers:
+    - question: What command is used to connect to the NVMe/TCP target?
+      answer: |
+          Use the command `nvme connect -t tcp -a GATEWAY_IP -n SUBSYSTEM_NQN`.
+    - question: What does the `-n` option specify in the `nvme connect` command?
+      answer: |
+          It specifies the target subsystem NQN for the connectio.
+    - question: Why is the gateway IP required in the connection command?
+      answer: |
+          The gateway IP identifies the NVMe/TCP target to which the initiator connects.
+- context: |
+      After connecting to the NVMe/TCP target, you can list block devices using `nvme list`, create a filesystem on
+      the NVMe node path, and mount it to a directory for use.
+  questions_and_answers:
+    - question: How do you list the NVMe block devices after connection?
+      answer: |
+          Use the command `nvme list` to view all NVMe block devices.
+    - question: How can you create a filesystem on the NVMe node?
+      answer: |
+          Use the command `mkfs.ext4 NVME_NODE_PATH` to create an ext4 filesystem.
+    - question: What is the purpose of mounting the NVMe node path?
+      answer: |
+          Mounting makes the NVMe block device accessible as a usable file system.
+- context: |
+      Once the filesystem is mounted, you can interact with the NVMe-oF storage by creating and verifying files in the
+      mounted directory. For example, create a text file and confirm its contents.
+  questions_and_answers:
+    - question: How do you create a directory for mounting NVMe storage?
+      answer: |
+          Use the command `mkdir /mnt/nvmeof` to create the mount point.
+    - question: How can you verify the contents of a file on the NVMe storage?
+      answer: |
+          Use the command `cat /mnt/nvmeof/hello.text` to view the file's contents.
+    - question: What command can you use to create a file on the NVMe-oF storage?
+        answer: |
+          Use the command `echo "Hello NVME-oF" > /mnt/nvmeof/hello.text`.
+document_outline: NVMe/TCP Initiator for Linux
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/rbd/nvmeof-initiator-linux.md]

@@ -1,0 +1,77 @@
+version: 3
+created_by: Krishna Ramaswamy
+domain: Ceph NVMe-oF Overview
+seed_examples:
+- context: |
+      The Ceph NVMe-oF Gateway exports RADOS Block Device (RBD) images as NVMe namespaces, enabling clients without
+      native Ceph support to access Ceph block storage. It uses the NVMe-oF protocol to send NVMe commands over a
+      TCP/IP network, integrating Ceph into conventional storage infrastructures.
+  questions_and_answers:
+      - question: What does the Ceph NVMe-oF Gateway export?
+        answer: |
+          It exports RADOS Block Device (RBD) images as NVMe namespaces.
+      - question: How does the NVMe-oF protocol benefit clients?
+        answer: |
+          It allows clients without native Ceph support to send NVMe commands over a TCP/IP network.
+      - question: What type of infrastructure can the Ceph NVMe-oF Gateway provision?
+        answer: |
+          A fully integrated block-storage infrastructure, similar to a conventional SAN.
+- context: |
+      Each Ceph NVMe-oF gateway consists of an SPDK NVMe-oF target with `bdev_rbd` and a control daemon. This combination
+      enables efficient communication between RBD images and NVMe-oF clients for storage access.
+  questions_and_answers:
+      - question: What are the components of the Ceph NVMe-oF gateway?
+        answer: |
+          It includes an SPDK NVMe-oF target with `bdev_rbd` and a control daemon.
+      - question: What does the `bdev_rbd` module do in the Ceph NVMe-oF gateway?
+        answer: |
+          It allows RBD images to be used as NVMe namespaces for storage access.
+      - question: How does the NVMe-oF gateway facilitate storage access for clients?
+        answer: |
+          By enabling NVMe-oF protocol communication with RBD images.
+- context: |
+      The NVMe-oF protocol allows clients to access storage over TCP/IP networks, making Ceph block storage accessible
+      to various operating systems without requiring native Ceph client support. This expands Ceph's usability across
+      diverse platforms.
+  questions_and_answers:
+      - question: What network protocol does the NVMe-oF gateway use for communication?
+        answer: |
+          It uses the NVMe-oF protocol over TCP/IP networks.
+      - question: How does the NVMe-oF gateway benefit operating systems without native Ceph support?
+        answer: |
+          It enables them to access Ceph block storage via the NVMe-oF protocol.
+      - question: What key advantage does NVMe-oF bring to Ceph storage?
+        answer: |
+          It makes Ceph block storage accessible to a wider range of platforms and operating systems.
+- context: |
+      The Ceph NVMe-oF gateway integrates with the public network and optionally the cluster network. It ensures seamless
+      connectivity between NVMe-oF initiators and the Ceph storage cluster, providing reliable block storage operations.
+  questions_and_answers:
+      - question: Which networks does the Ceph NVMe-oF gateway integrate with?
+        answer: |
+          It integrates with the public network and optionally the cluster network.
+      - question: What role does the public network play in the NVMe-oF gateway setup?
+        answer: |
+          It facilitates communication between NVMe-oF initiators and the Ceph cluster.
+      - question: Why is optional integration with the cluster network useful?
+        answer: |
+          It provides an additional layer of connectivity for enhanced performance and reliability.
+- context: |
+      Configuring the Ceph NVMe-oF gateway involves setting up requirements such as NVMe-oF target and initiators. The 
+      setup ensures compatibility between the RBD module and various operating systems, enabling efficient storage access.
+  questions_and_answers:
+      - question: What are the key components required for configuring the Ceph NVMe-oF gateway?
+        answer: |
+          NVMe-oF targets, initiators, and a properly configured RBD module.
+      - question: How does the gateway ensure compatibility with operating systems?
+        answer: |
+          Through its RBD module, which works with various operating systems.
+      - question: Why is configuring NVMe-oF initiators important?
+        answer: |
+          It enables clients to communicate effectively with the NVMe-oF targets.
+document_outline: Ceph NVMe-oF Overview
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/rbd/nvmeof-overview.md]
+  
