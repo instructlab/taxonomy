@@ -1,0 +1,166 @@
+version: 3
+created_by: Amarnath
+domain: cephfs
+document_outline: "Mount CephFS: Prerequisites"
+
+seed_examples:
+  - context: |
+      Introduction to Mounting CephFS
+      ------------------------------
+
+      CephFS can be mounted using the kernel driver or the FUSE driver, each with its own advantages:
+      - **Kernel Driver**: Offers better performance.
+      - **FUSE Driver**: Easier to upgrade and more accessible.
+
+      For mounting CephFS, ensure the following prerequisites are met:
+      - A copy of `ceph.conf` and a CephX keyring file must be available on the client host.
+      - The client host must have permissions to access the MDS.
+
+      Example steps to set up prerequisites:
+      ```bash
+      # Generate a minimal ceph.conf on the client host
+      mkdir -p -m 755 /etc/ceph
+      ssh user@mon-host "sudo ceph config generate-minimal-conf" | sudo tee /etc/ceph/ceph.conf
+
+      # Set proper permissions for ceph.conf
+      chmod 644 /etc/ceph/ceph.conf
+
+      # Create a CephX user and keyring
+      ssh user@mon-host "sudo ceph fs authorize cephfs client.foo / rw" | sudo tee /etc/ceph/ceph.client.foo.keyring
+
+      # Set proper permissions for the keyring
+      chmod 600 /etc/ceph/ceph.client.foo.keyring
+      ```
+    questions_and_answers:
+      - question: |
+          What are the two ways to mount CephFS?
+        answer: |
+          CephFS can be mounted using the kernel driver (better performance) or the FUSE driver (easier upgrades).
+      - question: |
+          What files must be present on the client host before mounting CephFS?
+        answer: |
+          The `ceph.conf` configuration file and a CephX keyring with permissions to access the MDS.
+      - question: |
+          How do you generate a minimal `ceph.conf` file for the client host?
+        answer: |
+          Use the command `ssh user@mon-host "sudo ceph config generate-minimal-conf" | sudo tee /etc/ceph/ceph.conf`.
+
+  - context: |
+      Creating CephX User and Keyring
+      -------------------------------
+
+      A CephX user must be created for the client to access CephFS. The following steps illustrate this process:
+      ```bash
+      # Create a CephX user with read and write permissions
+      ssh user@mon-host "sudo ceph fs authorize cephfs client.foo / rw" | sudo tee /etc/ceph/ceph.client.foo.keyring
+
+      # Set proper permissions for the keyring
+      chmod 600 /etc/ceph/ceph.client.foo.keyring
+      ```
+
+      Notes:
+      - Replace `cephfs` with the name of your Ceph file system.
+      - Use a specific path (`/`) and permission level (`rw`) for client access.
+      - A single CephX username can be shared across multiple client hosts.
+    questions_and_answers:
+      - question: |
+          How do you create a CephX user for accessing CephFS?
+        answer: |
+          Use `ceph fs authorize` to create the user, e.g., \
+          `ssh user@mon-host "sudo ceph fs authorize cephfs client.foo / rw"`.
+      - question: |
+          What permissions are required for the CephX keyring file?
+        answer: |
+          The keyring file should have `600` permissions, set using `chmod 600`.
+      - question: |
+          Can the same CephX user be used on multiple client hosts?
+        answer: |
+          Yes, the same CephX username can be shared across multiple client hosts.
+
+  - context: |
+      Kernel and FUSE Mounts: Overview
+      --------------------------------
+
+      Both kernel and FUSE mounts require the following prerequisites:
+      - Superuser privileges on the client host.
+      - A properly configured `ceph.conf` file.
+      - A valid CephX keyring file.
+
+      Differences between kernel and FUSE mounts:
+      - Kernel mounts provide higher performance.
+      - FUSE mounts are easier to upgrade and troubleshoot.
+
+      Note:
+      - Additional requirements may apply depending on the mount method used.
+    questions_and_answers:
+      - question: |
+          Why are superuser privileges required for mounting CephFS?
+        answer: |
+          Superuser privileges are needed to set up the CephFS mount and manage the required configuration files.
+      - question: |
+          What is a key advantage of using the FUSE driver for mounting CephFS?
+        answer: |
+          The FUSE driver is easier to upgrade compared to the kernel driver.
+      - question: |
+          What is the main performance-related advantage of the kernel driver?
+        answer: |
+          The kernel driver offers better performance than the FUSE driver.
+
+  - context: |
+      Permissions and Security for Mounting
+      -------------------------------------
+
+      Ensuring proper file permissions is critical for secure mounting:
+      - The `ceph.conf` file should have `644` permissions:
+        ```bash
+        chmod 644 /etc/ceph/ceph.conf
+        ```
+      - The CephX keyring should have `600` permissions:
+        ```bash
+        chmod 600 /etc/ceph/ceph.client.foo.keyring
+        ```
+
+      Always ensure these files are located in `/etc/ceph` for standardized access.
+    questions_and_answers:
+      - question: |
+          What permissions are recommended for the `ceph.conf` file?
+        answer: |
+          The `ceph.conf` file should have `644` permissions, set using `chmod 644`.
+      - question: |
+          Where should the `ceph.conf` and keyring files be located?
+        answer: |
+          Both files should be located in `/etc/ceph` on the client host.
+      - question: |
+          Why is it important to set `600` permissions on the keyring file?
+        answer: |
+          It prevents unauthorized access to the CephX credentials.
+
+  - context: |
+      Troubleshooting Client Configuration
+      ------------------------------------
+
+      Common issues during CephFS setup include:
+      - **Missing configuration files**: Ensure `ceph.conf` and the CephX keyring are present in `/etc/ceph`.
+      - **Permission issues**: Verify that the `ceph.conf` has `644` and the keyring has `600` permissions.
+      - **Authentication errors**: Confirm that the CephX user has the necessary access rights to the MDS.
+
+      Tips for resolving issues:
+      - Run `sudo ls` before keyring-related commands to avoid repeated password prompts.
+      - Check the generated `ceph.conf` for minimal configuration and correctness.
+    questions_and_answers:
+      - question: |
+          What should you do if CephFS mounting fails due to missing files?
+        answer: |
+          Ensure that both `ceph.conf` and the CephX keyring are located in `/etc/ceph` on the client host.
+      - question: |
+          How can you resolve repeated password prompts during setup commands?
+        answer: |
+          Run a trivial `sudo` command like `sudo ls` before issuing the setup commands.
+      - question: |
+          What are the recommended permissions for the keyring file to avoid authentication errors?
+        answer: |
+          Set the keyring file permissions to `600` using `chmod 600`.
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/mount-prerequisites*.md]

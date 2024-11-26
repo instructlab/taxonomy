@@ -1,0 +1,165 @@
+version: 3
+created_by: Amarnath
+domain: cephfs
+document_outline: Snapshot Scheduling Module
+seed_examples:
+  - context: |
+      Enabling the Snapshot Scheduling Module
+      ---------------------------------------
+
+      The `snap_schedule` module allows users to create, query, and manage snapshot schedules for CephFS.
+      To enable the module, run:
+
+      ```bash
+      ceph mgr module enable snap_schedule
+      ```
+
+      Key Features:
+      - Schedule snapshots at specified intervals using repeat parameters (e.g., `1h`, `1d`).
+      - Retention policies to control snapshot counts and timing (e.g., keep 7 daily snapshots).
+    questions_and_answers:
+      - question: |
+          How do you enable the snapshot scheduling module in CephFS?
+        answer: |
+          Use the command `ceph mgr module enable snap_schedule` to enable the snapshot scheduling module.
+      - question: |
+          What does the snapshot scheduling module provide?
+        answer: |
+          It provides functionality to add, query, remove snapshot schedules, and manage retention policies.
+      - question: |
+          What are examples of repeat intervals for snapshot schedules?
+        answer: |
+          Examples include `1h` (hourly), `1d` (daily), `1w` (weekly), and `1M` (monthly).
+
+  - context: |
+      Adding and Removing Snapshot Schedules
+      --------------------------------------
+
+      You can add snapshot schedules to a specified path using the `ceph fs snap-schedule add` command.
+      To remove schedules, use the `remove` subcommand. Examples:
+
+      ```bash
+      # Add an hourly schedule
+      ceph fs snap-schedule add / 1h
+
+      # Add a daily schedule starting at 11:55
+      ceph fs snap-schedule add / 1d 11:55
+
+      # Remove a specific schedule
+      ceph fs snap-schedule remove / 1h 11:55
+      ```
+
+      Notes:
+      - Schedules are unique by path, repeat interval, and start time.
+      - Removing all schedules for a path can be done by omitting specific intervals.
+    questions_and_answers:
+      - question: |
+          How do you add an hourly snapshot schedule for the root directory?
+        answer: |
+          Use the command `ceph fs snap-schedule add / 1h` to add an hourly snapshot schedule.
+      - question: |
+          How can you remove a specific snapshot schedule?
+        answer: |
+          Use the `remove` subcommand with the specific interval and start time, e.g., \
+          `ceph fs snap-schedule remove / 1h 11:55`.
+      - question: |
+          What happens if you remove schedules for a path without specifying an interval?
+        answer: |
+          All schedules for the specified path will be removed.
+
+  - context: |
+      Retention Policies
+      ------------------
+
+      Retention policies manage how many snapshots are kept and at what intervals. Examples:
+
+      ```bash
+      # Keep 24 hourly snapshots
+      ceph fs snap-schedule retention add / h 24
+
+      # Remove a daily retention policy
+      ceph fs snap-schedule retention remove / d 7
+
+      # Add complex retention policy: 24 hourly, 4 weekly
+      ceph fs snap-schedule retention add / 24h4w
+      ```
+
+      Notes:
+      - Retention policies can include multiple time-period pairs.
+      - Use the `retention add` and `retention remove` subcommands.
+    questions_and_answers:
+      - question: |
+          How do you retain 24 hourly snapshots for a specific path?
+        answer: |
+          Use the command `ceph fs snap-schedule retention add / h 24`.
+      - question: |
+          Can retention policies include multiple time-period pairs?
+        answer: |
+          Yes, you can add complex policies like `24h4w` (24 hourly, 4 weekly snapshots).
+      - question: |
+          How do you remove a daily retention policy for a path?
+        answer: |
+          Use the command `ceph fs snap-schedule retention remove / d 7`.
+
+  - context: |
+      Activating and Deactivating Schedules
+      -------------------------------------
+
+      Snapshot schedules can be manually activated or deactivated using the `activate` and `deactivate` commands.
+      Examples:
+
+      ```bash
+      # Activate all schedules on the root directory
+      ceph fs snap-schedule activate /
+
+      # Deactivate daily snapshots on the root directory
+      ceph fs snap-schedule deactivate / 1d
+      ```
+
+      Notes:
+      - Inactive schedules will not trigger snapshot creation.
+      - Activation restores snapshot creation for the specified schedules.
+    questions_and_answers:
+      - question: |
+          How do you activate all schedules for a specific path?
+        answer: |
+          Use the command `ceph fs snap-schedule activate /` to activate all schedules on the root directory.
+      - question: |
+          What happens to inactive schedules?
+        answer: |
+          Inactive schedules do not trigger snapshot creation until they are reactivated.
+      - question: |
+          How do you deactivate daily snapshots for a directory?
+        answer: |
+          Use the command `ceph fs snap-schedule deactivate / 1d`.
+
+  - context: |
+      Limitations and Data Storage
+      ----------------------------
+
+      Key limitations and data storage details:
+      - Snapshot schedules use Python timers, which may delay snapshots under heavy load.
+      - The maximum number of snapshots retained per directory is limited by `mds_max_snaps_per_dir` (default: 100).
+      - Snapshot schedule data is stored in the CephFS metadata pool and serialized in a SQLite database.
+
+      Example:
+      ```bash
+      ceph config set mds_max_snaps_per_dir 150
+      ```
+    questions_and_answers:
+      - question: |
+          What is the default maximum number of snapshots retained per directory?
+        answer: |
+          The default maximum is 100, controlled by the `mds_max_snaps_per_dir` setting.
+      - question: |
+          Where is snapshot schedule data stored in CephFS?
+        answer: |
+          Snapshot schedule data is stored in the CephFS metadata pool and serialized in a SQLite database.
+      - question: |
+          How can you increase the maximum number of snapshots retained per directory?
+        answer: |
+          Use the command `ceph config set mds_max_snaps_per_dir <new_limit>` to increase the limit.
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/snap-schedule*.md]

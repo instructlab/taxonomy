@@ -1,0 +1,4 @@
+Title of work:  Mount CephFS using FUSE
+Link to work: https://docs.ceph.com/en/squid/cephfs/mount-using-fuse/
+License of the work: Apache 2.0
+Creators name: Amarnath

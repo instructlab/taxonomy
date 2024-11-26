@@ -1,0 +1,145 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      CephFS Dynamic Metadata Management Overview
+      -------------------------------------------
+
+      CephFS manages metadata separately from data to avoid unnecessary strain on the RADOS cluster. Metadata
+      operations are handled by a cluster of Metadata Servers (MDSs), which use **Dynamic Subtree Partitioning**
+      to distribute metadata workloads across multiple MDS nodes dynamically. This approach relieves activity
+      hotspots and ensures both vertical and horizontal scaling.
+
+      Dynamic subtree partitioning migrates metadata workloads from busy MDSs to less busy ones. It improves
+      scalability and prevents bottlenecks in handling metadata-intensive operations.
+
+      This strategy significantly reduces metadata workload bottlenecks while optimizing resource utilization.
+    questions_and_answers:
+      - question: |
+          Why does CephFS separate metadata from data management?
+        answer: |
+          To avoid unnecessary strain on the RADOS cluster and improve scalability by using dedicated Metadata Servers.
+      - question: |
+          What is the key feature enabling dynamic metadata management in CephFS?
+        answer: |
+          Dynamic Subtree Partitioning, which redistributes metadata workloads from busy MDS nodes to less busy ones.
+      - question: |
+          How does dynamic subtree partitioning affect scaling in CephFS?
+        answer: |
+          It ensures both vertical and horizontal scaling by addressing activity hotspots dynamically.
+
+  - context: |
+      Traditional vs. Dynamic Subtree Partitioning
+      -------------------------------------------
+
+      Traditional subtree partitioning statically assigns directory hierarchies to individual MDS nodes. While
+      it offers linear cache growth and a good distribution of metadata across MDS nodes, it fails to address
+      vertical scaling. As workload depth increases, hotspots develop, leading to inefficiencies.
+
+      Dynamic subtree partitioning resolves this by migrating load-intensive portions of the hierarchy from
+      busy MDSs to less busy ones. This ensures workload balance, vertical scaling, and optimal resource use.
+
+      This innovation addresses the shortcomings of traditional subtree partitioning by redistributing metadata
+      dynamically.
+    questions_and_answers:
+      - question: |
+          What are the limitations of traditional subtree partitioning?
+        answer: |
+          It creates hotspots of activity as workload depth increases, leading to inefficiencies and lack of vertical \
+          scaling.
+      - question: |
+          How does dynamic subtree partitioning overcome the limitations of traditional partitioning?
+        answer: |
+          It dynamically migrates metadata workloads from busy MDS nodes to less busy ones, ensuring better balance.
+      - question: |
+          Why is dynamic subtree partitioning critical for metadata scalability in CephFS?
+        answer: |
+          It addresses workload hotspots and ensures balanced utilization of MDS nodes, enabling vertical scaling.
+
+  - context: |
+      Subtree Migration Export Process
+      --------------------------------
+
+      During subtree migration:
+      1. The exporter verifies the subtree's permissibility for export, ensuring the cluster is healthy.
+      2. The subtree root is pinned, frozen, and prepared for migration.
+      3. Metadata is packaged in an `MExport` message and sent to the importer.
+      4. The importer logs the metadata, marks it authoritative, and acknowledges the exporter with an `MExportAck`.
+      5. Cache updates are synchronized with bystander nodes to reflect the new authority.
+      6. The exporter finalizes the migration by unfreezing the subtree and sending a final notification.
+
+      This process ensures metadata consistency during migration while handling potential failures gracefully.
+    questions_and_answers:
+      - question: |
+          What does the exporter do before migrating a subtree?
+        answer: |
+          It verifies the subtree's permissibility, pins and freezes the subtree root, and prepares it for migration.
+      - question: |
+          How does the importer handle received metadata during migration?
+        answer: |
+          The importer logs the metadata as authoritative, synchronizes cache updates, and finalizes the migration.
+      - question: |
+          What ensures metadata consistency during subtree migration?
+        answer: |
+          Synchronization of cache updates with bystander nodes ensures consistency.
+
+  - context: |
+      Handling Authority Changes During Subtree Migration
+      ---------------------------------------------------
+
+      During subtree migration, authority over the subtree shifts from the exporter to the importer. This process
+      involves:
+      - Sending `MExportNotify` to bystander nodes, informing them of the new authoritative node.
+      - Synchronizing cache expirations to prevent stale metadata.
+      - Ensuring journal entries (EExport, EImportStart) mark successful migration steps for recovery.
+
+      Once the importer acknowledges with `MExportAck` and updates its logs, it becomes the sole authoritative
+      node. The exporter cleans up migration-related state and completes the process with `MExportFinish`.
+
+      These steps ensure a seamless transition of authority and reliable metadata consistency.
+    questions_and_answers:
+      - question: |
+          What message informs bystander nodes about authority changes during subtree migration?
+        answer: |
+          The `MExportNotify` message informs bystander nodes about the new authoritative MDS node.
+      - question: |
+          How is metadata consistency maintained during authority transition?
+        answer: |
+          By synchronizing cache expirations and logging journal entries such as EExport and EImportStart.
+      - question: |
+          What marks the successful completion of subtree migration?
+        answer: |
+          The receipt of `MExportFinish` by the importer marks the migration as successfully completed.
+
+  - context: |
+      Benefits of Dynamic Metadata Management
+      ---------------------------------------
+
+      CephFS's dynamic metadata management offers several advantages:
+      - Relieves hotspots by redistributing metadata workloads dynamically.
+      - Balances workloads across MDS nodes for optimal resource utilization.
+      - Supports both horizontal and vertical scaling of metadata operations.
+      - Ensures metadata consistency through robust migration protocols.
+      - Addresses failures during migration via journaling and synchronization.
+
+      These features make CephFS a scalable, efficient, and reliable file system for metadata-intensive workloads.
+    questions_and_answers:
+      - question: |
+          What are the scaling benefits of CephFS's dynamic metadata management?
+        answer: |
+          It supports both horizontal and vertical scaling by redistributing workloads dynamically and relieving \
+          hotspots.
+      - question: |
+          How does CephFS ensure metadata consistency during dynamic management?
+        answer: |
+          By using robust migration protocols, journaling, and cache synchronization during metadata transitions.
+      - question: |
+          Why is dynamic metadata management critical for CephFS?
+        answer: |
+          It enhances scalability, optimizes resource utilization, and ensures reliable metadata consistency.
+document_outline: CephFS Dynamic Metadata Management and Subtree Migration
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/dynamic-metadata-management*.md]

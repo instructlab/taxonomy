@@ -1,0 +1,157 @@
+version: 3
+created_by: Amarnath
+domain: cephfs
+document_outline: LazyIO
+seed_examples:
+  - context: |
+      Overview of LazyIO
+      ------------------
+
+      LazyIO relaxes POSIX semantics by allowing buffered reads and writes even when a file is opened \
+      by multiple applications on different clients. This improves performance but places the \
+      responsibility for cache coherency on applications.
+
+      Key Highlights:
+      - Introduced in the Nautilus release.
+      - Buffered writes are not visible to other clients until explicitly propagated.
+      - Local reads may return stale data unless synchronized.
+
+      LazyIO can be enabled globally using the `client_force_lazyio` option or for specific file \
+      handles in `libcephfs` using the `ceph_lazyio(...)` or `ceph_ll_lazyio(...)` methods.
+    questions_and_answers:
+      - question: |
+          What is LazyIO, and how does it impact POSIX semantics?
+        answer: |
+          LazyIO relaxes POSIX semantics by allowing buffered reads and writes across multiple clients, \
+          shifting cache coherency responsibilities to applications.
+      - question: |
+          How is LazyIO enabled globally?
+        answer: |
+          Use the `client_force_lazyio` option to enable LazyIO globally for `libcephfs` and Ceph-FUSE mounts.
+      - question: |
+          How can LazyIO be enabled for specific file handles in `libcephfs`?
+        answer: |
+          Use the `ceph_lazyio(...)` or `ceph_ll_lazyio(...)` methods for enabling LazyIO on specific file handles.
+
+  - context: |
+      LazyIO Methods
+      --------------
+
+      LazyIO includes two key methods:
+      - `lazyio_propagate(int fd, loff_t offset, size_t count)`: Ensures that any buffered writes from the \
+        client within a specific range are propagated to the shared file. If both `offset` and `count` \
+        are set to `0`, the operation applies to the entire file.
+      - `lazyio_synchronize(int fd, loff_t offset, size_t count)`: Ensures the client fetches updated \
+        data from the shared file for subsequent reads. This method invalidates the client's cache and \
+        forces a re-fetch of updated file contents.
+
+      Example usage for propagating and synchronizing:
+      ```c
+      ceph_lazyio_synchronize(ca, fda, 0, 0);
+      ceph_propagate(ca, fda, 0, 0);
+      ```
+    questions_and_answers:
+      - question: |
+          What does the `lazyio_propagate` method do?
+        answer: |
+          The `lazyio_propagate` method ensures that buffered writes within a specific range are propagated \
+          to the shared file. If the range is set to `0`, the entire file is propagated.
+      - question: |
+          How does the `lazyio_synchronize` method help in cache management?
+        answer: |
+          The `lazyio_synchronize` method invalidates the client's cache, forcing it to fetch updated data \
+          from the shared file, ensuring consistent reads.
+      - question: |
+          What happens when both `offset` and `count` are set to `0` in LazyIO methods?
+        answer: |
+          The operation applies to the entire file when both `offset` and `count` are set to `0`.
+
+  - context: |
+      Example Usage of LazyIO
+      -----------------------
+
+      The following is an example of LazyIO in action in a parallel application:
+      ```c
+      /* Enable LazyIO for file descriptor */
+      ceph_lazyio(ca, fda, 1);
+
+      /* Write and propagate changes */
+      ceph_write(ca, fda, out_buf, sizeof(out_buf), i);
+      ceph_propagate(ca, fda, 0, 0);
+
+      /* Synchronize and read updated content */
+      ceph_lazyio_synchronize(ca, fda, 0, 0);
+      ceph_read(ca, fda, in_buf, sizeof(in_buf), 0);
+      ```
+      Key Points:
+      - Use `ceph_lazyio` to enable LazyIO for a file descriptor.
+      - Ensure synchronization using `lazyio_synchronize` before reading updated content.
+    questions_and_answers:
+      - question: |
+          How do you enable LazyIO for a file descriptor?
+        answer: |
+          Use the `ceph_lazyio` function with the file descriptor and enable flag, e.g., \
+          `ceph_lazyio(ca, fda, 1)`.
+      - question: |
+          What is the role of `lazyio_synchronize` in the example usage?
+        answer: |
+          The `lazyio_synchronize` method ensures that the client reads updated file content after invalidating \
+          stale cache.
+      - question: |
+          When should `lazyio_propagate` be used in an application?
+        answer: |
+          Use `lazyio_propagate` after writes to ensure buffered changes are propagated to the shared file.
+
+  - context: |
+      Managing Cache Coherency with LazyIO
+      ------------------------------------
+
+      LazyIO allows buffered reads and writes, but applications must manage cache coherency themselves:
+      - Propagate writes using `lazyio_propagate` to ensure visibility to other clients.
+      - Synchronize using `lazyio_synchronize` before reading updated content.
+      - Employ barriers to coordinate parallel operations and avoid stale reads or overwrites.
+      LazyIO improves performance by reducing synchronization overhead but requires careful application-level \
+      coordination.
+    questions_and_answers:
+      - question: |
+          How does LazyIO impact cache coherency?
+        answer: |
+          LazyIO shifts the responsibility of managing cache coherency to applications, allowing buffered reads \
+          and writes.
+      - question: |
+          What is the purpose of barriers in applications using LazyIO?
+        answer: |
+          Barriers coordinate parallel operations, ensuring writes are propagated and preventing stale reads or \
+          overwrites.
+      - question: |
+          What is a key trade-off when using LazyIO?
+        answer: |
+          LazyIO improves performance but requires applications to manage cache coherency explicitly.
+
+  - context: |
+      Enabling and Using LazyIO in libcephfs
+      --------------------------------------
+
+      To enable and use LazyIO:
+      - Enable globally: Use the `client_force_lazyio` option.
+      - Enable per file descriptor: Use the `ceph_lazyio` or `ceph_ll_lazyio` methods.
+      - Propagate writes: Use `lazyio_propagate` to ensure buffered changes are applied.
+      - Synchronize reads: Use `lazyio_synchronize` to fetch updated content.
+      LazyIO is supported in libcephfs since the Nautilus release.
+    questions_and_answers:
+      - question: |
+          How do you enable LazyIO globally in libcephfs?
+        answer: |
+          Use the `client_force_lazyio` configuration option to enable LazyIO globally.
+      - question: |
+          Which Ceph release introduced LazyIO support in libcephfs?
+        answer: |
+          LazyIO was introduced in the Nautilus release of Ceph.
+      - question: |
+          What is the purpose of the `lazyio_propagate` method?
+        answer: |
+          The `lazyio_propagate` method ensures that buffered writes are propagated to the shared file.
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: 7e8f1dc
+  patterns: [upstream/doc/cephfs/lazyio*.md]

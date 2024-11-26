@@ -1,0 +1,179 @@
+version: 3
+created_by: Amarnath
+domain: cephfs
+document_outline: File Layouts in CephFS
+seed_examples:
+  - context: |
+      Introduction to File Layouts
+      ----------------------------
+
+      File layouts in CephFS determine how a file's contents are distributed as RADOS objects. The layout is controlled
+      through virtual extended attributes (xattrs), which allow reading and writing file layouts. Specific layout xattrs
+      differ between files and directories (`ceph.file.layout` for files, `ceph.dir.layout` for directories).
+
+      Key Layout Fields:
+      - `pool`: Specifies the RADOS pool for file data storage.
+      - `stripe_unit`: Size of each data block in bytes.
+      - `stripe_count`: Number of stripe units constituting a RAID-0 stripe.
+      - `object_size`: Size of each RADOS object in bytes.
+
+      Example commands:
+      - Reading a file layout:
+        ```bash
+        getfattr -n ceph.file.layout file
+        ```
+      - Writing a new stripe count to a file layout:
+        ```bash
+        setfattr -n ceph.file.layout.stripe_count -v 2 file
+        ```
+    questions_and_answers:
+      - question: |
+          What are file layouts in CephFS?
+        answer: |
+          File layouts determine how a file's contents are distributed into RADOS objects, controlled through xattrs.
+      - question: |
+          How do you read the layout of a file in CephFS?
+        answer: |
+          Use the `getfattr` command, e.g., `getfattr -n ceph.file.layout file`.
+      - question: |
+          What does the `stripe_unit` field in a layout specify?
+        answer: |
+          It specifies the size of each data block used for file distribution in bytes.
+
+  - context: |
+      Setting and Modifying Layouts
+      -----------------------------
+
+      File layouts in CephFS can be modified using the `setfattr` command. Changes can only be made to empty files,
+      otherwise an error occurs.
+
+      Example commands:
+      - Setting the stripe count:
+        ```bash
+        setfattr -n ceph.file.layout.stripe_count -v 3 file
+        ```
+      - Specifying a data pool:
+        ```bash
+        setfattr -n ceph.file.layout.pool -v cephfs_data file
+        ```
+
+      Directory layouts can also be modified, affecting the layout inherited by newly created files.
+
+      Example:
+      ```bash
+      mkdir mydir
+      setfattr -n ceph.dir.layout.pool -v cephfs_data_ssd mydir
+      ```
+    questions_and_answers:
+      - question: |
+          Can you modify the layout of a non-empty file in CephFS?
+        answer: |
+          No, file layout modifications are only allowed for empty files.
+      - question: |
+          How do you assign a specific RADOS pool to a directory in CephFS?
+        answer: |
+          Use `setfattr` with `ceph.dir.layout.pool`, e.g., `setfattr -n ceph.dir.layout.pool -v cephfs_data_ssd mydir`.
+      - question: |
+          What happens if you change a directory's layout?
+        answer: |
+          Newly created files in the directory inherit the updated layout, but existing files remain unchanged.
+
+  - context: |
+      Reading Layouts
+      ---------------
+
+      Use `getfattr` to read file or directory layouts. If no explicit layout is set for a directory, the layout
+      of the nearest ancestor directory with a layout is inherited.
+
+      Example:
+      ```bash
+      getfattr -n ceph.dir.layout mydir
+      ```
+
+      JSON format provides detailed layout information:
+      ```bash
+      getfattr -n ceph.file.layout.json --only-values file
+      ```
+      Example output:
+      ```
+      {"stripe_unit": 4194304, "stripe_count": 1, "object_size": 4194304, "pool_name": \
+      "cephfs.a.data", "inheritance": "@default"}
+      ```
+    questions_and_answers:
+      - question: |
+          What does the `inheritance` field in a layout's JSON output indicate?
+        answer: |
+          It shows whether the layout is system-default (`@default`), explicitly set (`@set`), or \
+          inherited (`@inherited`).
+      - question: |
+          How do you retrieve a directory's layout in JSON format?
+        answer: |
+          Use `getfattr -n ceph.dir.layout.json --only-values directory_path`.
+      - question: |
+          What does it mean if a directory layout query fails?
+        answer: |
+          It indicates that the directory has no explicit layout set and inherits the layout from its ancestor.
+
+  - context: |
+      Clearing and Inheriting Layouts
+      -------------------------------
+
+      To clear a directory's explicit layout and revert to its ancestor's layout, use:
+      ```bash
+      setfattr -x ceph.dir.layout directory
+      ```
+
+      Example:
+      ```bash
+      setfattr -n ceph.dir.layout.pool_namespace -v mynamespace mydir
+      setfattr -x ceph.dir.layout.pool_namespace mydir
+      ```
+
+      Files inherit their layout from the parent directory at creation time. Subsequent directory layout changes
+      do not affect existing files.
+    questions_and_answers:
+      - question: |
+          How do you clear a directory's layout in CephFS?
+        answer: |
+          Use `setfattr -x ceph.dir.layout directory` to remove the explicit layout and revert to the ancestor's layout.
+      - question: |
+          When does a file inherit its layout in CephFS?
+        answer: |
+          A file inherits its layout from its parent directory at creation time.
+      - question: |
+          Can changes to a directory's layout affect existing files?
+        answer: |
+          No, layout changes to a directory only affect new files created after the change.
+
+  - context: |
+      Adding Data Pools to a File System
+      ----------------------------------
+
+      Additional data pools can be added to a CephFS instance using the `ceph fs add_data_pool` command. Afterward,
+      directories can be configured to use the new pool.
+
+      Example:
+      ```bash
+      ceph fs add_data_pool cephfs cephfs_data_ssd
+      mkdir /mnt/cephfs/myssddir
+      setfattr -n ceph.dir.layout.pool -v cephfs_data_ssd /mnt/cephfs/myssddir
+      ```
+    questions_and_answers:
+      - question: |
+          How do you add a new data pool to a CephFS instance?
+        answer: |
+          Use `ceph fs add_data_pool`, e.g., `ceph fs add_data_pool cephfs cephfs_data_ssd`.
+      - question: |
+          What is the purpose of setting a directory layout to use a new data pool?
+        answer: |
+          It ensures that new files created in the directory store their data in the specified pool.
+      - question: |
+          Do files created before a new pool is added use the new pool?
+        answer: |
+          No, existing files continue using their original pool; only new files in the configured directory \
+          use the new pool.
+
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/file-layouts*.md]

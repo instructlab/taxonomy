@@ -1,0 +1,148 @@
+version: 3
+created_by: Amarnath
+domain: cephfs
+document_outline: Mount CephFS using FUSE
+seed_examples:
+  - context: |
+      Mounting CephFS Using FUSE
+      --------------------------
+
+      CephFS can be mounted in userspace using `ceph-fuse`. While FUSE mounts may have lower performance,
+      they offer better manageability, especially during upgrades.
+
+      Prerequisites:
+      - Requires superuser privileges (sudo/root).
+      - Cache entries in the kernel are trimmed using remount system calls in response to cache pressure.
+      Basic command for mounting:
+      - `ceph-fuse {mount point} {options}`
+      Example:
+      ```bash
+      mkdir /mnt/mycephfs
+      ceph-fuse --id foo /mnt/mycephfs
+      ```
+    questions_and_answers:
+      - question: |
+          What is the purpose of `ceph-fuse` in CephFS?
+        answer: |
+          `ceph-fuse` is used to mount CephFS in userspace, offering better manageability at the cost of performance.
+      - question: |
+          Why are superuser privileges required for `ceph-fuse`?
+        answer: |
+          Superuser privileges are needed to issue remount system calls for trimming kernel cache entries.
+      - question: |
+          How do you mount CephFS using a specific CephX user?
+        answer: |
+          Use the `--id` option with `ceph-fuse` to specify the CephX user, e.g., `ceph-fuse --id foo /mnt/mycephfs`.
+
+  - context: |
+      Mount Options and Specific Directories
+      --------------------------------------
+
+      - `ceph-fuse` supports additional options for mounting:
+        - `-k`: Specify a custom keyring file.
+        - `-m`: Pass the MON socket for explicit connection.
+        - `-r`: Mount a specific directory within CephFS.
+        - `--client_fs`: Mount a non-default file system.
+      Example to mount a specific directory:
+      ```bash
+      ceph-fuse --id foo -r /path/to/dir /mnt/mycephfs
+      ```
+    questions_and_answers:
+      - question: |
+          How do you specify a non-default file system while mounting with `ceph-fuse`?
+        answer: |
+          Use the `--client_fs` option with the desired file system name, e.g., \
+          `ceph-fuse --id foo --client_fs mycephfs2 /mnt/mycephfs2`.
+      - question: |
+          Can you mount a subdirectory of CephFS using `ceph-fuse`?
+        answer: |
+          Yes, use the `-r` option followed by the subdirectory path, e.g., \
+          `ceph-fuse --id foo -r /path/to/dir /mnt/mycephfs`.
+      - question: |
+          What is the purpose of the `-m` option in `ceph-fuse`?
+        answer: |
+          The `-m` option allows you to specify the MON socket for explicit connection during the mount.
+
+  - context: |
+      Persistent Mounts with FUSE
+      ---------------------------
+
+      To persistently mount CephFS, add entries to `/etc/fstab`:
+      ```
+      none /mnt/mycephfs fuse.ceph ceph.id={user-ID}[,ceph.conf={path/to/conf.conf}],_netdev,defaults 0 0
+      ```
+      For mounting subdirectories:
+      ```
+      none /mnt/mycephfs fuse.ceph ceph.id={user-ID},ceph.client_mountpoint=/path/to/dir,_netdev,defaults 0 0
+      ```
+      Systemd service units:
+      - `ceph-fuse@.service` and `ceph-fuse.target` are available.
+      Example commands:
+      ```bash
+      systemctl start ceph-fuse@/mnt/mycephfs.service
+      systemctl enable ceph-fuse.target
+      systemctl enable ceph-fuse@-mnt-mycephfs.service
+      ```
+    questions_and_answers:
+      - question: |
+          How do you make a FUSE mount of CephFS persistent across reboots?
+        answer: |
+          Add the relevant mount configuration to `/etc/fstab` and use systemd service units like `ceph-fuse@.service`.
+      - question: |
+          What is the purpose of the `_netdev` option in `/etc/fstab` for CephFS?
+        answer: |
+          The `_netdev` option ensures the network is available before attempting to mount CephFS.
+      - question: |
+          How do you specify a subdirectory for persistent mounting in `/etc/fstab`?
+        answer: |
+          Use the `ceph.client_mountpoint` option, e.g., \
+          `none /mnt/mycephfs fuse.ceph ceph.id=myuser,ceph.client_mountpoint=/path/to/dir`.
+
+  - context: |
+      Unmounting CephFS
+      -----------------
+
+      CephFS can be unmounted using the standard `umount` command:
+      ```bash
+      umount /mnt/mycephfs
+      ```
+      Tip:
+      - Ensure you are not within the file system directories before unmounting.
+    questions_and_answers:
+      - question: |
+          How do you unmount a CephFS mounted via FUSE?
+        answer: |
+          Use the `umount` command, e.g., `umount /mnt/mycephfs`.
+      - question: |
+          What precaution should you take before unmounting CephFS?
+        answer: |
+          Ensure you are not within the file system directories to avoid errors during unmounting.
+      - question: |
+          Can `ceph-fuse` automatically unmount a CephFS?
+        answer: |
+          No, you must manually use the `umount` command to unmount a CephFS.
+
+  - context: |
+      Prerequisites for Mounting with FUSE
+      ------------------------------------
+
+      - Requires superuser privileges.
+      - Kernel metadata cache is trimmed periodically via remount system calls.
+      - Use `Mount CephFS: Prerequisites` for detailed requirements.
+    questions_and_answers:
+      - question: |
+          Why are superuser privileges needed for mounting CephFS with FUSE?
+        answer: |
+          Superuser privileges are required to issue remount system calls for managing kernel metadata cache.
+      - question: |
+          Where can you find detailed prerequisites for mounting CephFS?
+        answer: |
+          Refer to the `Mount CephFS: Prerequisites` documentation.
+      - question: |
+          How does `ceph-fuse` handle kernel metadata cache?
+        answer: |
+          `ceph-fuse` periodically issues remount system calls to trim kernel metadata cache.
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/mount-using-fuse*.md]

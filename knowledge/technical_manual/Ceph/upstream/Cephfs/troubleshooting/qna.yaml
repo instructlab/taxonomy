@@ -1,0 +1,133 @@
+version: 3
+created_by: Amarnath
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Troubleshooting Slow or Stuck Operations
+      ----------------------------------------
+
+      When operations in CephFS appear slow or stuck, the problem could be in the client, the MDS, or the network
+      connecting them. To diagnose, start by checking for stuck operations on both sides and narrow down the cause.
+      The MDS cache can provide hints, and debugging logs with high logging levels are often useful in resolving issues.
+
+      To dump the MDS cache, use:
+
+      ```
+      ceph daemon mds.<name> dump cache /tmp/dump.txt
+      ```
+
+      Logs on the MDS or system logs should then be analyzed for clues.
+    questions_and_answers:
+      - question: |
+          How can you identify where slow or stuck operations are occurring in CephFS?
+        answer: |
+          Start by checking for stuck operations on the client, MDS, or network. Dump the MDS cache for hints.
+      - question: |
+          How can you dump the MDS cache?
+        answer: |
+          Use the command `ceph daemon mds.<name> dump cache /tmp/dump.txt` to dump the MDS cache for analysis.
+      - question: |
+          What role do high logging levels on the MDS play in troubleshooting?
+        answer: |
+          High logging levels on the MDS provide detailed information useful for diagnosing and resolving issues.
+
+  - context: |
+      Handling Stuck Recovery in "up:replay"
+      --------------------------------------
+
+      If an MDS is stuck in the "up:replay" state, it might be due to a large journal size. To expedite recovery:
+      - Reduce MDS debugging levels to zero.
+      - Monitor the journal replay status using `ceph tell`.
+      - Calculate completion time by tracking the progression of `journal_read_pos` to `journal_write_pos`.
+
+      Example:
+      ```
+      ceph tell mds.<fs_name>:0 status | jq .replay_status
+      ```
+    questions_and_answers:
+      - question: |
+          What is a common cause for an MDS being stuck in "up:replay"?
+        answer: |
+          A large journal size can cause an MDS to get stuck in the "up:replay" state during recovery.
+      - question: |
+          How can you monitor journal replay progress?
+        answer: |
+          Use the command `ceph tell mds.<fs_name>:0 status | jq .replay_status` to track replay progress.
+      - question: |
+          What action can reduce the time an MDS spends in "up:replay"?
+        answer: |
+          Reducing MDS debugging levels and tracking journal replay status can help expedite recovery.
+
+  - context: |
+      Expediting MDS Journal Trim
+      ---------------------------
+
+      A large MDS journal can cause slow recovery or warnings like "MDS_HEALTH_TRIM". To expedite journal trimming:
+      - Reduce the MDS tick interval using:
+      ```
+      ceph config set mds mds_tick_interval 2
+      ```
+      Ensure the system is under low load when adjusting this interval.
+    questions_and_answers:
+      - question: |
+          What does the "MDS_HEALTH_TRIM" warning indicate?
+        answer: |
+          The "MDS_HEALTH_TRIM" warning indicates the MDS journal has grown too large and requires trimming.
+      - question: |
+          How can you expedite MDS journal trimming?
+        answer: |
+          Reduce the MDS tick interval using the command `ceph config set mds mds_tick_interval 2`.
+      - question: |
+          When should you adjust the MDS tick interval?
+        answer: |
+          Adjust the MDS tick interval when the system is under low load to avoid impacting file system performance.
+
+  - context: |
+      Debugging CephFS Client Issues
+      ------------------------------
+
+      Both `ceph-fuse` and the kernel client provide debugging options for diagnosing client-related issues:
+      - `ceph-fuse`: Use `dump_ops_in_flight` or run in foreground mode with `-d`.
+      - Kernel client: Check debugfs entries in `/sys/kernel/debug/ceph/` for details on operations, sessions, or IO.
+    questions_and_answers:
+      - question: |
+          How can you debug operations in `ceph-fuse`?
+        answer: |
+          Use `dump_ops_in_flight` or run in foreground mode with `-d` for more debugging information.
+      - question: |
+          Where can you find kernel client debug information?
+        answer: |
+          Check debugfs entries in `/sys/kernel/debug/ceph/` for details on operations, sessions, or IO.
+      - question: |
+          What information is available in kernel client debugfs entries?
+        answer: |
+          Details on file capabilities, current MDS sessions, and in-flight operations to OSDs can be found.
+
+  - context: |
+      Common Mount Errors and Solutions
+      ---------------------------------
+
+      - **Mount 5 Error**: Caused by a laggy or crashed MDS. Ensure at least one MDS is running, and the cluster is
+        "active + healthy."
+      - **Mount 12 Error**: Often due to a version mismatch between the Ceph client and server. Upgrade the client
+        to match the server version.
+    questions_and_answers:
+      - question: |
+          What causes a "Mount 5 Error" in CephFS?
+        answer: |
+          A "Mount 5 Error" is caused by a laggy or crashed MDS. Ensure at least one MDS is running and the cluster is
+          "active + healthy."
+      - question: |
+          How can you resolve a "Mount 12 Error"?
+        answer: |
+          Upgrade the Ceph client to match the server version using `sudo apt-get update && sudo apt-get install \
+          ceph-common`.
+      - question: |
+          How can you check the versions of the Ceph client and server?
+        answer: |
+          Use the command `ceph -v` to check the versions of the Ceph client and server.
+document_outline: Comprehensive Troubleshooting Guide for CephFS
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: 4f2dabc
+  patterns: [upstream/doc/cephfs/troubleshooting*.md]

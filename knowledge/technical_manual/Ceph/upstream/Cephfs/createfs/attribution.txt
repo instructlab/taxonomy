@@ -1,0 +1,4 @@
+Title of work: Create a Ceph file system
+Link to work: https://docs.ceph.com/en/squid/cephfs/createfs/
+License of the work: Apache 2.0
+Creators name: Amarnath

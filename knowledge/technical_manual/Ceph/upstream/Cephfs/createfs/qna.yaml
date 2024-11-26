@@ -1,0 +1,164 @@
+version: 3
+created_by: Amarnath
+domain: cephfs
+document_outline: Creating a Ceph File System
+seed_examples:
+  - context: |
+      Creating Pools
+      ---------------
+
+      A Ceph file system requires at least two RADOS pools: one for metadata and one for data. Key recommendations:
+
+      - **Metadata Pool**:
+        - Use at least 3 replicas (4 replicas recommended for critical setups).
+        - Use fast, low-latency storage like NVMe or SSD.
+        - Dedicate storage devices to avoid metadata operation delays.
+
+      - **Data Pool**:
+        - Use a replicated pool as the default for better small-object performance.
+        - Additional erasure-coded pools can be configured for specific directories.
+
+      Example commands:
+
+      .. code:: bash
+
+          ceph osd pool create cephfs_data
+          ceph osd pool create cephfs_metadata
+    questions_and_answers:
+      - question: |
+          How many RADOS pools are required to create a Ceph file system?
+        answer: |
+          At least two RADOS pools are required: one for metadata and one for data.
+      - question: |
+          Why is it recommended to dedicate SSDs or NVMes for the metadata pool?
+        answer: |
+          Dedicated SSDs or NVMes ensure high client workload does not impact metadata operations.
+      - question: |
+          What PG count is typically recommended for metadata pools in large clusters?
+        answer: |
+          A smaller PG count, like 64 or 128, is commonly recommended for metadata pools in large clusters.
+
+  - context: |
+      Creating a File System
+      ----------------------
+
+      After pools are created, use the ``ceph fs new`` command to create the file system. Key options include:
+
+      - ``--force``: Allows using erasure-coded or non-empty pools.
+      - ``--fscid``: Sets a specific file system ID, useful for recovery scenarios.
+      - ``--recover``: Sets the file system's rank 0 to "existing but failed" for metadata recovery.
+
+      Example:
+
+      .. code:: bash
+
+          ceph fs new cephfs cephfs_metadata cephfs_data
+          ceph fs ls
+    questions_and_answers:
+      - question: |
+          What does the ``--recover`` option do when creating a Ceph file system?
+        answer: |
+          It sets the file system's rank 0 to "existing but failed" and prevents overwriting existing metadata.
+      - question: |
+          Can the default data pool of a file system be changed after creation?
+        answer: |
+          No, the default data pool is fixed once the file system is created.
+      - question: |
+          How can you list all existing file systems in a Ceph cluster?
+        answer: |
+          Use the command ``ceph fs ls`` to list all file systems in the cluster.
+
+  - context: |
+      Metadata Pool Considerations
+      ----------------------------
+
+      Metadata pools store inode metadata and directory information. Considerations include:
+
+      - Use fast storage (NVMe or SSD) for metadata pools to minimize latency for client operations.
+      - Configure 3 or more replicas for metadata pools to prevent data loss and ensure high availability.
+      - Provision metadata pools on dedicated storage devices to avoid contention with client workloads.
+    questions_and_answers:
+      - question: |
+          Why should metadata pools use fast, low-latency storage?
+        answer: |
+          Metadata operations directly affect client latency; fast storage minimizes delays.
+      - question: |
+          Why are 3 replicas recommended for metadata pools?
+        answer: |
+          Metadata loss can render the entire file system inaccessible; 3 replicas provide redundancy.
+      - question: |
+          What storage devices are recommended for metadata pools?
+        answer: |
+          Fast, low-latency devices like NVMe, Optane, or SSDs are recommended for metadata pools.
+
+  - context: |
+      Using Erasure-Coded Pools
+      -------------------------
+
+      Erasure-coded (EC) pools can be used as data pools for CephFS under specific conditions:
+
+      - Overwrites must be enabled using the following command:
+
+        .. code:: bash
+
+            ceph osd pool set my_ec_pool allow_ec_overwrites true
+
+      - EC pools are supported only with OSDs using the BlueStore backend.
+      - EC pools cannot be used for metadata pools due to the use of RADOS *OMAP* structures.
+    questions_and_answers:
+      - question: |
+          Can erasure-coded pools be used for CephFS metadata pools?
+        answer: |
+          No, metadata pools require RADOS *OMAP* structures, which are unsupported by erasure-coded pools.
+      - question: |
+          What backend must OSDs use to enable erasure-coded pools for CephFS?
+        answer: |
+          OSDs must use the BlueStore backend to support erasure-coded pools in CephFS.
+      - question: |
+          How do you enable overwrites in erasure-coded pools?
+        answer: |
+          Use the command ``ceph osd pool set <pool_name> allow_ec_overwrites true``.
+
+  - context: |
+      File System Creation Example
+      ----------------------------
+
+      Example commands to create and verify a Ceph file system:
+
+      .. code:: bash
+
+          ceph osd pool create cephfs_data
+          ceph osd pool create cephfs_metadata
+          ceph fs new cephfs cephfs_metadata cephfs_data
+          ceph fs ls
+
+      Output for ``ceph fs ls``:
+
+      .. code:: bash
+
+          name: cephfs, metadata pool: cephfs_metadata, data pools: [cephfs_data ]
+
+      After creation, verify the MDS state:
+
+      .. code:: bash
+
+          ceph mds stat
+          cephfs-1/1/1 up {0=a=up:active}
+    questions_and_answers:
+      - question: |
+          What does the ``ceph fs new`` command do?
+        answer: |
+          It creates a Ceph file system with specified metadata and data pools.
+      - question: |
+          How can you verify the state of MDS after creating a file system?
+        answer: |
+          Use the command ``ceph mds stat`` to check if the MDS is in the "up:active" state.
+      - question: |
+          What command lists the pools associated with a specific file system?
+        answer: |
+          Use the command ``ceph fs ls`` to list the pools and associated file systems.
+
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/createfs*.md]

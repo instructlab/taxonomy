@@ -1,0 +1,4 @@
+Title of work:  File layouts
+Link to work: https://docs.ceph.com/en/squid/cephfs/file-layouts/
+License of the work: Apache 2.0
+Creators name: Amarnath

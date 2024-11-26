@@ -1,0 +1,4 @@
+Title of work: Snapshot Scheduling Module
+Link to work: https://docs.ceph.com/en/squid/cephfs/snap-schedule/
+License of the work: Apache 2.0
+Creators name: Amarnath

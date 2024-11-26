@@ -1,0 +1,4 @@
+Title of work: CephFS Dynamic Metadata Management
+Link to work: https://docs.ceph.com/en/squid/cephfs/dynamic-metadata-management/
+License of the work: Apache 2.0
+Creators name: Amarnath

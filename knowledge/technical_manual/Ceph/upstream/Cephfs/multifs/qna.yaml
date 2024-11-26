@@ -1,0 +1,127 @@
+version: 3
+created_by: Amarnath
+domain: cephfs
+document_outline: Multiple Ceph File Systems
+seed_examples:
+  - context: |
+      Multiple Ceph File Systems Overview
+      -----------------------------------
+
+      Beginning with the Pacific release, Ceph supports multiple file systems. This allows configuring separate file \
+      systems
+      with full data separation on distinct pools. Existing clusters must explicitly enable this feature by setting a \
+      flag,
+      while new clusters enable it automatically.
+    questions_and_answers:
+      - question: |
+          What is the purpose of enabling multiple Ceph file systems?
+        answer: |
+          It allows configuring separate file systems with full data separation on distinct pools.
+      - question: |
+          How do you enable multiple file system support on existing clusters?
+        answer: |
+          Use the command: `ceph fs flag set enable_multiple true`.
+      - question: |
+          Is multiple file system support enabled by default on new clusters?
+        answer: |
+          Yes, new Ceph clusters automatically enable multiple file system support.
+
+  - context: |
+      Creating a New Ceph File System
+      ------------------------------
+
+      The new `volumes` plugin interface simplifies the creation of new file systems in Ceph. Each file system, \
+      referred to
+      as a "volume," can be created using the following command:
+
+          ceph fs volume create <fs_name>
+
+      This process automates the creation of pools, deployment of new Metadata Servers (MDS), and configuration of MDS
+      affinity to operate the new file system.
+    questions_and_answers:
+      - question: |
+          What command is used to create a new Ceph file system?
+        answer: |
+          The command is: `ceph fs volume create <fs_name>`.
+      - question: |
+          What does the `volumes` plugin automate during file system creation?
+        answer: |
+          It automates pool creation, MDS deployment, and configuration of MDS affinity for the new file system.
+      - question: |
+          What is the purpose of MDS affinity in Ceph?
+        answer: |
+          MDS affinity ensures that specific MDS daemons operate a particular file system.
+
+  - context: |
+      Securing Access to Ceph File Systems
+      ------------------------------------
+
+      Ceph provides the `fs authorize` command to manage client access to specific file systems. Only authorized \
+      clients
+      can see the file systems, and unauthorized access is rejected by Monitors and Metadata Servers (MDS).
+    questions_and_answers:
+      - question: |
+          How does Ceph restrict access to file systems?
+        answer: |
+          Access is restricted using the `fs authorize` command, which configures client access to specific file \
+          systems.
+      - question: |
+          What happens if a client tries to access a file system without authorization?
+        answer: |
+          The Monitors and MDS will reject the unauthorized access.
+      - question: |
+          Can a client view all file systems without explicit authorization?
+        answer: |
+          No, a client can only view the file systems it is authorized to access.
+
+  - context: |
+      Operational Notes for Multiple File Systems
+      -------------------------------------------
+
+      - File systems do not share pools, ensuring complete separation of data and metadata.
+      - Each file system requires its own set of Metadata Server (MDS) ranks, increasing operational costs.
+      - A single file system with subtree pinning is often a better choice for isolating workloads between \
+      applications, as
+        it reduces the need for multiple MDS daemons.
+    questions_and_answers:
+      - question: |
+          Do multiple file systems in Ceph share pools?
+        answer: |
+          No, file systems do not share pools to ensure full data separation.
+      - question: |
+          What is a drawback of creating multiple file systems in Ceph?
+        answer: |
+          Each file system requires its own set of MDS ranks, which increases operational costs.
+      - question: |
+          When is subtree pinning a better choice than creating multiple file systems?
+        answer: |
+          Subtree pinning is better for isolating workloads between applications, as it reduces the need for multiple \
+          MDS daemons.
+
+  - context: |
+      Key Considerations for Multiple Ceph File Systems
+      -------------------------------------------------
+
+      - Multiple file systems require distinct pools for data and metadata, avoiding duplicate inodes and ensuring \
+      snapshot consistency.
+      - Each additional file system demands more resources, including Metadata Servers (MDS).
+      - For most use cases, a single file system with dynamic subtree pinning offers better efficiency and \
+      cost-effectiveness.
+    questions_and_answers:
+      - question: |
+          Why must file systems have separate pools in Ceph?
+        answer: |
+          Separate pools avoid duplicate inodes and ensure snapshot consistency.
+      - question: |
+          What resource requirements increase with each new file system?
+        answer: |
+          Each new file system requires more Metadata Servers (MDS).
+      - question: |
+          What is a recommended approach for isolating workloads in most cases?
+        answer: |
+          Use a single file system with dynamic subtree pinning for better efficiency and cost-effectiveness.
+
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/multifs*.md]

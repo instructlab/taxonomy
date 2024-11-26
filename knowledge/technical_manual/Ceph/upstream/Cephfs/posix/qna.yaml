@@ -1,0 +1,115 @@
+version: 3
+created_by: Amarnath
+domain: cephfs
+document_outline: Differences from POSIX in CephFS
+seed_examples:
+  - context: |
+      CephFS Differences from POSIX
+      -----------------------------
+      CephFS aims to adhere to POSIX semantics but diverges in a few cases:
+      - Writes by failed clients may not be atomic.
+      - Concurrent writers crossing object boundaries may result in non-atomic writes.
+      - Sparse files may cause incorrect `st_blocks` field values in `stat`.
+      - mmap on multiple hosts doesn't propagate coherent writes across client caches.
+      - CephFS introduces a hidden `.snap` directory for snapshot management.
+      - The `atime` field is not maintained but can be set manually using `setattr`.
+    questions_and_answers:
+      - question: |
+          What happens to writes when a client fails in CephFS?
+        answer: |
+          Writes may not be atomic and could be partially applied.
+      - question: |
+          How does CephFS handle multiple writers crossing object boundaries?
+        answer: |
+          CephFS may produce non-atomic writes, resulting in mixed content across object boundaries.
+      - question: |
+          Can CephFS propagate coherent writes when using mmap on multiple hosts?
+        answer: |
+          No, mmap writes are not coherently propagated across client caches on multiple hosts.
+
+  - context: |
+      Perspective on POSIX Compliance
+      -------------------------------
+      - CephFS provides stronger consistency than NFS but is less strict than local Linux file systems.
+      - While HDFS diverges significantly from POSIX, CephFS supports features like in-place modifications and renames.
+      - CephFS is positioned between NFS and Linux kernel file systems in terms of POSIX adherence.
+      Comparison: HDFS < NFS < CephFS < {XFS, ext4}.
+    questions_and_answers:
+      - question: |
+          How does CephFS compare to NFS in terms of POSIX adherence?
+        answer: |
+          CephFS provides stricter consistency and write atomicity compared to NFS.
+      - question: |
+          Where does CephFS fall in the POSIX compliance spectrum?
+        answer: |
+          CephFS is more POSIX-compliant than NFS but less strict than local file systems like XFS or ext4.
+      - question: |
+          What features does CephFS support that HDFS lacks?
+        answer: |
+          CephFS supports in-place file modifications, truncates, and directory renames, unlike HDFS.
+
+  - context: |
+      Handling Writes and Errors
+      --------------------------
+      - CephFS uses standard error-reporting mechanisms for writes and follows Linux kernel conventions.
+      - In Linux v4.17 or later, writeback errors are reported once to every open file description.
+      - Errors that occurred before a file was opened will be returned on `fsync`.
+    questions_and_answers:
+      - question: |
+          How does CephFS handle writeback errors in Linux v4.17 or later?
+        answer: |
+          Writeback errors are reported once to every file description that is open at the time of the error.
+      - question: |
+          What happens to unreported errors before a file is opened in CephFS?
+        answer: |
+          Unreported errors are returned on `fsync` for the file.
+      - question: |
+          Which standard mechanisms does CephFS use for error reporting?
+        answer: |
+          CephFS follows the Linux kernel's standard error-reporting conventions.
+
+  - context: |
+      Managing Snapshots with `.snap`
+      -------------------------------
+      - CephFS includes a hidden `.snap` directory for snapshot operations (e.g., access, creation, deletion).
+      - This virtual directory is excluded from `readdir(2)` but prevents files/directories with the same name.
+      - The name `.snap` can be changed using `-o snapdirname=<name>` (Linux) or `client_snapdir` (config options).
+    questions_and_answers:
+      - question: |
+          What is the purpose of the `.snap` directory in CephFS?
+        answer: |
+          The `.snap` directory is used for snapshot management, including access, creation, deletion, and renaming.
+      - question: |
+          Can the name `.snap` be changed in CephFS?
+        answer: |
+          Yes, the name can be changed using `-o snapdirname=<name>` on Linux or the `client_snapdir` config option.
+      - question: |
+          Does `.snap` appear in `readdir(2)` output?
+        answer: |
+          No, the `.snap` directory is excluded from `readdir(2)` output.
+
+  - context: |
+      Sparse Files and `atime`
+      ------------------------
+      - Sparse files may cause the `st_blocks` field in `stat(2)` to overestimate space usage.
+      - The `atime` field is not maintained by CephFS, impacting backup and data tiering applications.
+      - Applications can set the `atime` field manually using the `setattr` operation.
+    questions_and_answers:
+      - question: |
+          Why does `stat(2)` overestimate space usage for sparse files in CephFS?
+        answer: |
+          CephFS does not explicitly track allocated/written parts of a file, causing incorrect `st_blocks` values.
+      - question: |
+          Is the `atime` field maintained in CephFS?
+        answer: |
+          No, `atime` is not maintained, but it can be manually set using the `setattr` operation.
+      - question: |
+          How does the lack of `atime` maintenance affect applications?
+        answer: |
+          It impacts backup and data tiering applications that rely on `atime` for moving unused data to secondary \
+          storage.
+
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephfs/posix*.md]
