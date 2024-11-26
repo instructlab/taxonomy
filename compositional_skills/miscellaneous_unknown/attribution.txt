@@ -1,0 +1,3 @@
+Title of work: NICE Standard classification
+License of the work: Apache 2.0
+Creator names: Adam Makarucha
