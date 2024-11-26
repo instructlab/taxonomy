@@ -6,70 +6,70 @@ seed_examples:
       Traditionally, block-level access to Ceph was limited to QEMU, librbd, and the Linux kernel client. Starting with
       the Ceph Squid release, NVMe/TCP support has been added, enabling wider platform usage and potential new use cases.
   questions_and_answers:
-      - question: What new feature was introduced in the Ceph Squid release?
-        answer: |
-          NVMe/TCP support was added, expanding block-level access capabilities.
-      - question: What were the traditional methods of block-level access to Ceph?
-        answer: |
-          QEMU, librbd (common in OpenStack environments), and the Linux kernel client.
-      - question: How does NVMe/TCP support benefit Ceph storage clusters?
-        answer: |
-          It enables wider platform usage and opens up new use cases.
+    - question: What new feature was introduced in the Ceph Squid release?
+      answer: |
+        NVMe/TCP support was added, expanding block-level access capabilities.
+    - question: What were the traditional methods of block-level access to Ceph?
+      answer: |
+        QEMU, librbd (common in OpenStack environments), and the Linux kernel client.
+    - question: How does NVMe/TCP support benefit Ceph storage clusters?
+      answer: |
+        It enables wider platform usage and opens up new use cases.
 - context: |
       The prerequisites for installing and configuring NVMe-oF targets include RHEL/CentOS 8.0 or newer, Linux kernel
       v4.16 or newer, a working Ceph Squid or later cluster deployed with cephadm, NVMe-oF gateways, and separate network
       subnets for front-end and back-end traffic.
   questions_and_answers:
-      - question: What operating system versions are required for NVMe-oF targets?
-        answer: |
-          RHEL/CentOS 8.0 or newer are required.
-      - question: Why is it necessary to use separate subnets for NVMe-oF traffic?
-        answer: |
-          To segregate NVMe-oF front-end traffic from Ceph back-end traffic for better performance.
-      - question: What is the minimum Linux kernel version required for NVMe-oF targets?
-        answer: |
-          Linux kernel v4.16 or newer is required.
+    - question: What operating system versions are required for NVMe-oF targets?
+      answer: |
+        RHEL/CentOS 8.0 or newer are required.
+    - question: Why is it necessary to use separate subnets for NVMe-oF traffic?
+      answer: |
+        To segregate NVMe-oF front-end traffic from Ceph back-end traffic for better performance.
+    - question: What is the minimum Linux kernel version required for NVMe-oF targets?
+      answer: |
+        Linux kernel v4.16 or newer is required.
 - context: |
       The Ceph NVMe-oF gateway serves as a translator between Ceph's RBD interface and the NVMe-oF protocol. It can run
       as a standalone service or be colocated with other Ceph daemons, such as OSD nodes. Sufficient CPU and memory are
       essential when colocating with other services.
   questions_and_answers:
-      - question: What is the function of the Ceph NVMe-oF gateway?
-        answer: |
-          It acts as a translator between Ceph's RBD interface and the NVMe-oF protocol.
-      - question: Can the NVMe-oF gateway run on OSD nodes?
-        answer: |
-          Yes, but sufficient CPU and memory must be available.
-      - question: Why is it important to allocate sufficient CPU and memory for colocated gateways?
-        answer: |
-          To ensure reliable performance when colocated with other Ceph daemons.
+    - question: What is the function of the Ceph NVMe-oF gateway?
+      answer: |
+        It acts as a translator between Ceph's RBD interface and the NVMe-oF protocol.
+    - question: Can the NVMe-oF gateway run on OSD nodes?
+      answer: |
+        Yes, but sufficient CPU and memory must be available.
+    - question: Why is it important to allocate sufficient CPU and memory for colocated gateways?
+      answer: |
+        To ensure reliable performance when colocated with other Ceph daemons.
 - context: |
       To install the NVMe-oF gateway, create a Ceph pool, enable RBD on the pool, and deploy gateway daemons on specific
       nodes. Use cephadm orchestration commands to manage the deployment efficiently.
   questions_and_answers:
-      - question: What command creates a pool for NVMe-oF gateways?
-        answer: |
-          The command is `ceph osd pool create NVME-OF_POOL_NAME`.
-      - question: How is RBD enabled on the NVMe-oF pool?
-        answer: |
-          Use the command `rbd pool init NVME-OF_POOL_NAME`.
-      - question: How are NVMe-oF gateway daemons deployed on nodes?
-        answer: |
-          Use the command `ceph orch apply nvmeof NVME-OF_POOL_NAME --placement="host01, host02"`.
+    - question: What command creates a pool for NVMe-oF gateways?
+      answer: |
+        The command is `ceph osd pool create NVME-OF_POOL_NAME`.
+    - question: How is RBD enabled on the NVMe-oF pool?
+      answer: |
+        Use the command `rbd pool init NVME-OF_POOL_NAME`.
+    - question: How are NVMe-oF gateway daemons deployed on nodes?
+      answer: |
+        Use the command `ceph orch apply nvmeof NVME-OF_POOL_NAME --placement="host01, host02"`.
 - context: |
       Configuring NVMe subsystems involves downloading the `nvmeof-cli` container, creating a subsystem, defining
       gateway ports, adding host NQNs, and creating NVMe namespaces for block storage operations.
   questions_and_answers:
-      - question: How do you download the `nvmeof-cli` container for configuration?
-        answer: |
-          Use the command `podman pull quay.io/ceph/nvmeof-cli:latest`.
-      - question: What is the purpose of defining a subsystem in NVMe-oF configuration?
-        answer: |
-          The subsystem acts as a logical representation for NVMe-oF services, enabling communication with initiators.
-      - question: How is a new NVMe namespace created?
-        answer: |
-          Use the command `podman run -it quay.io/ceph/nvmeof-cli:latest --server-address GATEWAY_IP --server-port GATEWAY_PORT 5500 namespace add`.
-document_outline: NVME-oF Gateway Requirements
+    - question: How do you download the `nvmeof-cli` container for configuration?
+      answer: |
+        Use the command `podman pull quay.io/ceph/nvmeof-cli:latest`.
+    - question: What is the purpose of defining a subsystem in NVMe-oF configuration?
+      answer: |
+        The subsystem acts as a logical representation for NVMe-oF services, enabling communication with initiators.
+    - question: How is a new NVMe namespace created?
+      answer: |
+        Use the command `podman run -it quay.io/ceph/nvmeof-cli:latest --server-address GATEWAY_IP --server-port GATEWAY_PORT 5500 namespace add`.
+document_outline: Installing and Configuring NVMe-oF Targets
 document:
   repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
   commit: b60d0d0
