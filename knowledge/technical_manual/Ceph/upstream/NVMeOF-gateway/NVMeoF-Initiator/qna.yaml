@@ -1,0 +1,119 @@
+version: 3
+created_by: Sunil Kumar Nagaraju
+domain: Teach LLM model about NVMeoF Linux Initiator
+seed_examples:
+  - context: |
+      Configure the initiator to allow the NVMe/TCP protocol to send NVMe-oF commands to targets over an Internet Protocol network.
+      The NVMe-oF gateway initiator can be configured on either of the following platform versions are,
+      Red Hat Enterprise Linux 9.2 or later, Kernel 5.0 or later, Ubuntu 24.04 or later and SLES 15 SP3 or later.
+    questions_and_answers:
+      - question: what is NVMeoF Initiator?
+        answer: |
+          The NVMe over Fabrics (NVMe-oF) initiator is a software or hardware component on a client system that enables it
+          to connect to remote NVMe storage devices over a network fabric. The initiator is responsible for sending NVMe commands to,
+          and receiving responses from, an NVMe-oF target, which exposes storage resources over a network..
+      - question: what are the different platforms supported?
+        answer: |
+          Red Hat Enterprise Linux 9.2 or later, Kernel 5.0 or later, Ubuntu 24.04 or later and SLES 15 SP3 or later.
+      - question: Does the Ceph cluster need any special configuration before enabling NVMe-oF?
+        answer: |
+          Yes, Before getting into NVMeoF Initiator, ensure NVMeoF targets are set in the ceph cluster.
+  - context: |
+      The sequential instructions for setting up the NVMe-oF (NVMe over Fabrics) initiator,
+      ensuring proper communication between the client and remote NVMe storage devices. It includes:
+      - Installation of Required Packages:
+        Before the NVMe-oF initiator can be used, specific software packages and tools need to be installed.
+        These typically include the Linux NVMe driver and command-line utilities (e.g., nvme-cli) to manage NVMe connections.
+        Package installations ensure the system has all the necessary components to support NVMe-oF functionality.
+      - Configuration of NVMe-oF Target and NVMeoF commands:
+        The NVMe-oF target refers to the remote storage server, while the initiator is the client accessing this storage.
+        Setting up the NVMe-oF initiator may require updating configuration files or running specific commands.
+        For example: Using nvme discover to identify available NVMe targets on the network and
+        Using nvme connect to establish a connection to a target.
+    questions_and_answers:
+      - question: Which packages need to be installed, and are there any recommended sources or repositories??
+        answer: |
+          nvme-cli is RPM tool needed at initiator to connect NVMeoF targets in linux environments
+      - question: What are the exact steps to install the NVMe-oF initiator on a Linux machine?
+        answer: |
+          Install and enable the nvme-cli RPM tool with these commands, "yum install nvme-cli" followed by "modprobe nvme-fabrics".
+      - question: How to ensure targets are visible?
+        answer: |
+          post installation of nvme-cli, "nvme discover" command helps to find out NVMeoF targets.
+          COMMAND: "nvme discover -t tcp -a GATEWAY_IP -s DISCOVERY_PORT"
+          GATEWAY_IP --> NVMeoF target IP address, DISCOVERY_PORT --> discovery port number
+          for example, nvme discover -t tcp -a GATEWAY_IP -s 4420
+      - question: How to connect to NVMeoF targets?
+        answer: |
+          "nvme connect" used for establishing connection between Initiator and NVMeoF targets.
+      - question: what all steps to connect to NVMeoF targets?
+        answer: |
+          - nvme discover --> for example, nvme discover -t tcp -a GATEWAY_IP -s 4420
+          - nvme connect --> nvme connect -t tcp -a GATEWAY_IP -n SUBSYSTEM_NQN
+  - context: |
+        NVMe CLI offers many commands and powerful tool that provides a set of commands for managing and
+        interacting with NVMe devices, both locally attached and over a network (e.g., NVMe over Fabrics, or NVMe-oF).
+        It is commonly used in Linux systems for tasks such as device discovery, connection, and performance monitoring.
+    questions_and_answers:
+      - question: What types of NVMe devices can be managed using NVMe CLI?
+        answer: |
+          NVMe CLI can manage both locally attached NVMe devices (directly connected to the system) and
+          remote NVMe devices accessed over a network using NVMe-oF (NVMe over Fabrics).
+      - question: On which operating systems is NVMe CLI commonly used, and for what purposes?
+        answer: |
+          NVMe CLI is commonly used on Linux systems. It is utilized for tasks such as device discovery,
+          establishing connections to remote NVMe devices, and monitoring device performance.
+      - question: What are some key tasks that NVMe CLI can perform with NVMe devices?
+        answer: |
+          - Discovering available NVMe devices or NVMe-oF targets.
+          - Establishing and managing connections to NVMe-oF targets.
+          - Listing and retrieving detailed information about connected devices.
+          - Monitoring device performance and health using diagnostic tools.
+      - question: How does NVMe CLI support interactions with NVMe-oF (NVMe over Fabrics)?
+        answer: |
+          NVMe CLI provides commands to discover NVMe-oF targets on the network,
+          connect to them using transport protocols like TCP or RDMA, and manage these connections efficiently.
+      - question: Why is NVMe CLI considered a powerful tool for managing NVMe devices?
+        answer: |
+          NVMe CLI is considered powerful because it offers a wide range of commands for managing NVMe devices,
+          enabling users to perform complex tasks like configuration, monitoring, and troubleshooting with ease.
+          It supports both local and network-based NVMe devices, making it versatile for different storage setups.
+  - context: |
+      Verify the initiator setup with set of commands which helps the connection between NVMeoF targets and initiator.
+      "nvme list" provides the list of NVMeoF devices which can cross verify at NVMeoF targets.
+    questions_and_answers:
+      - question: how to get NVMeoF devices list?
+        answer: |
+          "nvme list" is the command to used to get the list of NVMe devices at initiator
+      - question: what are the most useful commands at NVMe Initiator?
+        answer: |
+          nvme discover: to discover nvmeof targets under subsytems
+          nvme connect: to connect to nvmeof subsystems
+          nvme list: provides list of NVMe targets at initiator
+          nvme list-subsys: provides the list of subsytems connected.
+          nvme list-subsys <nvme-dev>: provides the active and standby connection details along with subsystems.
+      - question: How to connect to all subsystems?
+        answer: |
+          nvme connect-all command can be used to connect to all subsystems which are discovered.
+  - context: |
+      To understand about how to use nvme devices at initiator, one could create simple filesystem and mount to local folder
+      and store files under it. the commands are,
+      - Get a NVMe device path : "nvme list"
+      - Create a filesystem on the desired device: "mkfs.ext4 NVME_NODE_PATH"
+      - Mount the filesystem: "mkdir /mnt/nvmeof" --> "mount NVME_NODE_PATH /mnt/nvmeof"
+      - echo "Hello NVME-oF" > /mnt/nvmeof/hello.text and verify the file content.
+    questions_and_answers:
+      - question: How to use NVMe node path at initiator?
+        answer: |
+          To test, enable file system on NVMe device path and use it to store files.
+      - question: What are the next steps after setting up the NVMe-oF initiator on Linux?
+        answer: Verify connectivity to the target, check configuration files, and troubleshoot any issues.
+      - question: How do you ensure connectivity between the initiator and target?
+        answer: Confirm network settings, validate target addresses, and ensure correct transport protocols.
+      - question: What should be done if issues are encountered during setup?
+        answer: Check log files for errors, verify configuration parameters, and ensure proper network connections.
+document_outline: NVMeoF Linux Initiator
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/rbd/nvmeof-initiator-linux.md]
