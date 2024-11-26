@@ -1,0 +1,94 @@
+version: 3
+created_by: Sunil Angadi
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Ceph Block Device images integrate with Kubernetes v1.13+ using `ceph-csi`. This enables dynamic provisioning
+      of RBD images to back Kubernetes volumes. These images can be mounted as block devices or filesystems on
+      worker nodes running pods. Ceph stripes data across OSDs for better performance than standalone servers.
+    questions_and_answers:
+      - question: |
+          What is the role of `ceph-csi` in Kubernetes?
+        answer: |
+          `ceph-csi` dynamically provisions Ceph Block Device images for Kubernetes volumes and maps them to pods.
+      - question: |
+          How does Ceph improve performance compared to standalone servers?
+        answer: |
+          Ceph stripes data across multiple OSDs, enabling better performance for large block device images.
+      - question: |
+          Which Kubernetes version introduced support for `ceph-csi`?
+        answer: |
+          Kubernetes v1.13 and later introduced support for `ceph-csi`.
+  - context: |
+      To use Ceph Block Devices in Kubernetes, a dedicated pool like `kubernetes` must be created and initialized.
+      Use the `ceph osd pool create` and `rbd pool init` commands for this purpose. Placement groups should be
+      configured to optimize performance based on workload requirements.
+    questions_and_answers:
+      - question: |
+          Why is a dedicated pool like `kubernetes` created for Ceph in Kubernetes?
+        answer: |
+          It isolates Kubernetes workloads and ensures efficient storage management for Kubernetes volumes.
+      - question: |
+          What command initializes a new Ceph pool for Kubernetes?
+        answer: |
+          Use `rbd pool init kubernetes` to initialize the pool for Kubernetes volumes.
+      - question: |
+          Why is configuring placement groups important for Ceph pools in Kubernetes?
+        answer: |
+          Proper placement groups ensure balanced data distribution and optimal storage performance.
+  - context: |
+      `ceph-csi` requires proper configuration, including cephx authentication. Create a Ceph user for Kubernetes,
+      set up a ConfigMap for monitor addresses, and define a Secret object with credentials. The Secret is stored
+      in Kubernetes to authenticate with Ceph during operations.
+    questions_and_answers:
+      - question: |
+          How is cephx authentication configured for Kubernetes?
+        answer: |
+          A Ceph user is created with `ceph auth get-or-create`, and its credentials are stored as a Kubernetes Secret.
+      - question: |
+          What is the role of the `ConfigMap` in `ceph-csi`?
+        answer: |
+          The `ConfigMap` stores Ceph monitor addresses and the cluster `fsid`, enabling `ceph-csi` to connect to Ceph.
+      - question: |
+          How is the Secret object for `ceph-csi` stored in Kubernetes?
+        answer: |
+          The Secret is defined in YAML format and applied to Kubernetes using `kubectl apply`.
+  - context: |
+      To deploy `ceph-csi`, create required RBAC objects like ServiceAccount and ClusterRoleBinding. Use deployment
+      YAMLs to set up `ceph-csi` provisioner and node plugins. Update the container version in the YAML for production
+      workloads instead of the default `canary` version.
+    questions_and_answers:
+      - question: |
+          What are the RBAC objects required for `ceph-csi` deployment?
+        answer: |
+          ServiceAccount, ClusterRole, and ClusterRoleBinding are required RBAC objects for `ceph-csi` deployment.
+      - question: |
+          How is the `ceph-csi` provisioner deployed in Kubernetes?
+        answer: |
+          Use deployment YAML files like `csi-rbdplugin-provisioner.yaml` and apply them with `kubectl`.
+      - question: |
+          Why should the `ceph-csi` container version be updated for production workloads?
+        answer: |
+          The default `canary` version is for development; updating ensures stability and compatibility in production.
+  - context: |
+      The Kubernetes `StorageClass` defines storage features and policies. For `ceph-csi`, it maps to a Ceph pool and
+      supports volume expansion, reclaim policies, and mount options. Ensure the `clusterID` matches the Ceph cluster
+      `fsid` in the `StorageClass` YAML.
+    questions_and_answers:
+      - question: |
+          What is the purpose of a `StorageClass` in Kubernetes?
+        answer: |
+          It defines storage features, policies, and mappings to storage backends like Ceph pools.
+      - question: |
+          How is volume expansion configured in a `StorageClass` for `ceph-csi`?
+        answer: |
+          Enable `allowVolumeExpansion` and use appropriate parameters in the `StorageClass` YAML.
+      - question: |
+          What must the `clusterID` in a `ceph-csi` `StorageClass` match?
+        answer: |
+          The `clusterID` must match the Ceph cluster's `fsid` for correct configuration.
+document_outline: Teach the Large Language Model about the RBD kubernetes feature of Ceph
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/rbd/rbd-kubernetes*.md]

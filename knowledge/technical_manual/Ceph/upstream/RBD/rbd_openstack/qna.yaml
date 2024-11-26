@@ -1,0 +1,95 @@
+version: 3
+created_by: Sunil Angadi
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Ceph Block Device images can be attached to OpenStack instances via `libvirt`, which uses the QEMU `librbd`
+      interface. Ceph stripes block volumes across OSDs, offering better performance than local drives. OpenStack
+      integrates with Ceph in three ways: Glance for images, Cinder for volumes, and Nova for guest disks. Booting
+      VMs directly in Ceph is recommended for maintenance and live migration efficiency.
+    questions_and_answers:
+      - question: |
+          How does OpenStack integrate with Ceph Block Devices?
+        answer: |
+          OpenStack uses Ceph for images (Glance), volumes (Cinder), and guest disks (Nova), enabling direct VM boot.
+      - question: |
+          Why is it recommended to boot virtual machines directly in Ceph?
+        answer: |
+          It simplifies maintenance, supports live migration, and ensures seamless recovery with `nova evacuate`.
+      - question: |
+          What is the role of `libvirt` in using Ceph with OpenStack?
+        answer: |
+          `libvirt` configures QEMU to interface with `librbd`, allowing efficient attachment of Ceph block devices.
+  - context: |
+      Ceph pools are used to store block devices for OpenStack services. Separate pools for Glance, Cinder, and Nova
+      are recommended. Pools must be initialized using the `rbd pool init` command before use. Placement groups
+      should be configured appropriately for optimal performance.
+    questions_and_answers:
+      - question: |
+          Why are separate pools recommended for Glance, Cinder, and Nova?
+        answer: |
+          To ensure better organization and performance by isolating data for different OpenStack services.
+      - question: |
+          What command is used to initialize a new Ceph pool for block devices?
+        answer: |
+          Use `rbd pool init {pool-name}` to initialize the pool.
+      - question: |
+          Why is configuring placement groups important for Ceph pools?
+        answer: |
+          Proper placement groups balance data distribution and optimize performance in the Ceph cluster.
+  - context: |
+      OpenStack nodes interacting with Ceph require the `ceph.conf` file and Ceph client packages. For Glance,
+      `python-rbd` is installed. For Nova and Cinder, both `python-rbd` and `ceph-common` are installed. Nodes also
+      require appropriate keyring files for authentication.
+    questions_and_answers:
+      - question: |
+          What Ceph packages are required on the `glance-api` node?
+        answer: |
+          The `python-rbd` package is needed for `glance-api` to interact with Ceph.
+      - question: |
+          Which nodes require both `python-rbd` and `ceph-common` packages?
+        answer: |
+          Nodes running `nova-compute`, `cinder-backup`, and `cinder-volume` require both packages.
+      - question: |
+          What is the purpose of the `ceph.conf` file on OpenStack nodes?
+        answer: |
+          It provides the configuration details needed for OpenStack services to interact with the Ceph cluster.
+  - context: |
+      Ceph client authentication in OpenStack uses `cephx`. Unique users are created for Glance, Cinder, and Nova.
+      Their keys are stored in keyring files and added to respective nodes. Ownership is set to appropriate OpenStack
+      service users like `glance` or `cinder` for secure access.
+    questions_and_answers:
+      - question: |
+          How is Cephx authentication configured for OpenStack services?
+        answer: |
+          Unique users are created with `ceph auth get-or-create`, and their keys are distributed to appropriate nodes.
+      - question: |
+          Why are keyring file ownerships changed for OpenStack service users?
+        answer: |
+          To ensure that only the specific OpenStack service has secure access to the Ceph authentication keys.
+      - question: |
+          What command creates a Ceph user for Glance?
+        answer: |
+          `ceph auth get-or-create client.glance mon 'profile rbd' osd 'profile rbd pool=images' mgr 'profile rbd pool=images'`.
+  - context: |
+      The `libvirt` process on OpenStack nodes requires the secret key of the Ceph user for Cinder to attach block
+      devices. This secret key is stored securely and allows Nova to interact with Ceph during VM operations like
+      attaching volumes or booting directly from block devices.
+    questions_and_answers:
+      - question: |
+          Why does `libvirt` require the secret key of the Ceph user?
+        answer: |
+          To securely attach Ceph block devices to OpenStack instances managed by Nova.
+      - question: |
+          What process stores the secret key for `libvirt` on OpenStack nodes?
+        answer: |
+          The secret key is stored securely as part of the `client.cinder` keyring configuration.
+      - question: |
+          How does storing the secret key benefit Nova operations?
+        answer: |
+          It allows Nova to seamlessly attach volumes and boot VMs directly from Ceph block devices.
+document_outline: Teach the Large Language Model about the RBD openstack feature of Ceph
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/rbd/rbd-openstack*.md]

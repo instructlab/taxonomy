@@ -1,0 +1,96 @@
+version: 3
+created_by: Sunil Angadi
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Ceph RBD supports snapshots and clones to efficiently provision block devices to virtual machines. A "golden"
+      image can be configured with an operating system and software, followed by creating a snapshot of this image.
+      Clones can then be made from the snapshot using a copy-on-write mechanism, allowing fast provisioning without
+      downloading the entire image for each virtual machine.
+    questions_and_answers:
+      - question: |
+          What is the purpose of snapshots and clones in Ceph RBD?
+        answer: |
+          Snapshots and clones enable fast provisioning of virtual machine block devices by leveraging copy-on-write
+          mechanics.
+      - question: |
+          What is a "golden" image in Ceph RBD?
+        answer: |
+          A "golden" image is a pre-configured block device with an OS and software, used as a template for snapshots
+          and clones.
+      - question: |
+          How do snapshots improve provisioning efficiency?
+        answer: |
+          Snapshots allow creating clones without copying the entire image, speeding up virtual machine deployment.
+  - context: |
+      QEMU integrates with Ceph RBD to attach block device images directly as virtual block devices using `librbd`.
+      This avoids mapping images on the host and enhances performance. QEMU allows specifying options like pool name,
+      image name, and snapshots, and supports converting virtual machine images to Ceph RBD format.
+    questions_and_answers:
+      - question: |
+          How does QEMU improve performance when used with Ceph RBD?
+        answer: |
+          By directly attaching images via `librbd`, it avoids context switches and utilizes RBD caching.
+      - question: |
+          What is the command format for specifying an RBD image in QEMU?
+        answer: |
+          `qemu-img {command} [options] rbd:{pool-name}/{image-name}[@snapshot-name][:options...]`.
+      - question: |
+          Can QEMU convert images to Ceph RBD format?
+        answer: |
+          Yes, QEMU can convert formats like qcow2 to RBD using the `qemu-img convert` command.
+  - context: |
+      Using QEMU, RBD block device images can be created by specifying the pool name, image name, and size. Similarly,
+      resizing an image involves specifying the pool, image, and new size. The `raw` data format is recommended for
+      compatibility and performance.
+    questions_and_answers:
+      - question: |
+          How do you create a Ceph RBD image with QEMU?
+        answer: |
+          Use `qemu-img create -f raw rbd:{pool-name}/{image-name} {size}`.
+      - question: |
+          What is the recommended format for RBD images with QEMU?
+        answer: |
+          The `raw` format is recommended for optimal performance and compatibility.
+      - question: |
+          How can an RBD image be resized with QEMU?
+        answer: |
+          Use `qemu-img resize rbd:{pool-name}/{image-name} {size}` to change the image size.
+  - context: |
+      QEMU enables users to retrieve detailed information about RBD images, such as pool name, image name, and snapshot
+      details. The `qemu-img info` command provides insights into image attributes like size, format, and backing file.
+    questions_and_answers:
+      - question: |
+          How can you retrieve RBD image details using QEMU?
+        answer: |
+          Use `qemu-img info rbd:{pool-name}/{image-name}` to get detailed image information.
+      - question: |
+          What kind of details does `qemu-img info` provide?
+        answer: |
+          It provides image attributes like size, format, and backing file information.
+      - question: |
+          Why is retrieving image information important in QEMU?
+        answer: |
+          To verify configuration, ensure compatibility, and debug issues with virtual machines.
+  - context: |
+      RBD caching in QEMU enhances performance by controlling `librbd` caching options. Setting `rbd_cache=true` with
+      `cache=writeback` ensures safe and efficient write operations. Misconfiguration risks data loss, especially
+      during unclean QEMU exits.
+    questions_and_answers:
+      - question: |
+          How does RBD caching improve performance in QEMU?
+        answer: |
+          By optimizing write operations and reducing latency through controlled caching mechanisms.
+      - question: |
+          What cache options should be set with `rbd_cache=true`?
+        answer: |
+          `cache=writeback` must be set to ensure safe write operations and avoid data loss.
+      - question: |
+          What happens if `cache=writeback` is not set with `rbd_cache=true`?
+        answer: |
+          It risks data loss, as QEMU might not send flush requests to `librbd`.
+document_outline: Teach the Large Language Model about the RBD QEMU feature of Ceph
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/rbd/qemu-rbd*.md]
