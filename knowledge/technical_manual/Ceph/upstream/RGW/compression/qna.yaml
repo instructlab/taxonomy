@@ -1,0 +1,219 @@
+version: 3
+created_by: Vidushi Mishra
+domain: opensource_storage
+seed_examples:
+  - context: |
+      **Compression in Ceph Object Gateway**:
+      The Ceph Object Gateway supports server-side compression for uploaded objects using various compression plugins. This feature was introduced in the Kraken release and allows administrators to choose from several compression algorithms to optimize storage space.
+
+      - **Supported Compression Plugins**:
+        - lz4
+        - snappy
+        - zlib
+        - zstd
+
+      Additionally, the Reef release introduced a feature to enable compression with Server-Side Encryption through the `feature_compress_encrypted` zonegroup feature.
+
+    questions_and_answers:
+      - question: |
+          What is the server-side compression feature in Ceph Object Gateway?
+        answer: |
+          The server-side compression feature allows the Ceph Object Gateway to compress uploaded objects using supported compression plugins.
+      - question: |
+          What are the compression plugins supported by Ceph Object Gateway?
+        answer: |
+          The supported compression plugins include lz4, snappy, zlib, and zstd.
+      - question: |
+          In which Ceph release was server-side compression introduced?
+        answer: |
+          Server-side compression was introduced in the Kraken release.
+      - question: |
+          What additional feature was added in the Reef release related to compression?
+        answer: |
+          The Reef release introduced the `feature_compress_encrypted` zonegroup feature, enabling compression with Server-Side Encryption.
+      - question: |
+          Can compression be used with encrypted objects in Ceph?
+        answer: |
+          Yes, compression can be used with encrypted objects, but it requires the `feature_compress_encrypted` zonegroup feature, which was added in the Reef release.
+
+  - context: |
+      **Configuring Compression in Ceph Object Gateway**:
+      Compression can be enabled on a storage class in the Zone's placement target by specifying the compression type when modifying the placement using the `radosgw-admin` command. The compression type is selected by providing the `--compression=<type>` option.
+
+      - **Command to enable compression**:
+        ```bash
+        radosgw-admin zone placement modify --compression=<type>
+        ```
+
+      The compression type corresponds to the name of the compression plugin (such as lz4, snappy, zlib, or zstd) to be used for new object data. It's important to note that once compression is applied, each compressed object retains the plugin used for compression. Changing the compression type will not affect the decompression of existing objects, nor will it require existing objects to be recompressed.
+
+    questions_and_answers:
+      - question: |
+          How do you enable compression on a storage class in Ceph Object Gateway?
+        answer: |
+          Compression can be enabled by using the `radosgw-admin zone placement modify --compression=<type>` command, where `<type>` is the desired compression plugin.
+      - question: |
+          What does the `--compression=<type>` option specify in the `radosgw-admin zone placement modify` command?
+        answer: |
+          The `--compression=<type>` option specifies the compression plugin to be used for writing new object data in the storage class.
+      - question: |
+          Will changing the compression type affect existing objects?
+        answer: |
+          No, changing the compression type will not affect the decompression of existing objects, and they will not be recompressed.
+      - question: |
+          How does Ceph track which compression plugin was used for each object?
+        answer: |
+          Each compressed object remembers the plugin that was used, ensuring that objects are decompressed correctly even if the compression type is changed later.
+      - question: |
+          Does changing the compression type require recompressing existing objects?
+        answer: |
+          No, changing the compression type does not require existing objects to be recompressed.
+  - context: |
+      **Disabling or Modifying Compression in Ceph Object Gateway**:
+      Compression settings apply to all new objects uploaded to buckets that use the specified placement target. To disable compression, the compression type can be set to an empty string or "none".
+
+      - **Example command to enable compression**:
+        ```bash
+        radosgw-admin zone placement modify \
+              --rgw-zone default \
+              --placement-id default-placement \
+              --storage-class STANDARD \
+              --compression zlib
+        ```
+
+      - **Disabling compression**:
+        Compression can be disabled by setting the `--compression` option to an empty string or "none".
+
+    questions_and_answers:
+      - question: |
+          How do compression settings apply to new objects in Ceph Object Gateway?
+        answer: |
+          Compression settings apply to all new objects uploaded to buckets using the specified placement target.
+      - question: |
+          How can you disable compression in Ceph Object Gateway?
+        answer: |
+          Compression can be disabled by setting the `--compression` option to an empty string or "none".
+      - question: |
+          Can you modify compression settings for an existing placement target?
+        answer: |
+          Yes, you can modify compression settings for a placement target by using the `radosgw-admin zone placement modify` command.
+      - question: |
+          What does the command `radosgw-admin zone placement modify --compression zlib` do?
+        answer: |
+          This command enables compression using the `zlib` plugin for new objects uploaded to the specified placement target.
+      - question: |
+          If you disable compression, will it affect existing objects in the bucket?
+        answer: |
+          No, disabling compression will only apply to new objects uploaded after the change, and will not affect existing objects.
+  - context: |
+      **Ceph Object Gateway Placement Pools and Compression Settings**:
+      In Ceph Object Gateway, the `placement_pools` configuration specifies the storage and index pools for buckets. The `compression_type` setting can be applied to a specific storage class within the placement pool. If compression is enabled, it will apply to new objects uploaded to that storage class.
+
+      - **Example Placement Pool Configuration**:
+        ```json
+        "placement_pools": [
+            {
+                "key": "default-placement",
+                "val": {
+                    "index_pool": "default.rgw.buckets.index",
+                    "storage_classes": {
+                        "STANDARD": {
+                            "data_pool": "default.rgw.buckets.data",
+                            "compression_type": "zlib"
+                        }
+                    },
+                    "data_extra_pool": "default.rgw.buckets.non-ec",
+                    "index_type": 0
+                }
+            }
+        ]
+        ```
+
+      - **Default Zone**:
+        If no previous multisite configuration has been done, a default zone will be created automatically.
+
+    questions_and_answers:
+      - question: |
+          What is the `placement_pools` configuration in Ceph Object Gateway?
+        answer: |
+          The `placement_pools` configuration specifies the storage and index pools used by buckets, along with any additional settings like compression for specific storage classes.
+      - question: |
+          How is compression configured in a placement pool?
+        answer: |
+          Compression is configured under the `storage_classes` section within a placement pool by setting the `compression_type` for a specific storage class.
+      - question: |
+          What happens if no previous multisite configuration has been done in Ceph?
+        answer: |
+          A default zone is automatically created if no previous multisite configuration exists.
+      - question: |
+          Can you apply compression to specific storage classes in Ceph?
+        answer: |
+          Yes, compression can be applied to specific storage classes by setting the `compression_type` option in the placement pool configuration.
+      - question: |
+          What is the default index pool name in the placement configuration example?
+        answer: |
+          The default index pool name in the example is `default.rgw.buckets.index`.
+  - context: |
+      **Ceph Object Gateway Compression Statistics**:
+      To view compression statistics for a specific bucket, you can use the `radosgw-admin bucket stats` command. This command provides information about the storage utilization, including both compressed and uncompressed data.
+
+      - **Example Command**:
+        ```bash
+        radosgw-admin bucket stats --bucket=<name>
+        ```
+
+      - **Example Output**:
+        ```json
+        {
+        ...
+            "usage": {
+                "rgw.main": {
+                    "size": 1075028,
+                    "size_actual": 1331200,
+                    "size_utilized": 592035,
+                    "size_kb": 1050,
+                    "size_kb_actual": 1300,
+                    "size_kb_utilized": 579,
+                    "num_objects": 104
+                }
+            },
+        ...
+        }
+        ```
+
+      - **Key Fields**:
+        - `size`: Total uncompressed size of the objects in the bucket.
+        - `size_actual`: Actual size after compression is applied.
+        - `size_utilized`: Total size of compressed data (in bytes).
+        - `size_kb_utilized`: Total size of compressed data (in kilobytes).
+        - `num_objects`: The number of objects in the bucket.
+
+      Other commands and APIs will report object and bucket sizes based on uncompressed data, while the `size_utilized` and `size_kb_utilized` fields reflect the actual compressed size.
+
+    questions_and_answers:
+      - question: |
+          How can you view compression statistics for a bucket in Ceph?
+        answer: |
+          You can view compression statistics using the `radosgw-admin bucket stats --bucket=<name>` command.
+      - question: |
+          What does the `size_utilized` field represent in the bucket stats output?
+        answer: |
+          The `size_utilized` field represents the total size of compressed data in bytes.
+      - question: |
+          What is the difference between `size` and `size_actual` in the bucket stats?
+        answer: |
+          `size` is the total uncompressed size of the objects, while `size_actual` is the actual size after compression is applied.
+      - question: |
+          What does the `size_kb_utilized` field indicate?
+        answer: |
+          The `size_kb_utilized` field indicates the total size of compressed data in kilobytes.
+      - question: |
+          Will other Ceph commands report object and bucket sizes as compressed or uncompressed data?
+        answer: |
+          Other commands and APIs will report object and bucket sizes based on uncompressed data, not the compressed size.
+
+document_outline: Teach the Large Language Model about object compression Radosgw
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/radosgw/compression.md]

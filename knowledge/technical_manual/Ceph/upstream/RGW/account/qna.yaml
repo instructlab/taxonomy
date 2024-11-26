@@ -1,0 +1,253 @@
+version: 3
+created_by: Vidushi Mishra
+domain: opensource_storage
+seed_examples:
+  - context: |
+      **Ceph Object Gateway User Accounts and Account Root User**:
+      The Ceph Object Gateway provides user accounts as an optional feature for self-service management of users, groups, and roles. This is similar to AWS Identity and Access Management (IAM). Each account is managed by an account root user, which has default permissions to access all resources owned by the account.
+
+      - **Account Root User**:
+        - Managed by an administrator via the `radosgw-admin` or Admin Ops API.
+        - The root user has default permissions for managing resources within the account.
+        - Credentials of the root user (access and secret keys) can be used to create additional IAM users, roles, and manage associated access keys and policies.
+        - The root user should primarily be used for account management, while users and roles with more specific permissions should be created for applications.
+
+      - **Warning**:
+        While the root user does not require IAM policy for access to resources, it's possible to explicitly deny access using a "Deny" policy statement. Use such Deny statements cautiously to avoid unintended access restrictions.
+
+    questions_and_answers:
+      - question: |
+          What is the role of the account root user in Ceph Object Gateway?
+        answer: |
+          The account root user manages the account and has default permissions to access all resources within the account. It is used to create and manage additional IAM users and roles.
+      - question: |
+          How are user accounts and roles managed in the Ceph Object Gateway?
+        answer: |
+          User accounts, groups, and roles are managed through the Ceph Object Gateway’s IAM API or using the `radosgw-admin` and Admin Ops API.
+      - question: |
+          Should the account root user be used for application-level management?
+        answer: |
+          No, the account root user should primarily be used for account management. For applications, it's recommended to create users and roles with fine-grained permissions.
+      - question: |
+          Is it possible to deny the root user's access using IAM policies in Ceph?
+        answer: |
+          Yes, it's possible to explicitly deny the root user's access using a "Deny" policy, but it should be done cautiously.
+      - question: |
+          Can the root user's credentials be used to manage IAM users and roles in Ceph?
+        answer: |
+          Yes, the root user's credentials can be used to create and manage IAM users, roles, and associated access keys and policies in the Ceph Object Gateway.
+  - context: |
+      **Ceph Object Gateway Resource Ownership and Account IDs**:
+      In Ceph Object Gateway, the ownership of resources like buckets and objects depends on whether they are created by normal users or users within an account.
+
+      - **Normal User Ownership**:
+        When a non-account user creates a bucket and uploads objects, the resources are owned by that user. The S3 ACLs for those resources will list the user as both the owner and grantee. These buckets will only be visible to the owning user in `s3:ListBuckets` requests.
+
+      - **Account Ownership**:
+        When users or roles belong to an account, the resources they create are owned by the account itself. The S3 ACLs name the account's ID as the owner and grantee, making these buckets visible to any user or role within that account when performing `s3:ListBuckets` requests.
+
+      - **Account Usage and Quota**:
+        Since resources are owned by the account and not individual users, usage statistics and quota enforcement apply to the account as a whole rather than to each user separately.
+
+      - **Account IDs**:
+        Account IDs are used to uniquely identify accounts and follow the format `RGW` followed by 17 numeric digits (e.g., RGW33567154695143645). These IDs are generated upon account creation unless specified. Account IDs are commonly used in Amazon Resource Names (ARNs) and can also appear in ACLs for Grantee of type `CanonicalUser`.
+
+    questions_and_answers:
+      - question: |
+          Who owns resources created by normal (non-account) users in Ceph?
+        answer: |
+          Resources created by normal users are owned by the user who created them, and those resources are only visible to that user.
+      - question: |
+          How does ownership differ when users belong to an account?
+        answer: |
+          When users belong to an account, the resources they create are owned by the account itself, and these resources are visible to any user or role within that account.
+      - question: |
+          How are usage statistics and quota enforced for resources in Ceph?
+        answer: |
+          Usage statistics and quota enforcement apply to the account as a whole rather than to individual users within the account.
+      - question: |
+          What format is used for Account IDs in Ceph?
+        answer: |
+          Account IDs are formatted as `RGW` followed by 17 numeric digits, like `RGW33567154695143645`.
+      - question: |
+          Can Account IDs be used in ACLs?
+        answer: |
+          Yes, Account IDs can be used in ACLs as a Grantee of type `CanonicalUser`, in addition to User IDs.
+  - context: |
+      **IAM Policy and Tenant Isolation in Ceph**:
+      In Ceph Object Gateway, account users begin with no permissions, requiring policies to be added for API operation access. These policies can be assigned in various ways, and the principals' ARNs differ based on whether the user belongs to an account.
+
+      **IAM Policy Management**:
+      - Non-account users can create buckets and upload objects by default.
+      - Account users start with no permissions and require policies to be assigned by the account root user.
+      - Policies can be added directly to users, groups, or roles using specific IAM actions:
+        - `iam:PutUserPolicy` and `iam:AttachUserPolicy` for user policies.
+        - `iam:PutGroupPolicy` and `iam:AttachGroupPolicy` for group policies (inherited by users added to the group).
+        - `iam:PutRolePolicy` and `iam:AttachRolePolicy` for role policies (inherited by users assuming the role).
+      - These policies are evaluated according to specific evaluation logic.
+
+      **Principals**:
+      - "Principal" ARNs in policy documents refer to users by different names depending on whether they are inside or outside of an account:
+        - Outside of an account: `arn:aws:iam:::user/uid` or `arn:aws:iam::tenantname:user/uid`.
+        - Inside an account: `arn:aws:iam::RGW33567154695143645:user/name`, where `name` corresponds to the display name.
+
+      **Tenant Isolation**:
+      - Accounts can optionally belong to a tenant for namespace isolation, allowing multiple accounts with the same name under different tenants.
+      - A tenanted account can only contain users within the same tenant.
+      - Account IDs and email addresses must be globally unique, even across tenants.
+
+    questions_and_answers:
+      - question: |
+          What is the default permission for account users in Ceph Object Gateway?
+        answer: |
+          Account users start with no permissions and require policies to be added by the account root user.
+      - question: |
+          How can policies be added to IAM users in Ceph?
+        answer: |
+          Policies can be added directly to users, groups, or roles using actions like `iam:PutUserPolicy`, `iam:AttachUserPolicy`, `iam:PutGroupPolicy`, and `iam:AttachGroupPolicy`.
+      - question: |
+          How are "Principal" ARNs formatted for users inside an account?
+        answer: |
+          Inside an account, "Principal" ARNs use the format `arn:aws:iam::RGW33567154695143645:user/name`, where `name` is the user's display name.
+      - question: |
+          Can an account belong to multiple tenants?
+        answer: |
+          No, an account can only belong to a single tenant and can only contain users from the same tenant.
+      - question: |
+          How does tenant isolation work for accounts in Ceph?
+        answer: |
+          Tenant isolation allows multiple accounts with the same name under different tenants, but account IDs and email addresses must remain globally unique across all tenants.
+  - context: |
+      **Account Management in Ceph**:
+      Ceph Object Gateway provides several commands to manage accounts and users, including creating and deleting accounts, managing account quotas, and migrating users into accounts. Additionally, it provides the ability to manage notification topics when users are migrated to accounts.
+
+      **Creating and Managing Accounts**:
+      - To create an account, use `radosgw-admin account create` with options like `--account-name`, `--account-id`, and `--email`.
+      - To create an account root user, use `radosgw-admin user create` with options such as `--uid`, `--display-name`, and `--account-id`, along with the `--account-root`, `--gen-secret`, and `--gen-access-key` options.
+      - To delete an account, use `radosgw-admin account rm --account-id={accountid}`.
+
+      **Account Stats and Quotas**:
+      - View account stats with `radosgw-admin account stats --account-id={accountid} --sync-stats`.
+      - Enable and set account quotas with `radosgw-admin quota set --quota-scope=account --account-id={accountid} --max-size=10G` and `radosgw-admin quota enable --quota-scope=account --account-id={accountid}`.
+      - Set and enable bucket quotas for an account using similar commands for `quota-scope=bucket`.
+
+      **Migrating Users into Accounts**:
+      - Use `radosgw-admin user modify --uid={userid} --account-id={accountid}` to migrate an existing user into an account. This transfers ownership of the user's buckets to the account.
+      - Account membership is permanent, and once added, users cannot be removed from the account.
+      - The user's notification topics are not transferred and must be manually migrated, as detailed in the "Migrating Notification Topics" section.
+
+      **Migrating Notification Topics**:
+      - When migrating a non-account user to an account, their existing notification topics remain accessible through the RadosGW admin API but are no longer accessible via the SNS Topic API.
+      - Recreate the topics under the account and update bucket notification configurations to use the new topics.
+      - Old user-owned topics can be removed once no buckets are subscribed to them.
+
+    questions_and_answers:
+      - question: |
+          How can an account be created in Ceph Object Gateway?
+        answer: |
+          Use `radosgw-admin account create` with options like `--account-name`, `--account-id`, and `--email` to create an account.
+      - question: |
+          What happens to a user's buckets when they are migrated into an account?
+        answer: |
+          Ownership of the user's buckets will be transferred to the account, and the user's previous ownership will no longer apply.
+      - question: |
+          Can a user be removed from an account after being added?
+        answer: |
+          No, account membership is permanent, and users cannot be removed from an account once added.
+      - question: |
+          What is the impact of migrating a user on notification topics?
+        answer: |
+          When a user is migrated, their existing notification topics are no longer accessible through the SNS Topic API but remain functional via the RadosGW admin API. These topics need to be recreated under the account.
+      - question: |
+          How can notification topics be updated after user migration?
+        answer: |
+          Update bucket notification configurations to use the new account-owned topics, maintaining the same notification IDs to prevent duplicates.
+      - question: |
+          How can old user-owned topics be removed?
+        answer: |
+          Once no buckets are subscribed to the old topics, use `radosgw-admin topic rm --topic {topic}` to remove them.
+  - context: |
+      **Account Root User and IAM User Example in Ceph Object Gateway**:
+      The account root user's credentials are essential for unlocking the Ceph Object Gateway IAM API. Below is an example using the AWS CLI to create and configure an IAM user for S3 operations within the Ceph Object Gateway.
+
+      **Creating and Configuring the Account Root User**:
+      - Set up the AWS CLI profile for the root user:
+        ```bash
+        $ aws --profile rgwroot configure set endpoint_url http://localhost:8000
+        $ aws --profile rgwroot configure
+        AWS Access Key ID [None]: {root access key}
+        AWS Secret Access Key [None]: {root secret key}
+        Default region name [None]: default
+        Default output format [None]:
+        ```
+
+      **Creating an IAM User**:
+      - Create a new IAM user (Alice in this example) and retrieve the credentials:
+        ```bash
+        $ aws --profile rgwroot iam create-user --user-name Alice
+        {
+          "User": {
+            "UserName": "Alice",
+            "UserId": "b580aa8e-14c7-4b6a-9dac-a30c640244b6",
+            "Arn": "arn:aws:iam::RGW63136524507535818:user/Alice",
+            "CreateDate": "2024-02-07T00:15:45.162786+00:00"
+          }
+        }
+        ```
+      - Create access keys for the user:
+        ```bash
+        $ aws --profile rgwroot iam create-access-key --user-name Alice
+        {
+          "AccessKey": {
+            "AccessKeyId": "JBNLYD5BDNRVV64J02E8",
+            "SecretAccessKey": "SnHoE700kdNuT22K8Bhy2iL3DwZU0sUSDI1gUXHr",
+            "CreateDate": "2024-02-07T00:16:34.679316+00:00"
+          }
+        }
+        ```
+      - Attach a policy for S3 access to the user:
+        ```bash
+        $ aws --profile rgwroot iam attach-user-policy --user-name Alice --policy-arn arn:aws:iam::aws:policy/AmazonS3FullAccess
+        ```
+
+      **Creating and Configuring the S3 User Profile**:
+      - Create a profile for the S3 user:
+        ```bash
+        $ aws --profile rgws3 configure set endpoint_url http://localhost:8000
+        $ aws --profile rgws3 configure
+        AWS Access Key ID [None]: JBNLYD5BDNRVV64J02E8
+        AWS Secret Access Key [None]: SnHoE700kdNuT22K8Bhy2iL3DwZU0sUSDI1gUXHr
+        Default region name [None]: default
+        Default output format [None]:
+        ```
+
+      **Creating a Bucket**:
+      - Use the S3 user profile to create a new bucket:
+        ```bash
+        $ aws --profile rgws3 s3 mb s3://testbucket
+        make_bucket: testbucket
+        ```
+
+    questions_and_answers:
+      - question: |
+          What are the credentials needed to access the Ceph Object Gateway IAM API?
+        answer: |
+          The account root user's access key and secret key are required to unlock the IAM API for the Ceph Object Gateway.
+      - question: |
+          How do you create an IAM user for S3 operations?
+        answer: |
+          Use the `aws iam create-user` command to create a user, followed by generating access keys with `aws iam create-access-key`, and attaching a policy with `aws iam attach-user-policy`.
+      - question: |
+          How can you configure a profile for the S3 user?
+        answer: |
+          Use `aws configure` with the S3 user’s access key and secret key, setting the endpoint URL to the local Ceph Object Gateway instance.
+      - question: |
+          What command creates a bucket using the S3 user profile?
+        answer: |
+          Use `aws --profile rgws3 s3 mb s3://testbucket` to create a new S3 bucket under the S3 user's profile.
+
+document_outline: Teach the Large Language Model about Radosgw User Accounts
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/radosgw/account.md]

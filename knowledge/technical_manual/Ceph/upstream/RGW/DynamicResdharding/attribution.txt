@@ -1,0 +1,4 @@
+Title of work: Ceph Object Gateway Dynamic Bucket Index Resharding
+Link to work: https://docs.ceph.com/en/squid/radosgw/dynamicresharding/
+License of the work: Apache 2.0
+Creators name: Vidushi Mishra

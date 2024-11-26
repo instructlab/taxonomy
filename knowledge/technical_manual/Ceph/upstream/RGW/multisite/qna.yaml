@@ -1,0 +1,201 @@
+version: 3
+created_by: Vidushi Mishra
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Single-zone Configurations
+
+      A single-zone configuration typically consists of two things:
+        1. One "zonegroup", which contains one zone.
+        2. One or more ceph-radosgw instances that have ceph-radosgw client requests load-balanced between them.
+      In a typical single-zone configuration, there are multiple ceph-radosgw instances that make use of a single Ceph storage cluster.
+
+      Varieties of Multi-site Configuration
+
+      Since the Kraken release, Ceph has supported several multi-site configurations for the Ceph Object Gateway:
+        • Multi-zone: The "multi-zone" configuration has a complex topology. A multi-zone configuration consists of one zonegroup and multiple zones. Each zone consists of one or more ceph-radosgw instances. Each zone is backed by its own Ceph Storage Cluster. The presence of multiple zones in a given zonegroup provides disaster recovery for that zonegroup in the event that one of the zones experiences a significant failure. Each zone is active and can receive write operations. A multi-zone configuration that contains multiple active zones enhances disaster recovery and can be used as a foundation for content-delivery networks.
+
+        • Multi-zonegroups: Ceph Object Gateway supports multiple zonegroups (formerly called "regions"). Each zonegroup contains one or more zones. If two zones are in the same zonegroup and that zonegroup is in the same realm as a second zonegroup, then the objects stored in the two zones share a global object namespace. This ensures unique object IDs across zonegroups and zones. Each bucket is owned by the zonegroup where it was created, and its object data replicates only to other zones in that zonegroup.
+
+        • Multiple Realms: Since the Kraken release, Ceph Object Gateway supports "realms", which are containers for zonegroups. Realms make it possible to set policies that apply to multiple zonegroups. Realms have a globally unique namespace and can contain either a single zonegroup or multiple zonegroups. Each realm can have a configuration that is distinct from the configuration of other realms.
+    questions_and_answers:
+      - question: |
+          What does a single-zone configuration in Ceph consist of?
+        answer: |
+          A single-zone configuration typically consists of one "zonegroup" containing one zone and one or more ceph-radosgw instances with load-balanced client requests.
+      - question: |
+          What is a multi-zone configuration in Ceph?
+        answer: |
+          A multi-zone configuration consists of one zonegroup with multiple zones, each backed by its own Ceph Storage Cluster. It enhances disaster recovery and supports content-delivery networks.
+      - question: |
+          What are zonegroups in Ceph Object Gateway?
+        answer: |
+          Zonegroups are collections of one or more zones. They share a global object namespace and allow data replication within the same zonegroup.
+      - question: |
+          What is the purpose of realms in Ceph?
+        answer: |
+          Realms are containers for zonegroups, allowing policies to be applied across multiple zonegroups and providing globally unique namespaces.
+      - question: |
+          Why might someone use multiple zonegroups in Ceph?
+        answer: |
+          Multiple zonegroups can isolate object data to subsets of zones while sharing a namespace of users and buckets, offering flexibility for disaster recovery or specific use cases.
+  - context: |
+      Functional Changes from Infernalis
+
+      Beginning with Kraken, each Ceph Object Gateway can be configured to work in an active-active zone mode, enabling writes to non-master zones.
+
+      The multi-site configuration is stored within a container called a "realm". The realm organizes zonegroups, zones, and a "period" containing multiple epochs, which track configuration changes.
+
+      Starting with Kraken, the ceph-radosgw daemons handle synchronization of data across zones, eliminating the need for a separate synchronization agent. This allows the Ceph Object Gateway to operate in an "active-active" configuration instead of the previous "active-passive" configuration.
+    questions_and_answers:
+      - question: |
+          What functional change did Kraken introduce for zone configurations in Ceph?
+        answer: |
+          Kraken introduced active-active zone mode, allowing writes to non-master zones.
+      - question: |
+          What is a "realm" in Ceph's multi-site configuration?
+        answer: |
+          A realm is a container that organizes zonegroups, zones, and a "period" with multiple epochs used to track configuration changes.
+      - question: |
+          How has data synchronization changed starting with Kraken?
+        answer: |
+          Starting with Kraken, ceph-radosgw daemons handle synchronization of data across zones, removing the need for a separate synchronization agent.
+      - question: |
+          What configuration mode replaced "active-passive" in Ceph's Object Gateway?
+        answer: |
+          The "active-active" configuration mode replaced the previous "active-passive" mode.
+      - question: |
+          Why is the active-active configuration significant in Ceph Object Gateway?
+        answer: |
+          The active-active configuration enables simultaneous write operations in multiple zones, improving flexibility and fault tolerance.
+  - context: |
+      Requirements and Assumptions
+
+      A multi-site configuration requires at least two Ceph storage clusters and at least two Ceph object gateway instances, one for each Ceph storage cluster. While the configuration assumes geographically separate locations, it can also work on the same site. Two Ceph object gateway servers are assumed: rgw1 and rgw2.
+
+      Important: Running a single geographically-distributed Ceph storage cluster is NOT recommended unless you have low latency WAN connections.
+
+      A multi-site configuration requires a master zonegroup and a master zone. Each zonegroup must have a master zone, and zonegroups can also include secondary (non-master) zones.
+
+      In this guide:
+      - The rgw1 host serves as the master zone of the master zonegroup.
+      - The rgw2 host serves as the secondary zone of the master zonegroup.
+
+      For more details:
+      - See "Pools" for creating and tuning Ceph Object Storage pools.
+      - See "Sync Policy Config" for defining fine-grained bucket sync policy rules.
+    questions_and_answers:
+      - question: |
+          What is the minimum requirement for a multi-site configuration in Ceph?
+        answer: |
+          A multi-site configuration requires at least two Ceph storage clusters and two Ceph object gateway instances, one for each cluster.
+      - question: |
+          Why is a single geographically-distributed Ceph cluster not recommended?
+        answer: |
+          A single geographically-distributed Ceph cluster is not recommended unless low latency WAN connections are available.
+      - question: |
+          What roles do rgw1 and rgw2 play in this guide's configuration?
+        answer: |
+          In this guide, rgw1 serves as the master zone of the master zonegroup, while rgw2 serves as the secondary zone of the master zonegroup.
+      - question: |
+          What must each zonegroup in a multi-site configuration have?
+        answer: |
+          Each zonegroup in a multi-site configuration must have a master zone.
+      - question: |
+          Where can you find instructions for tuning pools and defining sync policies in Ceph?
+        answer: |
+          Instructions for tuning pools can be found in the "Pools" section, and sync policy rules are covered in the "Sync Policy Config" section.
+  - context: |
+      Configuring a Master Zone
+
+      In a multi-site Ceph configuration, all gateways retrieve their settings from a ceph-radosgw daemon in the master zonegroup and master zone. Below are the key steps to configure the master zone:
+
+      1. **Create a Realm**: Realms contain the multi-site configurations and enforce globally unique namespaces. Use `radosgw-admin realm create` to define a new realm.
+
+      2. **Create a Master Zonegroup**: Each realm must have at least one master zonegroup. Use `radosgw-admin zonegroup create` to define it.
+
+      3. **Create a Master Zone**: Zones must be created on the Ceph Object Gateway node. Use `radosgw-admin zone create` to define the master zone.
+
+      4. **Delete Default Zonegroup and Zone**: If using a fresh multi-site setup, delete the default zonegroup and zones.
+
+      5. **Create a System User**: Create a "system user" to enable authentication between daemons. Use `radosgw-admin user create` for this.
+
+      6. **Update the Period**: After configuring, update the period using `radosgw-admin period update --commit`.
+
+      7. **Update Ceph Configuration**: Add the master zone configuration to the Ceph configuration file.
+
+      8. **Start the Gateway**: Start and enable the Ceph Object Gateway service.
+
+      Important: For existing systems storing data, avoid deleting the default zone or pools to prevent data loss.
+    questions_and_answers:
+      - question: |
+          What is the purpose of a realm in Ceph's multi-site configuration?
+        answer: |
+          A realm contains the multi-site configuration of zonegroups and zones and enforces a globally unique namespace.
+      - question: |
+          How can you create a new realm in Ceph?
+        answer: |
+          Use the command `radosgw-admin realm create --rgw-realm={realm-name} [--default]` to create a new realm.
+      - question: |
+          What is required for a realm in Ceph to function?
+        answer: |
+          A realm must have at least one master zonegroup and one master zone.
+      - question: |
+          Why is it necessary to create a system user in Ceph's multi-site configuration?
+        answer: |
+          The system user enables ceph-radosgw daemons to authenticate and synchronize realm and period information across zones.
+      - question: |
+          What command updates the period in Ceph after changes to the configuration?
+        answer: |
+          Use the command `radosgw-admin period update --commit` to update the period and propagate configuration changes.
+  - context: |
+      Configuring Secondary Zones
+
+      Secondary zones in Ceph's multi-site configurations replicate all data from the master zone to ensure consistency. Below are the steps to configure and manage secondary zones:
+
+      1. **Pull the Realm Configuration**: Retrieve the master zone's realm configuration using `radosgw-admin realm pull`. For non-default realms, specify the `--rgw-realm` or `--realm-id` flag.
+
+      2. **Set Default Realm**: If only one realm exists, use `radosgw-admin realm default` to set it as the default realm.
+
+      3. **Create a Secondary Zone**: Define the secondary zone with `radosgw-admin zone create`, providing the zonegroup, zone name, and system user credentials. Use `--read-only` for active-passive setups if needed.
+
+      4. **Delete Default Zone (Optional)**: If needed, remove the default zone and its pools to prepare the system for the new configuration.
+
+      5. **Update the Ceph Configuration File**: Add the `rgw_zone` parameter to the Ceph configuration file on secondary zone hosts.
+
+      6. **Update the Period**: Synchronize the configuration changes across zones using `radosgw-admin period update --commit`.
+
+      7. **Start the Gateway**: Start and enable the gateway service on secondary zone hosts. For containerized clusters, use the `ceph orch apply rgw` command.
+
+      8. **Check Synchronization Status**: Monitor synchronization using `radosgw-admin sync status`. Confirm metadata and data sync statuses.
+
+      9. **Enable Object Verification (Optional)**: For data integrity, set `rgw_sync_obj_etag_verify` to `true` to verify object transfers with MD5 checksums.
+
+    questions_and_answers:
+      - question: |
+          What is the role of secondary zones in Ceph's multi-site configuration?
+        answer: |
+          Secondary zones replicate all data from the master zone, ensuring consistency across zones within the same zonegroup.
+      - question: |
+          How do you retrieve the realm configuration for a secondary zone?
+        answer: |
+          Use the `radosgw-admin realm pull` command, specifying the URL, access key, and secret of the master zone gateway.
+      - question: |
+          What flag is used to create an active-passive configuration for secondary zones?
+        answer: |
+          Use the `--read-only` flag in the `radosgw-admin zone create` command to create an active-passive configuration.
+      - question: |
+          How can you monitor the synchronization status of a secondary zone?
+        answer: |
+          Use the `radosgw-admin sync status` command to check the status of metadata and data synchronization.
+      - question: |
+          What is the purpose of enabling the `rgw_sync_obj_etag_verify` option?
+        answer: |
+          This option enables verification of object integrity using MD5 checksums during synchronization, ensuring data consistency but potentially impacting performance.
+
+
+document_outline: Teach the Large Language Model about Radosgw Multisite
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/radosgw/multisite.md]

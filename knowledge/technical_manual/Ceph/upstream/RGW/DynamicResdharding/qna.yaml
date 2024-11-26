@@ -1,0 +1,257 @@
+version: 3
+created_by: Vidushi Mishra
+domain: opensource_storage
+seed_examples:
+  - context: |
+      **RGW Dynamic Bucket Index Resharding** is a feature introduced in the
+      Luminous release of Ceph. It addresses performance problems caused by
+      large bucket indexes by enabling online resharding, a process that was
+      previously only possible offline with RGW services disabled. Dynamic
+      resharding detects when bucket index shards exceed their threshold and
+      automatically increases the number of shards to improve efficiency. This
+      process is transparent to the user but blocks writes to the target bucket
+      briefly during resharding. The default maximum number of shards is 1999,
+      a configurable parameter, and prime numbers are preferred for shard
+      counts. Resharding detection and execution occur in the background,
+      processing tasks in order. However, multisite environments only support
+      dynamic resharding from Ceph Reef and later versions.
+    questions_and_answers:
+      - question: |
+          What problem does RGW Dynamic Bucket Index Resharding solve?
+        answer: |
+          It addresses performance issues caused by large bucket indexes by enabling dynamic and online resharding.
+      - question: |
+          When was RGW Dynamic Bucket Index Resharding introduced?
+        answer: |
+          The feature was introduced in the Luminous release of Ceph.
+      - question: |
+          What happens to bucket writes during the resharding process?
+        answer: |
+          Writes to the target bucket are briefly blocked during the resharding process, but reads are not affected.
+      - question: |
+          What is the default maximum number of bucket index shards in dynamic resharding?
+        answer: |
+          The default maximum number of shards is 1999, but this is a configurable parameter.
+      - question: |
+          Is dynamic resharding supported in multisite environments before Ceph Reef?
+        answer: |
+          No, dynamic resharding is only supported in multisite environments starting with Ceph Reef.
+  - context: |
+      **Configuration Parameters for RGW Dynamic Bucket Index Resharding**:
+      Several configuration options control the behavior and efficiency of
+      dynamic resharding in Ceph's RGW. These parameters allow administrators
+      to customize thresholds, intervals, and other aspects of the resharding
+      process to suit specific performance requirements:
+      - **rgw_dynamic_resharding**: Enables or disables the dynamic resharding feature.
+      - **rgw_max_objs_per_shard**: Sets the maximum number of objects per shard before resharding is triggered.
+      - **rgw_max_dynamic_shards**: Configures the maximum number of shards allowed for a bucket index.
+      - **rgw_reshard_bucket_lock_duration**: Defines the duration for which a bucket lock is held during resharding.
+      - **rgw_reshard_thread_interval**: Specifies the interval at which the background thread scans buckets for resharding.
+      - **rgw_reshard_num_logs**: Determines the number of logs maintained for tracking resharding activities.
+      - **rgw_reshard_progress_judge_interval**: Sets the interval for evaluating resharding progress.
+      - **rgw_reshard_progress_judge_ratio**: Defines the ratio for assessing the progress of resharding tasks.
+    questions_and_answers:
+      - question: |
+          What does the `rgw_dynamic_resharding` parameter do?
+        answer: |
+          It enables or disables the dynamic resharding feature in RGW.
+      - question: |
+          Which parameter sets the maximum number of objects allowed per shard before triggering resharding?
+        answer: |
+          The `rgw_max_objs_per_shard` parameter.
+      - question: |
+          How is the maximum number of shards for a bucket index configured?
+        answer: |
+          The `rgw_max_dynamic_shards` parameter configures the maximum number of shards.
+      - question: |
+          What does the `rgw_reshard_thread_interval` parameter specify?
+        answer: |
+          It specifies the interval at which the background thread scans buckets for resharding opportunities.
+      - question: |
+          Which parameter defines the interval for evaluating resharding progress?
+        answer: |
+          The `rgw_reshard_progress_judge_interval` parameter.
+  - context: |
+      **Admin Commands for RGW Bucket Resharding**:
+      The following commands allow administrators to manage the resharding process in Ceph's RGW. These commands can add buckets to the resharding queue, list the queue, process resharding tasks, check the status of resharding, and cancel pending resharding operations.
+
+      1. **Add a bucket to the resharding queue**:
+         ```bash
+         radosgw-admin reshard add --bucket <bucket_name> --num-shards <new number of shards>
+         ```
+      2. **List resharding queue**:
+         ```bash
+         radosgw-admin reshard list
+         ```
+      3. **Process tasks on the resharding queue**:
+         ```bash
+         radosgw-admin reshard process
+         ```
+      4. **Check bucket resharding status**:
+         ```bash
+         radosgw-admin reshard status --bucket <bucket_name>
+         ```
+         The output will be a JSON array of 3 objects for each shard:
+         - `reshard_status`: Shows whether resharding is in progress or not.
+         - `new_bucket_instance_id`: The new instance ID after resharding.
+         - `num_shards`: The number of shards after resharding.
+
+         Example outputs:
+         - Before resharding:
+           ```json
+           [
+             {
+               "reshard_status": "not-resharding",
+               "new_bucket_instance_id": "",
+               "num_shards": -1
+             }
+           ]
+           ```
+         - During resharding:
+           ```json
+           [
+             {
+               "reshard_status": "in-progress",
+               "new_bucket_instance_id": "1179f470-2ebf-4630-8ec3-c9922da887fd.8652.1",
+               "num_shards": 2
+             },
+             {
+               "reshard_status": "in-progress",
+               "new_bucket_instance_id": "1179f470-2ebf-4630-8ec3-c9922da887fd.8652.1",
+               "num_shards": 2
+             }
+           ]
+           ```
+         - After resharding:
+           ```json
+           [
+             {
+               "reshard_status": "not-resharding",
+               "new_bucket_instance_id": "",
+               "num_shards": -1
+             },
+             {
+               "reshard_status": "not-resharding",
+               "new_bucket_instance_id": "",
+               "num_shards": -1
+             }
+           ]
+           ```
+      5. **Cancel pending bucket resharding** (Note: Cannot be canceled while executing):
+         ```bash
+         radosgw-admin reshard cancel --bucket <bucket_name>
+         ```
+    questions_and_answers:
+      - question: |
+          How do you add a bucket to the resharding queue?
+        answer: |
+          You can add a bucket to the resharding queue using the command `radosgw-admin reshard add --bucket <bucket_name> --num-shards <new number of shards>`.
+      - question: |
+          What command lists the current resharding queue?
+        answer: |
+          Use `radosgw-admin reshard list` to list the current resharding queue.
+      - question: |
+          How do you check the status of a bucket during resharding?
+        answer: |
+          You can check the status of a bucket using `radosgw-admin reshard status --bucket <bucket_name>`, which provides detailed information including the resharding status and number of shards.
+      - question: |
+          What does the output of `radosgw-admin reshard status` show during resharding?
+        answer: |
+          The output shows a JSON array with `reshard_status`, `new_bucket_instance_id`, and `num_shards` for each shard during the resharding process.
+      - question: |
+          Can you cancel a bucket resharding operation while it's executing?
+        answer: |
+          No, bucket resharding operations cannot be canceled while they are executing.
+  - context: |
+      **Manual Immediate Bucket Resharding**:
+      Administrators can manually trigger resharding for a bucket using the following command:
+      - **Reshard a bucket**:
+        ```bash
+        radosgw-admin bucket reshard --bucket <bucket_name> --num-shards <new number of shards>
+        ```
+
+      When selecting the number of shards, it's important to consider the peak number of objects a bucket will have. As a rule of thumb, you should aim for no more than 100,000 entries per shard at any given time to ensure optimal performance.
+
+      Additionally, bucket index shards that are prime numbers offer better distribution of bucket index entries. For example, 7001 bucket index shards is preferred over 7000, as 7001 is a prime number. Administrators can find lists of prime numbers online by searching for "list of prime numbers."
+
+    questions_and_answers:
+      - question: |
+          How do you manually reshard a bucket?
+        answer: |
+          You can manually reshard a bucket using the command `radosgw-admin bucket reshard --bucket <bucket_name> --num-shards <new number of shards>`.
+      - question: |
+          What is the recommended number of entries per shard for optimal performance?
+        answer: |
+          It is recommended to have no more than 100,000 entries per shard for optimal performance.
+      - question: |
+          Why are prime numbers preferred for the number of bucket index shards?
+        answer: |
+          Prime numbers are preferred because they help in evenly distributing the bucket index entries across the shards.
+      - question: |
+          What is an example of a preferred number of shards when resharding a bucket?
+        answer: |
+          An example would be using 7001 shards instead of 7000, as 7001 is a prime number and helps with better distribution of entries.
+      - question: |
+          Where can administrators find a list of prime numbers to choose the appropriate number of shards?
+        answer: |
+          Administrators can search online for a "list of prime numbers" to find websites that provide lists of prime numbers for reference.
+  - context: |
+      **Troubleshooting Stale Bucket Instance Entries and Lifecycle Issues**:
+      Clusters prior to Luminous 12.2.11 and Mimic 13.2.5 suffered from issues with stale bucket instance entries that were not automatically cleaned up. This problem also impacted lifecycle policies, preventing them from being applied to resharded buckets. These issues can be fixed manually using `radosgw-admin` commands.
+
+      1. **Stale Instance Management**:
+         - List stale instances ready to be cleaned:
+           ```bash
+           radosgw-admin reshard stale-instances list
+           ```
+         - Clean up stale instances (only on single-site clusters):
+           ```bash
+           radosgw-admin reshard stale-instances rm
+           ```
+
+      2. **Lifecycle Fixes**:
+         For clusters with resharded instances, older lifecycle policies might not be applied due to bucket instance changes. This issue is resolved in newer releases (Mimic 13.2.6 and Luminous 12.2.12), but requires manual fixing for older buckets:
+         - Fix lifecycle policies for a specific bucket:
+           ```bash
+           radosgw-admin lc reshard fix --bucket {bucketname}
+           ```
+         - Without specifying a bucket, it will attempt to fix lifecycle policies for all buckets in the cluster.
+
+      3. **Object Expirer Fixes**:
+         In older clusters, objects subject to Swift expiration might have been dropped from the log pool but never deleted after a bucket reshard. These can be managed using the following commands:
+         - List expired stale objects:
+           ```bash
+           radosgw-admin objects expire-stale list --bucket {bucketname}
+           ```
+         - Delete expired stale objects:
+           ```bash
+           radosgw-admin objects expire-stale rm --bucket {bucketname}
+           ```
+
+    questions_and_answers:
+      - question: |
+          How do you list stale instances in a cluster?
+        answer: |
+          You can list stale instances using the command `radosgw-admin reshard stale-instances list`.
+      - question: |
+          When should you clean up stale instances in a cluster?
+        answer: |
+          Stale instances should only be cleaned up on a single-site cluster using `radosgw-admin reshard stale-instances rm`.
+      - question: |
+          How do you fix lifecycle policies for resharded buckets in older Ceph versions?
+        answer: |
+          Use the command `radosgw-admin lc reshard fix --bucket {bucketname}` to fix lifecycle policies for a specific bucket.
+      - question: |
+          What happens if you don't specify a bucket when fixing lifecycle policies?
+        answer: |
+          If no bucket is specified, the command will attempt to fix lifecycle policies for all buckets in the cluster.
+      - question: |
+          How do you manage expired stale objects in older clusters?
+        answer: |
+          Use `radosgw-admin objects expire-stale list` to list expired stale objects and `radosgw-admin objects expire-stale rm` to delete them.
+
+document_outline: Teach the Large Language Model about Dynamic Resharding in Radosgw
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/radosgw/dynamicresharding.md]
