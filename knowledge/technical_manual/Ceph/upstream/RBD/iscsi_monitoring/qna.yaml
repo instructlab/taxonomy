@@ -1,0 +1,211 @@
+version: 3
+created_by: Harika Chebrolu
+domain: opensource_storage
+seed_examples:
+  - context: |
+      ## Monitoring Ceph iSCSI Gateways
+
+      Ceph provides a tool to monitor the performance of exported RADOS Block Device (RBD) images in iSCSI gateway environments. The `gwtop` tool is similar to the `top` command, providing a real-time view of aggregated performance metrics for RBD images exported over iSCSI.
+
+      The metrics are gathered from a Performance Metrics Domain Agent (PMDA), which sources information from the Linux-IO target (LIO) PMDA. The `gwtop` tool lists each exported RBD image, the connected clients, and their associated I/O metrics, offering a detailed view of the performance in iSCSI environments.
+
+      ### Key Features of `gwtop`:
+      - Displays aggregated performance metrics for each exported RBD image.
+      - Lists the connected clients and their associated I/O performance.
+      - Sourced from the Linux-IO target (LIO) PMDA, which monitors iSCSI connections.
+
+    questions_and_answers:
+      - question: |
+          What tool does Ceph provide for monitoring iSCSI gateway performance?
+        answer: |
+          Ceph provides the `gwtop` tool, which is a `top`-like utility for displaying aggregated performance metrics of RADOS Block Device (RBD) images exported to clients over iSCSI.
+
+      - question: |
+          What information is displayed by `gwtop` in Ceph iSCSI environments?
+        answer: |
+          `gwtop` displays information about each exported RBD image, the connected clients, and their associated I/O metrics, sourced from the Linux-IO target (LIO) PMDA.
+
+      - question: |
+          What is the source of the performance metrics displayed by `gwtop`?
+        answer: |
+          The performance metrics displayed by `gwtop` are sourced from a Performance Metrics Domain Agent (PMDA), which utilizes data from the Linux-IO target (LIO) PMDA to provide detailed performance information.
+
+  - context: |
+      ## Requirements and Installation of Ceph iSCSI Tools
+
+      To set up the Ceph iSCSI gateway, the following tools and packages need to be installed on each iSCSI gateway node.
+
+      ### Requirements:
+      - A running Ceph iSCSI gateway.
+
+      ### Installation Steps:
+      1. As `root`, install the `ceph-iscsi-tools` package:
+          ```bash
+          yum install ceph-iscsi-tools
+          ```
+
+      2. As `root`, install the Performance Co-Pilot (PCP) package:
+          ```bash
+          yum install pcp
+          ```
+
+      3. As `root`, install the LIO PMDA (Performance Metrics Domain Agent) package:
+          ```bash
+          yum install pcp-pmda-lio
+          ```
+
+      4. As `root`, enable and start the Performance Co-Pilot service:
+          ```bash
+          systemctl enable pmcd
+          systemctl start pmcd
+          ```
+
+      5. As `root`, register the `pcp-pmda-lio` agent:
+          ```bash
+          cd /var/lib/pcp/pmdas/lio
+          ./Install
+          ```
+
+    questions_and_answers:
+      - question: |
+          What is the first step in installing Ceph iSCSI tools?
+        answer: |
+          The first step is to install the `ceph-iscsi-tools` package on each iSCSI gateway node by running:
+          ```bash
+          yum install ceph-iscsi-tools
+          ```
+
+      - question: |
+          What package needs to be installed for Performance Co-Pilot (PCP) support?
+        answer: |
+          The `pcp` package needs to be installed on each iSCSI gateway node for Performance Co-Pilot support:
+          ```bash
+          yum install pcp
+          ```
+
+      - question: |
+          How do you register the `pcp-pmda-lio` agent?
+        answer: |
+          To register the `pcp-pmda-lio` agent, run the following commands as `root`:
+          ```bash
+          cd /var/lib/pcp/pmdas/lio
+          ./Install
+  - context: |
+      ## `gwtop` Overview and Configuration
+
+      By default, the `gwtop` tool assumes that the iSCSI gateway configuration is stored in a RADOS object named `gateway.conf` in the `rbd` pool. This configuration specifies which iSCSI gateways to contact for gathering performance statistics. This default setting can be overridden using the `-g` or `-c` flags. For further details, you can run `gwtop --help`.
+
+      The LIO (Linux-IO) configuration plays a crucial role in determining which type of performance statistics are extracted from Performance Co-Pilot (PCP). When `gwtop` starts, it examines the LIO configuration. If user-space disks are detected, `gwtop` automatically selects the LIO collector for performance data.
+
+    questions_and_answers:
+      - question: |
+          Where does `gwtop` expect the iSCSI gateway configuration to be stored by default?
+        answer: |
+          By default, `gwtop` expects the iSCSI gateway configuration object to be stored in a RADOS object called `gateway.conf` in the `rbd` pool.
+
+      - question: |
+          How can you override the default configuration for `gwtop`?
+        answer: |
+          You can override the default configuration for `gwtop` by using the `-g` or `-c` flags.
+
+      - question: |
+          How does `gwtop` determine which performance statistics to extract?
+        answer: |
+          `gwtop` looks at the LIO configuration when it starts. If user-space disks are found, `gwtop` automatically selects the LIO collector to extract performance statistics.
+  - context: |
+      ## Example `gwtop` Outputs
+
+      The `gwtop` tool displays aggregated performance metrics for RADOS Block Devices (RBD) exported over iSCSI. The following is an example of the `gwtop` output:
+
+      ```
+      gwtop  2/2 Gateways   CPU% MIN:  4 MAX:  5    Network Total In:    2M  Out:    3M   10:20:00
+      Capacity:   8G    Disks:   8   IOPS:  503   Clients:  1   Ceph: HEALTH_OK          OSDs:   3
+      Pool.Image       Src    Size     iops     rMB/s     wMB/s   Client
+      iscsi.t1703             500M        0      0.00      0.00
+      iscsi.testme1           500M        0      0.00      0.00
+      iscsi.testme2           500M        0      0.00      0.00
+      iscsi.testme3           500M        0      0.00      0.00
+      iscsi.testme5           500M        0      0.00      0.00
+      rbd.myhost_1      T       4G      504      1.95      0.00   rh460p(CON)
+      rbd.test_2                1G        0      0.00      0.00
+      rbd.testme              500M        0      0.00      0.00
+      ```
+
+      In the `Client` column, `(CON)` indicates that the iSCSI initiator (client) is currently logged into the iSCSI gateway. If `-multi-` is displayed, it means that multiple clients are mapped to the same RBD image.
+
+    questions_and_answers:
+      - question: |
+          What does `(CON)` mean in the `Client` column of the `gwtop` output?
+        answer: |
+          `(CON)` indicates that the iSCSI initiator (client) is currently logged into the iSCSI gateway.
+
+      - question: |
+          What does `-multi-` indicate in the `Client` column of the `gwtop` output?
+        answer: |
+          `-multi-` indicates that multiple clients are mapped to a single RBD image.
+
+      - question: |
+          What kind of performance metrics does `gwtop` display?
+        answer: |
+          `gwtop` displays performance metrics such as CPU usage, network in/out, disk capacity, IOPS, read and write MB/s, and the status of clients connected to the iSCSI gateway.
+  - context: |
+      ## Monitoring Ceph iSCSI Gateways
+
+      Ceph provides a tool for monitoring the performance of exported RADOS Block Device (RBD) images in iSCSI gateway environments. The `gwtop` tool is a `top`-like utility that aggregates performance metrics for RBD images exported over iSCSI. These metrics are sourced from a Performance Metrics Domain Agent (PMDA). Information from the Linux-IO target (LIO) PMDA is used to display each exported RBD image, the connected client, and their associated I/O metrics.
+
+      ### Requirements:
+      - A running Ceph iSCSI gateway.
+
+      ### Installation Steps:
+      1. Install the `ceph-iscsi-tools` package on each iSCSI gateway node:
+      ```bash
+      yum install ceph-iscsi-tools
+      ```
+      2. Install the Performance Co-Pilot (PCP) package on each iSCSI gateway node:
+      ```bash
+      yum install pcp
+      ```
+      3. Install the LIO PMDA package on each iSCSI gateway node:
+      ```bash
+      yum install pcp-pmda-lio
+      ```
+      4. Enable and start the Performance Co-Pilot service on each iSCSI gateway node:
+      ```bash
+      systemctl enable pmcd
+      systemctl start pmcd
+      ```
+      5. Register the `pcp-pmda-lio` agent:
+      ```bash
+      cd /var/lib/pcp/pmdas/lio
+      ./Install
+      ```
+
+      By default, `gwtop` assumes the iSCSI gateway configuration object is stored in a RADOS object called `gateway.conf` in the `rbd` pool. This configuration defines which iSCSI gateways to contact for gathering performance statistics. You can override this using the `-g` or `-c` flags. Check `gwtop --help` for more details.
+
+      The LIO configuration determines which performance statistics are extracted from Performance Co-Pilot. When `gwtop` starts, it looks at the LIO configuration and automatically selects the LIO collector if user-space disks are found.
+
+    questions_and_answers:
+      - question: |
+          What is the purpose of the `gwtop` tool?
+        answer: |
+          The `gwtop` tool aggregates performance metrics of RADOS Block Devices (RBD) exported over iSCSI, sourced from a Performance Metrics Domain Agent (PMDA).
+
+      - question: |
+          What are the installation steps for setting up monitoring with `gwtop`?
+        answer: |
+          The installation steps are:
+          1. Install the `ceph-iscsi-tools` package.
+          2. Install the Performance Co-Pilot (PCP) package.
+          3. Install the LIO PMDA package.
+          4. Enable and start the Performance Co-Pilot service.
+          5. Register the `pcp-pmda-lio` agent.
+
+      - question: |
+          How does `gwtop` determine which performance statistics to gather?
+        answer: |
+          `gwtop` automatically selects the LIO collector based on the LIO configuration. If user-space disks are found, it extracts the appropriate performance statistics from Performance Co-Pilot.
+document_outline: Teach the Large Language Model about the iSCSI monitoring of Ceph RBD
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/rbd/iscsi-monitoring.md]

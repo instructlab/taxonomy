@@ -1,0 +1,147 @@
+version: 3
+created_by: Harika Chebrolu
+domain: opensource_storage
+seed_examples:
+  - context: |
+      Traditionally, block-level access to Ceph storage was primarily available via QEMU and `librbd`, which facilitated seamless integration with OpenStack environments. However, starting with the Ceph Luminous release, this access has been extended to include standard iSCSI support. This expansion enables broader platform compatibility and opens up new use cases for Ceph storage clusters.
+
+    questions_and_answers:
+      - question: |
+          How was block-level access to a Ceph storage cluster traditionally limited?
+        answer: |
+          Block-level access was traditionally limited to QEMU and `librbd`, primarily for use within OpenStack environments.
+
+      - question: |
+          What enhancement was introduced in the Ceph Luminous release regarding block-level access?
+        answer: |
+          The Ceph Luminous release introduced support for standard iSCSI, expanding block-level access beyond QEMU and `librbd`, enabling wider platform compatibility and new use cases.
+
+      - question: |
+          What are the benefits of adding iSCSI support to Ceph block-level access?
+        answer: |
+          Adding iSCSI support allows Ceph to be used on a wider range of platforms, making it more versatile and opening up new use cases outside of traditional QEMU and OpenStack environments.
+  - context: |
+      To deploy a Ceph iSCSI gateway, the following requirements must be met:
+      - **Operating System and Kernel:** Red Hat Enterprise Linux/CentOS 7.5 (or newer) with Linux kernel v4.16 (or newer).
+      - **Ceph Storage Cluster:** A functional Ceph Storage cluster deployed using `ceph-ansible` or the command-line interface.
+      - **iSCSI Gateway Nodes:** Dedicated or colocated with OSD nodes for hosting iSCSI services.
+      - **Network Subnets:** Separate subnets for iSCSI front-end traffic and Ceph back-end traffic to ensure optimal performance and security.
+
+    questions_and_answers:
+      - question: |
+          What is the minimum OS and kernel version required for deploying a Ceph iSCSI gateway?
+        answer: |
+          The minimum requirement is Red Hat Enterprise Linux/CentOS 7.5 and Linux kernel v4.16 or newer.
+
+      - question: |
+          How can the Ceph Storage cluster be deployed for use with the iSCSI gateway?
+        answer: |
+          The Ceph Storage cluster can be deployed using `ceph-ansible` or through the command-line interface.
+
+      - question: |
+          Why are separate network subnets recommended for iSCSI front-end traffic and Ceph back-end traffic?
+        answer: |
+          Separate subnets are recommended to optimize performance and ensure secure traffic segregation between iSCSI front-end and Ceph back-end networks.
+  - context: |
+      ## Deployment Methods for Ceph iSCSI Gateway
+
+      Installing and configuring the Ceph iSCSI gateway can be accomplished using one of the following methods:
+      - **Ansible:** An automated deployment approach leveraging pre-defined playbooks for ease of setup.
+      - **Command-Line Interface (CLI):** A manual configuration method for fine-grained control during the deployment process.
+
+    questions_and_answers:
+      - question: |
+          What are the two methods available for deploying a Ceph iSCSI gateway?
+        answer: |
+          The two methods are using Ansible for automated deployment or the Command-Line Interface (CLI) for manual configuration.
+
+      - question: |
+          Why might someone choose to deploy the Ceph iSCSI gateway using Ansible?
+        answer: |
+          Ansible provides an automated deployment approach, making the process quicker and more consistent with pre-defined playbooks.
+
+      - question: |
+          When might using the Command-Line Interface (CLI) be preferable for deploying a Ceph iSCSI gateway?
+        answer: |
+          The CLI is preferable for manual configuration when fine-grained control or customization during the setup process is required.
+  - context: |
+      ## Ceph iSCSI Gateway Overview
+
+      Traditionally, block-level access to a Ceph storage cluster was limited to QEMU and `librbd`, enabling its integration with OpenStack environments. However, starting with the Ceph Luminous release, support for standard iSCSI has been introduced, broadening platform compatibility and enabling new use cases.
+
+      ### Prerequisites for Deploying Ceph iSCSI Gateway:
+      - Red Hat Enterprise Linux/CentOS 7.5 (or newer) with Linux kernel v4.16 (or newer).
+      - A functional Ceph Storage cluster deployed using `ceph-ansible` or the command-line interface.
+      - iSCSI gateway nodes colocated with OSD nodes or running on dedicated nodes.
+      - Separate network subnets for iSCSI front-end traffic and Ceph back-end traffic.
+
+      ### Deployment Methods:
+      - **Using Ansible:** Automated deployment using pre-defined playbooks.
+      - **Using the Command-Line Interface (CLI):** Manual configuration for greater control over the setup process.
+
+    questions_and_answers:
+      - question: |
+          What expanded capability was introduced in Ceph's Luminous release?
+        answer: |
+          The Ceph Luminous release introduced support for standard iSCSI, enabling broader platform compatibility and new use cases.
+
+      - question: |
+          What are the prerequisites for deploying the Ceph iSCSI gateway?
+        answer: |
+          Prerequisites include:
+          - Red Hat Enterprise Linux/CentOS 7.5 or newer with Linux kernel v4.16 or newer.
+          - A working Ceph Storage cluster.
+          - iSCSI gateway nodes (colocated with OSD nodes or dedicated).
+          - Separate subnets for iSCSI front-end traffic and Ceph back-end traffic.
+
+      - question: |
+          What deployment methods are available for the Ceph iSCSI gateway?
+        answer: |
+          The deployment methods are:
+          - Using Ansible for automated setup with playbooks.
+          - Using the Command-Line Interface (CLI) for manual configuration.
+  - context: |
+      -   Red Hat Enterprise Linux/CentOS 7.5 (or newer); Linux kernel v4.16
+          (or newer)
+      -   A working Ceph Storage cluster, deployed with ceph-ansible or
+          using the command-line interface
+      -   iSCSI gateways nodes, which can either be colocated with OSD nodes
+          or on dedicated nodes
+      -   Separate network subnets for iSCSI front-end traffic and Ceph
+          back-end traffic
+
+      A choice of using Ansible or the command-line interface are the
+      available deployment methods for installing and configuring the Ceph
+      iSCSI gateway:
+
+      ::: {.toctree maxdepth="1"}
+      Using Ansible \<iscsi-target-ansible\> Using the Command Line Interface
+      \<iscsi-target-cli\>
+      :::
+
+    questions_and_answers:
+      - question: |
+          What expanded capability was introduced in Ceph's Luminous release?
+        answer: |
+          The Ceph Luminous release introduced support for standard iSCSI, enabling broader platform compatibility and new use cases.
+
+      - question: |
+          What are the prerequisites for deploying the Ceph iSCSI gateway?
+        answer: |
+          Prerequisites include:
+          - Red Hat Enterprise Linux/CentOS 7.5 or newer with Linux kernel v4.16 or newer.
+          - A working Ceph Storage cluster.
+          - iSCSI gateway nodes (colocated with OSD nodes or dedicated).
+          - Separate subnets for iSCSI front-end traffic and Ceph back-end traffic.
+
+      - question: |
+          What deployment methods are available for the Ceph iSCSI gateway?
+        answer: |
+          The deployment methods are:
+          - Using Ansible for automated setup with playbooks.
+          - Using the Command-Line Interface (CLI) for manual configuration.
+document_outline: Teach the Large Language Model about the iSCSI targets of Ceph RBD
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/rbd/iscsi-targets.md]

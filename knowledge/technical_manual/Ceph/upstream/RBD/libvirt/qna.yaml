@@ -1,0 +1,298 @@
+version: 3
+created_by: Harika Chebrolu
+domain: opensource_storage
+seed_examples:
+  - context: |
+      The **`libvirt`** library provides a virtual machine abstraction layer, simplifying interactions between hypervisors and management software. It supports a unified management framework, API, and shell interface (`virsh`) compatible with multiple hypervisors, such as:
+      - QEMU/KVM
+      - XEN
+      - LXC
+      - VirtualBox
+
+      **Ceph Integration:**
+      Ceph block devices are compatible with QEMU/KVM and can be used with software leveraging `libvirt`. The stack below illustrates how `libvirt` and QEMU interact with Ceph block devices:
+      ```
+      +------------------------+--------------------------+
+      | > libvirt              |                          |
+      +------------------------+--------------------------+
+      |
+      | configures
+      v
+      +------------------------+---+------------------------+
+      | > QEMU                 |   |                        |
+      +------------------------+---+------------------------+
+      | > librbd               |   |                        |
+      +------------------------+---+------------------------+
+      | > librados             |   |                        |
+      +------------------------+---+------------------------+
+      | > OSDs                 |   |                        |
+      +------------------------+---+------------------------+
+      ```
+
+    questions_and_answers:
+      - question: |
+          What is the purpose of the `libvirt` library?
+        answer: |
+          The `libvirt` library creates a virtual machine abstraction layer, enabling unified management of various hypervisors through a common framework, API, and shell interface (`virsh`).
+
+      - question: |
+          Which hypervisors are supported by `libvirt`?
+        answer: |
+          `libvirt` supports hypervisors such as QEMU/KVM, XEN, LXC, VirtualBox, and others.
+
+      - question: |
+          How does Ceph integrate with QEMU/KVM using `libvirt`?
+        answer: |
+          Ceph block devices integrate with QEMU/KVM via `libvirt`, utilizing `librbd` and `librados` libraries to manage storage and interact with Ceph OSDs.
+  - context: |
+      The most common use of **`libvirt`** involves providing Ceph block devices to cloud solutions such as OpenStack, OpenNebula, or CloudStack. In these cases, the cloud solution interacts with QEMU/KVM via `libvirt`, while QEMU/KVM uses `librbd` to manage Ceph block devices.
+
+      **Additional Resources:**
+      - [Block Devices and OpenStack](../rbd-openstack)
+      - [Block Devices and OpenNebula](https://docs.opennebula.io/stable/open_cluster_deployment/storage_setup/ceph_ds.html#datastore-internals)
+      - [Block Devices and CloudStack](../rbd-cloudstack)
+
+      You can also directly use Ceph block devices with `libvirt`, `virsh`, and the `libvirt` API. For more information, see the [libvirt Virtualization API](http://www.libvirt.org).
+
+      **Example Setup:**
+      To create VMs using Ceph block devices, you can follow specific procedures. In the example setup:
+      - `libvirt-pool` is used as the pool name.
+      - `client.libvirt` is the user name.
+      - `new-libvirt-image` is the image name.
+      Replace these values accordingly when running commands.
+
+    questions_and_answers:
+      - question: |
+          Which cloud solutions commonly use Ceph block devices with `libvirt`?
+        answer: |
+          Common cloud solutions include OpenStack, OpenNebula, and CloudStack, which use `libvirt` to interact with QEMU/KVM and Ceph block devices.
+
+      - question: |
+          What is the role of `librbd` in the `libvirt` setup with Ceph?
+        answer: |
+          `librbd` allows QEMU/KVM to manage Ceph block devices, facilitating the integration of Ceph storage in virtualized environments.
+
+      - question: |
+          Where can you find procedures for creating VMs with Ceph block devices?
+        answer: |
+          Procedures for creating VMs with Ceph block devices can be found in the respective documentation for OpenStack, OpenNebula, and CloudStack, or by following the example configurations provided in the Ceph documentation.
+  - context: |
+      To configure **Ceph** for use with `libvirt`, follow these steps:
+
+      1. **Create a Pool**:
+          - Example:
+            ```bash
+            ceph osd pool create libvirt-pool
+            ```
+          - Verify the pool exists:
+            ```bash
+            ceph osd lspools
+            ```
+
+      2. **Initialize the Pool for RBD**:
+          - Example:
+            ```bash
+            rbd pool init <pool-name>
+            ```
+
+      3. **Create a Ceph User**:
+          - Use a command like:
+            ```bash
+            ceph auth get-or-create client.libvirt mon 'profile rbd' osd 'profile rbd pool=libvirt-pool'
+            ```
+          - Verify the user exists:
+            ```bash
+            ceph auth ls
+            ```
+          - **Note**: `libvirt` will access Ceph using the ID `libvirt`, not the Ceph name `client.libvirt`.
+
+      4. **Create an Image in the RBD Pool**:
+          - Example with QEMU:
+            ```bash
+            qemu-img create -f rbd rbd:libvirt-pool/new-libvirt-image 2G
+            ```
+          - Verify the image:
+            ```bash
+            rbd -p libvirt-pool ls
+            ```
+          - **Note**: You can also use the `rbd create` command, but it is recommended to test QEMU functionality.
+
+    questions_and_answers:
+      - question: |
+          How do you create and verify a pool for use with Ceph and `libvirt`?
+        answer: |
+          Create a pool using `ceph osd pool create <pool-name>` and verify it with `ceph osd lspools`.
+
+      - question: |
+          What is the recommended way to create an image in the RBD pool?
+        answer: |
+          Use the `qemu-img create` command, such as `qemu-img create -f rbd rbd:<pool-name>/<image-name> <size>`. This ensures QEMU functionality is tested.
+
+      - question: |
+          What is the significance of the Ceph user `client.libvirt`?
+        answer: |
+          `client.libvirt` is the Ceph user created for interacting with `libvirt`. However, `libvirt` accesses Ceph using the ID `libvirt`, not the full Ceph name.
+  - context: |
+      To enable debug logs and the admin socket for the `client.libvirt` Ceph client, you can add the following section to `/etc/ceph/ceph.conf`:
+
+      ```ini
+      [client.libvirt]
+      log file = /var/log/ceph/qemu-guest-$pid.log
+      admin socket = /var/run/ceph/$cluster-$type.$id.$pid.$cctid.asok
+      ```
+      - The `client.libvirt` section name must match the cephx user created earlier.
+      - Be aware of potential issues with SELinux or AppArmor, which may prevent `qemu` or `libvirt` from performing some operations, such as writing logs or using the admin socket. Ensure appropriate permissions for the `libvirt` and `qemu` users to access the specified directories (`/var/log/ceph` and `/var/run/ceph`).
+
+      ### Preparing the VM Manager
+      Using a virtual machine manager like `virt-manager` simplifies the process of creating your first virtual domain:
+
+      1. **Install a Virtual Machine Manager**:
+        ```bash
+        sudo apt-get install virt-manager
+        ```
+
+      2. **Download an OS Image** (if necessary).
+
+      3. **Launch the Virtual Machine Manager**:
+        ```bash
+        sudo virt-manager
+        ```
+
+    questions_and_answers:
+      - question: |
+          How do you enable debug logs and admin socket for the `client.libvirt` Ceph client?
+        answer: |
+          Add the following section to `/etc/ceph/ceph.conf` with the required paths:
+          ```ini
+          [client.libvirt]
+          log file = /var/log/ceph/qemu-guest-$pid.log
+          admin socket = /var/run/ceph/$cluster-$type.$id.$pid.$cctid.asok
+          ```
+
+      - question: |
+          What precautions should be taken when enabling debug logs with SELinux or AppArmor?
+        answer: |
+          Ensure SELinux or AppArmor does not block `qemu` or `libvirt` from performing operations like writing logs or using the admin socket. Grant appropriate permissions for the `libvirt` and `qemu` users to access the directories.
+
+      - question: |
+          How can you install and launch a virtual machine manager for managing domains?
+        answer: |
+          Install the `virt-manager` package using:
+          ```bash
+          sudo apt-get install virt-manager
+          ```
+          Then, launch it with:
+          ```bash
+          sudo virt-manager
+          ```
+  - context: |
+      ## Creating and Configuring a VM with Ceph
+
+      ### Creating a VM
+      To create a virtual machine (VM) with `virt-manager`:
+
+      1. Open **virt-manager** and press **Create New Virtual Machine**.
+      2. Name the new VM domain (e.g., `libvirt-virtual-machine`). Replace the name in subsequent commands or configurations.
+      3. Import the OS image (e.g., `/path/to/image/recent-linux.img`). Use recent OS images to avoid issues with device rescanning.
+      4. Configure and start the VM.
+      5. Verify the VM domain exists using:
+        ```bash
+        sudo virsh list
+        ```
+      6. Login to the VM and stop it before further configurations.
+
+      ### Configuring the VM for Ceph
+      Configuration of VMs for Ceph involves the following:
+
+      1. Open the domain configuration file for editing using:
+        ```bash
+        sudo virsh edit {vm-domain-name}
+        ```
+        Add or update `<disk>` elements as necessary. For Ceph RBD images:
+        ```xml
+        <disk type='network' device='disk'>
+            <source protocol='rbd' name='libvirt-pool/new-libvirt-image'>
+                <host name='{monitor-host}' port='6789'/>
+            </source>
+            <target dev='vdb' bus='virtio'/>
+        </disk>
+        ```
+        Replace `{monitor-host}` and other placeholders with your details.
+
+      2. For clusters with Ceph authentication enabled, generate and define a secret using:
+        ```bash
+        cat > secret.xml <<EOF
+        <secret ephemeral='no' private='no'>
+            <usage type='ceph'>
+                <name>client.libvirt secret</name>
+            </usage>
+        </secret>
+        EOF
+        sudo virsh secret-define --file secret.xml
+        ```
+        Set the secret value using:
+        ```bash
+        sudo virsh secret-set-value --secret {uuid of secret} --base64 $(cat client.libvirt.key) && rm client.libvirt.key secret.xml
+        ```
+        Add an `<auth>` entry to the `<disk>` element:
+        ```xml
+        <auth username='libvirt'>
+            <secret type='ceph' uuid='{uuid of secret}'/>
+        </auth>
+        ```
+
+      3. Save the changes and restart the VM.
+
+    questions_and_answers:
+      - question: |
+          How can you create a VM with `virt-manager`?
+        answer: |
+          Use `virt-manager` to create a new virtual machine by pressing **Create New Virtual Machine**, naming the domain, importing a recent OS image, and configuring the VM.
+
+      - question: |
+          What should you do before configuring the VM for Ceph?
+        answer: |
+          Verify the VM is stopped before making configurations for Ceph. Use the `sudo virsh list` command to confirm the VM status.
+
+      - question: |
+          How do you add a Ceph RBD image as a disk to a VM?
+        answer: |
+          Use `sudo virsh edit {vm-domain-name}` to add a `<disk>` entry:
+          ```xml
+          <disk type='network' device='disk'>
+              <source protocol='rbd' name='libvirt-pool/new-libvirt-image'>
+                  <host name='{monitor-host}' port='6789'/>
+              </source>
+              <target dev='vdb' bus='virtio'/>
+          </disk>
+          ```
+          Replace placeholders with the appropriate pool, image, and monitor details.
+
+      - question: |
+          How can you set up Ceph authentication for a VM?
+        answer: |
+          Generate and define a secret using the following steps:
+          1. Create a secret XML:
+            ```bash
+            cat > secret.xml <<EOF
+            <secret ephemeral='no' private='no'>
+                <usage type='ceph'>
+                    <name>client.libvirt secret</name>
+                </usage>
+            </secret>
+            EOF
+            ```
+          2. Define the secret:
+            ```bash
+            sudo virsh secret-define --file secret.xml
+            ```
+          3. Set the secret value:
+            ```bash
+            sudo virsh secret-set-value --secret {uuid of secret} --base64 $(cat client.libvirt.key)
+            ```
+          Add the `<auth>` element with the secret UUID to the VM's `<disk>` configuration.
+document_outline: Teach the Large Language Model about the enabling libvrt of Ceph RBD
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/rbd/libvirt.md]
