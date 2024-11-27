@@ -78,7 +78,7 @@ seed_examples:
         answer: |
           Navigate to the ESXi host, go to the "Storage" page under the "Devices" tab, and check if the NVMe/TCP disks
           are listed.
-document_outline: NVMe/TCP Initiator for VMware ESX
+document_outline: Teach the large language model about NVMe/TCP Initiator for VMware ESX
 document:
   repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
   commit: b60d0d0

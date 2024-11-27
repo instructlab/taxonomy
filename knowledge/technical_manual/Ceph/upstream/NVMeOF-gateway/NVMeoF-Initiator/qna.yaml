@@ -112,7 +112,7 @@ seed_examples:
         answer: Confirm network settings, validate target addresses, and ensure correct transport protocols.
       - question: What should be done if issues are encountered during setup?
         answer: Check log files for errors, verify configuration parameters, and ensure proper network connections.
-document_outline: NVMeoF Linux Initiator
+document_outline: Teach the large language model about NVMeoF Linux Initiator
 document:
   repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
   commit: b60d0d0

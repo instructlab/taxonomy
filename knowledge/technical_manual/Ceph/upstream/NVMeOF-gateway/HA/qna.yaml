@@ -106,7 +106,7 @@ seed_examples:
       - question: what are the failure conditions triggers failover?
         answer: |
           Gateway service is dead or Gateway node failure or Gateway removal from cephadm.
-document_outline: NVMeoF gateway High availability
+document_outline: Teach the Large Language model about NVMeoF gateway High availability
 document:
   repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
   commit: b60d0d0
