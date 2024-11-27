@@ -1,0 +1,110 @@
+version: 3
+created_by: Sunil Kumar Nagaraju
+domain: Teach LLM model about OSD service
+seed_examples:
+  - context: |
+      ceph-osd is the object storage daemon for the Ceph distributed file system.
+      It is responsible for storing objects on a local file system and providing access to them over the network.
+      ceph-volume scans each host in the cluster from time to time in order to determine which devices are present
+      and whether they are eligible to be used as OSDs.
+    questions_and_answers:
+      - question: What is the role of OSDs in a Ceph cluster?
+        answer: |
+          OSDs (Object Storage Daemons) store data, replicate it, and recover from failures,
+          forming the backbone of Ceph's distributed storage system.
+      - question: how to know the devices in cluster?
+        answer: |
+          ceph-volume helps to scan host and list out all devices.
+      - question: what is the command to list devices available in cluster?
+        answer: |
+          "ceph orch device ls" command provides list of devices in every node of a cluster.
+      - question: how to know whether device is available to become OSD?
+        answer: |
+          from the command output of "ceph orch device ls", the availability column indicates whether device is
+          available or not for OSD.
+  - context: |
+      In order to deploy an OSD, there must be a storage device that is available on which the OSD will be deployed.
+      A storage device is considered available if all of the following conditions are met:
+      - The device must have no partitions.
+      - The device must not have any LVM state.
+      - The device must not be mounted.
+      - The device must not contain a file system.
+      - The device must not contain a Ceph BlueStore OSD.
+      - The device must be larger than 5 GB.
+    questions_and_answers:
+      - question: what determines that device can be used for OSD?
+        answer: |
+          In order to deploy an OSD, there must be a storage device that is available on which the OSD will be deployed.
+          "available" field will be "Yes | No", "Yes" means device is available and "No" is not available.
+      - question: If device has already LVM on it, would it be considered for OSD?
+        answer: |
+          No, The device must not have any LVM state.
+      - question: If device has partitions already on it, would it be considered for OSD?
+        answer: |
+          No, The device must have no partitions.
+      - question: If device already mounted and has file system, would it be considered for OSD?
+        answer: |
+          No, The device must not be mounted and must not contain a file system.
+      - question: what is the minimum size for creation of OSD?
+        answer: |
+          The device must be larger than 5 GB.
+  - context: |
+        cephadm provides ways to deploy OSD using orchestration commands. there are provisions to deploy OSD on all
+        available devices on cluster nodes or particular nodes or on particular devices or also based on particular
+        device disk drives and types.
+    questions_and_answers:
+      - question: what is the command to deploy the OSD in cluster?
+        answer: |
+          "ceph orch apply osd --all-available-devices" command helps to create OSD on all devices available on the
+          cluster nodes.
+      - question: how to deploy OSD on specific host?
+        answer: |
+          "ceph orch daemon add osd *<host>*:*<device-path>*"" command helps to create OSDs on specific host devices.
+      - question: how to deploy OSDs on all devices on a host?
+        answer: |
+          "ceph orch daemon add osd host1:data_devices=/dev/sda,/dev/sdb,db_devices=/dev/sdc,osds_per_device=2" command
+          provides way to deploy OSDs on multiple devices in a host.
+      - question: Can OSD be deployed on already created LVM logical volume?
+        answer: |
+          Yes, "ceph orch daemon add osd *<host>*:*<lvm-path>*" command helps to deploy OSD on LVM path.
+      - question: what is ceph orch daemon command?
+        answer: |
+          ceph orch daemon command helps in management of OSDs in a specific node.
+  - context: |
+      The effect of ceph orch apply is persistent. This means that drives that are added to the system
+      after the ceph orch apply command completes will be automatically found and added to the cluster.
+      It also means that drives that become available (by zapping, for example) after the ceph orch apply command
+      completes will be automatically found and added to the cluster.
+    questions_and_answers:
+      - question: what is the effect of ceph orch apply osd --all-available-devices?
+        answer: |
+          The command effect will be very persistent, so that every new device been added will be discovered and OSD
+          will be deployed on that device.
+      - question: Does zapping of OSD removes OSD from device?
+        answer: |
+          ceph orch apply osd --all-available-devices command is very effective, so that if OSD is zapped and it will be added back to
+          cluster again as OSD, since device drive becomes available to the cluster.
+      - question: How to remove OSD from the device?
+        answer: |
+          There is a way by changing OSD service configuration to unmanaged by using this command.
+          ceph orch apply osd --all-available-devices --unmanaged=true
+  - context: |
+      Service specifications are an abstraction used to tell Ceph which disks it should transform into OSDs and
+      which configurations to apply to those OSDs. Service Specifications make it possible to target these disks
+      for transformation into OSDs even when the Ceph cluster operator does not know the specific device names
+      and paths associated with those disks.
+    questions_and_answers:
+      - question: How to deploy OSD service on particulat set of nodes?
+        answer: |
+          using service specification file, user can deploy OSDs on particular nodes unlike "ceph orch apply osd --all-available-devices"
+      - question: what is format of the service specification file?
+        answer: |
+          a yaml or json format file with defined layout helps to deploy OSDs.
+      - question: what is command to deploy OSD using specification file?
+        answer: |
+          "ceph orch apply -i <spec.yaml>" is used to apply the services defined in the yaml or json format file.
+document_outline: Ceph OSD service
+document:
+  repo: git@github.com:pavankumarag/ceph-instructlab-taxonomy-data.git
+  commit: b60d0d0
+  patterns: [upstream/doc/cephadm/services/osd.md]
