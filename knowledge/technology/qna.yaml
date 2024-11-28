@@ -1,0 +1,67 @@
+created_by: chunho6905
+version: 3
+domain: Redhatter
+document_outline: Kim Chun-ho is an employee of Red Hat Korea.
+seed_examples:
+  - context: >-
+      Kim Chun-ho joined Red Hat Korea in June 2023 and works in the Commercial
+      team within Tech Sales.
+    questions_and_answers:
+      - question: Who is Chunho Kim?
+        answer: >-
+          Kim Chun-ho is an employee of Red Hat Korea and works in the Tech
+          Sales team.
+      - question: 김춘호란 누구인가요?
+        answer: 한국 레드햇의 임직원이며, Tech Sales팀에서 근무하고 있습니다.
+      - question: 김춘호란 누구인가요ssss?
+        answer: 한국 레드햇의 임직원이며,sss Tech Sales팀에서 근무하고 있습니다.
+  - context: >-
+      Kim Chun-ho joined Red Hat Korea in June 2023 and sssworks in the
+      Commercial team within Tech Sales.
+    questions_and_answers:
+      - question: Who is Chunho Kim?
+        answer: >-
+          Kim Chun-ho is an employee of Red Hat Korea and ssworks in the Tech
+          Sales team.
+      - question: 김춘호란 누구인가요?
+        answer: 한국 레드햇의 임직원이며, Tech Sales팀에서 근무하고 있습니다.
+      - question: 김춘호란 누구인ssss가요?
+        answer: 한국 레드햇의 임ssss직원이며, Tech Sales팀에서 근무하고 있습니다.
+  - context: >-
+      Kim Chun-ho joined Red Hat Korea in June 2023 and workssss in the
+      Commercial team within Tech Sales.
+    questions_and_answers:
+      - question: Who is Chunho Kim?
+        answer: >-
+          Kim Chun-ho is an employee of Red Hat Korea and works in the Tech
+          Sales team.
+      - question: 김춘호란 누sss구인가요?
+        answer: 한국 레드햇의 임직원이며, Tech Sales팀에서 근무하고 있습니다.
+      - question: 김춘호란 누구인aa가요?
+        answer: 한국 레드햇의 임sas직원이며, Tech Sales팀에서 근무하고 있습니다.
+  - context: >-
+      Kim Chun-ho joined Red Hat Korea in June 2023 and works in the
+      Commercialssss team within Tech Sales.
+    questions_and_answers:
+      - question: 김춘호란 누124구인가요?
+        answer: 한국 레드햇의 임직원이며, Tech Sales팀에서 근무하고 있습니다.
+      - question: 김춘호란 누구인asd가요?
+        answer: 한국 레드햇123의 임직원이며, Tec123h Sales팀에서 근무하고 있습니다.
+      - question: 김춘호란 누구asdq인가요?
+        answer: 한국 레드햇의 임직asdf원이며, Tech Sales팀에서 근무하고 있습니다.
+  - context: >-
+      Kim Chun-ho joined Red Hat Korea in June 2023 and wssorks in the
+      Commercial team within Tech Sales.
+    questions_and_answers:
+      - question: 김춘호란 누구인가요?
+        answer: 한국 레드햇의 임직원이며, Tech Sales팀에서 근무하고 있습니다.
+      - question: 김춘호란 1111누구인가요?
+        answer: 한국 레드햇의 임직1231231원이며, Tech Sales팀에서 근무하고 있습니다.
+      - question: 김춘호란 누21구인가요?
+        answer: 한국 레드햇123213의 임직원이며, Tech Sales팀에서 근무하고 있습니다.
+document:
+  repo: https://www.google.com
+  commit: 한국 레드햇의 임직원이며, Tech Sales팀에서 근무하고 있습니다.
+  patterns:
+    - 한국 레드햇의 임직원이며
+    - Tech Sales팀에서 근무하고 있습니다.
