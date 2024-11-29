@@ -1,0 +1,208 @@
+created_by: pasqualeattanasio
+version: 3
+domain: Pubblica Amministrazione
+document_outline: Cosa significa e cos’è AgID , chi la dirige, quali sono i suoi compiti
+seed_examples:
+  - context: >-
+      L'Agenzia per l'Italia Digitale (AgID) è l'agenzia tecnica della
+      Presidenza del Consiglio che garantisce la realizzazione degli obiettivi
+      dell'Agenda digitale italiana coordinando tutte le Amministrazioni del
+      Paese. Contribuisce anche alla diffusione delle tecnologie
+      dell'informazione e della comunicazione, favorendo l'innovazione e la
+      crescita economica. Infine, promuove le competenze digitali e la loro
+      diffusione, collaborando con istituzioni, organismi internazionali,
+      nazionali e locali.
+    questions_and_answers:
+      - question: Cosa significa AgID?
+        answer: AgID è una sigla usata per indicare l’Agenzia per l’Italia Digitale
+      - question: Qual'è il ruolo di AgID?
+        answer: >-
+          L'Agenzia per l'Italia Digitale realizza gli obiettivi dell’Agenda
+          Digitale Italiana, in coerenza con gli indirizzi dettati dal
+          Presidente del Consiglio dei Ministri o dal Ministro delegato:
+          accompagna la trasformazione digitale del Paese e promuove l’utilizzo
+          delle nuove tecnologie nella Pubblica Amministrazione e nel suo
+          rapporto con i cittadini e le imprese.
+      - question: Quali sono gli ambiti di intervento di AgID?
+        answer: |2-
+              Identità digitale
+              Intelligenza artificiale
+              Accessibilità e usabilità
+              Appalti innovativi
+              E-Procurement
+              Monitoraggio contratti
+              Open Data
+              Pareri
+              Sistema Pubblico di Connettività
+              Riuso e Open source
+              Sicurezza
+              Vigilanza
+              Gestione Documentale e conservazione
+  - context: >-
+      Le Linee Guida emanate da AgID delineano regole e standard per
+      l’attuazione e il rispetto delle norme nell’ambito dell'agenda digitale,
+      della digitalizzazione della Pubblica Amministrazione, della sicurezza
+      informatica, dell’interoperabilità e della cooperazione applicativa tra
+      sistemi informatici pubblici e dell’Unione europea.
+    questions_and_answers:
+      - question: Cosa definiscono le linee guida su accessibilità emanate da AgID?
+        answer: >-
+          Le Linee Guida sull'accessibilità degli strumenti informatici, così
+          come disposto dall’ art. 11 della L. 4/2004, definiscono i requisiti
+          tecnici per l’accessibilità degli strumenti informatici (inclusi i
+          siti web e le applicazioni mobili), le metodologie tecniche per la
+          verifica dell’accessibilità, il modello della dichiarazione di
+          accessibilità, la metodologia di monitoraggio e valutazione della
+          conformità degli strumenti informatici alle prescrizioni in materia di
+          accessibilità, le circostanze in presenza delle quali si determina un
+          onere sproporzionato.
+
+
+          Il DL 76/2020 ha esteso poi alcuni obblighi, previsti già dalla Legge
+          4/2004 per le pubbliche amministrazioni, ai soggetti che offrono
+          servizi al pubblico, attraverso siti web o applicazioni mobili, con un
+          fatturato medio, negli ultimi tre anni di attività, superiore a
+          cinquecento milioni di euro. Anche in questo caso sono state redatte
+          delle linee guida ad hoc.
+      - question: Cosa definiscono le linee guida su open data emanate da AgID?
+        answer: >-
+          Le Linee Guida sugli open data hanno l’obiettivo di supportare le
+          pubbliche amministrazioni e gli altri soggetti interessati al processo
+          di apertura dei dati e di riutilizzo dell’informazione del settore
+          pubblico, attraverso indicazioni volte ad implementare le disposizioni
+          e le modalità disciplinate dalle norme indicate.
+      - question: Cosa definiscono le linee guida su Design PA emanate da AgID?
+        answer: >-
+          Le Linee Guida hanno lo scopo di definire e orientare la progettazione
+          e la realizzazione dei siti internet e dei servizi digitali erogati
+          dalle Pubbliche Amministrazioni, secondo quanto definito dal CAD). Il
+          Dipartimento per la Trasformazione Digitale e AgID rendono disponibili
+          su https://designers.italia.it un insieme di indicazioni e strumenti
+          operativi di ausilio alla progettazione, sviluppo e manutenzione di
+          siti internet e servizi digitali con lo scopo di fornire un supporto
+          evolutivo per l’attuazione delle presenti linee guida.
+  - context: >-
+      AgID ha il ruolo di agevolare e promuovere l’accessibilità e l’usabilità
+      dei servizi informatici della Pubblica Amministrazione, in modo che tutti
+      i cittadini possano fruire dei servizi digitali con facilità, senza
+      discriminazioni.
+    questions_and_answers:
+      - question: Quali sono le strategie?
+        answer: >-
+          In linea con la normativa attuale, AgID promuove l'accessibilità e
+          l'usabilità digitale in Italia emanando linee guida e monitora siti
+          web e app della PA.
+      - question: Quali sono le linee guida?
+        answer: |-
+          Linee Guida Accessibilità PA
+          Linee Guida Accessibilità Privati
+          Linee Guida Design
+      - question: Quali sono gli strumenti?
+        answer: |-
+          Dichiarazione di accessibilità
+          Obiettivi di accessibilità
+          Meccanismo di feedback
+          Procedura di attuazione
+  - context: >-
+      La Legge Stanca è stata una delle disposizioni più importanti mai inserite
+      nell'ordinamento italiano. In un mondo che mira a un’inclusività sempre
+      maggiore, infatti, diventa essenziale estendere l’accessibilità a tutti
+      quando si naviga su internet. Ecco perché diventa fondamentale la Legge
+      Stanca e le sue disposizioni in materia di disabilità e siti web
+    questions_and_answers:
+      - question: Perchè Legge Stanca?
+        answer: >-
+          La Legge Stanca prende il suo nome da Lucio Stanca, Ministro per
+          l’innovazione e le tecnologie nel secondo Governo Berlusconi.
+
+          Il vero nome della legge è la n.4 del 9 gennaio 2004 recante
+          “Disposizioni per favorire l'accesso dei soggetti disabili agli
+          strumenti informatici”.
+      - question: Chi sono i  soggetti che devono rispettare la Legge Stanca?
+        answer: |2-
+           la Legge Stanca si applica a:
+
+              Pubbliche amministrazioni;
+              Enti pubblici economici(opens in a new tab);
+              Aziende private concessionarie di servizi pubblici;
+              Enti di assistenza e di riabilitazione pubblici;
+              Aziende di trasporto e di telecomunicazione a prevalente partecipazione di capitale pubblico;
+              Aziende municipalizzate regionali;
+              Aziende appaltatrici di servizi informatici.
+      - question: Quale è la definizione di accessibilità secondo la Legge Stanca?
+        answer: >-
+          L’art. 2 della Legge Stanca ci offre una definizione di accessibilità:
+
+
+          “la capacità dei sistemi informatici, nelle forme e nei limiti
+          consentiti dalle conoscenze tecnologiche, di erogare servizi e fornire
+          informazioni fruibili, senza discriminazioni, anche da parte di coloro
+          che a causa di disabilità necessitano di tecnologie assistive o
+          configurazioni particolari”.
+  - context: >-
+      L’Agenzia per l'Italia Digitale (AgID) è l’agenzia tecnica della
+      Presidenza del Consiglio con il compito di garantire la realizzazione
+      degli obiettivi dell’Agenda digitale italiana.
+
+
+      Coordina le amministrazioni nell'attuazione del Piano Triennale per
+      l’informatica della Pubblica amministrazione.
+
+
+      L'obiettivo di fondo è contribuire alla diffusione dell'utilizzo delle
+      tecnologie dell'informazione e della comunicazione, favorendo così
+      l'innovazione e la crescita economica.
+
+
+      L'AgID collabora con la struttura commissariale del Team Digitale alla
+      Presidenza del Consiglio, per l'Agenda Digitale.
+    questions_and_answers:
+      - question: Qual è il compito dell'Agenzia per l'Italia digitale AgID?
+        answer: >-
+          L’Agenzia per l'Italia Digitale è l’ente tecnico della Presidenza del
+          Consiglio che si occupa di garantire che gli obiettivi previsti
+          dall’Agenda Digitale Italiana e in linea di continuità con l’Agenda
+          digitale europea siano portati a termine per favorire l’innovazione e
+          la crescita economica attraverso l’uso delle tecnologie
+          dell’informazione e della comunicazione.
+      - question: Quali sono i principali programmi dell'Agenzia per l'Italia digitale?
+        answer: >-
+          ra i principali programmi segnaliamo:
+
+          Sistema Pubblico di Identità Digitale (SPID) che consente sia ai
+          cittadini e sia alle imprese di accedere con l’identità digitale ai
+          servizi online della PA e dei privati da qualsiasi dispositivo
+          elettronico come laptop, smartphone, tablet, ecc. L'identità SPID è
+          stata dotata di tre livelli di sicurezza delle credenziali e può
+          essere richiesta ad uno dei gestori di identità digitale (identity
+          provider) accreditati.
+
+              Anagrafe Nazionale (ANPR) è la banca dati che contiene le informazioni anagrafiche di tutti i residenti in Italia ed è il punto di riferimento per Pubblica Amministrazione, Comuni e gestori di pubblici servizi.
+              Pagamenti Elettronici (pagoPA): questo servizio è destinato a cittadini e aziende che possono effettuare pagamenti in favore delle pubbliche amministrazioni e gestori di servizi di pubblica utilità.
+              Linee Guida siti web PA: sono un sistema di regole condivise relative al design e alla usabilità dei siti della Pubblica Amministrazione. L’obiettivo è rendere la navigazione utile e efficace per cittadini e imprese senza limitare le scelte dei progettisti.
+      - question: Cos'è AgID
+        answer: >
+          L'Agenzia per l'Italia Digitale (AgID) è un'agenzia tecnica della
+          Presidenza del Consiglio, istituita nel 2012, con l'obiettivo di
+          attuare l'Agenda digitale italiana. AgID lavora per diffondere le
+          tecnologie dell'informazione e della comunicazione, favorendo
+          l'innovazione e la crescita economica, in collaborazione con varie
+          istituzioni.
+
+
+          L’operato dell’agenzia si sviluppa essenzialmente su tre direttrici:
+
+              definizione di strategie per aiutare la transizione digitale dell’Italia, come il piano triennale per l’informatica;
+              promozione delle competenze digitali tra la PA, le imprese e i cittadini;
+              monitoraggio e vigilanza sul rispetto delle normative in materia di digitalizzazione.
+
+          L’AgID si compone di 2 organi fondamentali:
+
+              il Direttore generale che sovrintende alla sua gestione, attuando le direttive ministeriali e mantenendo rapporti con istituzioni nazionali, comunitarie, internazionali, regionali e locali. Ne è il legale rappresentante;
+              il Collegio dei revisori che vigila sul rispetto delle disposizioni di legge e si occupa di tutti gli altri compiti, compreso il monitoraggio della spesa pubblica.
+document:
+  repo: https://github.com/pasqualeattanasio/taxonomy-knowledge-docs
+  commit: 8ccc7abd743fa5fdd134338f9995a0a877fb1b95
+  patterns:
+    - wikipedia_agid-20241129T152603285.md
+    - userway_agid-20241129T152603285.md
