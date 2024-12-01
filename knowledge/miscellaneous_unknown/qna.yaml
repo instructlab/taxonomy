@@ -1,0 +1,64 @@
+created_by: gtyellow
+version: 3
+domain: Sports
+document_outline: >-
+  These are the international rules for soccer.  They are called the laws of the
+  game.
+seed_examples:
+  - context: This is the rules of the shape and dimensions of a field
+    questions_and_answers:
+      - question: How long is the field
+        answer: The field varies from 50 to 100 yards for adult matches
+      - question: Where is the penalty spot?
+        answer: 12 yards in front of the goal
+      - question: What shape is the pitch
+        answer: A rectangle
+  - context: This is talking about the ball
+    questions_and_answers:
+      - question: What size ball do you play with
+        answer: >-
+          Adults and older kids play with a size 5 ball.  Younger children will
+          play with a size 4 or szie 3 ball
+      - question: Is the ball solid
+        answer: No. The ball is inflated with air
+      - question: What shape is the ball
+        answer: The ball is a round sphere
+  - context: This determines how goals are scored
+    questions_and_answers:
+      - question: >-
+          Does it count as a goal if a goalkeeper catches the ball and is
+          standing in the goal but the ball hasn't passed over the line?
+        answer: No.  The ball must be completely over the line within the goal posts
+      - question: How do you restart after a goal?
+        answer: The team that was just scored on kicks off from the center mark
+      - question: How may points do you get for a goal?
+        answer: One
+  - context: These list some of the fouls that will result in a direct free kick
+    questions_and_answers:
+      - question: What is a handball?
+        answer: >-
+          If a player who isn't the goalies touches the ball from the tips of
+          their fingers to the armpit when the arm is not in a natural position
+      - question: What is pushing
+        answer: When a player uses their arms or hands to push another player.
+      - question: Is tripping a foul?
+        answer: Yes and the tripped player would be rewarded with a direct free kick
+  - context: This talks about the time of a match
+    questions_and_answers:
+      - question: How long is a match
+        answer: >-
+          Most matches are 90 minutes unless there is overtime but young players
+          will play less time.  Time can be added for things like injuries and
+          substitutions.
+      - question: How many halves
+        answer: Matches are typically two halves unless there is overtime.
+      - question: Who keeps the time
+        answer: >-
+          Typically the head referee will keep the time on the field but can be
+          assisted by the fourth referee.  Some leagues like american
+          universities use a scoreboard to keep the time.
+document:
+  repo: https://github.com/gtyellow/taxonomy-knowledge-docs
+  commit: f9baab0a8f5631303d7975f3c59d6382a9e384b6
+  patterns:
+    - d6g1medsi8jrrd3e4imp-20241122T195303813.md
