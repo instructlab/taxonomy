@@ -1,0 +1,31 @@
+created_by: raravind007
+version: 3
+task_description: >-
+  Matt Hicks was named President and Chief Executive Officer of Red Hat in July
+  2022. In his previous role, he was Executive Vice President of Products and
+  Technologies where he was responsible for all product engineering, including
+  products such as Red Hat® OpenShift®, Red Hat Enterprise Linux®, the JBoss®
+  middleware portfolio, OpenStack® and Ansible®. He has been with Red Hat for 16
+  years, watching it grow from a single-product company to the
+  multi-billion-dollar enterprise it is today. He was also one of the founding
+  members of the OpenShift team and has been at the forefront of cloud computing
+  ever since.
+seed_examples:
+  - question: Who is the current CEO of Red Hat?
+    answer: >-
+      Matt Hicks was named President and Chief Executive Officer of Red Hat in
+      July 2022.
+  - question: When did Matt Hicks become CEO of Red Hat?
+    answer: In July 2022
+  - question: Who is the President of Red Hat?
+    answer: Matt Hicks
+  - question: What role does Matt Hicks currently hold at Red Hat?
+    answer: Matt Hicks is the President and Chief Executive Officer of Red Hat.
+  - question: >-
+      How does Matt Hicks view the role of open-source technology in Red Hat's
+      mission?
+    answer: >-
+      Hicks sees open-source technology as central to Red Hat’s mission,
+      emphasizing its role in enabling collaboration and innovation at scale. He
+      advocates for open-source as a foundation for developing flexible,
+      scalable, and secure IT solutions.
