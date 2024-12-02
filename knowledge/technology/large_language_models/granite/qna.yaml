@@ -1,0 +1,87 @@
+created_by: wschmutz123
+version: 3
+domain: large-language-model
+document_outline: Provides knowledge about about the IBM Granite Model
+seed_examples:
+  - context: >-
+      IBM Granite is a series of decoder-only AI foundation models created by
+      IBM. It was announced on September 7, 2023 and an initial paper was
+      published 4 days later.
+    questions_and_answers:
+      - question: What is IBM Granite?
+        answer: >-
+          IBM Granite is a series of decoder-only AI foundation models created
+          by IBM.
+      - question: When was IBM Granite announced?
+        answer: September 7, 2023
+      - question: What is a series of decoder-only AI foundation models created by IBM.
+        answer: IBM Granite
+  - context: >-
+      A foundation model is an AI model trained on broad data at scale such that
+      it can be adapted to a wide range of downstream tasks. Granite's first
+      foundation models were Granite.13b.instruct and Granite.13b.chat. The
+      "13b" in their name comes from 13 billion, the amount of parameters they
+      have as models, lesser than most of the larger models of the time. Later
+      models vary from 3 to 34 billion parameters.
+    questions_and_answers:
+      - question: What is a foundational model?
+        answer: >-
+          A foundation model is an AI model trained on broad data at scale such
+          that it can be adapted to a wide range of downstream tasks.
+      - question: What were Granite's first foundation models?
+        answer: >-
+          Granite's first foundation models were Granite.13b.instruct and
+          Granite.13b.chat.
+      - question: How many parameters did the first Granite Models have?
+        answer: 13 Billion Parameters
+  - context: >-
+      On May 6, 2024, IBM released the source code of four variations of Granite
+      Code Models under Apache 2, an open source permissive license that allows
+      completely free use, modification and sharing of the software, and put
+      them on Hugging Face for public use. According to IBM's own report,
+      Granite 8b outperforms Llama 3 on several coding related tasks within
+      similar range of parameters.
+    questions_and_answers:
+      - question: What does open source mean?
+        answer: Allows completely free use, modification and sharing of the software.
+      - question: When did IBM release the source code for Granite Models?
+        answer: May 6, 2024
+      - question: How many variations of Granite Code Models did IBM Release?
+        answer: Four Variations
+  - context: >-
+      Initially intended for use in the IBM's cloud-based data and generative AI
+      platform Watsonx along with other models, IBM opened the source code of
+      some code models. Granite models are trained on datasets curated from
+      Internet, academic publishings, code datasets, legal and finance
+      documents. Granite models are trained on datasets curated from Internet,
+      academic publishings, code datasets, legal and finance documents.
+    questions_and_answers:
+      - question: What are Granite Models trained on?
+        answer: >-
+          Granite models are trained on datasets curated from Internet, academic
+          publishings, code datasets, legal and finance documents.
+      - question: What was IBM Granite initially intended for?
+        answer: >-
+          IBM Granite was initially intended for cloud-based data and generative
+          AI platform Watsonx along with other models.
+      - question: What dataset did the source code include later?
+        answer: Code Datasets
+  - context: >-
+      According to IBM's own report, Granite 8b outperforms Llama 3 on several
+      coding related tasks within similar range of parameters.
+    questions_and_answers:
+      - question: Which tasks does Granite 8b outperform Llama 3?
+        answer: On several coding related tasks within similar range of parameters
+      - question: >-
+          According to who does IBM Granite 8b outperform Llama 3 on several
+          coding tasks?
+        answer: IBM's own report
+      - question: >-
+          Which model did IBM Granite 8b outperform in several coding related
+          tasks within similar range of parameters?
+        answer: Llama 3
+document:
+  repo: https://github.com/wschmutz123/taxonomy-knowledge-docs
+  commit: e1b3c88bd4407b0480b02595c5a49f8451734adf
+  patterns:
+    - IBM-Granite-20241030T202337498.MD
