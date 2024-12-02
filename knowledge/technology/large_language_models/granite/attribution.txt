@@ -1,0 +1,5 @@
+Title of work: IBM Granite
+Link to work: https://github.com/klawrenc/taxonomy-knowledge-docs
+Revision: https://www.ibm.com/new/ibm-granite-3-0-open-state-of-the-art-enterprise-models
+License of the work: Keith
+Creator names: IBM Granite page

@@ -1,0 +1,81 @@
+created_by: klawrenc
+version: 3
+domain: large-language-model
+document_outline: Knowledge about Granite large language models
+seed_examples:
+  - context: >-
+      IBM Granite 3.0, is the third generation of the Granite series of large
+      language models (LLMs) and complementary tools.
+    questions_and_answers:
+      - question: What is IBM Granite?
+        answer: >-
+          The cornerstone models of the new collection are the Granite 3.0 2B
+          Instruct and the Granite 3.0 8B Instruct models
+      - question: When was IBM Granite announced?
+        answer: ' 7th September 2023'
+      - question: |
+          When was IBM Granite 3.0 released?
+        answer: October 1st , 2024
+  - context: What are the components to Granite
+    questions_and_answers:
+      - question: What are the core components of Granite’s architecture?
+        answer: >-
+          Group-query attention (GQA) and Rotary Position Encodings (RoPE) for
+          positional information, multilayer perceptron (MLP) with SwiGLU
+          activation, RMSNorm, and shared input/output embeddings.
+      - question: what is Speculative decoding?
+        answer: >-
+          Speculative decoding is an optimization technique for accelerating
+          model inference speed, helping LLMs generate text faster while using
+          the same (or less) compute resources, and allowing more users to
+          utilize a model at the same time.
+      - question: What is standard inferencing?
+        answer: ' LLMs process each previous token they’ve generated thus far, then generate one token at a time. In speculative decoding, LLMs also evaluate several prospective tokens that might come after the token they’re about to generate—if these “speculated” tokens are verified as sufficiently accurate, one pass can produce two or more tokens for the computational “price” of one.'
+  - context: Does Granite models work with NVIDIA NIM
+    questions_and_answers:
+      - question: What is NVIDIA doing with Granite 3.0?
+        answer: >-
+          NVIDIA has partnered with IBM to offer the Granite family of models
+          through NVIDIA NIM – a set of easy-to-use microservices designed for
+          secure, reliable deployment of high performance AI model inferencing
+          across clouds, data centers and workstations.
+      - question: How does NIM work with Granite
+        answer: >-
+          NIM uses inference optimization engines, industry-standard APIs, and
+          prebuilt containers to provide high-throughput AI inference that
+          scales with demand.
+      - question: How can we get started with NVIDIA
+        answer: >-
+          Experience the Granite models with free NVIDIA cloud credits. You can
+          start testing the model at scale and build a proof of concept (POC) by
+          connecting your application to the NVIDIA-hosted API endpoint running
+          on a fully accelerated stack.
+  - context: what are accelerators
+    questions_and_answers:
+      - question: Are all accelerators counted?
+        answer: >-
+          Accelerators are only counted when they are used to execute a compute
+          workload.
+      - question: Who should I ask for further information?
+        answer: 'The EMEAI AI team such as Keith Lawrence '
+      - question: How many SSA's are there in the EMEA AI team
+        answer: not enough!
+  - context: NVIDIA
+    questions_and_answers:
+      - question: What is an A100
+        answer: >-
+          The NVIDIA A100 Tensor Core GPU is the flagship product of the NVIDIA
+          data center platform for deep learning
+      - question: What is compute?
+        answer: >-
+          A workload is considered a “compute” workload when the primary purpose
+          is for GenAI
+      - question: Why is the subscription requirement changing?
+        answer: >-
+          Previously, we had no defined business rules for how subscriptions
+          apply to accelerators (eg. GPUs) in OpenShift and OpenShift AI.
+document:
+  repo: https://github.com/klawrenc/taxonomy-knowledge-docs
+  commit: 0c393786855a5c86272b919c87e170e42e0d5d2f
+  patterns:
+    - granite3-20241105T150450712.md
