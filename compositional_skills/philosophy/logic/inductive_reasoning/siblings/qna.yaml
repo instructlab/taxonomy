@@ -1,0 +1,29 @@
+created_by: russellb
+version: 3
+task_description: Inductive reasoning about sibling relationships
+seed_examples:
+  - question: |
+      David is the brother to three sisters. Each of the sisters has one brother. How many brothers does David have?
+    answer: |
+      David has three sisters, and each of the sisters have one brother.
+      David is their one brother. So, David has no brothers.
+  - question: |
+      David is the brother to three sisters. Each of the sisters has two brothers. How many brothers does David have?
+    answer: |
+      David has three sisters, and each of the sisters have two brothers.
+      David is one of their brothers. So, David has one brother.
+  - question: |
+      Sally is the sister to three brothers. Each of the brothers has one sister. How many sisters does Sally have?
+    answer: |
+      Sally has three brothers, and each of the brothers have one sister.
+      Sally is their one sister. So, Sally has no sisters.
+  - question: |
+      Sally is the sister to three brothers. Each of the brothers has two sisters. How many sisters does Sally have?
+    answer: |
+      Sally has three brothers, and each of the brothers have two sisters.
+      Sally is their one sister. So, Sally has one sister.
+  - question: |
+      Sally is the sister to one brother and one sister. How many sisters does Sally's brother have?
+    answer: |
+      Sally has one brother and one sister. There are two sisters and one brother.
+      Sally's brother has two sisters.
