@@ -1,0 +1,290 @@
+created_by: jehlum11
+version: 3
+domain: Sports
+document_outline: >-
+  The Grand Slam in tennis is the achievement of winning all four major
+  championships in one discipline in a calendar year. In doubles, a Grand Slam
+  may be achieved as a team or as an individual with different partners. The
+  four Grand Slam tournaments are the Australian Open in January, the French
+  Open from late May to early June, Wimbledon in late June to early July, and
+  the US Open in late August to early September, with each played over two
+  weeks. The Olympics happened this year and included tennis as one of the
+  sports.
+seed_examples:
+  - context: |-
+      The 2024 Australian Open was a Grand Slam level tennis tournament held at
+            Melbourne Park, Victoria, Australia,
+
+            from 14 to 28 January 2024. Until 1987, it was played on grass courts, but
+            since then hardcourt
+
+            surfaces have been used.
+
+            The Australian Open 2024 Men's singles winner was Jannik Sinner, from
+            Italy, who defeated Danill Medvedev in
+
+            the final.
+
+            The Women's singles winner was Aryna Sabalenka, who defeated Zheng Qinwen
+            in the final.
+
+            The Men's doubles winners were Rohan Bopanna and Matthew Ebden, who
+            defeated Simone Bolelli and Andrea
+
+            Vavassori .
+
+            The Women's doubles winners were Hsieh Su-wei and Elise Mertens, who
+            defeated Lyudmyla Kichenok and Jeļena Ostapenko.
+    questions_and_answers:
+      - question: When and where was the 2024 Australian Open held?
+        answer: >-
+          The 2024 Australian Open was held at Melbourne Park, Victoria,
+          Australia, from 14 to 28 January 2024.
+      - question: What type of court are the Australian Open games played on?
+        answer: Australian Open is a hardcourt surface.
+      - question: Who was the 2024 Australian Open Women's Singles champion?
+        answer: Aryna Sabalenka won the 2024 Australian Open Women's Singles title.
+  - context: |-
+      The 2024 French Open was a Grand Slam tennis tournament that was played on
+            outdoor clay courts.
+
+            It was held at the Stade Roland Garros in Paris, France, from 26 May to 9
+            June 2024,
+
+            comprising singles, doubles and mixed doubles play.
+
+            The men's singles title was won by Carlos Alcaraz, who defeated Alexander
+            Zverev in the final
+
+            to lift his third Grand Slam title. He also became the youngest male
+            player to win a Grand Slam
+
+            across three different surfaces. Iga Świątek successfully defended her
+            women's singles title by
+
+            defeating Jasmine Paolini in the final. It was her fifth Grand Slam title
+            and her third consecutive
+
+            French Open trophy. By doing so, she recorded a 21-match winning streak in
+            Roland Garros, which put
+
+            her fourth in the match win streaks at the tournament.
+
+            In the French Open Men's Doubles final, Marcelo Arévalo and Mate Pavić
+            defeated
+
+            Simone Bolelli and Andrea Vavassori in the final in straight sets to win
+            their first major title as a pair.
+
+            In the French Open Women's Doubles final, Coco Gauff and Kateřina
+            Siniaková defeated Sara Errani and
+
+            Jasmine Paolini in the final in straight sets to win their first grand
+            slam title as a pair.
+    questions_and_answers:
+      - question: Where is the French Open played?
+        answer: >-
+          The French Open is played on clay courts at Roland Garros in Paris,
+          France.
+      - question: Who lost the Men's singles French Open title?
+        answer: >-
+          Alexdander Zverev lost the Men's singles French Open 2024 in the
+          finals.
+      - question: ' How many French Open titles has Iga Swiatek won so far?'
+        answer: >-
+          Iga Swiatek has won three French Open titles and five Grand Slams so
+          far.
+  - context: |2-
+        The 2024 Wimbledon Championships was a Grand Slam tennis tournament that
+            took place at the All England Lawn
+
+            Tennis and Croquet Club in Wimbledon, London, England, comprising singles,
+            doubles and mixed doubles play.
+
+            It was the 137th edition of the Wimbledon Championships and the third
+            Grand Slam event of 2024.
+
+            Every year, it follows Australian Open, French Open in that order and US
+            Open happens after Wimbledon.
+
+            The Grand Slam Championships happen in alphabetical order. The Australian
+            Open happens first,
+
+            at Melbourne Park in Melbourne, Victoria, Australia, with its three
+            primary courts, Rod Laver Arena,
+
+            John Cain Arena and the refurbished Margaret Court Arena equipped with
+            retractable roofs.
+
+            The French Open, also known as Roland Gaross, is second. It happens in the
+            Stade Roland Garros in Paris, France.
+
+            Wimbledon happens third in the All England Lawn Tennis and Croquet Club in
+            Wimbledon, London, England.
+
+            The final Grand Slam is the US Open and it takes place in the outdoor hard
+            courts at the USTA Billie
+
+            Jean King National Tennis Center, New York, United States.
+
+            The gentlemen's singles title was won by defending champion Carlos
+            Alcaraz, who defeated Novak Djokovic in a
+
+            rematch of the previous year's final to lift his fourth Grand Slam title.
+            Barbora Krejčíková defeated
+
+            Jasmine Paolini in the final to win the ladies' singles title.
+
+            The tournament was played on grass courts, with all main draw matches
+            played at the All England Lawn Tennis
+
+            and Croquet Club, Wimbledon, from 1 July to 14 July 2024.
+
+            Harri Heliövaara and Henry Patten defeated Max Purcell and Jordan Thompson
+            in the final in the 2024 Wimbledon
+
+            Men's Doubles final.
+
+            Katerina Siniaková and Taylor Townsend defeated Gabriela Dabrowski and
+            Erin Routliffe in the 2024 Wimbledon
+
+            Women's Doubles final.
+    questions_and_answers:
+      - question: ' Who won the Men''s singles Wimbledon Championships 2024?'
+        answer: >-
+          Carlos Alcaraz won the Men's singles Wimbledon Championships 2024. He
+          was also the defending champion.
+      - question: ' What is the order of the Tennis Grand Slams?'
+        answer: >-
+          The Grand Slams in order are: Australian Open, French Open, Wimbledon,
+          US Open.
+      - question: ' Who were the 2024 Wimbledon Men''s doubles Champion?'
+        answer: >-
+          Harri Heliövaara and Henry Patten won the 2024 Wimbledon Men's doubles
+          Championship.
+  - context: |2-
+       The 2024 US Open was the 144th edition of tennis' US Open and the fourth
+            and final Grand Slam event of
+
+            the year. It was held on outdoor hard courts at the USTA Billie Jean King
+            National Tennis Center in
+
+            New York City. Novak Djokovic and Coco Gauff were the men's and women's
+            singles defending champions,
+
+            respectively, but Djokovic lost in the third round to Alexei Popyrin and
+            Gauff lost in the fourth
+
+            round to Emma Navarro.
+
+            The tournament was played on hard courts and took place over a series of
+            17 courts with Laykold
+
+            surface, including the three existing main showcourts – Arthur Ashe
+            Stadium, Louis Armstrong Stadium and
+
+            Grandstand.
+
+            Jannik Sinner defeated Taylor Fritz in the final, 6–3, 6–4, 7–5 to win the
+            men's singles tennis title at
+
+            the 2024 US Open. It was his second major title. Sinner became the first
+            Italian man to win the US
+
+            Open singles title and the first Italian man in the Open Era to win
+            multiple major titles. Sinner was
+
+            also the fourth (and youngest) man to win both hardcourt majors
+            (Australian Open and US Open) in the
+
+            same year, after Mats Wilander, Roger Federer and Novak Djokovic, and the
+            first man to win his first
+
+            two major singles titles in the same year since Guillermo Vilas in 1977.
+
+            Aryna Sabalenka defeated Jessica Pegula in the final, 7–5, 7–5 to win the
+            women's singles tennis title
+
+            at the 2024 US Open. It was her third major singles title. Sabalenka was
+            the first Belarusian to win
+
+            the singles title, and the fifth player to win both hardcourt majors
+            (Australian Open and US Open) in
+
+            the same calendar year, after Steffi Graf, Monica Seles, Martina Hingis
+            and Angelique Kerber.
+
+            Sabalenka dropped only one set en route to the title, against Ekaterina
+            Alexandrova.
+
+            Max Purcell and Jordan Thompson defeated Kevin Krawietz and Tim Pütz in
+            the final, 6–4, 7–6(7–4)
+
+            to win the men's doubles tennis title at the 2024 US Open. They saved two
+            match points (in the second
+
+            round against Andreas Mies and John-Patrick Smith) en route to the title.
+            It was Thompson's first
+
+            major doubles title and Purcell's second.
+
+            Lyudmyla Kichenok and Jeļena Ostapenko defeated Kristina Mladenovic and
+            Zhang Shuai in the final, 6–4,
+
+            6–3 to win the women's doubles tennis title at the 2024 US Open.
+    questions_and_answers:
+      - question: ' Where is the US Open championship held?'
+        answer: >-
+          The US Open Championship is held on outdoor hard courts at the USTA
+          Billie Jean King National Tennis
+      - question: |
+          What are some of the courts in the Bille Jean King National Tennis
+                    Center?
+        answer: Arthur Ashe Stadium, Louis Armstrong Stadium and Grandstand.
+      - question: ' Who competed in the women''s singles tennis title at the 2024 US Open?'
+        answer: |-
+          Aryna Sabalenka and Jessica Pegula were the finalists in the 2024 US
+                    Open women's singles championships.
+  - context: |-
+      The tennis tournaments at the 2024 Summer Olympics in Paris ran from 27
+            July to 4 August at the Stade
+
+            Roland Garros. In the women's singles, Zheng Qinwen beat Donna Vekić to
+            become the first Chinese tennis
+
+            player to win Olympic singles gold. In the men's singles, Novak Djokovic
+            of Serbia overcame French Open
+
+            champion Spaniard Carlos Alcaraz in straight sets after tiebreaks in both
+            to win gold.
+
+            In the men's doubles, Matthew Ebden and John Peers became the first
+            Australian pair to win the event
+
+            since the "Woodies" (Todd Woodbridge and Mark Woodforde) in Atlanta in
+            1996, while the United States
+
+            pairs took both silver and bronze. Sara Errani and Jasmine Paolini won the
+            women's doubles, while
+
+            Kateřina Siniaková and Tomáš Macháč won the mixed doubles.
+    questions_and_answers:
+      - question: ' Who won the men''s singles gold in the Olympics tennis tournament?'
+        answer: >-
+          Novak Djokovic won the men's singles gold in the 2024 Olymics tennis
+          tournament.
+      - question: |-
+          Which countries took gold, silver and bronze in the men's doubles
+                    tennis tournaments at the 2024 Summer Olympics?
+        answer: |-
+          Australia won gold, United States won silver and bronze in the men's
+                    doubles tennis tournaments at the 2024 Summer Olympics.
+      - question: '   Who won Olympic doubles gold in women''s tennis?'
+        answer: |-
+          Sara Errani and Jasmine Paolini won the women's doubles gold in
+                    women's tennis.
+document:
+  repo: https://github.com/jehlum11/taxonomy-knowledge-docs
+  commit: 5aa572528cfa6611ac271d3062978f9b45d05fbd
+  patterns:
+    - Tennis'24 knowledge-20241029T100645917.md
