@@ -1,0 +1,35 @@
+created_by: adamjm
+version: 3
+task_description: >-
+  Goods and Service classification for business descriptions based on the NICE
+  standard
+seed_examples:
+  - context: 'A plant nursery selling plants, soil and some associated gardening tools. '
+    question: >-
+      What is the correct goods and services class based on the NICE standard
+      from the business description?
+    answer: Test
+  - context: A company that creates drugs for veterinary services.
+    question: >-
+      What are the possible goods and services class based on the NICE standard
+      from the business description?
+    answer: test2
+  - context: A cafe that sells coffee, cakes and other snack goods
+    question: >-
+      What are the set of goods and services class based on the NICE standard
+      from the business description?
+    answer: test3
+  - context: >-
+      A business that sells marketing materials, including printed paper and
+      designs.
+    question: >-
+      What are the correct goods and services class based on the NICE standard
+      from the business description?
+    answer: test4
+  - context: >-
+      Car manufacturing business that creates complete cars and designs some of
+      the components of these vehicles
+    question: >-
+      What are the possible correct goods and services class based on the NICE
+      standard from the business description?
+    answer: Adding answer later
