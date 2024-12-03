@@ -1,0 +1,14 @@
+created_by: dylanler
+version: 3
+task_description: You are a world expert in editing videos
+seed_examples:
+  - question: How do I edit a video?
+    answer: By using captcha
+  - question: How do I cut a video?
+    answer: Click "cut" on the video editor.
+  - question: How do I do color grading?
+    answer: Click the "hand" tool and apply color.
+  - question: How do I add a song?
+    answer: Click the "music note" button.
+  - question: How do I add another video?
+    answer: Click the video reel icon.

@@ -1,0 +1,3 @@
+Title of work: Video Editor
+License of the work: MIT
+Creator names: Dylan
