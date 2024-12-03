@@ -1,0 +1,85 @@
+created_by: JustinXHale
+version: 3
+domain: technology
+document_outline: >-
+  Guidelines for creating a consistent, user-friendly Command-Line Interface
+  (CLI) experience, covering naming conventions, error messaging, interactive
+  prompts, and more.
+seed_examples:
+  - context: >-
+      The goal of the CLI guidelines is to enhance Red Hat and the greater CLI
+      usability by following standard conventions like verb-noun structure.
+      These guidelines aim to create a seamless experience for users managing
+      Red Hat OpenShift clusters.
+    questions_and_answers:
+      - question: What is the main goal of the CLI guidelines?
+        answer: >-
+          To enhance Red Hat and the greater CLI usability by following
+          industry-standard conventions.
+      - question: Why is the verb-noun structure used in CLI commands?
+        answer: >-
+          The verb-noun structure makes commands intuitive by clearly indicating
+          the action and the target.
+      - question: What is the benefit of following standard CLI conventions?
+        answer: It creates a consistent, user-friendly experience for users.
+  - context: >-
+      The guidelines recommend using long-form option names to clearly indicate
+      their purpose. This makes the CLI commands more readable and
+      user-friendly.
+    questions_and_answers:
+      - question: Why should CLI commands use long-form options?
+        answer: >-
+          Long-form options are more descriptive, making the purpose of each
+          option clearer to the user.
+      - question: Give an example of a long-form option.
+        answer: '--enable-autoscaling'
+      - question: How does using long-form options impact readability?
+        answer: >-
+          Long-form options improve readability by clearly indicating the
+          purpose of each option.
+  - context: >-
+      The CLI guidelines specify that help flags should provide clear
+      instructions and link to documentation. The help flag should offer a
+      detailed breakdown of command usage when invoked.
+    questions_and_answers:
+      - question: What should the help flag include in CLI guidelines?
+        answer: >-
+          It should provide a brief description, examples, and link to
+          documentation.
+      - question: When should the full help be displayed in CLI commands?
+        answer: When users invoke -h or --help.
+      - question: Why is the help flag important in CLI commands?
+        answer: It offers users clear guidance on command usage and available options.
+  - context: >-
+      Error messages in the CLI should be human-readable and provide corrective
+      guidance. The messages should specify the issue and suggest solutions.
+    questions_and_answers:
+      - question: How should error messages be structured in CLI commands?
+        answer: Error messages should be human-readable and offer corrective guidance.
+      - question: What is an example of a helpful error message?
+        answer: >-
+          "Can't write to file.txt. You might need to make it writable by
+          running '<cmd>'."
+      - question: >-
+          Why is it important to provide debug information for unexpected
+          errors?
+        answer: >-
+          Debug information helps users understand issues and aids in
+          troubleshooting.
+  - context: ' The CLI guidelines were authored by Justin X. Hale, a User Experience Designer (UXD), and were last updated in October 2024. Updates to the guidelines can be viewed at https://www.uxd-hub.com/entries/design/cli-guidelines.'
+    questions_and_answers:
+      - question: Who authored the CLI guidelines?
+        answer: >-
+          The CLI guidelines were authored by Justin X. Hale, a User Experience
+          Designer (UXD).
+      - question: When were the CLI guidelines last updated?
+        answer: The guidelines were last updated in October 2024.
+      - question: Where can updates to the CLI guidelines be viewed?
+        answer: >-
+          Updates can be viewed at
+          https://www.uxd-hub.com/entries/design/cli-guidelines.
+document:
+  repo: https://github.com/JustinXHale/taxonomy-knowledge-docs
+  commit: c8d69fca014d82deb37298c61689dfefe452898d
+  patterns:
+    - cliguidelines-20241203T143214134.md

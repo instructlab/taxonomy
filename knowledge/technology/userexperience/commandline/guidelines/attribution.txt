@@ -1,0 +1,5 @@
+Title of work: Command Line Interface Guidelines (CLI Guidelines)
+Link to work: https://www.uxd-hub.com/entries/design/cli-guidelines
+Revision: updated October 2024
+License of the work: Creative Commons Attribution 4.0 International (CC BY 4.0)
+Creator names: Justin X. Hale, User Experience Designer (UXD)
