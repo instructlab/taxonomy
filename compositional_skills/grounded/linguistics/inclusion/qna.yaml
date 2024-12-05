@@ -1,54 +1,179 @@
----
+created_by: julian-cable
 version: 3
-task_description: This skill helps the writer use more inclusive IT terminology.
-created_by: imstilllearning
+task_description: >-
+  You are a member of a Diversity, Equity, and Inclusion (DEI) team. Your
+  mission is to create the conditions for belonging and inclusion in the
+  workplace. The people whom you support are new to principles of inclusion and
+  need a safe place to fail.
 seed_examples:
-  - context: >
-      In database replication, the master database is regarded as the
-      authoritative source, and the slave databases are synchronized to it.
+  - context: How to segregate cluster traffic from management traffic.
     question: How would you rewrite this sentence to use more inclusive IT terminology?
-    answer: >
-      In database replication, the primary database is regarded as the
-      authoritative source, and the secondary databases are syncrhonized to it.
-  - context: >
-      Blacklisting is the action of a group or authority compiling a
-      blacklist of people, countries, or other entites to be avoided or
-      distrusted as being deemed unacceptable to those making the list.
-    question: Show me how to use inclusive IT terminology to replace non-inclusive
-      IT terminology.
-    answer: >
-      Denylisting is the action of a group or authority compiling a denylist
-      of people, countries, or other entites to be avoided or distrusted as
-      being deemed unacceptable to those making the list.
-  - context: >
-      In database replication, the master database is regarded as the
-      authoritative source, and the slave databases are synchronized to it.
-    question: How would you revise this sentence to use Inclusive IT terminology?
-    answer: >
-      In database replication, the parent database is regarded as the
-      authoritative source, and the child databases are synchronized to it.
-  - context: >
-      A use for whitelists is in local area network (LAN) security. Many
-      network admins set up MAC address whitelists, or a MAC address filter, to
-      control who is allowed on their networks.
-    question: How would you revise this sentence to use inclusive IT terminology?
-    answer: >
-      A use for allowlists is in local area network (LAN) security. Many
-      network admins set up MAC address allowlists, or a MAC address filter, to
-      control who is allowed on their networks.
-  - context: >
-      A master clock that provides time signals used to synchronize one or
-      more slave clocks as a part of a clock network.
-    question: How would you improve this sentence to use inclusive IT language?
-    answer: >
-      A primary clock that provides time signals used to synchronize one or
-      more secondary clocks as a part of a clock network.
-  - context: >
-      As a verb, blacklist can mean to put an individual or entity on such a
-      list. A blacklist is synonymous with a list of banned persons or
-      organizations and is the opposite of a whitelist.
-    question: How would you adjust the word choice to use Inclusive IT terminology?
-    answer: >
-      As a verb, denylist can mean to put an individual or entity on such a
-      list. A denylist is synonymous with a list of banned persons or
-      organizations and is the opposite of an allowlist.
+    answer: >-
+      How to separate cluster traffic from management traffic.
+
+      Do not use "segregate". This term refers to a process that violates human
+      rights by limiting access to privileges and rights such as education and
+      voting. Use "separate".
+  - context: >-
+      An air-gapped environment ensures security by physical segregation of the
+      system or network.
+    question: How would you rewrite this sentence to use more Inclusive IT terminology?
+    answer: >-
+      An air-gapped environment ensures security by physical separation of the
+      system or network.
+
+      Do not use "segregation". This term refers to a process that violates
+      human rights by limiting access to privileges and rights such as education
+      and voting.
+  - context: Abort the program.
+    question: How would you revise this sentence to use more inclusive IT terminology?
+    answer: >-
+      Stop the program.
+
+      Use "abort" only if the term is part of the existing product terminology.
+
+      Otherwise, replace it with an alternative such as "cancel", "stop", "end",
+      or "fail".
+  - context: You can abort a running task by pressing Ctrl+C.
+    question: How would you revise this sentence to use more Inclusive IT terminology?
+    answer: >-
+      You can end a running task by pressing Ctrl+C.
+
+      Use "abort" only if the term is part of the existing product terminology.
+
+      Otherwise, replace it with an alternative such as "cancel", "stop", "end",
+      or "fail".
+  - context: The company is building a team of Black Belts for cloud computing.
+    question: How would you improve this sentence to use more inclusive IT terminology?
+    answer: >-
+      The company is building a team of specialists for cloud computing.
+
+      When not referring to East Asian martial arts or to the name of a
+      certification, use an alternative such as "expert", "certified expert", or
+      "specialist".
+  - context: >-
+      A black hat hacker exploits well-known vulnerabilities in systems to
+      uncover sensitive information for personal gain or to inflict damage on
+      the target system or network.
+    question: How would you improve this sentence to use more Inclusive IT terminology?
+    answer: >-
+      An attacker exploits well-known vulnerabilities in systems to uncover
+      sensitive information for personal gain or to inflict damage on the target
+      system or network.
+
+      Use "unethical hacker" or "attacker". The terms "black hat" and "white
+      hat" promote racial bias because black is used to indicate malevolence
+      while white indicates ethical, positive behavior.
+  - context: >-
+      A white hat hacker tests networks and systems to examine their performance
+      and determine how vulnerable they are to intrusion. Academic researchers
+      and professional security consultants are examples of white hat hackers.
+    question: How would you adjust this sentence to use more inclusive IT terminology?
+    answer: >-
+      An ethical hacker tests networks and systems to examine their performance
+      and determine how vulnerable they are to intrusion. Academic researchers
+      and professional security consultants are examples of ethical hackers.
+
+      Use "ethical hacker" or another term. The terms "black hat" and "white
+      hat" promote racial bias because black is used to indicate malevolence
+      while white indicates ethical, positive behavior.
+  - context: >-
+      The software is crippleware, and some features of the program such as
+      printing or the ability to save files are unavailable until the user
+      purchases a registration key.
+    question: How would you adjust this sentence to use more Inclusive IT terminology?
+    answer: >-
+      The software has restricted functions, and some features of the program
+      such as printing or the ability to save files are unavailable until the
+      user purchases a registration key.
+
+      Avoid using "cripple", "crippled", or "crippleware" in a computing
+      context. These terms are pejorative for people with physical disabilities.
+  - context: >-
+      The project team scheduled a session for grooming the product backlog to
+      prioritize tasks for the next sprint.
+    question: How would you rewrite this sentence to use more inclusive IT Terminology?
+    answer: >-
+      The project team scheduled a session for refining the product backlog to
+      prioritize tasks for the next sprint.
+
+      Use "refine" rather than "groom" to refer to a Scrum product backlog.
+  - context: The range of electronics components includes male and female connectors.
+    question: How would you rewrite this sentence to use more Inclusive IT Terminology?
+    answer: >-
+      The range of electronics components includes plugs and sockets.
+
+      In an electrical context, use non-gendered terms to refer to components,
+      such as "plug", "pin", or "prong" instead of "male connector", and
+      "receptacle", "socket", or "slot" instead of "female connector".
+  - context: Manning levels have reduced by 40% since March.
+    question: How would you revise this sentence to use more inclusive IT Terminology?
+    answer: >-
+      Staffing levels have reduced by 40% since March.
+
+      Instead of "man" or "manning", use a non-gendered term, such as
+      "covering", "monitoring", "operating", or "staffing".
+  - context: >-
+      A man-in-the-middle attack occurs when an attacker secretly intercepts and
+      relays communications between two systems or people who believe that they
+      are communicating directly with each other.
+    question: How would you revise this sentence to use more Inclusive IT Terminology?
+    answer: >-
+      An interceptor attack occurs when an attacker secretly intercepts and
+      relays communications between two systems or people who believe that they
+      are communicating directly with each other.
+
+      Avoid gendered language, which can perpetuate bias and stereotypes, and
+      might imply that women do not have the skills to perpetrate this type of
+      hacking.
+
+      Consider using a replacement term, such as "adversary-in-the-middle
+      attack", "interceptor attack", or "intermediary attack".
+  - context: Run a sanity check on the software.
+    question: How would you improve this sentence to use more inclusive IT Terminology?
+    answer: >-
+      Validate the software.
+
+      Avoid "sanity check" or "sanity test", because those terms might be
+      derogatory to neurodiverse people, and are difficult to translate.
+
+      Explain exactly what you mean. Consider alternatives such as using "check"
+      alone, or "validate", "verify", "quick check", "coherence check", or
+      "confidence check".
+  - context: Run a sanity test on the software.
+    question: How would you improve this sentence to use more Inclusive IT Terminology?
+    answer: >-
+      Test the software.
+
+      Avoid "sanity test" or "sanity check", because those terms might be
+      derogatory to neurodiverse people, and are difficult to translate.
+
+      Explain exactly what you mean. Consider alternatives such as using "test"
+      alone, or "validate", "verify", "quick check", "coherence check", or
+      "confidence check".
+  - context: >-
+      STONITH helps to maintain the integrity of nodes in a high-availability
+      cluster and is part of a cluster's fencing strategy.
+    question: How would you adjust this sentence to use more inclusive IT Terminology?
+    answer: >-
+      Fencing failed nodes helps to maintain the integrity of nodes in a
+      high-availability cluster and is part of a cluster's fencing strategy.
+
+      STONITH stands for "Shoot the Offending Node in the Head".
+
+      Avoid such a graphically violent term. Instead, explain the relevant
+      feature, such as "fencing failed nodes", "power management", or "power
+      fencing".
+  - context: >-
+      STOMITH helps to maintain the integrity of nodes in a high-availability
+      cluster and is part of a cluster's fencing strategy.
+    question: How would you adjust this sentence to use more Inclusive IT Terminology?
+    answer: >-
+      Fencing failed nodes helps to maintain the integrity of nodes in a
+      high-availability cluster and is part of a cluster's fencing strategy.
+
+      STOMITH stands for "Shoot the Other Member in the Head".
+
+      Avoid such a graphically violent term. Instead, explain the relevant
+      feature, such as "fencing failed nodes", "power management", or "power
+      fencing".
