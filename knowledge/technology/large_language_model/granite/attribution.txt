@@ -1,0 +1,5 @@
+Title of work: IBM Granite
+Link to work: https://en.wikipedia.org/wiki/IBM_Granite
+Revision: https://en.wikipedia.org/wiki/IBM_Granite?utm_source=ibm_developer&utm_content=in_content_link&utm_id=tutorials_awb-contributing-llm-granite-instructlab-ui
+License of the work: IBM-AJ-1.0
+Creator names: Wikiepedia Authors
