@@ -1,0 +1,36 @@
+created_by: chunho6905
+version: 3
+task_description: >-
+  Provides a comprehensive guide including basic equipment selection and
+  preparation methods, rigging configuration, and basic fishing techniques for
+  squid fishing in the West Sea. Includes step-by-step instructions that even
+  beginners can easily follow.
+seed_examples:
+  - question: What are the basic equipment needed for squid fishing?
+    answer: >-
+      The basic equipment for squid fishing includes: 1. Fishing Rod: 8-9 feet
+      boat casting rod or specialized squid rod, 2. Reel: 2500-3000 size
+      spinning reel, 3. Fishing Line: PE 1.0-1.5 or braided line, 4. Squid
+      Hooks: Size 2-3, 5. Sinkers
+  - question: How do you set up a squid fishing rig?
+    answer: >-
+      The squid fishing rig setup process is as follows: 1. Attach sinker to
+      main line (sliding or fixed), 2. Connect leader line (30-40cm length for
+      up and down movement), 3. Tie squid hook with proper knot, 4. Attach bait
+      (crab meat or shrimp)
+  - question: How should you handle the squid fishing rod?
+    answer: >-
+      Basic handling methods for squid fishing rod: 1. Maintain rod at 45-degree
+      angle, 2. Repeat lifting and lowering the rig to brush the bottom, 3. When
+      squid bites, gently pull up, 4. Maintain consistent reeling speed
+  - question: How do you cast the squid fishing rig?
+    answer: >-
+      Effective squid rig casting method: 1. Check current direction and cast
+      upstream, 2. Lift the rig to 2 o'clock position, 3. When casting, raise
+      elbow to ear height and cast toward 11 o'clock
+  - question: How do you recognize and respond to a squid bite?
+    answer: >-
+      Squid bite sensation and response methods: 1. Bite Feel: Light tapping or
+      heavy sensation, 2. Initial Response: Wait 2-3 seconds before starting to
+      reel, 3. Reeling Method: Reel smoothly at constant speed, 4. Near Bottom:
+      Slightly increase speed
