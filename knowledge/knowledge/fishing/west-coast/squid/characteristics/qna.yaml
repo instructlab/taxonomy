@@ -1,0 +1,145 @@
+created_by: chunho6905
+version: 3
+domain: fishing
+document_outline: >-
+  Comprehensive knowledge about West Sea squid including their habitat
+  preferences, seasonal patterns, living depths, and feeding habits. This
+  information helps anglers understand squid behavior for more successful
+  fishing.
+seed_examples:
+  - context: >-
+      Information about the basic characteristics of squid in the West Sea. This
+      focuses on their habitat preferences and location patterns.
+    questions_and_answers:
+      - question: Where are the primary habitats of squid in the West Sea?
+        answer: >-
+          Squid in the West Sea primarily inhabit the coastal waters around
+          Incheon, Yeongheung Island, Deokjeok Island, Taean, and Boryeong. They
+          show a strong preference for areas with rocky and gravelly bottoms at
+          depths of 10-20 meters, particularly favoring locations with uneven
+          bottom structures that provide natural shelter.
+      - question: How do seasonal changes affect squid habitat selection?
+        answer: |-
+          Squid in the West Sea change their habitat preferences seasonally:
+          - Spring: Move to shallow coastal waters (5-10m) for breeding
+          - Summer: Retreat to deeper waters (15-20m) to avoid high temperatures
+          - Fall: Return to medium depths (10-15m) for active feeding
+          - Winter: Stay in deeper offshore waters for protection
+      - question: What bottom features do squid prefer in their habitat?
+        answer: |-
+          Squid prefer habitats with:
+          1. Rocky or gravelly bottom structure
+          2. Natural or artificial reefs
+          3. Areas with moderate current flow
+          4. Clear water conditions
+          5. Varied depth profiles within their territory
+  - context: >-
+      Detailed information about the depth preferences and vertical movement
+      patterns of West Sea squid.
+    questions_and_answers:
+      - question: What is the optimal depth range for squid in the West Sea?
+        answer: >-
+          The optimal depth range for West Sea squid varies but generally falls
+          between 10-20 meters. The most active feeding typically occurs at 5-15
+          meters during dawn and dusk. They adjust their depth based on water
+          temperature, light conditions, and prey availability.
+      - question: How do squid move vertically through the water column?
+        answer: |-
+          Squid exhibit distinct vertical movement patterns:
+          - Daytime: Stay deeper (15-20m) to avoid bright light
+          - Dawn/Dusk: Move to middle depths (8-12m) for feeding
+          - Night: May come to shallower waters (5-10m) while hunting
+          - They also adjust depth based on temperature and prey location
+      - question: What environmental factors influence squid depth selection?
+        answer: |-
+          Several key factors influence squid depth selection:
+          1. Water temperature (prefer 13-20°C)
+          2. Light intensity
+          3. Prey distribution
+          4. Current strength
+          5. Oxygen levels
+  - context: >-
+      Information about seasonal activity patterns and behavioral changes of
+      West Sea squid throughout the year.
+    questions_and_answers:
+      - question: When are the peak activity seasons for West Sea squid?
+        answer: |-
+          The peak activity seasons for West Sea squid are:
+          1. Spring (March-May): Active breeding period
+          2. Fall (September-November): Peak feeding activity
+      - question: What characterizes squid behavior during breeding season?
+        answer: |-
+          During breeding season (Spring):
+          - Increased movement to coastal areas
+          - More active during daylight hours
+          - Form larger groups
+          - More aggressive feeding behavior
+          - More responsive to artificial lures
+      - question: How do squid behave during summer and winter?
+        answer: |-
+          Summer and winter behaviors include:
+          Summer:
+          - Reduced activity due to high temperatures
+          - Move to deeper, cooler waters
+          - Feed mainly during early morning and late evening
+          Winter:
+          - Limited activity in deep waters
+          - Reduced feeding frequency
+          - Tend to stay in stable depth zones
+  - context: Information about feeding habits and prey preferences of West Sea squid.
+    questions_and_answers:
+      - question: What are the primary prey items for West Sea squid?
+        answer: |-
+          West Sea squid primarily feed on:
+          1. Small crustaceans (crabs, shrimp)
+          2. Small fish up to 1/3 their body size
+          3. Various shellfish species
+          4. Juvenile fish
+      - question: When are the peak feeding times for squid?
+        answer: |-
+          Squid feeding activity peaks:
+          - Primary: Dusk to early evening
+          - Secondary: Dawn to early morning
+          - Reduced: Bright daylight hours
+          - Variable: During cloudy or overcast conditions
+      - question: How do water conditions affect squid feeding behavior?
+        answer: |-
+          Water conditions affecting feeding behavior include:
+          1. Clarity: Prefer clear water for hunting
+          2. Temperature: Most active in 13-20°C
+          3. Tide: More active during moderate tidal movement
+          4. Moon Phase: More active during darker moon phases
+          5. Current: Prefer moderate current for ambush feeding
+  - context: >-
+      Environmental factors affecting squid behavior and fishing success in the
+      West Sea.
+    questions_and_answers:
+      - question: What weather conditions are optimal for squid activity?
+        answer: |-
+          Optimal weather conditions include:
+          - Moderate cloud cover
+          - Calm to slight sea conditions
+          - Stable barometric pressure
+          - Light to moderate winds
+          - Absence of heavy rainfall
+      - question: How do tidal movements affect squid behavior?
+        answer: |-
+          Tidal influences on squid behavior:
+          - Prefer moderate tidal flows
+          - More active during tide changes
+          - Move with tidal currents to conserve energy
+          - Use tidal movements to ambush prey
+          - Often more catchable during slack tide periods
+      - question: What role does water temperature play in squid activity?
+        answer: |-
+          Water temperature effects include:
+          1. Optimal range: 13-20°C for maximum activity
+          2. Below 12°C: Reduced activity and feeding
+          3. Above 22°C: Move to deeper, cooler waters
+          4. Seasonal movements track preferred temperatures
+          5. Temperature changes can trigger migration patterns
+document:
+  repo: https://github.com/chunho6905/taxonomy-knowledge-docs
+  commit: a9e1c527dcd90d36a659632e6bd0554d019944a6
+  patterns:
+    - West Sea Squid Fishing Guide-20241206T040224018.md
