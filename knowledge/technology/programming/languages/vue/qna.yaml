@@ -1,0 +1,88 @@
+created_by: 1f271b
+version: 3
+domain: https://it.wikipedia.org/wiki/Vue.js
+document_outline: >-
+  Vue.js (commonly referred to as Vue; pronounced "view"[6]) is an open-source
+  model–view–viewmodel front end JavaScript framework for building user
+  interfaces and single-page applications.[12] It was created by Evan You and is
+  maintained by him and the rest of the active core team members.
+seed_examples:
+  - context: >-
+      Vue.js è un framework JavaScript progressivo per la costruzione di
+      interfacce utente.
+    questions_and_answers:
+      - question: Che cos'è Vue.js?
+        answer: >-
+          È un framework JavaScript per la creazione di interfacce utente
+          reattive.
+      - question: Qual è l'obiettivo principale di Vue.js?
+        answer: Rendere facile la costruzione di applicazioni web interattive.
+      - question: Vue.js è un framework completo?
+        answer: No, è un framework progressivo che può essere adottato parzialmente.
+  - context: >-
+      I componenti sono uno degli elementi principali di Vue.js, che aiutano a
+      costruire UI modulari.
+    questions_and_answers:
+      - question: Cosa sono i componenti in Vue.js?
+        answer: >-
+          Sono unità riutilizzabili che definiscono porzioni di interfaccia
+          utente.
+      - question: Come si definisce un componente in Vue.js?
+        answer: >-
+          Un componente si definisce come un oggetto JavaScript con proprietà
+          specifiche come data, methods, e template.
+      - question: È possibile annidare componenti in Vue.js?
+        answer: >-
+          Sì, i componenti possono essere annidati per creare strutture più
+          complesse.
+  - context: >-
+      Vue.js utilizza un sistema di reattività per aggiornare automaticamente la
+      UI quando i dati cambiano.
+    questions_and_answers:
+      - question: Che cos'è la reattività in Vue.js?
+        answer: >-
+          È un meccanismo che aggiorna automaticamente la UI quando i dati
+          cambiano.
+      - question: Come Vue.js rileva le modifiche nei dati?
+        answer: >-
+          Usa un sistema di osservatori (watchers) che monitorano i dati
+          reattivi.
+      - question: >-
+          Si possono utilizzare metodi personalizzati per la reattività in
+          Vue.js?
+        answer: >-
+          Sì, è possibile definire metodi personalizzati usando computed o
+          watch.
+  - context: >-
+      Vue Router è la libreria ufficiale per gestire la navigazione tra le
+      pagine di un'app Vue.js.
+    questions_and_answers:
+      - question: Cos'è Vue Router?
+        answer: >-
+          È una libreria che consente di gestire la navigazione tra le pagine in
+          un'app Vue.js.
+      - question: Come si definiscono le rotte in Vue Router?
+        answer: >-
+          Le rotte si definiscono in un array con il percorso e il componente da
+          visualizzare.
+      - question: È possibile avere rotte annidate in Vue Router?
+        answer: Sì, Vue Router supporta rotte annidate per strutture complesse.
+  - context: >-
+      Vuex è una libreria di gestione dello stato per applicazioni Vue.js, che
+      centralizza i dati condivisi.
+    questions_and_answers:
+      - question: Cos'è Vuex?
+        answer: >-
+          È una libreria per la gestione centralizzata dello stato nelle
+          applicazioni Vue.js.
+      - question: Quali sono le principali entità di Vuex?
+        answer: Le principali entità sono state, mutations, actions e getters.
+      - question: Vuex è obbligatorio in Vue.js?
+        answer: >-
+          No, è opzionale e viene utilizzato per gestire lo stato in
+          applicazioni complesse.
+document:
+  repo: https://github.com/1f271b/taxonomy-knowledge-docs
+  commit: 41a0b3931d67ad2bf9d2262faa6e41dd30b041a6
+  patterns:
+    - Vue_js-20241216T220044769.md
