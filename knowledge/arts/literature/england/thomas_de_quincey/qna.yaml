@@ -1,0 +1,108 @@
+created_by: merobi-hub
+version: 3
+domain: literature
+document_outline: Knowledge contribution about Thomas De Quincey
+seed_examples:
+  - context: >-
+      English writer, essayist, and literary critic, best known for his
+      Confessions of an English Opium-Eater (1821). Many scholars suggest that
+      in publishing this work De Quincey inaugurated the tradition of addiction
+      literature in the West.
+    questions_and_answers:
+      - question: Who inaugurated the tradition of addiction literature in the West?
+        answer: Thomas De Quincey
+      - question: Who was the first Western writer to discuss addiction?
+        answer: Thomas De Quincey
+      - question: What is the name of the first English writer to discuss addiction?
+        answer: Thomas De Quincey
+  - context: >-
+      Thomas Penson Quincey was born at 86 Cross Street, Manchester,
+      Lancashire.  His father was a successful merchant with an interest in
+      literature. Soon  after Thomas's birth, the family moved to The Farm and
+      then later to  Greenheys, a larger country house in Chorlton-on-Medlock
+      near Manchester.  In 1796, three years after the death of his father,
+      Thomas Quincey, his  mother – the erstwhile Elizabeth Penson – took the
+      name De Quincey. That  same year, his mother moved to Bath and enrolled
+      him at King Edward's School.  He was a weak and sickly child. His youth
+      was spent in solitude, and when his  elder brother, William, came home, he
+      wrought havoc in the quiet surroundings.  De Quincey's mother was a woman
+      of strong character and intelligence but seems  to have inspired more awe
+      than affection in her children. She brought them up  strictly, taking De
+      Quincey out of school after three years because she was  afraid he would
+      become big-headed, and sending him to an inferior school at  Wingfield,
+      Wiltshire.
+    questions_and_answers:
+      - question: Where was Thomas De Quincey born?
+        answer: 'Born in Manchester, Lancashire, England'
+      - question: When did Thomas De Quincey's mother adopt the name De Quincey?
+        answer: '1796'
+      - question: What was De Quincey's childhood like?
+        answer: Solitary and transient
+  - context: >-
+      In 1821, he went to London to produce some translations of German authors,
+      but  was persuaded first to write and publish an account of his opium
+      experiences,  which that year appeared in the London Magazine. His account
+      proved to be a new  sensation that eclipsed interest in Lamb's Essays of
+      Elia, which were then  appearing in the same periodical. The Confessions
+      of an English Opium-Eater  were soon published in book form. De Quincey
+      then made a number of new literary  acquaintances. Thomas Hood found the
+      shrinking author "at home in a German  ocean of literature, in a storm,
+      flooding all the floor, the tables and the  chairs—billows of books..." De
+      Quincey was a famed conversationalist.
+    questions_and_answers:
+      - question: What is De Quincey famous for?
+        answer: His account of his opium experiences
+      - question: What is the title of his most famous work?
+        answer: The Confessions of an English Opium-Eater
+      - question: Where was his most famous work first published?
+        answer: London Magazine
+  - context: >-
+      Along with his opium addiction, debt was one of the primary constraints of
+      De  Quincey's adult life. De Quincey came into his patrimony at the age of
+      21, when he  received £2,000 (equivalent to £204,870 in 2023) from his
+      late father's estate. He  was unwisely generous with his funds, making
+      loans that could not or would not be  repaid, including a £300 loan to
+      Coleridge in 1807. After leaving Oxford without a  degree, he made an
+      attempt to study law, but desultorily and unsuccessfully; he had  no
+      steady income and spent large sums on books (he was a lifelong collector).
+      By the  1820s he was constantly in financial difficulties. More than once
+      in his later years,  De Quincey was forced to seek protection from arrest
+      in the debtors' sanctuary of  Holyrood in Edinburgh. (At the time,
+      Holyrood Park formed a debtors' sanctuary; people  could not be arrested
+      for debt within those bounds. The debtors who took sanctuary  there could
+      emerge only on Sundays, when arrests for debt were not allowed.) Yet De
+      Quincey's money problems persisted; he got into further difficulties for
+      debts he  incurred within the sanctuary.
+    questions_and_answers:
+      - question: 'Aside from his addiction to opium, what is another challenge he faced?'
+        answer: Debt
+      - question: Why did De Quincey fall into debt?
+        answer: 'He was too generous, and he collected books his entire life.'
+      - question: What consequences did he face from his debt?
+        answer: He had to seek protection in a debtors' sanctuary.
+  - context: >-
+      By his own testimony, De Quincey first used opium in 1804 to relieve his
+      neuralgia;  he used it for pleasure, but no more than weekly, through
+      1812. It was in 1813 that  he first commenced daily usage, in response to
+      illness and his grief over the death  of Wordsworth's young daughter
+      Catherine. During 1813–1819 his daily dose was very  high, and resulted in
+      the sufferings recounted in the final sections of his  Confessions. For
+      the rest of his life, his opium use fluctuated between extremes; he  took
+      "enormous doses" in 1843, but late in 1848 he went for 61 days with none
+      at all.  There are many theories surrounding the effects of opium on
+      literary creation, and  notably, his periods of low use were literarily
+      unproductive. From 1842 until 1859  he spent long periods in a cottage
+      near Midfield House south of Lasswade, assembling  his writings in the
+      peace of the countryside.
+    questions_and_answers:
+      - question: Why did De Quincey start using opium?
+        answer: To relieve his neuralgia
+      - question: When did De Quincey start using opium daily?
+        answer: '1813'
+      - question: What was De Quincey's view of his addiction to opium?
+        answer: He lamented the suffering it caused him.
+document:
+  repo: 'https://github.com/merobi-hub/instructlab_knowledge.git'
+  commit: 72b585414685454b4a8958a6809448e4bd20e942
+  patterns:
+    - thomas-de-quincey/dequincey.md

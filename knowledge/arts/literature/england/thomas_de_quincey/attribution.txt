@@ -1,0 +1,5 @@
+title_of_work: Thomas De Quincey
+link_to_work: https://en.wikipedia.org/wiki/Thomas_De_Quincey
+revision: https://en.wikipedia.org/w/index.php?title=Thomas_De_Quincey&oldid=1258919708
+license_of_the_work: CC-BY-SA-4.0
+creator_names: Wikipedia Authors
