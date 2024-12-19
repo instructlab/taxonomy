@@ -24,19 +24,19 @@ This will be rejected for now and we can reconsider if we open a programming / c
 
 ### Knowledge not Skill
 
-Given the content of the file, it seems that this would likely fall under knowledge, which we are currently accepting contributions for under different [guidlines](https://github.com/instructlab/taxonomy?tab=readme-ov-file#getting-started-with-knowledge-contributions).
+Given the content of the file, it seems that this would likely fall under knowledge, which we are currently accepting contributions for under different [guidelines](../../README.md#getting-started-with-knowledge-contributions).
 
-Closing this PR, but feel free to re submit as knowledge following those guidelines!
+Closing this PR, but feel free to resubmit as knowledge following those guidelines!
 
 ## Contribution Formatting Guidlines
 
 ### Not Enough Examples
 
-Could you please make sure there are five examples with good diversity? We have recently updated the [readme](https://github.com/instructlab/taxonomy/blob/main/README.md#getting-started-with-skill-contributions) with the new requirement. Thank you for your contribution!
+Could you please make sure there are five examples with good diversity, meaning having more examples that have very little overlapping content? We have recently updated the [readme](../../README.md#getting-started-with-skill-contributions) with the new requirement. Thank you for your contribution!
 
 ### Attribution
 
-Thanks for the submission! It looks interesting. Based on the [current guide](https://github.com/instructlab/taxonomy/blob/main/README.md#getting-started-with-skill-contributions), do you mind adding attribution to the examples?
+Thanks for the submission! It looks interesting. Based on the [current guide](../../README.md#getting-started-with-skill-contributions), do you mind adding attribution to the examples?
 
 ### Mentions of GPT, ChatGPT, Bard, or other proprietary LLMs
 
