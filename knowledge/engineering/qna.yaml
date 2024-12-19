@@ -1,0 +1,85 @@
+created_by: wshamim1
+version: 3
+domain: wilson
+document_outline: 'this is for testing streamsets system using the cool instructlab. '
+seed_examples:
+  - context: For Streamsets pipelines
+    questions_and_answers:
+      - question: How can I ingest data from S3 to Snowflake using a pipeline
+        answer: >-
+          A data ingestion pipeline reads data from an S3 bucket and writes it
+          to a Snowflake database
+      - question: How can I create a pipeline to transform and load data into Redshift
+        answer: >-
+          A data transformation pipeline applies filters, aggregates, and
+          enriches data before loading it into a Redshift cluster
+      - question: How can I process real-time log data and store it in Elasticsearch
+        answer: >-
+          A real-time pipeline streams log data from Kafka, enriches it with
+          metadata, and stores it in Elasticsearch for analysis
+  - context: For Streamsets Jobs
+    questions_and_answers:
+      - question: What is a StreamSets Job?
+        answer: >-
+          A StreamSets Job is an execution of a data pipeline with specific
+          configurations, including runtime parameters and scheduling.
+      - question: What are job templates in StreamSets?
+        answer: >-
+          Job templates in StreamSets allow users to create reusable
+          configurations for similar types of data processing tasks.
+      - question: What features do StreamSets Jobs provide
+        answer: >-
+          StreamSets Jobs support monitoring, retries, and alerting to ensure
+          reliable pipeline execution.
+  - context: For Streamsets Schedulers
+    questions_and_answers:
+      - question: What is StreamSets Scheduler used for
+        answer: >-
+          StreamSets Scheduler is used to automate the execution of pipelines at
+          specified intervals
+      - question: How do you configure a schedule in StreamSets Scheduler
+        answer: >-
+          You can configure a schedule by defining the start time, recurrence
+          pattern, and time zone
+      - question: >-
+          What types of recurrence patterns are supported in StreamSets
+          Scheduler?
+        answer: >-
+          StreamSets Scheduler supports recurrence patterns such as daily,
+          weekly, and custom intervals.
+  - context: For streamsets users and groups
+    questions_and_answers:
+      - question: How are users assigned to groups in StreamSets
+        answer: >-
+          Administrators can assign users to groups in StreamSets to control
+          access and streamline permission management.
+      - question: What are StreamSets groups?
+        answer: >-
+          StreamSets groups are collections of users that share common
+          permissions and access levels for pipelines and resources.
+      - question: Who is a StreamSets user?
+        answer: >-
+          A StreamSets user is an individual who can log into the platform to
+          create and manage data pipelines.
+  - context: For streamsets python sdk
+    questions_and_answers:
+      - question: >-
+          What are the typical components of a pipeline in StreamSets Python
+          SDK?
+        answer: >-
+          A typical pipeline in StreamSets Python SDK includes stages like
+          origin, processor, and destination
+      - question: How can I install the StreamSets Python SDK?
+        answer: |-
+          |
+                You can install the StreamSets Python SDK using the command:
+                `pip install streamsets-sdk
+      - question: What is the purpose of the StreamSets Python SDK
+        answer: >-
+          The StreamSets Python SDK allows programmatic creation, configuration,
+          and management of StreamSets Data Collector pipelines.
+document:
+  repo: https://docs.streamsets.com/
+  commit: streamsets
+  patterns:
+    - Control hub
