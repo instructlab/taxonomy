@@ -1,0 +1,5 @@
+Title of work: Vue.js
+Link to work: https://en.wikipedia.org/wiki/Vue.js
+Revision: From Wikipedia, the free encyclopedia
+License of the work: N/A
+Creator names: Wikipedia
