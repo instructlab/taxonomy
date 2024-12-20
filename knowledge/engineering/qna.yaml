@@ -1,0 +1,52 @@
+created_by: vishnoianil
+version: 3
+domain: testing UI
+document_outline: >-
+  DO-NOT-MERGE:Knowledge contribution for testing DCO failures for the PR raised
+  through UI
+seed_examples:
+  - context: '1'
+    questions_and_answers:
+      - question: '11'
+        answer: '11'
+      - question: '12'
+        answer: '12'
+      - question: '13'
+        answer: '13'
+  - context: '2'
+    questions_and_answers:
+      - question: '21'
+        answer: '21'
+      - question: '22'
+        answer: '22'
+      - question: '23'
+        answer: '23'
+  - context: '3'
+    questions_and_answers:
+      - question: '31'
+        answer: '31'
+      - question: '32'
+        answer: '32'
+      - question: '33'
+        answer: '33'
+  - context: '4'
+    questions_and_answers:
+      - question: '41'
+        answer: '41'
+      - question: '42'
+        answer: '42'
+      - question: '43'
+        answer: '43'
+  - context: '5'
+    questions_and_answers:
+      - question: '51'
+        answer: '51'
+      - question: '52'
+        answer: '52'
+      - question: '53'
+        answer: '53'
+document:
+  repo: https://github.com/vishnoianil/taxonomy-knowledges-docs
+  commit: asdfasdf987987asdf87a8s9d7fa98sd7f9a
+  patterns:
+    - test.pdf
