@@ -1,0 +1,69 @@
+created_by: amiteshmodi-ibm
+version: 3
+domain: large-language-model
+document_outline: Knowledge contribution about the IBM Granite model
+seed_examples:
+  - context: about Granite
+    questions_and_answers:
+      - question: What type of model is IBM Granite
+        answer: IBM Granite is a series of decoder-only foundation models.
+      - question: 'Who created IBM Granite model '
+        answer: IBM Granite model was created by IBM
+      - question: When was the creation of IBM Granite announced
+        answer: It was announced on September 7, 2023
+  - context: About foundation models
+    questions_and_answers:
+      - question: What is a foundation model?
+        answer: >-
+          A foundation model is an AI model trained on broad data at scale such
+          that it can be adapted to a wide range of downstream tasks.
+      - question: What were Granite's first foundation models?
+        answer: >-
+          Granite's first foundation models were Granite.13b.instruct and
+          Granite.13b.chat.
+      - question: 'What is 13b in Granite.13b.instruct '
+        answer: >-
+          The "13b" in their name comes from 13 billion, the amount of
+          parameters they have as models, lesser than most of the larger models
+          of the time.
+  - context: Open source Granite
+    questions_and_answers:
+      - question: When was Granite open sourced by IBM?
+        answer: >-
+          On May 6, 2024, IBM released the source code of four variations of
+          Granite Code Models.
+      - question: IBM Granite was open sourced under what license agreement?
+        answer: >-
+          IBM Granite was open sourced under Apache License/Apache 2, an open
+          source Permissive software license/permissive license that allows
+          completely free use, modification and sharing of the software.
+      - question: Where was IBM Granite released as open source?
+        answer: >-
+          IBM Granite was released as open source on Hugging Face for public
+          use.
+  - context: Granite Performance
+    questions_and_answers:
+      - question: How is IBM Granite 8b performance?
+        answer: >-
+          According to IBM's own report, Granite 8b outperforms Llama 3 on
+          several Computer programming related tasks within similar range of
+          parameters.
+      - question: Who did Granite outperform?
+        answer: 'Granite 8b outperforms Llama 3 '
+      - question: In which areas doe Granite outperform Llama 3?
+        answer: >-
+          Granite 8b outperforms Llama 3 on several Computer programming related
+          tasks within similar range of parameters.
+  - context: IBM watsonx platform
+    questions_and_answers:
+      - question: How many models were included in the initial release of watsonx?
+        answer: 'In watsonx''s initial release 5 models were included. '
+      - question: Did the initial release of watsonx include granite models?
+        answer: There were no Granite models in the initial release of watsonx.
+      - question: Does watsonx include any Granite models as of 12-25-2024?
+        answer: Yes as of 12-25-2024 watsonx includes several Granite models
+document:
+  repo: https://github.com/amiteshmodi-ibm/taxonomy-knowledge-docs
+  commit: 3666967fb9894d1c277c556839fdec616016bdfb
+  patterns:
+    - Granite-20241227T222626020.md
