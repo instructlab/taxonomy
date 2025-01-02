@@ -51,26 +51,37 @@ class CheckYaml:
                         "The \"%s\" file must be non-empty",
                         taxonomy.path.with_name(attribution_path.name),
                     )
-                # NOTE: The following three warnings are intended for the beta only, at the moment, and only to flag
-                # issues for maintainers to address rather than block on them. We will revisit when other content is
-                # allowed.
-                qna_file_contents = parser.parse(taxonomy.rel_path.with_name("qna.yaml")).contents
-                for element in qna_file_contents["document"]["patterns"]:
-                    if not re.match('.*.md', element):
+                # NOTE: The following three warnings are intended for the
+                # beta only, at the moment, and only to flag issues for
+                # maintainers to address rather than block on them. We will
+                # revisit when other content is allowed.
+                qna_file_path = taxonomy.rel_path.with_name("qna.yaml")
+                if "knowledge" in qna_file_path.parts:
+                    qna_file_contents = parser.parse(qna_file_path).contents
+                    for element in qna_file_contents["document"]["patterns"]:
+                        if not re.match('.*.md', element):
+                            taxonomy.warning(
+                                "The document \"%s\" should be a markdown "
+                                "file.",
+                                element
+                            )
+                    if not re.match(
+                            'https://github\.com\/.*',
+                            qna_file_contents["document"]["repo"]):
                         taxonomy.warning(
-                            "The document \"%s\" should be a markdown file.",
-                            element
+                            "The document repo \"%s\" needs to be a "
+                            "GitHub-based repository.",
+                            qna_file_contents["document"]["repo"]
                         )
-                if not re.match('https://github\.com\/.*',qna_file_contents["document"]["repo"]):
-                    taxonomy.warning(
-                        "The document repo \"%s\" needs to be a GitHub-based repository.",
-                        qna_file_contents["document"]["repo"]
-                    )
-                if not re.match('[0-9a-f]{40}', qna_file_contents["document"]["commit"]):
-                    taxonomy.warning(
-                        "The document commit \"%s\" needs to be an alphanumeric value that represents a commit. \Please check with the reviewers for help.",
-                        qna_file_contents["document"]["commit"]
-                    )
+                    if not re.match(
+                            '[0-9a-f]{40}',
+                            qna_file_contents["document"]["commit"]):
+                        taxonomy.warning(
+                            "The document commit \"%s\" needs to be an "
+                            "alphanumeric value that represents a commit. "
+                            "\Please check with the reviewers for help.",
+                            qna_file_contents["document"]["commit"]
+                        )
             if taxonomy.errors > 0:
                 exit_code = 1
             if taxonomy.warnings > 0:
