@@ -1,0 +1,484 @@
+created_by: wol22
+version: 3
+domain: Tax and customs
+document_outline: "For imports and exports, the submitter of the declaration interacts with CDS to manage events such as:\n•\tthe declaration submission. CDS expects to receive declaration data within the WCO format, defined by the schema and the HMRC Customs Tariff. The schema keeps most elements as optional to allow for capturing a complete declaration, or just partial (e.g. to support simplified import declarations).\n•\tthe request for amendment message is based on the definition of the declaration. The main difference is the change to the functional code of the message. The message structure also uses pointers so CDS can understand which data element needs to be altered within the declaration. For example, a change to the gross mass would require a pointer to the relevant element (one for each ‘layer’ of the message), but the message must also contain the new value. The pointers are defined by the WCO data element tags (found in [4, 5]). Some amendments will require approval by customs.\n•\tthe request for invalidation. Submitted to allow for a trader-initiated cancellation. Some invalidations will require approval by customs.\n•\treceiving the trader notifications. As the declaration goes through its lifecycle, certain notifications may be triggered back to the trader. At a bare minimum, a notification of acceptance and clearance can be expected, though others may be sent due to control, liabilities due, etc. A full table is listed below in section Types and Definitions.\n•\tthe goods arrival message is submitted to instruct CDS that goods are available for inspection following the submission of a pre-lodged declaration.\n"
+seed_examples:
+  - context: >-
+      # Technical Validation Carried out on all Declarations
+
+
+      Import and Export Declarations as well as Additional Messages go through
+      three stages of validation before being processed.
+
+
+      ### XSD Schema Validation
+
+
+      The first stage is XSD schema validation. This ensures that the received
+      document matches the schema defined for that API. If your message fails
+      validation against the XSD, a HTTP 400 response status code will be
+      returned. The payload will indicate the elements failing validation. Note
+      that a DMSREJ will not be sent as the validation checking is performed at
+      the API gateway. Documents failing schema validation are rejected before
+      reaching CDS for processing. The XSDs are available on the Developer Hub.
+
+
+      Further details on XML validation error formats can be found in the online
+      Developer guide Reference section and as part of the online documentation
+      for the individual APIs.
+
+
+      ### Web Application Firewall (WAF) Validation
+
+
+      The entire document is then checked to ensure it does not contain certain
+      keywords known to damage or create unexpected behaviour in Web
+      Applications. The rules used are open source and managed by the OWASP
+      foundation.
+
+
+      Currently, a HTTP 500 response code will be sent with a generic message
+      body if your document fails this stage. As with XSD schema checks above,
+      no DMSREJ will be sent as the document is rejected before it reaches the
+      processing stage.
+
+
+      A HTTP 403 response code will be returned with a generic message body if
+      your document fails this stage. As with XSD schema checks above, no DMSREJ
+      will be sent as the document is rejected before it reaches the processing
+      stage.
+
+
+      Note that the WAF validation ruleset are expressed as regular expressions
+      (patterns) rather than explicit lists of keywords, so it is not possible
+      to provide a list of potential keywords that will cause a document to fail
+      this validation phase. However, we can provide examples of word and
+      character combinations that have been reported as causing rejections.
+      These are available on the Developer Hub, along with suggestions to avoid
+      the error.
+
+
+      ### Business Rules Validation
+
+
+      The third and final stage is validation against business rules. The
+      Business Rules validate that the declaration is UCC compliant and adheres
+      to the Paper Tariff, in addition to the validity & applicability of
+      licenses, parties, and accounts.
+
+
+      A HTTP 200 response code will be sent at this stage as, strictly speaking,
+      the document has reached the processing stage. However, if the document
+      fails any of the business rules, an asynchronous DMSREJ will be sent,
+      containing the error codes and pointers to the fields failing validation.
+
+
+      ### Payload Size
+
+
+      The maximum payload size for any message is 10Mb. Acceptable file formats
+      are: jpeg, pdf, MS Word(.doc, .docx), MS Excel(.xls, .xlsx) or png.
+
+
+      Payloads larger than this will receive a HTTP 413 response code with HTML
+      body.
+    questions_and_answers:
+      - question: What validation is performed on Import and Export declarations?
+        answer: >-
+          Import and Export Declarations as well as Additional Messages go
+          through three stages of validation before being processed: XML schema
+          validation; Web Application Firewall (WAF) validation; Business Rules
+          validation and Payload size validation
+      - question: >-
+          What is the maximum permissible payload size for any declaration
+          message?
+        answer: >-
+          The maximum payload size for any message is 10Mb. Acceptable file
+          formats are: jpeg, pdf, MS Word(.doc, .docx), MS Excel(.xls, .xlsx) or
+          png.
+
+          Payloads larger than this will receive a HTTP 413 response code with
+          HTML body.
+      - question: What do the business rules validate?
+        answer: >-
+          The Business Rules validate that the declaration is UCC compliant and
+          adheres to the Paper Tariff, in addition to the validity &
+          applicability of licenses, parties, and accounts.
+
+          A HTTP 200 response code will be sent at this stage as, strictly
+          speaking, the document has reached the processing stage. However, if
+          the document fails any of the business rules, an asynchronous DMSREJ
+          will be sent, containing the error codes and pointers to the fields
+          failing validation.
+  - context: >-
+      Indicative Duty Calculation (Pre-Dwell-Time)
+
+
+      Indicative duty calculations provide traders an opportunity to spot
+      declaration completion errors, giving chance for traders to amend (or
+      cancel) declarations as appropriate before the dwell time expires.
+
+
+      CDS will calculate indicative duty calculations in the following
+      scenarios;
+
+
+      1\. On initial receipt of a valid declaration of type A, B, D, E, J, or K.
+
+
+      2\. On receipt of a valid goods arrival notification (for pre-lodged
+      declarations).
+
+
+      3\. On receipt of a valid amendment to a declaration type A, B, D, E, J,
+      or K within the dwell time and the changes are accepted.
+
+
+      The indicative duty calculation is sent as a DMSTAX notification,
+      following the same message format as a finalised calculation - but without
+      the inclusion of payment details.
+
+
+      - For declarations of type A, B, D, or E, where a trader has overridden
+      the duty calculation for a goods item in DE 2/2, this will be used as the
+      indicative calculation for that goods item.
+
+      - For declarations of type J or K, where duty calculation has been
+      manually provided by the trader, this amount is used as the indicative
+      calculation for that goods item.
+
+      - The indicative calculation will apply Relief/Suspension of duties (as
+      appropriate).
+    questions_and_answers:
+      - question: What is pre-dwell time?
+        answer: >
+          well time is a period of time in which the declaration can be
+          amended.  Indicative duty calculations provide traders an opportunity
+          to spot declaration completion errors, giving chance for traders to
+          amend (or cancel) declarations as appropriate before the dwell time
+          expires.
+      - question: In what scenarios will CDS calculate indicative duty calculations?
+        answer: >-
+          CDS will calculate indicative duty calculations in the following
+          scenarios;
+
+
+          1\. On initial receipt of a valid declaration of type A, B, D, E, J,
+          or K.
+
+
+          2\. On receipt of a valid goods arrival notification (for pre-lodged
+          declarations).
+
+
+          3\. On receipt of a valid amendment to a declaration type A, B, D, E,
+          J, or K within the dwell time and the changes are accepted.
+      - question: How is indicative duty calculation sent to traders?
+        answer: >-
+          The indicative duty calculation is sent as a DMSTAX notification,
+          following the same message format as a finalised calculation - but
+          without the inclusion of payment details.
+
+          - For declarations of type A, B, D, or E, where a trader has
+          overridden the duty calculation for a goods item in DE 2/2, this will
+          be used as the indicative calculation for that goods item.
+
+          - For declarations of type J or K, where duty calculation has been
+          manually provided by the trader, this amount is used as the indicative
+          calculation for that goods item.
+
+          - The indicative calculation will apply Relief/Suspension of duties
+          (as appropriate).
+  - context: >
+      ### Customs Freight Simplified Procedure (CFSP) – Submitting Final
+      Supplementary Declarations
+
+
+      Customs Freight Simplified Procedure (CFSP) traders can submit Final
+      Supplementary Declarations (FSD). These inform HMRC how many Supplementary
+      Declarations have been submitted and indicate how many are due to be
+      submitted (expected) - to meet the authorisation requirements of the CFSP.
+
+
+      The FSD (Type Q) declaration submission process is as per other
+      declaration types, however with some exceptions such as Front-End Checks
+      (FEC) are not performed, and Duty/Tax calculations will not take place.
+
+
+      FSD’s are amendable by the trader during the Dwell Time, as per other
+      declaration types.
+
+
+      HMRC has produced specific documentation on FSD’s – please refer to the
+      _Final Supplementary Declaration Solution Design_ \[9\]. This details the
+      specific procedure codes and other D.E. values required in order to submit
+      a valid FSD.
+    questions_and_answers:
+      - question: What is an FSD?
+        answer: >-
+          Customs Freight Simplified Procedure (CFSP) traders can submit Final
+          Supplementary Declarations (FSD). These inform HMRC how many
+          Supplementary Declarations have been submitted and indicate how many
+          are due to be submitted (expected) - to meet the authorisation
+          requirements of the CFSP.
+      - question: How do FSDs differ from other declaration types?
+        answer: >-
+          The FSD (Type Q) declaration submission process is as per other
+          declaration types, however with some exceptions such as Front-End
+          Checks (FEC) are not performed, and Duty/Tax calculations will not
+          take place.
+
+
+          FSD’s are amendable by the trader during the Dwell Time, as per other
+          declaration types.
+      - question: Are FSDs amendable?
+        answer: >-
+          FSD’s are amendable by the trader during the Dwell Time, as per other
+          declaration types.
+  - context: >-
+      ### Specifying multiple methods of payment
+
+
+      #### Specifying one DAN and one GAN
+
+
+      Where the provided procedure code permits, in CDS it is possible to
+      provide a Deferment Account and a Guarantee Account together for use as
+      methods of payment on a Declaration.
+
+
+      Where this is specified on a declaration;
+
+
+      - all outright amounts are reserved against the deferment account
+
+      - all security amounts are reserved against the guarantee account.
+
+
+      Both accounts provided must be authorised for use by the trader at the
+      point of duty calculation.
+
+
+      #### Specifying two DANs
+
+
+      Beyond the scenario described in Specifying one DAN and one GAN, CDS does
+      not offer the ability for a trader to be able to specify the method of
+      payment that will cover specific duty types. For example, if an immediate
+      payment method, such as cash, is specified within the declaration, this
+      will cover all debt associated with the declaration.
+
+
+      There are certain limited scenarios however where charges can be split
+      between multiple accounts: for instance, by declaring a 2nd DAN, this
+      allows VAT to be charged to that separate account. The system will carry
+      this out automatically, and there is no expectation that multiple
+      instances of data element 4/8 need to be declared to achieve this. Where
+      this is applicable, this will be described in the CDS Tariff, but these
+      scenarios are fixed, and the trader will not have the capability to pick
+      and choose how each tax type is paid for.
+
+
+      The exception to this statement is where the trader has performed a manual
+      tax calculation and is declaring the tax amounts to be covered. For
+      example, if paying by deferment, and depending on whether a given amount
+      for a given tax types needs to be paid or secured, the applicable MOP code
+      of ‘E’ or ‘R’ will need to be used accordingly.
+    questions_and_answers:
+      - question: >-
+          In CDS is it possible to provide a DAN and a GAN together for use as
+          methods of payment on a Declaration?
+        answer: >-
+          Where the provided procedure code permits, in CDS it is possible to
+          provide a Deferment Account and a Guarantee Account together for use
+          as methods of payment on a Declaration.
+
+
+          Where this is specified on a declaration;
+
+
+          - all outright amounts are reserved against the deferment account
+
+          - all security amounts are reserved against the guarantee account.
+
+
+          Both accounts provided must be authorised for use by the trader at the
+          point of duty calculation.
+      - question: >-
+          Does CDS offer the ability for a trader to be able to specify the
+          method of payment that will cover specific duty types?
+        answer: >-
+          Beyond the scenario described in Specifying one DAN and one GAN, CDS
+          does not offer the ability for a trader to be able to specify the
+          method of payment that will cover specific duty types. For example, if
+          an immediate payment method, such as cash, is specified within the
+          declaration, this will cover all debt associated with the declaration.
+
+
+          There are certain limited scenarios however where charges can be split
+          between multiple accounts: for instance, by declaring a 2nd DAN, this
+          allows VAT to be charged to that separate account. The system will
+          carry this out automatically, and there is no expectation that
+          multiple instances of data element 4/8 need to be declared to achieve
+          this. Where this is applicable, this will be described in the CDS
+          Tariff, but these scenarios are fixed, and the trader will not have
+          the capability to pick and choose how each tax type is paid for.
+
+
+          The exception to this statement is where the trader has performed a
+          manual tax calculation and is declaring the tax amounts to be covered.
+          For example, if paying by deferment, and depending on whether a given
+          amount for a given tax types needs to be paid or secured, the
+          applicable MOP code of ‘E’ or ‘R’ will need to be used accordingly.
+      - question: What is one benefit of calculating tax due manually?
+        answer: >-
+          Where the trader has performed a manual tax calculation and is
+          declaring the tax amounts to be covered, they can specify how each tax
+          ripe is paid for. For example, if paying by deferment, and depending
+          on whether a given amount for a given tax types needs to be paid or
+          secured, the applicable MOP code of ‘E’ or ‘R’ will need to be used
+          accordingly.
+  - context: >-
+      # Trader Notifications
+
+
+      Below are the possible CDS trader notifications. I or E indicates
+      notification is applicable to only Imports or Exports.
+
+
+      1. DMSACC : Informs the submitter is informed that the declaration has
+      been legally accepted
+
+      2. DMSRCV : Informs that the message has been registered. This can apply
+      to pre-lodged declarations as well as additional messages. |
+
+      3. DMSREJ : Informs that the received message has been rejected. This can
+      apply to declarations and additional messages.
+
+      4. DMSCTL : Informs the submitter that Customs intends to physically
+      examine the goods. This will only be received when the goods are on hand.
+
+      5. DMSDOC : Informs the submitter that the declarant needs to present one
+      or more documents related to the declaration.
+
+      6. DMSRES : Informs that corrections have been applied to the declaration
+      by the trader, or as a result of physical inspection by customs (latter
+      not likely to be triggered).
+
+      7. DMSROG : This message informs the submitter that the goods can now be
+      released. Note that this is different to clearance as it implies that the
+      debt calculated is not yet finalised.
+
+      8. DMSCLE : Informs the submitter that the declaration is now cleared, and
+      by implication, the goods can be released.
+
+      9. DMSINV | Informs the submitter that the declaration has now been
+      cancelled. This can be as a result of a trader-initiated invalidation, or
+      system-initiated.|
+
+      10.  DMSREQ :  Informs of the acceptance or denial of the additional
+      message submitted to customs. In the case of a denial, the reason is
+      indicated.
+
+      11.  DMSTAX : **I.**  Informs of the indicative calculation or duties
+      liable with this message. Indicative calculations are sent before the
+      dwell time,  Calculations made after the dwell time concludes will confirm
+      the payable amount.
+
+      12. DMSCPI : **I** Informs the submitter of the insufficient balance
+      against a deferred method of payment. The relevant financial party will
+      need to take action to rectify the situation before the goods can be
+      released.
+
+      13. DMSCPR : **I** A reminder regarding the need to take action on the
+      insufficient balance against a deferred method of payment. It can also be
+      used as a reminder to make an immediate payment.
+
+      14. DMSEOG :  **E** Informs the submitter that the goods have now exited
+      the customs union.
+
+      15. DMSEXT : Informs the submitter that the declaration needs to be
+      handled manually. Only used in exceptional circumstances where the system
+      cannot handle the declaration.
+
+      16. DMSGER : **E** Informs the submitter that the exit results have not
+      yet been received by the Export system. This could be a trigger to submit
+      an alternative proof of exit.
+
+      17. (50) DMSALV : **I** Informs the submitter that a decision has been
+      made by Defra that will delay clearance of the goods. | Perform Control |
+      Contained within E0
+
+      18. (51)  DMSQRY : Informs the submitter that a query has been raised on
+      the declaration by Customs, advising that caseworker has sent a secure
+      message and is awaiting action by the submitter.
+    questions_and_answers:
+      - question: What are the different types of trader notification sent by CDS?
+        answer: >-
+          These are the possible trader notifications that CDS will send. Where
+          a notification type is applicable to only Imports or Exports, this is
+          indicated:
+
+
+          1. DMSACC
+
+          2. DMSRCV
+
+          3. DMSREJ
+
+          4. DMSCTL
+
+          5. DMSDOC
+
+          6. DMSRES
+
+          7. DMSROG
+
+          8. DMSCLE
+
+          9. DMSINV
+
+          10.  DMSREQ
+
+          11.  DMSTAX : **IMPORTS.**
+
+          12. DMSCPI : **IMPORTS.**
+
+          13. DMSCPR : **IMPORTS.**
+
+          14. DMSEOG :  **EXPORTS.**
+
+          15. DMSEXT
+
+          16. DMSGER : **EXPORTS.**
+
+          17. (50) DMSALV : **IMPORTS.**
+
+          18. (51)  DMSQRY
+      - question: Which notification types are Exports only?
+        answer: >-
+          he Exports only notifications are:
+
+          *  DMSEOG :   The message informs the submitter that the goods have
+          now exited the customs union.
+
+          * DMSGER :  Informs the submitter that the exit results have not yet
+          been received by the Export system. This could be a trigger to submit
+          an alternative proof of exit.
+      - question: When is the DMSTAX notification sent?
+        answer: >-
+          DMSTAX -  Informs of the indicative calculation or duties liable with
+          this message. Indicative calculations, sent before the dwell time,
+          provide traders with opportunity to preview the duty calculation and
+          make amendments to the declaration as necessary to rectify completion
+          errors, or cancel and resubmit. Calculations made after the dwell time
+          concludes will confirm the payable amount and either inform on what
+          has been reserved against a deferment account or similar method of
+          payment. Alternatively, it can be used as a payment instruction for
+          immediate methods of payment when a payment reference is also
+          provided.
+document:
+  repo: https://github.com/wol22/taxonomy-knowledge-docs
+  commit: f518f1814b3a6cc4de001f4096a068c9e90434b7
+  patterns:
+    - CDS Declaration Submission Service Desig-20250106T182945529.md
