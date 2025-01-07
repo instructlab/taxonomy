@@ -1,0 +1,5 @@
+Title of work: IBM SM
+Link to work: https://cloud.ibm.com/docs/secrets-manager?topic=secrets-manager-what-is-secret
+Revision: 1
+License of the work: 1
+Creator names: 1

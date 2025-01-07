@@ -1,0 +1,110 @@
+created_by: nitzann
+version: 3
+domain: Cloud
+document_outline: >-
+  Information about IBM Cloud Secrets Manager, a service for storing and
+  managing sensitive application data and credentials
+seed_examples:
+  - context: >-
+      Secrets Manager is a service provided by IBM Cloud that allows you to
+      securely store, manage, and access sensitive data such as passwords, API
+      keys, and certificates. It uses encryption and access controls to protect
+      your data and provides various actions and roles for managing secrets.
+    questions_and_answers:
+      - question: What is Secrets Manager?
+        answer: >-
+          Secrets Manager is a service provided by IBM Cloud that allows you to
+          securely store, manage, and access sensitive data such as passwords,
+          API keys, and certificates. It uses encryption and access controls to
+          protect your data and provides various actions and roles for managing
+          secrets.
+      - question: What is IBM Cloud Secrets Manager?
+        answer: >-
+          Secrets Manager is a service provided by IBM Cloud that allows you to
+          securely store, manage, and access sensitive data such as passwords,
+          API keys, and certificates. It uses encryption and access controls to
+          protect your data and provides various actions and roles for managing
+          secrets.
+      - question: What cloud service can be used to manage sesitive application data?
+        answer: IBM Cloud Secrets Manager
+  - context: >-
+      Secrets Manager supports the following types of secrets: IAM credentials,
+      arbitrary secrets, user credentials, certificates (imported, public and
+      private), key-value and service credentials.
+            IAM credentials consist of a service ID and API key generated dynamically on your behalf.
+            Arbitrary secrets can be used to store any type of structured or unstructured data, and user credentials store usernames and passwords for logging in to applications.
+    questions_and_answers:
+      - question: What kind of secrets can be stored in IBM Cloud Secrets Manager?
+        answer: >-
+          IAM credentials, arbitrary secrets, user credentials, certificates
+          (imported, public and private), key-value and service credentials.
+      - question: What is the IAM credentials secret type used for?
+        answer: >-
+          IAM credentials consist of a service ID and API key generated
+          dynamically on your behalf.
+      - question: What is the Arbitrary secret type used for?
+        answer: >-
+          Arbitrary secrets can be used to store any type of structured or
+          unstructured data
+  - context: >-
+      A key-value secret is a type of application secret that can be used to
+      hold sensitive data that is structured as a JSON object. After you create
+      the secret, you can use it to connect your application to a protected
+      resource, such as a database or a third-party app.
+            Your secret is stored securely in your dedicated Secrets Manager service instance, where you can centrally manage its lifecycle.
+    questions_and_answers:
+      - question: What is the key-value secret type used for?
+        answer: >-
+          A key-value secret is a type of application secret that can be used to
+          hold sensitive data that is structured as a JSON object. After you
+          create the secret, you can use it to connect your application to a
+          protected resource, such as a database or a third-party app.
+      - question: What type of data can be stored in a key-value secret?
+        answer: Sensitive data that is structured as a JSON object.
+      - question: Where is the secret stored?
+        answer: >-
+          Your secret is stored securely in your dedicated Secrets Manager
+          service instance, where you can centrally manage its lifecycle.
+  - context: >-
+      In Secrets Manager, certificates that you import to the service are
+      imported certificates (imported_cert). Certificates that you order through
+      Secrets Manager from a third-party certificate authority are public
+      certificates (public_cert).
+            Certificates that you create by using a private certificate authority are private certificates (private_cert).
+            Service credentials can hold Identity and Access Management issued credentials. The credentials can also be service-specific native credentials such as HMAC keys, a database user ID and password, SASL credentials, or TLS certificates.
+    questions_and_answers:
+      - question: What is imported_cert?
+        answer: >-
+          In Secrets Manager, certificates that you import to the service are
+          imported certificates.
+      - question: What is public_cert?
+        answer: >-
+          Certificates that you order through Secrets Manager from a third-party
+          certificate authority are public certificates.
+      - question: What is private_cert?
+        answer: >-
+          Certificates that you create by using a private certificate authority
+          are private certificates
+  - context: >-
+      With IBM Cloud Secrets Manager, you can create secrets dynamically and
+      lease them to applications while you control access from a single
+      location. Built on open source HashiCorp Vault, Secrets Manager helps you
+      get the data isolation of a dedicated environment with the benefits of a
+      public cloud.
+    questions_and_answers:
+      - question: What can you do with Secrets Manager?
+        answer: >-
+          With IBM Cloud Secrets Manager, you can create secrets dynamically and
+          lease them to applications while you control access from a single
+          location.
+      - question: What is IBM Cloud Secrets Manager built on?
+        answer: The open source HashiCorp Vault
+      - question: What is special about IBM Cloud Secrets Manager?
+        answer: >-
+          Secrets Manager helps you get the data isolation of a dedicated
+          environment with the benefits of a public cloud.
+document:
+  repo: https://github.com/nitzann/instructlab_knowledge.git
+  commit: d215b9531ab47b417676381625d01656682a3a29
+  patterns:
+    - ibm/cloud/secrets_manager/secret-what-is.md
