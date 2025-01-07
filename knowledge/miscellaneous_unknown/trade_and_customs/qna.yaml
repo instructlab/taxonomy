@@ -1,7 +1,15 @@
 created_by: wol22
 version: 3
 domain: Tax and customs
-document_outline: "For imports and exports, the submitter of the declaration interacts with CDS to manage events such as:\n•\tthe declaration submission. CDS expects to receive declaration data within the WCO format, defined by the schema and the HMRC Customs Tariff. The schema keeps most elements as optional to allow for capturing a complete declaration, or just partial (e.g. to support simplified import declarations).\n•\tthe request for amendment message is based on the definition of the declaration. The main difference is the change to the functional code of the message. The message structure also uses pointers so CDS can understand which data element needs to be altered within the declaration. For example, a change to the gross mass would require a pointer to the relevant element (one for each ‘layer’ of the message), but the message must also contain the new value. The pointers are defined by the WCO data element tags (found in [4, 5]). Some amendments will require approval by customs.\n•\tthe request for invalidation. Submitted to allow for a trader-initiated cancellation. Some invalidations will require approval by customs.\n•\treceiving the trader notifications. As the declaration goes through its lifecycle, certain notifications may be triggered back to the trader. At a bare minimum, a notification of acceptance and clearance can be expected, though others may be sent due to control, liabilities due, etc. A full table is listed below in section Types and Definitions.\n•\tthe goods arrival message is submitted to instruct CDS that goods are available for inspection following the submission of a pre-lodged declaration.\n"
+document_outline: >-
+  For imports and exports, the submitter of the declaration interacts with CDS
+  to manage events such as the declaration submission. CDS expects to receive
+  declaration data within the WCO format, defined by the schema and the HMRC
+  Customs Tariff. The schema keeps most elements as optional to allow for
+  capturing a complete declaration, or just partial (e.g. to support simplified
+  import declarations). The goods arrival message is submitted to instruct CDS
+  that goods are available for inspection following the submission of a
+  pre-lodged declaration.
 seed_examples:
   - context: >-
       # Technical Validation Carried out on all Declarations
