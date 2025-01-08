@@ -1,0 +1,5 @@
+Title of work: RHEL AI Overview
+Link to work: https://github.com/ravipatil33/taxonomy-knowledge-docs
+Revision: c833bfa7eb6cc2b2cd893daaf87ec63b6e596e49
+License of the work: redhat.com
+Creator names: Red Hat
