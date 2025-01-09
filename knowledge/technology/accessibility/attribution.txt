@@ -1,0 +1,5 @@
+Title of work: Web Content Accessibility Guidelines (WCAG) 2.1
+Link to work: https://www.w3.org/TR/WCAG21/
+Revision: https://www.w3.org/TR/WCAG21/#changelog
+License of the work: open
+Creator names: https://www.w3.org/TR/WCAG21/#ack_participants-active
