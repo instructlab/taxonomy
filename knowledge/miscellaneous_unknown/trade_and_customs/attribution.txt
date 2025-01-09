@@ -1,0 +1,5 @@
+Title of work: Customs Declarations end-to-end service guide
+Link to work: https://developer.service.hmrc.gov.uk/guides/customs-declarations-end-to-end-service-guide
+Revision: v2.24
+License of the work: Open Government Licence v3.0
+Creator names: HMRC
