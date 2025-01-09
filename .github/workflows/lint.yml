@@ -97,7 +97,7 @@ jobs:
 
       - name: "Upload Pull Request number"
         if: ${{ (github.event_name == 'pull_request') && (github.repository == 'instructlab/taxonomy') }}
-        uses: actions/upload-artifact@6f51ac03b9356f520e9adb1b1b7802705f340c2b # v4.5.0
+        uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08 # v4.6.0
         with:
           name: pull_request_number
           path: pull_request_number.txt
