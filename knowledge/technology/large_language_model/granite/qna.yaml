@@ -1,0 +1,89 @@
+created_by: GiuliaSolinas
+version: 3
+domain: large-language-model
+document_outline: knowledge contribution about the IBM Granite model
+seed_examples:
+  - context: >-
+      IBM Granite is a series of decoder-only AI foundation models created by
+      IBM. It was announced on September 2. 2023, and an initial paper was
+      published 4 days later.
+    questions_and_answers:
+      - question: What is IBM Granite?
+        answer: >-
+          IBM Granite is a series of decoder-only AI foundation models created
+          by IBM.
+      - question: When was IBM Granite announced?
+        answer: September 7, 2023
+      - question: What is a series of IBM decoder-only AI foundation models?
+        answer: IBM Granite
+  - context: >-
+      Initially intended for use in IBM's cloud-based data and generative AI
+      platform watsonx along with other models, IBM opened the source code of
+      some code models.  It is available on IBM watsonx, GitHub, Hugging Face,
+      and RHEL AI.
+    questions_and_answers:
+      - question: Where does IBM Granite work?
+        answer: >-
+          On the IBM's cloud-based data and generative AI platform. Plus it can
+          be download from GitHub, Hugging face, and RHEL AI
+      - question: Is Granite an open-source model?
+        answer: 'Yes, it is an open-source decoder-only AI foundation model. '
+      - question: How can I access IBM Granite?
+        answer: >-
+          IBM Granite is available on IBM watsonx and it is opens source on
+          GitHub, Hugging Face, and RHEL AI
+  - context: >-
+      IBM Granite can be described as a multimodal model, a large language
+      model, a generative pre-trained transformer, and a foundation model.
+    questions_and_answers:
+      - question: What kind of foundation model is IBM Granite?
+        answer: IBM Granite is a multimodal foundational model.
+      - question: Is IBM Granite a large language model?
+        answer: 'Yes, IBM Granite is a large language model. '
+      - question: Is IBM Granite suitable for language tasks?
+        answer: >-
+          Yes, it is suitable because it is a generative pre-trained transformer
+          model.
+  - context: >-
+      On May 6, 2024, IBM released the source code of four variations of Granite
+      Code Models under Apache 2, an open-source permissive license that allows
+      completely free use, modification, and sharing of the software, and put
+      them on Hugging Face for public use.
+    questions_and_answers:
+      - question: Can I freely use IBM Granite for commercial use?
+        answer: >-
+          Yes, users can freely use, modify, and share the software and put them
+          on Hugging Face for public use.
+      - question: What is the license agreement to use IBM Granite?
+        answer: 'It is Apache 2.0, which allows free commercial use of the software. '
+      - question: >-
+          Since when is the IBM Granite model freely available for commercial
+          use?
+        answer: 'Since May 6, 2024. '
+  - context: >-
+      Granite models are trained on datasets curated from the Internet, academic
+      publishings, code datasets, legal and finance documents. According to
+      IBM's own report, Granite 8b outperforms Llama 3 on several coding related
+      tasks within a similar range of parameters.
+    questions_and_answers:
+      - question: What types of datasets are used to train Granite models?
+        answer: >-
+          Granite models are trained on datasets curated from the Internet,
+          academic publishings, code datasets, legal, and finance documents.
+      - question: >-
+          According to IBM's report, how does Granite 8b perform compared to
+          Llama 3 on coding-related tasks?
+        answer: >-
+          According to IBM's report, Granite 8b outperforms Llama 3 on several
+          coding-related tasks within a similar range of parameters.
+      - question: >-
+          What is the source of the information regarding the performance
+          comparison between Granite 8b and Llama 3?
+        answer: >-
+          The information regarding the performance comparison between Granite
+          8b and Llama 3 comes from IBM's own report.
+document:
+  repo: https://github.com/GiuliaSolinas/taxonomy-knowledge-docs
+  commit: bf307a89fc1aeebded835c3ce8491656d28fd67a
+  patterns:
+    - IBM_granite-20250115T162610464.md
