@@ -1,0 +1,43 @@
+created_by: jkolodny
+version: 2
+seed_examples:
+- answer: 'That sentence is an example of an ad hominem attack.
+
+    '
+  question: 'What logical fallacy is present in the following sentence: 
+  
+Green Peace's strategies aren't effective because they are all lazy hippies.
+
+    '
+- answer: 'That sentence is an example of a red herring.
+
+    '
+  question: 'What logical fallacy is present in the following sentence: 
+  
+The level of mercury in seafood may be unsafe, but what will fishers do to support their families?
+
+    '
+- answer: 'That sentence is an example of a straw man argument.
+
+    '
+  question: 'What logical fallacy is present in the following dialogue: 
+  
+People who don't support the proposed state minimum wage increase hate the poor.
+
+    '
+- answer: 'That sentence is an example of a circular argument.
+
+    '
+  question: 'What logical fallacy is present in the following dialogue: 
+  
+George Bush is a good communicator because he speaks effectively.
+    '
+
+    '
+- answer: 'That sentence is an example of a either/or fallacy.
+
+    '
+We can either stop using cars or destroy the earth.
+
+    '
+task_description: To teach a language model about logical fallacies.
