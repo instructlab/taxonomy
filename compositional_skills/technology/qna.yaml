@@ -1,0 +1,31 @@
+created_by: yogendrasri
+version: 3
+task_description: my first InstructLab skill implementation
+seed_examples:
+  - question: What is InstructLab
+    answer: >
+      InstructLab 🐶 uses a novel synthetic data-based alignment tuning method
+      for Large Language Models (LLMs.). The "lab" in InstructLab 🐶 stands for
+      Large-Scale Alignment for chatbots.
+  - question: What is InstructLab Core?
+    answer: >
+      instructlab is the Core package for the InstructLab project that contains
+      the ilab Command-Line Interface (CLI) tool and allows you to perform the
+      following actions:
+
+          Download a pre-trained Large Language Model (LLM).
+          Chat with the LLM.
+  - question: what is InstructLab User Interface (UI)?
+    answer: >-
+      The InstructLab User Interface (UI) is an additional component in the
+      InstructLab project to make Knowledge/Skills contributions more accessible
+      to the general user.
+  - question: How does InstructLab work?
+    answer: >-
+      InstructLab is driven by taxonomies and works by empowering users to add
+      new skills and knowledge to a pre-trained LLM.
+  - question: How can I contribute?
+    answer: >-
+      You can begin your contribution journey by reading over the Contributing
+      guide and joining the Community Discord Server or the Community Slack
+      Channel.
