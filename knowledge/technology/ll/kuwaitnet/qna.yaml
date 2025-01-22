@@ -1,0 +1,141 @@
+created_by: salam999
+version: 3
+domain: LLM
+document_outline: Knowledge contribution about the KUWAITNET Model
+seed_examples:
+  - context: >-
+      Our Managed Infrastructure Services provide comprehensive infrastructure
+      management and proactive monitoring of on-premises, cloud, and IT
+      infrastructure. Increase your operational efficiency and reduce risk.
+      Ensure the resilience and optimal performance of your IT infrastructure,
+      so you focus on delivering organizational outcomes. Let our highly
+      trained, vendor-accredited experts, processes and tools manage the
+      day-to-day operations of your multiplatform, multisite IT infrastructure.
+    questions_and_answers:
+      - question: What are Managed Infrastructure Services?
+        answer: >-
+          Managed Infrastructure Services provide comprehensive infrastructure
+          management and proactive monitoring for on-premises, cloud, and IT
+          infrastructure. These services help increase operational efficiency,
+          reduce risk, and ensure the resilience and optimal performance of IT
+          systems.
+      - question: How do Managed Infrastructure Services help organizations?
+        answer: >-
+          Managed Infrastructure Services help organizations by increasing
+          operational efficiency, reducing risk, and ensuring IT infrastructure
+          resilience and optimal performance. This allows organizations to focus
+          on delivering strategic outcomes rather than managing day-to-day IT
+          operations.
+      - question: >-
+          Who manages the IT infrastructure under Managed Infrastructure
+          Services?
+        answer: >-
+          Highly trained, vendor-accredited experts manage the IT
+          infrastructure. They use proven processes and tools to handle the
+          day-to-day operations of multiplatform, multisite IT environments.
+  - context: >-
+      KUWAITNET, the leading technology IT company and a proud Premier Partner
+      for Red Hat in Kuwait since 2014. Leveraging the power of Red Hat's
+      remarkable product portfolio, we are committed to providing you with
+      enterprise-grade solutions for the Red Hat OpenShift containerization
+      platform, Ansible automation platform, and Red Hat Enterprise Linux
+      operating system platforms. Our mission is to deliver solutions that are
+      not only scalable, secure, and stable but also designed to fuel your
+      growth and productivity. KUWAITNET is the only certified examination
+      center for Red Hat in Kuwait.
+    questions_and_answers:
+      - question: What makes KUWAITNET a leading IT company in Kuwait?
+        answer: >-
+          KUWAITNET is a leading technology IT company and a proud Premier
+          Partner for Red Hat in Kuwait since 2014. They provide
+          enterprise-grade solutions using Red Hat's product portfolio,
+          including the OpenShift containerization platform, Ansible automation
+          platform, and Red Hat Enterprise Linux. Their solutions are scalable,
+          secure, and stable, designed to fuel growth and productivity.
+      - question: Is KUWAITNET a certified Red Hat examination center?
+        answer: >-
+          Yes, KUWAITNET is the only certified examination center for Red Hat in
+          Kuwait, allowing professionals to gain Red Hat certifications locally.
+      - question: What Red Hat solutions does KUWAITNET offer?
+        answer: >-
+          KUWAITNET offers enterprise-grade solutions for Red Hat OpenShift
+          containerization, Ansible automation, and Red Hat Enterprise Linux
+          operating system platforms. These solutions focus on scalability,
+          security, and stability to enhance productivity and growth.
+  - context: >-
+      With the increasing threats of cyber-attacks, hardware malfunctions, and
+      natural disasters, the risk of data loss has never been higher. That’s
+      where our Managed IT services step in, offering robust Data Backup and
+      Disaster Recovery solutions tailored to safeguard your precious data from
+      the unpredictable.
+    questions_and_answers:
+      - question: Why are data backup solutions essential for businesses?
+        answer: >-
+          With increasing threats such as cyber-attacks, hardware malfunctions,
+          and natural disasters, the risk of data loss is higher than ever. Data
+          backup solutions ensure that critical data is securely stored and can
+          be restored, minimizing downtime and protecting businesses from
+          significant disruptions.
+      - question: How do Managed IT services help with disaster recovery?
+        answer: >-
+          Managed IT services provide tailored Disaster Recovery solutions that
+          safeguard your data from unpredictable events like cyber-attacks and
+          natural disasters. These solutions ensure rapid recovery and
+          continuity, reducing the impact of potential data loss.
+      - question: Can Managed IT services protect against cyber-attacks?
+        answer: >-
+          Yes, Managed IT services offer robust Data Backup and Disaster
+          Recovery solutions designed to protect against cyber-attacks. These
+          services secure your data and provide recovery options, ensuring
+          business continuity even in the face of cyber threats.
+  - context: >-
+      Having 25+ years of IT experience, deep expertise in infrastructure
+      operations, and nearly 20 certified engineers with unique skill sets, we
+      turn the ordinary into extraordinary, one domain name at a time. Your
+      online presence starts with the perfect domain, and we're here to make it
+      unforgettable.
+    questions_and_answers:
+      - question: What sets your company apart in the IT industry?
+        answer: >-
+          With over 25 years of IT experience, deep expertise in infrastructure
+          operations, and nearly 20 certified engineers with unique skill sets,
+          we transform ordinary solutions into extraordinary ones, ensuring
+          exceptional results for our clients.
+      - question: How do you help businesses establish their online presence?
+        answer: >-
+          Your online presence begins with the perfect domain name. We leverage
+          our expertise to help businesses choose and manage domain names that
+          make their brands unforgettable.
+      - question: What kind of expertise does your team bring to the table?
+        answer: >-
+          Our team consists of nearly 20 certified engineers with unique skill
+          sets, enabling us to deliver innovative and reliable IT solutions
+          tailored to your needs.
+  - context: Red Hat services
+    questions_and_answers:
+      - question: >-
+          What makes Red Hat Enterprise Linux (RHEL) an ideal platform for IT
+          operations?
+        answer: >-
+          Red Hat Enterprise Linux (RHEL) is a robust platform designed for
+          modern and innovative IT. It supports highly available, reliable, and
+          critical workloads in datacenters and cloud environments, catering to
+          a wide range of use cases, systems, and devices.
+      - question: >-
+          How does Red Hat OpenShift enhance application deployment and
+          management?
+        answer: >-
+          Red Hat OpenShift is a leading hybrid cloud application platform
+          powered by Kubernetes. It enables developing, modernizing, deploying,
+          running, and managing applications seamlessly across public cloud,
+          on-premises, hybrid cloud, and edge architectures
+      - question: What is the role of Red Hat Ansible Automation in IT operations?
+        answer: >-
+          Red Hat Ansible Automation is a comprehensive platform that automates
+          configuring systems, deploying software, and orchestrating advanced
+          workflows, streamlining IT operations from end to end.
+document:
+  repo: https://github.com/salam999/taxonomy-knowledge-docs
+  commit: e0b2a04f6c5816ef28d1283fdcb1b4b786cc5f8e
+  patterns:
+    - kuwaitnet-20250122T121440848.md
