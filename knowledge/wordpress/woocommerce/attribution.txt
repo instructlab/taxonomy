@@ -1,0 +1,5 @@
+Title of work: WooCommerce documentation
+Link to work: https://github.com/woocommerce/woocommerce/blob/trunk/docs
+Revision: 1
+License of the work: eula
+Creator names: WooCommerce

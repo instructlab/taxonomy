@@ -1,0 +1,246 @@
+created_by: VisualBoy
+version: 3
+domain: https://github.com/woocommerce/woocommerce
+document_outline: >-
+  **Contribution**
+
+
+  * [Set up development
+  environment](https://github.com/woocommerce/woocommerce/wiki/How-to-set-up-WooCommerce-development-environment)
+
+  * [Our Git
+  Flow](https://github.com/woocommerce/woocommerce/wiki/WooCommerce-Git-Flow)
+
+  * [SCSS and JS
+  minification](https://github.com/woocommerce/woocommerce/wiki/Minification-of-SCSS-and-JS)
+
+  * [Naming
+  conventions](https://github.com/woocommerce/woocommerce/wiki/Naming-conventions)
+
+  * [CSS SASS coding guidelines and naming
+  conventions](CSS-SASS-coding-guidelines-and-naming-conventions)
+
+  * [Critical
+  Flows](https://github.com/woocommerce/woocommerce/wiki/Critical-Flows)
+
+  * [API Critical
+  Flows](https://github.com/woocommerce/woocommerce/wiki/API-Critical-Flows)
+
+  * [String localisation guidelines](String-localisation-guidelines)
+
+  * [Translating WooCommerce](Translating-WooCommerce)
+
+  * [Deprecation in core](Deprecation-in-core)
+
+  * [Adding Actions and Filters](Adding-Actions-and-Filters)
+
+  * [Common
+  Issues](https://github.com/woocommerce/woocommerce/wiki/Common-Issues)
+
+  * [Writing high-quality testing
+  instructions](https://github.com/woocommerce/woocommerce/wiki/Writing-high-quality-testing-instructions)
+
+
+  **Release Notes**
+
+
+  * [Release Testing
+  Instructions](https://github.com/woocommerce/woocommerce/wiki/Release-Testing-Instructions)
+
+  * [3.6.x
+  notes/FAQ](https://github.com/woocommerce/woocommerce/wiki/3.6.x-notes-FAQ)
+
+  * [2.6.x to 3.0.0 Developer Migration
+  Notes](2.6.x-to-3.0.0-Developer-Migration-Notes)
+
+  * [Select2 fields not working in
+  3.0.x](https://github.com/woocommerce/woocommerce/wiki/Select2-fields-not-working-in-3.0.x)
+
+  * [Thumbnail Image Regeneration in
+  3.3+](https://github.com/woocommerce/woocommerce/wiki/Thumbnail-Image-Regeneration-in-3.3)
+
+  * [Customizing image sizes in
+  3.3+](https://github.com/woocommerce/woocommerce/wiki/Customizing-image-sizes-in-3.3)
+
+
+  **REST API and CLI**
+
+
+  * [Getting started with the REST
+  API](https://github.com/woocommerce/woocommerce/wiki/Getting-started-with-the-REST-API)
+
+  * [Contributing to the REST
+  API](https://github.com/woocommerce/woocommerce/wiki/Contributing-to-the-WooCommerce-REST-API)
+
+  * [WC CLI Overview](WC-CLI-Overview)
+
+  * [WC CLI Commands](WC-CLI-Commands)
+
+
+  **CRUD & Data Descriptions**
+
+
+  * [Database
+  Description](https://github.com/woocommerce/woocommerce/wiki/Database-Description)
+
+  * [CRUD Objects in
+  3.0](https://github.com/woocommerce/woocommerce/wiki/CRUD-Objects-in-3.0)
+
+  * [Order and Order Line Item Data](Order-and-Order-Line-Item-Data)
+
+  * [Coupon Data](Coupon-Data)
+
+  * [Customer Data](Customer-Data)
+
+  * [Product Data](Product-Data-Schema)
+
+  * [Data Stores](Data-Stores)
+
+
+  **Internal APIs**
+
+
+  * [Settings API](Settings-API)
+
+  * [Payment Token API](Payment-Token-API)
+
+  * [Shipping Method API](Shipping-Method-API)
+
+  * [WC\_Queue - WooCommerce Queue API](WC_Queue---WooCommerce-Worker-Queue)
+
+
+  **Theming**
+
+
+  * [Enabling product gallery features (zoom, swipe,
+  lightbox)](Enabling-product-gallery-features-(zoom,-swipe,-lightbox))
+
+  * [Template File Guidelines for Devs and Theme
+  Authors](Template-File-Guidelines-for-Devs-and-Theme-Authors)
+
+
+  **Examples / Guides**
+
+
+  * [How Taxes Work in WooCommerce](How-Taxes-Work-in-WooCommerce)
+
+  * [Customising account page tabs](Customising-account-page-tabs)
+
+  * [End-to-end Testing](End-to-end-Testing)
+
+  * [wc\_get\_orders and
+  WC\_Order\_Query](https://github.com/woocommerce/woocommerce/wiki/wc_get_orders-and-WC_Order_Query)
+
+  * [wc\_get\_products and
+  WC\_Product\_Query](https://github.com/woocommerce/woocommerce/wiki/wc_get_products-and-WC_Product_Query)
+
+  * [Importer and
+  Exporter](https://github.com/woocommerce/woocommerce/wiki/Product-CSV-Importer-&-Exporter)
+
+  * [Testing Action
+  Scheduler](https://github.com/woocommerce/woocommerce/wiki/Testing-Action-Scheduler)
+
+  * [Core Profiler Testing
+  Instructions](https://github.com/woocommerce/woocommerce/wiki/Core-Profiler---Testing-Instructions)
+seed_examples:
+  - context: >-
+      A new WooCommerce developer is looking for tools to help them build
+      extensions. They are not sure where to start.
+    questions_and_answers:
+      - question: >-
+          Where can I find information about tools for low-code development for
+          WooCommerce?
+        answer: ' You can find information about low-code development tools in the document located at /woocommerce/woocommerce/blob/trunk/docs/getting-started/developer-tools.md.'
+      - question: Are there any resources for learning how to design a simple extension?
+        answer: >-
+          Yes, there's a guide on how to design a simple extension at
+          /woocommerce/woocommerce/blob/trunk/docs/extension-development/how-to-design-a-simple-extension.md.
+      - question: >-
+          What is the first step I should take when starting to build my first
+          extension?
+        answer: >-
+          The documentation suggests reviewing the guide at
+          /woocommerce/woocommerce/blob/trunk/docs/extension-development/building-your-first-extension.md
+          as a starting point.
+  - context: >-
+      A developer is facing a problem and needs help with a WooCommerce
+      customization. They are looking for the best way to get support.
+    questions_and_answers:
+      - question: >-
+          Where is the best place to ask a development question about
+          WooCommerce?
+        answer: ' You can start by checking the WooCommerce Community Forum or ask in the #developers channel of the Community Slack.'
+      - question: >-
+          If I need professional help with a customization, are there any
+          recommended resources?
+        answer: ' Yes, the documentation suggests looking at WooExperts or Codeable for professional help.'
+      - question: >-
+          How do I contact the WooCommerce team directly if I'm unsure where to
+          ask my question
+        answer: ' You can contact them through the contact form, and their Happiness Engineers will assist you.'
+  - context: >-
+      A developer wants to understand the structure of the WooCommerce plugin
+      and its various components. They are looking for README files within the
+      repository.
+    questions_and_answers:
+      - question: ' Where can I find the README file for the core WooCommerce plugin'
+        answer: ' The root README for the WooCommerce plugin is located at https://github.com/woocommerce/woocommerce/blob/trunk/plugins/woocommerce/README.md.'
+      - question: >-
+          Is there a README file that describes the structure of the includes
+          directory?
+        answer: >-
+          Yes, you can find it at
+          https://github.com/woocommerce/woocommerce/blob/trunk/plugins/woocommerce/includes/README.md.
+      - question: >-
+          Where can I find the README file for the WooCommerce Admin plugin's
+          client/dashboard directory?
+        answer: >-
+          The README file is located at
+          https://github.com/woocommerce/woocommerce/blob/trunk/plugins/woocommerce/client/admin/client/dashboard/README.md.
+  - context: >-
+      A developer is trying to understand the organization of the documentation
+      within the docs directory. They want to know what topics are covered.
+    questions_and_answers:
+      - question: >-
+          What kind of documentation can I find in the block-theme-development
+          folder?
+        answer: >-
+          The block-theme-development folder likely contains documentation
+          related to developing WooCommerce themes using blocks.
+      - question: Where would I find documentation related to the WooCommerce REST API?
+        answer: >-
+          Documentation for the REST API is located in the rest-api folder
+          within the docs directory.
+      - question: Is there a specific folder for documentation about performance?
+        answer: >-
+          Yes, there is a performance folder within the docs directory that
+          should contain performance-related documentation.
+  - context: >-
+      A developer wants to contribute to the WooCommerce documentation. They are
+      unsure about the guidelines and how to submit changes.
+    questions_and_answers:
+      - question: >-
+          A developer wants to contribute to the WooCommerce documentation. They
+          are unsure about the guidelines and how to submit changes.
+        answer: >-
+          The documentation style guide can be found at
+          /woocommerce/woocommerce/blob/trunk/docs/contributing-docs/style-guide.md.
+      - question: >-
+          What is the process for submitting a new document or improvement to
+          the documentation?
+        answer: >-
+          You can create an issue on the WooCommerce GitHub repository using
+          this link to request a new document, correction, or improvement.
+      - question: >-
+          Is there a specific branch I should use when contributing to the
+          documentation?
+        answer: >-
+          The provided document doesn't specify a branch, but typically, you'd
+          fork the repository, create a branch for your changes, and then submit
+          a pull request to the trunk branch. Refer to the general contributing
+          guide for more info.
+document:
+  repo: https://github.com/VisualBoy/taxonomy-knowledge-docs
+  commit: 0f17ac4a916fe74d7b2441cec8dc90b617938857
+  patterns:
+    - woocommerce_Wiki_Documentation-20250122T145802994.md
