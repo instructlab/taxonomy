@@ -139,3 +139,7 @@ scratch.ipynb
 
 # Ignore config.yaml from the cli
 config.yaml
+
+# uv
+pyproject.toml
+uv.lock
