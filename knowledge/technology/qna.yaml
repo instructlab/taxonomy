@@ -1,0 +1,107 @@
+created_by: ravipatil33
+version: 3
+domain: Technology
+document_outline: Includes most basic introduction to RHEL AI Product
+seed_examples:
+  - context: >-
+      Red Hat Enterprise Linux AI is a platform that allows you to develop
+      enterprise applications on open source Large Language Models (LLMs). RHEL
+      AI is built from the Red Hat InstructLab open source project.
+    questions_and_answers:
+      - question: What is RHEL AI ?
+        answer: >-
+          Red Hat Enterprise Linux AI is a platform that allows you to develop
+          enterprise applications on open source Large Language Models (LLMs).
+          RHEL AI is built from the Red Hat InstructLab open source project
+      - question: What are the components of RHEL AI ?
+        answer: >-
+          RHEL AI components includes : Granite family models, InstructLab
+          upstream project, RHEL Image Mode and Red Hat Enterprise support.
+      - question: What are the differences in RHEL AI and InstructLab ?
+        answer: >-
+          InstructLab is an open source AI project that facilitates
+          contributions to Large Language Models (LLMs). RHEL AI takes the
+          foundation of the InstructLab project and builds an enterprise
+          platform for LLM integration on applications.
+  - context: >-
+      Skill and knowledge are the types of data that you can add to the taxonomy
+      tree. You can then use these types to create a custom LLM model fine-tuned
+      with your own data.
+    questions_and_answers:
+      - question: ' What are the two types of data which can be added into the taxonomy data ?'
+        answer: >-
+          Skill and knowledge are the types of data that you can add to the
+          taxonomy tree.
+      - question: What is Knowledge ?
+        answer: >-
+          Knowledge for an AI model consists of data and facts. When creating
+          knowledge sets for a model, you are providing it with additional data
+          and information so the model can answer questions more accurately.
+      - question: What is skill ?
+        answer: ' A skill is a capability domain that intends to train the AI model on submitted information. When you make a skill, you are teaching the model how to do a task.'
+  - context: >-
+      Red Hat Enterprise Linux AI contains various distinct features and
+      consists of the following components. Bootable Red Hat Enterprise Linux
+      with InstructLab, InstructLab model alignment and Open source licensed
+      Granite models.
+    questions_and_answers:
+      - question: What are the supported installation methods in RHEL AI ?
+        answer: >-
+          You can install RHEL AI and deploy the InstructLab tooling using a
+          bootable RHEL container image provided by Red Hat. The current
+          supported installation methods for this image are on Amazon Web
+          Services (AWS), IBM Cloud, and bare-metal machines.
+      - question: What is included in RHEL AI Image ?
+        answer: >-
+          RHEL AI image includes InstructLab, RHEL 9.4, and various  inference
+          and training software, including vLLM and DeepSpeed.
+      - question: What is LAB ?
+        answer: >-
+          InstructLab uses a novel approach to LLM fine-tuning called LAB
+          (Large-Scale Alignment for ChatBots). The LAB method uses a
+          taxonomy-based system that implements high-quality synthetic data
+          generation (SDG) and multi-phase training.
+  - context: >-
+      Various hardware accelerators require different requirements for serving
+      and inferencing as well as installing, generating and training the
+      granite-7b-starter model on Red Hat Enterprise Linux AI.
+    questions_and_answers:
+      - question: What is end-to-end workflow in RHEL AI ?
+        answer: >-
+          The end-to-end workflow includes: synthetic data generation (SDG),
+          training, and evaluating a custom Granite model.
+      - question: >-
+          What is the minimum GPU memory required for end-to-end workflow on
+          Nvidia GPU ?
+        answer: On NVIDIA GPU, the mimimum possible GPU memory is 320 GB.
+      - question: >-
+          What is the mimimum possible GPU memory for inferencing on Nvidia GPU
+          ?
+        answer: On NVIDIA GPU, the mimimum possible GPU memory is 24 GB.
+  - context: >-
+      This glossary defines common terms for Red Hat Enterprise Linux AI :
+      InstructLab, Large Language Models, Synthetic Data Generation,
+      Fine-tuning, LAB, Multi-phase training, Serving, PyTorch, Granite,
+      Taxonomy, PyTorch, vLLM, FSDP etc.
+    questions_and_answers:
+      - question: What is Taxonomy ?
+        answer: >-
+          The LAB method is driven by taxonomies, an information classification
+          method. On RHEL AI, you can customize a taxonomy tree that enables you
+          to create models fine-tuned with your own data.
+      - question: What is Granite ?
+        answer: >-
+          An open source (Apache 2.0) Large Language Model trained by IBM. On
+          RHEL AI you can download the granite-7b-starter model as a base LLM
+          for customization.
+      - question: What are the Python Libraries used in RHEL AI ?
+        answer: >-
+          An optimized tensor library for deep learning on GPUs and CPUs, vLLM :
+          A memory-efficient inference and serving engine library for LLMs and
+          FSDP : An acronym for Fully Shared Data Parallels used for training
+          and fine-tuning.
+document:
+  repo: https://github.com/ravipatil33/taxonomy-knowledge-docs
+  commit: c833bfa7eb6cc2b2cd893daaf87ec63b6e596e49
+  patterns:
+    - rhelai1.2_gs
