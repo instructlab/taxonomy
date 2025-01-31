@@ -1,0 +1,152 @@
+created_by: pasqualeattanasio
+version: 3
+domain: W3C
+document_outline: Knowledge contribution about the W3c Accessibility
+seed_examples:
+  - context: >-
+      Web accessibility evaluation tools are software programs or online
+      services that help you determine if web content meets accessibility
+      guidelines
+    questions_and_answers:
+      - question: What is AccessibilityChecker.org?
+        answer: >-
+          A free website accessibility automated scan for WCAG 2.1 compliance
+          issues. Just insert your URL and get instant results.
+      - question: 'What does AEL Accessibility Checker do? '
+        answer: >-
+          AEL Accessibility Checker (AAC) can quickly evaluate your web page
+          against automated Accessibility violations.
+      - question: 'What does Axe DevTools Linter do? '
+        answer: >-
+          axe DevTools Linter allows you to check your code for accessibility
+          issues in your IDE and CI/CD. axe DevTools Linter is easy to configure
+          and use, and it can check React (.js, .jsx, and .tsx), Vue (.vue),
+          Angular (.component.html), HTML (.html and .htm), and Markdown (.md
+          and .markdown) files so you can avoid common accessibility defects.
+  - context: >-
+      Web Content Accessibility Guidelines (WCAG) 2.1 covers a wide range of
+      recommendations for making Web content more accessible.
+    questions_and_answers:
+      - question: What are the Web Content Accessibility Guidelines (WCAG) 2.1 used for?
+        answer: >-
+          Following these guidelines will make content more accessible to a
+          wider range of people with disabilities, including accommodations for
+          blindness and low vision, deafness and hearing loss, limited movement,
+          speech disabilities, photosensitivity, and combinations of these, and
+          some accommodation for learning disabilities and cognitive
+          limitations; but will not address every user need for people with
+          these disabilities. These guidelines address accessibility of web
+          content on desktops, laptops, tablets, and mobile devices. Following
+          these guidelines will also often make Web content more usable to users
+          in general.
+      - question: What are the  success criteria used for?
+        answer: >-
+          WCAG 2.1 success criteria are written as testable statements that are
+          not technology-specific. Guidance about satisfying the success
+          criteria in specific technologies, as well as general information
+          about interpreting the success criteria, is provided in separate
+          documents.
+      - question: What is a W3C Recommendation?
+        answer: >-
+          A W3C Recommendation is a specification that, after extensive
+          consensus-building, is endorsed by W3C and its Members, and has
+          commitments from Working Group members to royalty-free licensing for
+          implementations.
+  - context: >-
+      WAI-ARIA, the Accessible Rich Internet Applications Suite, defines a way
+      to make Web content and Web applications more accessible to people with
+      disabilities.
+    questions_and_answers:
+      - question: What are the benefits of using WAI-ARIA?
+        answer: ' It especially helps with dynamic content and advanced user interface controls developed with HTML, JavaScript, and related technologies. Without WAI-ARIA certain functionality used in Web sites is not available to some users with disabilities, especially people who rely on screen readers and people who cannot use a mouse. WAI-ARIA addresses these accessibility challenges, for example, by defining ways for functionality to be provided to assistive technology. With WAI-ARIA, developers can make advanced Web applications accessible and usable to people with disabilities.'
+      - question: What is WAI-ARIA?
+        answer: >-
+          WAI-ARIA provides a framework for adding attributes to identify
+          features for user interaction, how they relate to each other, and
+          their current state. WAI-ARIA describes navigation techniques to mark
+          regions and common Web structures as menus, primary content, secondary
+          content, banner information, and other types of Web structures. For
+          example, with WAI-ARIA, developers can identify regions of pages and
+          enable keyboard users to easily move among regions, rather than having
+          to press Tab many times.
+      - question: What does WAI-ARIA include?
+        answer: >-
+          WAI-ARIA includes technologies to map controls, live regions, and
+          events to accessibility application programming interfaces (APIs),
+          including custom controls used for rich Internet applications.
+          WAI-ARIA techniques apply to widgets such as buttons, drop-down lists,
+          calendar functions, tree controls (for example, expandable menus), and
+          others.
+  - context: 'Essential Components of Web Accessibility '
+    questions_and_answers:
+      - question: >-
+          What are the key web development and interaction components that need
+          to work together to make the web accessible for people with
+          disabilities?
+        answer: |
+          These components include:
+           content - the information in a web page or web application, including:
+                  natural information such as text, images, and sounds
+                  code or markup that defines structure, presentation, etc.
+              web browsers, media players, and other “user agents”
+              assistive technology, in some cases - screen readers, alternative keyboards,   switches, scanning software, etc.
+              users’ knowledge, experiences, and in some cases, adaptive strategies using the web
+              developers - designers, coders, authors, etc., including developers with disabilities and users who contribute content
+              authoring tools - software that creates websites
+              evaluation tools - web accessibility evaluation tools, HTML validators, CSS validators, etc.
+      - question: How the Components Relate?
+        answer: >-
+          Web developers usually use authoring tools and evaluation tools to
+          create web content.
+
+
+          People (“users”) use web browsers, media players, assistive
+          technologies, or other “user agents” to get and interact with the
+          content.
+      - question: >-
+          Could you explain how the various components of a webpage, especially
+          alt text for images, interact to ensure web accessibility
+        answer: |2
+
+              technical specifications address alternative text (for example, HTML defines the alternative text attribute (alt) of the image element (img))
+              WAI guidelines (WCAG, ATAG, UAAG described below) - define how to implement alternative text for accessibility in the different components
+              developers provide the appropriate alternative text wording
+              authoring tools enable, facilitate, and promote providing alternative text in a web page
+              evaluation tools are used to help check that alternative text exists
+              user agents provide human and machine interface to the alternative text
+              assistive technologies provide human interface to the alternative text in various modalities
+              users know how to get the alternative text from their user agent and/or assistive technology as needed
+  - context: >-
+      Understanding documents provide detailed explanations for Web Content
+      Accessibility Guidelines (WCAG) guidelines and success criteria.
+    questions_and_answers:
+      - question: What does Guideline 1.1 Text Alternatives say?
+        answer: >-
+          Provide text alternatives for any non-text content so that it can be
+          changed into other forms people need, such as large print, braille,
+          speech, symbols or simpler language.
+      - question: What is the purpose of  Time-based Media?
+        answer: >
+          The purpose of this guideline is to provide access to time-based and
+          synchronized media.This includes media that is:
+
+              audio-only
+              video-only
+              audio-video
+              audio and/or video combined with interaction
+      - question: What is the purpose of  Adaptable?
+        answer: >-
+          The purpose of this guideline is to ensure that all information is
+          available in a form that can be perceived by all users, for example,
+          spoken aloud, or presented in a simpler visual layout. If all of the
+          information is available in a form that can be determined by software,
+          then it can be presented to users in different ways (visually,
+          audibly, tactilely etc.). If information is embedded in a particular
+          presentation in such a way that the structure and information cannot
+          be programmatically determined by the assistive technology, then it
+          cannot be rendered in other formats as needed by the user.
+document:
+  repo: https://www.w3.org/TR/WCAG21/
+  commit: https://www.w3.org/TR/2024/REC-WCAG21-20241212/
+  patterns:
+    - Web Content Accessibility Guidelines (WCAG) 2.1
