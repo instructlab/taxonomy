@@ -1,0 +1,5 @@
+Title of work: Red Hat Design
+Link to work: https://design.redhat.com/
+Revision: 2024
+License of the work: https://redhat.com/en/about/terms-use
+Creator names: Red Hat, Inc.
