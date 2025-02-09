@@ -1,0 +1,142 @@
+---
+version: 3
+domain: archaeology
+created_by: mairin
+seed examples:
+  - context: |
+      # Boheh Stone
+
+      The Boheh Stone, also called St. Patrick's Chair, is a piece of rock art
+      a and National Monument located in County Mayo, Ireland.
+
+      ## Location
+
+      The Boheh Stone lies 6.4 km (4 mi) SSW of Westport.
+    questions_and_answers:
+      - question: |
+          What is St. Patrick's Chair?
+        answer: |
+          St. Patrick's Chair is a piece of rock art in County Mayo, Ireland,
+          called the Boheh Stone.
+      - question: |
+          Where is the Boheh Stone?
+        answer: |
+          The Boheh Stone is located in County Mayo, Ireland, 6.4 km (4 miles)
+          south/southwest of Westport.
+      - question: |
+          Tell me about a national monument in Mayo, Ireland.
+        answer:
+          Located in County Mayo, Ireland, the Boheh Stone is a piece of rock
+          art and a national monument that is also called St. Patrick's Chair.
+  - context: |
+      ## History
+
+      The stone is believed to have been carved as early as 3800 BC.
+
+      This stone was later Christianised and called St Patrick's Chair. It was
+      made a waypoint on Tóchar Phádraig, a pilgrimage route; formerly this
+      path led from Rathcroghan to Croagh Patrick.
+    questions_and_answers:
+      - question: |
+          How old is the Boheh Stone?
+        answer: |
+          The Boheh Stone could have been carved as early as 3800 BC.
+      - question: |
+          Is the Boheh Stone related to Christian ritual?
+        answer: |
+          The Boheh Stone predates Christianity, however, it has been
+          Christianized. It was given the name of "St. Patrick's Chair" in
+          recognition of St. Patrick, a Christian saint. It also is a
+          waypoint on a Christian pilgrammage route called Tóchar Phádraig.
+      - question: |
+          Where the did pilgramage route called Tóchar Phádraig, which
+          included the Boheh Stone, go?
+        answer: |
+          The Tóchar Pháraig is a path that used to run from Rathcroghan
+          to Croagh Patrick.
+  - context: |
+      The "rolling sun" phenomenon was rediscovered in 1989–92 by Gerry
+      Bracken. A new panel of carving was found in 2014 by Michael Gibbons.
+
+      In the 2023 book and exhibition Three Stones: The Cross and the Circle,
+      Rónán Lynch wrote that the carvings on the top stone appear to represent
+      the constellations of Crux and Centaurus, last visible from Ireland
+      around 4,100 BC.
+    questions_and_answers:
+      - question: |
+          What do the carvings on the Boheh Stone mean?
+        answer: |
+          As noted in the 2023 book and exhibition "Three Stones: The Cross
+          and the Circle" by Rónán Lynch, it is believed that the carvings
+          on the top stone of the Boheh Stone represent the constellations
+          Crux and Centarus. These constellations were last visible from
+          Ireland back around 4100 BC.
+      - question: |
+          Who discovered the "rolling sun" phenomenon of the Boheh Stone?
+        answer: |
+          Originally, who knows. But the phenomenon was rediscovered by Gerry
+          Bracken in 1989-1992.
+      - question: |
+          What is the latest discovery on the Boheh Stone?
+        answer: |
+          Michael Gibbons discovered a new panel of carving on the Boheh Stone
+          in 2014.
+  - context: |
+      # Description
+
+      The Boheh Stone is one of the finest examples of Neolithic rock art in
+      Ireland, covered in many cup and ring marks and keyhole motifs; about
+      250 petroglyphs in total. It is a natural outcrop flecked with quartz.
+    questions_and_answers:
+      - question: |
+          How many carvings can be seen on the Boheh stone?
+        answer: |
+          Around 250 petroglpyhs in total have been observed on the Boheh
+          Stone.
+      - question: |
+          Can you describe the carvings on the Boheh Stone?
+        answer: |
+          There are Neolithic artistic carvings on the Boheh Stone that
+          include cup and ring marks, as well as keyhole motifs.
+      - question: |
+          What type of rock is the Boheh Stone made out of?
+        answer: |
+          The Boheh Stone, also known as St. Patrick's Chair, is a ntural
+          rock outcropping with flecks of quartz.
+  - context: |
+      ### Rolling sun
+
+      Twice a year (18 April and 24 August by the Gregorian calendar), from
+      the vantage point at the Boheh Stone, the sun can be seen to set at the
+      summit of Croagh Patrick (7.1 km / 4.4 mi to the WNW) and appears to
+      roll down its northern shoulder.
+    questions_and_answers:
+      - question: |
+          What is the "rolling sun" phenomenon of the Boheh Stone?
+        answer: |
+          At certain times of year, if you stand at the Boheh Stone and look
+          towards Croagh Patrick (7.1 km / 4.4 miles west/northwest of the
+          stone), the sun will appear to set at the summit of the mountain and
+          roll down its northern shoulder at sunset.
+      - question: |
+          When can I see the sun roll down Croagh Patrick from St. Patrick's
+          Chair?
+        answer: |
+          From the vantage point of the Boheh Stone (also known as "St.
+          Patrick's Chair), you can see the sun roll down Croagh Patrick at
+          sunset on April 18th and August 24th.
+      - question: |
+          How often can I see the "rolling sun" phenomenon from the Boheh
+          Stone?
+        answer: |
+          You can see the sun roll down the northern shoulder of Croagh Patrick
+          at sunset from the Boheh Stone twice a year.
+document_outline: |
+  Information about the Boheh Stone, a rock outcrop sporting Neolithic art
+  carvings that is located outside of Westport in County Mayo, Ireland, and
+  the natural phenomena observable from it.
+document:
+  repo: https://github.com/mairin/irish-knowledge
+  commit: 618e7bbaaec4f95c95fdd8e57a058dd2a62290df
+  patterns:
+    - Boheh_Stone.md
