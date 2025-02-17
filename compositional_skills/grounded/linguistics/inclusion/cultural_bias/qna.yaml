@@ -1,124 +1,107 @@
+---
 created_by: julian-cable
 version: 3
-task_description: >-
-  You are a member of a team with a mission to create the conditions
-  for belonging and inclusion in the workplace. The people whom you
-  support are new to principles of inclusion and need a safe place
-  to fail. This skill helps the writer use more inclusive terminology
-  to avoid cultural bias.
+task_description: You are a member of a team with a mission to create the
+  conditions for belonging and inclusion in the workplace. The people whom you
+  support are new to principles of inclusion and need a safe place to fail. This
+  skill helps the writer use more inclusive terminology to avoid cultural bias.
 seed_examples:
-  - context: >-
-      The company is building a team of Black Belts for cloud computing.
-    question: How would you improve this sentence to use more inclusive,
-      non culturally appropriated IT terminology?
+  - context: The company is building a team of Black Belts for cloud computing.
+    question: How would you improve this sentence to use more inclusive, non
+      culturally appropriated IT terminology?
     answer: >-
       The company is building a team of specialists for cloud computing.
 
       When not referring to East Asian martial arts or to the name of a
-      certification, use an alternative such as "expert", "certified
-      expert", or "specialist".
-  - context: >-
-      Holy cow! That car almost ran into us!
-    question: How would you improve this sentence to use more inclusive,
-      non religiously biased terminology?
+      certification, use an alternative such as "expert", "certified expert",
+      or "specialist".
+  - context: Holy cow! That car almost ran into us!
+    question: How would you improve this sentence to use more inclusive, non
+      religiously biased terminology?
     answer: >-
       Oh my! That car almost ran into us!
 
       To convey awe or holding something apart without implying (Hindu)
-      religious significance, use an alternative expression such as
-      "oh my" or "wow".
-  - context: >-
-      Is the deal kosher?
-    question: How would you adjust this sentence to use more inclusive,
-      non religiously biased terminology?
+      religious significance, use an alternative expression such as "oh my"
+      or "wow".
+  - context: Is the deal kosher?
+    question: How would you adjust this sentence to use more inclusive, non
+      religiously biased terminology?
     answer: >-
       Is the deal appropriate?
 
-      Do not use "kosher" except to refer to its specific meaning in
-      Jewish communities. Use alternative terms, such as "appropriate"
-      or "acceptable".
-  - context: >-
-      A master clock provides time signals to synchronize one or more
-      slave clocks as a part of a clock network.
-    question: How would you improve this sentence to use inclusive,
-      non culturally biased IT language?
+      Do not use "kosher" except to refer to its specific meaning in Jewish
+      communities. Use alternative terms, such as "appropriate" or "acceptable".
+  - context: A master clock provides time signals to synchronize one or more slave
+      clocks as a part of a clock network.
+    question: How would you improve this sentence to use inclusive, non culturally
+      biased IT language?
     answer: >-
       A primary clock provides time signals to synchronize one or more
       secondary clocks as a part of a clock network.
 
-      Do not use "master" when it is paired with "slave", in a dominant
-      sense with a subordinate entity. Such use diminishes the horror
-      of the dehumanizing practice of slavery. Use terms such as
-      "primary/secondary", "main/subordinate", "parent/child", or other
-      terms as agreed with your stakeholders.
-  - context: >-
-      In database replication, the master database is regarded as the
+      Do not use "master" when it is paired with "slave", in a dominant sense with
+      a subordinate entity. Such use diminishes the horror of the dehumanizing
+      practice of slavery. Use terms such as "primary/secondary", "main/subordinate",
+      "parent/child", or other terms as agreed with your stakeholders.
+  - context: In database replication, the master database is regarded as the
       authoritative source, and the slave databases are synchronized to it.
-    question: How would you revise this sentence to use inclusive,
-      non culturally biased IT terminology?
+    question: How would you revise this sentence to use inclusive, non culturally
+      biased IT terminology?
     answer: >-
       In database replication, the parent database is regarded as the
       authoritative source, and the child databases are synchronized to it.
 
-      Do not use "master" when it is paired with "slave", in a dominant
-      sense with a subordinate entity. Such use diminishes the horror
-      of the dehumanizing practice of slavery. Use terms such as
-      "primary/secondary", "main/subordinate", "parent/child", or other
-      terms as agreed with your stakeholders.
-  - context: >-
-      Master and worker nodes in an OpenShift Container Platform cluster
-      use the CRI-O container engine to run containers.
-    question: How would you rewrite this sentence to use more inclusive,
-      non culturally biased IT terminology?
+      Do not use "master" when it is paired with "slave", in a dominant sense with
+      a subordinate entity. Such use diminishes the horror of the dehumanizing
+      practice of slavery. Use terms such as "primary/secondary", "main/subordinate",
+      "parent/child", or other terms as agreed with your stakeholders.
+  - context: Master and worker nodes in an OpenShift Container Platform cluster use
+      the CRI-O container engine to run containers.
+    question: How would you rewrite this sentence to use more inclusive, non
+      culturally biased IT terminology?
     answer: >-
       Control plane and compute nodes in an OpenShift Container Platform
       cluster use the CRI-O container engine to run containers.
 
-      For computers that were formerly known as "master", refer to them
-      now as "control plane". If you must refer to their role, then be
-      clear that it is a code artifact, such as "machines with the 'master'
-      role". Similarly, for computers that were formerly known as "worker",
-      refer to them now as "compute".
-  - context: >-
-      Let's get to the nitty-gritty of the situation.
-    question: How would you adjust this sentence to use more inclusive,
-      non culturally biased terminology?
-    answer: >-
+      For computers that were formerly known as "master", refer to them now as
+      "control plane". If you must refer to their role, then be clear that it is a
+      code artifact, such as "machines with the 'master' role". Similarly, for
+      computers that were formerly known as "worker", refer to them now as "compute".
+  - context: Let's get to the nitty-gritty of the situation.
+    question: How would you adjust this sentence to use more inclusive, non
+      culturally biased terminology?
+    answer: |-
       Let's get to the essentials of the situation.
-
       Avoid this term because of its original association with slavery.
-  - context: >-
-      The document explains how to segregate cluster traffic from
-      management traffic.
-    question: How would you rewrite this sentence to use inclusive,
-      non culturally biased IT terminology?
+  - context: The document explains how to segregate cluster traffic from management
+      traffic.
+    question: How would you rewrite this sentence to use inclusive, non culturally
+      biased IT terminology?
     answer: >-
-      The document explains how to separate cluster traffic from
-      management traffic.
+      The document explains how to separate cluster traffic from management
+      traffic.
 
-      Do not use "segregate". This term refers to a process that violates
-      human rights by limiting access to privileges and rights such as 
-      education and voting. Use "separate".
-  - context: >-
-      An air-gapped environment ensures security by physical segregation
-      of the system or network.
-    question: How would you adjust this sentence to use inclusive, non
-      culturally biased IT terminology?
+      Do not use "segregate". This term refers to a process that violates human
+      rights by limiting access to privileges and rights such as  education and
+      voting. Use "separate".
+  - context: An air-gapped environment ensures security by physical segregation of
+      the system or network.
+    question: How would you adjust this sentence to use inclusive, non culturally
+      biased IT terminology?
     answer: >-
-      An air-gapped environment ensures security by physical separation
-      of the system or network.
+      An air-gapped environment ensures security by physical separation of the
+      system or network.
 
-      Do not use "segregation". This term refers to a process that violates
-      human rights by limiting access to privileges and rights such a
-      education and voting. Use "separation" or "segmentation".
-  - context: >-
-      Join our tribe to work on this project.
+      Do not use "segregation". This term refers to a process that violates human
+      rights by limiting access to privileges and rights such a education and
+      voting. Use "separation" or "segmentation".
+  - context: Join our tribe to work on this project.
     question: How would you revise this sentence to use more inclusive, non
       culturally biased IT terminology?
-    answer: >-                        
+    answer: >-
       Join our team to work on this project.
 
       Do not use to refer to a group that is formed to accomplish a task.
-      Instead, use "team" or "group". Use "tribe" only to refer to groups
-      of Indigenous people who choose to use the term.
-      
+      Instead, use "team" or "group". Use "tribe" only to refer to groups of
+      Indigenous people who choose to use the term.
