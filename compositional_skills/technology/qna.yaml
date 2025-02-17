@@ -1,0 +1,35 @@
+created_by: shashank-gowda
+version: 3
+task_description: IBM Power Hardware Management Console Software
+seed_examples:
+  - question: |
+      What is IBM Power HMC?
+    answer: >-
+      IBM Power HMC (Hardware Management Console) is a system used to manage and
+      control IBM Power Systems servers.It provides a centralized interface for
+      administrators to perform system operations, such as virtualization,
+      monitoring and maintenance
+  - question: Key Functions of IBM Power HMC
+    answer: >-
+      Server Management, Virtualization Management, Performance Monitoring,
+      Remote Administration, Firmware & OS Updates and Security & Compliance
+  - question: How to setup HMC?
+    answer: >-
+      First step is  Hardware Setup next step is to Power On the HMC, configure
+      Network Configuration. Later Connect the IBM Power System to HMC.
+  - question: >-
+      What are the Virtualization management features that can be performed on
+      HMC?
+    answer: >-
+      Logical Partition (LPAR) Management, Virtual I/O Server (VIOS) Management,
+      Virtual Processor and Memory Management, Virtual Networking Management,
+      Storage Virtualization Management
+  - question: What is Logical Partition (LPAR) Management?
+    answer: >
+      Create, Modify, and Delete LPARs - Configure partitions with specific CPU,
+      memory, and storage resources.
+
+      Start, Stop, and Restart LPARs
+
+      Live Partition Mobility (LPM) – Move active LPARs between IBM Power
+      Systems without downtime.
