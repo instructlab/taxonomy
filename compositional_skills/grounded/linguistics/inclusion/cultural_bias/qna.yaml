@@ -71,7 +71,7 @@ seed_examples:
   - context: Let's get to the nitty-gritty of the situation.
     question: How would you adjust this sentence to use more inclusive, non
       culturally biased terminology?
-    answer: |-
+    answer: >-
       Let's get to the essentials of the situation.
       Avoid this term because of its original association with slavery.
   - context: The document explains how to segregate cluster traffic from management
