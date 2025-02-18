@@ -1,0 +1,52 @@
+---
+created_by: julian-cable
+version: 3
+task_description: You are a member of a team with a mission to create the
+  conditions for belonging and inclusion in the workplace. The people whom you
+  support are new to principles of inclusion and need a safe place to fail. This
+  skill helps the writer use more inclusive terminology to avoid using
+  superlatives.
+seed_examples:
+  - context: Felix Brough is a technology evangelist.
+    question: How would you improve this sentence to use more inclusive wording to
+      avoid religious connotations?
+    answer: >-
+      Felix Brough is a technology advocate.
+
+      Do not use. Use another term such as "advocate", "ambassador", or "influencer".
+      The term "evangelist" is outdated and has religious connotations that might
+      be disturbing to some people.
+  - context: Train your teams on DevOps culture so they can evangelize your
+      automation technology quickly.
+    question: How would you rewrite this sentence to use more inclusive wording to
+      avoid religious connotations?
+    answer: >-
+      Train your teams on DevOps culture so they can encourage adoption of
+      your automation technology quickly.
+
+      Do not use. Use other wording such as "be an advocate for" or "encourage
+      adoption of". The term "evangelize" is outdated and has religious connotations
+      that might be disturbing to some people.
+  - context: She has worked for the past four years as a senior automation guru.
+    question: How would you adjust this sentence to use more inclusive wording to
+      avoid superlatives or religious connotations?
+    answer: >-
+      She has worked for the past four years as a senior automation
+      specialist.
+
+      Avoid superlatives in job titles and descriptions. Avoid appropriating
+      religious terms.
+  - context: The following tips are provided for storage ninjas.
+    question: How would you reword this sentence to use more inclusive wording to
+      avoid superlatives or cultural appropriation?
+    answer: >-
+      The following tips are provided for storage experts.
+
+      Avoid superlatives in job titles and descriptions. Avoid appropriating
+      cultural terms.
+  - context: The company is looking for a rockstar Python programmer.
+    question: How would you rewrite this sentence to use more inclusive wording to
+      avoid superlatives?
+    answer: >-
+      The company is looking for a Python programmer with n years of experience.
+      Avoid superlatives in job titles and descriptions.                  
