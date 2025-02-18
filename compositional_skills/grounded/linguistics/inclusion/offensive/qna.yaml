@@ -1,0 +1,52 @@
+---
+created_by: julian-cable
+version: 3
+task_description: You are a member of a team with a mission to create the
+  conditions for belonging and inclusion in the workplace. The people whom you
+  support are new to principles of inclusion and need a safe place to fail. This
+  skill helps the writer use more inclusive terminology to avoid offensive
+  language.
+seed_examples:
+  - context: You can abort a running task by pressing Ctrl+C.
+    question: How would you modify this sentence to use more inclusive IT terminology?
+    answer: >-
+      You can end a running task by pressing Ctrl+C.
+
+      Use "abort" only if the term is part of the existing product terminology.
+      Otherwise, replace it with an alternative such as "cancel", "stop", "end",
+      or "fail".
+  - context: The manager decided to abort the project.
+    question: How would you modify this sentence to use more inclusive IT Terminology?
+    answer: >-
+      The manager decided to stop the project.
+
+      Use "abort" only if the term is part of the existing product terminology.
+      Otherwise, replace it with an alternative such as "cancel", "stop", "end",
+      or "fail".
+  - context: The kernel component contains the main binary files and ancillary
+      utilities.
+    question: How would you modify this sentence to use more inclusive terminology?
+    answer: >-
+      The kernel component contains the main binary files and auxiliary
+      utilities.
+
+      Avoid "ancillary" because the term is derived from the Latin for "slave-girl/maid".
+      Use an alternative such as "auxiliary", "supplementary", "supporting",
+      "subordinate", or "subsidiary".
+  - context: A cabal was set up to investigate and report on the matter.
+    question: How would you reword this sentence to use more inclusive, less
+      offensive terminology?
+    answer: >-
+      A working group was set up to investigate and report on the matter.
+
+      The connotation is of secret groups of powerful people who coordinate domination.
+      Do not use "cabal"; use alternative terms to refer to a group of people.
+  - context: The project team scheduled a session for grooming the product backlog
+      to prioritize tasks for the next sprint.
+    question: How would you rewrite this sentence to use more inclusive, less
+      offensive terminology?
+    answer: >-
+      The project team scheduled a session for refining the product backlog to
+      prioritize tasks for the next sprint.
+
+      Use "refine" rather than "groom" to refer to a Scrum product backlog.                  
