@@ -1,0 +1,81 @@
+---
+created_by: julian-cable
+version: 3
+task_description: You are a member of a team with a mission to create the
+  conditions for belonging and inclusion in the workplace. The people whom you
+  support are new to principles of inclusion and need a safe place to fail. This
+  skill helps the writer use more inclusive terminology to avoid gender bias.
+seed_examples:
+  - context: Bad guys can exploit vulnerabilities or manipulate systems to steal
+      personal information.
+    question: How would you improve this sentence to use more inclusive,
+      non-gendered IT terminology?
+    answer: >-
+      Bad actors can exploit vulnerabilities or manipulate systems to steal
+      personal information.
+
+      Avoid a gendered term. Use "bad actor" instead.
+  - context: Welcome to the event, guys and girls.
+    question: HHow would you rewrite this sentence to use more Inclusive,
+      non-gendered IT terminology?
+    answer: >-
+      Welcome to the event, everyone.
+
+      Using this term to address a group of people is problematic, because those
+      who are not male might feel excluded. Using "guys and girls" in a business
+      context is also problematic, because "girls" is not an appropriate way to
+      refer to adult women. Alternatives might be "folks" or "all" or "everyone".
+  - context: Each student must bring his own laptop to the training class.
+    question: How would you adjust this sentence to use more inclusive, non-gendered
+      IT terminology?
+    answer: >-
+      All students must bring their own laptop to the training class.
+
+      Except when referring to a specific named person, do not assume that the
+      subject of a sentence is of a particular gender.
+  - context: The range of electronics components includes male and female connectors.
+    question: How would you rewrite this sentence to use more inclusive,
+      non-gendered IT terminology?
+    answer: >-
+      The range of electronics components includes plugs and sockets.
+
+      In an electrical context, use non-gendered terms to refer to components,
+      such as "plug", "pin", or "prong" instead of "male connector", and "receptacle",
+      "socket", or "slot" instead of "female connector".
+  - context: Manning levels have reduced by 40% since March.
+    question: How would you revise this sentence to use more inclusive, non-gendered
+      IT terminology?
+    answer: >-
+      Staffing levels have reduced by 40% since March.
+
+      Instead of "man" or "manning", use a non-gendered term, such as "staffing",
+      "covering", "monitoring", or "operating".
+  - context: This activity requires 10 man days of effort.
+    question: How would you adjust this sentence to use more Inclusive, non-gendered
+      IT terminology?
+    answer: |-
+      This activity requires 10 person days of effort.
+      Do not use "man day". Use "person day".
+  - context: Completing the project on time requires a significant increase in man
+      hours.
+    question: How would you improve this sentence to use more Inclusive,
+      non-gendered IT terminology?
+    answer: >-
+      Completing the project on time requires a significant increase in labor
+      hours.
+
+      Do not use "man hour". Use "labor hour" or "person hour".
+  - context: A man-in-the-middle attack occurs when an attacker secretly intercepts
+      and relays communications between two systems or people who believe that
+      they are communicating directly with each other.
+    question: How would you revise this sentence to use more Inclusive, non-gendered
+      IT terminology?
+    answer: >-
+      An interceptor attack occurs when an attacker secretly intercepts and
+      relays communications between two systems or people who believe that they
+      are communicating directly with each other.
+
+      Avoid gendered language, which can perpetuate bias and stereotypes, and might
+      imply that women do not have the skills to perpetrate this type of hacking.
+      Consider using a replacement term, such as "interceptor attack",
+      "adversary-in-the-middle attack", or "intermediary attack".                    
