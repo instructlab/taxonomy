@@ -1,0 +1,97 @@
+created_by:
+version: 3
+domain: Platform Errors
+document_outline: |2-
+        Various automation tools in P2PaaS generate alerts and send them to the Slack channel
+        #p2paas-awx-alerts. These alerts notify teams about issues in IBM Cloud, Kubernetes clusters,
+        AWX jobs, and other automation processes. The team manually monitors these alerts
+        and takes necessary actions based on severity.
+seed_examples:
+  - context: |2-
+       Each Slack alert is categorized based on severity levels:
+            - High: Requires immediate action.
+            - Medium: Should be addressed within the same day.
+            - Low: Can be resolved in the coming days.
+            AWX jobs also send automated Slack notifications for errors encountered during upgrades and change management.
+    questions_and_answers:
+      - question: ' How are Slack alerts categorized in P2PaaS?'
+        answer: High (immediate action), Medium (same day), and Low (can wait days).
+      - question: Do AWX jobs send alerts to Slack?
+        answer: Yes, for errors encountered during upgrades and change management.
+      - question: What type of issues do Slack alerts notify about?
+        answer: >-
+          Issues in IBM Cloud, Kubernetes clusters, automation failures, and AWX
+          job errors.
+  - context: |-
+      Common alerts include:
+            - IBM Cloud Volume Limit Reached (PAIO_0001): Requires escalating a support ticket.
+            - Error Checking Clusters (PAIO_0003): Usually temporary, but needs investigation if recurring.
+            - Clusters with Broken Nodes (PAIO_0004): Requires checking the health of affected nodes.
+            - Orphaned Storage Volumes (PAIO_0007): Needs confirmation before deletion.
+            Each alert includes a source playbook and necessary action steps.
+    questions_and_answers:
+      - question: What is an example of a high-severity Slack alert?
+        answer: >-
+          IBM Cloud Volume Limit Reached (PAIO_0001) requires escalating a
+          support ticket.
+      - question: What should be done when an orphaned storage volume alert appears?
+        answer: Confirm whether the volume can be deleted before taking action.
+      - question: How can the source of a Slack alert be identified?
+        answer: By checking the associated playbook in the alert details.
+  - context: |2-
+            Actions taken in response to alerts include:
+            - Filing cloud support tickets for resource limit increases.
+            - Investigating Kubernetes cluster health issues.
+            - Restarting AWX jobs that failed due to transient errors.
+            - Escalating critical issues via Slack threads for visibility.
+            All actions should be documented by replying to the original Slack alert thread.
+    questions_and_answers:
+      - question: What actions should be taken for a failed AWX job alert?
+        answer: Investigate the cause and restart the job if it's a transient error.
+      - question: How should responses to Slack alerts be documented?
+        answer: By replying to the original Slack alert thread with updates.
+      - question: What is the purpose of escalating issues in Slack threads?
+        answer: To ensure visibility and coordination among team members.
+  - context: |2-
+            Various automation tools in P2PaaS generate alerts and send them to the Slack channel
+            #p2paas-awx-alerts. These alerts notify teams about issues in IBM Cloud, Kubernetes clusters,
+            AWX jobs, and other automation processes. The team manually monitors these alerts
+            and takes necessary actions based on severity.
+    questions_and_answers:
+      - question: What is the purpose of Slack alerts in P2PaaS?
+        answer: >-
+          To notify teams about issues in IBM Cloud, Kubernetes clusters, AWX
+          jobs, and automation processes.
+      - question: Where are automation alerts sent in P2PaaS?
+        answer: 'They are sent to the Slack channel #p2paas-awx-alerts.'
+      - question: How are Slack alerts currently handled?
+        answer: >-
+          They are manually monitored by the team, and actions are taken based
+          on severity.
+  - context: >-
+      To improve efficiency, automation can be implemented for handling Slack
+      alerts.
+            Example automation steps include:
+            - Parsing Slack alerts using a bot to extract key details.
+            - Automatically categorizing alerts and assigning severity.
+            - Triggering predefined remediation actions for common issues.
+            - Notifying responsible teams only when manual intervention is needed.
+            This helps reduce manual effort and ensures faster issue resolution.
+    questions_and_answers:
+      - question: How can automation improve handling of Slack alerts?
+        answer: >-
+          By parsing alerts, categorizing severity, triggering remediation, and
+          notifying teams when needed.
+      - question: What role does a bot play in Slack alert automation?
+        answer: >-
+          It extracts key details, categorizes alerts, and triggers predefined
+          actions.
+      - question: How does automation benefit the team?
+        answer: >-
+          It reduces manual effort, ensures faster resolution, and prevents
+          alert fatigue.
+document:
+  repo: https://github.com/sakaul88/instructlab_knowledge.git
+  commit: 4575bf368ff0ccab91b0034950318871fd26f8ca
+  patterns:
+    - Slack_Notification/slack.pdf

@@ -1,0 +1,5 @@
+Title of work: slack notification
+Link to work: https://docs.redhat.com/en-us/documentation/openshift_container_platform/4.14/pdf/installing_on_a_single_node/OpenShift_Container_Platform-4.14-Installing_on_a_single_node-en-US.pdf
+Revision: 1.0
+License of the work: CC-BY-SA-4.0
+Creator names: Wikipedia Authors
