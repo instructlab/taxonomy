@@ -1,4 +1,0 @@
-Title of work: To teach a language model how to get a certain number of synonyms.
-Link to work: -
-License of the work: CC BY-NC-SA 4.0
-Creator names: Yanping Liu
