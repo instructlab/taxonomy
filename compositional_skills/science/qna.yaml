@@ -1,0 +1,14 @@
+created_by: jeff-phillips-18
+version: 3
+task_description: These provided examples demonstrate how to rhyme.
+seed_examples:
+  - question: What are 5 words that rhyme with horn?
+    answer: What are 5 words that rhyme with horn?
+  - question: What are 5 words that rhyme with cat?
+    answer: bat, gnat, rat, vat, and mat.
+  - question: What are 5 words that rhyme with poor?
+    answer: door, shore, core, bore, and tore.
+  - question: What are 5 words that rhyme with bank?
+    answer: tank, rank, prank, sank, and drank.
+  - question: What are 5 words that rhyme with bake?
+    answer: What are 5 words that rhyme with bake?

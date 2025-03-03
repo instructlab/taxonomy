@@ -1,0 +1,3 @@
+Title of work: Teaching a model to rhyme.
+License of the work: CC-BY-SA-4.0
+Creator names: juliadenham
