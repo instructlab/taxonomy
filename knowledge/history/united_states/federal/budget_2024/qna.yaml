@@ -1,0 +1,86 @@
+version: 3
+domain: The United States Federal Budget for 2024
+created_by: jjasghar
+seed_examples:
+  - context: |
+        In August 2022, the President signed into law the CHIPS and Science Act (Public Law 117167)-historic bipartisan legislation that is helping power America's manufacturing boom and bringing supply chains-and jobs-back to the United States. The law serves as a down payment on the future of discovery that will create good-paying manufacturing jobs, support local economies and communities, connect regional industries with high-tech research and development, and bolster U.S. competitiveness globally. The CHIPS and Science Act, along with the Inflation Reduction Act, have sent clear signals to the private sector about the demand for clean energy and innovative technologies. In just the two years since the President took office, the Administration's actions have spurred more than $700 billion in private investment in manufacturing, utilities, and energy from more than 200 companies in all 50 States.
+    questions_and_answers:
+      - question: |
+          When did President Biden sign the CHIPS and Science Act into law?
+        answer: |
+          In August 2022, President Biden signed the CHIPS act into law helping power America's manufacturing boom and bringing supply changes and jobs back to the United States.
+      - question: |
+          What was the ultimate goal of the CHIPS and Science Act and Inflation Reduction Act?
+        answer: |
+          It was to send a clear signal to the private sector to invest in innovate technologies and clean energy.
+      - question: |
+          Since 2020 how much money and number of companies has the Biden Administration influenced and invested in around the CHIPS and Science Act?
+        answer: |
+          The Biden administration has spurred more then $700 billion in private investment in manufacturing, utilities, and energy for more then 200 compaines in all 50 states.
+  - context: |
+      Continues Implementation of the President's Historic Bipartisan Infrastructure Law. Implementation of President's historic Bipartisan Infrastructure Law is already well underway. The Budget builds on this progress by providing a total of $76.1 billion for highway, highway safety, and transit formula programs, supporting the amounts authorized for year three of the Bipartisan Infrastructure Law. This includes $60.1 billion for the FederalAid Highway program, an increase of $1.3 billion compared to 2023 enacted, to continue repairing and upgrading the Nation's highways and bridges and build out a national network of electric vehicle chargers to help reach the President's climate goals-as well as $14 billion to support transit agencies across the Nation. The Budget also provides $4.6 billion for DOT to advance the Nation's most urgent and complex transportation infrastructure projects, in conjunction with the significant resources provided in the Bipartisan Infrastructure Law. These funds would support transformational projects that would increase safety, improve mobility for commuters and freight traffic, and spur shared economic growth. Building on the $1 billion provided in the Bipartisan Infrastructure Law for 2024 for operating and maintaining Army Corps of engineers-Civil Works program's (Corps) infrastructure, the Budget invests in the Corps' continued operations, maintenance, and improved reliability.
+    questions_and_answers:
+      - question: |
+          How much budget is allotted to United States Infrastructure including highways and roadways?
+        answer: |
+          The US Federal Budget has $76.1 billion marked for highway, highway safety and transit formula programs.
+      - question: |
+          What was the increase in billions from 2023 to 2024 for the FederalAid Highway program?
+        answer: |
+          The budget increased $1.3 billion to help continue repairing and upgrading the US National highways and bridges.
+      - question: |
+          How much money is provided for the Army Corps of engineers Civil works program for 2024?
+        answer: |
+          The Bipartisan Infrastructure Law for 2024 has $1 billion dollars allotted to it for the Army Corps of engineers-Civil Works program's (Corps) infrastructure, the Budget invests in the Corps' continued operations, maintenance, and improved reliability.
+  - context: |
+      Bolsters American Leadership in Global Health. To reinforce U.S. leadership in addressing global health and health security challenges, the Budget includes $10.9 billion, a $370 million increase above the 2023 enacted level. This includes over $1.2 billion to prepare for, prevent, detect, and respond to infectious disease outbreaks-including by expanding U.S. bilateral partnerships with countries to improve health security capacity. This over $1.2 billion also includes $500 million for the Pandemic Fund to catalyze and accelerate improvements to global health security and pandemic preparedness. The Budget also invests dedicated funds for the Administration's Global Health Worker Initiative to enhance global efforts to better train, equip, and protect the health workforce-which would strengthen countries' abilities to provide core health services and respond to crises. The Budget also increases investments in highimpact and lifesaving voluntary family planning and reproductive health programs to address significant unmet global needs for these services. The Budget sustains U.S. leadership in the Global Fund's historic seventh replenishment, providing $2 billion for the second year of a $6 billion three-year pledge to save lives and accelerate the fight against HIV/AIDS, tuberculosis, and malaria.
+    questions_and_answers:
+      - question: |
+          What is the budget for the US Federal Government for investments in Global Health?
+        answer: |
+          The Global Health budget for the United States Federal government is $10.9 billion, which is a $370 million increase from 2023.
+      - question: |
+          What are some of the spending breakdowns for the $10.9 billion US Federal Global Health Budget?
+        answer: |
+          Some of the line items for the US Federal Global Health Budget includes over $1.2 billion to prepare for, prevent, detect, and respond to infectious disease outbreaks-including by expanding U.S. bilateral partnerships with countries to improve health security capacity. This over $1.2 billion also includes $500 million for the Pandemic Fund to catalyze and accelerate improvements to global health security and pandemic preparedness.
+      - question: |
+          How much money is allocated for sustaining the US leadership in the fight against HIV/AIDS, tuberculosis, and malaria?
+        answer: |
+          The US Federal Budget sustains U.S. leadership in the Global Fund's historic seventh replenishment, providing $2 billion for the second year of a $6 billion three-year pledge to save lives and accelerate the fight against HIV/AIDS, tuberculosis, and malaria.
+  - context: |
+      Improves Taxpayer Experience and Supports a Fair and Equitable Tax System. The Inflation Reduction Act addressed long-standing Internal Revenue Service (IRS) funding deficiencies by providing $79.4 billion in stable, long-term funding through 2031 to improve tax compliance by finally cracking down on high-income individuals and corporations who too often avoid paying their lawfully owed taxes and improving service for the millions of Americans that do pay their taxes. The funding will allow the IRS to modernize information technology infrastructure, administer new energy tax credits, and rebuild the administrative capacity of the Agency. To realize these goals and support timely and robust implementation of the important tax provisions in the Inflation Reduction Act, annual discretionary appropriations are necessary to maintain current services and allow the IRS to utilize the long-term funding for transformative modernization. To ensure that taxpayers receive the highest quality customer service and that all Americans are treated fairly by the U.S. tax system, the Budget provides a total of $14.1 billion for the IRS, $1.8 billion, or 15 percent, above the 2023 enacted level. This includes an increase of $642 million to improve the taxpayer experience and expand customer service outreach to underserved communities and the entire taxpaying public. The Budget also provides $290 million for IRS Business Systems Modernization, which did not receive annual funding in 2023, to continue and accelerate the development of new digital tools to enable better communication between taxpayers and the IRS. In addition to annual discretionary funding, the Budget proposes to maintain deficit reducing Inflation Reduction Act-funded initiatives in 2032 and beyond. This pro
+    questions_and_answers:
+      - question: |
+          How much money does the Inflation Reduction Act add to the Internal Renvenue Service funding through 2031?
+        answer: |
+          Due to the long standing funding deficiencies of the IRS the Inflation Reduction Act provides $79.4 billion for long term funding through 2031.
+      - question: |
+          How much money does the US Federal Budget allocate for the IRS for 2024?
+        answer: |
+          To ensure that taxpayers receive the highest quality customer service and that all Americans are treated fairly by the U.S. tax system, the Budget provides a total of $14.1 billion for the IRS, $1.8 billion, or 15 percent, above the 2023 enacted level.
+      - question: |
+          How much of the US Federal Budget is marked for improving the taxpayer experiance and expanding customer service outreach?
+        answer: |
+          The 2024 US Federal Budget includes an increase of $642 million to improve the taxpayer experience and expand customer service outreach to underserved communities and the entire taxpaying public.
+  - context: |
+      Supports the Artemis Program's Next Great Achievements. Following the successful completion of the Artemis I mission in 2022, the Budget provides $8.1 billion, a $500 million increase above the 2023 enacted level, for the Artemis program of lunar exploration. The Budget fully funds the rockets, crew vehicle, lunar landers, space suits, and other systems needed to fly astronauts around the Moon on the Artemis II mission and then land astronauts-including the first woman, first person of color, and first astronauts from another nation-on subsequent Artemis missions on the lunar surface as America begins development of a lunar outpost and aims toward the eventual exploration of Mars.
+    questions_and_answers:
+      - question: |
+          How much money in the US Federal 2024 budget has been allocated for the Artemis II mission?
+        answer: |
+          Following the successful completion of the Artemis I mission in 2022, the Budget provides $8.1 billion, a $500 million increase above the 2023 enacted level, for the Artemis program of lunar exploration.
+      - question: |
+          What is a list of somethings covered for the Artemis II mission in the US Federal 2024 budget?
+        answer: |
+          The US Federal 2024 Budget fully funds the rockets, crew vehicle, lunar landers, space suits, and other systems needed to fly astronauts around the Moon.
+      - question: |
+          Who will the Artemis II mission enable to land on the Moon in future missions?
+        answer: |
+          On Artemis missions after Artemis II, the first woman, the first person of color, and first astronauts from another nation will be among the astronauts who have landed on the Moon.
+document_outline: |
+  This is the United States of America Fiscal Budget for the year 2024.
+document:
+  repo: https://github.com/jjasghar/instructlab-knowledge-docs.git
+  commit: "16249a3e31dd7144c946d5bdecc18cacc1324cd2"
+  patterns:
+    - budget_fy2024.md
