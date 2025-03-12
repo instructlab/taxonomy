@@ -1,0 +1,135 @@
+created_by: klawrenc
+version: 3
+domain: film history
+document_outline: >-
+  reference for films over the years, how it was made and the general history of
+  cinema
+seed_examples:
+  - context: This model is a resource for the history of film
+    questions_and_answers:
+      - question: who won the Oscar for leading man in a film in 1980
+        answer: Robert De Niro for portraying Jake LaMotta in Raging Bull
+      - question: >-
+          Who starred in the British comedy Shooting Stars in 1928 and who
+          directed it
+        answer: Annette Benson was the star and directed by A. V. Bramble
+      - question: 'What is the basic apparatus for making films '
+        answer: >-
+          Films produce their illusion of continuous movement by passing a
+          series of discrete images in quick succession in front of a light
+          source enabling the images to be projected
+  - context: Oscar winners
+    questions_and_answers:
+      - question: >-
+          How many times has Daniel Day-Lewis won the Oscar for leading man in a
+          motion picture
+        answer: 3 times
+      - question: Who is the youngest to win an Oscar
+        answer: Adrien Brody aged 29 for the Pianist in 2002
+      - question: Who was the oldest to win an Oscar
+        answer: Anthony Hopkins for the Father aged 83 in 2020
+  - context: 'Early Cinema '
+    questions_and_answers:
+      - question: Who were the two most important French producers of early cinema
+        answer: Lumières and Méliès
+      - question: >-
+          What was Lumières story film of sorts in the public début of the
+          Cinématographe
+        answer: The Great Train Robbery (1903)
+      - question: Which two types of film were not generally made in major studios?
+        answer: cartoons and serials
+  - context: Who invented cinema
+    questions_and_answers:
+      - question: Who invented the cinema?
+        answer: >-
+          No one person invented cinema. However, in 1891 the Edison Company
+          successfully demonstrated a prototype of the Kinetoscope, which
+          enabled one person at a time to view moving pictures.
+
+
+          The first public Kinetoscope demonstration took place in 1893. By 1894
+          the Kinetoscope was a commercial success, with public parlours
+          established around the world.
+
+
+          The first to present projected moving pictures to a paying audience
+          were the Lumière brothers in December 1895 in Paris, France. They used
+          a device of their own making, the Cinématographe, which was a camera,
+          a projector and a film printer all in one.
+      - question: What were early films like?
+        answer: >-
+          At first, films were very short, sometimes only a few minutes or less.
+          They were shown at fairgrounds, music halls, or anywhere a screen
+          could be set up and a room darkened. Subjects included local scenes
+          and activities, views of foreign lands, short comedies, and newsworthy
+          events.
+
+
+          The films were accompanied by lectures, music, and extensive audience
+          participation. Although they did not have synchronized dialogue, they
+          were not ‘silent’ as they are sometimes described.
+      - question: when was color added to films
+        answer: >-
+          Color was first added to black-and-white movies through hand coloring,
+          tinting, toning, and stencilling.
+
+
+          By 1906, the principles of colour separation were used to produce
+          so-called ‘natural color’ moving images with the British Kinemacolor
+          process, first presented to the public in 1909
+  - context: Sound
+    questions_and_answers:
+      - question: When was sound added to films?
+        answer: >+
+          The first attempts to add synchronized sound to projected pictures
+          used phonographic cylinders or discs.
+
+
+          The first feature-length movie incorporating synchronised dialogue,
+          The Jazz Singer (USA, 1927), used the Warner Brothers’ Vitaphone
+          system, which employed a separate record disc with each reel of film
+          for the sound.
+
+      - question: |
+          When was the golden age of cinema?
+        answer: >-
+          By the early 1930s, nearly all feature-length movies were presented
+          with synchronized sound and, by the mid-1930s, some were in full color
+          too. The advent of sound secured the dominant role of the American
+          industry and gave rise to the so-called ‘Golden Age of Hollywood’.
+
+
+          During the 1930s and 1940s, cinema was the principal form of popular
+          entertainment, with people often attending cinemas twice a week.
+          Ornate ’super’ cinemas or ‘picture palaces’, offering extra facilities
+          such as cafés and ballrooms, came to towns and cities; many of them
+          could hold over 3,000 people in a single auditorium.
+
+
+          In Britain, the highest attendance occurred in 1946, with over 31
+          million visits to the cinema each week.
+      - question: How have attendance figures changed over the years of cinema?
+        answer: >-
+          While cinemas had some success in fighting the competition of
+          television, they never regained the position and influence they held
+          in the 1930s and 40s, and over the next 30 years audiences dwindled.
+          By 1984 cinema attendances in Britain had declined to one million a
+          week.
+
+
+          By the late 2000s, however, that number had trebled. The first British
+          multiplex was built in Milton Keynes in 1985, sparking a boom in
+          out-of-town multiplex cinemas.
+
+
+          Today, most people see films on television, whether terrestrial,
+          satellite or subscription video on demand (SVOD) services. Streaming
+          film content on computers, tablets and mobile phones is becoming more
+          common as it proves to be more convenient for modern audiences and
+          lifestyles.
+document:
+  repo: https://github.com/klawrenc/taxonomy-knowledge-docs
+  commit: 187fecb8d4bc871607250435f275c38b771fd213
+  patterns:
+    - Howfilmhistoriesweremade-20241228T112154856.md
+    - filmhistory-20241228T112154856.md
