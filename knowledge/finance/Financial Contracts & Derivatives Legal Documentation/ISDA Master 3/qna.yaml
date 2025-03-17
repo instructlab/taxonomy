@@ -1,0 +1,120 @@
+---
+created_by: madalin312
+document:
+  commit: a8cf68169a9d293274da3358f776ffc6c67b5d68
+  patterns:
+  - documents/ISDA Master 3.md
+  repo: https://github.com/madalin312/apollo_documents
+document_outline: |-
+  "Party B"and "Party A" have entered and/or anticipate entering into one or more transactions (each a "Transaction") that are or will be governed
+  by this 2002 Master Agreement, which includes the schedule (the "Schedule"), and the documents and other confirming evidence (each a "Confirmation")
+  exchanged between the parties or otherwise effective for the purpose of confirming or evidencing those Transactions. This 2002 Master Agreement
+  and the Schedule are together referred to as this "Master Agreement". 
+domain: Swaps and derivatives
+seed_examples:
+- context: |-
+    For the purpose of Sections 4{a)(i) and 4(a){ii) of this Agreement, each party agrees to deliver the following documents: 
+
+    * (a) Tax forms, documents or certificates to be delivered are: For the purpose of Sections 4(a)(i) and (ii) of this Agreement, U.S. Internal Revenue Service Form W-9, Form W-8EXP, Form W-8BEN and/or Form W-8ECI from each party (or. where such party is not the beneficial owner for U.S. federal income tax purposes, from each beneficial owner of such party together with Form W-SIMY, with the allocation statement required to be delivered in connection therewith, from such party, as relevant.)
+    * (b) Other documents to be delivered are: 
+
+    | Party required to deliver document | Form/Document/ Certificate | Date by which to be delivered | Covered by Section 3(d) Representation |
+    | --- | --- | --- | --- |
+    | Party B | Annual Report of Party B and of its Credit Support Provider (as applicable) containing consolidated financial statements certified by independent certified public accountants and prepared. in accordance with accounting principles that are generally accepted in the country or countries in which Party B and its Credit Support Provider (as applicable) is organized | If not otherwise publically available, upon request | Yes |
+    | Party B | Unaudited consolidated financial statements of Party B and of its Credit Support Provider (as applicable) for a fiscal quarter prepared in accordance with accounting principles that are generally accepted in the country or countries in which Party B and its Credit Support Provider (as applicable) is organized Certified copies of all corporate authorizations and any other | If not otherwise publically available, upon request | Yes |
+    | Party B | documents with respect to the execution, delivery and performance of this Agreement | Upon execution and delivery of this Agreement | 'es |
+    | Party A and Party B | Certificate of authority and specimen signatures of individuals executing this Agreement, Confirmations and each Credit Support Document (as applicable) | Upon execution and delivery of this Agreement and thereafter upon request of the other party | Yes |
+  questions_and_answers:
+  - answer: "The tax forms, documents or certificates to be delivered are: U.S. Internal Revenue Service Form W-9, Form W-8EXP, Form W-8BEN and/or Form W-8ECI from each party (or. where such party is not the beneficial owner for U.S. federal income tax purposes, from each beneficial owner of such party together with Form W-SIMY, with the allocation statement required to be delivered in connection therewith, from such party, as relevant.)"
+    question: What are the tax forms, documents or certificates to be delivered for the purposes of Sections 4{a)(i) and 4(a){ii) in the ISDA Master agreement?
+  - answer: |-
+      For the purpose of Sections 4{a)(i) and 4(a){ii) of this Agreement, each party agrees to deliver the following documents: Tax forms, documents or certificates, and Certificate of authority and specimen signatures of individuals executing this Agreement, Confirmations and each Credit Support Document (as applicable)
+    question: What are the documents to be delivered by party A in the "Master Agreement"?
+  - answer: The documents are to be delivered either upon request, if not publically available, or upon execution and delivery of the "Master Agreement".
+   question: When are the dates by which the documents should be delivered in the "Master Agreement"?
+- context: |-
+    ## l. Interpretation 
+
+    ### (a) Definitions. 
+
+    The terms defined in Section 14 and elsewhere in this Master Agreement will have the meanings therein specified for the purpose of this Master Agreement. 
+
+    ### (b) Inconsistency. 
+
+    In the event of any inconsistency between the provisions of the Schedule and the other provisions of this Master Agreement, the Schedule will prevail. In the event of any inconsistency between the provisions of any Confirmation and this Master Agreement, such Confirmation will prevail for the purpose of the relevant Transaction. 
+
+    ### (c) Single Agreement. 
+
+    All Transactions are entered into in reliance on the fact that this Master Agreement and all Confirmations form a single agreement between the parties (collectively referred to as this "Agreement"), and the parties would not otherwise enter into any Transactions. 
+  questions_and_answers:
+  - answer: The terms defined in Section 14 and elsewhere in this Master Agreement will have the meanings therein specified for the purpose of this Master Agreement.
+    question: Where can the definitions of the "Master agreement" terms be found?
+  - answer: In the event of any inconsistency between the provisions of the Schedule and the other provisions of this Master Agreement, the Schedule will prevail. In the event of any inconsistency between the provisions of any Confirmation and this Master Agreement, such Confirmation will prevail for the purpose of the relevant Transaction.
+    question: How are provision inconsistencies resolved for the 2002 ISDA Master agreement?
+  - answer: This Master Agreement and all Confirmations form a single agreement between the parties (collectively referred to as this "Agreement"), and the parties would not otherwise enter into any Transactions.
+   question: How are multiple transactions and agreements treated in the 2002 ISDA Master agreement?
+- context: |-
+    * (1)
+    Addresses for Notices. For the purpose of Section 12(a) of this Agreement: 
+
+    Address for notice or communications to Party A: 
+
+    Any notice relating to a particular Transaction shall be delivered to the address or facsimile number specified in the Confirmation of such Transaction. Any notice delivered for purposes of Sections 5 and 6 of this Agreement shall be delivered to the following address: 
+
+    JPMorgan Chase Bank, National Association Attention: Legal Department- Derivatives Practice Group 270 Park Avenue 
+
+    New York. New York 10017-2070 Facsimile No.: (646) 534-6393 
+
+    Address for notice or communications to Party B:
+    * (2)
+    Process Agent. For the purpose of Section 13(c) of this Agreement: 
+
+    Party A appoints as its Process Agent: Not applicable. Party B appoints as its Process Agent: Not applicable. 
+
+    Offices. The provisions of Section 10(a) will apply to this Agreement. 
+
+    Multibranch Party. For the purpose of Section 10 of this Agreement: 
+
+    Party A is a Multibranch Party and may act through any Office specified in a Confirmation.
+  questions_and_answers:
+  - answer: "In the case of the Agreement, any notice relating to a particular Transaction shall be delivered to the address or facsimile number specified in the Confirmation of such Transaction. Any notice delivered for purposes of Sections 5 and 6 of this Agreement shall be delivered to JPMorgan Chase Bank, National Association Attention: Legal Department- Derivatives Practice Group 270 Park Avenue New York. New York 10017-2070 Facsimile No.: (646) 534-6393"
+    question: What is the address where the notices to party A should be delivered in the case of the Agreement?
+  - answer: In the 2002 ISDA Master Agreement, there are no process agents appointed for either party A or party B.
+    question: Who are the process agents in the 2002 ISDA Master Agreement?
+  - answer: In the 2002 ISDA Master Agreement, party A is a Multibranch Party and may act through any Office specified in a Confirmation.
+   question: Are either party A or party B considered multibranch parties?
+- context: |-
+    Governing Law. This Agreement will be governed by and construed in accordance with the laws of the State of New York (without reference to choice of law doctrine). 
+
+    Section 2(c) of this Agreement to all Transactions starting from the date of this Agreement. 
+
+    Netting of Payments. "'Multiple Transaction Payment Netting" will apply for the purpose of Section 2(c) of this Agreement to all transactions starting from the date of this Agreement.
+
+    Absence of Litigation For the purpose of Section 3(¢) of this Agreement: 
+
+    "Specified Entity" means, in relation to Party A, any Affiliate of Party A. Specified Entity" means, in relation to Party B, any Affiliate of Party B. 
+  questions_and_answers:
+  - answer: The Agreement will be governed by and construed in accordance with the laws of the State of New York (without reference to choice of law doctrine).
+    question: Under what jurisdiction is the Agreement applied?
+  - answer: In the 2002 ISDA Master Agreement, "'Multiple Transaction Payment Netting" will apply for the purpose of Section 2(c) of this Agreement to all transactions starting from the date of this Agreement.
+    question: Are multiple payments allowed to be netted in the 2002 ISDA Master Agreement?
+  - answer: In the 2002 ISDA Master Agreement, "Specified Entity" means, in relation to Party A, any Affiliate of Party A. Specified Entity" means, in relation to Party B, any Affiliate of Party B.
+   question: What does "Specified Entity" mean in the "Master Agreement"?
+- context: |-
+    Other Provisions 
+
+    Waiver of Jury Trial 
+
+    Each party waives, to the fullest extent permitted by applicable law, any right it may have to a trial by jury in respect of any suit, action or proceeding relating to this Agreement or any Credit Support Document. Each party (i) certifies that no representative, agent or attorney of the other party or any Credit Support Provider has represented, expressly or otherwise, that such other party would not, in the event of such a suit, action or proceeding, seek to enforce the foregoing waiver and (ii) acknowledges that it and the other party have been induced to enter into this Agreement and provide for any Credit Support Document, as applicable, by, among other things, the mutual waivers and certifications in this Section. 
+
+    ISDA Definitions Reference is hereby made to the 2006 ISDA Definitions (the "2006 Definitions") and the 1998 FX and Currency Option Definitions (the "FX Definitions") (collectively the "ISDA Definitions") each as published by the International Swaps and Derivatives Association, Inc., which are hereby incorporated by reference herein. Any terms used and not otherwise defined herein which are contained in the ISDA Definitions shall have the meaning set forth therein 
+
+    2005 ISDA Commodity Definitions. The 2005 ISDA Commodity Definitions (as published by the International Swap and Derivatives Association, Inc.) as amended, supplemented, replaced or modified from time to time (the "Commodity Definitions"), are incorporated by reference in this Agreement and the relevant Confirmations with respect to "Transactions." as defined by the Commodity Definitions, except as otherwise specifically provided in the relevant Confirmation.
+  questions_and_answers:
+  - answer: In the case of the 2002 ISDA Master Agreement, each party waives, to the fullest extent permitted by applicable law, any right it may have to a trial by jury in respect of any suit, action or proceeding relating to this Agreement or any Credit Support Document.
+    question: Do the parties in the "Master Agreement" have the right to file a suit, action or proceeding relating to this Agreement?
+  - answer: In the Agreement, ISDA Definitions Reference is made to the 2006 ISDA Definitions (the "2006 Definitions") and the 1998 FX and Currency Option Definitions (the "FX Definitions") (collectively the "ISDA Definitions") each as published by the International Swaps and Derivatives Association, Inc.
+    question: In the Agreement, what is referenced for ISDA Definitions?
+  - answer: The 2005 ISDA Commodity Definitions (as published by the International Swap and Derivatives Association, Inc.) as amended, supplemented, replaced or modified from time to time (the "Commodity Definitions"), are incorporated by reference in this Agreement and the relevant Confirmations with respect to "Transactions." as defined by the Commodity Definitions, except as otherwise specifically provided in the relevant Confirmation.
+   question: In the Master Agreement, what is referenced in regards to Commodity Definitions?
+version: 3

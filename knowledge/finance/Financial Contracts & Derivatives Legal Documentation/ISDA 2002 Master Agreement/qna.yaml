@@ -1,0 +1,244 @@
+---
+created_by: ER-work
+document:
+  commit: a8cf68169a9d293274da3358f776ffc6c67b5d68
+  patterns:
+  - documents/ISDA 2002 Master Agreement.md
+  repo: https://github.com/madalin312/apollo_documents
+document_outline: |-
+  ISDA International Swaps and Derivatives Association, Inc.
+  2002 MASTER AGREEMENT. have entered and/or anticipate entering into one or more transactions (each a “Transaction”) that are or will be
+  governed by this 2002 Master Agreement, which includes the schedule (the “Schedule”), and the documents and
+  other confirming evidence (each a “Confirmation”) exchanged between the parties or otherwise effective for the
+  purpose of confirming or evidencing those Transactions. This 2002 Master Agreement and the Schedule are together
+  referred to as this “Master Agreement”.
+domain: isda2002masteragreement
+seed_examples:
+- context: |-
+    "2. Obligations
+    (a) General Conditions.
+    (i) Each party will make each payment or delivery specified in each Confirmation to be made by it,
+    subject to the other provisions of this Agreement.
+    (ii) Payments under this Agreement will be made on the due date for value on that date in the place of
+    the account specified in the relevant Confirmation or otherwise pursuant to this Agreement, in freely transferable funds and in the manner customary for payments in the required currency. Where settlement is by delivery (that is, other than by payment), such delivery will be
+    made for receipt on the due date in the manner customary for the relevant obligation unless otherwise specified in the relevant Confirmation or elsewhere in this Agreement.
+    (iii) Each obligation of each party under Section 2(a)(i) is subject to (1) the condition precedent that no Event of Default or Potential Event of Default with respect to the other party has occurred and is continuing, (2) the condition precedent that no Early Termination Date in
+    respect of the relevant Transaction has occurred or been effectively designated and (3) each other condition specified in this Agreement to be a condition precedent for the purpose of this Section 2(a)(iii).
+    (b) Change of Account. Either party may change its account for receiving a payment or delivery by giving notice to the other party at least five Local Business Days prior to the Scheduled Settlement Date for the payment or delivery to which such change applies unless such other party
+    gives timely notice of a reasonable objection to such change."
+  questions_and_answers:
+  - answer: "Each party must make payments or deliveries as specified in each Confirmation,\
+      \ subject to the other provisions of the Agreement."
+    question: What are the general obligations of each party under Section 2(a)(i)
+      of the ISDA 2002 Master Agreement?
+  - answer: Deliveries must be made for receipt on the due date in the customary manner
+      for the relevant obligation unless otherwise specified in the Confirmation or
+      the Agreement.
+    question: 'How should deliveries (other than payments) be made under the ISDA
+      2002 Master Agreement? '
+  - answer: |-
+      A party’s obligation is subject to:
+      No Event of Default or Potential Event of Default occurring with respect to the other party.
+      No Early Termination Date having been designated for the relevant transaction.
+      Any other conditions specified in the Agreement.
+    question: What conditions must be satisfied before a party is required to fulfill
+      its obligations under Section 2(a)(i)?
+- context: "Events of Default and Termination Events (a) Events of Default. The occurrence\
+    \ at any time with respect to a party or, if applicable, any Credit Support Provider\
+    \ of such party or any Specified Entity of such party of any of the following\
+    \ events constitutes (subject to Sections 5(c) and 6(e)(iv)) an event of default\
+    \ (an “Event of Default”) with respect to such party:— (i) Failure to Pay or Deliver.\
+    \ Failure by the party to make, when due, any payment under this Agreement or\
+    \ delivery under Section 2(a)(i) or 9(h)(i)(2) or (4) required to be made by it\
+    \ if such failure is not remedied on or before the first Local Business Day in\
+    \ the case of any such payment or the first Local Delivery Day in the case of\
+    \ any such delivery after, in each case, notice of such failure is given to the\
+    \ party; (ii) Breach of Agreement; Repudiation of Agreement. (1) Failure by the\
+    \ party to comply with or perform any agreement or obligation (other than an obligation\
+    \ to make any payment under this Agreement or delivery under Section 2(a)(i) or\
+    \ 9(h)(i)(2) or (4) or to give notice of a Termination Event or any agreement\
+    \ or obligation under Section 4(a)(i), 4(a)(iii) or 4(d)) to be complied with\
+    \ or performed by the party in accordance with this Agreement if such failure\
+    \ is not remedied within 30 days after notice of such failure is given to the\
+    \ party; or (2) the party disaffirms, disclaims, repudiates or rejects, in whole\
+    \ or in part, or challenges the validity of, this Master Agreement, any Confirmation\
+    \ executed and delivered by that party or any Transaction evidenced by such a\
+    \ Confirmation (or such action is taken by any person or entity appointed or empowered\
+    \ to operate it or act on its behalf); Credit Support Default. (1) Failure by\
+    \ the party or any Credit Support Provider of such party to comply with or perform\
+    \ any agreement or obligation to be complied with or performed by it in accordance\
+    \ with any Credit Support Document if such failure is continuing after any applicable\
+    \ grace period has elapsed; (2) the expiration or termination of such Credit Support\
+    \ Document or the failing or ceasing of such Credit Support Document, or any security\
+    \ interest granted by such party or such Credit Support Provider to the other\
+    \ party pursuant to any such Credit Support Document, to be in full force and\
+    \ effect for the purpose of this Agreement (in each case other than in accordance\
+    \ with its terms) prior to the satisfaction of all obligations of such party under\
+    \ each Transaction to which such Credit Support Document relates without the written\
+    \ consent of the other party; or (3) the party or such Credit Support Provider\
+    \ disaffirms, disclaims, repudiates or rejects, in whole or in part, or challenges\
+    \ the validity of, such Credit Support Document (or such action is taken by any\
+    \ person or entity appointed or empowered to operate it or act on its behalf);\
+    \ (iv) Misrepresentation.  "
+  questions_and_answers:
+  - answer: A party’s failure to make a payment or delivery when due constitutes an
+      Event of Default if it is not remedied by the first Local Business Day (for
+      payments) or the first Local Delivery Day (for deliveries) after notice of such
+      failure is given.
+    question: Under what conditions does a Failure to Pay or Deliver constitute an
+      Event of Default under the ISDA 2002 Master Agreement?
+  - answer: "If a party fails to perform or comply with an obligation (excluding payment,\
+      \ delivery, or certain notice obligations), it constitutes an Event of Default\
+      \ if the failure is not remedied within 30 days after notice is given."
+    question: What happens if a party fails to comply with a contractual obligation
+      under the ISDA 2002 Master Agreement?
+  - answer: |-
+      "A Credit Support Default occurs when:
+      A party or its Credit Support Provider fails to comply with a Credit Support Document and does not remedy the failure within the applicable grace period.
+      A Credit Support Document expires, terminates, or ceases to be in full force before obligations under related transactions are satisfied, without the consent of the other party.
+      A party or its Credit Support Provider repudiates or challenges the validity of a Credit Support Document."
+    question: When does a Credit Support Default occur under the ISDA 2002 Master
+      Agreement?
+- context: "Definitions As used in this Agreement:— “Additional Representation” has\
+    \ the meaning specified in Section 3. “Additional Termination Event” has the meaning\
+    \ specified in Section 5(b). “Affected Party” has the meaning specified in Section\
+    \ 5(b). “Affected Transactions” means (a) with respect to any Termination Event\
+    \ consisting of an Illegality, Force Majeure Event, Tax Event or Tax Event Upon\
+    \ Merger, all Transactions affected by the occurrence of such Termination Event\
+    \ (which, in the case of an Illegality under Section 5(b) (i)(2) or a Force Majeure\
+    \ Event under Section 5(b)(ii)(2), means all Transactions unless the relevant\
+    \ Credit Support Document references only certain Transactions, in which case\
+    \ those Transactions and, if the relevant Credit Support Document constitutes\
+    \ a Confirmation for a Transaction, that Transaction) and (b) with respect to\
+    \ any other Termination Event, all Transactions. “Affiliate” means, subject to\
+    \ the Schedule, in relation to any person, any entity controlled, directly or\
+    \ indirectly, by the person, any entity that controls, directly or indirectly,\
+    \ the person or any entity directly or indirectly under common control with the\
+    \ person. For this purpose, “control” of any entity or person means ownership\
+    \ of a majority of the voting power of the entity or person. “Agreement” has the\
+    \ meaning specified in Section 1(c). “Applicable Close-out Rate” means:— (a) in\
+    \ respect of the determination of an Unpaid Amount:— (i) in respect of obligations\
+    \ payable or deliverable (or which would have been but for Section 2(a)(iii))\
+    \ by a Defaulting Party, the Default Rate; (ii) in respect of obligations payable\
+    \ or deliverable (or which would have been but for Section 2(a)(iii)) by a Non-defaulting\
+    \ Party, the Non-default Rate; (iii) in respect of obligations deferred pursuant\
+    \ to Section 5(d), if there is no Defaulting Party and for so long as the deferral\
+    \ period continues, the Applicable Deferral Rate; and (iv) in all other cases\
+    \ following the occurrence of a Termination Event (except where interest accrues\
+    \ pursuant to clause (iii) above), the Applicable Deferral Rate; and (b) in respect\
+    \ of an Early Termination Amount:— (i) for the period from (and including) the\
+    \ relevant Early Termination Date to (but excluding) the date (determined in accordance\
+    \ with Section 6(d)(ii)) on which that amount is payable:— (1) if the Early Termination\
+    \ Amount is payable by a Defaulting Party, the Default Rate; (2) if the Early\
+    \ Termination Amount is payable by a Non-defaulting Party, the Non-default Rate;\
+    \ and (3) in all other cases, the Applicable Deferral Rate; and (ii) for the period\
+    \ from (and including) the date (determined in accordance with Section 6(d)(ii))\
+    \ on which that amount is payable to (but excluding) the date of actual payment:—\
+    \ (1) if a party fails to pay the Early Termination Amount due to the occurrence\
+    \ of an event or circumstance which would, if it occurred with respect to a payment\
+    \ or delivery under a Transaction, constitute or give rise to an Illegality or\
+    \ a Force Majeure Event, and for so long as the Early Termination Amount remains\
+    \ unpaid due to the continuing existence of such event or circumstance, the Applicable\
+    \ Deferral Rate;"
+  questions_and_answers:
+  - answer: |-
+      "An ""Affected Transaction"" refers to:
+      (a) For Termination Events such as Illegality, Force Majeure, Tax Event, or Tax Event Upon Merger, all affected Transactions.
+      (b) For other Termination Events, all Transactions between the parties."
+    question: What qualifies as an "Affected Transaction" under the ISDA 2002 Master
+      Agreement?
+  - answer: "An Affiliate is an entity that is directly or indirectly controlled by,\
+      \ controls, or is under common control with a person, where \"control\" means\
+      \ owning a majority of voting power in that entity."
+    question: How is "Affiliate" defined under the ISDA 2002 Master Agreement?
+  - answer: |-
+      "The interest rate depends on the responsible party:
+      Defaulting Party: Default Rate applies.
+      Non-defaulting Party: Non-default Rate applies.
+      All other cases (including Illegality or Force Majeure): Applicable Deferral Rate applies."
+    question: How is the interest rate determined for an Early Termination Amount
+      under the ISDA 2002 Master Agreement?
+- context: "3. Representations Each party makes the representations contained in Sections\
+    \ 3(a), 3(b), 3(c), 3(d), 3(e) and 3(f) and, if specified in the Schedule as applying,\
+    \ 3(g) to the other party (which representations will be deemed to be repeated\
+    \ by each party on each date on which a Transaction is entered into and, in the\
+    \ case of the representations in Section 3(f), at all times until the termination\
+    \ of this Agreement). If any “Additional Representation” is specified in the Schedule\
+    \ or any Confirmation as applying, the party or parties specified for such Additional\
+    \ Representation will make and, if applicable, be deemed to repeat such Additional\
+    \ Representation at the time or times specified for such Additional Representation.\
+    \ (a) Basic Representations. (i) Status. It is duly organised and validly existing\
+    \ under the laws of the jurisdiction of its organisation or incorporation and,\
+    \ if relevant under such laws, in good standing; (ii) Powers. It has the power\
+    \ to execute this Agreement and any other documentation relating to this Agreement\
+    \ to which it is a party, to deliver this Agreement and any other documentation\
+    \ relating to this Agreement that it is required by this Agreement to deliver\
+    \ and to perform its obligations under this Agreement and any obligations it has\
+    \ under any Credit Support Document to which it is a party and has taken all necessary\
+    \ action to authorise such execution, delivery and performance; 3 ISDA® 2002 (iii)\
+    \ No Violation or Conflict. Such execution, delivery and performance do not violate\
+    \ or conflict with any law applicable to it, any provision of its constitutional\
+    \ documents, any order or judgment of any court or other agency of government\
+    \ applicable to it or any of its assets or any contractual restriction binding\
+    \ on or affecting it or any of its assets; (iv) Consents. All governmental and\
+    \ other consents that are required to have been obtained by it with respect to\
+    \ this Agreement or any Credit Support Document to which it is a party have been\
+    \ obtained and are in full force and effect and all conditions of any such consents\
+    \ have been complied with; and (v) Obligations Binding. Its obligations under\
+    \ this Agreement and any Credit Support Document to which it is a party constitute\
+    \ its legal, valid and binding obligations, enforceable in accordance with their\
+    \ respective terms (subject to applicable bankruptcy, reorganisation, insolvency,\
+    \ moratorium or similar laws affecting creditors’ rights generally and subject,\
+    \ as to enforceability, to equitable principles of general application (regardless\
+    \ of whether enforcement is sought in a proceeding in equity or at law)). (b)\
+    \ Absence of Certain Events. No Event of Default or Potential Event of Default\
+    \ or, to its knowledge, Termination Event with respect to it has occurred and\
+    \ is continuing and no such event or circumstance would occur as a result of its\
+    \ entering into or performing its obligations under this Agreement or any Credit\
+    \ Support Document to which it is a party. "
+  questions_and_answers:
+  - answer: "A party must confirm that it is duly organized and validly existing under\
+      \ the laws of its jurisdiction and, if applicable, in good standing."
+    question: What does the "Status" representation in Section 3(a)(i) require a party
+      to confirm?
+  - answer: "It ensures that a party has the legal authority to execute, deliver,\
+      \ and perform its obligations under the ISDA Agreement and any related Credit\
+      \ Support Document."
+    question: What does the "Powers" representation in Section 3(a)(ii) ensure?
+  - answer: "It confirms that executing and performing the agreement does not violate\
+      \ any laws, constitutional documents, court orders, or contractual restrictions\
+      \ that apply to the party."
+    question: What does the "No Violation or Conflict" representation in Section 3(a)(iii)
+      cover?
+- context: |-
+    "5. Events of Default and Termination Events
+    (a) Events of Default. The occurrence at any time with respect to a party or, if applicable, any Credit Support Provider of such party or any Specified Entity of such party of any of the following events constitutes (subject to Sections 5(c) and 6(e)(iv)) an event of default (an “Event of
+    Default”) with respect to such party:—
+    (i) Failure to Pay or Deliver.
+    (ii) Breach of Agreement; Repudiation of Agreement.
+    (iii) Credit Support Default.
+    (v) Default Under Specified Transaction. The party, any Credit Support Provider of such party or any applicable Specified Entity of such party:—
+    (vi) Cross-Default. If “Cross-Default” is specified in the Schedule as applying to the party, the occurrence or existence of:—
+    (vii) Bankruptcy. The party, any Credit Support Provider of such party or any applicable Specified Entity of such party:—
+    (viii) Merger Without Assumption."
+  questions_and_answers:
+  - answer: "If a party fails to make a payment or delivery when due under the Agreement\
+      \ and does not remedy the failure by the first Local Business Day (for payments)\
+      \ or first Local Delivery Day (for deliveries) after receiving notice, it constitutes\
+      \ an Event of Default."
+    question: Under what conditions does a Failure to Pay or Deliver constitute an
+      Event of Default under the ISDA 2002 Master Agreement?
+  - answer: "A Cross-Default occurs if the party (or its Credit Support Provider or\
+      \ Specified Entity) defaults under another financial agreement for an amount\
+      \ above the Threshold Amount, causing that debt to become due and payable earlier\
+      \ than scheduled."
+    question: When does a Cross-Default occur under the ISDA 2002 Master Agreement?
+  - answer: |-
+      "A party enters an Event of Default if it:
+      Becomes insolvent or unable to pay debts.
+      Files for bankruptcy or is subject to an involuntary bankruptcy proceeding that is not dismissed within 15 days.
+      Has a receiver or liquidator appointed over its assets.
+      Undergoes an event that has an analogous effect under applicable law."
+    question: What bankruptcy-related events can trigger an Event of Default under
+      the ISDA 2002 Master Agreement?
+version: 3
