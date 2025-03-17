@@ -1,0 +1,183 @@
+---
+version: 3
+created_by: madalin312
+document:
+  commit: a8cf68169a9d293274da3358f776ffc6c67b5d68
+  patterns:
+  - documents/ISDA Master 1.md
+  repo: https://github.com/madalin312/apollo_documents
+document_outline: |-
+  The ISDA 2002 Master Agreement establishes the legal and credit terms between parties, including definitions, obligations, payment terms, and termination provisions.
+  The agreement covers tax representations, document delivery requirements, and dispute resolution mechanisms. It also includes provisions for netting,
+  governing law, confidentiality, and liability limitations. Specific schedules and annexes define party-specific terms, credit support arrangements,
+  and commodity transactions. The document ensures consistency across multiple transactions, reducing legal uncertainty and credit risk.
+domain: Financial Contracts & Derivatives Legal Documentation
+seed_examples:
+- context: |-
+    Accordingly, the partics agree as follows: 1. Interpretation 
+
+    ## (a) Definitions. 
+
+    The terms defined 5' Section 14 and elsewhere in this Master Agreement will have the meanings therein specified for the purpose of this Master Agreement. 
+
+    ## (b) Inconsistency. 
+
+    In the event of any inconsistency between the provisions of the Schedule and the other provisions of this Master Agreement, the Schedule will prevail. In the event of any inconsistency between the provisions of any Confirmation and this Master Agreement, such Confirmation will prevail for the purpose of the relevant Transaction, 
+
+    ## (c) Single Agreement. 
+
+    All Transactions are entered into in reliance on the fact that this Master Agreement and all Confirmations form a single agreement between the parties (collectively referred to as this "Agreement"), and the parties would not otherwise enter into any Transactions. 
+  questions_and_answers:
+  - answer: The terms defined in Section 14 and elsewhere in this Master Agreement will have the meanings therein specified for the purpose of this Master Agreement.
+    question: Which section defines the terms used in this Master Agreement?
+  - answer: In the event of any inconsistency between the provisions of the Schedule and the other provisions of this Master Agreement, the Schedule will prevail.
+    question: What will prevail in the event of any inconsistency between the provisions the Schedule and the other provisions of this Master Agreement?
+  - answer: |-
+      All Transactions are entered into in reliance on the fact that this Master Agreement and all Confirmations form a single agreement between the parties
+      (collectively referred to as this "Agreement"), and the parties would not otherwise enter into any Transactions.
+    question: What is the condition for entering into any Transaction under this Agreement?
+- context: |-
+    * 2.
+    Obligations 
+
+
+      + (a) General Conditions. 
+        - (i) Each party will make each payment or delivery specified in each Confirmation to be made by it, subject to the other provisions of this Agreement.
+        - (ii) Payments under this Agreement will be made on the due date for value on that date in the place of the account specified in the relevant Confirmation or otherwise pursuant to this Agreement, in freely transferable funds and in the manner customary for payments in the required currency. Where settlement is by delivery (that is, Other than by payment), such delivery will be made for receipt on the due date in the manner customary for the relevant obligation unless otherwise specified in the relevant Confirmation of elsewhere in this Agreement.Copyright © 2002 by International Swaps and Derivatives Association, Inc. 
+  questions_and_answers:
+  - answer: Each party will make each payment or delivery specified in each Confirmation to be made by it, subject to the other provisions of this Agreement.
+    question: What is the obligation of each party regarding payments and deliveries under this Agreement?
+  - answer: |-
+      Payments under this Agreement will be made on the due date for value on that date in the place of the account specified
+      in the relevant Confirmation or otherwise pursuant to this Agreement, in freely transferable funds and in the manner
+      customary for payments in the required currency.
+    question: What are the conditions for payments under this Agreement?
+  - answer: |-
+      Where settlement is by delivery (that is, Other than by payment), such delivery will be made for receipt on the due date
+      in the manner customary for the relevant obligation unless otherwise specified in the relevant Confirmation or elsewhere in this Agreement.
+    question: What are the conditions for delivery under this Agreement?
+- context: |-
+    # PART 1 
+
+    Termination Provisions 
+
+    * (a)
+    "Specified Entity" means in relation to Party A for the purpose of: 
+
+    Section 5(a)(v), none; Section 5(a)(vi), none; Section 5(a)(vii), none; and Section 5(b)(v), none; 
+
+    and in relation to Party B for the purpose of: 
+
+    Section 5(a)(v), none; Section 5(a)(vi), none; Section 5(a)(vii), none; and Section 5(b)(v), none. 
+
+    "Specified Transaction" will have the meaning specified in Section 14 of this Agreement. 
+
+    The "Cross-Default" provisions of Section 5(a)(vi) will apply to Party A and Party B, and 
+
+
+      + (c)
+      for such purpose:
+    * (b)
+
+      + (1) "Specified Indebtedness" will have the meaning specified in Section 14 of this Agreement, except that such term shall not include obligations in respect of deposits received in the ordinary course of a party's banking business; and
+      + (2) "Threshold \_Amount" means, with respect to Party A, an amount equal to three percent (3%) of such party's shareholders' equity; and with respect to Party B, For purposes of this definition, any Specified Indebtedness denominated in a currency other than the currency in which the Threshold is expressed shall be converted into the currency in which the Threshold is expressed at the exchange rate therefor reasonably chosen by the other party.
+      + (d) The "Credit Event Upon Merger" provisions of Section 5(b)(v) will apply to Party A and Party B; provided, however, that if the applicable party has long term, unsecured and unsubordinated indebtedness or deposits which is or are publicly rated (such rating, a "Credit Rating") by Moody's Investor Services, Inc. ("Moody's"), Standard and Poor's Ratings Group ("S&P") or any other internationally recognized rating agency (a "Rating Agency"), then the words "materially weaker" in line 6 of Section 5(b)(v) shall mean that the Credit Rating of such party (or, if applicable, the Credit Support Provider of such party) shall be rated lower than Baa3 by Moody's, or lower than BBB- by S&P or, in the event that there is no Credit Rating by either Moody's or S&P applicable to such party (or, if applicable, the Credit Support Provider of such party) but such party's long-term indebtedness or deposits is or are rated by a Rating Agency, lower than a rating equivalent to the foregoing by such Rating Agency.
+    * (c) The "Automatic Early Termination" provision of Section 6(a) will not apply to Party A Or Party B.
+    * (f)
+    * (g)
+    "Termination Currency" will have the meaning set forth in Section 14 of this Agreement. 
+
+    Additional Termination Event will not apply.
+  questions_and_answers:
+  - answer: |-
+      "Specified Indebtedness" will have the meaning specified in Section 14 of this Agreement, except that such term shall not include
+      obligations in respect of deposits received in the ordinary course of a party's banking business.
+    question: How is "Specified Indebtedness" defined and what exception applies?
+  - answer: |-
+      "Threshold Amount" means, with respect to Party A, an amount equal to three percent (3%) of such party's shareholders' equity.
+    question: How much is the Threshold Amount for Party A?
+  - answer: |-
+      A credit rating is considered 'materially weaker' if it falls below Baa3 by Moody’s or below BBB- by S&P,
+      or an equivalent rating by another internationally recognized rating agency.
+    question: what credit rating threshold is considered 'materially weaker' for a party under the Credit Event Upon Merger provision?
+- context: |-
+    # PART 2 
+
+    Tax Representations 
+
+    ## (a) 
+
+    Payer Tax Representations. For the purpose of Section 3(e) of this Agreement, Party A and Party B each hereby make the following representation: 
+
+    It is not required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction or withholding for or on account of any Tax from any payment (other than interest under Section 9(h) of this Agreement or amounts payable hereunder that may be considered to be interest for United States federal income tax purposes) to be made by it to the other party under this Agreement. In making this representation, it may rely on (i) the accuracy of any representations made by the other party pursuant to Section 3(f) of this Agreement, (ii) the satisfaction of the agreement of the other party contained in Section 4(a)(i) or 4(a)(iti) of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement and (iii) the satisfaction of the agreement of the other party contained in Section 4(d) of this Agreement, except that it will not be a breach of this representation where reliance is placed on clause (ii) above and the other party does not deliver a form or document under Section 4(a)(iii) by reason of material prejudice to its legal or commercial position. 
+
+    ## (b) Payee Tax Representations. 
+
+    For the purpose of Section 3(f} of this Agreement: and its U.S. Tax identification number is 13-4994650. 
+
+    * (i) Party A represents that it is a U.S. Person for U.S. federal income tax purposes
+    * (ii)
+  questions_and_answers:
+  - answer: |-
+      Each party represents that it is not required to deduct or withhold tax from payments under the Agreement,
+      except for amounts considered interest under Section 9(h) of this Agreement or for United States federal income tax purposes.
+    question: What tax representation does each party make under Section 3(e) of the ISDA Master Agreement?
+  - answer: |-
+      In making this representation, it may rely on (i) the accuracy of any representations made by the other party pursuant
+      to Section 3(f) of this Agreement, (ii) the satisfaction of the agreement of the other party contained in Section 4(a)(i) or 4(a)(iti)
+      of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii)
+      of this Agreement and (iii) the satisfaction of the agreement of the other party contained in Section 4(d) of this Agreement.
+    question: On what conditions can a party rely when making its tax representation?
+  - answer: |-
+      (i) Party A represents that it is a U.S. Person for U.S. federal income tax purposes.
+      (ii) and its U.S. Tax identification number is 13-4994650.
+    question: What is the tax status of Party A under Section 3(f) of the ISDA Master Agreement?
+- context: |-
+    # PART 3 
+
+    Agreement to Deliver Documents 
+
+    For the purpose of Sections 4(a)(i) and 4(a)(ii) of this Agreement, each party agrees to deliver the following documents: 
+
+    * (a) Tax forms, documents or certificates to be delivered are: For the purpose of Sections 4{a)(i) and (ii) of this Agreement, (i) Party A agrees to deliver two complete and accurate United States Internal Revenue Service Forms W-9 (or any successor applicable forms), in a manner reasonably satisfactory to the other party, (1) upon execution of this Agreement; and (l1) promptly upon learning that any such form previously 
+
+    United States Internal Revenue Service Form W-9, Form W-8EXP, Form W-SBEN and/or 
+
+    filed by either party has become obsolete or incorrect and (ii) Party B agrees to deliver 
+
+    Form W-SECI (or, where Party B is not the beneficial owner for U.S. federal income tax purposes, from each beneficial owner of Party B together with Form W-SIMY, with the relevant) in a manner reasonably satisfactory to the other party, (1) upon execution of this 
+
+    allocation statement required to be delivered in connection therewith, from Party B, as Agreement; and (1) promptly upon learning that any such form previously filed by either party has become obsolete of incorrect.
+    * (b) Other documents to be delivered are: 
+
+    | Party required to deliver document | Form/Document/ Certificate | Date by which to be delivered | Covered by Section 3(d) Representation |
+    | --- | --- | --- | --- |
+    | Each Party |  | Upon execution and delivery of | Yes |
+
+    this Agreement 
+
+
+
+    | Each party or its Credit Support Provider, as applicable | Audited annual financial statements of such entity (in the case of Party A, of JPMorgan Chase & Co.) for each fiscal year certified by independent certified public accountants and prepared in accordance with relevant accepted accounting | Upon request if unavailable on the SEC or such website and any event, 120 days | Yes |
+    | --- | --- | --- | --- |
+    | Each party or Credit Support Provider, as | generally principles Unaudited financial statements such entity (in the case of Party of JPMorgan Chase & Co.) for | website entity's in within following the fiscal year end. Upon request if unavailable on |  |
+    | its applicable | of A, each quarter, in each case prepared in accordance with relevant generally accepted. accounting principles | the SEC website or such entity's website and in any event, within 60 days following each quarter end | Yes |
+    | Each party and its Credit Support Provider, as applicable | Certified resolutions or equivalent documents evidencing necessary corporate of partnership, as the case may be, authority and approvals with respect to the execution, delivery and performance of this Agreement and each Credit Support | Upon execution and delivery of this Agreement | Yes |
+    | its Credit Support Provider, as | specimen signatures of individuals executing this Agreement and each Credit Support Document (as applicable) | Upon execution and delivery of this Agreement and thereafter upon request of the other party | Yes |
+    | Each party and applicable | Certificate of authority and |  |  |
+
+    Document (as applicable) PART 4 
+  questions_and_answers:
+  - answer: |-
+      United States Internal Revenue Service Form W-9, Form W-8EXP, Form W-SBEN and/or Form W-8ECI
+      (or, where Party B is not the beneficial owner for U.S. federal income tax purposes, from each beneficial owner of Party B
+      together with Form W-8IMY with the allocation statement required to be delivered in connection therewith, from Party B as relevant).
+    question: What tax forms and documents are required to be delivered for Party B under Sections 4(a)(i) and 4(a)(ii) of the ISDA Master Agreement?
+  - answer: |-
+      (i) Audited annual financial statements for each fiscal year certified by independent certified public accountants;
+      (ii) Unaudited financial statements for each quarter;
+      (iii) Certified resolutions or equivalent documents evidencing necessary corporate of partnership, as the case may be, authority and approvals with respect to the execution, delivery and performance of this Agreement and each Credit Support Document;
+      (iv) Certificate of authority and specimen signatures of individuals executing this Agreement and each Credit Support Document.
+    question: What other documents are required to deliver according to the Part 3 of this Agreement?
+  - answer: Within 60 days following each quarter end.
+    question: By what date Unaudited financial statements of such entity (in the case of Party of JPMorgan Chase & Co.) for each quarter to be delivered?
