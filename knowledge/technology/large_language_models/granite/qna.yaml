@@ -1,0 +1,110 @@
+created_by:
+version: 3
+domain: Technology
+document_outline: >-
+  IBM Granite is a series of decoder-only AI models introduced by IBM in
+  September 2023. Initially part of the Watsonx platform, the models range from
+  3 to 34 billion parameters. IBM made several models open-source in May 2024.
+  Granite models, trained on diverse datasets, excel in tasks like coding,
+  outperforming models such as Llama 3 in specific areas.
+seed_examples:
+  - context: >-
+      IBM Granite is a series of decoder-only AI foundation models created by
+      IBM. It was announced on September 7, 2023, and an initial paper was
+      published 4 days later.
+    questions_and_answers:
+      - question: What is IBM Granite?
+        answer: >-
+          IBM Granite is a series of decoder-only AI foundation models created
+          by IBM.
+      - question: When was IBM Granite announced?
+        answer: September 7, 2023
+      - question: When was the initial paper published for IBM Granite?
+        answer: >-
+          It was announced on September 7, 2023, and an initial paper was
+          published 4 days later.
+  - context: >-
+      Granite's first foundation models were Granite.13b.instruct and
+      Granite.13b.chat. The "13b" in their name comes from 13 billion, the
+      amount of parameters they have as models, lesser than most of the larger
+      models of the time. Later models vary from 3 to 34 billion parameters.
+    questions_and_answers:
+      - question: Which models are the Granite's first foundation models?
+        answer: >-
+          Granite's first foundation models were Granite.13b.instruct and
+          Granite.13b.chat.
+      - question: How many parameters does granite model has?
+        answer: ' The Granite models range from 3 to 34 billion parameters.'
+      - question: >-
+          What does 13b mean in 'Granite.13b.instruct' or 'Granite.13b.chat'
+          models?
+        answer: >-
+          The "13b" in their name comes from 13 billion, the amount of
+          parameters they have
+  - context: >-
+      Granite models are trained on datasets curated from Internet, academic
+      publishing, code datasets, legal and finance documents.
+
+      ## Foundation models
+
+      A foundation model is an AI model trained on broad data at scale such that
+      it can be adapted to a wide range of downstream tasks.
+    questions_and_answers:
+      - question: On which datasets are the granite models trained on?
+        answer: >-
+          Granite models are trained on datasets curated from Internet, academic
+          publishing, code datasets, legal and finance documents.
+      - question: What are Foundation models?
+        answer: >-
+          A foundation model is an AI model trained on broad data at scale such
+          that it can be adapted to a wide range of downstream tasks.
+      - question: Is Granite model trained on data from Internet?
+        answer: >-
+          Yes, Granite models are trained on datasets curated from Internet,
+          academic publishing, code datasets, legal and finance documents.
+  - context: >-
+      On May 6, 2024, IBM released the source code of four variations of Granite
+      Code Models under Apache 2, an open source permissive license that allows
+      completely free use, modification and sharing of the software, and put
+      them on Hugging Face for public use. According to IBM's own report,
+      Granite 8b outperforms Llama 3 on several coding related tasks within
+      similar range of parameters.
+    questions_and_answers:
+      - question: When did IBM open-sourced Granite Code Models ?
+        answer: >-
+          On May 6, 2024, IBM released the source code of 4 variations of
+          Granite Code Models under Apache 2, an open source permissive license
+          that allows completely free use, modification and sharing of the
+          software, and put them on Hugging Face for public
+      - question: >-
+          Where did IBM released the source code of four variations of Granite
+          Code Models?
+        answer: On Hugging Face
+      - question: Which Granite model variation outperformed Llama 3?
+        answer: >-
+          According to IBM's own report, Granite 8b outperforms Llama 3 on
+          several coding related tasks within similar range of parameters.
+  - context: |-
+      See also
+
+          Mistral AI, a company that also provides open source models
+          GPT
+          LLaMA
+          Cyc
+          Gemini
+      External links
+
+          GitHub page [https://github.com/ibm-granite]
+          IBM Granite Playground [https://www.ibm.com/granite/playground/]
+    questions_and_answers:
+      - question: What is Mistral AI?
+        answer: Mistral AI is a company that also provides open source models
+      - question: ' GitHub page'
+        answer: https://github.com/ibm-granite
+      - question: IBM Granite Playground
+        answer: https://www.ibm.com/granite/playground/
+document:
+  repo: https://github.ibm.com/gupta-sim8/Instruct-Lab.git
+  commit: bdf91341886cf46033ef0773f5c86615fd7cd9a4
+  patterns:
+    - IBM-Granite.md
