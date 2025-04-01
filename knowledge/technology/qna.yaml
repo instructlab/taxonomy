@@ -1,0 +1,50 @@
+created_by:
+version: 3
+domain: techonolgy
+document_outline: ' la ;lkj adsjf ;lajdsf jlakjdfl;ja;ldsjf ;lajd;lfjas;ldjfl;dsaj;lfjsald;jf'
+seed_examples:
+  - context: jasdjf;ld
+    questions_and_answers:
+      - question: lksjdlfjs
+        answer: lksdjflkj
+      - question: lskjdfljsd
+        answer: kjsdflj
+      - question: lskjdfljsdpiupewrqer
+        answer: lskjdfljsdoiuwoeur
+  - context: lskjdfljsd
+    questions_and_answers:
+      - question: lskjdfljsdpiuwerkadsf
+        answer: lskjdfljsd';a'dpiewirp
+      - question: lskjdfljsdpoiqeriqr
+        answer: lskjdfljsdoiuqpouerqew
+      - question: lskjdfljsdoiuweoruwoue
+        answer: lskjdfljsd,mnvnmnnndfd
+  - context: lskjdfljsdlkjsadfouwe
+    questions_and_answers:
+      - question: lskjdfljsdrytyadsf
+        answer: lskjdfljsdtytytrtrtrt
+      - question: lskjdfljsdtutyuyuy
+        answer: lskjdfljsdututuiui
+      - question: lskjdfljsdtutopopo
+        answer: lskjdfljsdtutqwqw
+  - context: lkajds;fja;ejrqenrnwenrqel;jrjqerjlewjrlk
+    questions_and_answers:
+      - question: lskjdfljsdewrwervrgrtg
+        answer: lskjdfljsduiuiuj7j7j7
+      - question: lskjdfljsdwerweriilili
+        answer: lskjdfljsdertrtnynyy
+      - question: lskjdfljsduoiuoqqsxsa
+        answer: lskjdfljsdbnvbnbvnecdececd
+  - context: mnmncnvvlaweoruoquerqeroiasdfsdf
+    questions_and_answers:
+      - question: lskjdfljsddfdfwer
+        answer: lskjdfljsdegrhnntj
+      - question: lskjdfljsdykykyuuk
+        answer: lskjdfljsdzxczdfs
+      - question: lskjdfljsdwerwfveg
+        answer: lskjdfljsdyuyukk
+document:
+  repo: https://github.com/DDDas7/data
+  commit: eb8a248ddb8843e3d2bd2254f58e95779f4d85d8
+  patterns:
+    - README.md
