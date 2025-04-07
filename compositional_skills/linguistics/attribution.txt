@@ -1,0 +1,3 @@
+Title of work: Find words that alliterate with the prompt word.
+License of the work: CC-BY-SA-4.0
+Creator names: lpsandrea02

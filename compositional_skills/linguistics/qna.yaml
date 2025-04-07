@@ -1,0 +1,24 @@
+created_by: lpsandrea02
+version: 3
+task_description: >-
+  Generate alliterating words which have same initial consonant sound as the
+  prompt word.
+seed_examples:
+  - question: What words alliterate with dog?
+    answer: Day, drink, daily, dangerous, doughnut.
+  - question: Three words that alliterate with cat.
+    answer: Class, careful, call.
+  - question: Words that alliterate with chair.
+    answer: Chaste, chatter, chauffeur, chocolate, chips.
+  - question: What words alliterate with knowledge?
+    answer: Kneel, knave, knife, noise, noble.
+  - question: What is a word that alliterates with Jonathan?
+    answer: Jester.
+  - question: What alliterates with obsession?
+    answer: Obvious, oven, obnoxious, official, orange.
+  - question: What words alliterate with phone?
+    answer: Forest, phantom, phrase, phase, photograph.
+  - question: What adjectives alliterate with girl?
+    answer: Gentle, gracious, glamorous, ghastly, grand.
+  - question: What verbs alliterate with swiftly?
+    answer: Speak, smile, study, send, sleep.
