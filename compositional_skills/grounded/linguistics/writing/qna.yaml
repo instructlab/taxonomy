@@ -1,0 +1,24 @@
+created_by: lpsandrea02
+version: 3
+task_description: >-
+  Turn a sentence into a question by inverting the first auxiliary verb with the
+  Subject, or do-support if there is none (a form of 'do').
+seed_examples:
+  - context: Mary was cooking dinner.
+    question: Turn this sentence into a question.
+    answer: Was Mary cooking dinner?
+  - context: Gabby likes jogging.
+    question: Can you turn this sentence into a question?
+    answer: Does Gabby like jogging?
+  - context: Could Joseph have been sick?
+    question: Make this sentence into a question.
+    answer: Joseph could have been sick.
+  - context: I am hungry.
+    question: Rewrite this sentence as a question.
+    answer: 'Am I hungry? '
+  - context: I had lost my wallet.
+    question: Turn this text into a question.
+    answer: Had I lost my wallet?
+  - context: He is not working on the project.
+    question: Can you rewrite this sentence as a question?
+    answer: Is he not working on the project?
