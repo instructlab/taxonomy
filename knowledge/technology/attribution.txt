@@ -1,0 +1,5 @@
+Title of work: NASA Fine Tuning
+Link to work: https://github.com/hbenig1/command_to_hex
+Revision: 1
+License of the work: 1234
+Creator names: hhbenig1

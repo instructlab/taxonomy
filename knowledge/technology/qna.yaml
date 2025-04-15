@@ -1,0 +1,95 @@
+created_by:
+version: 3
+domain: technology
+document_outline: |-
+  Input : Command
+  Output: Command and hex code
+seed_examples:
+  - context: Initiate VISOR SET EXPOSURE with exposure = medium
+    questions_and_answers:
+      - question: Initiate VISOR SET EXPOSURE with exposure = medium
+        answer: >-
+          {"subsystem":"VISOR","directive":"VISOR_SET_EXPOSURE
+          EXPOSURE=\"MEDIUM\"","command_name":"VISOR SET
+          EXPOSURE","parameters":{"EXPOSURE":"MEDIUM"},"hex_output":"0x00A3091832C0000002030001"}
+      - question: Configure VISOR with exposure = medium
+        answer: >-
+          {"subsystem":"VISOR","directive":"VISOR_SET_EXPOSURE
+          EXPOSURE=\"MEDIUM\"","command_name":"VISOR SET
+          EXPOSURE","parameters":{"EXPOSURE":"MEDIUM"},"hex_output":"0x00A3091832C0000002030001"}
+      - question: Run VISOR SET EXPOSURE using medium
+        answer: >-
+          {"subsystem":"VISOR","directive":"VISOR_SET_EXPOSURE
+          EXPOSURE=\"MEDIUM\"","command_name":"VISOR SET
+          EXPOSURE","parameters":{"EXPOSURE":"MEDIUM"},"hex_output":"0x00A3091832C0000002030001"}
+  - context: Change the VISOR exposure setting to short
+    questions_and_answers:
+      - question: Change VISOR exposure to short
+        answer: ' {"subsystem":"VISOR","directive":"VISOR_SET_EXPOSURE EXPOSURE=\"SHORT\"","command_name":"VISOR SET EXPOSURE","parameters":{"EXPOSURE":"SHORT"},"hex_output":"0x00A3091832C0000002030000"} '
+      - question: 'Adjust VISOR settings: exposure to short'
+        answer: >
+          {"subsystem":"VISOR","directive":"VISOR_SET_EXPOSURE
+          EXPOSURE=\"SHORT\"","command_name":"VISOR SET
+          EXPOSURE","parameters":{"EXPOSURE":"SHORT"},"hex_output":"0x00A3091832C0000002030000"}
+      - question: Configure VISOR with exposure = short
+        answer: >-
+          {"subsystem":"VISOR","directive":"VISOR_SET_EXPOSURE
+          EXPOSURE=\"SHORT\"","command_name":"VISOR SET
+          EXPOSURE","parameters":{"EXPOSURE":"SHORT"},"hex_output":"0x00A3091832C0000002030000"}
+  - context: Use long exposure setting on VISOR
+    questions_and_answers:
+      - question: Use long exposure setting on VISOR
+        answer: >-
+          {"subsystem":"VISOR","directive":"VISOR_SET_EXPOSURE
+          EXPOSURE=\"LONG\"","command_name":"VISOR SET
+          EXPOSURE","parameters":{"EXPOSURE":"LONG"},"hex_output":"0x00A3091832C0000002030002"}
+      - question: |
+          Start VISOR using long exposure
+        answer: >-
+          {"subsystem":"VISOR","directive":"VISOR_SET_EXPOSURE
+          EXPOSURE=\"LONG\"","command_name":"VISOR SET
+          EXPOSURE","parameters":{"EXPOSURE":"LONG"},"hex_output":"0x00A3091832C0000002030002"}
+      - question: Set VISOR exposure to long
+        answer: >-
+          {"subsystem":"VISOR","directive":"VISOR_SET_EXPOSURE
+          EXPOSURE=\"LONG\"","command_name":"VISOR SET
+          EXPOSURE","parameters":{"EXPOSURE":"LONG"},"hex_output":"0x00A3091832C0000002030002"}
+  - context: 'Adjust VISOR settings: filters to uv'
+    questions_and_answers:
+      - question: 'Adjust VISOR settings: filters to uv'
+        answer: >-
+          {"subsystem":"VISOR","directive":"VISOR_SET_FILTERS
+          FILTERS=\"UV\"","command_name":"VISOR SET
+          FILTERS","parameters":{"FILTERS":"UV"},"hex_output":"0x00A2091832C0000002020000"}
+      - question: Activate VISOR SET FILTERS where filters equals uv
+        answer: >-
+          {"subsystem":"VISOR","directive":"VISOR_SET_FILTERS
+          FILTERS=\"UV\"","command_name":"VISOR SET
+          FILTERS","parameters":{"FILTERS":"UV"},"hex_output":"0x00A2091832C0000002020000"}
+      - question: Use uv filters setting on VISOR
+        answer: >-
+          {"subsystem":"VISOR","directive":"VISOR_SET_FILTERS
+          FILTERS=\"UV\"","command_name":"VISOR SET
+          FILTERS","parameters":{"FILTERS":"UV"},"hex_output":"0x00A2091832C0000002020000"}
+  - context: Use vis filters setting on VISOR
+    questions_and_answers:
+      - question: Use vis filters setting on VISOR
+        answer: >-
+          {"subsystem":"VISOR","directive":"VISOR_SET_FILTERS
+          FILTERS=\"VIS\"","command_name":"VISOR SET
+          FILTERS","parameters":{"FILTERS":"VIS"},"hex_output":"0x00A2091832C0000002020001"}
+      - question: Activate VISOR SET FILTERS where filters equals vis
+        answer: >-
+          {"subsystem":"VISOR","directive":"VISOR_SET_FILTERS
+          FILTERS=\"VIS\"","command_name":"VISOR SET
+          FILTERS","parameters":{"FILTERS":"VIS"},"hex_output":"0x00A2091832C0000002020001"}
+      - question: Initiate VISOR SET FILTERS with filters = vis
+        answer: >-
+          {"subsystem":"VISOR","directive":"VISOR_SET_FILTERS
+          FILTERS=\"VIS\"","command_name":"VISOR SET
+          FILTERS","parameters":{"FILTERS":"VIS"},"hex_output":"0x00A2091832C0000002020001"}
+document:
+  repo: https://github.com/hbenig1/command_to_hex
+  commit: 51917e0d751b53eb504271da4b88c41311dcb8cc
+  patterns:
+    - command_to_hex.txt
