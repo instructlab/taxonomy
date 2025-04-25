@@ -9,7 +9,7 @@
     - context: Blacklisting is the action of a group or authority in compiling a list
         of people, countries, or other entities to be avoided or distrusted as
         being deemed unacceptable to the creators of the list.
-      question: Show me how to use inclusive IT terminology to replace non-inclusive,
+      question: Suggest how to use inclusive IT terminology to replace non-inclusive,
         racially biased IT terminology.
       answer: >-
         Denylisting is the action of a group or authority in compiling a list of
@@ -21,7 +21,7 @@
         and so they promote racial bias. Instead of "blacklist", use "denylist" or
         "blocklist".
     - context: A blacklist refers to a list of banned persons or organizations.
-      question: How would you adjust the word choice to use inclusive, non racially
+      question: How might you adjust the word choice to use inclusive, non racially
         biased IT terminology?
       answer: >-
         A denylist refers to a list of banned persons or organizations.
@@ -33,7 +33,7 @@
     - context: A black hat hacker exploits well-known vulnerabilities in systems to
         uncover sensitive information for personal gain or to inflict damage on
         the target system or network.
-      question: How would you improve this sentence to use more inclusive, non
+      question: How might you improve this sentence to use more inclusive, non
         racially biased IT terminology?
       answer: >-
         An attacker exploits well-known vulnerabilities in systems to uncover
@@ -47,7 +47,7 @@
         performance and determine how vulnerable they are to intrusion. Academic
         researchers and professional security consultants are examples of white
         hat hackers.
-      question: How would you adjust this sentence to use more inclusive, non racially
+      question: How might you adjust this sentence to use more inclusive, non racially
         biased IT terminology?
       answer: >-
         An ethical hacker tests networks and systems to examine their
@@ -62,7 +62,7 @@
     - context: A use for whitelists is in local area network (LAN) security. Many
         network administrators set up MAC address whitelists, or a MAC address
         filter, to control who is allowed on their networks.
-      question: How would you revise this sentence to use inclusive, non racially
+      question: How might you revise this sentence to use inclusive, non racially
         biased IT terminology?
       answer: >-
         A use for allowlists is in local area network (LAN) security. Many
