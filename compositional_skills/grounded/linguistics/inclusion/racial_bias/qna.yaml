@@ -1,0 +1,75 @@
+---
+  created_by: julian-cable
+  version: 3
+  task_description: You are a member of a team with a mission to create the
+    conditions for belonging and inclusion in the workplace. The people whom you
+    support are new to principles of inclusion and need a safe place to fail. This
+    skill helps the writer use more inclusive terminology to avoid racial bias.
+  seed_examples:
+    - context: Blacklisting is the action of a group or authority in compiling a list
+        of people, countries, or other entities to be avoided or distrusted as
+        being deemed unacceptable to the creators of the list.
+      question: Suggest how to use inclusive IT terminology to replace non-inclusive,
+        racially biased IT terminology.
+      answer: >-
+        Denylisting is the action of a group or authority in compiling a list of
+        people, countries, or other entities to be avoided or distrusted as being
+        deemed unacceptable to the creators of the list.
+  
+        Do not use "blacklist" or "whitelist". These terms are based on a bad/good
+        binary where black is represented as bad whereas white is represented as good,
+        and so they promote racial bias. Instead of "blacklist", use "denylist" or
+        "blocklist".
+    - context: A blacklist refers to a list of banned persons or organizations.
+      question: How might you adjust the word choice to use inclusive, non racially
+        biased IT terminology?
+      answer: >-
+        A denylist refers to a list of banned persons or organizations.
+  
+        Do not use "blacklist" or "whitelist". These terms are based on a bad/good
+        binary where black is represented as bad whereas white is represented as good,
+        and so they promote racial bias. Instead of "blacklist", use "denylist" or
+        "blocklist".
+    - context: A black hat hacker exploits well-known vulnerabilities in systems to
+        uncover sensitive information for personal gain or to inflict damage on
+        the target system or network.
+      question: How might you improve this sentence to use more inclusive, non
+        racially biased IT terminology?
+      answer: >-
+        An attacker exploits well-known vulnerabilities in systems to uncover
+        sensitive information for personal gain or to inflict damage on the target
+        system or network.
+  
+        Do not use "black hat" or "white hat". These terms promote racial bias because
+        black is used to indicate malevolence whereas white is used to indicate ethical,
+        positive behavior. Instead of "black hat", use "attacker" or "unethical hacker".
+    - context: A white hat hacker tests networks and systems to examine their
+        performance and determine how vulnerable they are to intrusion. Academic
+        researchers and professional security consultants are examples of white
+        hat hackers.
+      question: How might you adjust this sentence to use more inclusive, non racially
+        biased IT terminology?
+      answer: >-
+        An ethical hacker tests networks and systems to examine their
+        performance and determine how vulnerable they are to intrusion. Academic
+        researchers and professional security consultants are examples of ethical
+        hackers.
+  
+        Do not use "white hat" or "black hat". These terms promote racial bias because
+        white is used to indicate ethical, positive behavior whereas black is used to
+        indicate malevolence. Instead of "white hat", use "ethical hacker" or another
+        term.
+    - context: A use for whitelists is in local area network (LAN) security. Many
+        network administrators set up MAC address whitelists, or a MAC address
+        filter, to control who is allowed on their networks.
+      question: How might you revise this sentence to use inclusive, non racially
+        biased IT terminology?
+      answer: >-
+        A use for allowlists is in local area network (LAN) security. Many
+        network administrators set up MAC address allowlists, or a MAC address
+        filter, to control who is allowed on their networks.
+  
+        Do not use "whitelist" or "blacklist". These terms are based on a good/bad
+        binary where white is represented as good whereas black is represented as bad,
+        and so they promote racial bias. Instead of "whitelist", use "allowlist".
+  
