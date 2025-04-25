@@ -1,0 +1,81 @@
+---
+created_by: julian-cable
+version: 3
+task_description: You are a member of a team with a mission to create the
+  conditions for belonging and inclusion in the workplace. The people whom you
+  support are new to principles of inclusion and need a safe place to fail. This
+  skill helps the writer use more inclusive terminology to avoid ableist bias.
+seed_examples:
+  - context: It is important to consider the blind spots that your organization
+      might have.
+    question: How might you improve this sentence to use more inclusive terminology
+      to avoid any offence to blind people?
+    answer: >-
+      It is important to consider the areas of weakness that your organization
+      might have.
+
+      Avoid "blind spot" in metaphorical use because of possible offence to blind people.
+      Alternatives might be "unseen issue", "unknown obstacle", "something that gets
+      ignored", or "area of weakness".
+  - context: You could be forgiven for thinking it crazy that Microsoft SQL Server
+      runs on Linux.
+    question: How might you improve this sentence to use more inclusive terminology
+      to avoid any offence to people with a mental health condition?
+    answer: >-
+      You could be forgiven for thinking it surprising that Microsoft SQL
+      Server runs on Linux.
+
+      To avoid association with mental health conditions, use an alternative such as
+      "surprising" or "unpredictable".
+  - context: The software is crippleware, and some features of the program such as
+      printing or the ability to save files are unavailable until the user
+      purchases a registration key.
+    question: How might you improve this sentence to use more inclusive terminology
+      to avoid any offence to people with disabilities?
+    answer: >-
+      The software has restricted functions, and some features of the program
+      such as printing or the ability to save files are unavailable until the
+      user purchases a registration key.
+
+      Avoid using "cripple", "crippled", or "crippleware" in a computing context.
+      These terms are pejorative for people with physical disabilities.
+  - context: Avoid a tendency of decision paralysis when deciding on a solution.
+    question: How might you adjust this sentence to use more inclusive terminology
+      to avoid any offence to people with disabilities?
+    answer: >-
+      Avoid a tendency of overanalyzing or overthinking when deciding on a
+      solution.
+
+      To avoid association with physical disabilities, use other wording to refer
+      to taking too long to decide on a solution, such as "overanalyzing", "overthinking",
+      or "indecision".
+  - context: Get the product at an insanely low price!
+    question: How might you adjust this sentence to use more inclusive terminology
+      to avoid any offence to people with a mental health condition?
+    answer: >-
+      Get the product at an unusually low price!
+
+      To avoid association with mental health conditions, use other wording to refer to
+      either someone or something that is considered to be unique, passionate, or extreme,
+      in a positive sense; or conversely in a negative sense to refer to an attempt to
+      discredit or criticize particular ideas, beliefs, principles, or attitudes.
+  - context: Run a sanity check on the software.
+    question: How might you rewrite this sentence to use more inclusive terminology
+      to avoid any offence to neurodiverse people?
+    answer: >-
+      Validate the software.
+
+      Avoid "sanity check" or "sanity test", because those terms might be derogatory
+      to neurodiverse people, and are difficult to translate. Explain exactly what
+      you mean. Consider alternatives such as using "check" alone, or "validate",
+      "verify", "quick check", "coherence check", or "confidence check".
+  - context: Run a sanity test on the software.
+    question: How might you improve this sentence to use more inclusive terminology
+      to avoid any offence to neurodiverse people?
+    answer: >-
+      Test the software.
+
+      Avoid "sanity test" or "sanity check", because those terms might be derogatory
+      to neurodiverse people, and are difficult to translate. Explain exactly what
+      you mean. Consider alternatives such as using "test" alone, or "validate",
+      "verify", "quick check", "coherence check", or "confidence check".
