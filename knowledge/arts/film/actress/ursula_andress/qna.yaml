@@ -1,0 +1,76 @@
+created_by: tim-donovan
+version: 3
+domain: biography
+document_outline: Knowledge contribution about the actress Ursula Andress
+seed_examples:
+  - context: >-
+      Ursula Andress is a Swiss actress and former model who has appeared in American, British, and Italian films. Her breakthrough role
+      was as Bond girl Honey Ryder in the first James Bond film, Dr. No (1962). She later starred as Vesper Lynd in the 1967 Bond parody
+      Casino Royale. Other credits include Fun in Acapulco (1963), 4 for Texas (1963), She (1965), The 10th Victim (1965), The Blue Max
+      (1966), The Southern Star (1969), Perfect Friday (1970), Red Sun (1971), The Sensuous Nurse (1975), Slave of the Cannibal God (1978),
+      The Fifth Musketeer (1979), Clash of the Titans (1981), and Peter the Great (1987).
+    questions_and_answers:
+      - question: Who is Ursula Andress ?
+        answer: Ursula Andress is a Swiss actress and former model who has appeared in American, British, and Italian films.
+      - question: Which Bond films did Ursula Andress appear in?
+        answer: Dr. No (1962) and Casino Royale (1967).
+      - question: What charactors did Ursula Andress play in the bond films?
+        answer: Bond girl Honey Ryder in the first James Bond film, Dr. No (1962) and Vesper Lynd in the 1967 Bond parody Casino Royale.
+  - context: >-
+      Ursula Andress, the third of six children, was born on 19 March 1936 in Ostermundigen, Canton of Bern, to a Swiss mother, Anna, and
+      Rolf Andress, a German diplomat. Her father was expelled from Switzerland for political reasons and her grandfather, a garden designer,
+      became her guardian. She has a brother, Heinz, and four sisters, Erika, Charlotte, Gisela, and Kàtey.
+    questions_and_answers:
+      - question: Where was actress Ursula Andress born?
+        answer: Born in Ostermundigen, Canton of Bern, Switzerland.
+      - question: When was actress Ursula Andress born ?
+        answer: '19th March 1936'
+      - question: How many brothers and sisters does Ursula Andress have?
+        answer: Ursula Andress has a brother, Heinz, and four sisters, Erika, Charlotte, Gisela, and Kàtey.
+  - context: >-
+      Andress went to school in Bern until she was 16 and learned several languages, including English, French, German, and Italian.
+      She studied art in Paris for a year, then went to Rome, where she worked various jobs including being a children’s nanny.
+    questions_and_answers:
+      - question: Where did Ursula Andress go to school?
+        answer: Andress went to school in Bern until she was 16.
+      - question: What languages did Andress learn in school?
+        answer: Ursula Andress learned several languages, including English, French, German, and Italian.
+      - question: What did Ursula Andress study in Paris?
+        answer: Ursula Andress studied art in Paris for a year.
+      - question: What was one of Ursula Andress first jobs?
+        answer: After studing in Paris for a year, she then went to Rome, where she worked various jobs including being a children’s nanny.
+  - context: >-
+      Andress was at a party when she met a film producer who offered her a screen test for a role in an Italian film. She was successful
+      and was cast in walk-on parts in An American in Rome (1954) (starring Alberto Sordi), The Sins of Casanova (1955) (starring later Bond
+      ally Gabriele Ferzetti), and La catena dell'odio (1955). She was seen by a Hollywood executive who persuaded her to try her luck in Hollywood.
+      Andress arrived in Hollywood in late 1955. That spring she was signed to a seven-year contract with Paramount Pictures, starting at $287 a week.
+      The contract brought no acting roles, owing to her reluctance to learn English. "I spent most of my time watching old Marlene Dietrich movies",
+      she said. Andress received some publicity for dating James Dean shortly before the actor's death. She bought herself out of her contract and in
+      1956 signed with Columbia Pictures. She made no films for them either. She stayed in Hollywood when she married John Derek in 1957. In 1959, it
+      was announced she and Derek would star in a film, High Variety, but no film resulted.
+    questions_and_answers:
+      - question: What was Ursula Andress first film role?
+        answer: Ursula Andress first film role was a walk-on parts in An American in Rome in 1954. After being spotted during a party by a film producer.
+      - question: When did Ursula Andress arrive in Hollywood?
+        answer: Ursula Andress arrived in Hollywood in late 1955.
+      - question: Which company did Ursula Andress first sign with when in Hollywood?
+        answer: After arriving in Hollywood, Ursula Andress signed a seven-year contract with Paramount Pictures, starting at $287 a week. The contract brought no acting roles, owing to her reluctance to learn English.
+      - question: Who did Ursula Andress marry?
+        answer: Ursula Andress married John Derek in 1957.
+  - context: >-
+      Andress lived with actor Harry Hamlin after meeting on the set of Clash of the Titans in 1979. She gave birth to their son, Dimitri Alexander Hamlin,
+      on 19 May 1980. The night of her delivery, Linda Evans drove Andress to the hospital while Evans' assistant Bunky Young retrieved Hamlin from the set of King of the Mountain. Although she was engaged to Hamlin, the couple never married. Hamlin ended their relationship in 1983.
+    questions_and_answers:
+      - question: Who did Ursula Andress have a son with?
+        answer: actor Harry Hamlin.
+      - question: Does Ursula Andress have any children?
+        answer: Yes, a son, Dimitri Alexander Hamlin born 19 May 1980.
+      - question: Whats the name of Ursula Andress child?
+        answer: Dimitri Alexander Hamlin, a boy born 19 May 1980.
+      - question: How many children does Ursula Andress have?
+        answer: She has one, a son Dimitri Alexander Hamlin, born 19 May 1980.
+document:
+  repo: https://github.com/donovat/taxonomy_knowledge.git
+  commit: 2db34bf793f857fcbd7ac4ac286866e192a15fa9
+  patterns:
+    - ursula_andress/ursula.md

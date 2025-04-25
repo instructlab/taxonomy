@@ -1,0 +1,5 @@
+title_of_work: Ursula Andress
+link_to_work: https://en.wikipedia.org/wiki/Ursula_Andress
+revision: https://en.wikipedia.org/w/index.php?title=Ursula_Andress&oldid=1276947295
+license_of_the_work: CC-BY-SA-4.0
+creator_names: Wikipedia Authors
