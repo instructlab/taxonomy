@@ -9,7 +9,7 @@ task_description: You are a member of a team with a mission to create the
 seed_examples:
   - context: You will work with everyone from the leadership team to the
       boots-on-the-ground engineering teams who deliver the solution.
-    question: How would you improve this sentence to use more inclusive wording to
+    question: How might you improve this sentence to use more inclusive wording to
       avoid military terminology?
     answer: >-
       You will work with everyone from the leadership team to the engineering
@@ -17,25 +17,25 @@ seed_examples:
 
       Avoid military terms in a business context.
   - context: You need to have the boots on the ground to deliver the project.
-    question: How would you rewrite this sentence to use more inclusive wording to
+    question: How might you rewrite this sentence to use more inclusive wording to
       avoid military terminology?
     answer: >-
       You need to have the people in place to deliver the project.
       Avoid military terms in a business context.
   - context: The sales team crushed their quarterly targets.
-    question: How would you improve this sentence to use more inclusive wording to
+    question: How might you improve this sentence to use more inclusive wording to
       avoid violent or forceful terminology?
     answer: >-
       The sales team exceeded their quarterly targets.
       Avoid violent or forceful language.
   - context: We should not jump the gun before the contract is signed.
-    question: How would you improve this sentence to use more inclusive terminology
+    question: How might you improve this sentence to use more inclusive terminology
       to avoid violent or sports metaphors?
     answer: >-
       We should not act too soon before the contract is signed.
       Avoid violent or sports metaphors.
   - context: I'm going to kill my targets.
-    question: How would you rewrite this sentence to use more inclusive wording to
+    question: How might you rewrite this sentence to use more inclusive wording to
       avoid violent or forceful terminology?
     answer: >-
       I'm going to exceed my targets.
@@ -43,7 +43,7 @@ seed_examples:
       Avoid violent or forceful language. Consider rephrasing where not referring
       to the Unix command or process.
   - context: When considering whether to speak up in a meeting, pick your battles.
-    question: How would you adjust this sentence to use more inclusive wording to
+    question: How might you adjust this sentence to use more inclusive wording to
       avoid military terminology?
     answer: >-
       When considering whether to speak up in a meeting, focus on what matters
@@ -51,14 +51,14 @@ seed_examples:
 
       Avoid military terms in a business context.
   - context: The company decided to pull the trigger on their new marketing campaign.
-    question: How would you improve this sentence to use more inclusive wording to
+    question: How might you improve this sentence to use more inclusive wording to
       avoid violent terminology?
     answer: >-
       The company decided to launch their new marketing campaign.
       Avoid violent metaphors.
   - context: STOMITH helps to maintain the integrity of nodes in a high-availability
       cluster and is part of a cluster's fencing strategy.
-    question: How would you adjust this sentence to use more inclusive wording to
+    question: How might you adjust this sentence to use more inclusive wording to
       avoid violent terminology?
     answer: >-
       Fencing failed nodes helps to maintain the integrity of nodes in a
@@ -69,7 +69,7 @@ seed_examples:
       "fencing failed nodes", "power management", or "power fencing".
   - context: STONITH helps to maintain the integrity of nodes in a high-availability
       cluster and is part of a cluster's fencing strategy.
-    question: How would you rewrite this sentence to use more inclusive wording to
+    question: How might you rewrite this sentence to use more inclusive wording to
       avoid violent terminology?
     answer: >-
       Fencing failed nodes helps to maintain the integrity of nodes in a
@@ -80,13 +80,13 @@ seed_examples:
       "fencing failed nodes", "power management", or "power fencing".
   - context: Jane had never taken a designer role before but decided to take a stab
       at it.
-    question: How would you reword this sentence to use more inclusive wording to
+    question: How might you reword this sentence to use more inclusive wording to
       avoid violent terminology?
     answer: >-
       Jane had never taken a designer role before but decided to try it.
       Avoid violent metaphors.
   - context: Language itself can be weaponized.
-    question: How would you rewrite this sentence to use more inclusive wording to
+    question: How might you rewrite this sentence to use more inclusive wording to
       avoid military or violent terminology?
     answer: >- 
       Language itself can be used as a tool to attack others.
