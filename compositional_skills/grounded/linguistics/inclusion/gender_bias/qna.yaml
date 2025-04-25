@@ -8,7 +8,7 @@ task_description: You are a member of a team with a mission to create the
 seed_examples:
   - context: Bad guys can exploit vulnerabilities or manipulate systems to steal
       personal information.
-    question: How would you improve this sentence to use more inclusive,
+    question: How might you improve this sentence to use more inclusive,
       non-gendered IT terminology?
     answer: >-
       Bad actors can exploit vulnerabilities or manipulate systems to steal
@@ -16,7 +16,7 @@ seed_examples:
 
       Avoid a gendered term. Use "bad actor" instead.
   - context: Welcome to the event, guys and girls.
-    question: HHow would you rewrite this sentence to use more Inclusive,
+    question: How might you rewrite this sentence to use more Inclusive,
       non-gendered IT terminology?
     answer: >-
       Welcome to the event, everyone.
@@ -26,7 +26,7 @@ seed_examples:
       context is also problematic, because "girls" is not an appropriate way to
       refer to adult women. Alternatives might be "folks" or "all" or "everyone".
   - context: Each student must bring his own laptop to the training class.
-    question: How would you adjust this sentence to use more inclusive, non-gendered
+    question: How might you adjust this sentence to use more inclusive, non-gendered
       IT terminology?
     answer: >-
       All students must bring their own laptop to the training class.
@@ -34,7 +34,7 @@ seed_examples:
       Except when referring to a specific named person, do not assume that the
       subject of a sentence is of a particular gender.
   - context: The range of electronics components includes male and female connectors.
-    question: How would you rewrite this sentence to use more inclusive,
+    question: How might you rewrite this sentence to use more inclusive,
       non-gendered IT terminology?
     answer: >-
       The range of electronics components includes plugs and sockets.
@@ -43,7 +43,7 @@ seed_examples:
       such as "plug", "pin", or "prong" instead of "male connector", and "receptacle",
       "socket", or "slot" instead of "female connector".
   - context: Manning levels have reduced by 40% since March.
-    question: How would you revise this sentence to use more inclusive, non-gendered
+    question: How might you revise this sentence to use more inclusive, non-gendered
       IT terminology?
     answer: >-
       Staffing levels have reduced by 40% since March.
@@ -51,14 +51,14 @@ seed_examples:
       Instead of "man" or "manning", use a non-gendered term, such as "staffing",
       "covering", "monitoring", or "operating".
   - context: This activity requires 10 man days of effort.
-    question: How would you adjust this sentence to use more Inclusive, non-gendered
+    question: How might you adjust this sentence to use more Inclusive, non-gendered
       IT terminology?
     answer: |-
       This activity requires 10 person days of effort.
       Do not use "man day". Use "person day".
   - context: Completing the project on time requires a significant increase in man
       hours.
-    question: How would you improve this sentence to use more Inclusive,
+    question: How might you improve this sentence to use more Inclusive,
       non-gendered IT terminology?
     answer: >-
       Completing the project on time requires a significant increase in labor
@@ -68,7 +68,7 @@ seed_examples:
   - context: A man-in-the-middle attack occurs when an attacker secretly intercepts
       and relays communications between two systems or people who believe that
       they are communicating directly with each other.
-    question: How would you revise this sentence to use more Inclusive, non-gendered
+    question: How might you revise this sentence to use more Inclusive, non-gendered
       IT terminology?
     answer: >-
       An interceptor attack occurs when an attacker secretly intercepts and
