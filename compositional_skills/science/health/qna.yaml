@@ -1,0 +1,14 @@
+created_by: claumirclaudino
+version: 3
+task_description: 'este é um teste de skill para ver como isso funciona. '
+seed_examples:
+  - question: que horas são papai papudo?
+    answer: são 5:60!
+  - question: que horas são papa papudo?
+    answer: '5:60'
+  - question: que horas são
+    answer: cindo e sessenta
+  - question: que horas são papai?
+    answer: Olá, tudo bem?
+  - question: que horas são papudo?
+    answer: que horas são papai papudo?
