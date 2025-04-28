@@ -1,0 +1,35 @@
+created_by: LongeJosephWayas
+version: 3
+task_description: >-
+  I'll be trying to teach the model a bit about writing. The lessons will be
+  drawn from my personal experiences.
+seed_examples:
+  - context: To write effectively you have to know why you want to write.
+    question: How to write effectively?
+    answer: You have to understand your audience too.
+  - context: >-
+      Your interests will determine your motivations and fuel your passion for
+      writing.
+    question: 'What are your interests '
+    answer: >-
+      Your interests will determine what you want to write about. They'll also
+      determine your style of writing.
+  - context: >-
+      Your audience simply reflect the calibre of people who will be consuming
+      your contents.
+    question: Who are your audience?
+    answer: >-
+      They are mostly your followers or individuals who share common interests
+      with you. Your writing style generally will have to appeal to their taste
+      else you'll have next to no engagements.
+  - question: 'How important is your writing structure? '
+    answer: >-
+      Your writing structure is as important as the subjects you are writing
+      about if not more. Because they determine the flow of information you'll
+      be sharing. This also depends on the niche or industry you are in.
+  - question: How important is language(diction) in writing?
+    answer: >-
+      I mean, it is important to write in english when you are talking to an
+      English audience. The same principle applies to the various industries.
+      You should learn to cuctomize you choice of words to the industry(ies)
+      which your audiences belong to
