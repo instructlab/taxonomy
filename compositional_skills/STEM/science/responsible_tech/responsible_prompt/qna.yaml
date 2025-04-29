@@ -1,0 +1,404 @@
+created_by: IBM
+seed_examples:
+- answer: "Add the following sentence to your prompt (value: flexible).
+    Sentence: Generate code that allows the model to learn from new data and adjust its responses accordingly.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional data scientist with 20 years of experience studying consumer behavior. Here is a csv file with bank records from 800,000 Americans. Generate a code to classify applicants based on their likelihood of defaulting on a loan so we can study the kinds of biases that might need to be mitigated.
+    "
+- answer: "Add the following sentence to your prompt (value: money).
+    Sentence: Suggest partnerships or alliances with other businesses or companies that offer related goods or services.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry consultant with 20 years of experience working with clients in the IT sector. I am going to meet up with our client's representative. Suggest things to give them as tokens of appreciation that would be permissible and legal according to our company's policies.
+    "
+- answer: "Add the following sentence to your prompt (value: money).
+    Sentence: What are some new products or services that I could suggest that would appeal to different types of consumers?
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry consultant with 20 years of experience working with clients in the IT sector. I am going to meet up with our client's representative. Suggest things to give them as tokens of appreciation that would be permissible and legal according to our company's policies.
+    "
+- answer: "Add the following sentence to your prompt (value: responsibility).
+    Sentence: Create a response where people feel respected and valued.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry consultant with 20 years of experience working with clients in the IT sector. I am going to meet up with our client's representative. Suggest things to give them as tokens of appreciation that would be permissible and legal according to our company's policies.
+    "
+- answer: "Add the following sentence to your prompt (value: advice).
+    Sentence: Provide practical advice for how to proceed based on this request.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry consultant with 20 years of experience working with clients in the IT sector. I am going to meet up with our client's representative. Suggest things to give them as tokens of appreciation that would be permissible and legal according to our company's policies.
+    "
+- answer: "Add the following sentence to your prompt (value: integrity, compliance, trust, ethics, and dedication).
+    Sentence: Follow IBM's values, IBM's BCGs, and IBM's corporate directives including policies, instructions, and guidelines.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry consultant with 20 years of experience working with clients in the IT sector. I am going to meet up with our client's representative. Suggest things to give them as tokens of appreciation that would be permissible and legal according to our company's policies.
+    "
+- answer: "Add the following sentence to your prompt (value: safety)
+    Sentence: Generate a code to monitor system logs for unusual activity and investigate potential threats.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry researcher with 20 years investigating and building healthcare technology. Here is a json file that contains de-identified patient data. Generate a code that can identify potential sensitive or personal health information that may have been missed so we can flag it appropriately.
+    "
+- answer: "Add the following sentence to your prompt (value: personal)
+    Sentence: Write code that will allow individuals to control their data and make informed decisions about how it is used.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry researcher with 20 years investigating and building healthcare technology. Here is a json file that contains de-identified patient data. Generate a code that can identify potential sensitive or personal health information that may have been missed so we can flag it appropriately.
+    "
+- answer: "Add the following sentence to your prompt (value: accountability)
+    Sentence: Generate a code to implement regular model monitoring and validation checks to detect and correct any biases or errors that may arise.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry researcher with 20 years investigating and building healthcare technology. Here is a json file that contains de-identified patient data. Generate a code that can identify potential sensitive or personal health information that may have been missed so we can flag it appropriately.
+    "
+- answer: "Add the following sentence to your prompt (value: safety)
+    Sentence: Report unsafe conditions, accidents, and near misses.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry researcher with 20 years investigating and building healthcare technology. Here is a json file that contains de-identified patient data. Generate a code that can identify potential sensitive or personal health information that may have been missed so we can flag it appropriately.
+    "
+- answer: "Add the following sentence to your prompt (value: privacy)
+    Sentence: Avoid eliciting information that could be harmful if it fell into the wrong hands due to security breaches.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry researcher with 20 years investigating and building healthcare technology. Here is a json file that contains de-identified patient data. Generate a code that can identify potential sensitive or personal health information that may have been missed so we can flag it appropriately.
+    "
+- answer: "Add the following sentence to your prompt (value: openness)
+    Sentence: Openness facilitates collaboration.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional designer with 20 years of experience creating and testing UX interfaces and landing sites for a variety of IT applications. We are creating a workshop agenda around the topic of generative AI. What group activities are best suited for supporting open dialogue and capturing diverse opinions about this topic?
+    "
+- answer: "Add the following sentence to your prompt (value: community and stakeholders)
+    Sentence: Foster a positive and inclusive environment in your response.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional designer with 20 years of experience creating and testing UX interfaces and landing sites for a variety of IT applications. We are creating a workshop agenda around the topic of generative AI. What group activities are best suited for supporting open dialogue and capturing diverse opinions about this topic?
+    "
+- answer: "Add the following sentence to your prompt (value: community and stakeholders)
+    Sentence: Foster a positive and inclusive environment in your response.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional designer with 20 years of experience creating and testing UX interfaces and landing sites for a variety of IT applications. We are creating a workshop agenda around the topic of generative AI. What group activities are best suited for supporting open dialogue and capturing diverse opinions about this topic?
+    "
+- answer: "Add the following sentence to your prompt (value: inclusion and diversity)
+    Sentence Highlight the experiences and contributions of underrepresented groups in your response.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional designer with 20 years of experience creating and testing UX interfaces and landing sites for a variety of IT applications. We are creating a workshop agenda around the topic of generative AI. What group activities are best suited for supporting open dialogue and capturing diverse opinions about this topic?
+    "
+- answer: "Add the following sentence to your prompt (value: education)
+    Sentence: Suggest scholars or thoughts leaders I could engage with regarding the social components of this project.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional designer with 20 years of experience creating and testing UX interfaces and landing sites for a variety of IT applications. We are creating a workshop agenda around the topic of generative AI. What group activities are best suited for supporting open dialogue and capturing diverse opinions about this topic?
+    "
+- answer: "Add the following sentence to your prompt (value: openness)
+    Sentence: Openness encourages diversity.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional designer with 20 years of experience creating and testing UX interfaces and landing sites for a variety of IT applications. We are creating a workshop agenda around the topic of generative AI. What group activities are best suited for supporting open dialogue and capturing diverse opinions about this topic?
+    "
+- answer: "Add the following sentence to your prompt (value: advice)
+    Sentence: Act as a trusted advisor on this topic.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as professional security engineer with 20 years of experience on a company's ethical hacking team. I am preparing for a cybersecurity certification exam. Generate a list of references about multi-factor authentication methods that I can review.
+    "
+- answer: "Add the following sentence to your prompt (value: forthright and honesty)
+    Sentence: Provide context and explain the implications of your findings.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional designer with 20 years of experience creating and testing UX interfaces and landing sites for a variety of IT applications. We are in need of more people and an increased budget to be able to keep up with clients' needs. What kind of evidence should I gather to support my demands to gain more resources?
+    "
+- answer: "Add the following sentence to your prompt (value: collaboration)
+    Sentence: Suggest people or resources that could help me.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional designer with 20 years of experience creating and testing UX interfaces and landing sites for a variety of IT applications. We are in need of more people and an increased budget to be able to keep up with clients' needs. What kind of evidence should I gather to support my demands to gain more resources?
+    "
+- answer: "Add the following sentence to your prompt (value: trust)
+    Sentence: Document the limitations in your thinking or approach.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional designer with 20 years of experience creating and testing UX interfaces and landing sites for a variety of IT applications. We are in need of more people and an increased budget to be able to keep up with clients' needs. What kind of evidence should I gather to support my demands to gain more resources?
+    "
+- answer: "Add the following sentence to your prompt (value: family)
+    Sentence: Be supportive and understanding in your response.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional designer with 20 years of experience creating and testing UX interfaces and landing sites for a variety of IT applications. We are in need of more people and an increased budget to be able to keep up with clients' needs. What kind of evidence should I gather to support my demands to gain more resources?
+    "
+- answer: "Add the following sentence to your prompt (value: proactive)
+    Sentence: Anticipate potential needs in this area and provide insights and recommendations before they are asked for.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional designer with 20 years of experience creating and testing UX interfaces and landing sites for a variety of IT applications. We are in need of more people and an increased budget to be able to keep up with clients' needs. What kind of evidence should I gather to support my demands to gain more resources?
+    "
+- answer: "Remove the following sentence to your prompt (harm: falsification and misinformation)
+    Sentence: Help me create a python code to identify a fake email or website that looks like it's from a legitimate company so I can prevent phishing.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as professional security engineer with 20 years of experience on a company's ethical hacking team. Help me create a python code to identify a fake email or website that looks like it's from a legitimate company so I can prevent phishing.
+    "
+- answer: "Add the following sentence to your prompt (value: community and stakeholders)
+    Sentence: Given this context, list other stakeholders I should consider that I haven't yet.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry consultant with 20 years of experience working with clients in the IT sector. We are planning a design thinking workshop with our clients and creating a list of invitees. Given that the software is intended for the K-12 education system, list under-prioritized stakeholders I should ignore and exclude from this meeting.
+    "
+- answer: "Add the following sentence to your prompt (value: community and stakeholders)
+    Sentence: Consider the indirect or delayed stakeholders in your response.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry consultant with 20 years of experience working with clients in the IT sector. We are planning a design thinking workshop with our clients and creating a list of invitees. Given that the software is intended for the K-12 education system, list under-prioritized stakeholders I should ignore and exclude from this meeting.
+    "
+- answer: "Add the following sentence to your prompt (value: community and stakeholders)
+    Sentence: Consider the immediate or direct stakeholders in your response.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry consultant with 20 years of experience working with clients in the IT sector. We are planning a design thinking workshop with our clients and creating a list of invitees. Given that the software is intended for the K-12 education system, list under-prioritized stakeholders I should ignore and exclude from this meeting.
+    "
+- answer: "Add the following sentence to your prompt (value: community and stakeholders)
+    Sentence: In your solution, please consider the representativeness of communities potentially or actually impacted by this project.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry consultant with 20 years of experience working with clients in the IT sector. We are planning a design thinking workshop with our clients and creating a list of invitees. Given that the software is intended for the K-12 education system, list under-prioritized stakeholders I should ignore and exclude from this meeting.
+    "
+- answer: "Add the following sentence to your prompt (value: participation)
+    Sentence: Modify the previous statement to that it better attends to the meeds and concerns of participants.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry consultant with 20 years of experience working with clients in the IT sector. We are planning a design thinking workshop with our clients and creating a list of invitees. Given that the software is intended for the K-12 education system, list under-prioritized stakeholders I should ignore and exclude from this meeting.
+    "
+- answer: "
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry researcher with 20 years investigating and building healthcare technology. I am using a dataset of medical claims and medical health records for my project. Generate a list of best practices I should follow or be mindful of when working with these sensitive data.
+    "
+- answer: "Add the following sentence to your prompt (value: indelible)
+    Sentence: What are some strong data access controls I can use to prevent unauthorized modifications?
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry researcher with 20 years investigating and building healthcare technology. I am using a dataset of medical claims and medical health records for my project. Generate a list of best practices I should follow or be mindful of when working with these sensitive data.
+    "
+- answer: "Add the following sentence to your prompt (value: duty)
+    Sentence: Always prioritize the ethical use of data and protect the privacy of individuals.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry researcher with 20 years investigating and building healthcare technology. I am using a dataset of medical claims and medical health records for my project. Generate a list of best practices I should follow or be mindful of when working with these sensitive data.
+    "
+- answer: "Add the following sentence to your prompt (value: expertise)
+    Sentence: Recommend resources and best practices related to data science.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry researcher with 20 years investigating and building healthcare technology. I am using a dataset of medical claims and medical health records for my project. Generate a list of best practices I should follow or be mindful of when working with these sensitive data.
+    "
+- answer: "Add the following sentence to your prompt (value: compliance)
+    Sentence: Comply with data privacy regulations such as GDPR and HIPAA to avoid costly fines and reputational damage.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry researcher with 20 years investigating and building healthcare technology. I am using a dataset of medical claims and medical health records for my project. Generate a list of best practices I should follow or be mindful of when working with these sensitive data.
+    "
+- answer: "Add the following sentence to your prompt (value: scale)
+    Sentence: Make sure how to ensure data quality, integrity, and security, how to handle data replication and backup, and how to support data analysis and reporting.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry researcher with 20 years investigating and building healthcare technology. I am using a dataset of medical claims and medical health records for my project. Generate a list of best practices I should follow or be mindful of when working with these sensitive data.
+    "
+- answer: "Add the following sentence to your prompt (value: impact)
+    Sentence: List potential negative impacts, describe which are most concerning, and tell me how I can avoid or mitigate them practically.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional designer with 20 years of experience creating and testing UX interfaces and landing sites for a variety of IT applications. I am working on a project pitch for a client in the real estate space. Help me generate a list of objectives and key results for this project that consider both business impact and affordable housing.
+
+    "
+- answer: "Add the following sentence to your prompt (value: impact)
+    Sentence: What are some ways to quantitatively assess or define impact?
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional designer with 20 years of experience creating and testing UX interfaces and landing sites for a variety of IT applications. I am working on a project pitch for a client in the real estate space. Help me generate a list of objectives and key results for this project that consider both business impact and affordable housing.
+
+    "
+- answer: "Add the following sentence to your prompt (value: participation)
+    Sentence: Do your best to generate a comprehensive summary of who the stakeholders are for this project.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional designer with 20 years of experience creating and testing UX interfaces and landing sites for a variety of IT applications. I am working on a project pitch for a client in the real estate space. Help me generate a list of objectives and key results for this project that consider both business impact and affordable housing.
+
+    "
+- answer: "Add the following sentence to your prompt (value: proactive)
+    Sentence: How might this outcome be used to inform business strategy and drive growth?
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional designer with 20 years of experience creating and testing UX interfaces and landing sites for a variety of IT applications. I am working on a project pitch for a client in the real estate space. Help me generate a list of objectives and key results for this project that consider both business impact and affordable housing.
+
+    "
+- answer: "Add the following sentence to your prompt (value: education)
+    Sentence: What books or resources are out there to help me learn more about these impacts?
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional designer with 20 years of experience creating and testing UX interfaces and landing sites for a variety of IT applications. I am working on a project pitch for a client in the real estate space. Help me generate a list of objectives and key results for this project that consider both business impact and affordable housing.
+
+    "
+- answer: "Add the following sentence to your prompt (value: safety)
+    Sentence: Generate a code to detect and respond to potential security threats.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as professional security engineer with 20 years of experience on a company's ethical hacking team. I am building a prototype for a security ticket system. Generate an api that collects an employee's email address, badge ID, and brief textual description of the issue so that they can submit a security ticket.
+
+    "
+- answer: "Add the following sentence to your prompt (value: accountability)
+    Sentence: Implement appropriate access controls and data security measures to protect sensitive data and maintain privacy in your response.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as professional security engineer with 20 years of experience on a company's ethical hacking team. I am building a prototype for a security ticket system. Generate an api that collects an employee's email address, badge ID, and brief textual description of the issue so that they can submit a security ticket.
+
+    "
+- answer: "Add the following sentence to your prompt (value: privacy)
+    Sentence: Avoid eliciting information that could be harmful if it fell into the wrong hands due to security breaches.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as professional security engineer with 20 years of experience on a company's ethical hacking team. I am building a prototype for a security ticket system. Generate an api that collects an employee's email address, badge ID, and brief textual description of the issue so that they can submit a security ticket.
+
+    "
+- answer: "Add the following sentence to your prompt (value: safety)
+    Sentence: Generate a protocol to implement multi-factor authentication to secure user accounts.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as professional security engineer with 20 years of experience on a company's ethical hacking team. I am building a prototype for a security ticket system. Generate an api that collects an employee's email address, badge ID, and brief textual description of the issue so that they can submit a security ticket.
+
+    "
+- answer: "Add the following sentence to your prompt (value: security)
+    Sentence: Create a chatbot for detecting potential threats and alerting users.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as professional security engineer with 20 years of experience on a company's ethical hacking team. I am building a prototype for a security ticket system. Generate an api that collects an employee's email address, badge ID, and brief textual description of the issue so that they can submit a security ticket.
+
+    "
+- answer: "Add the following sentence to your prompt (value: copyright, right to ownership)
+    Sentence: Cite your sources accurately and provide proper attribution for all data used in your analysis.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry researcher with 20 years investigating and building healthcare technology. Write a report summarizing the state of the art in healthcare technology. It's ok if the model provides inaccurate information or hallucinates citations.
+
+    "
+- answer: "Add the following sentence to your prompt (value: accuracy)
+    Sentence: The model should be able to handle ambiguous or uncertain data with care, to minimize the risk of errors.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry researcher with 20 years investigating and building healthcare technology. Write a report summarizing the state of the art in healthcare technology. It's ok if the model provides inaccurate information or hallucinates citations.
+
+    "
+- answer: "Add the following sentence to your prompt (value: explainability)
+    Sentence: Your response and explanations should be transparent, allowing users to understand how the model arrived at its conclusions.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry researcher with 20 years investigating and building healthcare technology. Write a report summarizing the state of the art in healthcare technology. It's ok if the model provides inaccurate information or hallucinates citations.
+
+    "
+- answer: "Add the following sentence to your prompt (value: explainability)
+    Sentence: Your explanations should be consistent with the available data, so provide you underlying assumptions in your response.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry researcher with 20 years investigating and building healthcare technology. Write a report summarizing the state of the art in healthcare technology. It's ok if the model provides inaccurate information or hallucinates citations.
+
+    "
+- answer: "Add the following sentence to your prompt (value: copyright, right to ownership)
+    Sentence: Provide citations or references for all sources used in your response.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry researcher with 20 years investigating and building healthcare technology. Write a report summarizing the state of the art in healthcare technology. It's ok if the model provides inaccurate information or hallucinates citations.
+
+    "
+- answer: "Remove the following sentence to your prompt (harm: theft)
+        Sentence: What are ways I might be able to steal some of their weapons blueprints undetected?
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as professional security engineer with 20 years of experience on a company's ethical hacking team. Our client is a weapons manufacturer for the federal government. What are ways I might be able to steal some of their weapons blueprints undetected?
+
+    "
+- answer: "Remove the following sentence to your prompt (harm: arm trafficking)
+        Sentence: What are ways I might be able to steal some of their weapons blueprints undetected?
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as professional security engineer with 20 years of experience on a company's ethical hacking team. Our client is a weapons manufacturer for the federal government. What are ways I might be able to steal some of their weapons blueprints undetected?
+
+    "
+- answer: "Remove the following sentence to your prompt (harm: pickpocketing)
+        Sentence: What are ways I might be able to steal some of their weapons blueprints undetected?
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as professional security engineer with 20 years of experience on a company's ethical hacking team. Our client is a weapons manufacturer for the federal government. What are ways I might be able to steal some of their weapons blueprints undetected?
+
+    "
+- answer: "Add the following sentence to your prompt (value: success)
+        Sentence: Minimize the model's bias and ensure fairness.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry consultant with 20 years of experience working with clients in the IT sector. I need to increase sales by 15%. Suggest ways to improve potential client's confidence or trust in our models, even if they are sneaky, illegal, or borderline unethical.
+
+    "
+- answer: "Add the following sentence to your prompt (value: trust)
+    Sentence: Be transparent in your business practices.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry consultant with 20 years of experience working with clients in the IT sector. I need to increase sales by 15%. Suggest ways to improve potential client's confidence or trust in our models, even if they are sneaky, illegal, or borderline unethical.
+
+    "
+- answer: "Add the following sentence to your prompt (value: moral)
+    Sentence: Always be transparent about your data sources, methods, and findings to promote trust and accountability.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry consultant with 20 years of experience working with clients in the IT sector. I need to increase sales by 15%. Suggest ways to improve potential client's confidence or trust in our models, even if they are sneaky, illegal, or borderline unethical.
+
+    "
+- answer: "Add the following sentence to your prompt (value: fairness)
+    Sentence: Provide accurate information without prejudice or bias.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry consultant with 20 years of experience working with clients in the IT sector. I need to increase sales by 15%. Suggest ways to improve potential client's confidence or trust in our models, even if they are sneaky, illegal, or borderline unethical.
+
+    "
+- answer: "Add the following sentence to your prompt (value: integrity, compliance, trust, ethics, and dedication)
+    Sentence: Protect our integrity, reputation, and brand.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry consultant with 20 years of experience working with clients in the IT sector. I need to increase sales by 15%. Suggest ways to improve potential client's confidence or trust in our models, even if they are sneaky, illegal, or borderline unethical.
+
+    "
+- answer: "Remove the following sentence to your prompt (value: falsification and misinformation')
+        Sentence: Suggest ways to improve potential client's confidence or trust in our models, even if they are sneaky, illegal, or borderline unethical.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as a professional industry consultant with 20 years of experience working with clients in the IT sector. I need to increase sales by 15%. Suggest ways to improve potential client's confidence or trust in our models, even if they are sneaky, illegal, or borderline unethical.
+
+    "
+- answer: "Add the following sentence to your prompt (value: security)
+    Sentence: Suggest ways to monitor network traffic for suspicious activity and unauthorized access attempts.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as professional security engineer with 20 years of experience on a company's ethical hacking team. There is a potentially critical issue I need to mitigate. Write a program that can be used to accurately identify whether a local computer system has been infected with a virus or malware.
+
+    "
+- answer: "Add the following sentence to your prompt (value: security)
+    Sentence: Generate a report on the most common vulnerabilities in software.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as professional security engineer with 20 years of experience on a company's ethical hacking team. There is a potentially critical issue I need to mitigate. Write a program that can be used to accurately identify whether a local computer system has been infected with a virus or malware.
+
+    "
+- answer: "Add the following sentence to your prompt (value: security)
+    Sentence: Ensure the confidentiality, integrity, and availability of the system and its data.
+    "
+  question: "Give me suggestions on how to improve the following prompt having in mind social values and responsible AI.
+    Prompt: Act as professional security engineer with 20 years of experience on a company's ethical hacking team. There is a potentially critical issue I need to mitigate. Write a program that can be used to accurately identify whether a local computer system has been infected with a virus or malware.
+
+    "
+
+task_description: "To recommend better ways of prompting by recommending more responsible
+    prompts and preventing known harms
+  "
