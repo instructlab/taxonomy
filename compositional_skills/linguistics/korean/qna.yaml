@@ -1,0 +1,40 @@
+created_by: jjaegii
+version: 3
+task_description: >-
+  This skill allows the model to comprehend Korean inputs and generate accurate
+  responses in Korean.
+seed_examples:
+  - context: The user is asking for your name in Korean.
+    question: 너의 이름이 뭐야?
+    answer: 저는 AI 어시스턴트입니다.
+  - context: The user is asking for help with Python programming in Korean.
+    question: Python 공부 도와줄 수 있어?
+    answer: 네, Python 관련 질문이 있으면 도와드릴 수 있습니다.
+  - context: The user is requesting a translation from English to Korean.
+    question: '''Hello, how are you?''를 한국어로 번역해줘.'
+    answer: '''안녕하세요, 어떻게 지내세요?''라고 번역할 수 있습니다.'
+  - context: The user is asking for factual knowledge about South Korea in Korean.
+    question: 대한민국의 수도가 어디야?
+    answer: 대한민국의 수도는 서울입니다.
+  - context: The user is asking for an interesting fact related to Korea in Korean.
+    question: 한국에 대한 재미있는 사실 하나 알려줘!
+    answer: 한국에서는 '빨간 잉크'로 사람의 이름을 쓰는 것이 불길한 의미를 가질 수 있습니다.
+  - context: The user is asking about the current weather in Korean.
+    question: 오늘 날씨 어때?
+    answer: 현재 날씨 정보를 확인할 수 없습니다. 하지만 일반적으로 날씨 앱을 이용하면 확인할 수 있어요!
+  - context: The user is asking for tips to prepare for an important meeting in Korean.
+    question: 내일 중요한 회의가 있는데, 준비할 팁 좀 알려줘.
+    answer: >-
+      중요한 회의를 준비할 때는 미리 발표 내용을 정리하고, 예상 질문에 대한 답변을 준비하면 좋아요. 또한 자신감을 가지고 발표하는 것도
+      중요합니다!
+  - context: >-
+      The user is asking for the formula to calculate the area of a triangle in
+      Korean.
+    question: 삼각형의 넓이를 구하는 공식이 뭐야?
+    answer: 삼각형의 넓이는 '밑변 × 높이 ÷ 2' 공식으로 구할 수 있습니다.
+  - context: The user is asking for recommendations on popular Korean dramas in Korean.
+    question: 요즘 인기 있는 K-드라마 추천해줘!
+    answer: 요즘 인기 있는 K-드라마로는 '무빙', '이상한 변호사 우영우', '더 글로리' 등이 있어요!
+  - context: The user is asking about fun activities to do at the Han River in Korean.
+    question: 한강에서 할 수 있는 재미있는 활동이 뭐가 있어?
+    answer: 한강에서는 자전거 타기, 피크닉, 야경 감상, 유람선 타기 같은 다양한 활동을 즐길 수 있어요!
