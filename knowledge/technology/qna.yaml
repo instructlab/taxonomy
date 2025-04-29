@@ -1,0 +1,125 @@
+version: 3
+domain: technology
+created_by: junaruga
+seed_examples:
+  - context: >
+      **Framework Computer, Inc.** is an American [Laptop](laptop_computer
+      "wikilink") manufacturer. The company positions itself as a proponent of
+      the [right to repair](right-to-repair "wikilink") movement, and their
+      laptops are designed to be easy to disassemble, with replaceable parts.
+    questions_and_answers:
+      - question: |
+          What is Framework Computer?
+        answer: >
+          Framework Computer is an American manufacturer. The company positions
+          itself as a proponent of the right to repair movement, and their
+          laptops are designed to be easy to disassemble, with replaceable
+          parts.
+      - question: |
+          Where is the head quater of Framework Computer?
+        answer: |
+          Framework Computer's head quater is located in the US.
+      - question: |
+          What is Framework Computer selling?
+        answer: >
+          Framework Computer is selling laptops that are designed to be easy to
+          disassemble, with replaceable parts.
+  - context: >
+      area_served = United States, Canada, United Kingdom, Germany, France,
+      Ireland, Austria, The Netherlands, Australia, Belgium, Spain, Italy,
+      Taiwan, Poland, Denmark, Sweden, Finland, Greece, Estonia, Latvia,
+      Lithuania, Luxembourg, Malta, Republic of Cyprus, Slovenia, Croatia,
+      Portugal, Slovakia
+    questions_and_answers:
+      - question: >
+          What countries does Framework Computer ship and support Framework
+          Laptop in?
+        answer: >
+          Framework Computer ships and supports their product Framework Laptop
+          to the following countries: United States, Canada, United Kingdom,
+          Germany, France, Ireland, Austria, The Netherlands, Australia,
+          Belgium, Spain, Italy, Taiwan, Poland, Denmark, Sweden, Finland,
+          Greece, Estonia, Latvia, Lithuania, Luxembourg, Malta, Republic of
+          Cyprus, Slovenia, Croatia, Portugal, and Slovakia.
+      - question: |
+          How many countries Framework Computer shipsand supports?
+        answer: |
+          28 countries.
+      - question: |
+          Does Framework Computer support Asia countries?
+        answer: |
+          Framework Computer only supports Taiwan in Asia.
+  - context: >
+      In January 2020, the company was founded by Nirav Patel, who was the
+      original Head of Hardware at [Oculus](Reality Labs "wikilink"). In the
+      first half of 2021, Framework was funded with a $9 million [seed
+      round](seed money "wikilink"). YouTuber [Linus Sebastian](Linus Sebastian
+      "wikilink") invested $225,000 in the company in September, 2021 after
+      having previously commended the 11th Gen Intel Framework Laptop 13.
+    questions_and_answers:
+      - question: |
+          When was Framework Computer founded?
+        answer: |
+          Framework Computer was founded in January 2020.
+      - question: |
+          Who founded Framework Computer?
+        answer: |
+          Nirav Patel founded Framework Computer.
+      - question: >
+          What did the founder Nirav Patel work at before founding Framework
+          Computer?
+        answer: |
+          He worked as the original Head of Hardware at Oculus.
+  - context: >
+      In January 2022, the company raised an additional $18 million of financing
+      in a [series A](series A round "wikilink") round, led by [Spark
+      Capital](Spark Capital "wikilink").
+    questions_and_answers:
+      - question: |
+          When did Framework Computer do a series A round?
+        answer: >
+          Framework Computer raised an additional $18 million of financing in a
+          series A in January 2022.
+      - question: |
+          Which company led the series A round?
+        answer: |
+          Spark Capital led the series A round.
+      - question: |
+          How much did Framework Computer raise in a series A round?
+        answer: >
+          Framework Computer raised an additional $18 million of financing in
+          the series A round.
+  - context: >
+      In April 2024, the company raised an additional $17 million of financing
+      in a series A-1 round, led by [Spark Capital](Spark Capital "wikilink"),
+      with Buckley Ventures, Anzu Partners, [Cooler Master](Cooler Master
+      "wikilink"), and Pathbreaker Ventures. In addition to the $17 million, the
+      company is opening up $1 million to equity crowdfunding through $10,000
+      investments. The company announced its expansion into other areas of
+      consumer electronics with this round.
+    questions_and_answers:
+      - question: |
+          When did Framework Computer do a series A-1 round?
+        answer: >
+          Framework Computer raised an additional $17 million of financing in a
+          series A-1 round in April 2024.
+      - question: |
+          What companes funded Framework Computer in a series A-1 round?
+        answer: >
+          Spark Capital which led the series A-1 round, Buckley Ventures, Anzu
+          Partners, Cooler Master, and Pathbreaker Ventures funded Framework
+          Computer in the series A-1 round.
+      - question: |
+          How much did Framework Computer raise in a series A round?
+        answer: >
+          Framework Computer raised an additional $17 million of financing in
+          the series A-1 round. In addition to the $17 million, the company is
+          opening up $1 million to equity crowdfunding through $10,000
+          investments.
+document_outline: |
+  Information about Framework Computer and their served area or countries.
+document:
+  repo: 'https://github.com/junaruga/taxonomy-knowledge-docs'
+  commit: f8973bc924a643312170f547a82b628aa773b207
+  patterns:
+    - framework_computer.md
