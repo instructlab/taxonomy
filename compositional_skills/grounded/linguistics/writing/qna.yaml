@@ -1,0 +1,25 @@
+created_by: lpsandrea02
+version: 3
+task_description: >-
+  Turn a sentence negative by adding "not" or "n't" after the  first auxiliary
+  verb. If there is no auxiliary verb, use a negative word like 'never' or
+  insert a form of 'do' (for example 'did not').
+seed_examples:
+  - context: I should have been sleeping.
+    question: Turn this positive sentence into a negative sentence.
+    answer: I should not have been sleeping.
+  - context: I should have been sleeping.
+    question: Turn this positive sentence negative.
+    answer: I shouldn't have been sleeping.
+  - context: I have been sleeping.
+    question: Turn this sentence negative.
+    answer: I have not been sleeping.
+  - context: I was sleeping.
+    question: Rewrite this positive sentence as a negative sentence.
+    answer: I haven't been sleeping.
+  - context: I was sleeping.
+    question: Make this sentence negative.
+    answer: I was not sleeping.
+  - context: I sleep.
+    question: Rewrite this sentence as a negative sentence.
+    answer: I do not sleep.
