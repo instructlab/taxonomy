@@ -1,0 +1,90 @@
+version: 2
+task_description: >-
+  To differentiate if a user question is related or not to the theme of his/her
+  previous questions. This skill is useful in the context of AI assistants to
+  determine if the context of the conversation should be maintained or not for
+  next iterations.
+created_by: Hugo-Calero
+seed_examples:
+  - question: >
+      A user of an AI chatbot has entered the following queries during a
+      multi-turn conversation so far, all of them being related to the same
+      topic:
+
+      1. What can I eat during my trip to Madrid?
+
+      2. Are there any mexican restaurantes with a Michelin Star?
+
+      3. How can I book a dinner reservation?
+
+      Is the following question related to the previous conversation?: 'What
+      kind of animals can I see in the Retiro park?'
+    answer: >
+      No, the conversation is about gastronomy in Madrid, whereas the new
+      question refers to the fauna of a park.
+  - question: >
+      A user of an AI chatbot has entered the following queries during a
+      multi-turn conversation so far, all of them being related to the same
+      topic:
+
+      1. I am planning on building a startup from scratch, what government aids
+      can I get for this?
+
+      2. What if I want to hire new employees?
+
+      3. Could I get that aid if my company is focused on technology?
+
+      Is the following question related to the previous conversation?: 'What if
+      my company is an agricultural one?'
+    answer: |
+      Yes, the new question is a followup on the previous conversation.
+  - question: >
+      A user of an AI chatbot has entered the following queries during a
+      multi-turn conversation so far, all of them being related to the same
+      topic:
+
+      1. What is the climate in New York city?
+
+      2. Is it going to stop raining at any point today?
+
+      3. Will there be sunlight at that hour?
+
+      Is the following question related to the previous conversation?: 'What
+      restaurants are recommended in New York?'
+    answer: >
+      No, even though the new question asks about New York city, the topic is
+      different to that of the past queries.
+  - question: >
+      A user of an AI chatbot has entered the following queries during a
+      multi-turn conversation so far, all of them being related to the same
+      topic:
+
+      1. Give me an idea for the title of a book about the romantic relationship
+      between two life-long friends.
+
+      2. What if the book ended tragically?
+
+      3. Can you make it shorter?
+
+      Is the following question related to the previous conversation?: 'I want
+      it to sound more poetic'
+    answer: >
+      Yes, with the new question the user is trying to obtain a more specific
+      answer from the AI chatbot.
+  - question: >
+      A user of an AI chatbot has entered the following queries during a
+      multi-turn conversation so far, all of them being related to the same
+      topic:
+
+      1. What TV shows can you recommend?
+
+      2. I prefer science fiction shows.
+
+      3. I have already seen those shows, but I did not like any. Give me
+      different recommendations.
+
+      Is the following question related to the previous conversation?: 'I want
+      to read a book about aliens, give me a recommendation'
+    answer: >
+      No, even though the user is asking about recommendations in both cases,
+      the user changes the topic to books in the new question.
