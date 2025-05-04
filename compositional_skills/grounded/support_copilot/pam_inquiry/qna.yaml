@@ -1,5 +1,6 @@
+---
 version: 2
-task_description: "Find the Partner Account Manager (PAM) assigned to a support ticket."
+task_description: "Find the Partner Account Manager (PAM) assigned to a ticket."
 created_by: mivankovich-redhat
 seed_examples:
   - context: |
