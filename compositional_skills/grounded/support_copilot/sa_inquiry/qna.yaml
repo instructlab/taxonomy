@@ -1,0 +1,54 @@
+version: 2
+task_description: "Find the Solutions Architect (SA) assigned to a support ticket from the Eco Pool."
+created_by: mivankovich-redhat
+seed_examples:
+  - context: |
+      A user is asking who the Solutions Architect is for a support ticket.
+    question: Who is the SA for SP-0425-REQ?
+    answer: |
+      {"action": "lookup_sa", "ticket": "SP-0425-REQ"}
+  - context: |
+      A user wants to identify the SA working on a specific ticket.
+    question: Find out who owns SP-4444-REQ from the SA team
+    answer: |
+      {"action": "lookup_sa", "ticket": "SP-4444-REQ"}
+  - context: |
+      Question about the Eco Pool SA assigned to a ticket.
+    question: Which Eco Pool SA is assigned to sp-9999-req?
+    answer: |
+      {"action": "lookup_sa", "ticket": "sp-9999-req"}
+  - context: |
+      Determining the Solutions Architect on a particular support request.
+    question: SA assigned to SP-1011-REQ?
+    answer: |
+      {"action": "lookup_sa", "ticket": "SP-1011-REQ"}
+  - context: |
+      Inquiring about the SA on record for a ticket.
+    question: Check the Eco Pool SA on Sp-8888-Req
+    answer: |
+      {"action": "lookup_sa", "ticket": "Sp-8888-Req"}
+  - context: |
+      Who is responsible from the SA team for this ticket?
+    question: Tell me which SA is responsible for SP-3333-REQ
+    answer: |
+      {"action": "lookup_sa", "ticket": "SP-3333-REQ"}
+  - context: |
+      A user is asking to look up the Solutions Architect for a case.
+    question: Solutions Architect assigned to ticket sp-5555-req?
+    answer: |
+      {"action": "lookup_sa", "ticket": "sp-5555-req"}
+  - context: |
+      Request to identify the assigned SA.
+    question: Get me the SA for SP-6060-REQ
+    answer: |
+      {"action": "lookup_sa", "ticket": "SP-6060-REQ"}
+  - context: |
+      Eco Pool SA ownership inquiry.
+    question: Who is the solutions architect tied to Sp-1999-Req?
+    answer: |
+      {"action": "lookup_sa", "ticket": "Sp-1999-Req"}
+  - context: |
+      The user wants to confirm who owns the ticket from the SA team.
+    question: Check who owns SP-2121-REQ on the SA side
+    answer: |
+      {"action": "lookup_sa", "ticket": "SP-2121-REQ"}

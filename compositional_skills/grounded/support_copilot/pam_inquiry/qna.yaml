@@ -1,0 +1,54 @@
+version: 2
+task_description: "Find the Partner Account Manager (PAM) assigned to a support ticket."
+created_by: mivankovich-redhat
+seed_examples:
+  - context: |
+      A user is asking who the Partner Account Manager is for a support ticket.
+    question: Who is the PAM for SP-0001-REQ?
+    answer: |
+      {"action": "lookup_pam", "ticket": "SP-0001-REQ"}
+  - context: |
+      A user is trying to find the Partner Account Manager linked to a ticket.
+    question: Can you check who the PAM is for sp-9999-req?
+    answer: |
+      {"action": "lookup_pam", "ticket": "sp-9999-req"}
+  - context: |
+      A request for the PAM assigned to a known support ticket.
+    question: Tell me the PAM assigned to SP-8765-REQ
+    answer: |
+      {"action": "lookup_pam", "ticket": "SP-8765-REQ"}
+  - context: |
+      The user wants to know who owns a specific support ticket as the PAM.
+    question: Who owns SP-2000-REQ as PAM?
+    answer: |
+      {"action": "lookup_pam", "ticket": "SP-2000-REQ"}
+  - context: |
+      Asking for the Partner Account Manager responsible for a support case.
+    question: I need the Partner Account Manager for sp-1122-req
+    answer: |
+      {"action": "lookup_pam", "ticket": "sp-1122-req"}
+  - context: |
+      Request to identify the PAM responsible for a specific ticket.
+    question: Get me the PAM for SP-4040-REQ
+    answer: |
+      {"action": "lookup_pam", "ticket": "SP-4040-REQ"}
+  - context: |
+      Determining PAM assignment for a support issue.
+    question: Assigned PAM for ticket Sp-5050-Req?
+    answer: |
+      {"action": "lookup_pam", "ticket": "Sp-5050-Req"}
+  - context: |
+      The user needs to find the PAM associated with a ticket.
+    question: Can you tell me the Partner Account Manager for SP-0707-REQ?
+    answer: |
+      {"action": "lookup_pam", "ticket": "SP-0707-REQ"}
+  - context: |
+      A user is asking which Partner Account Manager is handling a case.
+    question: Who’s the Partner Account Manager tied to Sp-3003-Req?
+    answer: |
+      {"action": "lookup_pam", "ticket": "Sp-3003-Req"}
+  - context: |
+      A user is inquiring about ticket ownership by PAM.
+    question: What PAM is linked to sp-6060-req?
+    answer: |
+      {"action": "lookup_pam", "ticket": "sp-6060-req"}
