@@ -1,0 +1,3 @@
+Title of work: Code Snippet Generation Skill Package
+License of the work: Apache License, Version 2.0
+Creator names: Javier Caniparoli
