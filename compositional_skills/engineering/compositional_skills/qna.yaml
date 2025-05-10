@@ -1,0 +1,70 @@
+created_by: javiercani
+version: 3
+task_description: >-
+  This skill teaches the model to generate functional code snippets based on
+  user-provided descriptions of programming or sysadmin tasks. The input will be
+  a natural language request specifying the task and optionally the desired
+  programming or scripting language (e.g., Python, JavaScript, Shell, Dockers,
+  typescript, NodeJS, React). The expected output is a correctly formatted,
+  syntactically valid, and functionally relevant code snippet that directly
+  addresses the user's request. Examples should demonstrate generating code for
+  common tasks, including necessary imports or configuration elements, and
+  follow standard practices for the specified language
+seed_examples:
+  - context: 'Language: Python. Task: Prime number check function. No imports. Example'
+    question: Write a Python function that checks if a number is prime
+    answer: |-
+      def is_prime(n):
+      if n <= 1:
+      return False
+      for i in range(2, int(n**0.5) + 1):
+      if n % i == 0:
+      return False
+      return True
+
+      # Example usage:
+      # print(is_prime(10))
+  - question: >-
+      Create a simple bash script to backup a specific directory to a tar.gz
+      file with a timestamp
+    answer: >-
+      #!/bin/bash
+
+      mkdir -p "/path/to/your/backup/location"
+
+      tar -czvf "/path/to/your/directory/backup_$(date +"%Y%m%d_%H%M%S").tar.gz"
+      "/path/to/your/directory"
+
+      if [ $? -eq 0 ]; then
+        echo "Backup created successfully."
+      fi
+  - question: >-
+      Give me a Node.js (JavaScript) snippet to make an HTTP GET request using
+      the 'axios' library
+    answer: |-
+      const axios = require('axios');
+      async function fetchData(url) {
+          const response = await axios.get(url);
+          console.log("Data and status", response.data, response.status);
+      }
+  - context: 'Format: JSON. Task: Database connection configuration object'
+    question: >-
+      Generate a simple JSON configuration object for database connection
+      settings (host, port, user, password)
+    answer: |-
+      {
+        "database": {
+          "host": "localhost",
+          "port": 5432,
+          "user": "admin",
+          "password": "your_password_here"
+        }
+      }
+  - question: Write a Python script to read data from a CSV file and print each row
+    answer: |-
+      import csv
+      def read_csv_file(filepath):
+          with open(filepath, mode='r', newline='') as file:
+              reader = csv.reader(file)
+              for row in reader:
+                  print(row)
