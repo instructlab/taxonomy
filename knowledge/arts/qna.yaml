@@ -1,0 +1,51 @@
+created_by:
+version: 3
+domain: Dummy data
+document_outline: Random data for the file checking and model training
+seed_examples:
+  - context: question 1
+    questions_and_answers:
+      - question: flower
+        answer: lotus
+      - question: game
+        answer: hockey
+      - question: animal
+        answer: tiger
+  - context: question 2
+    questions_and_answers:
+      - question: capital
+        answer: delhi
+      - question: electronic city
+        answer: bangalore
+      - question: continents
+        answer: '7'
+  - context: question 3
+    questions_and_answers:
+      - question: color
+        answer: pink
+      - question: IBM
+        answer: International business machines
+      - question: CO2
+        answer: Carbon dioxide
+  - context: question 4
+    questions_and_answers:
+      - question: O2
+        answer: Oxygen
+      - question: N2
+        answer: Nitrogen
+      - question: F2
+        answer: Fluoride
+  - context: Question 5
+    questions_and_answers:
+      - question: 'H2O '
+        answer: Water
+      - question: Subjects
+        answer: Chemistry
+      - question: JEE
+        answer: Joint entrance examination
+document:
+  repo: >-
+    https://github.com/ahmed-azraq/instructlab_knowledge/blob/main/hikmat-abu-zayd/hikmat.md
+  commit: 36ff1f4
+  patterns:
+    - hikmat-abu-zayd/hikmat.md
