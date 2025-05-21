@@ -1,0 +1,121 @@
+version: 3
+created_by: patriciaong08
+domain: economics
+seed_examples:
+  - context: |
+      Use of Payment Organizations' Brands. This section outlines the guidelines for using trademarks of payment organizations (e.g., Visa, Mastercard, American Express) in merchant locations, catalogs, websites, and promotional materials. It includes dos and don’ts, such as prominently displaying trademarks, using official formats, and avoiding actions that imply endorsement or diminish goodwill.
+    questions_and_answers:
+      - question: |
+          How can I create a marketing campaign that includes Visa and Mastercard logos without violating brand guidelines?
+        answer: |
+          What are the specific dos and don’ts for using payment organization trademarks in promotional materials?
+      - question: |
+          Can I use the American Express logo on my website’s homepage to attract more customers?
+        answer: |
+          Are there special rules for using the American Express brand on a merchant’s website?
+      - question: |
+          What happens if I accidentally use an outdated Mastercard logo in my store signage?
+        answer: |
+          What are the consequences of using non-official trademark formats for payment organizations?
+      - question: |
+          Can I include the Interac logo in a press release about my new POS system?
+        answer: |
+          Is prior written consent required to use payment organization trademarks in press releases?
+      - question: |
+          How should I display payment brand logos on my e-commerce checkout page to boost customer trust?
+        answer: |
+            What are the guidelines for prominently displaying payment organization trademarks on a website?
+  - context: |
+      Validating the Cards. This section details procedures for validating cards in both card-present and card-not-present transactions. It includes steps like capturing card data, verifying signatures, checking expiration dates, and using Address Verification Service (AVS) and Card Security Codes to reduce fraud risk.
+    questions_and_answers:
+      - question: |
+          What should I do if a customer’s card has no signature but they provide a valid ID?
+        answer: |
+          What are the procedures for handling a card with a blank signature panel during a card-present transaction?
+      - question: |
+          How can I verify a cardholder’s identity for an online purchase without meeting them in person?
+        answer: |
+          What information must be obtained for card-not-present transactions to validate the cardholder?
+      - question: |
+          Is it safe to process a transaction if the AVS response doesn’t match the customer’s provided address?
+        answer: |
+          How should merchants interpret and act on AVS responses for card-not-present transactions?
+      - question: |
+          What happens if I forget to check the expiration date on a customer’s card during a sale?
+        answer: |
+          Why is verifying the card’s expiration date important during card-present transactions?
+      - question: |
+          Can I ask a customer to email me their card details for a phone order?
+        answer: |
+          Are there restrictions on accepting card account numbers via email for card-not-present transactions?
+  - context: |
+      Security. This section outlines security requirements for protecting cardholder data, including PCI DSS compliance, firewall maintenance, anti-virus software, restricted access, and proper disposal of obsolete transaction data. It emphasizes preventing unauthorized access and using PCI-DSS compliant services
+      - question: |
+          How can I ensure my POS system is secure against hacking attempts?
+        answer: |
+          What are the specific security measures required for maintaining POS device security?
+      - question: |
+          What should I do if I suspect an employee is tampering with transaction data?
+        answer: |
+          What controls are recommended to prevent employees from submitting unauthorized credits?
+      - question: |
+          Is it okay to store card verification codes for future transactions?
+        answer: |
+          What data must not be stored after transaction authorization to comply with security requirements?
+      - question: |
+          How do I know if my payment processor is PCI-DSS compliant?
+        answer: |
+          What is required to ensure that services and devices used for payment processing are PCI-DSS compliant?
+      - question: |
+          What steps should I take if my POS device is stolen?
+        answer: |
+          What is the procedure for reporting a lost or stolen POS device?
+  - context: |
+      Chargebacks. This section explains chargebacks, their reasons (e.g., authorization issues, fraud, disputes), and how to respond to chargeback notifications. It includes recommendations to reduce chargeback risks, such as obtaining authorizations, issuing timely credits, and providing clear transaction documentation
+      - question: |
+          How can I prevent chargebacks when customers claim they didn’t receive their order?
+        answer: |
+          What are the recommendations to reduce chargebacks due to cardholder disputes over non-delivery?
+      - question: |
+          What should I do if a customer disputes a transaction but I have proof of delivery?
+        answer: |
+          How should merchants respond to a chargeback notification with supporting documentation?
+      - question: |
+          Can I still fight a chargeback if I miss the response deadline?
+        answer: |
+          What are the consequences of not disputing a chargeback within the applicable time limits?
+      - question: |
+          Why do I get charged fees even when a chargeback is reversed in my favor?
+        answer: |
+          What fees are associated with chargeback arbitration for Visa and Mastercard?
+      - question: |
+          How can I train my staff to avoid chargebacks due to processing errors?
+        answer: |
+          What are the recommendations to reduce chargebacks due to processing errors?
+  - context: |
+      Additional Provisions for Specific Industries. This section provides guidelines for specific industries, focusing on lodging merchants and pre-authorization practices for travel, entertainment, and restaurant businesses. It covers guaranteed reservations, cancellations, and pre-authorization rules, including variance limits and authorization procedures.
+      - question: |
+          How can a hotel ensure guests understand the cancellation policy for guaranteed reservations?
+        answer: |
+          What information must be included in the written confirmation of a guaranteed reservation for lodging merchants?
+      - question: |
+          What should a restaurant do if a customer leaves without paying after a pre-authorized transaction?
+        answer: |
+          What are the procedures for handling a pre-authorized transaction if the customer uses another payment method?
+      - question: |
+          Can a car rental company include insurance costs in a pre-authorization amount?
+        answer: |
+          Are vehicle rental providers allowed to include potential vehicle damage or insurance deductibles in pre-authorizations?
+      - question: |
+          How can a motel avoid chargebacks for overcharges on pre-authorized stays?
+        answer: |
+          What are the variance limits for pre-authorizations in lodging, and how should additional amounts be handled?
+      - question: |
+          What happens if a vending machine transaction is disputed because no receipt was provided?
+        answer: |
+          What are the receipt requirements for vending machine transactions under Mastercard?
+document_outline: |
+  Establishes guidelines for processing transactions. Includes recommendations and tips to help prevent fraud, reduce chargebacks, and properly handle payments, refunds, and exchanges.
+document:
+  repo: https://github.com/patriciaong08/instructlab.git
+  commit: 
