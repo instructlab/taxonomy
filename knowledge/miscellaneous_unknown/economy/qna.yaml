@@ -118,4 +118,4 @@ document_outline: |
   Establishes guidelines for processing transactions. Includes recommendations and tips to help prevent fraud, reduce chargebacks, and properly handle payments, refunds, and exchanges.
 document:
   repo: https://github.com/patriciaong08/instructlab.git
-  commit: 
+  commit: 435e30590fd686785d30f5ea9af45109fc47221e
