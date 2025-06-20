@@ -1,0 +1,56 @@
+version: 3
+domain: history
+created_by: leidwang
+seed_examples:
+  - context: |
+      The Great Wall of China is a vast series of fortifications built along the historical northern borders of China to protect the Chinese states and empires against invasions. Construction of the earliest walls began in the 7th century BC, with major rebuilding during the Ming dynasty (1368–1644).
+    questions_and_answers:
+      - question: What is the Great Wall of China?
+        answer: The Great Wall of China is a series of fortifications built to protect China from invasions.
+      - question: When did construction of the Great Wall begin?
+        answer: Construction began as early as the 7th century BC.
+      - question: Which dynasty is most associated with the current structure of the Great Wall?
+        answer: The Ming dynasty (1368–1644) is most associated with the current structure.
+  - context: |
+      The Great Wall is not a single continuous wall but a network of walls, trenches, and natural barriers. Its total length is over 21,000 kilometers (13,000 miles), crossing deserts, mountains, and grasslands.
+    questions_and_answers:
+      - question: Is the Great Wall of China a single wall?
+        answer: No, it is a network of walls, trenches, and barriers built over centuries.
+      - question: How long is the Great Wall of China?
+        answer: The Great Wall is over 21,000 kilometers (13,000 miles) long.
+      - question: What types of terrain does the Wall cross?
+        answer: It crosses deserts, mountains, plains, and grasslands.
+  - context: |
+      The construction materials of the Great Wall varied by region and era. Early walls used tamped earth and wood, while later sections, especially under the Ming, used bricks and stone for greater strength.
+    questions_and_answers:
+      - question: What materials were used in the early Great Wall?
+        answer: Early walls used tamped earth and wood.
+      - question: What materials were mainly used during the Ming dynasty?
+        answer: The Ming dynasty used bricks and stone.
+      - question: Why were materials different in different locations?
+        answer: Materials were chosen based on availability and desired strength in each region.
+  - context: |
+      Beyond military defense, the Great Wall helped regulate trade and migration, especially along the Silk Road. Watchtowers and garrisons supported communication and troop deployment.
+    questions_and_answers:
+      - question: What were some functions of the Great Wall besides defense?
+        answer: It regulated trade and migration and supported communication.
+      - question: How did the Wall help military communication?
+        answer: Watchtowers were used to send signals and deploy troops.
+      - question: Did the Great Wall play a role in the Silk Road?
+        answer: Yes, it helped regulate trade and migration along the Silk Road.
+  - context: |
+      Today, much of the original Great Wall is in ruins, but some sections, especially near Beijing, have been preserved and restored. The Wall is a UNESCO World Heritage Site and a symbol of Chinese strength and historical legacy.
+    questions_and_answers:
+      - question: What is the condition of the Great Wall today?
+        answer: Much of it is in ruins, but some parts have been restored for tourism.
+      - question: Where are the best-preserved sections of the Wall?
+        answer: The best-preserved sections are near Beijing, such as Badaling and Mutianyu.
+      - question: What does the Great Wall symbolize today?
+        answer: It is a symbol of Chinese strength and historical legacy.
+document_outline: |
+  This document describes the history, purpose, construction, cultural significance, and legacy of the Great Wall of China.
+document:
+  repo: https://github.com/leidwang/taxonomy_knowledge.git
+  commit: 3d15933c4cc0ad01cb131168a8a2b90c22996b1d
+  patterns:
+    - great_wall.md
