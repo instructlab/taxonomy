@@ -1,0 +1,57 @@
+version: 3
+domain: <The knowledge domain which is used in prompts to the teacher model during synthetic data generation. The domain should be brief such as the title to a textbook chapter or section.>
+created_by: <The GitHub username of the contributor.>
+seed_examples:
+  - context: |
+        <Context from the document associated with this set of sample q&a pairs.>
+    questions_and_answers:
+      - question: |
+           <A question used for synthetic data generation. Based upon the previous context.>
+        answer: |
+           <The desired response for the question. Based upon the previous context.>
+      - question: |
+        answer: |
+      - question: |
+        answer: |
+  - context: |
+    questions_and_answers:
+      - question: |
+        answer: |
+      - question: |
+        answer: |
+      - question: |
+        answer: |
+  - context: |
+    questions_and_answers:
+      - question:
+        answer: |
+      - question: |
+        answer: |
+      - question: |
+        answer: |
+  - context: |
+    questions_and_answers:
+      - question: |
+        answer: |
+      - question: |
+        answer: |
+  - context: |
+    questions_and_answers:
+      - question: |
+        answer: |
+      - question: |
+        answer: |
+      - question: |
+        answer: |
+document_outline: |
+  <A brief summary of the document.>
+document:
+  repo: https://github.com/<username>/<repo>.git
+  commit: <full commit SHA>
+  patterns:
+    - <FILENAME>.md
+    - <FILENAME>.pdf
+    - "*.md"
+    - "*.pdf"
+    - "<directory>/*.md"
+

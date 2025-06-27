@@ -1,0 +1,16 @@
+config:
+  line-length: false
+  no-emphasis-as-header: false
+  first-line-heading: false
+  code-block-style: false
+  no-duplicate-header: false
+  single-trailing-newline: false
+  no-bare-urls: false
+globs:
+  - "**/*.md"
+ignores:
+  - ".github/**"
+  - ".tox/**"
+  - "venv/**"
+  - ".venv/**"
+  - "knowledge/knowledge_domains.md"

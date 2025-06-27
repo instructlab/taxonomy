@@ -1,0 +1,189 @@
+created_by: juliadenham
+version: 3
+domain: animals
+seed_examples:
+  - context: |
+      The **black-capped chickadee** (***Poecile atricapillus***) is a small,
+      nonmigratory, North American [passerine](passerine "wikilink") bird that
+      lives in deciduous and mixed forests. It is a member of the
+      [Paridae](Paridae "wikilink") [family](family_(biology) "wikilink"),
+      also known as tits. It has a distinct black cap on its head, a black bib
+      underneath, and white cheeks. It has a white belly, buff sides, and grey
+      wings, back, and tail. The bird is well known for its vocalizations,
+      including its *fee-bee* call and its *chick-a-dee-dee-dee* call, from
+      which it derives its name.
+
+      The black-capped chickadee is widely distributed throughout North
+      America, ranging from the northern United States to southern Canada and
+      all the way up to Alaska and [Yukon](Yukon "wikilink"). It feeds
+      primarily on insects and seeds, and is known for its ability to
+      [cache](Hoarding_(animal_behavior) "wikilink") food for use during the
+      winter. The [hippocampus](hippocampus "wikilink") of the black-capped
+      chickadee grows during the caching season, which is believed to help it
+      better remember its cache locations. The black-capped chickadee is a
+      social bird and forms strict [dominance
+      hierarchies](Dominance_hierarchy "wikilink") within its flock. During
+      the winter, these flocks include other bird species. It has the ability
+      to lower its body temperature during cold winter nights, allowing it to
+      conserve energy.
+    questions_and_answers:
+      - question: |
+          Where do black-capped chickadees live?
+        answer: |
+          The black-capped chickadee (Poecile atricapillus) is a small,
+          nonmigratory, North American passerine bird that lives in deciduous
+          and mixed forests.
+      - question: |
+          What sound does a black-capped chickadee make?
+        answer: |
+          The black-capped chickadee is well known for its vocalizations,
+          including its fee-bee call and its chick-a-dee-dee-dee call, from
+          which it derives its name.
+      - question: |
+          What does a black-capped chickadee eat?
+        answer: |
+          Black-capped chickadees feed primarily on insects and seeds, and is
+          known for its ability to cache food for use during the winter.
+  - context: |
+      The black-capped chickadee has a black cap and "bib" with white cheeks.
+      Its underparts are white with buff-colored flanks. Its back is
+      unstreaked and greenish gray, and the tail and wings are slate gray. It
+      has a black [beak](beak "wikilink") and legs, and dark brown
+      [irises](iris_(anatomy) "wikilink"). Males and females are generally
+      similar, although males have a larger bib. They can also be
+      distinguished based on a combination of weight and tail length.
+      [Tarsus](Bird_feet_and_legs "wikilink") length does not significantly
+      differentiate sexes. Males have a wing length of 63.5–67.5 mm (2.50–2.66 in),
+      a tail length of 58–63 mm (2.3–2.5 in), a bill length of 8–9.5 mm (0.31–0.37 in),
+      and a tarsus length of 16–17 mm (0.63–0.67 in). Females are on average slightly
+      smaller, with a wing length of 60.5–66.5 mm (2.38–2.62 in), a tail length of
+      56.3–63 mm (2.22–2.48 in), a bill length of 9–9.5 mm (0.35–0.37 in), and a
+      tarsus length of 16–17 mm (0.63–0.67 in). Both sexes weigh 10–14 g (0.35–0.49 oz).
+      Juveniles are visually similar to adults but with fluffier plumage.
+    questions_and_answers:
+      - question: |
+          What color cheeks does the black capped chickadee have?
+        answer: |
+          The black-capped chickadee has a black cap and "bib" with white
+          cheeks.
+      - question: |
+          Do male black capped chickadees have a larger bib than the females?
+        answer: |
+          Yes, males and females are generally similar, although males have a
+          larger bib.
+      - question: |
+          How can you tell that a black capped chickadee is a juvenile?
+        answer: |
+          Juveniles are visually similar to adults but with fluffier plumage.
+  - context: |
+      One of the most recognizable sounds produced, particularly by the males,
+      is the two-note *fee-bee* song. It is a simple, clear whistle of two
+      notes, identical in rhythm, the first roughly a
+      [whole-step](Major_second "wikilink") above the second. The
+      frequency of their songs will typically start around
+      400 [Hz](Hertz "wikilink"), and various tones spanning roughly 1 kHz
+      will be sung within the song. A decrease of roughly 200 Hz occurs when
+      the first note (*fee*) is sung, and then another decrease around 400 Hz
+      takes place between the end of *fee* and the beginning of *bee*. In
+      spite of these multiple changes in frequency, though, anybody listening
+      to the song only hears a pure, high-frequency tone. This is
+      distinguished from the Carolina chickadee's four-note call *fee-bee
+      fee-bay*; the lower notes are nearly identical but the higher *fee*
+      notes are omitted, making the black-capped song like *bee bay*. The
+      males sing the song only in relative isolation from other chickadees
+      (including their mates). In late summer, some young birds sing only a
+      single note.
+    questions_and_answers:
+      - question: |
+          What is the black-capped chickadee's fee-bee song?
+        answer: |
+          It is a simple, clear whistle of two notes, identical in rhythm,
+          the first roughly a whole-step above the second.
+      - question: |
+          What is the frequency of the black-capped chickadee's fee-bee
+          song?
+        answer: |
+          The frequency of their songs will typically start around 400 Hz,
+          and various tones spanning roughly 1 kHz will be sung within the
+          song. A decrease of roughly 200 Hz occurs when the first note (fee)
+          is sung, and then another decrease around 400 Hz takes place between
+          the end of fee and the beginning of bee.
+      - question: |
+          Do male black-capped chickadees sing their fee-bee song with other
+          chickadees around?
+        answer: |
+          No, the males sing the song only in relative isolation from other
+          chickadees (including their mates).
+  - context: |
+      Insects (especially caterpillars) form a large part of their diet in
+      summer. The birds hop along tree branches searching for food, sometimes
+      hanging upside down or hovering; they may make short flights to catch
+      insects in the air. Seeds and berries become more important in winter,
+      though insect eggs and pupae are eaten when available. Black-capped
+      chickadees have also been known to eat the fat off of dead mammals.
+      Sunflower seeds are readily taken from bird feeders. The birds take a
+      seed in their beak and commonly fly from the feeder to a tree, where
+      they proceed to hammer the seed on a branch to open it.
+
+      Like many other species in the family Paridae, black-capped chickadees
+      commonly [cache](Hoarding_(animal_behavior) "wikilink") food, mostly
+      seeds, but sometimes insects, also. Items are stored singly in
+      various sites such as bark, dead leaves, clusters of conifer needles, or
+      knothole. Memory for the location of caches can last up to 28 days.
+      Within the first 24 hours, the birds can even remember the relative
+      quality of the stored items.
+    questions_and_answers:
+      - question: What do black-capped chickadees eat?
+        answer: |
+          Insects (especially caterpillars) form a large part of their diet
+          in summer. Seeds and berries become more important in winter,
+          though insect eggs and pupae are eaten when available.
+      - question: How do black-capped chickadees eat seeds?
+        answer: |
+          Black-capped chickadees take a seed in their beak and commonly
+          fly from the feeder to a tree, where they proceed to hammer the
+          seed on a branch to open it.
+      - question: |
+          How long can black-capped chickadees remember where they cached
+          their food?
+        answer: |
+          Memory for the location of caches can last up to 28 days.
+  - context: |
+      Black-capped chickadees are primarily subject to predation by [birds of
+      prey](birds_of_prey "wikilink"), including owls, hawks, and shrikes.
+      Nest-predation also occurs, primarily by raccoons, squirrels, opossums,
+      and snakes. Nest sites are also sometimes raided by [house
+      wrens](house_wren "wikilink"), who will destroy chickadee eggs in order
+      to reuse the location for their nest.
+
+      Like many birds, black-capped chickadees are susceptible to [West Nile
+      Virus](West_Nile_Virus "wikilink"). They are also known to be affected
+      by blood parasites, including those that cause
+      [malaria](malaria "wikilink"), but particularly high rates of infection
+      have not been detected. Black-capped chickadees are also known to
+      be affected by [avian keratin
+      disorder](avian_keratin_disorder "wikilink").
+    questions_and_answers:
+      - question: |
+          What birds of prey eat black-capped chickadees?
+        answer: |
+          Black-capped chickadees are primarily subject to predation by birds
+          of prey, including owls, hawks, and shrikes.
+      - question: |
+          What is a big danger to black-capped chickadee nests?
+        answer: |
+          Nest sites are also sometimes raided by house wrens, who will
+          destroy chickadee eggs in order to reuse the location for their nest.
+      - question: |
+          Do black-capped chickadees carry the West Nile virus?
+        answer: |
+          Like many birds, black-capped chickadees are susceptible to West
+          Nile Virus.
+document_outline: |
+  Information about the black capped chickadee including distribution, appearance,
+  vocalization, diet, and predators.
+document:
+  repo: https://github.com/juliadenham/Summit_knowledge
+  commit: 5f7158a5ce83c4ff493bfe341fe31ecad64ff697
+  patterns:
+    - chickadee.md

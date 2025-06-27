@@ -1,0 +1,57 @@
+# SPDX-License-Identifier: Apache-2.0
+
+name: CoC insight analysis
+
+run-name: ${{ github.event.workflow_run.display_title || github.workflow }}
+
+on:
+  workflow_run:
+    workflows:
+      - "Lint compositional_skills and knowledge"
+    types:
+      - completed
+
+env:
+  LC_ALL: en_US.UTF-8
+
+defaults:
+  run:
+    shell: bash
+
+permissions:
+  contents: read
+
+jobs:
+  insight-analysis:
+    runs-on: ubuntu-latest
+    if: ${{ (github.event.workflow_run.event == 'pull_request') && (github.repository == 'instructlab/taxonomy') && (github.event.workflow_run.conclusion == 'success') }}
+    name: Run insight analysis
+    steps:
+      - name: "Harden Runner"
+        uses: step-security/harden-runner@4d991eb9b905ef189e4c376166672c3f2f230481 # v2.11.0
+        with:
+          egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
+
+      - name: "Debug info"
+        run: |
+          jq '.' "$GITHUB_EVENT_PATH"
+
+      - name: "Download Pull Request number"
+        uses: actions/download-artifact@cc203385981b70ca67e1cc392babf9cc229d5806 # v4.1.9
+        with:
+          name: pull_request_number
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: "Get Pull Request number"
+        run: |
+          echo "PULL_REQUEST_NUMBER=$(cat pull_request_number.txt)" >> "$GITHUB_ENV"
+
+      - name: "Invoke insight analysis handler"
+        if: ${{ fromJSON(env.PULL_REQUEST_NUMBER) != 0 }}
+        run: |
+          curl -X "POST" "https://pr-analysis-handler.1fuhf5gskmng.us-east.codeengine.appdomain.cloud/analyze-pr?pr_number=${PULL_REQUEST_NUMBER}&owner=${REPOSITORY_OWNER}&repo=${REPOSITORY_NAME}" -H "accept: application/json" -H "Authorization: Bearer ${ANALYSIS_TOKEN}"
+        env:
+          REPOSITORY_OWNER: ${{ github.repository_owner }}
+          REPOSITORY_NAME: ${{ github.event.repository.name }}
+          ANALYSIS_TOKEN: ${{ secrets.COC_ANALYSIS_TOKEN }}

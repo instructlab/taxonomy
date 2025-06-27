@@ -1,0 +1,30 @@
+# SPDX-License-Identifier: Apache-2.0
+
+ci:
+  - changed-files:
+      - any-glob-to-any-file:
+          - scripts/**
+          - .github/workflows/**
+          - .github/*.yml
+
+documentation:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "*.md"
+          - docs/**
+
+knowledge:
+  - changed-files:
+      - any-glob-to-any-file:
+          - knowledge/**
+
+skill:
+  - changed-files:
+      - any-glob-to-any-file:
+          - compositional_skills/**
+
+triage-needed:
+  - changed-files:
+      - any-glob-to-any-file:
+          - compositional_skills/**
+          - knowledge/**

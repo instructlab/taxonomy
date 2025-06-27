@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: Apache-2.0
+
+# GitHub Dependabot configuration file
+version: 2
+updates:
+
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "docker"
+    directory: "/.github/workflows"
+    schedule:
+      interval: "daily"
+
+  # Maintain dependencies for Python scripts
+  - package-ecosystem: "pip"
+    directory: "/scripts"
+    schedule:
+      interval: "daily"

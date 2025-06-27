@@ -1,0 +1,52 @@
+version: 3
+metadata:
+  category: history/biography/egypt/hikmat_abu_zayd
+  name: hikmat_abu_zayd
+  language: en
+  description: Q&A about the life and legacy of Egypt's first female cabinet minister, Hikmat Abu Zayd.
+
+seed_examples:
+  - context: Hikmat Abu Zayd was Egypt’s first female cabinet minister, serving as Minister of Social Affairs from 1962 to 1965 under President Gamal Abdel Nasser.
+    qna:
+      - question: Who was Egypt’s first female cabinet minister?
+        answer: Hikmat Abu Zayd
+      - question: What position did Hikmat Abu Zayd hold in the Egyptian government?
+        answer: She served as Minister of Social Affairs.
+      - question: When did Hikmat Abu Zayd serve as Minister of Social Affairs?
+        answer: From 1962 to 1965.
+
+  - context: Hikmat Abu Zayd was born in 1922 in Asyut Governorate, Upper Egypt. She studied at Cairo University and later at the University of London and St Andrews.
+    qna:
+      - question: Where was Hikmat Abu Zayd born?
+        answer: In Asyut Governorate, Upper Egypt.
+      - question: Which universities did Hikmat Abu Zayd attend?
+        answer: Cairo University, University of London, and St Andrews.
+      - question: What was her field of study?
+        answer: History and social sciences.
+
+  - context: Abu Zayd was known for her commitment to social justice and her policies to support widows, orphans, and the poor.
+    qna:
+      - question: What causes was Hikmat Abu Zayd known for?
+        answer: Social justice and support for widows, orphans, and the poor.
+      - question: What was her reputation as Minister?
+        answer: She was known as the “minister of the poor.”
+      - question: Who did Hikmat Abu Zayd aim to help through her policies?
+        answer: The marginalized, including widows and orphans.
+
+  - context: After Nasser’s death, Hikmat Abu Zayd opposed Anwar Sadat’s policies and lived in exile in the UK for several years.
+    qna:
+      - question: Why did Hikmat Abu Zayd go into exile?
+        answer: She opposed Anwar Sadat’s policies.
+      - question: Where did she live during her exile?
+        answer: In the United Kingdom.
+      - question: When did she return to Egypt?
+        answer: She returned later in life but was no longer politically active.
+
+  - context: Hikmat Abu Zayd passed away in Cairo on July 30, 2011. She is remembered as a trailblazer for Egyptian women in politics.
+    qna:
+      - question: When did Hikmat Abu Zayd die?
+        answer: On July 30, 2011.
+      - question: Where did she pass away?
+        answer: In Cairo, Egypt.
+      - question: How is she remembered?
+        answer: As a trailblazer for women in Egyptian politics.

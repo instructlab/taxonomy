@@ -1,0 +1,57 @@
+# SPDX-License-Identifier: Apache-2.0
+
+name: "Pull Request Labeler"
+
+on:
+  pull_request_target:
+
+env:
+  LC_ALL: en_US.UTF-8
+
+defaults:
+  run:
+    shell: bash
+
+permissions:
+  contents: read
+
+jobs:
+  labeler:
+    permissions:
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+    - name: "Harden Runner"
+      uses: step-security/harden-runner@4d991eb9b905ef189e4c376166672c3f2f230481 # v2.11.0
+      with:
+        egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
+
+    - name: "Labeler Action"
+      uses: actions/labeler@8558fd74291d67161a8a78ce36a881fa63b766a9 # v5.0.0
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        sync-labels: false
+
+  add-comment:
+      if: ${{ (github.event.action == 'labeled') && (github.event.label.name == 'triage-uncertain') }}
+      permissions:
+        pull-requests: write
+      runs-on: ubuntu-latest
+      steps:
+        - name: "Harden Runner"
+          uses: step-security/harden-runner@4d991eb9b905ef189e4c376166672c3f2f230481 # v2.11.0
+          with:
+            egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
+
+        - name: "Add comment"
+          run: |
+            gh pr comment "${PULL_REQUEST_NUMBER}" --body "${PULL_REQUEST_COMMENT}"
+          env:
+            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            GH_REPO: ${{ github.repository }}
+            PULL_REQUEST_NUMBER: ${{ github.event.number }}
+            PULL_REQUEST_COMMENT: >
+              Hi! So you've been marked as `triage-uncertain`, don't fret!
+              This just means the triage team or member needs to discuss your PR during one of our [public meetings](https://github.com/instructlab/community/blob/main/Collaboration.md#triager-standup) before making a decision. (Yes! You are more then welcome to join us.)
+              You have either made something amazing, or maybe hit a corner case that we hadn't thought of, or something like that.
+              :star2: Thank you for your contribution! And you are pushing our :dog: :computer: project and we can't thank you enough. :sparkles:

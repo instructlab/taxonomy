@@ -1,0 +1,44 @@
+# SPDX-License-Identifier: Apache-2.0
+
+name: Update CoC report
+
+run-name: "${{ github.event.pull_request.title }} (#${{ github.event.pull_request.number}})"
+on:
+  pull_request_target:
+    types:
+      - closed
+
+env:
+  LC_ALL: en_US.UTF-8
+
+defaults:
+  run:
+    shell: bash
+
+permissions:
+  contents: read
+
+jobs:
+  update-coc-insight-handler:
+    runs-on: ubuntu-latest
+    if: ${{ github.repository == 'instructlab/taxonomy' }}
+    name: Update CoC insights handler for PR Close event
+    steps:
+      - name: "Harden Runner"
+        uses: step-security/harden-runner@4d991eb9b905ef189e4c376166672c3f2f230481 # v2.11.0
+        with:
+          egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
+
+      - name: "Debug info"
+        run: |
+          jq '.' "$GITHUB_EVENT_PATH"
+
+      - name: "Update CoC insight analysis handler"
+        run: |
+          curl -X "GET" "https://pr-analysis-handler.1fuhf5gskmng.us-east.codeengine.appdomain.cloud/pr-closed?pr_number=${PULL_REQUEST_NUMBER}&owner=${REPOSITORY_OWNER}&repo=${REPOSITORY_NAME}&merged=${IS_MERGED}" -H "accept: application/json" -H "Authorization: Bearer ${ANALYSIS_TOKEN}"
+        env:
+          REPOSITORY_OWNER: ${{ github.repository_owner }}
+          REPOSITORY_NAME: ${{ github.event.repository.name }}
+          PULL_REQUEST_NUMBER: ${{ github.event.pull_request.number}}
+          IS_MERGED: ${{ github.event.pull_request.merged }}
+          ANALYSIS_TOKEN: ${{ secrets.COC_ANALYSIS_TOKEN }}
