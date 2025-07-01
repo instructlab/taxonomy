@@ -1,0 +1,38 @@
+version: 3
+domain: miscellaneous_unknown
+document_outline: |
+  Information about Fudenosuke brush pens manufactured by Tombow, covering:
+  - Definition and origin of Fudenosuke
+  - Key features and specifications
+  - Primary uses and applications
+  - Available tip options and variants
+  - Product characteristics (refillable vs disposable)
+created_by: rbrunopi
+seed_examples:
+  - context: |
+      Fudenosuke is a popular line of brush pens manufactured by Tombow, a Japanese company. These pens are specifically designed for calligraphy, hand lettering, and art drawings. The name "Fudenosuke" comes from Japanese, where "fude" means brush and "nosuke" is a common suffix in Japanese names. These pens feature flexible brush tips made from elastomer material that allow artists to create varying line widths by adjusting pressure. They are available in different tip firmnesses (hard and soft) and various colors, with black being the most common. The pens are disposable and use water-based, odorless ink. Fudenosuke pens are particularly well-suited for East Asian calligraphy, including writing Chinese and Japanese characters, as well as modern Western calligraphy and hand lettering projects.
+    questions_and_answers:
+      - question: What is Fudenosuke?
+        answer: |
+          Fudenosuke is a line of brush pens manufactured by Tombow, a Japanese company. These are specialized pens designed for calligraphy, hand lettering, and art drawings. The name comes from Japanese where "fude" means brush. Fudenosuke pens feature flexible brush tips that allow artists to create varying line widths by adjusting pressure, making them ideal for both traditional East Asian calligraphy and modern Western lettering projects.
+
+      - question: What are the main features of Fudenosuke brush pens?
+        answer: |
+          Fudenosuke brush pens have several key features: they have flexible elastomer brush tips that provide precise control, they're available in hard and soft tip variants for different line width preferences, they use water-based and odorless ink, and they're disposable pens without replaceable cartridges. The flexible tips allow artists to create extra fine to medium strokes simply by changing brush pressure.
+
+      - question: What is Fudenosuke used for?
+        answer: |
+          Fudenosuke brush pens are primarily used for calligraphy and hand lettering projects. They're excellent for writing Chinese and Japanese characters due to their brush-like properties, and they're also popular for modern Western calligraphy, art drawings, sketching, and creating expressive lettering designs. The pens are particularly favored by beginners in calligraphy because they offer good control and precision.
+
+      - question: What tip options are available for Fudenosuke pens?
+        answer: |
+          Fudenosuke pens come in two main tip firmness options: hard tip and soft tip. The hard tip provides more control and is better for precise work and fine details, while the soft tip offers more flexibility and can create a wider range of line variations. Both tips are made from elastomer material and can produce different stroke widths based on the pressure applied.
+
+      - question: Are Fudenosuke pens refillable?
+        answer: |
+          No, Fudenosuke pens are not refillable. Unlike traditional fude pens which often have replaceable ink cartridges, Fudenosuke pens are disposable. Once the ink runs out, you need to purchase an entirely new pen. However, they're designed to last for a considerable amount of use before the ink is depleted.
+document:
+  repo: https://github.com/Randy424/taxonomy.git
+  commit: main
+  patterns:
+    - fudenosuke.md
