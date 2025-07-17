@@ -1,0 +1,22 @@
+version: 1
+created_by: varunraste
+task_description: 'Questions and answers related to SBI''s yono Business digital banking platform.'
+seed_examples:
+  - question: What is yono Business?
+    answer: yono Business is SBI's unified digital banking platform for business and corporate customers. It includes Corporate Internet Banking (CINB), eTrade, eForex, Supply Chain Finance (SCF), and Cash Management Product (CMP). It features enhanced security, ease of navigation, an intuitive UI/UX, and a reimagined domestic payment module with a consolidated dashboard.
+
+  - question: Where can I access yono Business?
+    answer: You can access yono Business via the web at https://yonobusiness.sbi and through the mobile app available on Google Play Store and iOS App Store under the name "yono Business".
+
+  - question: Who can use yono Business?
+    answer: yono Business is designed for Sole Proprietors, Partnerships, Private and Public Limited Companies, MSMEs, Corporates, Government institutions, and large enterprises. It supports both new-to-bank (NTB) and existing SBI customers (ETB).
+
+  - question: What digital services are available on yono Business?
+    answer: yono Business offers digital services including Current Account opening, Corporate Internet Banking, Trade Finance, Forex Services, API Banking, MSME Lending, Supply Chain Finance, Cash Management, Mobile App services, and more.
+
+  - question: How can NTB (New-to-Bank) customers onboard to yono Business?
+    answer: Sole Proprietors can complete an end-to-end digital Current Account journey online. Other entities such as Partnerships and Companies must apply online and visit a branch once for verification.
+
+  - question: How can ETB (Existing SBI Customers) onboard to yono Business?
+    answer: Sole Proprietors with a debit card can register online. Other businesses can initiate digital onboarding for CINB, Trade, or Forex and complete it with a one-time branch visit. Branch-assisted onboarding is also available.
+
