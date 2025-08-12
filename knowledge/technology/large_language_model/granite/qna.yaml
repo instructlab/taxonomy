@@ -1,0 +1,105 @@
+created_by:
+version: 3
+domain: large-language-model
+document_outline: Knowledge contribution about the IBM Granite model
+seed_examples:
+  - context: |-
+      **IBM Granite** is a series of decoder-only AI foundation models created
+            by IBM. It was announced on September 7, 2023, and an initial paper was
+            published 4 days later. Initially intended for use in IBM's cloud-based
+            data and generative AI platform, Watsonx, along with other models, IBM
+            open-sourced some of the code models. Granite models are trained on
+            curated datasets from the Internet, academic publications, code datasets,
+            and legal and finance documents
+    questions_and_answers:
+      - question: What is IBM Granite?
+        answer: >-
+          IBM Granite is a series of decoder-only AI foundation models created
+          by IBM.
+      - question: When was IBM Granite announced?
+        answer: It was announced on September 7, 2023
+      - question: When was IBM Granite published?
+        answer: On September 11th, 2023, 4 days after it was announced.
+  - context: >-
+      Initially intended for use in IBM's cloud-based data and generative AI
+      platform, Watsonx, along with other models, IBM open-sourced some of the
+      code models. Granite models are trained on curated datasets from the
+      Internet, academic publications, code datasets, and legal and finance
+      documents.
+    questions_and_answers:
+      - question: What was IBM Granite initially intender for?
+        answer: To be used in IBM's cloud-based data and generative AI platform.
+      - question: Who open-sourced Granite?
+        answer: IBM
+      - question: What was used to train Granite?
+        answer: >-
+          Granite models are trained on curated datasets from the Internet,
+          academic publications, code datasets, and legal and finance documents.
+  - context: |-
+      * **Developer(s):** IBM Research
+
+            * **Initial release:** November 7, 2023
+
+            * **Platform:**
+                * IBM Watsonx (initially)
+                * GitHub
+                * Hugging Face
+                * RHEL AI
+            * **Type:**
+                * Multimodal
+                * Large language model (LLM)
+                * Generative pre-trained transformer (GPT)
+                * Foundation model
+            * **License:** Proprietary. The code models are licensed under an
+            open-source license (Apache 2.0)
+
+            * **Website:** [i
+    questions_and_answers:
+      - question: Who developed IBM Granite?
+        answer: IBM Research team.
+      - question: When was IBM Granite initially released?
+        answer: November 7, 2023
+      - question: What kind of license IBM Granite has?
+        answer: >-
+          Proprietary. The code models are licensed under an open-source license
+          (Apache 2.0)
+  - context: >
+      A foundation model is an AI model trained on broad data at scale so that
+      it can be adapted to a wide range of downstream tasks.
+
+
+      Granite's first foundation models were `Granite.13b.instruct` and
+      `Granite.13b.chat`. The "13b" in their name comes from 13 billion, the
+      number of parameters they have, a figure smaller than most of the larger
+      models at the time. Later models vary in size from 3 to 34 billion
+      parameters.
+    questions_and_answers:
+      - question: What is a foundation model?
+        answer: Is an AI model trained on broad data at scale.
+      - question: ' Could you name the first IBM Granite foundation models?'
+        answer: Granite.13b.instruct and Granite.13b.chat
+      - question: >-
+          What does the 13b in Granite.13b.instruct and Granite.13b.chat stands
+          for?
+        answer: >-
+          he "13b" in their name comes from **13 billion**, the number of
+          parameters they have.
+  - context: >-
+      On May 6, 2024, IBM released the source code for four variations of the
+      Granite Code Models under the Apache 2.0 license, a permissive open-source
+      license that allows for completely free use, modification, and sharing of
+      the software. They were made available on Hugging Face for public use.
+      According to IBM's own report, `Granite 8b` outperforms `Llama 3` on
+      several coding-related tasks within a similar parameter range.
+    questions_and_answers:
+      - question: When was the IBM Granite Code Models source code released?
+        answer: On May 6, 2024
+      - question: What license does the Granite Code Models have?
+        answer: Apache 2.0 license
+      - question: Where are the Granite Code Models available?
+        answer: They were made available on Hugging Face for public use.
+document:
+  repo: https://github.com/parogui/markdown-trainingfiles.git
+  commit: 842a69b2d491815f7c5b74007177bfa2c0db1421
+  patterns:
+    - granite.md
